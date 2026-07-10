@@ -13,6 +13,7 @@ state={
 	state_category = city
 
 	history= {
+		set_demilitarized_zone = yes
 		owner = GRE
 		add_core_of = GRE
 		add_core_of = TUR
