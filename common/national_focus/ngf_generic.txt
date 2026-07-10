@@ -1,0 +1,1600 @@
+focus_tree = {
+	id = norrmans_generic_focus_tree
+	country = {
+		factor = 5
+	}
+
+	default = yes
+	reset_on_civilwar = no
+
+	focus = {
+		id = GENERIC_country_armed_forces
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GENERIC_queen_of_the_battlefield
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = GENERIC_country_armed_forces }
+		relative_position_id = GENERIC_country_armed_forces
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = GENERIC_the_future_of_warfare
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = GENERIC_country_armed_forces }
+		relative_position_id = GENERIC_country_armed_forces
+		x = -3
+		y = 1
+		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GENERIC_king_of_the_battlefield
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GENERIC_country_armed_forces }
+		relative_position_id = GENERIC_country_armed_forces
+		x = 3
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GENERIC_political_focus_one
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 25
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = GENERIC_political_democracy_one
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_political_focus_one }
+		relative_position_id = GENERIC_political_focus_one
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_political_neutrality_one }
+		x = -2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_political_neutrality_one
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_political_focus_one }
+		relative_position_id = GENERIC_political_focus_one
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_political_democracy_one }
+		x = 2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_strengthen_paramilitaries
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_political_focus_one }
+		relative_position_id = GENERIC_political_focus_one
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_political_democracy_one focus = GENERIC_political_neutrality_one }
+		x = 12
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_empower_the_unions
+		icon = GFX_goal_support_communism
+		relative_position_id = GENERIC_political_focus_one
+		prerequisite = { focus = GENERIC_political_focus_one }
+		mutually_exclusive = { focus = GENERIC_political_democracy_one focus = GENERIC_political_neutrality_one focus = GENERIC_strengthen_paramilitaries }
+		x = -12
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = GENERIC_empower_the_unions_idea
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_overthrow_the_government
+		icon = GFX_focus_SWE_organize_a_putsch
+		relative_position_id = GENERIC_empower_the_unions
+		prerequisite = { focus = GENERIC_empower_the_unions }
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+			communism > 0.4
+		}
+		
+		completion_reward = {
+			set_rule = {
+				can_join_factions = no
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_government = communism
+					}
+				}
+				set_politics = {
+					ruling_party = communism
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_vanguard_of_the_revolution
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		relative_position_id = GENERIC_overthrow_the_government
+		prerequisite = { focus = GENERIC_overthrow_the_government }
+		mutually_exclusive = { focus = GENERIC_communism_at_home }
+		x = -1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_vanguard_of_the_revolution_sub_ideology_change_tt
+			set_country_leader_ideology = leninism
+			add_threat = 1
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GENERIC_stabilize_the_new_government
+		icon = GFX_focus_SWE_socialist_reforms
+		relative_position_id = GENERIC_vanguard_of_the_revolution
+		prerequisite = { focus = GENERIC_vanguard_of_the_revolution }
+		x = -1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_stability = -0.1
+			add_timed_idea = {
+				days = 140
+				idea = GENERIC_stabilize_the_new_government_idea
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_socialist_reeducation_campaign
+		icon = GFX_focus_NOR_moscows_education_centers
+		relative_position_id = GENERIC_stabilize_the_new_government
+		prerequisite = { focus = GENERIC_stabilize_the_new_government }
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_timed_idea = {
+				days = 140
+				idea = GENERIC_socialist_reeducation_campaign_idea
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_the_country_red_army
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		relative_position_id = GENERIC_socialist_reeducation_campaign
+		prerequisite = { focus = GENERIC_socialist_reeducation_campaign }
+		x = -1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = GENERIC_fledgling_red_army_idea_1_0
+			custom_effect_tooltip = GENERIC_communist_country_red_army_decisions_improve_tt
+		}
+	}
+	focus = {
+		id = GENERIC_state_security_apparatus
+		icon = GFX_focus_SOV_the_last_purge
+		relative_position_id = GENERIC_socialist_reeducation_campaign
+		prerequisite = { focus = GENERIC_socialist_reeducation_campaign }
+		x = 1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_stability = 0.05
+				add_political_power = 50
+				create_intelligence_agency = yes
+				upgrade_intelligence_agency = upgrade_interrogation_techniques
+				upgrade_intelligence_agency = upgrade_diplo_training
+			}
+			else = {
+				add_ideas = GENERIC_state_security_apparatus_idea
+				add_stability = 0.10
+				add_political_power = 50
+			}
+			if = {
+				limit = {
+					has_tech = tech_military_police
+				}
+				add_tech_bonus = {
+					name = mp_focus
+					bonus = 1
+					uses = 1
+					category = military_police_tech
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = tech_military_police }
+				}
+				set_technology = { tech_military_police = 1 }
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_looking_abroad_once_more
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
+		relative_position_id = GENERIC_state_security_apparatus
+		prerequisite = { focus = GENERIC_state_security_apparatus }
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = GENERIC_office_of_foreign_affairs
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = GENERIC_the_communist_cause
+		icon = GFX_goal_support_communism
+		relative_position_id = GENERIC_looking_abroad_once_more
+		prerequisite = { focus = GENERIC_looking_abroad_once_more }
+		mutually_exclusive = { focus = GENERIC_our_internationale }
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_europe_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = europe
+						}
+						has_government = communism
+						is_faction_leader = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = north_america
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_north_america_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = north_america
+						}
+						has_government = communism
+						is_faction_leader = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = south_america
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_south_america_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = south_america
+						}
+						has_government = communism
+						is_faction_leader = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = africa
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_africa_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = africa
+						}
+						has_government = communism
+						is_faction_leader = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = middle_east
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_middle_east_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = middle_east
+						}
+						has_government = communism
+						is_faction_leader = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = australia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_australia_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = australia
+						}
+						has_government = communism
+						is_faction_leader = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = asia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_asia_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = asia
+						}
+						has_government = communism
+						is_faction_leader = yes
+					}
+				}
+			}			
+		}
+		
+		completion_reward = {
+			set_rule = {
+				can_join_factions = yes
+			}
+			if = { # Europe
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = Europe
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = Europe
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+			}
+			if = { # North America
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = north_america
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = north_america
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+			}
+			if = { # South America
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = south_america
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = south_america
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+			}
+			if = { # Australia
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = australia
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = australia
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+			}
+			if = { # africa
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = africa
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = africa
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+			}
+			if = { # asia
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = asia
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = asia
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+			}			
+			if = { # middle_east
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = middle_east
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = middle_east
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+			}											
+		}
+	}
+	focus = {
+		id = GENERIC_strengthen_our_alliance
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
+		relative_position_id = GENERIC_the_communist_cause
+		prerequisite = { focus = GENERIC_the_communist_cause }
+		x = -1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine 
+			}
+			if = {
+				limit = {
+					any_state = {
+						is_owned_and_controlled_by = ROOT
+						is_coastal = yes
+					}
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.25
+					uses = 2
+					category = naval_doctrine 
+				}
+				navy_experience = 25
+			}		
+			army_experience = 25
+			every_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				add_tech_bonus = {
+					name = infantry_artillery_bonus
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.25
+					uses = 2
+					category = land_doctrine 
+				}
+				if = {
+					limit = {
+						PREV = {
+							any_state = {
+								is_owned_and_controlled_by = PREV
+								is_coastal = yes
+							}
+						}
+					}
+					add_doctrine_cost_reduction = {
+						cost_reduction = 0.25
+						uses = 2
+						category = naval_doctrine 
+					}
+					navy_experience = 25
+				}
+				army_experience = 25
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_our_internationale
+		icon = GFX_focus_ETH_callout_to_the_world
+		relative_position_id = GENERIC_looking_abroad_once_more
+		prerequisite = { focus = GENERIC_looking_abroad_once_more }
+		mutually_exclusive = { focus = GENERIC_the_communist_cause }
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_europe_minor_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = europe
+						}
+						has_government = communism
+						AND = {
+							original_tag = SOV
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = north_america
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_north_america_minor_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = north_america
+						}
+						has_government = communism
+						AND = {
+							original_tag = SOV
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = south_america
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_south_america_minor_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = south_america
+						}
+						has_government = communism
+						AND = {
+							original_tag = SOV
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = africa
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_africa_minor_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = africa
+						}
+						has_government = communism
+						AND = {
+							original_tag = SOV
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = middle_east
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_middle_east_minor_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = middle_east
+						}
+						has_government = communism
+						AND = {
+							original_tag = SOV
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = australia
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_australia_minor_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = australia
+						}
+						has_government = communism
+						AND = {
+							original_tag = SOV
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = asia
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_asia_minor_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = asia
+						}
+						has_government = communism
+						AND = {
+							original_tag = SOV
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			set_rule = {
+				can_join_factions = yes
+			}
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				create_faction = GENERIC_communist_faction_europe
+				every_other_country = {
+					limit = {
+						is_in_faction = no
+						is_subject = no
+						has_government = communism
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = Europe
+						}							
+					}
+					country_event = generic.5
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = north_america
+					}
+				}
+				create_faction = GENERIC_communist_faction_north_america
+				every_other_country = {
+					limit = {
+						is_in_faction = no
+						is_subject = no
+						has_government = communism
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = north_america
+						}							
+					}
+					country_event = generic.5
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = south_america
+					}
+				}
+				create_faction = GENERIC_communist_faction_south_america
+				every_other_country = {
+					limit = {
+						is_in_faction = no
+						is_subject = no
+						has_government = communism
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = south_america
+						}							
+					}
+					country_event = generic.5
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = africa
+					}
+				}
+				create_faction = GENERIC_communist_faction_africa
+				every_other_country = {
+					limit = {
+						is_in_faction = no
+						is_subject = no
+						has_government = communism
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = africa
+						}							
+					}
+					country_event = generic.5
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = middle_east
+					}
+				}
+				create_faction = GENERIC_communist_faction_middle_east
+				every_other_country = {
+					limit = {
+						is_in_faction = no
+						is_subject = no
+						has_government = communism
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = middle_east
+						}							
+					}
+					country_event = generic.5
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = australia
+					}
+				}
+				create_faction = GENERIC_communist_faction_australia
+				every_other_country = {
+					limit = {
+						is_in_faction = no
+						is_subject = no
+						has_government = communism
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = australia
+						}							
+					}
+					country_event = generic.5
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = asia
+					}
+				}
+				create_faction = GENERIC_communist_faction_asia
+				every_other_country = {
+					limit = {
+						is_in_faction = no
+						is_subject = no
+						has_government = communism
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = asia
+						}							
+					}
+					country_event = generic.5
+				}
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_socialist_research_institute
+		icon = GFX_focus_generic_socialist_science
+		relative_position_id = GENERIC_our_internationale
+		prerequisite = { focus = GENERIC_our_internationale focus = GENERIC_the_communist_cause }
+		x = -1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+			num_of_factories > 45
+			amount_research_slots < 5
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GENERIC_empower_the_workers
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		relative_position_id = GENERIC_our_internationale
+		prerequisite = { focus = GENERIC_our_internationale }
+
+		x = 1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = GENERIC_empowered_workers
+		}
+	}
+	focus = {
+		id = GENERIC_spreading_the_revolution
+		icon = GFX_focus_ger_great_red_menace
+		relative_position_id = GENERIC_empower_the_workers
+		prerequisite = { focus = GENERIC_empower_the_workers focus = GENERIC_strengthen_our_alliance }
+		prerequisite = { focus = GENERIC_socialist_research_institute }
+
+		x = -2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_threat = 5
+			custom_effect_tooltip = GENERIC_communism_wargoal_generation_continent_tt
+		}
+	}
+	focus = {
+		id = GENERIC_communism_at_home
+		icon = GFX_focus_prc_agrarian_socialism
+		relative_position_id = GENERIC_overthrow_the_government
+		prerequisite = { focus = GENERIC_overthrow_the_government }
+		mutually_exclusive = { focus = GENERIC_vanguard_of_the_revolution }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_communism_at_home_sub_ideology_change_tt
+			set_country_leader_ideology = marxism
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GENERIC_root_out_rightist_sympathizers
+		icon = GFX_focus_SOV_military_purge
+		relative_position_id = GENERIC_communism_at_home
+		prerequisite = { focus = GENERIC_communism_at_home }
+		x = 1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_timed_idea = {
+				days = 140
+				idea = GENERIC_root_out_rightist_sympathizers_idea
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = GENERIC_nationalization_of_heavy_industry
+		icon = GFX_focus_generic_communist_industry
+		relative_position_id = GENERIC_root_out_rightist_sympathizers
+		prerequisite = { focus = GENERIC_root_out_rightist_sympathizers }
+		x = 1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_capital = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_capital = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_agrarian_collectivization
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		relative_position_id = GENERIC_root_out_rightist_sympathizers
+		prerequisite = { focus = GENERIC_root_out_rightist_sympathizers }
+		x = -1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_country_autarky
+		icon = GFX_SOV_socialist_emulation_ccp_2d_sov_compatibility
+		relative_position_id = GENERIC_agrarian_collectivization
+		prerequisite = { focus = GENERIC_agrarian_collectivization focus = GENERIC_nationalization_of_heavy_industry }
+		x = 1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = GENERIC_communist_country_autarky
+			add_political_power = 25
+		}
+	}	
+	focus = {
+		id = GENERIC_deter_foreign_aggression
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		relative_position_id = GENERIC_country_autarky
+		prerequisite = { focus = GENERIC_country_autarky }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 25
+			add_ideas = GENERIC_foreign_deterrence
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_every_farmer_a_soldier
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		relative_position_id = GENERIC_deter_foreign_aggression
+		prerequisite = { focus = GENERIC_deter_foreign_aggression }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+			add_ideas = GENERIC_every_farmer_a_soldier_idea
+		}
+	}
+	focus = {
+		id = GENERIC_utilize_our_knowledge
+		icon = GFX_SOV_the_molotov_line_ccp_2d_sov_compatibility
+		relative_position_id = GENERIC_deter_foreign_aggression
+		prerequisite = { focus = GENERIC_deter_foreign_aggression }
+		x = -1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GENERIC_foreign_deterrence
+				add_idea = GENERIC_foreign_deterrence_two
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GENERIC_anti_fascist_aggression
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = GENERIC_every_farmer_a_soldier
+		prerequisite = { focus = GENERIC_every_farmer_a_soldier }
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = ROOT
+							is_on_continent = Europe
+						}
+					}
+				}
+				ROOT = {
+					every_other_country = {
+						limit = {
+							has_government = fascism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = Europe
+							}
+						}
+						PREV = {
+							create_wargoal = {
+								target = PREV
+								type = puppet_wargoal_focus
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = ROOT
+							is_on_continent = north_america
+						}
+					}
+				}
+				ROOT = {
+					every_other_country = {
+						limit = {
+							has_government = fascism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = north_america
+							}
+						}
+						PREV = {
+							create_wargoal = {
+								target = PREV
+								type = puppet_wargoal_focus
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = ROOT
+							is_on_continent = south_america
+						}
+					}
+				}
+				ROOT = {
+					every_other_country = {
+						limit = {
+							has_government = fascism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = south_america
+							}
+						}
+						PREV = {
+							create_wargoal = {
+								target = PREV
+								type = puppet_wargoal_focus
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = ROOT
+							is_on_continent = africa
+						}
+					}
+				}
+				ROOT = {
+					every_other_country = {
+						limit = {
+							has_government = fascism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = africa
+							}
+						}
+						PREV = {
+							create_wargoal = {
+								target = PREV
+								type = puppet_wargoal_focus
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = ROOT
+							is_on_continent = middle_east
+						}
+					}
+				}
+				ROOT = {
+					every_other_country = {
+						limit = {
+							has_government = fascism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = middle_east
+							}
+						}
+						PREV = {
+							create_wargoal = {
+								target = PREV
+								type = puppet_wargoal_focus
+							} 
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = ROOT
+							is_on_continent = asia
+						}
+					}
+				}
+				ROOT = {
+					every_other_country = {
+						limit = {
+							has_government = fascism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = asia
+							}
+						}
+						PREV = {
+							create_wargoal = {
+								target = PREV
+								type = puppet_wargoal_focus
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = ROOT
+							is_on_continent = australia
+						}
+					}
+				}
+				ROOT = {
+					every_other_country = {
+						limit = {
+							has_government = fascism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = australia
+							}
+						}
+						PREV = {
+							create_wargoal = {
+								target = PREV
+								type = puppet_wargoal_focus
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_socialist_industrial_planning
+		icon = GFX_goal_generic_soviet_construction
+		relative_position_id = GENERIC_communism_at_home
+		prerequisite = { focus = GENERIC_vanguard_of_the_revolution focus = GENERIC_communism_at_home }
+		x = -1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_capital = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_timed_idea = {
+				days = 280
+				idea = GENERIC_socialist_industrial_planning_idea
+			}
+		}
+	}
+}

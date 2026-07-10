@@ -1,0 +1,261 @@
+ideas = {
+    country = {
+        GENERIC_empower_the_unions_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+ 			modifier = {
+				communism_drift = 0.15
+				communism_acceptance = 50
+                political_power_factor = -0.2
+			}
+        }
+        GENERIC_stabilize_the_new_government_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                communism_drift = 0.1
+                stability_weekly = 0.02
+            }
+        }
+        GENERIC_socialist_reeducation_campaign_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                democratic_drift = -0.1
+                fascism_drift = -0.1
+                neutrality_drift = -0.1
+                stability_factor = -0.05
+            }
+        }
+        GENERIC_root_out_rightist_sympathizers_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                democratic_drift = -0.1
+                fascism_drift = -0.1
+                neutrality_drift = -0.1
+                stability_factor = -0.05
+            }
+        }
+        GENERIC_socialist_industrial_planning_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                stability_factor = -0.1
+                conscription_factor = -0.15
+                production_speed_buildings_factor = 0.25
+            }
+        }
+        GENERIC_state_security_apparatus_idea = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                stability_factor = 0.05
+                political_power_gain = 0.10
+            }
+        }
+        GENERIC_fledgling_red_army_idea_1_0 = { # Base Idea
+            name = GENERIC_country_red_army_idea
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.025
+                training_time_factor = 0.15
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+            }
+        }
+        GENERIC_fledgling_red_army_idea_1_1 = { # Improved Trainig Protocols
+            name = GENERIC_country_red_army_idea
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.025
+                training_time_factor = -0.1
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+            }
+        }
+        GENERIC_fledgling_red_army_idea_1_2 = { # Offensive Maneuver Training
+            name = GENERIC_country_red_army_idea
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.025
+                training_time_factor = -0.1
+                army_attack_factor = 0.1
+                army_defence_factor = -0.1
+            }
+        }
+        GENERIC_fledgling_red_army_idea_1_3 = { # Defensive Warfare Practice
+            name = GENERIC_country_red_army_idea
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.025
+                training_time_factor = -0.1
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
+            }
+        }
+        GENERIC_office_of_foreign_affairs = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                faction_trade_opinion_factor = 0.5
+                opinion_gain_monthly_factor = 0.3
+                opinion_gain_monthly_same_ideology_factor = 0.3
+                civil_war_involvement_tension = 0.35
+            }
+        }
+        GENERIC_empowered_workers = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+				communism_drift = 0.03
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+            }
+        }
+        GENERIC_communist_country_autarky = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                min_export = -0.3
+                local_resources = 0.25
+            }
+        }
+        GENERIC_foreign_deterrence = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                production_speed_bunker_factor = 0.25 
+                production_speed_coastal_bunker_factor = 0.25
+                land_bunker_effectiveness_factor = 0.1
+                coastal_bunker_effectiveness_factor = 0.1
+                enemy_justify_war_goal_time = 0.15
+            }
+        }
+        GENERIC_foreign_deterrence_two = {
+            allowed = {
+                always = no
+            }
+
+            name = GENERIC_foreign_deterrence
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                production_speed_bunker_factor = 0.25 
+                production_speed_coastal_bunker_factor = 0.25
+                land_bunker_effectiveness_factor = 0.1
+                coastal_bunker_effectiveness_factor = 0.1
+                enemy_justify_war_goal_time = 0.15
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+            }
+        }
+        GENERIC_every_farmer_a_soldier_idea = {
+            allowed = {
+                always = no
+            }
+
+            name = GENERIC_foreign_deterrence
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.035
+            }
+        }
+    }
+}
