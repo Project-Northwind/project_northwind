@@ -2,41 +2,7 @@
 
 oob = "UKR_1936"
 
-recruit_character = UKR_pavlo_skoropadskyi
-recruit_character = UKR_mykhailo_omelianovych_pavlenko
-recruit_character = UKR_stepan_bandera
-recruit_character = UKR_nikita_krushchyov
-recruit_character = UKR_kost_levytsky
-recruit_character = IA_olga_taratuta 
-recruit_character = UKR_pavlo_shandruk 
-
-# Former SOV Characters
-recruit_character = UKR_ivan_chernyakhovsky
-recruit_character = UKR_rodion_malinovsky
-recruit_character = UKR_vitaly_primakov
-recruit_character = UKR_sergey_gorshkov
-recruit_character = UKR_gordey_levchenko
-recruit_character = UKR_semyon_timoshenko
-recruit_character = UKR_stepan_krasovsky
-recruit_character = UKR_sergey_rudenko
-recruit_character = UKR_sergey_korolyov
-
-
-set_popularities = {
-	communism = 5
-	democratic = 15
-	fascism = 30
-	neutrality = 50
-}
-
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1918.6.3"
-	election_frequency = 24
-	elections_allowed = no
-}
-
-set_research_slots = 3
+set_research_slots = 10
 
 # Starting tech
 set_technology = {
@@ -94,3 +60,36 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
+
+set_popularities = {
+	communism = 5
+	democratic = 15
+	fascism = 30
+	neutrality = 50
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1918.6.3"
+	election_frequency = 24
+	elections_allowed = no
+}
+
+recruit_character = UKR_pavlo_skoropadsky
+recruit_character = UKR_mykhailo_omelianovych_pavlenko
+recruit_character = UKR_stepan_bandera
+recruit_character = UKR_nikita_krushchyov
+recruit_character = UKR_kost_levytsky
+recruit_character = IA_olga_taratuta 
+recruit_character = UKR_pavlo_shandruk 
+
+# Former SOV Characters
+recruit_character = UKR_ivan_chernyakhovsky
+recruit_character = UKR_rodion_malinovsky
+recruit_character = UKR_vitaly_primakov
+recruit_character = UKR_sergey_gorshkov
+recruit_character = UKR_gordey_levchenko
+recruit_character = UKR_semyon_timoshenko
+recruit_character = UKR_stepan_krasovsky
+recruit_character = UKR_sergey_rudenko
+recruit_character = UKR_sergey_korolyov

@@ -980,7 +980,7 @@ add_ideas = {
 	SOV_mikhail_tukhachevsky = { SOV_purge_character_effect = yes }
 	SOV_aleksandr_yegorov = { SOV_purge_character_effect = yes }
 	SOV_vasily_blyukher = { SOV_purge_character_effect = yes }
-	SOV_vitaly_primakov = { SOV_purge_character_effect = yes }
+	# SOV_vitaly_primakov = { SOV_purge_character_effect = yes }
 	SOV_nikolay_bukharin = { SOV_purge_character_effect = yes }
 	SOV_aleksey_rykov = { SOV_purge_character_effect = yes }
 	SOV_mikhail_tomsky = { SOV_purge_character_effect = yes }

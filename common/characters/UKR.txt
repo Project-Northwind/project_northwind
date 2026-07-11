@@ -1,6 +1,24 @@
 characters = {
 
 	# Country Leaders
+	UKR_pavlo_skoropadsky = {
+		
+		name = UKR_pavlo_skoropadsky
+
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Europe_Generic_land_4
+			}
+		}
+
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1"
+			id = -1
+			traits = { }
+		}
+	}
+
 	UKR_kost_levytsky = {
 		name = UKR_kost_levytsky
 		portraits = {
@@ -46,20 +64,7 @@ characters = {
 		}
 	}
 
-	UKR_pavlo_skoropadskyi = {
-		name = UKR_pavlo_skoropadskyi
-		portraits = {
-			civilian = {
-				large = GFX_Portrait_Europe_Generic_land_4
-			}
-		}
-		country_leader = {
-			ideology = despotism
-			expire = "1953.3.1"
-			id = -1
-			traits = { }
-		}
-	}
+
 
 	# Military
 
