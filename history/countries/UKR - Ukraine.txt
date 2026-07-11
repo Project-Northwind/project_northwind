@@ -75,6 +75,7 @@ if = {
 	}
 }
 
+recruit_character = UKR_pavlo_skoropadskyi
 recruit_character = UKR_mykhailo_omelianovych_pavlenko
 recruit_character = UKR_stepan_bandera
 recruit_character = UKR_nikita_krushchyov
@@ -82,5 +83,13 @@ recruit_character = UKR_kost_levytsky
 recruit_character = IA_olga_taratuta 
 recruit_character = UKR_pavlo_shandruk 
 
-
-
+# Former SOV Characters
+recruit_character = UKR_ivan_chernyakhovsky
+recruit_character = UKR_rodion_malinovsky
+recruit_character = UKR_vitaly_primakov
+recruit_character = UKR_sergey_gorshkov
+recruit_character = UKR_gordey_levchenko
+recruit_character = UKR_semyon_timoshenko
+recruit_character = UKR_stepan_krasovsky
+recruit_character = UKR_sergey_rudenko
+recruit_character = UKR_sergey_korolyov
