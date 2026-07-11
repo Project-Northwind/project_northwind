@@ -1,5 +1,5 @@
 focus_tree = {
-	id = norrmans_generic_focus_tree
+	id = project_northwind_generic_focus_tree
 	country = {
 		factor = 5
 	}
@@ -97,6 +97,215 @@ focus_tree = {
 		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_political_neutrality_one }
 		x = -2
 		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_government_of_national_reform
+		icon = GFX_focus_AFG_parliamentary_democracy
+		prerequisite = { focus = GENERIC_political_democracy_one }
+		relative_position_id = GENERIC_political_democracy_one
+		mutually_exclusive = { focus = GENERIC_political_democracy_conservative }
+		x = -2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_political_democracy_conservative
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_political_democracy_one }
+		relative_position_id = GENERIC_political_democracy_one
+		mutually_exclusive = { focus = GENERIC_government_of_national_reform }
+		x = 2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_land_to_the_tillers
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = GENERIC_government_of_national_reform }
+		relative_position_id = GENERIC_government_of_national_reform
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_universal_suffrage
+		icon = GFX_focus_generic_election
+		prerequisite = { focus = GENERIC_government_of_national_reform }
+		relative_position_id = GENERIC_government_of_national_reform
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_free_press_and_assembly
+		icon = GFX_focus_generic_printing_press
+		prerequisite = { focus = GENERIC_land_to_the_tillers }
+		prerequisite = { focus = GENERIC_universal_suffrage }
+		relative_position_id = GENERIC_land_to_the_tillers
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_country_civic_guard
+		icon = GFX_focus_CZE_demonstration_of_military_achievements
+		prerequisite = { focus = GENERIC_free_press_and_assembly }
+		relative_position_id = GENERIC_free_press_and_assembly
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_sideline_reactionary_elements
+		icon = GFX_focus_focus_fra_fascist_threat
+		prerequisite = { focus = GENERIC_free_press_and_assembly }
+		relative_position_id = GENERIC_free_press_and_assembly
+		x = 2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_establish_intelligence_agency
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = GENERIC_sideline_reactionary_elements }
+		relative_position_id = GENERIC_sideline_reactionary_elements
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_collective_security
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = GENERIC_free_press_and_assembly }
+		relative_position_id = GENERIC_free_press_and_assembly
+		x = 0
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_country_foreign_legion
+		icon = GFX_focus_PER_limit_foreign_influence
+		prerequisite = { focus = GENERIC_collective_security }
+		relative_position_id = GENERIC_collective_security
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_a_popular_front
+		icon = GFX_focus_generic_democratic_europe
+		prerequisite = { focus = GENERIC_collective_security }
+		relative_position_id = GENERIC_collective_security
+		mutually_exclusive = { focus = GENERIC_prioritize_internal_security }
+		x = -1
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_prioritize_internal_security
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = GENERIC_collective_security }
+		relative_position_id = GENERIC_collective_security
+		mutually_exclusive = { focus = GENERIC_a_popular_front }
+		x = 1
+		y = 2
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
