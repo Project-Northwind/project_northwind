@@ -317,6 +317,92 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GENERIC_national_research_institute
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = GENERIC_prioritize_internal_security focus = GENERIC_a_popular_front }
+		relative_position_id = GENERIC_prioritize_internal_security
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_secure_the_homefront
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = GENERIC_prioritize_internal_security }
+		relative_position_id = GENERIC_prioritize_internal_security
+		x = 3
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_a_bastion_of_democracy
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = GENERIC_prioritize_internal_security }
+		relative_position_id = GENERIC_prioritize_internal_security
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_state_of_armed_neutrality
+		icon = GFX_focus_ARG_defense_and_democracy
+		prerequisite = { focus = GENERIC_a_bastion_of_democracy }
+		prerequisite = { focus = GENERIC_secure_the_homefront }
+		relative_position_id = GENERIC_secure_the_homefront
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_a_popular_fronts
+		icon = GFX_focus_generic_democratic_europe
+		prerequisite = { focus = GENERIC_a_popular_front }
+		relative_position_id = GENERIC_a_popular_front
+		x = -1
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
 		id = GENERIC_political_neutrality_one
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
