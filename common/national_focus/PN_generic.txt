@@ -386,12 +386,63 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_a_popular_fronts
+		id = GENERIC_remilitarization_plan
 		icon = GFX_focus_generic_democratic_europe
 		prerequisite = { focus = GENERIC_a_popular_front }
 		relative_position_id = GENERIC_a_popular_front
 		x = -1
 		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_a_new_entente_system
+		icon = GFX_focus_generic_democratic_europe
+		prerequisite = { focus = GENERIC_remilitarization_plan }
+		relative_position_id = GENERIC_remilitarization_plan
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_protect_democratic_institutions
+		icon = GFX_focus_generic_democratic_europe
+		prerequisite = { focus = GENERIC_remilitarization_plan }
+		relative_position_id = GENERIC_remilitarization_plan
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_export_the_country_model
+		icon = GFX_focus_generic_democratic_europe
+		prerequisite = { focus = GENERIC_protect_democratic_institutions }
+		relative_position_id = GENERIC_protect_democratic_institutions
+		x = 0
+		y = 1
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -658,7 +709,6 @@ focus_tree = {
 					tooltip = GENERIC_communist_europe_faction_tt
 					any_other_country = {
 						capital_scope = {
-							is_core_of = PREV
 							is_on_continent = europe
 						}
 						has_government = communism
@@ -676,7 +726,6 @@ focus_tree = {
 					tooltip = GENERIC_communist_north_america_faction_tt
 					any_other_country = {
 						capital_scope = {
-							is_core_of = PREV
 							is_on_continent = north_america
 						}
 						has_government = communism
@@ -694,7 +743,6 @@ focus_tree = {
 					tooltip = GENERIC_communist_south_america_faction_tt
 					any_other_country = {
 						capital_scope = {
-							is_core_of = PREV
 							is_on_continent = south_america
 						}
 						has_government = communism
@@ -712,7 +760,6 @@ focus_tree = {
 					tooltip = GENERIC_communist_africa_faction_tt
 					any_other_country = {
 						capital_scope = {
-							is_core_of = PREV
 							is_on_continent = africa
 						}
 						has_government = communism
@@ -730,7 +777,6 @@ focus_tree = {
 					tooltip = GENERIC_communist_middle_east_faction_tt
 					any_other_country = {
 						capital_scope = {
-							is_core_of = PREV
 							is_on_continent = middle_east
 						}
 						has_government = communism
@@ -748,7 +794,6 @@ focus_tree = {
 					tooltip = GENERIC_communist_australia_faction_tt
 					any_other_country = {
 						capital_scope = {
-							is_core_of = PREV
 							is_on_continent = australia
 						}
 						has_government = communism
@@ -766,14 +811,13 @@ focus_tree = {
 					tooltip = GENERIC_communist_asia_faction_tt
 					any_other_country = {
 						capital_scope = {
-							is_core_of = PREV
 							is_on_continent = asia
 						}
 						has_government = communism
 						is_faction_leader = yes
 					}
 				}
-			}			
+			}	
 		}
 		
 		completion_reward = {
@@ -1110,15 +1154,24 @@ focus_tree = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_europe_minor_faction_tt
-					any_other_country = {
-						capital_scope = {
-							is_core_of = PREV
-							is_on_continent = europe
-						}
-						has_government = communism
-						AND = {
-							original_tag = SOV
+					NOT = {
+						any_other_country = {
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = europe
+							}
+							has_government = communism
 							is_faction_leader = yes
+							NOT = {
+								OR = {
+									original_tag = SOV
+									original_tag = ENG
+									original_tag = FRA
+									original_tag = GER
+									original_tag = ITA
+									original_tag = JAP
+								}
+							}
 						}
 					}
 				}
@@ -1134,15 +1187,24 @@ focus_tree = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_north_america_minor_faction_tt
-					any_other_country = {
-						capital_scope = {
-							is_core_of = PREV
-							is_on_continent = north_america
-						}
-						has_government = communism
-						AND = {
-							original_tag = SOV
+					NOT = {
+						any_other_country = {
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = north_america
+							}
+							has_government = communism
 							is_faction_leader = yes
+							NOT = {
+								OR = {
+									original_tag = SOV
+									original_tag = ENG
+									original_tag = FRA
+									original_tag = GER
+									original_tag = ITA
+									original_tag = JAP
+								}
+							}
 						}
 					}
 				}
@@ -1158,15 +1220,24 @@ focus_tree = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_south_america_minor_faction_tt
-					any_other_country = {
-						capital_scope = {
-							is_core_of = PREV
-							is_on_continent = south_america
-						}
-						has_government = communism
-						AND = {
-							original_tag = SOV
+					NOT = {
+						any_other_country = {
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = south_america
+							}
+							has_government = communism
 							is_faction_leader = yes
+							NOT = {
+								OR = {
+									original_tag = SOV
+									original_tag = ENG
+									original_tag = FRA
+									original_tag = GER
+									original_tag = ITA
+									original_tag = JAP
+								}
+							}
 						}
 					}
 				}
@@ -1182,15 +1253,24 @@ focus_tree = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_africa_minor_faction_tt
-					any_other_country = {
-						capital_scope = {
-							is_core_of = PREV
-							is_on_continent = africa
-						}
-						has_government = communism
-						AND = {
-							original_tag = SOV
+					NOT = {
+						any_other_country = {
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = africa
+							}
+							has_government = communism
 							is_faction_leader = yes
+							NOT = {
+								OR = {
+									original_tag = SOV
+									original_tag = ENG
+									original_tag = FRA
+									original_tag = GER
+									original_tag = ITA
+									original_tag = JAP
+								}
+							}
 						}
 					}
 				}
@@ -1206,15 +1286,24 @@ focus_tree = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_middle_east_minor_faction_tt
-					any_other_country = {
-						capital_scope = {
-							is_core_of = PREV
-							is_on_continent = middle_east
-						}
-						has_government = communism
-						AND = {
-							original_tag = SOV
+					NOT = {
+						any_other_country = {
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = middle_east
+							}
+							has_government = communism
 							is_faction_leader = yes
+							NOT = {
+								OR = {
+									original_tag = SOV
+									original_tag = ENG
+									original_tag = FRA
+									original_tag = GER
+									original_tag = ITA
+									original_tag = JAP
+								}
+							}
 						}
 					}
 				}
@@ -1230,15 +1319,24 @@ focus_tree = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_australia_minor_faction_tt
-					any_other_country = {
-						capital_scope = {
-							is_core_of = PREV
-							is_on_continent = australia
-						}
-						has_government = communism
-						AND = {
-							original_tag = SOV
+					NOT = {
+						any_other_country = {
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = australia
+							}
+							has_government = communism
 							is_faction_leader = yes
+							NOT = {
+								OR = {
+									original_tag = SOV
+									original_tag = ENG
+									original_tag = FRA
+									original_tag = GER
+									original_tag = ITA
+									original_tag = JAP
+								}
+							}
 						}
 					}
 				}
@@ -1254,15 +1352,24 @@ focus_tree = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_asia_minor_faction_tt
-					any_other_country = {
-						capital_scope = {
-							is_core_of = PREV
-							is_on_continent = asia
-						}
-						has_government = communism
-						AND = {
-							original_tag = SOV
+					NOT = {
+						any_other_country = {
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = asia
+							}
+							has_government = communism
 							is_faction_leader = yes
+							NOT = {
+								OR = {
+									original_tag = SOV
+									original_tag = ENG
+									original_tag = FRA
+									original_tag = GER
+									original_tag = ITA
+									original_tag = JAP
+								}
+							}
 						}
 					}
 				}
