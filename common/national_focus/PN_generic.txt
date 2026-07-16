@@ -90,7 +90,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_democracy_one
+		id = GENERIC_a_bastion_of_freedom
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
@@ -104,14 +104,27 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
 		id = GENERIC_government_of_national_reform
 		icon = GFX_focus_AFG_parliamentary_democracy
-		prerequisite = { focus = GENERIC_political_democracy_one }
-		relative_position_id = GENERIC_political_democracy_one
+		prerequisite = { focus = GENERIC_a_bastion_of_freedom }
+		relative_position_id = GENERIC_a_bastion_of_freedom
 		mutually_exclusive = { focus = GENERIC_political_democracy_conservative }
 		x = -2
 		y = 1
@@ -121,17 +134,37 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		available = {
+			democratic > 0.45
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_government_of_national_reform_sub_ideology_change_tt
 			set_country_leader_ideology = liberalism
 			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
 		}
 	}
 	focus = {
 		id = GENERIC_political_democracy_conservative
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = GENERIC_political_democracy_one }
-		relative_position_id = GENERIC_political_democracy_one
+		prerequisite = { focus = GENERIC_a_bastion_of_freedom }
+		relative_position_id = GENERIC_a_bastion_of_freedom
 		mutually_exclusive = { focus = GENERIC_government_of_national_reform }
 		x = 2
 		y = 1
@@ -473,7 +506,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
-		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_political_democracy_one }
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_a_bastion_of_freedom }
 		x = 2
 		y = 1
 		cost = 10
@@ -491,7 +524,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
-		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_political_democracy_one focus = GENERIC_political_neutrality_one }
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_a_bastion_of_freedom focus = GENERIC_political_neutrality_one }
 		x = 12
 		y = 1
 		cost = 10
@@ -509,7 +542,7 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		relative_position_id = GENERIC_political_focus_one
 		prerequisite = { focus = GENERIC_political_focus_one }
-		mutually_exclusive = { focus = GENERIC_political_democracy_one focus = GENERIC_political_neutrality_one focus = GENERIC_strengthen_paramilitaries }
+		mutually_exclusive = { focus = GENERIC_a_bastion_of_freedom focus = GENERIC_political_neutrality_one focus = GENERIC_strengthen_paramilitaries }
 		x = -12
 		y = 1
 		cost = 5
@@ -518,6 +551,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = GENERIC_empower_the_unions_idea
 			add_popularity = {
 				ideology = communism
