@@ -218,6 +218,13 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_rule = {
+				can_generate_female_unit_leaders = yes
+			}
+			set_rule = {
+				can_generate_female_aces = yes
+			}
 		}
 	}
 	focus = {
@@ -235,7 +242,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_political_power = 25
+			add_ideas = GENERIC_free_press_and_assembly_idea
 		}
 	}
 	focus = {
@@ -252,7 +260,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_country_civic_guard_idea_1
 		}
 	}
 	focus = {
@@ -269,7 +277,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
@@ -286,7 +301,40 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				create_intelligence_agency = yes
+				custom_effect_tooltip = generic_skip_one_line_tt
+				upgrade_intelligence_agency = upgrade_anti_partisan
+				upgrade_intelligence_agency = upgrade_passive_defense
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_stability = 0.05
+				add_political_power = 50
+			}
+			else = {
+				add_ideas = GENERIC_internal_affairs_division_idea
+				add_stability = 0.10
+				add_political_power = 50
+			}
+			if = {
+				limit = {
+					has_tech = tech_military_police
+				}
+				add_tech_bonus = {
+					name = mp_focus
+					bonus = 1
+					uses = 1
+					category = military_police_tech
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = tech_military_police }
+				}
+				set_technology = { tech_military_police = 1 }
+			}
 		}
 	}
 	focus = {
@@ -303,7 +351,58 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_neighbor_of = ROOT
+						has_government = democratic
+					}
+					ROOT = {
+						give_guarantee = PREV
+					}
+				}
+				every_country = {
+					limit = {
+						is_neighbor_of = ROOT
+						NOT = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+					ROOT = {
+						add_opinion_modifier = {
+							target = PREV
+							modifier = large_increase
+						}
+						reverse_add_opinion_modifier = {
+							target = PREV
+							modifier = large_increase
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = GENERIC_guarantee_democratic_neighbor_tt
+			effect_tooltip = {
+				every_country = {
+					limit = {
+						is_neighbor_of = ROOT
+						has_government = democratic
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_improve_relations_non_extreme_tt
+			effect_tooltip = {
+				every_country = {
+					limit = {
+						is_neighbor_of = ROOT
+						NOT = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -319,8 +418,15 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		available = {
+			has_idea = GENERIC_country_civic_guard_idea_1
+		}
+
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			swap_ideas = {
+				remove_idea = GENERIC_country_civic_guard_idea_1
+				add_idea = GENERIC_country_civic_guard_idea_2
+			}
 		}
 	}
 	focus = {
@@ -361,7 +467,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_national_research_institute
-		icon = GFX_focus_ARG_defense_and_democracy
+		icon = GFX_focus_research2
 		prerequisite = { focus = GENERIC_prioritize_internal_security focus = GENERIC_a_popular_front }
 		relative_position_id = GENERIC_prioritize_internal_security
 		x = -1
@@ -383,7 +489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_secure_the_homefront
-		icon = GFX_focus_ARG_defense_and_democracy
+		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = GENERIC_prioritize_internal_security }
 		relative_position_id = GENERIC_prioritize_internal_security
 		x = 3
@@ -400,7 +506,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_a_bastion_of_democracy
-		icon = GFX_focus_ARG_defense_and_democracy
+		icon = GFX_goal_fortify_the_westwall
 		prerequisite = { focus = GENERIC_prioritize_internal_security }
 		relative_position_id = GENERIC_prioritize_internal_security
 		x = 1
@@ -417,7 +523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_state_of_armed_neutrality
-		icon = GFX_focus_ARG_defense_and_democracy
+		icon = GFX_focus_SWE_let_fly_all_guns
 		prerequisite = { focus = GENERIC_a_bastion_of_democracy }
 		prerequisite = { focus = GENERIC_secure_the_homefront }
 		relative_position_id = GENERIC_secure_the_homefront
@@ -435,7 +541,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_remilitarization_plan
-		icon = GFX_focus_generic_democratic_europe
+		icon = GFX_focus_generic_military_industry
 		prerequisite = { focus = GENERIC_a_popular_front }
 		relative_position_id = GENERIC_a_popular_front
 		x = -1
@@ -452,7 +558,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_a_new_entente_system
-		icon = GFX_focus_generic_democratic_europe
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_remilitarization_plan }
 		relative_position_id = GENERIC_remilitarization_plan
 		x = -1
@@ -469,7 +575,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_protect_democratic_institutions
-		icon = GFX_focus_generic_democratic_europe
+		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = GENERIC_remilitarization_plan }
 		relative_position_id = GENERIC_remilitarization_plan
 		x = 1
@@ -486,7 +592,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_export_the_country_model
-		icon = GFX_focus_generic_democratic_europe
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = GENERIC_protect_democratic_institutions }
 		relative_position_id = GENERIC_protect_democratic_institutions
 		x = 0
@@ -691,11 +797,13 @@ focus_tree = {
 				limit = {
 					has_dlc = "La Resistance"
 				}
-				add_stability = 0.05
-				add_political_power = 50
 				create_intelligence_agency = yes
+				custom_effect_tooltip = generic_skip_one_line_tt
 				upgrade_intelligence_agency = upgrade_interrogation_techniques
 				upgrade_intelligence_agency = upgrade_diplo_training
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_stability = 0.05
+				add_political_power = 50
 			}
 			else = {
 				add_ideas = GENERIC_state_security_apparatus_idea

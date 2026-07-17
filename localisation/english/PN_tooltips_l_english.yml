@@ -20,3 +20,6 @@
   GENERIC_communist_asia_minor_faction_tt: "There is a not §YMinor Communist Faction Leader§! in §YAsia§!"
   GENERIC_communist_country_red_army_decisions_improve_tt: "Unlocks Decisions to §YImprove§! the §Y[ROOT.GetAdjective] Red Army§!"
   GENERIC_communism_wargoal_generation_continent_tt: "Unlocks Decisions to §YGenerate Wargoals§! on §YNon-Communist Neighboring Countries§!"
+ # Focus Tree Effects
+  GENERIC_guarantee_democratic_neighbor_tt: "We will §YGuarantee§! any §YNeighboring Country§! that is §YDemocratic§!.\n\nCurrent Countries are:"
+  GENERIC_improve_relations_non_extreme_tt: "We will gain an §YIncreased Opinion§! of §G+25§! with any §YNeighboring Country§! which is neither §YCommunist§! nor §YFascist§!.\n\nCurrent Countries are:"
