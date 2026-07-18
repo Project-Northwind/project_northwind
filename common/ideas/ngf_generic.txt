@@ -324,5 +324,48 @@ ideas = {
 				political_power_gain = 0.10
 			}
 		}
+		GENERIC_prioritize_internal_security_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			name = GENERIC_prioritize_internal_security
+
+			picture = neutrality_idea
+
+			modifier = {
+				join_faction_tension = 1
+				generate_wargoal_tension = 0.75
+				ai_badass_factor = 0.01
+				ai_focus_defense_factor = 1
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		GENERIC_prioritize_internal_security_idea_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			name = GENERIC_prioritize_internal_security
+
+			picture = neutrality_idea
+
+			modifier = {
+				join_faction_tension = 1
+				generate_wargoal_tension = 0.75
+				industrial_capacity_factory = 0.1
+				industry_repair_factor = 0.1
+				conversion_cost_civ_to_mil_factor = 0.2
+				ai_badass_factor = 0.01
+				ai_focus_defense_factor = 1
+				ai_get_ally_desire_factor = -100
+			}
+		}
 	}
 }

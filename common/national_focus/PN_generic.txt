@@ -462,7 +462,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_prioritize_internal_security_idea
 		}
 	}
 	focus = {
