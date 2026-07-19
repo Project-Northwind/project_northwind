@@ -1,0 +1,25 @@
+units = {
+	###### NAVAL UNITS ######
+	fleet = {
+		name = "Kozatskyi Flot"
+		naval_base = 11670 # Odessa
+		task_force = {
+			name = "Chornomorska Eskadra"
+			location = 11670 # Odessa
+			ship = { name = "UDS Bohdan Khmelnytsky" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = UKR version_name = "Bohdan Khmelnytsky Class" } } }
+			ship = { name = "UDS Hetman Petro Sahaidachny" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = UKR version_name = "Hetman Petro Sahaidachny Class" } } }
+			ship = { name = "UDS Hetman Pylyp Orlyk" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = UKR version_name = "Hetman Petro Sahaidachny Class" } } }
+			ship = { name = "UDS Hetman Ivan Mazepa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = UKR version_name = "Hetman Ivan Mazepa Class" } } }
+			ship = { name = "UDS Bug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = UKR version_name = "Bug Class" } } }
+			ship = { name = "UDS Dnipro" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = UKR version_name = "Dnipro Class" } } }
+			ship = { name = "UDS Dnister" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = UKR version_name = "Dnipro Class" } } }
+			ship = { name = "UDS Desna" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = UKR version_name = "Dnipro Class" } } }
+		}
+		task_force = {
+			name = "Pidvodna Flotylia"
+			location = 11683 # Mykolaiv
+			ship = { name = "UDS Ivan Sirko" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = UKR version_name = "Ivan Sirko Class" } } }
+			ship = { name = "UDS Maksym Zalizniak" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = UKR version_name = "Maksym Zalizniak Class" } } }
+		}
+	}
+}

@@ -1,0 +1,120 @@
+##### UKRAINSKA DERZHAVA NAME LISTS #####
+### BATTLESHIP NAMES — Cossack Hetmans (prestige tier) ###
+UKR_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { UKR }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "UDS "
+	fallback_name = "Linkor %d"
+
+	unique = {
+		"Bohdan Khmelnytsky" "Ivan Skoropadsky" "Danylo Apostol" "Kyrylo Rozumovsky"
+	}
+}
+
+### LIGHT CRUISER NAMES — Cossack Hetmans ###
+UKR_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { UKR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "UDS "
+	fallback_name = "Lehkyi Kreiser %d"
+
+	unique = {
+		"Hetman Ivan Mazepa" "Hetman Petro Sahaidachny" "Hetman Pylyp Orlyk" 
+		"Ivan Vyhovsky" "Petro Doroshenko" "Ivan Samoylovych"
+	}
+}
+
+### HEAVY CRUISER NAMES — Cossack Hetmans (reserve tier) ###
+UKR_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { UKR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "UDS "
+	fallback_name = "Vazhkyi Kreiser %d"
+
+	unique = {
+		"Yuri Khmelnytsky" "Demyan Mnohohrishny" "Pavlo Skoropadskyi"
+	}
+}
+
+### DESTROYER NAMES — Rivers ###
+UKR_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { UKR }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "UDS "
+	fallback_name = "Esminets %d"					
+
+	unique = {											
+		"Bug" "Dnipro" "Dnister" "Desna" "Prut" "Inhulets" "Psel" "Vorskla" "Ros" "Sluch"
+	}
+}
+
+### SUBMARINE NAMES — Cossack folk heroes ###
+UKR_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { UKR }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine ship_hull_midget_submarine }
+	
+	prefix = "UDS "
+	fallback_name = "Pidvodnyi Choven %d"
+	
+	unique = {
+		"Ivan Sirko" "Maksym Zalizniak" "Severyn Nalyvaiko" "Taras Fedorovych" "Ivan Bohun"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES — Cossack landmarks (minimal/symbolic, no historical tradition) ###
+UKR_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { UKR }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "UDS "
+	fallback_name = "Avianosets %d"	
+
+	unique = {
+		"Zaporizhzhia" "Poltava"
+	}
+}
+
+### BATTLECRUISER NAMES — reserve, Cossack Hetmans ###
+UKR_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { UKR }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "UDS "
+	fallback_name = "Liniinyi Kreiser %d"		
+
+	unique = {
+		"Pavlo Teteria" "Ivan Briukhovetsky"
+	}
+}

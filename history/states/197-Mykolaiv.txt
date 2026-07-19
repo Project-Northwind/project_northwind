@@ -13,7 +13,11 @@ state={
 		owner = UKR
 		buildings = {
 			infrastructure = 3 #was: 5
-			dockyard = 1
+			dockyard = 2
+			11683 ={
+				naval_base = 3
+				coastal_bunker = 1
+			}
 		}
 		add_core_of = UKR
 	}

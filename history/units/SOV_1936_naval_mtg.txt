@@ -40,7 +40,6 @@ units= {
 			location = 3151 # Leningrad
 			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SOV version_name = "Marat Class" } } }
 			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SOV version_name = "Marat Class" } } }
-			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Marti Class" } } }
 			# 3ya Flotiliya Esmintsev
 			ship = { name = "Engels" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }
 			ship = { name = "Artyom" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }
@@ -94,12 +93,13 @@ units= {
 			name = "Chernomorskiy Flot"
 			location = 3686 # Sevastopopl
 			ship = { name = "Parizhskaya Kommuna" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SOV version_name = "Marat Class" } } }
-			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Chervona Ukraina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Chervona Ukraina Class" } } }
-			ship = { name = "Komintern" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Komintern Class" } } }
-			ship = { name = "Bug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Bug Class" } } }
-		}	
+			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Chervona Ukraina Class" } } }	
+			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Marti Class" } } }
+			ship = { name = "Leningrad" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Leningrad & Minsk Class" } } }
+			ship = { name = "Moskva" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Leningrad & Minsk Class" } } }
+			ship = { name = "Kharkov" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Leningrad & Minsk Class" } } }
+			ship = { name = "Minsk" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Leningrad & Minsk Class" } } }
+		}
 		task_force = {	
 			name = "Chernomorskiy Podvodniy Flot"
 			location = 3686 # Sevastopopl
@@ -165,29 +165,6 @@ units= {
 instant_effect = {
 
 	### Ships Under Construction Notes ###
-	# DD: Leningrad & Minsk variant (x4) ("Leningrad" "Moskva" "Kharkov" "Minsk")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "SOV"
-			version_name = "Leningrad & Minsk Class"
-		}
-		requested_factories = 1
-		progress = 0.70
-		amount = 2
-		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "SOV"
-			version_name = "Leningrad & Minsk Class"
-		}
-		requested_factories = 1
-		progress = 0.60
-		amount = 2
-		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
-	}
 	#CA Kirov Class (Kirov)
 	add_equipment_production = {
 		equipment = {
