@@ -340,14 +340,42 @@ units = {
 }
 
 ### Starting Production ###
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "LAT"
+			creator = LAT
 		}
 		requested_factories = 1
-		progress = 0.25
-		efficiency = 100
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = LAT 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = LAT 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = train_equipment_1
+			creator = LAT
+		}
+		requested_factories = 1
+		progress = 0.6
+		efficiency = 50
 	}
 }
