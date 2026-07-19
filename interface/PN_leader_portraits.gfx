@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_GER_regent_council"
+		texturefile = "gfx/leaders/GER/GER_regent_seat.dds"
+	}
+}

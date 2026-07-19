@@ -1,5 +1,7 @@
-﻿l_english: 
-  # Ukraine
+﻿l_english:
+  # GER
+  GER_regent_council: "Regent Council"
+  # UKR
   UKR_pavlo_skoropadsky: "Pavlo Skoropadsky"
   UKR_ivan_chernyakhovsky: "Ivan Chernyakhovsky"
   UKR_rodion_malinovsky: "Rodion Malinovsky"
