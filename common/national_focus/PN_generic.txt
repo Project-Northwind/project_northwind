@@ -125,7 +125,7 @@ focus_tree = {
 		icon = GFX_focus_AFG_parliamentary_democracy
 		prerequisite = { focus = GENERIC_a_bastion_of_freedom }
 		relative_position_id = GENERIC_a_bastion_of_freedom
-		mutually_exclusive = { focus = GENERIC_political_democracy_conservative }
+		mutually_exclusive = { focus = GENERIC_government_of_national_order }
 		x = -2
 		y = 1
 		cost = 10
@@ -161,7 +161,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_democracy_conservative
+		id = GENERIC_government_of_national_order
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = GENERIC_a_bastion_of_freedom }
 		relative_position_id = GENERIC_a_bastion_of_freedom
@@ -251,7 +251,7 @@ focus_tree = {
 		icon = GFX_focus_CZE_demonstration_of_military_achievements
 		prerequisite = { focus = GENERIC_free_press_and_assembly }
 		relative_position_id = GENERIC_free_press_and_assembly
-		x = -1
+		x = 1
 		y = 1
 		cost = 10
 	
@@ -268,7 +268,7 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_fascist_threat
 		prerequisite = { focus = GENERIC_free_press_and_assembly }
 		relative_position_id = GENERIC_free_press_and_assembly
-		x = 2
+		x = -2
 		y = 1
 		cost = 10
 	
@@ -434,7 +434,7 @@ focus_tree = {
 		icon = GFX_focus_generic_democratic_europe
 		prerequisite = { focus = GENERIC_collective_security }
 		relative_position_id = GENERIC_collective_security
-		mutually_exclusive = { focus = GENERIC_prioritize_internal_security }
+		mutually_exclusive = { focus = GENERIC_balance_of_power_diplomacy focus = GENERIC_prioritize_internal_security }
 		x = -1
 		y = 2
 		cost = 10
@@ -450,10 +450,10 @@ focus_tree = {
 	focus = {
 		id = GENERIC_prioritize_internal_security
 		icon = GFX_focus_ARG_defense_and_democracy
-		prerequisite = { focus = GENERIC_collective_security }
+		prerequisite = { focus = GENERIC_collective_security focus = GENERIC_the_officers_club }
 		relative_position_id = GENERIC_collective_security
-		mutually_exclusive = { focus = GENERIC_a_popular_front }
-		x = 1
+		mutually_exclusive = { focus = GENERIC_a_popular_front focus = GENERIC_balance_of_power_diplomacy }
+		x = 2
 		y = 2
 		cost = 10
 	
@@ -466,10 +466,32 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GENERIC_national_defense_institute
+		icon = GFX_focus_research2
+		prerequisite = { focus = GENERIC_prioritize_internal_security }
+		relative_position_id = GENERIC_prioritize_internal_security
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			num_of_factories > 45
+			amount_research_slots < 5
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
 		id = GENERIC_national_research_institute
 		icon = GFX_focus_research2
-		prerequisite = { focus = GENERIC_prioritize_internal_security focus = GENERIC_a_popular_front }
-		relative_position_id = GENERIC_prioritize_internal_security
+		prerequisite = { focus = GENERIC_a_popular_front }
+		relative_position_id = GENERIC_a_popular_front
 		x = -1
 		y = 1
 		cost = 10
@@ -492,7 +514,7 @@ focus_tree = {
 		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = GENERIC_prioritize_internal_security }
 		relative_position_id = GENERIC_prioritize_internal_security
-		x = 3
+		x = 2
 		y = 1
 		cost = 10
 	
@@ -509,7 +531,7 @@ focus_tree = {
 		icon = GFX_goal_fortify_the_westwall
 		prerequisite = { focus = GENERIC_prioritize_internal_security }
 		relative_position_id = GENERIC_prioritize_internal_security
-		x = 1
+		x = -2
 		y = 1
 		cost = 10
 	
@@ -527,7 +549,7 @@ focus_tree = {
 		prerequisite = { focus = GENERIC_a_bastion_of_democracy }
 		prerequisite = { focus = GENERIC_secure_the_homefront }
 		relative_position_id = GENERIC_secure_the_homefront
-		x = -1
+		x = -2
 		y = 1
 		cost = 10
 	
@@ -544,7 +566,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_industry
 		prerequisite = { focus = GENERIC_a_popular_front }
 		relative_position_id = GENERIC_a_popular_front
-		x = -1
+		x = 0
 		y = 2
 		cost = 10
 	
@@ -605,6 +627,207 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_protect_corporate_interests
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = GENERIC_government_of_national_order }
+		relative_position_id = GENERIC_government_of_national_order
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_trade_protection
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = GENERIC_government_of_national_order }
+		relative_position_id = GENERIC_government_of_national_order
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_maintain_order_and_respectability
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = GENERIC_protect_corporate_interests }
+		prerequisite = { focus = GENERIC_trade_protection }
+		relative_position_id = GENERIC_protect_corporate_interests
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_country_order_guard
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = GENERIC_maintain_order_and_respectability }
+		relative_position_id = GENERIC_maintain_order_and_respectability
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_silence_the_reds
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = GENERIC_maintain_order_and_respectability }
+		relative_position_id = GENERIC_maintain_order_and_respectability
+		x = 2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_establish_the_country_gendarmerie
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = GENERIC_silence_the_reds }
+		relative_position_id = GENERIC_silence_the_reds
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_the_officers_club
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = GENERIC_maintain_order_and_respectability }
+		relative_position_id = GENERIC_maintain_order_and_respectability
+		x = 0
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_balance_of_power_diplomacy
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = GENERIC_the_officers_club }
+		relative_position_id = GENERIC_the_officers_club
+		mutually_exclusive = { focus = GENERIC_a_popular_front focus = GENERIC_prioritize_internal_security }
+
+		x = 1
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_military_research_institute
+		icon = GFX_focus_research2
+		prerequisite = { focus = GENERIC_balance_of_power_diplomacy }
+		relative_position_id = GENERIC_balance_of_power_diplomacy
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			num_of_factories > 45
+			amount_research_slots < 5
+		}
+
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
