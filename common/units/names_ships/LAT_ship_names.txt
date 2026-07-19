@@ -1,0 +1,120 @@
+##### UNITED BALTIC STATES NAME LISTS #####
+### REGULAR DESTROYER NAMES — Estonian (Kalevipoeg epic heroes) ###
+LAT_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { LAT }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "UBS "
+	fallback_name = "Hävitaja %d"					
+
+	unique = {											
+		"Vambola" "Lennuk" "Sulev" "Olev" "Alev" "Kalev"
+	}
+}
+
+### LIGHT CRUISER NAMES — Estonian (counties, maakonnad) ###
+LAT_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { LAT }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "UBS "
+	fallback_name = "Kerge Ristleja %d"
+
+	unique = {
+		"Harjumaa" "Läänemaa" "Saaremaa" "Hiiumaa" "Pärnumaa" 
+		"Viljandimaa" "Tartumaa" "Võrumaa" "Valgamaa" "Järvamaa"
+	}
+}
+
+### HEAVY CRUISER NAMES — Estonian (War of Independence commanders) ###
+LAT_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { LAT }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "UBS "
+	fallback_name = "Raske Ristleja %d"
+
+	unique = {
+		"Johan Pitka" "Johan Laidoner" "Viktor Puskar" "Aleksander Tõnisson"
+	}
+}
+
+### BATTLESHIP NAMES — Estonian (founding heads of state, one per member nation) ###
+LAT_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { LAT }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "UBS "
+	fallback_name = "Lahingulaev %d"		
+
+	unique = {
+		"Konstantin Päts" "Kārlis Ulmanis" "Antanas Smetona"
+	}
+}
+
+### BATTLECRUISER NAMES — Estonian (founding diplomats/statesmen) ###
+LAT_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { LAT }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "UBS "
+	fallback_name = "Lahingristleja %d"		
+
+	unique = {
+		"Jaan Poska" "Augustinas Voldemaras" "Zigfrīds Meierovics"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES — Estonian (landmarks) ###
+LAT_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { LAT }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "UBS "
+	fallback_name = "Lennukikandja %d"	
+
+	unique = {
+		"Toompea" "Kadriorg"
+	}
+}
+
+### SUBMARINES — Latvian (Lāčplēsis epic + mythology) ###
+LAT_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { LAT }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine ship_hull_midget_submarine }
+	
+	prefix = "UBS "
+	fallback_name = "Zemūdene %d"
+	
+	unique = {
+		"Ronis" "Spīdola" "Lāčplēsis" "Laimdota" "Pērkons" "Māra"
+	}
+}

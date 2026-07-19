@@ -1,0 +1,151 @@
+﻿##### SWEDEN NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+SWE_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { SWE }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "HMS "
+	fallback_name = "Jagare %d"					
+
+	unique = {											
+		"Stockholm" "Göteborg" "Malmö" "Gävle" "Norrköping" "Visby" "Sundsvall" "Hälsingborg" 
+		"Kalmar" "Uppsala" "Örebro" "Linköping" "Umeå" "Jönköping" "Lund" "Borås" "Eskilstuna" 
+		"Södertälje" "Karlstad" "Växjö" "Halmstad" "Luleå" "Trollhättan" "Östersund" 
+		"Borlänge" "Falun" "Skövde" "Kristianstad" "Skellefteå" "Uddevalla" "Landskrona" 
+		"Motala" "Nyköping" "Karlskoga" "Piteå" "Varberg" "Vänersborg" "Enköping" "Ystad" "Trelleborg"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+SWE_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { SWE }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "HMS "
+	fallback_name = "Lätt Kryssare %d"
+
+	unique = {
+		"Blekinge" "Bohuslän" "Dalarna" "Dalsland" "Gotland" "Gästrikland" "Halland" "Hälsingland" 
+		"Härjedalen" "Jämtland" "Lappland" "Medelpad" "Norrbotten" "Närke" "Skåne" "Småland" 
+		"Södermanland" "Uppland" "Värmland" "Västerbotten" "Västergötland" 
+		"Västmanland" "Ångermanland" "Öland" "Östergötland"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+SWE_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { SWE }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "HMS "
+	fallback_name = "Tung Kryssare %d"
+
+	unique = {
+		"Klas Fleming" "Hans Wachtmeister" "Klas Uggla" "Klas Horn" "Ehrensköld" 
+		"Nordenskjöld" "Psilander" "Puke" "Ehrensvärd" "Cronstedt" "Trolle" "af Chapman" 
+		"Strömstierna" "von Platen" "Wrangel" "Bielke" "Ryning" "Scheel" "Sjöblad" 
+		"Tersmeden" "Nordenankar" "Anckarsvärd" "Sparre" "Gyllenstierna" "Cederström"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+SWE_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { SWE }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "HMS "
+	fallback_name = "Slagskepp %d"		
+
+	unique = {
+		"Gustav Vasa" "Gustav II Adolf" "Karl X Gustav" "Karl XI" "Karl XII"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+SWE_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { SWE }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "HMS "
+	fallback_name = "Stridsskepp %d"		
+
+	unique = {
+		"Kristina" "Ulrika Eleonora" "Gustav III" "Gustav IV Adolf" "Karl XIII" "Oscar I" "Karl XV" "Oscar II"
+	}
+}
+
+SWE_PZ_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_PZ
+
+	for_countries = { SWE }
+
+	type = ship
+	ship_types = { heavy_cruiser light_cruiser }
+	
+	fallback_name = "Pansarskepp %d"
+	prefix = "HMS "
+
+	unique = {
+		"Erik XIV" "Johan III" "Sigismund" "Karl IX"
+	}		 
+}
+
+### AIRCRAFT CARRIER NAMES ###
+SWE_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { SWE }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "HMS "
+	fallback_name = "Hangarfartyg %d"	
+
+	unique = {
+		"Drottningholm" "Gripsholm" "Läckö" "Ulriksdal" "Rosersberg" 
+		"Tullgarn" "Strömsholm" "Haga" "Solliden" "Vadstena" "Borgholm" "Bohus"
+	}
+}
+
+### SUBMARINES ###
+SWE_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { SWE }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine ship_hull_midget_submarine }
+	
+	prefix = "HMS "
+	fallback_name = "Ubåt %d"
+	
+	unique = {
+		"Näcken" "Draugen" "Havsfrun" "Sjörået" "Kraken" "Fossegrimmen" "Strömkarlen" 
+		"Nixen" "Bäckahästen" "Gasten" "Mylingen" "Bjära" "Vittran" "Skogsrået" 
+		"Bergatrollet" "Jätten" "Ymer" "Fenrisulven" "Midgårdsormen" "Lindormen" 
+		"Havsormen" "Storsjöodjuret" "Selma" "Skvader" "Tomten" "Älvan" "Trollkona" 
+		"Bergsrået" "Mareld" "Starkodder" "Styrbiörn" "Ivar Vidfamne"
+	}
+}

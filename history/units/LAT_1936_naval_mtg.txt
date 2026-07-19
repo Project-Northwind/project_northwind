@@ -1,0 +1,29 @@
+units = {
+	###### NAVAL UNITS ######
+	# Surface Ships "borrowed" from Russia
+	fleet = {
+		name = "Balti Liidu Laevastik"
+		naval_base = 3152 # Tallinn
+		task_force = {
+			name = "Trofee Eskaader"
+			location = 3152 # Tallinn
+			ship = { name = "UBS Diana" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = LAT version_name = "Diana Class" } } }
+			ship = { name = "UBS Vambola" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LAT version_name = "Vambola Class" } } }
+			ship = { name = "UBS Lennuk" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LAT version_name = "Vambola Class" } } }
+			ship = { name = "UBS Sulev" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LAT version_name = "Vambola Class" } } }
+			ship = { name = "UBS Olev" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = LAT version_name = "Vambola Class" } } }
+		}
+	}
+
+	# Submarines, purchased by Latvia in France, delivered to United Baltic States
+	fleet = {
+		name = "Baltijas Zemūdeņu Flotile"			
+		naval_base = 9340 # Riga
+		task_force = {
+			name = "Baltijas Zemūdeņu Flotile"
+			location =  9340 # Riga
+			ship = { name = "UBS Ronis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = LAT version_name = "Ronis Class" } } }
+			ship = { name = "UBS Spidola" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = LAT version_name = "Ronis Class" } } }
+		}					
+	}
+}
