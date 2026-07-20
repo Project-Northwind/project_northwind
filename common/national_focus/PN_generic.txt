@@ -467,7 +467,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_national_defense_institute
-		icon = GFX_focus_research2
+		icon = GFX_focus_research
 		prerequisite = { focus = GENERIC_prioritize_internal_security }
 		relative_position_id = GENERIC_prioritize_internal_security
 		x = 0
@@ -631,7 +631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_protect_corporate_interests
-		icon = GFX_focus_generic_farmland
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = GENERIC_government_of_national_order }
 		relative_position_id = GENERIC_government_of_national_order
 		x = -1
@@ -653,7 +653,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_trade_protection
-		icon = GFX_focus_generic_farmland
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = GENERIC_government_of_national_order }
 		relative_position_id = GENERIC_government_of_national_order
 		x = 1
@@ -675,7 +675,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_maintain_order_and_respectability
-		icon = GFX_focus_generic_farmland
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = GENERIC_protect_corporate_interests }
 		prerequisite = { focus = GENERIC_trade_protection }
 		relative_position_id = GENERIC_protect_corporate_interests
@@ -698,7 +698,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_country_order_guard
-		icon = GFX_focus_generic_farmland
+		icon = GFX_focus_GER_demonstration_of_military_achievements
 		prerequisite = { focus = GENERIC_maintain_order_and_respectability }
 		relative_position_id = GENERIC_maintain_order_and_respectability
 		x = -1
@@ -720,7 +720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_silence_the_reds
-		icon = GFX_focus_generic_farmland
+		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GENERIC_maintain_order_and_respectability }
 		relative_position_id = GENERIC_maintain_order_and_respectability
 		x = 2
@@ -742,7 +742,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_establish_the_country_gendarmerie
-		icon = GFX_focus_generic_farmland
+		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = GENERIC_silence_the_reds }
 		relative_position_id = GENERIC_silence_the_reds
 		x = 0
@@ -764,7 +764,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_the_officers_club
-		icon = GFX_focus_generic_farmland
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = GENERIC_maintain_order_and_respectability }
 		relative_position_id = GENERIC_maintain_order_and_respectability
 		x = 0
@@ -786,7 +786,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_mercenary_contracts
-		icon = GFX_focus_PER_limit_foreign_influence
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = GENERIC_the_officers_club }
 		relative_position_id = GENERIC_the_officers_club
 		x = 0
@@ -834,7 +834,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_military_research_institute
-		icon = GFX_focus_research2
+		icon = GFX_focus_generic_air_research_boost
 		prerequisite = { focus = GENERIC_balance_of_power_diplomacy }
 		relative_position_id = GENERIC_balance_of_power_diplomacy
 		x = 1
@@ -856,7 +856,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_draft_a_new_mobilization_plan
-		icon = GFX_focus_research2
+		icon = GFX_focus_SOV_mobilization_plan
 		prerequisite = { focus = GENERIC_balance_of_power_diplomacy }
 		relative_position_id = GENERIC_balance_of_power_diplomacy
 		x = 0
@@ -878,7 +878,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_prepare_for_the_red_menace
-		icon = GFX_focus_research2
+		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = GENERIC_draft_a_new_mobilization_plan }
 		relative_position_id = GENERIC_draft_a_new_mobilization_plan
 		x = -1
@@ -900,7 +900,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_together_for_victory
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = GENERIC_draft_a_new_mobilization_plan }
 		relative_position_id = GENERIC_draft_a_new_mobilization_plan
 		x = 1
@@ -922,7 +922,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_strike_against_the_reds
-		icon = GFX_focus_research2
+		icon = GFX_focus_GER_end_european_communism
 		prerequisite = { focus = GENERIC_prepare_for_the_red_menace }
 		relative_position_id = GENERIC_prepare_for_the_red_menace
 		x = 0
