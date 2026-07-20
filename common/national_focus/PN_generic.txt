@@ -785,6 +785,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GENERIC_mercenary_contracts
+		icon = GFX_focus_PER_limit_foreign_influence
+		prerequisite = { focus = GENERIC_the_officers_club }
+		relative_position_id = GENERIC_the_officers_club
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			has_idea = GENERIC_country_civic_guard_idea_1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GENERIC_country_civic_guard_idea_1
+				add_idea = GENERIC_country_civic_guard_idea_2
+			}
+		}
+	}
+	focus = {
 		id = GENERIC_balance_of_power_diplomacy
 		icon = GFX_focus_generic_farmland
 		prerequisite = { focus = GENERIC_the_officers_club }
@@ -814,6 +838,94 @@ focus_tree = {
 		prerequisite = { focus = GENERIC_balance_of_power_diplomacy }
 		relative_position_id = GENERIC_balance_of_power_diplomacy
 		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			num_of_factories > 45
+			amount_research_slots < 5
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GENERIC_draft_a_new_mobilization_plan
+		icon = GFX_focus_research2
+		prerequisite = { focus = GENERIC_balance_of_power_diplomacy }
+		relative_position_id = GENERIC_balance_of_power_diplomacy
+		x = 0
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			num_of_factories > 45
+			amount_research_slots < 5
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GENERIC_prepare_for_the_red_menace
+		icon = GFX_focus_research2
+		prerequisite = { focus = GENERIC_draft_a_new_mobilization_plan }
+		relative_position_id = GENERIC_draft_a_new_mobilization_plan
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			num_of_factories > 45
+			amount_research_slots < 5
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GENERIC_together_for_victory
+		icon = GFX_focus_research2
+		prerequisite = { focus = GENERIC_draft_a_new_mobilization_plan }
+		relative_position_id = GENERIC_draft_a_new_mobilization_plan
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			num_of_factories > 45
+			amount_research_slots < 5
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GENERIC_strike_against_the_reds
+		icon = GFX_focus_research2
+		prerequisite = { focus = GENERIC_prepare_for_the_red_menace }
+		relative_position_id = GENERIC_prepare_for_the_red_menace
+		x = 0
 		y = 1
 		cost = 10
 	
