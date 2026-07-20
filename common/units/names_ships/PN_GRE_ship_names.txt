@@ -1,0 +1,145 @@
+##### GREECE NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+GRE_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "RHS "
+	fallback_name = "Metafero %s"					
+
+	unique = {
+		# Royal Family — Vasilefs Georgios Class, British-built
+		"Vasilefs Georgios" "Vasilissa Olga" "Vasilefs Konstantinos" "Vasilissa Sofia"
+		"Vasilefs Alexandros" "Vasilissa Aspasia" "Vasilefs Pavlos" "Vasilissa Frederiki"
+
+		# Balkan Wars admirals — Kountouriotis Class, Italian-built
+		"Kountouriotis" "Votsis" "Demestichas" "Dousmanis" "Kakoulidis"
+
+		# Legacy predators — Aetos Class, WWI-vintage
+		"Aetos" "Ierax" "Panthir" "Leon" "Niki" "Sfendoni" "Nafkratousa"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+GRE_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "RHS "
+	fallback_name = "Elafri Katadromiko %s"
+
+	unique = {
+		# 1821 War of Independence — islands and battle sites
+		"Hydra" "Spetsai" "Psara" "Chios" "Kasos" "Samos"
+		"Mesolongi" "Navarino" "Souli" "Nafplion"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+GRE_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "RHS "
+	fallback_name = "Vari Katadromiko %s"
+
+	unique = {
+		# 1821 War of Independence — naval heroes and commanders
+		"Georgios Averof" "Kanaris" "Miaoulis" "Tompazis" "Sachtouris"
+		"Kriezis" "Apostolis" "Pinotsis" "Bouboulina" "Tsamados"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+GRE_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "RHS "
+	fallback_name = "Thorikto %s"		
+
+	unique = {
+		# ex-British transfer
+		"Michail Palaiologos"
+
+		# Legacy pre-dreadnoughts, British-refitted 1928-31
+		"Kilkis" "Lemnos"
+
+		# Byzantine Emperors — reserve
+		"Konstantinos Palaiologos" "Vasileios"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+GRE_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "RHS "
+	fallback_name = "Thoriktou %s"		
+
+	unique = {
+		# Byzantine Emperors — reserve tier, no active hulls
+		"Ioannes Vatatzis" "Herakleios" "Nikephoros Phokas" "Alexios Komnenos" "Andronikos Palaiologos"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+GRE_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "RHS "
+	fallback_name = "Aeroplanoforo %s"	
+
+	unique = {
+		# Ancient naval victories — invented convention, no historical tradition
+		"Salamis" "Artemision" "Naupaktos" "Knidos" "Mykale"
+	}
+}
+
+### SUBMARINES ###
+GRE_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { GRE }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "RHS "
+	fallback_name = "Ypobrychio %s"
+	
+	unique = {
+		# 1821 War of Independence heroes
+		"Katsonis" "Papanikolis" "Matrozos" "Pipinos"
+
+		# Greek sea gods
+		"Protefs" "Nireus" "Triton" "Glafkos" "Poseidon" "Amphitrite"
+	}
+}

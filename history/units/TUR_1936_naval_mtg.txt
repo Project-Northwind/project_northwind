@@ -1,0 +1,28 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Türk Donanmasi ###
+	fleet = {
+		name = "Türk Donanmasi"			
+		naval_base = 1005 # Anatalya
+		task_force = {				
+			name = "Türk Donanmasi"			
+			location = 1005 # Anatalya
+			ship = { name = "TCG Yavuz" pride_of_the_fleet = yes definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = TUR version_name = "Yavuz Class" } } }			
+			ship = { name = "TCG Mecidiye" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TUR version_name = "Mecidiye Class" } } }
+			ship = { name = "TCG Hamidiye" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = TUR version_name = "Mecidiye Class" } } }
+			ship = { name = "TCG Peyk" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Peyk Class" } } }
+			ship = { name = "TCG Berk" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Peyk Class" } } }		
+			ship = { name = "TCG Kilikya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Kilikya Class" } } }
+			ship = { name = "TCG Maraş" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TUR version_name = "Kilikya Class" } } }
+		}				
+		task_force = {				
+			name = "Filotilla Denizalti Kücük"			
+			location = 11746 # Adana
+			ship = { name = "TCG Kâzim Karabekir" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "Kâzım Karabekir Class" } } }		
+			ship = { name = "TCG Gümrü" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TUR version_name = "Kâzım Karabekir Class" } } }		
+		}				
+	}
+} 
+

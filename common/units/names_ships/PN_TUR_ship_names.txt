@@ -1,0 +1,142 @@
+﻿##### TURKEY NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+TUR_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { TUR }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "TCG "
+	fallback_name = "%d. Yok Edici"					
+
+	unique = {
+		# Peyk Class — legacy, WWI-era German-built, no naming conflict
+		"Peyk" "Berk" "Muavenet" "Numune" "Yadigar" "Gayret"
+
+		# Kilikya Class — Cilicia Front, replaces the Kocatepe/Adatepe/Zafer/Tinaztepe tier
+		"Kilikya" "Maraş" "Sütçü İmam" "Antep"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+TUR_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { TUR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "TCG "
+	fallback_name = "%d. Hafif Kruvazör"
+
+	unique = {
+		# Mecidiye Class — legacy, Ottoman-era, no naming conflict
+		"Mecidiye" "Hamidiye"
+
+		# Reserve — WWI-era, no naming conflict
+		"Midilli"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+TUR_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { TUR }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "TCG "
+	fallback_name = "%d. Ağır Kruvazör"
+
+	unique = {
+		# Reserve only, no active hulls — lost-territory/revanchist geography and still-held Marmara coast
+		"Çanakkale" "Edirne" "Gelibolu" "İzmit" "Tuzla" "Gölcük"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+TUR_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { TUR }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "TCG "
+	fallback_name = "%d. Savaş Gemisi"		
+
+	unique = {
+		# Reserve only, no active hulls — 16th-century Ottoman admirals, real OTL Turkish battleship precedent
+		"Barbaros Hayreddin" "Turgut Reis" "Salih Reis" "Kılıç Ali Reis"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+TUR_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { TUR }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "TCG "
+	fallback_name = "%d. Muharebe Kruvazörü"		
+
+	unique = {
+		# Singleton — no reserve, no realistic path to a second hull
+		"Yavuz"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+TUR_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { TUR }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "TCG "
+	fallback_name = "%d. Uçak Gemisi"	
+
+	unique = {
+		# Reserve only, invented convention, no historical tradition
+		"Tekirdağ" "Bandırma"
+	}
+}
+
+### SUBMARINES ###
+TUR_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { TUR }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "TCG "
+	fallback_name = "%d. Denizaltı"
+	
+	unique = {
+		# Kâzım Karabekir Class — Eastern Front vs Armenia, replaces the İnönü/Dumlupınar/Sakarya tier
+		"Kâzım Karabekir" "Gümrü" "Kars" "Halil Kut"
+
+		# Ay Class — reserve, real 1938-39 boats, no naming conflict
+		"Atılay" "Saldıray" "Yıldıray" "Batıray"
+
+		# Reis tier — reserve, 16th-century Ottoman admirals and victories, no naming conflict
+		"Piri Reis" "Murat Reis" "Oruç Reis" "Uluç Ali Reis" "Preveze" "Cerbe"
+
+		# Reserve — real, commissioned Dec 1936, after this mod's June 1936 start
+		"Gür"
+	}
+}

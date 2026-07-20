@@ -93,7 +93,7 @@ units= {
 			name = "Chernomorskiy Flot"
 			location = 3686 # Sevastopopl
 			ship = { name = "Parizhskaya Kommuna" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SOV version_name = "Marat Class" } } }
-			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Chervona Ukraina Class" } } }	
+			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Marti Class" } } }	
 			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Marti Class" } } }
 			ship = { name = "Leningrad" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Leningrad & Minsk Class" } } }
 			ship = { name = "Moskva" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Leningrad & Minsk Class" } } }
