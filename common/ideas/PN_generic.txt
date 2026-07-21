@@ -401,5 +401,13 @@ ideas = {
 				production_speed_arms_factory_factor = 0.15
 			}
 		}
+		GENERIC_diplomatic_effort = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1	
+			modifier = {
+				political_power_gain = -0.25
+				improve_relations_maintain_cost_factor = -0.25
+			}			
+		}
 	}
 }
