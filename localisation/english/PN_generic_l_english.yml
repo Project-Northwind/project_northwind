@@ -105,6 +105,7 @@
   GENERIC_every_farmer_a_soldier_idea: "Every Farmer a Soldier"
   GENERIC_country_home_guard: "The [ROOT.GetAdjective] Home Guard"
   GENERIC_internal_affairs_division_idea: "Internal Affairs"
+  GENERIC_popular_front: "Popular Front"
 
  #Decisions
   GENERIC_the_country_red_army_decision_category: "The [ROOT.GetAdjective] Red Army"

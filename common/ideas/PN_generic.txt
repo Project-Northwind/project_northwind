@@ -367,5 +367,39 @@ ideas = {
 				ai_get_ally_desire_factor = -100
 			}
 		}
+		GENERIC_popular_front = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SPR_the_popular_front
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				communism_acceptance = 50
+				fascism_acceptance = -50
+			}
+		}
+		GENERIC_remilitarization = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_improved_industries
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				mobilization_speed = 0.25
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
 	}
 }
