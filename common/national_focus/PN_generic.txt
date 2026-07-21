@@ -592,7 +592,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			unlock_decision_category_tooltip = GENERIC_a_new_entente_system_category
 		}
 	}
 	focus = {
@@ -609,7 +609,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			custom_effect_tooltip = GENERIC_protect_democratic_institutions_tt
+			hidden_effect = {
+				remove_ideas = GENERIC_remilitarization
+				remove_ideas = GENERIC_popular_front
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = GENERIC_protect_democratic_institutions_idea
 		}
 	}
 	focus = {
@@ -626,7 +632,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			custom_effect_tooltip = GENERIC_export_the_country_model_war_tt
 		}
 	}
 	focus = {

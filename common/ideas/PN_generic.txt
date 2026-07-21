@@ -402,12 +402,44 @@ ideas = {
 			}
 		}
 		GENERIC_diplomatic_effort = {
-			picture = generic_democratic_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+			
 			removal_cost = -1	
+			
+			picture = generic_democratic_drift_bonus
+
 			modifier = {
 				political_power_gain = -0.25
 				improve_relations_maintain_cost_factor = -0.25
 			}			
+		}
+		GENERIC_protect_democratic_institutions_idea = {
+
+			name = GENERIC_protect_democratic_institutions
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				drift_defence_factor = 0.5
+				democratic_drift = 0.05
+				communism_acceptance = 50
+				fascism_acceptance = -75
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				mobilization_speed = 0.25
+				production_speed_arms_factory_factor = 0.15
+			}
 		}
 	}
 }

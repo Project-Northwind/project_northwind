@@ -707,3 +707,306 @@ GENERIC_a_new_entente_system_category = {
 		}
 	}		
 }
+GENERIC_export_the_country_model_decision_category = {
+	GENERIC_crush_fascism_in_europe = {
+		priority = 200
+	
+		icon = SOV_paranoia
+	
+		visible = {
+			has_completed_focus = GENERIC_export_the_country_model
+			capital_scope = {
+				is_on_continent = europe
+			}
+		}
+	
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_core_of = FROM
+					is_on_continent = europe
+				}
+				has_government = fascism
+
+				NOT = {
+					has_non_aggression_pact_with = ROOT
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+		
+		cost = 45
+	
+		days_remove = 45
+
+		war_with_target_on_remove = yes   
+	
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	GENERIC_crush_fascism_in_north_america = {
+		priority = 200
+	
+		icon = SOV_paranoia
+	
+		visible = {
+			has_completed_focus = GENERIC_export_the_country_model
+			capital_scope = {
+				is_on_continent = north_america
+			}
+		}
+	
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_core_of = FROM
+					is_on_continent = north_america
+				}
+				has_government = fascism
+
+				NOT = {
+					has_non_aggression_pact_with = ROOT
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+		
+		cost = 45
+	
+		days_remove = 45
+
+		war_with_target_on_remove = yes   
+	
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	GENERIC_crush_fascism_in_south_america = {
+		priority = 200
+	
+		icon = SOV_paranoia
+	
+		visible = {
+			has_completed_focus = GENERIC_export_the_country_model
+			capital_scope = {
+				is_on_continent = south_america
+			}
+		}
+	
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_core_of = FROM
+					is_on_continent = south_america
+				}
+				has_government = fascism
+
+				NOT = {
+					has_non_aggression_pact_with = ROOT
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+		
+		cost = 45
+	
+		days_remove = 45
+
+		war_with_target_on_remove = yes   
+	
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	GENERIC_crush_fascism_in_africa = {
+		priority = 200
+	
+		icon = SOV_paranoia
+	
+		visible = {
+			has_completed_focus = GENERIC_export_the_country_model
+			capital_scope = {
+				is_on_continent = africa
+			}
+		}
+	
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_core_of = FROM
+					is_on_continent = africa
+				}
+				has_government = fascism
+
+				NOT = {
+					has_non_aggression_pact_with = ROOT
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+		
+		cost = 45
+	
+		days_remove = 45
+
+		war_with_target_on_remove = yes   
+	
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	GENERIC_crush_fascism_in_middle_east = {
+		priority = 200
+	
+		icon = SOV_paranoia
+	
+		visible = {
+			has_completed_focus = GENERIC_export_the_country_model
+			capital_scope = {
+				is_on_continent = middle_east
+			}
+		}
+	
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_core_of = FROM
+					is_on_continent = middle_east
+				}
+				has_government = fascism
+
+				NOT = {
+					has_non_aggression_pact_with = ROOT
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+		
+		cost = 45
+	
+		days_remove = 45
+
+		war_with_target_on_remove = yes   
+	
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	GENERIC_crush_fascism_in_asia = {
+		priority = 200
+	
+		icon = SOV_paranoia
+	
+		visible = {
+			has_completed_focus = GENERIC_export_the_country_model
+			capital_scope = {
+				is_on_continent = asia
+			}
+		}
+	
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_core_of = FROM
+					is_on_continent = asia
+				}
+				has_government = fascism
+
+				NOT = {
+					has_non_aggression_pact_with = ROOT
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+		
+		cost = 45
+	
+		days_remove = 45
+
+		war_with_target_on_remove = yes   
+	
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	GENERIC_crush_fascism_in_australia = {
+		priority = 200
+	
+		icon = SOV_paranoia
+	
+		visible = {
+			has_completed_focus = GENERIC_export_the_country_model
+			capital_scope = {
+				is_on_continent = australia
+			}
+		}
+	
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_core_of = FROM
+					is_on_continent = australia
+				}
+				has_government = fascism
+
+				NOT = {
+					has_non_aggression_pact_with = ROOT
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+		
+		cost = 45
+	
+		days_remove = 45
+
+		war_with_target_on_remove = yes   
+	
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}

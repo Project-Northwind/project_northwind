@@ -29,3 +29,12 @@ GENERIC_a_new_entente_system_category = {
 		}
 	}
 }
+GENERIC_export_the_country_model_decision_category = {
+	priority = 100
+
+	visible = {
+		ROOT = {
+			has_completed_focus = GENERIC_export_the_country_model
+		}
+	}
+}

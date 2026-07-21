@@ -107,12 +107,14 @@
   GENERIC_internal_affairs_division_idea: "Internal Affairs"
   GENERIC_popular_front: "Popular Front"
   GENERIC_diplomatic_effort: "Diplomatic Effort"
+  GENERIC_remilitarization: "Remilitarization"
 
  #Decisions
   # Categories
     GENERIC_the_country_red_army_decision_category: "The [ROOT.GetAdjective] Red Army"
     GENERIC_spreading_the_revolution_decision_category: "Spreading the Revolution"
     GENERIC_a_new_entente_system_category: "A New Entente System"
+    GENERIC_export_the_country_model_decision_category: "Export the [ROOT.GetAdjective] Model"
   # Decisions
     GENERIC_spread_the_revolution_to_country_europe: "Spread the Revolution to [FROM.GetNameDef]"
     GENERIC_spread_the_revolution_to_country_north_america: "Spread the Revolution to [FROM.GetNameDef]"
@@ -123,3 +125,10 @@
     GENERIC_spread_the_revolution_to_country_australia: "Spread the Revolution to [FROM.GetNameDef]"
     GENERIC_join_the_from_faction: "Ask to join §Y[FROM.GetFactionName]§!"
     GENERIC_establish_our_own_entente: "Establish our own faction"
+    GENERIC_crush_fascism_in_europe: "Crush §Y[FROM.GetAdjective]§! Fascism"
+    GENERIC_crush_fascism_in_north_america: "Crush §Y[FROM.GetAdjective]§! Fascism"
+    GENERIC_crush_fascism_in_south_america: "Crush §Y[FROM.GetAdjective]§! Fascism"
+    GENERIC_crush_fascism_in_africa: "Crush §Y[FROM.GetAdjective]§! Fascism"
+    GENERIC_crush_fascism_in_middle_east: "Crush §Y[FROM.GetAdjective]§! Fascism"
+    GENERIC_crush_fascism_in_asia: "Crush §Y[FROM.GetAdjective]§! Fascism"
+    GENERIC_crush_fascism_in_australia: "Crush §Y[FROM.GetAdjective]§! Fascism"

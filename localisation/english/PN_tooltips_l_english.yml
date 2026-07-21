@@ -23,3 +23,5 @@
  # Focus Tree Effects
   GENERIC_guarantee_democratic_neighbor_tt: "We will §YGuarantee§! any §YNeighboring Country§! that is §YDemocratic§!.\n\nCurrent Countries are:"
   GENERIC_improve_relations_non_extreme_tt: "We will gain an §YIncreased Opinion§! of §G+25§! with any §YNeighboring Country§! which is neither §YCommunist§! nor §YFascist§!.\n\nCurrent Countries are:"
+  GENERIC_protect_democratic_institutions_tt: "§YCombines§! and §YModifies§! national spirits: §Y$GENERIC_remilitarization$§! and §Y$GENERIC_popular_front$§! into:"
+  GENERIC_export_the_country_model_war_tt: "Unlocks §Y$GENERIC_export_the_country_model_decision_category$ Decisions§!\n\nWhich will allow us to §YDeclare War§! on §YFascist§! Countries on our §Ycontinent§!"
