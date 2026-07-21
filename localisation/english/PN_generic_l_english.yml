@@ -122,3 +122,4 @@
     GENERIC_spread_the_revolution_to_country_asia: "Spread the Revolution to [FROM.GetNameDef]"
     GENERIC_spread_the_revolution_to_country_australia: "Spread the Revolution to [FROM.GetNameDef]"
     GENERIC_join_the_from_faction: "Ask to join §Y[FROM.GetFactionName]§!"
+    GENERIC_establish_our_own_entente: "Establish our own faction"

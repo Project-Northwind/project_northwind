@@ -38,7 +38,7 @@ units = {
 		location = 525
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -49,7 +49,7 @@ units = {
 		location = 525
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -60,7 +60,7 @@ units = {
 		location = 525
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -71,7 +71,7 @@ units = {
 		location = 3452
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -82,7 +82,7 @@ units = {
 		location = 3452
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -93,7 +93,7 @@ units = {
 		location = 6593
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -104,7 +104,7 @@ units = {
 		location = 6593
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -115,7 +115,7 @@ units = {
 		location = 476
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -126,7 +126,7 @@ units = {
 		location = 476
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -137,7 +137,7 @@ units = {
 		location = 476
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -148,7 +148,7 @@ units = {
 		location = 11670
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -159,7 +159,7 @@ units = {
 		location = 11670
 		division_template = "Strilets'ka Dyviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -170,7 +170,7 @@ units = {
 		location = 9573
 		division_template = "Prykordonna Varta"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -181,7 +181,7 @@ units = {
 		location = 6451
 		division_template = "Prykordonna Varta"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -192,7 +192,7 @@ units = {
 		location = 11557
 		division_template = "Prykordonna Varta"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -203,7 +203,7 @@ units = {
 		location = 9568
 		division_template = "Prykordonna Varta"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -214,7 +214,7 @@ units = {
 		location = 9493
 		division_template = "Prykordonna Varta"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -225,7 +225,7 @@ units = {
 		location = 754
 		division_template = "Prykordonna Varta"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 1
 
 	}
 }
