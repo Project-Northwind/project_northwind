@@ -7,7 +7,7 @@ state=
 	state_category = small_island
 	
 	history = {
-		owner = GRE
+		owner = ITA
 		victory_points = {
 			10007 1 
 		}
@@ -21,6 +21,7 @@ state=
 				naval_base = 1
 			}
 		}
+		add_claim_by = ITA
 		add_core_of = GRE
 
 		### CHANGED TO A MROE ROBUST SYSTEM
