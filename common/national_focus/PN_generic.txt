@@ -128,7 +128,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GENERIC_government_of_national_order }
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -175,7 +175,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
 		}
 	}
 	focus = {
@@ -185,7 +203,7 @@ focus_tree = {
 		relative_position_id = GENERIC_government_of_national_reform
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -207,7 +225,7 @@ focus_tree = {
 		relative_position_id = GENERIC_government_of_national_reform
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -270,7 +288,7 @@ focus_tree = {
 		relative_position_id = GENERIC_free_press_and_assembly
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2085,7 +2103,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GENERIC_vanguard_of_the_revolution }
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		

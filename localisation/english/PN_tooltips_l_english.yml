@@ -3,6 +3,7 @@
   GENERIC_vanguard_of_the_revolution_sub_ideology_change_tt: "Your §YSub-Ideology§! will change to §YLeninism§!."
   GENERIC_communism_at_home_sub_ideology_change_tt: "Your §YSub-Ideology§! will change to §YMarxism§!."
   GENERIC_government_of_national_reform_sub_ideology_change_tt: "Your §YSub-Ideology§! will change to §YLiberalism§!"
+  GENERIC_government_of_national_order_sub_ideology_change_tt: "Your §YSub-Ideology§! will change to §YConservatism§!"
  # Faction Checks
   GENERIC_communist_europe_faction_tt: "There is a §YCommunist Faction Leader§! in §YEurope§!"
   GENERIC_communist_north_america_faction_tt: "There is a §YCommunist Faction Leader§! in §YNorth America§!"
