@@ -1,0 +1,869 @@
+characters={
+	# Country Leaders
+	SER_prince_paul={
+		name=SER_prince_paul
+		portraits={
+			civilian={
+				large=GFX_portrait_YUG_prince_paul
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SER_milan_stojadinovic={
+		name=SER_milan_stojadinovic
+		portraits={
+			civilian={
+				large=GFX_portrait_YUG_milan_stojadinovic
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SER_milan_grol={
+		name=SER_milan_grol
+		portraits={
+			civilian={
+				large=GFX_portrait_YUG_milan_grol
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SER_peter_ii={
+		name=SER_peter_ii
+		portraits={
+			civilian={
+				large="GFX_portrait_yugoslavia_peter_ii_young"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ underage_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ underage_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	# Generals
+	SER_danilo_kalafatovic={
+		name=SER_danilo_kalafatovic
+		portraits={
+			army={
+				large="GFX_Portrait_yugoslavia_danilo_kalafatovic"
+				small=GFX_portrait_YUG_danilo_kalafatovic_small
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = SER_danilo_kalafatovic
+			ledger = army
+			
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SER_milutin_nedic={
+		name=SER_milutin_nedic
+		portraits={
+			army={
+				large="GFX_Portrait_yugoslavia_milutin_nedic"
+				small=GFX_portrait_YUG_milutin_nedic_small
+			}
+		}
+		field_marshal={
+			traits={ thorough_planner }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SER_milutin_nedic
+			allowed = {
+					original_tag = SER
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	SER_petar_kosic={
+		name=SER_petar_kosic
+		portraits={
+			army={
+				large="GFX_Portrait_yugoslavia_petar_kosic"
+				small=GFX_portrait_YUG_petar_kosic_small
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = SER_petar_kosic
+			allowed = {
+					original_tag = SER
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	SER_vladimir_Cukavac={
+		name=SER_vladimir_Cukavac
+		portraits={
+			army={
+				large="GFX_Portrait_yugoslavia_vladimir_cukavac"
+				small=GFX_portrait_YUG_vladimir_Cukavac_small
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	SER_josef_depre={
+		name=SER_josef_depre
+		portraits={
+			army={
+				large="GFX_portrait_yugoslavia_josef_depre"
+				small=GFX_portrait_YUG_josef_depre_small
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	# Advisors
+	SER_borivoje_mirkovic={
+		advisor={			
+			slot = high_command
+			idea_token = SER_borivoje_mirkovic
+			ledger = air
+				allowed = {
+					original_tag = SER
+				}
+				traits = {
+					air_bomber_interception_1
+				}
+				cost =  50
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=YUG_borivoje_mirkovic
+		portraits={
+			army={
+				small="GFX_idea_YUG_borivoje_mirkovic"
+			}
+		}
+	}
+	SER_dusan_simovic={
+		advisor={
+			slot = air_chief
+			idea_token = SER_dusan_simovic
+			allowed = {
+					original_tag = SER
+				}
+				traits = {
+					air_chief_safety_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=YUG_dusan_simovic
+		portraits={
+			army={
+				small="GFX_idea_YUG_dusan_simovic"
+			}
+		}
+	}
+	SER_draza_mihailovic={
+		advisor={
+			slot = army_chief
+			idea_token = SER_draza_mihailovic
+			allowed = {
+					original_tag = SER
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SER_draza_mihailovic
+		portraits={
+			army={
+				small="GFX_idea_YUG_draza_mihailovic"
+			}
+		}
+	}
+	SER_bogoljub_ilic={
+		advisor={
+			slot = navy_chief
+			idea_token = SER_bogoljub_ilic
+			allowed = {
+					original_tag = SER
+				}
+				traits = {
+					navy_chief_commerce_raiding_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SER_bogoljub_ilic
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	SER_slobodan_jovanovic={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_slobodan_jovanovic
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					constitutional_philosopher 
+				}
+		}
+		name=SER_slobodan_jovanovic
+		portraits={
+			army={
+				small="GFX_idea_YUG_slobodan_jovanovic"
+			}
+		}
+	}
+	SER_milovan_djilas={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_milovan_djilas
+			available  = {
+					if  = {
+						limit  = {
+							has_dlc = "Man the Guns"
+						}
+						not  = {
+							has_autonomy_state  = autonomy_supervised_state
+						}
+					}
+				}
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					democratic_firebrand 
+				}
+		}
+		name=SER_milovan_djilas
+		portraits={
+			army={
+				small="GFX_idea_YUG_milovan_djilas"
+			}
+		}
+	}
+	SER_milan_nedic={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_milan_nedic
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name=SER_milan_nedic
+		portraits={
+			army={
+				small="GFX_idea_YUG_milan_nedic"
+			}
+		}
+	}
+	SER_dimitrije_ljotic={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_dimitrije_ljotic
+			available  = {
+					if  = {
+						limit  = {
+							has_dlc = "Man the Guns"
+						}
+						not  = {
+							has_autonomy_state  = autonomy_supervised_state
+						}
+					}
+				}
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					harsh_propagandist 
+				}
+		}
+		name=SER_dimitrije_ljotic
+		portraits={
+			army={
+				small="GFX_idea_YUG_dimitrije_ljotic"
+			}
+		}
+	}
+	SER_petar_vukcevic={
+		advisor={
+			slot = air_chief
+			idea_token = SER_petar_vukcevic
+			allowed = {
+					original_tag = SER
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SER_petar_vukcevic
+		portraits={
+			army={
+				small="GFX_idea_YUG_petar_vukcevic"
+			}
+		}
+	}
+	SER_arso_jovanovic={
+		advisor={
+			slot = high_command
+			idea_token = SER_arso_jovanovic
+			ledger = army
+				allowed = {
+					original_tag = SER
+				}
+				traits = {
+					army_entrenchment_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=SER_arso_jovanovic
+		portraits={
+			army={
+				small="GFX_idea_YUG_arso_jovanovic"
+			}
+		}
+	}
+	# Theorists
+	SER_ljubomir_maric={
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SER_ljubomir_maric
+			ledger = army
+				allowed = {
+					original_tag = SER
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		name=SER_ljubomir_maric
+		portraits={
+			army={
+				small="GFX_idea_YUG_ljubomir_maric"
+			}
+		}
+	}
+	SER_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = SER_acd2
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	SER_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_communist_guy
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	SER_acr={
+		advisor={
+			slot = air_chief
+			idea_token = SER_acr
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	SER_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_fascist_guy
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	SER_aa2={
+		advisor={
+			slot = high_command
+			idea_token = SER_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	SER_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_democratic_guy
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	SER_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = SER_ncm
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	SER_nt={
+		advisor={
+			slot = theorist
+			idea_token = SER_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	SER_awt={
+		advisor={
+			slot = theorist
+			idea_token = SER_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	SER_ar={
+		advisor={
+			slot = high_command
+			idea_token = SER_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	SER_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_stc
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	SER_ai2={
+		advisor={
+			slot = high_command
+			idea_token = SER_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	SER_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = SER_aco2
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	SER_ncs={
+		advisor={
+			slot = high_command
+			idea_token = SER_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	SER_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_coi
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	SER_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = SER_acgs
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	SER_acas={
+		advisor={
+			slot = high_command
+			idea_token = SER_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	SER_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = SER_pot
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	SER_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = SER_nccr
+			allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	SER_mt={
+		advisor={
+			slot = theorist
+			idea_token = SER_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = SER
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_6"
+			}
+		}
+	}
+}
