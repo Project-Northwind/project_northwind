@@ -667,11 +667,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+			add_timed_idea = {
+				days = 270
+				idea = GENERIC_corporate_investments
 			}
 		}
 	}
@@ -689,12 +687,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
+			custom_effect_tooltip = GENERIC_export_focus_tt
+			GENERIC_protect_corporate_interests_trade_change = yes
 		}
 	}
 	focus = {
@@ -712,12 +706,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
+			add_ideas = GENERIC_maintain_order_and_respectability_idea
 		}
 	}
 	focus = {
@@ -734,12 +723,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
+			add_ideas = GENERIC_country_order_guard_idea_1
 		}
 	}
 	focus = {
@@ -800,11 +784,38 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+			add_ideas = GENERIC_the_officers_club_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_improve_relations_not_communist_tt
+			effect_tooltip = {
+				every_country = {
+					limit = {
+						is_neighbor_of = ROOT
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
 			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_neighbor_of = ROOT
+						NOT = {
+							has_government = communism
+						}
+					}
+					ROOT = {
+						add_opinion_modifier = {
+							target = PREV
+							modifier = large_increase
+						}
+						reverse_add_opinion_modifier = {
+							target = PREV
+							modifier = large_increase
+						}
+					}
+				}
 			}
 		}
 	}
@@ -822,13 +833,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			has_idea = GENERIC_country_civic_guard_idea_1
+			has_idea = GENERIC_country_order_guard_idea_1
 		}
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = GENERIC_country_civic_guard_idea_1
-				add_idea = GENERIC_country_civic_guard_idea_2
+				remove_idea = GENERIC_country_order_guard_idea_1
+				add_idea = GENERIC_country_order_guard_idea_2
 			}
 		}
 	}

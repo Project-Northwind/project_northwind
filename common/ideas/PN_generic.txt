@@ -441,5 +441,96 @@ ideas = {
 				production_speed_arms_factory_factor = 0.15
 			}
 		}
+		GENERIC_corporate_investments = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = NOR_printing_money
+
+			modifier =  {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+		GENERIC_maintain_order_and_respectability_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SWE_hedgehog_defense
+
+			name = GENERIC_maintain_order_and_respectability
+
+			modifier = {
+				neutrality_acceptance = 50
+				drift_defence_factor = 0.75
+				stability_factor = 0.05
+			}
+		}
+		GENERIC_country_order_guard_idea_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			name = GENERIC_country_order_guard
+
+			modifier = {
+				conscription = 0.0175
+				army_core_defence_factor = 0.1
+				army_claim_defence_factor = 0.1
+			}
+		}
+		GENERIC_country_order_guard_idea_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			name = GENERIC_country_order_guard
+
+			modifier = {
+				conscription = 0.0225
+				army_core_defence_factor = 0.15
+				army_claim_defence_factor = 0.15
+				send_volunteer_divisions_required = -0.25
+				send_volunteers_tension = -0.25				
+			}
+		}
+		GENERIC_the_officers_club_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = HUN_wuw_HUN_hungarian_national_defense_association
+
+			name = GENERIC_the_officers_club
+
+			modifier = {
+				experience_gain_army_factor = 0.1
+				experience_gain_army = 0.05
+				army_advisor_cost_factor = -0.25
+				improve_relations_maintain_cost_factor = -0.25
+			}
+		}
 	}
 }

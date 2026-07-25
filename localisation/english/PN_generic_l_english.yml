@@ -49,7 +49,11 @@
   GENERIC_anti_fascist_aggression: "Anti-Fascist Aggression"
   GENERIC_anti_fascist_aggression_desc: ""
 
- ###### Focuses - Democracy
+ ###### Focuses - Democracy - Shared
+  GENERIC_a_bastion_of_freedom: "A Bastion of Freedom"
+  GENERIC_a_bastion_of_freedom_desc: ""
+
+ ###### Focuses - Democracy - Liberal
   GENERIC_government_of_national_reform: "Government of National Reform"
   GENERIC_government_of_national_reform_desc: ""
   GENERIC_land_to_the_tillers: "Land to the Tillers"
@@ -88,7 +92,37 @@
   GENERIC_secure_the_homefront_desc: ""
   GENERIC_state_of_armed_neutrality: "State of Armed Neutrality"
   GENERIC_state_of_armed_neutrality_desc: ""
-
+ ###### Focuses - Democracy - Conservative
+  GENERIC_government_of_national_order: "Government of National Order"
+  GENERIC_government_of_national_order_desc: ""
+  GENERIC_protect_corporate_interests: "Protect Corporate Interests"
+  GENERIC_protect_corporate_interests_desc: ""
+  GENERIC_trade_protection: "Trade Protection"
+  GENERIC_trade_protection_desc: ""
+  GENERIC_maintain_order_and_respectability: "Maintain Order and Respectability"
+  GENERIC_maintain_order_and_respectability_desc: ""
+  GENERIC_country_order_guard: "The [ROOT.GetAdjective] Order Guard"
+  GENERIC_country_order_guard_desc: ""
+  GENERIC_silence_the_reds: "Silence the Reds"
+  GENERIC_silence_the_reds_desc: ""
+  GENERIC_establish_the_country_gendarmerie: "Establish the [ROOT.GetAdjective] Gendarmerie"
+  GENERIC_establish_the_country_gendarmerie_desc: ""
+  GENERIC_the_officers_club: "The Officer's Club"
+  GENERIC_the_officers_club_desc: ""
+  GENERIC_mercenary_contracts: "Mercenary Contracts"
+  GENERIC_mercenary_contracts_desc: ""
+  GENERIC_balance_of_power_diplomacy: "Balance of Power Diplomacy"
+  GENERIC_balance_of_power_diplomacy_desc: ""
+  GENERIC_military_research_institute: "Military Research Institute"
+  GENERIC_military_research_institute_desc: ""
+  GENERIC_draft_a_new_mobilization_plan: "Draft a New Mobilization Plan"
+  GENERIC_draft_a_new_mobilization_plan_desc: ""
+  GENERIC_prepare_for_the_red_menace: "Prepare for the Red Menace"
+  GENERIC_prepare_for_the_red_menace_desc: ""
+  GENERIC_strike_against_the_reds: "Strike Against the Red"
+  GENERIC_strike_against_the_reds_desc: ""
+  GENERIC_together_for_victory: "Together for Victory"
+  GENERIC_together_for_victory_desc: ""
 
  #National Spirits
   GENERIC_empower_the_unions_idea: "Empower the Unions"

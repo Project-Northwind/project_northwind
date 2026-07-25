@@ -1,0 +1,45 @@
+GENERIC_red_army_level_up = {
+    if = {
+        limit = {
+            has_idea = GENERIC_fledgling_red_army_idea_1_2
+        }
+        swap_ideas = {
+                remove_idea = GENERIC_fledgling_red_army_idea_1_2
+                add_idea = GENERIC_fledgling_red_army_idea_1_3
+            }
+    }
+    if = {
+        limit = {
+            has_idea = GENERIC_fledgling_red_army_idea_1_1
+        }
+        swap_ideas = {
+            remove_idea = GENERIC_fledgling_red_army_idea_1_1
+            add_idea = GENERIC_fledgling_red_army_idea_1_2
+        }
+    }
+    if = {
+        limit = {
+            has_idea = GENERIC_fledgling_red_army_idea_1_0
+        }
+        swap_ideas = {
+            remove_idea = GENERIC_fledgling_red_army_idea_1_0
+            add_idea = GENERIC_fledgling_red_army_idea_1_1
+        }
+    }
+}
+GENERIC_protect_corporate_interests_trade_change = {
+    if = {
+        limit = {
+            has_idea = export_focus
+        }
+        add_political_power = 150
+    }
+    if = {
+        limit = {
+            NOT = {
+                has_idea = export_focus
+            }
+        }
+        add_idea = export_focus
+    }
+}
