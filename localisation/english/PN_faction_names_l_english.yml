@@ -9,6 +9,17 @@
  GENERIC_anti_fascist_europe: "European Popular Front"
  GENERIC_anti_fascist_north_america: "North American Commonwealth"
  GENERIC_anti_fascist_south_america: "South American Union"
+ GENERIC_anti_fascist_africa: "African Continental League"
  GENERIC_anti_fascist_middle_east: "Middle Eastern Entente"
  GENERIC_anti_fascist_australia: "Oceanian Group"
  GENERIC_anti_fascist_asia: "Asian Co-Prosperity Pact"
+ GENERIC_anti_communist_europe: "European Security League"
+ GENERIC_anti_communist_north_america: "Continental Defense League"
+ GENERIC_anti_communist_south_america: "The Southern Concord"
+ GENERIC_anti_communist_middle_east: "League of the Crescent"
+ GENERIC_anti_communist_australia: "Oceanic Compact"
+ GENERIC_anti_communist_africa: "African Concordat"
+ GENERIC_anti_communist_asia: "Asian Commonwealth"
+
+
+

@@ -174,6 +174,10 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		available = {
+			democratic > 0.45
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
 			set_country_leader_ideology = conservatism
@@ -541,7 +545,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_secured_homefront
 		}
 	}
 	focus = {
@@ -558,7 +562,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_bastion_of_democracy
 		}
 	}
 	focus = {
@@ -576,7 +580,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			hidden_effect = {
+				remove_ideas = GENERIC_secured_homefront
+				remove_ideas = GENERIC_bastion_of_democracy
+			}
+			custom_effect_tooltip = GENERIC_state_of_armed_neutrality_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = GENERIC_state_of_armed_neutrality_idea
 		}
 	}
 	focus = {
@@ -608,6 +618,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
+
+		available = {
+			is_subject = no
+		}
 
 		completion_reward = {
 			unlock_decision_category_tooltip = GENERIC_a_new_entente_system_category
@@ -648,6 +662,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
+
+		available = {
+			is_subject = no
+		}
 
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_export_the_country_model_war_tt
@@ -740,11 +758,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
 			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+			activate_decision = ban_communist_party
+			hidden_effect = {
+				add_political_power = 100
 			}
 		}
 	}
@@ -762,11 +782,39 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				create_intelligence_agency = yes
+				custom_effect_tooltip = generic_skip_one_line_tt
+				upgrade_intelligence_agency = upgrade_anti_partisan
+				upgrade_intelligence_agency = upgrade_passive_defense
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_stability = 0.05
+				add_political_power = 50
 			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+			else = {
+				add_ideas = GENERIC_internal_affairs_division_idea
+				add_stability = 0.10
+				add_political_power = 50
+			}
+			if = {
+				limit = {
+					has_tech = tech_military_police
+				}
+				add_tech_bonus = {
+					name = mp_focus
+					bonus = 1
+					uses = 1
+					category = military_police_tech
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = tech_military_police }
+				}
+				set_technology = { tech_military_police = 1 }
 			}
 		}
 	}
@@ -845,7 +893,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_balance_of_power_diplomacy
-		icon = GFX_focus_generic_farmland
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GENERIC_the_officers_club }
 		relative_position_id = GENERIC_the_officers_club
 		mutually_exclusive = { focus = GENERIC_a_popular_front focus = GENERIC_prioritize_internal_security }
@@ -859,12 +907,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
+			add_ideas = GENERIC_balance_of_power_diplomacy_idea
 		}
 	}
 	focus = {
@@ -902,13 +945,8 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		available = {
-			num_of_factories > 45
-			amount_research_slots < 5
-		}
-
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = GENERIC_updated_mobilization_plan
 		}
 	}
 	focus = {
@@ -924,13 +962,14 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		available = {
-			num_of_factories > 45
-			amount_research_slots < 5
-		}
-
 		completion_reward = {
-			add_research_slot = 1
+			custom_effect_tooltip = GENERIC_prepare_for_the_red_menace_tt
+			hidden_effect = {
+				remove_ideas = GENERIC_updated_mobilization_plan
+				remove_ideas = GENERIC_balance_of_power_diplomacy_idea
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = GENERIC_anti_communist_preparations
 		}
 	}
 	focus = {
@@ -947,12 +986,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			num_of_factories > 45
-			amount_research_slots < 5
+			is_subject = no
 		}
 
 		completion_reward = {
-			add_research_slot = 1
+			unlock_decision_category_tooltip = GENERIC_together_for_victory_category
 		}
 	}
 	focus = {
@@ -969,12 +1007,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			num_of_factories > 45
-			amount_research_slots < 5
+			is_subject = no
 		}
 
 		completion_reward = {
-			add_research_slot = 1
+			custom_effect_tooltip = GENERIC_strike_against_the_reds_war_tt
 		}
 	}
 	focus = {

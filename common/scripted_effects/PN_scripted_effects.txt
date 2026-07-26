@@ -40,6 +40,6 @@ GENERIC_protect_corporate_interests_trade_change = {
                 has_idea = export_focus
             }
         }
-        add_idea = export_focus
+        add_ideas = export_focus
     }
 }

@@ -29,12 +29,30 @@ GENERIC_a_new_entente_system_category = {
 		}
 	}
 }
+GENERIC_together_for_victory_category = {
+	priority = 100
+
+	visible = {
+		ROOT = {
+			has_completed_focus = GENERIC_together_for_victory
+		}
+	}
+}
 GENERIC_export_the_country_model_decision_category = {
 	priority = 100
 
 	visible = {
 		ROOT = {
 			has_completed_focus = GENERIC_export_the_country_model
+		}
+	}
+}
+GENERIC_strike_against_the_reds_decision_category = {
+	priority = 100
+
+	visible = {
+		ROOT = {
+			has_completed_focus = GENERIC_strike_against_the_reds
 		}
 	}
 }

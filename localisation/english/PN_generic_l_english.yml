@@ -52,7 +52,16 @@
  ###### Focuses - Democracy - Shared
   GENERIC_a_bastion_of_freedom: "A Bastion of Freedom"
   GENERIC_a_bastion_of_freedom_desc: ""
-
+  GENERIC_prioritize_internal_security: "Prioritize Internal Security"
+  GENERIC_prioritize_internal_security_desc: ""
+  GENERIC_national_defense_institute: "National Defense Institute"
+  GENERIC_national_defense_institute_desc: ""
+  GENERIC_a_bastion_of_democracy: "A Bastion of Democracy"
+  GENERIC_a_bastion_of_democracy_desc: ""
+  GENERIC_secure_the_homefront: "Secure the Homefront"
+  GENERIC_secure_the_homefront_desc: ""
+  GENERIC_state_of_armed_neutrality: "State of Armed Neutrality"
+  GENERIC_state_of_armed_neutrality_desc: ""
  ###### Focuses - Democracy - Liberal
   GENERIC_government_of_national_reform: "Government of National Reform"
   GENERIC_government_of_national_reform_desc: ""
@@ -74,8 +83,7 @@
   GENERIC_country_foreign_legion_desc: ""
   GENERIC_a_popular_front: "A Popular Front"
   GENERIC_a_popular_front_desc: ""
-  GENERIC_prioritize_internal_security: "Prioritize Internal Security"
-  GENERIC_prioritize_internal_security_desc: ""
+
   GENERIC_national_research_institute: "National Research Institute"
   GENERIC_national_research_institute_desc: ""
   GENERIC_remilitarization_plan: "Remilitarization Plan"
@@ -86,12 +94,6 @@
   GENERIC_protect_democratic_institutions_desc: ""
   GENERIC_export_the_country_model: "Export the [ROOT.GetAdjective] Model"
   GENERIC_export_the_country_model_desc: ""
-  GENERIC_a_bastion_of_democracy: "A Bastion of Democracy"
-  GENERIC_a_bastion_of_democracy_desc: ""
-  GENERIC_secure_the_homefront: "Secure the Homefront"
-  GENERIC_secure_the_homefront_desc: ""
-  GENERIC_state_of_armed_neutrality: "State of Armed Neutrality"
-  GENERIC_state_of_armed_neutrality_desc: ""
  ###### Focuses - Democracy - Conservative
   GENERIC_government_of_national_order: "Government of National Order"
   GENERIC_government_of_national_order_desc: ""
@@ -119,7 +121,7 @@
   GENERIC_draft_a_new_mobilization_plan_desc: ""
   GENERIC_prepare_for_the_red_menace: "Prepare for the Red Menace"
   GENERIC_prepare_for_the_red_menace_desc: ""
-  GENERIC_strike_against_the_reds: "Strike Against the Red"
+  GENERIC_strike_against_the_reds: "Strike Against the Reds"
   GENERIC_strike_against_the_reds_desc: ""
   GENERIC_together_for_victory: "Together for Victory"
   GENERIC_together_for_victory_desc: ""
@@ -142,6 +144,10 @@
   GENERIC_popular_front: "Popular Front"
   GENERIC_diplomatic_effort: "Diplomatic Effort"
   GENERIC_remilitarization: "Remilitarization"
+  GENERIC_bastion_of_democracy: "Bastion of Democracy"
+  GENERIC_secured_homefront: "Secured Homefront"
+  GENERIC_updated_mobilization_plan: "Updated Mobilization Plan"
+  GENERIC_anti_communist_preparations: "Anti-Communist Preparations"
 
  #Decisions
   # Categories
@@ -149,6 +155,8 @@
     GENERIC_spreading_the_revolution_decision_category: "Spreading the Revolution"
     GENERIC_a_new_entente_system_category: "A New Entente System"
     GENERIC_export_the_country_model_decision_category: "Export the [ROOT.GetAdjective] Model"
+    GENERIC_together_for_victory_category: "Together for Victory"
+    GENERIC_strike_against_the_reds_decision_category: "Strike against the Reds"
   # Decisions
     GENERIC_spread_the_revolution_to_country_europe: "Spread the Revolution to [FROM.GetNameDef]"
     GENERIC_spread_the_revolution_to_country_north_america: "Spread the Revolution to [FROM.GetNameDef]"
@@ -166,3 +174,12 @@
     GENERIC_crush_fascism_in_middle_east: "Crush §Y[FROM.GetAdjective]§! Fascism"
     GENERIC_crush_fascism_in_asia: "Crush §Y[FROM.GetAdjective]§! Fascism"
     GENERIC_crush_fascism_in_australia: "Crush §Y[FROM.GetAdjective]§! Fascism"
+    GENERIC_establish_our_own_faction: "Establish our own faction"
+    GENERIC_join_the_from_alliance: "Ask to join §Y[FROM.GetFactionName]§!"
+    GENERIC_prevent_communist_revolution_in_europe: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"
+    GENERIC_prevent_communist_revolution_in_north_america: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"
+    GENERIC_prevent_communist_revolution_in_south_america: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"
+    GENERIC_prevent_communist_revolution_in_africa: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"
+    GENERIC_prevent_communist_revolution_in_middle_east: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"
+    GENERIC_prevent_communist_revolution_in_asia: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"
+    GENERIC_prevent_communist_revolution_in_australia: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"

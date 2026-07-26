@@ -395,10 +395,10 @@ ideas = {
 			picture = generic_improved_industries
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
 				industrial_capacity_factory = 0.1
-				mobilization_speed = 0.25
-				production_speed_arms_factory_factor = 0.15
+				mobilization_speed = 0.05
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		GENERIC_diplomatic_effort = {
@@ -435,10 +435,10 @@ ideas = {
 				democratic_drift = 0.05
 				communism_acceptance = 50
 				fascism_acceptance = -75
-				production_factory_max_efficiency_factor = 0.1
-				industrial_capacity_factory = 0.1
-				mobilization_speed = 0.25
-				production_speed_arms_factory_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				mobilization_speed = 0.1
+				production_speed_arms_factory_factor = 0.2
 			}
 		}
 		GENERIC_corporate_investments = {
@@ -530,6 +530,119 @@ ideas = {
 				experience_gain_army = 0.05
 				army_advisor_cost_factor = -0.25
 				improve_relations_maintain_cost_factor = -0.25
+			}
+		}
+		GENERIC_bastion_of_democracy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				production_speed_bunker_factor = 0.25 
+				production_speed_coastal_bunker_factor = 0.25
+				land_bunker_effectiveness_factor = 0.1
+				coastal_bunker_effectiveness_factor = 0.1
+				enemy_justify_war_goal_time = 0.15
+			}
+		}
+		GENERIC_secured_homefront = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+
+			modifier = {
+				conscription = 0.01
+				conscription_factor = 0.1
+			}
+		}
+		GENERIC_state_of_armed_neutrality_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			name = GENERIC_state_of_armed_neutrality
+
+			picture = generic_reserve_divisions
+
+			modifier = {
+				conscription = 0.015
+				conscription_factor = 0.25
+				production_speed_bunker_factor = 0.35 
+				production_speed_coastal_bunker_factor = 0.35
+				land_bunker_effectiveness_factor = 0.15
+				coastal_bunker_effectiveness_factor = 0.15
+				enemy_justify_war_goal_time = 0.25
+			}
+		}
+		GENERIC_balance_of_power_diplomacy_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = jap_interservice_rivalry_balanced
+
+			name = GENERIC_balance_of_power_diplomacy
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				communism_acceptance = -50
+				neutrality_acceptance = 25
+				fascism_acceptance = 25
+			}
+		}
+		GENERIC_updated_mobilization_plan = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_improved_industries
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				mobilization_speed = 0.2
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		GENERIC_anti_communist_preparations = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_banned
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				drift_defence_factor = 0.5
+				democratic_drift = 0.05
+				communism_acceptance = -50
+				neutrality_acceptance = 25
+				fascism_acceptance = 25
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				mobilization_speed = 0.25
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 	}
