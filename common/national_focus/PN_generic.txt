@@ -95,7 +95,7 @@ focus_tree = {
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
 		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_political_neutrality_one }
-		x = -2
+		x = -4
 		y = 1
 		cost = 10
 	
@@ -1020,7 +1020,7 @@ focus_tree = {
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
 		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_a_bastion_of_freedom }
-		x = 2
+		x = 4
 		y = 1
 		cost = 10
 	
@@ -1038,7 +1038,7 @@ focus_tree = {
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
 		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_a_bastion_of_freedom focus = GENERIC_political_neutrality_one }
-		x = 12
+		x = 14
 		y = 1
 		cost = 10
 	
@@ -1056,7 +1056,7 @@ focus_tree = {
 		relative_position_id = GENERIC_political_focus_one
 		prerequisite = { focus = GENERIC_political_focus_one }
 		mutually_exclusive = { focus = GENERIC_a_bastion_of_freedom focus = GENERIC_political_neutrality_one focus = GENERIC_strengthen_paramilitaries }
-		x = -12
+		x = -14
 		y = 1
 		cost = 5
 
