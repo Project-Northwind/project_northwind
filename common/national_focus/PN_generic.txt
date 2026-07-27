@@ -94,7 +94,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
-		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_political_neutrality_one }
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_answer_the_nations_call focus = GENERIC_political_neutrality_one }
 		x = -4
 		y = 1
 		cost = 10
@@ -1019,7 +1019,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
-		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_a_bastion_of_freedom }
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_answer_the_nations_call focus = GENERIC_a_bastion_of_freedom }
 		x = 4
 		y = 1
 		cost = 10
@@ -1033,7 +1033,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_strengthen_paramilitaries
+		id = GENERIC_answer_the_nations_call
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
@@ -1051,11 +1051,720 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GENERIC_the_peoples_militia
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_answer_the_nations_call }
+		relative_position_id = GENERIC_answer_the_nations_call
+		mutually_exclusive = { focus = GENERIC_rally_the_elite }
+		x = -3
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_purge_the_old_guard
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_the_peoples_militia }
+		relative_position_id = GENERIC_the_peoples_militia
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_ferment_a_cult_of_personality
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_the_peoples_militia }
+		relative_position_id = GENERIC_the_peoples_militia
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_rally_the_elite
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_answer_the_nations_call }
+		relative_position_id = GENERIC_answer_the_nations_call
+		mutually_exclusive = { focus = GENERIC_the_peoples_militia }
+		x = 3
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_official_paramilitary_corps
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_rally_the_elite }
+		relative_position_id = GENERIC_rally_the_elite
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_strengthen_military_cooperation
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_rally_the_elite }
+		relative_position_id = GENERIC_rally_the_elite
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_one_state_one_people
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_strengthen_military_cooperation focus = GENERIC_purge_the_old_guard }
+		prerequisite = { focus = GENERIC_official_paramilitary_corps focus = GENERIC_ferment_a_cult_of_personality }
+		relative_position_id = GENERIC_answer_the_nations_call
+		x = 0
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_towards_a_corporatist_economy
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_one_state_one_people }
+		relative_position_id = GENERIC_one_state_one_people
+		x = 2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_collaborate_with_industrialists
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_towards_a_corporatist_economy }
+		relative_position_id = GENERIC_towards_a_corporatist_economy
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_towards_country_autarky
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_towards_a_corporatist_economy }
+		relative_position_id = GENERIC_towards_a_corporatist_economy
+		x = 1
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_youth_of_the_new_order
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_one_state_one_people }
+		relative_position_id = GENERIC_one_state_one_people
+		x = -2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_eyes_and_ears_among_the_people
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_youth_of_the_new_order }
+		relative_position_id = GENERIC_youth_of_the_new_order
+		x = -1
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_the_single_list
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_youth_of_the_new_order }
+		relative_position_id = GENERIC_youth_of_the_new_order
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_military_exercises
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_one_state_one_people }
+		relative_position_id = GENERIC_one_state_one_people
+		x = 0
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_country_nationalism
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_military_exercises }
+		prerequisite = { focus = GENERIC_the_single_list }
+		prerequisite = { focus = GENERIC_collaborate_with_industrialists }
+		relative_position_id = GENERIC_military_exercises
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_state_funded_military_research
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_country_nationalism }
+		relative_position_id = GENERIC_country_nationalism
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_country_expansionism
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_country_nationalism }
+		relative_position_id = GENERIC_country_nationalism
+		mutually_exclusive = { focus = GENERIC_country_isolationism }
+		x = -2
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = GENERIC_country_isolationism
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GENERIC_country_nationalism }
+		relative_position_id = GENERIC_country_nationalism
+		mutually_exclusive = { focus = GENERIC_country_expansionism }
+		x = 2
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		available = {
+			democratic > 0.45
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
+			set_country_leader_ideology = conservatism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
 		id = GENERIC_empower_the_unions
 		icon = GFX_goal_support_communism
 		relative_position_id = GENERIC_political_focus_one
 		prerequisite = { focus = GENERIC_political_focus_one }
-		mutually_exclusive = { focus = GENERIC_a_bastion_of_freedom focus = GENERIC_political_neutrality_one focus = GENERIC_strengthen_paramilitaries }
+		mutually_exclusive = { focus = GENERIC_a_bastion_of_freedom focus = GENERIC_political_neutrality_one focus = GENERIC_answer_the_nations_call }
 		x = -14
 		y = 1
 		cost = 5
