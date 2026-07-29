@@ -1917,3 +1917,11 @@ LAT_united_baltic_federation = {
 	color = rgb { 110 95 130 }
 	color_ui = rgb { 110 95 130 }
 }
+SAU_ENG = {
+	color = rgb { 171 190 153 }
+	color_ui = rgb { 222 247 199 }
+}
+EGY_ENG = {
+	color = rgb { 230 230 71 }
+	color_ui = rgb { 230 230 71 }
+}
