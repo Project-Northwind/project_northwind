@@ -1034,7 +1034,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_answer_the_nations_call
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_generic_fascist_propaganda
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
 		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_a_bastion_of_freedom focus = GENERIC_political_neutrality_one }
@@ -1052,7 +1052,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_the_peoples_militia
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_CHI_popular_army
 		prerequisite = { focus = GENERIC_answer_the_nations_call }
 		relative_position_id = GENERIC_answer_the_nations_call
 		mutually_exclusive = { focus = GENERIC_rally_the_elite }
@@ -1092,7 +1092,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_purge_the_old_guard
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_SOV_military_purge
 		prerequisite = { focus = GENERIC_the_peoples_militia }
 		relative_position_id = GENERIC_the_peoples_militia
 		x = -1
@@ -1131,7 +1131,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_ferment_a_cult_of_personality
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_military_dictatorship
 		prerequisite = { focus = GENERIC_the_peoples_militia }
 		relative_position_id = GENERIC_the_peoples_militia
 		x = 1
@@ -1170,7 +1170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_rally_the_elite
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = GENERIC_answer_the_nations_call }
 		relative_position_id = GENERIC_answer_the_nations_call
 		mutually_exclusive = { focus = GENERIC_the_peoples_militia }
@@ -1210,7 +1210,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_official_paramilitary_corps
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_CZE_demonstration_of_military_achievements
 		prerequisite = { focus = GENERIC_rally_the_elite }
 		relative_position_id = GENERIC_rally_the_elite
 		x = 1
@@ -1249,7 +1249,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_strengthen_military_cooperation
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_limited_social_mobilization
 		prerequisite = { focus = GENERIC_rally_the_elite }
 		relative_position_id = GENERIC_rally_the_elite
 		x = -1
@@ -1288,7 +1288,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_one_state_one_people
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_CHI_military_mission
 		prerequisite = { focus = GENERIC_strengthen_military_cooperation focus = GENERIC_purge_the_old_guard }
 		prerequisite = { focus = GENERIC_official_paramilitary_corps focus = GENERIC_ferment_a_cult_of_personality }
 		relative_position_id = GENERIC_answer_the_nations_call
@@ -1328,7 +1328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_towards_a_corporatist_economy
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_purchase_mechanized_equipment
 		prerequisite = { focus = GENERIC_one_state_one_people }
 		relative_position_id = GENERIC_one_state_one_people
 		x = 2
@@ -1367,7 +1367,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_collaborate_with_industrialists
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_commission
 		prerequisite = { focus = GENERIC_towards_a_corporatist_economy }
 		relative_position_id = GENERIC_towards_a_corporatist_economy
 		x = 0
@@ -1406,7 +1406,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_towards_country_autarky
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_GER_factories_for_resources
 		prerequisite = { focus = GENERIC_towards_a_corporatist_economy }
 		relative_position_id = GENERIC_towards_a_corporatist_economy
 		x = 1
@@ -1445,7 +1445,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_youth_of_the_new_order
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_RAJ_enrollment_of_dali_children
 		prerequisite = { focus = GENERIC_one_state_one_people }
 		relative_position_id = GENERIC_one_state_one_people
 		x = -2
@@ -1484,7 +1484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_eyes_and_ears_among_the_people
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_secret_service_agency
 		prerequisite = { focus = GENERIC_youth_of_the_new_order }
 		relative_position_id = GENERIC_youth_of_the_new_order
 		x = -1
@@ -1523,7 +1523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_the_single_list
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_industrialists
 		prerequisite = { focus = GENERIC_youth_of_the_new_order }
 		relative_position_id = GENERIC_youth_of_the_new_order
 		x = 0
@@ -1562,7 +1562,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_military_exercises
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_full_social_mobilization
 		prerequisite = { focus = GENERIC_one_state_one_people }
 		relative_position_id = GENERIC_one_state_one_people
 		x = 0
@@ -1601,7 +1601,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_country_nationalism
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_fascist_troops
 		prerequisite = { focus = GENERIC_military_exercises }
 		prerequisite = { focus = GENERIC_the_single_list }
 		prerequisite = { focus = GENERIC_collaborate_with_industrialists }
@@ -1642,7 +1642,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_state_funded_military_research
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_education
 		prerequisite = { focus = GENERIC_country_nationalism }
 		relative_position_id = GENERIC_country_nationalism
 		x = 0
@@ -1681,7 +1681,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_country_expansionism
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_spread_fascism
 		prerequisite = { focus = GENERIC_country_nationalism }
 		relative_position_id = GENERIC_country_nationalism
 		mutually_exclusive = { focus = GENERIC_country_isolationism }
@@ -1721,7 +1721,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_an_iron_pact
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = GENERIC_country_expansionism }
 		relative_position_id = GENERIC_country_expansionism
 		x = 0
@@ -1760,7 +1760,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_fortify_the_frontier
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_mountain_fortification
 		prerequisite = { focus = GENERIC_an_iron_pact }
 		relative_position_id = GENERIC_an_iron_pact
 		x = 0
@@ -1799,7 +1799,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_ministry_of_war_aims
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = GENERIC_an_iron_pact }
 		relative_position_id = GENERIC_an_iron_pact
 		x = -1
@@ -1838,7 +1838,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_country_isolationism
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = GENERIC_country_nationalism }
 		relative_position_id = GENERIC_country_nationalism
 		mutually_exclusive = { focus = GENERIC_country_expansionism }
@@ -1878,7 +1878,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_state_arsenal
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_military_industry
 		prerequisite = { focus = GENERIC_country_expansionism focus = GENERIC_country_isolationism }
 		relative_position_id = GENERIC_country_expansionism
 		x = 2
@@ -1917,7 +1917,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_volunteer_legions
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_GER_demonstration_of_military_achievements
 		prerequisite = { focus = GENERIC_state_arsenal }
 		relative_position_id = GENERIC_state_arsenal
 		x = 0
@@ -1956,7 +1956,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_doctrine_of_armed_neutrality
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_air_defense
 		prerequisite = {  focus = GENERIC_country_isolationism }
 		relative_position_id = GENERIC_country_isolationism
 		x = 0
@@ -1995,7 +1995,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_the_fortified_frontier
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = {  focus = GENERIC_doctrine_of_armed_neutrality }
 		relative_position_id = GENERIC_doctrine_of_armed_neutrality
 		x = 0
@@ -2034,7 +2034,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_national_stockpile
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_stockpile_fuel
 		prerequisite = {  focus = GENERIC_doctrine_of_armed_neutrality }
 		relative_position_id = GENERIC_doctrine_of_armed_neutrality
 		x = 1
