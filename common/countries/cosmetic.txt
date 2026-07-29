@@ -1914,6 +1914,6 @@ AST_australasia = {
 # Project Northwind
 
 LAT_united_baltic_federation = {
-	color = rgb { 0 102 102 }
-	color_ui = rgb { 0 102 102 }
+	color = rgb { 110 95 130 }
+	color_ui = rgb { 110 95 130 }
 }
