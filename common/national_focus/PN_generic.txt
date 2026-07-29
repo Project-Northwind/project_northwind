@@ -2033,7 +2033,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_national_stockpile
+		id = GENERIC_national_stockpiles
 		icon = GFX_focus_generic_stockpile_fuel
 		prerequisite = {  focus = GENERIC_doctrine_of_armed_neutrality }
 		relative_position_id = GENERIC_doctrine_of_armed_neutrality
