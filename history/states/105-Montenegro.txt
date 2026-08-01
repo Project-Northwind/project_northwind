@@ -24,6 +24,13 @@ state={
 			}
 			9821 = {
 				naval_base = 1
+				bunker = 1
+			}
+			11858 = {
+				bunker = 1
+			}
+			937 = {
+				bunker = 1
 			}
 		}
 		add_core_of = SER

@@ -13,7 +13,9 @@ state={
 		owner = SER
 		buildings = {
 			infrastructure = 2
-
+			3922 = {
+				bunker = 1
+			}
 		}
 		add_core_of = SER
 

@@ -13,6 +13,9 @@ state={
 
 		buildings = {
 			infrastructure = 3 #was: 6
+			3614 = {
+				bunker = 1
+			}
 		}
 		add_core_of = SER
 		add_core_of = TRA

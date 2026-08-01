@@ -24,6 +24,15 @@ state={
 			infrastructure = 3
 			industrial_complex = 2
 			air_base = 2
+			606 = {
+				bunker = 1
+			}
+			11741 = {
+				bunker = 1
+			}
+			982 = {
+				bunker = 1
+			}
 		}
 		add_core_of = BOS
 	}
