@@ -8,13 +8,14 @@ state={
 		coal = 1 #initial distribution
 	}
 	
-	state_category = large_town
+	state_category = large_city
 
 	history={
 		owner = CRO
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
+			arms_factory = 2
 		}
 		victory_points = {
 			11581 3 
