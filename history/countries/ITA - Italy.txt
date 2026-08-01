@@ -38,7 +38,7 @@ IF = {
 }
 
 add_ideas = {
-	vittorio_emanuele
+	#vittorio_emanuele
 	vittoria_mutilata
 	limited_exports
 	limited_conscription
@@ -756,6 +756,7 @@ set_popularities = {
 	neutrality = 5
 }
 
+recruit_character = ITA_italo_balbo
 recruit_character = ITA_benito_mussolini
 recruit_character = ITA_grand_council
 recruit_character = ITA_vittorio_emanuele_iii
@@ -768,7 +769,6 @@ recruit_character = ITA_ugo_cavallero
 recruit_character = ITA_giovanni_messe
 recruit_character = ITA_sebastiano_visconti_prasca
 recruit_character = ITA_ubaldo_soddu
-recruit_character = ITA_italo_balbo
 
 recruit_character = ITA_ettore_bastico
 recruit_character = ITA_italo_gariboldi
