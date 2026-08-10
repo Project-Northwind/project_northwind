@@ -815,6 +815,8 @@
  IRQ_neutrality_DEF: "the Hashemite Kingdom of Iraq"
  IRQ_communism: "Iraqi People's State"
  IRQ_communism_DEF: "the Iraqi People's State"
+ IRQ_ENG_autonomy_protectorate: "Anglo-Iraqi Protectorate"
+ IRQ_ENG_autonomy_protectorate_DEF: "the Anglo-Iraqi Protectorate"
  IRQ_fascism_ADJ: "Iraqi"
  IRQ_democratic_ADJ: "Iraqi"
  IRQ_neutrality_ADJ: "Iraqi"
@@ -5991,3 +5993,9 @@
  GAL_democratic: "Republic of Galicia"
  GAL_democratic_DEF: "the Republic of Galicia"
  GAL_ADJ: "Galician"
+ 
+ # Project Northwind
+ FML: "French Mandate of the Levant"
+ FML_DEF: "the French Mandate of the Levant"
+ FML_ADJ: "Levantine"
+

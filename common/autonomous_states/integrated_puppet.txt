@@ -84,6 +84,10 @@ autonomy_state = {
 			is_chinese_warlord = no
 		}
 	}
+
+	#allowed_levels_filter = {
+	#	autonomy_dominion autonomy_colony autonomy_puppet autonomy_integrated_puppet
+	#}
 	
 	can_take_level = {
 		#trigger here

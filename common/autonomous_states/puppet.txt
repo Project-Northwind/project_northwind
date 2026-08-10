@@ -75,6 +75,10 @@ autonomy_state = {
 		}
 	}
 
+	#allowed_levels_filter = {
+	#	autonomy_dominion autonomy_colony autonomy_puppet autonomy_integrated_puppet
+	#}
+
 	#ROOT is puppet - FROM is potential OVERLORD
 	use_for_peace_conference_weight = {
 		base = 0

@@ -1925,3 +1925,7 @@ EGY_ENG = {
 	color = rgb { 230 230 71 }
 	color_ui = rgb { 230 230 71 }
 }
+IRQ_ENG = {
+	color = rgb { 178 114 98 }
+	color_ui = rgb { 231 148 128 }
+}

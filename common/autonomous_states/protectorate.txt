@@ -39,6 +39,9 @@ autonomy_state = {
 		}
 		NOT = {	has_government = fascism }
 	}
+	allowed_levels_filter = {
+		autonomy_protectorate
+	}
 	can_take_level = {
 		NOT = {
 			original_tag = AOI
