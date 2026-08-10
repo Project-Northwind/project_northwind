@@ -1,7 +1,8 @@
 ﻿capital = 141	
 
 #add_opinion_modifier = { target = GER modifier = GER_SWE_historic_trade_Partners } CUT
-oob = "SWE_1936"
+set_oob = "SWE_1936"
+add_manpower = 101300 # offsets the 1936 land OOB's manpower draw (13x Arméfördelning @ 7100 + 2x Kavalleribrigaden @ 4500) so the historical mobilization is manpower-neutral
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SWE_1936_naval_mtg"
