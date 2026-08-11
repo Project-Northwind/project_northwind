@@ -1,0 +1,15 @@
+characters = {
+	FML_damien_de_martel={
+		name = FML_damien_de_martel
+		country_leader={
+			ideology = moderatism
+			expire = "1966.1.1.1"
+			id = -1
+		}
+		portraits={
+			civilian={
+				large=GFX_Portrait_France_Generic_land_3
+			}
+		}
+	}
+}

@@ -46,11 +46,7 @@ set_popularities = {
 	neutrality = 45
 }
 
-recruit_character = SYR_mehemed_ali_abed
-recruit_character = SYR_hashim_al_atassi
-recruit_character = FRA_henri_dentz
-recruit_character = LEB_abdallah_beyhum
-recruit_character = LEB_alfred_naqqache
+recruit_character = FML_damien_de_martel
 
 create_country_leader = {
 	name = "Antun Saadeh"
