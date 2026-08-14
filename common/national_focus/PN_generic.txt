@@ -1047,7 +1047,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = GENERIC_answer_the_nations_call_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
@@ -1069,23 +1084,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
+			custom_effect_tooltip = GENERIC_the_peoples_militia_sub_ideology_change_tt
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
 			add_popularity = {
-				ideology = democratic
+				ideology = fascism
 				popularity = 0.15
 			}
 		}
@@ -1188,22 +1191,11 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
+			set_country_leader_ideology = falangism
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
 			add_popularity = {
-				ideology = democratic
+				ideology = fascism
 				popularity = 0.15
 			}
 		}
@@ -1305,24 +1297,33 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
+			if = {
+				limit = {
+					has_completed_focus = GENERIC_the_peoples_militia
+				}
+				set_country_leader_ideology = fascism_ideology
+			}
+			if = {
+				limit = {
+					has_completed_focus = GENERIC_rally_the_elite
+				}
+				set_country_leader_ideology = falangism
+			}
+			else = {
+				custom_effect_tooltip = GENERIC_fascism_sub_ideology_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					NOT = {
-						has_government = democratic
+						has_government = fascism
 					}
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = fascism
 				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
 			}
 		}
 	}
@@ -2087,6 +2088,7 @@ focus_tree = {
 			add_political_power = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = GENERIC_empower_the_unions_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05

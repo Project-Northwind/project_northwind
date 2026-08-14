@@ -645,5 +645,27 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 			}
 		}
+		GENERIC_answer_the_nations_call_idea = {
+
+			name = GENERIC_answer_the_nations_call
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = SPA_crusade_against_democracy
+
+			modifier = {
+				fascism_drift = 0.15
+				fascism_acceptance = 50
+				political_power_factor = -0.2
+			}
+		}
 	}
 }
