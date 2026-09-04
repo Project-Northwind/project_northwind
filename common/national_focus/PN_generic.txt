@@ -1077,8 +1077,6 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available_if_capitulated = yes
-
 		available = {
 			democratic > 0.45
 		}
@@ -1103,12 +1101,6 @@ focus_tree = {
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
@@ -1183,15 +1175,13 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available_if_capitulated = yes
 
 		available = {
 			democratic > 0.45
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = falangism
+			custom_effect_tooltip = GENERIC_rally_the_elite_sub_ideology_change_tt
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
