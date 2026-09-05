@@ -1077,10 +1077,6 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = {
-			democratic > 0.45
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_the_peoples_militia_sub_ideology_change_tt
 			add_political_power = 25
@@ -1103,24 +1099,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
+			add_stability = -0.05
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
-					NOT = {
-						has_government = democratic
-					}
+					has_dlc = "No Step Back"
 				}
-				set_politics = {
-					ruling_party = democratic
-				}
+				add_ideas = political_loyalty_spirit
 			}
-			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+				ideology = fascism
+				popularity = 0.05
 			}
 		}
 	}
@@ -1137,29 +1128,12 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		available = {
-			democratic > 0.45
-		}
-
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
+			add_ideas = GENERIC_cult_of_personality
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
 			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+				ideology = fascism
+				popularity = 0.05
 			}
 		}
 	}
@@ -1174,11 +1148,6 @@ focus_tree = {
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
-
-		available = {
-			democratic > 0.45
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_rally_the_elite_sub_ideology_change_tt
@@ -1202,10 +1171,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
@@ -1242,29 +1207,20 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		available = {
-			democratic > 0.45
-		}
-
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
+			add_stability = 0.05
+			add_political_power = -25
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
-					NOT = {
-						has_government = democratic
-					}
+					has_dlc = "No Step Back"
 				}
-				set_politics = {
-					ruling_party = democratic
-				}
+				add_ideas = professional_officer_corps_spirit
 			}
-			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+				ideology = fascism
+				popularity = 0.05
 			}
 		}
 	}
@@ -1283,7 +1239,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			democratic > 0.45
+			fascism > 0.45
 		}
 
 		completion_reward = {
@@ -1325,36 +1281,17 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
+			add_ideas = GENERIC_corporatist_collaboration
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
 			add_political_power = 25
 			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+				ideology = fascism
+				popularity = 0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_collaborate_with_industrialists
@@ -1365,35 +1302,13 @@ focus_tree = {
 		y = 1
 		cost = 10
 	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
-
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+			swap_ideas = {
+				remove_idea = GENERIC_corporatist_collaboration
+				add_idea = GENERIC_industrialist_combine
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_towards_country_autarky
@@ -1445,32 +1360,8 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
-
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
+			add_ideas = military_youth_focus
 		}
 	}
 	focus = {
@@ -1482,35 +1373,43 @@ focus_tree = {
 		y = 2
 		cost = 10
 	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
-
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
-					NOT = {
-						has_government = democratic
-					}
+					has_dlc = "La Resistance"
 				}
-				set_politics = {
-					ruling_party = democratic
+				create_intelligence_agency = yes
+				custom_effect_tooltip = generic_skip_one_line_tt
+				upgrade_intelligence_agency = upgrade_anti_partisan
+				upgrade_intelligence_agency = upgrade_passive_defense
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_stability = 0.05
+				add_political_power = 50
+			}
+			else = {
+				add_ideas = GENERIC_internal_affairs_division_idea
+				add_stability = 0.10
+				add_political_power = 50
+			}
+			if = {
+				limit = {
+					has_tech = tech_military_police
+				}
+				add_tech_bonus = {
+					name = mp_focus
+					bonus = 1
+					uses = 1
+					category = military_police_tech
 				}
 			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+			if = {
+				limit = {
+					NOT = { has_tech = tech_military_police }
+				}
+				set_technology = { tech_military_police = 1 }
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_the_single_list
@@ -1520,36 +1419,25 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
 
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
+			add_stability = 0.05
+			add_political_power = 100
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
 			add_popularity = {
-				ideology = democratic
+				ideology = fascism
 				popularity = 0.15
 			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.15
+			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_military_exercises

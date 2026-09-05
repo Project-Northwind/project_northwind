@@ -667,5 +667,70 @@ ideas = {
 				political_power_factor = -0.2
 			}
 		}
+		GENERIC_cult_of_personality = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = SPA_crusade_against_democracy
+
+			modifier = {
+				fascism_drift = 0.05
+				fascism_acceptance = 25
+				political_power_factor = 0.05
+				party_popularity_stability_factor = 0.25
+			}
+		}
+		GENERIC_corporatist_collaboration = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = SPA_crusade_against_democracy
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_gain = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		GENERIC_industrialist_combine = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = SPA_crusade_against_democracy
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_gain = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
 	}
 }
