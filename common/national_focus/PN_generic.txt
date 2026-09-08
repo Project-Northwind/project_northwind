@@ -3464,4 +3464,1688 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GENERIC_begin_industrial_buildup
+		icon = GFX_focus_generic_industry_2
+		x = 50
+		y = 0
+		offset = {
+			x = 23
+			y = 0
+			trigger = {
+				has_focus_tree = albania_focus		#they lose their non-generic political branch when overthrown by YUG
+			}
+		}
+		offset = {
+			x = 20
+			y = 0
+			trigger = {
+				tag = SAU
+			}
+		}
+		offset = {
+			x = -11
+			y = 0
+			trigger = {
+				tag = DEN
+			}
+		}
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				OR = {
+					tag = BRM
+					has_focus_tree = germany_focus
+				}
+			}
+		}
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				OR = {
+					tag = COS
+					has_focus_tree = west_africa_focus
+				}
+			}
+		}
+		cost = 5
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3.2
+			modifier = {
+				factor = 0
+				date < 1936.10.1
+				num_of_controlled_states < 3
+			}
+			modifier = {
+				add = -0.1
+				num_of_controlled_states < 3
+			}
+		}
+		available = {
+			if = { #so YUG releasing all their puppets wont get 50 factories
+				limit = {
+					is_ai = yes
+					OR = {
+						original_tag = SLV
+						original_tag = CRO
+						original_tag = BOS
+						original_tag = MNT
+						original_tag = TRA
+						original_tag = MAC
+						original_tag = KOS
+						original_tag = HRZ
+						AND = {
+							is_dynamic_country = yes
+							OR = {
+								has_cosmetic_tag = dalmatia
+								has_cosmetic_tag = vojvodina
+							}
+						}
+					}
+				}
+				NOT = {
+					is_subject_of = YUG
+				}
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
+	}
+
+	focus = {
+		id = GENERIC_improve_state_infrastructure
+		icon = GFX_focus_generic_road_investment
+		prerequisite = { focus = GENERIC_begin_industrial_buildup }
+		x = -2
+		y = 1
+		relative_position_id = GENERIC_begin_industrial_buildup
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3.1
+			modifier = {
+				factor = 0
+				date < 1937.6.1
+				num_of_controlled_states < 3
+			}
+			modifier = {
+				factor = 7
+				tag = MEN
+			}
+			modifier = {
+				add = -0.1
+				num_of_controlled_states < 3
+			}
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		available = {
+			num_of_controlled_states > 0
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					num_of_controlled_states < 2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GENERIC_expand_civilian_manufacturers
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GENERIC_improve_state_infrastructure }
+		x = 0
+		y = 1
+		relative_position_id = GENERIC_improve_state_infrastructure
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0
+				date < 1938.6.1
+				num_of_controlled_states < 3
+			}
+		}
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		available = {
+			has_tech = construction1
+			num_of_controlled_states > 0
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = GENERIC_expand_dockyard_facilities
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GENERIC_expand_civilian_manufacturers }
+		relative_position_id = GENERIC_expand_civilian_manufacturers
+		x = -2
+		y = 1
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0
+				date < 1938.6.1
+				num_of_controlled_states < 3
+			}
+		}
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		available = {
+			has_tech = construction1
+			num_of_controlled_states > 0
+			any_state = {
+				is_coastal = yes 
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_offsite_building = { type = dockyard level = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GENERIC_improve_civilian_industry_capacity
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = GENERIC_expand_civilian_manufacturers }
+		x = 0
+		y = 1
+		relative_position_id = GENERIC_expand_civilian_manufacturers
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0
+				date < 1938.6.1
+				num_of_controlled_states < 3
+			}
+		}
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		available = {
+			has_tech = construction2
+			num_of_controlled_states > 0
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = HUN
+				}
+				unlock_decision_category_tooltip = HUN_gyor_program_decision_category
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+
+	focus = {
+		id = GENERIC_new_schools_and_modern_teaching 
+		icon = GFX_focus_generic_university_1
+		prerequisite = { focus = GENERIC_improve_civilian_industry_capacity }
+
+		x = -1
+		y = 1
+		relative_position_id = GENERIC_improve_civilian_industry_capacity
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_research_slot = 1
+		}
+		available = {
+			num_of_controlled_states > 0
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = SOV_poorly_educated_population
+					}
+					remove_ideas = SOV_poorly_educated_population
+			}
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+
+	focus = {
+		id = GENERIC_reveal_mineral_wealth #Reveal Mineral Wealth
+		icon = GFX_focus_generic_mineral_prospecting
+		prerequisite = { focus = GENERIC_improve_civilian_industry_capacity }
+		x = 1
+		y = 1
+		relative_position_id = GENERIC_improve_civilian_industry_capacity
+
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_RESOURCES }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 7
+				tag = MEN
+			}
+		}
+
+		available = {
+			OR ={
+				num_of_controlled_states > 1
+				AND = {
+					has_tech = excavation3
+			 		num_of_controlled_states > 0
+			 	}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					num_of_controlled_states < 2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = excavation_tech_bonus_name
+				bonus = 1
+				uses = 2
+				category = excavation_tech
+			}
+		}
+	}
+
+
+	focus = {
+		id = GENERIC_focus_on_synthetic_processing
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = GENERIC_reveal_mineral_wealth }
+		prerequisite = { focus = GENERIC_new_schools_and_modern_teaching }
+		x = -2
+		y = 1
+		relative_position_id = GENERIC_reveal_mineral_wealth
+
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_RESOURCES }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			has_tech = synth_oil_experiments
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = JAP_coal_liquification
+				bonus = 1
+				uses = 1
+				category = synth_resources
+			}
+		}
+	}
+
+
+	focus = {
+		id = GENERIC_reform_the_taxes
+		icon = GFX_focus_RAJ_special_economic_zones
+		prerequisite = { focus = GENERIC_reveal_mineral_wealth }
+		x = 0
+		y = 1
+		relative_position_id = GENERIC_reveal_mineral_wealth
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			if = {
+				limit = {
+					tag = OMA
+				}
+				has_completed_focus = OMA_establish_the_rial
+			}
+		}
+
+		completion_reward = {
+			add_ideas = GENERIC_Autarky_I
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+	}
+
+
+	focus = {
+		id = GENERIC_expand_military_capacity
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GENERIC_begin_industrial_buildup }
+		x = 3
+		y = 1
+
+		relative_position_id = GENERIC_begin_industrial_buildup
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2.5
+			modifier = {
+				add = 7.5
+				ROOT = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+				OR = {
+					# we dont want chinese minors to go crazy on slots early since they get eaten
+					tag = GXC
+					tag = YUN
+					tag = SHX
+					tag = SIC
+					tag = XSM
+					tag = DEN
+
+					# we also dont want tiny nations to go crazy with slots right away
+					num_of_controlled_states < 3
+				}
+			}
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			has_tech = basic_machine_tools
+		}
+
+		completion_reward = {
+			# hidden_effect = { #Setup so AI can do next two focuses
+			# 	every_other_country = {
+			# 		limit = {
+			# 			OR = {
+			# 				original_tag = GER
+			# 				original_tag = BAY
+			# 				original_tag = PRE
+			# 				original_tag = WGR
+			# 				original_tag = SOV
+			# 				original_tag = USA
+			# 			}
+			# 			exists = yes
+			# 			has_government = ROOT
+			# 			NOT = {
+			# 				has_war_with = ROOT
+			# 			}
+			# 		}
+			# 		ROOT = {
+			# 			add_ai_strategy = {
+			# 				type = befriend
+			# 				id = PREV
+			# 				value = 50
+			# 			}
+			# 		}
+			# 	}
+			# }
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+
+	focus = {
+		id = GENERIC_invite_german_investors
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = GENERIC_expand_military_capacity }
+		mutually_exclusive = { focus = GENERIC_invite_american_investors }
+		mutually_exclusive = { focus = GENERIC_invite_soviet_planners }
+		x = 0
+		y = 1
+		relative_position_id = GENERIC_expand_military_capacity
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 6
+				has_government = fascism
+			}
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			any_other_country = {
+				OR = {
+					original_tag = GER
+					original_tag = BAY
+					original_tag = PRE
+					original_tag = WGR
+				}
+				has_capitulated = no
+				if = {
+					limit = {
+						ROOT = {
+							is_ai = no
+						}
+					}
+					has_opinion = { target = ROOT value > 49 }
+				}
+				OR = {
+					has_government = ROOT
+					AND = {
+						NOT = {
+							has_government = communism
+						}
+						ROOT = {
+							has_government = neutrality
+						}
+					}
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		completion_reward = {
+
+			add_offsite_building = { type = industrial_complex level = 1 }
+
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+
+			if = {
+				limit = {
+					GER = {
+						exists = yes
+						has_capitulated = no
+						if = {
+							limit = {
+								ROOT = {
+									is_ai = no
+								}
+							}
+							has_opinion = { target = ROOT value > 0 }
+						}
+						OR = {
+							has_government = ROOT
+							AND = {
+								NOT = {
+									has_government = communism
+								}
+								ROOT = {
+									has_government = neutrality
+								}
+							}
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				add_opinion_modifier = { target = GER modifier = gen_invited_german }
+			}
+			else_if = {
+				limit = {
+					PRE = {
+						exists = yes
+						has_capitulated = no
+						if = {
+							limit = {
+								ROOT = {
+									is_ai = no
+								}
+							}
+							has_opinion = { target = ROOT value > 0 }
+						}
+						OR = {
+							has_government = ROOT
+							AND = {
+								NOT = {
+									has_government = communism
+								}
+								ROOT = {
+									has_government = neutrality
+								}
+							}
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				add_opinion_modifier = { target = PRE modifier = gen_invited_german }
+			}			
+			else_if = {
+				limit = {
+					BAY = {
+						exists = yes
+						has_capitulated = no
+						if = {
+							limit = {
+								ROOT = {
+									is_ai = no
+								}
+							}
+							has_opinion = { target = ROOT value > 0 }
+						}
+						OR = {
+							has_government = ROOT
+							AND = {
+								NOT = {
+									has_government = communism
+								}
+								ROOT = {
+									has_government = neutrality
+								}
+							}
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				add_opinion_modifier = { target = BAY modifier = gen_invited_german }
+			}
+			else_if = {
+				limit = {
+					WGR = {
+						exists = yes
+						has_capitulated = no
+						if = {
+							limit = {
+								ROOT = {
+									is_ai = no
+								}
+							}
+							has_opinion = { target = ROOT value > 49 }
+						}
+						OR = {
+							has_government = ROOT
+							AND = {
+								NOT = {
+									has_government = communism
+								}
+								ROOT = {
+									has_government = neutrality
+								}
+							}
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				add_opinion_modifier = { target = WGR modifier = gen_invited_german }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = GENERIC_invite_soviet_planners
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = GENERIC_expand_military_capacity }
+		mutually_exclusive = { focus = GENERIC_invite_german_investors }
+		mutually_exclusive = { focus = GENERIC_invite_american_investors }
+		x = 2
+		y = 1
+		relative_position_id = GENERIC_expand_military_capacity
+
+		allow_branch = {
+			NOT = {
+				original_tag = SOV
+			}
+		}
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 6
+				has_government = communism
+			}
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			any_other_country = {
+				original_tag = SOV
+				has_capitulated = no
+				if = {
+					limit = {
+						ROOT = {
+							is_ai = no
+						}
+					}
+					has_opinion = { target = ROOT value > 49 }
+				}
+				OR = {
+					has_government = ROOT
+					AND = {
+						is_neighbor_of = SOV
+						ROOT = {
+							has_government = neutrality
+						}
+					}
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		completion_reward = {
+			# every_other_country = {
+			# 	limit = {
+			# 		original_tag = SOV
+			# 		has_capitulated = no
+			# 		has_government = ROOT
+			# 		has_opinion = { target = ROOT value > 49 }
+			# 		NOT = {
+			# 			has_war_with = ROOT
+			# 		}
+			# 	}
+			# 	add_ai_strategy = {
+			# 		type = support
+			# 		id = ROOT
+			# 		value = 50
+			# 	}
+			# 	add_ai_strategy = {
+			# 		type = send_volunteers_desire
+			# 		id = ROOT
+			# 		value = 100
+			# 	}
+			# 	add_ai_strategy = {
+			# 		type = equipment_market_trade_desire
+			# 		id = ROOT
+			# 		value = 100
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			is_historical_focus_on = no
+			# 		}
+			# 		ROOT = {
+			# 			add_ai_strategy = {
+			# 				type = befriend
+			# 				id = PREV
+			# 				value = 25
+			# 			}
+			# 			add_ai_strategy = {
+			# 				type = equipment_market_trade_desire
+			# 				id = PREV
+			# 				value = 50
+			# 			}
+			# 		}
+			# 	}
+			# 	add_opinion_modifier = { target = ROOT modifier = small_increase }
+			# 	PREV = {
+			# 		add_opinion_modifier = { target = PREV modifier = gen_invited_soviet }
+			# 	}
+			# }
+
+			add_offsite_building = { type = industrial_complex level = 1 }
+
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						original_tag = SOV
+						exists = yes
+						has_capitulated = no
+						if = {
+							limit = {
+								ROOT = {
+									is_ai = no
+								}
+							}
+							has_opinion = { target = ROOT value > 0 }
+						}
+						OR = {
+							has_government = ROOT
+							AND = {
+								is_neighbor_of = SOV
+								ROOT = {
+									has_government = neutrality
+								}
+							}
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				add_opinion_modifier = { target = PREV modifier = gen_invited_soviet }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = GENERIC_soviet_heavy_industry
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = GENERIC_invite_soviet_planners }
+		x = 0
+		y = 2
+		relative_position_id = GENERIC_invite_soviet_planners
+
+		cost = 8
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			OR = {
+				has_tech = concentrated_industry2
+				has_tech = dispersed_industry2
+			}
+			any_other_country = {
+				original_tag = SOV
+				has_capitulated = no
+				if = {
+					limit = {
+						ROOT = {
+							is_ai = no
+						}
+					}
+					has_opinion = { target = ROOT value > 49 }
+				}
+				OR = {
+					has_government = ROOT
+					AND = {
+						is_neighbor_of = SOV
+						ROOT = {
+							has_government = neutrality
+						}
+					}
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GENERIC_german_heavy_industry_expansion
+		icon = GFX_focus_DEN_heavy_regulations
+		prerequisite = { focus = GENERIC_invite_german_investors }
+		x = 0
+		y = 2
+
+		relative_position_id = GENERIC_invite_german_investors
+
+		cost = 8
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			OR = {
+				has_tech = concentrated_industry2
+				has_tech = dispersed_industry2
+			}
+			any_other_country = {
+				OR = {
+					original_tag = GER
+					original_tag = BAY
+					original_tag = PRE
+					original_tag = WGR
+				}
+				has_capitulated = no
+				if = {
+					limit = {
+						ROOT = {
+							is_ai = no
+						}
+					}
+					has_opinion = { target = ROOT value > 49 }
+				}
+				OR = {
+					has_government = ROOT
+					AND = {
+						NOT = {
+							has_government = communism
+						}
+						ROOT = {
+							has_government = neutrality
+						}
+					}
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+
+	focus = {
+		id = GENERIC_invite_american_investors
+		icon = GFX_focus_generic_befriend_usa
+		prerequisite = { focus = GENERIC_expand_military_capacity }
+		x = -2
+		y = 1
+		relative_position_id = GENERIC_expand_military_capacity
+		mutually_exclusive = { focus = GENERIC_invite_german_investors }
+		mutually_exclusive = { focus = GENERIC_invite_soviet_planners }
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 6
+				has_government = democratic
+			}
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			any_other_country = {
+				original_tag = USA
+				has_capitulated = no
+				if = {
+					limit = {
+						ROOT = {
+							is_ai = no
+						}
+					}
+					has_opinion = { target = ROOT value > 49 }
+				}
+				OR = {
+					has_government = ROOT
+					AND = {
+						NOT = {
+							has_government = communism
+						}
+						ROOT = {
+							has_government = neutrality
+						}
+					}
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+
+		completion_reward = {
+			# every_other_country = {
+			# 	limit = {
+			# 		original_tag = USA
+			# 		has_capitulated = no
+			# 		has_government = ROOT
+			# 		has_opinion = { target = ROOT value > 49 }
+			# 		NOT = {
+			# 			has_war_with = ROOT
+			# 		}
+			# 	}
+			# 	add_ai_strategy = {
+			# 		type = support
+			# 		id = ROOT
+			# 		value = 50
+			# 	}
+			# 	add_ai_strategy = {
+			# 		type = send_volunteers_desire
+			# 		id = ROOT
+			# 		value = 100
+			# 	}
+			# 	add_ai_strategy = {
+			# 		type = equipment_market_trade_desire
+			# 		id = ROOT
+			# 		value = 100
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			is_historical_focus_on = no
+			# 		}
+			# 		ROOT = {
+			# 			add_ai_strategy = {
+			# 				type = befriend
+			# 				id = PREV
+			# 				value = 25
+			# 			}
+			# 			add_ai_strategy = {
+			# 				type = equipment_market_trade_desire
+			# 				id = PREV
+			# 				value = 50
+			# 			}
+			# 		}
+			# 	}
+			# 	add_opinion_modifier = { target = ROOT modifier = small_increase }
+			# 	PREV = {
+			# 		add_opinion_modifier = { target = PREV modifier = gen_invited_soviet }
+			# 	}
+			# }
+
+			add_offsite_building = { type = industrial_complex level = 1 }
+
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_capitulated = no
+						if = {
+							limit = {
+								ROOT = {
+									is_ai = no
+								}
+							}
+							has_opinion = { target = ROOT value > 0 }
+						}
+						OR = {
+							has_government = ROOT
+							AND = {
+								NOT = {
+									has_government = communism
+								}
+								ROOT = {
+									has_government = neutrality
+								}
+							}
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				add_opinion_modifier = { target = USA modifier = gen_invited_american }
+			}
+			
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+
+	focus = {
+		id = GENERIC_american_air_industry_expansion
+		icon = GFX_focus_generic_aircraft_production
+		prerequisite = { focus = GENERIC_invite_american_investors }
+		x = 0
+		y = 2
+
+		relative_position_id = GENERIC_invite_american_investors
+
+		cost = 8
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			OR = {
+				has_tech = concentrated_industry2
+				has_tech = dispersed_industry2
+			}
+			any_other_country = {
+				original_tag = USA
+				has_capitulated = no
+				if = {
+					limit = {
+						ROOT = {
+							is_ai = no
+						}
+					}
+					has_opinion = { target = ROOT value > 49 }
+				}
+				OR = {
+					has_government = ROOT
+					AND = {
+						NOT = {
+							has_government = communism
+						}
+						ROOT = {
+							has_government = neutrality
+						}
+					}
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GENERIC_encorage_foreign_investors #Encourage Foreign Investments
+		icon = GFX_focus_generic_industry_investment
+		prerequisite = { focus = GENERIC_invite_american_investors focus = GENERIC_invite_german_investors focus = GENERIC_invite_soviet_planners }
+		x = 3
+		y = 1
+		relative_position_id = GENERIC_invite_american_investors
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1938.6.1
+				num_of_controlled_states < 2
+			}
+		}
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		available = {
+			num_of_controlled_states > 1
+			has_tech = construction3
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GENERIC_automobile_industry
+		icon = GFX_focus_generic_truck
+		prerequisite = { focus = GENERIC_invite_american_investors focus = GENERIC_invite_german_investors focus = GENERIC_invite_soviet_planners}
+		x = 1
+		y = 1
+		relative_position_id = GENERIC_invite_american_investors
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			has_tech = motorised_infantry
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = GENERIC_invite_german_investors
+				}
+				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 125 producer = GER }
+			}
+			if = {
+				limit = {
+					has_completed_focus = GENERIC_invite_american_investors
+				}
+				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 125 producer = USA }
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = GENERIC_invite_soviet_planners
+				}
+				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 125 producer = SOV }
+			}
+
+			custom_effect_tooltip = GENERIC_Automobile_tt
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
+	}
+
+
+	focus = {
+		id = GENERIC_purchase_foreign_licenses
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = GENERIC_american_air_industry_expansion focus = GENERIC_german_heavy_industry_expansion focus = GENERIC_soviet_heavy_industry}
+		x = 1
+		y = 2
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				tag = SOV
+			}
+		}
+		relative_position_id = GENERIC_automobile_industry
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			add_ideas = GENERIC_Licences_I
+			custom_effect_tooltip = GENERIC_Licences_EXPL
+		}
+
+		completion_reward = {
+			add_ideas = GENERIC_Licences_I
+			custom_effect_tooltip = GENERIC_Licences_EXPL
+		}
+	}
 }
