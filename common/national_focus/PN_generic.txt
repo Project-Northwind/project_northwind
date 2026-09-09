@@ -3679,9 +3679,9 @@ focus_tree = {
 		id = GENERIC_expand_civilian_manufacturers
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = GENERIC_improve_state_infrastructure }
-		x = 0
-		y = 1
 		relative_position_id = GENERIC_improve_state_infrastructure
+		x = -1
+		y = 1
 
 		cost = 10
 
@@ -4100,15 +4100,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 	}
 
-
 	focus = {
-		id = GENERIC_expand_military_capacity
-		icon = GFX_goal_generic_construct_mil_factory
+		id = GENERIC_the_military_industrial_complex
+		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = GENERIC_begin_industrial_buildup }
+		relative_position_id = GENERIC_begin_industrial_buildup
 		x = 3
 		y = 1
 
-		relative_position_id = GENERIC_begin_industrial_buildup
 
 		cost = 10
 
@@ -4146,32 +4145,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# hidden_effect = { #Setup so AI can do next two focuses
-			# 	every_other_country = {
-			# 		limit = {
-			# 			OR = {
-			# 				original_tag = GER
-			# 				original_tag = BAY
-			# 				original_tag = PRE
-			# 				original_tag = WGR
-			# 				original_tag = SOV
-			# 				original_tag = USA
-			# 			}
-			# 			exists = yes
-			# 			has_government = ROOT
-			# 			NOT = {
-			# 				has_war_with = ROOT
-			# 			}
-			# 		}
-			# 		ROOT = {
-			# 			add_ai_strategy = {
-			# 				type = befriend
-			# 				id = PREV
-			# 				value = 50
-			# 			}
-			# 		}
-			# 	}
-			# }
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -4202,8 +4175,81 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
+	focus = {
+		id = GENERIC_expand_military_capacity
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GENERIC_the_military_industrial_complex }
+		relative_position_id = GENERIC_the_military_industrial_complex
+		
+		x = 3
+		y = 1
 
+		cost = 10
 
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2.5
+			modifier = {
+				add = 7.5
+				ROOT = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+				OR = {
+					# we dont want chinese minors to go crazy on slots early since they get eaten
+					tag = GXC
+					tag = YUN
+					tag = SHX
+					tag = SIC
+					tag = XSM
+					tag = DEN
+
+					# we also dont want tiny nations to go crazy with slots right away
+					num_of_controlled_states < 3
+				}
+			}
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			has_tech = basic_machine_tools
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = { #Coreless handout
+				limit = {
+					num_of_controlled_states > 0
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
 	focus = {
 		id = GENERIC_invite_german_investors
 		icon = GFX_focus_chi_mission_to_germany
