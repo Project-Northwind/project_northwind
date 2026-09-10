@@ -3977,7 +3977,7 @@ focus_tree = {
 		
 	}
 	focus = {
-		id = GENERIC_nation_wide_industrial_expansion
+		id = GENERIC_nationwide_industrial_expansion
 		icon = GFX_focus_generic_industry_investment
 		prerequisite = { focus = GENERIC_industrial_boom }
 		x = 1
@@ -4061,8 +4061,8 @@ focus_tree = {
 		id = GENERIC_modern_electronic_devices
 		icon = GFX_focus_generic_electrification
 		prerequisite = { focus = GENERIC_modernize_railway_system }
-		prerequisite = { focus = GENERIC_nation_wide_industrial_expansion }
-		relative_position_id = GENERIC_nation_wide_industrial_expansion
+		prerequisite = { focus = GENERIC_nationwide_industrial_expansion }
+		relative_position_id = GENERIC_nationwide_industrial_expansion
 		x = -1
 		y = 1
 
@@ -4235,7 +4235,7 @@ focus_tree = {
 		id = GENERIC_focus_on_synthetic_processing
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = GENERIC_reveal_mineral_wealth }
-		prerequisite = { focus = GENERIC_nation_wide_industrial_expansion }
+		prerequisite = { focus = GENERIC_nationwide_industrial_expansion }
 		x = 0
 		y = 2
 		relative_position_id = GENERIC_reveal_mineral_wealth
@@ -5099,7 +5099,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
-		id = GENERIC_encorage_foreign_investors #Encourage Foreign Investments
+		id = GENERIC_encourage_foreign_investors #Encourage Foreign Investments
 		icon = GFX_focus_generic_industry_investment
 		prerequisite = { focus = GENERIC_invite_american_investors focus = GENERIC_invite_german_investors focus = GENERIC_invite_soviet_planners }
 		x = 3
@@ -5703,14 +5703,17 @@ focus_tree = {
 	focus = {
 		id = GENERIC_capital_ship_design_studies
 		icon = GFX_goal_generic_navy_battleship
+		relative_position_id = GENERIC_the_cruiser_programme
 		prerequisite = { focus = GENERIC_the_cruiser_programme }
 		x = -1
 		y = 1
-		relative_position_id = GENERIC_the_cruiser_programme
 		cost = 5
 
 		available_if_capitulated = yes
 
+		available = {
+			has_completed_focus = GENERIC_contest_the_waves
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -5732,12 +5735,6 @@ focus_tree = {
 				uses = 1
 				category = ca_tech
 
-			}
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1
-				uses = 1
-				category = cl_tech
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -5780,7 +5777,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = GENERIC_the_naval_airfoce_arm
+		id = GENERIC_the_naval_airforce_arm
 		icon = GFX_focus_generic_multi_role_aircraft
 		prerequisite = { focus = GENERIC_naval_aviation_theory }
 
@@ -5976,7 +5973,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = GENERIC_Aviation_Effort
+		id = GENERIC_aviation_studies
 		icon = GFX_focus_SOV_women_in_aviation
 		prerequisite = { focus = GENERIC_the_military_industrial_complex }
 		relative_position_id = GENERIC_the_military_industrial_complex
@@ -6046,9 +6043,9 @@ focus_tree = {
 	focus = {
 		id = GENERIC_foreign_designs
 		icon = GFX_focus_generic_copy_plane_designs
-		relative_position_id = GENERIC_Aviation_Effort
+		relative_position_id = GENERIC_aviation_studies
 		mutually_exclusive = { focus = GENERIC_domestic_designs }
-		prerequisite = { focus = GENERIC_Aviation_Effort }
+		prerequisite = { focus = GENERIC_aviation_studies }
 		x = 2
 		y = 1
 
@@ -6090,10 +6087,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = GENERIC_Fighter_Competition
+		id = GENERIC_fighter_competition
 		icon = GFX_focus_generic_air_partners
 		relative_position_id = GENERIC_foreign_designs
-		mutually_exclusive = { focus = GENERIC_Bomber_Competition }
+		mutually_exclusive = { focus = GENERIC_bomber_competition }
 		prerequisite = {  focus = GENERIC_foreign_designs }
 		x = -1
 		y = 1
@@ -6249,9 +6246,9 @@ focus_tree = {
 					NOT = { has_completed_focus = GENERIC_aircraft_italian }
 					has_dlc = "By Blood Alone"
 				}
-				custom_effect_tooltip = GENERIC_Fighter_Competition_EXPL	
+				custom_effect_tooltip = GENERIC_fighter_competition_EXPL	
 				add_tech_bonus = {
-					name = GENERIC_Fighter_Competition
+					name = GENERIC_fighter_competition
 					bonus = 1.0
 					uses = 1
 					category = light_fighter
@@ -6265,7 +6262,7 @@ focus_tree = {
 					NOT = { has_completed_focus = GENERIC_aircraft_italian }
 				}
 				add_tech_bonus = {
-					name = GENERIC_Fighter_Competition
+					name = GENERIC_fighter_competition
 					bonus = 1.0
 					uses = 1
 					technology = fighter2
@@ -6275,10 +6272,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }	
 	}	
 	focus = {
-		id = GENERIC_Bomber_Competition
+		id = GENERIC_bomber_competition
 		icon = GFX_focus_generic_long_range_aircraft
 		relative_position_id = GENERIC_foreign_designs
-		mutually_exclusive = { focus = GENERIC_Fighter_Competition }
+		mutually_exclusive = { focus = GENERIC_fighter_competition }
 		prerequisite = { focus = GENERIC_foreign_designs }
 		x = 1
 		y = 1
@@ -6411,7 +6408,7 @@ focus_tree = {
 					NOT = { has_completed_focus = GENERIC_aircraft_italian }
 					has_dlc = "By Blood Alone"	
 				}
-				custom_effect_tooltip = GENERIC_Fighter_Competition_EXPL
+				custom_effect_tooltip = GENERIC_fighter_competition_EXPL
 				add_tech_bonus = {
 					name = bomber_bonus
 					bonus = 1
@@ -6438,10 +6435,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = GENERIC_Close_Air_Support
+		id = GENERIC_close_air_support
 		icon = GFX_goal_generic_CAS
-		relative_position_id = GENERIC_Bomber_Competition
-		prerequisite = { focus = GENERIC_Fighter_Competition focus = GENERIC_Bomber_Competition }
+		relative_position_id = GENERIC_bomber_competition
+		prerequisite = { focus = GENERIC_fighter_competition focus = GENERIC_bomber_competition }
 		x = -1
 		y = 1
 
@@ -6480,8 +6477,8 @@ focus_tree = {
 	focus = {
 		id = GENERIC_aircraft_design_cooperation
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = GENERIC_Fighter_Competition focus = GENERIC_Bomber_Competition }
-		relative_position_id = GENERIC_Fighter_Competition
+		prerequisite = { focus = GENERIC_fighter_competition focus = GENERIC_bomber_competition }
+		relative_position_id = GENERIC_fighter_competition
 		x = 0
 		y = 2
 
@@ -6499,12 +6496,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = GENERIC_Shared_Air_Doctrine
+		id = GENERIC_shared_air_doctrines
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = GENERIC_Fighter_Competition focus = GENERIC_Bomber_Competition }
+		prerequisite = { focus = GENERIC_fighter_competition focus = GENERIC_bomber_competition }
 		x = 0
 		y = 2
-		relative_position_id = GENERIC_Bomber_Competition
+		relative_position_id = GENERIC_bomber_competition
 
 		cost = 5
 
@@ -6531,12 +6528,12 @@ focus_tree = {
 	focus = {
 		id = GENERIC_domestic_designs
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = GENERIC_Aviation_Effort }
+		prerequisite = { focus = GENERIC_aviation_studies }
 		mutually_exclusive = { focus = GENERIC_foreign_designs }
 		x = -2
 		y = 1
 
-		relative_position_id = GENERIC_Aviation_Effort
+		relative_position_id = GENERIC_aviation_studies
 
 		cost = 8
 
