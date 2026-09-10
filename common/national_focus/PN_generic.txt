@@ -5457,11 +5457,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
-		id = GENERIC_Small_Navy
+		id = GENERIC_small_ship_specialization
 		icon = GFX_focus_SWE_coastal_support
 		relative_position_id = GENERIC_naval_programme
 		prerequisite = { focus = GENERIC_naval_programme }
-		mutually_exclusive = { focus = GENERIC_Sea_Dominance }
+		mutually_exclusive = { focus = GENERIC_contest_the_waves }
 		x = 1
 		y = 1
 		cost = 8
@@ -5500,8 +5500,8 @@ focus_tree = {
 	focus = {
 		id = GENERIC_sub_surface_raiders
 		icon = GFX_goal_generic_navy_submarine
-		relative_position_id = GENERIC_Small_Navy
-		prerequisite = { focus = GENERIC_Small_Navy }
+		relative_position_id = GENERIC_small_ship_specialization
+		prerequisite = { focus = GENERIC_small_ship_specialization }
 
 		x = 1
 		y = 1
@@ -5563,11 +5563,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = GENERIC_Sea_Dominance
+		id = GENERIC_contest_the_waves
 		icon = GFX_focus_generic_north_atlantic_fleet
 		relative_position_id = GENERIC_naval_programme
 		prerequisite = { focus = GENERIC_naval_programme }
-		mutually_exclusive = { focus = GENERIC_Small_Navy }
+		mutually_exclusive = { focus = GENERIC_small_ship_specialization }
 		y = 1
 		x = -1
 		cost = 8
@@ -5612,10 +5612,10 @@ focus_tree = {
 	focus = {
 		id = GENERIC_foreign_shipbuilding_studies
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = GENERIC_Sea_Dominance focus = GENERIC_Small_Navy}
+		prerequisite = { focus = GENERIC_contest_the_waves focus = GENERIC_small_ship_specialization}
 		x = 1
 		y = 1
-		relative_position_id = GENERIC_Sea_Dominance
+		relative_position_id = GENERIC_contest_the_waves
 
 		cost = 10
 
@@ -5937,7 +5937,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = GENERIC_Naval_Doctrine
+		id = GENERIC_naval_doctrinal_study
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GENERIC_the_cruiser_programme }
 		x = -3
@@ -6050,10 +6050,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = GENERIC_Foreign_Design
+		id = GENERIC_foreign_designs
 		icon = GFX_focus_generic_copy_plane_designs
 		relative_position_id = GENERIC_Aviation_Effort
-		mutually_exclusive = { focus = GENERIC_Own_Design }
+		mutually_exclusive = { focus = GENERIC_domestic_designs }
 		prerequisite = { focus = GENERIC_Aviation_Effort }
 		x = 2
 		y = 1
@@ -6096,138 +6096,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
-
-	focus = {
-		id = GENERIC_license_foreign_designs
-		icon = GFX_focus_generic_air_research_boost
-		prerequisite = { focus = GENERIC_Foreign_Design }
-		mutually_exclusive = { focus = GENERIC_aircraft_american focus = GENERIC_aircraft_soviet focus = GENERIC_aircraft_japanese focus = GENERIC_aircraft_italian focus = GENERIC_aircraft_german }
-		x = 0
-		y = 1
-		relative_position_id = GENERIC_Foreign_Design
-
-		cost = 10
-
-		available_if_capitulated = yes
-
-		available = {
-			ENG = {
-				exists = yes
-				has_capitulated = no
-				if = {
-					limit = {
-						ROOT = {
-							is_ai = no
-						}
-					}
-					has_opinion = { target = ROOT value > 49 }
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-				ENG = { has_government = ROOT }
-			}
-			not = {
-				has_War_with = ENG
-			}
-		}
-
-		completion_reward = {
-			ENG = {
-				# add_ai_strategy = {
-				# 	type = support
-				# 	id = ROOT
-				# 	value = 25
-				# }
-				if = {			#Swiss DLC decision where they can buy planes from various countries
-					limit = {
-						ROOT = {
-							original_tag = SWI
-							has_dlc = "By Blood Alone"
-							NOT = {
-								has_global_flag = SWI_R56_focus_tree
-							}
-						}
-					}
-					custom_effect_tooltip = SWI_purchase_foreign_planes_unlock_TT
-					set_country_flag = SWI_can_buy_planes_from_them_flag
-				}
-			}
-			if = {
-				limit = { has_dlc = "By Blood Alone" }
-				add_tech_bonus = {
-					name = GENERIC_license_foreign_designs
-					bonus = 1.0
-					uses = 1
-					category = light_air
-				}
-				add_tech_bonus = {
-					name = GENERIC_license_foreign_designs
-					bonus = 1
-					uses = 1
-					category = medium_air
-				}
-				create_equipment_variant = {
-					name = "Gloster Gladiator"
-					type = small_plane_airframe_0
-					modules = {
-						fixed_main_weapon_slot = light_mg_4x
-						fixed_auxiliary_weapon_slot_1 = empty
-						engine_type_slot = engine_1_1x
-						special_type_slot_1 = empty
-					}
-					icon = "GFX_ENG_early_fighter_medium"
-				}
-				create_equipment_variant = {
-					name = "Fairey Gordon"
-					type = small_plane_cas_airframe_0
-					modules = {
-						fixed_main_weapon_slot = bomb_locks
-						fixed_auxiliary_weapon_slot_1 = light_mg_2x
-						engine_type_slot = engine_1_1x
-						special_type_slot_1 = empty
-					}
-					icon = "GFX_ENG_CAS1_medium"
-				}
-				add_opinion_modifier = { target = ENG modifier = GENERIC_license_foreign_designs }
-			}
-			else = {
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1
-					uses = 1
-					technology = early_fighter
-					technology = fighter1
-					technology = fighter2
-				}
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1
-					uses = 1
-					technology = cv_early_fighter
-					technology = cv_fighter1
-				}
-
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1
-					uses = 1
-					technology = naval_bomber1
-					technology = naval_bomber2
-				}
-			add_opinion_modifier = { target = ENG modifier = GENERIC_license_foreign_designs }
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
 	focus = {
 		id = GENERIC_Fighter_Competition
 		icon = GFX_focus_generic_air_partners
-		relative_position_id = GENERIC_license_foreign_designs
+		relative_position_id = GENERIC_foreign_designs
 		mutually_exclusive = { focus = GENERIC_Bomber_Competition }
-		prerequisite = {  focus = GENERIC_license_foreign_designs }
+		prerequisite = {  focus = GENERIC_foreign_designs }
 		x = -1
 		y = 1
 		cost = 10
@@ -6411,9 +6285,9 @@ focus_tree = {
 	focus = {
 		id = GENERIC_Bomber_Competition
 		icon = GFX_focus_generic_long_range_aircraft
-		relative_position_id = GENERIC_license_foreign_designs
+		relative_position_id = GENERIC_foreign_designs
 		mutually_exclusive = { focus = GENERIC_Fighter_Competition }
-		prerequisite = { focus = GENERIC_license_foreign_designs }
+		prerequisite = { focus = GENERIC_foreign_designs }
 		x = 1
 		y = 1
 		cost = 10
@@ -6575,10 +6449,10 @@ focus_tree = {
 	focus = {
 		id = GENERIC_Close_Air_Support
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = GENERIC_Fighter_Competition }
-		x = -2
-		y = 1
 		relative_position_id = GENERIC_Bomber_Competition
+		prerequisite = { focus = GENERIC_Fighter_Competition focus = GENERIC_Bomber_Competition }
+		x = -1
+		y = 1
 
 		cost = 10
 
@@ -6616,8 +6490,8 @@ focus_tree = {
 		id = GENERIC_aircraft_design_cooperation
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = GENERIC_Fighter_Competition focus = GENERIC_Bomber_Competition }
-		relative_position_id = GENERIC_Bomber_Competition
-		x = -1
+		relative_position_id = GENERIC_Fighter_Competition
+		x = 0
 		y = 2
 
 		cost = 5
@@ -6639,7 +6513,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = GENERIC_Fighter_Competition focus = GENERIC_Bomber_Competition }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GENERIC_Bomber_Competition
 
 		cost = 5
@@ -6666,10 +6540,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GENERIC_Own_Design
+		id = GENERIC_domestic_designs
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = GENERIC_Aviation_Effort }
-		mutually_exclusive = { focus = GENERIC_Foreign_Design }
+		mutually_exclusive = { focus = GENERIC_foreign_designs }
 		x = -2
 		y = 1
 
@@ -6714,12 +6588,12 @@ focus_tree = {
 
 
 	focus = {
-		id = GENERIC_Own_Fighter
+		id = GENERIC_airspace_dominance
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = GENERIC_Own_Design }
+		prerequisite = { focus = GENERIC_domestic_designs }
 		x = -1
 		y = 2
-		relative_position_id = GENERIC_Own_Design
+		relative_position_id = GENERIC_domestic_designs
 
 		cost = 10
 
@@ -6752,12 +6626,12 @@ focus_tree = {
 
 
 	focus = {
-		id = GENERIC_Own_Bomber
+		id = GENERIC_death_from_above
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = GENERIC_Own_Design }
+		prerequisite = { focus = GENERIC_domestic_designs }
 		x = 0
 		y = 1
-		relative_position_id = GENERIC_Own_Design
+		relative_position_id = GENERIC_domestic_designs
 
 		cost = 10
 
@@ -6788,12 +6662,12 @@ focus_tree = {
 			search_filters = { FOCUS_FILTER_RESEARCH }
 		}
 	focus = {
-		id = GENERIC_Own_Naval_Bomber
+		id = GENERIC_deny_the_sea_lanes
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = GENERIC_Own_Design }
+		prerequisite = { focus = GENERIC_domestic_designs }
 		x = 1
 		y = 2
-		relative_position_id = GENERIC_Own_Design
+		relative_position_id = GENERIC_domestic_designs
 
 		cost = 10
 
@@ -6825,12 +6699,12 @@ focus_tree = {
 
 
 	focus = {
-		id = GENERIC_Own_Air_Doctrine
+		id = GENERIC_aviation_doctrine
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = GENERIC_Own_Fighter focus = GENERIC_Own_Bomber focus = GENERIC_Own_Naval_Bomber }
+		prerequisite = { focus = GENERIC_airspace_dominance focus = GENERIC_death_from_above focus = GENERIC_deny_the_sea_lanes }
 		x = -1
 		y = 1
-		relative_position_id = GENERIC_Own_Naval_Bomber
+		relative_position_id = GENERIC_deny_the_sea_lanes
 
 		cost = 8
 
