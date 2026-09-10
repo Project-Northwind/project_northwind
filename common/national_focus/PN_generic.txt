@@ -6728,4 +6728,53 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+	focus = {
+		id = GENERIC_into_the_jet_age
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = GENERIC_aviation_doctrine focus = GENERIC_shared_air_doctrines }
+		x = 2
+		y = 1
+		relative_position_id = GENERIC_aviation_doctrine
+
+		cost = 8
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = { has_subdoctrine_in_track = fighter_aircraft }
+				add_daily_mastery = {
+					name = SIA_design_modern_fighters_r56
+					amount = 0.5
+					days = 180
+					track = fighter_aircraft
+				}
+			}
+			else = {
+				air_experience = 45
+				add_command_power = 15
+			}
+			if = {
+				limit = { has_subdoctrine_in_track = medium_aircraft }
+				add_daily_mastery = {
+					name = SIA_design_modern_fighters_r56
+					amount = 0.5
+					days = 180
+					track = medium_aircraft
+				}
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					name = air_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = air_doctrine
+				}
+			}
+
+			#custom_effect_tooltip = GENERIC_Generals_Other_tt
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
 }
