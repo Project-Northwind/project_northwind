@@ -1251,36 +1251,19 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
+		
 		available = {
-			democratic > 0.45
+			NOT = {
+				has_idea = free_trade
+				has_idea = export_focus
+			}
 		}
-
+				
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
+			add_ideas = GENERIC_communist_country_autarky
 			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_youth_of_the_new_order
@@ -1466,29 +1449,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			democratic > 0.45
+			num_of_factories > 45
+			amount_research_slots < 5
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1500,36 +1466,15 @@ focus_tree = {
 		x = -2
 		y = 2
 		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
+		
 		available = {
-			democratic > 0.45
+			fascism > 0.65
 		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
+			add_ideas = GENERIC_country_expansionism_idea
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_an_iron_pact
@@ -1540,35 +1485,14 @@ focus_tree = {
 		y = 1
 		cost = 10
 	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
 		available = {
-			democratic > 0.45
-		}
 
-		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
 		}
+		
+		completion_reward = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_fortify_the_frontier
@@ -1579,35 +1503,13 @@ focus_tree = {
 		y = 1
 		cost = 10
 	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
+		
 		available = {
-			democratic > 0.45
 		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_ministry_of_war_aims
@@ -1618,35 +1520,12 @@ focus_tree = {
 		y = 2
 		cost = 10
 	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
 		available = {
-			democratic > 0.45
 		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_country_isolationism
@@ -1657,36 +1536,15 @@ focus_tree = {
 		x = 2
 		y = 2
 		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
+		
 		available = {
-			democratic > 0.45
+			fascism > 0.65
 		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
+			add_ideas = GENERIC_country_isolationism_idea
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_state_arsenal
@@ -1696,36 +1554,62 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
+		
 		available = {
-			democratic > 0.45
+			
 		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
+			random_owned_controlled_state = {
 				limit = {
-					NOT = {
-						has_government = democratic
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
 					}
 				}
-				set_politics = {
-					ruling_party = democratic
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_volunteer_legions
@@ -1735,36 +1619,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
+		
 		available = {
-			democratic > 0.45
 		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
+			add_ideas = GENERIC_country_volunteer_legion
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_doctrine_of_armed_neutrality
@@ -1775,35 +1637,14 @@ focus_tree = {
 		y = 1
 		cost = 10
 	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+			swap_ideas = {
+				remove_idea = GENERIC_country_isolationism_idea_1
+				add_idea = GENERIC_country_isolationism_idea_2
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_the_fortified_frontier
@@ -1813,36 +1654,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+			swap_ideas = {
+				remove_idea = GENERIC_country_isolationism_idea_2
+				add_idea = GENERIC_country_isolationism_idea_3
 			}
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_national_stockpiles
@@ -1852,36 +1671,11 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
-
+		
 		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
+			add_ideas = GENERIC_national_stockpiles_idea
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = GENERIC_empower_the_unions

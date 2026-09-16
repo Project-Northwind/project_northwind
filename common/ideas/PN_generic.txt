@@ -689,6 +689,7 @@ ideas = {
 			}
 		}
 		GENERIC_corporatist_collaboration = {
+			name = GENERIC_industrialist_combine
 
 			allowed = {
 				always = no
@@ -710,6 +711,7 @@ ideas = {
 			}
 		}
 		GENERIC_industrialist_combine = {
+			name = GENERIC_industrialist_combine
 
 			allowed = {
 				always = no
@@ -730,6 +732,116 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		GENERIC_country_isolationism_idea_1 = {
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			name = GENERIC_country_isolationism
+		
+			picture = generic_reserve_divisions
+
+			modifier = {
+				conscription = 0.005
+				conscription_factor = 0.15
+				enemy_justify_war_goal_time = 0.15
+				justify_war_goal_time = 0.15
+			}
+		}
+		GENERIC_country_isolationism_idea_2 = {
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			name = GENERIC_country_isolationism
+		
+			picture = generic_reserve_divisions
+
+			modifier = {
+				conscription = 0.01
+				conscription_factor = 0.2
+				enemy_justify_war_goal_time = 0.2
+				justify_war_goal_time = 0.2
+			}
+		}
+		GENERIC_country_isolationism_idea_3 = {
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			name = GENERIC_country_isolationism
+		
+			picture = generic_reserve_divisions
+
+			modifier = {
+				conscription = 0.015
+				conscription_factor = 0.25
+				production_speed_bunker_factor = 0.25 
+				production_speed_coastal_bunker_factor = 0.25
+				land_bunker_effectiveness_factor = 0.15
+				coastal_bunker_effectiveness_factor = 0.15
+				enemy_justify_war_goal_time = 0.25
+				justify_war_goal_time = 0.25
+			}
+		}
+		GENERIC_national_stockpiles_idea = {
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			name = GENERIC_national_stockpiles
+		
+			picture = generic_stockpile_preparation
+
+			modifier = {
+				local_resources_factor = 0.25
+				max_fuel_factor = 0.25
+				fuel_gain_factor = 0.25
+			}
+		}
+		GENERIC_country_volunteer_legion = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			name = GENERIC_volunteer_legions
+
+			modifier = {
+				send_volunteer_divisions_required = -0.5
+				send_volunteers_tension = -0.5				
+			}
+		}
+		GENERIC_country_expansionism_idea = {
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			name = GENERIC_country_expansionism
+		
+			picture = SWI_spirit_of_helvetia_aggressive_war
+
+			modifier = {
+				conscription = 0.025
+				conscription_factor = 0.1
+				enemy_justify_war_goal_time = -0.25
+				justify_war_goal_time = -0.25
 			}
 		}
 	}

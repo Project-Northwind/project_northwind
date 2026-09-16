@@ -306,7 +306,7 @@
   GENERIC_secured_homefront: "Secured Homefront"
   GENERIC_updated_mobilization_plan: "Updated Mobilization Plan"
   GENERIC_anti_communist_preparations: "Anti-Communist Preparations"
-
+  GENERIC_industrialist_combine: "Industrialist Combines"
  #Decisions
   # Categories
     GENERIC_the_country_red_army_decision_category: "The [ROOT.GetAdjective] Red Army"
