@@ -844,5 +844,21 @@ ideas = {
 				justify_war_goal_time = -0.25
 			}
 		}
+		GENERIC_war_fervor = {
+
+			picture = chi_war_of_resistance2
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				mobilization_speed = 0.15
+				weekly_manpower = 500
+				war_support_weekly = 0.005
+			}
+		}
 	}
 }

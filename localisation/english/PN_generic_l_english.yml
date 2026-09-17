@@ -169,8 +169,8 @@
   GENERIC_state_arsenal_desc: ""
   GENERIC_doctrine_of_armed_neutrality: "Doctrine of Armed Neutrality"
   GENERIC_doctrine_of_armed_neutrality_desc: ""
-  GENERIC_fortify_the_frontier: "Fortify the Frontier"
-  GENERIC_fortify_the_frontier_desc: ""
+  GENERIC_induce_war_fervor: "Induce War Fervor"
+  GENERIC_induce_war_fervor_desc: ""
   GENERIC_volunteer_legions: "Volunter Legions"
   GENERIC_volunteer_legions_desc: ""
   GENERIC_the_fortified_frontier: "The Fortified Frontier"
@@ -307,6 +307,7 @@
   GENERIC_updated_mobilization_plan: "Updated Mobilization Plan"
   GENERIC_anti_communist_preparations: "Anti-Communist Preparations"
   GENERIC_industrialist_combine: "Industrialist Combines"
+  GENERIC_war_fervor: "War Fervor"
  #Decisions
   # Categories
     GENERIC_the_country_red_army_decision_category: "The [ROOT.GetAdjective] Red Army"
