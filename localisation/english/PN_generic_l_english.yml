@@ -315,6 +315,7 @@
     GENERIC_export_the_country_model_decision_category: "Export the [ROOT.GetAdjective] Model"
     GENERIC_together_for_victory_category: "Together for Victory"
     GENERIC_strike_against_the_reds_decision_category: "Strike against the Reds"
+    GENERIC_an_iron_pact_category: "An Iron Pact"
   # Decisions
     GENERIC_spread_the_revolution_to_country_europe: "Spread the Revolution to [FROM.GetNameDef]"
     GENERIC_spread_the_revolution_to_country_north_america: "Spread the Revolution to [FROM.GetNameDef]"
@@ -341,3 +342,5 @@
     GENERIC_prevent_communist_revolution_in_middle_east: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"
     GENERIC_prevent_communist_revolution_in_asia: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"
     GENERIC_prevent_communist_revolution_in_australia: "Prevent §Y[FROM.GetAdjective]§! from spreading Communism"
+    GENERIC_form_our_own_faction: "Form our own Faction"
+    GENERIC_join_the_from_faction_fascism: "Join the §Y[FROM.GetFactionName]§!"

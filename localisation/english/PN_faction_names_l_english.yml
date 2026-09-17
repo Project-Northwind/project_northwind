@@ -20,6 +20,10 @@
  GENERIC_anti_communist_australia: "Oceanic Compact"
  GENERIC_anti_communist_africa: "African Concordat"
  GENERIC_anti_communist_asia: "Asian Commonwealth"
-
-
-
+ GENERIC_dominance_faction_europe: "European National Compact"
+ GENERIC_dominance_faction_north_america: "North American Dominiion Pact"
+ GENERIC_dominance_faction_south_america: "South American Nationalist Concordat"
+ GENERIC_dominance_faction_middle_east: "Middle Eastern National Front"
+ GENERIC_dominance_faction_africa: "African Sovereign Order"
+ GENERIC_dominance_faction_australia: "Oceanian Corporate Dominion"
+ GENERIC_dominance_faction_asia: "Asian Imperial Concordat"

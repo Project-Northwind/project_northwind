@@ -56,3 +56,12 @@ GENERIC_strike_against_the_reds_decision_category = {
 		}
 	}
 }
+GENERIC_an_iron_pact_category = {
+	priority = 100
+
+	visible = {
+		#ROOT = {
+		#	has_completed_focus = GENERIC_an_iron_pact
+		#}
+	}
+}

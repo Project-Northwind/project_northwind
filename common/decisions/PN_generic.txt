@@ -1703,3 +1703,385 @@ GENERIC_strike_against_the_reds_decision_category = {
 		}
 	}
 }
+GENERIC_an_iron_pact_category = {
+	GENERIC_form_our_own_faction = {
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_in_faction = no
+		}
+
+		cost = 25
+
+		days_remove = 14
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+					capital_scope = {
+						is_on_continent = europe
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_GENERIC_dominance_europe
+				add_faction_initiative = 1
+			}
+			else_if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_Factions = yes }
+				create_faction = GENERIC_dominance_europe
+			}
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+					capital_scope = {
+						is_on_continent = north_america
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_GENERIC_dominance_north_america
+				add_faction_initiative = 1
+			}
+			else_if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = north_america
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_Factions = yes }
+				create_faction = GENERIC_dominance_north_america
+			}
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+					capital_scope = {
+						is_on_continent = south_america
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_GENERIC_dominance_south_america
+				add_faction_initiative = 1
+			}
+			else_if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = south_america
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_Factions = yes }
+				create_faction = GENERIC_dominance_south_america
+			}
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+					capital_scope = {
+						is_on_continent = africa
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_GENERIC_dominance_africa
+				add_faction_initiative = 1
+			}
+			else_if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = africa
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_Factions = yes }
+				create_faction = GENERIC_dominance_africa
+			}
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+					capital_scope = {
+						is_on_continent = middle_east
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_GENERIC_dominance_middle_east
+				add_faction_initiative = 1
+			}
+			else_if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = middle_east
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_Factions = yes }
+				create_faction = GENERIC_dominance_middle_east
+			}
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+					capital_scope = {
+						is_on_continent = australia
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_GENERIC_dominance_australia
+				add_faction_initiative = 1
+			}
+			else_if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = australia
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_Factions = yes }
+				create_faction = GENERIC_dominance_australia
+			}
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+					capital_scope = {
+						is_on_continent = asia
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_GENERIC_dominance_asia
+				add_faction_initiative = 1
+			}
+			else_if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = asia
+						is_core_of = ROOT
+					}
+				}
+				set_rule = { can_create_Factions = yes }
+				create_faction = GENERIC_dominance_asia
+			}
+		}
+	}
+	GENERIC_join_the_from_faction_fascism = {
+
+		icon = hol_exchange_intelligence_data
+
+		available = {
+			has_capitulated = no
+			is_subject = no
+			is_in_faction = no
+			NOT = {
+				has_idea = GENERIC_diplomatic_effort
+			}
+		}
+
+		target_trigger = {
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_on_continent = Europe
+							is_core_of = ROOT
+						}
+					}
+				}
+				FROM = {
+					capital_scope = {
+						is_core_of = FROM
+						is_on_continent = Europe
+					}
+					is_faction_leader = yes
+					is_subject = no
+					has_capitulated = no
+					NOT = {
+						has_war_with = ROOT
+					}
+					has_government = fascism
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_on_continent = north_america
+							is_core_of = ROOT
+						}
+					}
+				}
+				FROM = {
+					capital_scope = {
+						is_core_of = FROM
+						is_on_continent = north_america
+					}
+					is_faction_leader = yes
+					is_subject = no
+					has_capitulated = no
+					NOT = {
+						has_war_with = ROOT
+					}
+					has_government = fascism
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_on_continent = south_america
+							is_core_of = ROOT
+						}
+					}
+				}
+				FROM = {
+					capital_scope = {
+						is_core_of = FROM
+						is_on_continent = south_america
+					}
+					is_faction_leader = yes
+					is_subject = no
+					has_capitulated = no
+					NOT = {
+						has_war_with = ROOT
+					}
+					has_government = fascism
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_on_continent = africa
+							is_core_of = ROOT
+						}
+					}
+				}
+				FROM = {
+					capital_scope = {
+						is_core_of = FROM
+						is_on_continent = africa
+					}
+					is_faction_leader = yes
+					is_subject = no
+					has_capitulated = no
+					NOT = {
+						has_war_with = ROOT
+					}
+					has_government = fascism
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_on_continent = middle_east
+							is_core_of = ROOT
+						}
+					}
+				}
+				FROM = {
+					capital_scope = {
+						is_core_of = FROM
+						is_on_continent = middle_east
+					}
+					is_faction_leader = yes
+					is_subject = no
+					has_capitulated = no
+					NOT = {
+						has_war_with = ROOT
+					}
+					has_government = fascism
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_on_continent = australia
+							is_core_of = ROOT
+						}
+					}
+				}
+				FROM = {
+					capital_scope = {
+						is_core_of = FROM
+						is_on_continent = australia
+					}
+					is_faction_leader = yes
+					is_subject = no
+					has_capitulated = no
+					NOT = {
+						has_war_with = ROOT
+					}
+					has_government = fascism
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_on_continent = asia
+							is_core_of = ROOT
+						}
+					}
+				}
+				FROM = {
+					capital_scope = {
+						is_core_of = FROM
+						is_on_continent = asia
+					}
+					is_faction_leader = yes
+					is_subject = no
+					has_capitulated = no
+					NOT = {
+						has_war_with = ROOT
+					}
+					has_government = fascism
+				}
+			}
+		}
+
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				ROOT = {
+					has_government = fascism
+				}
+				factor = 10
+			}
+		}
+
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = GENERIC_diplomatic_effort
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+
+		remove_effect = {
+			remove_ideas = GENERIC_diplomatic_effort
+			if = {
+				limit = {
+					FROM = {
+						is_faction_leader = yes
+					}
+				}
+				FROM = {
+					country_event = generic.2
+				}								
+			}	
+		}
+	}		
+}

@@ -97,6 +97,182 @@ faction_template_defensive_democratic = {
 	
 }
 
+# Fascist Dominance
+faction_template_GENERIC_dominance_europe = {
+	name = GENERIC_dominance_faction_europe
+	manifest = faction_manifest_regional_expansionism
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic_15
+	visible = {
+		always = no 
+	}
+	
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_air_superiority
+
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		generate_wargoal_threat_reduction_20
+	}
+}
+faction_template_GENERIC_dominance_north_america = {
+	name = GENERIC_dominance_faction_north_america
+	manifest = faction_manifest_regional_expansionism
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic_15
+	visible = {
+		always = no 
+	}
+	
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_air_superiority
+
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		generate_wargoal_threat_reduction_20
+	}
+}
+faction_template_GENERIC_dominance_south_america = {
+	name = GENERIC_dominance_faction_south_america
+	manifest = faction_manifest_regional_expansionism
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic_15
+	visible = {
+		always = no 
+	}
+	
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_air_superiority
+
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		generate_wargoal_threat_reduction_20
+	}
+}
+faction_template_GENERIC_dominance_middle_east = {
+	name = GENERIC_dominance_faction_middle_east
+	manifest = faction_manifest_regional_expansionism
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic_15
+	visible = {
+		always = no 
+	}
+	
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_air_superiority
+
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		generate_wargoal_threat_reduction_20
+	}
+}
+faction_template_GENERIC_dominance_africa = {
+	name = GENERIC_dominance_faction_africa
+	manifest = faction_manifest_regional_expansionism
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic_15
+	visible = {
+		always = no 
+	}
+	
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_air_superiority
+
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		generate_wargoal_threat_reduction_20
+	}
+}
+faction_template_GENERIC_dominance_australia = {
+	name = GENERIC_dominance_faction_australia
+	manifest = faction_manifest_regional_expansionism
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic_15
+	visible = {
+		always = no 
+	}
+	
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_air_superiority
+
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		generate_wargoal_threat_reduction_20
+	}
+}
+faction_template_GENERIC_dominance_asia = {
+	name = GENERIC_dominance_faction_asia
+	manifest = faction_manifest_regional_expansionism
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic_15
+	visible = {
+		always = no 
+	}
+	
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_air_superiority
+
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		joining_rule_same_continent_only
+		generate_wargoal_threat_reduction_20
+	}
+}
 # Suppression of Communism
 faction_template_anti_communist = {
 	name = coalition_of_liberty_faction
@@ -141,7 +317,6 @@ faction_template_anti_communist = {
 
 	
 }
-
 faction_template_GENERIC_anti_communist_europe = {
 	name = GENERIC_anti_communist_europe
 	manifest = faction_manifest_containment_of_communism
@@ -276,6 +451,50 @@ faction_template_GENERIC_anti_communist_south_america = {
 }
 faction_template_GENERIC_anti_communist_middle_east = {
 	name = GENERIC_anti_communist_middle_east
+	manifest = faction_manifest_containment_of_communism
+	icon = GFX_faction_logo_generic_10
+	can_leader_join_other_factions = yes
+	visible = {
+		always = yes 
+		any_other_country = {
+			has_government = communism
+			is_on_same_continent_as = ROOT
+		}
+	}
+	available = {
+		NOT = { has_government = communism }
+		any_other_country = {
+			has_government = communism
+			is_on_same_continent_as = ROOT
+		}
+	}
+
+	goals = {
+		# Short term goals
+		# faction_goal_war_on_communism
+		#faction_goal_ensure_military_r_d
+
+		# Medium term goals
+		faction_goal_a_military_base
+
+		# Long terms
+		faction_goal_defeat_of_communism
+		
+	}
+
+	default_rules = {
+		faction_peace_rule_ideology_focus
+		dismissal_rule_ideology_communist
+		joining_rule_non_communist
+		joining_rule_same_continent_only
+		guarantee_threat_reduction_15
+		change_leader_rule_industry
+	}
+
+	
+}
+faction_template_GENERIC_anti_communist_africa = {
+	name = GENERIC_anti_communist_africa
 	manifest = faction_manifest_containment_of_communism
 	icon = GFX_faction_logo_generic_10
 	can_leader_join_other_factions = yes
