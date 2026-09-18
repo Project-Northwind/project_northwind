@@ -1,0 +1,12 @@
+PN_formable_greater_ukraine_cat = {
+	icon = generic_formable_nations
+
+	allowed = {
+		OR = {
+			original_tag = UKR # Ukraine
+			#original_tag = UPR - Placeholder for future when Soviet Ukraine is a thing too
+			original_tag = RUT # Carpatho-Ukraine
+			original_tag = CRI # Crimea - Why not
+		}
+	}
+}

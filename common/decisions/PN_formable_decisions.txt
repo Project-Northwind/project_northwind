@@ -1,0 +1,220 @@
+PN_formable_greater_ukraine_cat = {
+	PN_form_greater_ukraine = {
+		icon = GFX_decision_SOV_place_hq
+
+		allowed = {
+			OR = {
+				original_tag = UKR # Ukraine
+				#original_tag = UPR - Placeholder for future when Soviet Ukraine is a thing too
+				original_tag = RUT # Carpatho-Ukraine
+				original_tag = CRI # Crimea - Why not
+			}
+		}
+
+		fire_only_once = yes
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PN_form_country_tt
+				all_state = {
+					OR = {
+						AND = {
+							NOT = {
+								state = 73 # Carpathian Ruthenia
+								state = 80 # Bucovina
+								state = 91 # Lwów
+								state = 89 # Stanislawów
+								state = 93 # Wolyn
+								state = 137 # Crimea
+								state = 192 # Odessa
+								state = 193 # Chernigov
+								state = 196 # Kherson
+								state = 197 # Mykolaiv
+								state = 198 # Vinnytsia
+								state = 199 # Khmelnytskyi
+								state = 200 # Zaporozhe
+								state = 201 # Zhytomyr
+								state = 202 # Kyiv
+								state = 203 # Cherkasy
+								state = 217 # Stalingrad
+								state = 218 # Rostov
+								state = 220 # Kursk
+								state = 221 # Kharkiv
+								state = 225 # Sumy
+								state = 226 # Dnipropetrovsk
+								state = 227 # Donetsk
+								state = 228 # Luhansk
+								state = 234 # Krasnodar
+								state = 235 # Stavropol
+								state = 238 # Volgodonsk
+								state = 240 # Belgorod
+								state = 245 # Millerovo
+								state = 259 # Poltava
+								state = 260 # Voronezh
+								state = 265 # Mikhaylovka
+								state = 766 # Southern Bessarabia
+								state = 829 # Engels-Marxstadt
+								state = 834 # Tiraspol
+								state = 996 # Uzhorod
+							}
+							is_controlled_by = ROOT
+						}
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 73 # Carpathian Ruthenia
+				state = 80 # Bucovina
+				state = 91 # Lwów
+				state = 89 # Stanislawów
+				state = 93 # Wolyn
+				state = 137 # Crimea
+				state = 192 # Odessa
+				state = 193 # Chernigov
+				state = 196 # Kherson
+				state = 197 # Mykolaiv
+				state = 198 # Vinnytsia
+				state = 199 # Khmelnytskyi
+				state = 200 # Zaporozhe
+				state = 201 # Zhytomyr
+				state = 202 # Kyiv
+				state = 203 # Cherkasy
+				state = 217 # Stalingrad
+				state = 218 # Rostov
+				state = 220 # Kursk
+				state = 221 # Kharkiv
+				state = 224 # Bryansk
+				state = 225 # Sumy
+				state = 226 # Dnipropetrovsk
+				state = 227 # Donetsk
+				state = 228 # Luhansk
+				state = 234 # Krasnodar
+				state = 235 # Stavropol
+				state = 238 # Volgodonsk
+				state = 240 # Belgorod
+				state = 245 # Millerovo
+				state = 259 # Poltava
+				state = 260 # Voronezh
+				state = 265 # Mikhaylovka
+				state = 766 # Southern Bessarabia
+				state = 829 # Engels-Marxstadt
+				state = 834 # Tiraspol
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				73 = {
+					add_core_of = ROOT
+				}
+				80 = {
+					add_core_of = ROOT
+				}
+				91 = {
+					add_core_of = ROOT
+				}
+				89 = {
+					add_core_of = ROOT
+				}
+				93 = {
+					add_core_of = ROOT
+				}
+				137 = {
+					add_core_of = ROOT
+				}
+				192 = {
+					add_core_of = ROOT
+				}
+				193 = {
+					add_core_of = ROOT
+				}
+				196 = {
+					add_core_of = ROOT
+				}
+				197 = {
+					add_core_of = ROOT
+				}
+				198 = {
+					add_core_of = ROOT
+				}
+				199 = {
+					add_core_of = ROOT
+				}
+				200 = {
+					add_core_of = ROOT
+				}
+				201 = {
+					add_core_of = ROOT
+				}
+				202 = {
+					add_core_of = ROOT
+				}
+				203 = {
+					add_core_of = ROOT
+				}
+				217 = {
+					add_core_of = ROOT
+				}
+				218 = {
+					add_core_of = ROOT
+				}
+				220 = {
+					add_core_of = ROOT
+				}
+				221 = {
+					add_core_of = ROOT
+				}
+				224 = {
+					add_core_of = ROOT
+				}
+				225 = {
+					add_core_of = ROOT
+				}
+				226 = {
+					add_core_of = ROOT
+				}
+				227 = {
+					add_core_of = ROOT
+				}
+				228 = {
+					add_core_of = ROOT
+				}
+				234 = {
+					add_core_of = ROOT
+				}
+				235 = {
+					add_core_of = ROOT
+				}
+				238 = {
+					add_core_of = ROOT
+				}
+				240 = {
+					add_core_of = ROOT
+				}
+				245 = {
+					add_core_of = ROOT
+				}
+				259 = {
+					add_core_of = ROOT
+				}
+				260 = {
+					add_core_of = ROOT
+				}
+				265 = {
+					add_core_of = ROOT
+				}
+				766 = {
+					add_core_of = ROOT
+				}
+				829 = {
+					add_core_of = ROOT
+				}
+				834 = {
+					add_core_of = ROOT
+				}
+			}
+		}
+	}
+}
