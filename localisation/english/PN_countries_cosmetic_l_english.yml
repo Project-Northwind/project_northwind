@@ -1,4 +1,5 @@
 ﻿l_english:
+  # Latvia
   LAT_united_baltic_federation: "United Baltic Federation"
   LAT_united_baltic_federation_communism: "Baltic Workers' Commune"
   LAT_united_baltic_federation_communism_DEF: "the Baltic Workers' Commune"
@@ -12,3 +13,17 @@
   LAT_united_baltic_federation_neutrality: "United Baltic States"
   LAT_united_baltic_federation_neutrality_DEF: "the United Baltic States"
   LAT_united_baltic_federation_neutrality_ADJ: "Baltic"
+ # Ukraine
+  UKR_greater_ukraine: "Greater Ukraine"
+  UKR_greater_ukraine_communism: "Greater Ukranian Council Republic"
+  UKR_greater_ukraine_communism_DEF: "the Greater Ukranian Council Republic"
+  UKR_greater_ukraine_communism_ADJ: "Ukranian"
+  UKR_greater_ukraine_democratic: "Greater Ukranian People's Republic"
+  UKR_greater_ukraine_democratic_DEF: "the Greater Ukranian People's Republic"
+  UKR_greater_ukraine_democratic_ADJ: "Ukranian"
+  UKR_greater_ukraine_fascism: "Greater All-Ukranian State"
+  UKR_greater_ukraine_fascism_DEF: "the Greater All-Ukranian State"
+  UKR_greater_ukraine_fascism_ADJ: "Ukranian"
+  UKR_greater_ukraine_neutrality: "Kingdom of Greater Ukraine"
+  UKR_greater_ukraine_neutrality_DEF: "the Kingdom of Greater Ukraine"
+  UKR_greater_ukraine_neutrality_ADJ: "Ukranian"

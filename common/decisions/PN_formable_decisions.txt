@@ -105,6 +105,8 @@ PN_formable_greater_ukraine_cat = {
 		}
 
 		complete_effect = {
+			custom_effect_tooltip = PN_form_country_gain_cores_on_highlighted_states
+			set_cosmetic_tag = UKR_greater_ukraine
 			hidden_effect = {
 				73 = {
 					add_core_of = ROOT
