@@ -860,5 +860,18 @@ ideas = {
 				war_support_weekly = 0.005
 			}
 		}
+		GENERIC_army_reform_measures = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.2
+				experience_gain_army_factor = 0.1
+			}
+		}
 	}
 }

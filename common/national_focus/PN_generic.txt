@@ -27,7 +27,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
-		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_answer_the_nations_call focus = GENERIC_political_neutrality_one }
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_answer_the_nations_call focus = GENERIC_undermine_the_political_system }
 		x = -4
 		y = 1
 		cost = 10
@@ -948,7 +948,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_neutrality_one
+		id = GENERIC_undermine_the_political_system
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
@@ -966,11 +966,148 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GENERIC_strengthen_the_armed_forces
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_undermine_the_political_system }
+		relative_position_id = GENERIC_undermine_the_political_system
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_sideline_political_figures
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_undermine_the_political_system }
+		relative_position_id = GENERIC_undermine_the_political_system
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_crackdown_on_corruption
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_sideline_political_figures }
+		prerequisite = { focus = GENERIC_strengthen_the_armed_forces }
+		relative_position_id = GENERIC_sideline_political_figures
+		x = 1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_expand_military_political_power
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_crackdown_on_corruption }
+		relative_position_id = GENERIC_crackdown_on_corruption
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_crackdown_on_dissent
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_expand_military_political_power }
+		relative_position_id = GENERIC_expand_military_political_power
+		x = 2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_prevent_a_counter_coup
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_crackdown_on_dissent }
+		relative_position_id = GENERIC_crackdown_on_dissent
+		x = 0
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_incorporate_the_military_police
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_expand_military_political_power }
+		relative_position_id = GENERIC_expand_military_political_power
+		x = -2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_stabilize_the_new_state
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = GENERIC_expand_military_political_power }
+		relative_position_id = GENERIC_expand_military_political_power
+		x = 0
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
 		id = GENERIC_answer_the_nations_call
 		icon = GFX_focus_generic_fascist_propaganda
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
-		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_a_bastion_of_freedom focus = GENERIC_political_neutrality_one }
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_a_bastion_of_freedom focus = GENERIC_undermine_the_political_system }
 		x = 14
 		y = 1
 		cost = 10
@@ -1682,7 +1819,7 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		relative_position_id = GENERIC_political_focus_one
 		prerequisite = { focus = GENERIC_political_focus_one }
-		mutually_exclusive = { focus = GENERIC_a_bastion_of_freedom focus = GENERIC_political_neutrality_one focus = GENERIC_answer_the_nations_call }
+		mutually_exclusive = { focus = GENERIC_a_bastion_of_freedom focus = GENERIC_undermine_the_political_system focus = GENERIC_answer_the_nations_call }
 		x = -14
 		y = 1
 		cost = 5
@@ -6474,73 +6611,43 @@ focus_tree = {
 
 		cost = 5
 
-		ai_will_do = {
-			factor = 1
-		}
-
+		
 		available = {
 			num_divisions > 0
 		}
-
-		cancel_if_invalid = yes
-
-		select_effect = {	
-			country_event = { id = abc.1 hours = 1 }
-		}
-
+		
 		completion_reward = {
 			army_experience = 5
-			if = { # Tooltip Only
-				limit = {
-					NOT = {
-						has_country_flag = GENERIC_establish_a_general_staff_a
-						has_country_flag = GENERIC_establish_a_general_staff_b
-					}
-				}
-				add_ideas = GENERIC_establish_a_general_staff_idea
-			} 
-			if = {
-				limit = {
-					has_country_flag = GENERIC_establish_a_general_staff_a
-				}
-				add_ideas = GENERIC_establish_a_general_staff_idea_1
-			}
-			if = {
-				limit = {
-					has_country_flag = GENERIC_establish_a_general_staff_b
-				}
-				add_ideas = GENERIC_establish_a_general_staff_idea_2
-			}
-			hidden_effect = {
-				set_country_flag = GENERIC_i_am_generic_army		
-			}
 		}
-	}
-
-	focus = {
-		id = GENERIC_army_reform
-		icon = GFX_focus_chi_army_reform
-		prerequisite = { focus = GENERIC_country_general_staff }
-		x = 0
-		y = 1
-		relative_position_id = GENERIC_country_general_staff
-
-		cost = 10
-
 		ai_will_do = {
 			factor = 1
 		}
+	}
+	focus = {
+		id = GENERIC_army_reform
+		icon = GFX_focus_chi_army_reform
+		relative_position_id = GENERIC_country_general_staff
+		prerequisite = { focus = GENERIC_country_general_staff }
+		x = 0
+		y = 1
 
-		cancel_if_invalid = yes
+		cost = 5
 
 		completion_reward = {
-			unlock_decision_tooltip = GENERIC_training_exercise 
+			#unlock_decision_tooltip = GENERIC_training_exercise 
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
+			add_timed_idea = {
+				days = 365
+				idea = GENERIC_army_reform_measures
+			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -6639,7 +6746,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
-	
 	focus = {
 		id = GENERIC_equipment_modernization_program
 		icon = GFX_focus_generic_manpower
@@ -6686,7 +6792,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-
 	focus = {
 		id = GENERIC_army_modernization
 		icon = GFX_focus_RAJ_military_into_the_workforce
@@ -6715,7 +6820,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-
 	focus = {
 		id = GENERIC_support_research
 		icon = GFX_goal_generic_army_artillery2
@@ -6739,7 +6843,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-
 	focus = {
 		id = GENERIC_special_forces
 		icon = GFX_goal_generic_special_forces
@@ -6780,7 +6883,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-
 	focus = {
 		id = GENERIC_the_future_of_warfare
 		icon = GFX_focus_generic_tank_production
