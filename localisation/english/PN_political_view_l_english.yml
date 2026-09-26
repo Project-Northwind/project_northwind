@@ -1,0 +1,16 @@
+﻿l_english:
+  # Governmental Laws (Domestic Policies)
+    government:1 "Governmental Laws"
+    military_recruitment: "Military Recruitment Laws"
+    role_of_women_laws: "Women's Role"
+    equality: "Equality"
+  # Economical Laws (Trade Law, Economy Law, Finance, War Bonds)
+    economical_laws: "Economical Laws"
+    nationalization: "Nationalization"
+    finances: "Finances"
+    war_bond_law: "War Bond Law"
+  # Military Recruitment Laws (Age, Health, Length of Service)
+    recruitment_standard_laws: "Health Standards"
+    service_limit_laws: "Service Limit Laws"
+    minimum_age_laws: "Minimum Recruitment Age"
+    maximum_age_laws: "Maximum Recruitment Age"

@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_top_bar_resource_background"
+		texturefile = "gfx/interface/PN_topbar_wedge.dds"
+	}
+}

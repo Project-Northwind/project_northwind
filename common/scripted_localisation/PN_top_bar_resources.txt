@@ -1,0 +1,104 @@
+# Oil
+defined_text = {
+	name = oil_text
+	text = {
+		trigger = {
+			check_variable = { resource_imported@oil > 0 }
+			check_variable = { resource@oil > 8 }
+		}
+		localization_key = PN_top_bar_oil_yellow_tt
+	}
+	text = {
+		localization_key = PN_top_bar_oil_green_tt
+	}
+}
+
+# Aluminium
+defined_text = {
+	name = aluminium_text
+	text = {
+		trigger = {
+			check_variable = { resource_imported@aluminium > 0 }
+			check_variable = { resource@aluminium > 8 }
+		}
+		localization_key = PN_top_bar_aluminium_yellow_tt
+	}
+	text = {
+		localization_key = PN_top_bar_aluminium_green_tt
+	}
+}
+
+# Rubber
+defined_text = {
+	name = rubber_text
+	text = {
+		trigger = {
+			check_variable = { resource_imported@rubber > 0 }
+			check_variable = { resource@rubber > 8 }
+		}
+		localization_key = PN_top_bar_rubber_yellow_tt
+	}
+	text = {
+		localization_key = PN_top_bar_rubber_green_tt
+	}
+}
+
+# Tungsten
+defined_text = {
+	name = tungsten_text
+	text = {
+		trigger = {
+			check_variable = { resource_imported@tungsten > 0 }
+			check_variable = { resource@tungsten > 8 }
+		}
+		localization_key = PN_top_bar_tungsten_yellow_tt
+	}
+	text = {
+		localization_key = PN_top_bar_tungsten_green_tt
+	}
+}
+
+# Steel
+defined_text = {
+	name = steel_text
+	text = {
+		trigger = {
+			check_variable = {resource_imported@steel > 0}
+			check_variable = {resource@steel > 8 }
+		}
+		localization_key = PN_top_bar_steel_yellow_tt
+	}
+	text = {
+		localization_key = PN_top_bar_steel_green_tt
+	}
+}
+
+# Chromium
+defined_text = {
+	name = chromium_text
+	text = {
+		trigger = {
+			check_variable = { resource_imported@chromium > 0 }
+			check_variable = { resource@chromium > 8 }
+		}
+		localization_key = PN_top_bar_chromium_yellow_tt
+	}
+	text = {
+		localization_key = PN_top_bar_chromium_green_tt
+	}
+}
+
+# Coal
+defined_text = {
+	name = coal_text
+	text = {
+		trigger = {
+			check_variable = { resource_imported@coal > 0 }
+			check_variable = { resource@coal > 8 }
+		}
+		localization_key = PN_top_bar_coal_yellow_tt
+	}
+	text = {
+		localization_key = PN_top_bar_coal_green_tt
+	}
+}
