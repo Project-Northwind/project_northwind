@@ -8,11 +8,18 @@
   # Equality
     PN_equality_all: "Full Equality"
     PN_equality_minority: "Minority Rights"
-    PN_equality_segragation: "Segregation"
+    PN_equality_segregation: "Segregation"
   # Nationalization
     PN_nationalization_capital: "Capitalism"
     PN_nationalization_partial: "State Capitalism"
     PN_nationalization_full: "State Property"
+  # Fincances
+    PN_finances_army: "Army Financing"
+    PN_finances_civilian: "Civilian Spending"
+    PN_finances_foreign: "Foreign Subsidies"
+    PN_finances_science: "Research Funding"
+    PN_finances_license_eco: "License Production Focus"
+    PN_finances_prime_eco: "Primary Industry Focus"
   # War Bond Law
     PN_war_bonds_force: "Forced War Bond Purchases"
     PN_war_bonds_welcome: "Bond Purchasing Welcome"
@@ -27,3 +34,16 @@
     PN_limited_service: "Limited Service"
     PN_extended_service: "Extended Service"
     PN_veteran_cycling: "Veteran Cycling"
+  # Minimum Recruitment Age
+    PN_age_19: "+19"
+    PN_age_18: "+18"
+    PN_age_17: "+17"
+    PN_age_16: "+16"
+    PN_age_15: "+15"
+    PN_age_14: "+14"
+    PN_all_must_serve_young: "All must serve"
+  # Maximum Recruitment Age
+    PN_age_40: "+40"
+    PN_age_50: "+50"
+    PN_age_60: "+60"
+    PN_all_must_serve_old: "All must serve"

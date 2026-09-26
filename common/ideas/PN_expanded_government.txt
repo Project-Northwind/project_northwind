@@ -9,6 +9,9 @@ ideas = {
 
 		# Equality for all
 		PN_equality_all = {
+
+			picture = generic_manpower_bonus
+
 			cost = 150
 
 		    available = {
@@ -42,6 +45,9 @@ ideas = {
 
 		# Minority Rights
 		PN_equality_minority = {
+
+			picture = generic_disjointed_gov
+
 			cost = 150
 			available = {
 				NOT = { 
@@ -69,6 +75,9 @@ ideas = {
 		
 		# Race Segregation
 		PN_equality_segregation = {
+
+			picture = generic_democracy_banned
+
 			cost = 150
 
 			available = {
@@ -324,6 +333,7 @@ ideas = {
 
 		# Capitalism
 		PN_nationalization_capital = {
+			picture = generic_foreign_capital
 			available = {
 				NOT = {
 					has_government = communism
@@ -355,6 +365,7 @@ ideas = {
 		
 		#State Capitalism
 		PN_nationalization_partial = {
+			picture = PER_fund_state_intelligence_idea
 		   available = {
 				NOT = {
 					has_government = democratic
@@ -390,6 +401,7 @@ ideas = {
 
 		#State Property
 		PN_nationalization_full = {
+			picture = eng_tackle_capitalism
 			available = {
 				NOT = {
 					has_government = democratic
@@ -426,6 +438,9 @@ ideas = {
 		
 		#Force Bonds
 		PN_war_bonds_force = {
+
+			picture = ger_mefo_bills_payment
+
 		    available = {
 				OR =  {
 					NOT = {
@@ -464,6 +479,8 @@ ideas = {
 		
 		#Bonds Welcome
 		PN_war_bonds_welcome = {
+
+			picture = HUN_treaty_of_triannon
 		
 			available = {
 				OR = {
@@ -500,6 +517,8 @@ ideas = {
 		
 		#No Bonds
 		PN_war_bonds_no = {
+
+			picture = generic_fascism_banned
 		
 			available = {
 				NOT = {
@@ -626,10 +645,11 @@ ideas = {
 		use_list_view = yes
 
 		PN_stay_at_home = {
+
+			picture = stay_at_home_gender
 						
 			cost = 100
 			removal_cost = -1
-			level = 4
 			
 			available = {
 			}
@@ -647,10 +667,12 @@ ideas = {
 			default = yes
 		}
 
-		PN_women_workers = {		
+		PN_women_workers = {	
+			
+			picture = women_workers_gender
+			
 			cost = 200
 			removal_cost = -1
-			level = 3
 			
 			available = {
 				OR = {
@@ -674,11 +696,12 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
-		PN_women_auxillary = {
+		PN_women_auxiliary = {
+
+			picture = women_auxiliary_gender
 						
 			cost = 200
 			removal_cost = -1
-			level = 3
 			
 			available = {
 				OR = {
@@ -700,10 +723,11 @@ ideas = {
 		}
 		
 		PN_limited_female_service = {
+
+			picture = limited_female_service_gender
 						
 			cost = 200
 			removal_cost = -1
-			level = 2
 			
 			available = {
 				AND = {
@@ -725,10 +749,11 @@ ideas = {
 		}
 
 		PN_egalitarian = {
+
+			picture = egalitarian_gender
 						
 			cost = 200
 			removal_cost = -1
-			level = 1
 			
 			available = {
 				OR = {
@@ -765,6 +790,8 @@ ideas = {
 		use_list_view = yes
 
 		PN_armystandard_best_of_the_best = {
+
+			picture = the_best_of_the_best
 						
 			cost = 150
 			removal_cost = -1
@@ -788,6 +815,8 @@ ideas = {
 		}
 
 		PN_healthy_standard = {
+
+			picture = good_health_requirements
 						
 			cost = 150
 			removal_cost = -1
@@ -809,6 +838,8 @@ ideas = {
 		}
 		
 		PN_loose_standard = {
+
+			picture = loose_health_requirements
 						
 			cost = 75
 			removal_cost = -1
@@ -837,6 +868,8 @@ ideas = {
 		}
 		
 		PN_no_exemptions = {
+
+			picture = no_exemptions
 						
 			cost = 75
 			removal_cost = -1
@@ -866,6 +899,8 @@ ideas = {
 		}
 		
 		PN_scraping_the_barrel_standard = {
+
+			picture = scraping_the_barrel
 						
 			cost = 75
 			removal_cost = -1
@@ -900,6 +935,8 @@ ideas = {
 		use_list_view = yes
 
 		PN_limited_service = {
+
+			picture = limited_service
 						
 			cost = 75
 			removal_cost = -1
@@ -923,6 +960,8 @@ ideas = {
 		}
 		
 		PN_extended_service = {
+
+			picture = wartime_service
 						
 			cost = 100
 			removal_cost = -1
@@ -953,6 +992,8 @@ ideas = {
 		}
 		
 		PN_veteran_cycling = {
+
+			picture = veteran_cycling
 						
 			cost = 125
 			removal_cost = -1
@@ -988,7 +1029,9 @@ ideas = {
 		use_list_view = yes
 
 		PN_age_40 = {
-						
+			
+			picture = age_40
+
 			cost = 50
 			removal_cost = -1
 			level = 4
@@ -1008,7 +1051,9 @@ ideas = {
 			default = yes
 		}
 		PN_age_50 = {
-						
+			
+			picture = age_50
+
 			cost = 50
 			removal_cost = -1
 			level = 3
@@ -1035,6 +1080,8 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		PN_age_60 = {
+
+			picture = age_60
 						
 			cost = 100
 			removal_cost = -1
@@ -1064,6 +1111,8 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		PN_all_must_serve_old = {
+
+			picture = all_must_serve_old
 						
 			cost = 150
 			removal_cost = -1
@@ -1100,7 +1149,10 @@ ideas = {
 		use_list_view = yes
 
 		PN_age_19 = {	
-			cost = 100
+
+			picture = age_19
+
+			cost = 50
 			removal_cost = -1
 			level = 7
 			
@@ -1120,6 +1172,9 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		PN_age_18 = {
+
+			picture = age_18
+
 			cost = 50
 			removal_cost = -1
 			level = 6
@@ -1141,6 +1196,8 @@ ideas = {
 		}
 		PN_age_17 = {
 						
+			picture = age_17
+
 			cost = 50
 			removal_cost = -1
 			level = 5
@@ -1161,6 +1218,8 @@ ideas = {
 		}
 		PN_age_16 = {
 						
+			picture = age_16
+
 			cost = 50
 			removal_cost = -1
 			level = 4
@@ -1194,7 +1253,9 @@ ideas = {
 		}
 		PN_age_15 = {
 						
-			cost = 50
+			picture = age_15
+
+			cost = 100
 			removal_cost = -1
 			level = 3
 			
@@ -1222,7 +1283,9 @@ ideas = {
 		}
 		PN_age_14 = {
 						
-			cost = 75
+			picture = age_14
+
+			cost = 100
 			removal_cost = -1
 			level = 2
 			
@@ -1251,7 +1314,8 @@ ideas = {
 		}
 		PN_all_must_serve_young = {
 						
-			cost = 100
+			picture = all_must_serve_young
+			cost = 150
 			removal_cost = -1
 			level = 1
 			
