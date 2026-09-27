@@ -918,7 +918,7 @@ guiTypes = {
 
 		iconType = {
 			name = "idea_alert_glow"
-			position = { x = -4 y = -8 }
+			position = { x = -14 y = -8 }
 			spriteType = "GFX_ongoing_generic_glow_yellow"
 			scale = 0.65			
 			alwaystransparent = yes

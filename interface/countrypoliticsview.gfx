@@ -317,27 +317,27 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_slot_equality"
-		textureFile = "gfx/interface/PN_equality_law.dds"
+		textureFile = "gfx/interface/PN_idea_slot_national_character.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_nationalization"
-		textureFile = "gfx/interface/PN_nationalization_law.dds"
+		textureFile = "gfx/interface/PN_idea_slot_national_character.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_finances"
-		textureFile = "gfx/interface/PN_finances.dds"
+		textureFile = "gfx/interface/PN_idea_slot_national_character.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_service_limit_laws"
-		textureFile = "gfx/interface/PN_service_limit_laws.dds"
+		textureFile = "gfx/interface/PN_idea_slot_national_character.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_slot_war_bond_law"
-		textureFile = "gfx/interface/PN_war_bond_laws.dds"
+		textureFile = "gfx/interface/PN_idea_slot_national_character.dds"
 	}
 
 	spriteType = {
