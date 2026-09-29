@@ -1452,7 +1452,7 @@ focus_tree = {
 		icon = GFX_focus_generic_purchase_mechanized_equipment
 		prerequisite = { focus = GENERIC_one_state_one_people }
 		relative_position_id = GENERIC_one_state_one_people
-		x = 2
+		x = 1
 		y = 1
 		cost = 10
 		
@@ -1511,7 +1511,7 @@ focus_tree = {
 		icon = GFX_focus_RAJ_enrollment_of_dali_children
 		prerequisite = { focus = GENERIC_one_state_one_people }
 		relative_position_id = GENERIC_one_state_one_people
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
 	
@@ -1596,53 +1596,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
-	focus = {
-		id = GENERIC_military_exercises
-		icon = GFX_focus_generic_full_social_mobilization
-		prerequisite = { focus = GENERIC_one_state_one_people }
-		relative_position_id = GENERIC_one_state_one_people
-		x = 0
-		y = 2
-		cost = 10
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available_if_capitulated = yes
-
-		available = {
-			democratic > 0.45
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = GENERIC_government_of_national_order_sub_ideology_change_tt
-			set_country_leader_ideology = conservatism
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				set_politics = {
-					ruling_party = democratic
-				}
-			}
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
-			}
-		}
-	}
 	focus = {
 		id = GENERIC_country_nationalism
 		icon = GFX_focus_generic_fascist_troops
 		prerequisite = { focus = GENERIC_military_exercises }
 		prerequisite = { focus = GENERIC_the_single_list }
 		prerequisite = { focus = GENERIC_collaborate_with_industrialists }
-		relative_position_id = GENERIC_military_exercises
-		x = 0
+		relative_position_id = GENERIC_the_single_list
+		x = 1
 		y = 1
 		cost = 10
 	
