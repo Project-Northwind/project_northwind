@@ -1815,7 +1815,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GENERIC_country_isolationism_idea
+			add_ideas = GENERIC_country_isolationism_idea_1
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
