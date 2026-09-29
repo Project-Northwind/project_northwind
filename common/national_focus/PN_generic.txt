@@ -1039,7 +1039,7 @@ focus_tree = {
 		icon = GFX_focus_spr_crush_the_revolution
 		prerequisite = { focus = GENERIC_expand_military_political_power }
 		relative_position_id = GENERIC_expand_military_political_power
-		x = 2
+		x = 3
 		y = 1
 		cost = 10
 	
@@ -1056,7 +1056,24 @@ focus_tree = {
 		icon = GFX_focus_SOV_military_purge
 		prerequisite = { focus = GENERIC_crackdown_on_dissent }
 		relative_position_id = GENERIC_crackdown_on_dissent
-		x = 0
+		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_mandatory_military_education
+		icon = GFX_focus_generic_education
+		prerequisite = { focus = GENERIC_crackdown_on_dissent }
+		relative_position_id = GENERIC_crackdown_on_dissent
+		x = 1
 		y = 1
 		cost = 10
 	
@@ -1124,7 +1141,60 @@ focus_tree = {
 		icon = GFX_focus_generic_air_research_boost
 		prerequisite = { focus = GENERIC_strengthen_the_new_regime }
 		relative_position_id = GENERIC_strengthen_the_new_regime
+		x = -2
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_reinforce_traditional_values
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = GENERIC_strengthen_the_new_regime }
+		relative_position_id = GENERIC_strengthen_the_new_regime
+		x = 0
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_a_return_to_democracy
+		icon = GFX_focus_generic_election
+		prerequisite = { focus = GENERIC_reinforce_traditional_values }
+		relative_position_id = GENERIC_reinforce_traditional_values
+		mutually_exclusive = { focus = GENERIC_maintain_the_junta }
 		x = -1
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = liberty_ethos_focus
+		}
+	}
+	focus = {
+		id = GENERIC_maintain_the_junta
+		icon = GFX_focus_generic_full_social_mobilization
+		prerequisite = { focus = GENERIC_reinforce_traditional_values }
+		relative_position_id = GENERIC_reinforce_traditional_values
+		mutually_exclusive = { focus = GENERIC_a_return_to_democracy }
+		x = 1
 		y = 1
 		cost = 10
 	
@@ -1141,7 +1211,7 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = GENERIC_strengthen_the_new_regime }
 		relative_position_id = GENERIC_strengthen_the_new_regime
-		x = 2
+		x = 3
 		y = 1
 		cost = 10
 	
@@ -1158,7 +1228,7 @@ focus_tree = {
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = GENERIC_in_defense_of_country }
 		relative_position_id = GENERIC_in_defense_of_country
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 	
