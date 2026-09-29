@@ -7,7 +7,7 @@ characters = {
 
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_Europe_Generic_land_4
+				large = GFX_portrait_UKR_pavlo_skoropadskyi_civilian
 			}
 		}
 

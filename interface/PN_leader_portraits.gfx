@@ -3,4 +3,12 @@ spriteTypes = {
 		name = "GFX_portrait_GER_regent_council"
 		texturefile = "gfx/leaders/GER/GER_regent_seat.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_UKR_pavlo_skoropadskyi_army"
+		texturefile = "gfx/leaders/UKR/UKR_pavlo_skoropadskyi_army.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_UKR_pavlo_skoropadskyi_civilian"
+		texturefile = "gfx/leaders/UKR/UKR_pavlo_skoropadskyi_civilian.dds"
+	}
 }
