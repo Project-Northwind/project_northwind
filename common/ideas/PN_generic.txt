@@ -275,6 +275,29 @@ ideas = {
 				political_power_factor = 0.05
 			}
 		}
+		GENERIC_a_bastion_of_freedom_idea = {
+
+			name = GENERIC_a_bastion_of_freedom
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				democratic_drift = 0.15
+				fascism_acceptance = -50
+				communism_acceptance = -50
+				political_power_factor = -0.2
+			}
+		}
 		GENERIC_country_civic_guard_idea_1 = {
 
 			allowed = {
@@ -584,6 +607,24 @@ ideas = {
 				enemy_justify_war_goal_time = 0.25
 			}
 		}
+		GENERIC_the_landmine_theory_idea = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			name = GENERIC_the_landmine_theory
+
+			picture = SWE_hedgehog_defense
+
+			modifier = {
+				production_speed_bunker_factor = 0.25 
+				production_speed_coastal_bunker_factor = 0.25
+				land_bunker_effectiveness_factor = 0.1
+				coastal_bunker_effectiveness_factor = 0.1
+			}
+		}
 		GENERIC_balance_of_power_diplomacy_idea = {
 
 			allowed = {
@@ -873,5 +914,129 @@ ideas = {
 				experience_gain_army_factor = 0.1
 			}
 		}
+		GENERIC_undermine_the_political_system_idea = {
+
+			name = GENERIC_undermine_the_political_system
+
+			picture = RAJ_a_policy_of_silence
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+		GENERIC_army_in_charge = {
+			picture = NORDIC_army_monarchist
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.2
+				experience_gain_army_factor = 0.1
+			}
+		}
+		GENERIC_army_in_charge_2 = {
+			picture = NORDIC_army_monarchist
+			name = GENERIC_army_in_charge
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.2
+				experience_gain_army_factor = 0.1
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		GENERIC_army_in_charge_3 = {
+			picture = NORDIC_army_monarchist
+			name = GENERIC_army_in_charge
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.2
+				experience_gain_army_factor = 0.1
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				drift_defence_factor = 0.75
+			}
+		}
+		GENERIC_military_education = {
+			picture = jap_supremacy_of_technology
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				experience_gain_army = 0.1
+				research_speed_factor = 0.025
+			}
+		}
+		GENERIC_incorporate_the_military_police = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_banned
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+		GENERIC_stabilize_the_new_state_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_russian_corporate_state_ccp_sov_compatibility
+
+			modifier = {
+				conscription_factor = 0.025
+			}
+		}	
+		GENERIC_stabilize_the_new_state_idea_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_russian_corporate_state_ccp_sov_compatibility
+			name = GENERIC_stabilize_the_new_state_idea
+
+			modifier = {
+				conscription_factor = 0.05
+				economy_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+			}
+		}		
 	}
 }

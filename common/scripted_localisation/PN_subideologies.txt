@@ -1,0 +1,198 @@
+defined_text = {
+	name = GetSubIdeology
+
+	text = {
+		trigger = {
+			has_government = democratic
+		}
+		localization_key = PN_subideology_display_democratic
+	}
+	text = {
+		trigger = {
+			has_government = neutrality
+		}
+		localization_key = PN_subideology_display_neutrality
+	}
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = PN_subideology_display_fascism
+	}
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = PN_subideology_display_communism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyDem
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = conservatism
+		}
+		localization_key = PN_subideology_conservatism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = liberalism
+		}
+		localization_key = PN_subideology_liberalism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socialism
+		}
+		localization_key = PN_subideology_socialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = populism
+		}
+		localization_key = PN_subideology_populism
+	}
+	text = {
+		localization_key = PN_subideology_democratic
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyAth
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = despotism
+		}
+		localization_key = PN_subideology_despotism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = military_junta
+		}
+		localization_key = PN_subideology_military_junta
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = oligarchism
+		}
+		localization_key = PN_subideology_oligarchism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarchism
+		}
+		localization_key = PN_subideology_anarchism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = moderatism
+		}
+		localization_key = PN_subideology_moderatism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = centrism
+		}
+		localization_key = PN_subideology_centrism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = japan_militarism_ideology
+		}
+		localization_key = PN_subideology_japan_militarism_ideology
+	}
+	text = {
+		localization_key = PN_subideology_neutrality
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyFas
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = nazism
+		}
+		localization_key = PN_subideology_nazism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = gen_nazism
+		}
+		localization_key = PN_subideology_gen_nazism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = fascism_ideology
+		}
+		localization_key = PN_subideology_fascism_ideology
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = falangism
+		}
+		localization_key = PN_subideology_falangism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = rexism
+		}
+		localization_key = PN_subideology_rexism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = emperor_fascism
+		}
+		localization_key = PN_subideology_emperor_fascism
+	}
+	text = {
+		localization_key = PN_subideology_fascism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyCom
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = marxism
+		}
+		localization_key = PN_subideology_marxism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = leninism
+		}
+		localization_key = PN_subideology_leninism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = stalinism
+		}
+		localization_key = PN_subideology_stalinism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anti_revisionism
+		}
+		localization_key = PN_subideology_anti_revisionism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarchist_communism
+		}
+		localization_key = PN_subideology_anarchist_communism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = buddhist_socialism
+		}
+		localization_key = PN_subideology_buddhist_socialism
+	}
+	text = {
+		localization_key = PN_subideology_communism
+	}
+}

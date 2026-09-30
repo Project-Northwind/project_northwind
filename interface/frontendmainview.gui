@@ -1,0 +1,701 @@
+guiTypes = {
+
+	containerWindowType = {
+		name ="frontend_background"
+		position = { x=0 y =0 }
+		size = {
+			width = 1920
+			height = 1440
+			min = { width = 100% height = 100% }
+			preserve_aspect_ratio = yes
+		}
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_frontend_bg"
+			alwaystransparent = yes
+		}
+
+	}
+
+	### MAIN MENU PANEL (upperleft)
+	containerWindowType = {
+		name  ="mainmenu_panel_upperleft"
+		position = { x=10000 y =10000 }
+		size = { width = 256 height = 768}
+		orientation = lower_left
+
+        ButtonType = {
+            name ="frontend_game_logo"
+            spriteType = "GFX_frontend_game_logo"
+            position = { x= 20 y = 20 }
+        }
+
+	}
+
+	### MAIN MENU PANEL (upperright)
+	containerWindowType = {
+		name ="mainmenu_panel_upperright"
+		position = { x=10000 y =10000 }
+		size = { width = 400 height = 800}
+		Orientation = upper_right
+
+		ButtonType = {
+			name = "achievements_button"
+			position = { x = -50 y = 25 }
+			quadTextureSprite ="achievements"
+			pdx_tooltip = "MENU_ACHIEVEMENTS"
+		}
+	}
+
+	### SINGLE PLAYER MENU
+	containerWindowType = {
+		name = "mainmenu_single_player"
+		position = { x=0 y =-32}
+		size = { width = 1100 height = 800 }
+		Orientation = CENTER_DOWN
+		Origo = center
+
+		containerWindowType = {
+			name ="mainmenu_single_player_ghost"
+			position = { x=0 y=-150 }
+			size = { width = 938 height = 400 }
+			Orientation = CENTER
+			Origo = center
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_paper_w_frame_bg"
+			}
+		}
+
+		instantTextBoxType = {
+			name ="single_player_field_report_title"
+			position = { x = 100 y = 100 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "PN_FIELD_REPORT"
+			format = centre
+			maxWidth = 260
+			maxHeight = 28
+		}
+
+		iconType = {
+			name = "single_player_field_report_divider"
+			position = { x = 86 y = 142 }
+			spriteType = "GFX_main_lobby_divider"
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType = {
+			name ="single_player_field_report_text"
+			position = { x = 100 y = 162 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "PN_FIELD_REPORT_TEXT"
+			format = center
+			maxWidth = 260
+			maxHeight = 180
+			multiline = yes
+		}
+
+		instantTextBoxType = {
+			name ="single_player_northwind_title"
+			position = { x = 735 y = 145 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "PN_MAIN_MENU_NAME"
+			format = centre
+			maxWidth = 180
+			maxHeight = 28
+		}
+
+		instantTextBoxType = {
+			name ="single_player_northwind_version"
+			position = { x = 735 y = 205 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "PN_MAIN_MENU_VERSION"
+			format = centre
+			maxWidth = 180
+			maxHeight = 20
+		}
+
+		ButtonType = {
+			name = "sp_continue_button"
+			position = { x = 409 y = 100 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "FE_CONTINUE"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		iconType = {
+			name = "sp_continue_flag_left"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x=10000 y=10000 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "sp_continue_flag_left_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x=10000 y=10000 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "sp_continue_flag_right"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x=10000 y=10000 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "sp_continue_flag_right_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = { x=10000 y=10000 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		ButtonType = {
+			name = "sp_new_button"
+			position = { x = 409 y = 150 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "FE_NEW"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		ButtonType = {
+			name = "sp_load_button"
+			position = { x = 409 y = 200 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "MENU_BAR_LOAD"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		ButtonType = {
+			name = "sp_tutorial_button"
+			position = { x = 409 y = 250 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "FE_TUTORIAL"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		ButtonType = {
+			name = "sp_back_button"
+			position = { x = 409 y = 350 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "BACK"
+			buttonFont = "hoi_24header"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "ESCAPE"
+		}
+	}
+
+	### MAIN MENU PANEL (bottom)
+	containerWindowType = {
+		name ="mainmenu_panel_bottom"
+		position = { x=0 y =-32}
+		size = { width = 1100 height = 800 }
+		Orientation = CENTER_DOWN
+		Origo = center
+
+		iconType = {
+			name ="frontend_game_logo"
+			spriteType = "GFX_frontend_game_logo"
+			position = { x=10000 y =10000 }
+		}
+
+		positionType = {
+			name = "subscription_size"
+			position = { x = 1100 y = 928 }
+		}
+
+		containerWindowType = {
+			name ="mainmenu_panel_bottom_ghost"
+			position = { x= 0 y= -150 }
+			size = { width = 938 height = 400 }
+			Orientation = CENTER
+			Origo = center
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_paper_w_frame_bg"
+			}
+		}
+
+		ButtonType = {
+			name = "single_player_button"
+			position = { x = 409 y = 80 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			font = "hoi_24header"
+			text = "FE_SINGLE_PLAYER"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		ButtonType = {
+			name = "multi_player_button"
+			position = { x = 409 y = 125 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			font = "hoi_24header"
+			text = "FE_MULTI_PLAYER"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		@warn_icon_x = 690
+		iconType = {
+			name = "single_player_button_warn"
+			position = { x = @warn_icon_x y = 84 }
+			spriteType = "GFX_missing_dlc_warning_sign"
+		}
+
+		instantTextBoxType = {
+			name ="version_label"
+			position = { x = 100 y = 350 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "ALPHA"
+			format = centre
+			maxWidth = 260
+			maxHeight = 20
+		}
+
+		positionType = {
+			name = "version_label_subscription_position"
+			position = { x = 100 y = 350 }
+		}
+
+		ButtonType = {
+			name = "settings_button"
+			position = { x = 409 y = 260 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+			text = "OPTIONS"
+		}
+
+		buttonType = {
+			name = "career_profile_button"
+			position = { x = 409 y = 170 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "MENU_BAR_CAREER_PROFILE"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		iconType = {
+			name = "career_profile_button_star"
+			position = { x = 684 y = 187 }
+			spriteType = "GFX_icon_best_in_career"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+
+		buttonType = {
+			name = "friends_button"
+			position = { x = 409 y = 215 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "MENU_BAR_FRIENDS"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		ButtonType = {
+			name = "credits_button"
+			position = { x = 409 y = 305 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "FE_CREDITS"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		ButtonType = {
+			name = "nudge_button"
+			position = { x = 10000 y = 10000 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_24header"
+			text = "Nudge!"
+		}
+
+		ButtonType = {
+			name = "privacy_policy_button"
+			position = { x = 10000 y = 10000 }
+			quadTextureSprite ="privacy"
+			pdx_tooltip = "MENU_PRIVACY_POLICY"
+		}
+
+		ButtonType = {
+			name = "exit_button"
+			position = { x = 409 y = 350 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			font = "hoi_24header"
+			text = "FE_EXIT"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		instantTextBoxType = {
+			name ="field_report_title"
+			position = { x = 100 y = 100 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "PN_FIELD_REPORT"
+			format = centre
+			maxWidth = 260
+			maxHeight = 28
+		}
+
+		iconType = {
+			name = "field_report_divider"
+			position = { x = 86 y = 142 }
+			spriteType = "GFX_main_lobby_divider"
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType = {
+			name ="field_report_text"
+			position = { x = 100 y = 162 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "PN_FIELD_REPORT_TEXT"
+			format = center
+			maxWidth = 260
+			maxHeight = 180
+			multiline = yes
+		}
+
+		instantTextBoxType = {
+			name ="northwind_title"
+			position = { x = 735 y = 125 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "PN_MAIN_MENU_NAME"
+			format = centre
+			maxWidth = 180
+			maxHeight = 28
+		}
+
+		instantTextBoxType = {
+			name ="northwind_version"
+			position = { x = 735 y = 270 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "PN_MAIN_MENU_VERSION"
+			format = centre
+			maxWidth = 180
+			maxHeight = 20
+		}
+
+		ButtonType = {
+			name = "achievements_button"
+			position = { x = 805 y = 185 }
+			quadTextureSprite ="achievements"
+			pdx_tooltip = "MENU_ACHIEVEMENTS"
+		}
+
+		ButtonType = {
+            name ="pdx_int_logo"
+            spriteType = "GFX_pdx_int_logo"
+            position = { x=10000 y =10000 }
+        }
+
+		ButtonType = {
+            name ="frontend_dev_logo"
+            spriteType = "GFX_frontend_dev_logo"
+            position = { x=10000 y =10000 }
+        }
+	}
+
+	### MAIN MENU SOCIAL BUTTONS
+	containerWindowType = {
+		name = "mainmenu_social_buttons"
+		position = { x=-50 y=25 }
+		size = { width = 240 height = 90 }
+		Orientation = center
+		origo = center
+
+		positionType = {
+			name = "position_without_social_gui"
+			position = { x = 0 y = 155 }
+		}
+		positionType = {
+			name = "subscription_position"
+			position = { x = 0 y = 155 }
+		}
+
+		positionType = {
+			name = "subscription_position_without_social_gui"
+			position = { x = 0 y = 155 }
+		}
+
+		containerWindowType = {
+			name = "social_view_interface_window"
+			position = { x = 250 y = 0  }
+			size = { width = 60 height = 40 }
+
+			buttonType = {
+				name = "toggle_button"
+				quadTextureSprite = "GFX_sort_button_83x29" ## Orig: 60x29
+				position = { x=0 y=0  }
+				buttonFont = "hoi_16mbs"
+			}
+
+			iconType = {
+				name = "button_toggle_socialview_icon"
+				spriteType = "GFX_socialview_icon"
+				position = { x=0 y=0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType={
+				name = "friends_online"
+				font = "cg_16b"
+				position = { x=20 y=15 }
+				text = "0"
+				maxWidth = 30
+				maxHeight = 16
+				alwaysTransparent = yes
+				format = center
+			}
+
+			iconType = {
+				name = "new_message"
+				position = { x=42 y =5 }
+				spriteType = "GFX_new_message_icon"
+				pdx_tooltip = "SOCIAL_NEW_MESSAGE"
+			}
+
+			iconType = {
+				name = "new_friend"
+				position = { x=42 y=17 }
+				spriteType = "GFX_new_friend_icon"
+				pdx_tooltip = "SOCIAL_NEW_FRIEND"
+			}
+		}
+
+		ButtonType = {
+			name = "homepage_button"
+			position = { x = 10000 y = 10000 }
+			quadTextureSprite ="homepage"
+		}
+
+		ButtonType = {
+			name = "privacy_policy_button"
+			position = { x = 10000 y = 10000 }
+			quadTextureSprite ="privacy"
+		}
+	}
+
+	containerWindowType = {
+		name = "owned_dlc_item"
+		size = { width = 50 height = 50 }
+
+		buttonType =
+		{
+			position = { x = -230 y = 0 }
+			name ="dlc_button"
+			spriteType = "GFX_frontend_banner_dlc018"
+		}
+
+		iconType = {
+			name = "glowup"
+			position = { x = -50 y = -21 }
+			spriteType = "GFX_spirit_glow"
+			scale = 0.8
+			#hide = yes
+		}
+
+		buttonType = {
+			name = "owned_tick"
+			spriteType = "GFX_BPT_area_defense_setting_tick"
+			position = { x = -6 y = 1 }
+			Orientation = center_left
+			scale = 0.56
+			alwaysTransparent = yes
+			#hide = yes
+		}
+
+		buttonType = {
+			name = "enabled_tick"
+			spriteType = "GFX_general_check"
+			position = { x = 28 y = 24 }
+			Orientation = center_left
+			alwaysTransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "change_background"
+		size = { width = 100 height = 40 }
+		position = { x = -330 y = 330 }
+		Orientation = lower_right
+		Origo = lower_right
+
+		buttonType = {
+			name ="change_background_button"
+			position = { x = -330 y = 330 }
+
+			quadTextureSprite = "GFX_button_238x38"
+			buttonText = "CHANGE_BACKGROUND"
+			buttonFont = "hoi_24header"
+			Orientation = center
+		}
+
+		containerWindowType = {
+			name = "background_selection"
+			size = { width = 238 height = 700 }
+			position = { x = -156 y = -700 }
+			margin = { top = 18 bottom = 13 left = 8}
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window"
+			}
+
+			checkboxType = {
+					name = "select_all_checkbox"
+					position = { x = 40 y = 0 }
+					quadTextureSprite ="GFX_generic_checkbox"
+					buttonText = ""
+					buttonFont = "Main_14_black"
+					clicksound = click_checkbox
+				}
+			instantTextBoxType={
+					position = {x = 78 y = 6 }
+					name = "select_all_label"
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					maxWidth = 130
+					maxHeight = 18
+					text = "SELECT_ALL"
+					orientation = "UPPER_LEFT"
+					format = left
+
+			}
+
+			positionType = {
+				name = "interval_input_widget_position"
+				position = { x = 45 y = 50 }
+			}
+
+		containerWindowType = {
+			name = "background_selection_list"
+			size = { width = 230 height = 576 }
+			position = { x = 0 y = 90 }
+			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 63
+			smooth_scrolling = yes
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_transparent"
+			}
+
+				gridBoxType = {
+					position = { x = 10 y = 0 }
+					name = "available_backgrounds"
+					size = { width = 200 height = 0 }
+					slotsize = { width = 200 height = 150 }
+					max_slots_horizontal = 1
+				}
+
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "available_background"
+		size = { width = 190 height = 140 }
+		position = { x = -330 y = 330 }
+
+		buttonType = {
+			name = "change_background_button"
+			position = { x = -330 y = 330 }
+			spriteType = "GFX_tiled_window_1b_border"
+		}
+
+		containerWindowType = {
+		name = "highlight"
+		size = { width = 192 height = 144 }
+			background = {
+				name = "glowup"
+				quadTextureSprite = "GFX_tiled_frame_selected"
+				alwaysTransparent = yes
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "unowned_dlc_item"
+		size = { width = 50 height = 50 }
+
+		buttonType =
+		{
+			position = { x = -230 y = 0 }
+			name ="dlc_button"
+			spriteType = "GFX_frontend_banner_dlc018"
+		}
+
+		buttonType = {
+			name = "owned_tick"
+			spriteType = "GFX_BPT_area_defense_setting_tick"
+			position = { x = -6 y = 1 }
+			Orientation = center_left
+			scale = 0.56
+			alwaysTransparent = yes
+			#enabled = no
+		}
+
+		buttonType = {
+			name = "enabled_tick"
+			spriteType = "GFX_general_check"
+			position = { x = 28 y = 24 }
+			Orientation = center_left
+			alwaysTransparent = yes
+		}
+
+	}
+
+	### MAIN MENU PANEL (DLC Ownership)
+	containerWindowType = {
+		name  ="mainmenu_dlc_ownership"
+		position = { x=-150 y =0 }
+		size = { width = 370 height = 528}
+		Orientation = lower_left
+		origo = lower_left
+
+		gridBoxType = {
+			name = "potential_dlc_list"
+			position = { x = 0 y = 0}
+			size = { width = 50 height = 400 }
+			#Orientation = upper_left
+			slotsize = {width=50 height=51 }
+			max_slots_vertical = 1
+			format = "RIGHT"
+			hide = yes
+		}
+
+	}
+}
