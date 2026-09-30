@@ -158,6 +158,14 @@
   GENERIC_the_landmine_theory_desc: ""
   GENERIC_establish_buffer_states: "Establish Buffer States"
   GENERIC_establish_buffer_states_desc: ""
+  GENERIC_mandatory_military_education: "Mandatory Military Education"
+  GENERIC_mandatory_military_education_desc: ""
+  GENERIC_reinforce_traditional_values: "Reinforce Traditional Values"
+  GENERIC_reinforce_traditional_values_desc: ""
+  GENERIC_a_return_to_democracy: "A Return to Democracy"
+  GENERIC_a_return_to_democracy_desc: ""
+  GENERIC_maintain_the_junta: "Maintain the Junta"
+  GENERIC_maintain_the_junta_desc: ""
  ###### Focuses - Fascism
   GENERIC_answer_the_nations_call: "Answer the Nation's Call"
   GENERIC_answer_the_nations_call_desc: ""
@@ -375,6 +383,10 @@
   GENERIC_anti_communist_preparations: "Anti-Communist Preparations"
   GENERIC_industrialist_combine: "Industrialist Combines"
   GENERIC_war_fervor: "War Fervor"
+  GENERIC_army_in_charge: "[ROOT.GetAdjective] Millitary Government"
+  GENERIC_military_education: "[ROOT.GetAdjective] Military Education"
+  GENERIC_incorporate_the_military_police: "[ROOT.GetAdjective] Military Police"
+GENERIC_stabilize_the_new_state_idea: "[ROOT.GetAdjective] State Stabilization"
  #Decisions
   # Categories
     GENERIC_the_country_red_army_decision_category: "The [ROOT.GetAdjective] Red Army"

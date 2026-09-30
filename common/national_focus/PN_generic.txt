@@ -997,7 +997,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			army_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
 		}
 	}
 	focus = {
@@ -1014,7 +1019,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.10
+			}	
 		}
 	}
 	focus = {
@@ -1032,7 +1050,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			custom_effect_tooltip = GENERIC_crackdown_on_corruption_sub_ideology_change_tt
+			custom_effect_tooltip = generic_skip_one_line_tt			
+			set_politics = {
+				ruling_party = neutrality
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 25
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
 		}
 	}
 	focus = {
@@ -1049,7 +1077,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_army_in_charge
 		}
 	}
 	focus = {
@@ -1066,7 +1094,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			swap_ideas = {
+				remove_idea = GENERIC_army_in_charge
+				add_idea = GENERIC_army_in_charge_2
+			}
 		}
 	}
 	focus = {
@@ -1083,7 +1114,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			swap_ideas = {
+				remove_idea = GENERIC_army_in_charge_2
+				add_idea = GENERIC_army_in_charge_3
+			}
 		}
 	}
 	focus = {
@@ -1100,7 +1134,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_military_education
 		}
 	}
 	focus = {
@@ -1117,7 +1151,40 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+				if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				create_intelligence_agency = yes
+				custom_effect_tooltip = generic_skip_one_line_tt
+				upgrade_intelligence_agency = upgrade_anti_partisan
+				upgrade_intelligence_agency = upgrade_passive_defense
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_stability = 0.05
+				add_political_power = 50
+			}
+			else = {
+				add_ideas = GENERIC_incorporate_the_military_police
+				add_stability = 0.10
+				add_political_power = 50
+			}
+			if = {
+				limit = {
+					has_tech = tech_military_police
+				}
+				add_tech_bonus = {
+					name = mp_focus
+					bonus = 1
+					uses = 1
+					category = military_police_tech
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = tech_military_police }
+				}
+				set_technology = { tech_military_police = 1 }
+			}
 		}
 	}
 	focus = {
@@ -1134,7 +1201,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_stabilize_the_new_state_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.25
+			}
 		}
 	}
 	focus = {
@@ -1151,7 +1223,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			swap_ideas = {
+				remove_idea = GENERIC_stabilize_the_new_state_idea
+				add_idea = GENERIC_stabilize_the_new_state_idea_2
+			}
+			activate_decision = ban_communist_party
+			activate_decision = ban_democratic_party
+			activate_decision = ban_fascist_party
 		}
 	}
 	focus = {
@@ -1168,7 +1246,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1185,7 +1263,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_maintain_order_and_respectability_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
@@ -1203,7 +1286,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			custom_effect_tooltip = GENERIC_government_of_national_reform_sub_ideology_change_tt
+			set_country_leader_ideology = liberalism
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
 		}
 	}
 	focus = {
@@ -1221,7 +1322,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_stability = 0.05
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
 		}
 	}
 	focus = {
@@ -1238,7 +1345,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_secured_homefront
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -1255,7 +1364,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_country_order_guard_idea_1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			army_experience = 20
+			add_command_power = 15
 		}
 	}
 	focus = {
@@ -1273,7 +1385,29 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			custom_effect_tooltip = GENERIC_establish_buffer_states_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_neighbor_of = ROOT
+						is_major = no
+						is_subject = no
+						exists = yes
+						NOT = {
+							is_in_faction_with = ROOT
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = puppet_wargoal_focus
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1291,7 +1425,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = liberty_ethos_focus
+			add_ideas = GENERIC_the_landmine_theory_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = landmine_theory
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
 		}
 	}
 	focus = {
@@ -1833,7 +1974,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GENERIC_country_isolationism_idea_1
+			add_ideas = GENERIC_country_isolationism_idea
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}

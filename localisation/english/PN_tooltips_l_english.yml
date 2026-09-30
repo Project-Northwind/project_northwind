@@ -7,6 +7,7 @@
   GENERIC_fascism_sub_ideology_tt: "Completing either §Y$GENERIC_the_peoples_militia$§! or §Y$GENERIC_rally_the_elite$§! will alter your §YSub-Ideology§! to either §YFascism§! or §YFalangism§!."
   GENERIC_the_peoples_militia_sub_ideology_change_tt: "Your §YSub-Ideology§! will change to §YFascism§! upon completing §Y$GENERIC_one_state_one_people$§!."
   GENERIC_rally_the_elite_sub_ideology_change_tt: "Your §YSub-Ideology§! will change to §YFalangism§! upon completing §Y$GENERIC_one_state_one_people$§!."
+  GENERIC_crackdown_on_corruption_sub_ideology_change_tt: "Your §YSub-Ideology§! will change to §YMilitary Junta§! upon completing §Y$GENERIC_crackdown_on_corruption$§!."
  # Faction Checks
   GENERIC_communist_europe_faction_tt: "There is a §YCommunist Faction Leader§! in §YEurope§!"
   GENERIC_communist_north_america_faction_tt: "There is a §YCommunist Faction Leader§! in §YNorth America§!"
@@ -28,6 +29,7 @@
   GENERIC_guarantee_democratic_neighbor_tt: "We will §YGuarantee§! any §YNeighboring Country§! that is §YDemocratic§!.\n\nCurrent Countries are:"
   GENERIC_improve_relations_non_extreme_tt: "We will gain an §YIncreased Opinion§! of §G+25§! with any §YNeighboring Country§! which is neither §YCommunist§! nor §YFascist§!.\n\nCurrent Countries are:"
   GENERIC_improve_relations_not_communist_tt: "We will gain an §YIncreased Opinion§! of §G+25§! with any §YNeighboring Country§! which is not §YCommunist§!.\n\nCurrent Countries are:"
+  GENERIC_establish_buffer_states_tt: "We will gain a §YPuppet War Goal§! against every §YNeighboring Minor Country§! which is §YIndependent§!, not in our faction, and not already at war with us."
   GENERIC_protect_democratic_institutions_tt: "§YCombines§! and §YModifies§! national spirits: §Y$GENERIC_remilitarization$§! and §Y$GENERIC_popular_front$§! into:"
   GENERIC_state_of_armed_neutrality_tt: "§YCombines§! and §YModifies§! national spirits: §Y$GENERIC_secured_homefront$§! and §Y$GENERIC_bastion_of_democracy$§! into:"
   GENERIC_export_the_country_model_war_tt: "Unlocks §Y$GENERIC_export_the_country_model_decision_category$ Decisions§!\n\nWhich will allow us to §YDeclare War§! on §YFascist§! Countries on our §Ycontinent§!"
