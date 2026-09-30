@@ -108,7 +108,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "ideology"
-				position = { x = 9 y = 8 }
+				position = { x = 9 y = 600 }	# PN - sub-ideology is displayed instead
 				font = "hoi_18mbs"
 				text = "ideology"
 				maxWidth = 155

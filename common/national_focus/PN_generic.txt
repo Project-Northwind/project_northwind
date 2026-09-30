@@ -1051,6 +1051,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_crackdown_on_corruption_sub_ideology_change_tt
+			set_country_leader_ideology = military_junta
 			custom_effect_tooltip = generic_skip_one_line_tt			
 			set_politics = {
 				ruling_party = neutrality
