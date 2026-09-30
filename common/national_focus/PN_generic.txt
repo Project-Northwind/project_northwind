@@ -39,6 +39,11 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				days = 365
+				idea = GENERIC_a_bastion_of_freedom_idea
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -964,6 +969,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				days = 365
+				idea = GENERIC_undermine_the_political_system_idea
+			}
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
@@ -1044,6 +1053,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+
+		available = {
+			neutrality > 0.45
+		}
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -1051,12 +1064,12 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_crackdown_on_corruption_sub_ideology_change_tt
-			set_country_leader_ideology = military_junta
 			custom_effect_tooltip = generic_skip_one_line_tt			
 			set_politics = {
 				ruling_party = neutrality
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			set_country_leader_ideology = military_junta
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 25
 			add_popularity = {
 				ideology = neutrality
@@ -1453,7 +1466,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = GENERIC_answer_the_nations_call_idea
+			add_timed_idea = {
+				days = 365
+				idea = GENERIC_answer_the_nations_call_idea
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = fascism
@@ -2125,7 +2141,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = GENERIC_empower_the_unions_idea
+			add_timed_idea = {
+				days = 365
+				idea = GENERIC_empower_the_unions_idea
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = communism

@@ -275,6 +275,29 @@ ideas = {
 				political_power_factor = 0.05
 			}
 		}
+		GENERIC_a_bastion_of_freedom_idea = {
+
+			name = GENERIC_a_bastion_of_freedom
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				democratic_drift = 0.15
+				fascism_acceptance = -50
+				communism_acceptance = -50
+				political_power_factor = -0.2
+			}
+		}
 		GENERIC_country_civic_guard_idea_1 = {
 
 			allowed = {
@@ -891,7 +914,22 @@ ideas = {
 				experience_gain_army_factor = 0.1
 			}
 		}
+		GENERIC_undermine_the_political_system_idea = {
 
+			name = GENERIC_undermine_the_political_system
+
+			picture = RAJ_a_policy_of_silence
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
 		GENERIC_army_in_charge = {
 			picture = NORDIC_army_monarchist
 
@@ -906,7 +944,6 @@ ideas = {
 				experience_gain_army_factor = 0.1
 			}
 		}
-
 		GENERIC_army_in_charge_2 = {
 			picture = NORDIC_army_monarchist
 			name = GENERIC_army_in_charge
@@ -923,7 +960,6 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-
 		GENERIC_army_in_charge_3 = {
 			picture = NORDIC_army_monarchist
 			name = GENERIC_army_in_charge
@@ -941,7 +977,6 @@ ideas = {
 				drift_defence_factor = 0.75
 			}
 		}
-
 		GENERIC_military_education = {
 			picture = jap_supremacy_of_technology
 			allowed = {
@@ -957,7 +992,6 @@ ideas = {
 				research_speed_factor = 0.025
 			}
 		}
-
 		GENERIC_incorporate_the_military_police = {
 
 			allowed = {
@@ -973,7 +1007,6 @@ ideas = {
 				political_power_gain = 0.10
 			}
 		}
-		
 		GENERIC_stabilize_the_new_state_idea = {
 
 			allowed = {
@@ -988,7 +1021,6 @@ ideas = {
 				conscription_factor = 0.025
 			}
 		}	
-
 		GENERIC_stabilize_the_new_state_idea_2 = {
 
 			allowed = {
@@ -1006,6 +1038,5 @@ ideas = {
 				trade_laws_cost_factor = -0.25
 			}
 		}		
-
 	}
 }

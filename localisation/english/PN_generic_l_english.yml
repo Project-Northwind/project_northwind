@@ -386,7 +386,7 @@
   GENERIC_army_in_charge: "[ROOT.GetAdjective] Millitary Government"
   GENERIC_military_education: "[ROOT.GetAdjective] Military Education"
   GENERIC_incorporate_the_military_police: "[ROOT.GetAdjective] Military Police"
-GENERIC_stabilize_the_new_state_idea: "[ROOT.GetAdjective] State Stabilization"
+  GENERIC_stabilize_the_new_state_idea: "[ROOT.GetAdjective] State Stabilization"
  #Decisions
   # Categories
     GENERIC_the_country_red_army_decision_category: "The [ROOT.GetAdjective] Red Army"
