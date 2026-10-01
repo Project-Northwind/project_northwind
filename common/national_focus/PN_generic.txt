@@ -4094,12 +4094,6 @@ focus_tree = {
 		available = {
 			num_of_controlled_states > 1
 			num_of_factories > 45
-			if = {
-				limit = {
-					tag = ISR
-				}
-				has_completed_focus = ISR_win
-			}
 		}
 		available_if_capitulated = yes
 		continue_if_invalid = yes

@@ -1,8 +1,15 @@
 spriteTypes = {
+	# GER
 	spriteType = {
 		name = "GFX_portrait_GER_regent_council"
 		texturefile = "gfx/leaders/GER/GER_regent_seat.dds"
 	}
+	# SWE
+	spriteType = {
+		name = "GFX_portrait_PN_SWE_gosta_bagge"
+		texturefile = "gfx/leaders/SWE/SWE_gosta_bagge.dds"
+	}
+	# UKR
 	spriteType = {
 		name = "GFX_portrait_UKR_pavlo_skoropadskyi_army"
 		texturefile = "gfx/leaders/UKR/UKR_pavlo_skoropadskyi_army.dds"

@@ -1,0 +1,7 @@
+spriteTypes = {
+	# SWE
+	spriteType = {
+		name = "GFX_portrait_PN_SWE_gosta_bagge_small"
+		texturefile = "gfx/interface/ideas/SWE/PN_SWE_gosta_bagge_small.dds"
+	}
+}

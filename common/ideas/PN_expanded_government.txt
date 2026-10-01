@@ -288,7 +288,7 @@ ideas = {
 				has_idea = free_trade
 				has_idea = civilian_economy
 				OR = {
-					has_idea = nationalization_capital
+					has_idea = PN_nationalization_capital
 					has_government = fascism
 				}
 
