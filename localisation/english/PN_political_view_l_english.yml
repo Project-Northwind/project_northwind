@@ -47,5 +47,7 @@
     PN_subideology_anti_revisionism: "§OAnti-Revisionism§!"
     PN_subideology_anarchist_communism: "§0Anarchist Communism§!"
     PN_subideology_buddhist_socialism: "§7Buddhist Socialism§!"
-    military_junta: "Military Junta"
+    PN_subideology_reconstructionism: "§8Reconstructionism§!"
+  # Sub-Ideologies - Descriptions
     military_junta_desc: "A military junta is established when the armed forces assume direct control of the state. Such governments rule through military authority, suppressing political opposition and subordinating civilian institutions to the high command."
+    reconstructionism_desc: "§8Reconstructionism§! seeks national renewal through a strong, centralised state. Rejecting both parliamentary division and class struggle, it places political authority in the hands of a disciplined leadership tasked with restoring order, rebuilding the economy and uniting the nation under a programme of national reconstruction."
