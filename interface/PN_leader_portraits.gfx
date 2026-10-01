@@ -11,4 +11,20 @@ spriteTypes = {
 		name = "GFX_portrait_UKR_pavlo_skoropadskyi_civilian"
 		texturefile = "gfx/leaders/UKR/UKR_pavlo_skoropadskyi_civilian.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_XIC_zhang_xueliang_army"
+		texturefile = "gfx/leaders/XIC/XIC_zhang_xueliang_army.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XIC_zhang_xueliang_civilian"
+		texturefile = "gfx/leaders/XIC/XIC_zhang_xueliang_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XIC_alexander_von_falkenhausen"
+		texturefile = "gfx/leaders/XIC/XIC_alexander_von_falkenhausen.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XIC_alexander_von_falkenhausen_small"
+		texturefile = "gfx/interface/ideas/XIC_alexander_von_falkenhausen.dds"
+	}
 }

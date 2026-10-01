@@ -1219,8 +1219,8 @@ SIC = {
 	color_ui = rgb { 0 77 102 } 
 }
 XIC = {
-	color = rgb { 43 92 181 }
-	color_ui = rgb { 45 100 190 } 
+	color = rgb { 210 80 105 }
+	color_ui = rgb { 230 100 125 }
 }
 
 RNG = {

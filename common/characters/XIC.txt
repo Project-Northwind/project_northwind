@@ -1,0 +1,65 @@
+characters = {
+
+	# Country Leaders
+	XIC_zhang_xueliang = {
+		name = XIC_zhang_xueliang
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_XIC_zhang_xueliang_army
+			}
+			army = {
+				large = GFX_portrait_XIC_zhang_xueliang_army
+				small = GFX_idea_CHI_zhang_xueliang
+			}
+		}
+
+		country_leader = {
+			ideology = reconstructionism
+			expire = "1965.1.1.1"
+			id = -1
+			traits = { }
+		}
+
+		field_marshal = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	# Military
+	XIC_alexander_von_falkenhausen = {
+		name = XIC_alexander_von_falkenhausen
+
+		portraits = {
+			army = {
+				large = GFX_portrait_XIC_alexander_von_falkenhausen
+				small = GFX_portrait_XIC_alexander_von_falkenhausen_small
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = XIC_alexander_von_falkenhausen
+			traits = { army_chief_offensive_2 }
+			ai_will_do = {
+				base = 2
+			}
+			cost = 50
+		}
+
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			traits = { infantry_leader organizer }
+			legacy_id = -1
+		}
+	}
+}

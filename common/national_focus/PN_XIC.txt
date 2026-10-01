@@ -1,0 +1,28 @@
+focus_tree = {
+	id = project_northwind_XIC_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = XIC
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 450 y = 1900 }
+
+	focus = {
+		id = XIC_starting_point
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+}
