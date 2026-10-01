@@ -21,5 +21,11 @@ set_popularities = {
 	fascism = 100
 }
 
+add_ideas = {
+	XIC_aftermath_of_the_eastern_march
+	XIC_german_military_advisors
+	XIC_national_reconstructionism
+}
+
 recruit_character = XIC_zhang_xueliang
 recruit_character = XIC_alexander_von_falkenhausen

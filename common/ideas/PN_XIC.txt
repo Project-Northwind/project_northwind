@@ -1,0 +1,45 @@
+ideas = {
+	country = {
+		XIC_aftermath_of_the_eastern_march = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = prc_the_long_march
+
+			modifier = {
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.35
+			}
+		}
+		XIC_german_military_advisors = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = german_advisors
+
+			modifier = {
+				experience_gain_army = 0.10
+			}
+		}
+		XIC_national_reconstructionism = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+	}
+}

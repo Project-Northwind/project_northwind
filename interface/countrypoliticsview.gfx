@@ -543,6 +543,11 @@ spriteTypes = {
 		name = "GFX_ideology_anarchism"
 		texturefile = "gfx/interface/ideologies/anarchism.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_reconstructionism"
+		texturefile = "gfx/interface/ideologies/reconstructionism.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_unknown"

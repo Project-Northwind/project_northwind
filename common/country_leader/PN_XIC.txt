@@ -1,0 +1,9 @@
+leader_traits = {
+	XIC_the_young_marshall = {
+		random = no
+		sprite = 13
+
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+	}
+}

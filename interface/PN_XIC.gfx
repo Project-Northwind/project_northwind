@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_XIC_national_reconstructionism"
+		texturefile = "gfx/interface/ideas/XIC_national_reconstructionism.dds"
+	}
+}

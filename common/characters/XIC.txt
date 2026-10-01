@@ -18,7 +18,7 @@ characters = {
 			ideology = reconstructionism
 			expire = "1965.1.1.1"
 			id = -1
-			traits = { }
+			traits = { XIC_the_young_marshall }
 		}
 
 		field_marshal = {
