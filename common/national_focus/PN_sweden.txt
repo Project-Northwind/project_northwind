@@ -191,6 +191,37 @@ focus_tree = {
 		x = 1
 		y = 3
 	}
-
-
+	focus = {
+		id = PN_SWE_expand_paramilitary_groups
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = PN_SWE_unite_the_right_under_one_banner }
+		relative_position_id = PN_SWE_unite_the_right_under_one_banner
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_sway_corporatists
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = PN_SWE_unite_the_right_under_one_banner }
+		relative_position_id = PN_SWE_unite_the_right_under_one_banner
+		x = -2
+		y = 2
+	}
+	focus = {
+		id = PN_SWE_infiltrate_military_garrisons
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = PN_SWE_unite_the_right_under_one_banner }
+		relative_position_id = PN_SWE_unite_the_right_under_one_banner
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = PN_SWE_dismantle_the_kingdom
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = PN_SWE_infiltrate_military_garrisons }
+		prerequisite = { focus = PN_SWE_sway_corporatists }
+		relative_position_id = PN_SWE_infiltrate_military_garrisons
+		x = -1
+		y = 1
+	}
 }
