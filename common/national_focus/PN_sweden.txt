@@ -32,6 +32,136 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = PN_SWE_reinvigorate_the_economy
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = PN_SWE_the_looming_storm
+		x = 20
+		y = 0
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PN_SWE_the_four_year_plan
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_reinvigorate_the_economy }
+		relative_position_id = PN_SWE_reinvigorate_the_economy
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_initiate_land_reforms
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_four_year_plan }
+		relative_position_id = PN_SWE_the_four_year_plan
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_the_soviet_model
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_initiate_land_reforms }
+		relative_position_id = PN_SWE_initiate_land_reforms
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_push_for_collectivization
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_soviet_model }
+		relative_position_id = PN_SWE_the_soviet_model
+		x = 2
+		y = 1
+		
+	}
+	focus = {
+		id = PN_SWE_second_collectivization_program
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_push_for_collectivization }
+		relative_position_id = PN_SWE_push_for_collectivization
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_second_collectivization_program }
+		relative_position_id = PN_SWE_second_collectivization_program
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_production_quotas
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_push_for_collectivization }
+		relative_position_id = PN_SWE_push_for_collectivization
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_optimize_production_lines
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_production_quotas }
+		relative_position_id = PN_SWE_production_quotas
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_modernized_production_lines
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_optimize_production_lines }
+		relative_position_id = PN_SWE_optimize_production_lines
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_second_four_year_plan
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_modernized_production_lines }
+		relative_position_id = PN_SWE_modernized_production_lines
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_seize_privatized_industries
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_soviet_model }
+		relative_position_id = PN_SWE_the_soviet_model
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_halt_exports
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_seize_privatized_industries }
+		relative_position_id = PN_SWE_seize_privatized_industries
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_nationalize_private_businesses
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_four_year_plan }
+		relative_position_id = PN_SWE_the_four_year_plan
+		x = -1
+		y = 1
+
+	}
+	focus = {
 		id = PN_SWE_in_the_wake_of_fountainebleau
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PN_SWE_the_looming_storm }
