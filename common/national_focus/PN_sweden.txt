@@ -1,0 +1,166 @@
+focus_tree = {
+	id = sweden_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 15
+			tag = SWE
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+
+	focus = {
+		id = PN_SWE_the_looming_storm
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 0
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = PN_SWE_in_the_wake_of_fountainebleau
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_looming_storm }
+		relative_position_id = PN_SWE_the_looming_storm
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = PN_SWE_the_finland_question
+		icon = GFX_focus_SWE_Swedes_not_Sweden_to_finlands_aid
+		relative_position_id = PN_SWE_in_the_wake_of_fountainebleau
+		x = -7
+		y = -1
+	}	
+	focus = {
+		id = PN_SWE_the_upcoming_election
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_in_the_wake_of_fountainebleau }
+		relative_position_id = PN_SWE_in_the_wake_of_fountainebleau
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_propagate_the_red_scare
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_upcoming_election }
+		mutually_exclusive = { focus = PN_SWE_mend_ties_with_the_left }
+		relative_position_id = PN_SWE_the_upcoming_election
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_mend_ties_with_the_left
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_upcoming_election }
+		mutually_exclusive = { focus = PN_SWE_propagate_the_red_scare }
+		relative_position_id = PN_SWE_the_upcoming_election
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_reach_out_to_agrarian_communities
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_propagate_the_red_scare focus = PN_SWE_mend_ties_with_the_left }
+		relative_position_id = PN_SWE_propagate_the_red_scare
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_the_idea_of_folkhemmet
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_mend_ties_with_the_left }
+		relative_position_id = PN_SWE_mend_ties_with_the_left
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_empower_the_working_people
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_idea_of_folkhemmet }
+		relative_position_id = PN_SWE_the_idea_of_folkhemmet
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_strengthen_military_connections
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_propagate_the_red_scare }
+		relative_position_id = PN_SWE_propagate_the_red_scare
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_rekindle_the_dream_of_an_empire
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_strengthen_military_connections }
+		relative_position_id = PN_SWE_strengthen_military_connections
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_the_1936_election
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_rekindle_the_dream_of_an_empire focus = PN_SWE_empower_the_working_people }
+		relative_position_id = PN_SWE_rekindle_the_dream_of_an_empire
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_whispers_of_a_revolution
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = PN_SWE_in_the_wake_of_fountainebleau }
+		relative_position_id = PN_SWE_in_the_wake_of_fountainebleau
+		x = 6
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_unify_the_red_underground
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = PN_SWE_whispers_of_a_revolution }
+		relative_position_id = PN_SWE_whispers_of_a_revolution
+		x = -3
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_propagate_anti_monarchial_ideas
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = PN_SWE_unify_the_red_underground focus = PN_SWE_unite_the_right_under_one_banner }
+		relative_position_id = PN_SWE_unify_the_red_underground
+		x = 3
+		y = 1
+	}
+	focus = {
+		id = PN_SWE_denounce_the_elites
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = PN_SWE_unify_the_red_underground }
+		prerequisite = { focus = PN_SWE_propagate_anti_monarchial_ideas }
+		relative_position_id = PN_SWE_unify_the_red_underground
+		x = 2
+		y = 2
+	}
+	focus = {
+		id = PN_SWE_unite_the_right_under_one_banner
+		icon = GFX_focus_focus_fra_revolution_utmost
+		prerequisite = { focus = PN_SWE_whispers_of_a_revolution }
+		relative_position_id = PN_SWE_whispers_of_a_revolution
+		x = 3
+		y = 1
+	}
+
+}
