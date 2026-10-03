@@ -4286,12 +4286,6 @@ focus_tree = {
 			num_of_controlled_states > 0
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = SOV_poorly_educated_population
-					}
-					remove_ideas = SOV_poorly_educated_population
-			}
 			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
