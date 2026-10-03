@@ -901,19 +901,6 @@ ideas = {
 				war_support_weekly = 0.005
 			}
 		}
-		GENERIC_army_reform_measures = {
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				experience_gain_army = 0.2
-				experience_gain_army_factor = 0.1
-			}
-		}
 		GENERIC_undermine_the_political_system_idea = {
 
 			name = GENERIC_undermine_the_political_system
@@ -1037,6 +1024,124 @@ ideas = {
 				economy_cost_factor = -0.25
 				trade_laws_cost_factor = -0.25
 			}
-		}		
+		}
+		# Army 
+		GENERIC_establish_a_general_staff_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = generic_army_war_college
+
+			name = GENERIC_country_general_staff
+
+			modifier = {
+				experience_gain_army = 0.1
+				land_doctrine_cost_factor = -0.2
+				land_mastery_gain_factor = 0.1
+			}
+		}
+		GENERIC_establish_a_military_academy_idea = {
+
+			name = GENERIC_establish_a_military_academy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.002
+				army_leader_start_planning_level = 1
+			}
+		}
+		GENERIC_modern_logistics_idea = {
+
+			name = GENERIC_modern_logistics
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				army_leader_start_logistics_level = 1
+				supply_consumption_factor = -0.02
+			}
+		}
+		GENERIC_railway_modernization_idea = {
+			picture = generic_build_infrastructure
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			
+			modifier = {
+				production_speed_rail_way_factor = 0.10
+				production_speed_supply_node_factor = 0.10
+			}
+		}
+		GENERIC_industrial_boom_idea = {
+
+			name = GENERIC_industrial_boom
+
+			picture = chi_hyper_inflation
+
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				consumer_goods_factor = -0.15
+			}
+		}
+		GENERIC_tax_reforms = {
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = -0.15
+			}
+		}
 	}
 }
