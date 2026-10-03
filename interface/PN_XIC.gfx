@@ -3,4 +3,124 @@ spriteTypes = {
 		name = "GFX_idea_XIC_national_reconstructionism"
 		texturefile = "gfx/interface/ideas/XIC_national_reconstructionism.dds"
 	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_aftermath_of_the_march"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_aftermath_of_the_march.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_young_marshall"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_young_marshall.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_reconstruction_government"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_reconstruction_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_promote_the_young_officers"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_promote_the_young_officers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_nationalize_the_workshops"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_nationalize_the_workshops.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_rally_the_army"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_rally_the_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_restructure_the_shangdong_army"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_restructure_the_shangdong_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_establish_the_jinan_military_academy"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_establish_the_jinan_military_academy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_german_military_advisors"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_german_military_advisors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_marshall_of_victory"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_marshall_of_victory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_a_policy_of_the_nation"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_a_policy_of_the_nation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_founding_father_of_reconstructionism"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_founding_father_of_reconstructionism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_the_failures_of_nanjing"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_the_failures_of_nanjing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_essence_of_reconstructionism"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_essence_of_reconstructionism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_great_rebirth"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_great_rebirth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_industrial_reconstruction"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_industrial_reconstruction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_open_the_mines"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_open_the_mines.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_all_for_reconstruction"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_all_for_reconstruction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_spare_the_peasants"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_spare_the_peasants.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_implement_the_reconstruction_plan"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_implement_the_reconstruction_plan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_build_up_the_temporary_capital"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_build_up_the_temporary_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_a_port_city_for_the_nation"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_a_port_city_for_the_nation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_young_marshalls_vision"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_young_marshalls_vision.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_first_council"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_first_council.dds"
+	}
 }

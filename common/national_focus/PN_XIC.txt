@@ -15,7 +15,7 @@ focus_tree = {
 
 	focus = {
 		id = PN_XIC_aftermath_of_the_march
-		icon = GFX_focus_ARG_march_to_la_casa_rosada
+		icon = GFX_goal_PN_XIC_aftermath_of_the_march
 		x = 8
 		y = 0
 		cost = 10
@@ -28,7 +28,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_the_young_marshall
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_PN_XIC_the_young_marshall
 		x = 8
 		y = 1
 		cost = 10
@@ -44,7 +44,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_reconstruction_government
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_PN_XIC_reconstruction_government
 		x = 8
 		y = 2
 		cost = 10
@@ -60,7 +60,7 @@ focus_tree = {
 	
 		focus = {
 		id = PN_XIC_nationalize_the_workshops
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_PN_XIC_nationalize_the_workshops
 		x = 10
 		y = 3
 		cost = 10
@@ -76,7 +76,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_promote_the_young_officers
-		icon = GFX_focus_MAN_the_new_fengtian_army
+		icon = GFX_goal_PN_XIC_promote_the_young_officers
 		x = 6
 		y = 3
 		cost = 10
@@ -91,7 +91,7 @@ focus_tree = {
 	}
 		focus = {
 		id = PN_XIC_rally_the_army
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_PN_XIC_rally_the_army
 		x = 8
 		y = 4
 		cost = 10
@@ -107,7 +107,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_restructure_the_shangdong_army
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_goal_PN_XIC_restructure_the_shangdong_army
 		x = 6
 		y = 5
 		cost = 10
@@ -123,7 +123,7 @@ focus_tree = {
 	
 		focus = {
 		id = PN_XIC_the_german_military_advisors
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_goal_PN_XIC_the_german_military_advisors
 		x = 10
 		y = 5
 		cost = 10
@@ -139,7 +139,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_establish_the_jinan_military_academy
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_goal_PN_XIC_establish_the_jinan_military_academy
 		x = 8
 		y = 5
 		cost = 10
@@ -155,7 +155,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_the_marshall_of_victory
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_PN_XIC_the_marshall_of_victory
 		x = 8
 		y = 8
 		cost = 10
@@ -171,7 +171,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_industrial_reconstruction
-		icon = GFX_focus_generic_economic_recovery
+		icon = GFX_goal_PN_XIC_industrial_reconstruction
 		x = 13
 		y = 3
 		cost = 10
@@ -187,7 +187,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_open_the_mines
-		icon = GFX_focus_generic_mining_industry
+		icon = GFX_goal_PN_XIC_open_the_mines
 		x = 13
 		y = 4
 		cost = 10
@@ -203,7 +203,7 @@ focus_tree = {
 	
 		focus = {
 		id = PN_XIC_spare_the_peasants
-		icon = GFX_focus_generic_agricultural_subsidies
+		icon = GFX_goal_PN_XIC_spare_the_peasants
 		x = 14
 		y = 5
 		cost = 10
@@ -222,7 +222,7 @@ focus_tree = {
 	
 		focus = {
 		id = PN_XIC_all_for_reconstruction
-		icon = GFX_focus_generic_central_planning
+		icon = GFX_goal_PN_XIC_all_for_reconstruction
 		x = 12
 		y = 5
 		cost = 10
@@ -241,7 +241,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_implement_the_reconstruction_plan
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_PN_XIC_implement_the_reconstruction_plan
 		x = 13
 		y = 6
 		cost = 10
@@ -257,7 +257,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_a_port_city_for_the_nation
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_goal_PN_XIC_a_port_city_for_the_nation
 		x = 12
 		y = 7
 		cost = 10
@@ -274,7 +274,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_build_up_the_temporary_capital
-		icon = GFX_focus_generic_public_works
+		icon = GFX_goal_PN_XIC_build_up_the_temporary_capital
 		x = 14
 		y = 7
 		cost = 10
@@ -289,7 +289,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_the_young_marshalls_vision
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_PN_XIC_the_young_marshalls_vision
 		x = 13
 		y = 8
 		cost = 10
@@ -307,7 +307,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_a_policy_of_the_nation
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_PN_XIC_a_policy_of_the_nation
 		x = 3
 		y = 3
 		cost = 10
@@ -323,7 +323,7 @@ focus_tree = {
 	
 		focus = {
 		id = PN_XIC_the_founding_father_of_reconstructionism
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_PN_XIC_the_founding_father_of_reconstructionism
 		x = 3
 		y = 4
 		cost = 10
@@ -339,7 +339,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_the_essence_of_reconstructionism
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_PN_XIC_the_essence_of_reconstructionism
 		x = 2
 		y = 5
 		cost = 10
@@ -355,7 +355,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_the_the_failures_of_nanjing
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_PN_XIC_the_the_failures_of_nanjing
 		x = 4
 		y = 5
 		cost = 10
@@ -371,7 +371,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_the_great_rebirth
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_PN_XIC_the_great_rebirth
 		x = 3
 		y = 8
 		cost = 10
@@ -390,7 +390,7 @@ focus_tree = {
 
 		focus = {
 		id = PN_XIC_the_first_council
-		icon = GFX_focus_SWI_dissolve_the_federal_council
+		icon = GFX_goal_PN_XIC_the_first_council
 		x = 8
 		y = 10
 		cost = 10
