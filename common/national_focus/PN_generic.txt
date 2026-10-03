@@ -3896,7 +3896,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			has_tech = construction2
+			has_tech = construction1
+			num_of_controlled_states > 0
+			any_state = {
+				is_coastal = yes 
+				is_owned_and_controlled_by = ROOT
+			}
 		}
 
 		ai_will_do = {
@@ -3967,7 +3972,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_tech = construction1
+			has_tech = construction2
 			num_of_controlled_states > 0
 			any_state = {
 				is_coastal = yes 
@@ -4109,9 +4114,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 125
+			add_political_power = 50
 			add_stability = 0.05
-			add_timed_idea = { idea = GENERIC_Industrial_Boom_I days = 365 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = { idea = GENERIC_industrial_boom_idea days = 365 }
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		
@@ -4190,10 +4196,11 @@ focus_tree = {
 
 		available = {
 			num_of_controlled_states > 3
+			has_tech = basic_train
 		}
 
 		completion_reward = {
-			add_ideas = r56_USA_mobilize_the_railways_idea
+			add_ideas = GENERIC_railway_modernization_idea
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -4230,31 +4237,31 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-	focus = {
-		id = GENERIC_new_research_complex
-		icon = GFX_focus_research2
-		prerequisite = { focus = GENERIC_modern_electronic_devices }
-		x = 0
-		y = 1
-		relative_position_id = GENERIC_modern_electronic_devices
+	#ocus = { Commented out for now, unsure what to replace with
+	#	id = GENERIC_new_research_complex
+	#	icon = GFX_focus_research2
+	#	prerequisite = { focus = GENERIC_modern_electronic_devices }
+	#	x = 0
+	#	y = 1
+	#	relative_position_id = GENERIC_modern_electronic_devices
 
-		cost = 10
+	#	cost = 10
 
-		available_if_capitulated = yes
+	#	available_if_capitulated = yes
 
-		ai_will_do = {
-			factor = 10
-		}
+	#	ai_will_do = {
+	#		factor = 10
+	#	}
 
-		available = {
-			amount_research_slots < 6
-		}
+	#	available = {
+	#		amount_research_slots < 6
+	#	}
 
-		completion_reward = {
-			add_research_slot = 1
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
+	#	completion_reward = {
+	#		add_research_slot = 1
+	#	}
+	#	search_filters = { FOCUS_FILTER_RESEARCH }
+	#}
 	focus = {
 		id = GENERIC_new_schools_and_modern_teaching 
 		icon = GFX_focus_generic_university_1
@@ -4298,8 +4305,6 @@ focus_tree = {
 		relative_position_id = GENERIC_improve_civilian_industry_capacity
 
 		cost = 10
-
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_RESOURCES }
 
 		available_if_capitulated = yes
 
@@ -4370,6 +4375,7 @@ focus_tree = {
 				category = excavation_tech
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = GENERIC_focus_on_synthetic_processing
@@ -4381,8 +4387,6 @@ focus_tree = {
 		relative_position_id = GENERIC_reveal_mineral_wealth
 
 		cost = 10
-
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_RESOURCES }
 
 		available_if_capitulated = yes
 
@@ -4419,6 +4423,7 @@ focus_tree = {
 				category = synth_resources
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = GENERIC_reform_the_taxes
@@ -4437,16 +4442,14 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = {
-					tag = OMA
-				}
-				has_completed_focus = OMA_establish_the_rial
-			}
+
 		}
 
 		completion_reward = {
-			add_ideas = GENERIC_Autarky_I
+			add_timed_idea = {
+				days = 365
+				idea = GENERIC_tax_reforms
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 	}
@@ -6932,7 +6935,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			army_experience = 5
+			add_timed_idea = {
+				days = 365
+				idea = GENERIC_establish_a_general_staff_idea
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -6949,16 +6955,12 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			#unlock_decision_tooltip = GENERIC_training_exercise 
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
+			army_experience = 5
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
 				uses = 1
-				category = land_doctrine
-			}
-			add_timed_idea = {
-				days = 365
-				idea = GENERIC_army_reform_measures
+				category = infantry_weapons
 			}
 		}
 		ai_will_do = {
@@ -6979,21 +6981,43 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 5
-			if = {
-				limit = { has_subdoctrine_in_track = infantry }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_infantry_doctrine_tip_tt
+			effect_tooltip = {
 				add_daily_mastery = {
-					name = land_doc_bonus
-					amount = 0.5
+					name = GENERIC_doctrinal_studies
+					amount = 0.75
 					days = 180
 					track = infantry
 				}
 			}
-			else = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_infantry_doctrine_tip_else_tt
+			effect_tooltip = {
 				add_doctrine_cost_reduction = {
 					name = land_doc_bonus
 					cost_reduction = 0.5
 					uses = 1
 					category = land_doctrine
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_subdoctrine_in_track = infantry }
+					add_daily_mastery = {
+						name = GENERIC_doctrinal_studies
+						amount = 0.75
+						days = 180
+						track = infantry
+					}
+				}
+				else = {
+					add_doctrine_cost_reduction = {
+						name = land_doc_bonus
+						cost_reduction = 0.5
+						uses = 1
+						category = land_doctrine
+					}
 				}
 			}
 		}
@@ -7011,23 +7035,44 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = r56_organize_military_maneuvers 
-			army_experience = 10
-			if = {
-				limit = { has_subdoctrine_in_track = operations }
+			army_experience = 5
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_operations_doctrine_tip_tt
+			effect_tooltip = {
 				add_daily_mastery = {
-					name = land_doc_bonus
-					amount = 0.5
+					name = GENERIC_doctrinal_studies
+					amount = 0.75
 					days = 180
 					track = operations
 				}
 			}
-			else = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_operations_doctrine_tip_else_tt
+			effect_tooltip = {
 				add_doctrine_cost_reduction = {
 					name = land_doc_bonus
 					cost_reduction = 0.5
 					uses = 1
 					category = land_doctrine
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_subdoctrine_in_track = operations }
+					add_daily_mastery = {
+						name = land_doc_bonus
+						amount = 0.5
+						days = 180
+						track = operations
+					}
+				}
+				else = {
+					add_doctrine_cost_reduction = {
+						name = land_doc_bonus
+						cost_reduction = 0.5
+						uses = 1
+						category = land_doctrine
+					}
 				}
 			}
 		}
@@ -7051,15 +7096,8 @@ focus_tree = {
 				add_planning = 1
 			}
 			add_ideas = GENERIC_establish_a_military_academy_idea
-
-			if = {
-				limit = {
-					original_tag = LIB
-				}
-				unlock_decision_tooltip = LIB_fight_soldiers_superstition
-			}
 		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_IMPROVEMENT }
+		search_filters = { FOCUS_FILTER_MANPOWER }
 	}
 	focus = {
 		id = GENERIC_equipment_modernization_program
@@ -7068,7 +7106,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = GENERIC_army_reform
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -7091,7 +7129,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GENERIC_equipment_modernization_program
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -7142,7 +7180,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GENERIC_equipment_modernization_program
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -7173,28 +7211,27 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = special_forces
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 2
-				uses = 1
-				category = r56_desert_infantry_tech
-				category = r56_jaeger_infantry_tech
-				category = r56_jungle_infantry_tech
-				category = r56_marines_infantry_tech
-				category = r56_mountain_infantry_tech
-				category = r56_paratroops_infantry_tech	
-				category = r56_shock_infantry_tech
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 2
+					uses = 1
+					category = cat_special_forces_generic
+				}
 			}
-			add_tech_bonus = {
-                name = special_forces_bonus
-                bonus = 1.0
-                uses = 2
-                category = r56_special_forces_training_tech 
-            }
-			hidden_effect = {
-				set_country_flag = cite_an_airborne_unit_flag
+			else = {
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 2
+					uses = 1
+					category = para_tech
+					category = marine_tech
+					category = mountaineers_tech
+				}
 			}
-			unlock_decision_tooltip = { decision = cite_an_airborne_unit show_effect_tooltip = yes }						
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -7371,7 +7408,7 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_EQUIPMENT }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = GENERIC_signal_companies
@@ -7519,7 +7556,9 @@ focus_tree = {
 			every_army_leader = {
 				add_logistics = 1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = GENERIC_modern_logistics_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
                 name = motorized_bonus
 				bonus = 3
@@ -7527,6 +7566,6 @@ focus_tree = {
 				category = logistics_tech
 			}
 		}
-		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 }

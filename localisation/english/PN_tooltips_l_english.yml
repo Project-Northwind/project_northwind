@@ -36,5 +36,9 @@
   GENERIC_strike_against_the_reds_war_tt: "Unlocks §Y$GENERIC_strike_against_the_reds_decision_category$ Decisions§!\n\nWhich will allow us to §YDeclare War§! on §YCommunist§! Countries on our §Ycontinent§!"
   GENERIC_export_focus_tt: "This will move us towards an §Y$export_focus$§! Economy. However, if we already have §Y$export_focus$§! we will instead gain §G+150§! §YPolitical Power§!\n\n"
   GENERIC_prepare_for_the_red_menace_tt: "§YCombines§! and §YModifies§! national spirits: §Y$GENERIC_updated_mobilization_plan$§! and §Y$GENERIC_balance_of_power_diplomacy$§! into:"
+  GENERIC_infantry_doctrine_tip_tt: "If we have an active §YInfantry Land Doctrine§! we will gain:"
+  GENERIC_infantry_doctrine_tip_else_tt: "If we do not have an active §YInfantry Land Doctrine§! we will instead gain:"
+  GENERIC_operations_doctrine_tip_tt: "If we have an active §YOperations Land Doctrine§! we will gain:"
+  GENERIC_operations_doctrine_tip_else_tt: "If we do not have an active §YOperations Land Doctrine§! we will instead gain:"
  # Decision Checks
   PN_form_country_tt: "Controls all §YHighlighted States§!"
