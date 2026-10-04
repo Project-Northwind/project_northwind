@@ -1,0 +1,24 @@
+# PN - Might use this
+SWE_rearnament_system = {
+	#CUT
+	priority = 99
+
+	#icon = #TODO: VIKTOR FIX
+
+	#scripted_gui = swe_rearnament_system_ui
+
+	allowed = {
+		#always = no
+		#original_tag = SWE
+		#has_dlc = "Arms Against Tyranny"
+	}
+
+	visible = {
+		#always = no
+		#NOT = { has_country_flag = turn_of_rearnament_system }
+		#has_dlc = "Arms Against Tyranny"
+		#has_completed_focus = SWE_defense_act
+	}
+
+	visible_when_empty = no
+}

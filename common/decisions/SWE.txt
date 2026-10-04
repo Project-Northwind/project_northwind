@@ -1,0 +1,180 @@
+
+#CUT
+# PN - Might use this
+#SWE_rearnament_system = {
+#	SWE_time_to_rearnament_discussions = {
+#	
+#		icon = decision_generic_nationalism
+#		selectable_mission = no
+#		allowed = {
+#			original_tag = SWE
+#		}
+#		cancel_trigger = { has_country_flag = turn_of_rearnament_system }
+#		available = {
+#			hidden_trigger = {
+#				always = no
+#			}
+#		}
+#		
+#		visible = {
+#			NOT = {
+#				has_country_flag = turn_of_rearnament_system
+#			}
+#
+#		}
+#		activation = {
+#			always = no
+#		}
+#		is_good = yes
+#		days_mission_timeout = 335
+#		fire_only_once = yes
+#		
+#		timeout_effect = {
+#			activate_mission = SWE_rearnament_discussions_are_active
+#			hidden_effect = {
+#				if = {
+#					limit = { has_country_flag = remind_me_about_rearnament_flag }
+#					country_event = { id = Sweden_rearnament.4 }
+#				}
+#			}
+#		}	
+#	}
+#
+#	SWE_rearnament_discussions_are_active = {
+#	
+#		icon = decision_generic_nationalism
+#		selectable_mission = no
+#		allowed = {
+#			original_tag = SWE
+#		}
+#		cancel_trigger = {  hidden_trigger = { has_country_flag = turn_of_rearnament_system }}
+#		available = {
+#			hidden_trigger = {
+#				always = no
+#			}
+#		}
+#		activation = {
+#			always = no
+#		}
+#		fire_only_once = yes
+#		is_good = yes
+#		days_mission_timeout = 30
+#		
+#		timeout_effect = {
+#			if = {
+#				limit = { NOT = { has_country_flag = turn_of_rearnament_system } }
+#				activate_mission = SWE_time_to_rearnament_discussions
+#			}
+#		}	
+#	}
+#
+#
+#	SWE_set_army_budget = {
+#	
+#		icon = decision_generic_nationalism
+#		allowed = {
+#			original_tag = SWE
+#		}
+#		available = {
+#			has_active_mission = SWE_rearnament_discussions_are_active
+#			NOT = { 
+#				has_country_flag = army_budget_event_active 
+#				has_country_flag = navy_budget_event_active 
+#				has_country_flag = air_budget_event_active 
+#			}
+#		}
+#		
+#		visible = {
+#			always = yes
+#			NOT = { has_country_flag = army_budget_event_active }
+#		}
+#
+#		complete_effect = {
+#			country_event = { id = Sweden_rearnament.1 } 
+#			set_country_flag = army_budget_event_active
+#		}	
+#	}
+#
+#	SWE_set_air_budget = {
+#	
+#		icon = decision_generic_nationalism
+#		allowed = {
+#			original_tag = SWE
+#		}
+#		available = {
+#			has_active_mission = SWE_rearnament_discussions_are_active
+#			NOT = { 
+#				has_country_flag = army_budget_event_active 
+#				has_country_flag = navy_budget_event_active 
+#				has_country_flag = air_budget_event_active 
+#			}
+#		}
+#		
+#		visible = {
+#			always = yes
+#			NOT = { has_country_flag = air_budget_event_active }
+#		}
+#
+#		complete_effect = {
+#			country_event = { id = Sweden_rearnament.2 } 
+#			set_country_flag = air_budget_event_active
+#		}	
+#	}
+#
+#	SWE_set_navy_budget = {
+#	
+#		icon = decision_generic_nationalism
+#		allowed = {
+#			original_tag = SWE
+#		}
+#		available = {
+#			has_active_mission = SWE_rearnament_discussions_are_active
+#			NOT = { 
+#				has_country_flag = army_budget_event_active 
+#				has_country_flag = navy_budget_event_active 
+#				has_country_flag = air_budget_event_active 
+#			}
+#		}
+#		
+#		visible = {
+#			always = yes
+#			NOT = { 
+#				has_country_flag = navy_budget_event_active 
+#			}
+#		}
+#
+#		complete_effect = {
+#			country_event = { id = Sweden_rearnament.3 } 
+#			set_country_flag = navy_budget_event_active
+#		}	
+#	}
+#
+#	remind_me_about_rearnament_decisions = {
+#	
+#		icon = decision_generic_nationalism
+#		allowed = {
+#			original_tag = SWE
+#		}
+#		available = {
+#			hidden_trigger = {
+#				always = yes
+#			}
+#		}
+#		
+#		visible = {
+#			always = yes
+#		}
+#
+#		complete_effect = {
+#			if = {
+#				limit = { NOT = { has_country_flag = remind_me_about_rearnament } }
+#				set_country_flag = remind_me_about_rearnament_flag
+#			}
+#			else = {
+#				clr_country_flag = remind_me_about_rearnament_flag
+#			}
+#			
+#		}	
+#	}
+#}
+
