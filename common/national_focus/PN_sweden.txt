@@ -175,7 +175,7 @@ focus_tree = {
 		id = PN_SWE_the_finland_question
 		icon = GFX_focus_SWE_Swedes_not_Sweden_to_finlands_aid
 		relative_position_id = PN_SWE_in_the_wake_of_fountainebleau
-		x = -7
+		x = -17
 		y = -1
 	}	
 	focus = {
@@ -184,7 +184,7 @@ focus_tree = {
 		prerequisite = { focus = PN_SWE_in_the_wake_of_fountainebleau }
 		mutually_exclusive = { focus = PN_SWE_whispers_of_a_revolution }
 		relative_position_id = PN_SWE_in_the_wake_of_fountainebleau
-		x = -2
+		x = -7
 		y = 1
 	}
 	focus = {
@@ -252,6 +252,99 @@ focus_tree = {
 		relative_position_id = PN_SWE_rekindle_the_dream_of_an_empire
 		x = -1
 		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_the_conservatives_four_more_years
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_1936_election }
+		relative_position_id = PN_SWE_the_1936_election
+		x = 3
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_reinforce_anti_communist_measures
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
+		relative_position_id = PN_SWE_the_conservatives_four_more_years
+		x = 1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_strengthen_the_crown
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
+		relative_position_id = PN_SWE_the_conservatives_four_more_years
+		x = 5
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_rein_in_the_worker_unions
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
+		relative_position_id = PN_SWE_the_conservatives_four_more_years
+		x = -1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_outlaw_worker_strikes
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_rein_in_the_worker_unions }
+		prerequisite = { focus = PN_SWE_reinforce_anti_communist_measures }
+		relative_position_id = PN_SWE_rein_in_the_worker_unions
+		x = 1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_work_with_corporations
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_rein_in_the_worker_unions }
+		relative_position_id = PN_SWE_rein_in_the_worker_unions
+		x = -1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_restore_the_landstrome_associations
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_rein_in_the_worker_unions }
+		relative_position_id = PN_SWE_rein_in_the_worker_unions
+		x = 3
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_the_center_victorious
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_1936_election }
+		relative_position_id = PN_SWE_the_1936_election
+		x = 0
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_the_left_ascendant
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_1936_election }
+		relative_position_id = PN_SWE_the_1936_election
+		x = -3
+		y = 1
+
+		cost = 10
 	}
 	focus = {
 		id = PN_SWE_whispers_of_a_revolution
@@ -261,6 +354,7 @@ focus_tree = {
 		relative_position_id = PN_SWE_in_the_wake_of_fountainebleau
 		x = 6
 		y = 1
+
 	}
 	focus = {
 		id = PN_SWE_unify_the_red_underground
