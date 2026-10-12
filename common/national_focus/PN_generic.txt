@@ -3644,6 +3644,654 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GENERIC_country_general_staff
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = GENERIC_internal_politics
+		x = 25
+		y = 0
+
+		cost = 5
+
+		
+		available = {
+			num_divisions > 0
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				days = 365
+				idea = GENERIC_establish_a_general_staff_idea
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GENERIC_army_reform
+		icon = GFX_focus_chi_army_reform
+		relative_position_id = GENERIC_country_general_staff
+		prerequisite = { focus = GENERIC_country_general_staff }
+		x = 0
+		y = 1
+
+		cost = 5
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_doctrinal_studies
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GENERIC_army_reform }
+		x = 0
+		y = 1
+		relative_position_id = GENERIC_army_reform
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_infantry_doctrine_tip_tt
+			effect_tooltip = {
+				add_daily_mastery = {
+					name = GENERIC_doctrinal_studies
+					amount = 0.75
+					days = 180
+					track = infantry
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_infantry_doctrine_tip_else_tt
+			effect_tooltip = {
+				add_doctrine_cost_reduction = {
+					name = land_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = land_doctrine
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_subdoctrine_in_track = infantry }
+					add_daily_mastery = {
+						name = GENERIC_doctrinal_studies
+						amount = 0.75
+						days = 180
+						track = infantry
+					}
+				}
+				else = {
+					add_doctrine_cost_reduction = {
+						name = land_doc_bonus
+						cost_reduction = 0.5
+						uses = 1
+						category = land_doctrine
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_further_doctrinal_studies
+		icon = GFX_focus_generic_army_doctrines_2
+		prerequisite = { focus = GENERIC_doctrinal_studies }
+		x = 0
+		y = 1
+		relative_position_id = GENERIC_doctrinal_studies
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_operations_doctrine_tip_tt
+			effect_tooltip = {
+				add_daily_mastery = {
+					name = GENERIC_doctrinal_studies
+					amount = 0.75
+					days = 180
+					track = operations
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = GENERIC_operations_doctrine_tip_else_tt
+			effect_tooltip = {
+				add_doctrine_cost_reduction = {
+					name = land_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = land_doctrine
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_subdoctrine_in_track = operations }
+					add_daily_mastery = {
+						name = land_doc_bonus
+						amount = 0.5
+						days = 180
+						track = operations
+					}
+				}
+				else = {
+					add_doctrine_cost_reduction = {
+						name = land_doc_bonus
+						cost_reduction = 0.5
+						uses = 1
+						category = land_doctrine
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_establish_a_military_academy
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = GENERIC_further_doctrinal_studies }
+		x = 0
+		y = 2
+
+		relative_position_id = GENERIC_further_doctrinal_studies
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			every_army_leader = {
+				add_planning = 1
+			}
+			add_ideas = GENERIC_establish_a_military_academy_idea
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+	}
+	focus = {
+		id = GENERIC_equipment_modernization_program
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = GENERIC_army_reform }
+		x = -3
+		y = 1
+		relative_position_id = GENERIC_army_reform
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_towed_gun_research
+		icon = GFX_focus_generic_anti_tank_guns
+		prerequisite = { focus = GENERIC_equipment_modernization_program }
+		x = -1
+		y = 1
+		relative_position_id = GENERIC_equipment_modernization_program
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_army_modernization
+		icon = GFX_focus_RAJ_military_into_the_workforce
+		prerequisite = { focus = GENERIC_army_reform }
+		x = 3
+		y = 2
+		relative_position_id = GENERIC_country_general_staff
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		army_experience = 5
+			add_tech_bonus = {	
+				name = special_bonus
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+		
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_support_research
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = GENERIC_equipment_modernization_program }
+		x = 1
+		y = 1
+		relative_position_id = GENERIC_equipment_modernization_program
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 1
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = GENERIC_support_research }
+		prerequisite = { focus = GENERIC_further_doctrinal_studies }
+		prerequisite = { focus = GENERIC_towed_gun_research }
+		x = 0
+		y = 1
+		relative_position_id = GENERIC_support_research
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			if = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 2
+					uses = 1
+					category = cat_special_forces_generic
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 2
+					uses = 1
+					category = para_tech
+					category = marine_tech
+					category = mountaineers_tech
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_the_future_of_warfare
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = GENERIC_army_modernization }
+		x = 2
+		y = 3
+		relative_position_id = GENERIC_country_general_staff
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+				if = {
+					limit = {
+						has_dlc = "No Step Back"
+					}
+					or = {
+						has_tech = improved_light_tank_chassis
+						has_tech = improved_medium_tank_chassis
+						has_tech = improved_heavy_tank_chassis
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+						}
+					}
+					or = {
+						has_tech = advanced_light_tank
+						has_tech = improved_medium_tank
+						has_tech = improved_heavy_tank
+					}
+				}
+		}
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			#HAS DLC
+			if = {
+				limit = {
+					NOT = { has_tech = gwtank_chassis }
+					has_dlc = "No Step Back"
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 3
+					uses = 1
+					technology = gwtank_chassis
+				}
+				add_tech_bonus = {
+					name = POL_study_foreign_tanks
+					bonus = 1
+					uses = 1
+					category = armor
+				}								
+				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 20 producer = FRA }
+			}
+			if = { 
+				limit = { 
+					has_tech = gwtank_chassis
+					NOT = { has_tech = basic_light_tank }
+					has_dlc = "No Step Back"
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1
+					uses = 1
+					technology = basic_light_tank
+				}
+				add_tech_bonus = {
+					name = POL_study_foreign_tanks
+					bonus = 1
+					uses = 1
+					category = armor
+				}				
+				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 20 producer = FRA }
+			}
+			if = { 
+				limit = { 
+					has_tech = gwtank_chassis
+					has_tech = basic_light_tank
+					NOT = { has_tech = improved_light_tank }
+					has_dlc = "No Step Back"
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1
+					uses = 1
+					technology = improved_light_tank
+				}
+				add_tech_bonus = {
+					name = POL_study_foreign_tanks
+					bonus = 1
+					uses = 1
+					category = armor
+				}				
+				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 20 producer = FRA }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = gwtank_chassis }
+					NOT = { has_dlc = "No Step Back" }
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 3
+					uses = 1
+					technology = gwtank
+				}
+				add_tech_bonus = {
+					name = POL_study_foreign_tanks
+					bonus = 1
+					uses = 1
+					category = armor
+				}								
+				add_equipment_to_stockpile = { type = gw_tank_equipment amount = 20 producer = FRA }
+			}
+			# NO DLC
+			if = { 
+				limit = { 
+					has_tech = gwtank
+					NOT = { has_tech = basic_light_tank }
+					NOT = { has_dlc = "No Step Back" }
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1
+					uses = 1
+					technology = basic_light_tank
+				}
+				add_tech_bonus = {
+					name = POL_study_foreign_tanks
+					bonus = 1
+					uses = 1
+					category = armor
+				}				
+				add_equipment_to_stockpile = { type = gw_tank_equipment amount = 20 producer = FRA }
+			}
+			if = { 
+				limit = { 
+					has_tech = gwtank
+					has_tech = basic_light_tank
+					NOT = { has_tech = improved_light_tank }
+					NOT = { has_dlc = "No Step Back" }
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1
+					uses = 1
+					technology = improved_light_tank
+				}
+				add_tech_bonus = {
+					name = POL_study_foreign_tanks
+					bonus = 1
+					uses = 1
+					category = armor
+				}				
+				add_equipment_to_stockpile = { type = gw_tank_equipment amount = 20 producer = FRA }
+			}
+			if = {
+				limit = { has_subdoctrine_in_track = armor }
+				add_daily_mastery = {
+					name = land_doc_bonus
+					amount = 0.3
+					days = 180
+					track = armor
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_signal_companies
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = GENERIC_the_future_of_warfare }
+		x = 1
+		y = 4
+		relative_position_id = GENERIC_country_general_staff
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_tech = radio
+			has_tech = motorised_infantry
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 3
+				uses = 1
+				category = signal_company_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_motorization_initiative
+		icon = GFX_focus_generic_truck
+		prerequisite = { focus = GENERIC_army_modernization }
+		x = 4
+		y = 3
+		relative_position_id = GENERIC_country_general_staff
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			has_tech = motorised_infantry
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = GENERIC_motorize_the_army 
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3
+				technology = motorised_infantry
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_mechanization_effort
+		icon = GFX_focus_generic_mechanized
+		prerequisite = { focus = GENERIC_the_future_of_warfare }
+		prerequisite = { focus = GENERIC_motorization_initiative }
+		x = 3
+		y = 4
+		relative_position_id = GENERIC_country_general_staff
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_mechanized_focus
+				ahead_reduction = 0.5
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = GENERIC_field_hospitals
+		icon = GFX_focus_generic_bad_medical
+		prerequisite = { focus = GENERIC_motorization_initiative }
+		relative_position_id = GENERIC_country_general_staff
+		x = 5
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_tech = motorised_infantry
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+                name = motorized_bonus
+				bonus = 3
+				uses = 1
+				category = hospital_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = GENERIC_modern_logistics
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		relative_position_id = GENERIC_mechanization_effort
+		prerequisite = { focus = GENERIC_field_hospitals }
+		prerequisite = { focus = GENERIC_mechanization_effort }
+		prerequisite = { focus = GENERIC_signal_companies }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_tech = motorised_infantry
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			every_army_leader = {
+				add_logistics = 1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = GENERIC_modern_logistics_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+                name = motorized_bonus
+				bonus = 3
+				uses = 1
+				category = logistics_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
 		id = GENERIC_begin_industrial_buildup
 		icon = GFX_focus_generic_industry_2
 		relative_position_id = GENERIC_country_general_staff
@@ -6911,654 +7559,6 @@ focus_tree = {
 			}
 
 			#custom_effect_tooltip = GENERIC_Generals_Other_tt
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_country_general_staff
-		icon = GFX_focus_generic_military_mission
-		relative_position_id = GENERIC_internal_politics
-		x = 25
-		y = 0
-
-		cost = 5
-
-		
-		available = {
-			num_divisions > 0
-		}
-		
-		completion_reward = {
-			add_timed_idea = {
-				days = 365
-				idea = GENERIC_establish_a_general_staff_idea
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = GENERIC_army_reform
-		icon = GFX_focus_chi_army_reform
-		relative_position_id = GENERIC_country_general_staff
-		prerequisite = { focus = GENERIC_country_general_staff }
-		x = 0
-		y = 1
-
-		cost = 5
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 0.5
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_doctrinal_studies
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = GENERIC_army_reform }
-		x = 0
-		y = 1
-		relative_position_id = GENERIC_army_reform
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = GENERIC_infantry_doctrine_tip_tt
-			effect_tooltip = {
-				add_daily_mastery = {
-					name = GENERIC_doctrinal_studies
-					amount = 0.75
-					days = 180
-					track = infantry
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = GENERIC_infantry_doctrine_tip_else_tt
-			effect_tooltip = {
-				add_doctrine_cost_reduction = {
-					name = land_doc_bonus
-					cost_reduction = 0.5
-					uses = 1
-					category = land_doctrine
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = { has_subdoctrine_in_track = infantry }
-					add_daily_mastery = {
-						name = GENERIC_doctrinal_studies
-						amount = 0.75
-						days = 180
-						track = infantry
-					}
-				}
-				else = {
-					add_doctrine_cost_reduction = {
-						name = land_doc_bonus
-						cost_reduction = 0.5
-						uses = 1
-						category = land_doctrine
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_further_doctrinal_studies
-		icon = GFX_focus_generic_army_doctrines_2
-		prerequisite = { focus = GENERIC_doctrinal_studies }
-		x = 0
-		y = 1
-		relative_position_id = GENERIC_doctrinal_studies
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = GENERIC_operations_doctrine_tip_tt
-			effect_tooltip = {
-				add_daily_mastery = {
-					name = GENERIC_doctrinal_studies
-					amount = 0.75
-					days = 180
-					track = operations
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = GENERIC_operations_doctrine_tip_else_tt
-			effect_tooltip = {
-				add_doctrine_cost_reduction = {
-					name = land_doc_bonus
-					cost_reduction = 0.5
-					uses = 1
-					category = land_doctrine
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = { has_subdoctrine_in_track = operations }
-					add_daily_mastery = {
-						name = land_doc_bonus
-						amount = 0.5
-						days = 180
-						track = operations
-					}
-				}
-				else = {
-					add_doctrine_cost_reduction = {
-						name = land_doc_bonus
-						cost_reduction = 0.5
-						uses = 1
-						category = land_doctrine
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_establish_a_military_academy
-		icon = GFX_focus_generic_military_academy
-		prerequisite = { focus = GENERIC_further_doctrinal_studies }
-		x = 0
-		y = 2
-
-		relative_position_id = GENERIC_further_doctrinal_studies
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			every_army_leader = {
-				add_planning = 1
-			}
-			add_ideas = GENERIC_establish_a_military_academy_idea
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER }
-	}
-	focus = {
-		id = GENERIC_equipment_modernization_program
-		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = GENERIC_army_reform }
-		x = -3
-		y = 1
-		relative_position_id = GENERIC_army_reform
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_towed_gun_research
-		icon = GFX_focus_generic_anti_tank_guns
-		prerequisite = { focus = GENERIC_equipment_modernization_program }
-		x = -1
-		y = 1
-		relative_position_id = GENERIC_equipment_modernization_program
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_army_modernization
-		icon = GFX_focus_RAJ_military_into_the_workforce
-		prerequisite = { focus = GENERIC_army_reform }
-		x = 3
-		y = 2
-		relative_position_id = GENERIC_country_general_staff
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-		army_experience = 5
-			add_tech_bonus = {	
-				name = special_bonus
-				bonus = 1
-				uses = 1
-				category = support_tech
-			}
-		
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_support_research
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = GENERIC_equipment_modernization_program }
-		x = 1
-		y = 1
-		relative_position_id = GENERIC_equipment_modernization_program
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				ahead_reduction = 1
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_special_forces
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = GENERIC_support_research }
-		prerequisite = { focus = GENERIC_further_doctrinal_studies }
-		prerequisite = { focus = GENERIC_towed_gun_research }
-		x = 0
-		y = 1
-		relative_position_id = GENERIC_support_research
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = special_forces
-			if = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender"
-				}
-				add_tech_bonus = {
-					name = special_forces_bonus
-					bonus = 2
-					uses = 1
-					category = cat_special_forces_generic
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = special_forces_bonus
-					bonus = 2
-					uses = 1
-					category = para_tech
-					category = marine_tech
-					category = mountaineers_tech
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_the_future_of_warfare
-		icon = GFX_focus_generic_tank_production
-		prerequisite = { focus = GENERIC_army_modernization }
-		x = 2
-		y = 3
-		relative_position_id = GENERIC_country_general_staff
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		bypass = {
-				if = {
-					limit = {
-						has_dlc = "No Step Back"
-					}
-					or = {
-						has_tech = improved_light_tank_chassis
-						has_tech = improved_medium_tank_chassis
-						has_tech = improved_heavy_tank_chassis
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_dlc = "No Step Back"
-						}
-					}
-					or = {
-						has_tech = advanced_light_tank
-						has_tech = improved_medium_tank
-						has_tech = improved_heavy_tank
-					}
-				}
-		}
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			#HAS DLC
-			if = {
-				limit = {
-					NOT = { has_tech = gwtank_chassis }
-					has_dlc = "No Step Back"
-				}
-				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 3
-					uses = 1
-					technology = gwtank_chassis
-				}
-				add_tech_bonus = {
-					name = POL_study_foreign_tanks
-					bonus = 1
-					uses = 1
-					category = armor
-				}								
-				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 20 producer = FRA }
-			}
-			if = { 
-				limit = { 
-					has_tech = gwtank_chassis
-					NOT = { has_tech = basic_light_tank }
-					has_dlc = "No Step Back"
-				}
-				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 1
-					uses = 1
-					technology = basic_light_tank
-				}
-				add_tech_bonus = {
-					name = POL_study_foreign_tanks
-					bonus = 1
-					uses = 1
-					category = armor
-				}				
-				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 20 producer = FRA }
-			}
-			if = { 
-				limit = { 
-					has_tech = gwtank_chassis
-					has_tech = basic_light_tank
-					NOT = { has_tech = improved_light_tank }
-					has_dlc = "No Step Back"
-				}
-				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 1
-					uses = 1
-					technology = improved_light_tank
-				}
-				add_tech_bonus = {
-					name = POL_study_foreign_tanks
-					bonus = 1
-					uses = 1
-					category = armor
-				}				
-				add_equipment_to_stockpile = { type = light_tank_chassis_0 amount = 20 producer = FRA }
-			}
-			if = {
-				limit = {
-					NOT = { has_tech = gwtank_chassis }
-					NOT = { has_dlc = "No Step Back" }
-				}
-				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 3
-					uses = 1
-					technology = gwtank
-				}
-				add_tech_bonus = {
-					name = POL_study_foreign_tanks
-					bonus = 1
-					uses = 1
-					category = armor
-				}								
-				add_equipment_to_stockpile = { type = gw_tank_equipment amount = 20 producer = FRA }
-			}
-			# NO DLC
-			if = { 
-				limit = { 
-					has_tech = gwtank
-					NOT = { has_tech = basic_light_tank }
-					NOT = { has_dlc = "No Step Back" }
-				}
-				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 1
-					uses = 1
-					technology = basic_light_tank
-				}
-				add_tech_bonus = {
-					name = POL_study_foreign_tanks
-					bonus = 1
-					uses = 1
-					category = armor
-				}				
-				add_equipment_to_stockpile = { type = gw_tank_equipment amount = 20 producer = FRA }
-			}
-			if = { 
-				limit = { 
-					has_tech = gwtank
-					has_tech = basic_light_tank
-					NOT = { has_tech = improved_light_tank }
-					NOT = { has_dlc = "No Step Back" }
-				}
-				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 1
-					uses = 1
-					technology = improved_light_tank
-				}
-				add_tech_bonus = {
-					name = POL_study_foreign_tanks
-					bonus = 1
-					uses = 1
-					category = armor
-				}				
-				add_equipment_to_stockpile = { type = gw_tank_equipment amount = 20 producer = FRA }
-			}
-			if = {
-				limit = { has_subdoctrine_in_track = armor }
-				add_daily_mastery = {
-					name = land_doc_bonus
-					amount = 0.3
-					days = 180
-					track = armor
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_signal_companies
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = GENERIC_the_future_of_warfare }
-		x = 1
-		y = 4
-		relative_position_id = GENERIC_country_general_staff
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_tech = radio
-			has_tech = motorised_infantry
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = electronics_bonus
-				bonus = 3
-				uses = 1
-				category = signal_company_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_motorization_initiative
-		icon = GFX_focus_generic_truck
-		prerequisite = { focus = GENERIC_army_modernization }
-		x = 4
-		y = 3
-		relative_position_id = GENERIC_country_general_staff
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		bypass = {
-			has_tech = motorised_infantry
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			unlock_decision_tooltip = GENERIC_motorize_the_army 
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 3
-				technology = motorised_infantry
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_mechanization_effort
-		icon = GFX_focus_generic_mechanized
-		prerequisite = { focus = GENERIC_the_future_of_warfare }
-		prerequisite = { focus = GENERIC_motorization_initiative }
-		x = 3
-		y = 4
-		relative_position_id = GENERIC_country_general_staff
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_mechanized_focus
-				ahead_reduction = 0.5
-				bonus = 0.5
-				uses = 1
-				category = cat_mechanized_equipment
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = GENERIC_field_hospitals
-		icon = GFX_focus_generic_bad_medical
-		prerequisite = { focus = GENERIC_motorization_initiative }
-		relative_position_id = GENERIC_country_general_staff
-		x = 5
-		y = 4
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_tech = motorised_infantry
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-                name = motorized_bonus
-				bonus = 3
-				uses = 1
-				category = hospital_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = GENERIC_modern_logistics
-		icon = GFX_focus_generic_reinforcing_the_supply_network
-		relative_position_id = GENERIC_mechanization_effort
-		prerequisite = { focus = GENERIC_field_hospitals }
-		prerequisite = { focus = GENERIC_mechanization_effort }
-		prerequisite = { focus = GENERIC_signal_companies }
-		x = 0
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_tech = motorised_infantry
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			every_army_leader = {
-				add_logistics = 1
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = GENERIC_modern_logistics_idea
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_tech_bonus = {
-                name = motorized_bonus
-				bonus = 3
-				uses = 1
-				category = logistics_tech
-			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
