@@ -280,7 +280,19 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
 		relative_position_id = PN_SWE_the_conservatives_four_more_years
-		x = 5
+		mutually_exclusive = { focus = PN_SWE_conservative_outlook }
+		x = 7
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_conservative_outlook
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
+		relative_position_id = PN_SWE_the_conservatives_four_more_years
+		mutually_exclusive = { focus = PN_SWE_strengthen_the_crown }
+		x = 4
 		y = 1
 
 		cost = 10
