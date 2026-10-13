@@ -287,6 +287,78 @@ focus_tree = {
 		cost = 10
 	}
 	focus = {
+		id = PN_SWE_weaken_the_instrument_of_government
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_strengthen_the_crown }
+		relative_position_id = PN_SWE_strengthen_the_crown
+		x = 0
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_strengthen_aristocratic_ties
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_weaken_the_instrument_of_government }
+		relative_position_id = PN_SWE_weaken_the_instrument_of_government
+		x = 1
+		y = 2
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_reaffirm_army_loyalties
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_weaken_the_instrument_of_government }
+		relative_position_id = PN_SWE_weaken_the_instrument_of_government
+		x = 0
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_fund_pro_monarchy_papers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_weaken_the_instrument_of_government }
+		relative_position_id = PN_SWE_weaken_the_instrument_of_government
+		x = -1
+		y = 2
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_usurp_the_riksdag
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_strengthen_aristocratic_ties }
+		prerequisite = { focus = PN_SWE_reaffirm_army_loyalties }
+		prerequisite = { focus = PN_SWE_fund_pro_monarchy_papers }
+		relative_position_id = PN_SWE_weaken_the_instrument_of_government
+		x = 0
+		y = 3
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_dominium_maris_baltici
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_usurp_the_riksdag }
+		relative_position_id = PN_SWE_usurp_the_riksdag
+		x = 0
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_the_baltic_game
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
+		relative_position_id = PN_SWE_dominium_maris_baltici
+		x = 3
+		y = 1
+
+		cost = 10
+	}
+	focus = {
 		id = PN_SWE_conservative_outlook
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
@@ -329,7 +401,7 @@ focus_tree = {
 		cost = 10
 	}
 	focus = {
-		id = PN_SWE_restore_the_landstrome_associations
+		id = PN_SWE_restore_the_landstorm_associations
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PN_SWE_rein_in_the_worker_unions }
 		relative_position_id = PN_SWE_rein_in_the_worker_unions
