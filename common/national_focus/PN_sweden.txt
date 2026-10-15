@@ -277,7 +277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_strengthen_the_crown
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_CZE_bohemia_crown
 		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
 		relative_position_id = PN_SWE_the_conservatives_four_more_years
 		mutually_exclusive = { focus = PN_SWE_conservative_outlook }
@@ -288,7 +288,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_weaken_the_instrument_of_government
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_BEL_government_resigns
 		prerequisite = { focus = PN_SWE_strengthen_the_crown }
 		relative_position_id = PN_SWE_strengthen_the_crown
 		x = 0
@@ -298,7 +298,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_strengthen_aristocratic_ties
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_CHL_invite_french_aristocracy
 		prerequisite = { focus = PN_SWE_weaken_the_instrument_of_government }
 		relative_position_id = PN_SWE_weaken_the_instrument_of_government
 		x = 1
@@ -308,7 +308,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_reaffirm_army_loyalties
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_chi_army_reform
 		prerequisite = { focus = PN_SWE_weaken_the_instrument_of_government }
 		relative_position_id = PN_SWE_weaken_the_instrument_of_government
 		x = 0
@@ -318,7 +318,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_fund_pro_monarchy_papers
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SWE_king_in_council
 		prerequisite = { focus = PN_SWE_weaken_the_instrument_of_government }
 		relative_position_id = PN_SWE_weaken_the_instrument_of_government
 		x = -1
@@ -328,7 +328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_usurp_the_riksdag
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SWE_organize_a_putsch
 		prerequisite = { focus = PN_SWE_strengthen_aristocratic_ties }
 		prerequisite = { focus = PN_SWE_reaffirm_army_loyalties }
 		prerequisite = { focus = PN_SWE_fund_pro_monarchy_papers }
@@ -340,7 +340,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_dominium_maris_baltici
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SWE_the_lion_of_the_north
 		prerequisite = { focus = PN_SWE_usurp_the_riksdag }
 		relative_position_id = PN_SWE_usurp_the_riksdag
 		x = 0
@@ -350,10 +350,113 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_the_baltic_game
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
 		relative_position_id = PN_SWE_dominium_maris_baltici
-		x = 3
+		x = 5
+		y = 2
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_the_wayward_brethren
+		icon = GFX_focus_generic_scandinavia_flags
+		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
+		relative_position_id = PN_SWE_dominium_maris_baltici
+		x = -5
+		y = 2
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_restore_the_baltic_combination
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
+		relative_position_id = PN_SWE_dominium_maris_baltici
+		x = 1
+		y = 2
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_mend_british_ties
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
+		relative_position_id = PN_SWE_dominium_maris_baltici
+		x = -1
+		y = 2
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_baltic_spheres
+		icon = GFX_focus_GER_subduing_the_baltic_states
+		prerequisite = { focus = PN_SWE_the_baltic_game }
+		prerequisite = { focus = PN_SWE_restore_the_baltic_combination }
+		relative_position_id = PN_SWE_the_baltic_game
+		x = -2
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_sideline_SOV_influence
+		icon = GFX_focus_FIN_keepers_of_the_baltic_countries
+		prerequisite = { focus = PN_SWE_the_baltic_game }
+		relative_position_id = PN_SWE_the_baltic_game
+		x = 1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_fund_anti_SOV_groups
+		icon = GFX_focus_SWE_the_threat_of_the_iron_curtain
+		prerequisite = { focus = PN_SWE_sideline_SOV_influence }
+		relative_position_id = PN_SWE_sideline_SOV_influence
+		x = 1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_military_cooperation_proposal
+		icon = GFX_focus_generic_education
+		prerequisite = { focus = PN_SWE_sideline_SOV_influence }
+		relative_position_id = PN_SWE_sideline_SOV_influence
+		x = 0
+		y = 2
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_pressure_the_baltic_state
+		icon = GFX_focus_generic_attack_baltics
+		prerequisite = { focus = PN_SWE_baltic_spheres }
+		mutually_exclusive = { focus = PN_SWE_offer_the_baltic_state_protection }
+		relative_position_id = PN_SWE_baltic_spheres
+		x = -1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_offer_the_baltic_state_protection
+		icon = GFX_focus_generic_baltic_entente
+		prerequisite = { focus = PN_SWE_baltic_spheres focus = PN_SWE_sideline_SOV_influence }
+		mutually_exclusive = { focus = PN_SWE_pressure_the_baltic_state }
+		relative_position_id = PN_SWE_baltic_spheres
+		x = 1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_restructure_the_baltic
+		icon = GFX_focus_generic_subjugation
+		prerequisite = { focus = PN_SWE_offer_the_baltic_state_protection focus = PN_SWE_pressure_the_baltic_state }
+		relative_position_id = PN_SWE_offer_the_baltic_state_protection
+		x = -1
 		y = 1
 
 		cost = 10
