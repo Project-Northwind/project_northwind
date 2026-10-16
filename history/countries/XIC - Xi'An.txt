@@ -29,3 +29,6 @@ add_ideas = {
 
 recruit_character = XIC_zhang_xueliang
 recruit_character = XIC_alexander_von_falkenhausen
+recruit_character = XIC_zhang_xueming
+recruit_character = XIC_he_zhuguo
+recruit_character = XIC_wang_yizhe

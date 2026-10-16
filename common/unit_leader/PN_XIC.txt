@@ -1,0 +1,38 @@
+leader_traits = {
+	XIC_reconstructionist_officer = {
+		type = land
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	XIC_the_young_marshall_army = {
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			offence = 0.05
+			defence = 0.05
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	XIC_the_marshall_of_victory_army = {
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			offence = 0.10
+			defence = 0.10
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

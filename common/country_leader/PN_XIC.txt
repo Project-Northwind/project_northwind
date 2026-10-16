@@ -6,4 +6,20 @@ leader_traits = {
 		army_attack_factor = 0.05
 		army_defence_factor = 0.05
 	}
+
+	XIC_mayor_of_tianjin = {
+		random = no
+		sprite = 10
+
+		political_power_factor = 0.10
+		consumer_goods_factor = -0.10
+	}
+
+	XIC_the_marshall_of_victory = {
+		random = no
+		sprite = 13
+
+		army_attack_factor = 0.10
+		army_defence_factor = 0.10
+	}
 }

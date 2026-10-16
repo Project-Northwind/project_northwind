@@ -11,18 +11,19 @@ focus_tree = {
 	default = no
 	reset_on_civilwar = no
 
-	continuous_focus_position = { x = 450 y = 1900 }
+	continuous_focus_position = { x = 3050 y = 1900 }
 
 	focus = {
 		id = PN_XIC_aftermath_of_the_march
 		icon = GFX_goal_PN_XIC_aftermath_of_the_march
 		x = 8
 		y = 0
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = PN_XIC.4 }
 		}
 	}
 
@@ -31,7 +32,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_young_marshall
 		x = 8
 		y = 1
-		cost = 10
+		cost = 1
 		prerequisite = {
 			focus = PN_XIC_aftermath_of_the_march
 		}
@@ -39,6 +40,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = PN_XIC.5 }
 		}
 	}
 
@@ -47,7 +49,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_reconstruction_government
 		x = 8
 		y = 2
-		cost = 10
+		cost = 1
 		prerequisite = {
 			focus = PN_XIC_the_young_marshall
 		}
@@ -55,6 +57,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = PN_XIC.6 }
 		}
 	}
 	
@@ -63,14 +66,32 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_nationalize_the_workshops
 		x = 10
 		y = 3
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_XIC_reconstruction_government
+		}
+
+		available = {
+			owns_state = 1038
 		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = -0.10
+			1038 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}	
 
@@ -79,7 +100,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_promote_the_young_officers
 		x = 6
 		y = 3
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_XIC_reconstruction_government
 		}
@@ -87,6 +108,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = PN_XIC.1 }
 		}
 	}
 		focus = {
@@ -94,7 +116,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_rally_the_army
 		x = 8
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_reconstruction_government
 		}
@@ -102,6 +124,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = XIC_shangdong_army
 		}
 	}	
 
@@ -110,7 +133,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_restructure_the_shangdong_army
 		x = 6
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_rally_the_army
 		}
@@ -118,6 +141,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XIC_shangdong_army
+				add_idea = XIC_shangdong_army_restructured
+			}
 		}
 	}
 	
@@ -126,7 +153,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_german_military_advisors
 		x = 10
 		y = 5
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_XIC_rally_the_army
 		}
@@ -134,6 +161,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = XIC_german_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = XIC_german_infantry_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -142,7 +181,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_establish_the_jinan_military_academy
 		x = 8
 		y = 5
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_XIC_rally_the_army
 		}
@@ -150,6 +189,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_jinan_academy_tt
+			country_event = { id = PN_XIC.8 }
 		}
 	}
 
@@ -158,7 +199,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_marshall_of_victory
 		x = 8
 		y = 8
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_XIC_establish_the_jinan_military_academy focus = PN_XIC_the_german_military_advisors focus = PN_XIC_restructure_the_shangdong_army
 		}
@@ -166,6 +207,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_marshall_of_victory_tt
+			hidden_effect = {
+				XIC_zhang_xueliang = {
+					swap_country_leader_traits = {
+						remove = XIC_the_young_marshall
+						add = XIC_the_marshall_of_victory
+						ideology = reconstructionism
+					}
+					remove_unit_leader_trait = XIC_the_young_marshall_army
+					add_unit_leader_trait = XIC_the_marshall_of_victory_army
+				}
+			}
 		}
 	}
 
@@ -174,7 +227,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_industrial_reconstruction
 		x = 13
 		y = 3
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_XIC_reconstruction_government
 		}
@@ -182,6 +235,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_industrial_reconstruction_tt
+			hidden_effect = {
+				set_variable = { XIC_reconstruction_consumer_goods = -0.05 }
+				set_variable = { XIC_reconstruction_factory_output = 0.05 }
+				set_variable = { XIC_reconstruction_stability = 0 }
+				set_variable = { XIC_reconstruction_resources = 0 }
+				set_variable = { XIC_reconstruction_efficiency_growth = 0 }
+				set_variable = { XIC_reconstruction_efficiency_cap = 0 }
+				add_dynamic_modifier = { modifier = XIC_industrial_reconstruction }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -190,14 +254,28 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_open_the_mines
 		x = 13
 		y = 4
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_XIC_industrial_reconstruction
+		}
+
+		available = {
+			owns_state = 1038
 		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
+			1038 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+			}
 		}
 	}
 	
@@ -206,7 +284,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_spare_the_peasants
 		x = 14
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_industrial_reconstruction
 		}
@@ -217,6 +295,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_spare_the_peasants_tt
+			hidden_effect = {
+				add_to_variable = { XIC_reconstruction_stability = 0.10 }
+				add_to_variable = { XIC_reconstruction_consumer_goods = -0.05 }
+				add_to_variable = { XIC_reconstruction_factory_output = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 	
@@ -225,7 +310,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_all_for_reconstruction
 		x = 12
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_industrial_reconstruction
 		}
@@ -236,6 +321,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_all_for_reconstruction_tt
+			hidden_effect = {
+				add_to_variable = { XIC_reconstruction_factory_output = 0.15 }
+				add_to_variable = { XIC_reconstruction_consumer_goods = -0.25 }
+				add_to_variable = { XIC_reconstruction_stability = -0.20 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -244,7 +336,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_implement_the_reconstruction_plan
 		x = 13
 		y = 6
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_all_for_reconstruction focus = PN_XIC_spare_the_peasants
 		}
@@ -252,6 +344,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_implement_the_plan_tt
+			hidden_effect = {
+				add_to_variable = { XIC_reconstruction_resources = 0.05 }
+				add_to_variable = { XIC_reconstruction_efficiency_growth = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -260,14 +358,26 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_a_port_city_for_the_nation
 		x = 12
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_implement_the_reconstruction_plan 
+		}
+
+		available = {
+			owns_state = 743
 		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
+			743 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -277,13 +387,25 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_build_up_the_temporary_capital
 		x = 14
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_implement_the_reconstruction_plan 
 		}
+		available = {
+			owns_state = 1038
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
+			1038 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -292,7 +414,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_young_marshalls_vision
 		x = 13
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_build_up_the_temporary_capital 
 		}
@@ -302,6 +424,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_young_marshalls_vision_tt
+			hidden_effect = {
+				add_to_variable = { XIC_reconstruction_efficiency_growth = 0.10 }
+				add_to_variable = { XIC_reconstruction_efficiency_cap = 0.10 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -310,7 +438,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_a_policy_of_the_nation
 		x = 3
 		y = 3
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_XIC_reconstruction_government
 		}
@@ -318,6 +446,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XIC_aftermath_of_the_eastern_march
+				add_idea = XIC_aftermath_of_the_eastern_march_2
+			}
 		}
 	}
 	
@@ -326,7 +458,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_founding_father_of_reconstructionism
 		x = 3
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_a_policy_of_the_nation
 		}
@@ -334,6 +466,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XIC_aftermath_of_the_eastern_march_2
+				add_idea = XIC_aftermath_of_the_eastern_march_3
+			}
 		}
 	}
 
@@ -342,7 +478,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_essence_of_reconstructionism
 		x = 2
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_the_founding_father_of_reconstructionism
 		}
@@ -350,6 +486,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			remove_ideas = XIC_aftermath_of_the_eastern_march_3
 		}
 	}
 
@@ -358,7 +495,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_the_failures_of_nanjing
 		x = 4
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_the_founding_father_of_reconstructionism
 		}
@@ -366,6 +503,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			country_event = { id = PN_XIC.7 }
 		}
 	}
 
@@ -374,7 +514,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_great_rebirth
 		x = 3
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_XIC_the_the_failures_of_nanjing
 		}
@@ -385,6 +525,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XIC_national_reconstructionism
+				add_idea = XIC_national_reconstructionism_2
+			}
 		}
 	}
 
@@ -407,7 +551,1063 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = PN_XIC.10 }
 		}
 	}
+
+		focus = {
+		id = PN_XIC_Tianjin_to_beiping
+		icon = GFX_goal_PN_XIC_tianjin_to_beiping
+		x = 9
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = PN_XIC_the_first_council
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XIC_first_council_concluded_tt
+				has_country_flag = XIC_first_council_concluded
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = PN_XIC.2 }
+		}
+	}
+
+		focus = {
+		id = PN_XIC_crush_the_shanxi_clique
+		icon = GFX_goal_PN_XIC_crush_the_shanxi_clique
+		x = 7
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = PN_XIC_the_first_council
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XIC_first_council_concluded_tt
+				has_country_flag = XIC_first_council_concluded
+			}
+			SHX = { exists = yes }
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SHX
+			}
+			custom_effect_tooltip = XIC_shanxi_cores_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_owned_by = SHX
+							is_core_of = SHX
+						}
+					}
+					add_core_of = ROOT
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = PN_XIC_the_beijing_government
+		icon = GFX_goal_PN_XIC_the_beijing_government
+		x = 8
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = PN_XIC_crush_the_shanxi_clique
+		}
+		prerequisite = {
+			focus = PN_XIC_Tianjin_to_beiping
+		}
+
+		available = {
+			owns_state = 608
+			controls_state = 608
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_capital = { state = 608 }
+			custom_effect_tooltip = XIC_beijing_renamed_tt
+			hidden_effect = {
+				set_province_name = { id = 9843 name = XIC_beijing }
+				608 = { set_state_name = XIC_beijing }
+			}
+			add_stability = 0.05
+		}
+	}
+
+		focus = {
+		id = PN_XIC_a_celebration_of_the_nation
+		icon = GFX_goal_PN_XIC_a_celebration_of_the_nation
+		x = 8
+		y = 13
+		cost = 2
+		prerequisite = {
+			focus = PN_XIC_the_beijing_government
+		}
+
+		available = {
+			owns_state = 608
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = PN_XIC.13 }
+		}
+	}
+
+		focus = {
+		id = PN_move_against_the_central_government
+		icon = GFX_goal_PN_XIC_move_against_the_central_government
+		x = 6
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = PN_XIC_a_celebration_of_the_nation
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = XIC_against_the_central_government
+			custom_effect_tooltip = XIC_china_claims_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 283
+							state = 287
+							state = 322
+							state = 325
+							state = 326
+							state = 328
+							state = 524
+							state = 591
+							state = 592
+							state = 593
+							state = 594
+							state = 595
+							state = 596
+							state = 597
+							state = 598
+							state = 599
+							state = 600
+							state = 601
+							state = 602
+							state = 603
+							state = 604
+							state = 605
+							state = 606
+							state = 607
+							state = 608
+							state = 609
+							state = 610
+							state = 611
+							state = 612
+							state = 613
+							state = 614
+							state = 615
+							state = 616
+							state = 617
+							state = 618
+							state = 619
+							state = 620
+							state = 621
+							state = 622
+							state = 714
+							state = 715
+							state = 716
+							state = 717
+							state = 728
+							state = 729
+							state = 743
+							state = 744
+							state = 745
+							state = 746
+							state = 747
+							state = 748
+							state = 749
+							state = 750
+							state = 751
+							state = 752
+							state = 753
+							state = 754
+							state = 755
+							state = 756
+							state = 757
+							state = 758
+							state = 759
+							state = 760
+							state = 761
+							state = 1032
+							state = 1033
+							state = 1034
+							state = 1035
+							state = 1036
+							state = 1037
+							state = 1038
+							state = 1039
+							state = 1040
+							state = 1041
+							state = 1042
+							state = 1043
+							state = 1044
+							state = 1045
+							state = 1046
+						}
+					}
+					add_claim_by = ROOT
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = PN_teach_the_youth_the_ways_of_reconstructionism
+		icon = GFX_goal_PN_XIC_teach_the_youth_the_ways_of_reconstructionism
+		x = 8
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = PN_XIC_a_celebration_of_the_nation
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XIC_national_reconstructionism_2
+				add_idea = XIC_national_reconstructionism_3
+			}
+		}
+	}
+
+		focus = {
+		id = PN_anti_japanese_thought
+		icon = GFX_goal_PN_XIC_anti_japanese_thought
+		x = 10
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = PN_XIC_a_celebration_of_the_nation
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = XIC_anti_japanese_thought
+		}
+	}
+
+		focus = {
+		id = PN_the_war_of_reclamation
+		icon = GFX_goal_PN_XIC_the_war_of_reclamation
+		x = 8
+		y = 15
+		cost = 10
+		prerequisite = {
+			focus = PN_anti_japanese_thought
+			focus = PN_teach_the_youth_the_ways_of_reconstructionism
+			focus = PN_move_against_the_central_government
+		}
+
+		available = {
+			CHI = { exists = yes }
+			NOT = { has_war_with = CHI }
+			NOT = { is_in_faction_with = CHI }
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			declare_war_on = {
+				target = CHI
+				type = annex_everything
+			}
+		}
+	}
+
+		focus = {
+		id = PN_the_choice_of_the_nation
+		icon = GFX_goal_PN_XIC_the_choice_of_the_nation
+		x = 8
+		y = 16
+		cost = 10
+		prerequisite = {
+			focus = PN_the_war_of_reclamation
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+
+		focus = {
+		id = PN_the_national_state_of_china
+		icon = GFX_goal_PN_XIC_the_national_state_of_china
+		x = 26
+		y = 0
+		cost = 10
+		prerequisite = {
+		}
+		mutually_exclusive = {
+			focus = PN_the_national_peoples_republic_of_china
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_destruction_of_the_communists
+		icon = GFX_goal_PN_XIC_destruction_of_the_communists
+		x = 26
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = PN_the_national_state_of_china
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_one_ideology_one_china
+		icon = GFX_goal_PN_XIC_one_ideology_one_china
+		x = 26
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = PN_destruction_of_the_communists
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_grand_uniter
+		icon = GFX_goal_PN_XIC_the_grand_uniter
+		x = 20
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = PN_one_ideology_one_china
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_people_only_need_me
+		icon = GFX_goal_PN_XIC_the_people_only_need_me
+		x = 20
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = PN_the_grand_uniter
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_a_army_that_serves_me
+		icon = GFX_goal_PN_XIC_a_army_that_serves_me
+		x = 19
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PN_the_grand_uniter
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_second_sun_yat_sen
+		icon = GFX_goal_PN_XIC_the_second_sun_yat_sen
+		x = 21
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PN_the_grand_uniter
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_china_is_whole
+		icon = GFX_goal_PN_XIC_china_is_whole
+		x = 20
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_the_people_only_need_me
+		}
+		prerequisite = {
+			focus = PN_a_army_that_serves_me
+		}
+		prerequisite = {
+			focus = PN_the_second_sun_yat_sen
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_implement_national_reconstructionism
+		icon = GFX_goal_PN_XIC_implement_national_reconstructionism
+		x = 33
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = PN_one_ideology_one_china
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_death_of_capitalism
+		icon = GFX_goal_PN_XIC_the_death_of_capitalism
+		x = 33
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = PN_implement_national_reconstructionism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_death_of_communism
+		icon = GFX_goal_PN_XIC_the_death_of_communism
+		x = 32
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PN_the_death_of_capitalism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_death_of_feudalism
+		icon = GFX_goal_PN_XIC_the_death_of_feudalism
+		x = 34
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PN_the_death_of_capitalism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_birth_of_new_economics
+		icon = GFX_goal_PN_XIC_the_birth_of_new_economics
+		x = 33
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_the_death_of_feudalism
+		}
+		prerequisite = {
+			focus = PN_the_death_of_communism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_implement_reconstructionism_in_countryside
+		icon = GFX_goal_PN_XIC_the_implement_reconstructionism_in_countryside
+		x = 31
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = PN_the_birth_of_new_economics
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_implement_government_crops
+		icon = GFX_goal_PN_XIC_the_implement_government_crops
+		x = 30
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_the_implement_reconstructionism_in_countryside
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_bring_the_people_out_of_peasantry
+		icon = GFX_goal_PN_XIC_the_bring_the_people_out_of_peasantry
+		x = 32
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_the_implement_reconstructionism_in_countryside
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_countryside_revitalization
+		icon = GFX_goal_PN_XIC_the_countryside_revitalization
+		x = 31
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_the_implement_government_crops
+		}
+		prerequisite = {
+			focus = PN_the_bring_the_people_out_of_peasantry
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+
+
+		focus = {
+		id = PN_the_implement_reconstructionism_in_citys
+		icon = GFX_goal_PN_XIC_the_implement_reconstructionism_in_citys
+		x = 35
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = PN_the_birth_of_new_economics
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_new_factorys_new_china
+		icon = GFX_goal_PN_XIC_the_new_factorys_new_china
+		x = 34
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_the_implement_reconstructionism_in_citys
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_corporatist_renassiance
+		icon = GFX_goal_PN_XIC_the_corporatist_renassiance
+		x = 36
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_the_implement_reconstructionism_in_citys
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_city_revitalization
+		icon = GFX_goal_PN_XIC_the_city_revitalization
+		x = 35
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_the_new_factorys_new_china
+		}
+		prerequisite = {
+			focus = PN_the_corporatist_renassiance
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_great_leap_forward
+		icon = GFX_goal_PN_XIC_the_great_leap_forward
+		x = 33
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = PN_the_countryside_revitalization
+		}
+		prerequisite = {
+			focus = PN_the_city_revitalization
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_enemy_beyond
+		icon = GFX_goal_PN_XIC_the_enemy_beyond
+		x = 24
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = PN_one_ideology_one_china
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_enemy_within
+		icon = GFX_goal_PN_XIC_the_enemy_within
+		x = 28
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = PN_one_ideology_one_china
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_second_council
+		icon = GFX_goal_PN_XIC_the_second_council
+		x = 26
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_the_enemy_beyond
+		}
+		prerequisite = {
+			focus = PN_the_enemy_within
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_china_must_be_one
+		icon = GFX_goal_PN_XIC_china_must_be_one
+		x = 21
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_the_second_council
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_hunt_down_the_warlords
+		icon = GFX_goal_PN_XIC_hunt_down_the_warlords
+		x = 20
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_china_must_be_one
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_spread_the_ideology_of_reconstructionism
+		icon = GFX_goal_PN_XIC_spread_the_ideology_of_reconstructionism
+		x = 22
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_china_must_be_one
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_recruit_the_old_officers
+		icon = GFX_goal_PN_XIC_recruit_the_old_officers
+		x = 22
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = PN_spread_the_ideology_of_reconstructionism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_reeducate_the_warlords
+		icon = GFX_goal_PN_XIC_reeducate_the_warlords
+		x = 20
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = PN_hunt_down_the_warlords
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_demand_european_powers_to_leave_china
+		icon = GFX_goal_PN_XIC_demand_european_powers_to_leave_china
+		x = 21
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = PN_reeducate_the_warlords
+		}
+		prerequisite = {
+			focus = PN_recruit_the_old_officers
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+
+
+		focus = {
+		id = PN_death_to_invaders
+		icon = GFX_goal_PN_XIC_death_to_invaders
+		x = 26
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_the_second_council
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_rally_the_fengtiang_officers
+		icon = GFX_goal_PN_XIC_rally_the_fengtiang_officers
+		x = 24
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_death_to_invaders
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_entrench_anti_japanese_thought
+		icon = GFX_goal_PN_XIC_entrench_anti_japanese_thought
+		x = 26
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_death_to_invaders
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_false_emperor_of_china
+		icon = GFX_goal_PN_XIC_the_false_emperor_of_china
+		x = 28
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_death_to_invaders
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_deal_of_the_century
+		icon = GFX_goal_PN_XIC_the_deal_of_the_century
+		x = 26
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = PN_entrench_anti_japanese_thought
+		}
+		prerequisite = {
+			focus = PN_rally_the_fengtiang_officers
+		}
+		prerequisite = {
+			focus = PN_the_false_emperor_of_china
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = PN_china_only_needs_the_uniter
+		icon = GFX_goal_PN_XIC_china_only_needs_the_uniter
+		x = 25
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = PN_the_deal_of_the_century
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_china_a_constitutional_monarchy
+		icon = GFX_goal_PN_XIC_china_a_constitutional_monarchy
+		x = 27
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = PN_the_deal_of_the_century
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_great_war_of_unification
+		icon = GFX_goal_PN_XIC_the_great_war_of_unification
+		x = 26
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = PN_china_only_needs_the_uniter 	focus = PN_china_a_constitutional_monarchy
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_china_united_under_one_flag
+		icon = GFX_goal_PN_XIC_china_united_under_one_flag
+		x = 23
+		y = 13
+		cost = 10
+		prerequisite = {
+			focus = PN_the_great_war_of_unification
+		}
+		prerequisite = {
+			focus = PN_demand_european_powers_to_leave_china
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_demand_the_northern_provinces
+		icon = GFX_goal_PN_XIC_demand_the_northern_provinces
+		x = 22
+		y = 14
+		cost = 10
+		prerequisite = {
+			focus = PN_china_united_under_one_flag
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_demand_establish_reconstuctionism_in_korea
+		icon = GFX_goal_PN_XIC_demand_establish_reconstuctionism_in_korea
+		x = 24
+		y = 14
+		cost = 10
+		prerequisite = {
+			focus = PN_china_united_under_one_flag
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_avenged_the_century_of_humiliation
+		icon = GFX_goal_PN_XIC_avenged_the_century_of_humiliation
+		x = 23
+		y = 15
+		cost = 10
+		prerequisite = {
+			focus = PN_demand_establish_reconstuctionism_in_korea
+		}
+		prerequisite = {
+			focus = PN_demand_the_northern_provinces
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_national_peoples_republic_of_china
+		icon = GFX_goal_PN_XIC_the_national_peoples_republic_of_china
+		x = 44
+		y = 0
+		cost = 10
+		prerequisite = {
+		}
+		mutually_exclusive = {
+			focus = PN_the_national_state_of_china
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+
+
 
 }

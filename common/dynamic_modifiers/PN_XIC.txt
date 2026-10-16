@@ -1,0 +1,12 @@
+XIC_industrial_reconstruction = {
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_industry
+
+	consumer_goods_factor = XIC_reconstruction_consumer_goods
+	industrial_capacity_factory = XIC_reconstruction_factory_output
+	stability_factor = XIC_reconstruction_stability
+	local_resources_factor = XIC_reconstruction_resources
+	production_factory_efficiency_gain_factor = XIC_reconstruction_efficiency_growth
+	production_factory_max_efficiency_factor = XIC_reconstruction_efficiency_cap
+}

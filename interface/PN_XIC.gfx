@@ -123,4 +123,284 @@ spriteTypes = {
 		name = "GFX_goal_PN_XIC_the_first_council"
 		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_first_council.dds"
 	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_tianjin_to_beiping"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_tianjin_to_beiping.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_crush_the_shanxi_clique"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_crush_the_shanxi_clique.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_beijing_government"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_beijing_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_a_celebration_of_the_nation"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_a_celebration_of_the_nation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_move_against_the_central_government"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_move_against_the_central_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_teach_the_youth_the_ways_of_reconstructionism"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_teach_the_youth_the_ways_of_reconstructionism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_anti_japanese_thought"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_anti_japanese_thought.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_war_of_reclamation"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_war_of_reclamation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_choice_of_the_nation"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_choice_of_the_nation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_XIC_reconstructionist_officer"
+		texturefile = "gfx/interface/traits/XIC_reconstructionist_officer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_XIC_the_young_marshall_army"
+		texturefile = "gfx/interface/traits/XIC_the_young_marshall_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_XIC_the_marshall_of_victory_army"
+		texturefile = "gfx/interface/traits/XIC_the_young_marshall_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_national_state_of_china"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_national_state_of_china.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_destruction_of_the_communists"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_destruction_of_the_communists.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_one_ideology_one_china"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_one_ideology_one_china.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_grand_uniter"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_grand_uniter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_people_only_need_me"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_people_only_need_me.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_a_army_that_serves_me"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_a_army_that_serves_me.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_second_sun_yat_sen"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_second_sun_yat_sen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_china_is_whole"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_china_is_whole.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_implement_national_reconstructionism"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_implement_national_reconstructionism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_death_of_capitalism"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_death_of_capitalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_death_of_communism"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_death_of_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_death_of_feudalism"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_death_of_feudalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_birth_of_new_economics"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_birth_of_new_economics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_implement_reconstructionism_in_countryside"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_implement_reconstructionism_in_countryside.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_implement_government_crops"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_implement_government_crops.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_bring_the_people_out_of_peasantry"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_bring_the_people_out_of_peasantry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_countryside_revitalization"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_countryside_revitalization.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_implement_reconstructionism_in_citys"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_implement_reconstructionism_in_citys.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_new_factorys_new_china"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_new_factorys_new_china.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_corporatist_renassiance"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_corporatist_renassiance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_city_revitalization"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_city_revitalization.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_great_leap_forward"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_great_leap_forward.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_enemy_beyond"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_enemy_beyond.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_enemy_within"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_enemy_within.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_second_council"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_second_council.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_china_must_be_one"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_china_must_be_one.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_hunt_down_the_warlords"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_hunt_down_the_warlords.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_spread_the_ideology_of_reconstructionism"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_spread_the_ideology_of_reconstructionism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_recruit_the_old_officers"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_recruit_the_old_officers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_reeducate_the_warlords"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_reeducate_the_warlords.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_demand_european_powers_to_leave_china"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_demand_european_powers_to_leave_china.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_death_to_invaders"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_death_to_invaders.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_rally_the_fengtiang_officers"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_rally_the_fengtiang_officers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_entrench_anti_japanese_thought"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_entrench_anti_japanese_thought.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_false_emperor_of_china"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_false_emperor_of_china.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_deal_of_the_century"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_deal_of_the_century.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_china_only_needs_the_uniter"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_china_only_needs_the_uniter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_china_a_constitutional_monarchy"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_china_a_constitutional_monarchy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_great_war_of_unification"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_great_war_of_unification.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_china_united_under_one_flag"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_china_united_under_one_flag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_demand_the_northern_provinces"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_demand_the_northern_provinces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_demand_establish_reconstuctionism_in_korea"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_demand_establish_reconstuctionism_in_korea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_avenged_the_century_of_humiliation"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_avenged_the_century_of_humiliation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_national_peoples_republic_of_china"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_national_peoples_republic_of_china.dds"
+	}
 }

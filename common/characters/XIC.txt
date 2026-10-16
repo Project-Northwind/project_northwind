@@ -7,10 +7,11 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_XIC_zhang_xueliang_army
+				small = GFX_portrait_XIC_zhang_xueliang_small
 			}
 			army = {
 				large = GFX_portrait_XIC_zhang_xueliang_army
-				small = GFX_idea_CHI_zhang_xueliang
+				small = GFX_portrait_XIC_zhang_xueliang_small
 			}
 		}
 
@@ -21,17 +22,213 @@ characters = {
 			traits = { XIC_the_young_marshall }
 		}
 
+		advisor = {
+			slot = army_chief
+			idea_token = XIC_zhang_xueliang
+			ledger = army
+			allowed = {
+				original_tag = XIC
+			}
+			traits = { army_chief_reform_2 }
+			ai_will_do = {
+				base = 1
+			}
+			cost = 100
+		}
+
+		advisor = {
+			slot = theorist
+			idea_token = XIC_zhang_xueliang_theorist
+			ledger = army
+			allowed = {
+				original_tag = XIC
+			}
+			traits = { superior_firepower_expert }
+			ai_will_do = {
+				base = 1
+			}
+			cost = 150
+		}
+
 		field_marshal = {
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { infantry_leader XIC_the_young_marshall_army XIC_reconstructionist_officer }
 			legacy_id = -1
 		}
 	}
 
 	# Military
+	XIC_zhang_xueming = {
+		name = XIC_zhang_xueming
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_XIC_zhang_xueming
+				small = GFX_portrait_XIC_zhang_xueming_small
+			}
+			army = {
+				large = GFX_portrait_XIC_zhang_xueming
+				small = GFX_portrait_XIC_zhang_xueming_small
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = XIC_zhang_xueming
+			ledger = army
+			allowed = {
+				original_tag = XIC
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = XIC_xueming_staff_requirement_tt
+					has_country_flag = XIC_zhang_xueming_returned
+				}
+			}
+			traits = { army_chief_defensive_2 }
+			ai_will_do = {
+				base = 1
+			}
+			cost = 100
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XIC_zhang_xueming_mayor
+			allowed = {
+				original_tag = XIC
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = XIC_xueming_staff_requirement_tt
+					has_country_flag = XIC_zhang_xueming_returned
+				}
+			}
+			traits = { XIC_mayor_of_tianjin }
+			ai_will_do = {
+				base = 1
+			}
+			cost = 100
+		}
+
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { urban_assault_specialist XIC_reconstructionist_officer }
+			visible = {
+				has_country_flag = XIC_zhang_xueming_returned
+			}
+			legacy_id = -1
+		}
+	}
+
+	XIC_he_zhuguo = {
+		name = XIC_he_zhuguo
+
+		portraits = {
+			army = {
+				large = GFX_portrait_XIC_he_zhuguo
+				small = GFX_portrait_XIC_he_zhuguo_small
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = XIC_he_zhuguo
+			ledger = army
+			allowed = {
+				original_tag = XIC
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = XIC_young_officers_staff_requirement_tt
+					has_country_flag = XIC_young_officers_promoted
+				}
+			}
+			traits = { army_cavalry_2 }
+			ai_will_do = {
+				base = 1
+			}
+			cost = 100
+		}
+
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			traits = { cavalry_leader cavalry_expert XIC_reconstructionist_officer }
+			visible = {
+				has_country_flag = XIC_young_officers_promoted
+			}
+			legacy_id = -1
+		}
+	}
+
+	XIC_wang_yizhe = {
+		name = XIC_wang_yizhe
+
+		portraits = {
+			army = {
+				large = GFX_portrait_XIC_wang_yizhe
+				small = GFX_portrait_XIC_wang_yizhe_small
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = XIC_wang_yizhe
+			ledger = army
+			allowed = {
+				original_tag = XIC
+			}
+			visible = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = XIC_young_officers_staff_requirement_tt
+					has_country_flag = XIC_young_officers_promoted
+				}
+			}
+			traits = { army_infantry_2 }
+			ai_will_do = {
+				base = 1
+			}
+			cost = 100
+		}
+
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { infantry_leader infantry_expert XIC_reconstructionist_officer }
+			visible = {
+				has_country_flag = XIC_young_officers_promoted
+			}
+			legacy_id = -1
+		}
+	}
+
 	XIC_alexander_von_falkenhausen = {
 		name = XIC_alexander_von_falkenhausen
 

@@ -41,5 +41,125 @@ ideas = {
 				political_power_gain = 0.10
 			}
 		}
+		XIC_aftermath_of_the_eastern_march_2 = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = prc_the_long_march
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.20
+			}
+		}
+		XIC_aftermath_of_the_eastern_march_3 = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = prc_the_long_march
+
+			modifier = {
+				industrial_capacity_factory = -0.025
+				production_speed_buildings_factor = -0.10
+			}
+		}
+		XIC_national_reconstructionism_2 = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.10
+				political_power_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		XIC_national_reconstructionism_3 = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				stability_factor = 0.20
+				political_power_gain = 0.10
+				political_power_factor = 0.15
+				war_support_factor = 0.15
+			}
+		}
+		XIC_shangdong_army = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				experience_gain_army = 0.10
+			}
+		}
+		XIC_shangdong_army_restructured = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				army_infantry_attack_factor = 0.10
+				army_infantry_defence_factor = 0.10
+				experience_gain_army = 0.20
+			}
+		}
+		XIC_against_the_central_government = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = XIC_national_reconstructionism
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+		}
+		XIC_anti_japanese_thought = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = XIC_national_reconstructionism
+
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
 	}
 }

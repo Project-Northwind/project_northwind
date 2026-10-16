@@ -27,4 +27,32 @@ spriteTypes = {
 		name = "GFX_portrait_XIC_alexander_von_falkenhausen_small"
 		texturefile = "gfx/interface/ideas/XIC_alexander_von_falkenhausen.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_XIC_zhang_xueming"
+		texturefile = "gfx/leaders/XIC/XIC_zhang_xueming.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XIC_he_zhuguo"
+		texturefile = "gfx/leaders/XIC/XIC_he_zhuguo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XIC_wang_yizhe"
+		texturefile = "gfx/leaders/XIC/XIC_wang_yizhe.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XIC_zhang_xueliang_small"
+		texturefile = "gfx/interface/ideas/XIC_zhang_xueliang.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XIC_zhang_xueming_small"
+		texturefile = "gfx/interface/ideas/XIC_zhang_xueming.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XIC_he_zhuguo_small"
+		texturefile = "gfx/interface/ideas/XIC_he_zhuguo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XIC_wang_yizhe_small"
+		texturefile = "gfx/interface/ideas/XIC_wang_yizhe.dds"
+	}
 }
