@@ -95,4 +95,16 @@ spriteTypes = {
 		name = "GFX_idea_wartime_service"
 		texturefile = "gfx/interface/ideas/expanded_government/idea_wartime_service.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_mass_media_censorship"
+		texturefile = "gfx/interface/ideas/expanded_government/mass_media_censorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mass_media_free"
+		texturefile = "gfx/interface/ideas/expanded_government/mass_media_free.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mass_media_propaganda"
+		texturefile = "gfx/interface/ideas/expanded_government/mass_media_propaganda.dds"
+	}
 }
