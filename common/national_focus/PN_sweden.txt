@@ -353,7 +353,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
 		relative_position_id = PN_SWE_dominium_maris_baltici
-		x = 5
+		x = 8
 		y = 2
 
 		cost = 10
@@ -363,7 +363,7 @@ focus_tree = {
 		icon = GFX_focus_generic_scandinavia_flags
 		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
 		relative_position_id = PN_SWE_dominium_maris_baltici
-		x = -5
+		x = -4
 		y = 2
 
 		cost = 10
@@ -372,8 +372,9 @@ focus_tree = {
 		id = PN_SWE_restore_the_baltic_combination
 		icon = GFX_focus_ger_revive_kaiserreich
 		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
+		mutually_exclusive = { focus = PN_SWE_mend_british_ties }
 		relative_position_id = PN_SWE_dominium_maris_baltici
-		x = 1
+		x = 3
 		y = 2
 
 		cost = 10
@@ -382,6 +383,7 @@ focus_tree = {
 		id = PN_SWE_mend_british_ties
 		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
+		mutually_exclusive = { focus= PN_SWE_restore_the_baltic_combination }
 		relative_position_id = PN_SWE_dominium_maris_baltici
 		x = -1
 		y = 2
@@ -458,6 +460,36 @@ focus_tree = {
 		relative_position_id = PN_SWE_offer_the_baltic_state_protection
 		x = -1
 		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_restart_military_cooperation
+		icon = GFX_focus_GER_subduing_the_baltic_states
+		prerequisite = { focus = PN_SWE_restore_the_baltic_combination }
+		relative_position_id = PN_SWE_restore_the_baltic_combination
+		x = 0
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_north_european_trade_zone
+		icon = GFX_focus_GER_subduing_the_baltic_states
+		prerequisite = { focus = PN_SWE_restart_military_cooperation }
+		relative_position_id = PN_SWE_restart_military_cooperation
+		x = -1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_the_central_powers
+		icon = GFX_focus_GER_subduing_the_baltic_states
+		prerequisite = { focus = PN_SWE_restart_military_cooperation }
+		relative_position_id = PN_SWE_restart_military_cooperation
+		x = 0
+		y = 2
 
 		cost = 10
 	}
