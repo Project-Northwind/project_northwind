@@ -1,0 +1,321 @@
+sp_naval_fleet_submarine = {
+	specialization = specialization_naval
+	
+
+	project_tags = sp_tag_submarine
+
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.long
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = basic_ship_hull_submarine
+			}
+		}
+	}
+	
+}
+
+sp_naval_cruiser_submarine = {
+	specialization = specialization_naval 
+
+	project_tags = sp_tag_submarine
+	
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium 
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+		
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = cruiser_submarines
+			}
+		}
+	}
+	
+}
+
+sp_naval_nuclear_submarine = {
+	specialization = specialization_naval 
+
+	project_tags = sp_tag_submarine
+	
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium 
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+		
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = sub_nuclear_engine
+			}
+		}
+	}
+	
+}
+
+sp_naval_midget_submarine = {
+	specialization = specialization_naval 
+
+	project_tags = sp_tag_submarine
+	
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium 
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+		
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = midget_submarines
+			}
+		}
+	}
+	
+}
+
+sp_naval_aip_engine = {
+	specialization = specialization_naval 
+
+	project_tags = sp_tag_submarine
+	
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium 
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+		
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = sub_AIP_engine
+			}
+		}
+	}
+	
+}
+
+sp_naval_anechoic_tiles = {
+	specialization = specialization_naval 
+
+	project_tags = sp_tag_submarine
+	
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium 
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+		
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = anechoic_tile
+			}
+		}
+	}
+	
+}
+
+sp_naval_modern_battleship = {
+	specialization = specialization_naval
+ 
+
+	project_tags = sp_tag_surface_ship
+
+	allowed = {
+		#FREE
+	}
+
+	visible = {
+		always = no
+	}
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = advanced_ship_hull_heavy
+			}
+		}
+	}
+}
+
+sp_naval_modern_carrier = {
+	specialization = specialization_naval
+ 
+
+	project_tags = sp_tag_surface_ship
+
+	allowed = {
+		#FREE
+	}
+
+	visible = {
+		always = no
+	}
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = super_carriers
+			}
+		}
+	}
+}
+
+sp_naval_support_ships = {
+	specialization = specialization_naval
+ 
+
+	project_tags = sp_tag_surface_ship
+
+	allowed = {
+		#FREE
+	}
+
+	visible = {
+		always = no
+	}
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = support_fleet_ncns
+			}
+		}
+	}
+}
+
+sp_naval_escort_carrier = {
+	specialization = specialization_naval
+ 
+
+	project_tags = sp_tag_surface_ship
+
+	allowed = {
+		#FREE
+	}
+
+	visible = {
+		always = no
+	}
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = improved_ship_hull_carrier
+			}
+		}
+	}
+}

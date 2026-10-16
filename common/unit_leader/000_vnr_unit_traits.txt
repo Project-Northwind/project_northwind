@@ -1,0 +1,105 @@
+leader_traits = {
+    dive_bomber = { 
+		type = navy
+		sub_unit_modifiers = {
+			cv_cas = {
+				naval_strike_attack_factor = 0.1
+				air_nav_efficiency = 0.1
+				naval_strike_targetting_factor = 0.05
+			}
+		}	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		slot = navy_chief
+		specialist_advisor_trait = vnr_navy_chief_naval_aviation_1
+		expert_advisor_trait = vnr_navy_chief_naval_aviation_2
+		genius_advisor_trait = vnr_navy_chief_naval_aviation_3
+		
+		trait_type = assignable_trait
+		mutually_exclusive = fighter_director
+		mutually_exclusive = torpedo_bomber
+		any_parent = { flight_deck_manager }
+		
+		gui_row = 8
+		gui_column = 2
+	}
+
+	torpedo_bomber = { 
+		type = navy
+		sub_unit_modifiers = {
+			cv_nav_bomber = {
+				naval_strike_attack_factor = 0.1
+				air_nav_efficiency = 0.1
+				naval_strike_targetting_factor = 0.05
+			}
+		}	
+
+		slot = high_command
+		specialist_advisor_trait = vnr_air_naval_strike_1
+		expert_advisor_trait = vnr_air_naval_strike_2
+		genius_advisor_trait = vnr_air_naval_strike_3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		mutually_exclusive = fighter_director
+		mutually_exclusive = dive_bomber
+		any_parent = { flight_deck_manager }
+		
+		gui_row = 9
+		gui_column = 2
+	}
+
+    cruiser_captain = { 
+		type = navy
+
+		sub_unit_modifiers = {
+			light_cruiser = {
+				naval_damage_factor = 0.05
+				naval_speed_factor = 0.05
+			}
+            medium_cruiser = {
+				naval_damage_factor = 0.05
+				naval_speed_factor = 0.05
+			}
+			heavy_cruiser = {
+				naval_damage_factor = 0.05
+				naval_speed_factor = 0.05
+			}
+		}	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		any_parent = { fleet_protector superior_tactician }
+		
+		gui_row = 6
+		gui_column = 1
+	}
+
+    destroyer_leader = {
+		type = navy
+
+		sub_unit_modifiers = {
+			destroyer = {
+				naval_damage_factor = 0.05
+				naval_torpedo_hit_chance_factor = 0.1
+				navy_visibility = -0.05
+			}
+		}	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_trait
+		any_parent = { fleet_protector superior_tactician }
+		
+		gui_row = 5
+		gui_column = 1
+	}
+}

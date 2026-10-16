@@ -1,0 +1,528 @@
+add_namespace = navy_rework
+add_namespace = vnr_ai
+
+# load starting naval designs and fleet and techs
+country_event = {
+    id = navy_rework.0
+
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+		# delete all ships first just in case
+		delete_starting_naval_oob = yes
+		
+		# add country-specific starting techs and related vnr-exclusive sub-techs
+		# add starting special projects
+        add_starting_techs = yes
+        makeup_starting_techs = yes
+		special_project_workaround = yes
+		# set shipyard output boost
+        set_shipyard_output_boost = yes
+		ai_expert_navy_treaty_workaround = yes
+
+        # add starting variants and navy
+        ARG = {
+        	ARG_start_naval_variants = yes
+        	load_oob = 00_ARG_vnr_naval
+        }
+        AST = {
+        	AST_start_naval_variants = yes
+        	load_oob = 00_AST_vnr_naval
+        }
+        BRA = {
+        	BRA_start_naval_variants = yes
+        	load_oob = 00_BRA_vnr_naval
+        }
+        CAN = {
+        	CAN_start_naval_variants = yes
+        	load_oob = 00_CAN_vnr_naval
+        }
+        CHI = {
+        	CHI_start_naval_variants = yes
+        	load_oob = 00_CHI_vnr_naval
+        }
+        CHL = {
+        	CHL_start_naval_variants = yes
+        	load_oob = 00_CHL_vnr_naval
+        }
+        DEN = {
+        	DEN_start_naval_variants = yes
+        	load_oob = 00_DEN_vnr_naval
+        }
+        ENG = {
+			if = {
+				limit = {
+					allow_to_use_expert_navy = yes
+				}
+				ENG_expert_AI_variants = yes
+				load_oob = 03_ENG_vnr_expert
+			}
+			else = {
+				ENG_start_naval_variants = yes
+        		load_oob = 00_ENG_vnr_naval
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				load_oob = 01_ENG_vnr_air_bba
+			}
+			else = {
+				load_oob = 01_ENG_vnr_air
+			}
+        }
+        FIN = {
+        	FIN_start_naval_variants = yes
+        	load_oob = 00_FIN_vnr_naval
+        }
+        FRA = {
+        	FRA_start_naval_variants = yes
+        	load_oob = 00_FRA_vnr_naval
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				load_oob = 01_FRA_vnr_air_bba
+			}
+			else = {
+				load_oob = 01_FRA_vnr_air
+			}
+        }
+        GER = {
+        	GER_start_naval_variants = yes
+        	load_oob = 00_GER_vnr_naval
+        }
+        GRE = {
+        	GRE_start_naval_variants = yes
+        	load_oob = 00_GRE_vnr_naval
+        }
+        HOL = {
+        	HOL_start_naval_variants = yes
+        	load_oob = 00_HOL_vnr_naval
+        }
+        ITA = {
+        	ITA_start_naval_variants = yes
+        	load_oob = 00_ITA_vnr_naval
+        }
+        JAP = {
+        	if = {
+				limit = {
+					allow_to_use_expert_navy = yes
+				}
+				JAP_expert_AI_variants = yes
+				load_oob = 03_JAP_vnr_expert
+			}
+			else = {
+				JAP_start_naval_variants = yes
+        		load_oob = 00_JAP_vnr_naval
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				load_oob = 01_JAP_vnr_air_bba
+			}
+			else = {
+				load_oob = 01_JAP_vnr_air
+			}
+        }
+        NOR = {
+        	NOR_start_naval_variants = yes
+        	load_oob = 00_NOR_vnr_naval
+        }
+        POL = {
+        	POL_start_naval_variants = yes
+        	load_oob = 00_POL_vnr_naval
+        }
+        POR = {
+        	POR_start_naval_variants = yes
+        	load_oob = 00_POR_vnr_naval
+        }
+        SOV = {
+        	SOV_start_naval_variants = yes
+        	load_oob = 00_SOV_vnr_naval
+        }
+        SPR = {
+        	SPR_start_naval_variants = yes
+        	load_oob = 00_SPR_vnr_naval
+        }
+        SWE = {
+        	SWE_start_naval_variants = yes
+        	load_oob = 00_SWE_vnr_naval
+        }
+        TUR = {
+        	TUR_start_naval_variants = yes
+        	load_oob = 00_TUR_vnr_naval
+        }
+        USA = {
+        	if = {
+				limit = {
+					allow_to_use_expert_navy = yes
+				}
+				USA_expert_AI_variants = yes
+				load_oob = 03_USA_vnr_expert
+			}
+			else = {
+				USA_start_naval_variants = yes
+        		load_oob = 00_USA_vnr_naval
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				load_oob = 01_USA_vnr_air_bba
+			}
+			else = {
+				load_oob = 01_USA_vnr_air
+			}
+        }
+		
+		COL = {
+			COL_start_naval_variants = yes
+			load_oob = 00_COL_vnr_naval
+		}
+		MEX = {
+			MEX_start_naval_variants = yes
+			load_oob = 00_MEX_vnr_naval
+		}
+		ROM = {
+			ROM_start_naval_variants = yes
+			load_oob = 00_ROM_vnr_naval
+		}
+		URG = {
+			URG_start_naval_variants = yes
+			load_oob = 00_URG_vnr_naval
+		}
+		YUG = {
+			YUG_start_naval_variants = yes
+			load_oob = 00_YUG_vnr_naval
+		}
+		PRU = {
+			PRU_start_naval_variants = yes
+			load_oob = 00_PRU_vnr_naval
+		}
+		CUB = {
+			CUB_start_naval_variants = yes
+			load_oob = 00_CUB_vnr_naval
+		}
+		PER = {
+			PER_start_naval_variants = yes
+			load_oob = 00_PER_vnr_naval
+		}
+		SIA = {
+			SIA_start_naval_variants = yes
+			load_oob = 00_SIA_vnr_naval
+		}
+		RAJ = {
+			RAJ_start_naval_variants = yes
+			load_oob = 00_RAJ_vnr_naval
+		}
+		BEL = {
+			BEL_start_naval_variants = yes
+			load_oob = 00_BEL_vnr_naval
+		}
+		VEN = {
+			VEN_start_naval_variants = yes
+			load_oob = 00_VEN_vnr_naval
+		}
+		LAT = {
+			LAT_start_naval_variants = yes
+			load_oob = 00_LAT_vnr_naval
+		}
+
+		# add washington treaty article xix to pacific islands
+		add_article_xix = yes
+		
+		# add starting navy spirits for all countries
+		add_starting_navy_spirits = yes
+		trigger_MTG_naval_treaty_event = yes
+		
+		# add starting doctrines for AI, other workarounds
+		ai_doctrine_workaround = yes
+		add_naval_headquarters = yes
+		extra_research_slots_workaround = yes
+    }
+}
+
+# add Alicorn
+country_event = {
+	id = navy_rework.1
+	title = navy_rework.1.t
+	desc = navy_rework.1.d
+	picture = GFX_report_event_alicorn
+
+	is_triggered_only = yes
+
+	option = {
+		name = navy_rework.1.1
+		FROM = { create_alicorn = yes }
+	}
+}
+
+# add USS Constitution
+country_event = {
+	id = navy_rework.2
+	title = navy_rework.2.t
+	desc = navy_rework.2.d
+	picture = GFX_report_event_constitution
+
+	is_triggered_only = yes
+
+	# USA
+	option = {
+		trigger = { 
+			original_tag = USA 
+			NOT = { has_government = communism } 
+		}
+		name = navy_rework.2.1
+		FROM = { country_event = {id = navy_rework.5 days = 1} }
+	}
+	# Commie fix
+	option = {
+		trigger = { has_government = communism }
+		name = navy_rework.2.2
+		FROM = { create_constitution = yes add_political_power = -50 }
+	}
+	# Commie abandon
+	option = {
+		trigger = { has_government = communism }
+		name = navy_rework.2.3
+		FROM = { navy_experience = 50 }
+	}
+	# Generic
+	option = {
+		trigger = { 
+			NOT = {
+				has_government = communism 
+				original_tag = USA
+			} 
+		}
+		name = navy_rework.2.4
+		FROM = { create_constitution = yes }
+	}
+}
+
+# add SDF-1
+country_event = {
+	id = navy_rework.3
+	title = navy_rework.3.t
+	desc = navy_rework.3.d
+	picture = GFX_report_event_macross
+
+	is_triggered_only = yes
+
+	option = {
+		name = navy_rework.3.1
+		FROM = { create_macross = yes }
+	}
+}
+
+# add Space Battleship Yamato
+country_event = {
+	id = navy_rework.4
+	title = navy_rework.4.t
+	desc = navy_rework.4.d
+	picture = GFX_report_event_yamato
+
+	is_triggered_only = yes
+
+	# JAP
+	option = {
+		trigger = { original_tag = JAP }
+		name = navy_rework.4.1
+		FROM = { create_space_yamato = yes }
+	}
+	# Generic
+	option = {
+		trigger = { NOT = {original_tag = JAP} }
+		name = navy_rework.4.2
+		FROM = { create_space_yamato = yes }
+	}
+}
+
+# Consitution event: Omaha Chase
+country_event = {
+	id = navy_rework.5
+	title = navy_rework.5.t
+	desc = navy_rework.5.d
+	picture = GFX_report_event_omaha
+
+	is_triggered_only = yes
+
+	option = {
+		name = navy_rework.5.1
+		FROM = { country_event = {id = navy_rework.6 days = 1} }
+	}
+}
+
+# Consitution event: Talk with Ironsides
+country_event = {
+	id = navy_rework.6
+	title = navy_rework.6.t
+	desc = navy_rework.6.d
+	picture = GFX_report_event_ironsides
+
+	is_triggered_only = yes
+
+	# USA let stay
+	option = {
+		trigger = { original_tag = USA NOT = { has_government = communism } }
+		name = navy_rework.6.1
+		FROM = { create_constitution = yes navy_experience = 25 }
+	}
+	# USA let go
+	option = {
+		trigger = { original_tag = USA NOT = { has_government = communism } }
+		name = navy_rework.6.2
+		FROM = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = naval_equipment
+			}
+		}
+	}
+}
+
+# Confirm check for behemoths
+country_event = {
+	id = navy_rework.100
+	title = navy_rework.100.t
+	desc = navy_rework.100.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = navy_rework.100.0
+		set_global_flag = wunderwaffe_shown
+	}
+	option = {
+		name = navy_rework.100.1
+	}
+}
+
+# Buff AI
+country_event = {
+	id = vnr_ai.0
+	title = vnr_ai.0.t
+	desc = vnr_ai.0.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = vnr_ai.0.0
+		set_variable = { vnr_ai_difficulty = 3 }
+		update_ai_combat_bonus = yes
+		effect_tooltip = { add_ideas = vnr_mad }
+	}
+	option = {
+		name = vnr_ai.0.1
+		set_variable = { vnr_ai_difficulty = 2 }
+		update_ai_combat_bonus = yes
+		effect_tooltip = { add_ideas = vnr_hard }
+	}
+	option = {
+		name = vnr_ai.0.2
+		set_variable = { vnr_ai_difficulty = 1 }
+		update_ai_combat_bonus = yes
+		effect_tooltip = { add_ideas = vnr_normal }
+	}
+	option = {
+		name = vnr_ai.0.3
+		set_variable = { vnr_ai_difficulty = 0 }
+		update_ai_combat_bonus = yes
+	}
+}
+country_event = {
+	id = vnr_ai.1
+	title = vnr_ai.1.t
+	desc = vnr_ai.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = vnr_ai.1.0
+		set_variable = { vnr_ai_production = 3 }
+		update_ai_production_bonus = yes
+		effect_tooltip = { add_ideas = vnr_mad_production }
+	}
+	option = {
+		name = vnr_ai.1.1
+		set_variable = { vnr_ai_production = 2 }
+		update_ai_production_bonus = yes
+		effect_tooltip = { add_ideas = vnr_hard_production }
+	}
+	option = {
+		name = vnr_ai.1.2
+		set_variable = { vnr_ai_production = 1 }
+		update_ai_production_bonus = yes
+		effect_tooltip = { add_ideas = vnr_normal_production }
+	}
+	option = {
+		name = vnr_ai.1.3
+		set_variable = { vnr_ai_production = 0 }
+		update_ai_production_bonus = yes
+	}
+}
+country_event = {
+	id = vnr_ai.2
+	title = vnr_ai.2.t
+	desc = vnr_ai.2.d
+	is_triggered_only = yes
+
+	option = {
+		#exprt
+		trigger = {
+			NOT = { has_global_flag = manual_enable_expert_ship }
+		}
+		name = vnr_ai.2.1
+		set_global_flag = manual_enable_expert_ship
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai_naval_major = yes }
+				remove_ideas = vnr_ai_dd_output_boost_1
+				remove_ideas = vnr_ai_dd_output_boost_2
+				add_ideas = vnr_ai_dd_output_boost_2
+				navy_experience = 200
+			}
+		}
+	}
+	option = {
+		#historical
+		name = vnr_ai.2.2
+		clr_global_flag = manual_enable_expert_ship
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai_naval_major = yes }
+				remove_ideas = vnr_ai_dd_output_boost_1
+				remove_ideas = vnr_ai_dd_output_boost_2
+				add_ideas = vnr_ai_dd_output_boost_1
+			}
+		}
+	}
+}
+country_event = {
+	id = vnr_ai.3
+	title = vnr_ai.3.t
+	desc = vnr_ai.3.d
+	is_triggered_only = yes
+
+	option = {
+		#exprt
+		trigger = {
+			NOT = { has_global_flag = manual_enable_expert_plane }
+		}
+		name = vnr_ai.3.1
+		set_global_flag = manual_enable_expert_plane
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai_naval_major = yes }
+				add_ideas = vnr_cv_plane_output_boost
+				air_experience = 150
+			}
+		}
+	}
+	option = {
+		#historical
+		name = vnr_ai.3.2
+		clr_global_flag = manual_enable_expert_plane
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai_naval_major = yes }
+				remove_ideas = vnr_cv_plane_output_boost
+			}
+		}
+	}
+}

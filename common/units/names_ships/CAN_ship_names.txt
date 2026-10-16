@@ -1,0 +1,336 @@
+﻿##### CANADA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+CAN_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer  ship_hull_civilian }
+
+	prefix = "HMCS "
+	fallback_name = "Destroyer %s"
+
+	unique = {
+		"Fraser" "St. Laurent" "Ottawa" "Restigouche" "Assiniboine" "Margaree" "Kootenay"
+		"Gatineau" "Saskatchewan" "Qu'Appelle" "Chaudiere" "Algonquin" "Sioux" "Crescent" "Crusader"
+		"Annapolis" "Caldwell" "Chelsea" "Columbia" "Georgetown" "Hamilton" "Lancaster" "Leamington" "Mansfield" "Montgomery" "Niagara" "Richmond" "St. Clair" "Salisbury"
+		"Buxton" "St. Croix" "St. Francis" "Athabaskan" "Haida" "Huron" "Iroquois" "Cayuga" "Micmac" "Nootka"
+		"Vendetta" "Voyager" "Waterhen" "Saguenay" "Skeena"
+		"Cape Breton" "Dunver" "Grou" "Matane" "Montreal" "New Glasgow" "New Waterford" "Outremont" "Port Colborne"
+		"Prince Rupert" "St. Catherine's" "St. John" "Stormont" "Swansea" "Valleyfield" "Waskesiu" "Wentworth" "Ettrick" "Meon" "Teme" "Annan" "Nene" "Monnow" "Ribble"
+		"Patriot" "Patrician" "Vancouver" "Champlain"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+CAN_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	prefix = "HMCS "
+	fallback_name = "Light Cruiser %s"
+
+	unique = {
+		"Ontario" "Québec" "Aurora" "Rainbow" "Niobe" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan"
+		"Prince Edward Island" "Toronto" "Montréal"
+		"Vancouver" "Ottawa" "Calgary" "Edmonton" "Ile de Québec" "Winnipeg" "Hamilton" "London" "Kitchener" "St. Catharines" "Halifax"
+		"Victoria" "Windsor" "Oshawa" "Saskatoon" "Regina" "Sherbrooke" "Barrie" "Kelowna" "Abbotsford" "Kingston" "Trois-Rivieres"
+		"Saint John" "Moncton"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+CAN_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+
+	prefix = "HMCS "
+	fallback_name = "Heavy Cruiser %s"
+
+	unique = {
+		"Kingston" "Ontario" "Québec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan"
+		"Prince Edward Island" "Niobe"
+		"Rainbow" "Toronto" "Montréal" "Vancouver" "Ottawa" "Calgary" "Edmonton" "Ile de Québec" "Winnipeg" "Hamilton" "London"
+		"Kitchener" "St. Catharines" "Halifax" "Victoria" "Windsor" "Oshawa" "Saskatoon" "Regina" "Sherbrooke" "Barrie" "Kelowna"
+		"Abbotsford" "Kingson" "Trois-Rivières" "Saint John" "Moncton"
+	}
+}
+
+### MINELAYER NAMES###
+CAN_MINELAYERS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_MINELAYERS
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer  ship_hull_civilian }
+
+	prefix = "HMCS "
+	fallback_name = "Miner %s"
+
+	unique = {
+		# Cruiser and DD Minelayers
+		"Plover" "Latona" "Manxman" "Welshman" "Apollo" "Ariadne"
+		# Older and smaller minelayer names
+		"Adventure" "Linnet" "Redstart" "Ringdove"
+	}
+}
+
+### BATTLESHIP NAMES ###
+CAN_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+
+	prefix = "HMCS "
+	fallback_name = "Battleship %s"
+
+	unique = {
+		"Canada" "Dominion" "Ontario" "Québec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+CAN_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+
+	prefix = "HMCS "
+	fallback_name = "Battlecruiser %s"
+
+	unique = {
+		"Canada" "Dominion" "Ontario" "Québec" "British Columbia" "Nova Scotia" "New Brunswick" "Manitoba" "Alberta" "Saskatchewan" "Prince Edward Island"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+CAN_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+
+	prefix = "HMCS "
+	fallback_name = "Carrier %s"
+
+	unique = {
+		"Warrior" "Magnificent" "Bonaventure" "Powerful" "Nabob" "Puncher"
+	}
+}
+
+### SUBMARINES ###
+CAN_SS_NTYPE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_NTYPE_SUBMARINES
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	prefix = "HMCS "
+	fallback_name = "N-%s"
+
+	ordered = {
+		1 = { "N-%s" }
+		2 = { "N-%s" }
+		3 = { "N-%s" }
+	}
+}
+
+CAN_SS_KTYPE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_KTYPE_SUBMARINES
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	prefix = "HMCS "
+	fallback_name = "K-%s"
+
+	ordered = {
+		1 = { "K-%s" }
+		2 = { "K-%s" }
+		3 = { "K-%s" }
+	}
+}
+
+CAN_SS_HTYPE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_HTYPE_SUBMARINES
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	prefix = "HMCS "
+	fallback_name = "H-%s"
+
+	ordered = {
+		1 = { "H-%s" }
+		2 = { "H-%s" }
+		3 = { "H-%s" }
+	}
+}
+
+CAN_SS_X1TYPE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_X1TYPE_SUBMARINES
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	prefix = "HMCS "
+	fallback_name = "X-%s"
+
+	ordered = {
+		1 = { "X-%s" }
+		2 = { "X-%s" }
+		3 = { "X-%s" }
+	}
+}
+
+CAN_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { CAN }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	prefix = "HMCS "
+	fallback_name = "Submarine %s"
+
+	unique = {
+		"Grilse" "Rainbow" "Ojibwa" "Okanagan" "Onondaga" "Olympus" "Osiris" "Victoria" "Windsor" "Corner Brook" "Chicoutimi"
+	}
+}
+
+### THEME: CANADIAN PROVINCES ###
+CAN_PROVINCES = {
+	name = NAME_THEME_PROVINCES
+
+	for_countries = { CAN }
+
+	type = ship
+
+	prefix = "HMCS "
+	unique = {
+		"Ontario" "Québec" "British Columbia" "Alberta" "Manitoba" "Saskatchewan" "Nova Scotia" "New Brunswick" "Prince Edward Island" "Northwest Territories" "Nunavut" "Yukon" "Newfoundland" "Labrador"
+	}
+}
+
+## THEME: CANADIAN CITIES ###
+CAN_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { CAN }
+
+	type = ship
+
+	prefix = "HMCS "
+	unique = {
+		"Toronto" "Montréal" "Calgary" "Vancouver" "Ottawa" "Edmonton" "Winnipeg" "Québec City" "Halifax" "Mississauga" "Brampton" "Hamilton" "Regina"
+		"Victoria" "Fredericton" "Surrey" "Laval" "London" "Markham" "Vaughan" "Gatineau" "Saskatoon" "Longueuil" "Kitchener" "Burnaby" "Windsor" "Richmond"
+		"Oshawa" "Saint Catherines" "Kelowna" "Barrie" "Sherbrooke" "Guelph" "Abbotsford" "Kingston" "Trois-Rivières" "Chicoutimi" "Jonquière"
+		"Red Deer" "Brantford" "Thunder Bay" "White Rock"
+	}
+}
+
+## THEME: TRIBES ###
+CAN_TRIBES = {
+	name = NAME_THEME_TRIBES
+
+	for_countries = { CAN }
+
+	type = ship
+
+	prefix = "HMCS "
+	unique = {
+		"Algonquin" "Anishinaabe" "Athabaskan" "Assiniboine" "Burrard" "Cayuga" "Chipewyan" "Chehalis" "Comox" "Cowichan" "Cree"
+		"Haida" "Huron" "Innu" "Iroquois" "Kootenay" "Kwakiutl" "Lekwungen" "Lillooet" "Micmac" "Mohawk" "Nipissing" "Nlakapamuk" "Nootka" "Nuxálk"
+		"Ojibwa" "Okanagan" "Oneida" "Onondaga" "Ottawa" "Penelakut" "Potawatomi" "Sechelt" "Seneca" "Shuswap" "Sinixt" "Sioux" "Snuneymuxw" "Stahlo"
+		"Tlingit" "Tuscarora" "Wakashan" "Wyandot"
+	}
+}
+
+## THEME: CANADIAN RIVERS ###
+CAN_RIVERS = {
+	name = NAME_THEME_RIVERS
+
+	for_countries = { CAN }
+
+	type = ship
+
+	prefix = "HMCS "
+
+	unique = {
+		"Mackenzie" "Yukon" "Saint Lawrence" "Columbia" "Peace River" "Churchill" "Fraser" "Athabasca" "Liard"
+		"Assiniboine" "Albany" "Severn" "Thelon" "La Grande" "Red River" "Koksoak" "Coppermine" "Dubawnt" "Kootenay"
+		"Nottaway" "Rupert" "Attawapiskat" "Kazan" "Great Whale" "Porcupine" "Pend d'Oreille" "Hay River" "Saguenay"
+		"Anderson" "Peel" "Horton" "English" "Pelley"
+	}
+}
+
+### THEME: FISH ###
+CAN_FISH = {
+	name = NAME_THEME_FISH
+
+	for_countries = { CAN }
+
+	type = ship
+
+	prefix = "HMCS "
+
+	unique = {
+		"Albacore" "Amberjack" "Angler" "Apogon" "Aspro" "Archerfish" "Atule" "Barracuda" "Bass" "Bonita" "Barb" "Blackfish" "Bluefish" "Bonefish" "Bashaw" "Bluegill" "Bream" "Balao" "Billfish" "Bowfin" "Batfish" "Burrfish"
+		"Barbel" "Barbero" "Baya" "Becuna" "Bang" "Bergall" "Besugo" "Blackfin" "Blenny" "Blower" "Blueback" "Boarfish" "Brill" "Bugara" "Bullhead" "Bumper" "Cachalot" "Cuttlefish" "Cavalla" "Cobia" "Croaker" "Cod" "Cero"
+		"Corvina" "Cabrilla" "Capelin" "Cisco" "Crevalle" "Caiman" "Charr" "Chub" "Cabezon" "Capitaine" "Carbonero" "Carp" "Catfish" "Chivo" "Chopper" "Clamagore" "Cobbler" "Cochino" "Corporal" "Cubera" "Cusk" "Conger" "Comber"
+		"Dolphin" "Darter" "Drum" "Devilfish" "Dragonet" "Dentuda" "Diodon" "Dogfish" "Dugong" "Escolar" "Entemedor" "Eel" "Espada" "Flying Fish" "Finback" "Flasher" "Flier" "Flounder"
+		"Gar" "Grampus" "Grayback" "Grayling" "Gato" "Greenling" "Grouper" "Growler" "Grunion" "Guardfish" "Gabilan" "Gunnel" "Gurnard" "Greenfish" "Garlopa" "Garrupa" "Goldring" "Golet" "Guavina" "Guitarro"
+		"Haddock" "Halibut" "Herring" "Haddo" "Hake" "Harder" "Hoe" "Hackleback" "Halfbeak" "Hammerhead" "Hardhead" "Hawkbill" "Icefish" "Irex" "Jack" "Jawfish" "Jallao" "Kete" "Kraken" "Kingfish"
+		"Lapon" "Lancetfish" "Ling" "Lionfish" "Lagarto" "Lamprey" "Lizardfish" "Loggerhead" "Manta" "Moray" "Mingo" "Muskallunge" "Mackerel" "Marlin" "Macabi" "Mapiro" "Menhaden" "Mero" "Medregal"
+		"Narwhal" "Nautilus" "Needlefish" "Nerka" "Ono" "Odax" "Porpoise" "Pike" "Perch" "Pickerel" "Pompano" "Paddle" "Pargo" "Peto" "Pogy" "Pompon" "Puffer" "Piper" "Rasher" "Picuda" "Pampanito" "Parche" "Pilotfish" "Pintado"
+		"Pipefish" "Piranha" "Plaice" "Pomfret" "Pomodon" "Queenfish" "Quillback" "Raton" "Ray" "Redfin" "Robalo" "Rock" "Runner" "Roncador" "Razorback" "Redfish" "Ronquil" "Requin" "Remora"
+		"Shark" "Salmon" "Seal" "Skipjack" "Snapper" "Stingray" "Sturgeon" "Sargo" "Saury" "Spearfish" "Sculpin" "Sailfish" "Swordfish" "Seadragon" "Sealion" "Searaven" "Seawolf" "Shad" "Silversides" "Sawfish" "Scamp" "Scorpion"
+		"Snook" "Steelhead" "Sunfish" "Sabalo" "Sablefish" "Seahorse" "Skate" "Sand Lance" "Sterlet" "Scabbardfish" "Segundo" "Sea Cat" "Sea Devil" "Sea Dog" "Sea Fox" "Spikefish" "Sea Owl" "Sea Poacher" "Sea Robin" "Sennet"
+		"Spadefish" "Spot" "Springer" "Stickleback" "Sea Leopard" "Sirago" "Sarda" "Spinax" "Sea Panther" "Springeren" "Tarpon" "Tambor" "Tautog" "Thresher" "Trout" "Tuna" "Tunny" "Tinosa" "Tullibee" "Tang" "Tilefish" "Threadfin"
+		"Trepang" "Tiru" "Tench" "Thornback" "Tigrone" "Tirante" "Trutta" "Toro" "Torsk" "Trumpetfish" "Tusk" "Turbot" "Tiburon" "Ulua" "Vendace" "Wahoo" "Whale" "Walrus" "Whitefish" "Whiting" "Wolffish"
+	}
+}
+
+### THEME: INSPIRATIONAL ###
+CAN_INSPIRATIONAL = {
+	name = NAME_THEME_INSPIRATIONAL
+
+	for_countries = { CAN }
+
+	type = ship
+
+	prefix = "HMCS "
+
+	unique = {
+		"Triumphant" "CANerial" "Fearless" "Ascendant" "Dominion" "Intrepid" "Supremacy" "Bounty" "Liberation" "Challenger" "Defiant" "Endeavour"
+		"Stalwart" "Exaltation" "Sovereign" "Glorious"
+	}
+}
+
