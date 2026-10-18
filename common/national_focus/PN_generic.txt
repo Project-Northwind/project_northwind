@@ -1178,7 +1178,7 @@ focus_tree = {
 				add_political_power = 50
 			}
 			else = {
-				add_ideas = GENERIC_incorporate_the_military_police
+				add_ideas = GENERIC_incorporate_the_military_police_idea
 				add_stability = 0.10
 				add_political_power = 50
 			}
@@ -1846,7 +1846,6 @@ focus_tree = {
 	focus = {
 		id = GENERIC_country_nationalism
 		icon = GFX_focus_generic_fascist_troops
-		prerequisite = { focus = GENERIC_military_exercises }
 		prerequisite = { focus = GENERIC_the_single_list }
 		prerequisite = { focus = GENERIC_collaborate_with_industrialists }
 		relative_position_id = GENERIC_the_single_list
@@ -4185,7 +4184,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = GENERIC_motorize_the_army 
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 3
@@ -4747,12 +4745,6 @@ focus_tree = {
 		available = {
 			num_of_controlled_states > 1
 			num_of_factories > 45
-			if = {
-				limit = {
-					tag = ISR
-				}
-				has_completed_focus = ISR_win
-			}
 		}
 		available_if_capitulated = yes
 		continue_if_invalid = yes
@@ -5312,131 +5304,6 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-
-			if = {
-				limit = {
-					GER = {
-						exists = yes
-						has_capitulated = no
-						if = {
-							limit = {
-								ROOT = {
-									is_ai = no
-								}
-							}
-							has_opinion = { target = ROOT value > 0 }
-						}
-						OR = {
-							has_government = ROOT
-							AND = {
-								NOT = {
-									has_government = communism
-								}
-								ROOT = {
-									has_government = neutrality
-								}
-							}
-						}
-						NOT = {
-							has_war_with = ROOT
-						}
-					}
-				}
-				add_opinion_modifier = { target = GER modifier = gen_invited_german }
-			}
-			else_if = {
-				limit = {
-					PRE = {
-						exists = yes
-						has_capitulated = no
-						if = {
-							limit = {
-								ROOT = {
-									is_ai = no
-								}
-							}
-							has_opinion = { target = ROOT value > 0 }
-						}
-						OR = {
-							has_government = ROOT
-							AND = {
-								NOT = {
-									has_government = communism
-								}
-								ROOT = {
-									has_government = neutrality
-								}
-							}
-						}
-						NOT = {
-							has_war_with = ROOT
-						}
-					}
-				}
-				add_opinion_modifier = { target = PRE modifier = gen_invited_german }
-			}			
-			else_if = {
-				limit = {
-					BAY = {
-						exists = yes
-						has_capitulated = no
-						if = {
-							limit = {
-								ROOT = {
-									is_ai = no
-								}
-							}
-							has_opinion = { target = ROOT value > 0 }
-						}
-						OR = {
-							has_government = ROOT
-							AND = {
-								NOT = {
-									has_government = communism
-								}
-								ROOT = {
-									has_government = neutrality
-								}
-							}
-						}
-						NOT = {
-							has_war_with = ROOT
-						}
-					}
-				}
-				add_opinion_modifier = { target = BAY modifier = gen_invited_german }
-			}
-			else_if = {
-				limit = {
-					WGR = {
-						exists = yes
-						has_capitulated = no
-						if = {
-							limit = {
-								ROOT = {
-									is_ai = no
-								}
-							}
-							has_opinion = { target = ROOT value > 49 }
-						}
-						OR = {
-							has_government = ROOT
-							AND = {
-								NOT = {
-									has_government = communism
-								}
-								ROOT = {
-									has_government = neutrality
-								}
-							}
-						}
-						NOT = {
-							has_war_with = ROOT
-						}
-					}
-				}
-				add_opinion_modifier = { target = WGR modifier = gen_invited_german }
-			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
@@ -5504,36 +5371,6 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = industry
-			}
-			if = {
-				limit = {
-					any_other_country = {
-						original_tag = SOV
-						exists = yes
-						has_capitulated = no
-						if = {
-							limit = {
-								ROOT = {
-									is_ai = no
-								}
-							}
-							has_opinion = { target = ROOT value > 0 }
-						}
-						OR = {
-							has_government = ROOT
-							AND = {
-								is_neighbor_of = SOV
-								ROOT = {
-									has_government = neutrality
-								}
-							}
-						}
-						NOT = {
-							has_war_with = ROOT
-						}
-					}
-				}
-				add_opinion_modifier = { target = PREV modifier = gen_invited_soviet }
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -5766,38 +5603,6 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-			if = {
-				limit = {
-					USA = {
-						exists = yes
-						has_capitulated = no
-						if = {
-							limit = {
-								ROOT = {
-									is_ai = no
-								}
-							}
-							has_opinion = { target = ROOT value > 0 }
-						}
-						OR = {
-							has_government = ROOT
-							AND = {
-								NOT = {
-									has_government = communism
-								}
-								ROOT = {
-									has_government = neutrality
-								}
-							}
-						}
-						NOT = {
-							has_war_with = ROOT
-						}
-					}
-				}
-				add_opinion_modifier = { target = USA modifier = gen_invited_american }
-			}
-			
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
@@ -6103,12 +5908,6 @@ focus_tree = {
 			any_state = {
 				is_coastal = yes
 				is_controlled_by = ROOT
-			}
-			if = {
-				limit = {
-					tag = ISR
-				}
-				has_completed_focus = ISR_win
 			}
 		}
 
@@ -6425,12 +6224,6 @@ focus_tree = {
 				bonus = 0.25
 				uses = 1
 				category = ca_tech
-			}
-			add_tech_bonus = {
-				name = ships_bonus
-				bonus = 0.25
-				uses = 1
-				category = cl_tech
 			}
 			add_tech_bonus = {
 				name = ships_bonus
@@ -6890,7 +6683,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_completed_focus = GENERIC_license_foreign_designs
+					has_completed_focus = GENERIC_foreign_designs
 					NOT = { has_War_with = ENG }
 					has_dlc = "By Blood Alone"
 				}
@@ -6907,7 +6700,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_completed_focus = GENERIC_license_foreign_designs
+					has_completed_focus = GENERIC_foreign_designs
 					NOT = { has_War_with = ENG }
 				}
 				add_equipment_to_stockpile = {
@@ -6923,112 +6716,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_completed_focus = GENERIC_aircraft_american
-					NOT = { has_War_with = USA }
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_1
-					amount = 20
-					producer = USA
-				}
-				add_equipment_to_stockpile = {
-					type = cv_small_plane_airframe_1
-					amount = 15
-					producer = USA
-				}
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_american
-					NOT = { has_War_with = USA }
-				}
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 20
-					producer = USA
-				}
-				add_equipment_to_stockpile = {
-					type = cv_fighter_equipment_0
-					amount = 15
-					producer = USA
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_soviet
-					NOT = { has_War_with = SOV }
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_1
-					amount = 20
-					producer = SOV
-				}
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_soviet
-					NOT = { has_War_with = SOV }
-				}
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 20
-					producer = SOV
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_german
-					NOT = { has_War_with = GER }
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = {	 
-					type = small_plane_airframe
-					producer = GER
-					amount = 20
-				}
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_german
-					NOT = { has_War_with = GER }
-				}
-				add_equipment_to_stockpile = {	 
-					type = small_plane_airframe
-					producer = GER
-					amount = 20
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_italian
-					NOT = { has_war_with = ITA }
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_1
-					amount = 15
-					producer = ITA
-				}
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_italian
-					NOT = { has_war_with = ITA }
-				}
-				add_equipment_to_stockpile = {	 
-					type = small_plane_airframe
-					producer = ITA
-					amount = 15
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_completed_focus = GENERIC_license_foreign_designs }
-					NOT = { has_completed_focus = GENERIC_aircraft_soviet }
-					NOT = { has_completed_focus = GENERIC_aircraft_german }
-					NOT = { has_completed_focus = GENERIC_aircraft_italian }
+					NOT = { has_completed_focus = GENERIC_foreign_designs }
 					has_dlc = "By Blood Alone"
 				}
 				custom_effect_tooltip = GENERIC_fighter_competition_EXPL	
@@ -7041,10 +6729,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					NOT = { has_completed_focus = GENERIC_license_foreign_designs }
-					NOT = { has_completed_focus = GENERIC_aircraft_soviet }
-					NOT = { has_completed_focus = GENERIC_aircraft_german }
-					NOT = { has_completed_focus = GENERIC_aircraft_italian }
+					NOT = { has_completed_focus = GENERIC_foreign_designs }
 				}
 				add_tech_bonus = {
 					name = GENERIC_fighter_competition
@@ -7075,7 +6760,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_completed_focus = GENERIC_license_foreign_designs
+					has_completed_focus = GENERIC_foreign_designs
 					NOT = { has_War_with = ENG }
 					has_dlc = "By Blood Alone"
 				}	
@@ -7087,7 +6772,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_completed_focus = GENERIC_license_foreign_designs
+					has_completed_focus = GENERIC_foreign_designs
 					NOT = { has_War_with = ENG }
 				}
 				add_equipment_to_stockpile = {
@@ -7096,101 +6781,9 @@ focus_tree = {
 					producer = ENG
 				}
 			}
-			if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_soviet
-					NOT = { has_War_with = SOV }
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = {
-					type = medium_plane_airframe_1
-					amount = 15
-					producer = SOV
-				}
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_soviet
-					NOT = { has_War_with = SOV } 
-				}
-				add_equipment_to_stockpile = {
-					type = tac_bomber_equipment_1
-					amount = 15
-					producer = SOV
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_german
-					NOT = { has_War_with = GER }
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = {
-					type = small_plane_cas_airframe_0
-					amount = 15
-					producer = GER
-				}
-				add_equipment_to_stockpile = {
-					type = medium_plane_airframe_0
-					amount = 15
-					producer = GER
-				}
-			}
-			else_if = {
-				limit =  { 
-					has_completed_focus = GENERIC_aircraft_german
-					NOT = { has_War_with = GER }
-				}
-				add_equipment_to_stockpile = {
-					type = CAS_equipment_1
-					amount = 15
-					producer = GER
-				}
-				add_equipment_to_stockpile = {
-					type = tac_bomber_equipment
-					amount = 10
-					producer = GER
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = GENERIC_aircraft_italian
-					NOT = { has_war_with = ITA }
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = {
-					type = small_plane_cas_airframe_0
-					amount = 15
-					producer = ITA
-				}
-				add_equipment_to_stockpile = {
-					type = medium_plane_airframe_0
-					amount = 15
-					producer = ITA
-				}
-			}
-			else_if = {
-				limit = { 
-					has_completed_focus = GENERIC_aircraft_italian
-					NOT = { has_war_with = ITA }
-				}
-				add_equipment_to_stockpile = {
-					type = CAS_equipment_1
-					amount = 15
-					producer = ITA
-				}
-				add_equipment_to_stockpile = {
-					type = tac_bomber_equipment
-					amount = 10
-					producer = ITA
-				}
-			}
 			if = { 
 				limit = {
-					NOT = { has_completed_focus = GENERIC_license_foreign_designs }
-					NOT = { has_completed_focus = GENERIC_aircraft_soviet }
-					NOT = { has_completed_focus = GENERIC_aircraft_german }
-					NOT = { has_completed_focus = GENERIC_aircraft_italian }
+					NOT = { has_completed_focus = GENERIC_foreign_designs }
 					has_dlc = "By Blood Alone"	
 				}
 				custom_effect_tooltip = GENERIC_fighter_competition_EXPL
@@ -7203,10 +6796,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					NOT = { has_completed_focus = GENERIC_license_foreign_designs }
-					NOT = { has_completed_focus = GENERIC_aircraft_soviet }
-					NOT = { has_completed_focus = GENERIC_aircraft_german }
-					NOT = { has_completed_focus = GENERIC_aircraft_italian }
+					NOT = { has_completed_focus = GENERIC_foreign_designs }
 				}
 				add_tech_bonus = {
 					name = bomber_bonus
