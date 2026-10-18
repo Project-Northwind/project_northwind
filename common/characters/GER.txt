@@ -68,7 +68,7 @@ characters = {
 
 	### NON-ALIGNED ###
 
-	GER_regent_council = { #Empty Wilhelm II so he doesn't become ruler automatically if the neutrals are in power
+	GER_regent_council = {
 		name = GER_regent_council
 		portraits = {
 			civilian = {
@@ -83,7 +83,16 @@ characters = {
 		}
 	}
 
-	GER_wilhelm_iii = { #Empty Wilhelm III so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_ii = {
+		name = GER_wilhelm_ii
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_wilhelm_ii
+			}	
+		}
+	}
+
+	GER_wilhelm_iii = {
 		name = GER_wilhelm_iii
 		portraits = {
 			civilian = {
@@ -92,7 +101,7 @@ characters = {
 		}
 	}
 
-	GER_wilhelm_iv = { #Empty Wilhelm IV so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_iv = {
 		name = GER_wilhelm_iv
 		portraits = {
 			civilian = {

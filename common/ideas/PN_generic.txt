@@ -979,7 +979,7 @@ ideas = {
 				research_speed_factor = 0.025
 			}
 		}
-		GENERIC_incorporate_the_military_police = {
+		GENERIC_incorporate_the_military_police_idea = {
 
 			allowed = {
 				always = no

@@ -385,7 +385,7 @@
   GENERIC_war_fervor: "War Fervor"
   GENERIC_army_in_charge: "[ROOT.GetAdjective] Millitary Government"
   GENERIC_military_education: "[ROOT.GetAdjective] Military Education"
-  GENERIC_incorporate_the_military_police: "[ROOT.GetAdjective] Military Police"
+  GENERIC_incorporate_the_military_police_idea: "[ROOT.GetAdjective] Military Police"
   GENERIC_stabilize_the_new_state_idea: "[ROOT.GetAdjective] State Stabilization"
   GENERIC_railway_modernization_idea: "Railway Modernization"
   GENERIC_tax_reforms: "Tax Reforms"
