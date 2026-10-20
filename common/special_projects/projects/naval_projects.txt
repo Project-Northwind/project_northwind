@@ -6,7 +6,7 @@ sp_naval_super_heavy_battleship = {
 	ai_will_do = {
 		base = 1
 		modifier = {
-			factor = 0.3 
+			factor = 0.3
 			AND = {
 				ROOT = { is_major = no } # Pointless unless we are big enough to do this
 			}
@@ -25,10 +25,10 @@ sp_naval_super_heavy_battleship = {
 
 	complexity = sp_complexity.large
 	prototype_time = sp_time.prototype.medium
-	
+
 
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 12
 			chromium = 6
 			tungsten = 6
@@ -44,7 +44,7 @@ sp_naval_super_heavy_battleship = {
 				localization_key = SP_UNLOCK_TECH
 				TECH = ship_hull_super_heavy
 			}
-			custom_override_tooltip = {	
+			custom_override_tooltip = {
 				tooltip = tech_effect|ship_hull_super_heavy
 				set_technology = {
 					ship_hull_super_heavy = 1
@@ -72,7 +72,7 @@ sp_naval_super_heavy_battleship = {
 		sp_naval_generic_reward_armor_tech_3
 		sp_naval_generic_reward_artillery_tech_1
 		sp_naval_generic_reward_artillery_tech_2
-		sp_naval_generic_reward_artillery_tech_3				
+		sp_naval_generic_reward_artillery_tech_3
 	}
 }
 
@@ -96,7 +96,7 @@ sp_battlecarrier = {
 		base = 0
 	}
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 5
 		}
 	}
@@ -146,7 +146,7 @@ sp_battlecarrier = {
 			}
 		}
 	}
-	
+
 	generic_prototype_rewards = {
 		sp_naval_generic_reward_scientist_xp_1
 		sp_naval_generic_reward_scientist_xp_2
@@ -159,7 +159,7 @@ sp_battlecarrier = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 }
 
@@ -182,7 +182,7 @@ sp_subcarrier = {
 		specialization_naval = 1
 	}
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 3
 		}
 	}
@@ -195,7 +195,7 @@ sp_subcarrier = {
             sub_airplane_launcher_2
         }
     }
-	
+
 	generic_prototype_rewards = {
 		sp_naval_generic_reward_scientist_xp_1
 		sp_naval_generic_reward_scientist_xp_2
@@ -208,7 +208,7 @@ sp_subcarrier = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 
 	unique_prototype_rewards = {
@@ -279,7 +279,7 @@ sp_nuclear_torpedo = {
             sub_nuclear_torpedo
         }
     }
-	
+
 	generic_prototype_rewards = {
 		sp_naval_generic_reward_scientist_xp_1
 		sp_naval_generic_reward_scientist_xp_2
@@ -292,7 +292,7 @@ sp_nuclear_torpedo = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 
 	unique_prototype_rewards = {
@@ -407,7 +407,7 @@ sp_naval_proximity_fuze = {
 			}
 		}
 	}
-	
+
 	generic_prototype_rewards = {
 		sp_naval_generic_reward_scientist_xp_1
 		sp_naval_generic_reward_scientist_xp_2
@@ -420,7 +420,7 @@ sp_naval_proximity_fuze = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 }
 
@@ -464,7 +464,7 @@ sp_super_heavy_guns = {
 				localization_key = SP_UNLOCK_TECH
 				TECH = basic_super_heavy_battery
 			}
-			custom_override_tooltip = {	
+			custom_override_tooltip = {
 				tooltip = tech_effect|basic_super_heavy_battery
 				set_technology = {
 					basic_super_heavy_battery = 1
@@ -502,7 +502,7 @@ sp_super_heavy_guns = {
 			}
 		}
 	}
-	
+
 	generic_prototype_rewards = {
 		sp_naval_generic_reward_scientist_xp_1
 		sp_naval_generic_reward_scientist_xp_2
@@ -515,7 +515,7 @@ sp_super_heavy_guns = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 }
 
@@ -531,7 +531,7 @@ sp_naval_underway_replenishment = {
 	allowed = {
 		has_dlc = "Gotterdammerung"
 	}
-	
+
 	available = {
 		FROM = {
 			has_navy_size = {
@@ -541,7 +541,7 @@ sp_naval_underway_replenishment = {
 	}
 
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 8
 		}
 	}
@@ -549,28 +549,28 @@ sp_naval_underway_replenishment = {
 	breakthrough_cost = {
 		specialization_naval = 1
 	}
-	
+
 	complexity = sp_complexity.medium
-	prototype_time = sp_time.prototype.short 
-	
+	prototype_time = sp_time.prototype.short
+
 	project_output = {
 		country_effects = {
 			custom_effect_tooltip = {
 				localization_key = SP_UNLOCK_TECH
 				TECH = sp_multi_product_supply_ships
-				}			
+				}
 			set_rule = {
 				can_use_underway_replenishment = yes
 			}
-			
+
 		}
 
 		enable_equipment_modules = {
-			 
+
 		}
 
-		enable_subunits = { 
-			
+		enable_subunits = {
+
 		}
 	}
 
@@ -586,14 +586,14 @@ sp_naval_underway_replenishment = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 
 	unique_prototype_rewards = {
 		sp_naval_underway_replenishment_unique_reward_a = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 40
 				max = 90
 			}
@@ -604,9 +604,9 @@ sp_naval_underway_replenishment = {
 
 			option = {
 				token = sp_naval_underway_replenishment_preference_a
-				
+
 				iteration_output = {
-					country_effects = { 
+					country_effects = {
 						custom_effect_tooltip = tech_effect|sp_naval_underway_replenishment_pick_a
 						hidden_effect = {
 							set_technology = {
@@ -617,23 +617,23 @@ sp_naval_underway_replenishment = {
 					}
 				}
 			}
-			
+
 			option = {
 				token = sp_naval_underway_replenishment_preference_c
-				
+
 				iteration_output = {
-					country_effects = { 
+					country_effects = {
 						#BASE UNDERWAY REPLENISHMENT
-					}					 
+					}
 
 				}
 			}
 
 			option = {
 				token = sp_naval_underway_replenishment_preference_b
-				
+
 				iteration_output = {
-					country_effects = { 
+					country_effects = {
 						custom_effect_tooltip = tech_effect|sp_naval_underway_replenishment_pick_b
 						hidden_effect = {
 							set_technology = {
@@ -641,32 +641,32 @@ sp_naval_underway_replenishment = {
 								popup = no
 							}
 						}
-					}					 
+					}
 
 				}
 			}
 
-			
-		}	
-	}	
+
+		}
+	}
 }
 
 # Rocket Launching Submarine
 sp_naval_rocket_launching_submarine = {
-	specialization = specialization_naval 
+	specialization = specialization_naval
 
 	project_tags = {
 		sp_tag_rocket
 		sp_tag_submarine
 	}
-	
+
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 12
 			chromium = 4
 			tungsten = 12
 		}
-	}	
+	}
 	complexity = sp_complexity.large
 	prototype_time = sp_time.prototype.medium
 
@@ -686,8 +686,8 @@ sp_naval_rocket_launching_submarine = {
 	breakthrough_cost = {
 		specialization_naval = 2
 	}
-	
-	 
+
+
 
 	project_output = {
 		enable_equipment_modules = {
@@ -713,27 +713,27 @@ sp_naval_rocket_launching_submarine = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3	
+		sp_naval_generic_reward_test_failure_3
 	}
 
 }
 
 # Nuclear Missile Submarine
 sp_naval_nuclear_missile_submarine = {
-	specialization = specialization_naval 
-	
+	specialization = specialization_naval
+
 	project_tags = {
 		sp_tag_nuclear_warfare
 		sp_tag_submarine
 	}
-	
+
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 16
 			chromium = 16
 		}
-	}	
-	complexity = sp_complexity.large 
+	}
+	complexity = sp_complexity.large
 	prototype_time = sp_time.prototype.short
 	allowed = {
 		has_dlc = "Gotterdammerung"
@@ -750,9 +750,9 @@ sp_naval_nuclear_missile_submarine = {
 	breakthrough_cost = {
 		specialization_naval = 2
 	}
-	
-	
-	
+
+
+
 	project_output = {
 		enable_equipment_modules = {
 			slbm_launcher
@@ -791,11 +791,11 @@ sp_mega_carrier = {
 		base = 0
 	}
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 16
 			chromium = 16
 		}
-	}	
+	}
     breakthrough_cost = {
 		specialization_naval = 2
 	}
@@ -828,7 +828,7 @@ sp_mega_carrier = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 }
 
@@ -847,12 +847,12 @@ sp_arsenal_ship = {
 		base = 0
 	}
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 12
 			tungsten = 10
 			chromium = 14
 		}
-	}	
+	}
     breakthrough_cost = {
 		specialization_naval = 2
 	}
@@ -883,7 +883,7 @@ sp_arsenal_ship = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 }
 
@@ -899,12 +899,12 @@ sp_early_informatization_system = {
 		base = 20
 	}
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 12
 			tungsten = 10
 			chromium = 14
 		}
-	}	
+	}
     breakthrough_cost = {
 		specialization_naval = 2
 	}
@@ -919,7 +919,7 @@ sp_early_informatization_system = {
 				localization_key = SP_UNLOCK_TECH
 				TECH = phased_array_radar
 			}
-			custom_override_tooltip = {	
+			custom_override_tooltip = {
 				tooltip = tech_effect|phased_array_radar
 				set_technology = {
 					phased_array_radar = 1
@@ -930,7 +930,7 @@ sp_early_informatization_system = {
 				localization_key = SP_UNLOCK_TECH
 				TECH = integrated_combat_system
 			}
-			custom_override_tooltip = {	
+			custom_override_tooltip = {
 				tooltip = tech_effect|integrated_combat_system
 				set_technology = {
 					integrated_combat_system = 1
@@ -988,7 +988,7 @@ sp_early_informatization_system = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 }
 
@@ -1008,12 +1008,12 @@ sp_high_speed_light_engine = {
 		base = 0.1
 	}
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 6
 			tungsten = 4
 			chromium = 4
 		}
-	}	
+	}
     breakthrough_cost = {
 		specialization_naval = 1
 	}
@@ -1031,7 +1031,7 @@ sp_high_speed_light_engine = {
 				localization_key = SP_UNLOCK_TECH
 				TECH = high_speed_light_engine
 			}
-			custom_override_tooltip = {	
+			custom_override_tooltip = {
 				tooltip = tech_effect|high_speed_light_engine
 				set_technology = {
 					high_speed_light_engine = 1
@@ -1053,7 +1053,7 @@ sp_high_speed_light_engine = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 }
 
@@ -1076,11 +1076,11 @@ sp_submarine_snorkel = {
 		}
 	}
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 6
 			chromium = 4
 		}
-	}	
+	}
     breakthrough_cost = {
 		specialization_naval = 1
 	}
@@ -1113,7 +1113,7 @@ sp_submarine_snorkel = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 }
 
@@ -1132,11 +1132,11 @@ sp_shipping_container = {
 		base = 1
 	}
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 4
 			chromium = 2
 		}
-	}	
+	}
     breakthrough_cost = {
 		specialization_naval = 1
 	}
@@ -1169,16 +1169,16 @@ sp_shipping_container = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 }
 sp_naval_cruiser_submarine = {
-	specialization = specialization_naval 
+	specialization = specialization_naval
 
 	project_tags = sp_tag_submarine
-	
+
 	complexity = sp_complexity.medium
-	prototype_time = sp_time.prototype.medium 
+	prototype_time = sp_time.prototype.medium
 	allowed = {
 		#FREE PROJECT
 	}
@@ -1187,7 +1187,7 @@ sp_naval_cruiser_submarine = {
 	}
 
 	special_project_parent = {
-		
+
 	}
 
 
@@ -1195,7 +1195,7 @@ sp_naval_cruiser_submarine = {
 		specialization_naval = 1
 	}
 
-	
+
 	project_output = {
 		country_effects = {
 			custom_effect_tooltip = {
@@ -1204,12 +1204,12 @@ sp_naval_cruiser_submarine = {
 			}
 		}
 	}
-	
+
 }
 
 sp_naval_fleet_submarine = {
 	specialization = specialization_naval
-	
+
 
 	project_tags = sp_tag_submarine
 
@@ -1235,16 +1235,16 @@ sp_naval_fleet_submarine = {
 			}
 		}
 	}
-	
+
 }
 
 sp_naval_nuclear_submarine = {
-	specialization = specialization_naval 
+	specialization = specialization_naval
 
 	project_tags = sp_tag_submarine
-	
+
 	complexity = sp_complexity.medium
-	prototype_time = sp_time.prototype.medium 
+	prototype_time = sp_time.prototype.medium
 	allowed = {
 		#FREE PROJECT
 	}
@@ -1253,7 +1253,7 @@ sp_naval_nuclear_submarine = {
 	}
 
 	special_project_parent = {
-		
+
 	}
 
 
@@ -1261,7 +1261,7 @@ sp_naval_nuclear_submarine = {
 		specialization_naval = 1
 	}
 
-	
+
 	project_output = {
 		country_effects = {
 			custom_effect_tooltip = {
@@ -1270,7 +1270,7 @@ sp_naval_nuclear_submarine = {
 			}
 		}
 	}
-	
+
 }
 
 sp_naval_nuclear_torpedo = {
@@ -1285,15 +1285,15 @@ sp_naval_nuclear_torpedo = {
 	ai_will_do = {
 		base = 1
 	}
-	
+
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 8
 			chromium = 12
 			tungsten = 12
 		}
 	}
-	
+
 	complexity = sp_complexity.large
 	prototype_time = sp_time.prototype.long
 
@@ -1303,7 +1303,7 @@ sp_naval_nuclear_torpedo = {
 			has_dlc = "Man the Guns"
 		}
 	}
-	
+
 	available = {
 		FROM = { has_tech = modern_ship_torpedo_launcher }
 	}
@@ -1321,18 +1321,18 @@ sp_naval_nuclear_torpedo = {
 
 		}
 		facility_state_effects = {
-			
+
 		}
 		scientist_effects = {
-			
+
 		}
 		enable_equipments = {
-			
+
 		}
 		enable_equipment_modules = {
-			ship_torpedo_sub_nuclear
+			sub_nuclear_torpedo
 		}
-		
+
 	}
 
 	generic_prototype_rewards = {
@@ -1348,14 +1348,14 @@ sp_naval_nuclear_torpedo = {
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
 		sp_naval_generic_reward_test_failure_3
-		sp_naval_generic_failure_nuclear_accident		
+		sp_naval_generic_failure_nuclear_accident
 	}
 
 	unique_prototype_rewards = {
 		sp_naval_nuclear_torpedo_unique_reward_a = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 40
 				max = 90
 			}
@@ -1366,17 +1366,17 @@ sp_naval_nuclear_torpedo = {
 
 			option = {
 				token = sp_naval_nuclear_torpedo_preference_a
-				
+
 				iteration_output = {
 					country_effects = {
 
 					}
-					
+
 					equipment_bonus = {
 						ship_hull_submarine = {
 							naval_torpedo_hit_chance_factor = 0.02
 							torpedo_attack = 0.1
-							reliability = -0.1 
+							reliability = -0.1
 							instant = yes
 						}
 					}
@@ -1386,9 +1386,9 @@ sp_naval_nuclear_torpedo = {
 
 			option = {
 				token = sp_naval_nuclear_torpedo_preference_b
-				
+
 				iteration_output = {
-					country_effects = { 
+					country_effects = {
 
 					}
 					equipment_bonus = {
@@ -1396,24 +1396,24 @@ sp_naval_nuclear_torpedo = {
 							reliability = 0.1
 							build_cost_ic = 0.1
 							instant = yes
-						}				
+						}
 
-					}					 
+					}
 
 				}
 			}
-		}	
+		}
 	}
 
 }
 
 sp_naval_midget_submarine = {
-	specialization = specialization_naval 
+	specialization = specialization_naval
 
 	project_tags = sp_tag_submarine
-	
+
 	complexity = sp_complexity.medium
-	prototype_time = sp_time.prototype.medium 
+	prototype_time = sp_time.prototype.medium
 	allowed = {
 		#FREE PROJECT
 	}
@@ -1422,7 +1422,7 @@ sp_naval_midget_submarine = {
 	}
 
 	special_project_parent = {
-		
+
 	}
 
 
@@ -1430,7 +1430,7 @@ sp_naval_midget_submarine = {
 		specialization_naval = 1
 	}
 
-	
+
 	project_output = {
 		country_effects = {
 			custom_effect_tooltip = {
@@ -1439,16 +1439,16 @@ sp_naval_midget_submarine = {
 			}
 		}
 	}
-	
+
 }
 
 sp_naval_aip_engine = {
-	specialization = specialization_naval 
+	specialization = specialization_naval
 
 	project_tags = sp_tag_submarine
-	
+
 	complexity = sp_complexity.medium
-	prototype_time = sp_time.prototype.medium 
+	prototype_time = sp_time.prototype.medium
 	allowed = {
 		#FREE PROJECT
 	}
@@ -1457,7 +1457,7 @@ sp_naval_aip_engine = {
 	}
 
 	special_project_parent = {
-		
+
 	}
 
 
@@ -1465,7 +1465,7 @@ sp_naval_aip_engine = {
 		specialization_naval = 1
 	}
 
-	
+
 	project_output = {
 		country_effects = {
 			custom_effect_tooltip = {
@@ -1474,16 +1474,16 @@ sp_naval_aip_engine = {
 			}
 		}
 	}
-	
+
 }
 
 sp_naval_anechoic_tiles = {
-	specialization = specialization_naval 
+	specialization = specialization_naval
 
 	project_tags = sp_tag_submarine
-	
+
 	complexity = sp_complexity.medium
-	prototype_time = sp_time.prototype.medium 
+	prototype_time = sp_time.prototype.medium
 	allowed = {
 		#FREE PROJECT
 	}
@@ -1492,7 +1492,7 @@ sp_naval_anechoic_tiles = {
 	}
 
 	special_project_parent = {
-		
+
 	}
 
 
@@ -1500,7 +1500,7 @@ sp_naval_anechoic_tiles = {
 		specialization_naval = 1
 	}
 
-	
+
 	project_output = {
 		country_effects = {
 			custom_effect_tooltip = {
@@ -1509,7 +1509,7 @@ sp_naval_anechoic_tiles = {
 			}
 		}
 	}
-	
+
 }
 
 sp_naval_submarine_carrier = {
@@ -1521,7 +1521,7 @@ specialization = specialization_naval
 		base = 1
 		modifier = {
 			factor = 2
-			ROOT = { 
+			ROOT = {
 				original_tag = JAP
 				OR = {
 					has_government = fascism
@@ -1538,11 +1538,11 @@ specialization = specialization_naval
 	available = {
 		FROM = {
 			if = {
-				limit = { 
+				limit = {
 					has_dlc = "Man the Guns"
 				}
 			has_tech = basic_ship_hull_carrier
-			has_tech = improved_ship_hull_submarine				
+			has_tech = improved_ship_hull_submarine
 			}
 			else = {
 				has_tech = basic_carrier
@@ -1552,7 +1552,7 @@ specialization = specialization_naval
 	}
 
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 12
 			chromium = 6
 		}
@@ -1561,7 +1561,7 @@ specialization = specialization_naval
 	breakthrough_cost = {
 		specialization_naval = 2
 	}
-	
+
 	complexity = sp_complexity.large
 	prototype_time = sp_time.prototype.medium
 	project_output = {
@@ -1577,20 +1577,33 @@ specialization = specialization_naval
 					cost_factor = 0.25
 					equipment = ship_hull_carrier_submarine
 				}
-				create_equipment_variant = {
-					name = "Sentoku Class"
-					type = ship_hull_carrier_submarine
-					name_group = JAP_SS_HISTORICAL
-					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
-					modules = {
-						fixed_ship_torpedo_slot = ship_torpedo_sub_4
-						fixed_ship_engine_slot = sub_ship_engine_2
-						rear_1_custom_slot = ship_submarine_deck_space
-						mid_1_custom_slot = ship_anechoic_tile
-					}
-					design_team = mio:JAP_sasebo_naval_arsenal_organization
-				}
+				set_technology = {
+	anechoic_tile = 1
+	basic_ship_hull_submarine = 1
+	cruiser_submarines = 1
+	early_ship_hull_submarine = 1
+	modern_ship_torpedo_launcher = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Sentoku Class"
+	name_group = JAP_SS_HISTORICAL
+	parent_version = 0
+	allow_without_tech = yes
+	design_team = mio:JAP_sasebo_naval_arsenal_organization
+	type = vnr_ship_hull_cruiser_submarine
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_4
+		fixed_ship_conning_tower_slot = sub_conning_tower_0
+		fixed_ship_engine_slot = sub_ship_engine_2
+		fixed_ship_armor_slot = pressure_hull_1
+		fixed_sub_periscope_slot = sub_ship_periscope_0
+		rear_1_custom_slot = sub_airplane_launcher_2
+		front_1_custom_slot = empty
+		fixed_ship_battery_slot = sub_deck_gun_1
+		mid_3_custom_slot = anechoic_tile_1
+	}
+}
 			}
 			else_if = {
 				limit = {
@@ -1603,19 +1616,30 @@ specialization = specialization_naval
 					cost_factor = 0.25
 					equipment = ship_hull_carrier_submarine
 				}
-				create_equipment_variant = {
-					name = "Sentoku Class"
-					type = ship_hull_carrier_submarine
-					name_group = JAP_SS_HISTORICAL
-					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
-					modules = {
-						fixed_ship_torpedo_slot = ship_torpedo_sub_4
-						fixed_ship_engine_slot = sub_ship_engine_1
-						rear_1_custom_slot = ship_submarine_deck_space
-					}
-					design_team = mio:JAP_sasebo_naval_arsenal_organization
-				}
+				set_technology = {
+	cruiser_submarines = 1
+	early_ship_hull_submarine = 1
+	modern_ship_torpedo_launcher = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Sentoku Class"
+	name_group = JAP_SS_HISTORICAL
+	parent_version = 0
+	allow_without_tech = yes
+	design_team = mio:JAP_sasebo_naval_arsenal_organization
+	type = vnr_ship_hull_cruiser_submarine
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_4
+		fixed_ship_conning_tower_slot = sub_conning_tower_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		fixed_ship_armor_slot = pressure_hull_1
+		fixed_sub_periscope_slot = sub_ship_periscope_0
+		rear_1_custom_slot = sub_airplane_launcher_2
+		front_1_custom_slot = empty
+		fixed_ship_battery_slot = sub_deck_gun_1
+	}
+}
 			}
 			else = {
 				add_design_template_bonus = {
@@ -1632,11 +1656,11 @@ specialization = specialization_naval
 		}
 
 		enable_equipment_modules = {
-			 ship_submarine_deck_space
+			 sub_airplane_launcher_2
 		}
 
-		enable_subunits = { 
-			
+		enable_subunits = {
+
 		}
 	}
 	generic_prototype_rewards = {
@@ -1651,7 +1675,7 @@ specialization = specialization_naval
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
+		sp_naval_generic_reward_test_failure_3
 	}
 
 	unique_prototype_rewards = {
@@ -1717,7 +1741,7 @@ specialization = specialization_naval
 				}
 			}
 		}
-	}	
+	}
 }
 
 sp_naval_torpedo_cruiser = {
@@ -1730,7 +1754,7 @@ sp_naval_torpedo_cruiser = {
 		base = 1
 		modifier = {
 			factor = 2
-			ROOT = { 
+			ROOT = {
 				original_tag = JAP
 				OR = {
 					has_government = fascism
@@ -1748,7 +1772,7 @@ sp_naval_torpedo_cruiser = {
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
-				}  
+				}
 				has_tech = early_ship_hull_cruiser
 			}
 			else = {
@@ -1756,14 +1780,14 @@ sp_naval_torpedo_cruiser = {
 			}
 
 		}
-			
+
 	}
-	
+
 	complexity = sp_complexity.small
 	prototype_time = sp_time.prototype.medium
-	
+
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 8
 			tungsten = 2
 			chromium = 2
@@ -1788,31 +1812,31 @@ sp_naval_torpedo_cruiser = {
 			}
 		}
 
-	
 
-		enable_equipments = {	
+
+		enable_equipments = {
 			limit = {
 				has_dlc = "Man the Guns"
 			}
 			ship_hull_torpedo_cruiser
-		}	
-			
+		}
 
-		enable_equipments = {	
+
+		enable_equipments = {
 			limit = {
 				not = {has_dlc = "Man the Guns"}
 			}
-				torpedo_cruiser			
-			}	
-		
+				torpedo_cruiser
+			}
+
 		enable_equipment_modules = {
-			 
+
 		}
 
-		enable_subunits = { 
-			
+		enable_subunits = {
+
 		}
-		
+
 	}
 	generic_prototype_rewards = {
 		sp_naval_generic_reward_scientist_xp_1
@@ -1833,14 +1857,14 @@ sp_naval_torpedo_cruiser = {
 		sp_naval_generic_reward_artillery_tech_1
 		sp_naval_generic_reward_artillery_tech_2
 		sp_naval_generic_reward_artillery_tech_3
-		sp_naval_generic_failure_torpedo_accident				
+		sp_naval_generic_failure_torpedo_accident
 	}
 
 	unique_prototype_rewards = {
 		sp_naval_torpedo_cruiser_unique_reward_a = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 40
 				max = 90
 			}
@@ -1851,18 +1875,18 @@ sp_naval_torpedo_cruiser = {
 
 			option = {
 				token = sp_naval_torpedo_cruiser_preference_a
-				
+
 				iteration_output = {
 					country_effects = {
 						if = {
-							limit = { has_dlc = "Man the Guns"}							
-						
+							limit = { has_dlc = "Man the Guns"}
+
 							add_equipment_bonus = {
 								name = sp_torpedo_cruiser_eq_bonus_torpedo
 								bonus = {
 									ship_hull_torpedo_cruiser = {
 										naval_torpedo_hit_chance_factor = 0.1
-										torpedo_attack = 0.15										
+										torpedo_attack = 0.15
 									}
 								}
 							}
@@ -1873,10 +1897,10 @@ sp_naval_torpedo_cruiser = {
 								bonus = {
 									torpedo_cruiser = {
 										naval_torpedo_hit_chance_factor = 0.1
-										torpedo_attack = 0.15									
+										torpedo_attack = 0.15
 									}
 								}
-							}						
+							}
 						}
 					}
 				}
@@ -1884,19 +1908,19 @@ sp_naval_torpedo_cruiser = {
 
 			option = {
 				token = sp_naval_torpedo_cruiser_preference_b
-				
+
 				iteration_output = {
 					country_effects = {
 						if = {
-							limit = { has_dlc = "Man the Guns"}							
-						
+							limit = { has_dlc = "Man the Guns"}
+
 							add_equipment_bonus = {
 								name = sp_torpedo_cruiser_eq_bonus_light_attack
 								bonus = {
 									ship_hull_torpedo_cruiser = {
 										naval_light_gun_hit_chance_factor = 0.15
 										lg_attack = 0.1
-										lg_armor_piercing = 0.1										
+										lg_armor_piercing = 0.1
 									}
 								}
 							}
@@ -1908,22 +1932,22 @@ sp_naval_torpedo_cruiser = {
 									torpedo_cruiser = {
 										naval_light_gun_hit_chance_factor = 0.15
 										lg_attack = 0.1
-										lg_armor_piercing = 0.1										
+										lg_armor_piercing = 0.1
 									}
 								}
-							}						
+							}
 						}
 					}
 				}
 			}
-		}	
+		}
 	}
 
 }
 
 sp_naval_modern_battleship = {
 	specialization = specialization_naval
- 
+
 
 	project_tags = sp_tag_surface_ship
 
@@ -1952,7 +1976,7 @@ sp_naval_modern_battleship = {
 
 sp_naval_modern_carrier = {
 	specialization = specialization_naval
- 
+
 
 	project_tags = sp_tag_surface_ship
 
@@ -1992,13 +2016,13 @@ sp_naval_ice_carrier = {
 	allowed = {
 		has_dlc = "Gotterdammerung"
 	}
-	
+
 	available = {
 				FROM = {
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
-				}  
+				}
 				has_tech = improved_ship_hull_carrier
 			}
 			else = {
@@ -2010,18 +2034,18 @@ sp_naval_ice_carrier = {
 	}
 
 	resource_cost = {
-		resources = { 
+		resources = {
 			steel = 32
 		}
-	}	
+	}
 
-	complexity = sp_complexity.large 
-	prototype_time = sp_time.prototype.very_long 
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.very_long
 
 	breakthrough_cost = {
 		specialization_naval = 2
 	}
-	
+
 	project_output = {
 		country_effects = {
 			if = {
@@ -2057,10 +2081,10 @@ sp_naval_ice_carrier = {
 					requested_factories = 1
 					progress = 0.95
 					amount = 1
-				}			
+				}
 			}
 		}
-		
+
 
 
 		enable_equipments = {
@@ -2076,11 +2100,11 @@ sp_naval_ice_carrier = {
 			mega_carrier
 		}
 
-		enable_equipment_modules = {	
-			limit = { has_dlc = "Man the Guns" } 		
-			big_ship_deck_space
-			ship_armor_ice_carrier_deck_1
-		}	
+		enable_equipment_modules = {
+			limit = { has_dlc = "Man the Guns" }
+			ship_deck_space_mega
+			carrier_armor_deck
+		}
 
 
 	}
@@ -2097,14 +2121,14 @@ sp_naval_ice_carrier = {
 		sp_naval_generic_reward_major_progress_3
 		sp_naval_generic_reward_test_failure_1
 		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3		
+		sp_naval_generic_reward_test_failure_3
 	}
 
 	unique_prototype_rewards = {
 		sp_naval_ice_carrier_unique_reward_a = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 40
 				max = 90
 			}
@@ -2115,12 +2139,12 @@ sp_naval_ice_carrier = {
 
 			option = {
 				token = sp_naval_ice_carrier_preference_a
-				
+
 				iteration_output = {
 					country_effects = {
 						if = {
-							limit = { has_dlc = "Man the Guns"}							
-						
+							limit = { has_dlc = "Man the Guns"}
+
 							add_equipment_bonus = {
 								name = sp_mega_carrier_eq_bonus_weather
 								bonus = {
@@ -2137,10 +2161,10 @@ sp_naval_ice_carrier = {
 								bonus = {
 									mega_carrier = {
 										naval_weather_penalty_factor = -0.2
-										instant = yes					 
+										instant = yes
 									}
 								}
-							}						
+							}
 						}
 					}
 				}
@@ -2148,12 +2172,12 @@ sp_naval_ice_carrier = {
 
 			option = {
 				token = sp_naval_ice_carrier_preference_b
-				
+
 				iteration_output = {
 					country_effects = {
 						if = {
-							limit = { has_dlc = "Man the Guns"}							
-						
+							limit = { has_dlc = "Man the Guns"}
+
 							add_equipment_bonus = {
 								name = sp_mega_carrier_eq_bonus_strength
 								bonus = {
@@ -2171,23 +2195,23 @@ sp_naval_ice_carrier = {
 								bonus = {
 									mega_carrier = {
 										build_cost_ic = 0.05
-										max_strength = 0.1	
-										instant = yes			 
+										max_strength = 0.1
+										instant = yes
 									}
 								}
-							}						
+							}
 						}
 					}
 				}
 			}
-		}	
+		}
 	}
 
 }
 
 sp_naval_support_ships = {
 	specialization = specialization_naval
- 
+
 
 	project_tags = sp_tag_surface_ship
 
@@ -2216,7 +2240,7 @@ sp_naval_support_ships = {
 
 sp_naval_escort_carrier = {
 	specialization = specialization_naval
- 
+
 
 	project_tags = sp_tag_surface_ship
 

@@ -12,11 +12,11 @@ StrikeForce_1 = {
 				original_tag = CAN
 				original_tag = AST
 			}
-		}		
+		}
 	}
 	ai_will_do = {
 		factor = 10
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -27,7 +27,7 @@ StrikeForce_1 = {
 			amount = 4
 		}
 	}
-	
+
 	optimal_composition = {
 		carrier = {
 			amount = 2
@@ -61,7 +61,7 @@ PatrolReconForce_1 = {
 				original_tag = CAN
 				original_tag = AST
 			}
-		}		
+		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -94,11 +94,11 @@ PatrolDominanceForce_CA_1 = {
 				original_tag = CAN
 				original_tag = AST
 			}
-		}		
+		}
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { naval_patrol }
 	keep_updated = yes
 
@@ -138,11 +138,11 @@ ConvoyRaiding_1 = {
 				original_tag = CAN
 				original_tag = AST
 			}
-		}		
+		}
 	}
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	mission = { convoy_raiding }
 
 	min_composition = {
@@ -172,7 +172,7 @@ ConvoySurfaceRaiding_1 = {
 				original_tag = CAN
 				original_tag = AST
 			}
-		}		
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -205,11 +205,11 @@ ConvoyEscort_1 = {
 				original_tag = CAN
 				original_tag = AST
 			}
-		}		
+		}
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_escort }
 	min_composition = {
 		destroyer = {
@@ -234,7 +234,7 @@ ConvoyEscort_1 = {
 #			original_tag = ITA
 #			original_tag = GER
 #			original_tag = FRA
-#		}		
+#		}
 #	}
 #	ai_will_do = {
 #	 factor = 1
@@ -251,7 +251,7 @@ ConvoyEscort_1 = {
 #			amount = 2
 #		}
 #	}
-	
+
 #	optimal_composition = {
 #		carrier = {
 #			amount = 2

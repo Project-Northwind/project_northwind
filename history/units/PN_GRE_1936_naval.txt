@@ -3,10 +3,10 @@ units= {
 
 	##### NAVAL UNITS #####
 	fleet = {
-		name = "Vasilikó Naftikó"			
+		name = "Vasilikó Naftikó"
 		naval_base = 4109 # Athens
-		task_force = {				
-			name = "Aigaíou Moíra"				
+		task_force = {
+			name = "Aigaíou Moíra"
 			location = 4109 # Athens
 			ship = {
 	name = "RHS Georgios Averof"
@@ -19,7 +19,7 @@ units= {
 			version_name = "Averof Class"
 		}
 	}
-}				
+}
 			ship = {
 	name = "RHS Michail Palaiologos"
 	definition = battleship
@@ -52,7 +52,7 @@ units= {
 			version_name = "Kilkis Class"
 		}
 	}
-}			
+}
 			ship = {
 	name = "RHS Hydra"
 	definition = light_cruiser
@@ -63,7 +63,7 @@ units= {
 			version_name = "Hydra Class"
 		}
 	}
-}				
+}
 			ship = {
 	name = "RHS Spetsai"
 	definition = light_cruiser
@@ -74,7 +74,7 @@ units= {
 			version_name = "Hydra Class"
 		}
 	}
-}				
+}
 			ship = {
 	name = "RHS Psara"
 	definition = light_cruiser
@@ -85,7 +85,7 @@ units= {
 			version_name = "Hydra Class"
 		}
 	}
-}				
+}
 			# Destroyer Flotilla
 			ship = {
 	name = "RHS Vasilefs Georgios"
@@ -97,7 +97,7 @@ units= {
 			version_name = "Vasilefs Georgios Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "RHS Vasilissa Olga"
 	definition = destroyer
@@ -108,7 +108,7 @@ units= {
 			version_name = "Vasilefs Georgios Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "RHS Kountouriotis"
 	definition = destroyer
@@ -119,7 +119,7 @@ units= {
 			version_name = "Kountouriotis Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "RHS Aetos"
 	definition = destroyer
@@ -130,7 +130,7 @@ units= {
 			version_name = "Aetos Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "RHS Ierax"
 	definition = destroyer
@@ -164,9 +164,9 @@ units= {
 		}
 	}
 }
-		}					
-		task_force = {					
-			name = "Moíra Ypovrychíon"				
+		}
+		task_force = {
+			name = "Moíra Ypovrychíon"
 			location = 4109 # Athens
 			ship = {
 	name = "RHS Katsonis"
@@ -178,7 +178,7 @@ units= {
 			version_name = "Katsonis Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "RHS Papanikolis"
 	definition = submarine
@@ -189,7 +189,7 @@ units= {
 			version_name = "Katsonis Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "RHS Protefs"
 	definition = submarine
@@ -200,7 +200,7 @@ units= {
 			version_name = "Protefs Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "RHS Nireus"
 	definition = submarine
@@ -211,7 +211,7 @@ units= {
 			version_name = "Protefs Class"
 		}
 	}
-}		 
+}
 			ship = {
 	name = "RHS Triton"
 	definition = submarine
@@ -222,7 +222,7 @@ units= {
 			version_name = "Protefs Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "RHS Glafkos"
 	definition = submarine
@@ -233,10 +233,10 @@ units= {
 			version_name = "Protefs Class"
 		}
 	}
-}		
-		}					
+}
+		}
 	}
-} 
+}
 
 instant_effect = {
 	# Destroyers

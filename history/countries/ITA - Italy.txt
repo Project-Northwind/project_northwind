@@ -1,6 +1,6 @@
 capital = 2 # Rome
 
-ETH_set_up_lon_arms_resolution_effect = yes 
+ETH_set_up_lon_arms_resolution_effect = yes
 
 if = {
 	limit = {
@@ -360,7 +360,7 @@ add_breakthrough_progress = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	tech_trucks = 1
@@ -501,7 +501,7 @@ if = {
 
 	add_political_power = 1198
 	add_command_power = 100
-	
+
 	#white_peace = ETH
 	if = {
 		limit = {
@@ -537,7 +537,7 @@ if = {
 	unlock_national_focus = ITA_the_new_emperor_of_ethiopia #35
 	unlock_national_focus = ITA_devaluate_the_lire #35
 	unlock_national_focus = ITA_topple_amhara_rulers #35
-	
+
 	#1937
 	unlock_national_focus = ITA_corpo_di_truppe_volontarie #35
 	complete_national_focus = ITA_army_primacy_bba #35
@@ -574,7 +574,7 @@ if = {
 
 	# Effects from The New Emperor of Ethiopia
 
-	ITA_vittorio_emanuele_iii = { 
+	ITA_vittorio_emanuele_iii = {
 		add_country_leader_trait = emperor_of_ethiopia
 	}
 
@@ -657,13 +657,13 @@ if = {
 
 set_grand_doctrine = grand_battleplan
 set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_operational_integrity	
+set_grand_doctrine = new_operational_integrity
 set_sub_doctrine = defensive_postures
 add_mastery = {
     amount = 100
     sub_doctrine = defensive_postures
 }
-	
+
 	complete_special_project = {
 		project = sp:sp_air_radar
 		scientist = ITA_giovanni_giorgi
@@ -677,22 +677,22 @@ add_mastery = {
 			}
 		}
 		set_technology = {
-	
+
 			improved_light_tank = 1
-	
+
 		}
 		set_oob = "ITA_1939"
 	}
 	if = {
 		limit = {
-			
+
 			has_dlc = "No Step Back"
-			
+
 		}
 		set_technology = {
-	
+
 			improved_light_tank_chassis = 1
-	
+
 		}
 		set_oob = "ITA_1939_nsb"
 	}
@@ -731,11 +731,11 @@ add_mastery = {
 		}
 		set_technology = {
 			#improved_airplane_launcher = 1
-			
+
 		}
 		set_naval_oob = "ITA_1939_naval_mtg"
 	}
-	
+
 	set_stability = 0.8
 	GER = { add_to_faction = ITA }
 }
@@ -921,7 +921,7 @@ ITA_francesco_zingales = { set_character_flag = ITA_character_can_be_purged }
 ITA_alessandro_pirzio_biroli = { set_character_flag = ITA_character_can_be_purged }
 ITA_ettore_baldassarre = { set_character_flag = ITA_character_can_be_purged }
 ITA_annibale_bergonzoli = { set_character_flag = ITA_character_can_be_purged }
-ITA_pietro_badoglio = { set_character_flag = ITA_character_can_be_purged } 
+ITA_pietro_badoglio = { set_character_flag = ITA_character_can_be_purged }
 ITA_emilio_de_bono = { set_character_flag = ITA_character_can_be_purged }
 
 
@@ -956,7 +956,7 @@ if = {
 		type = fighter_equipment_0
 		upgrades = {
 			plane_gun_upgrade = 1
-			plane_range_upgrade = 0  
+			plane_range_upgrade = 0
 			plane_engine_upgrade = 2
 			plane_reliability_upgrade = 1
 		}
@@ -1148,9 +1148,19 @@ if = {
 		NOT = { has_dlc = "Man the Guns" }
 	}
 	### Ship Variants ###
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_ITA_4aceaa780f0a
+		}
+	}
 	create_equipment_variant = {
 		name = "Bandiera Class"
-		type = submarine_1
 		upgrades = {
 			ship_reliability_upgrade = 1
 			sub_engine_upgrade = 1
@@ -1158,22 +1168,70 @@ if = {
 			sub_torpedo_upgrade = 1
 		}
 		obsolete = yes
+		type = vnr_ship_hull_submarine_1
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
+			rear_1_custom_slot = empty
+		}
 	}
+	set_country_flag = PN_naval_variant_ITA_4aceaa780f0a
+}
 
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_ITA_cfdcee6f6f4f
+		}
+	}
 	create_equipment_variant = {
 		name = "Sirena Class"
-		type = submarine_1
 		upgrades = {
 			ship_reliability_upgrade = 2
 			sub_engine_upgrade = 2
 			sub_stealth_upgrade = 2
 			sub_torpedo_upgrade = 2
 		}
+		type = vnr_ship_hull_submarine_1
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
+			rear_1_custom_slot = empty
+		}
 	}
+	set_country_flag = PN_naval_variant_ITA_cfdcee6f6f4f
+}
 
+	set_technology = {
+	basic_battery = 1
+	basic_depth_charges = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_ITA_477249ffc63e
+		}
+	}
 	create_equipment_variant = {
 		name = "Navigatori Class"
-		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 1
 			destroyer_engine_upgrade = 1
@@ -1181,22 +1239,77 @@ if = {
 			ship_anti_air_upgrade = 1
 		}
 		obsolete = yes
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
 	}
+	set_country_flag = PN_naval_variant_ITA_477249ffc63e
+}
 
+	set_technology = {
+	basic_battery = 1
+	basic_depth_charges = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_ITA_473eb1e430b5
+		}
+	}
 	create_equipment_variant = {
 		name = "Maestrale Class"
-		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 3
 			destroyer_engine_upgrade = 3
 			ship_ASW_upgrade = 3
 			ship_anti_air_upgrade = 3
 		}
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
 	}
+	set_country_flag = PN_naval_variant_ITA_473eb1e430b5
+}
 
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_ITA_7cb6dabf6800
+		}
+	}
 	create_equipment_variant = {
 		name = "Giussano Class"
-		type = light_cruiser_1
 		upgrades = {
 			ship_reliability_upgrade = 1
 			ship_engine_upgrade = 1
@@ -1204,55 +1317,129 @@ if = {
 			ship_anti_air_upgrade = 1
 		}
 		obsolete = yes
+		type = vnr_ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_c
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
+		}
 	}
+	set_country_flag = PN_naval_variant_ITA_7cb6dabf6800
+}
 
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_ITA_2efd8c9d27c0
+		}
+	}
 	create_equipment_variant = {
 		name = "Montecuccoli Class"
-		type = light_cruiser_1
 		upgrades = {
 			ship_reliability_upgrade = 3
 			ship_engine_upgrade = 3
 			ship_gun_upgrade = 3
 			ship_anti_air_upgrade = 3
 		}
+		type = vnr_ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_c
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
+		}
 	}
+	set_country_flag = PN_naval_variant_ITA_2efd8c9d27c0
+}
 
+	set_technology = {
+	antiair2 = 1
+	basic_battery = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_ITA_efa14cecc1d7
+		}
+	}
 	create_equipment_variant = {
 		name = "Zara Class"
-		type = heavy_cruiser_1
 		upgrades = {
 			ship_reliability_upgrade = 2
 			ship_engine_upgrade = 2
 			ship_armor_upgrade = 2
 			ship_gun_upgrade = 2
 		}
+		type = vnr_ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			mid_1_custom_slot = ship_secondaries_1_light
+			mid_2_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+		}
 	}
+	set_country_flag = PN_naval_variant_ITA_efa14cecc1d7
+}
 }
 if = {
 	limit = { has_dlc = "Man the Guns"}
-	### Battleship Variants	
+	### Battleship Variants
 	PN_ITA_naval_design_1 = yes
 	PN_ITA_naval_design_2 = yes
-	### Heavy Cruiser Variants	
+	### Heavy Cruiser Variants
 	PN_ITA_naval_design_3 = yes
 	PN_ITA_naval_design_4 = yes
 	PN_ITA_naval_design_5 = yes
 	PN_ITA_naval_design_6 = yes
-	### Light Cruiser Variants	
+	### Light Cruiser Variants
 	PN_ITA_naval_design_7 = yes
 	PN_ITA_naval_design_8 = yes
 	PN_ITA_naval_design_9 = yes
 
-	### Light Cruiser Variants	
+	### Light Cruiser Variants
 	PN_ITA_naval_design_10 = yes
 	### Destroyer Variants
 	PN_ITA_naval_design_11 = yes
-	PN_ITA_naval_design_12 = yes	
+	PN_ITA_naval_design_12 = yes
 	PN_ITA_naval_design_13 = yes
 	PN_ITA_naval_design_14 = yes
 	PN_ITA_naval_design_15 = yes
-	### Submarine Variants	
-	PN_ITA_naval_design_16 = yes	
+	### Submarine Variants
+	PN_ITA_naval_design_16 = yes
 	PN_ITA_naval_design_17 = yes
 	PN_ITA_naval_design_18 = yes
 	PN_ITA_naval_design_19 = yes
@@ -1328,27 +1515,51 @@ if = {
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
-		create_equipment_variant = {
-			name = "Marcello Class"
-			type = submarine_2
-			upgrades = {
-				ship_reliability_upgrade = 1
-				sub_engine_upgrade = 1
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 1
-			}
+		set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	improved_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_ITA_509eb541d757
 		}
+	}
+	create_equipment_variant = {
+		name = "Marcello Class"
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+		type = vnr_ship_hull_submarine_3
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_3
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_3
+			rear_1_custom_slot = ship_torpedo_sub_1
+			front_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_ITA_509eb541d757
+}
 	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
-		### Battleship Variants	
+		### Battleship Variants
 		PN_ITA_naval_design_20 = yes
 
-		### Light Cruiser Variants	
+		### Light Cruiser Variants
 		PN_ITA_naval_design_21 = yes
 		### Destroyer Variants
 		PN_ITA_naval_design_22 = yes
-		### Submarine Variants	
+		### Submarine Variants
 		PN_ITA_naval_design_23 = yes
 	}
 	if = {

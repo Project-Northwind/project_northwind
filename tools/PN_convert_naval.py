@@ -17,7 +17,7 @@ def named_blocks(text, key):
     """Return exact source spans; unrelated script text/comments are never rendered."""
     tokens = [(m.group(), m.start(), m.end()) for m in n.TOKEN.finditer(text) if not m.group().isspace() and not m.group().startswith('#')]
     for i, (token, start, end) in enumerate(tokens):
-        if token != key or i + 2 >= len(tokens) or tokens[i+1][0] != '=' or tokens[i+2][0] != '{':
+        if n.unquote(token) != key or i + 2 >= len(tokens) or tokens[i+1][0] != '=' or tokens[i+2][0] != '{':
             continue
         depth = 0
         for t, a, b in tokens[i+2:]:
@@ -30,6 +30,8 @@ def named_blocks(text, key):
 def hull_for(old):
     if old == 'ship_hull_mega_carrier':
         return 'PN_ship_hull_ice_carrier'
+    if old == 'ship_hull_carrier_submarine':
+        return 'vnr_ship_hull_cruiser_submarine'
     special = {'ship_hull_cruiser_panzerschiff': 'vnr_ship_hull_cruiser_2', 'ship_hull_cruiser_coastal_defense_ship': 'vnr_ship_hull_cruiser_coastal_defense_ship', 'ship_hull_pre_dreadnought': 'vnr_ship_hull_pre_dreadnought'}
     if old in special:
         return special[old]
@@ -96,8 +98,14 @@ def convert(design, hulls, modules):
             replacement = 'ship_deck_space_mega'
         if module.startswith('ship_armor_ice_carrier_deck'):
             replacement = 'carrier_armor_deck'
+        if module == 'ship_submarine_deck_space':
+            replacement = 'sub_airplane_launcher_2'
+        if module == 'ship_anechoic_tile':
+            replacement = 'anechoic_tile_1'
         if old == 'ship_hull_mega_carrier' and module.startswith('ship_armor_cruiser_'):
             replacement = 'ship_armor_carrier_heavy_3'
+        elif 'carrier' in old and module.startswith('ship_armor_cruiser_'):
+            replacement = 'ship_armor_carrier_' + str(min(int(module.rsplit('_',1)[1]),3))
         if old == 'ship_hull_super_heavy_1' and module.startswith('heavy_ship_engine_'):
             replacement = 'super_heavy_ship_engine_1'
         if 'cruiser' in old and module.startswith('light_ship_engine_'):
@@ -130,6 +138,12 @@ def convert(design, hulls, modules):
             if not available:
                 available = [k for k in allowed if k not in occupied]
             if not available:
+                heavy_aa = replacement + '_h'
+                aa_slot = 'fixed_ship_anti_air_slot'
+                if category == 'ship_anti_air' and heavy_aa in modules and n.first(modules[heavy_aa], 'category') in n.bare(n.first(n.first(slots,aa_slot,[]),'allowed_module_categories',[])):
+                    choices[aa_slot] = heavy_aa
+                    relocations.append(dict(from_slot=slot,from_module=module,slot=aa_slot,module=heavy_aa,note='Consolidate legacy additional AA mounts into the VNR heavy AA battery'))
+                    continue
                 raise ValueError(f'No compatible free slot for {replacement} in {n.first(design,"name")} ({hull})')
             preferred = available[0]
         choices[preferred] = replacement

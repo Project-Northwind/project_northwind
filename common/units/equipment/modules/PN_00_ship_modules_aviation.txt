@@ -240,7 +240,7 @@ equipment_modules = {
 		category = ship_flight_deck_armored
 		gui_category = ship_flight_deck
 		add_equipment_type = capital_ship
-		
+
 		add_stats = {
 			reliability = 0.1
 			max_strength = 35

@@ -2,7 +2,7 @@ washington_treaty_article_xix = {
     icon = GFX_modifiers_generic_bunker_build_speed
     enable = { always = yes }
     remove_trigger = {
-        ROOT = { 
+        ROOT = {
             owner = { has_naval_treaty_trigger = no }
         }
     }

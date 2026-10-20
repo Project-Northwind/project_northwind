@@ -1,10 +1,10 @@
 JAP_StrikeForce_1 = {
 	allowed = {
-		original_tag = JAP 
+		original_tag = JAP
 	}
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -15,7 +15,7 @@ JAP_StrikeForce_1 = {
 			amount = 3
 		}
 	}
-	
+
 	optimal_composition = {
 		carrier = {
 			amount = 4
@@ -40,7 +40,7 @@ JAP_StrikeForce_1 = {
 
 JAP_StrikeForce_BC_1 = {
 	allowed = {
-		original_tag = JAP 
+		original_tag = JAP
 	}
 	ai_will_do = {
 		factor = 0
@@ -51,7 +51,7 @@ JAP_StrikeForce_BC_1 = {
 				size > 1
 			}
 		}
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -62,7 +62,7 @@ JAP_StrikeForce_BC_1 = {
 			amount = 3
 		}
 	}
-	
+
 	optimal_composition = {
 		carrier = {
 			amount = 4
@@ -94,7 +94,7 @@ JAP_PatrolReconForce_1 = {
 		destroyer = {
 			amount = 5
 		}
-	}	
+	}
 	optimal_composition = {
 		destroyer = {
 			amount = 5
@@ -142,7 +142,7 @@ JAP_ConvoyRaiding_1 = {
 	}
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	mission = { convoy_raiding }
 	keep_updated = yes
 	min_composition = {

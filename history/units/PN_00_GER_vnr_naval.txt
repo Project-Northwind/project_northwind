@@ -1,21 +1,21 @@
 
 units= {
 	##### NAVAL UNITS #####
-	
+
 	fleet = {
-		name = "Kriegsmarine"			
+		name = "Kriegsmarine"
 		naval_base = 241  # Wilhemshaven
-		task_force = {				
+		task_force = {
 			name = "Hochseeflotte"
 			location = 241  # Wilhemshaven
-			ship = { name = "Deutschland" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
+			ship = { name = "Deutschland" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			ship = { name = "Admiral Scheer" definition = heavy_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			ship = { name = "Admiral Graf Spee" definition = heavy_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-			ship = { name = "Nürnberg" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } } 		
-			ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }		
-			ship = { name = "Königsberg" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-			ship = { name = "Karlsruhe" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
-			ship = { name = "Köln" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
+			ship = { name = "Nürnberg" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }
+			ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }
+			ship = { name = "Königsberg" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
+			ship = { name = "Karlsruhe" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
+			ship = { name = "Köln" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
 			ship = { name = "Emden" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
 			# 1. Torpedobootflottille
 			ship = { name = "Jaguar" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
@@ -27,7 +27,7 @@ units= {
 			name = "Ostseeflotte"
 			location = 6332  # 6332  # Konigsberg
 			ship = { name = "Schleswig-Holstein" definition = battleship start_experience_factor = 0.04 equipment = { vnr_ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-			ship = { name = "Schlesien" definition = battleship start_experience_factor = 0.04 equipment = { vnr_ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }			
+			ship = { name = "Schlesien" definition = battleship start_experience_factor = 0.04 equipment = { vnr_ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			# 2. Torpedobootflottille
 			ship = { name = "Möwe" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = GER version_name = "Type 23 Class" } } }
 			ship = { name = "Albatros" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = GER version_name = "Type 23 Class" } } }
@@ -41,7 +41,7 @@ units= {
 		}
 	}
 	fleet = {
-		name = "Unterseeboots-Flotte "			
+		name = "Unterseeboots-Flotte "
 		naval_base = 6389  # 6389  # Kiel
 		task_force = {
 			name = "I. U-Boots Flottille Weddigen"

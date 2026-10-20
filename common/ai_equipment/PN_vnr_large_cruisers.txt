@@ -13,7 +13,7 @@ naval_cruiser_large = {
 			base = 0
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 500.0
@@ -49,7 +49,7 @@ naval_cruiser_large = {
 			base = 0
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 1000.0
@@ -83,7 +83,7 @@ naval_cruiser_large = {
 			base = 0
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 1000.0

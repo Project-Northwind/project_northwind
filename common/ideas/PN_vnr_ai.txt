@@ -21,7 +21,7 @@ ideas = {
                 navy_org_factor = 0.3
                 naval_morale_factor = 0.3
                 naval_retreat_speed = 0.3
-                naval_torpedo_screen_penetration_factor = 0.3 
+                naval_torpedo_screen_penetration_factor = 0.3
                 naval_light_gun_hit_chance_factor = 0.3
                 naval_heavy_gun_hit_chance_factor = 0.3
                 naval_torpedo_hit_chance_factor = 0.3
@@ -60,7 +60,7 @@ ideas = {
                 navy_org_factor = 0.2
                 naval_morale_factor = 0.2
                 naval_retreat_speed = 0.2
-                naval_torpedo_screen_penetration_factor = 0.2 
+                naval_torpedo_screen_penetration_factor = 0.2
                 naval_light_gun_hit_chance_factor = 0.2
                 naval_heavy_gun_hit_chance_factor = 0.2
                 naval_torpedo_hit_chance_factor = 0.2
@@ -117,7 +117,7 @@ ideas = {
                 navy_max_range_factor = 0.2
 			}
         }
-		
+
 		vnr_mad_production = {
 			cancel = {
 				is_ai = no
@@ -169,7 +169,7 @@ ideas = {
                 ship_hull_submarine_design_cost_factor = -0.3
 			}
         }
-		
+
 		vnr_research_budget = {
 			picture = liberty_ships_focus
 			modifier = {
@@ -177,7 +177,7 @@ ideas = {
                 ai_focus_naval_factor = 0.5
                 ai_focus_naval_air_factor = 0.5
 			}
-			
+
 			research_bonus = {
 				naval_equipment = 0.25
 			}
@@ -203,15 +203,15 @@ ideas = {
             }
             equipment_bonus = {
                 cv_small_plane_airframe = {
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
                     instant = yes
 				}
 				cv_small_plane_cas_airframe = {
-					build_cost_ic = -0.2 
+					build_cost_ic = -0.2
                     instant = yes
 				}
 				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.1
                     instant = yes
 				}
             }
@@ -242,7 +242,7 @@ ideas = {
 				}
 			}
         }
-		
+
 		vnr_expert_navy_treaty_workaround = {
 			cancel = {
 				is_ai = no

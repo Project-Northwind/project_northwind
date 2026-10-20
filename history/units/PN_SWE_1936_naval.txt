@@ -2,9 +2,9 @@ units = {
 
 	##### NAVAL UNITS #####
 	fleet = {
-		name = "Kungliga Svenska Marinen"			
+		name = "Kungliga Svenska Marinen"
 		naval_base = 11215 # Karlskrona
-		task_force = {				
+		task_force = {
 			name = "Kustflottan"
 			location = 11215 # Karlskrona
 			ship = {
@@ -18,7 +18,7 @@ units = {
 			version_name = "Gustaf V Class"
 		}
 	}
-}	
+}
 			ship = {
 	name = "HMS Karl XIV Johan"
 	definition = heavy_cruiser
@@ -29,7 +29,7 @@ units = {
 			version_name = "Gustaf V Class"
 		}
 	}
-}				
+}
 			ship = {
 	name = "HMS Gotland"
 	definition = light_cruiser
@@ -40,7 +40,7 @@ units = {
 			version_name = "Gotland Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "HMS Skåne"
 	definition = light_cruiser
@@ -51,7 +51,7 @@ units = {
 			version_name = "Gotland Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "HMS Göteborg"
 	definition = destroyer
@@ -62,7 +62,7 @@ units = {
 			version_name = "Göteborg Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "HMS Stockholm"
 	definition = destroyer
@@ -73,7 +73,7 @@ units = {
 			version_name = "Göteborg Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "HMS Malmö"
 	definition = destroyer
@@ -84,7 +84,7 @@ units = {
 			version_name = "Göteborg Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "HMS Gävle"
 	definition = destroyer
@@ -95,7 +95,7 @@ units = {
 			version_name = "Göteborg Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "HMS Norrköping"
 	definition = destroyer
@@ -106,7 +106,7 @@ units = {
 			version_name = "Göteborg Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "HMS Visby"
 	definition = destroyer
@@ -117,7 +117,7 @@ units = {
 			version_name = "Göteborg Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "HMS Sundsvall"
 	definition = destroyer
@@ -128,7 +128,7 @@ units = {
 			version_name = "Göteborg Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "HMS Hälsingborg"
 	definition = destroyer
@@ -139,7 +139,7 @@ units = {
 			version_name = "Göteborg Class"
 		}
 	}
-}				
+}
 		}
 	}
 }

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-20",
+  "game_version": "1.19.3.0",
+  "source_version": "VNR v3.3 - Das Boot",
+  "enabled_mods": [
+    "projectnorthwind"
+  ],
+  "fresh_start_assertions": [
+    "PASS GRE ships=20 after repeated initialization",
+    "PASS LAT ships=7 after repeated initialization",
+    "PASS SOV ships=81 after repeated initialization",
+    "PASS SWE ships=12 after repeated initialization",
+    "PASS TUR ships=9 after repeated initialization",
+    "PASS UKR ships=10 after repeated initialization"
+  ],
+  "saved_game": "UKR_1936_01_18_06.hoi4",
+  "reload_start": "1936.1.18.6",
+  "advanced_to": "1936.1.31.19",
+  "ukraine_ships_after_reload": 10,
+  "final_error_message_counts": {
+    "incorrect checksum for DLC": 1,
+    "Invalid supported_version in  file: mod/ugc_2735339350.mod line: 8": 1,
+    "Invalid supported_version in  file: mod/ugc_3689251282.mod line: 16": 1,
+    "Invalid supported_version in  file: mod/ugc_3807923371.mod line: 9": 1,
+    "Invalid Decision Category HUN_gyor_program_decision_category": 1,
+    "The game has loc key collisions. Check logs/text.log for more details": 1,
+    "common/ideas/PN_expanded_government.txt:291: has_idea: nationalization_capital is not A valid Idea": 14
+  },
+  "integration_errors_observed_in_final_run": [],
+  "unrelated_error_evidence": {
+    "nationalization_capital": "PN_expanded_government.txt is unchanged from baseline 4f332c4",
+    "government_localisation": "Existing Northwind PN_political_view key collides with vanilla ideas key",
+    "other_messages": "Present in saved pre-import baseline error.log"
+  },
+  "final_error_log_sha256": "7600bce369e1e8f453bc82232bcaffd9c318cd98906ede61a2d064c5d44ad368"
+}

@@ -9,13 +9,13 @@ equipment_modules = {
 		category = ship_anti_air
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = anti_air
-		
+
 		add_stats = {
 			lg_attack = 0.2
 			anti_air_attack = 2
 			build_cost_ic = 80
 		}
-		
+
 		multiply_stats = {
 			naval_speed = -0.002
 		}
@@ -33,13 +33,13 @@ equipment_modules = {
 		parent = ship_anti_air_1
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = anti_air
-		
+
 		add_stats = {
 			lg_attack = 0.3
 			anti_air_attack = 3
 			build_cost_ic = 110
 		}
-		
+
 		multiply_stats = {
 			naval_speed = -0.002
 		}
@@ -66,7 +66,7 @@ equipment_modules = {
 			anti_air_attack = 4
 			build_cost_ic = 140
 		}
-		
+
 		multiply_stats = {
 			naval_speed = -0.002
 		}
@@ -94,7 +94,7 @@ equipment_modules = {
 			anti_air_attack = 5
 			build_cost_ic = 170
 		}
-		
+
 		multiply_stats = {
 			naval_speed = -0.002
 		}
@@ -115,7 +115,7 @@ equipment_modules = {
 		category = ship_anti_air
 		parent = ship_anti_air_4
 		sfx = sfx_ui_sd_module_turret
-		
+
 		add_equipment_type = anti_air
 		add_stats = {
 			lg_attack = 1
@@ -226,13 +226,13 @@ equipment_modules = {
 		gui_category = ship_anti_air
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = anti_air
-		
+
 		add_stats = {
 			lg_attack = 0.3
 			anti_air_attack = 3
 			build_cost_ic = 120
 		}
-		
+
 		multiply_stats = {
 			naval_speed = -0.003
 		}
@@ -250,13 +250,13 @@ equipment_modules = {
 		parent = ship_anti_air_1_h
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = anti_air
-		
+
 		add_stats = {
 			lg_attack = 0.4
 			anti_air_attack = 4
 			build_cost_ic = 180
 		}
-		
+
 		multiply_stats = {
 			naval_speed = -0.004
 		}
@@ -283,7 +283,7 @@ equipment_modules = {
 			anti_air_attack = 4.5
 			build_cost_ic = 230
 		}
-		
+
 		multiply_stats = {
 			naval_speed = -0.005
 		}
@@ -311,7 +311,7 @@ equipment_modules = {
 			anti_air_attack = 5.5
 			build_cost_ic = 280
 		}
-		
+
 		multiply_stats = {
 			naval_speed = -0.006
 		}
@@ -336,14 +336,14 @@ equipment_modules = {
 		category = ship_torpedo
 		sfx = sfx_ui_sd_module_turret
 
-		
+
 		add_stats = {
 			torpedo_attack = 15
 			build_cost_ic = 90
 		}
 		multiply_stats = {
-			naval_speed = -0.01		
-			build_cost_ic = 0.02	
+			naval_speed = -0.01
+			build_cost_ic = 0.02
 		}
 		build_cost_resources = {
 			steel = 0
@@ -355,7 +355,7 @@ equipment_modules = {
 		abbreviation = "sci"
 		category = ship_torpedo
 		parent = ship_torpedo_1
-		
+
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -370,7 +370,7 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 0
 		}
-		 
+
 		dismantle_cost_ic = 60
 		dismantle_cost_resources = {
 			steel = 0
@@ -387,7 +387,7 @@ equipment_modules = {
 		abbreviation = "scj"
 		category = ship_torpedo
 		parent = ship_torpedo_2
-		
+
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -397,7 +397,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.03
-			build_cost_ic = 0.04	
+			build_cost_ic = 0.04
 		}
 		dismantle_cost_ic = 60
 
@@ -412,7 +412,7 @@ equipment_modules = {
 		abbreviation = "sck"
 		category = ship_torpedo
 		parent = ship_torpedo_3
-		
+
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -422,7 +422,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.04
-			build_cost_ic = 0.05	
+			build_cost_ic = 0.05
 		}
 		dismantle_cost_ic = 60
 
@@ -436,7 +436,7 @@ equipment_modules = {
 	ship_torpedo_5 = {
 		category = ship_torpedo
 		parent = ship_torpedo_4
-		
+
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -461,7 +461,7 @@ equipment_modules = {
 	ship_torpedo_bb = {
 		category = ship_torpedo_bb
 		gui_category = ship_torpedo
-		
+
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -470,7 +470,7 @@ equipment_modules = {
 			naval_torpedo_hit_chance_factor = -0.02
 		}
 		multiply_stats = {
-			naval_speed = -0.02		
+			naval_speed = -0.02
 		}
 		dismantle_cost_ic = 60
 
@@ -482,7 +482,7 @@ equipment_modules = {
 		category = ship_torpedo_sub
 		sfx = sfx_ui_sd_module_turret
 
-		
+
 		add_stats = {
 			torpedo_attack = 15
 			build_cost_ic = 50
@@ -491,9 +491,9 @@ equipment_modules = {
 
 		multiply_stats = {
 			sub_visibility = 0.02
-			naval_speed = -0.01			
+			naval_speed = -0.01
 		}
-		
+
 		build_cost_resources = {
 			steel = 0
 		}
@@ -505,7 +505,7 @@ equipment_modules = {
 		abbreviation = "scgm"
 		category = ship_torpedo_sub
 		parent = ship_torpedo_sub_1
-		
+
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -516,9 +516,9 @@ equipment_modules = {
 
 		multiply_stats = {
 			sub_visibility = 0.025
-			naval_speed = -0.02			
+			naval_speed = -0.02
 		}
-		
+
 		build_cost_resources = {
 			steel = 0
 		}
@@ -534,7 +534,7 @@ equipment_modules = {
 		abbreviation = "scn"
 		category = ship_torpedo_sub
 		parent = ship_torpedo_sub_2
-		
+
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -545,7 +545,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			sub_visibility = 0.03
-			naval_speed = -0.03			
+			naval_speed = -0.03
 		}
 
 		can_convert_from = {
@@ -560,7 +560,7 @@ equipment_modules = {
 		abbreviation = "sco"
 		category = ship_torpedo_sub
 		parent = ship_torpedo_sub_3
-		
+
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -571,7 +571,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			sub_visibility = 0.035
-			naval_speed = -0.04			
+			naval_speed = -0.04
 		}
 
 		can_convert_from = {
@@ -585,7 +585,7 @@ equipment_modules = {
 	ship_torpedo_sub_5 = {
 		category = ship_torpedo_sub
 		parent = ship_torpedo_sub_4
-		
+
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -597,7 +597,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			sub_visibility = 0.04
-			naval_speed = -0.05	
+			naval_speed = -0.05
 		}
 
 		can_convert_from = {
@@ -618,13 +618,13 @@ equipment_modules = {
 		category = ship_mine_layer
 		gui_category = ship_mine_warfare
 		gfx = ship_mine_layer
-		
+
 		add_stats = {
 			mines_planting = 1
 			build_cost_ic = 90
 		}
 		multiply_stats = {
-			naval_speed = -0.02			
+			naval_speed = -0.02
 		}
 	}
 
@@ -632,7 +632,7 @@ equipment_modules = {
 		abbreviation = "scq"
 		category = ship_mine_layer_sub
 		gfx = ship_mine_layer_sub
-		
+
 		add_stats = {
 			mines_planting = 1
 			build_cost_ic = 90
@@ -643,7 +643,7 @@ equipment_modules = {
 		abbreviation = "scr"
 		category = ship_mine_warfare
 		gfx = ship_mine_sweeper
-		
+
 		add_stats = {
 			mines_sweeping = 1
 			build_cost_ic = 30
@@ -663,8 +663,8 @@ equipment_modules = {
 		abbreviation = "scs"
 		category = ship_depth_charge
 		sfx = sfx_ui_sd_module_turret
-		
-		
+
+
 		add_stats = {
 			sub_attack = 14
 			build_cost_ic = 90
@@ -686,7 +686,7 @@ equipment_modules = {
 		category = ship_depth_charge
 		sfx = sfx_ui_sd_module_turret
 		parent = ship_depth_charge_1
-		
+
 		add_stats = {
 			sub_attack = 18
 			build_cost_ic = 120
@@ -708,7 +708,7 @@ equipment_modules = {
 		category = ship_depth_charge
 		sfx = sfx_ui_sd_module_turret
 		parent = ship_depth_charge_2
-		
+
 		add_stats = {
 			sub_attack = 22
 			build_cost_ic = 150
@@ -730,7 +730,7 @@ equipment_modules = {
 		category = ship_depth_charge
 		sfx = sfx_ui_sd_module_turret
 		parent = ship_depth_charge_3
-		
+
 		add_stats = {
 			sub_attack = 26
 			build_cost_ic = 180
@@ -751,7 +751,7 @@ equipment_modules = {
 		category = ship_depth_charge
 		sfx = sfx_ui_sd_module_turret
 		parent = ship_depth_charge_4
-		
+
 		add_stats = {
 			sub_attack = 30
 			build_cost_ic = 300
@@ -766,9 +766,9 @@ equipment_modules = {
     ship_sonar_1 = {
 		abbreviation = "sdc"
 		category = ship_sonar
-		
+
 		sfx = sfx_ui_sd_module_sonar
-		
+
 		add_stats = {
 			sub_detection = 5
 			build_cost_ic = 40
@@ -778,7 +778,7 @@ equipment_modules = {
 	ship_sonar_2 = {
 		abbreviation = "sdd"
 		category = ship_sonar
-		
+
 		sfx = sfx_ui_sd_module_sonar
 		parent = ship_sonar_1
 		add_stats = {
@@ -790,10 +790,10 @@ equipment_modules = {
 			convert_cost_ic = 25
 		}
 	}
-	
+
 	ship_sonar_3 = {
 		category = ship_sonar
-		
+
 		sfx = sfx_ui_sd_module_sonar
 		parent = ship_sonar_2
 		add_stats = {
@@ -807,7 +807,7 @@ equipment_modules = {
 	}
     ship_sonar_4 = {
 		category = ship_sonar
-		
+
 		sfx = sfx_ui_sd_module_sonar
 		parent = ship_sonar_3
 		add_stats = {
@@ -824,7 +824,7 @@ equipment_modules = {
 		gui_category = ship_sonar
 		gfx = ship_sonar_1
 		sfx = sfx_ui_sd_module_sonar
-		
+
 		add_stats = {
 			surface_detection = 3
 			sub_detection = 2
@@ -848,7 +848,7 @@ equipment_modules = {
 			convert_cost_ic = 25
 		}
 	}
-	
+
 	sub_sonar_3 = {
 		category = sub_sonar
 		gui_category = ship_sonar
@@ -914,11 +914,11 @@ equipment_modules = {
 	ship_sub_snorkel_0 = {
 		abbreviation = "scw"
 		category = ship_sub_snorkel
-		
+
 		multiply_stats = {
 			sub_visibility = -0.03
 		}
-		
+
 		add_stats = {
 			build_cost_ic = 30
 			reliability = -0.1
@@ -929,11 +929,11 @@ equipment_modules = {
 		category = ship_sub_snorkel
 		gfx = ship_sub_snorkel_1
 		parent = ship_sub_snorkel_0
-		
+
 		multiply_stats = {
 			sub_visibility = -0.075
 		}
-		
+
 		add_stats = {
 			build_cost_ic = 50
 			reliability = -0.05
@@ -947,7 +947,7 @@ equipment_modules = {
 		multiply_stats = {
 			sub_visibility = -0.1
 		}
-		
+
 		add_stats = {
 			build_cost_ic = 70
 			reliability = -0.025
@@ -967,7 +967,7 @@ equipment_modules = {
 		abbreviation = "scy"
 		category = ship_airplane_launcher
 		gfx = ship_airplane_launcher_1
-		
+
 		add_average_stats = {
 			surface_detection = 1
 			sub_detection = 0.25
@@ -1054,7 +1054,7 @@ equipment_modules = {
 	}
 	sub_airplane_launcher_1 = {
 		category = sub_airplane_launcher
-		
+
 		add_stats = {
 			surface_detection = 2
 			naval_torpedo_hit_chance_factor = 0.01
@@ -1094,7 +1094,7 @@ equipment_modules = {
     ship_extra_fuel_tank = {
 		category = ship_extra_fuel_tank
 		gui_category = ship_propulsion_range
-		
+
 		multiply_stats = {
 			naval_range = 0.2
 			build_cost_ic = 0.06
@@ -1106,7 +1106,7 @@ equipment_modules = {
 	ship_extra_fuel_tank_large = {
 		category = ship_extra_fuel_tank
 		gui_category = ship_propulsion_range
-		
+
 		add_stats = {
 			reliability = -0.05
 		}
@@ -1118,7 +1118,7 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 1000
 	}
-	
+
 #################
 ##  AUXILIARY  ##
 #################
@@ -1588,7 +1588,7 @@ equipment_modules = {
 		category = heavy_miscellaneous
 		gui_category = ship_miscellaneous
 		gfx = ship_cruiser_armor
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.1
 			naval_speed = -0.02

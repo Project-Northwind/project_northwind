@@ -5,7 +5,7 @@ scripted_gui = {
 		window_name = navy_rework_welcome_splash_container
 
 		ai_enabled = { always = no }
-		
+
 		visible = {
 			has_country_flag = navy_rework_splash_show
 		}
@@ -67,7 +67,7 @@ scripted_gui = {
 			check_variable = { navy_rework_welcome_splash_variable = 2 }
 		}
 	}
-	
+
 	navy_rework_welcome_splash_tab_3 = {
 		context_type = player_context
 		window_name = navy_rework_welcome_splash_tab_3_container
@@ -79,7 +79,7 @@ scripted_gui = {
 			check_variable = { navy_rework_welcome_splash_variable = 3 }
 		}
 	}
-	
+
 	navy_rework_welcome_splash_tab_4 = {
 		context_type = player_context
 		window_name = navy_rework_welcome_splash_tab_4_container
@@ -92,4 +92,3 @@ scripted_gui = {
 		}
 	}
 }
-

@@ -15,7 +15,7 @@ PRC = {
         }
 
     }
-	
+
 	vnr_ship_hull_light_6 = {
         pool = {
             weight = 5
@@ -61,7 +61,7 @@ PRC = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_6 = {
         pool = {
             weight = 5
@@ -120,7 +120,7 @@ CHI = {
         }
 
     }
-	
+
 	vnr_ship_hull_light_6 = {
         pool = {
             weight = 5
@@ -166,7 +166,7 @@ CHI = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_6 = {
         pool = {
             weight = 5
@@ -225,7 +225,7 @@ XSM = {
         }
 
     }
-	
+
 	vnr_ship_hull_light_6 = {
         pool = {
             weight = 5
@@ -271,7 +271,7 @@ XSM = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_6 = {
         pool = {
             weight = 5
@@ -330,7 +330,7 @@ SHX = {
         }
 
     }
-	
+
 	vnr_ship_hull_light_6 = {
         pool = {
             weight = 5
@@ -376,7 +376,7 @@ SHX = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_6 = {
         pool = {
             weight = 5
@@ -435,7 +435,7 @@ GXC = {
         }
 
     }
-	
+
 	vnr_ship_hull_light_6 = {
         pool = {
             weight = 5
@@ -481,7 +481,7 @@ GXC = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_6 = {
         pool = {
             weight = 5
@@ -540,7 +540,7 @@ YUN = {
         }
 
     }
-	
+
 	vnr_ship_hull_light_6 = {
         pool = {
             weight = 5
@@ -586,7 +586,7 @@ YUN = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_6 = {
         pool = {
             weight = 5
@@ -644,7 +644,7 @@ SIK = {
         }
 
     }
-	
+
 	vnr_ship_hull_light_6 = {
         pool = {
             weight = 5
@@ -690,7 +690,7 @@ SIK = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_6 = {
         pool = {
             weight = 5
@@ -749,7 +749,7 @@ MAN = {
         }
 
     }
-	
+
 	vnr_ship_hull_light_6 = {
         pool = {
             weight = 5
@@ -795,7 +795,7 @@ MAN = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_6 = {
         pool = {
             weight = 5
@@ -853,7 +853,7 @@ TIB = {
         }
 
     }
-	
+
 	vnr_ship_hull_light_6 = {
         pool = {
             weight = 5
@@ -899,7 +899,7 @@ TIB = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_6 = {
         pool = {
             weight = 5

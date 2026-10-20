@@ -4,7 +4,7 @@ SOV_StrikeForce_1 = {
 	}
 	ai_will_do = {
 		factor = 10
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -15,7 +15,7 @@ SOV_StrikeForce_1 = {
 			amount = 8
 		}
 	}
-	
+
 	optimal_composition = {
 		battleship = {
 			amount = 4
@@ -42,7 +42,7 @@ SOV_StrikeForceCarrier_1 = {
 				size > 0
 			}
 		}
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -53,7 +53,7 @@ SOV_StrikeForceCarrier_1 = {
 			amount = 8
 		}
 	}
-	
+
 	optimal_composition = {
 		carrier = {
 			amount = 4
@@ -82,7 +82,7 @@ SOV_PatrolReconForce_1 = {
 		destroyer = {
 			amount = 5
 		}
-	}	
+	}
 	optimal_composition = {
 		destroyer = {
 			amount = 5
@@ -96,7 +96,7 @@ SOV_PatrolDominanceForce_1 = {
 	}
 	ai_will_do = {
 		factor = 3
-	}	
+	}
 	mission = { naval_patrol }
 	keep_updated = yes
 	min_composition = {
@@ -127,7 +127,7 @@ SOV_ConvoyRaiding_1 = {
 	}
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	mission = { convoy_raiding }
 	keep_updated = yes
 	min_composition = {
@@ -156,7 +156,7 @@ SOV_ConvoyEscort_1 = {
 			amount = 5
 		}
 	}
-	
+
 	optimal_composition = {
 		destroyer = {
 			amount = 5

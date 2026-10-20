@@ -1,10 +1,10 @@
 USA_StrikeForce_1 = {
 	allowed = {
-		original_tag = USA 
+		original_tag = USA
 	}
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -15,7 +15,7 @@ USA_StrikeForce_1 = {
 			amount = 3
 		}
 	}
-	
+
 	optimal_composition = {
 		carrier = {
 			amount = 4
@@ -47,7 +47,7 @@ USA_PatrolReconForce_1 = {
 		destroyer = {
 			amount = 5
 		}
-	}	
+	}
 	optimal_composition = {
 		destroyer = {
 			amount = 5
@@ -61,7 +61,7 @@ USA_PatrolDominanceForce_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { naval_patrol }
 	keep_updated = yes
 	min_composition = {
@@ -92,7 +92,7 @@ USA_ConvoyRaiding_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_raiding }
 	keep_updated = yes
 	min_composition = {
@@ -114,14 +114,14 @@ USA_ConvoyEscort_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_escort }
 	min_composition = {
 		destroyer = {
 			amount = 5
 		}
 	}
-	
+
 	optimal_composition = {
 		destroyer = {
 			amount = 5
@@ -135,7 +135,7 @@ USA_ConvoyEscort_2 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_escort }
 	min_composition = {
 		destroyer = {
@@ -143,7 +143,7 @@ USA_ConvoyEscort_2 = {
 			role = 35
 		}
 	}
-	
+
 	optimal_composition = {
 		destroyer = {
 			amount = 5

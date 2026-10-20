@@ -3,34 +3,65 @@ units= {
 
 	##### NAVAL UNITS #####
 	### 1st FLEET ###							# CO: I. Campioni
-	# Navy supplied by PN_initialize_navy.
-	
-	### 2nd FLEET ###							# CO: Paladini
-	# Navy supplied by PN_initialize_navy.
-	
-	# Navy supplied by PN_initialize_navy.
-	
-	##### SUBMARINE FLEET #####					# CO: Falangola
-	# Navy supplied by PN_initialize_navy.
 
-	### AFRICA ###					
-	# Navy supplied by PN_initialize_navy.
-	
-	# Navy supplied by PN_initialize_navy.######################
+# Navy supplied by PN_initialize_navy.
+
+
+	### 2nd FLEET ###							# CO: Paladini
+
+# Navy supplied by PN_initialize_navy.
+
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+	##### SUBMARINE FLEET #####					# CO: Falangola
+
+# Navy supplied by PN_initialize_navy.
+
+
+	### AFRICA ###
+
+# Navy supplied by PN_initialize_navy.
+
+
+
+# Navy supplied by PN_initialize_navy.
+
+}
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
 instant_effect = {
 
 	### Under Contruction Notes ###
 	# BB: RN Caio Duilio (BB_2: Caio Duilio Class) (Refit, Recomm. 1940)
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 	# BB: RN Andrea Doria (BB_2: Caio Duilio Class) (Refit, Recomm. 1940)
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 	# BB: RN Littorio (BB_3: Littorio Class)
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 	# BB: RN Vittorio Veneto (BB_3: Littorio Class)
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 	# SS: Marcello variant (x2) ("RSmg Comandante Cappellini", "RSmg Comandante Faà di Bruno")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 }
 
 #####################

@@ -1,10 +1,10 @@
 ENG_StrikeForce_1 = {
 	allowed = {
-		original_tag = ENG 
+		original_tag = ENG
 	}
 	ai_will_do = {
 		factor = 2
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -15,7 +15,7 @@ ENG_StrikeForce_1 = {
 			amount = 4
 		}
 	}
-	
+
 	optimal_composition = {
 		carrier = {
 			amount = 4
@@ -34,7 +34,7 @@ ENG_StrikeForce_1 = {
 
 ENG_StrikeForce_BC_1 = {
 	allowed = {
-		original_tag = ENG 
+		original_tag = ENG
 	}
 	ai_will_do = {
 		factor = 0
@@ -45,7 +45,7 @@ ENG_StrikeForce_BC_1 = {
 				size > 1
 			}
 		}
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -56,7 +56,7 @@ ENG_StrikeForce_BC_1 = {
 			amount = 4
 		}
 	}
-	
+
 	optimal_composition = {
 		carrier = {
 			amount = 4
@@ -88,7 +88,7 @@ ENG_PatrolReconForce_1 = {
 		destroyer = {
 			amount = 5
 		}
-	}	
+	}
 	optimal_composition = {
 		destroyer = {
 			amount = 5
@@ -102,7 +102,7 @@ ENG_PatrolDominanceForce_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { naval_patrol }
 	keep_updated = yes
 	min_composition = {
@@ -132,7 +132,7 @@ ENG_ConvoyRaiding_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_raiding }
 	keep_updated = yes
 	min_composition = {
@@ -154,7 +154,7 @@ ENG_ConvoyEscort_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_escort }
 	min_composition = {
 		destroyer = {
@@ -162,7 +162,7 @@ ENG_ConvoyEscort_1 = {
 			role = 31
 		}
 	}
-	
+
 	optimal_composition = {
 		destroyer = {
 			amount = 5
@@ -176,7 +176,7 @@ ENG_ConvoyEscort_2 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_escort }
 	min_composition = {
 		destroyer = {
@@ -184,7 +184,7 @@ ENG_ConvoyEscort_2 = {
 			role = 35
 		}
 	}
-	
+
 	optimal_composition = {
 		destroyer = {
 			amount = 5

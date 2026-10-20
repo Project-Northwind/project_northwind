@@ -6,7 +6,7 @@ units= {
 	fleet = {
 		name = "Severnyy Flot"
 		naval_base = 3134 # Murmansk
-		task_force = {				
+		task_force = {
 			name = "Severnyy Flot"
 			location = 3134 # Murmansk
 			# 1ya Flotiliya Esmintsev
@@ -77,8 +77,8 @@ units= {
 		}
 	}
 }
-		}	
-		task_force = {	
+		}
+		task_force = {
 			name = "Severnyy Podvodniy Flot"
 			location = 3134 # Murmansk
 			# 5iy Podvodniy Flot
@@ -92,7 +92,7 @@ units= {
 			version_name = "Series I Debakrist"
 		}
 	}
-}			
+}
 			ship = {
 	name = D-2
 	definition = submarine
@@ -103,7 +103,7 @@ units= {
 			version_name = "Series I Debakrist"
 		}
 	}
-}			
+}
 			ship = {
 	name = D-3
 	definition = submarine
@@ -114,7 +114,7 @@ units= {
 			version_name = "Series I Debakrist"
 		}
 	}
-}			
+}
 			ship = {
 	name = D-4
 	definition = submarine
@@ -125,7 +125,7 @@ units= {
 			version_name = "Series I Debakrist"
 		}
 	}
-}			
+}
 			ship = {
 	name = D-5
 	definition = submarine
@@ -136,7 +136,7 @@ units= {
 			version_name = "Series I Debakrist"
 		}
 	}
-}			
+}
 			ship = {
 	name = D-6
 	definition = submarine
@@ -147,15 +147,15 @@ units= {
 			version_name = "Series I Debakrist"
 		}
 	}
-}			
+}
 		}
 	}
-	
+
 	### Baltic Fleet -- Leningrad
 	fleet = {
 		name = "Baltiyskiy Flot"
 		naval_base = 3151 # Leningrad
-		task_force = {				
+		task_force = {
 			name = "Baltiyskiy Flot"
 			location = 3151 # Leningrad
 			ship = {
@@ -226,7 +226,7 @@ units= {
 			version_name = "Orfey Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = Voykov
 	definition = destroyer
@@ -237,9 +237,9 @@ units= {
 			version_name = "Orfey Class"
 		}
 	}
-}				
-		}	
-		task_force = {	
+}
+		}
+		task_force = {
 			name = "Baltiyskiy Podvodniy Flot"
 			location = 3151 # Leningrad
 			ship = {
@@ -252,7 +252,7 @@ units= {
 			version_name = "Series I Debakrist"
 		}
 	}
-}			
+}
 			ship = {
 	name = L-55
 	definition = submarine
@@ -263,7 +263,7 @@ units= {
 			version_name = "Series I Debakrist"
 		}
 	}
-}			
+}
 			# 1iy Podvodniy Flot
 			ship = {
 	name = Shch-301
@@ -275,7 +275,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-302
 	definition = submarine
@@ -286,7 +286,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-303
 	definition = submarine
@@ -306,7 +306,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}	#officially Ivan Travkin did not command this ship until 1940		
+}	#officially Ivan Travkin did not command this ship until 1940
 			ship = {
 	name = Shch-304
 	definition = submarine
@@ -317,7 +317,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-305
 	definition = submarine
@@ -328,7 +328,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-306
 	definition = submarine
@@ -339,7 +339,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-307
 	definition = submarine
@@ -350,7 +350,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-308
 	definition = submarine
@@ -361,7 +361,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			# 2iy Podvodniy Flot
 			ship = {
 	name = Shch-113
@@ -373,7 +373,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-114
 	definition = submarine
@@ -384,7 +384,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-115
 	definition = submarine
@@ -395,7 +395,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-116
 	definition = submarine
@@ -406,7 +406,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			# 6iy Podvodniy Flot
 			ship = {
 	name = Shch-117
@@ -418,7 +418,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-118
 	definition = submarine
@@ -429,7 +429,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-119
 	definition = submarine
@@ -440,7 +440,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-120
 	definition = submarine
@@ -451,7 +451,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			# 7iy  Podvodniy Flot
 			ship = {
 	name = Shch-201
@@ -463,7 +463,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-202
 	definition = submarine
@@ -474,7 +474,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-203
 	definition = submarine
@@ -485,7 +485,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-204
 	definition = submarine
@@ -496,7 +496,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-309
 	definition = submarine
@@ -507,7 +507,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			# 16iy  Podvodniy Flot
 			ship = {
 	name = L-1
@@ -519,7 +519,7 @@ units= {
 			version_name = "Series II Leninets"
 		}
 	}
-}			
+}
 			ship = {
 	name = L-2
 	definition = submarine
@@ -530,7 +530,7 @@ units= {
 			version_name = "Series II Leninets"
 		}
 	}
-}			
+}
 			ship = {
 	name = L-3
 	definition = submarine
@@ -541,7 +541,7 @@ units= {
 			version_name = "Series II Leninets"
 		}
 	}
-}			
+}
 		}
 	}
 
@@ -549,7 +549,7 @@ units= {
 	fleet = {
 		name = "Chernomorskiy Flot"
 		naval_base = 3686 # Sevastopopl
-		task_force = {				
+		task_force = {
 			name = "Chernomorskiy Flot"
 			location = 3686 # Sevastopopl
 			ship = {
@@ -573,7 +573,7 @@ units= {
 			version_name = "Marti Class"
 		}
 	}
-}	
+}
 			ship = {
 	name = Marti
 	definition = light_cruiser
@@ -630,7 +630,7 @@ units= {
 	}
 }
 		}
-		task_force = {	
+		task_force = {
 			name = "Chernomorskiy Podvodniy Flot"
 			location = 3686 # Sevastopopl
 			# 9iy Podvodniy Flot
@@ -644,7 +644,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-122
 	definition = submarine
@@ -655,7 +655,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-123
 	definition = submarine
@@ -666,7 +666,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-124
 	definition = submarine
@@ -677,7 +677,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			# 15iy Podvodniy Flot
 			ship = {
 	name = A-1
@@ -745,7 +745,7 @@ units= {
 			version_name = "Series II Leninets"
 		}
 	}
-}			
+}
 			ship = {
 	name = L-5
 	definition = submarine
@@ -756,7 +756,7 @@ units= {
 			version_name = "Series II Leninets"
 		}
 	}
-}			
+}
 			ship = {
 	name = L-6
 	definition = submarine
@@ -767,15 +767,15 @@ units= {
 			version_name = "Series II Leninets"
 		}
 	}
-}			
-		}	
+}
+		}
 	}
 
 	### Pacific Fleet -- Vladivostok
 	fleet = {
 		name = "Tikhookeanskiy Flot"
 		naval_base = 957 # Vladivostok
-		task_force = {				
+		task_force = {
 			name = "Tikhookeanskiy Flot"
 			location = 957 # Vladivostok
 			# 8ya Flotiliya Esmintsev
@@ -801,8 +801,8 @@ units= {
 		}
 	}
 }
-		}	
-		task_force = {	
+		}
+		task_force = {
 			name = "Tihookyeanskiy Podvodniy Flot"
 			location = 957 # Vladivostok
 			# 10iy Podvodniy Flot
@@ -816,7 +816,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-102
 	definition = submarine
@@ -827,7 +827,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-103
 	definition = submarine
@@ -838,7 +838,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-104
 	definition = submarine
@@ -849,7 +849,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-105
 	definition = submarine
@@ -860,7 +860,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-106
 	definition = submarine
@@ -871,7 +871,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			# 11iy Podvodniy Flot
 			ship = {
 	name = Shch-107
@@ -883,7 +883,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-108
 	definition = submarine
@@ -894,7 +894,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-109
 	definition = submarine
@@ -905,7 +905,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-110
 	definition = submarine
@@ -916,7 +916,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-111
 	definition = submarine
@@ -927,7 +927,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			ship = {
 	name = Shch-112
 	definition = submarine
@@ -938,7 +938,7 @@ units= {
 			version_name = "Series V Shchuka"
 		}
 	}
-}			
+}
 			# 18iy  Podvodniy Flot
 			ship = {
 	name = L-7
@@ -950,7 +950,7 @@ units= {
 			version_name = "Series II Leninets"
 		}
 	}
-}			
+}
 			ship = {
 	name = L-8
 	definition = submarine
@@ -961,7 +961,7 @@ units= {
 			version_name = "Series II Leninets"
 		}
 	}
-}			
+}
 			ship = {
 	name = L-9
 	definition = submarine
@@ -972,10 +972,10 @@ units= {
 			version_name = "Series II Leninets"
 		}
 	}
-}			
-		}		
+}
+		}
 	}
-} 
+}
 
 
 
@@ -1009,7 +1009,7 @@ instant_effect = {
 	amount = 1
 	industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
 }
-	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
+	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133"
 	#		"Shch-134" "Shch-208" "Shch-312" "Shch-313" "Shch-314" "Shch-315" "Shch-316" "Shch-317" "Shch-318" "Shch-319" "Shch-320" "Shch-321" "Shch-322" "Shch-323" "Shch-324")
 	# SS: Stalinets class (x5) ("P-1" "P-2" "P-3" "S-1" "S-2")
 	add_equipment_production = {

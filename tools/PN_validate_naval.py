@@ -273,6 +273,8 @@ def validate_integration(game=GAME):
     paths = {e['destination'] for e in manifest['files']} | set(rewards['files'])
     paths |= {p.relative_to(ROOT).as_posix() for p in (ROOT/'common/scripted_effects').glob('PN_*.txt')}
     paths |= {'common/on_actions/PN_naval_startup.txt','common/technologies/PN_naval_compatibility.txt','common/units/names_ships/PN_naval_compatibility_names.txt'}
+    paths |= {p.relative_to(ROOT).as_posix() for directory in ('history/units','history/countries','common/special_projects/projects') for p in (ROOT/directory).glob('*.txt')}
+    paths |= {'common/script_enums.txt','common/units/air.txt'}
     for entry in manifest['files']:
         path=ROOT/entry['destination']
         if not path.exists():problems.append('Missing imported file: '+entry['destination'])
@@ -354,6 +356,34 @@ def validate_custom_production():
     return problems
 
 
+
+def validate_designer_layouts(game=GAME):
+    hulls, _ = equipment_database(game, ROOT)
+    issues = []
+    for path in (ROOT/'interface/equipmentdesigner/ships').glob('*.gui'):
+        tree = parse(read(path))
+        for window in walk(tree, 'containerWindowType'):
+            name = first(window, 'name', '')
+            if not str(name).startswith('equipment_designer_'):
+                continue
+            hull = str(name).removeprefix('equipment_designer_')
+            if hull not in hulls:
+                continue
+            layout = next((w for w in walk(window, 'containerWindowType') if first(w,'name') == 'module_slots'), [])
+            named = {first(w,'name') for w in walk(layout, 'containerWindowType')}
+            for slot, _ in slots_for(hulls, hull):
+                if slot not in named:
+                    issues.append(f'{path.name}: missing designer slot {hull}/{slot}')
+    gui = parse(read(ROOT/'interface/equipmentdesignerview.gui'))
+    for block in walk(gui, 'containerWindowType'):
+        if first(block, 'name') == 'stat_icons':
+            names = {first(icon, 'name') for icon in walk(block, 'iconType')}
+            for name in ('torpedo','light_gun','heavy_gun','anti_air','anti_sub'):
+                if 'stat_icon_'+name not in names:
+                    issues.append('equipmentdesignerview.gui: missing stat_icon_'+name)
+    return issues
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--game-root', type=Path, default=GAME)
@@ -364,6 +394,7 @@ def main():
         snapshot()
         return
     result=validate_integration(args.game_root)
+    result['issues'].extend(validate_designer_layouts(args.game_root))
     if args.output:
         args.output.parent.mkdir(parents=True,exist_ok=True)
         args.output.write_text(json.dumps(result,indent=2,ensure_ascii=False),encoding='utf-8')

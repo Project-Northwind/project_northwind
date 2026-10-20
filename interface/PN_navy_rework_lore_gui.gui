@@ -34,11 +34,11 @@ guiTypes = {
 				clipping = no
 
 				background = { quadTextureSprite = "GFX_tiled_generic_bg_1" }
-				
+
 				instantTextboxType = {
 					name = "naval_lore_gui_title_text"
 					text = "naval_lore_gui_title_text"
-					
+
 					position = { x = 0 y = 32 }
 					font = "hoi_24header"
 					format = center
@@ -110,7 +110,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "naval_lore_gui_content_container_text"
 				text = "naval_lore_gui_content_container_text"
-				
+
 				position = { x = 0 y = 6 }
 				font = "hoi_18mbs"
 				maxWidth = 500
@@ -120,4 +120,3 @@ guiTypes = {
 		}
 	}
 }
-

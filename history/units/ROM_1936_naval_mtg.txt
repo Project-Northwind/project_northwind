@@ -2,8 +2,10 @@
 units= {
 
 	##### NAVAL UNITS #####
-	# Navy supplied by PN_initialize_navy.
-} 
+
+# Navy supplied by PN_initialize_navy.
+
+}
 
 
 
@@ -14,5 +16,7 @@ instant_effect = {
 
 	### Under Contruction Notes ###
 	# SS: Delfinul class (x1) ("NMS Delfinul")
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 }

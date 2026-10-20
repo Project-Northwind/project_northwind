@@ -1865,7 +1865,7 @@ focus_tree = {
 						ideology = neutrality
 						long_name = ALB_house_of_wied_party_long
 						name = ALB_house_of_wied_party
-					}	
+					}
 					promote_character = ALB_wilhelm_of_wied
 				}
 
@@ -2409,21 +2409,21 @@ focus_tree = {
 					    division = "name = \"Pershyy Dyvizion Ukrainskih Sichovih Striltsiv'\" division_template = \"Ukrainski Sichovi Striltsi\" start_experience_factor = 0.4 start_equipment_factor = 0.6"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_yevhen_konovalets
+							name = HUN_yevhen_konovalets
 					    }
 					}
 					create_unit = {
 					    division = "name = \"Druhyy Dyvizion Ukrainskih Sichovih Striltsiv\" division_template = \"Ukrainski Sichovi Striltsi\" start_experience_factor = 0.3 start_equipment_factor = 0.8"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_andriy_melnyk
+							name = HUN_andriy_melnyk
 					    }
 					}
 					create_unit = {
 					    division = "name = \"Tretiy Dyvizion Ukrainskih Sichovih Striltsiv\" division_template = \"Ukrainski Sichovi Striltsi\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_yuriy_otmarstein
+							name = HUN_yuriy_otmarstein
 					    }
 					}
 				}
@@ -3948,7 +3948,7 @@ focus_tree = {
 		id = wuw_HUN_reverse_the_risorgimento
 		icon = GFX_focus_ETH_the_patriots
 		prerequisite = { focus = wuw_HUN_restore_the_lombardo_venetian_kingdom }
-		
+
 		x = -2
 		y = 1
 		relative_position_id = wuw_HUN_restore_the_lombardo_venetian_kingdom
@@ -4400,8 +4400,8 @@ focus_tree = {
 					owner = {
 						country_event = {
 							id = WW_hungary.75
-						 	hours = 6
-						 	random_hours = 2
+							hours = 6
+							random_hours = 2
 						}
 					}
 				}
@@ -5406,7 +5406,7 @@ focus_tree = {
 				add_timed_idea = {
 					idea = HUN_revenge_for_brusilov_idea
 					days = 730
-				}	
+				}
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -6625,13 +6625,13 @@ focus_tree = {
 				    division = "name = \"Rongyos Gárda 'Lajtabánság'\" division_template = \"Rongyos Gárda\" start_experience_factor = 0.4 start_equipment_factor = 0.6"
 				    owner = ROOT
 				    officer = {
-				    	name = HUN_miklos_kozma
-				    	portraits = {
-				    		army = {
-				    			large = GFX_portrait_HUN_miklos_kozma
-				    			small = GFX_portrait_HUN_miklos_kozma_small
-				    		}
-				    	}
+						name = HUN_miklos_kozma
+						portraits = {
+							army = {
+								large = GFX_portrait_HUN_miklos_kozma
+								small = GFX_portrait_HUN_miklos_kozma_small
+							}
+						}
 				    }
 				}
 			}
@@ -7310,7 +7310,7 @@ focus_tree = {
 				elections_allowed = yes
 				last_election = "1936.1.1"
 				election_frequency = 48
-			}		
+			}
 			hold_election = HUN
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -7405,7 +7405,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_political_power = 75
 			add_stability = 0.05
@@ -7426,15 +7426,15 @@ focus_tree = {
 			custom_effect_tooltip = {
 				localization_key = available_scientist_one_line_tt
 				CHARACTER = HUN_edward_teller
-			}	
+			}
 			custom_effect_tooltip = {
 				localization_key = available_scientist_one_line_tt
 				CHARACTER = HUN_john_von_neumann
-			}	
+			}
 			custom_effect_tooltip = {
 				localization_key = available_scientist_one_line_tt
 				CHARACTER = HUN_leo_szilard
-			}	
+			}
 
 		}
 	}
@@ -7987,33 +7987,33 @@ focus_tree = {
 					    division = "name = \"Rongyos Gárda 'Lajtabánság'\" division_template = \"Rongyos Gárda\" start_experience_factor = 0.4 start_equipment_factor = 0.6"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_miklos_kozma
-					    	portraits = {
-					    		army = {
-					    			large = GFX_portrait_HUN_miklos_kozma
-					    			small = GFX_portrait_HUN_miklos_kozma_small
-					    		}
-					    	}
+							name = HUN_miklos_kozma
+							portraits = {
+								army = {
+									large = GFX_portrait_HUN_miklos_kozma
+									small = GFX_portrait_HUN_miklos_kozma_small
+								}
+							}
 					    }
 					}
 					create_unit = {
 					    division = "name = \"Rongyos Gárda 'Sopron'\" division_template = \"Rongyos Gárda\" start_experience_factor = 0.3 start_equipment_factor = 0.8"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_ivan_hejjas
-					    	portraits = {
-					    		army = {
-					    			large = GFX_portrait_HUN_ivan_hejjas
-					    			small = GFX_portrait_HUN_ivan_hejjas_small
-					    		}
-					    	}
+							name = HUN_ivan_hejjas
+							portraits = {
+								army = {
+									large = GFX_portrait_HUN_ivan_hejjas
+									small = GFX_portrait_HUN_ivan_hejjas_small
+								}
+							}
 					    }
 					}
 					create_unit = {
 					    division = "name = \"Rongyos Gárda 'Komárno'\" division_template = \"Rongyos Gárda\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_huszein_durics_hilmi
+							name = HUN_huszein_durics_hilmi
 					    }
 					}
 				}
@@ -8265,7 +8265,7 @@ focus_tree = {
 				ideology = fascism
 				long_name = HUN_arrow_cross_party_hungarist_movement_long
 				name = HUN_arrow_cross_party_hungarist_movement
-			}	
+			}
 
 		}
 	}
@@ -8639,7 +8639,7 @@ focus_tree = {
 					add_opinion_modifier = {
 						target = ROOT
 						modifier = medium_increase
-					}	
+					}
 				}
 			}
 		}
@@ -8805,7 +8805,7 @@ focus_tree = {
 					ideology = fascism
 					long_name = HUN_arrow_cross_party_hungarist_movement_long
 					name = HUN_arrow_cross_party_hungarist_movement
-				}	
+				}
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -9241,10 +9241,10 @@ focus_tree = {
 				days = 800
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			set_party_name = { 
-				ideology = fascism 
-				long_name = HUN_arrow_cross_party_long 
-				name = HUN_arrow_cross_party 
+			set_party_name = {
+				ideology = fascism
+				long_name = HUN_arrow_cross_party_long
+				name = HUN_arrow_cross_party
 			}
 		}
 	}
@@ -9424,16 +9424,16 @@ focus_tree = {
 		completion_reward = {
 
 			add_ideas = HUN_promoted_hungarianism
-			
+
 			IF = {
 				limit = {
 					has_completed_focus = wuw_HUN_outlaw_the_party_of_national_will
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
-				set_party_name = { 
-					ideology = fascism 
-					long_name = HUN_arrow_cross_party_long 
-					name = HUN_arrow_cross_party 
+				set_party_name = {
+					ideology = fascism
+					long_name = HUN_arrow_cross_party_long
+					name = HUN_arrow_cross_party
 				}
 			}
 
@@ -10104,16 +10104,16 @@ focus_tree = {
 					}
 				}
 				custom_effect_tooltip = HUN_demands_tt
-				ROM = { 
-					country_event = { 
-						id = DOD_hungary.50 
+				ROM = {
+					country_event = {
+						id = DOD_hungary.50
 						hours = 6
 						random_hours = 12
-					} 
+					}
 				}
 				hidden_effect = {
-					news_event = { 
-						id = news.300 
+					news_event = {
+						id = news.300
 						hours = 4
 					}
 				}
@@ -10964,7 +10964,7 @@ focus_tree = {
 					character = HUN_franz_friedrich
 				}
 			}
-			
+
 		}
 
 		bypass = {
@@ -11182,8 +11182,8 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { 
-				has_war_with = GER 
+			NOT = {
+				has_war_with = GER
 				has_country_flag = HUN_can_not_trust_germany_again_flag
 			}
 			is_subject = no
@@ -11668,13 +11668,13 @@ focus_tree = {
 					    states = all
 					    states_filter = {
 					        OR = {
-					        	state = 43
-					        	state = 154
+								state = 43
+								state = 154
 					        }
 					        is_controlled_by = ROOT
 					    }
 
-				    	PREV = {  # Original country
+						PREV = {  # Original country
 				            HUN_miklos_horthy_jr = { # Character
 				                set_nationality = PREV.PREV
 				                # Transfers to breakaway
@@ -11727,259 +11727,259 @@ focus_tree = {
 				                set_nationality = PREV.PREV
 				                # Transfers to breakaway
 				            }
-			        	}
-			        	IF = {
-			        		limit = {
-			        			PREV.PREV = {
-			        				NOT = {
-			        					has_country_leader = {
-			        						ruling_only = yes
-			        						character = HUN_miklos_horthy
-			        					}
-			        				}
-			        				has_civil_war = yes
-			        			}
-			        		}
-			        		PREV.PREV = {
-			        			promote_character = {
-			        				character = HUN_miklos_horthy
-			        				ideology = oligarchism
-			        			}
-			        		}
-			        	}
+						}
+						IF = {
+							limit = {
+								PREV.PREV = {
+									NOT = {
+										has_country_leader = {
+											ruling_only = yes
+											character = HUN_miklos_horthy
+										}
+									}
+									has_civil_war = yes
+								}
+							}
+							PREV.PREV = {
+								promote_character = {
+									character = HUN_miklos_horthy
+									ideology = oligarchism
+								}
+							}
+						}
 
 				        IF = {
-				        	limit = {
-				        		NOT = {
-				        			ROOT = {
-				        				has_country_flag = HUN_revolutinaries_undermined_the_volksbund_flag
-				        			}
-				        		}
-				        	}
-				        	PREV.PREV = {
+							limit = {
+								NOT = {
+									ROOT = {
+										has_country_flag = HUN_revolutinaries_undermined_the_volksbund_flag
+									}
+								}
+							}
+							PREV.PREV = {
 
-				        		delete_unit_template_and_units = {
-				        			division_template = "Volksbund Militia"
-				        			disband = yes #if yes, will refund equipment/manpower.
-				        		}
+								delete_unit_template_and_units = {
+									division_template = "Volksbund Militia"
+									disband = yes #if yes, will refund equipment/manpower.
+								}
 
-				        		division_template = {
-				        		    name = "Volksbund Militia"
-				        		    is_locked = yes
-				        		    division_names_group = GER_INF_01
+								division_template = {
+									name = "Volksbund Militia"
+									is_locked = yes
+									division_names_group = GER_INF_01
 									role = garrison
-				        		    priority = 0
-				        		    regiments = {
-				        		        militia = { x = 0 y = 0 }
-				        		        militia = { x = 0 y = 1 }
-				        		        militia = { x = 0 y = 2 }
-				        		        militia = { x = 0 y = 3 }
-				        		        militia = { x = 1 y = 0 }
-				        		        militia = { x = 1 y = 1 }
-				        		        militia = { x = 1 y = 2 }
-				        		        militia = { x = 1 y = 3 }
-				        		    }
-				        		}
-				        		random_state = {
-				        			limit = {
-				        				OR = {
-				        					state = 43
-				        					state = 154
-				        				}
-				        			}
-				        			create_unit = {
-				        			    division = "name = \"Erste Volksbundmiliz\" division_template = \"Volksbund Militia\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-				        			    owner = PREV
-				        			}
-				        			create_unit = {
-				        			    division = "name = \"Zweite Volksbundmiliz\" division_template = \"Volksbund Militia\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-				        			    owner = PREV
-				        			}
-				        		}
-				        	}
+									priority = 0
+									regiments = {
+										militia = { x = 0 y = 0 }
+										militia = { x = 0 y = 1 }
+										militia = { x = 0 y = 2 }
+										militia = { x = 0 y = 3 }
+										militia = { x = 1 y = 0 }
+										militia = { x = 1 y = 1 }
+										militia = { x = 1 y = 2 }
+										militia = { x = 1 y = 3 }
+									}
+								}
+								random_state = {
+									limit = {
+										OR = {
+											state = 43
+											state = 154
+										}
+									}
+									create_unit = {
+										division = "name = \"Erste Volksbundmiliz\" division_template = \"Volksbund Militia\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+										owner = PREV
+									}
+									create_unit = {
+										division = "name = \"Zweite Volksbundmiliz\" division_template = \"Volksbund Militia\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+										owner = PREV
+									}
+								}
+							}
 				        }
 
 				        IF = {
-				        	limit = {
-				        		NOT = {
-				        			ROOT = {
-				        				has_country_flag = HUN_revolutinaries_sliced_some_salami_flag
-				        			}
-				        		}
-				        	}
-				        	PREV.PREV = {
+							limit = {
+								NOT = {
+									ROOT = {
+										has_country_flag = HUN_revolutinaries_sliced_some_salami_flag
+									}
+								}
+							}
+							PREV.PREV = {
 
-				        		delete_unit_template_and_units = {
-				        			division_template = "Horthysta Gyalogdándar"
-				        			disband = yes #if yes, will refund equipment/manpower.
-				        		}
+								delete_unit_template_and_units = {
+									division_template = "Horthysta Gyalogdándar"
+									disband = yes #if yes, will refund equipment/manpower.
+								}
 
-				        		division_template = {
-				        		    name = "Horthysta Gyalogdándar"
-				        		    is_locked = yes
-				        		    division_names_group = HUN_INF_01
+								division_template = {
+									name = "Horthysta Gyalogdándar"
+									is_locked = yes
+									division_names_group = HUN_INF_01
 									role = infantry
-				        		    priority = 0
-				        		    regiments = {
-				        		        infantry = { x = 0 y = 0 }
-				        		        infantry = { x = 0 y = 1 }
-				        		        infantry = { x = 0 y = 2 }
-				        		        infantry = { x = 0 y = 3 }
-				        		        infantry = { x = 1 y = 0 }
-				        		        infantry = { x = 1 y = 1 }
-				        		    }
-				        		    support = {
-				        		    	engineer = { x = 0 y = 0 }
-				        		    	artillery = { x = 0 y = 1 }
-				        		    }
-				        		}
-				        		random_state = {
-				        			limit = {
-				        				state = 43
-				        			}
-				        			create_unit = {
-				        			    division = "name = \"Horthysta Gyalogdándar\" division_template = \"Horthysta Gyalogdándar\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
-				        			    owner = PREV
-				        			}
-				        		}
-				        	}
+									priority = 0
+									regiments = {
+										infantry = { x = 0 y = 0 }
+										infantry = { x = 0 y = 1 }
+										infantry = { x = 0 y = 2 }
+										infantry = { x = 0 y = 3 }
+										infantry = { x = 1 y = 0 }
+										infantry = { x = 1 y = 1 }
+									}
+									support = {
+										engineer = { x = 0 y = 0 }
+										artillery = { x = 0 y = 1 }
+									}
+								}
+								random_state = {
+									limit = {
+										state = 43
+									}
+									create_unit = {
+										division = "name = \"Horthysta Gyalogdándar\" division_template = \"Horthysta Gyalogdándar\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
+										owner = PREV
+									}
+								}
+							}
 				        }
 
 				        PREV.PREV = {
 
-				        	delete_unit_template_and_units = {
-				        		division_template = "Fasiszta Milícia"
-				        		disband = yes #if yes, will refund equipment/manpower.
-				        	}
+							delete_unit_template_and_units = {
+								division_template = "Fasiszta Milícia"
+								disband = yes #if yes, will refund equipment/manpower.
+							}
 
-				        	division_template = {
-				        	    name = "Fasiszta Milícia"
-				        	    is_locked = yes
-				        	    division_names_group = HUN_INF_01
+							division_template = {
+								name = "Fasiszta Milícia"
+								is_locked = yes
+								division_names_group = HUN_INF_01
 								role = garrison
-				        	    priority = 0
-				        	    regiments = {
-				        	        militia = { x = 0 y = 0 }
-				        	        militia = { x = 0 y = 1 }
-				        	        militia = { x = 0 y = 2 }
-				        	        militia = { x = 0 y = 3 }
-				        	        militia = { x = 1 y = 0 }
-				        	        militia = { x = 1 y = 1 }
-				        	        militia = { x = 1 y = 2 }
-				        	        militia = { x = 1 y = 3 }
-				        	    }
-				        	}
-				        	random_state = {
-				        		limit = {
-				        			state = 43
-				        		}
-				        		create_unit = {
-				        		    division = "name = \"Fasiszta Milícia\" division_template = \"Fasiszta Milícia\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				        		    owner = PREV
-				        		}
-				        	}
+								priority = 0
+								regiments = {
+									militia = { x = 0 y = 0 }
+									militia = { x = 0 y = 1 }
+									militia = { x = 0 y = 2 }
+									militia = { x = 0 y = 3 }
+									militia = { x = 1 y = 0 }
+									militia = { x = 1 y = 1 }
+									militia = { x = 1 y = 2 }
+									militia = { x = 1 y = 3 }
+								}
+							}
+							random_state = {
+								limit = {
+									state = 43
+								}
+								create_unit = {
+									division = "name = \"Fasiszta Milícia\" division_template = \"Fasiszta Milícia\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+									owner = PREV
+								}
+							}
 
-				        	delete_unit_template_and_units = {
-				        		division_template = "Monarchista Milícia"
-				        		disband = yes #if yes, will refund equipment/manpower.
-				        	}
+							delete_unit_template_and_units = {
+								division_template = "Monarchista Milícia"
+								disband = yes #if yes, will refund equipment/manpower.
+							}
 
-				        	division_template = {
-				        	    name = "Monarchista Milícia"
-				        	    is_locked = yes
-				        	    division_names_group = HUN_INF_01
+							division_template = {
+								name = "Monarchista Milícia"
+								is_locked = yes
+								division_names_group = HUN_INF_01
 								role = garrison
-				        	    priority = 0
-				        	    regiments = {
-				        	        militia = { x = 0 y = 0 }
-				        	        militia = { x = 0 y = 1 }
-				        	        militia = { x = 0 y = 2 }
-				        	        militia = { x = 0 y = 3 }
-				        	        militia = { x = 1 y = 0 }
-				        	        militia = { x = 1 y = 1 }
-				        	        militia = { x = 1 y = 2 }
-				        	        militia = { x = 1 y = 3 }
-				        	    }
-				        	}
-				        	random_state = {
-				        		limit = {
-				        			state = 43
-				        		}
-				        		create_unit = {
-				        		    division = "name = \"Monarchista Milícia\" division_template = \"Monarchista Milícia\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
-				        		    owner = PREV
-				        		}
-				        	}
+								priority = 0
+								regiments = {
+									militia = { x = 0 y = 0 }
+									militia = { x = 0 y = 1 }
+									militia = { x = 0 y = 2 }
+									militia = { x = 0 y = 3 }
+									militia = { x = 1 y = 0 }
+									militia = { x = 1 y = 1 }
+									militia = { x = 1 y = 2 }
+									militia = { x = 1 y = 3 }
+								}
+							}
+							random_state = {
+								limit = {
+									state = 43
+								}
+								create_unit = {
+									division = "name = \"Monarchista Milícia\" division_template = \"Monarchista Milícia\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+									owner = PREV
+								}
+							}
 				        }
 
 				        IF = {
-				        	limit = {
-				        		ROOT = {
-				        			NOT = {
-				        				has_country_flag = HUN_revolutinaries_secured_levente_loyalty_flag
-				        			}
-				        			has_idea = HUN_levente_associations
-				        		}
-				        	}
-				        	PREV.PREV = {
-				        		add_ideas = HUN_levente_associations
-				        	}
-				        	ROOT = {
-				        		remove_ideas = HUN_levente_associations
-				        	}
+							limit = {
+								ROOT = {
+									NOT = {
+										has_country_flag = HUN_revolutinaries_secured_levente_loyalty_flag
+									}
+									has_idea = HUN_levente_associations
+								}
+							}
+							PREV.PREV = {
+								add_ideas = HUN_levente_associations
+							}
+							ROOT = {
+								remove_ideas = HUN_levente_associations
+							}
 				        }
 				        ELSE_IF = {
-				        	limit = {
-				        		ROOT = {
-				        			NOT = {
-				        				has_country_flag = HUN_revolutinaries_secured_levente_loyalty_flag
-				        			}
-				        			has_idea = HUN_levente_associations_secret_rearmament
-				        		}
-				        	}
-				        	PREV.PREV = {
-				        		add_ideas = HUN_levente_associations_secret_rearmament
-				        	}
-				        	ROOT = {
-				        		remove_ideas = HUN_levente_associations_secret_rearmament
-				        	}
+							limit = {
+								ROOT = {
+									NOT = {
+										has_country_flag = HUN_revolutinaries_secured_levente_loyalty_flag
+									}
+									has_idea = HUN_levente_associations_secret_rearmament
+								}
+							}
+							PREV.PREV = {
+								add_ideas = HUN_levente_associations_secret_rearmament
+							}
+							ROOT = {
+								remove_ideas = HUN_levente_associations_secret_rearmament
+							}
 				        }
 				        ELSE_IF = {
-				        	limit = {
-				        		ROOT = {
-				        			has_country_flag = HUN_revolutinaries_secured_levente_loyalty_flag
-				        			has_idea = HUN_levente_associations
-				        		}
-				        	}
-				        	PREV.PREV = {
-				        		remove_ideas = HUN_levente_associations
-				        	}
+							limit = {
+								ROOT = {
+									has_country_flag = HUN_revolutinaries_secured_levente_loyalty_flag
+									has_idea = HUN_levente_associations
+								}
+							}
+							PREV.PREV = {
+								remove_ideas = HUN_levente_associations
+							}
 				        }
 				        ELSE_IF = {
-				        	limit = {
-				        		ROOT = {
-				        			has_country_flag = HUN_revolutinaries_secured_levente_loyalty_flag
-				        			has_idea = HUN_levente_associations_secret_rearmament
-				        		}
-				        	}
-				        	PREV.PREV = {
-				        		remove_ideas = HUN_levente_associations_secret_rearmament
-				        	}
+							limit = {
+								ROOT = {
+									has_country_flag = HUN_revolutinaries_secured_levente_loyalty_flag
+									has_idea = HUN_levente_associations_secret_rearmament
+								}
+							}
+							PREV.PREV = {
+								remove_ideas = HUN_levente_associations_secret_rearmament
+							}
 				        }
 
 				        PREV.PREV = {
-				        	add_ideas = HUN_hungarian_national_defense_association
+							add_ideas = HUN_hungarian_national_defense_association
 				        }
 
 				        IF = {
-				        	limit = {
-				        		ROOT = {
-				        			is_ai = yes 
-				        		}
-				        	}
-				        	PREV.PREV = {
-				        		add_ideas = HUN_low_popular_support
-				        	}
+							limit = {
+								ROOT = {
+									is_ai = yes
+								}
+							}
+							PREV.PREV = {
+								add_ideas = HUN_low_popular_support
+							}
 				        }
 
 
@@ -12094,7 +12094,7 @@ focus_tree = {
 		id = wuw_HUN_officialize_the_rakosi_battalion
 		icon = GFX_focus_HUN_officialize_the_rakosi_battalion
 		prerequisite = { focus = wuw_HUN_reviving_the_spirit_of_1848 }
-		
+
 		x = 2
 		y = 1
 		relative_position_id = wuw_HUN_reviving_the_spirit_of_1848
@@ -12505,7 +12505,7 @@ focus_tree = {
 		}
 
 		available = {
- 			has_government = democratic
+			has_government = democratic
 		}
 
 		bypass = {
@@ -12542,15 +12542,15 @@ focus_tree = {
 			custom_effect_tooltip = {
 				localization_key = available_scientist_one_line_tt
 				CHARACTER = HUN_edward_teller
-			}	
+			}
 			custom_effect_tooltip = {
 				localization_key = available_scientist_one_line_tt
 				CHARACTER = HUN_john_von_neumann
-			}	
+			}
 			custom_effect_tooltip = {
 				localization_key = available_scientist_one_line_tt
 				CHARACTER = HUN_leo_szilard
-			}	
+			}
 
 		}
 	}
@@ -12603,7 +12603,7 @@ focus_tree = {
 		id = wuw_HUN_uplift_the_dragon_movement
 		icon = GFX_focus_HUN_uplift_the_dragon_movement
 		prerequisite = { focus = wuw_HUN_the_spirit_of_the_aster_revolution focus = wuw_HUN_reverse_the_brain_drain }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = wuw_HUN_the_spirit_of_the_aster_revolution
@@ -12734,7 +12734,7 @@ focus_tree = {
 				can_create_factions = yes
 			}
 			create_faction_from_template = {
-				template = faction_template_balkan_pact 
+				template = faction_template_balkan_pact
 				name = AUS_danubian_federation
 			}
 
@@ -13022,33 +13022,33 @@ focus_tree = {
 					    division = "name = \"Rongyos Gárda 'Lajtabánság'\" division_template = \"Rongyos Gárda\" start_experience_factor = 0.4 start_equipment_factor = 0.6"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_miklos_kozma
-					    	portraits = {
-					    		army = {
-					    			large = GFX_portrait_HUN_miklos_kozma
-					    			small = GFX_portrait_HUN_miklos_kozma_small
-					    		}
-					    	}
+							name = HUN_miklos_kozma
+							portraits = {
+								army = {
+									large = GFX_portrait_HUN_miklos_kozma
+									small = GFX_portrait_HUN_miklos_kozma_small
+								}
+							}
 					    }
 					}
 					create_unit = {
 					    division = "name = \"Rongyos Gárda 'Sopron'\" division_template = \"Rongyos Gárda\" start_experience_factor = 0.3 start_equipment_factor = 0.8"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_ivan_hejjas
-					    	portraits = {
-					    		army = {
-					    			large = GFX_portrait_HUN_ivan_hejjas
-					    			small = GFX_portrait_HUN_ivan_hejjas_small
-					    		}
-					    	}
+							name = HUN_ivan_hejjas
+							portraits = {
+								army = {
+									large = GFX_portrait_HUN_ivan_hejjas
+									small = GFX_portrait_HUN_ivan_hejjas_small
+								}
+							}
 					    }
 					}
 					create_unit = {
 					    division = "name = \"Rongyos Gárda 'Komárno'\" division_template = \"Rongyos Gárda\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_huszein_durics_hilmi
+							name = HUN_huszein_durics_hilmi
 					    }
 					}
 				}
@@ -13997,7 +13997,7 @@ focus_tree = {
 		icon = GFX_focus_HUN_reinstate_the_lenin_boys
 		prerequisite = { focus = wuw_HUN_restore_the_hungarian_red_army }
 		prerequisite = { focus = wuw_HUN_restore_the_socialist_federative_republic }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = wuw_HUN_restore_the_hungarian_red_army
@@ -14070,14 +14070,14 @@ focus_tree = {
 					    division = "name = \"Lenin-fiúk 'József Cserny'\" division_template = \"Lenin-fiúk\" start_experience_factor = 0.4 start_equipment_factor = 0.9"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_bela_lowinger
+							name = HUN_bela_lowinger
 					    }
 					}
 					create_unit = {
 					    division = "name = \"Lenin-fiúk 'Tibor Szamuely'\" division_template = \"Lenin-fiúk\" start_experience_factor = 0.3 start_equipment_factor = 0.8"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_vladimir_urasov
+							name = HUN_vladimir_urasov
 					    }
 					}
 				}
@@ -14748,7 +14748,7 @@ focus_tree = {
 		id = HUN_hero_of_the_revolution
 		icon = GFX_focus_GER_the_peoples_victory
 		prerequisite = { focus = wuw_HUN_a_revolutionary_greater_hungary }
-		
+
 		x = -1
 		y = 1
 		relative_position_id = wuw_HUN_a_revolutionary_greater_hungary
@@ -14789,7 +14789,7 @@ focus_tree = {
 		id = HUN_balkan_ambitions
 		icon = GFX_focus_BUL_free_balkan_states
 		prerequisite = { focus = wuw_HUN_a_revolutionary_greater_hungary }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = wuw_HUN_a_revolutionary_greater_hungary
@@ -14876,7 +14876,7 @@ focus_tree = {
 						type = annex_everything
 						target = PREV
 						expire = 0
-					}	
+					}
 				}
 			}
 
@@ -17126,10 +17126,10 @@ focus_tree = {
 						type = industrial_complex
 						level = 2
 						instant_build = yes
-					}				
+					}
 					add_resource = {
 						type = coal
-						amount = 8 
+						amount = 8
 					}
 				}
 			}
@@ -17888,7 +17888,7 @@ focus_tree = {
 			custom_effect_tooltip = {
 				localization_key = available_scientist_one_line_tt
 				CHARACTER = HUN_laszlo_varga
-			}	
+			}
 
 		}
 	}
@@ -18392,20 +18392,20 @@ focus_tree = {
 						    division = "name = \"Első Gyorshadtest\" division_template = \"Gyorshadtest\" start_experience_factor = 0.8 start_equipment_factor = 1"
 						    owner = ROOT
 						    officer = {
-						    	name = HUN_jeno_major
-						    	portraits = {
-						    		army = {
-						    			large = GFX_portrait_HUN_jeno_major
-						    			small = GFX_portrait_HUN_jeno_major_small
-						    		}
-						    	}
+								name = HUN_jeno_major
+								portraits = {
+									army = {
+										large = GFX_portrait_HUN_jeno_major
+										small = GFX_portrait_HUN_jeno_major_small
+									}
+								}
 						    }
 						}
 						create_unit = {
 						    division = "name = \"Második Gyorshadtest\" division_template = \"Gyorshadtest\" start_experience_factor = 0.8 start_equipment_factor = 1"
 						    owner = ROOT
 						    officer = {
-						    	name = HUN_ferenc_bisza
+								name = HUN_ferenc_bisza
 						    }
 						}
 					}
@@ -18452,20 +18452,20 @@ focus_tree = {
 						    division = "name = \"Első Gyorshadtest\" division_template = \"Gyorshadtest\" start_experience_factor = 0.8 start_equipment_factor = 1"
 						    owner = ROOT
 						    officer = {
-						    	name = HUN_jeno_major
-						    	portraits = {
-						    		army = {
-						    			large = GFX_portrait_HUN_jeno_major
-						    			small = GFX_portrait_HUN_jeno_major_small
-						    		}
-						    	}
+								name = HUN_jeno_major
+								portraits = {
+									army = {
+										large = GFX_portrait_HUN_jeno_major
+										small = GFX_portrait_HUN_jeno_major_small
+									}
+								}
 						    }
 						}
 						create_unit = {
 						    division = "name = \"Második Gyorshadtest\" division_template = \"Gyorshadtest\" start_experience_factor = 0.8 start_equipment_factor = 1"
 						    owner = ROOT
 						    officer = {
-						    	name = HUN_ferenc_bisza
+								name = HUN_ferenc_bisza
 						    }
 						}
 					}
@@ -18796,7 +18796,7 @@ focus_tree = {
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
 
-		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
 						}
@@ -18818,7 +18818,7 @@ focus_tree = {
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
 
-			    	   		 	infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
 							}
@@ -18931,13 +18931,13 @@ focus_tree = {
 					    division = "name = \"Szent László Hadosztály\" division_template = \"Szent László Hadosztály\" start_experience_factor = 0.6 start_equipment_factor = 1"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_zoltan_zsugyi
-					    	portraits = {
-					    		army = {
-					    			large = GFX_portrait_HUN_zoltan_szugyi
-					    			small = GFX_portrait_HUN_zoltan_szugyi_small
-					    		}
-					    	}
+							name = HUN_zoltan_zsugyi
+							portraits = {
+								army = {
+									large = GFX_portrait_HUN_zoltan_szugyi
+									small = GFX_portrait_HUN_zoltan_szugyi_small
+								}
+							}
 					    }
 					}
 				}
@@ -19643,7 +19643,7 @@ focus_tree = {
 						}
 					}
 				}
-						
+
 				IF = {
 					limit = {
 						73 = {
@@ -19663,9 +19663,9 @@ focus_tree = {
 						    province = 9563
 						}
 					}
-					
+
 				}
-					
+
 				IF = {
 					limit = {
 						73 = {
@@ -19686,7 +19686,7 @@ focus_tree = {
 						}
 					}
 				}
-					
+
 				IF = {
 					limit = {
 						76 = {
@@ -19707,7 +19707,7 @@ focus_tree = {
 						}
 					}
 				}
-					
+
 				IF = {
 					limit = {
 						76 = {
@@ -19728,7 +19728,7 @@ focus_tree = {
 						}
 					}
 				}
-					
+
 				IF = {
 					limit = {
 						76 = {
@@ -19749,7 +19749,7 @@ focus_tree = {
 						}
 					}
 				}
-					
+
 				IF = {
 					limit = {
 						76 = {
@@ -19770,7 +19770,7 @@ focus_tree = {
 						}
 					}
 				}
-					
+
 				IF = {
 					limit = {
 						76 = {
@@ -19791,7 +19791,7 @@ focus_tree = {
 						}
 					}
 				}
-			
+
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -19954,7 +19954,7 @@ focus_tree = {
 						}
 					}
 				}
-				
+
 			}
 		}
 
@@ -19986,7 +19986,7 @@ focus_tree = {
 						    province = 11536
 						}
 					}
-				}				
+				}
 
 				IF = {
 					limit = {
@@ -20008,7 +20008,7 @@ focus_tree = {
 						}
 					}
 				}
-				
+
 				IF = {
 					limit = {
 						73 = {
@@ -20029,7 +20029,7 @@ focus_tree = {
 						}
 					}
 				}
-				
+
 				IF = {
 					limit = {
 						76 = {
@@ -20050,14 +20050,14 @@ focus_tree = {
 						}
 					}
 				}
-				
+
 				IF = {
 					limit = {
 						76 = {
 							free_building_slots = {
 								building = bunker
 								size < 1
-								province = 727 
+								province = 727
 							}
 						}
 					}
@@ -20071,7 +20071,7 @@ focus_tree = {
 						}
 					}
 				}
-				
+
 				IF = {
 					limit = {
 						76 = {
@@ -20091,7 +20091,7 @@ focus_tree = {
 						}
 					}
 				}
-				
+
 				IF = {
 					limit = {
 						76 = {
@@ -20343,14 +20343,14 @@ focus_tree = {
 					    division = "name = \"First Székel Command\" division_template = \"Székel Command Group\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_istvan_kozma
+							name = HUN_istvan_kozma
 					    }
 					}
 					create_unit = {
 					    division = "name = \"Second Székel Command\" division_template = \"Székel Command Group\" start_experience_factor = 0.6 start_equipment_factor = 0.6"
 					    owner = ROOT
 					    officer = {
-					    	name = HUN_ferenc_horvath
+							name = HUN_ferenc_horvath
 					    }
 					}
 				}
@@ -20535,7 +20535,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 15
-			
+
 			add_mastery_bonus = {
 				name = wuw_HUN_a_reformed_navy
 				bonus = 0.15
@@ -20911,7 +20911,7 @@ create_equipment_variant = {
 					}
 					}
 				}
-			
+
 			if = {
 				limit = {
 						NOT = {

@@ -48,7 +48,7 @@ recruit_character = LAT_fricis_menders
 recruit_character = LAT_alberts_kvesis
 recruit_character = LAT_karlis_ulmanis
 
-IF = { 
+IF = {
 	limit = { has_dlc = "No Step Back" }
 	recruit_character = LAT_janis_balodis
 	recruit_character = LAT_janis_sudrabkalns

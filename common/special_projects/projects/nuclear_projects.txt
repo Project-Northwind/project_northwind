@@ -1,23 +1,23 @@
 sp_nuclear_reactor = {
-	specialization = specialization_nuclear	
+	specialization = specialization_nuclear
 	icon = GFX_sp_nuclear_reactor
-	complexity = sp_complexity.large 
+	complexity = sp_complexity.large
 
 	project_tags = sp_tag_nuclear_power
 
 	allowed = {
-		
+
 	}
-	available = { 
+	available = {
 		FROM = { has_tech = atomic_research }
 	}
-	
+
 	resource_cost = {
 		resources = { steel=6 tungsten=3 chromium=6 }
 	}
 
-	prototype_time = sp_time.prototype.long	
-	
+	prototype_time = sp_time.prototype.long
+
 	project_output = {
 		country_effects = {
 			custom_override_tooltip = {
@@ -84,7 +84,7 @@ sp_nuclear_reactor = {
 		sp_nuclear_design_choice_reward = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 25
 				max = 45
 			}
@@ -95,7 +95,7 @@ sp_nuclear_reactor = {
 
 			option = {
 				token = sp_nuclear_design_choice_reward_graphite
-				
+
 				iteration_output = {
 					country_effects = {
 						custom_effect_tooltip = {
@@ -108,7 +108,7 @@ sp_nuclear_reactor = {
 
 			option = {
 				token = sp_nuclear_design_choice_reward_heavy_water
-				
+
 				iteration_output = {
 					country_effects = {
 						custom_effect_tooltip = {
@@ -124,7 +124,7 @@ sp_nuclear_reactor = {
 		sp_nuclear_isotope_separation_choice_reward = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 0
 				max = 20
 			}
@@ -135,7 +135,7 @@ sp_nuclear_reactor = {
 
 			option = {
 				token = sp_nuclear_isotope_separation_choice_reward_gaseous
-				
+
 				iteration_output = {
 					country_effects = {
 						#Do nothing, this is the default option
@@ -145,7 +145,7 @@ sp_nuclear_reactor = {
 
 			option = {
 				token = sp_nuclear_isotope_separation_choice_reward_centrifugal
-				
+
 				iteration_output = {
 					country_effects = {
 						hidden_effect = {
@@ -169,7 +169,7 @@ sp_nuclear_reactor = {
 		sp_nuclear_reactor_tested_reward = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 60
 				max = 90
 			}
@@ -196,7 +196,7 @@ sp_nuclear_reactor = {
 
 			option = {
 				token = sp_nuclear_reactor_tested_reward_public
-				
+
 				iteration_output = {
 					country_effects = {
 						set_global_flag = nuclear_reactor_tested_flag
@@ -238,8 +238,8 @@ sp_nuclear_reactor = {
 
 		sp_nuclear_major_breakthrough_reward = {
 			fire_only_once = yes
-			
-			threshold = { 
+
+			threshold = {
 				min = 10
 				max = 50
 			}
@@ -250,8 +250,8 @@ sp_nuclear_reactor = {
 
 			option = {
 				token = ssp_nuclear_major_breakthrough_reward_option
-				
-				
+
+
 				iteration_output = {
 					country_effects = {
 						FROM = { add_project_progress_ratio = constant:sp_progress.gain.medium }
@@ -259,19 +259,19 @@ sp_nuclear_reactor = {
 				}
 			}
 		}
-		
+
 	}
 }
 
 
 # ADVANDED NUCLEAR USAGE
 sp_commercial_nuclear_reactor = {
-	specialization = specialization_nuclear	
+	specialization = specialization_nuclear
 	icon = GFX_sp_commercial_nuclear_reactor
 
 	project_tags = sp_tag_nuclear_power
-	
-	prototype_time = sp_time.prototype.long	 
+
+	prototype_time = sp_time.prototype.long
 	complexity = sp_complexity.large
 
 	special_project_parent = {
@@ -283,12 +283,12 @@ sp_commercial_nuclear_reactor = {
 	allowed = {
 		has_dlc = "Gotterdammerung"
 	}
-	available = { 
+	available = {
 		FROM = {
 			has_tech = construction4
 		}
 	}
-	
+
 	project_output = {
 		country_effects = {
 			custom_override_tooltip = {
@@ -331,14 +331,14 @@ sp_commercial_nuclear_reactor = {
 					set_building_level = {
 						type = commercial_nuclear_reactor
 						level = 1
-					}	
+					}
 				}
 				ELSE_IF = {
-					limit = { 
+					limit = {
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
-							include_locked = yes 
+							include_locked = yes
 						}
 					}
 					set_building_level = {
@@ -349,7 +349,7 @@ sp_commercial_nuclear_reactor = {
 			}
 		}
 	}
-	
+
 	empty_reward_weight = {
 		base = 0.5
 	}
@@ -362,12 +362,12 @@ sp_commercial_nuclear_reactor = {
 		sp_nuclear_reactor_radioactive_leak_stabilized_reward
 		sp_nuclear_reactor_minor_explosion_reward
 	}
-	
+
 	unique_prototype_rewards = {
 		sp_commercial_nuclear_reactor_concerns_reward = {
 			fire_only_once = yes
-			
-			threshold = { 
+
+			threshold = {
 				min = 30
 				max = 90
 			}
@@ -403,7 +403,7 @@ sp_commercial_nuclear_reactor = {
 				}
 			}
 		}
-		
+
 	}
 }
 
@@ -411,12 +411,12 @@ sp_commercial_nuclear_reactor = {
 
 # ATOMIC BOMBS
 sp_nuclear_bomb = {
-	specialization = specialization_nuclear	
+	specialization = specialization_nuclear
 	icon = GFX_sp_nuclear_bomb
 
 	project_tags = sp_tag_nuclear_warfare
-	
-	prototype_time = sp_time.prototype.long	
+
+	prototype_time = sp_time.prototype.long
 	complexity = sp_complexity.large
 	resource_cost = {
 		resources = { steel=2 tungsten=8 chromium=2 }
@@ -425,12 +425,12 @@ sp_nuclear_bomb = {
 		sp_nuclear_reactor
 	}
 	allowed = {
-		
+
 	}
-	available = { 
-		
+	available = {
+
 	}
-	
+
 	project_output = {
 		country_effects = {
 			add_nuclear_bombs = 1
@@ -446,9 +446,9 @@ sp_nuclear_bomb = {
 		scientist_effects = { #The limit to only apply the effect if is_character = USA_robert_oppenheimer throws error and doesn't work.
 			set_character_flag = USA_oppenheimer_made_the_nuke_flag
 		}
-		
+
 	}
-	
+
 	empty_reward_weight = {
 		base = 0.5
 	}
@@ -464,13 +464,13 @@ sp_nuclear_bomb = {
 		sp_nuclear_bomb_critical_mass_generic_reward
 		sp_nuclear_bomb_accident_generic_reward
 	}
-	
+
 	unique_prototype_rewards = {
-	
+
 		sp_nuclear_bomb_test_prototype_reward = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 70
 				max = 84
 			}
@@ -478,10 +478,10 @@ sp_nuclear_bomb = {
 			weight = {
 				base = 100
 			}
-			
+
 			option = {
 				token = sp_nuclear_bomb_test_prototype_reward_test_bomb
-				
+
 				iteration_output = {
 					country_effects = {
 						FROM = { add_project_progress_ratio = constant:sp_progress.gain.medium }
@@ -491,7 +491,7 @@ sp_nuclear_bomb = {
 
 			option = {
 				token = sp_nuclear_bomb_test_prototype_reward_keep_bomb
-				
+
 				iteration_output = {
 					country_effects = {
 						add_nuclear_bombs = 1
@@ -503,7 +503,7 @@ sp_nuclear_bomb = {
 		sp_nuclear_bomb_espionage_threats_reward = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 0
 				max = 80
 			}
@@ -511,18 +511,18 @@ sp_nuclear_bomb = {
 			weight = {
 				base = 1
 				modifier = {
-					factor = 10 
+					factor = 10
 					FROM = {
-						has_war = yes 
+						has_war = yes
 					}
 				}
 			}
-			
+
 			option = {
 				token = sp_nuclear_bomb_espionage_threats_reward_no
-				
+
 				iteration_output = {
-					country_effects = { 
+					country_effects = {
 						set_country_flag = nuclear_bomb_low_security_flag
 					}
 					scientist_effects = {
@@ -536,7 +536,7 @@ sp_nuclear_bomb = {
 
 			option = {
 				token = sp_nuclear_bomb_espionage_threats_reward_increase_security
-				
+
 				iteration_output = {
 					country_effects = {
 						set_country_flag = nuclear_bomb_high_security_flag
@@ -550,7 +550,7 @@ sp_nuclear_bomb = {
 		sp_nuclear_bomb_information_leak_reward = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 30
 				max = 100
 			}
@@ -573,12 +573,12 @@ sp_nuclear_bomb = {
 					factor = 0.5
 					FROM = { has_country_flag = nuclear_bomb_high_security_flag }
 				}
-				
+
 			}
-			
+
 			option = {
 				token = sp_nuclear_bomb_information_leak_reward_option
-				
+
 				iteration_output = {
 					country_effects = {
 						random_enemy_country = {
@@ -589,8 +589,8 @@ sp_nuclear_bomb = {
 							hidden_effect = {
 								country_event = {
 									id = sp_nuclear_project_events.1
-									hours = 8 
-									random_hours = 4 
+									hours = 8
+									random_hours = 4
 								}
 							}
 						}
@@ -601,7 +601,7 @@ sp_nuclear_bomb = {
 		sp_nuclear_bomb_breakthrough_plutonium_reward = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 20
 				max = 60
 			}
@@ -613,27 +613,27 @@ sp_nuclear_bomb = {
 					FROM = { has_country_flag = nuclear_bomb_high_security_flag }
 				}
 			}
-			
+
 			option = {
 				token = sp_nuclear_bomb_breakthrough_plutonium_reward_option
-				
+
 				iteration_output = {
 					country_effects = {
 						FROM = { add_project_progress_ratio = constant:sp_progress.gain.low }
 					}
 				}
 			}
-		}		
+		}
 	}
 }
 
 sp_thermo_nuclear_bomb = {
-	specialization = specialization_nuclear	
+	specialization = specialization_nuclear
 	icon = GFX_sp_thermo_nuclear_bomb
 
 	project_tags = sp_tag_nuclear_warfare
-	
-	prototype_time = sp_time.prototype.long 
+
+	prototype_time = sp_time.prototype.long
 	complexity = sp_complexity.insane
 
 	resource_cost = {
@@ -646,10 +646,10 @@ sp_thermo_nuclear_bomb = {
 	allowed = {
 		has_dlc = "Gotterdammerung"
 	}
-	available = { 
-		
+	available = {
+
 	}
-	
+
 	project_output = {
 		country_effects = {
 			custom_effect_tooltip = sp_thermo_nuclear_bomb_tt
@@ -661,7 +661,7 @@ sp_thermo_nuclear_bomb = {
 			}
 		}
 	}
-	
+
 	empty_reward_weight = {
 		base = 0.5
 	}
@@ -677,12 +677,12 @@ sp_thermo_nuclear_bomb = {
 		sp_nuclear_bomb_critical_mass_generic_reward
 		sp_nuclear_bomb_accident_generic_reward
 	}
-	
+
 	unique_prototype_rewards = {
 		sp_thermonuclear_bomb_test_reward = {
 			fire_only_once = yes
 
-			threshold = { 
+			threshold = {
 				min = 50
 				max = 80
 			}
@@ -698,7 +698,7 @@ sp_thermo_nuclear_bomb = {
 			}
 			option = {
 				token = sp_thermonuclear_bomb_test_reward_option_no
-				
+
 				iteration_output = {
 					country_effects = {
 					}
@@ -706,7 +706,7 @@ sp_thermo_nuclear_bomb = {
 			}
 			option = {
 				token = sp_thermonuclear_bomb_test_reward_option_yes
-				
+
 				iteration_output = {
 					country_effects = {
 						IF = {
@@ -720,7 +720,7 @@ sp_thermo_nuclear_bomb = {
 						ELSE = {
 							custom_effect_tooltip = "sp_no_nukes_available_tt"
 						}
-						
+
 					}
 				}
 			}
@@ -729,12 +729,12 @@ sp_thermo_nuclear_bomb = {
 }
 
 sp_nuclear_warheads = {
-	specialization = specialization_nuclear	
+	specialization = specialization_nuclear
 	icon = GFX_sp_nuclear_warheads
 
 	project_tags = sp_tag_nuclear_warfare
-	
-	prototype_time = sp_time.prototype.long	 
+
+	prototype_time = sp_time.prototype.long
 	complexity = sp_complexity.large
 
 	resource_cost = {
@@ -751,16 +751,16 @@ sp_nuclear_warheads = {
 	}
 	available = {
 	}
-	
+
 	project_output = {
 		country_effects = {
-			
+
 		}
 		enable_equipments = {
 			nuclear_missile_equipment_1
 		}
 	}
-	
+
 	empty_reward_weight = {
 		base = 0.5
 	}
@@ -776,20 +776,20 @@ sp_nuclear_warheads = {
 		sp_nuclear_bomb_critical_mass_generic_reward
 		sp_nuclear_bomb_accident_generic_reward
 	}
-	
+
 	unique_prototype_rewards = {
-		
+
 	}
 }
 
 
 sp_nuclear_engines = {
-	specialization = specialization_nuclear	
+	specialization = specialization_nuclear
 	icon = GFX_sp_nuclear_engines
 
 	project_tags = sp_tag_nuclear_power
-	
-	prototype_time = sp_time.prototype.long	 
+
+	prototype_time = sp_time.prototype.long
 	complexity = sp_complexity.medium
 
 	resource_cost = {
@@ -802,22 +802,22 @@ sp_nuclear_engines = {
 	allowed = {
 		has_dlc = "Gotterdammerung"
 	}
-	available = { 
-		
+	available = {
+
 	}
-	
+
 	project_output = {
 		country_effects = {
-			
+
 		}
 
 		enable_equipment_modules = {
-			sub_ship_nuclear_engine_1
-			heavy_ship_nuclear_engine_1
-			carrier_ship_nuclear_engine_1
+			sub_ship_engine_nuclear
+			heavy_ship_engine_nuclear
+			carrier_ship_engine_nuclear
 		}
 	}
-	
+
 	empty_reward_weight = {
 		base = 0.5
 	}
@@ -831,8 +831,8 @@ sp_nuclear_engines = {
 		sp_nuclear_reactor_radioactive_leak_stabilized_reward
 		sp_nuclear_reactor_minor_explosion_reward
 	}
-	
+
 	unique_prototype_rewards = {
-		
+
 	}
 }

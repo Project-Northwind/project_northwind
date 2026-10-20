@@ -22,6 +22,9 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "module_slots"
+			containerWindowType = { name = "fixed_ship_secondaries_slot" position = { x=0 y=0 } size = { width=100% height=100% } }
+			containerWindowType = { name = "fixed_ship_conning_tower_slot" position = { x=0 y=0 } size = { width=100% height=100% } }
+			containerWindowType = { name = "fixed_sub_periscope_slot" position = { x=0 y=0 } size = { width=100% height=100% } }
 			position = { x=0 y=0 }
 			size = { width=100% height=100% }
 
@@ -35,7 +38,7 @@ guiTypes = {
 					name = "sub_battery"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "image"
 						spriteType = "GFX_SM_submarine_hull_heavy_battery"
@@ -47,7 +50,7 @@ guiTypes = {
 					name = "sub_battery@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "highlight"
 						spriteType = "GFX_SM_submarine_hull_heavy_battery@highlight"
@@ -66,7 +69,7 @@ guiTypes = {
 					name = "ship_torpedo_sub"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_fixed_torpedo"
@@ -78,7 +81,7 @@ guiTypes = {
 					name = "ship_torpedo_sub@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_fixed_torpedo@highlight"
@@ -97,7 +100,7 @@ guiTypes = {
 					name = "sub_ship_engine"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_engine"
@@ -109,7 +112,7 @@ guiTypes = {
 					name = "sub_ship_engine@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_engine@highlight"
@@ -121,7 +124,7 @@ guiTypes = {
 					name = "sub_ship_engine_nuclear"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_engine"
@@ -133,7 +136,7 @@ guiTypes = {
 					name = "sub_ship_engine_nuclear@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_engine@highlight"
@@ -141,14 +144,14 @@ guiTypes = {
 					}
 				}
 			}
-			
+
 			################# MODULE SLOT: Pressure Hull #################
 			containerWindowType = {
 				name = "fixed_ship_armor_slot"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
 			}
-			
+
 			################# MODULE SLOT: TDC #################
 			containerWindowType = {
 				name = "fixed_ship_fire_control_system_slot"
@@ -160,7 +163,7 @@ guiTypes = {
 					name = "sub_fire_control_system"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "image"
 						spriteType = "GFX_SM_cruiser_hull_fire_control"
@@ -172,7 +175,7 @@ guiTypes = {
 					name = "sub_fire_control_system@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "highlight"
 						spriteType = "GFX_SM_cruiser_hull_fire_control@highlight"
@@ -185,7 +188,7 @@ guiTypes = {
 					name = "ship_sonar"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_sonar"
@@ -197,7 +200,7 @@ guiTypes = {
 					name = "ship_sonar@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_sonar@highlight"
@@ -217,7 +220,7 @@ guiTypes = {
 					name = "ship_radar"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_radar"
@@ -229,7 +232,7 @@ guiTypes = {
 					name = "ship_radar@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_radar@highlight"
@@ -242,7 +245,7 @@ guiTypes = {
 					name = "ship_sonar"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_sonar"
@@ -254,7 +257,7 @@ guiTypes = {
 					name = "ship_sonar@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_sonar@highlight"
@@ -262,7 +265,7 @@ guiTypes = {
 					}
 				}
 			}
-			
+
 			################# MODULE SLOT: Extra Electronics #################
 			containerWindowType = {
 				name = "fixed_ship_extra_electronics_slot"
@@ -274,7 +277,7 @@ guiTypes = {
 					name = "sub_fire_control_system"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "image"
 						spriteType = "GFX_SM_cruiser_hull_fire_control"
@@ -286,7 +289,7 @@ guiTypes = {
 					name = "sub_fire_control_system@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "highlight"
 						spriteType = "GFX_SM_cruiser_hull_fire_control@highlight"
@@ -299,7 +302,7 @@ guiTypes = {
 					name = "ship_radar"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_radar"
@@ -311,7 +314,7 @@ guiTypes = {
 					name = "ship_radar@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_radar@highlight"
@@ -324,7 +327,7 @@ guiTypes = {
 					name = "ship_sonar"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_sonar"
@@ -336,7 +339,7 @@ guiTypes = {
 					name = "ship_sonar@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_sonar@highlight"
@@ -363,7 +366,7 @@ guiTypes = {
 					name = "ship_torpedo_sub"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_front1_torpedo"
@@ -375,7 +378,7 @@ guiTypes = {
 					name = "ship_torpedo_sub@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_front1_torpedo@highlight"
@@ -388,7 +391,7 @@ guiTypes = {
 					name = "sub_airplane_launcher"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_airplane_launcher"
@@ -400,7 +403,7 @@ guiTypes = {
 					name = "sub_airplane_launcher@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_airplane_launcher@highlight"
@@ -413,7 +416,7 @@ guiTypes = {
 					name = "ship_mine_layer_sub"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_front1_mine_layer"
@@ -425,7 +428,7 @@ guiTypes = {
 					name = "ship_mine_layer_sub@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_front1_mine_layer@highlight"
@@ -438,7 +441,7 @@ guiTypes = {
 					name = "ship_extra_fuel_tank"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_fuel_tank"
@@ -450,7 +453,7 @@ guiTypes = {
 					name = "ship_extra_fuel_tank@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_fuel_tank@highlight"
@@ -470,7 +473,7 @@ guiTypes = {
 					name = "ship_sub_snorkel"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_snorkel"
@@ -482,7 +485,7 @@ guiTypes = {
 					name = "ship_sub_snorkel@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_snorkel@highlight"
@@ -503,7 +506,7 @@ guiTypes = {
 					name = "ship_torpedo_sub"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_rear1_torpedo"
@@ -515,20 +518,20 @@ guiTypes = {
 					name = "ship_torpedo_sub@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_rear1_torpedo@highlight"
 						position = { x=140 y=0 }
 					}
 				}
-				
+
 				#### MODULE: Mine Layer ####
 				containerWindowType = {
 					name = "ship_mine_layer_sub"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_rear1_mine_layer"
@@ -540,7 +543,7 @@ guiTypes = {
 					name = "ship_mine_layer_sub@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_rear1_mine_layer@highlight"
@@ -552,7 +555,7 @@ guiTypes = {
 					name = "sub_airplane_launcher"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_airplane_launcher"
@@ -564,7 +567,7 @@ guiTypes = {
 					name = "sub_airplane_launcher@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_airplane_launcher@highlight"
@@ -578,7 +581,7 @@ guiTypes = {
 					name = "ship_radar"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_radar"
@@ -590,7 +593,7 @@ guiTypes = {
 					name = "ship_radar@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_radar@highlight"
@@ -603,7 +606,7 @@ guiTypes = {
 					name = "ship_sonar"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_sonar"
@@ -615,20 +618,20 @@ guiTypes = {
 					name = "ship_sonar@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_sonar@highlight"
 						position = { x=0 y=0 }
 					}
 				}
-				
+
 				#### MODULE: Fuek Tank ####
 				containerWindowType = {
 					name = "ship_extra_fuel_tank"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint"
 						spriteType = "GFX_SM_submarine_hull_fuel_tank"
@@ -640,7 +643,7 @@ guiTypes = {
 					name = "ship_extra_fuel_tank@highlight"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
-					
+
 					iconType = {
 						name = "blueprint_highlight"
 						spriteType = "GFX_SM_submarine_hull_fuel_tank@highlight"

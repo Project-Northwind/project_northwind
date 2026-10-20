@@ -111,8 +111,8 @@ guiTypes = {
 						slotsize = { width = 70 height = 31 }
 						max_slots = { x = 7 y = 1 }
 						add_horizontal = no
-						format = "UPPER_LEFT"						  
-					}		  
+						format = "UPPER_LEFT"
+					}
 				}
 
 
@@ -1069,14 +1069,14 @@ guiTypes = {
 					name = "MIO_bg"
 					quadTextureSprite ="GFX_mini_bg"
 				}
-		
+
 			iconType = {
 				name ="MIO_icon"
 				spriteType = "GFX_industrial_manufacturer_icon"
 				position = { x= 8 y = 8 }
 				Orientation = "UPPER_LEFT"
 			}
-		
+
 			instantTextBoxType = {
 				name ="available_MIOs"
 				position = { x= 30 y = 8 }
@@ -1087,7 +1087,7 @@ guiTypes = {
 				maxHeight = 24
 				fixedsize = yes
 			}
-		}	
+		}
 
 		buttonType = {
 			name = "checkbox"
@@ -1307,14 +1307,14 @@ guiTypes = {
 					name = "MIO_bg"
 					quadTextureSprite ="GFX_mini_bg"
 				}
-		
+
 			iconType = {
 				name ="MIO_icon"
 				spriteType = "GFX_industrial_manufacturer_icon"
 				position = { x= 8 y = 8 }
 				Orientation = "UPPER_LEFT"
 			}
-		
+
 			instantTextBoxType = {
 				name ="available_MIOs"
 				position = { x= 30 y = 8 }
@@ -1325,7 +1325,7 @@ guiTypes = {
 				maxHeight = 24
 				fixedsize = yes
 			}
-		}	
+		}
 
 		buttonType = {
 			name = "checkbox"
@@ -1854,7 +1854,7 @@ guiTypes = {
 			position = { x= 195 y = 1 }
 			spriteType = "GFX_attach_manufacturer"
 			scale = 0.45
-		}		
+		}
 
 		instantTextboxType = {
 			name = "priority"
@@ -2820,7 +2820,7 @@ guiTypes = {
 			position = { x= 195 y = 1 }
 			spriteType = "GFX_attach_manufacturer"
 			scale = 0.45
-		}	
+		}
 
 		instantTextboxType = {
 			name = "priority"
@@ -4325,7 +4325,7 @@ guiTypes = {
 			clicksound = click_default
 			frame = 1
 		}
-		
+
 		iconType = {
 			name ="outdated_equipment_overlay"
 			spriteType = "GFX_outdated_naval_equipment_overlay"
@@ -4353,14 +4353,14 @@ guiTypes = {
 			quadTextureSprite ="GFX_flag_small"
 			position = { x = 342 y = 25 }
 		}
-		
+
 		iconType = {
 			name = "role_icon"
 			spriteType = "GFX_wing_types_map"
 			position = { x = 334 y = 10 }
 			alwaystransparent = yes
 		}
-		
+
 		containerWindowType = {
 			name = "missions"
 			position = { x = 67 y = 60 }
@@ -4375,7 +4375,7 @@ guiTypes = {
 				format = "LOWER_LEFT"
 			}
 		}
-		
+
 		iconType = {
 			name ="equipment_designer"
 			spriteType = "GFX_tech_idea_bg"
@@ -4577,18 +4577,18 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-		
+
 		containerWindowType = { #Currently unused, but we might put something in here eventually.
 			name = "missions"
 			position = { x = 72 y = 58 }
 			size = { width = 200 height = 20 }
 			Orientation = upper_left
-			
+
 			# background = {
 			# 	name = "Background"
 			# 	quadTextureSprite ="GFX_tiled_window_transparent"
 			# }
-			
+
 			gridboxtype = {
 				name = "mission_grid"
 				size = { width = 200 height = 20 }
@@ -4597,14 +4597,14 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 		}
-			
+
 		iconType = {
 			name ="dominance_icon"
 			spriteType = "GFX_naval_dominance_support_strip"
 			position = { x= 15 y = 40 }
 			alwaystransparent = yes
 		}
-	
+
 		instantTextboxType = {
 			name = "dominance_value"
 			position = { x = 45 y = 40 }
@@ -4614,7 +4614,7 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 		}
-		
+
 		gridBoxType = {
 			name = "resources_grid"
 			position = { x = 376 y = 8 }
@@ -4872,31 +4872,31 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 	}
-		
+
 	containerWindowType = {
 		name = "resource_strip_item"
 		position = { x=0 y=0 }
 		size = { width = 70 height = 30 }
 		clipping = no
-	
+
 		buttonType = {
 			name = "button"
 			quadTextureSprite ="resource_item_background"
 		}
-	
+
 		iconType = {
 			name = "energy_ratio_anim"
 			spriteType = "GFX_ongoing_contruction_anim"
 			position = { x = 5 y = 5 }
 		}
-	
+
 		iconType = {
 			name = "icon"
 			position = { x=4 y=2 }
 			spriteType = "GFX_resources_strip"
 			alwaystransparent = yes
 		}
-		
+
 		instantTextboxType = {
 			name = "value"
 			position = { x=35 y=7 }
@@ -4908,7 +4908,7 @@ guiTypes = {
 			format = left
 			orientation = "UPPER_LEFT"
 			alwaystransparent = yes
-		}	
-	
+		}
+
 	}
 }

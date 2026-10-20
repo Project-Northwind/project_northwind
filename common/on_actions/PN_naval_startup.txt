@@ -1,4 +1,4 @@
-# Project Northwind naval startup; also works in all-AI/observer games.
+# Northwind once-only initialization with debug-only fleet assertions.
 on_actions = {
 	on_startup = {
 		effect = {
@@ -59,6 +59,12 @@ on_actions = {
 				random_country = {
 					PN_initialize_navy = yes
 				}
+			}
+			if = {
+				limit = {
+					is_debug = yes
+				}
+				random_country = { PN_verify_starting_fleets = yes }
 			}
 		}
 	}

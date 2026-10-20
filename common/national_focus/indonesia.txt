@@ -14,7 +14,7 @@
 ### search_filters = { FOCUS_FILTER_HISTORICAL }
 ### search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 
-#      /$$$$$$ /$$   /$$ /$$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$$$  /$$$$$$  /$$$$$$  /$$$$$$ 
+#      /$$$$$$ /$$   /$$ /$$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$$$  /$$$$$$  /$$$$$$  /$$$$$$
 #     |_  $$_/| $$$ | $$| $$__  $$ /$$__  $$| $$$ | $$| $$_____/ /$$__  $$|_  $$_/ /$$__  $$
 #       | $$  | $$$$| $$| $$  \ $$| $$  \ $$| $$$$| $$| $$      | $$  \__/  | $$  | $$  \ $$
 #       | $$  | $$ $$ $$| $$  | $$| $$  | $$| $$ $$ $$| $$$$$   |  $$$$$$   | $$  | $$$$$$$$
@@ -22,14 +22,14 @@
 #       | $$  | $$\  $$$| $$  | $$| $$  | $$| $$\  $$$| $$       /$$  \ $$  | $$  | $$  | $$
 #      /$$$$$$| $$ \  $$| $$$$$$$/|  $$$$$$/| $$ \  $$| $$$$$$$$|  $$$$$$/ /$$$$$$| $$  | $$
 #     |______/|__/  \__/|_______/  \______/ |__/  \__/|________/ \______/ |______/|__/  |__/
-#                                                                                           
+#
 
 focus_tree = {
 	id = indonesia_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = INS
@@ -54,11 +54,11 @@ focus_tree = {
 
 # INTRO FOCUSES
 
-#  ___                                  ___           _               _  _     
-# |   \ ___ _ _  ___ _  _ _ _  __ ___  / __| ___  ___| |_ __ _ _ _ __| |(_)___ 
+#  ___                                  ___           _               _  _
+# |   \ ___ _ _  ___ _  _ _ _  __ ___  / __| ___  ___| |_ __ _ _ _ __| |(_)___
 # | |) / -_) ' \/ _ \ || | ' \/ _/ -_) \__ \/ _ \/ -_)  _/ _` | '_/ _` || / _ \
 # |___/\___|_||_\___/\_,_|_||_\__\___| |___/\___/\___|\__\__,_|_| \__,_|/ \___/
-#                                                                     |__/     
+#                                                                     |__/
 #
 #	# <Sukarno Shared Branch - Intro Focuses>
 
@@ -100,7 +100,7 @@ focus_tree = {
 		}
 
         allow_branch = {
-        	if = {
+			if = {
 				limit = {
 					has_game_rule = {
 						rule = obsolete_focus_branches_visibility
@@ -287,7 +287,7 @@ focus_tree = {
 			custom_effect_tooltip = INS_privately_owned_military_industry_tt
 		}
 	}
-	
+
 	focus = {
 		id = INS_instigate_chaos_sulawesi
 		icon = GFX_focus_INS_instigate_chaos_sulawesi
@@ -313,7 +313,7 @@ focus_tree = {
 			custom_effect_tooltip = newline_tt
 		}
 	}
-	
+
 	#focus = {
 	#	id = INS_embezzlement_scheme_in_batavia
 	#	icon = GFX_focus_AUS_raid_military_storages
@@ -335,7 +335,7 @@ focus_tree = {
 	#		custom_effect_tooltip = INS_embezzlement_scheme_in_batavia_tt
 	#	}
 	#}
-	
+
 	focus = {
 		id = INS_instigate_chaos_medan
 		icon = GFX_focus_INS_instigate_chaos_medan
@@ -521,7 +521,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 
         allow_branch = {
-        	if = {
+			if = {
 				limit = {
 					has_game_rule = {
 						rule = obsolete_focus_branches_visibility
@@ -733,11 +733,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = INS_add_militia_cap_1_tt
 			hidden_effect = {
-				add_to_variable = { 
+				add_to_variable = {
 					INS_militia_cap = 1
 				}
-				set_division_template_cap = { 
-					division_template = "Freedom Fighter Militia" 
+				set_division_template_cap = {
+					division_template = "Freedom Fighter Militia"
 					division_cap = INS_militia_cap
 				}
 				if = {
@@ -801,11 +801,11 @@ focus_tree = {
 			add_manpower = 10000
 			custom_effect_tooltip = INS_add_militia_cap_2_tt
 			hidden_effect = {
-				add_to_variable = { 
+				add_to_variable = {
 					INS_militia_cap = 2
 				}
-				set_division_template_cap = { 
-					division_template = "Freedom Fighter Militia" 
+				set_division_template_cap = {
+					division_template = "Freedom Fighter Militia"
 					division_cap = INS_militia_cap
 				}
 			}
@@ -853,11 +853,11 @@ focus_tree = {
 			add_manpower = 10000
 			custom_effect_tooltip = INS_add_militia_cap_2_tt
 			hidden_effect = {
-				add_to_variable = { 
+				add_to_variable = {
 					INS_militia_cap = 2
 				}
-				set_division_template_cap = { 
-					division_template = "Freedom Fighter Militia" 
+				set_division_template_cap = {
+					division_template = "Freedom Fighter Militia"
 					division_cap = INS_militia_cap
 				}
 			}
@@ -933,11 +933,11 @@ focus_tree = {
 			add_manpower = 15000
 			custom_effect_tooltip = INS_add_militia_cap_2_tt
 			hidden_effect = {
-				add_to_variable = { 
+				add_to_variable = {
 					INS_militia_cap = 2
 				}
-				set_division_template_cap = { 
-					division_template = "Freedom Fighter Militia" 
+				set_division_template_cap = {
+					division_template = "Freedom Fighter Militia"
 					division_cap = INS_militia_cap
 				}
 			}
@@ -984,11 +984,11 @@ focus_tree = {
 			add_to_variable = { var = INS_peoples_security_army_modifier_army_morale_factor value = 0.1 tooltip = army_morale_factor_tt }
 			custom_effect_tooltip = INS_add_militia_cap_2_tt
 			hidden_effect = {
-				add_to_variable = { 
+				add_to_variable = {
 					INS_militia_cap = 2
 				}
-				set_division_template_cap = { 
-					division_template = "Freedom Fighter Militia" 
+				set_division_template_cap = {
+					division_template = "Freedom Fighter Militia"
 					division_cap = INS_militia_cap
 				}
 			}
@@ -1040,11 +1040,11 @@ focus_tree = {
 			add_manpower = 10000
 			custom_effect_tooltip = INS_add_militia_cap_2_tt
 			hidden_effect = {
-				add_to_variable = { 
+				add_to_variable = {
 					INS_militia_cap = 2
 				}
-				set_division_template_cap = { 
-					division_template = "Freedom Fighter Militia" 
+				set_division_template_cap = {
+					division_template = "Freedom Fighter Militia"
 					division_cap = INS_militia_cap
 				}
 			}
@@ -1227,7 +1227,7 @@ focus_tree = {
 		relative_position_id = INS_political_stabilization
 
 		cost = 5
-		
+
 		ai_will_do = {
 			base = 0.5
 			modifier = {
@@ -1427,7 +1427,7 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = INS_increase_laskar_funding_tt
-			
+
 			for_loop_effect = {
 				end = var:INS_missions_completed
 				value = tempvar
@@ -1534,11 +1534,11 @@ focus_tree = {
 			add_stability = -0.075
 			custom_effect_tooltip = INS_add_militia_cap_3_tt
 			hidden_effect = {
-				add_to_variable = { 
+				add_to_variable = {
 					INS_militia_cap = 3
 				}
-				set_division_template_cap = { 
-					division_template = "Freedom Fighter Militia" 
+				set_division_template_cap = {
+					division_template = "Freedom Fighter Militia"
 					division_cap = INS_militia_cap
 				}
 			}
@@ -1613,25 +1613,25 @@ focus_tree = {
 				create_unit = {
 					division = "name = \"Pasukan Revolusi Murba\" division_template = \"Pasukan Revolusi Murba\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
 					owner = INS
-					allow_spawning_on_enemy_provs = no 
+					allow_spawning_on_enemy_provs = no
 					count = 1
 				}
 				create_unit = {
 					division = "name = \"Laskar Republik Sosialis\" division_template = \"Pasukan Revolusi Murba\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
 					owner = INS
-					allow_spawning_on_enemy_provs = no 
+					allow_spawning_on_enemy_provs = no
 					count = 1
 				}
 				create_unit = {
 					division = "name = \"Gerakan Revolusi Rakyat\" division_template = \"Pasukan Revolusi Murba\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
 					owner = INS
-					allow_spawning_on_enemy_provs = no 
+					allow_spawning_on_enemy_provs = no
 					count = 1
 				}
 				create_unit = {
 					division = "name = \"Laskar 100 Persen Merdeka\" division_template = \"Communist Revolutionary Division\" start_experience_factor = 0.5 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
 					owner = INS
-					allow_spawning_on_enemy_provs = no 
+					allow_spawning_on_enemy_provs = no
 					count = 1
 				}
 			}
@@ -1693,9 +1693,9 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = convoy
 				amount = 250
 			}
@@ -2062,7 +2062,7 @@ create_equipment_variant = {
 					level = 1
 					instant_build = yes
 				}
-			}	
+			}
 		}
 	}
 
@@ -2326,7 +2326,7 @@ create_equipment_variant = {
 				add_skill_level = 2
 				hidden_effect = {
 					remove_advisor_role = {
-						slot = army_chief 
+						slot = army_chief
 					}
 				}
 				add_advisor_role = {
@@ -2785,10 +2785,10 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			release_autonomy = { 
-				target = ATJ  
-				autonomy_state = autonomy_dominion 
-				freedom_level = 0.4 
+			release_autonomy = {
+				target = ATJ
+				autonomy_state = autonomy_dominion
+				freedom_level = 0.4
 				release_non_owned_controlled = no
 				force_change_controller_for_non_ally_controlled = no
 			}
@@ -3406,7 +3406,7 @@ create_equipment_variant = {
 
 				tooltip = INS_abolish_national_committee_tt
 			}
-			
+
 			if = {
 				limit = {
 					has_country_leader = {
@@ -3416,8 +3416,8 @@ create_equipment_variant = {
 				}
 				swap_ruler_traits = { remove = INS_leader_of_the_people add = INS_leader_of_the_people_2 }
 			}
-			
-		} 
+
+		}
 	}
 
 	focus = {
@@ -3449,7 +3449,7 @@ create_equipment_variant = {
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS }
 		completion_reward = {
 			add_ideas = INS_pancasila_achieved_idea
-		} 
+		}
 	}
 
 	focus = {
@@ -3516,7 +3516,7 @@ create_equipment_variant = {
 
 			custom_effect_tooltip = INS_the_co_prosperity_sphere_tt
 
-		} 
+		}
 	}
 
 	focus = {
@@ -3576,9 +3576,9 @@ create_equipment_variant = {
 					id = INS_martial_law_events.1
 					hours = 6
 				}
-				
+
 			}
-			
+
 		}
 	}
 
@@ -3669,7 +3669,7 @@ create_equipment_variant = {
 				ideology = fascism
 				popularity = 0.075
 			}
-			
+
 		}
 	}
 
@@ -3799,7 +3799,7 @@ create_equipment_variant = {
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -3844,7 +3844,7 @@ create_equipment_variant = {
 				if = { limit = { GOW = { exists = no } } release = GOW }
 				set_autonomy = { target = GOW autonomy_state = autonomy_taog_indonesian_union_state }
 			}
-			
+
 		}
 	}
 
@@ -3876,8 +3876,8 @@ create_equipment_variant = {
 							is_subject_of = ROOT
 						}
 					}
-					
-				
+
+
 					add_ideas = INS_inter_province_trade_idea
 				}
 			}
@@ -4110,9 +4110,9 @@ create_equipment_variant = {
 #		}
 #	}
 
-	
 
-	
+
+
 
 
 
@@ -4277,7 +4277,7 @@ create_equipment_variant = {
 #
 	#	search_filters = {  }
 	#	completion_reward = {
-	#		
+	#
 	#	}
 	#}
 
@@ -4337,7 +4337,7 @@ create_equipment_variant = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = INS_pacific_revolution
@@ -4471,7 +4471,7 @@ create_equipment_variant = {
 
 				has_cosmetic_tag = INS_maphilindo
 			}
-			
+
 		}
 		prerequisite = { focus = INS_the_maphilindo_speech }
 		prerequisite = { focus = INS_pan_asian_union }
@@ -4573,7 +4573,7 @@ create_equipment_variant = {
 					country_leader = {
 						ideology = stalinism
 						expire = "1965.1.1.1"
-						traits = { INS_comintern_agent } 
+						traits = { INS_comintern_agent }
 					}
 				}
 			}
@@ -4616,7 +4616,7 @@ create_equipment_variant = {
 						hours = 6
 					}
 				}
-				
+
 			}
 			else = { #get some random communist faction if the Soviets are unavailable
 				random_other_country = {
@@ -4632,7 +4632,7 @@ create_equipment_variant = {
 						id = generic.2 #generic "We want to join your alliance" event
 						hours = 6
 					}
-					
+
 				}
 			}
 
@@ -4687,7 +4687,7 @@ create_equipment_variant = {
 						hours = 6
 					}
 				}
-				
+
 			}
 			else = { #get some random democratic faction if the UK/US are unavailable
 				random_other_country = {
@@ -4703,7 +4703,7 @@ create_equipment_variant = {
 						id = generic.2 #generic "We want to join your alliance" event
 						hours = 6
 					}
-					
+
 				}
 			}
 
@@ -4726,7 +4726,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 		completion_reward = {
-			
+
 			INS_update_revolutionary_economic_cooperation = yes
 		}
 	}
@@ -4759,14 +4759,14 @@ create_equipment_variant = {
 				add = 2
 				stockpile_ratio = {
 					archetype = infantry_equipment
-					ratio < 0.7 
+					ratio < 0.7
 				}
 			}
 			modifier = {
 				add = 1
 				stockpile_ratio = {
 					archetype = infantry_equipment
-					ratio < 0.9 
+					ratio < 0.9
 				}
 			}
 			#yes its intended that these stack
@@ -4776,18 +4776,18 @@ create_equipment_variant = {
 
 		search_filters = { }
 		completion_reward = {
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000 
+				amount = 5000
 				producer = SOV
 			}
 			if = {
 				limit = {
 					has_tech = tech_support
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = support_equipment
-					amount = 400 
+					amount = 400
 					producer = SOV
 				}
 			}
@@ -4873,7 +4873,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 		completion_reward = {
-			
+
 			custom_effect_tooltip = INS_great_depression_tt
 
 			add_to_variable = { INS_great_depression_min_export = 0.25 tooltip = min_export_tt }
@@ -4909,7 +4909,7 @@ create_equipment_variant = {
 						state = 1051
 						state = 1058
 					}
-					
+
 				}
 				add_dynamic_modifier = {
 					modifier = INS_diverted_funding
@@ -5745,7 +5745,7 @@ create_equipment_variant = {
 				modifier = INS_bangka_bauxite_export
 			}
 			has_tech = excavation3
-           	custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
                tooltip = INS_bangka_bauxite_export_flag_removed_tt
                has_country_flag = {
                    flag = INS_bangka_bauxite_export_flag
@@ -6159,7 +6159,7 @@ create_equipment_variant = {
 		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP }
 
 		completion_reward = {
-			custom_effect_tooltip = INS_realign_supply_chains_explain_tt 
+			custom_effect_tooltip = INS_realign_supply_chains_explain_tt
 		}
 	}
 
@@ -6349,7 +6349,7 @@ create_equipment_variant = {
 		#prerequisite = { focus = INS_quinine_export }
 		#prerequisite = { focus = INS_invite_foreign_companies }
 		#prerequisite = { focus = INS_tin_mining }
-		
+
 		mutually_exclusive = { }
 
 		x = 1
@@ -6469,8 +6469,8 @@ create_equipment_variant = {
 						has_completed_focus = INS_underground_revolution #don't bother the player with autonomy
 					}
 				}
-				add_autonomy_score = { 
-					value = 100 
+				add_autonomy_score = {
+					value = 100
 					localization = INS_first_come_first_serve
 				}
 			}
@@ -6513,8 +6513,8 @@ create_equipment_variant = {
 				limit = {
 					is_subject = yes
 				}
-				add_autonomy_score = { 
-					value = 100 
+				add_autonomy_score = {
+					value = 100
 					localization = INS_increased_trade_with_japan
 				}
 			}
@@ -6636,7 +6636,7 @@ create_equipment_variant = {
 		icon = GFX_focus_GER_customs_union
 
 		available = {
-			
+
 		}
 		prerequisite = { focus = INS_prioritize_sugar_economy }
 		mutually_exclusive = { }
@@ -6659,11 +6659,11 @@ create_equipment_variant = {
 		}
 	}
 
-# ___           _               _  _     _      ___ _              __           ___                                     
-#/ __| ___  ___| |_ __ _ _ _ __| |(_)___( )___ | _ \ |__ _ _ _    / _|___ _ _  |   \ ___ _ __  ___  __ _ _ __ _ __ _  _ 
+# ___           _               _  _     _      ___ _              __           ___
+#/ __| ___  ___| |_ __ _ _ _ __| |(_)___( )___ | _ \ |__ _ _ _    / _|___ _ _  |   \ ___ _ __  ___  __ _ _ __ _ __ _  _
 #\__ \/ _ \/ -_)  _/ _` | '_/ _` || / _ \/(_-< |  _/ / _` | ' \  |  _/ _ \ '_| | |) / -_) '  \/ _ \/ _| '_/ _` / _| || |
 #|___/\___/\___|\__\__,_|_| \__,_|/ \___/ /__/ |_| |_\__,_|_||_| |_| \___/_|   |___/\___|_|_|_\___/\__|_| \__,_\__|\_, |
-#                               |__/                                                                               |__/ 
+#                               |__/                                                                               |__/
 #	# <Soetardjo Path - Petition>
 	focus = {
 		id = INS_the_jewel_in_the_crown
@@ -6681,7 +6681,7 @@ create_equipment_variant = {
 		}
 
         allow_branch = {
-        	if = {
+			if = {
 				limit = {
 					has_game_rule = {
 						rule = obsolete_focus_branches_visibility
@@ -7064,7 +7064,7 @@ create_equipment_variant = {
 		completion_reward = {
 			remove_advisor_role = {
 				character = INS_mohammad_hunsi_tharmin
-				slot = political_advisor 
+				slot = political_advisor
 			}
 			INS_oerip_soemohardjo = {
 				retire = yes
@@ -7172,8 +7172,8 @@ create_equipment_variant = {
 		completion_reward = {
 			custom_effect_tooltip = INS_great_depression_tt
 			add_to_variable = { var = INS_great_depression_min_export value = 0.1 tooltip = min_export_tt }
-			add_autonomy_score = { 
-				value = -150 
+			add_autonomy_score = {
+				value = -150
 				localization = INS_closer_economic_ties_to_netherlands
 			}
 		}
@@ -7185,7 +7185,7 @@ create_equipment_variant = {
 
 		available = {
 			custom_trigger_tooltip = {
-			 	tooltip = INS_tjarda_explain_tt
+				tooltip = INS_tjarda_explain_tt
 					has_country_leader = {
 						ruling_only = yes
 						character = INS_a_t_van_starkenborgh_stachouwer
@@ -7438,7 +7438,7 @@ create_equipment_variant = {
 				tooltip = INS_resist_occupation_tt
 				has_completed_focus = INS_resist_occupation
 			}
-			
+
 		}
 		mutually_exclusive = { focus = INS_defenders_of_homeland }
 
@@ -7460,7 +7460,7 @@ create_equipment_variant = {
 		completion_reward = {
 			add_ideas = idea_INS_japanese_symphasizers
 			add_autonomy_score = {
-				value = 250 
+				value = 250
 				localization = INS_resist_occupation
 			}
 			mark_focus_tree_layout_dirty = yes
@@ -7557,7 +7557,7 @@ create_equipment_variant = {
 					infantry = { x = 2 y = 2 }
 				}
 				support = {
-					
+
 				}
 			}
 			520 = { #Northern Territory
@@ -7565,7 +7565,7 @@ create_equipment_variant = {
 					division = "name = \"KNIL Division\" division_template = \"Exile Division\" start_experience_factor = 0.35 start_equipment_factor = 0.8 start_manpower_factor = 0.8"
 					owner = INS
 					prioritize_location = 7669 #Darwin
-					allow_spawning_on_enemy_provs = no 
+					allow_spawning_on_enemy_provs = no
 					count = 8
 				}
 			}
@@ -7766,7 +7766,7 @@ create_equipment_variant = {
 #
 	#	search_filters = { }
 	#	completion_reward = {
-	#	
+	#
 	#	}
 	#}
 
@@ -7783,7 +7783,7 @@ create_equipment_variant = {
 				tooltip = INS_defenders_of_homeland_tt
 				has_completed_focus = INS_defenders_of_homeland
 			}
-		
+
 		}
 		mutually_exclusive = { focus = INS_resist_occupation }
 
@@ -8181,13 +8181,13 @@ create_equipment_variant = {
 				name = INS_japanese_army_training
 				bonus = 0.5
 				uses = 2
-				category = infantry_weapons 
+				category = infantry_weapons
 			}
 			add_tech_bonus = {
 				name = INS_japanese_army_training
 				bonus = 0.5
 				uses = 1
-				category = air_equipment 
+				category = air_equipment
 			}
 			random_owned_controlled_state = {
 				limit = {

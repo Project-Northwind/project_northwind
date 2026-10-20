@@ -5,7 +5,7 @@ POR_overseas_provinces = {
 		icon = infiltrate_state
 
 		available = {
-			
+
 			has_completed_focus = POR_luso_tropicalism
 			AND = {
 				POR = {
@@ -32,7 +32,7 @@ POR_overseas_provinces = {
 		}
 		remove_effect = {
 			country_event = lar_portugal_overseas_provinces.1
-		}		
+		}
 	}
 
 	POR_mozambique_overseas_territory = {
@@ -61,14 +61,14 @@ POR_overseas_provinces = {
 		modifier = {
 			political_power_gain = -0.2
 		}
-		
+
 		visible = {
 			has_completed_focus = POR_luso_tropicalism
 		}
-		remove_effect = {			
+		remove_effect = {
 			country_event = lar_portugal_overseas_provinces.2
 		}
-	}	
+	}
 
 	POR_timor_overseas_territory = {
 
@@ -86,7 +86,7 @@ POR_overseas_provinces = {
 
 		cost = 0
 		fire_only_once = yes
-		days_remove = 420 
+		days_remove = 420
 		ai_will_do = {
 			factor = 2
 		}
@@ -94,20 +94,20 @@ POR_overseas_provinces = {
 		modifier = {
 			political_power_gain = -0.1
 		}
-		
+
 		visible = {
 			has_completed_focus = POR_revert_the_local_autonomy_policies
 		}
-		remove_effect = {			
+		remove_effect = {
 			country_event = lar_portugal_overseas_provinces.3
 		}
-	}	
+	}
 
 }
 
 POR_arms_purchases = {
 
-	POR_buy_artillery_in_britain = { 
+	POR_buy_artillery_in_britain = {
 
 		icon = generic_industry
 
@@ -128,10 +128,10 @@ POR_arms_purchases = {
 			modifier = {
 				OR = {
 					num_of_civilian_factories < 5
-					stockpile_ratio = { 
-		  				archetype = artillery_equipment
-		  				ratio > 3
-		  			}
+					stockpile_ratio = {
+						archetype = artillery_equipment
+						ratio > 3
+					}
 				}
 				factor = 0
 			}
@@ -184,7 +184,7 @@ POR_arms_purchases = {
 				add_equipment_subsidy = {
 					cic = 250
 					equipment_type = artillery_equipment
-					seller_tags = { ENG } 
+					seller_tags = { ENG }
 				}
 			}
 			ENG = {
@@ -195,7 +195,7 @@ POR_arms_purchases = {
 			}
 		}
 	}
-	POR_buy_aa_in_britain = { 
+	POR_buy_aa_in_britain = {
 
 		icon = generic_industry
 
@@ -217,10 +217,10 @@ POR_arms_purchases = {
 			modifier = {
 				OR = {
 					num_of_civilian_factories < 5
-					stockpile_ratio = { 
-		  				archetype = anti_air_equipment
-		  				ratio > 3
-		  			}
+					stockpile_ratio = {
+						archetype = anti_air_equipment
+						ratio > 3
+					}
 				}
 				factor = 0
 			}
@@ -273,7 +273,7 @@ POR_arms_purchases = {
 				add_equipment_subsidy = {
 					cic = 250
 					equipment_type = anti_air_equipment
-					seller_tags = { ENG } 
+					seller_tags = { ENG }
 				}
 			}
 			ENG = {
@@ -285,7 +285,7 @@ POR_arms_purchases = {
 		}
 	}
 
-	POR_buy_at_in_britain = { 
+	POR_buy_at_in_britain = {
 
 		icon = generic_industry
 
@@ -307,10 +307,10 @@ POR_arms_purchases = {
 			modifier = {
 				OR = {
 					num_of_civilian_factories < 5
-					stockpile_ratio = { 
-		  				archetype = anti_tank_equipment
-		  				ratio > 3
-		  			}
+					stockpile_ratio = {
+						archetype = anti_tank_equipment
+						ratio > 3
+					}
 				}
 				factor = 0
 			}
@@ -362,7 +362,7 @@ POR_arms_purchases = {
 				add_equipment_subsidy = {
 					cic = 250
 					equipment_type = anti_tank_equipment
-					seller_tags = { ENG } 
+					seller_tags = { ENG }
 				}
 			}
 			ENG = {
@@ -404,14 +404,14 @@ POR_arms_purchases = {
 			modifier = {
 				factor = 0
 				has_government = fascism
-				ENG = { 
-					NOT = { 
-						has_government = fascism 	 
+				ENG = {
+					NOT = {
+						has_government = fascism
 					}
 				}
 			}
 		}
-		
+
 		visible = {
 			has_completed_focus = POR_second_navy_reequipment
 			ENG = {
@@ -430,9 +430,9 @@ POR_arms_purchases = {
 			}
 			set_country_flag = POR_ships_purchase_in_progress_flag
 			set_country_flag = {
-  				flag = POR_ships_purchase_timer
-    			days = 180
-    			value = 1
+				flag = POR_ships_purchase_timer
+				days = 180
+				value = 1
 			}
 		}
 	}
@@ -464,7 +464,7 @@ POR_arms_purchases = {
 				has_country_flag = POR_ships_purchase_timer
 			}
 		}
-		
+
 		visible = {
 			has_completed_focus = POR_second_navy_reequipment
 			ITA = {
@@ -483,16 +483,16 @@ POR_arms_purchases = {
 			}
 			set_country_flag = POR_ships_purchase_in_progress_flag
 			set_country_flag = {
-  				flag = POR_ships_purchase_timer
-    			days = 180
-    			value = 1
+				flag = POR_ships_purchase_timer
+				days = 180
+				value = 1
 			}
 		}
 	}
 
 	#Mission to track the progress of British SUBMARINES construction
 	POR_british_submarines_construction_progress = {
-		
+
 		icon = generic_naval
 
 		allowed = {
@@ -553,7 +553,7 @@ POR_arms_purchases = {
 			remove_opinion_modifier = {
 				target = ENG
 				modifier = POR_ships_trade
-			}			
+			}
 			clr_country_flag = POR_purchase_british_submarines_flag
 			clr_country_flag = POR_ships_purchase_in_progress_flag
 		}
@@ -563,7 +563,7 @@ POR_arms_purchases = {
 			hidden_effect = { add_manpower = 600 }
 			if = {
 				limit = { has_dlc = "Man the Guns" }
-				if = { 
+				if = {
 					limit = {
 						ENG = { has_tech = advanced_ship_hull_submarine }
 					}
@@ -596,7 +596,7 @@ create_equipment_variant = {
 					create_ship = { type = vnr_ship_hull_submarine_5 equipment_variant = "Delfim Class" creator = ENG }
 					create_ship = { type = vnr_ship_hull_submarine_5 equipment_variant = "Delfim Class" creator = ENG }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ENG = { has_tech = improved_ship_hull_submarine }
 					}
@@ -636,7 +636,7 @@ create_equipment_variant = {
 				}
 			}
 			else = { #NO MTG
-				if = { 
+				if = {
 					limit = {
 						ENG = { has_tech = advanced_submarine }
 					}
@@ -657,7 +657,7 @@ create_equipment_variant = {
 					create_ship = { type = submarine_4 equipment_variant = "Delfim Class" creator = ENG }
 					create_ship = { type = submarine_4 equipment_variant = "Delfim Class" creator = ENG }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ENG = { has_tech = improved_submarine }
 					}
@@ -678,7 +678,7 @@ create_equipment_variant = {
 					create_ship = { type = submarine_3 equipment_variant = "Delfim Class" creator = ENG }
 					create_ship = { type = submarine_3 equipment_variant = "Delfim Class" creator = ENG }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ENG = { has_tech = basic_submarine }
 					}
@@ -732,7 +732,7 @@ create_equipment_variant = {
 
 	#Mission to track the progress of Italian SUBMARINES construction
 	POR_italian_submarines_construction_progress = {
-		
+
 		icon = generic_naval
 
 		allowed = {
@@ -761,7 +761,7 @@ create_equipment_variant = {
 						NOT = { owns_state = 2 } #Owns Rome
 					}
 				}
-			}	
+			}
 		}
 
 
@@ -794,7 +794,7 @@ create_equipment_variant = {
 			remove_opinion_modifier = {
 				target = ITA
 				modifier = POR_ships_trade
-			}			
+			}
 			clr_country_flag = POR_purchase_italian_submarines_flag
 			clr_country_flag = POR_ships_purchase_in_progress_flag
 		}
@@ -804,7 +804,7 @@ create_equipment_variant = {
 			hidden_effect = { add_manpower = 600 }
 			if = {
 				limit = { has_dlc = "Man the Guns" }
-				if = { 
+				if = {
 					limit = {
 						ITA = { has_tech = advanced_ship_hull_submarine }
 					}
@@ -837,7 +837,7 @@ create_equipment_variant = {
 					create_ship = { type = vnr_ship_hull_submarine_5 equipment_variant = "Delfim Class" creator = ITA }
 					create_ship = { type = vnr_ship_hull_submarine_5 equipment_variant = "Delfim Class" creator = ITA }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ITA = { has_tech = improved_ship_hull_submarine }
 					}
@@ -877,7 +877,7 @@ create_equipment_variant = {
 				}
 			}
 			else = { #NO MTG
-				if = { 
+				if = {
 					limit = {
 						ITA = { has_tech = advanced_submarine }
 					}
@@ -898,7 +898,7 @@ create_equipment_variant = {
 					create_ship = { type = submarine_4 equipment_variant = "Delfim Class" creator = ITA }
 					create_ship = { type = submarine_4 equipment_variant = "Delfim Class" creator = ITA }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ITA = { has_tech = improved_submarine }
 					}
@@ -919,7 +919,7 @@ create_equipment_variant = {
 					create_ship = { type = submarine_3 equipment_variant = "Delfim Class" creator = ITA }
 					create_ship = { type = submarine_3 equipment_variant = "Delfim Class" creator = ITA }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ITA = { has_tech = basic_submarine }
 					}
@@ -975,7 +975,7 @@ create_equipment_variant = {
 
 	#Mission to track the progress of British DESTROYERS construction
 	POR_british_destroyers_construction_progress = {
-		
+
 		icon = generic_naval
 
 		allowed = {
@@ -985,7 +985,7 @@ create_equipment_variant = {
 		visible = {
 			has_country_flag = POR_purchase_british_destroyers_flag
 		}
-		
+
 		modifier = {
 			civilian_factory_use = 1
 		}
@@ -1036,7 +1036,7 @@ create_equipment_variant = {
 			remove_opinion_modifier = {
 				target = ENG
 				modifier = POR_ships_trade
-			}		
+			}
 			clr_country_flag = POR_purchase_british_destroyers_flag
 			clr_country_flag = POR_ships_purchase_in_progress_flag
 		}
@@ -1045,7 +1045,7 @@ create_equipment_variant = {
 		remove_effect = {
 			if = {
 				limit = { has_dlc = "Man the Guns" }
-				if = { 
+				if = {
 					limit = {
 						ENG = { has_tech = advanced_ship_hull_light }
 					}
@@ -1085,7 +1085,7 @@ create_equipment_variant = {
 					create_ship = { type = vnr_ship_hull_light_5 equipment_variant = "Vouga Class" creator = ENG }
 					create_ship = { type = vnr_ship_hull_light_5 equipment_variant = "Vouga Class" creator = ENG }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ENG = { has_tech = improved_ship_hull_light }
 					}
@@ -1164,7 +1164,7 @@ create_equipment_variant = {
 				}
 			}
 			else = { #NO MTG
-				if = { 
+				if = {
 					limit = {
 						ENG = { has_tech = advanced_destroyer }
 					}
@@ -1185,7 +1185,7 @@ create_equipment_variant = {
 					create_ship = { type = destroyer_4 equipment_variant = "Vouga Class" creator = ENG }
 					create_ship = { type = destroyer_4 equipment_variant = "Vouga Class" creator = ENG }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ENG = { has_tech = improved_destroyer }
 					}
@@ -1241,7 +1241,7 @@ create_equipment_variant = {
 
 	#Mission to track the progress of Italian DESTROYERS construction
 	POR_italian_destroyers_construction_progress = {
-		
+
 		icon = generic_naval
 
 		allowed = {
@@ -1302,7 +1302,7 @@ create_equipment_variant = {
 			remove_opinion_modifier = {
 				target = ITA
 				modifier = POR_ships_trade
-			}		
+			}
 			clr_country_flag = POR_purchase_italian_destroyers_flag
 			clr_country_flag = POR_ships_purchase_in_progress_flag
 		}
@@ -1312,7 +1312,7 @@ create_equipment_variant = {
 		remove_effect = {
 			if = {
 				limit = { has_dlc = "Man the Guns" }
-				if = { 
+				if = {
 					limit = {
 						ITA = { has_tech = advanced_ship_hull_light }
 					}
@@ -1352,7 +1352,7 @@ create_equipment_variant = {
 					create_ship = { type = vnr_ship_hull_light_5 equipment_variant = "Vouga Class" creator = ITA }
 					create_ship = { type = vnr_ship_hull_light_5 equipment_variant = "Vouga Class" creator = ITA }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ITA = { has_tech = improved_ship_hull_light }
 					}
@@ -1431,7 +1431,7 @@ create_equipment_variant = {
 				}
 			}
 			else = { #NO MTG
-				if = { 
+				if = {
 					limit = {
 						ITA = { has_tech = advanced_destroyer }
 					}
@@ -1452,7 +1452,7 @@ create_equipment_variant = {
 					create_ship = { type = destroyer_4 equipment_variant = "Vouga Class" creator = ITA }
 					create_ship = { type = destroyer_4 equipment_variant = "Vouga Class" creator = ITA }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ITA = { has_tech = improved_destroyer }
 					}
@@ -1494,7 +1494,7 @@ create_equipment_variant = {
 					create_ship = { type = destroyer_2 equipment_variant = "Vouga Class" creator = ITA }
 					create_ship = { type = destroyer_2 equipment_variant = "Vouga Class" creator = ITA }
 				}
-				else = {				
+				else = {
 					hidden_effect = { add_manpower = 250 }
 					ITA = {
 						create_equipment_variant = {
@@ -1529,7 +1529,7 @@ create_equipment_variant = {
 
 	#Mission to track the progress of British LIGHT CRUISER construction
 	POR_british_light_cruiser_construction_progress = {
-		
+
 		icon = generic_naval
 
 		allowed = {
@@ -1539,7 +1539,7 @@ create_equipment_variant = {
 		visible = {
 			has_country_flag = POR_purchase_british_light_cruiser_flag
 		}
-		
+
 		modifier = {
 			civilian_factory_use = 1
 		}
@@ -1589,7 +1589,7 @@ create_equipment_variant = {
 		remove_effect = {
 			if = {
 				limit = { has_dlc = "Man the Guns" }
-				if = { 
+				if = {
 					limit = {
 						ENG = { has_tech = advanced_ship_hull_cruiser }
 					}
@@ -1630,7 +1630,7 @@ create_equipment_variant = {
 					}
 					create_ship = { type = vnr_ship_hull_cruiser_5 equipment_variant = "Atlântico Class" creator = ENG }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ENG = { has_tech = improved_ship_hull_cruiser }
 					}
@@ -1711,7 +1711,7 @@ create_equipment_variant = {
 				}
 			}
 			else = { #NO MTG
-				if = { 
+				if = {
 					limit = {
 						ENG = { has_tech = advanced_light_cruiser }
 					}
@@ -1731,7 +1731,7 @@ create_equipment_variant = {
 					}
 					create_ship = { type = light_cruiser_4 equipment_variant = "Atlântico Class" creator = ENG }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ENG = { has_tech = improved_light_cruiser }
 					}
@@ -1751,7 +1751,7 @@ create_equipment_variant = {
 					}
 					create_ship = { type = light_cruiser_3 equipment_variant = "Atlântico Class" creator = ENG }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ENG = { has_tech = basic_light_cruiser }
 					}
@@ -1805,7 +1805,7 @@ create_equipment_variant = {
 
 	#Mission to track the progress of Italian LIGHT CRUISER construction
 	POR_italian_light_cruiser_construction_progress = {
-		
+
 		icon = generic_naval
 
 		allowed = {
@@ -1815,7 +1815,7 @@ create_equipment_variant = {
 		visible = {
 			has_country_flag = POR_purchase_italian_light_cruiser_flag
 		}
-		
+
 		modifier = {
 			civilian_factory_use = 1
 		}
@@ -1875,7 +1875,7 @@ create_equipment_variant = {
 		remove_effect = {
 			if = {
 				limit = { has_dlc = "Man the Guns" }
-				if = { 
+				if = {
 					limit = {
 						ITA = { has_tech = advanced_ship_hull_cruiser }
 					}
@@ -1916,7 +1916,7 @@ create_equipment_variant = {
 					}
 					create_ship = { type = vnr_ship_hull_cruiser_5 equipment_variant = "Atlântico Class" creator = ITA }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ITA = { has_tech = improved_ship_hull_cruiser }
 					}
@@ -1997,7 +1997,7 @@ create_equipment_variant = {
 				}
 			}
 			else = { #NO MTG
-				if = { 
+				if = {
 					limit = {
 						ITA = { has_tech = advanced_light_cruiser }
 					}
@@ -2017,7 +2017,7 @@ create_equipment_variant = {
 					}
 					create_ship = { type = light_cruiser_4 equipment_variant = "Atlântico Class" creator = ITA }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ITA = { has_tech = improved_light_cruiser }
 					}
@@ -2037,7 +2037,7 @@ create_equipment_variant = {
 					}
 					create_ship = { type = light_cruiser_3 equipment_variant = "Atlântico Class" creator = ITA }
 				}
-				else_if = { 
+				else_if = {
 					limit = {
 						ITA = { has_tech = basic_light_cruiser }
 					}
@@ -2103,12 +2103,12 @@ POR_naval_blockade = {
 			POR = {
 				has_completed_focus = POR_refuse_the_naval_blockade
 			}
-			NOT = { 
-				has_country_flag = POR_evade_blockade_flag 
-				has_country_flag = POR_cancel_evade_blockade_flag 
+			NOT = {
+				has_country_flag = POR_evade_blockade_flag
+				has_country_flag = POR_cancel_evade_blockade_flag
 			}
 		}
-		
+
 		available = {
 			num_of_civilian_factories > 1
 			POR = {
@@ -2148,7 +2148,7 @@ POR_naval_blockade = {
 				add_equipment_to_stockpile = {
 		            type = convoy_1
 		            amount = 50
-	       		}
+				}
 				add_offsite_building = { type = industrial_complex  level = -1 }
 			}
 			set_country_flag = POR_cancel_evade_blockade_flag
@@ -2160,19 +2160,19 @@ POR_naval_blockade = {
 			add_war_support = 0.1
 			set_country_flag = POR_evade_blockade_flag
 			effect_tooltip = {
-				POR = { 
+				POR = {
 					add_equipment_to_stockpile = {
 			            type = convoy_1
 			            amount = -50
-		       		}
+					}
 					add_offsite_building = { type = industrial_complex  level = 1 }
 				}
 			}
-			hidden_effect=  { 
-				POR = { 
-					country_event = lar_portugal_naval_blockade.2 
-					activate_targeted_decision = { 
-						target = ROOT 
+			hidden_effect=  {
+				POR = {
+					country_event = lar_portugal_naval_blockade.2
+					activate_targeted_decision = {
+						target = ROOT
 						decision = POR_portugal_cancel_blockade_evasion_for_country
 					}
 				}
@@ -2240,13 +2240,13 @@ POR_naval_blockade = {
 			original_tag = POR
 			country_exists = FROM
 			FROM = {
-           		has_country_flag = POR_evade_blockade_flag
-           		NOT = { 
-           			has_country_flag = POR_cancel_evade_blockade_flag
-           			has_war_with = POR
-           		}
-           	}
-		}		
+				has_country_flag = POR_evade_blockade_flag
+				NOT = {
+					has_country_flag = POR_cancel_evade_blockade_flag
+					has_war_with = POR
+				}
+			}
+		}
 
 		complete_effect = {
 			FROM = {
@@ -2270,7 +2270,7 @@ POR_iberian_summit = {
 			}
 		}
 
-		available = {		
+		available = {
 			POR = { has_war = no }
 			SPA = { has_war = no }
 			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
@@ -2279,7 +2279,7 @@ POR_iberian_summit = {
 		visible = {
 			NOT = { has_global_flag = POR_iberian_summit_pro_axis_flag }
 			country_exists = POR
-			POR = { 
+			POR = {
 				is_in_faction = no
 				has_completed_focus = POR_iberian_summit
 				NOT = { has_government = communism }
@@ -2296,8 +2296,8 @@ POR_iberian_summit = {
 					}
 				}
 			}
-			GER = { 
-				is_faction_leader = yes 
+			GER = {
+				is_faction_leader = yes
 				has_government = fascism
 				has_capitulated = no
 			}
@@ -2313,13 +2313,13 @@ POR_iberian_summit = {
 				has_completed_focus = POR_send_assistance
 				OR = {
 					GER = {
-						has_war = yes 
+						has_war = yes
 						OR = {
 							alliance_strength_ratio > 0.75
 							any_war_score > 40
 						}
 					}
-					has_opinion = { target = GER value > 0 }		
+					has_opinion = { target = GER value > 0 }
 				}
 			}
 			modifier = {
@@ -2332,22 +2332,22 @@ POR_iberian_summit = {
 			set_global_flag = POR_iberian_summit_pro_axis_flag
 			set_global_flag = POR_iberian_summit_in_progress_flag
 			set_country_flag = POR_iberian_summit_initiator_flag
-			set_variable = { global.POR_iberian_summit_target = GER } 
+			set_variable = { global.POR_iberian_summit_target = GER }
 			set_variable = { global.POR_iberian_summit_spanish_tag = SPA }
 			if = {
 				limit = {
 					tag = POR
 				}
-				SPA = { 
+				SPA = {
 					country_event = { id = lar_portugal_iberian_summit.1 hours = 18 random_hours = 6 }
 				}
 			}
 			else = {
-				POR = { 
-					country_event = { id = lar_portugal_iberian_summit.1 hours = 18 random_hours = 6 } 
+				POR = {
+					country_event = { id = lar_portugal_iberian_summit.1 hours = 18 random_hours = 6 }
 				}
 			}
-		}	
+		}
 	}
 
 	POR_iberian_summit_pro_allies = {
@@ -2361,7 +2361,7 @@ POR_iberian_summit = {
 			}
 		}
 
-		available = {		
+		available = {
 			POR = { has_war = no }
 			if = {
 				limit = {
@@ -2408,8 +2408,8 @@ POR_iberian_summit = {
 					has_government = democratic
 				}
 			}
-			ENG = { 
-				is_faction_leader = yes 
+			ENG = {
+				is_faction_leader = yes
 				has_government = democratic
 				has_capitulated = no
 			}
@@ -2418,22 +2418,22 @@ POR_iberian_summit = {
 		cost = 50
 		fire_only_once = yes
 		days_remove = 1
-		ai_will_do = { 
+		ai_will_do = {
 			base = 0
 			modifier = {
 				add = 1
 				POR = {
 					has_completed_focus = POR_allow_free_elections
-				}					
+				}
 				OR = {
 					ENG = {
-						has_war = yes 
+						has_war = yes
 						OR = {
 							alliance_strength_ratio > 0.75
 							any_war_score > 40
 						}
 					}
-					has_opinion = { target = ENG value > 0 }		
+					has_opinion = { target = ENG value > 0 }
 				}
 			}
 			modifier = {
@@ -2450,7 +2450,7 @@ POR_iberian_summit = {
 			if = {
 				limit = { country_exists = SPA }
 				set_variable = { global.POR_iberian_summit_spanish_tag = SPA }
-			} 
+			}
 			else = {
 				set_variable = { global.POR_iberian_summit_spanish_tag = SPD }
 			}
@@ -2461,16 +2461,16 @@ POR_iberian_summit = {
 				}
 			}
 			else = {
-				POR = { 
+				POR = {
 					country_event = { id = lar_portugal_iberian_summit.5 hours = 18 random_hours = 6 }
 				}
 			}
-		}	
+		}
 	}
 	#Timed Decision for delaying proposal
 	POR_iberian_summit_proposal_delayed = {
 		icon = generic_political_discourse
-		
+
 		allowed = {
 			OR = {
 				tag = POR
@@ -2480,7 +2480,7 @@ POR_iberian_summit = {
 		}
 
 		visible = {
-			has_global_flag = POR_iberian_summit_proposal_delayed_flag 
+			has_global_flag = POR_iberian_summit_proposal_delayed_flag
 		}
 
 		fire_only_once = no
@@ -2497,8 +2497,8 @@ POR_iberian_summit = {
 				var:global.POR_iberian_summit_target = { is_faction_leader = no }
 				NOT = { country_exists = POR }
 				POR = {
-					OR = { 
-						has_war = yes 
+					OR = {
+						has_war = yes
 						is_in_faction = yes
 					}
 				}
@@ -2528,7 +2528,7 @@ POR_iberian_summit = {
 			var:global.POR_iberian_summit_target = {
 				remove_opinion_modifier = { target = POR modifier = POR_iberian_summit_diplomatic_approach }
 			}
-			if = { 
+			if = {
 				limit = { country_exists = SPA }
 				remove_opinion_modifier = {	target = SPA modifier = POR_iberian_summit_working_together	}
 				var:global.POR_iberian_summit_target = {
@@ -2541,10 +2541,10 @@ POR_iberian_summit = {
 					remove_opinion_modifier = { target = SPA modifier = POR_iberian_summit_diplomatic_approach }
 				}
 			}
-			
+
 			clr_global_flag = POR_iberian_summit_in_progress_flag
 			clr_global_flag = POR_iberian_summit_proposal_delayed_flag
-			clr_country_flag = POR_iberian_summit_initiator_flag  
+			clr_country_flag = POR_iberian_summit_initiator_flag
 			clear_variable = global.POR_iberian_summit_target
 		}
 
@@ -2562,12 +2562,12 @@ POR_iberian_summit = {
 						    compare = equals
 						}
 					}
-					var:global.POR_iberian_summit_target = { 
+					var:global.POR_iberian_summit_target = {
 						country_event = { id = lar_portugal_iberian_summit.4 hours = 8 random_hours = 4 }
 					}
 				}
 				else = {
-					var:global.POR_iberian_summit_target = { 
+					var:global.POR_iberian_summit_target = {
 						country_event = { id = lar_portugal_iberian_summit.8 hours = 8 random_hours = 4 }
 					}
 				}
@@ -2590,13 +2590,13 @@ POR_monarchist_cause = {
 		}
 
 		available = {
-			BRA = { 
-				has_war = no 
+			BRA = {
+				has_war = no
 				IF = {
 					limit = {
 						has_dlc = "Trial of Allegiance"
 					}
-				
+
 					NOT = {
 						has_country_flag = BRA_rejected_monarchism
 						has_completed_focus = BRA_romanticize_the_old_empire
@@ -2646,9 +2646,9 @@ POR_monarchist_cause = {
 
 		complete_effect = {
 			custom_effect_tooltip = POR_stir_monarchist_sentiment_in_brazil_tt
-			BRA = { 
+			BRA = {
 				activate_decision = POR_portugal_promoting_monarchist_cause_in_brazil
-				set_country_flag = POR_portugal_stirring_brazilian_monarchists_flag 
+				set_country_flag = POR_portugal_stirring_brazilian_monarchists_flag
 				country_event = { id = lar_portugal_promote_monarchist_cause.1 }
 			}
 		}
@@ -2711,7 +2711,7 @@ POR_monarchist_cause = {
 				has_country_flag = POR_brazilian_monarchists_stirred_flag
 			}
 			country_exists = POR
-			POR = { NOT = { has_completed_focus = POR_the_empire_of_brazil } }		
+			POR = { NOT = { has_completed_focus = POR_the_empire_of_brazil } }
 		}
 
 		cancel_trigger = {
@@ -2731,7 +2731,7 @@ POR_monarchist_cause = {
 		}
 	}
 
-	#Decision to boost unaligned popularity in Portugal 
+	#Decision to boost unaligned popularity in Portugal
 	POR_stir_monarchist_sentiment_in_portugal = {
 		icon = generic_political_discourse
 
@@ -2748,7 +2748,7 @@ POR_monarchist_cause = {
 		fire_only_once = no
 
 		ai_will_do = {
-			base = 0 # This is self-saboutaging for the AI 
+			base = 0 # This is self-saboutaging for the AI
 		}
 		visible = {
 			has_completed_focus = POR_a_royal_wedding
@@ -2770,7 +2770,7 @@ POR_monarchist_cause = {
 
 POR_prospect_for_resources = {
 	POR_develop_lisbon_tungsten_deposits = { #112
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -2780,7 +2780,7 @@ POR_prospect_for_resources = {
 		highlight_states = {
  highlight_state_targets = {
 			state = 112
-		} 
+		}
 }
 
 		available = {
@@ -2826,7 +2826,7 @@ POR_prospect_for_resources = {
 	}
 
 	POR_develop_santarem_chromium_deposits = { #795
-		
+
 		icon = chromium
 
 		allowed = {
@@ -2836,7 +2836,7 @@ POR_prospect_for_resources = {
 		highlight_states = {
  highlight_state_targets = {
 			state = 795
-		} 
+		}
 }
 
 		available = {
@@ -2851,7 +2851,7 @@ POR_prospect_for_resources = {
 			controls_state = 795
 			795 = {
 				NOT = {
-					has_state_flag = { 
+					has_state_flag = {
 						flag = POR_santarem_chromium_developed_flag
 						value = 5
 					}
@@ -2961,7 +2961,7 @@ POR_the_spanish_civil_war = {
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = supports_SPD_flag
-			}	
+			}
 			if = {
 				limit = { country_exists = SPA }
 				add_to_war = { targeted_alliance = SPD enemy = SPA hostility_reason = asked_to_join }
@@ -3040,7 +3040,7 @@ POR_the_spanish_civil_war = {
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = supports_SPA_flag
-			}	
+			}
 			if = {
 				limit = { country_exists = SPD }
 				add_to_war = { targeted_alliance = SPA enemy = SPD hostility_reason = asked_to_join }
@@ -3119,7 +3119,7 @@ POR_the_spanish_civil_war = {
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = supports_SPB_flag
-			}	
+			}
 			if = {
 				limit = { country_exists = SPD }
 				add_to_war = { targeted_alliance = SPB enemy = SPD hostility_reason = asked_to_join }

@@ -24,11 +24,11 @@ sub_units = {
 		}
 
 		max_organisation = 40
-		
+
 		supply_consumption = 0.15
 		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire_medium }
 		critical_part_damage_chance_mult = 1
-		
+
 		hit_profile_mult = 0.9
 	}
 
@@ -41,11 +41,11 @@ sub_units = {
 		need = { ship_hull_cruiser = 1 }
 
 		max_organisation = 40
-		
+
 		supply_consumption = 0.15
 		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire_medium }
 		critical_part_damage_chance_mult = 1
-		
+
 		hit_profile_mult = 0.95
 	}
 }

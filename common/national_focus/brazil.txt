@@ -8,7 +8,7 @@
 
 focus_tree = {
 	id = brazil_tree
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -17,7 +17,7 @@ focus_tree = {
 			has_dlc = "Trial of Allegiance"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 0 y = 2500 }
@@ -35,8 +35,8 @@ focus_tree = {
 
 	##################################
 
-	
-	
+
+
 	focus = {
 		id = BRA_tribunal_de_seguranca_nacional
 		icon = GFX_focus_BRA_tribunal
@@ -183,7 +183,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			
+
 			#set_country_leader_ideology = fascism_ideology
 			custom_effect_tooltip = BRA_estado_moderno_tt
 			hidden_effect = {
@@ -199,7 +199,7 @@ focus_tree = {
 				news_event = { id = south_american_news.51 hours = 1 }
 			}
 			retire_country_leader = yes
-				BRA_getulio_vargas = { 
+				BRA_getulio_vargas = {
 					add_country_leader_role = {
 						country_leader = {
 							ideology = fascism_ideology
@@ -209,7 +209,7 @@ focus_tree = {
 							}
 						}
 					}
-					promote_leader = yes 
+					promote_leader = yes
 				}
 			}
 			set_politics = {
@@ -257,14 +257,14 @@ focus_tree = {
 							}
 						}
 					}
-					news_event = { 
-						id = south_american_news.50 
-						hours = 1 
+					news_event = {
+						id = south_american_news.50
+						hours = 1
 					}
 				}
-			
+
 			retire_country_leader = yes
-				BRA_getulio_vargas = { 
+				BRA_getulio_vargas = {
 					add_country_leader_role = {
 						country_leader = {
 							ideology = despotism
@@ -274,7 +274,7 @@ focus_tree = {
 							}
 						}
 					}
-					promote_leader = yes 
+					promote_leader = yes
 				}
 			}
 			set_politics = {
@@ -297,7 +297,7 @@ focus_tree = {
 
 	focus = {
 		id = BRA_cohen_plan
-		icon = GFX_focus_BRA_cohen_plan 
+		icon = GFX_focus_BRA_cohen_plan
 		prerequisite = { focus = BRA_ensure_continued_military_support focus = BRA_work_with_the_integralists }
 		x = 0
 		y = 2
@@ -365,12 +365,12 @@ focus_tree = {
 				##add_to_variable = { BRA_green_shirt_division_cap = 1 }
 				#clamp_variable = {
 				#	var = BRA_green_shirt_division_cap
-				#	min = 0 
+				#	min = 0
 				#	max = BRA_max_green_shirt_division_cap
 				#}
-			
+
 				division_template = {
-					name = "Integralist Militia"		
+					name = "Integralist Militia"
 					#division_names_group = SWE_BS_01
 					is_locked = yes
 					#force_allow_recruiting = yes
@@ -385,9 +385,9 @@ focus_tree = {
 					#division_cap = 0
 					override_model = BRA_militia_alt_1_entity
 				}
-				#set_division_template_cap = { 
-				#	division_template = "Integralist Militia" 
-				#	division_cap = BRA_green_shirt_division_cap   
+				#set_division_template_cap = {
+				#	division_template = "Integralist Militia"
+				#	division_cap = BRA_green_shirt_division_cap
 				#}
 			}
 		}
@@ -532,17 +532,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-		
+
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
 				}
 				#create_intelligence_agency = yes
-				create_intelligence_agency = { 
+				create_intelligence_agency = {
 					name = "Departamento de Ordem"
 					icon = GFX_intelligence_agency_logo_BRA_neutrality
 				}
-				upgrade_intelligence_agency = upgrade_passive_defense 
+				upgrade_intelligence_agency = upgrade_passive_defense
 			}
 			ELSE = {
 				add_ideas = BRA_departamento_de_political_e_social_no_lar
@@ -615,7 +615,7 @@ focus_tree = {
 				hidden_effect = {
 					set_popularities = {
 						communism = 0
-					}				
+					}
 				}
 			}
 			ELSE_IF = {
@@ -629,7 +629,7 @@ focus_tree = {
 				hidden_effect = {
 					set_popularities = {
 						democratic = 0
-					}				
+					}
 				}
 			}
 			custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
@@ -795,7 +795,7 @@ focus_tree = {
 						expire = "1965.1.1.1"
 						traits = { war_industrialist }
 					}
-				} 
+				}
 				promote_leader = yes
 			}
 			hidden_effect = {
@@ -826,7 +826,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_timed_idea = { 
+			add_timed_idea = {
 				idea = BRA_secure_our_borders_idea
 				days = 1460
 			}
@@ -851,8 +851,8 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = BRA_modify_estado_moderno_ns_intro
-			add_to_variable = { 
-				BRA_estado_moderno_stability_factor = -0.05 
+			add_to_variable = {
+				BRA_estado_moderno_stability_factor = -0.05
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = {
@@ -908,8 +908,8 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_country_leader_trait = { 
-				trait = BRA_reluctant_integralist 
+			add_country_leader_trait = {
+				trait = BRA_reluctant_integralist
 			}
 			remove_country_leader_trait = {
 				trait = BRA_authoritarian_populist
@@ -919,7 +919,7 @@ focus_tree = {
 
 	focus = {
 		id = BRA_integrity_of_the_fatherland
-		icon = GFX_focus_BRA_defense_of_the_fatherland 
+		icon = GFX_focus_BRA_defense_of_the_fatherland
 		prerequisite = { focus = BRA_reject_cosmopolitanism focus = BRA_departamento_feminino }
 		mutually_exclusive = { focus = BRA_in_vargas_we_trust }
 		x = 0
@@ -935,7 +935,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER}
 
 		completion_reward = {
-			
+
 			custom_effect_tooltip = BRA_modify_estado_moderno_ns_intro
 			BRA_plinio_salgado = {
 				add_country_leader_role = {
@@ -1010,7 +1010,7 @@ focus_tree = {
 
 	#focus = {
 	#	id = BRA_internal_revolution
-	#	#icon = 
+	#	#icon =
 	#	prerequisite = { focus = BRA_brazil_integral }
 	#	x = 1
 	#	y = 1
@@ -1025,7 +1025,7 @@ focus_tree = {
 	#	search_filters = { }
 #
 	#	completion_reward = {
-	#		
+	#
 	#	}
 	#}
 
@@ -1046,7 +1046,7 @@ focus_tree = {
 		search_filters = { }
 
 		completion_reward = {
-			add_timed_idea = { 
+			add_timed_idea = {
 				idea = BRA_ethical_internationalism_idea
 				days = 1460
 			}
@@ -1055,7 +1055,7 @@ focus_tree = {
 
 	##################################
 
-	##### Industrial Branch ##### 
+	##### Industrial Branch #####
 
 	focus = {
 		id = BRA_coffee_crisis_aftermath
@@ -1077,7 +1077,7 @@ focus_tree = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
 				}
-				has_completed_focus = BRA_prepare_for_second_intentona 
+				has_completed_focus = BRA_prepare_for_second_intentona
 			}
 		}
 
@@ -1089,7 +1089,7 @@ focus_tree = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
 				}
-				has_completed_focus = BRA_end_the_state_of_emergency 
+				has_completed_focus = BRA_end_the_state_of_emergency
 			}
 		}
 		available = {
@@ -1112,7 +1112,7 @@ focus_tree = {
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = BRA_departamento_nacional_do_cafe_idea	
+			show_ideas_tooltip = BRA_departamento_nacional_do_cafe_idea
 		}
 	}
 
@@ -1166,13 +1166,13 @@ focus_tree = {
 			add_to_variable = {
 				BRA_economy_production_max_efficiency_factor = 0.1
 				tooltip = production_factory_max_efficiency_factor_tt
-			}	
+			}
 			add_tech_bonus = {
 				name = BRA_electronics_bonus
 				bonus = 0.5
 				uses = 2
 				category = electronics
-			}			
+			}
 		}
 	}
 
@@ -1194,7 +1194,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 					OR = {
-						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }
 						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
 					}
 				}
@@ -1295,7 +1295,7 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = industry
-			}			
+			}
 		}
 	}
 
@@ -1366,7 +1366,7 @@ focus_tree = {
 			add_to_variable = {
 				BRA_economy_industrial_capacity_factor = 0.1
 				tooltip = industrial_capacity_factory_tt
-			}	
+			}
 			BRA_remove_economy_modifier = yes
 			random_core_state = {
 				limit = {
@@ -1414,7 +1414,7 @@ focus_tree = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			custom_effect_tooltip = ARG_international_loan_decisions_tt
 		}
 	}
@@ -1483,7 +1483,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 					OR = {
-						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }
 						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
 					}
 				}
@@ -1556,7 +1556,7 @@ focus_tree = {
 				add_resource = {
 					type = oil
 					amount = 16
-				}	
+				}
 				add_to_variable = {
 					BRA_state_development_local_building_slots_factor = 0.2
 					tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
@@ -1594,8 +1594,8 @@ focus_tree = {
 				limit = {
 					OR = {
 						state = 497
-						state = 495						
-					}	
+						state = 495
+					}
 				}
 				add_extra_state_shared_building_slots = 1
 				add_resource = {
@@ -1637,11 +1637,11 @@ focus_tree = {
 				add_resource = {
 					type = steel
 					amount = 12
-				}	
+				}
 				add_resource = {
 					type = aluminium
 					amount = 8
-				}	
+				}
 			}
 
 		}
@@ -1650,8 +1650,8 @@ focus_tree = {
 	focus = {
 		id = BRA_invest_in_road_infrastructure
 		icon = GFX_focus_generic_road_investment
-		prerequisite = { 
-			focus = BRA_batalha_do_borracha 
+		prerequisite = {
+			focus = BRA_batalha_do_borracha
 			focus = BRA_invest_in_railways }
 		x = 2
 		y = 1
@@ -1670,7 +1670,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 					OR = {
-						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }
 						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
 					}
 				}
@@ -1713,7 +1713,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 					OR = {
-						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }
 						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
 					}
 					is_coastal = yes
@@ -1795,7 +1795,7 @@ focus_tree = {
 		}
 		available = {
 			USA = {
-				NOT = { 
+				NOT = {
 					has_government = communism
 				}
 			}
@@ -1871,7 +1871,7 @@ focus_tree = {
 	focus = {
 		id = BRA_banco_do_brasil
 		icon = GFX_focus_BRA_banco_do_brasil
-		prerequisite = { focus = BRA_batalha_do_borracha 
+		prerequisite = { focus = BRA_batalha_do_borracha
 		}
 		x = 0
 		y = 1
@@ -1900,9 +1900,9 @@ focus_tree = {
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
 			BRA_remove_economy_modifier = yes
-			
+
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = BRA_banco_do_brasil_idea			
+			show_ideas_tooltip = BRA_banco_do_brasil_idea
 		}
 	}
 
@@ -1928,7 +1928,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 					OR = {
-						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }
 						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
 					}
 				}
@@ -1956,11 +1956,11 @@ focus_tree = {
 			unlock_decision_tooltip = {
 				decision = develop_guapore_casserite_deposits
 				show_effect_tooltip = no
-			}	
+			}
 			unlock_decision_tooltip = {
 				decision = rename_guapore_to_rondonia_decision
 				show_effect_tooltip = no
-			}	
+			}
 
 		}
 	}
@@ -1999,14 +1999,14 @@ focus_tree = {
 					province = 8140
 					level = 1
 					instant_build = yes
-				}	
+				}
 				build_railway = {
 					level = 1
 					build_only_on_allied = yes
 					fallback = yes
 					start_province = 12977
 					target_province = 8140
-				}			
+				}
 			}
 			hidden_effect = {
 				set_province_name = { id = 8140 name = BRA_new_capital }
@@ -2047,8 +2047,8 @@ focus_tree = {
 		id = BRA_cooperation_in_the_americas
 		icon = GFX_focus_BRA_good_neighbor_policy
 		mutually_exclusive = { focus = BRA_domination_of_the_americas }
-		prerequisite = { 
-			focus = BRA_secure_our_borders 
+		prerequisite = {
+			focus = BRA_secure_our_borders
 			focus = BRA_the_international_crisis
 		}
 		x = -10
@@ -2094,8 +2094,8 @@ focus_tree = {
 	focus = {
 		id = BRA_defense_spending
 		icon = GFX_focus_BRA_for_the_fatherland
-		prerequisite = { 
-			focus = BRA_cooperation_in_the_americas 
+		prerequisite = {
+			focus = BRA_cooperation_in_the_americas
 			#focus = BRA_the_international_crisis
 		}
 		x = 0
@@ -2120,7 +2120,7 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 0 
+						size > 0
 						include_locked = yes
 					}
 					is_owned_and_controlled_by = ROOT
@@ -2142,13 +2142,13 @@ focus_tree = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-				} 
+				}
 			}
 			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = dockyard
-						size > 0 
+						size > 0
 						include_locked = yes
 					}
 					is_owned_and_controlled_by = ROOT
@@ -2171,7 +2171,7 @@ focus_tree = {
 					type = dockyard
 					level = 1
 					instant_build = yes
-				} 
+				}
 			}
 
 			add_timed_idea = {
@@ -2184,9 +2184,9 @@ focus_tree = {
 
 	#focus = {
 	#	id = BRA_rio_conference
-	#	#icon = 
-	#	prerequisite = { 
-	#		focus = BRA_reach_out_to_our_neighbors 
+	#	#icon =
+	#	prerequisite = {
+	#		focus = BRA_reach_out_to_our_neighbors
 	#		#focus = BRA_the_international_crisis
 	#	}
 	#	x = 0
@@ -2220,9 +2220,9 @@ focus_tree = {
 
 	#focus = {
 	#	id = BRA_organization_of_american_unity
-	#	#icon = 
-	#	prerequisite = { 
-	#		focus = BRA_cooperation_in_the_americas 
+	#	#icon =
+	#	prerequisite = {
+	#		focus = BRA_cooperation_in_the_americas
 	#		#focus = BRA_the_international_crisis
 	#	}
 	#	x = 6
@@ -2247,8 +2247,8 @@ focus_tree = {
 	focus = {
 		id = BRA_reach_out_to_our_neighbors
 		icon = GFX_focus_BRA_north_and_south_america
-		prerequisite = { 
-			focus = BRA_cooperation_in_the_americas 
+		prerequisite = {
+			focus = BRA_cooperation_in_the_americas
 			#focus = BRA_the_international_crisis
 		}
 		x = 2
@@ -2285,8 +2285,8 @@ focus_tree = {
 	focus = {
 		id = BRA_south_american_defense_cooperation
 		icon = GFX_focus_generic_little_entente
-		prerequisite = { 
-			focus = BRA_reach_out_to_our_neighbors 
+		prerequisite = {
+			focus = BRA_reach_out_to_our_neighbors
 			#focus = BRA_the_international_crisis
 		}
 		x = 0
@@ -2341,7 +2341,7 @@ focus_tree = {
 						10 = {
 							modifier = {
 								factor = 0
-								has_trait = trait_mountaineer 
+								has_trait = trait_mountaineer
 							}
 							add_trait = { trait = trait_mountaineer  }
 						}
@@ -2371,8 +2371,8 @@ focus_tree = {
 	focus = {
 		id = BRA_foreign_legion
 		icon = GFX_focus_generic_manpower
-		prerequisite = { 
-			focus = BRA_reach_out_to_our_neighbors 
+		prerequisite = {
+			focus = BRA_reach_out_to_our_neighbors
 			#focus = BRA_the_international_crisis
 		}
 		x = 2
@@ -2420,7 +2420,7 @@ focus_tree = {
 						division = "division_template =\"Legião Estrangeira\" start_experience_factor = 0.2 start_equipment_factor	= 1.0"
 						owner = ROOT
 						count = 3
-					} 
+					}
 				}
 			}
 		}
@@ -2429,8 +2429,8 @@ focus_tree = {
 	focus = {
 		id = BRA_south_american_research_cooperation
 		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { 
-			focus = BRA_south_american_defense_cooperation 
+		prerequisite = {
+			focus = BRA_south_american_defense_cooperation
 			#focus = BRA_the_international_crisis
 		}
 		mutually_exclusive = { focus = BRA_us_brazil_technology_exchange }
@@ -2474,8 +2474,8 @@ focus_tree = {
 	focus = {
 		id = BRA_washington_accords
 		icon = GFX_focus_chi_mission_to_the_us
-		prerequisite = { 
-			focus = BRA_cooperation_in_the_americas 
+		prerequisite = {
+			focus = BRA_cooperation_in_the_americas
 		}
 		x = -2
 		y = 1
@@ -2484,7 +2484,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		}
-		available = {	
+		available = {
 			any_other_country = {
 				original_tag = USA
 				has_war_with_major = yes
@@ -2525,13 +2525,13 @@ focus_tree = {
 	focus = {
 		id = BRA_disrupt_operation_bolivar
 		icon = GFX_focus_BRA_disrupt_bolivar
-		prerequisite = { 
+		prerequisite = {
 			focus = BRA_defense_spending
 		}
 		relative_position_id = BRA_defense_spending
 		x = 0
 		y = 1
-		
+
 		cost = 10
 		available = {
 			any_country = {
@@ -2569,8 +2569,8 @@ focus_tree = {
 	focus = {
 		id = BRA_potenji_river_conference
 		icon = GFX_focus_BRA_rio_protocol
-		prerequisite = { 
-			focus = BRA_washington_accords 
+		prerequisite = {
+			focus = BRA_washington_accords
 			#focus = BRA_the_international_crisis
 		}
 		x = 0
@@ -2583,11 +2583,11 @@ focus_tree = {
 		available = {
 			is_subject = no
 			USA = {
-				
+
 				has_war = yes
 				is_in_faction = yes
 				any_allied_country = {
-					is_major = yes 
+					is_major = yes
 				}
 			}
 		}
@@ -2626,8 +2626,8 @@ focus_tree = {
 
 		icon = GFX_focus_generic_air_bases
 
-		prerequisite = { 
-			focus = BRA_washington_accords 
+		prerequisite = {
+			focus = BRA_washington_accords
 			#focus = BRA_the_international_crisis
 		}
 
@@ -2643,7 +2643,7 @@ focus_tree = {
 		available = {
 
 			USA = {
-				exists = yes 
+				exists = yes
 			}
 
 			NOT = {
@@ -2708,7 +2708,7 @@ focus_tree = {
 					498 = {
 						free_building_slots = {
 							building = air_base
-							size > 2 
+							size > 2
 						}
 					}
 				}
@@ -2718,14 +2718,14 @@ focus_tree = {
 						type = air_base
 						level = 3
 						instant_build = yes
-					} 
+					}
 				}
 				ELSE_IF = {
 					limit = {
 						498 = {
 							free_building_slots = {
 								building = air_base
-								size > 1 
+								size > 1
 							}
 						}
 					}
@@ -2735,7 +2735,7 @@ focus_tree = {
 							type = air_base
 							level = 2
 							instant_build = yes
-						} 
+						}
 					}
 				}
 				ELSE_IF = {
@@ -2743,7 +2743,7 @@ focus_tree = {
 						498 = {
 							free_building_slots = {
 								building = air_base
-								size > 0 
+								size > 0
 							}
 						}
 					}
@@ -2753,7 +2753,7 @@ focus_tree = {
 							type = air_base
 							level = 1
 							instant_build = yes
-						} 
+						}
 					}
 				}
 			}
@@ -2772,8 +2772,8 @@ focus_tree = {
 	focus = {
 		id = BRA_smoking_cobras
 		icon = GFX_focus_BRA_cobras_fumantes
-		prerequisite = { 
-			focus = BRA_washington_accords 
+		prerequisite = {
+			focus = BRA_washington_accords
 			#focus = BRA_the_international_crisis
 		}
 		x = -4
@@ -2797,15 +2797,15 @@ focus_tree = {
 				add_equipment_subsidy = {
 					cic = 1000
 					equipment_type = infantry_equipment
-					seller_tags = { USA } 
+					seller_tags = { USA }
 				}
 				add_equipment_subsidy = {
 					cic = 1000
 					equipment_type = artillery_equipment
-					seller_tags = { USA } 
+					seller_tags = { USA }
 				}
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 4000
 				producer = USA
@@ -2817,8 +2817,8 @@ focus_tree = {
 	focus = {
 		id = BRA_no_fascism_in_south_america
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { 
-			focus = BRA_cooperation_in_the_americas 
+		prerequisite = {
+			focus = BRA_cooperation_in_the_americas
 			#focus = BRA_the_international_crisis
 		}
 		x = -4
@@ -2879,14 +2879,14 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = BRA_no_fascism_in_south_america_tt
-		} 
+		}
 	}
 
 	focus = {
 		id = BRA_senta_a_pua
 		icon = GFX_focus_BRA_senta_a_pua
-		prerequisite = { 
-			focus = BRA_natal_naval_base 
+		prerequisite = {
+			focus = BRA_natal_naval_base
 			#focus = BRA_the_international_crisis
 		}
 		x = 0
@@ -2904,14 +2904,14 @@ focus_tree = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = small_plane_airframe_1
 					amount = 200
 					producer = USA
 				}
 			}
 			else = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = fighter_equipment_1
 					amount = 200
 					producer = USA
@@ -2924,17 +2924,17 @@ focus_tree = {
 				add_equipment_subsidy = {
 					cic = 500
 					equipment_type = small_plane_airframe
-					seller_tags = { USA } 
+					seller_tags = { USA }
 				}
 				add_equipment_subsidy = {
 					cic = 500
 					equipment_type = large_plane_airframe
-					seller_tags = { USA } 
+					seller_tags = { USA }
 				}
 				add_equipment_subsidy = {
 					cic = 500
 					equipment_type = medium_plane_airframe
-					seller_tags = { USA } 
+					seller_tags = { USA }
 				}
 			}
 		}
@@ -2943,8 +2943,8 @@ focus_tree = {
 	focus = {
 		id = BRA_no_communism_in_south_america
 		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { 
-			focus = BRA_cooperation_in_the_americas 
+		prerequisite = {
+			focus = BRA_cooperation_in_the_americas
 			#focus = BRA_the_international_crisis
 		}
 		x = 4
@@ -2984,7 +2984,7 @@ focus_tree = {
 						type = puppet_wargoal_focus
 						target = PREV
 						expire = 0
-					} 
+					}
 				}
 			}
 		}
@@ -2993,8 +2993,8 @@ focus_tree = {
 	focus = {
 		id = BRA_us_brazil_technology_exchange
 		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { 
-			focus = BRA_potenji_river_conference 
+		prerequisite = {
+			focus = BRA_potenji_river_conference
 			#focus = BRA_the_international_crisis
 		}
 		x = 0
@@ -3022,7 +3022,7 @@ focus_tree = {
 			effect_tooltip = {
 				add_to_tech_sharing_group = BRA_USA_tech_sharing_group
 			}
-		} 
+		}
 	}
 
 
@@ -3036,8 +3036,8 @@ focus_tree = {
 		id = BRA_domination_of_the_americas
 		icon = GFX_focus_por_recover_latin_america
 		mutually_exclusive = { focus = BRA_cooperation_in_the_americas }
-		prerequisite = { 
-			focus = BRA_secure_our_borders 
+		prerequisite = {
+			focus = BRA_secure_our_borders
 			focus = BRA_ethical_internationalism
 		}
 		x = 5
@@ -3068,7 +3068,7 @@ focus_tree = {
 			hidden_effect = {
 				every_other_country = {
 					limit = {
-						any_controlled_state = { 
+						any_controlled_state = {
 							OR = {
 								is_on_continent = north_america
 								is_on_continent = south_america
@@ -3091,8 +3091,8 @@ focus_tree = {
 	focus = {
 		id = BRA_berlin_accords
 		icon = GFX_focus_chi_mission_to_germany
-		prerequisite = { 
-			focus = BRA_domination_of_the_americas 
+		prerequisite = {
+			focus = BRA_domination_of_the_americas
 		}
 		bypass = {
 			is_in_faction_with = GER
@@ -3158,8 +3158,8 @@ focus_tree = {
 	focus = {
 		id = BRA_expand_operation_bolivar
 		icon = GFX_focus_BRA_expand_bolivar
-		prerequisite = { 
-			focus = BRA_berlin_accords 
+		prerequisite = {
+			focus = BRA_berlin_accords
 			focus = BRA_rome_accords
 		}
 		x = 0
@@ -3197,8 +3197,8 @@ focus_tree = {
 	focus = {
 		id = BRA_german_tanks
 		icon = GFX_focus_BRA_acquire_german_tanks
-		prerequisite = { 
-			focus = BRA_expand_operation_bolivar 
+		prerequisite = {
+			focus = BRA_expand_operation_bolivar
 		}
 		x = -1
 		y = 1
@@ -3226,11 +3226,11 @@ focus_tree = {
 			#	bonus = 0.5
 			#	uses = 3
 			#	category = armor
-			#}	
+			#}
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny" 
+					has_dlc = "Arms Against Tyranny"
 				}
 				show_mio_tooltip = GER_daimler_benz_organization
 				mio:GER_daimler_benz_organization = {
@@ -3241,7 +3241,7 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 0 
+						size > 0
 						include_locked = yes
 					}
 					is_owned_and_controlled_by = ROOT
@@ -3263,7 +3263,7 @@ focus_tree = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-				} 
+				}
 			}
 
 			IF = {
@@ -3320,8 +3320,8 @@ focus_tree = {
 	focus = {
 		id = BRA_german_subs
 		icon = GFX_focus_BRA_german_submarine_development
-		prerequisite = { 
-			focus = BRA_expand_operation_bolivar 
+		prerequisite = {
+			focus = BRA_expand_operation_bolivar
 		}
 		x = 1
 		y = 1
@@ -3400,8 +3400,8 @@ focus_tree = {
 	focus = {
 		id = BRA_german_cooperation
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { 
-			focus = BRA_german_tanks 
+		prerequisite = {
+			focus = BRA_german_tanks
 			focus = BRA_german_subs
 		}
 		x = -1
@@ -3442,7 +3442,7 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
-				
+
 
 			}
 			custom_effect_tooltip = BRA_german_cooperation_tt
@@ -3719,7 +3719,7 @@ focus_tree = {
 					NOT = { has_character_flag = SMB_naval_academy_boost }
 				}
 				add_trait = {
-					trait = seawolf 
+					trait = seawolf
 				}
 			}
 		}
@@ -3728,8 +3728,8 @@ focus_tree = {
 	focus = {
 		id = BRA_guyana_crisis
 		icon = GFX_focus_generic_attack_the_guyanas
-		prerequisite = { 
-			focus = BRA_domination_of_the_americas 
+		prerequisite = {
+			focus = BRA_domination_of_the_americas
 		}
 		x = 4
 		y = 1
@@ -3784,8 +3784,8 @@ focus_tree = {
 	focus = {
 		id = BRA_defense_of_the_fatherland
 		icon = GFX_focus_BRA_for_the_fatherland
-		prerequisite = { 
-			focus = BRA_domination_of_the_americas 
+		prerequisite = {
+			focus = BRA_domination_of_the_americas
 		}
 		x =-2
 		y = 1
@@ -3805,7 +3805,7 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 0 
+						size > 0
 						include_locked = yes
 					}
 					is_owned_and_controlled_by = ROOT
@@ -3827,17 +3827,17 @@ focus_tree = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
-				} 
-			}  
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = BRA_uruguay_ultimatum
 		icon = GFX_focus_generic_attack_uruguay
-		prerequisite = { 
+		prerequisite = {
 			focus = BRA_anaue
-			focus = BRA_the_polaca 
+			focus = BRA_the_polaca
 		}
 		x = -2
 		y = 1
@@ -3867,8 +3867,8 @@ focus_tree = {
 	focus = {
 		id = BRA_rome_accords
 		icon = GFX_focus_befriend_italy
-		prerequisite = { 
-			focus = BRA_domination_of_the_americas 
+		prerequisite = {
+			focus = BRA_domination_of_the_americas
 		}
 		bypass = {
 			is_in_faction_with = ITA
@@ -3937,7 +3937,7 @@ focus_tree = {
 				ITA = {
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = large_increase 
+						modifier = large_increase
 					}
 				}
 			}
@@ -3947,8 +3947,8 @@ focus_tree = {
 	focus = {
 		id = BRA_italian_car_industry
 		icon = GFX_focus_ITA_redirect_alfa_romeo_production
-		prerequisite = { 
-			focus = BRA_rome_accords 
+		prerequisite = {
+			focus = BRA_rome_accords
 			focus = BRA_berlin_accords
 		}
 		x = 0
@@ -3975,13 +3975,13 @@ focus_tree = {
 				name = BRA_italian_truck_exchange
 				bonus = 0.50
 				uses = 2
-				category = motorized_equipment 
-				category = cat_mechanized_equipment 
-			}	
+				category = motorized_equipment
+				category = cat_mechanized_equipment
+			}
 
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = 200 
+				amount = 200
 				producer = ITA
 			}
 		}
@@ -3990,8 +3990,8 @@ focus_tree = {
 	focus = {
 		id = BRA_italian_aircraft
 		icon = GFX_focus_BRA_italian_aircraft_development
-		prerequisite = { 
-			focus = BRA_italian_car_industry 
+		prerequisite = {
+			focus = BRA_italian_car_industry
 		}
 		x = -1
 		y = 1
@@ -4017,7 +4017,7 @@ focus_tree = {
 			air_experience = 15
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny" 
+					has_dlc = "Arms Against Tyranny"
 				}
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = ITA_fiat_aviazione_organization
@@ -4040,20 +4040,20 @@ focus_tree = {
 					uses = 2
 					category = light_air
 					category = medium_air
-				}	
+				}
 			}
 			if = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = small_plane_airframe_1
 					amount = 200
 					producer = ITA
 				}
 			}
 			else = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = fighter_equipment_1
 					amount = 200
 					producer = ITA
@@ -4063,7 +4063,7 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 0 
+						size > 0
 						include_locked = yes
 					}
 					is_owned_and_controlled_by = ROOT
@@ -4085,7 +4085,7 @@ focus_tree = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-				} 
+				}
 			}
 		}
 	}
@@ -4093,8 +4093,8 @@ focus_tree = {
 	focus = {
 		id = BRA_italian_trucks
 		icon = GFX_focus_BRA_joint_italian_motor_development
-		prerequisite = { 
-			focus = BRA_italian_car_industry 
+		prerequisite = {
+			focus = BRA_italian_car_industry
 		}
 		x = 1
 		y = 1
@@ -4115,7 +4115,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -4131,7 +4131,7 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = arms_factory
-							size > 0 
+							size > 0
 							include_locked = yes
 						}
 						is_owned_and_controlled_by = ROOT
@@ -4153,7 +4153,7 @@ focus_tree = {
 						type = arms_factory
 						level = 1
 						instant_build = yes
-					} 
+					}
 				}
 			}
 			ELSE = {
@@ -4192,8 +4192,8 @@ focus_tree = {
 	focus = {
 		id = BRA_italian_cooperation
 		icon = GFX_focus_ITA_ministry_of_italian_africa
-		prerequisite = { 
-			focus = BRA_italian_trucks 
+		prerequisite = {
+			focus = BRA_italian_trucks
 			focus = BRA_italian_aircraft
 		}
 		x = -1
@@ -4218,7 +4218,7 @@ focus_tree = {
 					OR = {
 						region = 226
 						region = 140
-					}					
+					}
 					NOT = {
 						OR = {
 							is_owned_by = ROOT
@@ -4231,12 +4231,12 @@ focus_tree = {
 				}
 				add_claim_by = ROOT
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 4000
 				producer = ITA
 			}
-			random_army_leader = {		
+			random_army_leader = {
 				limit = {
 					NOT = {
 						has_trait = ranger
@@ -4246,22 +4246,22 @@ focus_tree = {
 					trait = ranger
 				}
 			}
-			random_army_leader = {	
+			random_army_leader = {
 				limit = {
 					NOT = {
 						has_trait = ranger
 					}
-				}	
+				}
 				add_trait = {
 					trait = ranger
 				}
 			}
-			random_army_leader = {	
+			random_army_leader = {
 				limit = {
 					NOT = {
 						has_trait = ranger
 					}
-				}	
+				}
 				add_trait = {
 					trait = ranger
 				}
@@ -4272,8 +4272,8 @@ focus_tree = {
 	focus = {
 		id = BRA_attack_bolivia
 		icon = GFX_focus_generic_attack_bolivia
-		prerequisite = { 
-			focus = BRA_guyana_crisis 
+		prerequisite = {
+			focus = BRA_guyana_crisis
 			#focus = BRA_uruguay_ultimatum
 		}
 		bypass = {
@@ -4313,7 +4313,7 @@ focus_tree = {
 	focus = {
 		id = BRA_paraguay_intervention
 		icon = GFX_focus_generic_attack_paraguay
-		prerequisite = { 
+		prerequisite = {
 			#focus = BRA_uruguay_ultimatum
 			focus = BRA_guyana_crisis
 		}
@@ -4356,8 +4356,8 @@ focus_tree = {
 	focus = {
 		id = BRA_provoke_argentina
 		icon = GFX_focus_generic_attack_argentina
-		prerequisite = { 
-			focus = BRA_attack_bolivia 
+		prerequisite = {
+			focus = BRA_attack_bolivia
 			focus = BRA_paraguay_intervention
 		}
 		bypass = {
@@ -4398,8 +4398,8 @@ focus_tree = {
 	focus = {
 		id = BRA_attack_chile
 		icon = GFX_focus_generic_attack_chile
-		prerequisite = { 
-			focus = BRA_paraguay_intervention 
+		prerequisite = {
+			focus = BRA_paraguay_intervention
 			focus = BRA_attack_bolivia
 		}
 		bypass = {
@@ -4438,8 +4438,8 @@ focus_tree = {
 
 	focus = {
 		id = BRA_panama_push
-		icon = GFX_goal_generic_attack_allies	
-		prerequisite = { 
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {
 			focus = BRA_provoke_argentina
 			focus = BRA_attack_chile
 		}
@@ -4540,7 +4540,7 @@ focus_tree = {
 					expire = 0
 				}
 			}
-			add_timed_idea = { 
+			add_timed_idea = {
 				idea = BRA_panama_push
 				days = 365
 			}
@@ -4550,7 +4550,7 @@ focus_tree = {
 	focus = {
 		id = BRA_form_mercosul
 		icon = GFX_focus_BRA_form_mercosul
-		prerequisite = { 
+		prerequisite = {
 			focus = BRA_domination_of_the_americas
 			#focus = BRA_provoke_argentina
 		}
@@ -4561,7 +4561,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				factor = 0 
+				factor = 0
 				is_in_faction = yes
 			}
 		}
@@ -4663,7 +4663,7 @@ focus_tree = {
 							expire = "1965.1.1.1"
 							traits = { democratic_reformer }
 						}
-					} 
+					}
 					promote_leader = yes
 				}
 			}
@@ -4682,7 +4682,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BRA_repeal_the_national_security_law
 		prerequisite = { focus = BRA_repeal_the_national_security_law }
-		mutually_exclusive = { focus = BRA_continue_centralization } 
+		mutually_exclusive = { focus = BRA_continue_centralization }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4700,7 +4700,7 @@ focus_tree = {
 
 	#focus = {
 	#	id = BRA_democratic_socialism
-	#	#icon = 
+	#	#icon =
 	#	x = -4
 	#	y = 4
 	#	relative_position_id = BRA_greater_federalism
@@ -4795,7 +4795,7 @@ focus_tree = {
 			hidden_effect = {
 				division_template = {
 					name = "Guarda Nacional"
-					#division_names_group = 
+					#division_names_group =
 					is_locked = no
 					force_allow_recruiting = yes
 					override_model = BRA_militia_entity
@@ -4872,8 +4872,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BRA_court_the_military
-		prerequisite = { 
-			focus = BRA_court_the_military 
+		prerequisite = {
+			focus = BRA_court_the_military
 		#	focus = BRA_constitutional_monarchy
 		}
 		#mutually_exclusive = { focus = BRA_nationalize_the_banks }
@@ -4960,9 +4960,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BRA_court_the_military
-		prerequisite = { 
-			focus = BRA_court_the_military 
-			#focus = BRA_constitutional_monarchy 
+		prerequisite = {
+			focus = BRA_court_the_military
+			#focus = BRA_constitutional_monarchy
 		}
 		cost = 5
 		ai_will_do = {
@@ -5172,7 +5172,7 @@ focus_tree = {
 		completion_reward = {
 			set_cosmetic_tag = BRA_united_states_of_south_america_cos_tag
 			custom_effect_tooltip = BRA_united_states_of_south_america_tt
-		}	
+		}
 	}
 
 	focus = {
@@ -5319,7 +5319,7 @@ focus_tree = {
 			show_mio_tooltip = FRA_bloch_organization
 			show_mio_tooltip = FRA_renault_organization
 			# Sweden
-			show_mio_tooltip = SWE_saab_organization			
+			show_mio_tooltip = SWE_saab_organization
 			show_mio_tooltip = SWE_landsverk_organization
 			show_mio_tooltip = SWE_gotaverken_organization
 			show_mio_tooltip = SWE_scania_vabis_organization
@@ -5348,12 +5348,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_ideas = BRA_international_crisis 
+			add_ideas = BRA_international_crisis
 			set_rule = {
 				can_send_volunteers = yes
 			}
 			#set_rule = {
-			#	can_join_factions = yes 
+			#	can_join_factions = yes
 			#}
 		}
 	}
@@ -5473,7 +5473,7 @@ focus_tree = {
 			add_timed_idea = {
 				idea = BRA_radicalized_proletariat
 				days = 365
-			}			
+			}
 		}
 	}
 
@@ -5591,14 +5591,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 150
-			SOU = { 
+			SOU = {
 				country_event = {
 					id = JUNO_brazil_events.86
 					hours = 6
 				}
 			}
 			custom_effect_tooltip = BRA_acceptance_tt
-			event_option_tooltip = JUNO_brazil_events.86.a 
+			event_option_tooltip = JUNO_brazil_events.86.a
 		}
 	}
 
@@ -5626,17 +5626,17 @@ focus_tree = {
 				var = BRA_total_anti_com_size #used to calculate how big portion of the army that is NOT supporting the communists
 				value = party_popularity@democratic #democratic support
 			}
-	
+
 			add_to_variable = {
 				var = BRA_total_anti_com_size
 				value = party_popularity@fascism #adds fascist support to variable
 			}
-	
+
 			add_to_variable = {
 				var = BRA_total_anti_com_size
 				value = party_popularity@neutrality #adds non-aligned support to variable
 			}
-	
+
 			IF = {
 				limit = { has_completed_focus = BRA_infilitrate_the_military }
 				add_to_variable = {
@@ -5644,9 +5644,9 @@ focus_tree = {
 					value = -0.2
 				}
 			}
-			
+
 			division_template = {
-				name = "Guarda Vermelha"		
+				name = "Guarda Vermelha"
 				#division_names_group = SWE_BS_01
 				is_locked = no
 				template_counter = 69
@@ -5659,11 +5659,11 @@ focus_tree = {
 				#division_cap = 0
 				override_model = BRA_militia_alt_0_entity
 			}
-	
+
 			set_variable = {
 				BRA_cw_militia_divs = 6
 			}
-	
+
 			IF = {
 				limit = {
 					has_completed_focus = BRA_revive_the_anl
@@ -5686,7 +5686,7 @@ focus_tree = {
 					has_completed_focus = BRA_sway_the_cangaco
 				}
 				division_template = {
-					name = "Cangaço"		
+					name = "Cangaço"
 					#division_names_group = SWE_BS_01
 					is_locked = no
 					template_counter = 3
@@ -5710,17 +5710,17 @@ focus_tree = {
 				hidden_effect = {
 					set_capital = {
 						state = 499 #Salvador, the old capital, giving them 2nd biggest city, Sao Paolo, leads to being WAY too 	close to Rio de Janeiro, they could rush the capital and win.
-						remember_old_capital = yes 
+						remember_old_capital = yes
 					}
 					start_civil_war = {
 						ruling_party = communism #the part the player controls
 						ideology = democratic #the opposing part
-						size = BRA_total_anti_com_size # Opposing strength, variable combines all other parties' popularity 
+						size = BRA_total_anti_com_size # Opposing strength, variable combines all other parties' popularity
 						states = { 500 501 496 943 505 280 504 944 503 502} #Dem's controlled states, Southern Brazil, Massive
 						IF = {
 							limit = {  PREV = { has_completed_focus = BRA_radio_nacional } }
 							add_ideas = BRA_radio_nacional_idea
-						} 	
+						}
 					}
 					BRA_communist_cw_transfer_chars = yes
 					news_event = { id = JUNO_brazil_news.5 hours = 1 }
@@ -5742,8 +5742,8 @@ focus_tree = {
 				create_unit = {
 					division = "division_template =\"Guarda Vermelha\" start_experience_factor = 0.2 start_equipment_factor	= 1.0"
 					owner = ROOT
-					count = var:BRA.BRA_cw_militia_divs	
-				} 
+					count = var:BRA.BRA_cw_militia_divs
+				}
 			}
 			IF = {
 				limit = {
@@ -5754,7 +5754,7 @@ focus_tree = {
 						division = "division_template =\"Cangaço\" start_experience_factor = 0.2 start_equipment_factor	= 1.0"
 						owner = ROOT
 						count = 3
-					} 
+					}
 				}
 			}
 			remove_dynamic_modifier = {
@@ -5774,7 +5774,7 @@ focus_tree = {
 						has_civil_war = yes
 					}
 					division_template = {
-						name = "National Militia"		
+						name = "National Militia"
 						#division_names_group = SWE_BS_01
 						is_locked = no
 						template_counter = 03
@@ -5792,7 +5792,7 @@ focus_tree = {
 							division = "division_template =\"National Militia\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
 							owner = PREV
 							count = 10
-						} 
+						}
 					}
 				}
 			}
@@ -5872,7 +5872,7 @@ focus_tree = {
 					ideology = marxism
 					expire="1965.1.1.1"
 					id=-1
-					traits = { JUNO_alianca_nacional_libertadora_council } 
+					traits = { JUNO_alianca_nacional_libertadora_council }
 				}
 			}
 			remove_dynamic_modifier = {
@@ -5908,7 +5908,7 @@ focus_tree = {
 					ideology = anarchist_communism
 					expire="1965.1.1.1"
 					id=-1
-					traits = {BRA_bandit_revolutionary} 
+					traits = {BRA_bandit_revolutionary}
 				}
 			}
 			set_party_name = {
@@ -6037,7 +6037,7 @@ focus_tree = {
 							state = 966
 							state = 967
 							state = 968
-						}	
+						}
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -6063,7 +6063,7 @@ focus_tree = {
 							state = 966
 							state = 967
 							state = 968
-						}	
+						}
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -6074,7 +6074,7 @@ focus_tree = {
 				}
 				set_state_flag = rapid_industrialization_happened
 			}
-			
+
 		}
 	}
 
@@ -6210,7 +6210,7 @@ focus_tree = {
 			set_rule = { can_send_volunteers = yes }
 
 			add_ideas = BRA_international_brigades
-		
+
 		}
 	}
 
@@ -6269,32 +6269,32 @@ focus_tree = {
 				add_equipment_subsidy = {
 					cic = 1000
 					equipment_type = infantry_equipment
-					seller_tags = { SOU } 
+					seller_tags = { SOU }
 				}
 				add_equipment_subsidy = {
 					cic = 1000
 					equipment_type = artillery_equipment
-					seller_tags = { SOU } 
+					seller_tags = { SOU }
 				}
 				add_equipment_subsidy = {
 					cic = 1000
 					equipment_type = support_equipment
-					seller_tags = { SOU } 
+					seller_tags = { SOU }
 				}
 			}
 			ELSE = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 2000
 					producer = SOU
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = artillery_equipment
 					amount = 500
 					producer = SOU
 				}
 			}
-		
+
 		}
 	}
 
@@ -6392,7 +6392,7 @@ focus_tree = {
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
-				}	
+				}
 				custom_effect_tooltip = invites_mio_tt
 
 				show_mio_tooltip = SOV_rubin_design_bureau_organization
@@ -6439,16 +6439,16 @@ focus_tree = {
 		completion_reward = {
 			IF = {
 				limit = {
-					has_dlc = "La Resistance" 
+					has_dlc = "La Resistance"
 					has_intelligence_agency = no
 				}
-				create_intelligence_agency = { 
+				create_intelligence_agency = {
 					name = "EICI"
 					icon = GFX_intelligence_agency_logo_BRA_communist
 				}
-	
+
 				create_operative_leader = {
-					name = BRA_robert_ivanov 
+					name = BRA_robert_ivanov
 					traits = { operative_tough }
 					female = no
 					bypass_recruitment = yes
@@ -6456,23 +6456,23 @@ focus_tree = {
 					GFX = GFX_portrait_europe_generic_operative_male_5
 				}
 				create_operative_leader = {
-					name = BRA_nadiya_morozova 
+					name = BRA_nadiya_morozova
 					traits = { operative_escape_artist }
 					female = yes
 					bypass_recruitment = yes
 					nationalities = { SOU }
 					GFX = GFX_portrait_europe_generic_operative_female_7
 				}
-				
+
 			}
 			ELSE_IF = {
 				limit = {
-					has_dlc = "La Resistance" 
+					has_dlc = "La Resistance"
 					has_intelligence_agency = yes
 				}
 
 				create_operative_leader = {
-					name = BRA_robert_ivanov 
+					name = BRA_robert_ivanov
 					traits = { operative_tough }
 					female = no
 					bypass_recruitment = yes
@@ -6481,7 +6481,7 @@ focus_tree = {
 				}
 
 				create_operative_leader = {
-					name = BRA_nadiya_morozova 
+					name = BRA_nadiya_morozova
 					traits = { operative_escape_artist }
 					female = yes
 					bypass_recruitment = yes
@@ -6499,8 +6499,8 @@ focus_tree = {
 			}
 
 			IF = {
-				limit = { 
-					has_dlc = "By Blood Alone" 
+				limit = {
+					has_dlc = "By Blood Alone"
 					has_dlc = "La Resistance"
 				}
 				set_technology = { photo_reconnaisance = 1 }
@@ -6555,8 +6555,8 @@ focus_tree = {
 		available = {
 			is_subject = no
 			is_in_faction = no
-			SOV_comintern_joinable = yes 
-			has_government = communism	
+			SOV_comintern_joinable = yes
+			has_government = communism
 			SOU = {
 				has_opinion = {
 					target = ROOT
@@ -6634,7 +6634,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = BRA_no_fascism_in_south_america_tt
-		} 
+		}
 	}
 
 	focus = {
@@ -6751,9 +6751,9 @@ focus_tree = {
 					GFX = GFX_portrait_europe_generic_operative_female_9
 				}
 			}
-			
+
 		}
-	}	
+	}
 
 	focus = {
 		id = BRA_union_of_latin_american_socialist_republics
@@ -6845,7 +6845,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = BRA_anti_democracy_in_south_america_tt
-		} 
+		}
 	}
 
 	#############################
@@ -6905,7 +6905,7 @@ focus_tree = {
 			add_victory_points = {
 				province = 5172
 				value = 1
-			}	
+			}
 		}
 	}
 
@@ -6933,7 +6933,7 @@ focus_tree = {
 			add_victory_points = {
 				province = 12334
 				value = 1
-			}	
+			}
 		}
 	}
 
@@ -6956,7 +6956,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				retire_country_leader = yes
-			}			
+			}
 			add_country_leader_role = {
 			    character = BRA_arlindo_veiga_dos_santos
 			    promote_leader = yes
@@ -7048,7 +7048,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BRA_constitutional_monarchy
 		prerequisite = { focus = BRA_constitutional_monarchy }
-		
+
 		cost = 10
 
 		ai_will_do = {
@@ -7056,7 +7056,7 @@ focus_tree = {
 		}
 
 		available = {
-		
+
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -7069,12 +7069,12 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 0 
+						size > 0
 						include_locked = yes
 					}
 					is_owned_and_controlled_by = ROOT
 					NOT = {
-						has_dynamic_modifier = { 
+						has_dynamic_modifier = {
 							modifier = BRA_neglected_state_dynamic_modifier
 						}
 						OR = {
@@ -7094,11 +7094,11 @@ focus_tree = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-				} 
+				}
 			}
 			random_owned_controlled_state = {
-				limit = { 
-					is_coastal = yes 
+				limit = {
+					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 1
@@ -7123,7 +7123,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
 		}
 	}
@@ -7142,7 +7142,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-		
+
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -7165,7 +7165,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -7196,7 +7196,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -7252,7 +7252,7 @@ focus_tree = {
 							traits = { BRA_politically_educated }
 						}
 						promote_leader = yes
-					} 
+					}
 				}
 			}
 			if = {
@@ -7269,7 +7269,7 @@ focus_tree = {
 							traits = { BRA_the_white_dove }
 						}
 						promote_leader = yes
-					} 
+					}
 
 				}
 			}
@@ -7283,7 +7283,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BRA_use_the_national_security_law
 		prerequisite = { focus = BRA_use_the_national_security_law }
-		
+
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -7307,7 +7307,7 @@ focus_tree = {
 			OR = {
 				has_subject = POR
 				POR = {
-					exists = no 
+					exists = no
 				}
 				has_war_with = POR
 			}
@@ -7337,8 +7337,8 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				NOT = { 
-					has_completed_focus = BRA_prepare_for_second_intentona 
+				NOT = {
+					has_completed_focus = BRA_prepare_for_second_intentona
 					has_completed_focus = BRA_tribunal_de_seguranca_nacional
 				}
 			}
@@ -7346,9 +7346,9 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no 
+			is_subject = no
 			FRA = {
-				exists = yes 
+				exists = yes
 				NOT = {
 					is_subject_of = ROOT
 				}
@@ -7359,7 +7359,7 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = BRA_united_kingdom_of_brazil_and_portugal }
-		
+
 		icon = GFX_focus_focus_fra_orleans_restoration
 		x = 0
 		y = 1
@@ -7369,7 +7369,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			create_wargoal = {
 				type = annex_everything
 				target = FRA
@@ -7382,7 +7382,7 @@ focus_tree = {
 					add_claim_by = ROOT
 				}
 			}
-			
+
 		}
 	}
 
@@ -7408,12 +7408,12 @@ focus_tree = {
 			hidden_effect = {
 				division_template = {
 					name = "Batalhões de Presos"
-					#division_names_group = 
+					#division_names_group =
 					is_locked = yes
 					force_allow_recruiting = yes
 					override_model = BRA_militia_alt_0_entity
 					division_cap = 6
-	
+
 					regiments = {
 						penal_battalion = { x = 0 y = 0 }
 						penal_battalion = { x = 0 y = 1 }
@@ -7458,7 +7458,7 @@ focus_tree = {
 
 	focus = {
 		id = BRA_amazonian_settlement
-		icon = GFX_focus_BRA_amazon_colonization 
+		icon = GFX_focus_BRA_amazon_colonization
 		x = 0
 		y = 1
 		relative_position_id = BRA_penal_battalions
@@ -7661,7 +7661,7 @@ focus_tree = {
 				OR = {
 					is_subject = no
 					is_subject_of = ROOT
-				}				
+				}
 			}
 		}
 
@@ -7763,7 +7763,7 @@ focus_tree = {
 		search_filters = { }
 
 		completion_reward = {
-			add_country_leader_trait = { 
+			add_country_leader_trait = {
 				#character = BRA_getulio_vargas
 				#ideology = despotism
 				trait = BRA_sugar_king
@@ -7790,10 +7790,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_country_leader_trait = { 
+			add_country_leader_trait = {
 				#character = BRA_getulio_vargas
 				#ideology = despotism
-				trait = BRA_father_of_the_poor 
+				trait = BRA_father_of_the_poor
 			}
 			every_owned_state = {
 				limit = {
@@ -7847,7 +7847,7 @@ focus_tree = {
 						include_locked = yes
 					}
 					is_owned_and_controlled_by = ROOT
-					NOT = { 
+					NOT = {
 						OR = {
 							has_dynamic_modifier = {
 								modifier = BRA_neglected_state_dynamic_modifier
@@ -7897,9 +7897,9 @@ focus_tree = {
 		}
 		available = {
 		}
-	
+
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-	
+
 		completion_reward = {
 			IF = {
 				limit = {
@@ -7974,9 +7974,9 @@ focus_tree = {
 		cost = 5
 		available = {
 		}
-	
+
 		search_filters = { FOCUS_FILTER_HISTORICAL }
-	
+
 		completion_reward = {
 			set_technology = { bicycle_infantry = 1 popup = no }
 			random_core_state = {
@@ -7987,7 +7987,7 @@ focus_tree = {
 						include_locked = yes
 					}
 					is_owned_and_controlled_by = ROOT
-					NOT = { 
+					NOT = {
 						OR = {
 							has_dynamic_modifier = {
 								modifier = BRA_neglected_state_dynamic_modifier
@@ -8016,7 +8016,7 @@ focus_tree = {
 	focus = {
 		id = BRA_unify_south_america
 		icon = GFX_focus_generic_south_america
-		prerequisite = { 
+		prerequisite = {
 			focus = BRA_german_cooperation
 			focus = BRA_italian_cooperation
 			focus = BRA_panama_push

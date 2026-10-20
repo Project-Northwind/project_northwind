@@ -20,7 +20,7 @@
 
 focus_tree = {
 	id = china_communist_focus_sea
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -33,7 +33,7 @@ focus_tree = {
 
 
 
- 	#Focus Path shortcuts
+	#Focus Path shortcuts
 	shortcut = {
 		name = PRC_military_shortcut
 		target = PRC_long_march_to_recovery
@@ -61,7 +61,7 @@ focus_tree = {
 		target = PRC_leadership_of_mao
 		scroll_wheel_factor = 0.85
 	}
-	
+
 
 
 
@@ -76,7 +76,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -87,7 +87,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -108,7 +108,7 @@ focus_tree = {
 		id = PRC_put_an_end_to_the_sufan
 		icon = GFX_focus_PRC_the_central_committee
 		x = 39
-		y = 0 
+		y = 0
 
 		cost = 5
 
@@ -146,9 +146,9 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL}
 
-		available = {			
+		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -249,21 +249,21 @@ focus_tree = {
 				#1032 = { is_fully_controlled_by = XIC }
 			}
 		}
-		
+
 		bypass = {
-			1045 = { 
+			1045 = {
 				OR = {
 					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
 					NOT = { is_controlled_by = NXM }
 				}
 			}
-			615 = { 
+			615 = {
 				OR = {
 					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
 					NOT = { is_controlled_by = SHX }
 				}
 			}
-			#1032 = { 
+			#1032 = {
 			#	OR = {
 			#		state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
 			#		NOT = { is_controlled_by = XIC }
@@ -279,7 +279,7 @@ focus_tree = {
 			custom_effect_tooltip = PRC_unlock_border_defense_raids_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			if = {
 				limit = {
 					615 = { is_fully_controlled_by = SHX }
@@ -327,7 +327,7 @@ focus_tree = {
 		available = {
 			1045 = { is_controlled_by = NXM }
 		}
-		
+
 		bypass = {
 			NOT = { 1045 = { is_controlled_by = NXM }}
 		}
@@ -357,9 +357,9 @@ focus_tree = {
 					amount = 50
 					track = infantry
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
-					amount = 125 
+					amount = 125
 					producer = NXM
 				}
 			}
@@ -367,7 +367,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_this_might_anger_china = yes
-			
+
 		}
 	}
 
@@ -389,7 +389,7 @@ focus_tree = {
 		available = {
 			615 = { is_controlled_by = SHX }
 		}
-		
+
 		bypass = {
 			NOT = { 615 = { is_controlled_by = SHX } }
 		}
@@ -419,9 +419,9 @@ focus_tree = {
 					amount = 50
 					track = infantry
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
-					amount = 125 
+					amount = 125
 					producer = SHX
 				}
 			}
@@ -440,7 +440,7 @@ focus_tree = {
 		y = 1
 		#mutually_exclusive = { focus = PRC_the_internal_enemy }
 		relative_position_id = PRC_the_westward_expedition
-		
+
 
 		cost = 5
 
@@ -453,7 +453,7 @@ focus_tree = {
 			1032 = { is_fully_controlled_by = ROOT }
 			has_border_war = no
 		}
-		
+
 		bypass = {
 		}
 
@@ -465,13 +465,13 @@ focus_tree = {
 
 		completion_reward = {
 			set_capital = {
-				state = 1032 
+				state = 1032
 				remember_old_capital = no
 			}
 			622 = {
 				add_extra_state_shared_building_slots = 1
 			}
-			
+
 			1032 = {
 				add_extra_state_shared_building_slots = 2
 			}
@@ -508,7 +508,7 @@ focus_tree = {
 		y = 1
 		#mutually_exclusive = { focus = PRC_develop_yanan_soviet }
 		relative_position_id = PRC_the_westward_expedition
-		
+
 
 		cost = 10
 
@@ -517,9 +517,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 		}
 
@@ -532,7 +532,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { 
+					NOT = {
 						has_completed_focus = PRC_prepare_for_the_inevitable
 						has_completed_focus = PRC_the_march_to_victory
 					}
@@ -607,7 +607,7 @@ focus_tree = {
 				is_in_faction = yes
 				has_country_flag = PRC_said_no_to_cuf
 			}
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -632,7 +632,7 @@ focus_tree = {
 						}
 						is_faction_leader = no
 					}
-				}				
+				}
 				event_target:WTT_current_china_leader = { country_event = { id = SEA_PRC_faction_events.10 days = 2 }}
 				effect_tooltip = {
 					set_rule = { can_create_factions = yes }
@@ -642,7 +642,7 @@ focus_tree = {
 					custom_effect_tooltip = if_they_accept_tt
 					add_to_faction = event_target:WTT_current_china_leader
 				}
-				custom_effect_tooltip = generic_less_threatening_to_accept_tt			
+				custom_effect_tooltip = generic_less_threatening_to_accept_tt
 			}
 			else_if = {
 				limit = {
@@ -657,14 +657,14 @@ focus_tree = {
 				set_rule = { can_join_factions = yes }
 				create_faction_from_template = faction_template_PRC_the_peoples_front
 				add_faction_initiative = 1
-				
+
 				every_other_country = {
 					limit = {
 						is_literally_china = yes
 						has_capitulated = no
 						is_in_faction = no
 						is_subject = no
-						NOT = { 
+						NOT = {
 							has_war_with = ROOT
 							has_border_war_with = ROOT
 							has_idea = SIK_battle_for_sinkiang
@@ -696,7 +696,7 @@ focus_tree = {
 						has_capitulated = no
 						is_in_faction = no
 						is_subject = no
-						NOT = { 
+						NOT = {
 							has_war_with = ROOT
 							has_border_war_with = ROOT
 							has_idea = SIK_battle_for_sinkiang
@@ -746,9 +746,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -764,8 +764,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value > -0.99
+						id = PRC_communist_power_struggle
+						value > -0.99
 					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -798,7 +798,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -814,8 +814,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -849,7 +849,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -868,13 +868,13 @@ focus_tree = {
 		}
 	}
 
-	 ##     ##       ###        #######     
-	 ###   ###      ## ##      ##     ##    
-	 #### ####     ##   ##     ##     ##    
-	 ## ### ##    ##     ##    ##     ##    
-	 ##     ##    #########    ##     ##    
-	 ##     ##    ##     ##    ##     ##    
-	 ##     ##    ##     ##     #######     
+	 ##     ##       ###        #######
+	 ###   ###      ## ##      ##     ##
+	 #### ####     ##   ##     ##     ##
+	 ## ### ##    ##     ##    ##     ##
+	 ##     ##    #########    ##     ##
+	 ##     ##    ##     ##    ##     ##
+	 ##     ##    ##     ##     #######
 
 	focus = {
 		id = PRC_leadership_of_mao
@@ -928,7 +928,7 @@ focus_tree = {
 				value < -0.25
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -947,8 +947,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value > -0.89
+						id = PRC_communist_power_struggle
+						value > -0.89
 					}
 				}
 				add_power_balance_value = {
@@ -1007,7 +1007,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1090,7 +1090,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1124,7 +1124,7 @@ focus_tree = {
 		available = {
 			is_in_faction = yes
 		}
-		
+
 		bypass = {
 			is_in_faction = no
 		}
@@ -1168,7 +1168,7 @@ focus_tree = {
 		available = {
 			is_in_faction = yes
 		}
-		
+
 		bypass = {
 			is_in_faction = no #Don't block Rural Recruitment
 		}
@@ -1182,7 +1182,7 @@ focus_tree = {
 				limit = {
 					is_faction_leader = no
 				}
-				add_faction_influence_ratio = 0.05			
+				add_faction_influence_ratio = 0.05
 			}
 
 			if = {
@@ -1218,7 +1218,7 @@ focus_tree = {
 			num_faction_members > 2
 			is_faction_leader = no
 		}
-		
+
 		bypass = {
 			is_faction_leader = yes
 		}
@@ -1234,7 +1234,7 @@ focus_tree = {
 				}
 				every_other_country = {
 					limit = {
-						is_in_faction_with = ROOT 
+						is_in_faction_with = ROOT
 						is_chinese_warlord = yes
 					}
 					country_event = { id = SEA_PRC_faction_events.20 days = 2 }
@@ -1278,7 +1278,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -1302,7 +1302,7 @@ focus_tree = {
 				every_other_country = {
 					limit = {
 						is_chinese_warlord = yes
-						is_in_faction_with = ROOT 
+						is_in_faction_with = ROOT
 						any_controlled_state = {
 							PRC_state_is_fully_infiltrated = yes
 						}
@@ -1318,7 +1318,7 @@ focus_tree = {
 					every_other_country = {
 						limit = {
 							is_chinese_warlord = yes
-							is_in_faction_with = ROOT 
+							is_in_faction_with = ROOT
 							any_controlled_state = {
 								PRC_state_is_fully_infiltrated = yes
 							}
@@ -1370,7 +1370,7 @@ focus_tree = {
 		available = {
 			has_war_with_major = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -1407,7 +1407,7 @@ focus_tree = {
 				value < -0.5
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -1441,7 +1441,7 @@ focus_tree = {
 					name = PRC_empower_the_guerillas
 
 					sub_doctrine = irregulars
-				}				
+				}
 			}
 			else = {
 				add_mastery_bonus = {
@@ -1476,7 +1476,7 @@ focus_tree = {
 	focus = {
 		id = PRC_holding_half_the_sky
 		icon = GFX_focus_PRC_rally_the_women
-		
+
 		prerequisite = { focus = PRC_empower_the_guerillas }
 		x = 0
 		y = 1
@@ -1491,7 +1491,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1509,18 +1509,18 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_modify_industrial_modifier = yes
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_production_factory_start_efficiency_factor = 0.05
 				tooltip = production_factory_start_efficiency_factor_tt
 			}
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_production_factory_max_efficiency_factor = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
@@ -1532,8 +1532,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value > -0.89
+						id = PRC_communist_power_struggle
+						value > -0.89
 					}
 				}
 				add_power_balance_value = {
@@ -1563,7 +1563,7 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -1598,7 +1598,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1615,7 +1615,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
@@ -1623,16 +1623,16 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			reduce_focus_completion_cost = {
-		  		focus = PRC_agricultural_reform 
-		  		cost = 21
+				focus = PRC_agricultural_reform
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
-		  		focus = PRC_rural_region_development 
-		  		cost = 21
+				focus = PRC_rural_region_development
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
-		  		focus = PRC_rural_region_development_two
-		  		cost = 35
+				focus = PRC_rural_region_development_two
+				cost = 35
 			}
 
 
@@ -1641,8 +1641,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value > -0.94
+						id = PRC_communist_power_struggle
+						value > -0.94
 					}
 				}
 				add_power_balance_value = {
@@ -1652,7 +1652,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = PRC_strengthen_the_central_party_school
 		icon = GFX_focus_CHI_tongzi_jun
@@ -1670,7 +1670,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1685,8 +1685,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value > -0.89
+						id = PRC_communist_power_struggle
+						value > -0.89
 					}
 				}
 				add_power_balance_value = {
@@ -1722,7 +1722,7 @@ focus_tree = {
 				value < 0
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -1734,11 +1734,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			add_stability = 0.05
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			PRC_remove_mediating_general_secretary_idea = yes
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1758,11 +1758,11 @@ focus_tree = {
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_political_power_factor = 0.05
-					tooltip = political_power_factor_tt  
+					tooltip = political_power_factor_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_max_command_power = 5
-					tooltip = max_command_power_tt  
+					tooltip = max_command_power_tt
 				}
 			}
 			else_if = {
@@ -1782,11 +1782,11 @@ focus_tree = {
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_command_power_gain = 0.05
-					tooltip = command_power_gain_tt  
+					tooltip = command_power_gain_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_max_command_power = 5
-					tooltip = max_command_power_tt  
+					tooltip = max_command_power_tt
 				}
 
 			}
@@ -1807,23 +1807,23 @@ focus_tree = {
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_command_power_gain = 0.05
-					tooltip = command_power_gain_tt  
+					tooltip = command_power_gain_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_max_command_power = 10
-					tooltip = max_command_power_tt  
+					tooltip = max_command_power_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_pocket_penalty = -0.05
-					tooltip = pocket_penalty_tt  
+					tooltip = pocket_penalty_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_equipment_capture_factor = 0.025
-					tooltip = equipment_capture_factor_tt  
+					tooltip = equipment_capture_factor_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_army_defence_factor = 0.025
-					tooltip = army_defence_factor_tt  
+					tooltip = army_defence_factor_tt
 				}
 
 			}
@@ -1844,28 +1844,28 @@ focus_tree = {
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_command_power_gain = 0.1
-					tooltip = command_power_gain_tt  
+					tooltip = command_power_gain_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_max_command_power = 15
-					tooltip = max_command_power_tt  
+					tooltip = max_command_power_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_pocket_penalty = -0.1
-					tooltip = pocket_penalty_tt  
+					tooltip = pocket_penalty_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_equipment_capture_factor = 0.05
-					tooltip = equipment_capture_factor_tt  
+					tooltip = equipment_capture_factor_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_army_defence_factor = 0.05
-					tooltip = army_defence_factor_tt  
+					tooltip = army_defence_factor_tt
 				}
 
 			}
 			else = {
-				# best one, slightly better than BoP effect to have this actually have meaning 
+				# best one, slightly better than BoP effect to have this actually have meaning
 				add_dynamic_modifier = {
 					modifier = PRC_maoism_dynamic_modifier
 				}
@@ -1875,23 +1875,23 @@ focus_tree = {
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_command_power_gain = 0.2
-					tooltip = command_power_gain_tt  
+					tooltip = command_power_gain_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_max_command_power = 20
-					tooltip = max_command_power_tt  
+					tooltip = max_command_power_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_pocket_penalty = -0.15
-					tooltip = pocket_penalty_tt  
+					tooltip = pocket_penalty_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_equipment_capture_factor = 0.1
-					tooltip = equipment_capture_factor_tt  
+					tooltip = equipment_capture_factor_tt
 				}
 				set_variable = {
 					PRC_maoism_dynamic_modifier_army_defence_factor = 0.075
-					tooltip = army_defence_factor_tt  
+					tooltip = army_defence_factor_tt
 				}
 
 
@@ -1906,7 +1906,7 @@ focus_tree = {
 
 			custom_effect_tooltip = remove_political_advisor
 			show_ideas_tooltip = PRC_wang_shiwei
-		
+
 		}
 	}
 
@@ -1917,7 +1917,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = PRC_yanan_rectification_movement
-		
+
 		# allow_branch = {	#cant be used while focuses below require this focus
 		# 	has_dlc = "La Resistance"
 		# }
@@ -1931,7 +1931,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1953,7 +1953,7 @@ focus_tree = {
 					}
 					create_intelligence_agency = {
 						name = "Central Social Affairs Department"
-						icon = GFX_intelligence_agency_logo_PRC_central_social_affairs_department 
+						icon = GFX_intelligence_agency_logo_PRC_central_social_affairs_department
 					}
 				}
 				else_if = {
@@ -1972,9 +1972,9 @@ focus_tree = {
 					}
 					upgrade_intelligence_agency = upgrade_interrogation_techniques
 				}
-	
+
 				custom_effect_tooltip = generic_skip_one_line_tt
-	
+
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = PRC_kang_sheng
 			}
@@ -2003,7 +2003,7 @@ focus_tree = {
 				character = PRC_mao_zedong
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2042,7 +2042,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = PRC_enforce_maoism
-		
+
 		cost = 5
 
 		ai_will_do = {
@@ -2074,7 +2074,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2101,10 +2101,10 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			PRC_USA_lend_lease_strategy = yes		
+			PRC_USA_lend_lease_strategy = yes
 		}
 	}
-	
+
 	focus = {
 		id = PRC_deepen_the_dixie_mission
 		icon = GFX_goal_generic_scientific_exchange
@@ -2140,7 +2140,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2165,7 +2165,7 @@ focus_tree = {
 					target = ROOT
 					modifier = PRC_dixie_mission_opinion
 				}
-			}	
+			}
 			add_tech_bonus = {
 				name = PRC_deepen_the_dixie_mission
 				bonus = 0.25
@@ -2236,8 +2236,8 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-		}	
-		
+		}
+
 		bypass = {
 
 		}
@@ -2305,7 +2305,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2366,7 +2366,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2407,13 +2407,13 @@ focus_tree = {
 				bonus = 0.25
 				uses = 1
 				category = support_tech
-			}			
+			}
 			add_tech_bonus = {
 				name = PRC_tech_agreement_with_ussr
 				bonus = 0.25
 				uses = 1
 				category = infantry_weapons
-			}	
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -2444,7 +2444,7 @@ focus_tree = {
 					PRC_neighboring_SOV = yes
 				}
 				add_ideas = PRC_SOV_lend_lease_idea_1
-			}			
+			}
 		}
 	}
 
@@ -2469,7 +2469,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -2529,7 +2529,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -2556,7 +2556,7 @@ focus_tree = {
 						target = PREV
 					}
 				}
-			}			
+			}
 
 		}
 	}
@@ -2578,7 +2578,7 @@ focus_tree = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -2594,13 +2594,13 @@ focus_tree = {
 		}
 	}
 
-	 #######   #######     ########   #######  ##        ######  ##     ## ######## ##     ## #### ##    ##  ######  
-	##     ## ##     ##    ##     ## ##     ## ##       ##    ## ##     ## ##       ##     ##  ##  ##   ##  ##    ## 
-	       ## ##     ##    ##     ## ##     ## ##       ##       ##     ## ##       ##     ##  ##  ##  ##   ##       
-	 #######   #######     ########  ##     ## ##        ######  ######### ######   ##     ##  ##  #####     ######  
-	##        ##     ##    ##     ## ##     ## ##             ## ##     ## ##        ##   ##   ##  ##  ##         ## 
-	##        ##     ##    ##     ## ##     ## ##       ##    ## ##     ## ##         ## ##    ##  ##   ##  ##    ## 
-	#########  #######     ########   #######  ########  ######  ##     ## ########    ###    #### ##    ##  ######  
+	 #######   #######     ########   #######  ##        ######  ##     ## ######## ##     ## #### ##    ##  ######
+	##     ## ##     ##    ##     ## ##     ## ##       ##    ## ##     ## ##       ##     ##  ##  ##   ##  ##    ##
+	       ## ##     ##    ##     ## ##     ## ##       ##       ##     ## ##       ##     ##  ##  ##  ##   ##
+	 #######   #######     ########  ##     ## ##        ######  ######### ######   ##     ##  ##  #####     ######
+	##        ##     ##    ##     ## ##     ## ##             ## ##     ## ##        ##   ##   ##  ##  ##         ##
+	##        ##     ##    ##     ## ##     ## ##       ##    ## ##     ## ##         ## ##    ##  ##   ##  ##    ##
+	#########  #######     ########   #######  ########  ######  ##     ## ########    ###    #### ##    ##  ######
 
 	focus = {
 		id = PRC_reclaim_the_grasp_of_power
@@ -2652,7 +2652,7 @@ focus_tree = {
 				value > 0.3
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2671,12 +2671,12 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			
+
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				add_power_balance_value = {
@@ -2752,7 +2752,7 @@ focus_tree = {
 				exists = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2777,14 +2777,14 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			reduce_focus_completion_cost = {
-			  focus = PRC_request_for_aid 
+			  focus = PRC_request_for_aid
 			  cost = 21
 			}
 			reduce_focus_completion_cost = {
-			  focus = PRC_appeal_for_foreign_aid 
+			  focus = PRC_appeal_for_foreign_aid
 			  cost = 35
 			}
-			
+
 			PRC_SOV_lend_lease_strategy = yes
 		}
 	}
@@ -2804,11 +2804,11 @@ focus_tree = {
 			factor = 1
 		}
 
-	
+
 		available = {
 			has_war = yes
 			PRC_neighboring_SOV = yes
-			
+
 			SOV = {
 				exists = yes
 				is_subject = no
@@ -2835,7 +2835,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 			SOV = {
 				OR = {
@@ -2867,7 +2867,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = PRC_SOV_lend_lease_idea_1
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_SOV_lend_lease_strategy = yes
@@ -2898,7 +2898,7 @@ focus_tree = {
 				exists = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2910,7 +2910,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			SOV = { 
+			SOV = {
 				country_event = {
 					id = SEA_PRC_political_events.2
 					hours = 5
@@ -2922,8 +2922,8 @@ focus_tree = {
 					give_guarantee = ROOT
 				}
 			}
-		
-			custom_effect_tooltip = PRC_request_guarantees_tt	
+
+			custom_effect_tooltip = PRC_request_guarantees_tt
 		}
 	}
 
@@ -2949,7 +2949,7 @@ focus_tree = {
 				has_government = communism
 			}
 		}
-		
+
 		bypass = {
 			NOT = {
 				any_country = {
@@ -3005,8 +3005,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				add_power_balance_value = {
@@ -3036,7 +3036,7 @@ focus_tree = {
 		available = {
 			is_in_faction_with = CHI
 		}
-		
+
 		bypass = {
 			NOT = {
 				is_in_faction_with = CHI
@@ -3050,13 +3050,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			add_faction_influence_ratio = 0.075 
+			add_faction_influence_ratio = 0.075
 
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			unlock_decision_category_tooltip = PRC_28_bolshevik_faction_cat
-	
+
 		}
 	}
 
@@ -3078,7 +3078,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3111,7 +3111,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3142,7 +3142,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3201,7 +3201,7 @@ focus_tree = {
 
 
 	focus = {
-		id = PRC_bolshevik_urbanization 
+		id = PRC_bolshevik_urbanization
 		icon = GFX_focus_PRC_bolshevik_urbanization
 		prerequisite = { focus = PRC_bolshevik_aid }
 		x = 0
@@ -3217,7 +3217,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3232,8 +3232,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				add_power_balance_value = {
@@ -3266,7 +3266,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3286,9 +3286,9 @@ focus_tree = {
 			}
 			add_to_variable = {
 				production_factory_start_efficiency_factor = -0.05
-				tooltip = production_factory_start_efficiency_factor_tt 
+				tooltip = production_factory_start_efficiency_factor_tt
 			}
-			
+
 		}
 	}
 
@@ -3310,7 +3310,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3333,7 +3333,7 @@ focus_tree = {
 				prioritize = { 1032 622 616 615} #Yan'An, Shaanxi, Ningxia and Shanxi
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex 
+					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
@@ -3348,11 +3348,11 @@ focus_tree = {
 					}
 				}
 				reduce_focus_completion_cost = {
-					focus = PRC_urbanization 
+					focus = PRC_urbanization
 					cost = 35
 				}
 				reduce_focus_completion_cost = {
-					focus = PRC_urbanization_two 
+					focus = PRC_urbanization_two
 					cost = 35
 				}
 			}
@@ -3376,7 +3376,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3394,11 +3394,11 @@ focus_tree = {
 				days = 365
 			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt 
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_stability = 0.05
 
-		
+
 		}
 	}
 
@@ -3419,7 +3419,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3434,7 +3434,7 @@ focus_tree = {
 
 			effect_tooltip = {
 				add_corps_commander_role = {
-					character = PRC_otto_braun 
+					character = PRC_otto_braun
 					traits = { infantry_officer }
 					skill=1
 					attack_skill=2
@@ -3455,8 +3455,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				add_power_balance_value = {
@@ -3486,7 +3486,7 @@ focus_tree = {
 		available = {
 			has_country_flag = PRC_pavel_mif_alive
 		}
-		
+
 		bypass = {
 			NOT = {
 				has_country_flag = PRC_pavel_mif_alive
@@ -3502,15 +3502,15 @@ focus_tree = {
 		completion_reward = {
 
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = PRC_pavel_mif 
+			show_ideas_tooltip = PRC_pavel_mif
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				add_power_balance_value = {
@@ -3545,7 +3545,7 @@ focus_tree = {
 		}
 
 		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
-		
+
 		bypass = {
 
 		}
@@ -3556,7 +3556,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = PRC_rebuild_28_bolshevik_tt
-		
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			 ## Improve all advisors traits
@@ -3577,11 +3577,11 @@ focus_tree = {
 						has_trait = PRC_28_bolshevik_trait
 					}
 					remove_trait = {
-						slot = political_advisor 
+						slot = political_advisor
 						trait = PRC_28_bolshevik_trait
 					}
 					add_trait = {
-						slot = political_advisor 
+						slot = political_advisor
 						trait = PRC_28_bolshevik_trait_improved
 					}
 					#random_select_amount = <int> #OPTIONAL: Maximum amount that can be selected
@@ -3592,14 +3592,14 @@ focus_tree = {
 				PRC_otto_braun = {
 					if = {
 						limit = {
-							is_army_chief = yes 
+							is_army_chief = yes
 						}
 						remove_trait = {
-							slot = army_chief 
+							slot = army_chief
 							trait = PRC_28_bolshevik_trait
-						}	
+						}
 						add_trait = {
-							slot = army_chief 
+							slot = army_chief
 							trait = PRC_28_bolshevik_trait_improved
 						}
 					}
@@ -3607,26 +3607,26 @@ focus_tree = {
 				PRC_wang_ming = {
 					remove_trait = {
 						trait = PRC_28_bolshevik_trait_wang_ming
-						slot = political_advisor 
+						slot = political_advisor
 
 					}
 					add_trait = {
 						trait = PRC_28_bolshevik_trait_improved_wang_ming
-						slot = political_advisor 
+						slot = political_advisor
 					}
 				}
 				PRC_bo_gu = {
 					remove_trait = {
 						trait = PRC_28_bolshevik_trait_bo_gu
-						slot = political_advisor 
+						slot = political_advisor
 					}
 					add_trait = {
 						trait = PRC_28_bolshevik_trait_improved_bo_gu
-						slot = political_advisor 
+						slot = political_advisor
 					}
 				}
 
-				
+
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -3634,8 +3634,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				add_power_balance_value = {
@@ -3665,7 +3665,7 @@ focus_tree = {
 		available = {
 			is_in_faction = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -3700,7 +3700,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			PRC_check_if_red_army_or_pla = yes
 			add_to_variable = {
-				PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05 
+				PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05
 				tooltip = army_infantry_attack_factor_tt
 			}
 		}
@@ -3725,7 +3725,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3745,7 +3745,7 @@ focus_tree = {
 					}
 					create_intelligence_agency = {
 						name = "Central Social Affairs Department"
-						icon = GFX_intelligence_agency_logo_PRC_central_social_affairs_department 
+						icon = GFX_intelligence_agency_logo_PRC_central_social_affairs_department
 					}
 				}
 				else_if = {
@@ -3764,9 +3764,9 @@ focus_tree = {
 					}
 					upgrade_intelligence_agency = upgrade_interrogation_techniques
 				}
-	
+
 				custom_effect_tooltip = generic_skip_one_line_tt
-	
+
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = PRC_kang_sheng
 			}
@@ -3793,9 +3793,9 @@ focus_tree = {
 			SOV = {
 				exists = yes
 			}
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -3835,8 +3835,8 @@ focus_tree = {
 				limit = {
 					CHI = {
 						OR = {
-							has_character = SOV_vasily_chuykov 
-							has_character = SOV_aleksandr_cherepanov 
+							has_character = SOV_vasily_chuykov
+							has_character = SOV_aleksandr_cherepanov
 						}
 					}
 				}
@@ -3872,7 +3872,7 @@ focus_tree = {
 				}
 			}
 
-		
+
 
 			custom_effect_tooltip = if_they_accept_tt
 
@@ -3907,7 +3907,7 @@ focus_tree = {
 				value > 0.5
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -3917,7 +3917,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = 0.05 
+			add_stability = 0.05
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -3985,7 +3985,7 @@ focus_tree = {
 				set_variable = {
 					PRC_bolshevik_dominance_opinion_gain_monthly_same_ideology_factor = 0.05
 					tooltip = opinion_gain_monthly_same_ideology_factor_tt
-				}	
+				}
 
 			}
 			else_if = {
@@ -4011,14 +4011,14 @@ focus_tree = {
 				set_variable = {
 					PRC_bolshevik_dominance_research_speed_factor = 0.02
 					tooltip = research_speed_factor_tt
-				}	
+				}
 				set_variable = {
 					PRC_bolshevik_dominance_opinion_gain_monthly_same_ideology_factor = 0.1
 					tooltip = opinion_gain_monthly_same_ideology_factor_tt
-				}	
+				}
 			}
 			else = {
-				# best one, slightly better than BoP effect to have this actually have meaning 
+				# best one, slightly better than BoP effect to have this actually have meaning
 				add_dynamic_modifier = {
 					modifier = PRC_bolshevik_dominance
 				}
@@ -4033,11 +4033,11 @@ focus_tree = {
 				set_variable = {
 					PRC_bolshevik_dominance_research_speed_factor = 0.05
 					tooltip = research_speed_factor_tt
-				}	
+				}
 				set_variable = {
 					PRC_bolshevik_dominance_opinion_gain_monthly_same_ideology_factor = 0.15
 					tooltip = opinion_gain_monthly_same_ideology_factor_tt
-				}	
+				}
 
 			}
 
@@ -4069,7 +4069,7 @@ focus_tree = {
 				is_subject = no
 			}
 		}
-		
+
 		bypass = {
 			SOV = {
 				exists = no
@@ -4094,12 +4094,12 @@ focus_tree = {
 			custom_effect_tooltip = if_they_accept_tt
 
 			effect_tooltip = { ### Effects are done in the event, make sure match - TODO_ML
-				
+
 				add_tech_bonus = {
 					name = PRC_soviet_technological_cooperation
 					bonus = 0.75
 					uses = 2
-					category = electronics 
+					category = electronics
 				}
 				add_opinion_modifier = {
 					target = SOV
@@ -4111,7 +4111,7 @@ focus_tree = {
 						name = PRC_soviet_technological_cooperation
 						bonus = 0.75
 						uses = 2
-						category = electronics 
+						category = electronics
 					}
 					add_opinion_modifier = {
 						target = FROM
@@ -4138,9 +4138,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -4186,7 +4186,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -4222,7 +4222,7 @@ focus_tree = {
 					country_event = { id = SEA_PRC_political_events.8 }
 				}
 			}
-			
+
 
 			if = {
 				limit = {
@@ -4235,7 +4235,7 @@ focus_tree = {
 					country_event = { id = SEA_PRC_political_events.8 }
 				}
 			}
-			
+
 			custom_effect_tooltip = if_they_accept_tt
 			custom_effect_tooltip = PRC_sino_allied_pact_of_non_aggression_accept_tt
 
@@ -4261,7 +4261,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4272,7 +4272,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = PRC_spread_world_revolution
-			
+
 		}
 	}
 
@@ -4293,7 +4293,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4309,19 +4309,19 @@ focus_tree = {
 			custom_effect_tooltip = PRC_modify_central_committee_modifier
 			add_to_variable = {
 				PRC_central_committee_political_power_factor = 0.05
-				tooltip = political_power_factor_tt 
+				tooltip = political_power_factor_tt
 			}
 			add_to_variable = {
 				PRC_central_committee_party_popularity_stability_factor = 0.05
-				tooltip = party_popularity_stability_factor_tt 
+				tooltip = party_popularity_stability_factor_tt
 			}
 			add_to_variable = {
 				PRC_central_committee_faction_influence_war_score_factor = 0.02
-				tooltip = faction_influence_war_score_factor_tt 
+				tooltip = faction_influence_war_score_factor_tt
 			}
 			add_to_variable = {
 				PRC_central_committee_faction_influence_contribution_factor = 0.02
-				tooltip = faction_influence_contribution_factor_tt 
+				tooltip = faction_influence_contribution_factor_tt
 			}
 
 		}
@@ -4347,7 +4347,7 @@ focus_tree = {
 		available = {
 			is_in_faction_with = CHI
 		}
-		
+
 		bypass = {
 
 		}
@@ -4388,9 +4388,9 @@ focus_tree = {
 			}
 			is_subject = no
 		}
-		
+
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -4403,7 +4403,7 @@ focus_tree = {
 			SOV = {
 				country_event = {
 					id = SEA_PRC_political_events.5
-					hours = 2 
+					hours = 2
 				}
 			}
 			custom_effect_tooltip = if_they_accept_tt
@@ -4438,7 +4438,7 @@ focus_tree = {
 		available = {
 			is_subject = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -4468,14 +4468,14 @@ focus_tree = {
 			}
 			else = {
 				custom_effect_tooltip = PRC_petition_for_freedom_not_subject_tt
-			}			
+			}
 		}
 	}
 
 
 	focus = {
 		id = PRC_scholarly_revolution
-		icon = GFX_focus_NOR_moscows_education_centers 
+		icon = GFX_focus_NOR_moscows_education_centers
 		prerequisite = { focus = PRC_reestablish_moscow_sun_yat_sen_university focus = PRC_party_control focus = PRC_petition_for_freedom }
 		x = 0
 		y = 1
@@ -4488,9 +4488,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -4504,7 +4504,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = PRC_bolshevik_dominance_tt
 			add_to_variable = {
-				PRC_bolshevik_dominance_research_speed_factor = 0.1 
+				PRC_bolshevik_dominance_research_speed_factor = 0.1
 				tooltip = research_speed_factor_tt
 			}
 		}
@@ -4543,7 +4543,7 @@ focus_tree = {
 			has_war = yes
 			has_army_manpower = { size > 99999 }
 		}
-		
+
 		bypass = {
 			has_war = no
 		}
@@ -4598,7 +4598,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -4672,7 +4672,7 @@ focus_tree = {
 		}
 	}
 
-	#### CHALLENGE THE LEADERSHIP 
+	#### CHALLENGE THE LEADERSHIP
 
 
 	focus = {
@@ -4725,7 +4725,7 @@ focus_tree = {
 			is_in_faction = no
 			has_country_flag = PRC_zhang_guatao_arrived
 		}
-		
+
 		bypass = {
 
 		}
@@ -4749,7 +4749,7 @@ focus_tree = {
 			hidden_effect = {
 				PRC_add_mediating_general_secretary_idea = yes
 			}
-		
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_country_leader_role = {
@@ -4787,7 +4787,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = PRC_bring_war_to_neighboring_warlords
@@ -4809,7 +4809,7 @@ focus_tree = {
 				is_chinese_warlord = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -4893,7 +4893,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4925,7 +4925,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4936,7 +4936,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
-		completion_reward = {			
+		completion_reward = {
 			random_owned_controlled_state = {
 				custom_effect_tooltip = PRC_mobilization_of_the_people_tt
 				hidden_effect = {
@@ -4962,7 +4962,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
@@ -4987,7 +4987,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -5050,12 +5050,12 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value > -0.99
+						id = PRC_communist_power_struggle
+						value > -0.99
 					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 				add_power_balance_value = {
 					id = PRC_communist_power_struggle
 					value = -0.05
@@ -5082,7 +5082,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -5119,7 +5119,7 @@ focus_tree = {
 
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
 			add_to_variable = {
-				PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05 
+				PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05
 				tooltip = army_infantry_attack_factor_tt
 			}
 
@@ -5128,8 +5128,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				add_power_balance_value = {
@@ -5148,7 +5148,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = PRC_promote_regular_army
 		mutually_exclusive	= { focus = PRC_the_battle_behind_the_front_lines }
-		
+
 
 		cost = 5
 
@@ -5159,7 +5159,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -5208,8 +5208,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				add_power_balance_value = {
@@ -5237,7 +5237,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -5247,9 +5247,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_red_army_army_morale_factor = 0.05
 				tooltip = army_morale_factor_tt
 			}
@@ -5273,7 +5273,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -5285,7 +5285,7 @@ focus_tree = {
 		completion_reward = {
 
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_training_time_factor = -0.05
 				tooltip = training_time_factor_tt
 			}
@@ -5310,7 +5310,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -5354,7 +5354,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -5424,8 +5424,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value > -0.99
+						id = PRC_communist_power_struggle
+						value > -0.99
 					}
 				}
 				add_power_balance_value = {
@@ -5453,7 +5453,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -5497,7 +5497,7 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -5529,7 +5529,7 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -5569,7 +5569,7 @@ focus_tree = {
 				ruling_only = no
 			}
 		}
-		
+
 		bypass = {
 			has_country_leader = {
 				character = PRC_mao_zedong
@@ -5584,7 +5584,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			add_country_leader_role = {
 				character =  PRC_mao_zedong # optional if inside character scope
 				promote_leader = yes
@@ -5600,8 +5600,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value > -0.99
+						id = PRC_communist_power_struggle
+						value > -0.99
 					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -5637,11 +5637,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
-			
+
 		}
 
 		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
@@ -5658,18 +5658,18 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_modify_industrial_modifier = yes
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_production_factory_start_efficiency_factor = 0.05
 				tooltip = production_factory_start_efficiency_factor_tt
 			}
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_production_factory_max_efficiency_factor = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
@@ -5681,8 +5681,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value > -0.89
+						id = PRC_communist_power_struggle
+						value > -0.89
 					}
 				}
 				add_power_balance_value = {
@@ -5718,7 +5718,7 @@ focus_tree = {
 				ruling_only = no
 			}
 		}
-			
+
 		bypass = {
 			has_country_leader = {
 				character = PRC_zhang_guotao
@@ -5748,8 +5748,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -5783,9 +5783,9 @@ focus_tree = {
 				ruling_only = yes
 			}
 		}
-			
+
 		bypass = {
-			
+
 		}
 
 		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
@@ -5795,7 +5795,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			custom_effect_tooltip = PRC_a_new_central_committee_tt_1
 
 
@@ -5832,8 +5832,8 @@ focus_tree = {
 			if = {
 				limit = {
 					power_balance_value = {
-			    		id = PRC_communist_power_struggle
-			    		value < 0.99
+						id = PRC_communist_power_struggle
+						value < 0.99
 					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -5863,7 +5863,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -5881,12 +5881,12 @@ focus_tree = {
 				limit = {
 					OR = {
 						power_balance_value = {
-				    		id = PRC_communist_power_struggle
-				    		value > -0.99
+							id = PRC_communist_power_struggle
+							value > -0.99
 						}
 						power_balance_value = {
-				    		id = PRC_communist_power_struggle
-				    		value < 0.99
+							id = PRC_communist_power_struggle
+							value < 0.99
 						}
 					}
 				}
@@ -5894,8 +5894,8 @@ focus_tree = {
 				if = {
 					limit = {
 						power_balance_value = {
-				    		id = PRC_communist_power_struggle
-				    		value < -0.01
+							id = PRC_communist_power_struggle
+							value < -0.01
 						}
 					}
 					add_power_balance_value = {
@@ -5907,8 +5907,8 @@ focus_tree = {
 				else_if = {
 					limit = {
 						power_balance_value = {
-				    		id = PRC_communist_power_struggle
-				    		value > 0.01
+							id = PRC_communist_power_struggle
+							value > 0.01
 						}
 					}
 					add_power_balance_value = {
@@ -5941,7 +5941,7 @@ focus_tree = {
 		available = {
 			has_war = yes
 			PRC_neighboring_SOV = yes
-			
+
 			SOV = {
 				exists = yes
 				is_subject = no
@@ -5968,7 +5968,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 			SOV = {
 				OR = {
@@ -6000,7 +6000,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = PRC_SOV_lend_lease_idea_1
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_SOV_lend_lease_strategy = yes
@@ -6026,7 +6026,7 @@ focus = {
 			is_in_faction = no
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -6061,7 +6061,7 @@ focus = {
 				create_faction_from_template = faction_template_PRC_the_peoples_front
 				add_faction_initiative = 1
 			}
-			
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -6071,7 +6071,7 @@ focus = {
 					has_capitulated = no
 					is_in_faction = no
 					is_subject = no
-					NOT = { 
+					NOT = {
 						has_war_with = ROOT
 						has_border_war_with = ROOT
 						has_idea = SIK_battle_for_sinkiang
@@ -6138,7 +6138,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 			event_target:WTT_current_china_leader = {
 				OR = {
@@ -6156,7 +6156,7 @@ focus = {
 
 		completion_reward = {
 
-			IF = { 
+			IF = {
 				limit = {
 					any_other_country = {
 						is_literally_china_tooltip = yes
@@ -6188,7 +6188,7 @@ focus = {
 				}
 
 				create_wargoal = {
-					type = annex_everything 
+					type = annex_everything
 					target = CHI
 				}
 			}
@@ -6212,7 +6212,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -6255,7 +6255,7 @@ focus = {
 						add_country_leader_trait = {
 							trait = PRC_maoism_1
 							#ideology = stalinism
-						}	
+						}
 					}
 				}
 				else_if = {
@@ -6270,7 +6270,7 @@ focus = {
 						add_country_leader_trait = {
 							trait = PRC_maoism_2
 							#ideology = stalinism
-						}	
+						}
 					}
 				}
 				else_if = {
@@ -6285,7 +6285,7 @@ focus = {
 						add_country_leader_trait = {
 							trait = PRC_maoism_3
 							#ideology = stalinism
-						}	
+						}
 					}
 				}
 				else_if = {
@@ -6300,16 +6300,16 @@ focus = {
 						add_country_leader_trait = {
 							trait = PRC_maoism_4
 							#ideology = stalinism
-						}	
+						}
 					}
 				}
 				else = {
-					# best one, slightly better than BoP effect to have this actually have meaning 
+					# best one, slightly better than BoP effect to have this actually have meaning
 					PRC_mao_zedong = {
 						add_country_leader_trait = {
 							trait = PRC_maoism_5
 							#ideology = stalinism
-						}	
+						}
 					}
 				}
 			}
@@ -6322,7 +6322,7 @@ focus = {
 				}
 				custom_effect_tooltip = PRC_assume_leadership_tt
 				## Swap Guotao's trait depending on BoP
-				
+
 
 				if = {
 					limit = {
@@ -6331,11 +6331,11 @@ focus = {
 							value < 0.14
 						}
 					}
-					PRC_zhang_guotao = {					
+					PRC_zhang_guotao = {
 						add_country_leader_trait = {
 							trait = PRC_supreme_chairman_1
 							#ideology = stalinism
-						}	
+						}
 					}
 				}
 				else_if = {
@@ -6345,14 +6345,14 @@ focus = {
 							value > 0.14
 							value < 0.49
 						}
-					}	
-					PRC_zhang_guotao = {					
+					}
+					PRC_zhang_guotao = {
 						add_country_leader_trait = {
 							trait = PRC_supreme_chairman_2
 							#ideology = stalinism
-						}	
+						}
 					}
-	
+
 				}
 				else_if = {
 					limit = {
@@ -6362,11 +6362,11 @@ focus = {
 							value < 0.68
 						}
 					}
-					PRC_zhang_guotao = {					
+					PRC_zhang_guotao = {
 						add_country_leader_trait = {
 							trait = PRC_supreme_chairman_3
 							#ideology = stalinism
-						}	
+						}
 					}
 
 
@@ -6379,20 +6379,20 @@ focus = {
 							value < 0.89
 						}
 					}
-					PRC_zhang_guotao = {					
+					PRC_zhang_guotao = {
 						add_country_leader_trait = {
 							trait = PRC_supreme_chairman_4
 							#ideology = stalinism
-						}	
+						}
 					}
 				}
 				else = {
-					# best one, slightly better than BoP effect to have this actually have meaning 
-					PRC_zhang_guotao = {					
+					# best one, slightly better than BoP effect to have this actually have meaning
+					PRC_zhang_guotao = {
 						add_country_leader_trait = {
 							trait = PRC_supreme_chairman_5
 							#ideology = stalinism
-						}	
+						}
 					}
 				}
 			}
@@ -6450,7 +6450,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 			all_other_country = {
 				capital_scope = {
@@ -6501,7 +6501,7 @@ focus = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			
+
 
 
 			add_mastery_bonus = {
@@ -6509,7 +6509,7 @@ focus = {
 				days = 180
 				name = PRC_reach_out_to_the_west
 
-				track = armor 
+				track = armor
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -6517,9 +6517,9 @@ focus = {
 			PRC_modify_industrial_modifier = yes
 			add_to_variable = { PRC_industry_research_speed_factor = 0.025 tooltip = research_speed_factor_tt }
 
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			if = {
 				limit = {
 					any_other_country = {
@@ -6637,7 +6637,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 			SOV = {
 				OR = {
@@ -6694,13 +6694,13 @@ focus = {
 				bonus = 0.25
 				uses = 1
 				category = support_tech
-			}			
+			}
 			add_tech_bonus = {
 				name = PRC_tech_agreement_with_ussr
 				bonus = 0.25
 				uses = 1
 				category = infantry_weapons
-			}	
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -6759,7 +6759,7 @@ focus = {
 		available = {
 			has_war = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -6797,7 +6797,7 @@ focus = {
 		available = {
 			has_war = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -6834,7 +6834,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -6861,7 +6861,7 @@ focus = {
 						days = PRC_emergency_protocol_idea_days
 					}
 				}
-				
+
 				custom_effect_tooltip = generic_skip_one_line_tt
 
 				custom_effect_tooltip = PRC_extend_emergency_measures_2_tt
@@ -6896,7 +6896,7 @@ focus = {
 			else = {
 				if = {
 					limit = {
-						has_idea = PRC_emergency_prodction_protocols_idea					
+						has_idea = PRC_emergency_prodction_protocols_idea
 					}
 					modify_timed_idea = {
 						idea = PRC_emergency_prodction_protocols_idea
@@ -6921,7 +6921,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_extend_emergency_measures
-		
+
 
 		cost = 10
 
@@ -6935,7 +6935,7 @@ focus = {
 				has_idea = PRC_emergency_prodction_protocols_idea
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -6996,7 +6996,7 @@ focus = {
 		x = 1
 		y = 1
 		relative_position_id = PRC_reach_out_to_the_west
-		
+
 
 		cost = 5
 
@@ -7006,7 +7006,7 @@ focus = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -7021,7 +7021,7 @@ focus = {
 				name = PRC_lessons_of_the_west
 				bonus = 0.25
 				uses = 2
-				category = cat_synth_oil 
+				category = cat_synth_oil
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -7036,7 +7036,7 @@ focus = {
 					}
 					create_intelligence_agency = {
 						name = "Central Social Affairs Department"
-						icon = GFX_intelligence_agency_logo_PRC_central_social_affairs_department 
+						icon = GFX_intelligence_agency_logo_PRC_central_social_affairs_department
 					}
 				}
 				else_if = {
@@ -7055,9 +7055,9 @@ focus = {
 					}
 					upgrade_intelligence_agency = upgrade_interrogation_techniques
 				}
-	
+
 				custom_effect_tooltip = generic_skip_one_line_tt
-	
+
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = PRC_kang_sheng
 			}
@@ -7083,7 +7083,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -7106,7 +7106,7 @@ focus = {
 		x = 2
 		y = 2
 		relative_position_id = PRC_lessons_of_the_west
-		
+
 
 		cost = 10
 
@@ -7116,7 +7116,7 @@ focus = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -7138,19 +7138,19 @@ focus = {
 				}
 				custom_effect_tooltip = PRC_every_peasant_a_soldier_1_tt
 
-				custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt				
-				add_to_variable = { 
+				custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt
+				add_to_variable = {
 					PRC_the_chinese_army_conscription_factor = 0.05
 					tooltip = conscription_factor_tt
 				}
-				add_ideas = PRC_guerilla_warfare				
+				add_ideas = PRC_guerilla_warfare
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
 				custom_effect_tooltip = PRC_every_peasant_a_soldier_2_tt
 
 				custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt
-				add_to_variable = { 
+				add_to_variable = {
 					PRC_the_chinese_army_conscription_factor = 0.05
 					tooltip = conscription_factor_tt
 				}
@@ -7170,14 +7170,14 @@ focus = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 
 				custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt
-				add_to_variable = { 
+				add_to_variable = {
 					PRC_the_chinese_army_conscription_factor = 0.05
 					tooltip = conscription_factor_tt
 				}
 			}
 			else = {
 				custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt
-				add_to_variable = { 
+				add_to_variable = {
 					PRC_the_chinese_army_conscription_factor = 0.05
 					tooltip = conscription_factor_tt
 				}
@@ -7196,7 +7196,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_every_peasant_a_soldier
-		
+
 
 		cost = 10
 
@@ -7206,7 +7206,7 @@ focus = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -7236,7 +7236,7 @@ focus = {
 		x = 9
 		y = 1
 		relative_position_id = PRC_prepare_for_the_inevitable
-		
+
 		mutually_exclusive = { focus = PRC_allow_autonomous_regions focus = PRC_peaceful_reunification }
 
 
@@ -7306,7 +7306,7 @@ focus = {
 				hidden_trigger = {
 					NOT = { tag = ROOT }
 				}
-				NOT = { 
+				NOT = {
 					is_ally_with = ROOT
 					has_war_with = ROOT
 				}
@@ -7501,7 +7501,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -7572,7 +7572,7 @@ focus = {
 		}
 
 		available = {
-			is_subject = no 
+			is_subject = no
 			is_faction_leader = yes
 			faction_influence_ratio > 0.5
 			any_allied_country = {
@@ -7586,7 +7586,7 @@ focus = {
 				is_in_faction_with = ROOT
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -7598,7 +7598,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			
+
 
 			add_popularity = {
 				ideology = democratic
@@ -7653,7 +7653,7 @@ focus = {
 				controls_state = 592
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -7666,7 +7666,7 @@ focus = {
 
 		completion_reward = {
 			set_cosmetic_tag = PRC_proclaimed_communism
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_research_slot = 1
@@ -7737,7 +7737,7 @@ focus = {
 				is_controlled_by_ROOT_or_subject = no
 			}
 		}
-		
+
 		bypass = {
 			524 = {
 				is_controlled_by_ROOT_or_subject = yes
@@ -7751,7 +7751,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-		
+
 			add_timed_idea = {
 				idea = PRC_crossing_the_taiwanese_strait
 				days = 365
@@ -7779,7 +7779,7 @@ focus = {
 				has_war_with = TIB
 			}
 		}
-		
+
 		bypass = {
 			TIB = {
 				OR = {
@@ -7860,7 +7860,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 			KOR = {
 				OR = {
@@ -7949,9 +7949,9 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -8015,7 +8015,7 @@ focus = {
 		will_lead_to_war_with = MON
 		will_lead_to_war_with = TAN
 		will_lead_to_war_with = SOV
-		
+
 		bypass = {
 
 		}
@@ -8027,7 +8027,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			
+
 			every_other_country = {
 				limit = {
 					any_controlled_state = {
@@ -8122,7 +8122,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -8182,9 +8182,9 @@ focus = {
 				is_owned_and_controlled_by = ROOT
 			}
 		}
-		
+
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -8195,7 +8195,7 @@ focus = {
 
 		completion_reward = {
 			set_capital = {
-				state = 608 
+				state = 608
 				remember_old_capital = no
 			}
 			608 = {
@@ -8217,7 +8217,7 @@ focus = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_stability = 0.1
-			
+
 		}
 	}
 
@@ -8241,9 +8241,9 @@ focus = {
 				#has_advisor_role = political_advisor
 			}
 		}
-		
+
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -8260,14 +8260,14 @@ focus = {
 				}
 				PRC_zhou_enlai = {
 					remove_trait = {
-						slot = political_advisor 
+						slot = political_advisor
 						trait = PRC_multi_talented_diplomat_lar
 					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				PRC_zhou_enlai = {
 					add_trait = {
-						slot = political_advisor 
+						slot = political_advisor
 						trait = PRC_first_premier_trait
 					}
 				}
@@ -8275,14 +8275,14 @@ focus = {
 			else = {
 				PRC_zhou_enlai = {
 					remove_trait = {
-						slot = political_advisor 
+						slot = political_advisor
 						trait = PRC_multi_talented_diplomat_no_lar
 					}
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				PRC_zhou_enlai = {
 					add_trait = {
-						slot = political_advisor 
+						slot = political_advisor
 						trait = PRC_first_premier_trait
 					}
 				}
@@ -8307,9 +8307,9 @@ focus = {
 	#	available = {
 	#		amount_research_slots > 3
 	#	}
-	#	
+	#
 	#	bypass = {
-	#		
+	#
 	#	}
 #
 	#	cancel_if_invalid = yes
@@ -8321,21 +8321,21 @@ focus = {
 	#			name = PRC_education_reform
 	#			bonus = 0.5
 	#			uses = 2
-	#			category = electronics 
+	#			category = electronics
 	#		}
 	#		add_tech_bonus = {
 	#			name = PRC_education_reform
 	#			bonus = 0.35
 	#			uses = 3
-	#			category = industry 
+	#			category = industry
 	#		}
 	#		add_tech_bonus = {
 	#			name = PRC_education_reform
 	#			bonus = 0.25
 	#			uses = 4
-	#			category = support_tech 
+	#			category = support_tech
 	#		}
-	#		
+	#
 #
 	#		custom_effect_tooltip = generic_skip_one_line_tt
 #
@@ -8362,11 +8362,11 @@ focus = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -8381,7 +8381,7 @@ focus = {
 				idea = PRC_the_party_builds_the_nation_timed_idea
 				days = 365
 			}
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			every_military_industrial_organization = {
@@ -8410,7 +8410,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -8459,7 +8459,7 @@ focus = {
 							country_leader = {
 								ideology = socialism
 								expire = "1965.1.1.1"
-								traits = { GER_pragmatic_socialist } 
+								traits = { GER_pragmatic_socialist }
 							}
 						}
 					}
@@ -8484,7 +8484,7 @@ focus = {
 							country_leader = {
 								ideology = socialism
 								expire = "1965.1.1.1"
-								traits = { GER_pragmatic_socialist } 
+								traits = { GER_pragmatic_socialist }
 							}
 						}
 					}
@@ -8492,7 +8492,7 @@ focus = {
 			}
 			hidden_effect = {
 				country_event = SEA_PRC_misc_events.20
-			}	
+			}
 		}
 	}
 
@@ -8503,7 +8503,7 @@ focus = {
 		x = 3
 		y = 1
 		relative_position_id = PRC_dare_to_struggle
-		
+
 		mutually_exclusive = { focus = PRC_the_chinese_century focus = PRC_asian_democratic_union }
 
 		cost = 10
@@ -8520,7 +8520,7 @@ focus = {
 				is_faction_leader = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -8654,7 +8654,7 @@ focus = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -8669,21 +8669,21 @@ focus = {
 
 			PRC_modify_industrial_modifier = yes
 
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_production_speed_buildings_factor = 0.05
-				tooltip = production_speed_buildings_factor_tt 
+				tooltip = production_speed_buildings_factor_tt
 			}
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_industrial_capacity_factory = 0.05
-				tooltip = industrial_capacity_factory_tt 
+				tooltip = industrial_capacity_factory_tt
 			}
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_production_factory_start_efficiency_factor = 0.05
-				tooltip = production_factory_start_efficiency_factor_tt 
+				tooltip = production_factory_start_efficiency_factor_tt
 			}
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_production_factory_max_efficiency_factor = 0.05
-				tooltip = production_factory_max_efficiency_factor_tt 
+				tooltip = production_factory_max_efficiency_factor_tt
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -8801,7 +8801,7 @@ focus = {
 				is_faction_leader = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -8867,8 +8867,8 @@ focus = {
 						}
 					}
 				}
-				country_event = { 
-					id = SEA_PRC_faction_events.71 
+				country_event = {
+					id = SEA_PRC_faction_events.71
 					days = 2
 				}
 			}
@@ -8893,7 +8893,7 @@ focus = {
 					}
 					if = {
 						limit = {
-							check_variable = { 
+							check_variable = {
 								var = PRC_asian_democratic_union_modifier_research_speed_factor
 								value = 0.1
 								compare = less_than
@@ -8971,13 +8971,13 @@ focus = {
 		}
 
 		available = {
-			NOT = { 
+			NOT = {
 				1032 = {
-					is_fully_controlled_by = ROOT 
+					is_fully_controlled_by = ROOT
 				}
 			}
 		}
-		
+
 		bypass = {
 			1032 = { is_fully_controlled_by = ROOT }
 		}
@@ -9053,9 +9053,9 @@ focus = {
 						amount = 50
 						track = infantry
 					}
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = artillery_equipment_1
-						amount = 125 
+						amount = 125
 						producer = XIC
 					}
 				}
@@ -9119,7 +9119,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9203,7 +9203,7 @@ focus = {
 				has_civil_war = no
 			}
 		}
-		
+
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		bypass = {
@@ -9288,7 +9288,7 @@ focus = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				date < 1943.01.01 ## Never take this before 1943 
+				date < 1943.01.01 ## Never take this before 1943
 				factor = 0
 			}
 		}
@@ -9310,7 +9310,7 @@ focus = {
 					tooltip = CHI_request_territory_trigger_tt
 					any_controlled_state = {
 						is_core_of = ROOT
-						controller = {	
+						controller = {
 							is_literally_china_tooltip = no
 						}
 						OR = {
@@ -9325,7 +9325,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -9353,7 +9353,7 @@ focus = {
 					}
 					any_controlled_state = {
 						is_core_of = ROOT
-						NOT = {	
+						NOT = {
 							is_core_of = PREV
 							state = 326
 							state = 729
@@ -9381,13 +9381,13 @@ focus = {
 
 
 
-	#### ##    ## ########  ##     ##  ######  ######## ########  ##    ## 
-	 ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##  ##  
-	 ##  ####  ## ##     ## ##     ## ##          ##    ##     ##   ####   
-	 ##  ## ## ## ##     ## ##     ##  ######     ##    ########     ##    
-	 ##  ##  #### ##     ## ##     ##       ##    ##    ##   ##      ##    
-	 ##  ##   ### ##     ## ##     ## ##    ##    ##    ##    ##     ##    
-	#### ##    ## ########   #######   ######     ##    ##     ##    ## 
+	#### ##    ## ########  ##     ##  ######  ######## ########  ##    ##
+	 ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##  ##
+	 ##  ####  ## ##     ## ##     ## ##          ##    ##     ##   ####
+	 ##  ## ## ## ##     ## ##     ##  ######     ##    ########     ##
+	 ##  ##  #### ##     ## ##     ##       ##    ##    ##   ##      ##
+	 ##  ##   ### ##     ## ##     ## ##    ##    ##    ##    ##     ##
+	#### ##    ## ########   #######   ######     ##    ##     ##    ##
 
 
 	focus = {
@@ -9406,7 +9406,7 @@ focus = {
 
 		available = {
 		}
-		
+
 		bypass = {
 		}
 
@@ -9439,12 +9439,12 @@ focus = {
 
 
 			PRC_modify_industrial_modifier = yes
-			add_to_variable = { 
-				PRC_industry_industrial_capacity_factory = 0.05 
+			add_to_variable = {
+				PRC_industry_industrial_capacity_factory = 0.05
 				tooltip = industrial_capacity_factory_tt
 			}
-			add_to_variable = { 
-				PRC_industry_production_speed_buildings_factor = 0.025 
+			add_to_variable = {
+				PRC_industry_production_speed_buildings_factor = 0.025
 				tooltip = production_speed_buildings_factor_tt
 			}
 
@@ -9473,7 +9473,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9525,7 +9525,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9577,7 +9577,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9620,9 +9620,9 @@ focus = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -9649,7 +9649,7 @@ focus = {
 					instant_build = yes
 				}
 			}
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			effect_tooltip = {
@@ -9690,9 +9690,9 @@ focus = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -9761,7 +9761,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9794,7 +9794,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9825,7 +9825,7 @@ focus = {
 
 
 		prerequisite = { focus = PRC_CSCEC_mils focus = PRC_CSCEC_civs }
-		
+
 		x = 2
 		y = 1
 		relative_position_id = PRC_CSCEC_mils
@@ -9842,7 +9842,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9879,7 +9879,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9919,7 +9919,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9936,11 +9936,11 @@ focus = {
 				limit = {
 					 has_advisor_role = political_advisor
 					 NOT = {
-					 	 is_character = PRC_mao_zedong
-					 	 is_character = PRC_zhang_wentian
-					 	 is_character = PRC_bo_gu
-					 	 is_character = PRC_wang_ming
-					 	 is_character = PRC_zhang_guotao
+						 is_character = PRC_mao_zedong
+						 is_character = PRC_zhang_wentian
+						 is_character = PRC_bo_gu
+						 is_character = PRC_wang_ming
+						 is_character = PRC_zhang_guotao
 					 }
 				}
 				random_select_amount = 2
@@ -9976,7 +9976,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -9989,12 +9989,12 @@ focus = {
 
 		completion_reward = {
 			PRC_modify_industrial_modifier = yes
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_production_factory_start_efficiency_factor = 0.05
 				tooltip = production_factory_start_efficiency_factor_tt
 			}
-			add_to_variable = { 
-				PRC_industry_line_change_production_efficiency_factor = 0.05 
+			add_to_variable = {
+				PRC_industry_line_change_production_efficiency_factor = 0.05
 				tooltip = line_change_production_efficiency_factor_tt
 			}
 		}
@@ -10002,7 +10002,7 @@ focus = {
 
 	focus = {
 		id = PRC_resource_extraction_focus
-		icon = GFX_focus_generic_resource_extraction 
+		icon = GFX_focus_generic_resource_extraction
 		prerequisite = { focus = PRC_great_production_movement }
 		x = 1
 		y = 1
@@ -10017,7 +10017,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -10037,7 +10037,7 @@ focus = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_modify_industrial_modifier = yes
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_local_resources_factor = 0.15
 				tooltip = local_resources_factor_tt
 			}
@@ -10060,7 +10060,7 @@ focus = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -10079,7 +10079,7 @@ focus = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			
+
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = PRC_deng_zihiu
 
@@ -10116,9 +10116,9 @@ focus = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -10132,9 +10132,9 @@ focus = {
 		completion_reward = {
 			PRC_modify_industrial_modifier = yes
 
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_global_building_slots_factor = 0.1
-				tooltip = global_building_slots_factor_tt 
+				tooltip = global_building_slots_factor_tt
 			}
 		}
 	}
@@ -10157,14 +10157,14 @@ focus = {
 		available = {
 			num_of_controlled_factories > 24
 		}
-		
+
 		bypass = {
 
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
-	
+
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -10185,7 +10185,7 @@ focus = {
 				prioritize = { 1032 622 1046} #Yan'An and Shaanxi and Yulin
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-					type = industrial_complex 
+					type = industrial_complex
 					level = 4
 					instant_build = yes
 				}
@@ -10216,7 +10216,7 @@ focus = {
 				category = industry
 			}
 
-			
+
 		}
 	}
 
@@ -10238,7 +10238,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -10273,14 +10273,14 @@ focus = {
 
 			add_timed_idea = {
 				idea = PRC_shorter_market_plan
-				days = PRC_shorter_market_plan_length 
+				days = PRC_shorter_market_plan_length
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			
+
 			custom_effect_tooltip = PRC_initialize_shorter_market_plans_tt
-		
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			## Start mission
@@ -10315,7 +10315,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -10348,8 +10348,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
-			## Gain NS 
+
+			## Gain NS
 			add_timed_idea = {
 				idea = PRC_five_year_plan
 				days = PRC_five_year_plan_length
@@ -10357,14 +10357,14 @@ focus = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			
+
 			custom_effect_tooltip = PRC_initialize_five_year_plan_tt
-		
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			## Start mission
 			activate_mission = PRC_initialize_five_year_plan_mission
-			
+
 			## For localisation reasons
 			set_variable = {
 				temp_var_PRC_deadline_five_year_plan_selected = [GetDate]
@@ -10380,7 +10380,7 @@ focus = {
 		id = PRC_construct_the_banqiao_dam
 		icon = GFX_focus_PRC_construct_the_banqiao_dam
 		prerequisite = { focus = PRC_establish_shorter_market_plans focus = PRC_initialize_five_year_plan }
-		x = 1 
+		x = 1
 		y = 1
 		relative_position_id = PRC_initialize_five_year_plan
 
@@ -10396,7 +10396,7 @@ focus = {
 				dam < 1
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -10443,7 +10443,7 @@ focus = {
 		available = {
 			num_of_controlled_states > 4
 		}
-		
+
 		bypass = {
 
 		}
@@ -10483,7 +10483,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 			NOT = {
 				controls_state = 1032 #Yan'an
@@ -10516,7 +10516,7 @@ focus = {
 					}
 					add_dynamic_modifier = {
 						modifier = PRC_urbanization_state_modifier_bonus
-					}					
+					}
 				}
 			}
 
@@ -10546,7 +10546,7 @@ focus = {
 
 			custom_effect_tooltip = PRC_make_agrarian_to_urban_tt
 
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_industrial_capacity_factory = 0.025
 				tooltip = industrial_capacity_factory_tt
 			}
@@ -10560,7 +10560,7 @@ focus = {
 					modifier = PRC_urban_society
 				}
 			}
-			
+
 
 		}
 
@@ -10590,12 +10590,12 @@ focus = {
 		}
 
 		available = {
-			any_controlled_state = { 
+			any_controlled_state = {
 				has_state_category = rural
-				is_owned_by = ROOT 
+				is_owned_by = ROOT
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -10615,7 +10615,7 @@ focus = {
 
 			every_owned_state = { ## Owned or controlled?
 				limit = {
-					has_state_category = rural 
+					has_state_category = rural
 					NOT = { # Maybe add a check so not add if already have it
 						has_dynamic_modifier = {
 							modifier = PRC_rural_development_state_modifier_bonus
@@ -10637,10 +10637,10 @@ focus = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_modify_industrial_modifier = yes
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_local_resources_factor = 0.05
 				tooltip = local_resources_factor_tt
-				
+
 			}
 
 		}
@@ -10671,7 +10671,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -10711,7 +10711,7 @@ focus = {
 						instant_build = yes
 					}
 					add_dynamic_modifier = {
-						modifier = PRC_urbanization_state_modifier_bonus 
+						modifier = PRC_urbanization_state_modifier_bonus
 					}
 				}
 			}
@@ -10730,7 +10730,7 @@ focus = {
 						instant_build = yes
 					}
 					add_dynamic_modifier = {
-						modifier = PRC_urbanization_state_modifier_bonus 
+						modifier = PRC_urbanization_state_modifier_bonus
 					}
 				}
 			}
@@ -10755,7 +10755,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -10767,19 +10767,19 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_research_slot = 1 	
-			
+			add_research_slot = 1
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_modify_industrial_modifier = yes
 			add_to_variable = { PRC_industry_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
 
-	
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = PRC_xu_teli 
+			show_ideas_tooltip = PRC_xu_teli
 
 		}
 	}
@@ -10801,17 +10801,17 @@ focus = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		available = {
-			any_controlled_state = { 
+			any_controlled_state = {
 				has_state_category = rural
-				is_owned_by = ROOT 
-				NOT = { 
+				is_owned_by = ROOT
+				NOT = {
 					has_dynamic_modifier = {
 						modifier = PRC_rural_development_state_modifier_bonus
 					}
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -10827,7 +10827,7 @@ focus = {
 
 			every_owned_state = { ## Owned or controlled?
 				limit = {
-					has_state_category = rural 
+					has_state_category = rural
 					NOT = { # Add a check so not add if already have it
 						has_dynamic_modifier = {
 							modifier = PRC_rural_development_state_modifier_bonus
@@ -10848,10 +10848,10 @@ focus = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_modify_industrial_modifier = yes
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_industry_global_building_slots_factor = 0.05
 				tooltip = global_building_slots_factor_tt
-				
+
 			}
 
 		}
@@ -10862,7 +10862,7 @@ focus = {
 		id = PRC_finalize_industrial_plan
 		icon = GFX_focus_generic_currency_reforms
 		prerequisite = { focus = PRC_urbanization_two focus = PRC_rural_region_development_two }
-		prerequisite = { focus = PRC_found_the_academy_of_science } 
+		prerequisite = { focus = PRC_found_the_academy_of_science }
 		x = 0
 		y = 1
 		relative_position_id = PRC_found_the_academy_of_science
@@ -10876,7 +10876,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -10895,13 +10895,13 @@ focus = {
 
 
 
-	##     ## #### ##       #### ########    ###    ########  ##    ## 
-	###   ###  ##  ##        ##     ##      ## ##   ##     ##  ##  ##  
-	#### ####  ##  ##        ##     ##     ##   ##  ##     ##   ####   
-	## ### ##  ##  ##        ##     ##    ##     ## ########     ##    
-	##     ##  ##  ##        ##     ##    ######### ##   ##      ##    
-	##     ##  ##  ##        ##     ##    ##     ## ##    ##     ##    
-	##     ## #### ######## ####    ##    ##     ## ##     ##    ## 
+	##     ## #### ##       #### ########    ###    ########  ##    ##
+	###   ###  ##  ##        ##     ##      ## ##   ##     ##  ##  ##
+	#### ####  ##  ##        ##     ##     ##   ##  ##     ##   ####
+	## ### ##  ##  ##        ##     ##    ##     ## ########     ##
+	##     ##  ##  ##        ##     ##    ######### ##   ##      ##
+	##     ##  ##  ##        ##     ##    ##     ## ##    ##     ##
+	##     ## #### ######## ####    ##    ##     ## ##     ##    ##
 
 
 
@@ -10923,7 +10923,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -10936,12 +10936,12 @@ focus = {
 
 		completion_reward = {
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-			
-			add_to_variable = { 
+
+			add_to_variable = {
 				PRC_the_chinese_army_army_org_factor = 0.05
 				tooltip = army_org_factor_tt
 			}
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_experience_gain_army_factor = 0.05
 				tooltip = experience_gain_army_factor_tt
 			}
@@ -10969,7 +10969,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -10988,15 +10988,15 @@ focus = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_check_if_red_army_or_pla = yes
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_army_org_factor = 0.05
 				tooltip = army_org_factor_tt
 			}
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_red_army_army_morale_factor = 0.05
 				tooltip = army_morale_factor_tt
 			}
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_experience_gain_army_factor = 0.05
 				tooltip = experience_gain_army_factor_tt
 			}
@@ -11023,7 +11023,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -11070,18 +11070,18 @@ focus = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			custom_effect_tooltip = PRC_the_chinese_red_army_modify_tt
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_training_time_factor = -0.05
 				tooltip = training_time_factor_tt
 			}
 
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
-			
+
 			add_to_variable = {
 				PRC_the_chinese_red_army_army_attack_factor = 0.1
 				tooltip = army_attack_factor_tt
@@ -11100,7 +11100,7 @@ focus = {
 	focus = {
 		id = PRC_equipment_from_copper_coins
 		icon = GFX_focus_PRC_equipment_from_copper_coins
-	
+
 		prerequisite = { focus = PRC_red_army_reborn }
 		x = -3
 		y = 1
@@ -11115,7 +11115,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -11125,7 +11125,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			add_timed_idea = {
 				idea = PRC_equipment_from_copper_coins
 				days = 365
@@ -11160,7 +11160,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -11174,40 +11174,40 @@ focus = {
 			SOV = {
 				country_event = {
 					id = SEA_PRC_request_aid.1
-					hours = 3 
+					hours = 3
 					random_hours = 6
 				}
 			}
 
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
 					amount = 5000
 					producer = SOV
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = support_equipment
 					amount = 750
 					producer = SOV
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = artillery_equipment
 					amount = 100
 					producer = SOV
 				}
 				SOV = {
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = infantry_equipment_0
 						amount = -5000
 						producer = SOV
 					}
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = support_equipment
 						amount = -750
 						producer = SOV
 					}
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = artillery_equipment
 						amount = -100
 						producer = SOV
@@ -11236,7 +11236,7 @@ focus = {
 		available = {
 			has_doctrine = peoples_war
 		}
-		
+
 		bypass = {
 
 		}
@@ -11252,7 +11252,7 @@ focus = {
 				idea = PRC_army_education_efforts ## 0,2 * 365 = 73
 				days = 365
 			}
-		
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
@@ -11306,10 +11306,10 @@ focus = {
 					NOT = {
 						has_trait = militias_officer
 					}
-				}	
+				}
 				add_trait = { trait = militias_officer }
 			}
-		}	
+		}
 	}
 
 	focus = {
@@ -11330,7 +11330,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -11342,9 +11342,9 @@ focus = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			
+
 			army_experience = 50
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_mastery_bonus = {
@@ -11360,7 +11360,7 @@ focus = {
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
 
 			add_to_variable = {
-				PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05 
+				PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05
 				tooltip = army_infantry_attack_factor_tt
 			}
 			add_to_variable = {
@@ -11377,7 +11377,7 @@ focus = {
 					NOT = {
 						has_trait = infantry_officer
 					}
-				}	
+				}
 				add_trait = { trait = infantry_officer }
 			}
 		}
@@ -11401,7 +11401,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -11426,7 +11426,7 @@ focus = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
 
@@ -11448,7 +11448,7 @@ focus = {
 					NOT = {
 						has_trait = fortress_buster
 					}
-				}	
+				}
 				add_trait = { trait = fortress_buster }
 			}
 		}
@@ -11473,7 +11473,7 @@ focus = {
 		available = {
 			has_country_flag = PRC_he_long_has_arrived
 		}
-		
+
 		bypass = {
 
 		}
@@ -11504,7 +11504,7 @@ focus = {
 		y = 1
 		relative_position_id = PRC_long_march_to_recovery
 
-		
+
 
 
 		cost = 10
@@ -11516,7 +11516,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -11530,7 +11530,7 @@ focus = {
 				name = PRC_master_the_terrain
 				bonus = 1
 				uses = 1
-				category = mountaineers_tech 
+				category = mountaineers_tech
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -11586,7 +11586,7 @@ focus = {
 		y = 1
 		relative_position_id = PRC_long_march_to_recovery
 
-	
+
 		cost = 5
 
 		ai_will_do = {
@@ -11597,7 +11597,7 @@ focus = {
 			622 = { is_fully_controlled_by = ROOT }
 			1046 = { is_fully_controlled_by = ROOT }
 		}
-		
+
 		bypass = {
 
 		}
@@ -11621,7 +11621,7 @@ focus = {
 							limit_to_border = yes
 							level < 3
 						}
-					}	
+					}
 				}
 				1046 = { #Yulin
 					add_building_construction = {
@@ -11633,7 +11633,7 @@ focus = {
 							limit_to_border = yes
 							level < 3
 						}
-					}	
+					}
 				}
 
 
@@ -11653,7 +11653,7 @@ focus = {
 								limit_to_border = yes
 								level < 2
 							}
-						}	
+						}
 					}
 				}
 				if = {
@@ -11672,11 +11672,11 @@ focus = {
 								limit_to_border = yes
 								level < 2
 							}
-						}	
+						}
 					}
 				}
 			}
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_tech_bonus = {
@@ -11685,7 +11685,7 @@ focus = {
 				uses = 1
 				category = cat_fortification
 			}
-			
+
 		}
 	}
 
@@ -11705,7 +11705,7 @@ focus = {
 		available = {
 			has_war = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -11732,11 +11732,11 @@ focus = {
 					NOT = {
 						has_trait = scavenger
 						is_character = PRC_mao_zedong
-					 	is_character = PRC_bo_gu
-					 	is_character = PRC_zhang_guotao
+						is_character = PRC_bo_gu
+						is_character = PRC_zhang_guotao
 					}
 				}
-				random_select_amount = 3 
+				random_select_amount = 3
 				add_trait = {
 					trait = scavenger
 				}
@@ -11763,7 +11763,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -11777,7 +11777,7 @@ focus = {
 		completion_reward = {
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
 
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
@@ -11797,13 +11797,13 @@ focus = {
 	focus = {
 		id = PRC_cooperate_ulanhu
 		icon = GFX_focus_PRC_cooperate_with_ulanhu
-		
+
 		prerequisite = { focus = PRC_red_army_reborn }
 		x = 0
 		y = 1
 		relative_position_id = PRC_red_army_reborn
 
-		
+
 
 		cost = 5
 
@@ -11812,9 +11812,9 @@ focus = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 		}
 
@@ -11827,7 +11827,7 @@ focus = {
 		completion_reward = {
 			effect_tooltip = {
 				add_corps_commander_role = {
-					character = PRC_ulanhu 
+					character = PRC_ulanhu
 					traits={ }
 					skill=2
 					attack_skill=2
@@ -11840,38 +11840,38 @@ focus = {
 
 			hidden_effect = {
 				division_template = {
-				 	name = "Morit Diviziin"
-				 	is_locked = no
-				 	division_names_group = MON_CAV_01
-				 	#template_counter = 118
-				 	regiments = {
-				 		militia = { x = 0 y = 0 }
-				 		militia = { x = 0 y = 1 }
-				 		militia = { x = 0 y = 2 }
-				 		cavalry = { x = 1 y = 0 }
-				 		cavalry = { x = 1 y = 1 }
-				 		cavalry = { x = 1 y = 2 }
-				 		cavalry = { x = 1 y = 3 }
-				 	}
-				 	support = {
-				 		
-				 	}
+					name = "Morit Diviziin"
+					is_locked = no
+					division_names_group = MON_CAV_01
+					#template_counter = 118
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+						cavalry = { x = 1 y = 3 }
+					}
+					support = {
+
+					}
 
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 7659 } 
+				prioritize = { 7659 }
 				create_unit = {
 					division = "name = \"Morit Diviziin\" division_template = \"Morit Diviziin\" start_experience_factor = 0.3 start_equipment_factor = 0.9 "
 					owner = PRC
 					prioritize_location = 7659
-					allow_spawning_on_enemy_provs = no 
+					allow_spawning_on_enemy_provs = no
 					count = 2
 				}
 			}
-			
 
-			
+
+
 
 		}
 	}
@@ -11880,9 +11880,9 @@ focus = {
 	focus = {
 		id = PRC_lessons_learnt
 		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
-		prerequisite = { focus = PRC_to_steal_an_army } 
-		prerequisite = { focus = PRC_revolutionary_war_of_the_masses } 
-	
+		prerequisite = { focus = PRC_to_steal_an_army }
+		prerequisite = { focus = PRC_revolutionary_war_of_the_masses }
+
 		x = 0
 		y = 2
 		relative_position_id = PRC_cooperate_ulanhu
@@ -11896,7 +11896,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -11908,9 +11908,9 @@ focus = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			
+
 			PRC_check_if_red_army_or_pla = yes
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_experience_gain_army_factor = 0.1
 				tooltip = experience_gain_army_factor_tt
 			}
@@ -11984,7 +11984,7 @@ focus = {
 		available = {
 			has_army_manpower = { size > 99999 }
 		}
-		
+
 		bypass = {
 
 		}
@@ -12028,7 +12028,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12081,7 +12081,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12096,17 +12096,17 @@ focus = {
 
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
 
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_conscription_factor = -0.25
 				tooltip = conscription_factor_tt
 			}
 
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_red_army_army_morale_factor = 0.1
 				tooltip = army_morale_factor_tt
 			}
 
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_red_army_max_planning_factor = 0.1
 				tooltip = max_planning_factor_tt
 			}
@@ -12134,7 +12134,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12148,12 +12148,12 @@ focus = {
 		completion_reward = {
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
 
-			add_to_variable = { 
+			add_to_variable = {
 				PRC_the_chinese_army_conscription_factor = 0.075
 				tooltip = conscription_factor_tt
 			}
 			add_to_variable = {
-				PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05 
+				PRC_the_chinese_red_army_army_infantry_attack_factor = 0.05
 				tooltip = army_infantry_attack_factor_tt
 			}
 
@@ -12170,7 +12170,7 @@ focus = {
 		y = 1
 		relative_position_id = PRC_one_with_the_people
 
-		
+
 
 		cost = 10
 
@@ -12181,7 +12181,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12221,7 +12221,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12267,7 +12267,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12315,7 +12315,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12329,15 +12329,15 @@ focus = {
 				name = PRC_develop_the_army
 				bonus = 0.5
 				uses = 1
-				category = artillery # optional 
+				category = artillery # optional
 			}
 			add_tech_bonus = {
 				name = PRC_develop_the_army
 				bonus = 0.25
 				uses = 3
-				category = armor # optional 
+				category = armor # optional
 			}
-			
+
 		}
 	}
 
@@ -12358,7 +12358,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12371,7 +12371,7 @@ focus = {
 
 		completion_reward = {
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-			
+
 			add_to_variable = {
 				PRC_the_chinese_army_training_time_factor = -0.075
 				tooltip = training_time_factor_tt
@@ -12401,7 +12401,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12412,7 +12412,7 @@ focus = {
 
 		completion_reward = {
 
-	
+
 			add_breakthrough_progress = {
 				specialization = specialization_nuclear
 				value = 0.5
@@ -12421,7 +12421,7 @@ focus = {
 				name = PRC_prepare_for_596
 				bonus = 0.25
 				uses = 1
-				category = nuclear # optional 
+				category = nuclear # optional
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = GER_unlock_national_nuclear_corporation_tt
@@ -12454,7 +12454,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12501,7 +12501,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12547,12 +12547,12 @@ focus = {
 		available = {
 			OR = {
 				has_doctrine = new_mobile_warfare
-				has_doctrine = superior_firepower 
-				has_doctrine = grand_battleplan 
-				has_doctrine = mass_assault 
+				has_doctrine = superior_firepower
+				has_doctrine = grand_battleplan
+				has_doctrine = mass_assault
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -12614,7 +12614,7 @@ focus = {
 	}
 
 	focus = {
-		id = PRC_appeal_for_foreign_aid 
+		id = PRC_appeal_for_foreign_aid
 		icon = GFX_focus_generic_tankette
 		prerequisite = { focus = PRC_army_tank_research focus = PRC_prepare_for_596 }
 		x = 0
@@ -12637,7 +12637,7 @@ focus = {
 				has_government = communism
 			}
 		}
-		
+
 		bypass = {
 			SOV = {
 				OR = {
@@ -12665,7 +12665,7 @@ focus = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			PRC_check_if_red_army_or_pla = yes ## For localisation reasons, if hasn't completed it display "Modify Red Army" when hover over, if has then display "Modify PLA"
-			
+
 			add_to_variable = {
 				PRC_the_chinese_army_army_armor_attack_factor = 0.05
 				tooltip = army_armor_attack_factor_tt
@@ -12675,13 +12675,13 @@ focus = {
 
 
 	focus = {
-		id = PRC_a_modern_army 
+		id = PRC_a_modern_army
 		icon = GFX_focus_PRC_a_modern_army
 		prerequisite = { focus = PRC_army_doctrines }
 		prerequisite = { focus = PRC_appeal_for_foreign_aid }
 		x = -1
 		y = 1
-		relative_position_id = PRC_appeal_for_foreign_aid 
+		relative_position_id = PRC_appeal_for_foreign_aid
 
 		cost = 10
 
@@ -12692,7 +12692,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12722,17 +12722,17 @@ focus = {
 				PRC_the_chinese_army_conscription_factor = 0.025
 				tooltip = conscription_factor_tt
 			}
-			
+
 		}
 	}
 
 
-	   ###    #### ########        ########  #######  ########   ######  ######## 
-	  ## ##    ##  ##     ##       ##       ##     ## ##     ## ##    ## ##       
-	 ##   ##   ##  ##     ##       ##       ##     ## ##     ## ##       ##       
-	##     ##  ##  ########        ######   ##     ## ########  ##       ######   
-	#########  ##  ##   ##         ##       ##     ## ##   ##   ##       ##       
-	##     ##  ##  ##    ##        ##       ##     ## ##    ##  ##    ## ##       
+	   ###    #### ########        ########  #######  ########   ######  ########
+	  ## ##    ##  ##     ##       ##       ##     ## ##     ## ##    ## ##
+	 ##   ##   ##  ##     ##       ##       ##     ## ##     ## ##       ##
+	##     ##  ##  ########        ######   ##     ## ########  ##       ######
+	#########  ##  ##   ##         ##       ##     ## ##   ##   ##       ##
+	##     ##  ##  ##    ##        ##       ##     ## ##    ##  ##    ## ##
 	##     ## #### ##     ##       ##        #######  ##     ##  ######  ########
 
 
@@ -12753,7 +12753,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12780,7 +12780,7 @@ focus = {
 					modifier = PRC_pla_air_force
 				}
 			}
-			
+
 		}
 	}
 
@@ -12801,7 +12801,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12811,13 +12811,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			custom_effect_tooltip = PRC_pla_air_force_modify_tt
 			add_to_variable = {
 				PRC_pla_air_force_air_ace_generation_chance_factor = 0.075
 				tooltip = air_ace_generation_chance_factor_tt
 			}
-			
+
 		}
 	}
 
@@ -12838,7 +12838,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12874,7 +12874,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12934,7 +12934,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -12947,22 +12947,22 @@ focus = {
 
 		completion_reward = {
 
-			if = { ## If don't have an air facility, then grant it, otherwise give tech bonuses 
+			if = { ## If don't have an air facility, then grant it, otherwise give tech bonuses
 				limit = {
 					any_owned_state = {
 						is_controlled_by = ROOT
 						air_facility < 1
 					}
 				}
-				random_owned_controlled_state = { 	
+				random_owned_controlled_state = {
 					construct_building_in_random_province = {
 						air_facility = 1
 					}
-				}		
-			}	
+				}
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			add_doctrine_cost_reduction = {
 				name = PRC_form_the_5th_research_institute
 				cost_reduction = 0.25
@@ -12970,16 +12970,16 @@ focus = {
 				category = air_doctrine
 			}
 			add_tech_bonus = {
-				name = PRC_form_the_5th_research_institute 
+				name = PRC_form_the_5th_research_institute
 				bonus = 0.25
 				uses = 1
-				category = light_fighter 
+				category = light_fighter
 			}
 			add_tech_bonus = {
-				name = PRC_form_the_5th_research_institute 
+				name = PRC_form_the_5th_research_institute
 				bonus = 0.25
 				uses = 1
-				category = medium_air 
+				category = medium_air
 			}
 		}
 	}
@@ -13020,7 +13020,7 @@ focus = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -13044,11 +13044,11 @@ focus = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
-				name = PRC_aviation_infrastructure 
+				name = PRC_aviation_infrastructure
 				bonus = 0.25
 				uses = 2
-				category = radar_tech 
-			}	
+				category = radar_tech
+			}
 		}
 	}
 
@@ -13069,7 +13069,7 @@ focus = {
 		available = {
 			has_tech = interwar_antiair
 		}
-		
+
 		bypass = {
 
 		}
@@ -13096,7 +13096,7 @@ focus = {
 				bonus = 0.5
 				uses = 1
 				category =  cat_anti_air
-			}	
+			}
 		}
 	}
 
@@ -13119,7 +13119,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -13143,7 +13143,7 @@ focus = {
 				specialization = specialization_air
 				value = 0.75
 			}
-			
+
 		}
 	}
 
@@ -13165,7 +13165,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -13197,10 +13197,10 @@ focus = {
 					has_dlc = "Arms Against Tyranny"
 				}
 				mio:PRC_harbin_aircraft_industry_group_organization = {
-					add_mio_funds = 250 
+					add_mio_funds = 250
 				}
 				mio:PRC_peoples_aviation_company_of_china_organization = {
-					add_mio_funds = 250 
+					add_mio_funds = 250
 				}
 			}
 		}
@@ -13225,7 +13225,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -13249,7 +13249,7 @@ focus = {
 					has_dlc = "Arms Against Tyranny"
 				}
 				mio:PRC_peoples_aviation_company_of_china_organization = {
-					add_mio_size = 1 
+					add_mio_size = 1
 				}
 			}
 		}
@@ -13273,7 +13273,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -13297,10 +13297,10 @@ focus = {
 					has_dlc = "Arms Against Tyranny"
 				}
 				mio:PRC_harbin_aircraft_industry_group_organization = {
-					add_mio_funds = 500 
+					add_mio_funds = 500
 				}
 				mio:PRC_peoples_aviation_company_of_china_organization = {
-					add_mio_funds = 500 
+					add_mio_funds = 500
 				}
 			}
 		}
@@ -13324,7 +13324,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -13349,7 +13349,7 @@ focus = {
 					has_dlc = "Arms Against Tyranny"
 				}
 				mio:PRC_harbin_aircraft_industry_group_organization = {
-					add_mio_size = 1 
+					add_mio_size = 1
 				}
 			}
 		}
@@ -13372,7 +13372,7 @@ focus = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -13388,12 +13388,12 @@ focus = {
 				PRC_pla_air_force_air_ace_generation_chance_factor = 0.15
 				tooltip = air_ace_generation_chance_factor_tt
 			}
-			
+
 			add_to_variable = {
 				PRC_pla_air_force_air_cas_efficiency = 0.05
 				tooltip = air_cas_efficiency_tt
 			}
-		
+
 			add_to_variable = {
 				PRC_pla_air_force_air_intercept_efficiency = 0.025
 				tooltip = air_intercept_efficiency_tt
@@ -13403,13 +13403,13 @@ focus = {
 		}
 	}
 
-	##    ##    ###    ##     ## ##    ## 
-	###   ##   ## ##   ##     ##  ##  ##  
-	####  ##  ##   ##  ##     ##   ####   
-	## ## ## ##     ## ##     ##    ##    
-	##  #### #########  ##   ##     ##    
-	##   ### ##     ##   ## ##      ##    
-	##    ## ##     ##    ###       ##   
+	##    ##    ###    ##     ## ##    ##
+	###   ##   ## ##   ##     ##  ##  ##
+	####  ##  ##   ##  ##     ##   ####
+	## ## ## ##     ## ##     ##    ##
+	##  #### #########  ##   ##     ##
+	##   ### ##     ##   ## ##      ##
+	##    ## ##     ##    ###       ##
 
 	focus = {
 		id = PRC_establish_pla_navy
@@ -13431,7 +13431,7 @@ focus = {
 				is_controlled_by = ROOT
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -13551,7 +13551,7 @@ focus = {
 					level = 4
 					instant_build = yes
 				}
-				
+
 			}
 		}
 	}
@@ -13576,7 +13576,7 @@ focus = {
 				is_controlled_by = ROOT
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -13593,7 +13593,7 @@ focus = {
 				mio:PRC_shipbuilding_industry_bureau_organization = {
 					add_mio_size = 1
 				}
-			}	
+			}
 			else = {
 				random_owned_controlled_state = {
 					limit = {
@@ -13617,7 +13617,7 @@ focus = {
 
 	focus = {
 		id = PRC_destroyers
-		icon = GFX_focus_generic_destroyer 
+		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = PRC_naval_mio focus = PRC_dockyard_construction_efforts }
 		x = 2
 		y = 1
@@ -13646,7 +13646,7 @@ focus = {
 
 		}
 
-		
+
 		bypass = {
 			SOV = {
 				OR = {
@@ -13659,8 +13659,8 @@ focus = {
 
 			}
 		}
-		
-	
+
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -13770,9 +13770,9 @@ create_equipment_variant = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -13785,7 +13785,7 @@ create_equipment_variant = {
 			custom_effect_tooltip = PRC_pla_navy_modify_tt
 			add_to_variable = {
 				PRC_pla_navy_navy_submarine_attack_factor = 0.075
-				tooltip = navy_submarine_attack_factor_tt 
+				tooltip = navy_submarine_attack_factor_tt
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -13816,7 +13816,7 @@ create_equipment_variant = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -13853,7 +13853,7 @@ create_equipment_variant = {
 				PRC_pla_navy_naval_coordination = 0.025
 				tooltip = naval_coordination_tt
 			}
-			
+
 		}
 	}
 
@@ -13874,7 +13874,7 @@ create_equipment_variant = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -13886,7 +13886,7 @@ create_equipment_variant = {
 		search_filters = {FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL}
 
 		completion_reward = {
-			
+
 			PRC_ziao_jingguang = {
 				remove_unit_leader_role = yes
 
@@ -13906,7 +13906,7 @@ create_equipment_variant = {
 			custom_effect_tooltip = available_chief_of_navy
 
 			show_ideas_tooltip = PRC_ziao_jingguang
-			
+
 		}
 	}
 
@@ -13930,7 +13930,7 @@ create_equipment_variant = {
 				is_controlled_by = ROOT
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -13942,7 +13942,7 @@ create_equipment_variant = {
 		completion_reward = {
 
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
 						any_core_state = {
 							is_coastal = yes
@@ -13984,7 +13984,7 @@ create_equipment_variant = {
 								province = {
 									all_provinces = yes
 									limit_to_naval_base = yes
-								} 
+								}
 							}
 							construct_building_in_random_province = {
 								coastal_bunker = 2
@@ -14016,7 +14016,7 @@ create_equipment_variant = {
 								is_controlled_by = ROOT
 								#naval_base > 0 Better to have it build in a state with no naval base than build several HQs
 							}
-							add_building_construction = { 
+							add_building_construction = {
 								type = naval_base
 								level = 2
 								instant_build = yes
@@ -14024,7 +14024,7 @@ create_equipment_variant = {
 									all_provinces = yes
 									limit_to_coastal = yes
 									#limit_to_naval_base = yes
-								} 
+								}
 							}
 							construct_building_in_random_province = {
 								coastal_bunker = 2
@@ -14094,7 +14094,7 @@ create_equipment_variant = {
 						is_coastal = yes
 						is_controlled_by = ROOT
 					}
-					add_building_construction = { 
+					add_building_construction = {
 						type = naval_base
 						level = 2
 						instant_build = yes
@@ -14153,7 +14153,7 @@ create_equipment_variant = {
 					construct_building_in_random_province = {
 						coastal_bunker = 2
 						#level = 2
-					}	
+					}
 				}
 			}
 		}
@@ -14161,7 +14161,7 @@ create_equipment_variant = {
 
 	focus = {
 		id = PRC_cruisers
-		icon = GFX_focus_generic_cruiser2 
+		icon = GFX_focus_generic_cruiser2
 		prerequisite = { focus = PRC_naval_infrastructure_effort focus = PRC_the_pla_naval_school }
 		x = 1
 		y = 1
@@ -14190,7 +14190,7 @@ create_equipment_variant = {
 
 		}
 
-		
+
 		bypass = {
 			SOV = {
 				OR = {
@@ -14203,7 +14203,7 @@ create_equipment_variant = {
 
 			}
 		}
-		
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -14312,7 +14312,7 @@ create_equipment_variant = {
 
 		}
 
-		
+
 		bypass = {
 			SOV = {
 				OR = {
@@ -14325,7 +14325,7 @@ create_equipment_variant = {
 
 			}
 		}
-		
+
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -14390,7 +14390,7 @@ create_equipment_variant = {
 
 	focus = {
 		id = PRC_carriers
-		icon = GFX_focus_generic_air_carrier 
+		icon = GFX_focus_generic_air_carrier
 		prerequisite = { focus = PRC_capital_ships }
 		prerequisite = { focus = PRC_cruisers }
 		x = 1
@@ -14409,7 +14409,7 @@ create_equipment_variant = {
 				is_controlled_by = ROOT
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -14450,7 +14450,7 @@ create_equipment_variant = {
 					has_dlc = "Arms Against Tyranny"
 				}
 				mio:PRC_dalian_shipbuilding_company_organization = {
-					add_mio_size = 1 
+					add_mio_size = 1
 					unlock_mio_trait_tooltip = PRC_dalian_shipbuilding_company_carrier_learners
 				}
 			}
@@ -14475,7 +14475,7 @@ create_equipment_variant = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -14513,7 +14513,7 @@ create_equipment_variant = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -14567,7 +14567,7 @@ create_equipment_variant = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -14610,9 +14610,9 @@ create_equipment_variant = {
 					}
 				}
 			}
-			
 
-			
+
+
 		}
 	}
 
@@ -14636,7 +14636,7 @@ create_equipment_variant = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -14651,7 +14651,7 @@ create_equipment_variant = {
 		completion_reward = {
 
 			add_ideas = PRC_central_military_commission_idea
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			every_army_leader = {
@@ -14659,7 +14659,7 @@ create_equipment_variant = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			army_experience = 25
 			navy_experience = 25
 			air_experience = 25

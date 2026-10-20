@@ -36,9 +36,9 @@ country_event = {
 
 	# USA
 	option = {
-		trigger = { 
-			original_tag = USA 
-			NOT = { has_government = communism } 
+		trigger = {
+			original_tag = USA
+			NOT = { has_government = communism }
 		}
 		name = navy_rework.2.1
 		FROM = { country_event = {id = navy_rework.5 days = 1} }
@@ -57,11 +57,11 @@ country_event = {
 	}
 	# Generic
 	option = {
-		trigger = { 
+		trigger = {
 			NOT = {
-				has_government = communism 
+				has_government = communism
 				original_tag = USA
-			} 
+			}
 		}
 		name = navy_rework.2.4
 		FROM = { create_constitution = yes }
@@ -140,7 +140,7 @@ country_event = {
 	option = {
 		trigger = { original_tag = USA NOT = { has_government = communism } }
 		name = navy_rework.6.2
-		FROM = { 
+		FROM = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 3

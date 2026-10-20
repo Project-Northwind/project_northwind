@@ -1,22 +1,22 @@
 focus_tree = {
 	id = sweden_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = SWE
 			has_dlc = "Arms Against Tyranny"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 2500 }
 	shared_focus = NORDIC_form_joint_alliance
 
-	continuous_focus_position = { x = 20 y = 1000 }  
+	continuous_focus_position = { x = 20 y = 1000 }
 	initial_show_position = {
 		x = 37
 		y = 0
@@ -24,7 +24,7 @@ focus_tree = {
 
 
 	############################
-	#####    Test focuses      #	
+	#####    Test focuses      #
 	############################
 
 	focus = {
@@ -36,7 +36,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -56,9 +56,9 @@ focus_tree = {
 			custom_effect_tooltip = SWE_defense_act_tt
 			country_event = { id = AAT_Sweden.1 }
 			add_stability = 0.03
-		
+
 		}
-	}	
+	}
 
 
 
@@ -110,7 +110,7 @@ focus_tree = {
 				name = SWE_the_old_enemy_stirs
 				cost_reduction = 0.25
 				uses = 1
-				category = land_doctrine # optional 
+				category = land_doctrine # optional
 				# technology  = technology_id # optional
 			}
 			add_popularity = {
@@ -122,7 +122,7 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.08
 			}
-			
+
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SWE_sven_hedin
 
@@ -137,7 +137,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_urbanization
-		icon = GFX_focus_SWE_urbanization 
+		icon = GFX_focus_SWE_urbanization
 		#x = -24
 		x = 0
 		y = 1
@@ -145,10 +145,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = SWE_defense_act }
 		relative_position_id = SWE_defense_act
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -165,7 +165,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			random_core_state = {	
+			random_core_state = {
 				limit =	{
 					is_fully_controlled_by = ROOT
 				}
@@ -177,7 +177,7 @@ focus_tree = {
 				}
 			}
 
-			random_core_state = {	
+			random_core_state = {
 				limit =	{
 					is_fully_controlled_by = ROOT
 					is_coastal = yes
@@ -197,17 +197,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_hygenic_housing
-		icon = GFX_focus_SWE_hygienic_housing 
+		icon = GFX_focus_SWE_hygienic_housing
 		x = -2
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_urbanization }
 		relative_position_id = SWE_urbanization
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -228,7 +228,7 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = SWE_hygenic_housing_output_bonus }
 				add_dynamic_modifier = { modifier = SWE_hygenic_housing_resource_bonus }
 			}
-			
+
 			#activate_mission = SWE_hygenic_housing_mission
 			custom_effect_tooltip = SWE_hygenic_housing_tt
 		}
@@ -243,10 +243,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = SWE_urbanization }
 		relative_position_id = SWE_urbanization
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -263,7 +263,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			random_core_state = {	
+			random_core_state = {
 				limit =	{
 					is_fully_controlled_by = ROOT
 				}
@@ -281,7 +281,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_individual_liberty_and_prosperity_for_all
-		icon = GFX_focus_generic_the_giant_wakes 
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 0
 		y = 1
 
@@ -289,10 +289,10 @@ focus_tree = {
 		prerequisite = { focus = SWE_work_projects_for_the_unemployed focus = SWE_hygenic_housing }
 		relative_position_id = SWE_hygenic_housing
 		mutually_exclusive = { focus = SWE_defense_above_all }
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -335,7 +335,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_defense_above_all
-		icon = GFX_goal_generic_defence 
+		icon = GFX_goal_generic_defence
 		x = 0
 		y = 1
 
@@ -343,10 +343,10 @@ focus_tree = {
 		prerequisite = { focus = SWE_work_projects_for_the_unemployed focus = SWE_hygenic_housing }
 		relative_position_id = SWE_work_projects_for_the_unemployed
 		mutually_exclusive = { focus = SWE_individual_liberty_and_prosperity_for_all }
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -388,17 +388,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_government_weapons_contract
-		icon = GFX_goal_generic_military_deal 
+		icon = GFX_goal_generic_military_deal
 		x = -17
 		y = 1
 
 		cost = 5
 		prerequisite = { focus = SWE_defense_act }
 		relative_position_id = SWE_defense_act
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -426,7 +426,7 @@ focus_tree = {
 				add_mio_funds = 300
 			}
 			add_war_support = 0.03
-			
+
 		}
 	}
 
@@ -439,10 +439,10 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = SWE_government_weapons_contract }
 		relative_position_id = SWE_government_weapons_contract
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -460,14 +460,14 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-			 	remove_idea = SWE_severe_lack_of_ammunition
-			 	add_idea = SWE_standardized_equipment
+				remove_idea = SWE_severe_lack_of_ammunition
+				add_idea = SWE_standardized_equipment
 			 }
 			add_tech_bonus = {
 				name = SWE_standardize_equipment
 				bonus = 1
 				uses = 1
-				category = infantry_weapons # optional 
+				category = infantry_weapons # optional
 				# technology  = technology_id # optional
 			}
 
@@ -486,10 +486,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = SWE_standardize_equipment }
 		relative_position_id = SWE_standardize_equipment
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -570,7 +570,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.75
 				uses = 1
-				category = armor # optional 
+				category = armor # optional
 				# tecnology  = technology_id # optional
 			}
 
@@ -580,7 +580,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_ring_a_ding_ding
-		icon = GFX_focus_SWE_bicycle 
+		icon = GFX_focus_SWE_bicycle
 		x = 0
 		y = 1
 
@@ -627,17 +627,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_sieze_landsverk
-		icon = GFX_focus_generic_annex_country_2 
+		icon = GFX_focus_generic_annex_country_2
 		x = 0
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_government_weapons_contract }
 		relative_position_id = SWE_government_weapons_contract
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 		mutually_exclusive = { focus = SWE_allow_landsverk_to_operate }
 		available = {
@@ -682,17 +682,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_allow_landsverk_to_operate
-		icon = GFX_focus_SWE_landsverk 
+		icon = GFX_focus_SWE_landsverk
 		x = 4
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_government_weapons_contract }
 		relative_position_id = SWE_government_weapons_contract
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 		mutually_exclusive = { focus = SWE_sieze_landsverk }
 		available = {
@@ -715,7 +715,7 @@ focus_tree = {
 					trait = SWE_mio_trait_german_landsverk_tech_exchange
 				}
 			}
-			
+
 			random_core_state = {
 				prioritize = { 138 }
 				limit = {
@@ -741,13 +741,13 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = SWE_allow_landsverk_to_operate_tt
-			
+
 		}
 	}
 
 	focus = {
 		id = SWE_as_the_barometer_falls
-		icon = GFX_focus_SWE_as_the_barometer_falls 
+		icon = GFX_focus_SWE_as_the_barometer_falls
 		x = 2
 		y = 1
 
@@ -756,7 +756,7 @@ focus_tree = {
 		relative_position_id = SWE_sieze_landsverk
 		#mutually_exclusive = { focus = SWE_the_old_enemy_stirs }
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -778,9 +778,9 @@ focus_tree = {
 		}
 	}
 
- 	focus = {
+	focus = {
 		id = SWE_lynx_winter_armored_cars
-		icon = GFX_focus_SWE_lynx_armored_car 
+		icon = GFX_focus_SWE_lynx_armored_car
 		x = 0
 		y = 1
 
@@ -790,7 +790,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_kp_bill }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -822,7 +822,7 @@ focus_tree = {
 					bonus = 1
 					ahead_reduction = 1
 					uses = 1
-					category = cat_armored_cars # optional 
+					category = cat_armored_cars # optional
 					name = SWE_lynx_winter_armored_cars
 					# technology  = technology_id # optional
 				}
@@ -856,7 +856,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_kp_bill
-		icon = GFX_goal_generic_army_motorized  
+		icon = GFX_goal_generic_army_motorized
 		x = 0
 		y = 1
 
@@ -866,7 +866,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_lynx_winter_armored_cars }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -896,13 +896,13 @@ focus_tree = {
 				technology  = motorized_rocket_unit # optional
 				name = SWE_kp_bill
 			}
-			
+
 		}
 	}
 
 	focus = {
 		id = SWE_paid_holidays
-		icon = GFX_focus_SWE_state_paid_vacation 
+		icon = GFX_focus_SWE_state_paid_vacation
 		x = 0
 		y = 1
 
@@ -912,7 +912,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_privately_managed_holidays }
 
 		ai_will_do = {
-			factor = 5		
+			factor = 5
 		}
 
 		available = {
@@ -935,7 +935,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_privately_managed_holidays
-		icon = GFX_focus_SWE_privately_managed_vacation 
+		icon = GFX_focus_SWE_privately_managed_vacation
 		x = 4
 		y = 1
 
@@ -946,7 +946,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -969,19 +969,19 @@ focus_tree = {
 
 	focus = {
 		id = SWE_radiojanst
-		icon = GFX_focus_SWE_radiotjanst 
+		icon = GFX_focus_SWE_radiotjanst
 		x = 0
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_urbanization }
 		relative_position_id = SWE_urbanization
-		
+
 
 
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1005,9 +1005,9 @@ focus_tree = {
 			}
 
 			else_if = {
-				limit = { 
+				limit = {
 					OR = {
-						has_completed_focus = SWE_undermine_the_fascists 
+						has_completed_focus = SWE_undermine_the_fascists
 						has_completed_focus = SWE_king_in_council
 					}
 				}
@@ -1017,7 +1017,7 @@ focus_tree = {
 				limit = {
 					NOT = { has_completed_focus = SWE_undermine_the_fascists }
 					NOT = { has_completed_focus = SWE_king_in_council }
-					has_completed_focus = SWE_prevent_a_red_dictatorship 
+					has_completed_focus = SWE_prevent_a_red_dictatorship
 				}
 				add_ideas = SWE_radiotjanst_fascism
 			}
@@ -1034,7 +1034,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_saltsjobaden_agreement
-		icon = GFX_focus_generic_treaty 
+		icon = GFX_focus_generic_treaty
 		x = 0
 		y = 1
 
@@ -1044,7 +1044,7 @@ focus_tree = {
 		mutually_exclusive = { focus = 	SWE_reject_saltsjobaden }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1069,22 +1069,22 @@ focus_tree = {
 			add_popularity = {
 				ideology = communism
 				popularity = 0.025
-			}		
+			}
 		}
 	}
 
 	focus = {
 		id = SWE_education_reform
-		icon = GFX_focus_SWE_education_reform 
+		icon = GFX_focus_SWE_education_reform
 		x = -2
 		y = 1
 
 		cost = 5
 		prerequisite = { focus = SWE_saltsjobaden_agreement }
 		relative_position_id = SWE_saltsjobaden_agreement
-		
+
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1120,7 +1120,7 @@ focus_tree = {
 		mutually_exclusive = { focus = 	SWE_saltsjobaden_agreement }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1152,7 +1152,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_continue_the_second_industrial_revolution
-		icon = GFX_goal_generic_consumer_goods 
+		icon = GFX_goal_generic_consumer_goods
 		x = -8
 		y = 7
 
@@ -1160,10 +1160,10 @@ focus_tree = {
 		prerequisite = { focus = SWE_defense_act }
 		relative_position_id = SWE_defense_act
 		mutually_exclusive = { focus = SWE_the_old_enemy_stirs }
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1184,7 +1184,7 @@ focus_tree = {
 				name = SWE_continue_the_second_industrial_revolution
 				bonus = 1
 				uses = 2
-				category = industry # optional 
+				category = industry # optional
 				# technology  = technology_id # optional
 			}
 		}
@@ -1199,10 +1199,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = SWE_continue_the_second_industrial_revolution }
 		relative_position_id = SWE_continue_the_second_industrial_revolution
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1243,10 +1243,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = SWE_align_more_closely_with_the_landsorganisationen focus = SWE_coalition_war_cabinet }
 		relative_position_id = SWE_align_more_closely_with_the_landsorganisationen
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1287,7 +1287,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_en_svensk_tiger
-		icon = GFX_focus_SWE_en_svensk_tiger 
+		icon = GFX_focus_SWE_en_svensk_tiger
 		x = 4
 		y = 1
 
@@ -1295,7 +1295,7 @@ focus_tree = {
 		prerequisite = { focus = SWE_align_more_closely_with_the_landsorganisationen focus = SWE_coalition_war_cabinet }
 		relative_position_id = SWE_align_more_closely_with_the_landsorganisationen
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1315,7 +1315,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "La Resistance"
 				}
-				add_ideas = SWE_en_svensk_tiger_aat_lar 
+				add_ideas = SWE_en_svensk_tiger_aat_lar
 				if = {
 					limit = {
 						has_intelligence_agency = no
@@ -1326,7 +1326,7 @@ focus_tree = {
 						icon = GFX_intelligence_agency_logo_swe
 					}
 				}
-				
+
 			}
 			else = {
 				add_ideas = SWE_en_svensk_tiger_aat_no_lar
@@ -1336,7 +1336,7 @@ focus_tree = {
 
 	focus = {
 		id = SWE_form_rfsu
-		icon = GFX_focus_SWE_form_rfsu 
+		icon = GFX_focus_SWE_form_rfsu
 		x = 6
 		y = 1
 
@@ -1345,7 +1345,7 @@ focus_tree = {
 		relative_position_id = SWE_align_more_closely_with_the_landsorganisationen
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1377,10 +1377,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = SWE_individual_liberty_and_prosperity_for_all }
 		relative_position_id = SWE_individual_liberty_and_prosperity_for_all
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1419,7 +1419,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_stability = 0.03
-		
+
 		}
 	}
 
@@ -1432,10 +1432,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = SWE_saltsjobaden_agreement focus = SWE_reject_saltsjobaden }
 		relative_position_id = SWE_saltsjobaden_agreement
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1464,10 +1464,10 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = SWE_saltsjobaden_agreement focus = SWE_reject_saltsjobaden }
 		relative_position_id = SWE_saltsjobaden_agreement
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1490,7 +1490,7 @@ focus_tree = {
 					name = SWE_harspranget_dam
 				}
 			}
-		
+
 			random_core_state = {
 				prioritize = { 666 }
 				limit = {
@@ -1521,7 +1521,7 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 					}
 				}
-				666 = {	
+				666 = {
 					add_building_construction = {
 						type = dam
 						level = 1
@@ -1545,17 +1545,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_deep_mining_complexes
-		icon = GFX_focus_generic_land_reclamation 
+		icon = GFX_focus_generic_land_reclamation
 		x = 2
 		y = 1
 
 		cost = 5
 		prerequisite = { focus = SWE_defense_above_all }
 		relative_position_id = SWE_defense_above_all
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1577,7 +1577,7 @@ focus_tree = {
 				name = SWE_deep_mining_complexes
 				bonus = 0.75
 				uses = 2
-				category = excavation_tech # optional 
+				category = excavation_tech # optional
 				# technology  = technology_id # optional
 			}
 
@@ -1592,17 +1592,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_bofors_fly_swatter
-		icon = GFX_focus_SWE_bofors_fly_swatter 
+		icon = GFX_focus_SWE_bofors_fly_swatter
 		x = -4
 		y = 1
 
 		cost = 5
 		prerequisite = { focus = SWE_government_weapons_contract }
 		relative_position_id = SWE_government_weapons_contract
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1625,7 +1625,7 @@ focus_tree = {
 			    uses = 2
 			    category = cat_anti_air
 			}
-			
+
 
 			mio:SWE_bofors_organization = {
 				add_mio_funds = 1000
@@ -1639,17 +1639,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_husqvarna_vapenfabrik
-		icon = GFX_goal_generic_construct_mil_factory 
+		icon = GFX_goal_generic_construct_mil_factory
 		x = -6
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_government_weapons_contract }
 		relative_position_id = SWE_government_weapons_contract
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1701,17 +1701,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_norma_projektilfabrik
-		icon = GFX_goal_generic_construct_mil_factory 
+		icon = GFX_goal_generic_construct_mil_factory
 		x = -8
 		y = 1
 
 		cost = 5
 		prerequisite = { focus = SWE_government_weapons_contract }
 		relative_position_id = SWE_government_weapons_contract
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1758,9 +1758,9 @@ focus_tree = {
 			if = {
 				limit = {
 					any_other_country = {
-						original_tag = NOR 
-						NOT = { 
-							has_war_with = ROOT 
+						original_tag = NOR
+						NOT = {
+							has_war_with = ROOT
 							has_government = fascism
 						}
 						surrender_progress > 0
@@ -1770,7 +1770,7 @@ focus_tree = {
 
 					}
 				}
-				
+
 				random_core_state = {
 					prioritize = { 919 }
 					limit = {
@@ -1784,21 +1784,21 @@ focus_tree = {
 					}
 				}
 			}
-			
+
 
 		}
 	}
 
 	focus = {
 		id = SWE_gotaverken
-		icon = GFX_goal_generic_construct_naval_dockyard 
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = -17
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_government_weapons_contract }
 		relative_position_id = SWE_government_weapons_contract
-		
+
 
 		ai_will_do = {
 			factor = 10
@@ -1851,7 +1851,7 @@ focus_tree = {
 					trait = SWE_mio_trait_high_capacity_dockyard
 				}
 			}
-			
+
 			SWE_folkhemmet_big_swap = yes
 		}
 	}
@@ -1865,10 +1865,10 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = SWE_gotaverken }
 		relative_position_id = SWE_gotaverken
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1921,10 +1921,10 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = SWE_gotaverken }
 		relative_position_id = SWE_gotaverken
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1939,7 +1939,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		available_if_capitulated = no
 		search_filters = {  }
 
@@ -1960,17 +1960,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_refit_gotaverken_for_rapid_repairs
-		icon = GFX_focus_generic_refit_civilian_ships 
+		icon = GFX_focus_generic_refit_civilian_ships
 		x = -2
 		y = 1
 
 		cost = 5
 		prerequisite = { focus = SWE_gotaverken }
 		relative_position_id = SWE_gotaverken
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -1991,7 +1991,7 @@ focus_tree = {
 		completion_reward = {
 
 			add_ideas = SWE_gotaverken_retooled_for_rapid_repairs
-			
+
 		}
 	}
 
@@ -2004,10 +2004,10 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = SWE_gotaverken }
 		relative_position_id = SWE_gotaverken
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2074,7 +2074,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_rule_the_baltic }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2102,13 +2102,13 @@ focus_tree = {
 				add_ideas = SWE_small_scale_hull_focused_dockyards_no_mtg
 			}
 
-			
+
 		}
 	}
 
 	focus = {
 		id = SWE_rule_the_baltic
-		icon = GFX_goal_generic_navy_cruiser 
+		icon = GFX_goal_generic_navy_cruiser
 		x = 1
 		y = 2
 
@@ -2118,7 +2118,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SWE_retool_dockyards }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2138,7 +2138,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = bb_tech 
+				category = bb_tech
 				name = SWE_rule_the_baltic
 			}
 			if = {
@@ -2150,13 +2150,13 @@ focus_tree = {
 			else = {
 				add_ideas = SWE_rule_the_baltic_no_mtg
 			}
-			
+
 		}
 	}
 
 	focus = {
 		id = SWE_all_cards_on_deck
-		icon = GFX_focus_SWE_all_cards_on_deck 
+		icon = GFX_focus_SWE_all_cards_on_deck
 		x = 0
 		y = 1
 
@@ -2166,7 +2166,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = SWE_coastal_support }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2199,7 +2199,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = SWE_all_cards_on_deck }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2222,17 +2222,17 @@ focus_tree = {
 
 	focus = {
 		id = SWE_vasa_ii
-		icon = GFX_focus_SWE_Vasa_II 
+		icon = GFX_focus_SWE_Vasa_II
 		x = 4
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_rule_the_baltic }
 		relative_position_id = SWE_rule_the_baltic
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2298,7 +2298,7 @@ create_equipment_variant = {
 							version_name = "HMS Vasa II"
 						}
 						requested_factories = 5
-						progress = 0.6 
+						progress = 0.6
 					}
 				}
 				else = {
@@ -2341,7 +2341,7 @@ create_equipment_variant = {
 							version_name = "Röd Orkan"
 						}
 						requested_factories = 5
-						progress = 0.6 
+						progress = 0.6
 					}
 				}
 			}
@@ -2373,7 +2373,7 @@ create_equipment_variant = {
 							version_name = "Vasa II"
 						}
 						requested_factories = 5
-						progress = 0.6 
+						progress = 0.6
 					}
 				}
 				else = {
@@ -2402,7 +2402,7 @@ create_equipment_variant = {
 							version_name = "Röd Orkan"
 						}
 						requested_factories = 5
-						progress = 0.6 
+						progress = 0.6
 					}
 				}
 			}
@@ -2420,10 +2420,10 @@ create_equipment_variant = {
 		cost = 10
 		prerequisite = { focus = SWE_retool_dockyards }
 		relative_position_id = SWE_retool_dockyards
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2443,8 +2443,8 @@ create_equipment_variant = {
 			every_navy_leader = {
 				random_select_amount = 3
 				limit = {
-					NOT = { 
-						has_trait = old_guard_navy 
+					NOT = {
+						has_trait = old_guard_navy
 
 					}
 				}
@@ -2484,17 +2484,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_unrestricted_submarine_warfare
-		icon = GFX_goal_generic_navy_submarine 
+		icon = GFX_goal_generic_navy_submarine
 		x = -2
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_retool_dockyards }
 		relative_position_id = SWE_retool_dockyards
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2528,7 +2528,7 @@ create_equipment_variant = {
 					uses = 1
 					category = ss_tech
 				}
-				
+
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -2542,12 +2542,12 @@ create_equipment_variant = {
 						technology = basic_submarine_snorkel
 					}
 
-					
+
 				}
 				else = {
 					navy_experience = 20
 				}
-				
+
 			}
 			else = {
 				navy_experience = 70
@@ -2557,17 +2557,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_surface_raiders
-		icon = GFX_focus_generic_destroyer 
+		icon = GFX_focus_generic_destroyer
 		x = 0
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_retool_dockyards }
 		relative_position_id = SWE_retool_dockyards
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2718,7 +2718,7 @@ create_equipment_variant = {
 			else = { #NON MTG
 				if = {
 					limit = { NOT = { has_government = communism }}
-				
+
 					create_equipment_variant = {
 						name = "HMS Tillit"
 						type = destroyer_3
@@ -2814,7 +2814,7 @@ create_equipment_variant = {
 			add_tech_bonus = {
 				bonus = 0.75
 				uses = 1
-				category = dd_tech # optional 
+				category = dd_tech # optional
 				# technology  = technology_id # optional
 			}
 		}
@@ -2822,17 +2822,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_landverk_l_62
-		icon = GFX_focus_FIN_foreign_anti_air 
+		icon = GFX_focus_FIN_foreign_anti_air
 		x = 0
 		y = 1
 
 		cost = 5
 		prerequisite = { focus = SWE_bofors_fly_swatter }
 		relative_position_id = SWE_bofors_fly_swatter
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -2844,7 +2844,7 @@ create_equipment_variant = {
 				has_tech = basic_light_tank
 			}
 			has_tech = antiair1
-			
+
 			capital_scope = { is_controlled_by = SWE }
 		}
 
@@ -2908,7 +2908,7 @@ create_equipment_variant = {
 					improved_light_spaa = 1
 					popup = no
 				}
-				
+
 
 				add_equipment_to_stockpile = {
 					type = light_tank_aa_equipment_2
@@ -2936,7 +2936,7 @@ create_equipment_variant = {
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 } 
+					artillery = { x = 0 y = 1 }
 					anti_air = { x = 0 y = 2 }
 
 				}
@@ -2946,8 +2946,8 @@ create_equipment_variant = {
 
 			capital_scope = {
 				create_unit = {
-			    	division = "name = \"Mobila Luftvärnsstyrkan\" division_template = \"Mobila Luftvärnsstyrkan\" start_equipment_factor = 1 start_experience_factor = 0.7 "
-		 	   		owner = SWE
+					division = "name = \"Mobila Luftvärnsstyrkan\" division_template = \"Mobila Luftvärnsstyrkan\" start_equipment_factor = 1 start_experience_factor = 0.7 "
+					owner = SWE
 				}
 			}
 
@@ -2958,20 +2958,20 @@ create_equipment_variant = {
 			mio:SWE_bofors_organization = {
 				add_mio_funds = 500
 			}
-			
+
 		}
 	}
 
 	focus = {
 		id = SWE_bofors_anti_tank_gun
-		icon = GFX_goal_generic_army_artillery2 
+		icon = GFX_goal_generic_army_artillery2
 		x = -2
 		y = 1
 
 		cost = 5
 		prerequisite = { focus = SWE_bofors_fly_swatter }
 		relative_position_id = SWE_bofors_fly_swatter
-		
+
 
 
 		ai_will_do = {
@@ -3007,7 +3007,7 @@ create_equipment_variant = {
 				name = SWE_bofors_anti_tank_gun
 				bonus = 1
 				uses = 2
-				category = cat_anti_tank	# optional 
+				category = cat_anti_tank	# optional
 				# tecnology  = technology_id # optional
 			}
 			custom_effect_tooltip = tech_effect|SWE_bofors_antitank_gun
@@ -3031,14 +3031,14 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_form_saab
-		icon = GFX_goal_generic_construct_mil_factory 
+		icon = GFX_goal_generic_construct_mil_factory
 		x = -5
 		y = 1
 
 		cost = 10
 		prerequisite = { focus = SWE_bofors_fly_swatter }
 		relative_position_id = SWE_bofors_fly_swatter
-		
+
 
 		ai_will_do = {
 			factor = 10
@@ -3094,7 +3094,7 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_domestic_designs
-		icon = GFX_goal_generic_air_fighter2 
+		icon = GFX_goal_generic_air_fighter2
 		x = -1
 		y = 1
 
@@ -3102,10 +3102,10 @@ create_equipment_variant = {
 		prerequisite = { focus = SWE_form_saab }
 		relative_position_id = SWE_form_saab
 		mutually_exclusive = { focus = SWE_foreign_designs }
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3146,7 +3146,7 @@ create_equipment_variant = {
 			mio:SWE_saab_organization = {
 				add_mio_funds = 1000
 			}
-			
+
 		}
 	}
 
@@ -3162,7 +3162,7 @@ create_equipment_variant = {
 		mutually_exclusive = { focus = SWE_domestic_designs }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3193,22 +3193,22 @@ create_equipment_variant = {
 					ROOT = {
 						add_tech_bonus = {
 							name = SWE_foreign_designs
-							bonus = 0.35 
+							bonus = 0.35
 							uses = 1
-							category = air_equipment # optional 
+							category = air_equipment # optional
 							# tecnology  = technology_id # optional
 						}
 					}
 				}
 			}
 			custom_effect_tooltip = SWE_foreign_designs_tt
-			
+
 		}
 	}
 
 	focus = {
 		id = SWE_formation_flying
-		icon = GFX_focus_generic_multi_role_aircraft 
+		icon = GFX_focus_generic_multi_role_aircraft
 		x = 0
 		y = 1
 
@@ -3216,10 +3216,10 @@ create_equipment_variant = {
 		prerequisite = { focus = SWE_domestic_designs focus = SWE_foreign_designs}
 		relative_position_id = SWE_domestic_designs
 		mutually_exclusive = { focus = SWE_marauder_bombers }
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3237,13 +3237,13 @@ create_equipment_variant = {
 
 		completion_reward = {
 			add_ideas = SWE_formation_flying_idea
-		
+
 		}
 	}
 
 	focus = {
 		id = SWE_marauder_bombers
-		icon = GFX_focus_SWE_marauder_bombers 
+		icon = GFX_focus_SWE_marauder_bombers
 		x = 0
 		y = 1
 
@@ -3251,10 +3251,10 @@ create_equipment_variant = {
 		prerequisite = { focus = SWE_domestic_designs focus = SWE_foreign_designs}
 		relative_position_id = SWE_foreign_designs
 		mutually_exclusive = { focus = SWE_formation_flying }
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3277,17 +3277,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_airforce_modernization
-		icon = GFX_focus_generic_aircraft_production 
+		icon = GFX_focus_generic_aircraft_production
 		x = 1
 		y = 1
 
 		cost = 5
 		prerequisite = { focus = SWE_formation_flying focus = SWE_marauder_bombers }
 		relative_position_id = SWE_formation_flying
-		
+
 
 		ai_will_do = {
-			factor = 5		
+			factor = 5
 		}
 
 		available = {
@@ -3309,7 +3309,7 @@ create_equipment_variant = {
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
 				uses = 2
-				category = air_doctrine # optional 
+				category = air_doctrine # optional
 				name = SWE_airforce_modernization
 				# tecnology  = technology_id # optional
 			}
@@ -3322,7 +3322,7 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_the_barrel
-		icon = GFX_focus_SWE_the_barrel 
+		icon = GFX_focus_SWE_the_barrel
 		x = -1
 		y = 1
 
@@ -3333,7 +3333,7 @@ create_equipment_variant = {
 
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3359,20 +3359,20 @@ create_equipment_variant = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2 # was 1
-				category  = jet_technology 
+				category  = jet_technology
 				name = SWE_the_barrel
 			}
 
 			#add_tech_bonus = {
 			#	bonus = 1
 			#	uses = 1
-			#	technology = rocket_engines 
+			#	technology = rocket_engines
 			#	name = SWE_the_barrel
 			#}
 			#add_tech_bonus = {
 			#	bonus = 1
 			#	uses = 1
-			#	technology  = jet_engines 
+			#	technology  = jet_engines
 			#	name = SWE_the_barrel
 			#}
 
@@ -3381,7 +3381,7 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_rockets
-		icon = GFX_focus_rocketry 
+		icon = GFX_focus_rocketry
 		x = 1
 		y = 1
 
@@ -3391,7 +3391,7 @@ create_equipment_variant = {
 		mutually_exclusive = { focus = SWE_the_barrel }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3433,17 +3433,17 @@ create_equipment_variant = {
 
 	#focus = {
 	#	id = SWE_military_academy
-	#	#icon = 
+	#	#icon =
 	#	x = 1
 	#	y = 1
 #
 	#	cost = 10
 	#	prerequisite = { focus = SWE_the_barrel focus = SWE_rockets focus = SWE_unrestricted_submarine_warfare focus = SWE_surface_raiders focus = SWE_all_cards_on_deck focus = SWE_coastal_support focus = SWE_vasa_ii}
 	#	relative_position_id = SWE_the_barrel
-	#	
+	#
 #
 	#	ai_will_do = {
-	#		factor = 10		
+	#		factor = 10
 	#	}
 #
 	#	available = {
@@ -3460,7 +3460,7 @@ create_equipment_variant = {
 	#	search_filters = {  }
 #
 	#	completion_reward = {
-	#	
+	#
 	#	}
 	#}
 
@@ -3473,10 +3473,10 @@ create_equipment_variant = {
 		cost = 5
 		prerequisite = { focus = SWE_saltsjobaden_agreement focus = SWE_reject_saltsjobaden }
 		relative_position_id = SWE_saltsjobaden_agreement
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3506,10 +3506,10 @@ create_equipment_variant = {
 		cost = 10
 		prerequisite = { focus = SWE_reject_saltsjobaden }
 		relative_position_id = SWE_reject_saltsjobaden
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3537,17 +3537,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_swedes_not_sweden_to_finlands_aid
-		icon = GFX_focus_SWE_Swedes_not_Sweden_to_finlands_aid 
+		icon = GFX_focus_SWE_Swedes_not_Sweden_to_finlands_aid
 		x = 7
 		y = 1
 		mutually_exclusive = {focus = SWE_finlands_cause_is_ours focus = SWE_the_aland_question}
 		cost = 5
 		prerequisite = { focus = SWE_continue_the_second_industrial_revolution focus = SWE_the_old_enemy_stirs }
 		relative_position_id = SWE_continue_the_second_industrial_revolution
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3588,7 +3588,7 @@ create_equipment_variant = {
 				show_ideas_tooltip = SWE_volunteers_upgraded
 				custom_effect_tooltip = SWE_swedes_not_sweden_to_finlands_aid_tt_2
 			}
-			
+
 			if = {
 				limit = {
 					NOT = { FIN = { has_war_with = ROOT } }
@@ -3596,21 +3596,21 @@ create_equipment_variant = {
 
 				FIN = {
 
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = infantry_equipment_0
-						amount = 2000 
+						amount = 2000
 						producer = PREV
 					}
 
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = anti_air_equipment_1
-						amount = 100 
+						amount = 100
 						producer = PREV
 					}
 
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = anti_tank_equipment_1
-						amount = 100 
+						amount = 100
 						producer = PREV
 					}
 				}
@@ -3621,24 +3621,24 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_the_aland_question
-		icon = GFX_focus_SWE_the_aland_question 
+		icon = GFX_focus_SWE_the_aland_question
 		x = 2
 		y = 0
 		mutually_exclusive = { focus = SWE_finlands_cause_is_ours focus = SWE_swedes_not_sweden_to_finlands_aid }
 		cost = 10
 		prerequisite = { focus = SWE_continue_the_second_industrial_revolution focus = SWE_the_old_enemy_stirs }
 		relative_position_id = SWE_swedes_not_sweden_to_finlands_aid
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
-			145 = { 
+			145 = {
 				controller = {
 					original_tag = FIN
-				} 
+				}
 			}
 
 			FIN = {
@@ -3686,7 +3686,7 @@ create_equipment_variant = {
 
 		focus = {
 		id = SWE_coalition_war_cabinet
-		icon = GFX_focus_generic_treaty 
+		icon = GFX_focus_generic_treaty
 		x = 5
 		y = 2
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
@@ -3696,7 +3696,7 @@ create_equipment_variant = {
 		mutually_exclusive = { focus = SWE_align_more_closely_with_the_landsorganisationen }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3731,17 +3731,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_winter_drill
-		icon = GFX_focus_generic_commonwealth_build_infantry 
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_coalition_war_cabinet }
 		relative_position_id = SWE_coalition_war_cabinet
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3787,14 +3787,14 @@ create_equipment_variant = {
 
 	focus = {
 	id = SWE_strike_the_capitalist_beast_down
-	icon = GFX_focus_eng_expose_the_belly_of_the_bear 
+	icon = GFX_focus_eng_expose_the_belly_of_the_bear
 	x = 0
 	y = 2
 	cost = 5
 	prerequisite = { focus = SWE_align_more_closely_with_the_landsorganisationen }
 	relative_position_id = SWE_align_more_closely_with_the_landsorganisationen
 	ai_will_do = {
-		factor = 10		
+		factor = 10
 	}
 	available = {
 		communism > 0.2
@@ -3815,91 +3815,91 @@ create_equipment_variant = {
 					id = AAT_Sweden_communism.7
 					days = 120 # optional - can take hours/days/months
 					random_days = 180 # optional - can take hours/days/months
-				}	
+				}
 		}
 		add_war_support = 0.05
 		add_stability = -0.1
-  		set_politics = {
-  			ruling_party = communism
-  			elections_allowed = yes
-  		}
-  		add_opinion_modifier = {
-  			target = GER
-  			modifier = SWE_condemmed_soviet_ger
-  		}
-  		hidden_effect = {
-  			add_opinion_modifier = {
-  				target = GER
-  				modifier = SWE_condemmed_soviet_ger_2
-  			}
-  		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = yes
+		}
+		add_opinion_modifier = {
+			target = GER
+			modifier = SWE_condemmed_soviet_ger
+		}
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = SWE_condemmed_soviet_ger_2
+			}
+		}
 
-  		GER = {
-	  		add_opinion_modifier = {
-	  			target = PREV
-	  			modifier = SWE_condemmed_soviet_ger
-	  		}
-	  		hidden_effect = {
-	  			add_opinion_modifier = {
-	  				target = PREV
-	  				modifier = SWE_condemmed_soviet_ger_2
-	  			}
-	  		}
-  		}
+		GER = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = SWE_condemmed_soviet_ger
+			}
+			hidden_effect = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = SWE_condemmed_soviet_ger_2
+				}
+			}
+		}
 
-  		add_opinion_modifier = {
-  			target = SOV
-  			modifier = SWE_condemmed_soviet_sov
-  		}
-  		hidden_effect = {
-  			add_opinion_modifier = {
-  				target = SOV
-  				modifier = SWE_condemmed_soviet_sov_2
-  			}
-  		}
+		add_opinion_modifier = {
+			target = SOV
+			modifier = SWE_condemmed_soviet_sov
+		}
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SWE_condemmed_soviet_sov_2
+			}
+		}
 
-  		SOV = {
-	  		add_opinion_modifier = {
-	  			target = PREV
-	  			modifier = SWE_condemmed_soviet_sov
-	  		}
-	  		hidden_effect = {	
-	  			add_opinion_modifier = {
-	  				target = PREV
-	  				modifier = SWE_condemmed_soviet_sov_2
-	  			}
-	  		}
+		SOV = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = SWE_condemmed_soviet_sov
+			}
+			hidden_effect = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = SWE_condemmed_soviet_sov_2
+				}
+			}
 
-  		}
-
-
+		}
 
 
 
-  		hidden_effect = {
+
+
+		hidden_effect = {
 			if = {
 				limit = {
 					has_idea = neutrality_idea
 				}
 				remove_ideas = neutrality_idea
 			}
-	  		random_unit_leader = {
-	  			set_unit_leader_flag = SWE_anti_communist_ringleader
-	  		}
-	  		random_unit_leader = {
-	  			limit = {
-	  				NOT = { has_unit_leader_flag = SWE_anti_communist_ringleader }
-	  			}
-	  			set_unit_leader_flag = SWE_anti_communist_ringleader	
-	  		}
+			random_unit_leader = {
+				set_unit_leader_flag = SWE_anti_communist_ringleader
+			}
+			random_unit_leader = {
+				limit = {
+					NOT = { has_unit_leader_flag = SWE_anti_communist_ringleader }
+				}
+				set_unit_leader_flag = SWE_anti_communist_ringleader
+			}
 
-	  		random_unit_leader = {
-	  			limit = {
-	  				NOT = { has_unit_leader_flag = SWE_anti_communist_ringleader }
-	  			}
-	  			set_unit_leader_flag = SWE_anti_communist_ringleader	
-	  		}
-  		}
+			random_unit_leader = {
+				limit = {
+					NOT = { has_unit_leader_flag = SWE_anti_communist_ringleader }
+				}
+				set_unit_leader_flag = SWE_anti_communist_ringleader
+			}
+		}
 	}
 }
 
@@ -3912,10 +3912,10 @@ create_equipment_variant = {
 		cost = 10
 		prerequisite = { focus = SWE_strike_the_capitalist_beast_down }
 		relative_position_id = SWE_strike_the_capitalist_beast_down
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -3944,14 +3944,14 @@ create_equipment_variant = {
 			custom_effect_tooltip = SWE_socialist_reforms_tt
 
 			unlock_decision_tooltip = {
-			  	decision = SWE_socialists_reforms_decision_efficiency_gain
-			  	show_effect_tooltip = yes # default is no
-			  	show_modifiers = yes # default is no
+				decision = SWE_socialists_reforms_decision_efficiency_gain
+				show_effect_tooltip = yes # default is no
+				show_modifiers = yes # default is no
 			}
 		}
 	}
 
- 	focus = {
+	focus = {
 		id = SWE_refuge_from_war
 		icon = GFX_focus_SWE_refuge_from_war
 		x = -2
@@ -3960,10 +3960,10 @@ create_equipment_variant = {
 		cost = 10
 		prerequisite = { focus = SWE_strike_the_capitalist_beast_down }
 		relative_position_id = SWE_socialist_reforms
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4003,10 +4003,10 @@ create_equipment_variant = {
 		cost = 10
 		prerequisite = { focus = SWE_refuge_from_war }
 		relative_position_id = SWE_refuge_from_war
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4055,8 +4055,8 @@ create_equipment_variant = {
 					SPR = {
 						has_country_flag = scw_over
 						OR = { #Nat Spain WON
-							tag = SPA 
-							tag = SPB 
+							tag = SPA
+							tag = SPB
 						}
 					}
 				}
@@ -4089,7 +4089,7 @@ create_equipment_variant = {
 					has_dlc = "Man the Guns"
 					HOL = {
 						OR = {
-							has_completed_focus = HOL_oranje_boven 
+							has_completed_focus = HOL_oranje_boven
 							has_completed_focus = HOL_cave_to_the_germans
 							has_completed_focus = HOL_cave_to_the_british
 						}
@@ -4113,7 +4113,7 @@ create_equipment_variant = {
 					}
 				}
 
-				ITA = { ITA_palmiro_togliatti = {  set_nationality = ROOT } 
+				ITA = { ITA_palmiro_togliatti = {  set_nationality = ROOT }
 					ITA_ignazio_silone = { set_nationality = ROOT }
 					ITA_pompeo_colajanni = { set_nationality = ROOT } #General
 					ITA_norma_barbolini = { set_nationality = ROOT }
@@ -4194,7 +4194,7 @@ create_equipment_variant = {
 						}
 					}
 
-					POL = { POL_wanda_wasilewska = { set_nationality = ROOT } } 
+					POL = { POL_wanda_wasilewska = { set_nationality = ROOT } }
 				}
 
 				if = {
@@ -4209,11 +4209,11 @@ create_equipment_variant = {
 						}
 					}
 
-					POL = { 
-						POL_henryk_floyar_rajchman = { set_nationality = ROOT } 
+					POL = {
+						POL_henryk_floyar_rajchman = { set_nationality = ROOT }
 						POL_boleslaw_bierut = { set_nationality = ROOT }
 						POL_edward_osobka_morawski = { set_nationality = ROOT }
-					} 
+					}
 				}
 
 			}
@@ -4268,9 +4268,9 @@ create_equipment_variant = {
 			if = {
 				limit = {
 					has_dlc = "By Blood Alone"
-					ETH = { 
+					ETH = {
 						OR = {
-							has_completed_focus = ETH_soviet_aid 
+							has_completed_focus = ETH_soviet_aid
 							has_completed_focus = ETH_reach_out_to_the_italians
 							has_completed_focus = ETH_rally_around_the_emperor
 						}
@@ -4288,17 +4288,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_liquidate_the_monarchy
-		icon = GFX_focus_SWE_liquidate_the_monarchy 
+		icon = GFX_focus_SWE_liquidate_the_monarchy
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 5
 		prerequisite = { focus = SWE_socialist_reforms focus = SWE_refuge_from_war focus = SWE_police_reforms }
 		relative_position_id = SWE_socialist_reforms
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4328,11 +4328,11 @@ create_equipment_variant = {
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_liquidate_the_monarchy }
-		relative_position_id = SWE_liquidate_the_monarchy	
-		
+		relative_position_id = SWE_liquidate_the_monarchy
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4349,13 +4349,13 @@ create_equipment_variant = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
-	  		add_ideas = SWE_politiburo
-			
-			
+			add_ideas = SWE_politiburo
+
+
 			every_military_industrial_organization = {
 				add_mio_funds = 500
 			}
-			
+
 		}
 	}
 
@@ -4367,11 +4367,11 @@ create_equipment_variant = {
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 5
 		prerequisite = { focus = SWE_establish_politburo }
-		relative_position_id = SWE_establish_politburo	
-		
+		relative_position_id = SWE_establish_politburo
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4435,11 +4435,11 @@ create_equipment_variant = {
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_five_year_plan }
-		relative_position_id = SWE_five_year_plan	
-		
+		relative_position_id = SWE_five_year_plan
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4464,7 +4464,7 @@ create_equipment_variant = {
 				if = {
 					limit = {
 						has_country_leader = {
-							ruling_only = yes 
+							ruling_only = yes
 							character = SWE_nils_flyg
 						}
 					}
@@ -4480,14 +4480,14 @@ create_equipment_variant = {
 				if = {
 					limit = {
 						has_country_leader = {
-							ruling_only = yes 
+							ruling_only = yes
 							character = SWE_nils_flyg
 						}
 					}
 
 					SOV = {
 						add_opinion_modifier = {
-							target = PREV 
+							target = PREV
 							modifier = SWE_embargoed_us
 						}
 					}
@@ -4495,7 +4495,7 @@ create_equipment_variant = {
 				else = {
 					GER = {
 						add_opinion_modifier = {
-							target = PREV 
+							target = PREV
 							modifier = SWE_embargoed_us
 						}
 					}
@@ -4514,11 +4514,11 @@ create_equipment_variant = {
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_establish_politburo }
-		relative_position_id = SWE_establish_politburo	
-		
+		relative_position_id = SWE_establish_politburo
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4541,23 +4541,23 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_support_danish_communists
-		icon = GFX_focus_SWE_danish_communists 
+		icon = GFX_focus_SWE_danish_communists
 		x = 2
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_peoples_commissar_for_defense }
-		relative_position_id = SWE_peoples_commissar_for_defense	
-		
+		relative_position_id = SWE_peoples_commissar_for_defense
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
 		}
 
-		bypass = {	
+		bypass = {
 			DEN = {
 				OR = {
 					exists = no
@@ -4579,8 +4579,8 @@ create_equipment_variant = {
 
 				create_operative_leader = {
 					name = "Jean Blæksprutten"
-					bypass_recruitment = yes 
-					available_to_spy_master = yes 
+					bypass_recruitment = yes
+					available_to_spy_master = yes
 					traits = { operative_well_groomed operative_natural_orator }
 					nationalities = { DEN SWE }
 					GFX = GFX_portrait_europe_generic_operative_male_15
@@ -4599,7 +4599,7 @@ create_equipment_variant = {
 				else = {
 					add_ideas = SWE_en_svensk_lyder_lar
 				}
-				
+
 			}
 
 			if = {
@@ -4616,23 +4616,23 @@ create_equipment_variant = {
 			}
 
 			unlock_decision_tooltip = SWE_pull_the_trigger_den
-			
+
 		}
 	}
 
 	focus = {
 		id = SWE_support_norwegian_communists
-		icon = GFX_focus_SWE_norwegian_communists 
+		icon = GFX_focus_SWE_norwegian_communists
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_peoples_commissar_for_defense }
-		relative_position_id = SWE_peoples_commissar_for_defense	
-		
+		relative_position_id = SWE_peoples_commissar_for_defense
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4645,7 +4645,7 @@ create_equipment_variant = {
 				has_war_with = NOR
 				AND = {
 
-					NOR = { 
+					NOR = {
 						NOT = { has_completed_focus = NOR_compromise_with_the_nkp }
 						has_government = communism
 					}
@@ -4666,13 +4666,13 @@ create_equipment_variant = {
 
 				create_operative_leader = {
 					name = "Jimmy Muldvarp"
-					bypass_recruitment = yes 
-					available_to_spy_master = yes 
+					bypass_recruitment = yes
+					available_to_spy_master = yes
 					traits = { operative_well_groomed operative_natural_orator }
 					nationalities = { NOR SWE }
 					GFX = GFX_portrait_europe_generic_operative_male_18
 				}
-				
+
 				if = {
 					limit = {
 						has_idea = SWE_en_svensk_lyder_lar
@@ -4686,7 +4686,7 @@ create_equipment_variant = {
 				else = {
 					add_ideas = SWE_en_svensk_lyder_lar
 				}
-			
+
 			}
 
 			if = {
@@ -4714,17 +4714,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_finnish_buffer_state
-		icon = GFX_focus_SWE_finnish_communists 
+		icon = GFX_focus_SWE_finnish_communists
 		x = -2
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 5
 		prerequisite = { focus = SWE_peoples_commissar_for_defense }
-		relative_position_id = SWE_peoples_commissar_for_defense	
-		
+		relative_position_id = SWE_peoples_commissar_for_defense
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4773,13 +4773,13 @@ create_equipment_variant = {
 
 
 			FIN = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 3500 
+					amount = 3500
 					producer = SWE
 				}
 
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = train_equipment_1
 					amount = 5
 					producer = SWE
@@ -4802,15 +4802,15 @@ create_equipment_variant = {
 						icon = "GFX_SWE_fighter1_medium"
 					}
 
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = small_plane_airframe_1
 						amount = 200
 						producer = SWE
-						variant_name = "Converted Gloster Gladiator" 
+						variant_name = "Converted Gloster Gladiator"
 					}
 				}
 				else = {
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = fighter_equipment_1
 						amount = 200
 						producer = SWE
@@ -4822,11 +4822,11 @@ create_equipment_variant = {
 					}
 					if = {
 						limit = { has_dlc = "No Step Back" }
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = light_tank_aa_chassis_2
 							amount = 200
 							producer = SWE
-							variant_name = "Landsverk L-62" 
+							variant_name = "Landsverk L-62"
 						}
 					}
 					else = {
@@ -4844,17 +4844,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_universal_basic_income
-		icon = GFX_focus_generic_join_comintern 
+		icon = GFX_focus_generic_join_comintern
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_support_norwegian_communists focus = SWE_support_danish_communists focus = SWE_finnish_buffer_state }
-		relative_position_id = SWE_support_norwegian_communists	
-		
+		relative_position_id = SWE_support_norwegian_communists
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4885,10 +4885,10 @@ create_equipment_variant = {
 		cost = 10
 		prerequisite = { focus = SWE_strike_the_capitalist_beast_down }
 		relative_position_id = SWE_socialist_reforms
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -4939,42 +4939,42 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_train_the_sheltered
-		icon = GFX_focus_SWE_train_the_sheltered 
+		icon = GFX_focus_SWE_train_the_sheltered
 		x = -2
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_winter_drill }
 		relative_position_id = SWE_winter_drill
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
 			OR = {
-				NOR = { 
+				NOR = {
 					OR=  {
-						has_capitulated = yes 
+						has_capitulated = yes
 						exists = no
 						is_subject = yes
 					}
 					NOT = { has_war_with = ROOT }
-				} 
-				
-				DEN = { 
+				}
+
+				DEN = {
 					OR = {
-						has_capitulated = yes 
+						has_capitulated = yes
 						exists = no
 						is_subject = yes
 					}
 					NOT = { has_war_with = ROOT }
-				} 
-				
-				FIN = { 
+				}
+
+				FIN = {
 					OR = {
-						has_capitulated = yes 
+						has_capitulated = yes
 						exists = no
 						is_subject = yes
 					}
@@ -4982,9 +4982,9 @@ create_equipment_variant = {
 				}
 
 
-				ICE = { 
+				ICE = {
 					OR = {
-						has_capitulated = yes 
+						has_capitulated = yes
 						exists = no
 						AND = {
 							is_subject = yes
@@ -5007,37 +5007,37 @@ create_equipment_variant = {
 
 		completion_reward = {
 			custom_effect_tooltip = SWE_train_the_sheltered_tt
-			unlock_decision_tooltip = SWE_train_the_sheltered_decision  
+			unlock_decision_tooltip = SWE_train_the_sheltered_decision
 		}
 	}
 
 
 	focus = {
 		id = SWE_the_narvik_solution
-		icon = GFX_focus_SWE_the_narvik_solution 
+		icon = GFX_focus_SWE_the_narvik_solution
 		x = 2
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_coalition_war_cabinet }
 		relative_position_id = SWE_coalition_war_cabinet
-		
+
 
 		ai_will_do = {
 			factor = 10
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
-			}		
+			}
 		}
 
-		available = {	
+		available = {
 			NOT = {
 				has_war_with = NOR
 			}
 			OR = {
 				144 = {
-					controller = { 
+					controller = {
 						OR = {
 							NOT = { original_tag = NOR }
 							AND = {
@@ -5050,13 +5050,13 @@ create_equipment_variant = {
 									}
 								}
 							}
-							
+
 						}
 					}
 				}
 
 				924 = {
-					controller = { 
+					controller = {
 						OR = {
 							NOT = { original_tag = NOR }
 							AND = {
@@ -5069,13 +5069,13 @@ create_equipment_variant = {
 									}
 								}
 							}
-							
+
 						}
 					}
 				}
 
 				925 = {
-					controller = { 
+					controller = {
 						OR = {
 							NOT = { original_tag = NOR }
 							AND = {
@@ -5088,7 +5088,7 @@ create_equipment_variant = {
 									}
 								}
 							}
-							
+
 						}
 					}
 				}
@@ -5115,7 +5115,7 @@ create_equipment_variant = {
 			#		limit = {
 			#			NOR = { is_ai = no }
 			#		}
-			#		NOR = { country_event = { id = AAT_Sweden.13 hours = 2 } 
+			#		NOR = { country_event = { id = AAT_Sweden.13 hours = 2 }
 			#	}
 			#	else = {
 			#		NOR = { OVERLORD = { country_event = { id = AAT_Sweden.13 hours = 2 }  } }
@@ -5138,11 +5138,11 @@ create_equipment_variant = {
 				144 = {
 					controller = {
 						if = {
-							limit = { 
-								original_tag = NOR 
+							limit = {
+								original_tag = NOR
 								is_subject = no
 							}
-							 country_event = { id = AAT_Sweden.13 hours = 2 } 
+							 country_event = { id = AAT_Sweden.13 hours = 2 }
 						}
 						else_if = {
 							limit = {
@@ -5151,7 +5151,7 @@ create_equipment_variant = {
 								is_ai = no
 								OVERLORD = { is_ai = yes }
 							}
-							controller = { country_event = { id = AAT_Sweden.13 hours = 2 } } 
+							controller = { country_event = { id = AAT_Sweden.13 hours = 2 } }
 						}
 						else_if = {
 							limit = {
@@ -5169,21 +5169,21 @@ create_equipment_variant = {
 
 			if = {
 				limit = {
-					 924 = { 
-					 	controller = {
-					 		NOT = { 
-					 			controls_state = 144
-					 			original_tag = SWE
-					 		}
-					 	}
+					 924 = {
+						controller = {
+							NOT = {
+								controls_state = 144
+								original_tag = SWE
+							}
+						}
 					 }
 				}
 
-				924 = { 
+				924 = {
 					controller = {
 						if = {
-							limit = { 
-								original_tag = NOR 
+							limit = {
+								original_tag = NOR
 								is_subject = no
 							}
 							NOR = { country_event = { id = AAT_Sweden.13 hours = 2 } }
@@ -5213,23 +5213,23 @@ create_equipment_variant = {
 
 			if = {
 				limit = {
-					 925 = { 
-					 	controller = {
-					 		NOT = { 
-					 			OR = {
-					 				controls_state = 144
-					 				controls_state = 924
-					 			}
-					 			original_tag = SWE
-					 		}
-					 	}
+					 925 = {
+						controller = {
+							NOT = {
+								OR = {
+									controls_state = 144
+									controls_state = 924
+								}
+								original_tag = SWE
+							}
+						}
 					 }
 				}
-				925 = { 
+				925 = {
 					controller = {
 						if = {
-							limit = { 
-								original_tag = NOR 
+							limit = {
+								original_tag = NOR
 								is_subject = no
 							}
 							NOR = { country_event = { id = AAT_Sweden.13 hours = 2 } }
@@ -5258,7 +5258,7 @@ create_equipment_variant = {
 			}
 
 
-							
+
 
 			custom_effect_tooltip = if_they_accept
 			effect_tooltip = {
@@ -5287,7 +5287,7 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_finlands_cause_is_ours
-		icon = GFX_focus_EST_national_pride_in_finland 
+		icon = GFX_focus_EST_national_pride_in_finland
 		x = 4
 		y = 0
 
@@ -5297,7 +5297,7 @@ create_equipment_variant = {
 		mutually_exclusive = { focus = SWE_swedes_not_sweden_to_finlands_aid focus = SWE_the_aland_question }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -5318,14 +5318,14 @@ create_equipment_variant = {
 				decision = SWE_gateway_to_peace_decision
 				show_effect_tooltip = yes # default is no
 				show_modifiers = yes # default is no
-			}			
+			}
 			#declare_war_on = {
 			#	target = SOV
 			#	type = liberate_wargoal
 			#}
 			#add_ideas = SWE_gateway_to_peace
 			#add_timed_idea = { idea = SWE_with_finland_for_sweden days = 180  }
-			#FIN = { 
+			#FIN = {
 			#	add_timed_idea = { idea = SWE_with_finland_for_sweden_fin days = 180 }
 		#		add_ideas = SWE_gateway_to_peace
 			#}
@@ -5335,9 +5335,9 @@ create_equipment_variant = {
 		}
 	}
 
- 	focus = {
+	focus = {
 		id = SWE_the_nordic_defense_council
-		icon = GFX_focus_SWE_the_nordic_defense_council 
+		icon = GFX_focus_SWE_the_nordic_defense_council
 		x = -5
 		y = 2
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
@@ -5347,7 +5347,7 @@ create_equipment_variant = {
 		mutually_exclusive = { focus = SWE_prevent_a_red_dictatorship }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -5391,7 +5391,7 @@ create_equipment_variant = {
 				DEN = {
 					has_capitulated = no
 					is_subject = no
-					has_war = no	
+					has_war = no
 				}
 			}
 		}
@@ -5485,7 +5485,7 @@ create_equipment_variant = {
 		}
 	}
 
- 	focus = {
+	focus = {
 		id = SWE_central_nordic_army_command
 		icon = GFX_focus_SWE_the_nordic_centralized_nordic_army_command
 		x = -3
@@ -5497,7 +5497,7 @@ create_equipment_variant = {
 		mutually_exclusive = { focus = SWE_decentralized_nordic_army_command }
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -5519,7 +5519,7 @@ create_equipment_variant = {
 			set_cosmetic_tag = SWE_nordic_defense_council
 			retire_country_leader = yes
 			promote_character = {
-				character = SWE_nordic_defense_council_leader 
+				character = SWE_nordic_defense_council_leader
 			}
 			if = {
 				limit = {
@@ -5578,13 +5578,13 @@ create_equipment_variant = {
 					remove_ideas = neutrality_idea
 				}
 			}
-			
+
 			for_each_scope_loop = {
 				array = SWE_nordic_defense_council_members
 
 				if = {
-					limit = { 
-						has_capitulated = no 
+					limit = {
+						has_capitulated = no
 						is_subject_of = ROOT
 					}
 					add_ideas = SWE_nordic_centralized_army
@@ -5599,17 +5599,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_nordic_defense_fleet
-		icon = GFX_focus_generic_navy_battleship2 
+		icon = GFX_focus_generic_navy_battleship2
 		x = 3
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_central_nordic_army_command }
 		relative_position_id = SWE_central_nordic_army_command
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -5629,8 +5629,8 @@ create_equipment_variant = {
 			for_each_scope_loop = {
 				array = SWE_nordic_defense_council_members
 				if = {
-					limit = { 
-						has_capitulated = no 
+					limit = {
+						has_capitulated = no
 						is_subject_of = ROOT
 					}
 					transfer_navy = {
@@ -5643,19 +5643,19 @@ create_equipment_variant = {
 		}
 	}
 
- 	focus = {
+	focus = {
 		id = SWE_nordljus
-		icon = GFX_goal_generic_navy_battleship 
+		icon = GFX_goal_generic_navy_battleship
 		x = 1
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 20
 		prerequisite = { focus = SWE_nordic_defense_fleet }
 		relative_position_id = SWE_nordic_defense_fleet
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -5751,7 +5751,7 @@ create_equipment_variant = {
 						version_name = "Nordljus"
 					}
 					requested_factories = 5
-					progress = 0.6 
+					progress = 0.6
 				}
 			}
 
@@ -5761,7 +5761,7 @@ create_equipment_variant = {
 					equipment = {
 						type = SH_battleship_1
 						creator = "SWE"
-						version_name = "Nordljus" 
+						version_name = "Nordljus"
 					}
 					requested_factories = 1
 					progress = 0.60
@@ -5778,8 +5778,8 @@ create_equipment_variant = {
 			for_each_scope_loop = {
 				array = SWE_nordic_defense_council_members
 				if = {
-					limit = { 
-						has_capitulated = no 
+					limit = {
+						has_capitulated = no
 						is_subject_of = ROOT
 					}
 
@@ -5803,17 +5803,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_nordic_centralized_air_command
-		icon = GFX_focus_usa_escort_fighters 
+		icon = GFX_focus_usa_escort_fighters
 		x = 1
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_central_nordic_army_command }
 		relative_position_id = SWE_central_nordic_army_command
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -5834,8 +5834,8 @@ create_equipment_variant = {
 				array = SWE_nordic_defense_council_members
 
 				if = {
-					limit = { 
-						has_capitulated = no 
+					limit = {
+						has_capitulated = no
 						is_subject_of = ROOT
 						NOT = { original_tag = SWE }
 					}
@@ -5853,20 +5853,20 @@ create_equipment_variant = {
 		}
 	}
 
-	
+
 	focus = {
 		id = SWE_centralized_military_aid
-		icon = GFX_goal_generic_construct_mil_factory 
+		icon = GFX_goal_generic_construct_mil_factory
 		x = -2
 		y = 2
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_central_nordic_army_command }
 		relative_position_id = SWE_central_nordic_army_command
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -5888,8 +5888,8 @@ create_equipment_variant = {
 				array = SWE_nordic_defense_council_members
 
 				if = {
-					limit = { 
-						has_capitulated = no 
+					limit = {
+						has_capitulated = no
 					}
 					random_core_state = {
 						add_extra_state_shared_building_slots = 1
@@ -5915,17 +5915,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_merge_army_complexes
-		icon = GFX_focus_generic_annex_country 
+		icon = GFX_focus_generic_annex_country
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 5
 		prerequisite = { focus = SWE_centralized_military_aid }
 		relative_position_id = SWE_centralized_military_aid
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -5947,24 +5947,24 @@ create_equipment_variant = {
 				array = SWE_nordic_defense_council_members
 
 				if = {
-					limit = { 
-						has_capitulated = no 
+					limit = {
+						has_capitulated = no
 					}
 					random_core_state = {
-						limit = {  
+						limit = {
 							is_fully_controlled_by = PREV
 							arms_factory > 0
 
 						}
 						remove_building = {
-							type = arms_factory 
+							type = arms_factory
 							level = 1
 						}
 					}
 
-					ROOT = {		
+					ROOT = {
 						random_core_state = {
-							limit = {  
+							limit = {
 								is_fully_controlled_by = THIS
 								free_building_slots = {
 									building = arms_factory
@@ -5986,17 +5986,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_cement_control_of_the_baltic
-		icon = GFX_focus_SWE_the_narvik_solution 
+		icon = GFX_focus_SWE_the_narvik_solution
 		x = -1
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_nordic_defense_fleet }
 		relative_position_id = SWE_nordic_defense_fleet
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6124,27 +6124,27 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_decentralized_nordic_army_command
-		icon = GFX_focus_SWE_the_nordic_decentralized_nordic_army_command 
+		icon = GFX_focus_SWE_the_nordic_decentralized_nordic_army_command
 		x = 3
 		y = 1
 		cost = 10
 		prerequisite = { focus = SWE_the_nordic_defense_council }
 		mutually_exclusive = { focus = SWE_central_nordic_army_command }
 		relative_position_id = SWE_the_nordic_defense_council
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
 			num_of_factories > 35
 			NOT = { NORDIC_alliance_created_already = yes }
 			any_other_country = {
-				NORDIC_is_nordic = yes 
-				exists = yes 
-				has_capitulated = no 
-				is_in_faction = no 
+				NORDIC_is_nordic = yes
+				exists = yes
+				has_capitulated = no
+				is_in_faction = no
 			}
 			is_subject = no
 		}
@@ -6159,7 +6159,7 @@ create_equipment_variant = {
 		search_filters = {  }
 
 		completion_reward = {
-			
+
 			IF = {
 				limit = {
 					has_dlc = "No Compromise, No Surrender"
@@ -6176,7 +6176,7 @@ create_equipment_variant = {
 			complete_national_focus = NORDIC_form_joint_alliance
 			every_other_country = {
 				limit = {
-					NORDIC_is_nordic = yes 
+					NORDIC_is_nordic = yes
 					is_subject = no
 					IF= {
 						limit = { SWE = { NORDIC_is_democratic = yes }}
@@ -6195,25 +6195,25 @@ create_equipment_variant = {
 						NORDIC_is_communist = yes
 					}
 				}
-				country_event = { id = AAT_Sweden_nordic_defense_council.1 hours = 3 } 
-				 
+				country_event = { id = AAT_Sweden_nordic_defense_council.1 hours = 3 }
+
 			}
 		}
 	}
 
 	focus = {
 		id = SWE_nordic_protection_complex
-		icon = GFX_focus_generic_little_entente 
+		icon = GFX_focus_generic_little_entente
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 10
 		prerequisite = { focus = SWE_merge_army_complexes }
 		relative_position_id = SWE_merge_army_complexes
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6235,8 +6235,8 @@ create_equipment_variant = {
 				array = SWE_nordic_defense_council_members
 
 				if = {
-					limit = { 
-						has_capitulated = no 
+					limit = {
+						has_capitulated = no
 					}
 					random_core_state = {
 						add_extra_state_shared_building_slots = 1
@@ -6268,7 +6268,7 @@ create_equipment_variant = {
 				}
 
 				if = {
-					limit = { 
+					limit = {
 						has_capitulated = no
 					}
 					if = {
@@ -6283,7 +6283,7 @@ create_equipment_variant = {
 							OR = {
 								has_idea = volunteer_only
 								has_idea = limited_conscription
-								has_idea = disarmed_nation 
+								has_idea = disarmed_nation
 							}
 						}
 
@@ -6305,17 +6305,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_decentralized_nordic_volunteer_group
-		icon = GFX_focus_generic_manpower 
+		icon = GFX_focus_generic_manpower
 		x = -1
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 5
 		prerequisite = { focus = SWE_central_nordic_army_command }
 		relative_position_id = SWE_central_nordic_army_command
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6336,11 +6336,11 @@ create_equipment_variant = {
 				array = SWE_nordic_defense_council_members
 
 				if = {
-					limit = { 
-						has_capitulated = no 
+					limit = {
+						has_capitulated = no
 						is_subject_of = ROOT
 					}
-					add_manpower = 5000 
+					add_manpower = 5000
 					ROOT = { add_manpower = 5000 }
 				}
 			}
@@ -6360,10 +6360,10 @@ create_equipment_variant = {
 		prerequisite = { focus = SWE_nordic_centralized_air_command }
 		prerequisite = { focus = SWE_nordic_defense_fleet }
 		relative_position_id = SWE_central_nordic_army_command
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6381,9 +6381,9 @@ create_equipment_variant = {
 
 		completion_reward = {
 			set_variable = { SWE_nordic_defense_council_military_core_defense_factor = 0 }
-	  		set_variable = { SWE_nordic_defense_council_military_core_attack_factor = 0 } 
-	  		set_variable = { SWE_nordic_defense_council_factory_capacity_factor = 0 }
-	  		set_variable = { SWE_nordic_defense_council_dockyard_capacity_factor = 0 }
+			set_variable = { SWE_nordic_defense_council_military_core_attack_factor = 0 }
+			set_variable = { SWE_nordic_defense_council_factory_capacity_factor = 0 }
+			set_variable = { SWE_nordic_defense_council_dockyard_capacity_factor = 0 }
 
 			if = {
 				limit = {
@@ -6401,7 +6401,7 @@ create_equipment_variant = {
 					modifier = SWE_neither_death_nor_dishonor
 				}
 			}
-	  		custom_effect_tooltip = SWE_neither_death_nor_dishonor_tt
+			custom_effect_tooltip = SWE_neither_death_nor_dishonor_tt
 			for_each_scope_loop = {
 				array = SWE_nordic_defense_council_members
 				ROOT = {
@@ -6415,11 +6415,11 @@ create_equipment_variant = {
 				for_each_scope_loop = {
 					array = SWE_nordic_defense_council_members
 
-	  				set_variable = { SWE_nordic_defense_council_military_core_defense_factor = ROOT.council_member_value }
-	  				set_variable = { SWE_nordic_defense_council_military_core_attack_factor = ROOT.council_member_value }
-	  				set_variable = { SWE_nordic_defense_council_factory_capacity_factor = ROOT.council_member_value }
-	  				set_variable = { SWE_nordic_defense_council_dockyard_capacity_factor = ROOT.council_member_value }
-					
+					set_variable = { SWE_nordic_defense_council_military_core_defense_factor = ROOT.council_member_value }
+					set_variable = { SWE_nordic_defense_council_military_core_attack_factor = ROOT.council_member_value }
+					set_variable = { SWE_nordic_defense_council_factory_capacity_factor = ROOT.council_member_value }
+					set_variable = { SWE_nordic_defense_council_dockyard_capacity_factor = ROOT.council_member_value }
+
 
 					add_dynamic_modifier = {
 						modifier = SWE_neither_death_nor_dishonor
@@ -6440,9 +6440,9 @@ create_equipment_variant = {
 			#		NOT = { has_autonomy_state = autonomy_aat_defense_council_member }
 			#	}
 			#	add_to_variable = { SWE_nordic_defense_council_military_core_defense_factor = 0.04 }
-	  		#	add_to_variable = { SWE_nordic_defense_council_military_core_attack_factor = 0.04 } 
-	  		#	add_to_variable = { SWE_nordic_defense_council_factory_capacity_factor = 0.03 }
-	  		#	add_to_variable = { SWE_nordic_defense_council_dockyard_capacity_factor = 0.03 }
+			#	add_to_variable = { SWE_nordic_defense_council_military_core_attack_factor = 0.04 }
+			#	add_to_variable = { SWE_nordic_defense_council_factory_capacity_factor = 0.03 }
+			#	add_to_variable = { SWE_nordic_defense_council_dockyard_capacity_factor = 0.03 }
 			#}
 			#custom_effect_tooltip = SWE_decentralized_nordic_army_command_tt
 			#show_ideas_tooltip = SWE_nordic_protection_complex
@@ -6452,17 +6452,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_varnplikt
-		icon = GFX_focus_SWE_varnplikt 
+		icon = GFX_focus_SWE_varnplikt
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 5
 		prerequisite = { focus = SWE_winter_drill }
 		relative_position_id = SWE_winter_drill
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6492,10 +6492,10 @@ create_equipment_variant = {
 		cost = 5
 		prerequisite = { focus = SWE_varnplikt }
 		relative_position_id = SWE_varnplikt
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6512,9 +6512,9 @@ create_equipment_variant = {
 
 		completion_reward = {
 			unlock_decision_tooltip = {
-			 	decision = SWE_swap_herman_eriksson
-			 	show_effect_tooltip = yes # default is no
-			 	show_modifiers = no # default is no
+				decision = SWE_swap_herman_eriksson
+				show_effect_tooltip = yes # default is no
+				show_modifiers = no # default is no
 			}
 			custom_effect_tooltip = SWE_rationing_tt
 			effect_tooltip = {
@@ -6533,26 +6533,26 @@ create_equipment_variant = {
 					}
 				}
 			}
-			
-			
-			
-			
+
+
+
+
 		}
 	}
 
 	focus = {
 		id = SWE_per_albin_bus
-		icon = GFX_focus_SWE_per_albin_bus 
+		icon = GFX_focus_SWE_per_albin_bus
 		x = -2
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 5
 		prerequisite = { focus = SWE_varnplikt }
 		relative_position_id = SWE_varnplikt
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6569,7 +6569,7 @@ create_equipment_variant = {
 		search_filters = {  }
 
 		completion_reward = {
-			custom_effect_tooltip = SWE_per_albin_bus_tt 
+			custom_effect_tooltip = SWE_per_albin_bus_tt
 			division_template = {
 				name = "Mobile Headquarter"
 				regiments = {
@@ -6581,28 +6581,28 @@ create_equipment_variant = {
 
 			capital_scope = {
 				create_unit = {
-			    	division = "name = \"Mobile Headquarter\" division_template = \"Mobile Headquarter\" start_equipment_factor = 1 start_experience_factor = 1 "
-		 	   		owner = SWE
+					division = "name = \"Mobile Headquarter\" division_template = \"Mobile Headquarter\" start_equipment_factor = 1 start_experience_factor = 1 "
+					owner = SWE
 				}
 			}
 			add_ideas = { SWE_per_albin_bus_idea }
-			
+
 		}
 	}
 
 	focus = {
 		id = SWE_land_air_warfare
-		icon = GFX_goal_generic_CAS 
+		icon = GFX_goal_generic_CAS
 		x = 2
 		y = 1
 		mutually_exclusive = {focus = SWE_defense_in_depth}
 		cost = 10
 		prerequisite = { focus = SWE_as_the_barometer_falls }
 		relative_position_id = SWE_as_the_barometer_falls
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6619,7 +6619,7 @@ create_equipment_variant = {
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP  }
 
 		completion_reward = {
-			add_ideas = SWE_land_air_warfare_0 
+			add_ideas = SWE_land_air_warfare_0
 			army_experience = 25
 			air_experience = 25
 		}
@@ -6627,17 +6627,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_defense_in_depth
-		icon = GFX_focus_prc_infiltration 
+		icon = GFX_focus_prc_infiltration
 		x = -2
 		y = 1
 		mutually_exclusive = { focus = SWE_land_air_warfare }
 		cost = 10
 		prerequisite = { focus = SWE_as_the_barometer_falls }
 		relative_position_id = SWE_as_the_barometer_falls
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6665,22 +6665,22 @@ create_equipment_variant = {
 					trait = SWE_mio_trait_defense_in_depth
 				}
 			}
-		}	
+		}
 	}
 
 	focus = {
 		id = SWE_ga_pa_tactics
-		icon = GFX_goal_generic_army_tanks 
+		icon = GFX_goal_generic_army_tanks
 		x = 2
 		y = 1
 		#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 		cost = 5
 		prerequisite = { focus = SWE_defense_in_depth focus = SWE_land_air_warfare }
 		relative_position_id = SWE_defense_in_depth
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6697,7 +6697,7 @@ create_equipment_variant = {
 		search_filters = {  }
 
 		completion_reward = {
-		 	add_ideas = SWE_ga_pa_tactics 
+			add_ideas = SWE_ga_pa_tactics
 		}
 
 
@@ -6705,17 +6705,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_hedgehog_defense
-		icon = GFX_focus_SWE_hedgehog_defense 
+		icon = GFX_focus_SWE_hedgehog_defense
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 10
 		prerequisite = { focus = SWE_defense_in_depth }
 		relative_position_id = SWE_defense_in_depth
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6733,25 +6733,25 @@ create_equipment_variant = {
 
 		completion_reward = {
 			swap_ideas = {
-			 	remove_idea = SWE_defense_in_depth_0
-			 	add_idea = SWE_defense_in_depth_1
+				remove_idea = SWE_defense_in_depth_0
+				add_idea = SWE_defense_in_depth_1
 			 }
 		}
 	}
 
 	focus = {
 		id = SWE_beneath_sticks_and_stones
-		icon = GFX_focus_SWE_beneath_sticks_and_stone 
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 10
 		prerequisite = { focus = SWE_hedgehog_defense }
 		relative_position_id = SWE_hedgehog_defense
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6768,8 +6768,8 @@ create_equipment_variant = {
 
 		completion_reward = {
 			swap_ideas = {
-			 	remove_idea = SWE_defense_in_depth_1
-			 	add_idea = SWE_defense_in_depth_2
+				remove_idea = SWE_defense_in_depth_1
+				add_idea = SWE_defense_in_depth_2
 			 }
 		}
 	}
@@ -6777,17 +6777,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_per_albin_line
-		icon = GFX_goal_generic_fortify_city 
+		icon = GFX_goal_generic_fortify_city
 		x = 2
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 5
 		prerequisite = { focus = SWE_hedgehog_defense focus = SWE_rapid_response_force }
 		relative_position_id = SWE_hedgehog_defense
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -6804,7 +6804,7 @@ create_equipment_variant = {
 		search_filters = {  }
 
 		completion_reward = {
-			if = {	
+			if = {
 				limit = {
 					138 = {
 						is_fully_controlled_by = ROOT
@@ -6827,7 +6827,7 @@ create_equipment_variant = {
 						instant_build = yes
 						province = {
 							id = 9279
-							
+
 						}
 					}
 
@@ -6975,17 +6975,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_rapid_response_force
-		icon = GFX_focus_SWE_rapid_defense_force 
+		icon = GFX_focus_SWE_rapid_defense_force
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 10
 		prerequisite = { focus = SWE_land_air_warfare }
 		relative_position_id = SWE_land_air_warfare
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7010,7 +7010,7 @@ create_equipment_variant = {
 				name = SWE_rapid_response_force
 				bonus = 0.75
 				uses = 2
-				category = support_tech # optional 
+				category = support_tech # optional
 				# technology  = technology_id # optional
 			}
 		}
@@ -7018,17 +7018,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_tank_development
-		icon = GFX_focus_generic_tank_production 
+		icon = GFX_focus_generic_tank_production
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 10
 		prerequisite = { focus = SWE_rapid_response_force }
 		relative_position_id = SWE_rapid_response_force
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7052,7 +7052,7 @@ create_equipment_variant = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				category = armor # optional 
+				category = armor # optional
 				# technology  = technology_id # optional
 			}
 		}
@@ -7060,17 +7060,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_end_the_fubkrieg
-		icon = GFX_goal_generic_position_armies  
+		icon = GFX_goal_generic_position_armies
 		x = 2
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 5
 		prerequisite = { focus = SWE_beneath_sticks_and_stones focus = SWE_tank_development }
 		relative_position_id = SWE_beneath_sticks_and_stones
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7096,14 +7096,14 @@ create_equipment_variant = {
 				name = SWE_end_the_fubkrieg
 				cost_reduction = 0.5
 				uses = 1
-				category = land_doctrine # optional 
+				category = land_doctrine # optional
 				# tecnology  = technology_id # optional
 			}
 			add_doctrine_cost_reduction = {
 				name = SWE_end_the_fubkrieg
 				cost_reduction = 0.5
 				uses = 1
-				category = air_doctrine # optional 
+				category = air_doctrine # optional
 				# tecnology  = technology_id # optional
 			}
 
@@ -7111,7 +7111,7 @@ create_equipment_variant = {
 				name = SWE_end_the_fubkrieg
 				cost_reduction = 0.5
 				uses = 1
-				category = naval_doctrine # optional 
+				category = naval_doctrine # optional
 				# tecnology  = technology_id # optional
 			}
 		}
@@ -7119,17 +7119,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_mobilization_of_society
-		icon = GFX_focus_SOV_organize_wreckers 
+		icon = GFX_focus_SOV_organize_wreckers
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 1
 		prerequisite = { focus = SWE_beneath_sticks_and_stones }
 		relative_position_id = SWE_beneath_sticks_and_stones
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7153,23 +7153,23 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_let_fly_all_guns
-		icon = GFX_focus_SWE_let_fly_all_guns 
+		icon = GFX_focus_SWE_let_fly_all_guns
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 10
 		prerequisite = { focus = SWE_tank_development }
 		relative_position_id = SWE_tank_development
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
-		 	NOT = { 
-		 		has_idea = SWE_severe_lack_of_ammunition 
-		 	}
+			NOT = {
+				has_idea = SWE_severe_lack_of_ammunition
+			}
 		}
 
 		bypass = {
@@ -7200,17 +7200,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_totalforsvar
-		icon = GFX_goal_generic_military_sphere 
+		icon = GFX_goal_generic_military_sphere
 		x = 4
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 10
 		prerequisite = { focus = SWE_varnplikt }
 		relative_position_id = SWE_varnplikt
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7229,7 +7229,7 @@ create_equipment_variant = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = war_economy 
+					has_idea = war_economy
 				}
 				add_ideas = tot_economic_mobilisation
 				activate_decision = women_in_the_workforce
@@ -7251,17 +7251,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_hemvarnet
-		icon = GFX_focus_SOV_penal_battalions 
+		icon = GFX_focus_SOV_penal_battalions
 		x = -8
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 10
 		prerequisite = { focus = SWE_totalforsvar }
 		relative_position_id = SWE_totalforsvar
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7297,17 +7297,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_swedish_shooting_movement
-		icon = GFX_focus_focus_fra_maquis 
+		icon = GFX_focus_focus_fra_maquis
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 10
 		prerequisite = { focus = SWE_hemvarnet }
 		relative_position_id = SWE_hemvarnet
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7330,9 +7330,9 @@ create_equipment_variant = {
 					while_loop_effect = {
 						limit = { check_variable = { SWE_shooting_movement_var > 0 } }
 						ROOT = {
-							add_equipment_to_stockpile = { 
+							add_equipment_to_stockpile = {
 								type = infantry_equipment_0
-								amount = 100 
+								amount = 100
 								producer = SWE
 							}
 							add_manpower = 400
@@ -7347,17 +7347,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_lottakaren
-		icon = GFX_focus_SWE_lottakoren 
+		icon = GFX_focus_SWE_lottakoren
 		x = -6
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 5
 		prerequisite = { focus = SWE_totalforsvar }
 		relative_position_id = SWE_totalforsvar
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7380,17 +7380,17 @@ create_equipment_variant = {
 
 	focus = {
 		id =  SWE_rapid_mobilization
-		icon = GFX_focus_SOV_mobilization_plan 
+		icon = GFX_focus_SOV_mobilization_plan
 		x = -4
 		y = 1
 		mutually_exclusive = {focus = SWE_secret_mobilization}
 		cost = 10
 		prerequisite = { focus = SWE_totalforsvar }
 		relative_position_id = SWE_totalforsvar
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7409,7 +7409,7 @@ create_equipment_variant = {
 		completion_reward = {
 			custom_effect_tooltip = SWE_rapid_mobilization_tt
 			add_timed_idea = { idea = SWE_rapid_mobilization_idea days = 200 }
-			
+
 		}
 	}
 
@@ -7422,14 +7422,14 @@ create_equipment_variant = {
 		cost = 5
 		prerequisite = { focus = SWE_totalforsvar }
 		relative_position_id = SWE_totalforsvar
-		
+
 
 		ai_will_do = {
 			factor = 10
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
-			}	
+			}
 		}
 
 		available = {
@@ -7466,8 +7466,8 @@ create_equipment_variant = {
 				}
 
 				DEN = {
-					OVERLORD = { 
-						SWE = {  
+					OVERLORD = {
+						SWE = {
 							declare_war_on = {
 								target = PREV
 								type = liberate_wargoal
@@ -7503,7 +7503,7 @@ create_equipment_variant = {
 						type = liberate_wargoal
 					}
 				}
-				
+
 			}
 			else_if = {
 				limit = {
@@ -7534,13 +7534,13 @@ create_equipment_variant = {
 						NOT = { is_controlled_by = DEN }
 					}
 
-					controller = { 
-						SWE = {  
+					controller = {
+						SWE = {
 							declare_war_on = {
 								target = PREV
 								type = liberate_wargoal
 							}
-						} 
+						}
 
 					}
 				}
@@ -7553,21 +7553,21 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_operation_save_norway
-		icon = GFX_focus_generic_attack_norway 
+		icon = GFX_focus_generic_attack_norway
 		x = 1
 		y = 3
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 5
 		prerequisite = { focus = SWE_totalforsvar }
 		relative_position_id = SWE_totalforsvar
-		
+
 
 		ai_will_do = {
 			factor = 10
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
-			}	
+			}
 		}
 
 		available = {
@@ -7605,8 +7605,8 @@ create_equipment_variant = {
 				}
 
 				NOR = {
-					OVERLORD = { 
-						SWE = {  
+					OVERLORD = {
+						SWE = {
 							declare_war_on = {
 								target = PREV
 								type = liberate_wargoal
@@ -7642,7 +7642,7 @@ create_equipment_variant = {
 						type = liberate_wargoal
 					}
 				}
-				
+
 			}
 			else_if = {
 				limit = {
@@ -7673,13 +7673,13 @@ create_equipment_variant = {
 						NOT = { is_controlled_by = NOR }
 					}
 
-					controller = { 
-						SWE = {  
+					controller = {
+						SWE = {
 							declare_war_on = {
 								target = PREV
 								type = liberate_wargoal
 							}
-						} 
+						}
 
 					}
 				}
@@ -7698,10 +7698,10 @@ create_equipment_variant = {
 		cost = 10
 		prerequisite = { focus = SWE_totalforsvar }
 		relative_position_id = SWE_totalforsvar
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7727,17 +7727,17 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_jagartrupper
-		icon = GFX_focus_ITA_banda_carita 
+		icon = GFX_focus_ITA_banda_carita
 		x = 0
 		y = 1
 		#mutually_exclusive = {focus = SWE_land_air_warfare}
 		cost = 10
 		prerequisite = { focus = SWE_varnplikt }
 		relative_position_id = SWE_varnplikt
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7842,14 +7842,14 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_undermine_the_fascists
-		icon = GFX_focus_SWE_undermine_fascism 
+		icon = GFX_focus_SWE_undermine_fascism
 		x = -2
 		y = 1
 		mutually_exclusive = {focus = SWE_revoke_anti_militia_laws}
 		cost = 5
 		prerequisite = { focus = SWE_prevent_a_red_dictatorship }
 		relative_position_id = SWE_prevent_a_red_dictatorship
-		
+
 
 		ai_will_do = {
 			factor = 10
@@ -7872,7 +7872,7 @@ create_equipment_variant = {
 						option = SWE_FASCIST_PUPPET_BACKSTABBER
 					}
 				}
-			}		
+			}
 		}
 
 		available = {
@@ -7892,7 +7892,7 @@ create_equipment_variant = {
 			add_timed_idea = {
 				idea = SWE_undermine_fascism
 				days = 730
-			} 	
+			}
 		}
 	}
 
@@ -7905,10 +7905,10 @@ create_equipment_variant = {
 		cost = 10
 		prerequisite = { focus = SWE_prevent_a_red_dictatorship }
 		relative_position_id = SWE_prevent_a_red_dictatorship
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -7941,12 +7941,12 @@ create_equipment_variant = {
 			#	add_to_variable = { SWE_stormtrupper_division_cap = 1 }
 			#	clamp_variable = {
 			#		var = SWE_stormtrupper_division_cap
-			#		min = 0 
+			#		min = 0
 			#		max = SWE_max_stormtrupper_division_cap
 			#	}
-			
+
 				division_template = {
-					name = "Stormtrupper"		
+					name = "Stormtrupper"
 					division_names_group = SWE_BS_01
 					is_locked = yes
 					#force_allow_recruiting = yes
@@ -7962,9 +7962,9 @@ create_equipment_variant = {
 				}
 
 
-				#set_division_template_cap = { 
-				#	division_template = "Stormtrupper" 
-				#	#division_cap = 24   
+				#set_division_template_cap = {
+				#	division_template = "Stormtrupper"
+				#	#division_cap = 24
 				#}
 			}
 
@@ -7982,10 +7982,10 @@ create_equipment_variant = {
 		cost = 5
 		prerequisite = { focus = SWE_undermine_the_fascists focus = SWE_revoke_anti_militia_laws}
 		relative_position_id = SWE_undermine_the_fascists
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -8009,17 +8009,17 @@ create_equipment_variant = {
 
 	#focus = {
 	#	id = SWE_stop_the_editorial_infighting
-	#	#icon = 
+	#	#icon =
 	#	x = 0
 	#	y = 1
 	#	#mutually_exclusive = {focus = SWE_finlands_cause_is_ours}
 	#	cost = 10
 	#	prerequisite = { focus = SWE_revoke_anti_militia_laws }
 	#	relative_position_id = SWE_revoke_anti_militia_laws
-	#	
+	#
 #
 	#	ai_will_do = {
-	#		factor = 10		
+	#		factor = 10
 	#	}
 #
 	#	available = {
@@ -8036,7 +8036,7 @@ create_equipment_variant = {
 	#	search_filters = {  }
 #
 	#	completion_reward = {
-	#	
+	#
 	#	}
 	#}
 
@@ -8051,10 +8051,10 @@ create_equipment_variant = {
 		prerequisite = { focus = SWE_appeal_for_support }
 		prerequisite = { focus = SWE_revoke_anti_militia_laws }
 		relative_position_id = SWE_appeal_for_support
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -8084,7 +8084,7 @@ create_equipment_variant = {
 
 	focus = {
 		id = SWE_meet_with_the_king
-		icon = GFX_focus_SWE_meet_with_the_king 
+		icon = GFX_focus_SWE_meet_with_the_king
 		x = -2
 		y = 1
 		#mutually_exclusive = {focus = SWE_appeal_to_the_military }
@@ -8092,10 +8092,10 @@ create_equipment_variant = {
 		prerequisite = { focus = SWE_appeal_for_support }
 		prerequisite = { focus = SWE_undermine_the_fascists }
 		relative_position_id = SWE_appeal_for_support
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -8122,7 +8122,7 @@ create_equipment_variant = {
 				add_idea = SWE_gustaf_v_idea_upgraded
 			}
 			custom_effect_tooltip = SWE_meet_with_the_king_tt
-			
+
 
 		}
 	}
@@ -8140,7 +8140,7 @@ create_equipment_variant = {
 		relative_position_id = SWE_meet_with_the_king
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -8166,14 +8166,14 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_organize_a_putsch
 		prerequisite = { focus = SWE_unify_the_national_socialist_movement }
 		mutually_exclusive = { focus = SWE_delegation_to_berlin }
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_unify_the_national_socialist_movement
 		cost = 10
 		available = {
 			fascism > 0.50 #Can't be higher that this due to advisor.
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -8184,7 +8184,7 @@ create_equipment_variant = {
 
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SWE_birger_furugard
-			show_ideas_tooltip = SWE_konrad_hallgren	
+			show_ideas_tooltip = SWE_konrad_hallgren
 			show_ideas_tooltip = SWE_sven_hedengren
 		}
 	}
@@ -8204,7 +8204,7 @@ create_equipment_variant = {
 				NOT = { has_war_with = ROOT }
 			}
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -8224,7 +8224,7 @@ create_equipment_variant = {
 				set_temp_variable = { SWE_opposing_ideology = party_popularity@democratic }
 				add_to_temp_variable = { SWE_opposing_ideology = party_popularity@communism }
 				multiply_temp_variable = { SWE_opposing_ideology = 1.5 }
-				add_to_temp_variable = { SWE_half_of_unaligned_support = party_popularity@neutrality } 
+				add_to_temp_variable = { SWE_half_of_unaligned_support = party_popularity@neutrality }
 				multiply_temp_variable = { SWE_part_of_unaligned_support = 0.25 }
 				add_to_temp_variable = { SWE_opposing_ideology =  SWE_part_of_unaligned_support }
 				start_civil_war = {
@@ -8237,7 +8237,7 @@ create_equipment_variant = {
 							}
 						}
 						division_template = {
-							name = "Arméfördelning"			
+							name = "Arméfördelning"
 							division_names_group = SWE_INF_01
 
 							regiments = {
@@ -8249,16 +8249,16 @@ create_equipment_variant = {
 								infantry = { x = 2 y = 1 }
 							}
 							support = {
-								artillery = { x = 0 y = 0 }  
-								engineer = { x = 0 y = 1 }   
-								recon = { x = 0 y = 2 }      
+								artillery = { x = 0 y = 0 }
+								engineer = { x = 0 y = 1 }
+								recon = { x = 0 y = 2 }
 							}
 						}
 
 					}
 					every_country_division = {
 						change_division_template = {
-							division_template = "Arméfördelning" 
+							division_template = "Arméfördelning"
 						}
 					}
 				}
@@ -8276,14 +8276,14 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_king_in_council
 		prerequisite = { focus = SWE_attack_Landsorganisationen }
 		mutually_exclusive = { focus = SWE_restoring_order }
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_attack_Landsorganisationen
 		cost = 10
 		available = {
 			neutrality > 0.65
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -8320,9 +8320,9 @@ create_equipment_variant = {
 				defense_skill=1
 				planning_skill=1
 				logistics_skill=1
-				
+
 			}
-			
+
 		}
 
 	}
@@ -8338,7 +8338,7 @@ create_equipment_variant = {
 		available = {
 			has_government = fascism
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -8352,17 +8352,17 @@ create_equipment_variant = {
 				}
 				IF = {
 					limit = {
-						has_intelligence_agency = no 
+						has_intelligence_agency = no
 					}
 					create_intelligence_agency = yes
 				}
 				IF = {
 					limit = {
 						NOT = {
-							has_done_agency_upgrade = upgrade_passive_defense 
-						}				
+							has_done_agency_upgrade = upgrade_passive_defense
+						}
 					}
-					upgrade_intelligence_agency = upgrade_passive_defense 
+					upgrade_intelligence_agency = upgrade_passive_defense
 				}
 			}
 			ELSE = {
@@ -8381,7 +8381,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_german_trade
 		prerequisite = { focus = SWE_delegation_to_berlin }
 		mutually_exclusive = { focus = SWE_economic_independence }
-		x = -1 
+		x = -1
 		y = 1
 		relative_position_id = SWE_delegation_to_berlin
 		cost = 10
@@ -8389,7 +8389,7 @@ create_equipment_variant = {
 			is_subject_of = GER
 			has_government = fascism
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -8397,7 +8397,7 @@ create_equipment_variant = {
 				limit = {
 					is_fully_controlled_by = ROOT
 				}
-				prioritize = { 141} 
+				prioritize = { 141}
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -8419,7 +8419,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = SWE_delegation_to_berlin }
 		mutually_exclusive = { focus = SWE_economic_integration }
-		x = 1 
+		x = 1
 		y = 1
 		relative_position_id = SWE_delegation_to_berlin
 		cost = 10
@@ -8427,7 +8427,7 @@ create_equipment_variant = {
 			is_subject_of = GER
 			has_government = fascism
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -8446,7 +8446,7 @@ create_equipment_variant = {
 		icon = GFX_focus_POL_beck_ribbentrop
 		prerequisite = { focus = SWE_economic_independence focus = SWE_economic_integration }
 		mutually_exclusive = { focus = SWE_military_independence }
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_economic_integration
 		cost = 10
@@ -8454,7 +8454,7 @@ create_equipment_variant = {
 			is_subject_of = GER
 			has_government = fascism
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP }
 
 		completion_reward = {
@@ -8474,11 +8474,11 @@ create_equipment_variant = {
 					set_nationality = {
 					    target_country = ROOT
 					    character = GER_paul_von_lettow_vorbeck
-					}	
+					}
 				}
-				
+
 				set_global_flag = von_lettow_is_in_a_country
-				
+
 			}
 			else = {
 				army_experience = 55
@@ -8497,7 +8497,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_fascist_troops
 		prerequisite = { focus = SWE_economic_independence focus = SWE_economic_integration }
 		mutually_exclusive = { focus = SWE_military_integration }
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_economic_independence
 		cost = 10
@@ -8505,7 +8505,7 @@ create_equipment_variant = {
 			is_subject_of = GER
 			has_government = fascism
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP }
 
 		completion_reward = {
@@ -8524,7 +8524,7 @@ create_equipment_variant = {
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = SWE_military_independence focus = SWE_military_integration }
 		mutually_exclusive = { focus = SWE_promote_nordic_identity }
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_military_integration
 		cost = 10
@@ -8532,7 +8532,7 @@ create_equipment_variant = {
 			is_subject_of = GER
 			has_government = fascism
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -8545,7 +8545,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_scandinavian_alliance
 		prerequisite = { focus = SWE_military_independence focus = SWE_military_integration }
 		mutually_exclusive = { focus = SWE_germanify_sweden }
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_military_independence
 		cost = 10
@@ -8553,15 +8553,15 @@ create_equipment_variant = {
 			is_subject_of = GER
 			has_government = fascism
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
 			GER = {
 				add_opinion_modifier = {
-					target = PREV 
+					target = PREV
 					modifier = SWE_unruly_subject
-				} 
+				}
 			}
 			add_stability = 0.05
 			add_war_support = 0.05
@@ -8576,21 +8576,21 @@ create_equipment_variant = {
 					limit = {
 						OWNER = {
 							NOT = { tag = ROOT }
-							
+
 						}
 					}
 					add_claim_by = ROOT
-				}				
+				}
 			    IF = {
-			    	limit = {
-			    		OWNER = {
-			    			original_tag = GER
-			    		}
-			    	}
-			    	#Add event here for Germany to agree to transfer!
-			    	ROOT = {
-			    		transfer_state = PREV
-			    	}
+					limit = {
+						OWNER = {
+							original_tag = GER
+						}
+					}
+					#Add event here for Germany to agree to transfer!
+					ROOT = {
+						transfer_state = PREV
+					}
 			    }
 			}
 			add_autonomy_score = {
@@ -8613,20 +8613,20 @@ create_equipment_variant = {
 			has_government = fascism
 		}
 	    bypass = {
-	    	OR = {
-	    		FIN = { is_subject_of = ROOT }
-	    		FIN = {
-	    			all_core_state = {
-	    				is_controlled_by = ROOT
-	    			}
-	    		}
-	    	}
-	    }    
+			OR = {
+				FIN = { is_subject_of = ROOT }
+				FIN = {
+					all_core_state = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+	    }
 		search_filters = {}
 		will_lead_to_war_with = FIN
 
 		completion_reward = {
-			
+
 			add_autonomy_score = {
 				value = 300
 			}
@@ -8638,40 +8638,40 @@ create_equipment_variant = {
 					limit = {
 						OWNER = {
 							NOT = { tag = ROOT }
-							
+
 						}
 					}
 					add_claim_by = ROOT
-				}				
+				}
 			    IF = {
-			    	limit = {
-			    		OWNER = {
-			    			original_tag = GER
-			    		}
-			    	}
-			    	GER = { country_event = { id = AAT_Sweden_nationalists.27 hours = 2 } }
+					limit = {
+						OWNER = {
+							original_tag = GER
+						}
+					}
+					GER = { country_event = { id = AAT_Sweden_nationalists.27 hours = 2 } }
 			    }
 
 			    if = {
-			    	limit = {
-			    		GER = { 
-			    			is_ai = yes 
-			    			NOT = { is_in_faction_with = FIN }
-			    		}
-			    	}
+					limit = {
+						GER = {
+							is_ai = yes
+							NOT = { is_in_faction_with = FIN }
+						}
+					}
 
-		    		111 = {
-		    			owner = {
-		    				ROOT = {
-						    	create_wargoal = {
-						    		type = annex_everything
-						    		target = PREV
-						    		generator = { 111 }
-						    	}
-					    	}
-				    	}
-			    	}
-			    	
+					111 = {
+						owner = {
+							ROOT = {
+								create_wargoal = {
+									type = annex_everything
+									target = PREV
+									generator = { 111 }
+								}
+							}
+						}
+					}
+
 			    }
 			}
 
@@ -8722,7 +8722,7 @@ create_equipment_variant = {
 			is_subject_of = GER
 			has_government = fascism
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -8767,7 +8767,7 @@ create_equipment_variant = {
 				has_war = yes
 			}
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -8801,11 +8801,11 @@ create_equipment_variant = {
 			is_subject_of = GER
 			has_government = fascism
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
-			
+
 			213 = { set_state_flag = SWE_nordland_claims }
 			214 = { set_state_flag = SWE_nordland_claims }
 			215 = { set_state_flag = SWE_nordland_claims }
@@ -9001,7 +9001,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_nordic_territory
 		prerequisite = { focus = SWE_finland_claims }
 		mutually_exclusive = { focus = SWE_establish_nordland }
-		x = 1 
+		x = 1
 		y = 1
 		relative_position_id = SWE_finland_claims
 		cost = 10
@@ -9009,7 +9009,7 @@ create_equipment_variant = {
 			is_subject_of = GER
 			has_government = fascism
 		}
-	                
+
 		search_filters = {}
 		completion_reward = {
 			custom_effect_tooltip = SWE_the_new_order_tt_2
@@ -9064,7 +9064,7 @@ create_equipment_variant = {
 				    }
 				}
 
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = heavy_tank_chassis_2
 					amount = 150
 					variant_name = "Captured Tiger Variant"
@@ -9090,9 +9090,9 @@ create_equipment_variant = {
 				}
 			}
 
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = 600 
+				amount = 600
 				producer = GER
 			}
 
@@ -9129,7 +9129,7 @@ create_equipment_variant = {
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 } 
+					artillery = { x = 0 y = 1 }
 					anti_air = { x = 0 y = 2 }
 
 				}
@@ -9140,8 +9140,8 @@ create_equipment_variant = {
 			add_manpower = 18400
 			capital_scope = {
 				create_unit = {
-			    	division = "name = \"Swedish Armored Liberation Division\" division_template = \"Swedish Armored Liberation Division\" start_equipment_factor = 1 start_experience_factor = 0.05"
-		 	   		owner = SWE
+					division = "name = \"Swedish Armored Liberation Division\" division_template = \"Swedish Armored Liberation Division\" start_equipment_factor = 1 start_experience_factor = 0.05"
+					owner = SWE
 				}
 			}
 
@@ -9161,7 +9161,7 @@ create_equipment_variant = {
 					autonomy_state = autonomy_free
 				}
 				country_event = { id = AAT_Sweden_nationalists.26 hours = 4 random_hours = 1 }
-				
+
 			}
 
 
@@ -9188,7 +9188,7 @@ create_equipment_variant = {
 		cost = 5
 		available = {
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -9222,13 +9222,13 @@ create_equipment_variant = {
 					has_completed_focus = SWE_revoke_anti_militia_laws
 				}
 				add_popularity = {
-					ideology = fascism 
+					ideology = fascism
 					popularity = 0.1
 				}
 			}
 			else = {
 				add_popularity = {
-					ideology = neutrality 
+					ideology = neutrality
 					popularity = 0.1
 				}
 			}
@@ -9255,7 +9255,7 @@ create_equipment_variant = {
 					is_faction_leader = yes
 					NOT = { has_war_with = ROOT }
 				}
-				USA = {  
+				USA = {
 					is_faction_leader = yes
 					NOT = { has_war_with = ROOT }
 				}
@@ -9269,7 +9269,7 @@ create_equipment_variant = {
 				is_subject = yes
 			}
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -9291,9 +9291,9 @@ create_equipment_variant = {
 				add_to_tech_sharing_group = SWE_allies_tech_sharing_group
 			}
 			else_if = {
-				limit = { 
-					USA = { is_faction_leader = yes } 
-				 }	
+				limit = {
+					USA = { is_faction_leader = yes }
+				 }
 				 USA = { country_event = { id = generic.2 hours = 6 } }
 			}
 
@@ -9327,7 +9327,7 @@ create_equipment_variant = {
 		}
 
 		bypass = { is_subject = yes }
-	    
+
 
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -9479,7 +9479,7 @@ create_equipment_variant = {
 				924 = { is_fully_controlled_by =  SWE }
 			}
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
@@ -9492,7 +9492,7 @@ create_equipment_variant = {
 				transfer_state = 144
 				transfer_state = 924
 				transfer_state = 925
-				
+
 			}
 
 			custom_effect_tooltip = SWE_crisis_affecting_variables
@@ -9503,7 +9503,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_attack_denmark
 		prerequisite = { focus = SWE_mythologize_swedish_history }
 
-		x = -1 
+		x = -1
 		y = 1
 		relative_position_id = SWE_mythologize_swedish_history
 		cost = 5
@@ -9517,20 +9517,20 @@ create_equipment_variant = {
 			OR = {
 				is_subject = yes
 				910 = {
-					controller = { 
+					controller = {
 						OR = {
-							has_war_with = ROOT 
-							tag = ROOT 
+							has_war_with = ROOT
+							tag = ROOT
 						}
 					}
 				}
 			}
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			
+
 			910 = {
 				controller = {
 					country_event = { id = AAT_Sweden.31 hours = 6 }
@@ -9572,7 +9572,7 @@ create_equipment_variant = {
 				is_subject = yes
 			}
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
@@ -9585,9 +9585,9 @@ create_equipment_variant = {
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
 				transfer_state = 145
-				
-				145 = { 
-					add_core_of = ROOT 
+
+				145 = {
+					add_core_of = ROOT
 					add_extra_state_shared_building_slots = 2
 				}
 
@@ -9597,7 +9597,7 @@ create_equipment_variant = {
 					}
 					145 = { set_demilitarized_zone = no }
 				}
-				
+
 			}
 			custom_effect_tooltip = SWE_crisis_affecting_variables
 		}
@@ -9617,16 +9617,16 @@ create_equipment_variant = {
 			has_war_support > 0.4
 			has_army_manpower = { size > 80000 }
 			OR = {
-				LAT = { 
-					exists = yes 
+				LAT = {
+					exists = yes
 					NOT = { is_in_faction_with = ROOT }
 				}
-				LIT = { 
-					exists = yes 
+				LIT = {
+					exists = yes
 					NOT = { is_in_faction_with = ROOT }
 				}
-				EST = { 
-					exists = yes 
+				EST = {
+					exists = yes
 					NOT = { is_in_faction_with = ROOT }
 				}
 			}
@@ -9635,14 +9635,14 @@ create_equipment_variant = {
 		bypass = {
 			is_subject = yes
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
 			IF = {
 				limit = {
 					LAT = {
-						exists = yes 
+						exists = yes
 						NOT = { is_in_faction_with = ROOT }
 					}
 				}
@@ -9656,7 +9656,7 @@ create_equipment_variant = {
 			IF = {
 				limit = {
 					LIT = {
-						exists = yes 
+						exists = yes
 						NOT = { is_in_faction_with = ROOT }
 					}
 				}
@@ -9670,7 +9670,7 @@ create_equipment_variant = {
 			IF = {
 				limit = {
 					EST = {
-						exists = yes 
+						exists = yes
 						NOT = { is_in_faction_with = ROOT }
 					}
 				}
@@ -9695,16 +9695,16 @@ create_equipment_variant = {
 		cost = 5
 		available = {
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			set_country_flag = anti_comintern_member
-			
-			diplomatic_relation = { 
-				country = GER 
-				relation = non_aggression_pact 
-				active = yes 
+
+			diplomatic_relation = {
+				country = GER
+				relation = non_aggression_pact
+				active = yes
 			}
 
 			GER = {
@@ -9713,7 +9713,7 @@ create_equipment_variant = {
 					value = 1
 					days = 730
 				}
-				add_opinion_modifier = { target = ROOT modifier = anti_comintern_pact_opinion } 
+				add_opinion_modifier = { target = ROOT modifier = anti_comintern_pact_opinion }
 			}
 			add_opinion_modifier = { target = GER modifier = anti_comintern_pact_opinion }
 
@@ -9733,7 +9733,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = SWE_bornholm_crisis }
 
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_bornholm_crisis
 		cost = 5
@@ -9767,9 +9767,9 @@ create_equipment_variant = {
 					337 = { controller = { is_in_faction_with = SWE  }}
 					101 = { controller = { is_in_faction_with = SWE  }}
 				}
-			}		
+			}
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
@@ -9784,7 +9784,7 @@ create_equipment_variant = {
 							is_subject_of = DEN
 						}
 					}
-					puppet = ICE 
+					puppet = ICE
 				}
 
 				transfer_state = 101
@@ -9798,7 +9798,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_finnish_demilitarization
 		prerequisite = { focus = SWE_the_aland_issue }
 		mutually_exclusive = { focus = SWE_swedish_finnish_defense_agreement }
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_the_aland_issue
 		cost = 5
@@ -9822,7 +9822,7 @@ create_equipment_variant = {
 				}
 			}
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -9849,7 +9849,7 @@ create_equipment_variant = {
 		 icon = GFX_focus_SWE_united_kingdoms_of_norway_and_sweden
 		prerequisite = { focus = SWE_narvik_crisis }
 
-		x = 0 
+		x = 0
 		y = 2
 		relative_position_id = SWE_narvik_crisis
 		cost = 10
@@ -9868,19 +9868,19 @@ create_equipment_variant = {
 				is_subject = yes
 			}
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			NOR = { 
+			NOR = {
 				country_event = { id = AAT_Sweden.53 hours = 4 }
 			}
 
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
 				puppet = NOR
-				
-			} 
+
+			}
 		}
 	}
 	focus = {
@@ -9888,7 +9888,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_swedish_finnish_defense_agreement
 		prerequisite = { focus = SWE_the_aland_issue focus = SWE_join_the_anti_soviet_pact }
 		mutually_exclusive = { focus = SWE_demand_demilitarization_of_finnish_border }
-		x = 2 
+		x = 2
 		y = 1
 		relative_position_id = SWE_the_aland_issue
 		cost = 10
@@ -9899,7 +9899,7 @@ create_equipment_variant = {
 				exists = yes
 			}
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -9918,14 +9918,14 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_annex_country
 		prerequisite = { focus = SWE_demand_atlantic_resource_rights }
 
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_demand_atlantic_resource_rights
 		cost = 10
 		available = {
-			
+
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		bypass = {
 			OR = {
@@ -9952,7 +9952,7 @@ create_equipment_variant = {
 				custom_effect_tooltip = if_they_accept_tt
 				effect_tooltip = { puppet = DEN }
 			}
-			
+
 		}
 	}
 	focus = {
@@ -9960,7 +9960,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_finnish_integration
 		prerequisite = { focus = SWE_demand_demilitarization_of_finnish_border }
 
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_demand_demilitarization_of_finnish_border
 		cost = 10
@@ -9976,7 +9976,7 @@ create_equipment_variant = {
 		bypass = {
 			is_subject_of = ROOT
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
@@ -10008,10 +10008,10 @@ create_equipment_variant = {
 		bypass = {
 			is_subject = yes
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		completion_reward = { #TODO 
+		completion_reward = { #TODO
 			declare_war_on = {
 				target = SOV
 				type = annex_everything
@@ -10025,13 +10025,13 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_reclaiming_the_rus
 		prerequisite = { focus = SWE_crusade_against_bolshevism }
 
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_crusade_against_bolshevism
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
@@ -10046,7 +10046,7 @@ create_equipment_variant = {
 						state = 217 #Stalingrad
 					}
 					NOT = { state = 137 } #Crimea
-				} 
+				}
 				add_claim_by = ROOT
 			}
 		}
@@ -10056,13 +10056,13 @@ create_equipment_variant = {
 		icon = GFX_focus_SOV_reinforce_western_naval_bases
 		prerequisite = { focus = SWE_danish_alignment focus = SWE_united_kingdoms_of_sweden_and_norway focus = SWE_finnish_integration }
 
-		x = 0 
+		x = 0
 		y = 2
 		relative_position_id = SWE_danish_alignment
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
@@ -10074,8 +10074,8 @@ create_equipment_variant = {
 			set_cosmetic_tag = SWE_greater_nordic_reich_tag
 		}
 	}
- 
- 	focus = {
+
+	focus = {
 		id = SWE_the_cross_we_bear
 		 icon = GFX_focus_generic_scandinavian_alliance
 		prerequisite = { focus =  SWE_operation_save_norway focus = SWE_operation_save_denmark focus = SWE_neither_death_nor_dishonor }
@@ -10086,7 +10086,7 @@ create_equipment_variant = {
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -10099,7 +10099,7 @@ create_equipment_variant = {
 			SWE_is_finland_mostly_occupied = yes
 			SWE_is_denmark_mostly_occupied = yes
 
-			
+
 			custom_effect_tooltip = SWE_the_cross_we_bear_tt_2
 			effect_tooltip = {
 				add_to_variable = { SWE_cross_we_bear_army_morale_factor = SWE_cross_we_bear_army_morale_factor_increase tooltip = army_morale_factor_tt }
@@ -10119,27 +10119,27 @@ create_equipment_variant = {
 		cost = 5
 		available = {
 			OR = {
-				NOR = { 
-					AND = { 
-						exists = yes 
+				NOR = {
+					AND = {
+						exists = yes
 						is_subject = no
 					}
 				}
-				DEN = { 
-					AND = { 
-						exists = yes 
+				DEN = {
+					AND = {
+						exists = yes
 						is_subject = no
 					}
 				}
-				FIN = { 
-						AND = { 
-							exists = yes 
+				FIN = {
+						AND = {
+							exists = yes
 							is_subject = no
 						}
 					}
-				ICE = { 
-					AND = { 
-						exists = yes 
+				ICE = {
+					AND = {
+						exists = yes
 						is_subject = no
 					}
 				}
@@ -10151,9 +10151,9 @@ create_equipment_variant = {
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
-			}	
+			}
 		}
-	                
+
 		search_filters = {}
 		bypass = {
 			hidden_trigger = {
@@ -10184,7 +10184,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_the_threat_of_the_iron_curtain
 		prerequisite = { focus =  SWE_universal_basic_income focus = SWE_the_cross_we_bear }
 		mutually_exclusive = { focus = SWE_scandinavian_defense_union }
-		x = 4 
+		x = 4
 		y = 0
 		relative_position_id = SWE_scandinavian_defense_union
 		cost = 10
@@ -10214,9 +10214,9 @@ create_equipment_variant = {
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
-			}	
+			}
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -10238,13 +10238,13 @@ create_equipment_variant = {
 		icon = GFX_focus_eng_special_air_service
 		prerequisite = { focus = SWE_the_threat_of_the_iron_curtain }
 
-		x = 1 
+		x = 1
 		y = 1
 		relative_position_id = SWE_the_threat_of_the_iron_curtain
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -10259,38 +10259,38 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SWE_scandinavian_defense_union }
 
-		x = -1 
+		x = -1
 		y = 1
 		relative_position_id = SWE_scandinavian_defense_union
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			#custom_effect_tooltip = "Check who won and lost ww2 to determine which vehicles you get"
-			add_equipment_to_stockpile = { 
-				type = heavy_tank_chassis_3 
+			add_equipment_to_stockpile = {
+				type = heavy_tank_chassis_3
 				amount = 50
-				producer = GER 
+				producer = GER
 			}
-			add_equipment_to_stockpile = { 
-				type = medium_tank_chassis_2 
-				amount = 100 
-				producer = GER 
-			}
-			add_equipment_to_stockpile = { 
-				type = medium_tank_chassis_3 
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis_2
 				amount = 100
-				producer = GER 
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis_3
+				amount = 100
+				producer = GER
 			}
 			add_tech_bonus = {
 				name = SWE_acquire_ww2_tanks_and_wrecks
 				bonus = 0.75
 				uses = 2
 				category = cat_medium_armor
-			
+
 			}
 			add_tech_bonus = {
 				name = SWE_acquire_ww2_tanks_and_wrecks
@@ -10311,7 +10311,7 @@ create_equipment_variant = {
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
@@ -10324,13 +10324,13 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = SWE_acquire_ww2_tanks_and_wrecks }
 
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_acquire_ww2_tanks_and_wrecks
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -10340,25 +10340,25 @@ create_equipment_variant = {
 				}
 				IF = {
 					limit = {
-						has_intelligence_agency = no 
+						has_intelligence_agency = no
 					}
 					create_intelligence_agency = yes
 				}
 				IF = {
 					limit = {
 						NOT = {
-							has_done_agency_upgrade = upgrade_passive_defense 
-						}				
+							has_done_agency_upgrade = upgrade_passive_defense
+						}
 					}
-					upgrade_intelligence_agency = upgrade_passive_defense 
+					upgrade_intelligence_agency = upgrade_passive_defense
 				}
 				IF = {
 					limit = {
 						NOT = {
-							has_done_agency_upgrade = upgrade_blueprint_stealing 
-						}				
+							has_done_agency_upgrade = upgrade_blueprint_stealing
+						}
 					}
-					upgrade_intelligence_agency = upgrade_blueprint_stealing 
+					upgrade_intelligence_agency = upgrade_blueprint_stealing
 				}
 
 				add_ideas = { SWE_security_service_funding }
@@ -10372,8 +10372,8 @@ create_equipment_variant = {
 				}
 			}
 			IF = {
-				limit = { 
-					has_dlc = "By Blood Alone" 
+				limit = {
+					has_dlc = "By Blood Alone"
 					has_dlc = "La Resistance"
 				}
 				set_technology = { photo_reconnaisance = 1 }
@@ -10388,13 +10388,13 @@ create_equipment_variant = {
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = SWE_extend_the_time_of_preparedness }
 
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_extend_the_time_of_preparedness
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -10442,13 +10442,13 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = SWE_special_forces }
 
-		x = 0 
+		x = 0
 		y = 1
 		relative_position_id = SWE_special_forces
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -10460,8 +10460,8 @@ create_equipment_variant = {
 				navy_experience = 25
 				army_experience = 25
 				IF = {
-					limit = { 
-						has_dlc = "Man the Guns" 
+					limit = {
+						has_dlc = "Man the Guns"
 					}
 					IF = {
 						limit = {
@@ -10488,8 +10488,8 @@ create_equipment_variant = {
 						set_technology = { mtg_tank_landing_craft = 1 }
 					}
 					IF = {
-						limit = { 
-							has_dlc = "No Step Back" 
+						limit = {
+							has_dlc = "No Step Back"
 						}
 						IF = {
 							limit = {
@@ -10517,7 +10517,7 @@ create_equipment_variant = {
 							}
 							set_technology = { amphibious_tank_2 = 1}
 						}
-					}	
+					}
 				}
 				ELSE = {
 					IF = {
@@ -10557,7 +10557,7 @@ create_equipment_variant = {
 				ELSE_IF = {
 					limit = { NOT = { has_tech = infantry_at2 }}
 					set_technology = { infantry_at2 = 1 }
-				}		
+				}
 				IF = {
 					limit = { NOT = { has_tech = night_vision }}
 					set_technology = { night_vision = 1 }
@@ -10565,7 +10565,7 @@ create_equipment_variant = {
 				ELSE_IF = {
 					limit = { NOT = { has_tech = night_vision2 }}
 					set_technology = { night_vision2 = 1 }
-				}		
+				}
 				army_experience = 50
 			}
 			ELSE_IF = {
@@ -10636,7 +10636,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = SWE_increase_intelligence_funding focus = SWE_karnvapenprogram }
 
-		x = -1 
+		x = -1
 		y = 1
 		relative_position_id = SWE_karnvapenprogram
 		cost = 10
@@ -10650,7 +10650,7 @@ create_equipment_variant = {
 				}
 			}
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -10726,13 +10726,13 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_the_lion_of_the_north
 		prerequisite = { focus = SWE_karnvapenprogram focus = SWE_specialized_equipment }
 
-		x = 1 
+		x = 1
 		y = 1
 		relative_position_id = SWE_karnvapenprogram
 		cost = 10
 		available = {
 		}
-	                
+
 		search_filters = {}
 
 		completion_reward = {
@@ -10744,26 +10744,26 @@ create_equipment_variant = {
 		icon = GFX_focus_ger_strike_at_the_source
 		prerequisite = { focus = SWE_the_lion_of_the_north_rises focus = SWE_war_games }
 
-		x = 1 
+		x = 1
 		y = 1
 		relative_position_id = SWE_war_games
 		cost = 10
 		available = {
 			is_subject = no
 		}
-  		bypass = {
+		bypass = {
 			hidden_trigger = {
 				is_ai = yes
 				is_historical_focus_on = yes
 			}
-		}          
+		}
 
 		ai_will_do = {
 			factor = 10
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
-			}	
+			}
 		}
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
@@ -10794,10 +10794,10 @@ create_equipment_variant = {
 		cost = 10
 		prerequisite = { focus = SWE_end_the_fubkrieg }
 		relative_position_id = SWE_end_the_fubkrieg
-		
+
 
 		ai_will_do = {
-			factor = 10		
+			factor = 10
 		}
 
 		available = {
@@ -10818,4 +10818,3 @@ create_equipment_variant = {
 		}
 	}
 }
-

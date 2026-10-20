@@ -637,7 +637,7 @@ YUG = {
         }
 
     }
-	
+
 	vnr_ship_hull_cruiser_coastal_defense_ship = {
         pool = {
             weight = 5

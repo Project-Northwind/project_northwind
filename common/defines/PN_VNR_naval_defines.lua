@@ -115,7 +115,7 @@ NDefines.NNavy.CARRIER_OFFENSIVE_STANCE_DEFAULT_INDEX = 4   -- The default offen
 NDefines.NNavy.NAVAL_COMBAT_PLANE_MIN_STACKING_PENALTY = 120   -- How many planes flying in a naval combat before penalties are introduced (was 80)
 NDefines.NNavy.NAVAL_COMBAT_PLANE_STACKING_PENALTY_EFFECT = 0.008   -- Each plane above the optimal amount decreases the amount of airplanes being able to takeoff by such %. Subject to diminishing returns (was 0.005)
 -- Following defines decide dynamic plane cap in naval combat based on enemy ship count and type
--- calculated as: attacking plane without penalty = NAVAL_COMBAT_PLANE_MIN_STACKING_PENALTY + SHIP_SILHOUETTE_VALUE_PLANES_CARRIER * carrier number + 
+-- calculated as: attacking plane without penalty = NAVAL_COMBAT_PLANE_MIN_STACKING_PENALTY + SHIP_SILHOUETTE_VALUE_PLANES_CARRIER * carrier number +
 --													SHIP_SILHOUETTE_VALUE_PLANES_CAPITAL * capital ship number + (SHIP_SILHOUETTE_VALUE_PLANES_SCREEN * screen ship number) * (1 / (1 + screen ratio * SCREEN_CAP_REDUCTION_FACTOR))
 NDefines.NNavy.SCREEN_CAP_REDUCTION_FACTOR = 0.06   -- Reduces screen silhouette weight if there are caps present, screenval * 1/(1+caps*weight) (was 0.02)
 NDefines.NNavy.SHIP_SILHOUETTE_VALUE_PLANES_CAPITAL = 18   -- For dynamic plane efficacy, silhouette value (nominally in planes, but very abstract)
@@ -162,7 +162,7 @@ NDefines.NNavy.BASE_SPOTTING = 5   -- base spotting percentage for navy	(was 1)
 NDefines.NNavy.BASE_SPOTTING_FROM_NAVY = 15   -- base spotting percentage that comes from task forces in area (was 10)
 NDefines.NNavy.BASE_SPOTTING_SPEED = 0.5   -- daily base spotting speed (was 0)
 NDefines.NNavy.BASE_SPOTTING_FROM_DECRYPTION = 30   -- base spotting percentage that comes from decryption, can go negative (enemy decryption is subtracted)	(was 10)
-NDefines.NNavy.SPOTTING_SPEED_MULT_FOR_RUNNING_AWAY = 0.2   -- task forces that does not want to engage will reduce enemy spotting rate every hour by speed diff mult this ratio (was 0.5)	
+NDefines.NNavy.SPOTTING_SPEED_MULT_FOR_RUNNING_AWAY = 0.2   -- task forces that does not want to engage will reduce enemy spotting rate every hour by speed diff mult this ratio (was 0.5)
 NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT = 0.075   -- Each 1.0 of surface_detection that ship has (equipment stat), gives x% of convoys discovered from total travelling along the route. (was 0.1)
 
 
@@ -195,7 +195,7 @@ NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = {
 }
 NDefines.NNavy.AGGRESION_MULTIPLIER_FOR_COMBAT = 1.7   -- ships are more aggresive in combat (was 1.2)
 NDefines.NNavy.AGGRESSION_LEVEL_BY_MISSION_WEAKER = { -- the aggression level per mission when the AI has a weaker navy than its opponent
-	---- values correspond to the indexes of the AGGRESSION_SETTINGS_VALUES. 0 = do not engage, 1 = low, 2 = medium, etc. 
+	---- values correspond to the indexes of the AGGRESSION_SETTINGS_VALUES. 0 = do not engage, 1 = low, 2 = medium, etc.
 	---- If set to (-1), will use the hardcoded behavior (low if navy is generally weaker than opponent, medium if stronger)
 	-1, -- HOLD
 	0, -- PATROL
@@ -209,7 +209,7 @@ NDefines.NNavy.AGGRESSION_LEVEL_BY_MISSION_WEAKER = { -- the aggression level pe
 	2, -- NAVAL_INVASION_SUPPORT
 }
 NDefines.NNavy.AGGRESSION_LEVEL_BY_MISSION_STRONGER_OR_EQUAL = { -- the aggression level per mission when the AI has a stronger navy than its opponent
-	---- values correspond to the indexes of the AGGRESSION_SETTINGS_VALUES. 0 = do not engage, 1 = low, 2 = medium, etc. 
+	---- values correspond to the indexes of the AGGRESSION_SETTINGS_VALUES. 0 = do not engage, 1 = low, 2 = medium, etc.
 	---- If set to (-1), will use the hardcoded behavior (low if navy is generally weaker than opponent, medium if stronger)
 	-1, -- HOLD
 	1, -- PATROL

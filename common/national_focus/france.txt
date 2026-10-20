@@ -1,9 +1,9 @@
 focus_tree = {
 	id = french_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = FRA
@@ -14,7 +14,7 @@ focus_tree = {
 		x = 0
 	}
 
-	
+
 	default = no
 	shared_focus = ABDA_abdacom
 	focus = {
@@ -22,7 +22,7 @@ focus_tree = {
 		icon = GFX_focus_fra_devalue_the_franc
 		x = 0
 		y = 0
-		
+
 		prerequisite = {}
 		mutually_exclusive = { }
 		cost = 10
@@ -30,9 +30,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -52,7 +52,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 2
 		y = 1
-		
+
 		prerequisite = { focus = FRA_devalue_the_franc }
 		mutually_exclusive = { }
 		relative_position_id = FRA_devalue_the_franc
@@ -68,7 +68,7 @@ focus_tree = {
 				infrastructure < 4
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -80,8 +80,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_state = {
-				limit = { 
-					is_core_of = ROOT 
+				limit = {
+					is_core_of = ROOT
 					infrastructure < 4
 					not = { has_state_flag = FRA_autoroutes_target }
 				}
@@ -93,8 +93,8 @@ focus_tree = {
 				set_state_flag = FRA_autoroutes_target
 			}
 			random_owned_state = {
-				limit = { 
-					is_core_of = ROOT 
+				limit = {
+					is_core_of = ROOT
 					infrastructure < 4
 					not = { has_state_flag = FRA_autoroutes_target }
 				}
@@ -106,8 +106,8 @@ focus_tree = {
 				set_state_flag = FRA_autoroutes_target
 			}
 			random_owned_state = {
-				limit = { 
-					is_core_of = ROOT 
+				limit = {
+					is_core_of = ROOT
 					infrastructure < 4
 					not = { has_state_flag = FRA_autoroutes_target }
 				}
@@ -119,8 +119,8 @@ focus_tree = {
 				set_state_flag = FRA_autoroutes_target
 			}
 			random_owned_state = {
-				limit = { 
-					is_core_of = ROOT 
+				limit = {
+					is_core_of = ROOT
 					infrastructure < 4
 					not = { has_state_flag = FRA_autoroutes_target }
 				}
@@ -131,7 +131,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_autoroutes_target
 			}
-			
+
 		}
 	}
 	focus = {
@@ -139,33 +139,33 @@ focus_tree = {
 			icon = GFX_goal_generic_construct_civilian
 			x = 0
 			y = 1
-			
+
 			prerequisite = { focus = FRA_devalue_the_franc }
 			mutually_exclusive = { }
 			relative_position_id = FRA_devalue_the_franc
 			cost = 10
-	
+
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available = {
-				
+
 			}
-			
+
 			bypass = {
-	
+
 			}
-	
+
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-	
+
 			search_filters = { FOCUS_FILTER_STABILITY }
 			completion_reward = {
 				add_stability = 0.05
 			}
-		}	
+		}
 	focus = {
 		id = FRA_metropolitan_france
 		icon = GFX_focus_generic_industry_1
@@ -184,19 +184,19 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}		
+		}
 		prerequisite = { focus = FRA_invest_in_the_metropole }
 		relative_position_id = FRA_devalue_the_franc
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		bypass = {
-			
+
 		}
 
 		complete_tooltip = {
 			every_owned_state = {
-				limit = { 
+				limit = {
 					has_state_flag = FRA_industrial_expansion_target
 				}
 				add_extra_state_shared_building_slots = 2
@@ -206,21 +206,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_state = {
-				limit = { 
-					is_core_of = ROOT 
+				limit = {
+					is_core_of = ROOT
 					NOT = {
 						has_state_flag = FRA_industrial_expansion_target
-					}	
+					}
 				}
 				add_extra_state_shared_building_slots = 2
 				set_state_flag = FRA_industrial_expansion_target
 				random_neighbor_state = {
-					limit = { 
-						is_core_of = ROOT 	
+					limit = {
+						is_core_of = ROOT
 						is_owned_by = ROOT
 						NOT = {
 							has_state_flag = FRA_industrial_expansion_target
-						}	
+						}
 					}
 					add_extra_state_shared_building_slots = 2
 					set_state_flag = FRA_industrial_expansion_target
@@ -244,7 +244,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -293,9 +293,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		bypass = {
-			
+
 		}
 
 		complete_tooltip = {
@@ -333,7 +333,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}				
+			}
 		}
 	}
 
@@ -372,19 +372,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		bypass = {
-			
-		}		
+
+		}
 
 		complete_tooltip = {
 			every_state = {
-				limit = { 
+				limit = {
 					OR = {
 						state = 459
 						state = 460
 						state = 513
 					}
-					is_owned_or_subject_trigger = yes	
-					OR = {	
+					is_owned_or_subject_trigger = yes
+					OR = {
 						has_state_flag = FRA_industrial_expansion_target
 						has_state_flag = FRA_colonial_industry_target
 					}
@@ -396,7 +396,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_state = {
-				limit = { 
+				limit = {
 					OR = {
 						state = 459
 						state = 460
@@ -406,13 +406,13 @@ focus_tree = {
 						has_state_flag = FRA_industrial_expansion_target
 						has_state_flag = FRA_colonial_industry_target
 					}
-					is_owned_or_subject_trigger = yes	
+					is_owned_or_subject_trigger = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				set_state_flag = FRA_industrial_expansion_target
 				set_state_flag = FRA_colonial_industry_target
 				random_neighbor_state = {
-					limit = { 
+					limit = {
 						OR = {
 							state = 459
 							state = 460
@@ -422,7 +422,7 @@ focus_tree = {
 						NOT  = {
 							has_state_flag = FRA_industrial_expansion_target
 							has_state_flag = FRA_colonial_industry_target
-						}		
+						}
 					}
 					add_extra_state_shared_building_slots = 2
 					set_state_flag = FRA_industrial_expansion_target
@@ -430,13 +430,13 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 	focus = {
 		id = FRA_invest_in_the_colonies
 		icon = GFX_goal_generic_construct_civilian
 		x = 4
 		y = 1
-		
+
 		prerequisite = { focus = FRA_devalue_the_franc }
 		mutually_exclusive = { }
 		relative_position_id = FRA_devalue_the_franc
@@ -453,7 +453,7 @@ focus_tree = {
 				is_controlled_by = ROOT
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -478,7 +478,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_1
 		x = 0
 		y = 1
-		
+
 		prerequisite = {focus = FRA_invest_in_the_colonies }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
@@ -499,11 +499,11 @@ focus_tree = {
 					state = 781
 					state = 776
 					state = 777
-				}	
+				}
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -515,7 +515,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_state = {
-				limit = { 
+				limit = {
 					OR = {
 						state = 272
 						state = 780
@@ -525,7 +525,7 @@ focus_tree = {
 						state = 781
 						state = 776
 						state = 777
-					}	
+					}
 					OWNER = { is_owned_or_subject_trigger = yes }
 					NOT = {
 						has_state_flag = FRA_colonial_industry_target
@@ -541,7 +541,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_1
 		x = 2
 		y = 1
-		
+
 		prerequisite = { focus = FRA_invest_in_the_colonies }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
@@ -561,7 +561,7 @@ focus_tree = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -573,19 +573,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_state = {
-				limit = { 
+				limit = {
 					OR = {
 						state = 741
 						state = 286
 						state = 671
 						state = 670
 						state = 1017
-						state = 1066 
-						state = 1067 
-						state = 1068 
-						state = 1069 
+						state = 1066
+						state = 1067
+						state = 1068
+						state = 1069
 					}
-					OWNER = { is_owned_or_subject_trigger = yes }	
+					OWNER = { is_owned_or_subject_trigger = yes }
 					NOT = {
 						has_state_flag = FRA_colonial_industry_target
 					}
@@ -600,10 +600,10 @@ focus_tree = {
 					}
 				}
 				VIN = {
-					add_autonomy_score = { 
+					add_autonomy_score = {
 						value = -150
 						localization = FRA_invest_in_indochina
-					}	
+					}
 				}
 			}
 			IF = {
@@ -613,10 +613,10 @@ focus_tree = {
 					}
 				}
 				CAM = {
-					add_autonomy_score = { 
+					add_autonomy_score = {
 						value = -150
 						localization = FRA_invest_in_indochina
-					}	
+					}
 				}
 			}
 			IF = {
@@ -626,10 +626,10 @@ focus_tree = {
 					}
 				}
 				LAO = {
-					add_autonomy_score = { 
+					add_autonomy_score = {
 						value = -150
 						localization = FRA_invest_in_indochina
-					}	
+					}
 				}
 			}
 		}
@@ -639,7 +639,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_1
 		x = 4
 		y = 1
-		
+
 		prerequisite = {focus = FRA_invest_in_the_colonies }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
@@ -658,7 +658,7 @@ focus_tree = {
 				is_owned_or_subject_trigger = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -670,14 +670,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_state = {
-				limit = { 
+				limit = {
 					OR = {
 						state = 677
 						state = 680
 						state = 554
 						state = 553
 					}
-					is_owned_or_subject_trigger = yes 
+					is_owned_or_subject_trigger = yes
 					NOT = {
 						has_state_flag = FRA_colonial_industry_target
 					}
@@ -692,10 +692,10 @@ focus_tree = {
 					}
 				}
 				SYR = {
-					add_autonomy_score = { 
+					add_autonomy_score = {
 						value = -150
 						localization = FRA_invest_in_syria
-					}	
+					}
 				}
 			}
 			IF = {
@@ -705,10 +705,10 @@ focus_tree = {
 					}
 				}
 				LEB = {
-					add_autonomy_score = { 
+					add_autonomy_score = {
 						value = -150
 						localization = FRA_invest_in_syria
-					}	
+					}
 				}
 			}
 		}
@@ -730,7 +730,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		bypass = {
-			
+
 		}
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
@@ -738,7 +738,7 @@ focus_tree = {
 			custom_effect_tooltip = FRA_colonial_industry_effect_tt
 			every_state = {
 				limit = {
-					is_owned_or_subject_trigger = yes 
+					is_owned_or_subject_trigger = yes
 					has_state_flag = FRA_colonial_industry_target
 				}
 				add_building_construction = {
@@ -762,7 +762,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = FRA_industrial_expansion
-			
+
 		}
 		x = 0
 		y = 1
@@ -773,17 +773,17 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}		
+		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-	
+
 	focus = {
 		id = FRA_extra_research_slot_2
 		icon = GFX_focus_research
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_colonial_industry
 		}
 		available = {
@@ -809,32 +809,32 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = 2
 		y = 1
-		
+
 		prerequisite = {focus = FRA_colonial_industry }
 		mutually_exclusive = { }
 		relative_position_id = FRA_colonial_industry
 		cost = 10
-	
+
 		ai_will_do = {
 			factor = 1
 		}
-	
+
 		available = {
-				
+
 		}
-			
+
 		bypass = {
 		}
-	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-	
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = { FRA_global_investments }
 		}
-	}	
+	}
 
 	#### END ####
 
@@ -843,7 +843,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 15
 		y = 0
-		
+
 		prerequisite = {}
 		mutually_exclusive = { }
 		cost = 10
@@ -855,7 +855,7 @@ focus_tree = {
 		available = {
 			has_war_support > 0.12
 		}
-		
+
 		bypass = {
 
 		}
@@ -917,7 +917,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		x = -2
 		y = 1
-		
+
 		prerequisite = { focus = FRA_defensive_focus }
 		mutually_exclusive = { focus = FRA_methodical_battle }
 		relative_position_id = FRA_defensive_focus
@@ -928,9 +928,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -948,7 +948,7 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		x = 0
 		y = 1
-		
+
 		prerequisite = { focus = FRA_defensive_focus }
 		mutually_exclusive = { focus = FRA_firepower_kills }
 		relative_position_id = FRA_defensive_focus
@@ -959,9 +959,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1109,7 +1109,7 @@ focus_tree = {
 		icon = GFX_focus_generic_army_tanks2
 		x = 0
 		y = 1
-		
+
 		prerequisite = { focus = FRA_heavy_armor_focus }
 		mutually_exclusive = { }
 		relative_position_id = FRA_heavy_armor_focus
@@ -1131,7 +1131,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -1142,20 +1142,20 @@ focus_tree = {
 
 		completion_reward = {
 			division_template = {
-				name = "Division Cuirassée" 	
+				name = "Division Cuirassée"
 				division_names_group = FRA_ARM_01
 
 				regiments = {
-					medium_armor = { x = 0 y = 0 }		
-					heavy_armor = { x = 0 y = 1 }		
-					medium_armor = { x = 1 y = 0 }		
-					medium_armor = { x = 1 y = 1 }		
-					motorized = { x = 2 y = 0 }			
+					medium_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					motorized = { x = 2 y = 0 }
 					motorized = { x = 2 y = 1 }
 					motorized = { x = 2 y = 2 }
 				}
 				support = {
-					recon = { x = 0 y = 0 }      		
+					recon = { x = 0 y = 0 }
 					artillery = { x = 0 y = 1 }
 					engineer = { x = 0 y = 2 }
 				}
@@ -1166,11 +1166,11 @@ focus_tree = {
 				}
 				capital_scope = {
 					create_unit = {
-						division = "name = \"1re Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7 force_equipment_variants = { heavy_tank_chassis_0 = { creator = \"FRA\" version_name = \"Char B1\"} }"  
+						division = "name = \"1re Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7 force_equipment_variants = { heavy_tank_chassis_0 = { creator = \"FRA\" version_name = \"Char B1\"} }"
 						owner = ROOT
 					}
 					create_unit = {
-						division = "name = \"2me Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7 force_equipment_variants = { heavy_tank_chassis_0 = { creator = \"FRA\" version_name = \"Char B1\"} }"  
+						division = "name = \"2me Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7 force_equipment_variants = { heavy_tank_chassis_0 = { creator = \"FRA\" version_name = \"Char B1\"} }"
 						owner = ROOT
 					}
 				}
@@ -1178,11 +1178,11 @@ focus_tree = {
 			else = {
 				capital_scope = {
 					create_unit = {
-						division = "name = \"1re Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7"  
+						division = "name = \"1re Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7"
 						owner = ROOT
 					}
 					create_unit = {
-						division = "name = \"2me Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7"  
+						division = "name = \"2me Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7"
 						owner = ROOT
 					}
 				}
@@ -1195,7 +1195,7 @@ focus_tree = {
 		icon = GFX_focus_generic_combined_arms
 		x = 2
 		y = 1
-		
+
 		prerequisite = { focus = FRA_defensive_focus focus = FRA_aggressive_focus }
 		mutually_exclusive = { }
 		relative_position_id = FRA_defensive_focus
@@ -1206,9 +1206,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1235,7 +1235,7 @@ focus_tree = {
 		icon = GFX_goal_generic_special_forces
 		x = 0
 		y = 1
-		
+
 		prerequisite = { focus = FRA_infantry_tanks }
 		mutually_exclusive = { }
 		relative_position_id = FRA_infantry_tanks
@@ -1246,9 +1246,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1270,7 +1270,7 @@ focus_tree = {
 		icon = GFX_goal_generic_amphibious_assault
 		x = 0
 		y = 2
-		
+
 		prerequisite = { focus = FRA_special_forces }
 		mutually_exclusive = { }
 		relative_position_id = FRA_infantry_tanks
@@ -1281,9 +1281,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1336,7 +1336,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		
+
 		prerequisite = { focus = FRA_aggressive_focus }
 		mutually_exclusive = { focus = FRA_air_dominance }
 		relative_position_id = FRA_aggressive_focus
@@ -1347,9 +1347,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1424,7 +1424,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter2
 		x = 2
 		y = 1
-		
+
 		prerequisite = { focus = FRA_aggressive_focus }
 		mutually_exclusive = { focus = FRA_battle_of_maneuver }
 		relative_position_id = FRA_aggressive_focus
@@ -1435,9 +1435,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1453,9 +1453,9 @@ focus_tree = {
 	focus = {
 		id = FRA_cas_focus
 		icon = GFX_goal_generic_CAS
-	 	prerequisite = { 
-	 		focus = FRA_air_dominance
-	 	}
+		prerequisite = {
+			focus = FRA_air_dominance
+		}
 		x = 0
 		y = 1
 		relative_position_id = FRA_air_dominance
@@ -1477,7 +1477,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		x = 0
 		y = 2
-		
+
 		prerequisite = { focus = FRA_cas_focus }
 		mutually_exclusive = { }
 		relative_position_id = FRA_air_dominance
@@ -1488,9 +1488,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1513,7 +1513,7 @@ focus_tree = {
 		icon = GFX_goal_poland_goal
 		x = 0
 		y = 3
-		
+
 		prerequisite = { focus = FRA_air_ground_cooperation }
 		mutually_exclusive = { }
 		relative_position_id = FRA_air_dominance
@@ -1524,9 +1524,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1543,9 +1543,9 @@ focus_tree = {
 	focus = {
 		id = FRA_army_reform
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { 
-			focus = FRA_light_medium_armor 
-			focus = FRA_heavy_armor_focus 
+		prerequisite = {
+			focus = FRA_light_medium_armor
+			focus = FRA_heavy_armor_focus
 			focus = FRA_extend_the_maginot_line
 			focus = FRA_flying_artillery
 		}
@@ -1583,7 +1583,7 @@ focus_tree = {
 				show_ideas_tooltip = FRA_AMX
 			}
 		}
-	}	
+	}
 
 #### END ####
 
@@ -1634,9 +1634,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1680,9 +1680,9 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		x = -3
 		y = 1
-		
+
 		relative_position_id = FRA_form_the_popular_front
-		
+
 		allow_branch = {
 			has_dlc = "La Resistance"
 			if = {
@@ -1713,11 +1713,11 @@ focus_tree = {
 
 		available = {
 			not = {
-				has_completed_focus = FRA_review_foreign_policy	
+				has_completed_focus = FRA_review_foreign_policy
 			}
 			is_subject = no
 		}
-		
+
 		bypass = {
 			has_government = communism
 		}
@@ -1753,7 +1753,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = -1
 		y = 1
-		
+
 		prerequisite = { focus = FRA_invite_communist_ministers }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invite_communist_ministers
@@ -1766,7 +1766,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 			has_government = communism
 		}
@@ -1787,7 +1787,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		x = -1
 		y = 4
-		
+
 		prerequisite = { focus = FRA_strengthen_the_unions }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invite_communist_ministers
@@ -1798,7 +1798,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 			has_government = communism
 		}
@@ -1816,7 +1816,7 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 		x = 1
 		y = 1
-		
+
 		prerequisite = { focus = FRA_invite_communist_ministers }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invite_communist_ministers
@@ -1829,7 +1829,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -1850,7 +1850,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		x = 1
 		y = 4
-		
+
 		prerequisite = { focus = FRA_womens_suffrage }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invite_communist_ministers
@@ -1863,7 +1863,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -1877,14 +1877,14 @@ focus_tree = {
 			FRA_right_wing_riot_effect = yes
 			add_popularity = { ideology = communism popularity = 0.05 }
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_industrial_collectivization
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
 		y = 2
-		
+
 		prerequisite = { focus = FRA_womens_suffrage }
 		prerequisite = { focus = FRA_strengthen_the_unions }
 		mutually_exclusive = { }
@@ -1896,9 +1896,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 			not = {
 				any_owned_state = {
@@ -1919,7 +1919,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		
+
 			random_owned_state = {
 				limit = {
 					is_core_of = ROOT
@@ -1945,7 +1945,7 @@ focus_tree = {
 		icon = GFX_focus_prc_agrarian_socialism
 		x = 0
 		y = 3
-		
+
 		prerequisite = { focus = FRA_industrial_collectivization }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invite_communist_ministers
@@ -1956,9 +1956,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -1978,14 +1978,14 @@ focus_tree = {
 				add_stability = -0.05
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_force_the_issue
 		icon = GFX_goal_demand_sudetenland
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_celebrate_the_commune
 			focus = FRA_legal_equality
@@ -2002,7 +2002,7 @@ focus_tree = {
 			is_subject = no
 			communism > 0.45
 		}
-		
+
 		bypass = {
 			has_government = communism
 		}
@@ -2035,7 +2035,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = -2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_force_the_issue
 		}
@@ -2049,9 +2049,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -2070,7 +2070,7 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_reconciliation
 		}
@@ -2082,9 +2082,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -2103,7 +2103,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		x = -1
 		y = 2
-		
+
 		prerequisite = {
 			focus = FRA_constitutional_convention
 		}
@@ -2118,7 +2118,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 			is_in_faction = yes
 		}
@@ -2202,7 +2202,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = -1
 		y = 3
-		
+
 		prerequisite = {
 			focus = FRA_anti_fascist_coalition
 		}
@@ -2216,7 +2216,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -2235,7 +2235,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		x = -1
 		y = 4
-		
+
 		prerequisite = {
 			focus = FRA_invite_anti_fascist_emigrants
 		}
@@ -2249,7 +2249,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -2259,7 +2259,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			every_other_country = {
 				limit = {
 					OR = {
@@ -2283,8 +2283,8 @@ focus_tree = {
 					is_in_faction = no
 					is_subject = no
 					NOT = { has_war_with = ROOT }
-					OR = { 
-						has_government = communism 
+					OR = {
+						has_government = communism
 						has_government = democratic
 					}
 				}
@@ -2293,10 +2293,10 @@ focus_tree = {
 					country_event = generic.5
 				}
 				else_if = {
-					limit = { 
-						ROOT = { 
-							is_in_faction = yes 
-						} 
+					limit = {
+						ROOT = {
+							is_in_faction = yes
+						}
 					}
 					random_other_country = {
 						limit = {
@@ -2319,7 +2319,7 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_fascist_threat
 		x = 0
 		y = 5
-		
+
 		prerequisite = {
 			focus = FRA_reconnect_to_the_balkans
 			focus = FRA_host_the_german_exiles
@@ -2333,13 +2333,13 @@ focus_tree = {
 		}
 
 		available = {
-			any_neighbor_country = { 
-				has_government = fascism 
+			any_neighbor_country = {
+				has_government = fascism
 				NOT = { has_war_with = ROOT }
 				NOT = { is_in_faction_with = ROOT }
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2373,7 +2373,7 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		x = 2
 		y = 2
-		
+
 		prerequisite = {
 			focus = FRA_constitutional_convention
 			focus = FRA_destroy_the_counter_revolution
@@ -2394,7 +2394,7 @@ focus_tree = {
 				is_subject_of = SOV
 			}
 		}
-		
+
 		bypass = {
 			is_in_faction_with = SOV
 		}
@@ -2438,7 +2438,7 @@ focus_tree = {
 		icon = GFX_focus_YUG_pan_slavic_congress
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_loyalty_to_moscow
 		}
@@ -2450,9 +2450,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -2471,7 +2471,7 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		x = 0
 		y = 2
-		
+
 		prerequisite = {
 			focus = FRA_league_of_french_bolshevist_volunteers
 		}
@@ -2490,7 +2490,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2501,9 +2501,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_relation_modifier = {
-  				target = GER
-  				modifier = FRA_host_the_german_exiles
-  			}
+				target = GER
+				modifier = FRA_host_the_german_exiles
+			}
 		}
 	}
 
@@ -2512,7 +2512,7 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_revolution_utmost
 		x = 2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_force_the_issue
 		}
@@ -2525,9 +2525,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -2546,7 +2546,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_revolution_to_the_utmost
 		}
@@ -2560,7 +2560,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -2585,7 +2585,7 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		x = 3
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_destroy_the_counter_revolution
 		}
@@ -2597,9 +2597,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -2618,7 +2618,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = 1
 		y = 2
-		
+
 		prerequisite = {
 			focus = FRA_destroy_the_counter_revolution
 		}
@@ -2633,7 +2633,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -2686,7 +2686,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_loyalty_to_the_cause
 		}
@@ -2700,7 +2700,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 			ENG = {
 				OR = {
@@ -2718,7 +2718,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			create_wargoal = {
 				target = ENG
 				type = topple_government
@@ -2734,7 +2734,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_carry_the_revolution_north
 		}
@@ -2748,7 +2748,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 			any_neighbor_country = {
 				original_tag = SPR
@@ -2787,7 +2787,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_carry_the_revolution_north
 		}
@@ -2804,7 +2804,7 @@ focus_tree = {
 				not = { has_government = communism }
 			}
 		}
-		
+
 		bypass = {
 			GER = {
 				OR = {
@@ -2837,7 +2837,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		x = 0
 		y = 2
-		
+
 		prerequisite = {
 			focus = FRA_carry_the_revolution_west
 		}
@@ -2857,7 +2857,7 @@ focus_tree = {
 			}
 			is_subject = no
 		}
-		
+
 		bypass = {
 			ITA = {
 				OR = {
@@ -2890,7 +2890,7 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		x = 0
 		y = 3
-		
+
 		prerequisite = {
 			focus = FRA_carry_the_revolution_south
 		}
@@ -2902,9 +2902,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -2923,7 +2923,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		x = 0
 		y = 2
-		
+
 		prerequisite = {
 			focus = FRA_form_the_popular_front
 		}
@@ -2935,9 +2935,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -2962,7 +2962,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
 		}
@@ -2974,9 +2974,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 			NOT = {
 				FRA_has_inefficient_economy = yes
@@ -3000,7 +3000,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_nationalize_key_industry
 		}
@@ -3012,9 +3012,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -3034,7 +3034,7 @@ focus_tree = {
 						building = arms_factory
 						size > 1
 						include_locked = yes
-					}	
+					}
 				}
 				prioritize = { 16 24 15 20 31 }
 				add_extra_state_shared_building_slots = 2
@@ -3042,8 +3042,8 @@ focus_tree = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
-				}	
-			}	
+				}
+			}
 			custom_effect_tooltip = CHL_skip_one_line_tt
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_north show_effect_tooltip = no }
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_west show_effect_tooltip = no }
@@ -3059,7 +3059,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_nationalize_key_industry
 		}
@@ -3071,9 +3071,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -3139,7 +3139,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = 0
 		y = 2
-		
+
 		prerequisite = {
 			focus = FRA_reorganize_the_aviation_industry
 		}
@@ -3154,9 +3154,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 			NOT = {
 				FRA_has_inefficient_economy = yes
@@ -3188,7 +3188,7 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_general_work_council
 		}
@@ -3200,9 +3200,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -3221,7 +3221,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_3
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_general_work_council
 		}
@@ -3233,9 +3233,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -3321,7 +3321,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_form_the_popular_front
 		}
@@ -3335,7 +3335,7 @@ focus_tree = {
 		available = {
 			has_idea = FRA_political_violence
 		}
-		
+
 		bypass = {
 
 		}
@@ -3358,7 +3358,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = 4
 		y = 1
-		
+
 		offset = {
 			x = -8
 			y = 0
@@ -3383,9 +3383,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 			NOT = {
 				459 = {
@@ -3437,7 +3437,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_the_blum_viollette_proposal
 		}
@@ -3456,7 +3456,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -3474,7 +3474,7 @@ focus_tree = {
 		icon = GFX_focus_chi_reach_out_to_france
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_expand_the_citizenship
 		}
@@ -3487,9 +3487,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -3522,7 +3522,7 @@ focus_tree = {
 		icon = GFX_focus_fra_french_union
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_france_undividable
 		}
@@ -3536,7 +3536,7 @@ focus_tree = {
 		available = {
 			has_war = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -3563,7 +3563,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_expand_the_citizenship
 		}
@@ -3576,9 +3576,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -3596,7 +3596,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		x = 10
 		y = 1
-		
+
 		offset = {
 			x = -1
 			y = 0
@@ -3658,7 +3658,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -3691,7 +3691,7 @@ focus_tree = {
 		x = 7
 		y = 2
 
-		
+
 		offset = {
 			x = -4
 			y = 0
@@ -3730,7 +3730,7 @@ focus_tree = {
 			focus = FRA_form_the_popular_front
 			focus = FRA_revive_the_national_bloc
 		}
-		
+
 		relative_position_id = FRA_form_the_popular_front
 		cost = 5
 
@@ -3742,7 +3742,7 @@ focus_tree = {
 			SPR_scw_in_progress = yes
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -3761,7 +3761,7 @@ focus_tree = {
 		icon = GFX_focus_invite_finland
 		x = 2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_review_foreign_policy
 		}
@@ -3781,7 +3781,7 @@ focus_tree = {
 			}
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -3807,7 +3807,7 @@ focus_tree = {
 		icon = GFX_goal_tripartite_pact
 		x = -2
 		y = 2
-		
+
 		prerequisite = {
 			focus = FRA_review_foreign_policy
 		}
@@ -3836,7 +3836,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -3869,7 +3869,7 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_confirm_eastern_commitments
 		}
@@ -3884,7 +3884,7 @@ focus_tree = {
 			country_exists = CZE
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -3943,21 +3943,21 @@ focus_tree = {
 	focus = {
 		id = FRA_invite_yugoslavia
 		icon = GFX_focus_invite_yugoslavia
-		available = { 
-			is_subject = no 
+		available = {
+			is_subject = no
 			is_faction_leader = yes
 		}
-	 	prerequisite = { focus = FRA_strengthen_the_little_entente }
-	 	bypass = {
-	 		YUG = {
-	 			OR = {
-	 				exists = no
-	 				is_puppet = yes
-	 				has_war_with = ROOT
-	 				is_in_faction = yes
-	 			}
-	 		}
-	 	}
+		prerequisite = { focus = FRA_strengthen_the_little_entente }
+		bypass = {
+			YUG = {
+				OR = {
+					exists = no
+					is_puppet = yes
+					has_war_with = ROOT
+					is_in_faction = yes
+				}
+			}
+		}
 		x = -1
 		y = 1
 		relative_position_id = FRA_strengthen_the_little_entente
@@ -3973,21 +3973,21 @@ focus_tree = {
 	focus = {
 		id = FRA_invite_romania
 		icon = GFX_focus_invite_romania
-		available = { 
-			is_subject = no 
+		available = {
+			is_subject = no
 			is_faction_leader = yes
 		}
-	 	prerequisite = { focus = FRA_invite_yugoslavia }
-	 	bypass = {
-	 		ROM = {
-	 			OR = {
-	 				exists = no
-	 				is_puppet = yes
-	 				has_war_with = ROOT
-	 				is_in_faction = yes
-	 			}
-	 		}
-	 	}
+		prerequisite = { focus = FRA_invite_yugoslavia }
+		bypass = {
+			ROM = {
+				OR = {
+					exists = no
+					is_puppet = yes
+					has_war_with = ROOT
+					is_in_faction = yes
+				}
+			}
+		}
 		x = 0
 		y = 1
 		relative_position_id = FRA_invite_yugoslavia
@@ -4025,7 +4025,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -4095,7 +4095,7 @@ focus_tree = {
 		available = {
 			is_in_faction = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -4140,7 +4140,7 @@ focus_tree = {
 		icon = GFX_focus_generic_manpower
 		x = 3
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_strengthen_the_little_entente
 		}
@@ -4154,7 +4154,7 @@ focus_tree = {
 		available = {
 			FRA_has_worker_shortage = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -4191,7 +4191,7 @@ focus_tree = {
 				has_war_with = ENG
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -4201,12 +4201,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ENG = { 
+			ENG = {
 				if = {
 					limit = { ROOT = { is_in_faction = yes } }
 					country_event = lar_fra_join_the_ententes.1
 				}
-				else = { 
+				else = {
 					custom_effect_tooltip = invite_to_faction_tt
 				}
 			}
@@ -4232,7 +4232,7 @@ focus_tree = {
 			NOT = { has_war_with = POL }
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -4271,9 +4271,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -4291,11 +4291,11 @@ focus_tree = {
 				}
 				ROOT = {
 					diplomatic_relation = {
-   						country = YUG
-   						relation = guarantee
-   						active = no
-  					}
-  					add_ai_strategy = {
+						country = YUG
+						relation = guarantee
+						active = no
+					}
+					add_ai_strategy = {
 						type = ignore
 						id = "YUG"
 						value = 100
@@ -4311,11 +4311,11 @@ focus_tree = {
 				}
 				ROOT = {
 					diplomatic_relation = {
-   						country = CZE
-   						relation = guarantee
-   						active = no
-  					}
-  					add_ai_strategy = {
+						country = CZE
+						relation = guarantee
+						active = no
+					}
+					add_ai_strategy = {
 						type = ignore
 						id = "CZE"
 						value = 100
@@ -4332,10 +4332,10 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		available = {
 		}
-	 	prerequisite = {
-	 		focus = FRA_strengthen_the_little_entente
-	 		focus = FRA_buy_time
-	 	}
+		prerequisite = {
+			focus = FRA_strengthen_the_little_entente
+			focus = FRA_buy_time
+		}
 		x = 5
 		y = 1
 		relative_position_id = FRA_strengthen_the_little_entente
@@ -4354,7 +4354,7 @@ focus_tree = {
 				days = 365
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_defensive_strategems
@@ -4366,7 +4366,7 @@ focus_tree = {
 				has_country_flag = FRA_strengthen_government_support_focus_flag
 			}
 		}
-	 	prerequisite = { focus = FRA_strengthen_government_support }
+		prerequisite = { focus = FRA_strengthen_government_support }
 		x = 0
 		y = 1
 		relative_position_id = FRA_strengthen_government_support
@@ -4402,8 +4402,8 @@ focus_tree = {
 				has_completed_focus = FRA_strengthen_the_little_entente
 			}
 		}
-	 	prerequisite = { focus = FRA_buy_time }
-	 	mutually_exclusive = { focus = FRA_france_leads }
+		prerequisite = { focus = FRA_buy_time }
+		mutually_exclusive = { focus = FRA_france_leads }
 		x = 0
 		y = 1
 		relative_position_id = FRA_buy_time
@@ -4454,7 +4454,7 @@ focus_tree = {
 			country_exists = USA
 			USA_can_sell_weapons_trigger = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -4488,7 +4488,7 @@ focus_tree = {
 			is_subject = no
 			is_in_faction = no
 		}
-		
+
 		bypass = {
 			is_faction_leader = yes
 		}
@@ -4533,34 +4533,34 @@ focus_tree = {
 			268 = {
 				is_owned_or_subject_trigger = yes
 			}
-			
+
 			AND = {
 				OR = {
-					ITA = { 
-						controls_state = 550 
-					}					
+					ITA = {
+						controls_state = 550
+					}
 					any_country = {
 						is_subject_of = ITA
-						controls_state = 550 
+						controls_state = 550
 						}
 				}
 				OR = {
-					ITA = { 
-						controls_state = 559 
-					}					
+					ITA = {
+						controls_state = 559
+					}
 					any_country = {
 						is_subject_of = ITA
-						controls_state = 559 
+						controls_state = 559
 					}
 				}
 			}
 		}
-	
 
-		
+
+
 		bypass = {
-			ITA = { 
-				owns_state = 268 
+			ITA = {
+				owns_state = 268
 				owns_state = 269
 			}
 		}
@@ -4601,35 +4601,35 @@ focus_tree = {
 					has_war_with = ITA
 				}
 				exists = yes
-				is_subject = no 
+				is_subject = no
 			}
 			ITA = {
 				exists = yes
-				is_subject = no 
+				is_subject = no
 			}
 			AND = {
 				OR = {
-					ITA = { 
-						controls_state = 550 
-					}					
+					ITA = {
+						controls_state = 550
+					}
 					any_country = {
 						is_subject_of = ITA
-						controls_state = 550 
+						controls_state = 550
 					}
 				}
 				OR = {
-					ITA = { 
-						controls_state = 559 
-					}					
+					ITA = {
+						controls_state = 559
+					}
 					any_country = {
 						is_subject_of = ITA
-						controls_state = 559 
+						controls_state = 559
 					}
 				}
 			}
 			has_country_flag = lar_france_stresa_front_italy_agreed
 		}
-		
+
 		bypass = {
 
 		}
@@ -4652,7 +4652,7 @@ focus_tree = {
 		}
 		relative_position_id = FRA_france_leads
 		cost = 10
-		dynamic = yes 
+		dynamic = yes
 
 		ai_will_do = {
 			factor = 1
@@ -4670,7 +4670,7 @@ focus_tree = {
 				NOT = { has_global_flag = sov_yes_pact }
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -4690,9 +4690,9 @@ focus_tree = {
 	focus = {
 		id = FRA_leftist_rhetoric
 		icon = GFX_goal_generic_propaganda
-	 	available = {
+		available = {
 		}
-	 	prerequisite = { focus = FRA_form_the_popular_front }
+		prerequisite = { focus = FRA_form_the_popular_front }
 		x = -3
 		y = 1
 		relative_position_id = FRA_form_the_popular_front
@@ -4720,32 +4720,32 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = maurice_thorez
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = communism
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
-					target = ROOT 
+				add_opinion_modifier = {
+					target = ROOT
 					modifier =  FRA_leftist_rhetoric_communism
 				}
 			}
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = democratic
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = FRA_leftist_rhetoric_democratic
 				}
 			}
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = fascism
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
-					target = ROOT 
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = FRA_leftist_rhetoric_fascism
 				}
 			}
@@ -4755,13 +4755,13 @@ focus_tree = {
 	focus = {
 		id = FRA_national_mobilization
 		icon = GFX_goal_generic_allies_build_infantry
-	 	available = {
-	 		OR = {
-	 			has_government = communism
-	 			communism > 0.4
-	 		}
+		available = {
+			OR = {
+				has_government = communism
+				communism > 0.4
+			}
 		}
-	 	prerequisite = { focus = FRA_leftist_rhetoric }
+		prerequisite = { focus = FRA_leftist_rhetoric }
 		x = 0
 		y = 1
 		relative_position_id = FRA_leftist_rhetoric
@@ -4784,24 +4784,24 @@ focus_tree = {
 		id = FRA_join_comintern
 		icon = GFX_goal_support_communism
 		mutually_exclusive = { focus = FRA_humanite_unie }
-	 	available = {
-	 		is_puppet = no
-	 		is_in_faction = no
-	 		OR = {
-	 			has_government = communism
-	 			communism > 0.4
-	 		}
-	 		has_war = no
- 			SOV = {
- 				exists = yes
- 				has_government = communism
- 				is_faction_leader = yes
- 			}
+		available = {
+			is_puppet = no
+			is_in_faction = no
+			OR = {
+				has_government = communism
+				communism > 0.4
+			}
+			has_war = no
+			SOV = {
+				exists = yes
+				has_government = communism
+				is_faction_leader = yes
+			}
 		}
-	 	prerequisite = { focus = FRA_national_mobilization }
-	 	bypass = {
-	 		is_in_faction_with = SOV
-	 	}
+		prerequisite = { focus = FRA_national_mobilization }
+		bypass = {
+			is_in_faction_with = SOV
+		}
 		x = 1
 		y = 1
 		relative_position_id = FRA_national_mobilization
@@ -4816,16 +4816,16 @@ focus_tree = {
 		completion_reward = {
 			SOV = { country_event = { id = soviet.29 days = 1 } }
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_humanite_unie
 		icon = GFX_goal_generic_dangerous_deal
 		mutually_exclusive = { focus = FRA_join_comintern }
-	 	available = {
-	 		is_puppet = no
+		available = {
+			is_puppet = no
 		}
-	 	prerequisite = { focus = FRA_national_mobilization }
+		prerequisite = { focus = FRA_national_mobilization }
 		x = -1
 		y = 1
 		relative_position_id = FRA_national_mobilization
@@ -4840,14 +4840,14 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_revive_the_national_bloc
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 42
 		y = 0
-		
+
 		offset = {
 			x = -9
 			y = 0
@@ -4891,7 +4891,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
 		mutually_exclusive = { focus = FRA_form_the_popular_front }
 		bypass = {
@@ -4915,13 +4915,13 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 	focus = {
 		id = FRA_laissez_faire
 		icon = GFX_goal_generic_consumer_goods
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
 		}
@@ -4934,9 +4934,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -4961,7 +4961,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_laissez_faire
 			focus = FRA_agricultural_protectionism
@@ -4974,9 +4974,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -4994,7 +4994,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_protect_the_rights_of_man
 		}
@@ -5006,9 +5006,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5023,26 +5023,26 @@ focus_tree = {
 					not = { has_completed_focus = FRA_utilize_the_leagues }
 				}
 				set_temp_variable = { FRA_fascism = party_popularity@fascism }
-				add_popularity = { ideology = democratic popularity = FRA_fascism } 
+				add_popularity = { ideology = democratic popularity = FRA_fascism }
 				multiply_temp_variable = { FRA_fascism = -1 }
 				add_popularity = { ideology = fascism popularity = FRA_fascism }
 			}
 			else = {
 				set_temp_variable = { FRA_democracy = party_popularity@democratic }
 				multiply_temp_variable = { FRA_democracy = 0.3 }
-				add_popularity = { ideology = fascism popularity = FRA_democracy } 
+				add_popularity = { ideology = fascism popularity = FRA_democracy }
 				multiply_temp_variable = { FRA_democracy = -1 }
 				add_popularity = { ideology = democratic popularity = FRA_democracy }
 			}
 			FRA_communism_riot_effect = yes
 		}
-	}	
+	}
 	focus = {
 		id = FRA_stimulate_the_dynamic_market
 		icon = GFX_goal_generic_construct_civilian
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_freedom_front
 			focus = FRA_promote_entrepeneurship
@@ -5055,9 +5055,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5075,7 +5075,7 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
 
@@ -5089,9 +5089,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5109,7 +5109,7 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_agricultural_protectionism
 			focus = FRA_laissez_faire
@@ -5122,9 +5122,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 			NOT = {
 				FRA_has_inefficient_economy = yes
@@ -5175,7 +5175,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_economic_devolution
 		}
@@ -5187,9 +5187,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5208,7 +5208,7 @@ focus_tree = {
 		icon = GFX_goal_anti_comintern_pact
 		x = -3
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_revive_the_national_bloc
 		}
@@ -5223,7 +5223,7 @@ focus_tree = {
 			has_idea = FRA_political_violence
 			NOT = { has_government = communism }
 		}
-		
+
 		bypass = {
 
 		}
@@ -5239,7 +5239,7 @@ focus_tree = {
 			add_stability = communism_temp
 			remove_ideas = FRA_political_violence
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_utilize_the_leagues
@@ -5247,7 +5247,7 @@ focus_tree = {
 		x = 8
 		y = 1
 		relative_position_id = FRA_revive_the_national_bloc
-		
+
 		offset = {
 			x = -1
 			y = 0
@@ -5304,7 +5304,7 @@ focus_tree = {
 			}
 			is_subject = no
 		}
-		
+
 		bypass = {
 			OR = {
 				has_government = fascism
@@ -5345,7 +5345,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 1
-		
+
 		relative_position_id = FRA_utilize_the_leagues
 
 		allow_branch = {
@@ -5381,7 +5381,7 @@ focus_tree = {
 				check_variable = { FRA_rw_support > 0.5 }
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -5427,7 +5427,7 @@ focus_tree = {
 		icon = GFX_focus_rom_parties_end
 		x = -4
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_national_regeneration
 		}
@@ -5439,9 +5439,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5460,7 +5460,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = -2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_national_regeneration
 		}
@@ -5472,9 +5472,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5495,7 +5495,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		x = -2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_integralism
 		}
@@ -5511,9 +5511,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5532,7 +5532,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_integralism
 		}
@@ -5548,9 +5548,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5569,7 +5569,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		x = 2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_integralism
 		}
@@ -5585,9 +5585,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5606,7 +5606,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_national_regeneration
 		}
@@ -5618,9 +5618,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -5641,7 +5641,7 @@ focus_tree = {
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		x = 4
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_national_regeneration
 		}
@@ -5653,9 +5653,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 			NOT = {
 				any_other_country = {
@@ -5699,14 +5699,14 @@ focus_tree = {
 				news_event = { id = lar_news.6 days = 3 random = 5 }
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = FRA_latin_entente
 		icon = GFX_goal_generic_dangerous_deal
 		x = -2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_diplomatic_freedom
 		}
@@ -5721,7 +5721,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -5750,9 +5750,9 @@ focus_tree = {
 				ideology = fascism
 				long_name = FRA_psf_party_long
 				name = FRA_psf_party
-			}	
+			}
 		}
-		
+
 	}
 
 	focus = {
@@ -5760,7 +5760,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_latin_entente
 		}
@@ -5797,7 +5797,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 			41 = {
 				CONTROLLER = {
@@ -5811,7 +5811,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_other_country = { 
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					OR = {
@@ -5827,10 +5827,10 @@ focus_tree = {
 						ROOT = { is_in_faction = yes }
 					}
 					country_event = {
-						id = generic.5 
+						id = generic.5
 						hours = 6
 						random_hours = 12
-					}	
+					}
 				}
 				ELSE = {
 					custom_effect_tooltip = invite_to_faction_tt
@@ -5844,7 +5844,7 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_portugal
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_reach_out_to_spain
 		}
@@ -5870,7 +5870,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 			POR = {
 				OR = {
@@ -5885,16 +5885,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			POR = { 
+			POR = {
 				IF = {
 					limit = {
 						ROOT = { is_in_faction = yes }
 					}
 					country_event = {
-						id = generic.5 
+						id = generic.5
 						hours = 6
 						random_hours = 12
-					}	
+					}
 				}
 				ELSE = {
 					custom_effect_tooltip = invite_to_faction_tt
@@ -5908,7 +5908,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_latin_entente
 		}
@@ -5928,7 +5928,7 @@ focus_tree = {
 				is_subject_of = ITA
 			}
 		}
-		
+
 		bypass = {
 			is_in_faction_with = ITA
 		}
@@ -5938,7 +5938,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ITA = { 
+			ITA = {
 				country_event = {
 					id = lar_compensate_italy.1
 					hours = 6
@@ -5947,8 +5947,8 @@ focus_tree = {
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = needs_approval
-				ITA = { 
-					transfer_state = 268 
+				ITA = {
+					transfer_state = 268
 				}
 				FRA = { add_to_faction = ITA }
 			}
@@ -5960,7 +5960,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_compensate_italy
 		}
@@ -5974,7 +5974,7 @@ focus_tree = {
 		available = {
 			NOT = { is_in_faction_with = GRE }
 		}
-		
+
 		bypass = {
 			OR = {
 				has_war_with = GRE
@@ -6003,7 +6003,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = needs_approval
 			effect_tooltip = {
-				ITA = { 
+				ITA = {
 					add_state_claim = 185
 					add_state_claim = 731
 					add_state_claim = 184
@@ -6023,7 +6023,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_invite_portugal
 		}
@@ -6046,7 +6046,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -6065,7 +6065,7 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_border
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_the_congress_of_paris
 		}
@@ -6083,9 +6083,9 @@ focus_tree = {
 		will_lead_to_war_with = HOL
 		will_lead_to_war_with = LUX
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -6140,7 +6140,7 @@ focus_tree = {
 					generator = { 35 }
 				}
 			}
-			
+
 			IF = {
 				limit = {
 					GER = {
@@ -6155,7 +6155,7 @@ focus_tree = {
 					generator = { 42 51 }
 				}
 			}
-			
+
 
 		}
 	}
@@ -6165,7 +6165,7 @@ focus_tree = {
 		icon = GFX_goal_tripartite_pact
 		x = 2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_diplomatic_freedom
 		}
@@ -6178,12 +6178,12 @@ focus_tree = {
 		}
 
 		available = {
-			OR = { 
+			OR = {
 				is_subject = no
 				is_subject_of = GER
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -6217,7 +6217,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_towards_a_new_europe
 		}
@@ -6233,12 +6233,12 @@ focus_tree = {
 				has_government = ROOT
 				NOT = { has_war_with = ROOT }
 			}
-			OR = { 
+			OR = {
 				is_subject = no
 				is_subject_of = GER
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -6279,7 +6279,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_establish_spheres_of_influence
 		}
@@ -6292,7 +6292,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = { 
+			OR = {
 				is_subject = no
 				is_subject_of = GER
 			}
@@ -6326,7 +6326,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_establish_spheres_of_influence
 		}
@@ -6346,12 +6346,12 @@ focus_tree = {
 					has_war_with = ROOT
 				}
 			}
-			OR = { 
+			OR = {
 				is_subject = no
 				is_subject_of = GER
 			}
 		}
-		
+
 		bypass = {
 			BEL = {
 				is_subject_of = ROOT
@@ -6378,7 +6378,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_split_belgium
 			focus = FRA_align_belgium
@@ -6399,7 +6399,7 @@ focus_tree = {
 					is_subject_of = ROOT
 				}
 			}
-			OR = { 
+			OR = {
 				is_subject = no
 				is_subject_of = GER
 			}
@@ -6414,161 +6414,161 @@ focus_tree = {
 					state = 888
 					state = 889
 				}
-				CONTROLLER = { 
-					OR = { 
+				CONTROLLER = {
+					OR = {
 						AND = {
-							original_tag = BEL 
+							original_tag = BEL
 							is_subject_of = ROOT
 						}
-						is_subject_of = BEL 
+						is_subject_of = BEL
 						AND = {
-							original_tag = COG 
+							original_tag = COG
 							is_subject_of = ROOT
 						}
-					} 
-				} 
+					}
+				}
 			}
 		}
-		
+
 		bypass = {
-			BEL = { 
-				exists = no 
+			BEL = {
+				exists = no
 			}
-			NOT = { 
-				295 = { 
-					CONTROLLER = { 
-						OR = { 
+			NOT = {
+				295 = {
+					CONTROLLER = {
+						OR = {
 							AND = {
-								original_tag = BEL 
+								original_tag = BEL
 								is_subject_of = ROOT
 							}
-							is_subject_of = BEL 
+							is_subject_of = BEL
 							AND = {
-								original_tag = COG 
+								original_tag = COG
 								is_subject_of = ROOT
 							}
-						} 
-					} 
-				} 
+						}
+					}
+				}
 			}
-			NOT = { 
-				538 = { 
-					CONTROLLER = { 
-						OR = { 
+			NOT = {
+				538 = {
+					CONTROLLER = {
+						OR = {
 							AND = {
-								original_tag = BEL 
+								original_tag = BEL
 								is_subject_of = ROOT
 							}
-							is_subject_of = BEL 
+							is_subject_of = BEL
 							AND = {
-								original_tag = COG 
+								original_tag = COG
 								is_subject_of = ROOT
 							}
-						} 
-					}  
-				} 
+						}
+					}
+				}
 			}
-			NOT = { 
-				718 = { 
-					CONTROLLER = { 
-						OR = { 
+			NOT = {
+				718 = {
+					CONTROLLER = {
+						OR = {
 							AND = {
-								original_tag = BEL 
+								original_tag = BEL
 								is_subject_of = ROOT
 							}
-							is_subject_of = BEL 
+							is_subject_of = BEL
 							AND = {
-								original_tag = COG 
+								original_tag = COG
 								is_subject_of = ROOT
 							}
-						} 
-					} 
-				} 
+						}
+					}
+				}
 			}
-			NOT = { 
-				769 = { 
-					CONTROLLER = { 
-						OR = { 
+			NOT = {
+				769 = {
+					CONTROLLER = {
+						OR = {
 							AND = {
-								original_tag = BEL 
+								original_tag = BEL
 								is_subject_of = ROOT
 							}
-							is_subject_of = BEL 
+							is_subject_of = BEL
 							AND = {
-								original_tag = COG 
+								original_tag = COG
 								is_subject_of = ROOT
 							}
-						} 
-					} 
-				} 
+						}
+					}
+				}
 			}
-			NOT = { 
-				768 = { 
-					CONTROLLER = { 
-						OR = { 
+			NOT = {
+				768 = {
+					CONTROLLER = {
+						OR = {
 							AND = {
-								original_tag = BEL 
+								original_tag = BEL
 								is_subject_of = ROOT
 							}
-							is_subject_of = BEL 
+							is_subject_of = BEL
 							AND = {
-								original_tag = COG 
+								original_tag = COG
 								is_subject_of = ROOT
 							}
-						} 
-					} 
-				} 
+						}
+					}
+				}
 			}
-			NOT = { 
-				890 = { 
-					CONTROLLER = { 
-						OR = { 
+			NOT = {
+				890 = {
+					CONTROLLER = {
+						OR = {
 							AND = {
-								original_tag = BEL 
+								original_tag = BEL
 								is_subject_of = ROOT
 							}
-							is_subject_of = BEL 
+							is_subject_of = BEL
 							AND = {
-								original_tag = COG 
+								original_tag = COG
 								is_subject_of = ROOT
 							}
-						} 
-					} 
-				} 
+						}
+					}
+				}
 			}
-			NOT = { 
-				888 = { 
-					CONTROLLER = { 
-						OR = { 
+			NOT = {
+				888 = {
+					CONTROLLER = {
+						OR = {
 							AND = {
-								original_tag = BEL 
+								original_tag = BEL
 								is_subject_of = ROOT
 							}
-							is_subject_of = BEL 
+							is_subject_of = BEL
 							AND = {
-								original_tag = COG 
+								original_tag = COG
 								is_subject_of = ROOT
 							}
-						} 
-					} 
-				} 
+						}
+					}
+				}
 			}
-			NOT = { 
-				889 = { 
-					CONTROLLER = { 
-						OR = { 
+			NOT = {
+				889 = {
+					CONTROLLER = {
+						OR = {
 							AND = {
-								original_tag = BEL 
+								original_tag = BEL
 								is_subject_of = ROOT
 							}
-							is_subject_of = BEL 
+							is_subject_of = BEL
 							AND = {
-								original_tag = COG 
+								original_tag = COG
 								is_subject_of = ROOT
 							}
-						} 
-					}  
-				} 
+						}
+					}
+				}
 			}
 		}
 
@@ -6594,7 +6594,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_grow_the_empire
 		}
@@ -6608,7 +6608,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = { 
+			OR = {
 				is_subject = no
 				is_subject_of = GER
 			}
@@ -6639,10 +6639,10 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			466 = { 
-				OWNER = { 
-					ROOT = { 
-						create_wargoal = { 
+			466 = {
+				OWNER = {
+					ROOT = {
+						create_wargoal = {
 							type = take_state
 							target = PREV
 							expire = 0
@@ -6650,8 +6650,8 @@ focus_tree = {
 								466 860 861 862 863
 							}
 						}
-					} 
-				} 
+					}
+				}
 			}
 
 		}
@@ -6662,7 +6662,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_coastal
 		x = 1
 		y = 2
-		
+
 		prerequisite = {
 			focus = FRA_intervention_in_greece
 			focus = FRA_grow_the_empire
@@ -6675,9 +6675,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 			owns_state = 455
 			owns_state = 454
@@ -6701,10 +6701,10 @@ focus_tree = {
 					453 = { OWNER = { tag = ENG } }
 					446 = { OWNER = { tag = ENG } }
 				}
-				455 = { 
-					OWNER = { 
-						ROOT = { 
-							create_wargoal = { 
+				455 = {
+					OWNER = {
+						ROOT = {
+							create_wargoal = {
 								type = take_state
 								target = PREV
 								expire = 0
@@ -6712,14 +6712,14 @@ focus_tree = {
 									455
 								}
 							}
-						} 
-					} 
+						}
+					}
 				}
 				hidden_effect = {
-					454 = { 
-						OWNER = { 
-							ROOT = { 
-								create_wargoal = { 
+					454 = {
+						OWNER = {
+							ROOT = {
+								create_wargoal = {
 									type = take_state
 									target = PREV
 									expire = 0
@@ -6727,13 +6727,13 @@ focus_tree = {
 										454
 									}
 								}
-							} 
-						} 
+							}
+						}
 					}
-					453 = { 
-						OWNER = { 
-							ROOT = { 
-								create_wargoal = { 
+					453 = {
+						OWNER = {
+							ROOT = {
+								create_wargoal = {
 									type = take_state
 									target = PREV
 									expire = 0
@@ -6741,13 +6741,13 @@ focus_tree = {
 										453
 									}
 								}
-							} 
-						} 
+							}
+						}
 					}
-					446 = { 
-						OWNER = { 
-							ROOT = { 
-								create_wargoal = { 
+					446 = {
+						OWNER = {
+							ROOT = {
+								create_wargoal = {
 									type = take_state
 									target = PREV
 									expire = 0
@@ -6755,16 +6755,16 @@ focus_tree = {
 										453
 									}
 								}
-							} 
-						} 
+							}
+						}
 					}
 				}
 			}
 			else = {
-				455 = { 
-					OWNER = { 
-						ROOT = { 
-							create_wargoal = { 
+				455 = {
+					OWNER = {
+						ROOT = {
+							create_wargoal = {
 								type = take_state
 								target = PREV
 								expire = 0
@@ -6772,13 +6772,13 @@ focus_tree = {
 									455
 								}
 							}
-						} 
-					} 
+						}
+					}
 				}
-				454 = { 
-					OWNER = { 
-						ROOT = { 
-							create_wargoal = { 
+				454 = {
+					OWNER = {
+						ROOT = {
+							create_wargoal = {
 								type = take_state
 								target = PREV
 								expire = 0
@@ -6786,13 +6786,13 @@ focus_tree = {
 									454
 								}
 							}
-						} 
-					} 
+						}
+					}
 				}
-				453 = { 
-					OWNER = { 
-						ROOT = { 
-							create_wargoal = { 
+				453 = {
+					OWNER = {
+						ROOT = {
+							create_wargoal = {
 								type = take_state
 								target = PREV
 								expire = 0
@@ -6800,13 +6800,13 @@ focus_tree = {
 									453
 								}
 							}
-						} 
-					} 
+						}
+					}
 				}
-				446 = { 
-					OWNER = { 
-						ROOT = { 
-							create_wargoal = { 
+				446 = {
+					OWNER = {
+						ROOT = {
+							create_wargoal = {
 								type = take_state
 								target = PREV
 								expire = 0
@@ -6814,8 +6814,8 @@ focus_tree = {
 									453
 								}
 							}
-						} 
-					} 
+						}
+					}
 				}
 			}
 		}
@@ -6826,7 +6826,7 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_expand_to_the_suez
 		}
@@ -6839,9 +6839,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 		}
 
@@ -6866,7 +6866,7 @@ focus_tree = {
 					id = lar_dominate_the_middle_east.1
 					hours = 6
 					random_hours = 12
-				}	
+				}
 			}
 		}
 	}
@@ -6874,7 +6874,7 @@ focus_tree = {
 	focus = {
 		id = FRA_right_wing_rhetoric
 		icon = GFX_goal_generic_propaganda
-	 	prerequisite = { focus = FRA_revive_the_national_bloc }
+		prerequisite = { focus = FRA_revive_the_national_bloc }
 		x = 5
 		y = 1
 		relative_position_id = FRA_revive_the_national_bloc
@@ -6894,7 +6894,7 @@ focus_tree = {
 					has_completed_focus = FRA_form_the_popular_front
 				}
 			}
-		} 
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -6902,48 +6902,48 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = marcel_bucard
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = fascism
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
-					target = ROOT 
+				add_opinion_modifier = {
+					target = ROOT
 					modifier =  FRA_right_wing_rhetoric_fascism
 				}
 			}
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = democratic
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = FRA_right_wing_rhetoric_democratic
 				}
 			}
 			every_other_country = {
-				limit = { 
+				limit = {
 					has_government = communism
 					num_of_factories > 30
 				}
-				add_opinion_modifier = { 
-					target = ROOT 
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = FRA_right_wing_rhetoric_communism
 				}
-			}			
+			}
 		}
 	}
-	
+
 	focus = {
 		id = FRA_army_of_aggression
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-	 	available = {
-	 		OR = {
-	 			has_government = fascism
-	 			fascism > 0.4
-	 		}
+		available = {
+			OR = {
+				has_government = fascism
+				fascism > 0.4
+			}
 		}
-	 	prerequisite = { focus = FRA_right_wing_rhetoric }
+		prerequisite = { focus = FRA_right_wing_rhetoric }
 		x = 0
 		y = 1
 		relative_position_id = FRA_right_wing_rhetoric
@@ -6964,24 +6964,24 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					ENG = { 
+					ENG = {
 						is_in_faction_with = FRA
 						is_faction_leader = yes
 					}
 				}
 				ENG = { remove_from_faction = FRA }
-			}			
+			}
 		}
 	}
 
 	focus = {
 		id = FRA_france_first
 		icon = GFX_goal_generic_attack_allies
-	 	mutually_exclusive = { focus = FRA_join_germany focus = FRA_woo_italy }
-	 	available = {
-	 		is_puppet = no	 		
+		mutually_exclusive = { focus = FRA_join_germany focus = FRA_woo_italy }
+		available = {
+			is_puppet = no
 		}
-	 	prerequisite = { focus = FRA_army_of_aggression }
+		prerequisite = { focus = FRA_army_of_aggression }
 		x = -2
 		y = 1
 		relative_position_id = FRA_army_of_aggression
@@ -6998,23 +6998,23 @@ focus_tree = {
 	focus = {
 		id = FRA_woo_italy
 		icon = GFX_goal_tripartite_pact
-	 	mutually_exclusive = { focus = FRA_join_germany focus = FRA_france_first}
-	 	available = {
-	 		is_puppet = no
-	 		NOT = { has_war_with = ITA }
-	 		has_government = fascism
-	 		OR = {
-	 			is_faction_leader = yes
-	 			is_in_faction = no
-	 		}
-	 		ITA = {
-	 			exists = yes
-	 			is_in_faction = no
-	 			has_government = fascism
-	 			is_puppet = no
-	 		}
+		mutually_exclusive = { focus = FRA_join_germany focus = FRA_france_first}
+		available = {
+			is_puppet = no
+			NOT = { has_war_with = ITA }
+			has_government = fascism
+			OR = {
+				is_faction_leader = yes
+				is_in_faction = no
+			}
+			ITA = {
+				exists = yes
+				is_in_faction = no
+				has_government = fascism
+				is_puppet = no
+			}
 		}
-	 	prerequisite = { focus = FRA_army_of_aggression }
+		prerequisite = { focus = FRA_army_of_aggression }
 		x = 0
 		y = 1
 		relative_position_id = FRA_army_of_aggression
@@ -7028,7 +7028,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			ITA = { country_event = { id = italy.8 days = 1 } }			
+			ITA = { country_event = { id = italy.8 days = 1 } }
 			### Fires event to ITA asking them to join your faction - creates faction if you don't already lead one.
 			hidden_effect = {
 				if = {
@@ -7226,18 +7226,18 @@ focus_tree = {
 						}
 					}
 				}
-	 			if = {
-	 				limit = {
-	 					GER = { has_completed_focus = GER_reestablish_free_elections }
-	 				}
-	 				random_other_country = {
-	 					limit = {
-	 						original_tag = SPR
-	 						has_government = fascism
-	 					}
-	 					remove_ideas = SPA_recovering_from_civil_war
-	 				}
-	 			}
+				if = {
+					limit = {
+						GER = { has_completed_focus = GER_reestablish_free_elections }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SPR
+							has_government = fascism
+						}
+						remove_ideas = SPA_recovering_from_civil_war
+					}
+				}
 			}
 		}
 	}
@@ -7245,12 +7245,12 @@ focus_tree = {
 	focus = {
 		id = FRA_dismantle_the_democracies
 		icon = GFX_goal_generic_major_war
-	 	available = {
-	 		is_puppet = no
-	 		GER = { has_government = democratic }
+		available = {
+			is_puppet = no
+			GER = { has_government = democratic }
 		}
-	 	prerequisite = { focus = FRA_woo_italy }
-	 	will_lead_to_war_with = GER
+		prerequisite = { focus = FRA_woo_italy }
+		will_lead_to_war_with = GER
 		x = 0
 		y = 1
 		relative_position_id = FRA_woo_italy
@@ -7283,23 +7283,23 @@ focus_tree = {
 	focus = {
 		id = FRA_join_germany
 		icon = GFX_goal_support_fascism
-	 	mutually_exclusive = { focus = FRA_woo_italy focus = FRA_france_first}
-	 	available = {
-	 		is_puppet = no
+		mutually_exclusive = { focus = FRA_woo_italy focus = FRA_france_first}
+		available = {
+			is_puppet = no
 			is_in_faction = no
-	 		NOT = { has_war_with = GER }
-	 		OR = {
-	 			has_government = fascism
-	 			fascism > 0.4
-	 		}
-	 		
-	 		GER = {
-	 			exists = yes
-	 			has_government = fascism
- 				is_faction_leader = yes
-	 		}
+			NOT = { has_war_with = GER }
+			OR = {
+				has_government = fascism
+				fascism > 0.4
+			}
+
+			GER = {
+				exists = yes
+				has_government = fascism
+				is_faction_leader = yes
+			}
 		}
-	 	prerequisite = { focus = FRA_army_of_aggression }
+		prerequisite = { focus = FRA_army_of_aggression }
 		x = 2
 		y = 1
 		relative_position_id = FRA_army_of_aggression
@@ -7313,7 +7313,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			### EVENT ASKING GERMANY TO JOIN FACTION
-			GER = { country_event = { id = germany.91 days = 1 } }			
+			GER = { country_event = { id = germany.91 days = 1 } }
 		}
 	}
 
@@ -7322,7 +7322,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		x = 14
 		y = 1
-		
+
 		offset = {
 			x = -14
 			y = 0
@@ -7366,7 +7366,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7400,7 +7400,7 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_the_council_of_rambouillet
 		}
@@ -7414,7 +7414,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7433,7 +7433,7 @@ focus_tree = {
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_revise_the_constitution
 		}
@@ -7448,7 +7448,7 @@ focus_tree = {
 			not = { has_idea = FRA_constitutional_revision }
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7468,11 +7468,11 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_orleans_restoration
 		x = -3
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_repeal_the_law_of_exile
 		}
-		mutually_exclusive = { 
+		mutually_exclusive = {
 			focus = FRA_the_legitimate_heir
 			focus = FRA_proclaim_the_third_empire
 		}
@@ -7486,9 +7486,9 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -7544,7 +7544,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_orleanist_restoration
 		}
@@ -7558,7 +7558,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7576,7 +7576,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_orleanist_restoration
 		}
@@ -7590,7 +7590,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7608,7 +7608,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_guarantee_the_constitution
 			focus = FRA_the_first_citizen_of_the_state
@@ -7623,7 +7623,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7641,7 +7641,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		x = -2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_counter_action
 		}
@@ -7663,7 +7663,7 @@ focus_tree = {
 			}
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7706,7 +7706,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_counter_action
 		}
@@ -7718,9 +7718,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -7731,8 +7731,8 @@ focus_tree = {
 
 		completion_reward = {
 			every_owned_state = {
-				limit = { 
-					is_core_of = ROOT 
+				limit = {
+					is_core_of = ROOT
 					is_fully_controlled_by = ROOT
 					set_temp_variable = { state_num_factory = industrial_complex_level }
 					add_to_temp_variable = { state_num_factory = arms_factory_level }
@@ -7748,7 +7748,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_slum_clearing
 		}
@@ -7760,9 +7760,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -7780,7 +7780,7 @@ focus_tree = {
 		icon = GFX_focus_rom_royal_dictatorship
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_repeal_the_law_of_exile
 		}
@@ -7798,7 +7798,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7819,7 +7819,7 @@ focus_tree = {
 					expire = "1965.1.1"
 					ideology = despotism
 					traits = {
-						
+
 					}
 				}
 			}
@@ -7831,7 +7831,7 @@ focus_tree = {
 					expire = "1965.1.1"
 					ideology = despotism
 					traits = {
-						
+
 					}
 				}
 			}
@@ -7851,7 +7851,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_the_legitimate_heir
 		}
@@ -7869,7 +7869,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7908,7 +7908,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = -1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_secure_the_crown_of_spain
 		}
@@ -7945,7 +7945,7 @@ focus_tree = {
 			}
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -7976,7 +7976,7 @@ focus_tree = {
 		icon = GFX_goal_tripartite_pact
 		x = 1
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_secure_the_crown_of_spain
 		}
@@ -8001,7 +8001,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -8019,7 +8019,7 @@ focus_tree = {
 				create_faction_from_template = {
 					template = faction_template_anti_communist
 					name = FRA_legitimist_faction
-					icon = GFX_faction_logo_generic_5 
+					icon = GFX_faction_logo_generic_5
 				}
 			}
 			IF = {
@@ -8041,7 +8041,7 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_third_empire
 		x = 3
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_repeal_the_law_of_exile
 		}
@@ -8063,7 +8063,7 @@ focus_tree = {
 				is_faction_leader = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -8080,7 +8080,7 @@ focus_tree = {
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
-					
+
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -8113,7 +8113,7 @@ focus_tree = {
 		icon = GFX_focus_attack_britain
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_proclaim_the_third_empire
 		}
@@ -8131,7 +8131,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 			BEL = {
 				OR = {
@@ -8191,7 +8191,7 @@ focus_tree = {
 		icon = GFX_focus_CZE_german_puppet
 		x = 2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_avenge_waterloo
 		}
@@ -8213,7 +8213,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -8234,7 +8234,7 @@ focus_tree = {
 		icon = GFX_focus_attack_germany
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_avenge_waterloo
 		}
@@ -8248,7 +8248,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 			OR = {
 				is_in_faction_with = GER
@@ -8262,7 +8262,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			create_wargoal = { 
+			create_wargoal = {
 				type = annex_everything
 				target = GER
 				expire = 0
@@ -8274,7 +8274,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 2
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_retribution_for_sedan
 		}
@@ -8288,7 +8288,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			is_faction_leader = yes
-			any_controlled_state = { 
+			any_controlled_state = {
 				is_core_of = GER
 			}
 			GER = {
@@ -8298,7 +8298,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -8349,7 +8349,7 @@ focus_tree = {
 					transfer_state = 153
 					transfer_state = 848
 					transfer_state = 975
-					transfer_state = 976  
+					transfer_state = 976
 				}
 				puppet = AUS
 			}
@@ -8458,8 +8458,8 @@ focus_tree = {
 					NOT = { has_war_with = CZE }
 				}
 				every_state = {
-					limit = { 
-						is_core_of = CZE 
+					limit = {
+						is_core_of = CZE
 						is_owned_or_subject_trigger = yes
 					}
 					CZE = { transfer_state = PREV }
@@ -8467,8 +8467,8 @@ focus_tree = {
 			}
 			else = {
 				every_state = {
-					limit = { 
-						is_core_of = CZE 
+					limit = {
+						is_core_of = CZE
 						is_owned_or_subject_trigger = yes
 					}
 					CZE = { transfer_state = PREV }
@@ -8476,8 +8476,8 @@ focus_tree = {
 				puppet = CZE
 			}
 			every_state = {
-				limit = { 
-					is_core_of = GER 
+				limit = {
+					is_core_of = GER
 					is_owned_or_subject_trigger = yes
 					CONTROLLER = {
 						NOT = {
@@ -8515,7 +8515,7 @@ focus_tree = {
 		icon = GFX_focus_attack_soviet
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_retribution_for_sedan
 		}
@@ -8529,7 +8529,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 			has_war_with = SOV
 		}
@@ -8551,7 +8551,7 @@ focus_tree = {
 		icon = GFX_focus_fra_le_deluge
 		x = 0
 		y = 1
-		
+
 		prerequisite = {
 			focus = FRA_return_to_borodino
 		}
@@ -8565,7 +8565,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 		}
-		
+
 		bypass = {
 
 		}
@@ -8730,7 +8730,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}		
+			}
 		}
 
 		completion_reward = {
@@ -8755,8 +8755,8 @@ focus_tree = {
 				set_state_flag = FRA_naval_rearmament_2NB
 			}
 
-				
-			
+
+
 
 			random_owned_controlled_state = {
 				limit = {
@@ -8768,7 +8768,7 @@ focus_tree = {
 						}
 					}
 					prioritize = { 14 } #Brittany
-	
+
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
@@ -8783,7 +8783,7 @@ focus_tree = {
 	focus = {
 		id = FRA_colonial_naval_bases
 		icon = GFX_goal_generic_build_navy
-	 	prerequisite = { focus = FRA_naval_rearmament }
+		prerequisite = { focus = FRA_naval_rearmament }
 		x = -3
 		y = 1
 		relative_position_id = FRA_naval_rearmament
@@ -8846,7 +8846,7 @@ focus_tree = {
 	focus = {
 		id = FRA_develop_colonial_dockyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-	 	prerequisite = { focus = FRA_colonial_naval_bases }
+		prerequisite = { focus = FRA_colonial_naval_bases }
 		x = 0
 		y = 1
 		relative_position_id = FRA_colonial_naval_bases
@@ -8897,8 +8897,8 @@ focus_tree = {
 	focus = {
 		id = FRA_the_old_school
 		icon = GFX_focus_generic_navy_battleship2
-	 	prerequisite = { focus = FRA_naval_rearmament }
-	 	mutually_exclusive = { focus = FRA_the_young_school }
+		prerequisite = { focus = FRA_naval_rearmament }
+		mutually_exclusive = { focus = FRA_the_young_school }
 		x = 0
 		y = 1
 		relative_position_id = FRA_naval_rearmament
@@ -8926,8 +8926,8 @@ focus_tree = {
 	focus = {
 		id = FRA_capital_ship_focus
 		icon = GFX_goal_generic_navy_battleship
-	 	mutually_exclusive = { focus = FRA_carrier_focus }
-	 	prerequisite = { focus = FRA_the_old_school }
+		mutually_exclusive = { focus = FRA_carrier_focus }
+		prerequisite = { focus = FRA_the_old_school }
 		x = -1
 		y = 1
 		relative_position_id = FRA_the_old_school
@@ -8949,8 +8949,8 @@ focus_tree = {
 	focus = {
 		id = FRA_carrier_focus
 		icon = GFX_goal_generic_navy_carrier
-	 	mutually_exclusive = { focus = FRA_capital_ship_focus }
-	 	prerequisite = { focus = FRA_the_old_school }
+		mutually_exclusive = { focus = FRA_capital_ship_focus }
+		prerequisite = { focus = FRA_the_old_school }
 		x = 1
 		y = 1
 		relative_position_id = FRA_the_old_school
@@ -8972,7 +8972,7 @@ focus_tree = {
 		id = FRA_carrier_planes
 		icon = GFX_goal_generic_air_fighter
 
-	 	prerequisite = { focus = FRA_carrier_focus }
+		prerequisite = { focus = FRA_carrier_focus }
 		x = -1
 		y = 1
 		relative_position_id = FRA_carrier_focus
@@ -8994,7 +8994,7 @@ focus_tree = {
 		id = FRA_rush_the_richelieus
 		icon = GFX_focus_generic_cruiser2
 
-	 	prerequisite = { focus = FRA_capital_ship_focus }
+		prerequisite = { focus = FRA_capital_ship_focus }
 		x = 0
 		y = 2
 		relative_position_id = FRA_capital_ship_focus
@@ -9010,7 +9010,7 @@ focus_tree = {
 				add_equipment_production = {
 					equipment = {
 						type = vnr_ship_hull_heavy_3
-						creator = "FRA" 
+						creator = "FRA"
 						version_name = "Richelieu Class"
 					}
 					requested_factories = 1
@@ -9020,7 +9020,7 @@ focus_tree = {
 				add_equipment_production = {
 					equipment = {
 						type = vnr_ship_hull_heavy_3
-						creator = "FRA" 
+						creator = "FRA"
 						version_name = "Richelieu Class"
 					}
 					requested_factories = 1
@@ -9032,7 +9032,7 @@ focus_tree = {
 				add_equipment_production = {
 					equipment = {
 						type = battleship_2
-						creator = "FRA" 
+						creator = "FRA"
 					}
 					requested_factories = 1
 					progress = 0.50
@@ -9041,7 +9041,7 @@ focus_tree = {
 				add_equipment_production = {
 					equipment = {
 						type = battleship_2
-						creator = "FRA" 
+						creator = "FRA"
 					}
 					requested_factories = 1
 					progress = 0.35
@@ -9054,7 +9054,7 @@ focus_tree = {
 		id = FRA_prioritize_the_joffre
 		icon = GFX_goal_generic_navy_carrier
 
-	 	prerequisite = { focus = FRA_carrier_focus }
+		prerequisite = { focus = FRA_carrier_focus }
 		x = 0
 		y = 2
 		relative_position_id = FRA_carrier_focus
@@ -9098,20 +9098,20 @@ create_equipment_variant = {
 					add_equipment_production = {
 						equipment = {
 							type = vnr_ship_hull_carrier_1
-							creator = "FRA" 
+							creator = "FRA"
 							version_name = "Joffre Class"
 						}
 						requested_factories = 1
 						progress = 0.40
 						amount = 1
 					}
-				}	
+				}
 			}
 			else = {
 				add_equipment_production = {
 					equipment = {
 						type = carrier_2
-						creator = "FRA" 
+						creator = "FRA"
 					}
 					requested_factories = 1
 					progress = 0.40
@@ -9123,8 +9123,8 @@ create_equipment_variant = {
 	focus = {
 		id = FRA_the_young_school
 		icon = GFX_goal_generic_navy_cruiser
-	 	prerequisite = { focus = FRA_naval_rearmament }
-	 	mutually_exclusive = { focus = FRA_the_old_school }
+		prerequisite = { focus = FRA_naval_rearmament }
+		mutually_exclusive = { focus = FRA_the_old_school }
 		x = 4
 		y = 1
 		relative_position_id = FRA_naval_rearmament
@@ -9140,7 +9140,7 @@ create_equipment_variant = {
 	focus = {
 		id = FRA_undersea_combat
 		icon = GFX_goal_generic_navy_submarine
-	 	prerequisite = { focus = FRA_the_young_school }
+		prerequisite = { focus = FRA_the_young_school }
 		x = -1
 		y = 1
 		relative_position_id = FRA_the_young_school
@@ -9162,7 +9162,7 @@ create_equipment_variant = {
 	focus = {
 		id = FRA_surface_combat
 		icon = GFX_focus_generic_destroyer
-	 	prerequisite = { focus = FRA_the_young_school }
+		prerequisite = { focus = FRA_the_young_school }
 		x = 1
 		y = 1
 		relative_position_id = FRA_the_young_school
@@ -9183,8 +9183,8 @@ create_equipment_variant = {
 	focus = {
 		id = FRA_improved_screen_ships
 		icon = GFX_goal_generic_navy_cruiser
-	 	prerequisite = { focus = FRA_surface_combat }
-	 	prerequisite = { focus = FRA_undersea_combat }
+		prerequisite = { focus = FRA_surface_combat }
+		prerequisite = { focus = FRA_undersea_combat }
 		x = 0
 		y = 2
 		relative_position_id = FRA_surface_combat
@@ -9203,16 +9203,16 @@ create_equipment_variant = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = FRA_naval_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
-	 	prerequisite = { 
-	 		focus = FRA_prioritize_the_joffre
-	 		focus = FRA_rush_the_richelieus
-	 		focus = FRA_improved_screen_ships
-	 	}
+		prerequisite = {
+			focus = FRA_prioritize_the_joffre
+			focus = FRA_rush_the_richelieus
+			focus = FRA_improved_screen_ships
+		}
 		x = 3
 		y = 1
 		relative_position_id = FRA_rush_the_richelieus
@@ -9231,7 +9231,7 @@ create_equipment_variant = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = FRA_air_focus
@@ -9239,7 +9239,7 @@ create_equipment_variant = {
 		x = 9
 		y = 0
 		relative_position_id = FRA_naval_rearmament
-		
+
 		cost = 10
 		available_if_capitulated = yes
 
@@ -9321,7 +9321,7 @@ create_equipment_variant = {
 		id = FRA_fighter_focus
 		icon = GFX_goal_generic_air_fighter
 		mutually_exclusive = { focus = FRA_bomber_focus }
-	 	prerequisite = { focus = FRA_air_focus }
+		prerequisite = { focus = FRA_air_focus }
 		x = -1
 		y = 1
 		relative_position_id = FRA_air_focus
@@ -9342,7 +9342,7 @@ create_equipment_variant = {
 	focus = {
 		id = FRA_heavy_fighter_focus
 		icon = GFX_goal_generic_air_fighter2
-	 	prerequisite = { focus = FRA_fighter_focus }
+		prerequisite = { focus = FRA_fighter_focus }
 		x = -1
 		y = 1
 		relative_position_id = FRA_fighter_focus
@@ -9364,7 +9364,7 @@ create_equipment_variant = {
 		id = FRA_bomber_focus
 		icon = GFX_goal_generic_air_bomber
 		mutually_exclusive = { focus = FRA_fighter_focus }
-	 	prerequisite = { focus = FRA_air_focus }
+		prerequisite = { focus = FRA_air_focus }
 		x = 1
 		y = 1
 		relative_position_id = FRA_air_focus
@@ -9385,10 +9385,10 @@ create_equipment_variant = {
 	focus = {
 		id = FRA_air_doctrine
 		icon = GFX_goal_generic_air_doctrine
-	 	prerequisite = { 
-	 		focus = FRA_fighter_focus 
-	 		focus = FRA_bomber_focus
-	 	}
+		prerequisite = {
+			focus = FRA_fighter_focus
+			focus = FRA_bomber_focus
+		}
 		x = 1
 		y = 1
 		relative_position_id = FRA_fighter_focus
@@ -9411,7 +9411,7 @@ create_equipment_variant = {
 	focus = {
 		id = FRA_heavy_bomber_focus
 		icon = GFX_goal_generic_occupy_start_war
-	 	prerequisite = { focus = FRA_bomber_focus }
+		prerequisite = { focus = FRA_bomber_focus }
 		x = 1
 		y = 1
 		relative_position_id = FRA_bomber_focus
@@ -9432,7 +9432,7 @@ create_equipment_variant = {
 	focus = {
 		id = FRA_naval_bomber_focus
 		icon = GFX_goal_generic_air_naval_bomber
-	 	prerequisite = { focus = FRA_bomber_focus }
+		prerequisite = { focus = FRA_bomber_focus }
 		x = 3
 		y = 1
 		relative_position_id = FRA_bomber_focus

@@ -67,7 +67,7 @@ units = {
 
 	# Submarines, purchased by Latvia in France, delivered to United Baltic States
 	fleet = {
-		name = "Baltijas Zemūdeņu Flotile"			
+		name = "Baltijas Zemūdeņu Flotile"
 		naval_base = 9340 # Riga
 		task_force = {
 			name = "Baltijas Zemūdeņu Flotile"
@@ -94,6 +94,6 @@ units = {
 		}
 	}
 }
-		}					
+		}
 	}
 }

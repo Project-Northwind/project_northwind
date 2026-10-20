@@ -22,7 +22,7 @@ instant_effect = {
 			creator = "SIA"
 			version_name = "Sri Ayuthia Class"
 		}
-		name = "HTMS Sri Ayuthia" 
+		name = "HTMS Sri Ayuthia"
 		requested_factories = 1
 		progress = 0.05
 		amount = 1
@@ -33,7 +33,7 @@ instant_effect = {
 			creator = "SIA"
 			version_name = "Sri Ayuthia Class"
 		}
-		name = "HTMS Dhonburi" 
+		name = "HTMS Dhonburi"
 		requested_factories = 1
 		progress = 0.03
 		amount = 1
@@ -44,7 +44,7 @@ instant_effect = {
 			creator = "SIA"
 			version_name = "Trad Class"
 		}
-		name = "HTMS Trad" 
+		name = "HTMS Trad"
 		requested_factories = 1
 		progress = 0.9
 		amount = 1
@@ -55,7 +55,7 @@ instant_effect = {
 			creator = "SIA"
 			version_name = "Trad Class"
 		}
-		name = "HTMS Puket" 
+		name = "HTMS Puket"
 		requested_factories = 1
 		progress = 0.87
 		amount = 1
@@ -66,7 +66,7 @@ instant_effect = {
 			creator = "SIA"
 			version_name = "Trad Class"
 		}
-		name = "HTMS Patani" 
+		name = "HTMS Patani"
 		requested_factories = 1
 		progress = 0.4
 		amount = 1
@@ -77,7 +77,7 @@ instant_effect = {
 			creator = "SIA"
 			version_name = "Trad Class"
 		}
-		name = "HTMS Surasdra" 
+		name = "HTMS Surasdra"
 		requested_factories = 1
 		progress = 0.35
 		amount = 1

@@ -37,7 +37,7 @@ joint_focus = {
 
     allow_branch = {
 		has_dlc = "Thunder at Our Gates"
-    	if = {
+		if = {
 			limit = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -45,12 +45,12 @@ joint_focus = {
 				}
 			}
             NOT = {
-            	AND = {
+				AND = {
 					INS = {
 						has_completed_focus = INS_underground_revolution
 					}
 					#original_tag = INS
-            	}
+				}
 			}
 		}
     }
@@ -93,7 +93,7 @@ joint_focus = {
 			limit = { original_tag = HOL }
 			add_political_power = 25
 
-			
+
 		}
 	}
 
@@ -132,7 +132,7 @@ joint_focus = {
 
     allow_branch = {
 		has_dlc = "Thunder at Our Gates"
-    	if = {
+		if = {
 			limit = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -281,13 +281,13 @@ joint_focus = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 			add_political_power = 75
 			INS = {
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = -50
 					localization = INSHOL_reform_knil
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -474,12 +474,12 @@ joint_focus = {
 					type = arms_factory
 					level = 1
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
 					amount = 1000
 				}
 			}
-			
+
 		}
 
 	}
@@ -528,12 +528,12 @@ joint_focus = {
 				}
 			}
 			else = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
 					amount = 1000
 				}
 			}
-			
+
 		}
 	}
 }
@@ -665,13 +665,13 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 			INS = {
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = -100
 					localization = INSHOL_manado_military_academy
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -813,13 +813,13 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 			INS = {
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = -150
 					localization = INSHOL_infantry_training_in_borneo
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -978,13 +978,13 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 			INS = {
-				add_autonomy_score = { 
-					value = -150 
+				add_autonomy_score = {
+					value = -150
 					localization = INSHOL_modernize_knil
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -1100,7 +1100,7 @@ joint_focus = {
 							days = 240
 							sub_doctrine = rangers_2
 						}
-					}					
+					}
 				}
 				else = {
 					army_experience = 50
@@ -1140,7 +1140,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -1199,7 +1199,7 @@ joint_focus = {
 							days = 240
 							sub_doctrine = rangers_2
 						}
-					}					
+					}
 				}
 				else = {
 					army_experience = 50
@@ -1313,7 +1313,7 @@ joint_focus = {
 							days = 240
 							sub_doctrine = mountaineers_2
 						}
-					}					
+					}
 				}
 				else = {
 					add_tech_bonus = {
@@ -1355,7 +1355,7 @@ joint_focus = {
 							days = 240
 							sub_doctrine = mountaineers_2
 						}
-					}					
+					}
 				}
 				else = {
 					add_tech_bonus = {
@@ -1370,7 +1370,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -1416,7 +1416,7 @@ joint_focus = {
 							days = 240
 							sub_doctrine = mountaineers_2
 						}
-					}					
+					}
 				}
 				else = {
 					add_tech_bonus = {
@@ -1458,7 +1458,7 @@ joint_focus = {
 							days = 240
 							sub_doctrine = mountaineers_2
 						}
-					}					
+					}
 				}
 				else = {
 					add_tech_bonus = {
@@ -1519,7 +1519,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -1674,7 +1674,7 @@ joint_focus = {
 				ahead_reduction = 1
 				name = INSHOL_knil_engineers
 			}
-			
+
 		}
 
 		if = {
@@ -1682,7 +1682,7 @@ joint_focus = {
 				original_tag = HOL
 			}
 
-			
+
 		}
 	}
 
@@ -1703,7 +1703,7 @@ joint_focus = {
 				ahead_reduction = 1
 				name = INSHOL_knil_engineers
 			}
-			
+
 		}
 	}
 }
@@ -1751,7 +1751,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -1813,7 +1813,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 
@@ -1839,7 +1839,7 @@ joint_focus = {
 				category = motorized_equipment
 				ahead_reduction = 1
 				name = INSHOL_license_dutch_weapon_blueprints
-			}	
+			}
 		}
 	}
 
@@ -1875,7 +1875,7 @@ joint_focus = {
 				category = motorized_equipment
 				ahead_reduction = 1
 				name = INSHOL_license_dutch_weapon_blueprints
-			}	
+			}
 		}
 	}
 }
@@ -2022,13 +2022,13 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 			INS = {
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = -200
 					localization = INSHOL_java_factories
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -2116,7 +2116,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -2289,7 +2289,7 @@ joint_focus = {
 				original_tag = HOL
 			}
 
-			
+
 		}
 	}
 
@@ -2447,14 +2447,14 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 			INS = {
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = -100
 					localization = INSHOL_java_factories
 				}
 			}
 			air_experience = 100
 
-			
+
 		}
 	}
 
@@ -2646,7 +2646,7 @@ joint_focus = {
 					name = INSHOL_artillerie_inrichtingen
 				}
 			}
-			
+
 		}
 
 	}
@@ -2875,7 +2875,7 @@ joint_focus = {
 				category = rocketry
 				name = INSHOL_ai_pyrotechnische
 			}
-			
+
 		}
 
 	}
@@ -3040,7 +3040,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 		if = {
@@ -3075,7 +3075,7 @@ joint_focus = {
 				category = support_tech
 				name = INSHOL_bio_pharma
 			}
-			
+
 		}
 	}
 
@@ -3274,7 +3274,7 @@ joint_focus = {
 			air_experience = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_focus_time_reduce_fokker_tt
-			
+
 		}
 
 		if = {
@@ -3282,7 +3282,7 @@ joint_focus = {
 				original_tag = HOL
 			}
 
-			
+
 		}
 	}
 
@@ -3450,7 +3450,7 @@ joint_focus = {
 			air_experience = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_focus_time_reduce_fokker_tt
-			
+
 		}
 
 		if = {
@@ -3458,7 +3458,7 @@ joint_focus = {
 				original_tag = HOL
 			}
 
-			
+
 		}
 	}
 
@@ -3582,7 +3582,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 		}
 	}
 
@@ -3795,7 +3795,7 @@ joint_focus = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL } }
 			air_experience = 100
 
-			
+
 		}
 	}
 
@@ -3987,14 +3987,14 @@ joint_focus = {
 					limit = {
 						has_dlc = "By Blood Alone"
 					}
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = small_plane_airframe_1
 						amount = 50
 						producer = USA
 					}
 				}
 				else = {
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = fighter_equipment_1
 						amount = 50
 						producer = USA
@@ -4008,21 +4008,21 @@ joint_focus = {
 					limit = {
 						has_dlc = "By Blood Alone"
 					}
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = small_plane_airframe_1
 						amount = 80
 						producer = USA
 					}
 				}
 				else = {
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = fighter_equipment_1
 						amount = 80
 						producer = USA
 					}
 				}
 			}
-			
+
 		}
 
 		if = {
@@ -4030,7 +4030,7 @@ joint_focus = {
 				original_tag = HOL
 			}
 
-			
+
 		}
 	}
 
@@ -4064,7 +4064,7 @@ joint_focus = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = small_plane_airframe_1
 					amount = 50
 					producer = USA
@@ -4072,7 +4072,7 @@ joint_focus = {
 				}
 			}
 			else = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = fighter_equipment_1
 					amount = 50
 					producer = USA
@@ -4214,7 +4214,7 @@ joint_focus = {
 				uses = 2
 				category = air_equipment
 			}
-			
+
 		}
 
 		if = {
@@ -4222,7 +4222,7 @@ joint_focus = {
 				original_tag = HOL
 			}
 
-			
+
 		}
 	}
 
@@ -4248,7 +4248,7 @@ joint_focus = {
 				uses = 1
 				category = air_equipment
 			}
-			
+
 		}
 	}
 }
@@ -4299,7 +4299,7 @@ joint_focus = {
 #		else_if = {
 #			limit = { original_tag = HOL }
 #
-#			
+#
 #
 #		}
 #	}
@@ -4457,7 +4457,7 @@ joint_focus = {
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -4525,7 +4525,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -4580,7 +4580,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -4641,14 +4641,14 @@ joint_focus = {
 					level = 2
 					instant_build = yes
 				}
-				
+
 			}
 			navy_experience = 25
 		}
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -4673,7 +4673,7 @@ joint_focus = {
 					level = 2
 					instant_build = yes
 				}
-				
+
 			}
 
 			navy_experience = 25
@@ -4738,7 +4738,7 @@ joint_focus = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
 		}
 		else_if = {
@@ -4750,7 +4750,7 @@ joint_focus = {
 				category = dd_tech
 				name = INSHOL_destroyers
 			}
-			
+
 
 		}
 	}
@@ -4781,7 +4781,7 @@ joint_focus = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
 		}
 		else_if = {
@@ -4849,7 +4849,7 @@ joint_focus = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
 		}
 		else_if = {
@@ -4861,7 +4861,7 @@ joint_focus = {
 				category = ca_tech
 				name = INSHOL_cruisers
 			}
-			
+
 
 		}
 	}
@@ -4892,7 +4892,7 @@ joint_focus = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
 		}
 		else_if = {
@@ -4960,7 +4960,7 @@ joint_focus = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
 		}
 		else_if = {
@@ -4972,7 +4972,7 @@ joint_focus = {
 				category = ss_tech
 				name = INSHOL_submarines
 			}
-			
+
 
 		}
 	}
@@ -5003,7 +5003,7 @@ joint_focus = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
 		}
 		else_if = {
@@ -5045,7 +5045,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -5054,7 +5054,7 @@ joint_focus = {
 		if = {
 			limit = { original_tag = INS }
 			add_ideas = INS_outsourced_navy_idea
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
@@ -5090,7 +5090,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -5099,7 +5099,7 @@ joint_focus = {
 		if = {
 			limit = { original_tag = INS }
 			add_ideas = INS_diverted_navy_funds_idea
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
@@ -5160,7 +5160,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -5319,7 +5319,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -5511,13 +5511,13 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 			INS = {
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = -75
 					localization = INSHOL_eastern_conscription
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -5842,7 +5842,7 @@ joint_focus = {
 			}
 			add_political_power = 75
 
-			
+
 		}
 	}
 
@@ -5869,7 +5869,7 @@ joint_focus = {
 			custom_effect_tooltip = if_they_refuse_tt
 			effect_tooltip = {
 				INS = {
-					add_autonomy_score = { 
+					add_autonomy_score = {
 						value = 250
 						localization = INS_loyalist_events.1.t
 					}
@@ -6003,7 +6003,7 @@ create_equipment_variant = {
 		else_if = {
 			limit = { original_tag = HOL INS = { is_subject_of = HOL} }
 
-			
+
 
 		}
 	}
@@ -6145,7 +6145,7 @@ joint_focus = {
 			original_tag = HOL
 		}
 		has_dlc = "Thunder at Our Gates"
-    	if = {
+		if = {
 			limit = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -6229,7 +6229,7 @@ joint_focus = {
 				limit = {
 					is_subject_of = HOL
 				}
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = -100
 					localization = INSHOL_east_indies_investments
 				}
@@ -6240,7 +6240,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 
 		}
 	}
@@ -6252,7 +6252,7 @@ joint_focus = {
 				limit = {
 					is_subject_of = HOL
 				}
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = -100
 					localization = INSHOL_east_indies_investments
 				}
@@ -6372,7 +6372,7 @@ joint_focus = {
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = HOL_royal_dutch_shell
 
-			
+
 		}
 	}
 
@@ -6470,7 +6470,7 @@ joint_focus = {
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 
 
 		}
@@ -6624,8 +6624,8 @@ joint_focus = {
 				limit = { original_tag = INS }
 				custom_effect_tooltip = INSHOL_investments_in_civ_railways_tt
 				hidden_effect = {
-					add_autonomy_score = { 
-						value = 250 
+					add_autonomy_score = {
+						value = 250
 						localization = INSHOL_investments_in_civ_railways
 					}
 				}
@@ -6635,8 +6635,8 @@ joint_focus = {
 				custom_effect_tooltip = INSHOL_investments_in_civ_railways_tt
 				hidden_effect = {
 					INS = {
-						add_autonomy_score = { 
-							value = -250 
+						add_autonomy_score = {
+							value = -250
 							localization = INSHOL_investments_in_civ_railways
 						}
 					}
@@ -6766,8 +6766,8 @@ joint_focus = {
 			}
 			if = {
 				limit = { original_tag = INS }
-				add_autonomy_score = { 
-					value = 250 
+				add_autonomy_score = {
+					value = 250
 					localization = INSHOL_rubber_taxation
 				}
 			}
@@ -6775,8 +6775,8 @@ joint_focus = {
 				limit = { original_tag = HOL }
 				INS = {
 					give_resource_rights = {
-						receiver = HOL 
-						state = 1049 #Medan and Riouw 
+						receiver = HOL
+						state = 1049 #Medan and Riouw
 					}
 				}
 			}
@@ -6797,8 +6797,8 @@ joint_focus = {
 			}
 			if = {
 				limit = { original_tag = INS }
-				add_autonomy_score = { 
-					value = 250 
+				add_autonomy_score = {
+					value = 250
 					localization = INSHOL_rubber_taxation
 				}
 			}
@@ -6806,8 +6806,8 @@ joint_focus = {
 				limit = { original_tag = HOL }
 				INS = {
 					give_resource_rights = {
-						receiver = HOL 
-						state = 1049 #Medan and Riouw 
+						receiver = HOL
+						state = 1049 #Medan and Riouw
 					}
 				}
 			}
@@ -6907,7 +6907,7 @@ joint_focus = {
 				limit = { original_tag = HOL }
 				add_political_power = 150
 
-				
+
 			}
 		}
 	}
@@ -7068,7 +7068,7 @@ joint_focus = {
 			}
 			if = {
 				limit = { original_tag = INS }
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = 100
 					localization = INSHOL_indonesian_cheap_labor
 				}
@@ -7088,7 +7088,7 @@ joint_focus = {
 				limit = { original_tag = HOL }
 				add_ideas = HOL_indonesian_cheap_labor
 
-				
+
 			}
 		}
 	}
@@ -7107,7 +7107,7 @@ joint_focus = {
 			}
 			if = {
 				limit = { original_tag = INS }
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = 100
 					localization = INSHOL_indonesian_cheap_labor
 				}
@@ -7462,14 +7462,14 @@ joint_focus = {
 					limit = {
 						is_subject_of = HOL
 					}
-					add_autonomy_score = { 
+					add_autonomy_score = {
 						value = -75
 						localization = INSHOL_padang_port
 					}
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -7516,7 +7516,7 @@ joint_focus = {
 					limit = {
 						is_subject_of = HOL
 					}
-					add_autonomy_score = { 
+					add_autonomy_score = {
 						value = -75
 						localization = INSHOL_padang_port
 					}
@@ -7664,7 +7664,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 
 		}
 	}
@@ -7840,7 +7840,7 @@ joint_focus = {
 					type = tungsten
 					amount = 6
 				}
-			}			
+			}
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -7849,13 +7849,13 @@ joint_focus = {
 					limit = {
 						is_subject_of = HOL
 					}
-					add_autonomy_score = { 
-						value = -50 
+					add_autonomy_score = {
+						value = -50
 						localization = INSHOL_subsidize_bauxite
 					}
 				}
 			}
-			
+
 
 		}
 	}
@@ -7875,7 +7875,7 @@ joint_focus = {
 					type = tungsten
 					amount = 6
 				}
-			}	
+			}
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -7884,8 +7884,8 @@ joint_focus = {
 					limit = {
 						is_subject_of = HOL
 					}
-					add_autonomy_score = { 
-						value = -50 
+					add_autonomy_score = {
+						value = -50
 						localization = INSHOL_subsidize_bauxite
 					}
 				}
@@ -8006,13 +8006,13 @@ joint_focus = {
 					limit = {
 						is_subject_of = HOL
 					}
-					add_autonomy_score = { 
-						value = -150 
+					add_autonomy_score = {
+						value = -150
 						localization = INSHOL_agricultural_subsidies
 					}
 				}
 			}
-			
+
 			add_ideas = HOL_agricultural_taxes
 		}
 	}
@@ -8043,8 +8043,8 @@ joint_focus = {
 						limit = {
 							is_subject_of = HOL
 						}
-						add_autonomy_score = { 
-							value = -150 
+						add_autonomy_score = {
+							value = -150
 							localization = INSHOL_agricultural_subsidies
 						}
 					}
@@ -8206,7 +8206,7 @@ joint_focus = {
 			limit = { original_tag = HOL }
 			add_ideas = HOL_cheap_sugar
 
-			
+
 		}
 	}
 
@@ -8423,7 +8423,7 @@ joint_focus = {
 			limit = { original_tag = HOL }
 			add_ideas = HOL_cheap_lumber
 
-			
+
 		}
 	}
 
@@ -8640,7 +8640,7 @@ joint_focus = {
 				limit = { original_tag = HOL }
 
 
-				
+
 			}
 		}
 	}
@@ -8779,8 +8779,8 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		if = {
 			limit = { original_tag = INS }
-			add_autonomy_score = { 
-				value = 300 
+			add_autonomy_score = {
+				value = 300
 				localization = INSHOL_economic_integration
 			}
 
@@ -8798,15 +8798,15 @@ joint_focus = {
 			limit = { original_tag = HOL }
 			add_stability = 0.1
 
-			
+
 		}
 	}
 
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			add_autonomy_score = { 
-				value = 300 
+			add_autonomy_score = {
+				value = 300
 				localization = INSHOL_economic_integration
 			}
 
@@ -8881,14 +8881,14 @@ joint_focus = {
 			effect_tooltip = {
 				remove_advisor_role = {
 					character = INS_soetardjo_kartohadikusomo
-					slot = political_advisor 
+					slot = political_advisor
 				}
 			}
 		}
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 
 		}
 	}
@@ -8911,19 +8911,19 @@ joint_focus = {
 
 			remove_advisor_role = {
 				character = INS_mohammad_hunsi_tharmin
-				slot = political_advisor 
+				slot = political_advisor
 			}
 			remove_advisor_role = {
 				character = INS_soetardjo_kartohadikusomo
-				slot = political_advisor 
+				slot = political_advisor
 			}
 			remove_advisor_role = {
 				character = INS_adipati_soejono
-				slot = political_advisor 
+				slot = political_advisor
 			}
 			remove_advisor_role = {
 				character = INS_oto_iskandar_di_nata
-				slot = political_advisor 
+				slot = political_advisor
 			}
 		}
 		else_if = {
@@ -8991,7 +8991,7 @@ joint_focus = {
 				days = 365
 			}
 
-			
+
 		}
 	}
 
@@ -9068,7 +9068,7 @@ joint_focus = {
 						industrial_complex > 0
 					}
 					remove_building = {
-						type = industrial_complex 
+						type = industrial_complex
 						level = 1
 					}
 				}
@@ -9083,7 +9083,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 		}
 	}
 
@@ -9105,7 +9105,7 @@ joint_focus = {
 						industrial_complex > 0
 					}
 					remove_building = {
-						type = industrial_complex 
+						type = industrial_complex
 						level = 1
 					}
 				}
@@ -9228,7 +9228,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		if = {
 			limit = { original_tag = INS }
-			add_autonomy_score = { 
+			add_autonomy_score = {
 				value = 500
 				localization = INSHOL_emergency_powers_gov_general
 			}
@@ -9239,14 +9239,14 @@ joint_focus = {
 			add_political_power = 200
 			add_war_support = -0.05
 
-			
+
 		}
 	}
 
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			add_autonomy_score = { 
+			add_autonomy_score = {
 				value = 500
 				localization = INSHOL_emergency_powers_gov_general
 			}
@@ -9313,7 +9313,7 @@ joint_focus = {
 					}
 					impassable = no
 				}
-				prioritize = { 1058 } 
+				prioritize = { 1058 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -9325,7 +9325,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 
 		}
 	}
@@ -9360,7 +9360,7 @@ joint_focus = {
 					}
 					impassable = no
 				}
-				prioritize = { 1058 } 
+				prioritize = { 1058 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -9408,8 +9408,8 @@ joint_focus = {
 				}
 				add_compliance = 10
 			}
-			add_autonomy_score = { 
-				value = -100 
+			add_autonomy_score = {
+				value = -100
 				localization = INSHOL_loyalty_to_crown
 			}
 			if = {
@@ -9431,7 +9431,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 
 		}
 	}
@@ -9448,8 +9448,8 @@ joint_focus = {
 				}
 				add_compliance = 10
 			}
-			add_autonomy_score = { 
-				value = -100 
+			add_autonomy_score = {
+				value = -100
 				localization = INSHOL_loyalty_to_crown
 			}
 			custom_effect_tooltip = newline_tt
@@ -9579,7 +9579,7 @@ joint_focus = {
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -9675,7 +9675,7 @@ joint_focus = {
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -9762,7 +9762,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 
 		}
 	}
@@ -9851,7 +9851,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 
 		}
 	}
@@ -9998,7 +9998,7 @@ joint_focus = {
 				indonesia_union_HOL_START_effect = yes
 			}
 
-			
+
 		}
 	}
 
@@ -10062,7 +10062,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 
 		}
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -10171,8 +10171,8 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		if = {
 			limit = { original_tag = INS }
-			add_autonomy_score = { 
-				value = -250 
+			add_autonomy_score = {
+				value = -250
 				localization = INSHOL_urge_gov_veto
 			}
 		}
@@ -10180,15 +10180,15 @@ joint_focus = {
 			limit = { original_tag = HOL }
 			add_political_power = -50
 
-			
+
 		}
 	}
 
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			add_autonomy_score = { 
-				value = -250 
+			add_autonomy_score = {
+				value = -250
 				localization = INSHOL_urge_gov_veto
 			}
 		}
@@ -10323,7 +10323,7 @@ joint_focus = {
 #				flag = INS_governor_veto_available
 #				value = 0
 #			}
-#			add_autonomy_score = { 
+#			add_autonomy_score = {
 #				value = 300
 #				localization = INSHOL_eventual_autonomy
 #			}
@@ -10334,7 +10334,7 @@ joint_focus = {
 #			limit = { original_tag = HOL }
 #			custom_effect_tooltip = INS_volksraad_decisions_no_reject
 #
-#			
+#
 #		}
 #		custom_effect_tooltip = generic_skip_one_line_tt
 #		custom_effect_tooltip = INS_focus_time_reduce_tjarda_tt
@@ -10347,7 +10347,7 @@ joint_focus = {
 #				flag = INS_governor_veto_available
 #				value = 0
 #			}
-#			add_autonomy_score = { 
+#			add_autonomy_score = {
 #				value = 300
 #				localization = INSHOL_eventual_autonomy
 #			}
@@ -10479,7 +10479,7 @@ joint_focus = {
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 		}
 	}
 
@@ -10555,7 +10555,7 @@ joint_focus = {
 		else_if = {
 			limit = { original_tag = HOL }
 
-			
+
 
 		}
 	}
@@ -10574,9 +10574,9 @@ joint_focus = {
 					country_leader = {
 						ideology = conservatism
 						expire = 1965.1.1.1
-						traits = {  } 
+						traits = {  }
 					}
-				}	
+				}
 			}
 			set_politics = {
 				ruling_party = democratic
@@ -10901,9 +10901,9 @@ joint_focus = {
 						country_leader = {
 							ideology = conservatism
 							expire = 1965.1.1.1
-							traits = {  } 
+							traits = {  }
 						}
-					}	
+					}
 				}
 			}
 			set_politics = {
@@ -11180,8 +11180,8 @@ joint_focus = {
 	}
 
     allow_branch = {
-    	has_dlc = "Thunder at Our Gates"
-    	if = {
+		has_dlc = "Thunder at Our Gates"
+		if = {
 			limit = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
@@ -11310,7 +11310,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -11330,7 +11330,7 @@ joint_focus = {
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -11404,7 +11404,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -11425,7 +11425,7 @@ joint_focus = {
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -11495,7 +11495,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -11516,7 +11516,7 @@ joint_focus = {
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -11655,7 +11655,7 @@ joint_focus = {
 				}
 				set_country_flag = HOL_can_create_factions_before_remove
 			}
-			
+
 			set_rule = {
 				can_join_factions = no
 			}
@@ -11686,7 +11686,7 @@ joint_focus = {
 				}
 				set_country_flag = HOL_can_create_factions_before_remove
 			}
-			
+
 			set_rule = {
 				can_join_factions = no
 			}
@@ -11735,7 +11735,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -11799,7 +11799,7 @@ joint_focus = {
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -11897,7 +11897,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -11961,7 +11961,7 @@ joint_focus = {
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -12141,7 +12141,7 @@ joint_focus = {
 			has_war_with = HOL
 		}
 	}
-	
+
 	will_lead_to_war_with = HOL
 	prerequisite = { focus = INSHOL_reasserting_control }
 	mutually_exclusive = { }
@@ -12248,7 +12248,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -12267,7 +12267,7 @@ joint_focus = {
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
@@ -12324,7 +12324,7 @@ joint_focus = {
 				limit = {
 					country_exists = USA
 					NOT = {
-						has_war_with = USA 
+						has_war_with = USA
 						is_embargoed_by = USA
 						USA = {
 							is_in_faction_with = HOL
@@ -12340,14 +12340,14 @@ joint_focus = {
 							has_tech = improved_infantry_weapons
 							USA = { has_tech = improved_infantry_weapons }
 						}
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_2
 							amount = var:INS_guns_from_seek_help_focus
 							producer = USA
 						}
 					}
 					else = {
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_1
 							amount = var:INS_guns_from_seek_help_focus
 							producer = USA
@@ -12365,7 +12365,7 @@ joint_focus = {
 				limit = {
 					country_exists = JAP
 					NOT = {
-						has_war_with = JAP 
+						has_war_with = JAP
 						is_embargoed_by = JAP
 						JAP = {
 							is_in_faction_with = HOL
@@ -12381,14 +12381,14 @@ joint_focus = {
 							has_tech = improved_infantry_weapons
 							JAP = { has_tech = improved_infantry_weapons }
 						}
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_2
 							amount = var:INS_guns_from_seek_help_focus
 							producer = JAP
 						}
 					}
 					else = {
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_1
 							amount = var:INS_guns_from_seek_help_focus
 							producer = JAP
@@ -12406,7 +12406,7 @@ joint_focus = {
 				limit = {
 					country_exists = AST
 					NOT = {
-						has_war_with = AST 
+						has_war_with = AST
 						is_embargoed_by = AST
 						AST = {
 							is_in_faction_with = HOL
@@ -12425,14 +12425,14 @@ joint_focus = {
 							has_tech = improved_infantry_weapons
 							AST = { has_tech = improved_infantry_weapons }
 						}
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_2
 							amount = var:INS_guns_from_seek_help_focus
 							producer = AST
 						}
 					}
 					else = {
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_1
 							amount = var:INS_guns_from_seek_help_focus
 							producer = AST
@@ -12450,7 +12450,7 @@ joint_focus = {
 				limit = {
 					country_exists = RAJ
 					NOT = {
-						has_war_with = RAJ 
+						has_war_with = RAJ
 						is_embargoed_by = RAJ
 						RAJ = {
 							is_in_faction_with = HOL
@@ -12469,14 +12469,14 @@ joint_focus = {
 							has_tech = improved_infantry_weapons
 							RAJ = { has_tech = improved_infantry_weapons }
 						}
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_2
 							amount = var:INS_guns_from_seek_help_focus
 							producer = RAJ
 						}
 					}
 					else = {
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_1
 							amount = var:INS_guns_from_seek_help_focus
 							producer = RAJ
@@ -12494,7 +12494,7 @@ joint_focus = {
 				limit = {
 					country_exists = CHI
 					NOT = {
-						has_war_with = CHI 
+						has_war_with = CHI
 						is_embargoed_by = CHI
 						CHI = {
 							is_in_faction_with = HOL
@@ -12510,14 +12510,14 @@ joint_focus = {
 							has_tech = improved_infantry_weapons
 							CHI = { has_tech = improved_infantry_weapons }
 						}
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_2
 							amount = var:INS_guns_from_seek_help_focus
 							producer = CHI
 						}
 					}
 					else = {
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_1
 							amount = var:INS_guns_from_seek_help_focus
 							producer = CHI
@@ -12535,7 +12535,7 @@ joint_focus = {
 				limit = {
 					country_exists = PHI
 					NOT = {
-						has_war_with = PHI 
+						has_war_with = PHI
 						is_embargoed_by = PHI
 						PHI = {
 							is_in_faction_with = HOL
@@ -12551,14 +12551,14 @@ joint_focus = {
 							has_tech = improved_infantry_weapons
 							PHI = { has_tech = improved_infantry_weapons }
 						}
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_2
 							amount = var:INS_guns_from_seek_help_focus
 							producer = PHI
 						}
 					}
 					else = {
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = infantry_equipment_1
 							amount = var:INS_guns_from_seek_help_focus
 							producer = PHI
@@ -12576,18 +12576,18 @@ joint_focus = {
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 		}
 	}
 
 	completion_reward_joint_member = {
 		if = {
 			limit = { original_tag = INS }
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 		}
 	}
 }
@@ -12645,7 +12645,7 @@ joint_focus = {
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 		}
 	}
 
@@ -12658,11 +12658,11 @@ joint_focus = {
 					hours = 4
 				}
 			}
-			
+
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 		}
 	}
 }
@@ -12848,7 +12848,7 @@ joint_focus = {
 				id = INS_revolution_events.42
 				hours = 4
 			}
-			
+
 		}
 	}
 }
@@ -12892,7 +12892,7 @@ joint_focus = {
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 		}
 	}
 
@@ -12903,7 +12903,7 @@ joint_focus = {
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 		}
 	}
 }
@@ -12985,7 +12985,7 @@ joint_focus = {
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 		}
 	}
 
@@ -13003,7 +13003,7 @@ joint_focus = {
 		}
 		else_if = {
 			limit = { original_tag = HOL }
-			
+
 		}
 	}
 }

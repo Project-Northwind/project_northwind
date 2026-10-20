@@ -19,7 +19,7 @@ units= {
 			ship = { name = "ARE Lazaga" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
 		}
 	}
-		
+
 	fleet = {
 		name = "Base Naval Cádiz"
 		naval_base = 1048  #Cádiz
@@ -39,7 +39,7 @@ units= {
 			ship = { name = "ARE B4" definition = submarine start_experience_factor = 0.075 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "B Class" } } }
 		}
 	}
-		
+
 	fleet = {
 		name = "Base Naval Cartagena"
 		naval_base = 10024  #Cartagena/Murcia
@@ -72,7 +72,7 @@ units= {
 			ship = { name = "ARE C6" definition = submarine start_experience_factor = 0.075 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = SPR version_name = "C Class" } } }
 		}
 	}
-} 
+}
 
 
 
@@ -89,7 +89,7 @@ instant_effect = {
 			creator = "SPR"
 			version_name = "Canarias Class"
 		}
-		name = "ARE Canarias" 
+		name = "ARE Canarias"
 		requested_factories = 1
 		progress = 0.70
 		amount = 1
@@ -100,7 +100,7 @@ instant_effect = {
 			creator = "SPR"
 			version_name = "Canarias Class"
 		}
-		name = "ARE Baleares" 
+		name = "ARE Baleares"
 		requested_factories = 1
 		progress = 0.60
 		amount = 1
@@ -112,7 +112,7 @@ instant_effect = {
 			creator = "SPR"
 			version_name = "Júpiter Class"
 		}
-		name = "ARE Júpiter" 
+		name = "ARE Júpiter"
 		requested_factories = 1
 		progress = 0.15
 		amount = 1
@@ -123,7 +123,7 @@ instant_effect = {
 			creator = "SPR"
 			version_name = "Júpiter Class"
 		}
-		name = "ARE Vulcano" 
+		name = "ARE Vulcano"
 		requested_factories = 1
 		progress = 0.15
 		amount = 1
@@ -135,7 +135,7 @@ instant_effect = {
 			creator = "SPR"
 			version_name = "Churucca Class"
 		}
-		name = "ARE Gravina" 
+		name = "ARE Gravina"
 		requested_factories = 1
 		progress = 0.50
 		amount = 1
@@ -146,7 +146,7 @@ instant_effect = {
 			creator = "SPR"
 			version_name = "Churucca Class"
 		}
-		name = "ARE Escaño" 
+		name = "ARE Escaño"
 		requested_factories = 1
 		progress = 0.50
 		amount = 1
@@ -157,7 +157,7 @@ instant_effect = {
 			creator = "SPR"
 			version_name = "Churucca Class"
 		}
-		name = "ARE Císcar" 
+		name = "ARE Císcar"
 		requested_factories = 1
 		progress = 0.40
 		amount = 1
@@ -168,7 +168,7 @@ instant_effect = {
 			creator = "SPR"
 			version_name = "Churucca Class"
 		}
-		name = "ARE Jorge Juan" 
+		name = "ARE Jorge Juan"
 		requested_factories = 1
 		progress = 0.20
 		amount = 1
@@ -179,7 +179,7 @@ instant_effect = {
 			creator = "SPR"
 			version_name = "Churucca Class"
 		}
-		name = "ARE Ulloa" 
+		name = "ARE Ulloa"
 		requested_factories = 1
 		progress = 0.20
 		amount = 1

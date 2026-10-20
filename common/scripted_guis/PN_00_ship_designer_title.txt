@@ -6,10 +6,9 @@ scripted_gui = {
 		parent_window_name = countryequipmentdesignerview
 
 		ai_enabled = { always = no }
-		
+
 		visible = {
-			
+
 		}
 	}
 }
-

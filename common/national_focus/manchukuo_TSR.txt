@@ -1,6 +1,6 @@
 focus_tree = {
 	id = manchukuo_focus_tsr
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -9,7 +9,7 @@ focus_tree = {
 			has_dlc = "No Compromise, No Surrender"
 		}
 	}
-	
+
 
 	default = no
 
@@ -22,7 +22,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -33,7 +33,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -75,7 +75,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		completion_reward = {
 			unlock_decision_category_tooltip = MAN_banditry_category
@@ -110,7 +110,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		completion_reward = {
 			army_experience = 30
@@ -133,7 +133,7 @@ focus_tree = {
 
 		available = {
 
-		}	
+		}
 
 		bypass = {
 
@@ -143,8 +143,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
-		
+
+
 		completion_reward = {
 			add_ideas = MAN_mukden_military_academy
 		}
@@ -176,7 +176,7 @@ focus_tree = {
 					has_opinion = {
 						target = ROOT
 						value > 74
-					}		
+					}
 				}
 			}
 		}
@@ -197,7 +197,7 @@ focus_tree = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = MAN_accepted_japanese_settlers_opm
-				}	
+				}
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -220,7 +220,7 @@ focus_tree = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = MAN_accepted_japanese_settlers_opm
-				}	
+				}
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -279,7 +279,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -319,7 +319,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -366,11 +366,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
-		
+
+
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_research_slot = 1			
+			add_research_slot = 1
 		}
 	}
 
@@ -400,7 +400,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -502,7 +502,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -540,7 +540,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_STABILITY }
-		
+
 
 		completion_reward = {
 
@@ -590,7 +590,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		search_filters = {  }
-		
+
 
 		completion_reward = {
 
@@ -635,7 +635,7 @@ focus_tree = {
 					creator = "JAP"
 					name = "Hai Wei"
 				}
-			}	
+			}
 		}
 	}
 
@@ -665,7 +665,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -699,7 +699,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -736,7 +736,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			
+
 			random_core_state = {
 				prioritize = { 328 }
 				limit = {
@@ -781,10 +781,10 @@ focus_tree = {
 				}
 				328 = {
 					is_fully_controlled_by = ROOT
-				} 
+				}
 				610 = {
 					is_fully_controlled_by = ROOT
-				} 
+				}
 				717 = {
 					is_fully_controlled_by = ROOT
 				}
@@ -799,7 +799,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -820,8 +820,8 @@ focus_tree = {
 					}
 				}
 			if = {
-				limit = { 
-					328 = { is_fully_controlled_by = ROOT } 
+				limit = {
+					328 = { is_fully_controlled_by = ROOT }
 					controls_state = 715
 					controls_state = 716
 				}
@@ -914,7 +914,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -934,7 +934,7 @@ focus_tree = {
 			unlock_decision_tooltip = MAN_develop_liaotung_iron_ore_deposits
 			unlock_decision_tooltip = MAN_establish_the_erdaojiang_special_steel_experimental_plant
 		}
-		
+
 	}
 
 	focus = {
@@ -963,7 +963,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1009,7 +1009,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1076,7 +1076,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -1170,7 +1170,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1226,7 +1226,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1260,7 +1260,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1293,7 +1293,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -1349,7 +1349,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		completion_reward = {
 
@@ -1417,7 +1417,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -1470,9 +1470,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
 
-		
+
+
 
 		completion_reward = {
 			JAP = {
@@ -1511,7 +1511,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
@@ -1519,7 +1519,7 @@ focus_tree = {
 			IF = {
 				limit = {
 					NOT = {
-						has_idea = MAN_strengthen_army 
+						has_idea = MAN_strengthen_army
 					}
 				}
 				add_ideas = MAN_mobilization
@@ -1536,7 +1536,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_tsr_strengthen_the_manchukuo_imperial_army
-		icon = GFX_focus_PRC_develop_the_army 
+		icon = GFX_focus_PRC_develop_the_army
 		prerequisite = { focus = MAN_tsr_alliance_with_the_kwantung_army }
 		x = 1
 		y = 1
@@ -1560,15 +1560,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
 
-		
+
+
 
 		completion_reward = {
 			IF = {
 				limit = {
 					NOT = {
-						has_idea = MAN_mobilization 
+						has_idea = MAN_mobilization
 					}
 				}
 				add_ideas = MAN_strengthen_army
@@ -1585,7 +1585,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_tsr_expand_xingan_army
-		icon = GFX_focus_secret_rearmament 
+		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = MAN_tsr_strengthen_the_manchukuo_imperial_army }
 		x = 1
 		y = 1
@@ -1611,7 +1611,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
@@ -1648,14 +1648,14 @@ focus_tree = {
 				    division = "name = \"1. Xing'an Army\" division_template = \"Xing'an Army\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
 				    owner = ROOT
 				    officer = {
-				    	name = MAN_kanjurjab
+						name = MAN_kanjurjab
 				    }
 				}
 				create_unit = {
 				    division = "name = \"2. Xing'an Army\" division_template = \"Xing'an Army\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
 				    owner = ROOT
 				    officer = {
-				    	name = MON_navaanneren
+						name = MON_navaanneren
 				    }
 				}
 			}
@@ -1748,7 +1748,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1816,7 +1816,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_tsr_vassalize_mengukuo
-		icon = GFX_focus_JAP_mengjiang_united_autonomous_government 
+		icon = GFX_focus_JAP_mengjiang_united_autonomous_government
 		prerequisite = { focus = MAN_tsr_chinese_leadership }
 		x = -1
 		y = 1
@@ -1854,7 +1854,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		
+
 
 		completion_reward = {
 			MEN = {
@@ -1892,7 +1892,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1920,8 +1920,8 @@ focus_tree = {
 
 		available = {
 			is_subject_of = JAP
-			compare_autonomy_state > autonomy_wtt_imperial_protectorate			
-			MAN = { 
+			compare_autonomy_state > autonomy_wtt_imperial_protectorate
+			MAN = {
 				ic_ratio = {
 					tag = JAP
 					ratio > 0.2
@@ -1942,7 +1942,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1953,15 +1953,15 @@ focus_tree = {
 			MAN_low_legitimacy_level_down_twice = yes
 			unlock_decision_tooltip = {
 				decision = MAN_request_full_control_over_china
-				show_effect_tooltip = no 
-			}	
+				show_effect_tooltip = no
+			}
 			set_cosmetic_tag = MAN_restored
 		}
 	}
 
 	focus = {
 		id = MAN_tsr_empire_of_manchukuo
-		icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun 
+		icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun
 		prerequisite = { focus = MAN_tsr_the_question_of_leadership }
 		x = 2
 		y = 1
@@ -1995,7 +1995,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2031,12 +2031,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
 
-		
+
+
 		completion_reward = {
 			add_dynamic_modifier = {
-			 	modifier = MAN_state_shintoism_dm
+				modifier = MAN_state_shintoism_dm
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = MAN_tsr_embrace_state_shintoism_tt
@@ -2070,17 +2070,17 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
 
-		
+
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = MAN_tsr_work_with_the_kempeitai
 				bonus = 0.75
 				uses = 2
 				category = military_police_tech
-			}	
-			
+			}
+
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -2129,9 +2129,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
 
-		
+
+
 		completion_reward = {
 			MAN_add_or_modify_state_shintoism = yes
 			add_to_variable = { MAN_state_shintoism_recruitable_population_factor = 0.05 tooltip = recruitable_population_factor_tt }
@@ -2173,9 +2173,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
 
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_ANNEXATION } 
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 50
@@ -2224,7 +2224,7 @@ focus_tree = {
 				limit = {
 					is_subject_of = JAP
 				}
-				JAP = { 
+				JAP = {
 					set_autonomy = {
 						target = MAN
 						autonomy_state = autonomy_wtt_imperial_subject
@@ -2249,7 +2249,7 @@ focus_tree = {
 						popularity = 0.5
 					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -2336,7 +2336,7 @@ focus_tree = {
 						instant_build = yes
 					}
 					add_extra_state_shared_building_slots = 1
-				} 
+				}
 			}
 
 		}
@@ -2414,11 +2414,11 @@ focus_tree = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-			
-	    	   		 	infantry = { x = 1 y = 0 }
+
+						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
-	    	   		 	infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 3 }
 
 						artillery_brigade = { x = 2 y = 0 }
 						artillery_brigade = { x = 2 y = 1 }
@@ -2428,23 +2428,23 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 328 }
 					create_unit = {
-						division = "name = \"1. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"1. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"2. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"2. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"3. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"3. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"4. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"4. Imperial Guards Division\" division_template = \"Imperial Guards Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
-				}			
-			}			
+				}
+			}
 		}
 	}
 
@@ -2500,7 +2500,7 @@ focus_tree = {
 			unlock_decision_tooltip = MAN_fund_underground_gun_shops
 			random_owned_controlled_state = {
 				limit = {
-					is_core_of = ROOT 	
+					is_core_of = ROOT
 					is_fully_controlled_by = ROOT
 					free_building_slots = {
 						building = arms_factory
@@ -2518,7 +2518,7 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					is_core_of = ROOT 	
+					is_core_of = ROOT
 					is_fully_controlled_by = ROOT
 					free_building_slots = {
 						building = arms_factory
@@ -2611,7 +2611,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
@@ -2634,7 +2634,7 @@ focus_tree = {
 		}
 
 		available = {
-		
+
 		}
 
 		bypass = {
@@ -2645,7 +2645,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		completion_reward = {
 			add_ideas = MAN_white_russian_advisers
@@ -2705,7 +2705,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2746,34 +2746,34 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 328 }
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0"
 						owner = MAN
 					}
-				}			
+				}
 			}
 
 		}
@@ -2791,7 +2791,7 @@ focus_tree = {
 			focus = MAN_tsr_bolster_nationalism
 		}
 
-		relative_position_id = MAN_tsr_five_equal_peoples 
+		relative_position_id = MAN_tsr_five_equal_peoples
 
 		cost = 10
 
@@ -2829,7 +2829,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		relative_position_id = MAN_tsr_question_the_emperors_authority 
+		relative_position_id = MAN_tsr_question_the_emperors_authority
 
 		cost = 10
 
@@ -2861,7 +2861,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		relative_position_id = MAN_tsr_bandit_recruitment 
+		relative_position_id = MAN_tsr_bandit_recruitment
 
 		cost = 5
 
@@ -2881,12 +2881,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		
+
 		completion_reward = {
 			add_ideas = MAN_peoples_army
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = MAN_tsr_ally_bandit_leaders_tt
-			custom_effect_tooltip = MAN_kim_il_sung_tt	
+			custom_effect_tooltip = MAN_kim_il_sung_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = available_military_high_command
@@ -2906,7 +2906,7 @@ focus_tree = {
 					KOR = {
 						KOR_kim_il_sung = {
 							set_nationality = MAN
-							add_corps_commander_role = { 
+							add_corps_commander_role = {
 								traits = { harsh_leader }
 								skill = 3
 								attack_skill = 3
@@ -2921,11 +2921,11 @@ focus_tree = {
 								country_leader = {
 									ideology = stalinism
 									expire = "1952.1.1.1"
-									traits = { JAP_socialist_revolutionary } 
+									traits = { JAP_socialist_revolutionary }
 								}
 							}
 						}
-					}	
+					}
 				}
 				division_template = {
 					name = "Northeast Counter-Japanese Division"
@@ -2944,40 +2944,40 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 328 }
 					create_unit = {
-						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6" 
+						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6" 
+						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6" 
+						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6" 
+						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6"
 						owner = MAN
 					}
 					create_unit = {
-						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6" 
+						division = "name = \"Northeast Counter-Japanese Division\" division_template = \"Northeast Counter-Japanese Division\" start_experience_factor = 0.6"
 						owner = MAN
 					}
-				}			
+				}
 			}
-			
+
 
 		}
 	}
 
 	focus = {
 		id = MAN_tsr_persuade_the_IMPRP
-		icon = GFX_focus_MAN_persuade_the_imprp 
+		icon = GFX_focus_MAN_persuade_the_imprp
 		prerequisite = { focus = MAN_tsr_bandit_recruitment  }
 		x = 3
 		y = 1
 
-		relative_position_id = MAN_tsr_bandit_recruitment 
+		relative_position_id = MAN_tsr_bandit_recruitment
 
 		cost = 10
 
@@ -3019,7 +3019,7 @@ focus_tree = {
 		x = 6
 		y = 1
 
-		relative_position_id = MAN_tsr_bandit_recruitment 
+		relative_position_id = MAN_tsr_bandit_recruitment
 
 		cost = 5
 
@@ -3066,13 +3066,13 @@ focus_tree = {
 				add_timed_idea = {
 					idea = MAN_korean_liberation_army_no_korea
 					days = 365
-				}	
+				}
 			}
-			
 
-			hidden_effect = { set_variable = { MAN_independence_target = OVERLORD } } #We're using a variable here because the saved event target becomes invalidated deep in ScopedEventTarget 
+
+			hidden_effect = { set_variable = { MAN_independence_target = OVERLORD } } #We're using a variable here because the saved event target becomes invalidated deep in ScopedEventTarget
 			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
-			effect_tooltip = {		
+			effect_tooltip = {
 				if = {
 					limit = {
 						is_in_faction_with = OVERLORD
@@ -3092,7 +3092,7 @@ focus_tree = {
 					leave_faction = yes
 				}
 				declare_war_on = {
-					target = var:MAN_independence_target 
+					target = var:MAN_independence_target
 					type = puppet_wargoal_focus
 				}
 			}
@@ -3117,7 +3117,7 @@ focus_tree = {
 				MEN = {
 					country_event = {
 						id = tsr_manchukuo.5
-						hours = 2 
+						hours = 2
 					}
 				}
 			}
@@ -3146,7 +3146,7 @@ focus_tree = {
 			focus = MAN_tsr_a_new_constitution
 		}
 
-		relative_position_id = MAN_tsr_a_new_dawn_over_manchuria 
+		relative_position_id = MAN_tsr_a_new_dawn_over_manchuria
 
 		cost = 5
 
@@ -3169,7 +3169,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = MAN_the_kangde_emperor
 			custom_effect_tooltip = generic_skip_one_line_tt
-			MAN_low_legitimacy_clear_all = yes	
+			MAN_low_legitimacy_clear_all = yes
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = MAN_illegitimate_government
 		}
@@ -3186,7 +3186,7 @@ focus_tree = {
 			focus = MAN_tsr_zhao_shangzhis_coup
 		}
 
-		relative_position_id = MAN_tsr_depose_puyi 
+		relative_position_id = MAN_tsr_depose_puyi
 
 		cost = 10
 
@@ -3230,7 +3230,7 @@ focus_tree = {
 				annex_country = {
 					target = MEN
 					transfer_troops = yes
-				}	
+				}
 			}
 			hidden_effect = {
 				614 = { add_core_of = ROOT }
@@ -3252,9 +3252,9 @@ focus_tree = {
 				1032 = { add_core_of = ROOT }
 				609 = { add_core_of = ROOT }
 				set_politics = {
-				 	ruling_party = democratic
-				 	elections_allowed = yes
-				 	election_frequency = 60
+					ruling_party = democratic
+					elections_allowed = yes
+					election_frequency = 60
 				}
 				set_party_name = {
 					ideology = democratic
@@ -3272,7 +3272,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		relative_position_id = MAN_tsr_the_new_beiyang_government 
+		relative_position_id = MAN_tsr_the_new_beiyang_government
 
 		cost = 10
 
@@ -3304,7 +3304,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		relative_position_id = MAN_tsr_the_new_beiyang_government 
+		relative_position_id = MAN_tsr_the_new_beiyang_government
 
 		cost = 10
 
@@ -3336,7 +3336,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		relative_position_id = MAN_tsr_the_new_beiyang_government 
+		relative_position_id = MAN_tsr_the_new_beiyang_government
 
 		cost = 10
 
@@ -3382,7 +3382,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		relative_position_id = MAN_tsr_the_southern_expedition 
+		relative_position_id = MAN_tsr_the_southern_expedition
 
 		cost = 10
 
@@ -3419,7 +3419,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL } 
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = MAN_rival_government
@@ -3450,7 +3450,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		relative_position_id = MAN_tsr_proclaim_the_republic_of_china 
+		relative_position_id = MAN_tsr_proclaim_the_republic_of_china
 
 		cost = 10
 
@@ -3488,7 +3488,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		relative_position_id = MAN_tsr_proclaim_the_republic_of_china 
+		relative_position_id = MAN_tsr_proclaim_the_republic_of_china
 
 		cost = 10
 
@@ -3548,7 +3548,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_tsr_zhao_shangzhis_coup
-		icon = GFX_focus_generic_spur_communist_revolutions 
+		icon = GFX_focus_generic_spur_communist_revolutions
 		prerequisite = { focus = MAN_tsr_depose_puyi  }
 		x = 2
 		y = 1
@@ -3557,7 +3557,7 @@ focus_tree = {
 			focus = MAN_tsr_the_new_beiyang_government
 		}
 
-		relative_position_id = MAN_tsr_depose_puyi 
+		relative_position_id = MAN_tsr_depose_puyi
 
 		cost = 10
 
@@ -3592,7 +3592,7 @@ focus_tree = {
 				annex_country = {
 					target = MEN
 					transfer_troops = yes
-				}	
+				}
 			}
 			set_politics = {
 				ruling_party = communism
@@ -3617,7 +3617,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		relative_position_id = MAN_tsr_zhao_shangzhis_coup 
+		relative_position_id = MAN_tsr_zhao_shangzhis_coup
 
 		cost = 10
 
@@ -3662,7 +3662,7 @@ focus_tree = {
 					NOT = {
 						has_idea = SIK_battle_for_sinkiang
 					}
-					is_faction_leader = no 
+					is_faction_leader = no
 				}
 				country_event = {
 					id = tsr_manchukuo.6
@@ -3684,7 +3684,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		relative_position_id = MAN_tsr_ally_the_soviet_republic 
+		relative_position_id = MAN_tsr_ally_the_soviet_republic
 
 		cost = 10
 
@@ -3718,12 +3718,12 @@ focus_tree = {
 
 	focus = {
 		id = MAN_tsr_the_long_march_south
-		icon = GFX_focus_PRC_towards_one_china 
+		icon = GFX_focus_PRC_towards_one_china
 		prerequisite = { focus = MAN_tsr_ally_the_soviet_republic  }
 		x = 0
 		y = 1
 
-		relative_position_id = MAN_tsr_ally_the_soviet_republic 
+		relative_position_id = MAN_tsr_ally_the_soviet_republic
 
 		cost = 10
 
@@ -3768,12 +3768,12 @@ focus_tree = {
 
 	focus = {
 		id = MAN_tsr_proclaim_the_peoples_republic
-		icon = GFX_focus_PRC_revolutionary_war_of_the_masses 
+		icon = GFX_focus_PRC_revolutionary_war_of_the_masses
 		prerequisite = { focus = MAN_tsr_the_long_march_south  }
 		x = 0
 		y = 1
 
-		relative_position_id = MAN_tsr_the_long_march_south 
+		relative_position_id = MAN_tsr_the_long_march_south
 
 		cost = 10
 
@@ -3847,7 +3847,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		relative_position_id = MAN_tsr_ally_the_soviet_republic 
+		relative_position_id = MAN_tsr_ally_the_soviet_republic
 
 		cost = 10
 
@@ -3874,9 +3874,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000 
+				amount = 5000
 				producer = SOV
 			}
 			add_offsite_building = { type = industrial_complex level = 1 }
@@ -3894,7 +3894,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		relative_position_id = MAN_tsr_soviet_aid 
+		relative_position_id = MAN_tsr_soviet_aid
 
 		cost = 10
 
@@ -3937,7 +3937,7 @@ focus_tree = {
 		prerequisite = { focus = MAN_tsr_bolster_nationalism  }
 		x = 0
 		y = 1
-		relative_position_id = MAN_tsr_bolster_nationalism 
+		relative_position_id = MAN_tsr_bolster_nationalism
 
 		cost = 10
 
@@ -3968,9 +3968,9 @@ focus_tree = {
 				country_leader = {
 					ideology = emperor_fascism
 					expire = "1960.1.1.1"
-					traits = { warrior_code } 
+					traits = { warrior_code }
 				}
-			}	
+			}
 
 			if = {
 				limit = {
@@ -3981,7 +3981,7 @@ focus_tree = {
 			}
 
 			add_stability = 0.1
-			
+
 			if = {
 				limit = {
 					has_idea = MAN_kwantung_veto
@@ -4019,7 +4019,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -4046,11 +4046,11 @@ focus_tree = {
 				strength_ratio = { tag = JAP ratio < 0.3 }
 				factor = 0
 			}
-			
+
 		}
 
 		available = {
-		
+
 		}
 
 		bypass = {
@@ -4073,7 +4073,7 @@ focus_tree = {
 				add_country_leader_trait = nationalist_symbol
 			}
 			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
-			effect_tooltip = {		
+			effect_tooltip = {
 				if = {
 					limit = {
 						is_in_faction_with = OVERLORD
@@ -4093,7 +4093,7 @@ focus_tree = {
 					leave_faction = yes
 				}
 				declare_war_on = {
-					target = var:MAN_independence_target 
+					target = var:MAN_independence_target
 					type = puppet_wargoal_focus
 				}
 			}
@@ -4144,7 +4144,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
@@ -4155,7 +4155,7 @@ focus_tree = {
 					NOT = {
 						has_country_leader_with_trait = nationalist_symbol
 					}
-					
+
 					is_subject = no
 				}
 				add_country_leader_trait = nationalist_symbol
@@ -4189,7 +4189,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			custom_effect_tooltip = MAN_tsr_reclaim_our_lost_possessions_tt
@@ -4218,7 +4218,7 @@ focus_tree = {
 						ROOT = {
 							create_wargoal = {
 								type = annex_everything
-								target = PREV 
+								target = PREV
 							}
 						}
 					}
@@ -4236,7 +4236,7 @@ focus_tree = {
 						ROOT = {
 							create_wargoal = {
 								type = annex_everything
-								target = PREV 
+								target = PREV
 							}
 						}
 					}
@@ -4254,7 +4254,7 @@ focus_tree = {
 						ROOT = {
 							create_wargoal = {
 								type = annex_everything
-								target = PREV 
+								target = PREV
 							}
 						}
 					}
@@ -4297,7 +4297,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		completion_reward = {
 			set_politics = {
@@ -4348,7 +4348,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		completion_reward = {
 
@@ -4395,7 +4395,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
@@ -4452,7 +4452,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
@@ -4461,7 +4461,7 @@ focus_tree = {
 			custom_effect_tooltip = MAN_tsr_raise_the_yong_ying_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-				
+
 			add_ideas = MAN_yong_ying_idea
 
 			hidden_effect = {
@@ -4471,7 +4471,7 @@ focus_tree = {
 				}
 				set_country_flag = MAN_yong_ying_system_is_active
 				division_template = {
-					name = "Yong Ying"		
+					name = "Yong Ying"
 				    division_names_group = CHI_GAR_01
 				    template_counter = 113
 					role = infantry
@@ -4519,7 +4519,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 
@@ -4565,7 +4565,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -4600,7 +4600,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -4645,7 +4645,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -4655,8 +4655,8 @@ focus_tree = {
 					NOT = { tag = event_target:WTT_current_china_leader }
 					is_subject = no
 				}
-				country_event = { 
-					id = wtt_manchukou.1 
+				country_event = {
+					id = wtt_manchukou.1
 					hours = 2
 				}
 			}
@@ -4689,7 +4689,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		completion_reward = {
 
@@ -4753,7 +4753,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		completion_reward = {
 			IF = {
@@ -4831,7 +4831,7 @@ focus_tree = {
 						}
 					}
 					XSM_ma_bufang = {
-					 	add_corps_commander_role = {
+						add_corps_commander_role = {
 						traits = { }
 						attack_skill = 4
 						defense_skill = 2
@@ -4912,7 +4912,7 @@ focus_tree = {
 				    division = "name = \"Fourth Gansu Braves\" division_template = \"Gansu Braves\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
 				    owner = ROOT
 				}
-			}	
+			}
 		}
 	}
 
@@ -4931,7 +4931,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -4942,7 +4942,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -5010,7 +5010,7 @@ focus_tree = {
 		}
 
 		available = {
-			all_state = { 
+			all_state = {
 				OR = {
 					NOT = { is_core_of = ROOT }
 					state = 729
@@ -5019,7 +5019,7 @@ focus_tree = {
 					state = 524
 					is_controlled_by = ROOT
 				}
-				
+
 			}
 		}
 
@@ -5035,7 +5035,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			MAN_low_legitimacy_clear_all = yes	
+			MAN_low_legitimacy_clear_all = yes
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -5051,7 +5051,7 @@ focus_tree = {
 				MAN_aisin_gioro_puyi = {
 					set_portraits = {
 						civilian = {
-							large = "GFX_portrait_man_henry_pu_yi_emperor" 
+							large = "GFX_portrait_man_henry_pu_yi_emperor"
 						}
 					}
 					set_character_name = {

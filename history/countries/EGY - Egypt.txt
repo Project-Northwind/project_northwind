@@ -1,4 +1,4 @@
-﻿capital = 907
+capital = 907
 
 # Starting tech
 set_technology = {
@@ -40,7 +40,7 @@ set_convoys = 20
 
 	add_political_power = 1198
 	add_command_power = 100
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -51,7 +51,7 @@ set_convoys = 20
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	set_technology = {
 		tech_support = 1
 		tech_recon = 1

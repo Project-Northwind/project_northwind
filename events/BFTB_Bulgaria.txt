@@ -24,13 +24,13 @@ add_namespace = bftb_bulgaria_british_influence
 add_namespace = bftb_bulgaria_democratic_international_policies
 
 
-#### ##    ## ######## ######## ########  ##    ##    ###    ##          ########    ###     ######  ######## ####  #######  ##    ##  ######  
- ##  ###   ##    ##    ##       ##     ## ###   ##   ## ##   ##          ##         ## ##   ##    ##    ##     ##  ##     ## ###   ## ##    ## 
- ##  ####  ##    ##    ##       ##     ## ####  ##  ##   ##  ##          ##        ##   ##  ##          ##     ##  ##     ## ####  ## ##       
- ##  ## ## ##    ##    ######   ########  ## ## ## ##     ## ##          ######   ##     ## ##          ##     ##  ##     ## ## ## ##  ######  
- ##  ##  ####    ##    ##       ##   ##   ##  #### ######### ##          ##       ######### ##          ##     ##  ##     ## ##  ####       ## 
- ##  ##   ###    ##    ##       ##    ##  ##   ### ##     ## ##          ##       ##     ## ##    ##    ##     ##  ##     ## ##   ### ##    ## 
-#### ##    ##    ##    ######## ##     ## ##    ## ##     ## ########    ##       ##     ##  ######     ##    ####  #######  ##    ##  ######  
+#### ##    ## ######## ######## ########  ##    ##    ###    ##          ########    ###     ######  ######## ####  #######  ##    ##  ######
+ ##  ###   ##    ##    ##       ##     ## ###   ##   ## ##   ##          ##         ## ##   ##    ##    ##     ##  ##     ## ###   ## ##    ##
+ ##  ####  ##    ##    ##       ##     ## ####  ##  ##   ##  ##          ##        ##   ##  ##          ##     ##  ##     ## ####  ## ##
+ ##  ## ## ##    ##    ######   ########  ## ## ## ##     ## ##          ######   ##     ## ##          ##     ##  ##     ## ## ## ##  ######
+ ##  ##  ####    ##    ##       ##   ##   ##  #### ######### ##          ##       ######### ##          ##     ##  ##     ## ##  ####       ##
+ ##  ##   ###    ##    ##       ##    ##  ##   ### ##     ## ##          ##       ##     ## ##    ##    ##     ##  ##     ## ##   ### ##    ##
+#### ##    ##    ##    ######## ##     ## ##    ## ##     ## ########    ##       ##     ##  ######     ##    ####  #######  ##    ##  ######
 
 #ZVENO DISPATCHER EVENT
 country_event = {
@@ -73,15 +73,15 @@ country_event = {
 				}
 				modifier = {
 					add = -30
-					check_variable = { BUL_zveno_loyalty = 75 compare = greater_than_or_equals }	
+					check_variable = { BUL_zveno_loyalty = 75 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -20
-					check_variable = { BUL_zveno_loyalty = 50 compare = greater_than_or_equals }	
+					check_variable = { BUL_zveno_loyalty = 50 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -10
-					check_variable = { BUL_zveno_loyalty = 25 compare = greater_than_or_equals }	
+					check_variable = { BUL_zveno_loyalty = 25 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -30
@@ -103,14 +103,14 @@ country_event = {
 					add = -20
 					has_country_flag = BUL_raided_zveno_supporters_flag
 				}
-				
-				country_event = { id = bftb_bulgaria_factions.10 days = 15 random_days = 10 } 
-			} 
-			90 = { 		
+
+				country_event = { id = bftb_bulgaria_factions.10 days = 15 random_days = 10 }
+			}
+			90 = {
 				#Do nothing
 			}
 		}
-	}	
+	}
 }
 
 #BROAD SOCIALISTS DISPATCHER EVENT
@@ -158,15 +158,15 @@ country_event = {
 				}
 				modifier = {
 					add = -30
-					check_variable = { BUL_bs_loyalty = 75 compare = greater_than_or_equals }	
+					check_variable = { BUL_bs_loyalty = 75 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -20
-					check_variable = { BUL_bs_loyalty = 50 compare = greater_than_or_equals }	
+					check_variable = { BUL_bs_loyalty = 50 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -10
-					check_variable = { BUL_bs_loyalty = 25 compare = greater_than_or_equals }	
+					check_variable = { BUL_bs_loyalty = 25 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -30
@@ -192,14 +192,14 @@ country_event = {
 					add = -20
 					has_country_flag = BUL_raided_bs_supporters_flag
 				}
-				
-				country_event = { id = bftb_bulgaria_factions.20 days = 15 random_days = 10 } 
-			} 
-			90 = { 		
+
+				country_event = { id = bftb_bulgaria_factions.20 days = 15 random_days = 10 }
+			}
+			90 = {
 				#Do nothing
 			}
 		}
-	}	
+	}
 }
 
 #AGRARIAN NATIONAL UNION DISPATCHER EVENT
@@ -243,15 +243,15 @@ country_event = {
 				}
 				modifier = {
 					add = -30
-					check_variable = { BUL_bzns_loyalty = 75 compare = greater_than_or_equals }	
+					check_variable = { BUL_bzns_loyalty = 75 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -20
-					check_variable = { BUL_bzns_loyalty = 50 compare = greater_than_or_equals }	
+					check_variable = { BUL_bzns_loyalty = 50 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -10
-					check_variable = { BUL_bzns_loyalty = 25 compare = greater_than_or_equals }	
+					check_variable = { BUL_bzns_loyalty = 25 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -30
@@ -277,14 +277,14 @@ country_event = {
 					add = -20
 					has_country_flag = BUL_raided_bzns_supporters_flag
 				}
-				
-				country_event = { id = bftb_bulgaria_factions.30 days = 15 random_days = 10 } 
-			} 
-			90 = { 		
+
+				country_event = { id = bftb_bulgaria_factions.30 days = 15 random_days = 10 }
+			}
+			90 = {
 				#Do nothing
 			}
 		}
-	}	
+	}
 }
 
 #NATIONAL SOCIAL MOVEMENT DISPATCHER EVENT
@@ -332,15 +332,15 @@ country_event = {
 				}
 				modifier = {
 					add = -30
-					check_variable = { BUL_nsm_loyalty = 75 compare = greater_than_or_equals }	
+					check_variable = { BUL_nsm_loyalty = 75 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -20
-					check_variable = { BUL_nsm_loyalty = 50 compare = greater_than_or_equals }	
+					check_variable = { BUL_nsm_loyalty = 50 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -10
-					check_variable = { BUL_nsm_loyalty = 25 compare = greater_than_or_equals }	
+					check_variable = { BUL_nsm_loyalty = 25 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -30
@@ -362,14 +362,14 @@ country_event = {
 					add = -20
 					has_country_flag = BUL_raided_nsm_supporters_flag
 				}
-				
-				country_event = { id = bftb_bulgaria_factions.40 days = 15 random_days = 10 } 
-			} 
-			90 = { 		
+
+				country_event = { id = bftb_bulgaria_factions.40 days = 15 random_days = 10 }
+			}
+			90 = {
 				#Do nothing
 			}
 		}
-	}	
+	}
 }
 
 #ZVENO COUP DISPATCHER EVENT
@@ -429,16 +429,16 @@ country_event = {
 				}
 				modifier = {
 					add = -30
-					check_variable = { BUL_zveno_loyalty = 75 compare = greater_than_or_equals }	
+					check_variable = { BUL_zveno_loyalty = 75 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -15
-					check_variable = { BUL_zveno_loyalty = 50 compare = greater_than_or_equals }	
+					check_variable = { BUL_zveno_loyalty = 50 compare = greater_than_or_equals }
 				}
 				modifier = {
 					add = -5
-					check_variable = { BUL_zveno_loyalty = 25 compare = greater_than_or_equals }	
-				}			
+					check_variable = { BUL_zveno_loyalty = 25 compare = greater_than_or_equals }
+				}
 				modifier = {
 					add = -10
 					has_completed_focus = BUL_cooperate_with_the_zveno
@@ -459,13 +459,13 @@ country_event = {
 					add = -20
 					has_country_flag = BUL_raided_zveno_supporters_flag
 				}
-				country_event = { id = bftb_bulgaria_factions.12 days = 15 random_days = 10 } 
-			} 
-			90 = { 		
+				country_event = { id = bftb_bulgaria_factions.12 days = 15 random_days = 10 }
+			}
+			90 = {
 				#Do nothing
 			}
 		}
-	}	
+	}
 }
 
 #Dissident Event ZVENO - Military members conspiring
@@ -473,7 +473,7 @@ country_event = {
 	id = bftb_bulgaria_factions.10
 	title = bftb_bulgaria_factions.10.t
 	desc = bftb_bulgaria_factions.10.desc
-	picture = GFX_report_event_bul_military_parade_vidin 
+	picture = GFX_report_event_bul_military_parade_vidin
 
 	is_triggered_only = yes
 
@@ -481,11 +481,11 @@ country_event = {
 		original_tag = BUL
 		NOT = {	has_country_flag = BUL_zveno_destroyed_flag } 								#Zveno is not destroyed
 		NOT = {	has_country_flag = BUL_zveno_legalized_flag } 								#Zveno is not legalized
-		OR = {						
+		OR = {
 			NOT = { has_country_flag = BUL_zveno_dissident_event_flag }						#Zveno has not trigger dissident event recently
 			has_country_flag = { flag = BUL_zveno_dissident_event_flag days > 365 }
 		}
-		OR = {						
+		OR = {
 			NOT = { has_country_flag = BUL_zveno_repressed_flag }							#Zveno members have not been repressed recently
 			has_country_flag = { flag = BUL_zveno_repressed_flag days > 720 }
 		}
@@ -520,7 +520,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #Investigate further
 		name = bftb_bulgaria_factions.10.a
 
@@ -563,7 +563,7 @@ country_event = {
 			unlock_decision_tooltip = BUL_opression_repress_zveno
 		}
 		custom_effect_tooltip = BUL_zveno_dissidents_tt
-	}		
+	}
 }
 
 #Dissident Event ZVENO - Conspirators exposed
@@ -595,7 +595,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #Imprison Conspirator
 		name = bftb_bulgaria_factions.11.a
 
@@ -636,8 +636,8 @@ country_event = {
 	trigger = {
 		original_tag = BUL
 		NOT = {	has_country_flag = BUL_zveno_destroyed_flag }
-		NOT = {	has_country_flag = BUL_zveno_legalized_flag } 
-		OR = {						
+		NOT = {	has_country_flag = BUL_zveno_legalized_flag }
+		OR = {
 			NOT = { has_country_flag = BUL_zveno_repressed_flag }							#Zveno members have not been repressed recently
 			has_country_flag = { flag = BUL_zveno_repressed_flag days > 365 }
 		}
@@ -656,14 +656,14 @@ country_event = {
 			set_country_flag = BUL_impending_zveno_coup_flag
 		}
 	}
-	
+
 	option = {
 		name = bftb_bulgaria_factions.12.a
 
 		effect_tooltip = {
 			activate_mission = BUL_impending_zveno_coup
 		}
-	}		
+	}
 }
 
 #Dissident Event BS - Workers Strike
@@ -671,7 +671,7 @@ country_event = {
 	id = bftb_bulgaria_factions.20
 	title = bftb_bulgaria_factions.20.t
 	desc = bftb_bulgaria_factions.20.desc
-	picture = GFX_report_event_generic_strike 
+	picture = GFX_report_event_generic_strike
 
 	is_triggered_only = yes
 
@@ -685,7 +685,7 @@ country_event = {
 			NOT = { has_country_flag = BUL_bs_dissident_event_flag }
 			has_country_flag = { flag = BUL_bs_dissident_event_flag days > 365 }
 		}
-		OR = {						
+		OR = {
 			NOT = { has_country_flag = BUL_bs_repressed_flag }							#BS members have not been repressed recently
 			has_country_flag = { flag = BUL_bs_repressed_flag days > 720 }
 		}
@@ -695,7 +695,7 @@ country_event = {
 		set_country_flag = BUL_bs_dissident_event_flag
 		set_country_flag = BUL_bs_dissident_event_not_addressed_flag
 	}
-	
+
 	option = { #Do not employ violence
 		name = bftb_bulgaria_factions.20.a
 
@@ -810,7 +810,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		if = {
 			limit = {
 				NOT = { has_decision = BUL_opression_repress_bs }
@@ -872,7 +872,7 @@ country_event = {
 					}
 				}
 			}
-			
+
 			if = {
 				limit = {
 					any_owned_state = {
@@ -973,7 +973,7 @@ country_event = {
 					}
 				}
 			}
-			
+
 			if = {
 				limit = {
 					any_owned_state = {
@@ -1049,12 +1049,12 @@ country_event = {
 			NOT = { has_country_flag = BUL_bzns_dissident_event_flag }
 			has_country_flag = { flag = BUL_bzns_dissident_event_flag days > 365 }
 		}
-		OR = {						
+		OR = {
 			NOT = { has_country_flag = BUL_bzns_repressed_flag }							#BZNS members have not been repressed recently
 			has_country_flag = { flag = BUL_bzns_repressed_flag days > 720 }
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -1090,7 +1090,7 @@ country_event = {
 	id = bftb_bulgaria_factions.31
 	title = bftb_bulgaria_factions.31.t
 	desc = bftb_bulgaria_factions.31.desc
-	picture = GFX_report_event_generic_rally2 
+	picture = GFX_report_event_generic_rally2
 
 	trigger = {
 		has_dlc = "Battle for the Bosporus"
@@ -1113,7 +1113,7 @@ country_event = {
 	}
 
 	fire_only_once = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.31.a
 
@@ -1132,7 +1132,7 @@ country_event = {
 	id = bftb_bulgaria_factions.40
 	title = bftb_bulgaria_factions.40.t
 	desc = bftb_bulgaria_factions.40.desc
-	picture = GFX_report_event_fascists_posing 
+	picture = GFX_report_event_fascists_posing
 
 	is_triggered_only = yes
 
@@ -1146,7 +1146,7 @@ country_event = {
 			NOT = { has_country_flag = BUL_nsm_dissident_event_flag }
 			has_country_flag = { flag = BUL_nsm_dissident_event_flag days > 365 }
 		}
-		OR = {						
+		OR = {
 			NOT = { has_country_flag = BUL_nsm_repressed_flag }							#NSM members have not been repressed recently
 			has_country_flag = { flag = BUL_nsm_repressed_flag days > 720 }
 		}
@@ -1162,7 +1162,7 @@ country_event = {
 			set_country_flag = BUL_nsm_dissident_event_not_addressed_flag
 		}
 	}
-	
+
 	option = { #Allow them
 		name = bftb_bulgaria_factions.40.a
 
@@ -1220,10 +1220,10 @@ country_event = {
 	id = bftb_bulgaria_factions.50
 	title = bftb_bulgaria_factions.50.t
 	desc = bftb_bulgaria_factions.50.desc
-	picture = GFX_report_event_gathering_protest 
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.50.a
 
@@ -1250,10 +1250,10 @@ country_event = {
 	id = bftb_bulgaria_factions.51
 	title = bftb_bulgaria_factions.51.t
 	desc = bftb_bulgaria_factions.51.desc
-	picture = GFX_report_event_gathering_protest  
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.51.a
 
@@ -1284,7 +1284,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.52.a
 
@@ -1299,10 +1299,10 @@ country_event = {
 	id = bftb_bulgaria_factions.53
 	title = bftb_bulgaria_factions.53.t
 	desc = bftb_bulgaria_factions.53.desc
-	picture = GFX_report_event_bul_boris_military 
+	picture = GFX_report_event_bul_boris_military
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.53.a
 
@@ -1329,10 +1329,10 @@ country_event = {
 	id = bftb_bulgaria_factions.54
 	title = bftb_bulgaria_factions.54.t
 	desc = bftb_bulgaria_factions.54.desc
-	picture = GFX_report_event_bul_military_parade_vidin 
+	picture = GFX_report_event_bul_military_parade_vidin
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.54.a
 
@@ -1360,12 +1360,12 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.55.a
 
 		BUL_zveno_low_loyalty_decrease_effect = yes
-		
+
 		add_stability = -0.1
 
 		#Add days to Zveno Coup timer if active
@@ -1386,10 +1386,10 @@ country_event = {
 	id = bftb_bulgaria_factions.60
 	title = bftb_bulgaria_factions.60.t
 	desc = bftb_bulgaria_factions.60.desc
-	picture = GFX_report_event_gathering_protest 
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.60.a
 
@@ -1405,10 +1405,10 @@ country_event = {
 	id = bftb_bulgaria_factions.61
 	title = bftb_bulgaria_factions.61.t
 	desc = bftb_bulgaria_factions.61.desc
-	picture = GFX_report_event_gathering_protest  
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.61.a
 
@@ -1428,7 +1428,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.62.a
 
@@ -1446,7 +1446,7 @@ country_event = {
 	picture = GFX_report_event_bul_boris_military
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.63.a
 
@@ -1465,7 +1465,7 @@ country_event = {
 	picture = GFX_report_event_bul_military_parade_vidin
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.64.a
 
@@ -1482,7 +1482,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.65.a
 
@@ -1497,16 +1497,16 @@ country_event = {
 	id = bftb_bulgaria_factions.70
 	title = bftb_bulgaria_factions.70.t
 	desc = bftb_bulgaria_factions.70.desc
-	picture = GFX_report_event_gathering_protest 
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.70.a
 
 		BUL_bzns_low_loyalty_decrease_effect = yes
 		BUL_bzns_low_popularity_decrease_effect = yes
-		
+
 		add_stability = -0.05
 	}
 }
@@ -1516,10 +1516,10 @@ country_event = {
 	id = bftb_bulgaria_factions.71
 	title = bftb_bulgaria_factions.71.t
 	desc = bftb_bulgaria_factions.71.desc
-	picture = GFX_report_event_gathering_protest  
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.71.a
 
@@ -1539,7 +1539,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.72.a
 
@@ -1557,7 +1557,7 @@ country_event = {
 	picture = GFX_report_event_bul_boris_military
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.73.a
 
@@ -1576,7 +1576,7 @@ country_event = {
 	picture = GFX_report_event_bul_military_parade_vidin
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.74.a
 
@@ -1593,7 +1593,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.75.a
 
@@ -1608,10 +1608,10 @@ country_event = {
 	id = bftb_bulgaria_factions.80
 	title = bftb_bulgaria_factions.80.t
 	desc = bftb_bulgaria_factions.80.desc
-	picture = GFX_report_event_gathering_protest 
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.80.a
 
@@ -1627,10 +1627,10 @@ country_event = {
 	id = bftb_bulgaria_factions.81
 	title = bftb_bulgaria_factions.81.t
 	desc = bftb_bulgaria_factions.81.desc
-	picture = GFX_report_event_gathering_protest  
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.81.a
 
@@ -1650,7 +1650,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.82.a
 
@@ -1668,7 +1668,7 @@ country_event = {
 	picture = GFX_report_event_bul_boris_military
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.83.a
 
@@ -1687,7 +1687,7 @@ country_event = {
 	picture = GFX_report_event_bul_military_parade_vidin
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.84.a
 
@@ -1704,7 +1704,7 @@ country_event = {
 	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.85.a
 
@@ -1722,7 +1722,7 @@ country_event = {
 	picture = GFX_report_event_bul_boris_with_muraviev
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.17.a
 
@@ -1749,7 +1749,7 @@ country_event = {
 			}
 			BUL_nsm_medium_loyalty_decrease_effect = yes
 		}
-	}		
+	}
 }
 
 # Integrated Faction - BS
@@ -1760,7 +1760,7 @@ country_event = {
 	picture = GFX_report_event_bul_boris_with_muraviev
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.27.a
 
@@ -1787,7 +1787,7 @@ country_event = {
 			}
 			BUL_nsm_medium_loyalty_decrease_effect = yes
 		}
-	}		
+	}
 }
 
 # Integrated Faction - BZNS
@@ -1798,7 +1798,7 @@ country_event = {
 	picture = GFX_report_event_bul_boris_with_muraviev
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.37.a
 
@@ -1825,7 +1825,7 @@ country_event = {
 			}
 			BUL_nsm_medium_loyalty_decrease_effect = yes
 		}
-	}		
+	}
 }
 
 # Integrated Faction - NSM
@@ -1836,7 +1836,7 @@ country_event = {
 	picture = GFX_report_event_bul_boris_with_muraviev
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.47.a
 
@@ -1863,7 +1863,7 @@ country_event = {
 			}
 			BUL_bzns_medium_loyalty_decrease_effect = yes
 		}
-	}		
+	}
 }
 
 # Destroyed Faction - ZVENO
@@ -1871,10 +1871,10 @@ country_event = {
 	id = bftb_bulgaria_factions.19
 	title = bftb_bulgaria_factions.19.t
 	desc = bftb_bulgaria_factions.19.desc
-	picture = GFX_report_event_bul_military_parade_vidin 
+	picture = GFX_report_event_bul_military_parade_vidin
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.19.a
 
@@ -1907,7 +1907,7 @@ country_event = {
 			}
 			BUL_nsm_low_loyalty_increase_effect = yes
 		}
-	}		
+	}
 }
 
 # Destroyed Faction - BS
@@ -1915,10 +1915,10 @@ country_event = {
 	id = bftb_bulgaria_factions.29
 	title = bftb_bulgaria_factions.29.t
 	desc = bftb_bulgaria_factions.29.desc
-	picture = GFX_report_event_bul_military_parade_vidin 
+	picture = GFX_report_event_bul_military_parade_vidin
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.29.a
 
@@ -1945,7 +1945,7 @@ country_event = {
 			}
 			BUL_nsm_low_loyalty_increase_effect = yes
 		}
-	}		
+	}
 }
 
 # Destroyed Faction - BZNS
@@ -1953,10 +1953,10 @@ country_event = {
 	id = bftb_bulgaria_factions.39
 	title = bftb_bulgaria_factions.39.t
 	desc = bftb_bulgaria_factions.39.desc
-	picture = GFX_report_event_bul_military_parade_vidin 
+	picture = GFX_report_event_bul_military_parade_vidin
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.39.a
 
@@ -1983,7 +1983,7 @@ country_event = {
 			}
 			BUL_nsm_low_loyalty_increase_effect = yes
 		}
-	}		
+	}
 }
 
 # Destroyed Faction - NSM
@@ -1991,10 +1991,10 @@ country_event = {
 	id = bftb_bulgaria_factions.49
 	title = bftb_bulgaria_factions.49.t
 	desc = bftb_bulgaria_factions.49.desc
-	picture = GFX_report_event_bul_military_parade_vidin 
+	picture = GFX_report_event_bul_military_parade_vidin
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = bftb_bulgaria_factions.49.a
 
@@ -2021,17 +2021,17 @@ country_event = {
 			}
 			BUL_bzns_low_loyalty_increase_effect = yes
 		}
-	}		
+	}
 }
 
 
-#### ##     ## ########   #######  
- ##  ###   ### ##     ## ##     ## 
- ##  #### #### ##     ## ##     ## 
- ##  ## ### ## ########  ##     ## 
- ##  ##     ## ##   ##   ##     ## 
- ##  ##     ## ##    ##  ##     ## 
-#### ##     ## ##     ##  #######  
+#### ##     ## ########   #######
+ ##  ###   ### ##     ## ##     ##
+ ##  #### #### ##     ## ##     ##
+ ##  ## ### ## ########  ##     ##
+ ##  ##     ## ##   ##   ##     ##
+ ##  ##     ## ##    ##  ##     ##
+#### ##     ## ##     ##  #######
 
 
 #The IMRO is back! - Event for YUG and GRE (or whoever occupy Macedonian states)
@@ -2088,13 +2088,13 @@ country_event = {
 }
 
 
-########  ######     ###    ########     ########   #######  ########  ####  ######     #### #### #### 
-   ##    ##    ##   ## ##   ##     ##    ##     ## ##     ## ##     ##  ##  ##    ##     ##   ##   ##  
-   ##    ##        ##   ##  ##     ##    ##     ## ##     ## ##     ##  ##  ##           ##   ##   ##  
-   ##     ######  ##     ## ########     ########  ##     ## ########   ##   ######      ##   ##   ##  
-   ##          ## ######### ##   ##      ##     ## ##     ## ##   ##    ##        ##     ##   ##   ##  
-   ##    ##    ## ##     ## ##    ##     ##     ## ##     ## ##    ##   ##  ##    ##     ##   ##   ##  
-   ##     ######  ##     ## ##     ##    ########   #######  ##     ## ####  ######     #### #### #### 
+########  ######     ###    ########     ########   #######  ########  ####  ######     #### #### ####
+   ##    ##    ##   ## ##   ##     ##    ##     ## ##     ## ##     ##  ##  ##    ##     ##   ##   ##
+   ##    ##        ##   ##  ##     ##    ##     ## ##     ## ##     ##  ##  ##           ##   ##   ##
+   ##     ######  ##     ## ########     ########  ##     ## ########   ##   ######      ##   ##   ##
+   ##          ## ######### ##   ##      ##     ## ##     ## ##   ##    ##        ##     ##   ##   ##
+   ##    ##    ## ##     ## ##    ##     ##     ## ##     ## ##    ##   ##  ##    ##     ##   ##   ##
+   ##     ######  ##     ## ##     ##    ########   #######  ##     ## ####  ######     #### #### ####
 
 
 #Tsar Boris visits a town
@@ -2128,7 +2128,7 @@ country_event = {
 	option = {
 		name = bftb_bulgaria_tsar_boris.1.a
 
-		trigger = { 
+		trigger = {
 			NOT = { has_country_flag = BUL_a_royal_visit_extra_success_flag }
 			NOT = { has_country_flag = BUL_a_royal_visit_failure_flag }
 		}
@@ -2162,7 +2162,7 @@ country_event = {
 	}
 	option = { #Failure
 		name = bftb_bulgaria_tsar_boris.1.c
-		
+
 		trigger = {
 			has_country_flag = BUL_a_royal_visit_failure_flag
 		}
@@ -2205,7 +2205,7 @@ country_event = {
 	option = {
 		name = bftb_bulgaria_tsar_boris.2.a
 
-		trigger = { 
+		trigger = {
 		}
 
 		if = {
@@ -2248,7 +2248,7 @@ country_event = {
 			}
 			remove_ideas = BUL_tsar_boris_negative_02
 		}
-		
+
 		effect_tooltip = {
 			unlock_national_focus = BUL_plot_against_boris
 		}
@@ -2264,13 +2264,13 @@ country_event = {
 			BUL_georgi_ivanov_kyoseivanov = {
 				promote_character = { ideology = moderatism }
 				add_country_leader_trait = no_designated_regency
-			}		
+			}
 		}
 		else = {
 			BUL_bogdan_filov = {
 				promote_character = { ideology = centrism }
 				add_country_leader_trait = no_designated_regency
-			}		
+			}
 		}
 
 		hidden_effect = {
@@ -2286,7 +2286,7 @@ country_event = {
 	id = bftb_bulgaria_tsar_boris.3
 	title = bftb_bulgaria_tsar_boris.3.t
 	desc = bftb_bulgaria_tsar_boris.3.desc
-	picture = GFX_report_event_bul_prince_simeon 
+	picture = GFX_report_event_bul_prince_simeon
 
 	is_triggered_only = yes
 
@@ -2334,7 +2334,7 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
 		}
 
@@ -2418,10 +2418,10 @@ country_event = {
 					}
 					promote_leader = yes
 				}
-				promote_character = { 
+				promote_character = {
 					character = BUL_georgi_ivanov_kyoseivanov
 					ideology = moderatism
-				}	
+				}
 			}
 			else_if = {
 				limit = {
@@ -2441,10 +2441,10 @@ country_event = {
 					}
 					promote_leader = yes
 				}
-				promote_character = { 
+				promote_character = {
 					character =  BUL_bogdan_filov
 					ideology = centrism
-				}	
+				}
 			}
 			else = {
 				add_country_leader_role = {
@@ -2488,7 +2488,7 @@ country_event = {
 			}
 		}
 
-		trigger = { 
+		trigger = {
 			OR = {
 				has_government = democratic
 				AND = {
@@ -2511,7 +2511,7 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
 		}
 
@@ -2555,7 +2555,7 @@ country_event = {
 					}
 					promote_leader = yes
 				}
-			}	
+			}
 		}
 		else = {
 			if = {
@@ -2576,10 +2576,10 @@ country_event = {
 					}
 					promote_leader = yes
 				}
-				promote_character = { 
+				promote_character = {
 					character = BUL_georgi_ivanov_kyoseivanov
 					ideology = moderatism
-				}	
+				}
 			}
 			else_if = {
 				limit = {
@@ -2599,10 +2599,10 @@ country_event = {
 					}
 					promote_leader = yes
 				}
-				promote_character = { 
+				promote_character = {
 					character = BUL_bogdan_filov
 					ideology = centrism
-				}	
+				}
 			}
 			else = {
 				add_country_leader_role = {
@@ -2751,7 +2751,7 @@ country_event = {
 					}
 					promote_leader = yes
 				}
-			}	
+			}
 		}
 		else = {
 			if = {
@@ -2820,13 +2820,13 @@ country_event = {
 }
 
 
-########    ###    ######## ##     ## ######## ########  ##          ###    ##    ## ########     ######## ########   #######  ##    ## ######## 
-##         ## ##      ##    ##     ## ##       ##     ## ##         ## ##   ###   ## ##     ##    ##       ##     ## ##     ## ###   ##    ##    
-##        ##   ##     ##    ##     ## ##       ##     ## ##        ##   ##  ####  ## ##     ##    ##       ##     ## ##     ## ####  ##    ##    
-######   ##     ##    ##    ######### ######   ########  ##       ##     ## ## ## ## ##     ##    ######   ########  ##     ## ## ## ##    ##    
-##       #########    ##    ##     ## ##       ##   ##   ##       ######### ##  #### ##     ##    ##       ##   ##   ##     ## ##  ####    ##    
-##       ##     ##    ##    ##     ## ##       ##    ##  ##       ##     ## ##   ### ##     ##    ##       ##    ##  ##     ## ##   ###    ##    
-##       ##     ##    ##    ##     ## ######## ##     ## ######## ##     ## ##    ## ########     ##       ##     ##  #######  ##    ##    ##    
+########    ###    ######## ##     ## ######## ########  ##          ###    ##    ## ########     ######## ########   #######  ##    ## ########
+##         ## ##      ##    ##     ## ##       ##     ## ##         ## ##   ###   ## ##     ##    ##       ##     ## ##     ## ###   ##    ##
+##        ##   ##     ##    ##     ## ##       ##     ## ##        ##   ##  ####  ## ##     ##    ##       ##     ## ##     ## ####  ##    ##
+######   ##     ##    ##    ######### ######   ########  ##       ##     ## ## ## ## ##     ##    ######   ########  ##     ## ## ## ##    ##
+##       #########    ##    ##     ## ##       ##   ##   ##       ######### ##  #### ##     ##    ##       ##   ##   ##     ## ##  ####    ##
+##       ##     ##    ##    ##     ## ##       ##    ##  ##       ##     ## ##   ### ##     ##    ##       ##    ##  ##     ## ##   ###    ##
+##       ##     ##    ##    ##     ## ######## ##     ## ######## ##     ## ##    ## ########     ##       ##     ##  #######  ##    ##    ##
 
 
 #The Fatherland Front has formed
@@ -2859,7 +2859,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = { has_completed_focus = BUL_the_fatherland_front }
 				}
 				add_popularity = {
@@ -2959,13 +2959,13 @@ country_event = {
 }
 
 
-########  ########    ###    ########  ##     ##    ###    ##     ## ######## ##    ## ######## 
-##     ## ##         ## ##   ##     ## ###   ###   ## ##   ###   ### ##       ###   ##    ##    
-##     ## ##        ##   ##  ##     ## #### ####  ##   ##  #### #### ##       ####  ##    ##    
-########  ######   ##     ## ########  ## ### ## ##     ## ## ### ## ######   ## ## ##    ##    
-##   ##   ##       ######### ##   ##   ##     ## ######### ##     ## ##       ##  ####    ##    
-##    ##  ##       ##     ## ##    ##  ##     ## ##     ## ##     ## ##       ##   ###    ##    
-##     ## ######## ##     ## ##     ## ##     ## ##     ## ##     ## ######## ##    ##    ##    
+########  ########    ###    ########  ##     ##    ###    ##     ## ######## ##    ## ########
+##     ## ##         ## ##   ##     ## ###   ###   ## ##   ###   ### ##       ###   ##    ##
+##     ## ##        ##   ##  ##     ## #### ####  ##   ##  #### #### ##       ####  ##    ##
+########  ######   ##     ## ########  ## ### ## ##     ## ## ### ## ######   ## ## ##    ##
+##   ##   ##       ######### ##   ##   ##     ## ######### ##     ## ##       ##  ####    ##
+##    ##  ##       ##     ## ##    ##  ##     ## ##     ## ##     ## ##       ##   ###    ##
+##     ## ######## ##     ## ##     ## ##     ## ##     ## ##     ## ######## ##    ##    ##
 
 
 #Negotiate Bulgarian Rearmament - Event for ENG
@@ -2973,14 +2973,14 @@ country_event = {
 	id = bftb_bulgaria_rearmament.1
 	title = bftb_bulgaria_rearmament.1.t
 	desc = bftb_bulgaria_rearmament.1.desc
-	picture = GFX_report_event_generic_sign_treaty1 
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 
 	immediate = {
 
 	}
-	
+
 	option = { #Refuse
 		name = bftb_bulgaria_rearmament.1.a
 
@@ -3104,7 +3104,7 @@ country_event = {
 		}
 
 		BUL = { country_event = { id = bftb_bulgaria_rearmament.6 hours = 16 random_hours = 8 } }
-		effect_tooltip = { 
+		effect_tooltip = {
 			if = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -3123,14 +3123,14 @@ country_event = {
 	id = bftb_bulgaria_rearmament.2
 	title = bftb_bulgaria_rearmament.2.t
 	desc = bftb_bulgaria_rearmament.2.desc
-	picture = GFX_report_event_generic_sign_treaty1 
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 
 	immediate = {
 
 	}
-	
+
 	option = { #Refuse
 		name = bftb_bulgaria_rearmament.2.a
 
@@ -3142,7 +3142,7 @@ country_event = {
 	id = bftb_bulgaria_rearmament.3
 	title = bftb_bulgaria_rearmament.3.t
 	desc = bftb_bulgaria_rearmament.3.desc
-	picture = GFX_report_event_generic_sign_treaty2 
+	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 
@@ -3151,7 +3151,7 @@ country_event = {
 			set_country_flag = BUL_uk_demands_nap_with_balkan_nation_flag
 		}
 	}
-	
+
 	option = { #Ok
 		name = bftb_bulgaria_rearmament.3.a
 
@@ -3167,7 +3167,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	option = { #Ok
 		name = bftb_bulgaria_rearmament.4.a
 
@@ -3193,7 +3193,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	option = { #Ok
 		name = bftb_bulgaria_rearmament.5.a
 
@@ -3216,13 +3216,13 @@ country_event = {
 	id = bftb_bulgaria_rearmament.6
 	title = bftb_bulgaria_rearmament.6.t
 	desc = bftb_bulgaria_rearmament.6.desc
-	picture = GFX_report_event_generic_sign_treaty1 
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 
 	option = { #Ok
 		name = bftb_bulgaria_rearmament.6.a
-		
+
 		if = {
 			limit = {
 				has_dlc = "Arms Against Tyranny"
@@ -3246,7 +3246,7 @@ country_event = {
 	id = bftb_bulgaria_rearmament.7
 	title = bftb_bulgaria_rearmament.7.t
 	desc = bftb_bulgaria_rearmament.7.desc
-	picture = GFX_report_event_generic_sign_treaty2 
+	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 
@@ -3285,7 +3285,7 @@ country_event = {
 						AND = {
 							is_in_faction = yes
 							NOT = { is_in_faction_with = ROOT }
-						}	
+						}
 					}
 				}
 			}
@@ -3337,7 +3337,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 100
-				BUL = { 
+				BUL = {
 					OR = {
 						AND = {
 							has_war_with = GER
@@ -3398,7 +3398,7 @@ country_event = {
 			BUL = { set_country_flag = BUL_uk_gives_in_to_pressure_flag }
 		}
 		BUL = { country_event = { id = bftb_bulgaria_rearmament.6 hours = 8 random_hours = 4 } }
-		effect_tooltip = { 
+		effect_tooltip = {
 			if = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -3443,7 +3443,7 @@ country_event = {
 	id = bftb_bulgaria_rearmament.9
 	title = bftb_bulgaria_rearmament.9.t
 	desc = bftb_bulgaria_rearmament.9.desc
-	picture = GFX_report_event_generic_sign_treaty1 
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 
@@ -3461,7 +3461,7 @@ country_event = {
 				BUL = {
 					OR = {
 						has_war_with = GER
-						is_in_faction_with = ROOT	
+						is_in_faction_with = ROOT
 					}
 				}
 			}
@@ -3489,7 +3489,7 @@ country_event = {
 			}
 		}
 
-		effect_tooltip = { 
+		effect_tooltip = {
 			if = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -3521,7 +3521,7 @@ country_event = {
 			}
 		}
 
-		effect_tooltip = { 
+		effect_tooltip = {
 			if = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -3541,13 +3541,13 @@ country_event = {
 }
 
 
-##    ##    ###    ######## ####  #######  ##    ##    ###    ##       #### ########    ###    ######## ####  #######  ##    ## 
-###   ##   ## ##      ##     ##  ##     ## ###   ##   ## ##   ##        ##       ##    ## ##      ##     ##  ##     ## ###   ## 
-####  ##  ##   ##     ##     ##  ##     ## ####  ##  ##   ##  ##        ##      ##    ##   ##     ##     ##  ##     ## ####  ## 
-## ## ## ##     ##    ##     ##  ##     ## ## ## ## ##     ## ##        ##     ##    ##     ##    ##     ##  ##     ## ## ## ## 
-##  #### #########    ##     ##  ##     ## ##  #### ######### ##        ##    ##     #########    ##     ##  ##     ## ##  #### 
-##   ### ##     ##    ##     ##  ##     ## ##   ### ##     ## ##        ##   ##      ##     ##    ##     ##  ##     ## ##   ### 
-##    ## ##     ##    ##    ####  #######  ##    ## ##     ## ######## #### ######## ##     ##    ##    ####  #######  ##    ## 
+##    ##    ###    ######## ####  #######  ##    ##    ###    ##       #### ########    ###    ######## ####  #######  ##    ##
+###   ##   ## ##      ##     ##  ##     ## ###   ##   ## ##   ##        ##       ##    ## ##      ##     ##  ##     ## ###   ##
+####  ##  ##   ##     ##     ##  ##     ## ####  ##  ##   ##  ##        ##      ##    ##   ##     ##     ##  ##     ## ####  ##
+## ## ## ##     ##    ##     ##  ##     ## ## ## ## ##     ## ##        ##     ##    ##     ##    ##     ##  ##     ## ## ## ##
+##  #### #########    ##     ##  ##     ## ##  #### ######### ##        ##    ##     #########    ##     ##  ##     ## ##  ####
+##   ### ##     ##    ##     ##  ##     ## ##   ### ##     ## ##        ##   ##      ##     ##    ##     ##  ##     ## ##   ###
+##    ## ##     ##    ##    ####  #######  ##    ## ##     ## ######## #### ######## ##     ##    ##    ####  #######  ##    ##
 
 
 #Bulgaria has nationalized foreign factories and subsidiaries - Event for GER/SOV/ENG
@@ -3555,7 +3555,7 @@ country_event = {
 	id = bftb_bulgaria_nationalization.1
 	title = bftb_bulgaria_nationalization.1.t
 	desc = bftb_bulgaria_nationalization.1.desc
-	picture = GFX_report_event_generic_factory 
+	picture = GFX_report_event_generic_factory
 
 	is_triggered_only = yes
 
@@ -3676,7 +3676,7 @@ country_event = {
 			target = FROM
 			modifier = BUL_seized_our_bulgarian_subsidiaries
 		}
-		
+
 		if = {
 			limit = {
 				is_faction_leader = yes
@@ -3724,7 +3724,7 @@ country_event = {
 	option = { #Wargoal (and embargo)
 		name = bftb_bulgaria_nationalization.1.c
 
-		trigger = { 
+		trigger = {
 			NOT = { is_in_faction_with = FROM }
 		}
 
@@ -3806,7 +3806,7 @@ country_event = {
 
 		add_stability = -0.1
 		add_war_support = -0.1
-		
+
 		create_wargoal = {
 			type = puppet_wargoal_focus
 			target = FROM
@@ -3816,7 +3816,7 @@ country_event = {
 			target = FROM
 			modifier = BUL_seized_our_bulgarian_subsidiaries
 		}
-		
+
 		if = {
 			limit = {
 				is_faction_leader = yes
@@ -3975,7 +3975,7 @@ country_event = {
 	id = bftb_bulgaria_nationalization.2
 	title = bftb_bulgaria_nationalization.2.t
 	desc = bftb_bulgaria_nationalization.2.desc
-	picture = GFX_report_event_merchant_ship_01  
+	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
 
@@ -3997,7 +3997,7 @@ country_event = {
 	id = bftb_bulgaria_nationalization.3
 	title = bftb_bulgaria_nationalization.3.t
 	desc = bftb_bulgaria_nationalization.3.desc
-	picture = GFX_report_event_generic_read_write 
+	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
@@ -4014,13 +4014,13 @@ country_event = {
 }
 
 
- #######  ######## ##     ## ######## ########  
-##     ##    ##    ##     ## ##       ##     ## 
-##     ##    ##    ##     ## ##       ##     ## 
-##     ##    ##    ######### ######   ########  
-##     ##    ##    ##     ## ##       ##   ##   
-##     ##    ##    ##     ## ##       ##    ##  
- #######     ##    ##     ## ######## ##     ## 
+ #######  ######## ##     ## ######## ########
+##     ##    ##    ##     ## ##       ##     ##
+##     ##    ##    ##     ## ##       ##     ##
+##     ##    ##    ######### ######   ########
+##     ##    ##    ##     ## ##       ##   ##
+##     ##    ##    ##     ## ##       ##    ##
+ #######     ##    ##     ## ######## ##     ##
 
 
  #Bulgaria grants exploitation rights to an ally
@@ -4028,7 +4028,7 @@ country_event = {
 	id = bftb_bulgaria_uranium_mining_concessions.1
 	title = bftb_bulgaria_uranium_mining_concessions.1.t
 	desc = bftb_bulgaria_uranium_mining_concessions.1.desc
-	picture = GFX_report_event_generic_read_write 
+	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
@@ -4052,13 +4052,13 @@ country_event = {
 
 
 
-   ###    ##     ## ####  ######     ######## ##     ## ######## ##    ## ########  ######  
-  ## ##    ##   ##   ##  ##    ##    ##       ##     ## ##       ###   ##    ##    ##    ## 
- ##   ##    ## ##    ##  ##          ##       ##     ## ##       ####  ##    ##    ##       
-##     ##    ###     ##   ######     ######   ##     ## ######   ## ## ##    ##     ######  
-#########   ## ##    ##        ##    ##        ##   ##  ##       ##  ####    ##          ## 
-##     ##  ##   ##   ##  ##    ##    ##         ## ##   ##       ##   ###    ##    ##    ## 
-##     ## ##     ## ####  ######     ########    ###    ######## ##    ##    ##     ######  
+   ###    ##     ## ####  ######     ######## ##     ## ######## ##    ## ########  ######
+  ## ##    ##   ##   ##  ##    ##    ##       ##     ## ##       ###   ##    ##    ##    ##
+ ##   ##    ## ##    ##  ##          ##       ##     ## ##       ####  ##    ##    ##
+##     ##    ###     ##   ######     ######   ##     ## ######   ## ## ##    ##     ######
+#########   ## ##    ##        ##    ##        ##   ##  ##       ##  ####    ##          ##
+##     ##  ##   ##   ##  ##    ##    ##         ## ##   ##       ##   ###    ##    ##    ##
+##     ## ##     ## ####  ######     ########    ###    ######## ##    ##    ##     ######
 
 
 #Bulgaria wants to get their claims warranted - Event for GER
@@ -4083,25 +4083,25 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				BUL = { 
+				BUL = {
 					is_in_faction = no
 				}
 			}
 			modifier = {
 				factor = 20
-				BUL = { 
+				BUL = {
 					is_in_faction_with = ROOT
 				}
 			}
 			modifier = {
 				factor = 100
-				BUL = { 
+				BUL = {
 					has_country_flag = { flag = BUL_german_influence_flag value > 3 }
 				}
 			}
 			modifier = {
 				factor = 0.5
-				ENG = { 
+				ENG = {
 					has_opinion = {
 						target = BUL
 						value > 50
@@ -4143,7 +4143,7 @@ country_event = {
 		}
 		effect_tooltip = {
 			BUL = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = GER
 					modifier = BUL_bulgarian_claims_recognized
 				}
@@ -4164,7 +4164,7 @@ country_event = {
 
 		effect_tooltip = {
 			BUL = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = GER
 					modifier = BUL_bulgarian_claims_not_recognized
 				}
@@ -4179,7 +4179,7 @@ country_event = {
 	id = bftb_bulgarian_claims.2
 	title = bftb_bulgarian_claims.2.t
 	desc = bftb_bulgarian_claims.2.desc
-	picture = GFX_report_event_bul_boris_with_hitler 
+	picture = GFX_report_event_bul_boris_with_hitler
 
 	is_triggered_only = yes
 
@@ -4188,7 +4188,7 @@ country_event = {
 	option = {
 		name = bftb_bulgarian_claims.2.a
 
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = GER
 			modifier = BUL_bulgarian_claims_recognized
 		}
@@ -4228,7 +4228,7 @@ country_event = {
 	id = bftb_bulgarian_claims.3
 	title = bftb_bulgarian_claims.3.t
 	desc = bftb_bulgarian_claims.3.desc
-	picture = GFX_report_event_generic_sign_treaty1 
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 
@@ -4237,7 +4237,7 @@ country_event = {
 	option = {
 		name = bftb_bulgarian_claims.3.a
 
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = GER
 			modifier = BUL_bulgarian_claims_not_recognized
 		}
@@ -4256,7 +4256,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			GER = { country_event = bftb_bulgarian_claims.5 }
-		
+
 			if = {
 				limit = {
 					any_state = {
@@ -4294,7 +4294,7 @@ country_event = {
 	option = {
 		name = bftb_bulgarian_claims.4.a
 
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = GER
 			modifier = BUL_honored_bulgarian_claims
 		}
@@ -4310,8 +4310,8 @@ country_event = {
 							is_in_faction_with = GER
 							NOT = { original_tag = BUL }
 						}
-					}	
-					NOT = { is_core_of = controller } 
+					}
+					NOT = { is_core_of = controller }
 				}
 				BUL = {
 					transfer_state = PREV
@@ -4321,7 +4321,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 	}
 }
 
@@ -4342,7 +4342,7 @@ country_event = {
 		custom_effect_tooltip = if_they_accept_tt
 		effect_tooltip = {
 			BUL = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = GER
 					modifier = BUL_honored_bulgarian_claims
 				}
@@ -4355,7 +4355,7 @@ country_event = {
 						controller = {
 							is_in_faction_with = GER
 						}
-					}		
+					}
 				}
 				BUL = { set_state_controller = PREV }
 			}
@@ -4368,7 +4368,7 @@ country_event = {
 	id = bftb_bulgarian_claims.6
 	title = bftb_bulgarian_claims.6.t
 	desc = bftb_bulgarian_claims.6.desc
-	picture = GFX_report_event_bul_troops_dobrudja 
+	picture = GFX_report_event_bul_troops_dobrudja
 
 	is_triggered_only = yes
 
@@ -4385,7 +4385,7 @@ country_event = {
 		every_state = {
 			limit = {
 				has_state_flag = BUL_bulgarian_claim_warranted_flag
-				is_controlled_by = ROOT	
+				is_controlled_by = ROOT
 				NOT = {
 					is_core_of = ROOT
 				}
@@ -4409,14 +4409,14 @@ country_event = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = BUL_hindered_planned_expansion
-			}	
+			}
 		}
 
 		GER = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = BUL_hindered_planned_expansion
-			}	
+			}
 		}
 
 		hidden_effect = {
@@ -4428,7 +4428,7 @@ country_event = {
 						controller = {
 							is_in_faction_with = GER
 						}
-					}		
+					}
 				}
 				clr_state_flag = BUL_bulgarian_claim_warranted_flag
 			}
@@ -4442,7 +4442,7 @@ country_event = {
 	id = bftb_bulgarian_claims.7
 	title = bftb_bulgarian_claims.7.t
 	desc = bftb_bulgarian_claims.7.desc
-	picture = GFX_report_event_generic_sign_treaty2 
+	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 
@@ -4590,7 +4590,7 @@ country_event = {
 	id = bftb_bulgarian_claims.9
 	title = bftb_bulgarian_claims.9.t
 	desc = bftb_bulgarian_claims.9.desc
-	picture = GFX_report_event_generic_read_write 
+	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
@@ -4650,7 +4650,7 @@ country_event = {
 		else = {
 			set_country_flag = { flag = BUL_german_influence_flag value = 1 }
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = GER
 			modifier = BUL_donated_aircraft
 		}
@@ -4688,7 +4688,7 @@ country_event = {
 
 		effect_tooltip = {
 			BUL = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = GER
 					modifier = BUL_donated_aircraft
 				}
@@ -4716,7 +4716,7 @@ country_event = {
 	option = {
 		name = bftb_bulgaria_german_influence.3.a
 
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = BUL
 			modifier = BUL_rejected_our_donation
 		}
@@ -4757,7 +4757,7 @@ country_event = {
 		remove_ideas = BUL_georgi_ivanov_kyoseivanov
 		add_ideas = BUL_bogdan_filov
 		GER = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = BUL
 				modifier = BUL_complied_with_our_demands
 			}
@@ -4779,7 +4779,7 @@ country_event = {
 		}
 
 		GER = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = BUL
 				modifier = BUL_rejected_our_demands
 			}
@@ -4793,7 +4793,7 @@ country_event = {
 	id = bftb_bulgaria_german_influence.5
 	title = bftb_bulgaria_german_influence.5.t
 	desc = bftb_bulgaria_german_influence.5.desc
-	picture = GFX_report_event_generic_sign_treaty2 
+	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 
@@ -4803,7 +4803,7 @@ country_event = {
 		name = bftb_bulgaria_german_influence.5.a
 
 		effect_tooltip = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = BUL
 				modifier = BUL_complied_with_our_demands
 			}
@@ -4821,7 +4821,7 @@ country_event = {
 	id = bftb_bulgaria_german_influence.6
 	title = bftb_bulgaria_german_influence.6.t
 	desc = bftb_bulgaria_german_influence.6.desc
-	picture = GFX_report_event_generic_sign_treaty2 
+	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 
@@ -4831,7 +4831,7 @@ country_event = {
 		name = bftb_bulgaria_german_influence.6.a
 
 		effect_tooltip = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = BUL
 				modifier = BUL_rejected_our_demands
 			}
@@ -4844,7 +4844,7 @@ country_event = {
 	id = bftb_bulgaria_german_influence.7
 	title = bftb_bulgaria_german_influence.7.t
 	desc = bftb_bulgaria_german_influence.7.desc
-	picture = GFX_report_event_german_troops 
+	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
 
@@ -4872,7 +4872,7 @@ country_event = {
 		effect_tooltip = {
 			give_military_access = GER
 			GER = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = BUL
 					modifier = BUL_complied_with_our_demands
 				}
@@ -4895,7 +4895,7 @@ country_event = {
 		}
 
 		GER = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = BUL
 				modifier = BUL_rejected_our_demands
 			}
@@ -4909,7 +4909,7 @@ country_event = {
 	id = bftb_bulgaria_german_influence.8
 	title = bftb_bulgaria_german_influence.8.t
 	desc = bftb_bulgaria_german_influence.8.desc
-	picture = GFX_report_event_german_troops 
+	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
 
@@ -4919,7 +4919,7 @@ country_event = {
 		name = bftb_bulgaria_german_influence.8.a
 
 		BUL = { give_military_access = GER }
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = BUL
 			modifier = BUL_complied_with_our_demands
 		}
@@ -4931,7 +4931,7 @@ country_event = {
 	id = bftb_bulgaria_german_influence.9
 	title = bftb_bulgaria_german_influence.9.t
 	desc = bftb_bulgaria_german_influence.9.desc
-	picture = GFX_report_event_generic_sign_treaty2 
+	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
 
@@ -4941,7 +4941,7 @@ country_event = {
 		name = bftb_bulgaria_german_influence.9.a
 
 		effect_tooltip = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = BUL
 				modifier = BUL_rejected_our_demands
 			}
@@ -4960,14 +4960,14 @@ country_event = {
 #				is_neighbor_of = BUL
 #			}
 #		}
-#		
+#
 #		effect_tooltip = {
-#			add_opinion_modifier = { 
+#			add_opinion_modifier = {
 #				target = BUL
 #				modifier = BUL_rejected_our_demands
 #			}
 #		}
-#		
+#
 #		add_political_power = -100
 #		create_wargoal = {
 #			type = annex_everything
@@ -4981,7 +4981,7 @@ country_event = {
 	id = bftb_bulgaria_italian_influence.1
 	title = bftb_bulgaria_italian_influence.1.t
 	desc = bftb_bulgaria_italian_influence.1.desc
-	picture = GFX_report_event_german_troops 
+	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
 
@@ -5030,13 +5030,13 @@ country_event = {
 
 
 
-########  ##     ## ########   ######  ##     ##    ###     ######  ########    ########  #######  ##     ## #### ########  ##     ## ######## ##    ## ######## 
-##     ## ##     ## ##     ## ##    ## ##     ##   ## ##   ##    ## ##          ##       ##     ## ##     ##  ##  ##     ## ###   ### ##       ###   ##    ##    
-##     ## ##     ## ##     ## ##       ##     ##  ##   ##  ##       ##          ##       ##     ## ##     ##  ##  ##     ## #### #### ##       ####  ##    ##    
-########  ##     ## ########  ##       ######### ##     ##  ######  ######      ######   ##     ## ##     ##  ##  ########  ## ### ## ######   ## ## ##    ##    
-##        ##     ## ##   ##   ##       ##     ## #########       ## ##          ##       ##  ## ## ##     ##  ##  ##        ##     ## ##       ##  ####    ##    
-##        ##     ## ##    ##  ##    ## ##     ## ##     ## ##    ## ##          ##       ##    ##  ##     ##  ##  ##        ##     ## ##       ##   ###    ##    
-##         #######  ##     ##  ######  ##     ## ##     ##  ######  ########    ########  ##### ##  #######  #### ##        ##     ## ######## ##    ##    ##    
+########  ##     ## ########   ######  ##     ##    ###     ######  ########    ########  #######  ##     ## #### ########  ##     ## ######## ##    ## ########
+##     ## ##     ## ##     ## ##    ## ##     ##   ## ##   ##    ## ##          ##       ##     ## ##     ##  ##  ##     ## ###   ### ##       ###   ##    ##
+##     ## ##     ## ##     ## ##       ##     ##  ##   ##  ##       ##          ##       ##     ## ##     ##  ##  ##     ## #### #### ##       ####  ##    ##
+########  ##     ## ########  ##       ######### ##     ##  ######  ######      ######   ##     ## ##     ##  ##  ########  ## ### ## ######   ## ## ##    ##
+##        ##     ## ##   ##   ##       ##     ## #########       ## ##          ##       ##  ## ## ##     ##  ##  ##        ##     ## ##       ##  ####    ##
+##        ##     ## ##    ##  ##    ## ##     ## ##     ## ##    ## ##          ##       ##    ##  ##     ##  ##  ##        ##     ## ##       ##   ###    ##
+##         #######  ##     ##  ######  ##     ## ##     ##  ######  ########    ########  ##### ##  #######  #### ##        ##     ## ######## ##    ##    ##
 
 
 #Purchase Artillery
@@ -5044,7 +5044,7 @@ country_event = {
 	id = bftb_bulgaria_equipment_purchases.1
 	title = bftb_bulgaria_equipment_purchases.1.t
 	desc = bftb_bulgaria_equipment_purchases.1.desc
-	picture = GFX_report_event_bul_artillery 
+	picture = GFX_report_event_bul_artillery
 
 	is_triggered_only = yes
 
@@ -5055,10 +5055,10 @@ country_event = {
 			base = 15
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = artillery_equipment
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = artillery_equipment
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5073,10 +5073,10 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = anti_air_equipment
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = anti_air_equipment
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5097,10 +5097,10 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = anti_tank_equipment
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = anti_tank_equipment
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5120,7 +5120,7 @@ country_event = {
 	id = bftb_bulgaria_equipment_purchases.2
 	title = bftb_bulgaria_equipment_purchases.2.t
 	desc = bftb_bulgaria_equipment_purchases.2.desc
-	picture = GFX_report_event_generic_truck 
+	picture = GFX_report_event_generic_truck
 
 	is_triggered_only = yes
 
@@ -5131,10 +5131,10 @@ country_event = {
 			base = 15
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = motorized_equipment
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = motorized_equipment
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5150,10 +5150,10 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = mechanized_equipment
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = mechanized_equipment
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5175,10 +5175,10 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = armored_car_equipment
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = armored_car_equipment
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5199,7 +5199,7 @@ country_event = {
 	id = bftb_bulgaria_equipment_purchases.3
 	title = bftb_bulgaria_equipment_purchases.3.t
 	desc = bftb_bulgaria_equipment_purchases.3.desc
-	picture = GFX_report_event_tank_factory 
+	picture = GFX_report_event_tank_factory
 
 	is_triggered_only = yes
 
@@ -5210,10 +5210,10 @@ country_event = {
 			base = 15
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = light_tank_chassis
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = light_tank_chassis
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5229,10 +5229,10 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = medium_tank_chassis
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = medium_tank_chassis
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5257,10 +5257,10 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = heavy_tank_chassis
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = heavy_tank_chassis
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5292,10 +5292,10 @@ country_event = {
 			base = 15
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = small_plane_airframe
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = small_plane_airframe
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5311,10 +5311,10 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = small_plane_naval_bomber_airframe
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = small_plane_naval_bomber_airframe
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -5336,10 +5336,10 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				stockpile_ratio = { 
-	  				archetype = medium_plane_airframe
-	  				ratio < 0.76
-	  			}
+				stockpile_ratio = {
+					archetype = medium_plane_airframe
+					ratio < 0.76
+				}
 			}
 		}
 
@@ -6069,7 +6069,7 @@ create_equipment_variant = {
 				create_ship = { type = destroyer_1 equipment_variant = "Drazki Class" creator = FROM.FROM }
 				create_ship = { type = destroyer_1 equipment_variant = "Drazki Class" creator = FROM.FROM }
 			}
-			else = { #Fallback (assuming BUL has at least early tech)			
+			else = { #Fallback (assuming BUL has at least early tech)
 				hidden_effect = { add_manpower = 500 } # 2 x 250MP/DD
 				FROM.FROM = {
 					create_equipment_variant = {
@@ -6103,7 +6103,7 @@ country_event = {
 		name = lar_portugal_purchase_ships.4.a
 
 		custom_effect_tooltip = lar_portugal_purchase_ships.6.a_tt
-		
+
 		if = {
 			limit = { has_dlc = "Man the Guns" }
 			if = { #LVL 4
@@ -6394,13 +6394,13 @@ create_equipment_variant = {
 }
 
 
- ######   ######  ##      ## 
-##    ## ##    ## ##  ##  ## 
-##       ##       ##  ##  ## 
- ######  ##       ##  ##  ## 
-      ## ##       ##  ##  ## 
-##    ## ##    ## ##  ##  ## 
- ######   ######   ###  ###  
+ ######   ######  ##      ##
+##    ## ##    ## ##  ##  ##
+##       ##       ##  ##  ##
+ ######  ##       ##  ##  ##
+      ## ##       ##  ##  ##
+##    ## ##    ## ##  ##  ##
+ ######   ######   ###  ###
 
 
 #SCW is over - Bulgarian volunteers aiding the Spanish Republic are back - Event for BUL
@@ -6408,7 +6408,7 @@ country_event = {
 	id = bftb_bulgaria_scw_volunteers.1
 	title = bftb_bulgaria_scw_volunteers.1.t
 	desc = bftb_bulgaria_scw_volunteers.1.desc
-	picture = GFX_report_event_spr_no_pasaran 
+	picture = GFX_report_event_spr_no_pasaran
 
 	is_triggered_only = yes
 
@@ -6816,13 +6816,13 @@ country_event = {
 }
 
 
- ######   #######  ##     ## #### ######## ########    #### ##    ## ######## ##       ##     ## ######## ##    ##  ######  ######## 
-##    ## ##     ## ##     ##  ##  ##          ##        ##  ###   ## ##       ##       ##     ## ##       ###   ## ##    ## ##       
-##       ##     ## ##     ##  ##  ##          ##        ##  ####  ## ##       ##       ##     ## ##       ####  ## ##       ##       
- ######  ##     ## ##     ##  ##  ######      ##        ##  ## ## ## ######   ##       ##     ## ######   ## ## ## ##       ######   
-      ## ##     ##  ##   ##   ##  ##          ##        ##  ##  #### ##       ##       ##     ## ##       ##  #### ##       ##       
-##    ## ##     ##   ## ##    ##  ##          ##        ##  ##   ### ##       ##       ##     ## ##       ##   ### ##    ## ##       
- ######   #######     ###    #### ########    ##       #### ##    ## ##       ########  #######  ######## ##    ##  ######  ######## 
+ ######   #######  ##     ## #### ######## ########    #### ##    ## ######## ##       ##     ## ######## ##    ##  ######  ########
+##    ## ##     ## ##     ##  ##  ##          ##        ##  ###   ## ##       ##       ##     ## ##       ###   ## ##    ## ##
+##       ##     ## ##     ##  ##  ##          ##        ##  ####  ## ##       ##       ##     ## ##       ####  ## ##       ##
+ ######  ##     ## ##     ##  ##  ######      ##        ##  ## ## ## ######   ##       ##     ## ######   ## ## ## ##       ######
+      ## ##     ##  ##   ##   ##  ##          ##        ##  ##  #### ##       ##       ##     ## ##       ##  #### ##       ##
+##    ## ##     ##   ## ##    ##  ##          ##        ##  ##   ### ##       ##       ##     ## ##       ##   ### ##    ## ##
+ ######   #######     ###    #### ########    ##       #### ##    ## ##       ########  #######  ######## ##    ##  ######  ########
 
 
 # Treaty of Mutual Assistance - BUL wants a NA and guarantee with SOV - Event for SOV
@@ -6843,13 +6843,13 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				BUL = { 
+				BUL = {
 					is_in_faction = no
 				}
 			}
 			modifier = {
 				factor = 100
-				BUL = { 
+				BUL = {
 					is_in_faction_with = ROOT
 				}
 			}
@@ -6879,7 +6879,7 @@ country_event = {
 			relation = non_aggression_pact
 			active = yes
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = FROM
 			modifier = BUL_strengthened_relations_with_us
 		}
@@ -6887,7 +6887,7 @@ country_event = {
 			hidden_effect = {
 				country_event = bftb_bulgaria_soviet_influence.2
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = SOV
 				modifier = BUL_strengthened_relations_with_us
 			}
@@ -6901,7 +6901,7 @@ country_event = {
 				}
 				NOT = { is_in_faction_with = SOV }
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_approached_the_ussr
 			}
@@ -6919,7 +6919,7 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 100
-				BUL = { 
+				BUL = {
 					is_in_faction = yes
 					NOT = { is_in_faction_with = ROOT }
 				}
@@ -6957,7 +6957,7 @@ country_event = {
 		name = bftb_bulgaria_soviet_influence.2.a
 
 		effect_tooltip = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_strengthened_relations_with_us
 			}
@@ -6965,7 +6965,7 @@ country_event = {
 				hidden_effect = {
 					country_event = bftb_bulgaria_soviet_influence.3
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_strengthened_relations_with_us
 				}
@@ -6985,7 +6985,7 @@ country_event = {
 					}
 					NOT = { is_in_faction_with = FROM }
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_approached_the_ussr
 				}
@@ -7033,7 +7033,7 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				BUL = { 
+				BUL = {
 					is_in_faction_with = SOV
 				}
 			}
@@ -7230,13 +7230,13 @@ country_event = {
 }
 
 
-##    ## ##     ##  ######    #######   ######  ##          ###    ##     ## ####    ###    ##    ##    #### ##    ## ######## ##       ##     ## ######## ##    ##  ######  ######## 
- ##  ##  ##     ## ##    ##  ##     ## ##    ## ##         ## ##   ##     ##  ##    ## ##   ###   ##     ##  ###   ## ##       ##       ##     ## ##       ###   ## ##    ## ##       
-  ####   ##     ## ##        ##     ## ##       ##        ##   ##  ##     ##  ##   ##   ##  ####  ##     ##  ####  ## ##       ##       ##     ## ##       ####  ## ##       ##       
-   ##    ##     ## ##   #### ##     ##  ######  ##       ##     ## ##     ##  ##  ##     ## ## ## ##     ##  ## ## ## ######   ##       ##     ## ######   ## ## ## ##       ######   
-   ##    ##     ## ##    ##  ##     ##       ## ##       #########  ##   ##   ##  ######### ##  ####     ##  ##  #### ##       ##       ##     ## ##       ##  #### ##       ##       
-   ##    ##     ## ##    ##  ##     ## ##    ## ##       ##     ##   ## ##    ##  ##     ## ##   ###     ##  ##   ### ##       ##       ##     ## ##       ##   ### ##    ## ##       
-   ##     #######   ######    #######   ######  ######## ##     ##    ###    #### ##     ## ##    ##    #### ##    ## ##       ########  #######  ######## ##    ##  ######  ######## 
+##    ## ##     ##  ######    #######   ######  ##          ###    ##     ## ####    ###    ##    ##    #### ##    ## ######## ##       ##     ## ######## ##    ##  ######  ########
+ ##  ##  ##     ## ##    ##  ##     ## ##    ## ##         ## ##   ##     ##  ##    ## ##   ###   ##     ##  ###   ## ##       ##       ##     ## ##       ###   ## ##    ## ##
+  ####   ##     ## ##        ##     ## ##       ##        ##   ##  ##     ##  ##   ##   ##  ####  ##     ##  ####  ## ##       ##       ##     ## ##       ####  ## ##       ##
+   ##    ##     ## ##   #### ##     ##  ######  ##       ##     ## ##     ##  ##  ##     ## ## ## ##     ##  ## ## ## ######   ##       ##     ## ######   ## ## ## ##       ######
+   ##    ##     ## ##    ##  ##     ##       ## ##       #########  ##   ##   ##  ######### ##  ####     ##  ##  #### ##       ##       ##     ## ##       ##  #### ##       ##
+   ##    ##     ## ##    ##  ##     ## ##    ## ##       ##     ##   ## ##    ##  ##     ## ##   ###     ##  ##   ### ##       ##       ##     ## ##       ##   ### ##    ## ##
+   ##     #######   ######    #######   ######  ######## ##     ##    ###    #### ##     ## ##    ##    #### ##    ## ##       ########  #######  ######## ##    ##  ######  ########
 
 
 # Treaty of Perpetual Friendship - BUL wants a NA with YUG - Event for YUG
@@ -7268,7 +7268,7 @@ country_event = {
 			}
 			modifier = { #You have tried
 				factor = 5
-				BUL = { 
+				BUL = {
 					NOT = {
 						has_idea = BUL_imro_01
 						has_idea = BUL_imro_04
@@ -7312,12 +7312,12 @@ country_event = {
 			relation = non_aggression_pact
 			active = yes
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = FROM
 			modifier = BUL_strengthened_relations_with_us
 		}
 		FROM = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = ROOT
 				modifier = BUL_strengthened_relations_with_us
 			}
@@ -7333,7 +7333,7 @@ country_event = {
 				NOT = { is_in_faction_with = ROOT }
 				NOT = { is_in_faction_with = FROM }
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_approached_yugoslavia
 			}
@@ -7391,7 +7391,7 @@ country_event = {
 	id = bftb_bulgaria_yugoslavian_influence.2
 	title = bftb_bulgaria_yugoslavian_influence.2.t
 	desc = bftb_bulgaria_yugoslavian_influence.2.desc
-	picture = GFX_report_event_communists_cheer 
+	picture = GFX_report_event_communists_cheer
 
 	is_triggered_only = yes
 
@@ -7413,12 +7413,12 @@ country_event = {
 					relation = non_aggression_pact
 					active = yes
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_strengthened_relations_with_us
 				}
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_strengthened_relations_with_us
 			}
@@ -7432,7 +7432,7 @@ country_event = {
 					NOT = { is_in_faction_with = ROOT }
 					NOT = { is_in_faction_with = FROM }
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_approached_yugoslavia
 				}
@@ -7446,7 +7446,7 @@ country_event = {
 	id = bftb_bulgaria_yugoslavian_influence.3
 	title = bftb_bulgaria_yugoslavian_influence.3.t
 	desc = bftb_bulgaria_yugoslavian_influence.3.desc
-	picture = GFX_report_event_generic_sign_treaty1 
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 
@@ -7465,13 +7465,13 @@ country_event = {
 }
 
 
-########     ###    ##       ##    ##    ###    ##    ##    ######## ######## ########  ######## ########     ###    ######## ####  #######  ##    ## 
-##     ##   ## ##   ##       ##   ##    ## ##   ###   ##    ##       ##       ##     ## ##       ##     ##   ## ##      ##     ##  ##     ## ###   ## 
-##     ##  ##   ##  ##       ##  ##    ##   ##  ####  ##    ##       ##       ##     ## ##       ##     ##  ##   ##     ##     ##  ##     ## ####  ## 
-########  ##     ## ##       #####    ##     ## ## ## ##    ######   ######   ##     ## ######   ########  ##     ##    ##     ##  ##     ## ## ## ## 
-##     ## ######### ##       ##  ##   ######### ##  ####    ##       ##       ##     ## ##       ##   ##   #########    ##     ##  ##     ## ##  #### 
-##     ## ##     ## ##       ##   ##  ##     ## ##   ###    ##       ##       ##     ## ##       ##    ##  ##     ##    ##     ##  ##     ## ##   ### 
-########  ##     ## ######## ##    ## ##     ## ##    ##    ##       ######## ########  ######## ##     ## ##     ##    ##    ####  #######  ##    ## 
+########     ###    ##       ##    ##    ###    ##    ##    ######## ######## ########  ######## ########     ###    ######## ####  #######  ##    ##
+##     ##   ## ##   ##       ##   ##    ## ##   ###   ##    ##       ##       ##     ## ##       ##     ##   ## ##      ##     ##  ##     ## ###   ##
+##     ##  ##   ##  ##       ##  ##    ##   ##  ####  ##    ##       ##       ##     ## ##       ##     ##  ##   ##     ##     ##  ##     ## ####  ##
+########  ##     ## ##       #####    ##     ## ## ## ##    ######   ######   ##     ## ######   ########  ##     ##    ##     ##  ##     ## ## ## ##
+##     ## ######### ##       ##  ##   ######### ##  ####    ##       ##       ##     ## ##       ##   ##   #########    ##     ##  ##     ## ##  ####
+##     ## ##     ## ##       ##   ##  ##     ## ##   ###    ##       ##       ##     ## ##       ##    ##  ##     ##    ##     ##  ##     ## ##   ###
+########  ##     ## ######## ##    ## ##     ## ##    ##    ##       ######## ########  ######## ##     ## ##     ##    ##    ####  #######  ##    ##
 
 
 #Bulgarian Balkan Federation Project Ready - Event for BUL
@@ -7533,7 +7533,7 @@ country_event = {
 	id = bftb_bulgaria_balkan_federation.4
 	title = bftb_bulgaria_balkan_federation.4.t
 	desc = bftb_bulgaria_balkan_federation.4.desc
-	picture = GFX_report_event_bul_troops_partisans_boat 
+	picture = GFX_report_event_bul_troops_partisans_boat
 
 	is_triggered_only = yes
 
@@ -7620,7 +7620,7 @@ country_event = {
 			}
 			modifier = { #You have tried
 				factor = 5
-				BUL = { 
+				BUL = {
 					NOT = {
 						has_idea = BUL_imro_01
 						has_idea = BUL_imro_04
@@ -7695,7 +7695,7 @@ country_event = {
 #			}
 #			modifier = { #You have tried
 #				factor = 2
-#				BUL = { 
+#				BUL = {
 #					NOT = {
 #						has_idea = BUL_imro_01
 #						has_idea = BUL_imro_04
@@ -7837,7 +7837,7 @@ country_event = {
 	id = bftb_bulgaria_balkan_federation.6
 	title = bftb_bulgaria_balkan_federation.6.t
 	desc = bftb_bulgaria_balkan_federation.6.desc
-	picture = GFX_report_event_bul_soviet_army_sofia 
+	picture = GFX_report_event_bul_soviet_army_sofia
 
 	is_triggered_only = yes
 
@@ -7927,8 +7927,8 @@ country_event = {
 				FROM = { is_in_faction = no }
 			}
 			random_country = {
-				limit = { 
-					is_in_faction_with = BUL 
+				limit = {
+					is_in_faction_with = BUL
 					is_faction_leader = yes
 				}
 				add_to_faction = FROM
@@ -8030,25 +8030,25 @@ country_event = {
 		hidden_effect = { #ROOT & FROM are not happy with each other's actions
 			add_ai_strategy = {
 				type = alliance
-				id = FROM			
+				id = FROM
 				value = -100
 			}
 
 			add_ai_strategy = {
 				type = befriend
-				id = FROM			
+				id = FROM
 				value = -100
 			}
 			FROM = {
 				add_ai_strategy = {
 					type = alliance
-					id = ROOT			
+					id = ROOT
 					value = -100
 				}
 
 				add_ai_strategy = {
 					type = befriend
-					id = ROOT			
+					id = ROOT
 					value = -100
 				}
 			}
@@ -8107,25 +8107,25 @@ country_event = {
 		hidden_effect = { #ROOT & FROM are mad at each other
 			add_ai_strategy = {
 				type = alliance
-				id = FROM			
+				id = FROM
 				value = -200
 			}
 
 			add_ai_strategy = {
 				type = befriend
-				id = FROM			
+				id = FROM
 				value = -200
 			}
 			FROM = {
 				add_ai_strategy = {
 					type = alliance
-					id = ROOT			
+					id = ROOT
 					value = -200
 				}
 
 				add_ai_strategy = {
 					type = befriend
-					id = ROOT			
+					id = ROOT
 					value = -200
 				}
 			}
@@ -8180,7 +8180,7 @@ country_event = {
 					any_allied_country = {
 						has_war_with = FROM
 					}
-				}			
+				}
 			}
 		}
 
@@ -8198,7 +8198,7 @@ country_event = {
 						transfer_state = PREV
 					}
 				}
-				else_if = { #Initial Balkan countries are prioritized before releasables 
+				else_if = { #Initial Balkan countries are prioritized before releasables
 					limit = {
 						is_core_of = YUG
 						country_exists = YUG
@@ -8353,7 +8353,7 @@ country_event = {
 	id = bftb_bulgaria_balkan_federation.13
 	title = bftb_bulgaria_balkan_federation.13.t
 	desc = bftb_bulgaria_balkan_federation.13.desc
-	picture = GFX_report_event_bul_italian_equipment 
+	picture = GFX_report_event_bul_italian_equipment
 
 	is_triggered_only = yes
 
@@ -8547,7 +8547,7 @@ country_event = {
 					any_allied_country = {
 						has_war_with = FROM
 					}
-				}			
+				}
 			}
 		}
 
@@ -8629,7 +8629,7 @@ country_event = {
 	id = bftb_bulgaria_balkan_federation.17
 	title = bftb_bulgaria_balkan_federation.17.t
 	desc = bftb_bulgaria_balkan_federation.17.desc
-	picture = GFX_report_event_bul_soviet_army_sofia 
+	picture = GFX_report_event_bul_soviet_army_sofia
 
 	is_triggered_only = yes
 
@@ -8658,7 +8658,7 @@ country_event = {
 					}
 				}
 			}
-		}	
+		}
 	}
 }
 
@@ -8667,7 +8667,7 @@ country_event = {
 	id = bftb_bulgaria_balkan_federation.18
 	title = bftb_bulgaria_balkan_federation.18.t
 	desc = bftb_bulgaria_balkan_federation.18.desc
-	picture = GFX_report_event_bul_ff_troops_panzer 
+	picture = GFX_report_event_bul_ff_troops_panzer
 
 	is_triggered_only = yes
 
@@ -8690,13 +8690,13 @@ country_event = {
 }
 
 
-########    ###    ######## ########     #######  ########    ######## ##     ## ########    ########     ###    ##       ##    ##    ###    ##    ##  ######  
-##         ## ##      ##    ##          ##     ## ##             ##    ##     ## ##          ##     ##   ## ##   ##       ##   ##    ## ##   ###   ## ##    ## 
-##        ##   ##     ##    ##          ##     ## ##             ##    ##     ## ##          ##     ##  ##   ##  ##       ##  ##    ##   ##  ####  ## ##       
-######   ##     ##    ##    ######      ##     ## ######         ##    ######### ######      ########  ##     ## ##       #####    ##     ## ## ## ##  ######  
-##       #########    ##    ##          ##     ## ##             ##    ##     ## ##          ##     ## ######### ##       ##  ##   ######### ##  ####       ## 
-##       ##     ##    ##    ##          ##     ## ##             ##    ##     ## ##          ##     ## ##     ## ##       ##   ##  ##     ## ##   ### ##    ## 
-##       ##     ##    ##    ########     #######  ##             ##    ##     ## ########    ########  ##     ## ######## ##    ## ##     ## ##    ##  ######  
+########    ###    ######## ########     #######  ########    ######## ##     ## ########    ########     ###    ##       ##    ##    ###    ##    ##  ######
+##         ## ##      ##    ##          ##     ## ##             ##    ##     ## ##          ##     ##   ## ##   ##       ##   ##    ## ##   ###   ## ##    ##
+##        ##   ##     ##    ##          ##     ## ##             ##    ##     ## ##          ##     ##  ##   ##  ##       ##  ##    ##   ##  ####  ## ##
+######   ##     ##    ##    ######      ##     ## ######         ##    ######### ######      ########  ##     ## ##       #####    ##     ## ## ## ##  ######
+##       #########    ##    ##          ##     ## ##             ##    ##     ## ##          ##     ## ######### ##       ##  ##   ######### ##  ####       ##
+##       ##     ##    ##    ##          ##     ## ##             ##    ##     ## ##          ##     ## ##     ## ##       ##   ##  ##     ## ##   ### ##    ##
+##       ##     ##    ##    ########     #######  ##             ##    ##     ## ########    ########  ##     ## ######## ##    ## ##     ## ##    ##  ######
 
 
 #Ultimatum to join faction - Event for Balkan nation
@@ -8704,7 +8704,7 @@ country_event = {
 	id = bftb_bulgaria_fate_of_the_balkans.1
 	title = bftb_bulgaria_fate_of_the_balkans.1.t
 	desc = bftb_bulgaria_fate_of_the_balkans.1.desc
-	picture = GFX_report_event_bul_boris_military 
+	picture = GFX_report_event_bul_boris_military
 
 	is_triggered_only = yes
 
@@ -9164,7 +9164,7 @@ country_event = {
 			}
 			modifier = { #You have tried
 				factor = 5
-				BUL = { 
+				BUL = {
 					NOT = {
 						has_idea = BUL_imro_01
 						has_idea = BUL_imro_04
@@ -9177,13 +9177,13 @@ country_event = {
 }
 
 
-########   #######  ##       #### ######## ####  ######     ###    ##          ##       ########    ###    ########  ######## ########   ######  
-##     ## ##     ## ##        ##     ##     ##  ##    ##   ## ##   ##          ##       ##         ## ##   ##     ## ##       ##     ## ##    ## 
-##     ## ##     ## ##        ##     ##     ##  ##        ##   ##  ##          ##       ##        ##   ##  ##     ## ##       ##     ## ##       
-########  ##     ## ##        ##     ##     ##  ##       ##     ## ##          ##       ######   ##     ## ##     ## ######   ########   ######  
-##        ##     ## ##        ##     ##     ##  ##       ######### ##          ##       ##       ######### ##     ## ##       ##   ##         ## 
-##        ##     ## ##        ##     ##     ##  ##    ## ##     ## ##          ##       ##       ##     ## ##     ## ##       ##    ##  ##    ## 
-##         #######  ######## ####    ##    ####  ######  ##     ## ########    ######## ######## ##     ## ########  ######## ##     ##  ######  
+########   #######  ##       #### ######## ####  ######     ###    ##          ##       ########    ###    ########  ######## ########   ######
+##     ## ##     ## ##        ##     ##     ##  ##    ##   ## ##   ##          ##       ##         ## ##   ##     ## ##       ##     ## ##    ##
+##     ## ##     ## ##        ##     ##     ##  ##        ##   ##  ##          ##       ##        ##   ##  ##     ## ##       ##     ## ##
+########  ##     ## ##        ##     ##     ##  ##       ##     ## ##          ##       ######   ##     ## ##     ## ######   ########   ######
+##        ##     ## ##        ##     ##     ##  ##       ######### ##          ##       ##       ######### ##     ## ##       ##   ##         ##
+##        ##     ## ##        ##     ##     ##  ##    ## ##     ## ##          ##       ##       ##     ## ##     ## ##       ##    ##  ##    ##
+##         #######  ######## ####    ##    ####  ######  ##     ## ########    ######## ######## ##     ## ########  ######## ##     ##  ######
 
 
 #The murder of Hristo Lukov
@@ -9297,13 +9297,13 @@ country_event = {
 }
 
 
- ######   ########  ######## ######## ##    ##    #### ##    ## ######## ##       ##     ## ######## ##    ##  ######  ######## 
-##    ##  ##     ## ##       ##       ##   ##      ##  ###   ## ##       ##       ##     ## ##       ###   ## ##    ## ##       
-##        ##     ## ##       ##       ##  ##       ##  ####  ## ##       ##       ##     ## ##       ####  ## ##       ##       
-##   #### ########  ######   ######   #####        ##  ## ## ## ######   ##       ##     ## ######   ## ## ## ##       ######   
-##    ##  ##   ##   ##       ##       ##  ##       ##  ##  #### ##       ##       ##     ## ##       ##  #### ##       ##       
-##    ##  ##    ##  ##       ##       ##   ##      ##  ##   ### ##       ##       ##     ## ##       ##   ### ##    ## ##       
- ######   ##     ## ######## ######## ##    ##    #### ##    ## ##       ########  #######  ######## ##    ##  ######  ######## 
+ ######   ########  ######## ######## ##    ##    #### ##    ## ######## ##       ##     ## ######## ##    ##  ######  ########
+##    ##  ##     ## ##       ##       ##   ##      ##  ###   ## ##       ##       ##     ## ##       ###   ## ##    ## ##
+##        ##     ## ##       ##       ##  ##       ##  ####  ## ##       ##       ##     ## ##       ####  ## ##       ##
+##   #### ########  ######   ######   #####        ##  ## ## ## ######   ##       ##     ## ######   ## ## ## ##       ######
+##    ##  ##   ##   ##       ##       ##  ##       ##  ##  #### ##       ##       ##     ## ##       ##  #### ##       ##
+##    ##  ##    ##  ##       ##       ##   ##      ##  ##   ### ##       ##       ##     ## ##       ##   ### ##    ## ##
+ ######   ##     ## ######## ######## ##    ##    #### ##    ## ##       ########  #######  ######## ##    ##  ######  ########
 
 
 #Bulgaria asks GRE for a NA pact - Event for GRE
@@ -9333,7 +9333,7 @@ country_event = {
 			}
 			modifier = { #You have tried
 				factor = 5
-				BUL = { 
+				BUL = {
 					NOT = {
 						has_idea = BUL_imro_01
 						has_idea = BUL_imro_04
@@ -9371,12 +9371,12 @@ country_event = {
 			relation = non_aggression_pact
 			active = yes
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = FROM
 			modifier = BUL_strengthened_relations_with_us
 		}
 		FROM = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = ROOT
 				modifier = BUL_strengthened_relations_with_us
 			}
@@ -9389,7 +9389,7 @@ country_event = {
 				NOT = { is_in_faction_with = ROOT }
 				NOT = { is_in_faction_with = FROM }
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_approached_greece
 			}
@@ -9459,12 +9459,12 @@ country_event = {
 				relation = non_aggression_pact
 				active = yes
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_strengthened_relations_with_us
 			}
 			FROM = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_strengthened_relations_with_us
 				}
@@ -9475,7 +9475,7 @@ country_event = {
 					NOT = { is_in_faction_with = ROOT }
 					NOT = { is_in_faction_with = FROM }
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_approached_greece
 				}
@@ -9506,13 +9506,13 @@ country_event = {
 }
 
 
-########  ########  #### ######## ####  ######  ##     ##    #### ##    ## ######## ##       ##     ## ######## ##    ##  ######  ######## 
-##     ## ##     ##  ##     ##     ##  ##    ## ##     ##     ##  ###   ## ##       ##       ##     ## ##       ###   ## ##    ## ##       
-##     ## ##     ##  ##     ##     ##  ##       ##     ##     ##  ####  ## ##       ##       ##     ## ##       ####  ## ##       ##       
-########  ########   ##     ##     ##   ######  #########     ##  ## ## ## ######   ##       ##     ## ######   ## ## ## ##       ######   
-##     ## ##   ##    ##     ##     ##        ## ##     ##     ##  ##  #### ##       ##       ##     ## ##       ##  #### ##       ##       
-##     ## ##    ##   ##     ##     ##  ##    ## ##     ##     ##  ##   ### ##       ##       ##     ## ##       ##   ### ##    ## ##       
-########  ##     ## ####    ##    ####  ######  ##     ##    #### ##    ## ##       ########  #######  ######## ##    ##  ######  ######## 
+########  ########  #### ######## ####  ######  ##     ##    #### ##    ## ######## ##       ##     ## ######## ##    ##  ######  ########
+##     ## ##     ##  ##     ##     ##  ##    ## ##     ##     ##  ###   ## ##       ##       ##     ## ##       ###   ## ##    ## ##
+##     ## ##     ##  ##     ##     ##  ##       ##     ##     ##  ####  ## ##       ##       ##     ## ##       ####  ## ##       ##
+########  ########   ##     ##     ##   ######  #########     ##  ## ## ## ######   ##       ##     ## ######   ## ## ## ##       ######
+##     ## ##   ##    ##     ##     ##        ## ##     ##     ##  ##  #### ##       ##       ##     ## ##       ##  #### ##       ##
+##     ## ##    ##   ##     ##     ##  ##    ## ##     ##     ##  ##   ### ##       ##       ##     ## ##       ##   ### ##    ## ##
+########  ##     ## ####    ##    ####  ######  ##     ##    #### ##    ## ##       ########  #######  ######## ##    ##  ######  ########
 
 
 #Bulgaria asks ENG for a NA pact - Event for ENG
@@ -9549,7 +9549,7 @@ country_event = {
 			}
 			modifier = { #You have tried
 				factor = 2
-				BUL = { 
+				BUL = {
 					NOT = {
 						has_idea = BUL_imro_01
 						has_idea = BUL_imro_04
@@ -9573,12 +9573,12 @@ country_event = {
 			active = yes
 		}
 		give_guarantee = FROM
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = FROM
 			modifier = BUL_strengthened_relations_with_us
 		}
 		FROM = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = ROOT
 				modifier = BUL_strengthened_relations_with_us
 			}
@@ -9589,7 +9589,7 @@ country_event = {
 				NOT = { is_in_faction_with = ROOT }
 				NOT = { is_in_faction_with = FROM }
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_approached_the_uk
 			}
@@ -9638,12 +9638,12 @@ country_event = {
 			relation = non_aggression_pact
 			active = yes
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = FROM
 			modifier = BUL_strengthened_relations_with_us
 		}
 		FROM = {
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = ROOT
 				modifier = BUL_strengthened_relations_with_us
 			}
@@ -9654,7 +9654,7 @@ country_event = {
 				NOT = { is_in_faction_with = ROOT }
 				NOT = { is_in_faction_with = FROM }
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_approached_the_uk
 			}
@@ -9722,12 +9722,12 @@ country_event = {
 				active = yes
 			}
 			FROM = { give_guarantee = ROOT }
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_strengthened_relations_with_us
 			}
 			FROM = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_strengthened_relations_with_us
 				}
@@ -9738,7 +9738,7 @@ country_event = {
 					NOT = { is_in_faction_with = ROOT }
 					NOT = { is_in_faction_with = FROM }
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_approached_greece
 				}
@@ -9765,12 +9765,12 @@ country_event = {
 				relation = non_aggression_pact
 				active = yes
 			}
-			add_opinion_modifier = { 
+			add_opinion_modifier = {
 				target = FROM
 				modifier = BUL_strengthened_relations_with_us
 			}
 			FROM = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_strengthened_relations_with_us
 				}
@@ -9781,7 +9781,7 @@ country_event = {
 					NOT = { is_in_faction_with = ROOT }
 					NOT = { is_in_faction_with = FROM }
 				}
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_approached_greece
 				}
@@ -9812,13 +9812,13 @@ country_event = {
 }
 
 
-########  ######## ##     ##  #######   ######  ########     ###    ######## ####  ######     ######## ##     ## ######## ##    ## ########  ######  
-##     ## ##       ###   ### ##     ## ##    ## ##     ##   ## ##      ##     ##  ##    ##    ##       ##     ## ##       ###   ##    ##    ##    ## 
-##     ## ##       #### #### ##     ## ##       ##     ##  ##   ##     ##     ##  ##          ##       ##     ## ##       ####  ##    ##    ##       
-##     ## ######   ## ### ## ##     ## ##       ########  ##     ##    ##     ##  ##          ######   ##     ## ######   ## ## ##    ##     ######  
-##     ## ##       ##     ## ##     ## ##       ##   ##   #########    ##     ##  ##          ##        ##   ##  ##       ##  ####    ##          ## 
-##     ## ##       ##     ## ##     ## ##    ## ##    ##  ##     ##    ##     ##  ##    ##    ##         ## ##   ##       ##   ###    ##    ##    ## 
-########  ######## ##     ##  #######   ######  ##     ## ##     ##    ##    ####  ######     ########    ###    ######## ##    ##    ##     ######  
+########  ######## ##     ##  #######   ######  ########     ###    ######## ####  ######     ######## ##     ## ######## ##    ## ########  ######
+##     ## ##       ###   ### ##     ## ##    ## ##     ##   ## ##      ##     ##  ##    ##    ##       ##     ## ##       ###   ##    ##    ##    ##
+##     ## ##       #### #### ##     ## ##       ##     ##  ##   ##     ##     ##  ##          ##       ##     ## ##       ####  ##    ##    ##
+##     ## ######   ## ### ## ##     ## ##       ########  ##     ##    ##     ##  ##          ######   ##     ## ######   ## ## ##    ##     ######
+##     ## ##       ##     ## ##     ## ##       ##   ##   #########    ##     ##  ##          ##        ##   ##  ##       ##  ####    ##          ##
+##     ## ##       ##     ## ##     ## ##    ## ##    ##  ##     ##    ##     ##  ##    ##    ##         ## ##   ##       ##   ###    ##    ##    ##
+########  ######## ##     ##  #######   ######  ##     ## ##     ##    ##    ####  ######     ########    ###    ######## ##    ##    ##     ######
 
 
 
@@ -9907,49 +9907,49 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				BUL = { 
+				BUL = {
 					any_war_score > 5
 				}
 			}
 			modifier = {
 				factor = 2
-				BUL = { 
+				BUL = {
 					any_war_score > 10
 				}
 			}
 			modifier = {
 				factor = 2
-				BUL = { 
+				BUL = {
 					any_war_score > 15
 				}
 			}
 			modifier = {
 				factor = 5
-				BUL = { 
+				BUL = {
 					any_war_score > 20
 				}
 			}
 			modifier = {
 				factor = 10
-				BUL = { 
+				BUL = {
 					any_war_score > 30
 				}
 			}
 			modifier = {
 				factor = 10
-				BUL = { 
+				BUL = {
 					any_war_score > 50
 				}
 			}
 			modifier = {
 				factor = 5
-				BUL = { 
+				BUL = {
 					casualties > 10000
 				}
 			}
 			modifier = {
 				factor = 10
-				BUL = { 
+				BUL = {
 					casualties > 100000
 				}
 			}
@@ -9959,7 +9959,7 @@ country_event = {
 			}
 			modifier = { #You have tried
 				factor = 5
-				BUL = { 
+				BUL = {
 					NOT = {
 						has_idea = BUL_imro_01
 						has_idea = BUL_imro_04
@@ -10003,19 +10003,19 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 2
-				BUL = { 
+				BUL = {
 					any_war_score < 5
 				}
 			}
 			modifier = {
 				factor = 300
-				BUL = { 
+				BUL = {
 					any_war_score < 1
 				}
 			}
 			modifier = {
 				factor = 100
-				BUL = { 
+				BUL = {
 					casualties < 1000
 				}
 			}

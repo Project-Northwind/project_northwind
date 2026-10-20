@@ -8,17 +8,17 @@
 
 focus_tree = {
 	id = netherlands_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = HOL
 			has_dlc = "Man the Guns"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1500 }
@@ -28,16 +28,16 @@ focus_tree = {
 	shared_focus = INSHOL_reform_knil
 	shared_focus = ABDA_abdacom
 
-	initial_show_position = { 
+	initial_show_position = {
 		x = 65
 		y = 0
 	}
 
- ##   ##  #    ##  #  # ###  ##  #       ### #  # ###  #  #  ## ### ###  #   #     ### ###  ### ### 
-#  # #  # #   #  # ## #  #  #  # #        #  ## # #  # #  # #    #  #  #  # #       #  #  # #   #   
-#    #  # #   #  # # ##  #  #### #        #  # ## #  # #  #  #   #  ###    #        #  ###  ##  ##  
-#  # #  # #   #  # #  #  #  #  # #        #  #  # #  # #  #   #  #  #  #   #        #  #  # #   #   
- ##   ##  ###  ##  #  # ### #  # ###     ### #  # ###   ##  ##   #  #  #   #        #  #  # ### ### 
+ ##   ##  #    ##  #  # ###  ##  #       ### #  # ###  #  #  ## ### ###  #   #     ### ###  ### ###
+#  # #  # #   #  # ## #  #  #  # #        #  ## # #  # #  # #    #  #  #  # #       #  #  # #   #
+#    #  # #   #  # # ##  #  #### #        #  # ## #  # #  #  #   #  ###    #        #  ###  ##  ##
+#  # #  # #   #  # #  #  #  #  # #        #  #  # #  # #  #   #  #  #  #   #        #  #  # #   #
+ ##   ##  ###  ##  #  # ### #  # ###     ### #  # ###   ##  ##   #  #  #   #        #  #  # ### ###
 
 
 	focus = {
@@ -66,7 +66,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		
+
 		icon = GFX_goal_generic_consumer_goods
 		x = 3
 		y = 0
@@ -75,17 +75,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			unlock_decision_category_tooltip = HOL_obtain_foreign_colonial_investments
 			custom_effect_tooltip = HOL_obtain_foreign_colonial_investments_tt
 		}
 	}
 
-#   # ###  ## ###     ### #  # ###  ### ###  ## 
-#   # #   #    #       #  ## # #  #  #  #   #   
-# # # ##   #   #       #  # ## #  #  #  ##   #  
-# # # #     #  #       #  #  # #  #  #  #     # 
- # #  ### ##   #      ### #  # ###  ### ### ##  
+#   # ###  ## ###     ### #  # ###  ### ###  ##
+#   # #   #    #       #  ## # #  #  #  #   #
+# # # ##   #   #       #  # ## #  #  #  ##   #
+# # # #     #  #       #  #  # #  #  #  #     #
+ # #  ### ##   #      ### #  # ###  ### ### ##
 
 
 	focus = {
@@ -104,7 +104,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			695 = {
 				add_building_construction = {
 					type = infrastructure
@@ -158,7 +158,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			custom_effect_tooltip = HOL_expand_curacao_oil_refineries_tt
 			695 = {
 				add_resource = {
@@ -232,7 +232,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			309 = {
 				add_resource = {
 					type = aluminium
@@ -274,7 +274,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			695 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -331,7 +331,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			create_wargoal = {
 			    type = puppet_wargoal_focus
 			    target = VEN
@@ -340,11 +340,11 @@ focus_tree = {
 		}
 	}
 
-###  ##   ## ###     ### #  # ###  ### ###  ## 
-#   #  # #    #       #  ## # #  #  #  #   #   
-##  ####  #   #       #  # ## #  #  #  ##   #  
-#   #  #   #  #       #  #  # #  #  #  #     # 
-### #  # ##   #      ### #  # ###  ### ### ##  
+###  ##   ## ###     ### #  # ###  ### ###  ##
+#   #  # #    #       #  ## # #  #  #  #   #
+##  ####  #   #       #  # ## #  #  #  ##   #
+#   #  #   #  #       #  #  # #  #  #  #     #
+### #  # ##   #      ### #  # ###  ### ### ##
 
 	focus = {
 		id = HOL_the_crown_jewel_colony
@@ -371,7 +371,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			335 = {
 				add_building_construction = {
 					type = infrastructure
@@ -425,7 +425,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			335 = {
 				add_building_construction = {
 					type = infrastructure
@@ -488,7 +488,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			335 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -571,7 +571,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			add_ideas = HOL_the_foundations_of_defense
 			335 = {
 				custom_effect_tooltip = HOL_the_foundations_of_defense_tt
@@ -616,7 +616,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			672 = {
 				add_building_construction = {
 					type = infrastructure
@@ -687,7 +687,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			667 = {
 				add_building_construction = {
 					type = infrastructure
@@ -753,13 +753,13 @@ focus_tree = {
 		}
 	}
 
- ##   ##  #  # ### ### #  # #  # ###     ### #  # ###     #   #  ##  ###      ### #  #     ###   ##  ###  ##  #   # ###  ##  
-#  # #  # ## #  #   #  ## # #  # #        #  #  # #       #   # #  # #  #      #  ## #     #  # #  #  #  #  # #   #  #  #  # 
-#    #  # # ##  #   #  # ## #  # ##       #  #### ##      # # # #### ###       #  # ##     ###  ####  #  ####  # #   #  #### 
-#  # #  # #  #  #   #  #  # #  # #        #  #  # #       # # # #  # #  #      #  #  #     #  # #  #  #  #  #  # #   #  #  # 
- ##   ##  #  #  #  ### #  #  ##  ###      #  #  # ###      # #  #  # #  #     ### #  #     ###  #  #  #  #  #   #   ### #  # 
+ ##   ##  #  # ### ### #  # #  # ###     ### #  # ###     #   #  ##  ###      ### #  #     ###   ##  ###  ##  #   # ###  ##
+#  # #  # ## #  #   #  ## # #  # #        #  #  # #       #   # #  # #  #      #  ## #     #  # #  #  #  #  # #   #  #  #  #
+#    #  # # ##  #   #  # ## #  # ##       #  #### ##      # # # #### ###       #  # ##     ###  ####  #  ####  # #   #  ####
+#  # #  # #  #  #   #  #  # #  # #        #  #  # #       # # # #  # #  #      #  #  #     #  # #  #  #  #  #  # #   #  #  #
+ ##   ##  #  #  #  ### #  #  ##  ###      #  #  # ###      # #  #  # #  #     ### #  #     ###  #  #  #  #  #   #   ### #  #
 
- 	focus = {
+	focus = {
 		id = HOL_curtail_colonial_autonomy
 		available = {
 			country_exists = INS
@@ -781,7 +781,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			add_timed_idea = {
 				idea = HOL_curtail_colonial_autonomy_overlord
 				days = 545
@@ -825,7 +825,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			
+
 			activate_decision = HOL_relocate_government_to_batavia
 			custom_effect_tooltip = HOL_continue_the_war_in_batavia_tt
 			effect_tooltip = {
@@ -865,7 +865,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			335 = {
 				add_building_construction = {
 					type = infrastructure
@@ -905,7 +905,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			
+
 			add_ideas = HOL_expand_the_colonial_army
 			every_state = {
 				limit = {
@@ -941,7 +941,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			335 = {
 				if = {
 					limit = {
@@ -1075,7 +1075,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			335 = {
 				if = {
 					limit = {
@@ -1118,7 +1118,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			335 = {
 				if = {
 					limit = {
@@ -1184,7 +1184,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			set_capital = { state = 7 }
 			add_stability = 0.1
 			add_war_support = 0.05
@@ -1239,7 +1239,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		
+
 		icon = GFX_goal_generic_consumer_goods
 		x = 4
 		y = 0
@@ -1259,7 +1259,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			unlock_decision_category_tooltip = HOL_obtain_foreign_colonial_investments
 			custom_effect_tooltip = HOL_obtain_foreign_colonial_investments_tt
 		}
@@ -1283,7 +1283,7 @@ focus_tree = {
 
 		prerequisite = { focus = HOL_obtain_foreign_colonial_investments_taog }
 		continue_if_invalid = yes
-		
+
 		icon = GFX_focus_INS_the_declaration_of_independence
 		x = -2
 		y = 1
@@ -1298,8 +1298,8 @@ focus_tree = {
 			custom_effect_tooltip = HOL_taog_guarantee_colonial_loyalty_tt
 			custom_effect_tooltip = newline_tt
 			INS = {
-				add_autonomy_score = { 
-					value = 500 
+				add_autonomy_score = {
+					value = 500
 					localization = HOL_taog_guarantee_colonial_loyalty
 				}
 				add_political_power = 250
@@ -1307,7 +1307,7 @@ focus_tree = {
 		}
 	}
 
- 	focus = {
+	focus = {
 		id = HOL_curtail_colonial_autonomy_taog #TAOG
 		available = {
 			country_exists = INS
@@ -1367,7 +1367,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			add_timed_idea = {
 				idea = HOL_curtail_colonial_autonomy_overlord
 				days = 545
@@ -1400,7 +1400,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			695 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1477,7 +1477,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			custom_effect_tooltip = HOL_expand_curacao_oil_refineries_tt
 			695 = {
 				add_resource = {
@@ -1574,7 +1574,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			309 = {
 				add_resource = {
 					type = aluminium
@@ -1616,7 +1616,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			695 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -1673,7 +1673,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			create_wargoal = {
 			    type = puppet_wargoal_focus
 			    target = VEN
@@ -1741,7 +1741,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			
+
 			activate_decision = HOL_relocate_government_to_batavia
 			custom_effect_tooltip = HOL_continue_the_war_in_batavia_tt
 			effect_tooltip = {
@@ -1781,7 +1781,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			335 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1821,7 +1821,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			
+
 			add_ideas = HOL_expand_the_colonial_army
 			every_state = {
 				limit = {
@@ -1856,7 +1856,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			335 = {
 				if = {
 					limit = {
@@ -1990,7 +1990,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			335 = {
 				if = {
 					limit = {
@@ -2034,7 +2034,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			335 = {
 				if = {
 					limit = {
@@ -2100,7 +2100,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			set_capital = { state = 7 }
 			add_stability = 0.1
 			add_war_support = 0.05
@@ -2120,11 +2120,11 @@ focus_tree = {
 		}
 	}
 
- ##  ###   ##  #  # ###   ##  #  #     ### #  # ###      ##   ##  #   ###       ## ###  ##  #  # ###   ##  ###  ###  
-#  # #  # #  # ## # #  # #  # ## #      #  #  # #       #    #  # #   #  #     #    #  #  # ## # #  # #  # #  # #  # 
-#### ###  #### # ## #  # #  # # ##      #  #### ##      # ## #  # #   #  #      #   #  #### # ## #  # #### ###  #  # 
-#  # #  # #  # #  # #  # #  # #  #      #  #  # #       #  # #  # #   #  #       #  #  #  # #  # #  # #  # #  # #  # 
-#  # ###  #  # #  # ###   ##  #  #      #  #  # ###      ##   ##  ### ###      ##   #  #  # #  # ###  #  # #  # ###  
+ ##  ###   ##  #  # ###   ##  #  #     ### #  # ###      ##   ##  #   ###       ## ###  ##  #  # ###   ##  ###  ###
+#  # #  # #  # ## # #  # #  # ## #      #  #  # #       #    #  # #   #  #     #    #  #  # ## # #  # #  # #  # #  #
+#### ###  #### # ## #  # #  # # ##      #  #### ##      # ## #  # #   #  #      #   #  #### # ## #  # #### ###  #  #
+#  # #  # #  # #  # #  # #  # #  #      #  #  # #       #  # #  # #   #  #       #  #  #  # #  # #  # #  # #  # #  #
+#  # ###  #  # #  # ###   ##  #  #      #  #  # ###      ##   ##  ### ###      ##   #  #  # #  # ###  #  # #  # ###
 
 	focus = {
 		id = HOL_abandon_the_gold_standard
@@ -2136,16 +2136,16 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			
+
 			HOL_de_crisisjaren_level_down = yes
 		}
 	}
 
-#   #  ##  ### #  # #    ##  #  # ###      ### #  # ###  #  #  ## ### ###  #   #     ### ###  ### ### 
-## ## #  #  #  ## # #   #  # ## # #  #      #  ## # #  # #  # #    #  #  #  # #       #  #  # #   #   
-# # # ####  #  # ## #   #### # ## #  #      #  # ## #  # #  #  #   #  ###    #        #  ###  ##  ##  
-#   # #  #  #  #  # #   #  # #  # #  #      #  #  # #  # #  #   #  #  #  #   #        #  #  # #   #   
-#   # #  # ### #  # ### #  # #  # ###      ### #  # ###   ##  ##   #  #  #   #        #  #  # ### ### 
+#   #  ##  ### #  # #    ##  #  # ###      ### #  # ###  #  #  ## ### ###  #   #     ### ###  ### ###
+## ## #  #  #  ## # #   #  # ## # #  #      #  ## # #  # #  # #    #  #  #  # #       #  #  # #   #
+# # # ####  #  # ## #   #### # ## #  #      #  # ## #  # #  #  #   #  ###    #        #  ###  ##  ##
+#   # #  #  #  #  # #   #  # #  # #  #      #  #  # #  # #  #   #  #  #  #   #        #  #  # #   #
+#   # #  # ### #  # ### #  # #  # ###      ### #  # ###   ##  ##   #  #  #   #        #  #  # ### ###
 
 
 	focus = {
@@ -2169,7 +2169,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_continue_the_public_works
 				bonus = 1.0
@@ -2219,7 +2219,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			36 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2253,7 +2253,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			7 = {
 				add_building_construction = {
 					type = infrastructure
@@ -2293,8 +2293,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
-			
+
+
 			7 = {
 				if = {
 					limit = {
@@ -2345,7 +2345,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			custom_effect_tooltip = HOL_philips_focus_tt
 			add_tech_bonus = {
 				name = HOL_philips_focus
@@ -2375,18 +2375,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			add_research_slot = 1
 		}
 	}
 
-### #  # ###     ### #  # ### ###  ### ###  ### ### ###     #   #  ##  ###  # #  ## 
- #  #  # #         # #  #  #  #  # #   #  #   # #   #       #   # #  # #  # # # #   
- #  #### ##       #  #  #  #  #  # ##  ###   #  ##  ##      # # # #  # ###  ##   #  
- #  #  # #       #   #  #  #  #  # #   #  # #   #   #       # # # #  # #  # # #   # 
- #  #  # ###     ###  ##  ### ###  ### #  # ### ### ###      # #   ##  #  # # # ##  
+### #  # ###     ### #  # ### ###  ### ###  ### ### ###     #   #  ##  ###  # #  ##
+ #  #  # #         # #  #  #  #  # #   #  #   # #   #       #   # #  # #  # # # #
+ #  #### ##       #  #  #  #  #  # ##  ###   #  ##  ##      # # # #  # ###  ##   #
+ #  #  # #       #   #  #  #  #  # #   #  # #   #   #       # # # #  # #  # # #   #
+ #  #  # ###     ###  ##  ### ###  ### #  # ### ### ###      # #   ##  #  # # # ##
 
- 	focus = {
+	focus = {
 		id = HOL_the_zuiderzee_works
 		available = {
 			has_full_control_of_state = 7
@@ -2455,7 +2455,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_the_zuiderzee_works
 				bonus = 1.0
@@ -2500,7 +2500,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_develop_the_randstad
 				bonus = 1.0
@@ -2563,7 +2563,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			7 = {
 				add_resource = {
 					type = steel
@@ -2605,7 +2605,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -2617,7 +2617,7 @@ focus_tree = {
 			ELSE = {
 				custom_effect_tooltip = HOL_fokker_tt
 			}
-			
+
 			7 = {
 				if = {
 					limit = {
@@ -2652,7 +2652,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			
+
 
 			add_breakthrough_progress = {
 				specialization = specialization_air
@@ -2687,7 +2687,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_develop_the_randstad
 				bonus = 1.0
@@ -2750,7 +2750,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_ideas = HOL_friesland_agricultural_impetus
 			36 = {
 				if = {
@@ -2789,7 +2789,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -2801,7 +2801,7 @@ focus_tree = {
 			ELSE = {
 				custom_effect_tooltip = HOL_daf_tt
 			}
-			
+
 			35 = {
 				if = {
 					limit = {
@@ -2836,7 +2836,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_domestic_vehicle_designs
 				bonus = 1.0
@@ -2864,7 +2864,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			7 = {
 				if = {
 					limit = {
@@ -2942,7 +2942,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_research_slot = 1
 		}
 	}
@@ -2959,7 +2959,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_make_use_of_our_riches
 				bonus = 1.0
@@ -2982,7 +2982,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 
 			add_breakthrough_progress = {
 				specialization = specialization_nuclear
@@ -2999,11 +2999,11 @@ focus_tree = {
 		}
 	}
 
-#   # ### #   ### ###  ##  ###  #   #     ### ###  ### ### 
-## ##  #  #    #   #  #  # #  #  # #       #  #  # #   #   
-# # #  #  #    #   #  #### ###    #        #  ###  ##  ##  
-#   #  #  #    #   #  #  # #  #   #        #  #  # #   #   
-#   # ### ### ###  #  #  # #  #   #        #  #  # ### ### 
+#   # ### #   ### ###  ##  ###  #   #     ### ###  ### ###
+## ##  #  #    #   #  #  # #  #  # #       #  #  # #   #
+# # #  #  #    #   #  #### ###    #        #  ###  ##  ##
+#   #  #  #    #   #  #  # #  #   #        #  #  # #   #
+#   # ### ### ###  #  #  # #  #   #        #  #  # ### ###
 
 	focus = {
 		id = HOL_overturn_military_budget_cuts
@@ -3013,7 +3013,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HOL_abandon_the_gold_standard
 		cost = 10
-		
+
 		ai_will_do = {
 			base = 1
 
@@ -3023,7 +3023,7 @@ focus_tree = {
 
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3034,7 +3034,7 @@ focus_tree = {
 
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3046,17 +3046,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			
+
 			army_experience = 5
 			add_war_support = 0.1
 		}
 	}
 
-###  ### ### ### #  #  ## ###  ## 
-#  # #   #   #   ## # #   #   #   
-#  # ##  ##  ##  # ##  #  ##   #  
-#  # #   #   #   #  #   # #     # 
-###  ### #   ### #  # ##  ### ##  
+###  ### ### ### #  #  ## ###  ##
+#  # #   #   #   ## # #   #   #
+#  # ##  ##  ##  # ##  #  ##   #
+#  # #   #   #   #  #   # #     #
+###  ### #   ### #  # ##  ### ##
 
 
 	focus = {
@@ -3067,7 +3067,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HOL_overturn_military_budget_cuts
 		cost = 10
-		
+
 		ai_will_do = {
 			base = 1
 
@@ -3076,7 +3076,7 @@ focus_tree = {
 
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3087,7 +3087,7 @@ focus_tree = {
 				date < 1938.1.1
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3097,7 +3097,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			add_ideas = HOL_prepare_the_inundation_lines
 			unlock_decision_category_tooltip = HOL_prepare_the_inundation_lines
 			custom_effect_tooltip = HOL_prepare_the_inundation_lines_tt
@@ -3132,7 +3132,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HOL_prepare_the_inundation_lines
 		cost = 5
-		
+
 		ai_will_do = {
 			base = 1
 
@@ -3141,7 +3141,7 @@ focus_tree = {
 
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3153,7 +3153,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			7 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -3180,7 +3180,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			36 = {	
+			36 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -3196,7 +3196,7 @@ focus_tree = {
 			}
 			ENG = {
 				add_opinion_modifier = { target = HOL modifier = HOL_protect_against_britain }
-			}	
+			}
 		}
 	}
 
@@ -3217,7 +3217,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			7 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -3244,7 +3244,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			36 = {	
+			36 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -3279,7 +3279,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			7 = {
 				add_building_construction = {
 					type = bunker
@@ -3313,7 +3313,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			36 = {	
+			36 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -3357,7 +3357,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			7 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -3366,7 +3366,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			36 = {	
+			36 = {
 				add_building_construction = {
 					type = bunker
 					level = 1
@@ -3374,7 +3374,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			35 = {	
+			35 = {
 				add_building_construction = {
 					type = bunker
 					level = 1
@@ -3387,10 +3387,10 @@ focus_tree = {
 					province = 6500
 					instant_build = yes
 				}
-			}	
+			}
 			GER = {
 				add_opinion_modifier = { target = HOL modifier = HOL_germany_is_the_greater_threat }
-			}	
+			}
 		}
 	}
 
@@ -3411,7 +3411,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			7 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -3437,7 +3437,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			35 = {	
+			35 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -3449,7 +3449,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}	
+			}
 		}
 	}
 
@@ -3469,8 +3469,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
-			36 = {	
+
+			36 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -3482,7 +3482,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}	
+			}
 		}
 	}
 
@@ -3502,17 +3502,17 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			
+
 			unlock_decision_category_tooltip = HOL_war_on_pacifism
 			custom_effect_tooltip = HOL_war_on_pacifism_tt
 		}
 	}
 
- ##  ###  #   # #   #     ### ###  ### ### 
-#  # #  # ## ##  # #       #  #  # #   #   
-#### ###  # # #   #        #  ###  ##  ##  
-#  # #  # #   #   #        #  #  # #   #   
-#  # #  # #   #   #        #  #  # ### ### 
+ ##  ###  #   # #   #     ### ###  ### ###
+#  # #  # ## ##  # #       #  #  # #   #
+#### ###  # # #   #        #  ###  ##  ##
+#  # #  # #   #   #        #  #  # #   #
+#  # #  # #   #   #        #  #  # ### ###
 
 
 	focus = {
@@ -3533,7 +3533,7 @@ focus_tree = {
 
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3543,7 +3543,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			army_experience = 10
 			add_doctrine_cost_reduction = {
 				name = HOL_appoint_new_supreme_commander
@@ -3558,10 +3558,10 @@ focus_tree = {
 			hidden_effect = {
 				add_field_marshal_role = {
 					character = "HOL_henri_winkelman"
-						traits = { 
-							defensive_doctrine 
-							trait_cautious 
-							unyielding_defender 
+						traits = {
+							defensive_doctrine
+							trait_cautious
+							unyielding_defender
 						}
 						skill = 4
 						attack_skill = 2
@@ -3597,7 +3597,7 @@ focus_tree = {
 				factor = 0.3
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3607,7 +3607,7 @@ focus_tree = {
 				has_war = yes
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3617,7 +3617,7 @@ focus_tree = {
 				has_capitulated = yes
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3627,7 +3627,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_modernize_our_infantry_equipment
 				bonus = 1.0
@@ -3668,7 +3668,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			
+
 			add_ideas = HOL_production_under_license
 			custom_effect_tooltip = HOL_production_under_license_tt
 		}
@@ -3696,7 +3696,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			if = {
 				limit = {
 					NOT = { has_completed_focus = HOL_modernize_our_infantry_equipment }
@@ -3773,7 +3773,7 @@ focus_tree = {
 
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -3784,7 +3784,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			unlock_decision_category_tooltip = HOL_secret_staff_talks
 			custom_effect_tooltip = HOL_secret_staff_talks_tt
 		}
@@ -3812,7 +3812,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			if = {
 				limit = {
 					NOT = { has_completed_focus = HOL_modernize_our_infantry_equipment }
@@ -3866,7 +3866,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_lessons_from_the_last_war
@@ -3877,11 +3877,11 @@ focus_tree = {
 		}
 	}
 
- ##  ### ###      ### ###  ### ### 
-#  #  #  #  #      #  #  # #   #   
-####  #  ###       #  ###  ##  ##  
-#  #  #  #  #      #  #  # #   #   
-#  # ### #  #      #  #  # ### ### 
+ ##  ### ###      ### ###  ### ###
+#  #  #  #  #      #  #  # #   #
+####  #  ###       #  ###  ##  ##
+#  #  #  #  #      #  #  # #   #
+#  # ### #  #      #  #  # ### ###
 
 	focus = {
 		id = HOL_expand_the_mld
@@ -3896,13 +3896,13 @@ focus_tree = {
 		}
 		bypass = {
 			335 = {
-				OWNER = { 
+				OWNER = {
 					NOT = {
 						OR = {
-							TAG = ROOT 
-							is_subject_of = ROOT 
+							TAG = ROOT
+							is_subject_of = ROOT
 						}
-					} 
+					}
 				}
 			}
 		}
@@ -3928,7 +3928,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_expand_the_mld
@@ -3972,7 +3972,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_protect_the_mainland
 				bonus = 1.0
@@ -4031,7 +4031,7 @@ focus_tree = {
 						}
 					}
 				}
-				
+
 				NOT = {
 					focus_progress = {
 						focus = HOL_protect_the_mainland
@@ -4051,7 +4051,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_protect_the_colonies
 				bonus = 1
@@ -4073,7 +4073,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_timed_idea = { idea = HOL_modernize_the_air_fleet days = 365 }
 		}
 	}
@@ -4093,7 +4093,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_strategic_bombing_defense
@@ -4101,7 +4101,7 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}
-			7 = {			
+			7 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -4128,7 +4128,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_longer_range_models
 				bonus = 1
@@ -4177,63 +4177,63 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
-			335 = {			
+
+			335 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			672 = {			
+			672 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			673 = {			
+			673 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			334 = {			
+			334 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			667 = {			
+			667 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			668 = {			
+			668 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			738 = {			
+			738 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			669 = {			
+			669 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
-			}	
+			}
 		}
 	}
 
@@ -4249,7 +4249,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_aviatic_aspirations
@@ -4261,12 +4261,12 @@ focus_tree = {
 		}
 	}
 
-#  #  ##  #   #  ##  #       ### ###  ### ### 
-## # #  # #   # #  # #        #  #  # #   #   
-# ## ####  # #  #### #        #  ###  ##  ##  
-#  # #  #  # #  #  # #        #  #  # #   #   
-#  # #  #   #   #  # ###      #  #  # ### ### 
-	
+#  #  ##  #   #  ##  #       ### ###  ### ###
+## # #  # #   # #  # #        #  #  # #   #
+# ## ####  # #  #### #        #  ###  ##  ##
+#  # #  #  # #  #  # #        #  #  # #   #
+#  # #  #   #   #  # ###      #  #  # ### ###
+
 	focus = {
 		id = HOL_prepare_naval_expansion
 		prerequisite = { focus = HOL_overturn_military_budget_cuts }
@@ -4298,7 +4298,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -4343,7 +4343,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			7 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -4367,7 +4367,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_doctrine_cost_reduction = {
 				name = HOL_cornerstone_of_colonial_defense
 				cost_reduction = 0.5
@@ -4390,7 +4390,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_rely_on_submarines
 				bonus = 0.75
@@ -4413,7 +4413,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_modernize_the_cruiser_fleet
 				bonus = 0.5
@@ -4432,7 +4432,7 @@ focus_tree = {
 				is_subject = no
 				AND = {
 						country_exists = GER
-						has_opinion = { target = HOL value > 74 } 
+						has_opinion = { target = HOL value > 74 }
 				}
 			}
 		}
@@ -4448,7 +4448,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			effect_tooltip = {
 				set_technology = {
 					basic_ship_hull_heavy = 1
@@ -4506,7 +4506,7 @@ create_equipment_variant = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_air_cover_for_the_new_fleet
 				bonus = 0.75
@@ -4529,7 +4529,7 @@ create_equipment_variant = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_escorts_for_the_new_fleet
 				bonus = 0.75
@@ -4553,7 +4553,7 @@ create_equipment_variant = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			
+
 			navy_experience = 50
 			add_doctrine_cost_reduction = {
 				name = HOL_naval_heritage
@@ -4565,11 +4565,11 @@ create_equipment_variant = {
 		}
 	}
 
-###   ##  #   ### ### ###  ##   ##  #       ### ###  ### ### 
-#  # #  # #    #   #   #  #  # #  # #        #  #  # #   #   
-###  #  # #    #   #   #  #    #### #        #  ###  ##  ##  
-#    #  # #    #   #   #  #  # #  # #        #  #  # #   #   
-#     ##  ### ###  #  ###  ##  #  # ###      #  #  # ### ### 
+###   ##  #   ### ### ###  ##   ##  #       ### ###  ### ###
+#  # #  # #    #   #   #  #  # #  # #        #  #  # #   #
+###  #  # #    #   #   #  #    #### #        #  ###  ##  ##
+#    #  # #    #   #   #  #  # #  # #        #  #  # #   #
+#     ##  ### ###  #  ###  ##  #  # ###      #  #  # ### ###
 
 	focus = {
 		id = HOL_form_new_government
@@ -4590,7 +4590,7 @@ create_equipment_variant = {
 				has_dlc = "Thunder at Our Gates"
 				date < 1938.1.1
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -4598,7 +4598,7 @@ create_equipment_variant = {
 			modifier = {
 				factor = 4 #Old strategy plan: Completed 30th June 1939, which would mean starting 21st April, 1939
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -4609,7 +4609,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			country_event = { id = mtg_netherlands.10 hours = 6 }
 			effect_tooltip = {
 				set_party_name = { ideology = democratic long_name = HOL_CHU_party_long name = HOL_CHU_party }
@@ -4644,7 +4644,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			
+
 			add_political_power = 120
 			unlock_decision_category_tooltip = HOL_gateway_to_europe_hol_category
 			custom_effect_tooltip = HOL_gateway_to_europe_tt
@@ -4721,7 +4721,7 @@ create_equipment_variant = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			
+
 			effect_tooltip = {
 				GER = {
 					custom_effect_tooltip = HOL_trade_influence_tt
@@ -4742,7 +4742,7 @@ create_equipment_variant = {
 					}
 					add_opinion_modifier = { target = INS modifier = HOL_caved_to_the_germans_ger_trade }
 				}
-			}	
+			}
 			ENG = {
 				add_opinion_modifier = { target = HOL modifier = HOL_caved_to_the_germans_eng }
 			}
@@ -4809,7 +4809,7 @@ create_equipment_variant = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			
+
 			ROOT = {
 				custom_effect_tooltip = HOL_trade_influence_tt
 				add_political_power = gateway_to_europe_influence_pp_total
@@ -4901,7 +4901,7 @@ create_equipment_variant = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			
+
 			effect_tooltip = {
 				ENG = {
 					custom_effect_tooltip = HOL_trade_influence_tt
@@ -4922,7 +4922,7 @@ create_equipment_variant = {
 					}
 					add_opinion_modifier = { target = INS modifier = HOL_caved_to_the_british_ger_trade }
 				}
-			}	
+			}
 			ENG = {
 				add_opinion_modifier = { target = HOL modifier = HOL_caved_to_the_british_eng }
 			}
@@ -4930,11 +4930,11 @@ create_equipment_variant = {
 		}
 	}
 
-###  ##   ##  ##  ### #   # 
-#   #  # #   #  #  #  ## ## 
-##  ####  #  #     #  # # # 
-#   #  #   # #  #  #  #   # 
-#   #  # ##   ##  ### #   # 
+###  ##   ##  ##  ### #   #
+#   #  # #   #  #  #  ## ##
+##  ####  #  #     #  # # #
+#   #  #   # #  #  #  #   #
+#   #  # ##   ##  ### #   #
 
 	focus = {
 		id = HOL_volk_en_vaderland
@@ -4953,7 +4953,7 @@ create_equipment_variant = {
 		}
 
 		completion_reward = {
-			
+
 			add_timed_idea = { idea = HOL_volk_en_vaderland days = 1095 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
@@ -4980,7 +4980,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			
+
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 0.05
@@ -5010,7 +5010,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			
+
 			remove_ideas = HOL_aloof_neutrality
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_war_support = 0.1
@@ -5024,11 +5024,11 @@ create_equipment_variant = {
 		}
 	}
 
- ###  ##  ### #  #      ##  ### ###  #   #  ##  #  # #   # 
-   # #  #  #  ## #     #    #   #  # ## ## #  # ## #  # #  
-   # #  #  #  # ##     # ## ##  ###  # # # #### # ##   #   
-#  # #  #  #  #  #     #  # #   #  # #   # #  # #  #   #   
- ##   ##  ### #  #      ##  ### #  # #   # #  # #  #   #   
+ ###  ##  ### #  #      ##  ### ###  #   #  ##  #  # #   #
+   # #  #  #  ## #     #    #   #  # ## ## #  # ## #  # #
+   # #  #  #  # ##     # ## ##  ###  # # # #### # ##   #
+#  # #  #  #  #  #     #  # #   #  # #   # #  # #  #   #
+ ##   ##  ### #  #      ##  ### #  # #   # #  # #  #   #
 
 
 	focus = {
@@ -5063,7 +5063,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			GER = { country_event = { id = generic.2 hours = 6 } }
 		}
 	}
@@ -5080,7 +5080,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			add_to_tech_sharing_group = HOL_ger_research
 			every_country = {
 				limit = {
@@ -5112,7 +5112,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			if = {
 				limit = {
 					has_dlc = "Death or Dishonor"
@@ -5376,7 +5376,7 @@ create_equipment_variant = {
 				add_equipment_subsidy = {
 					cic = 500
 					equipment_type = medium_tank_chassis
-					seller_tags = { GER } 
+					seller_tags = { GER }
 				}
 			}
 
@@ -5441,7 +5441,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			country_event = { id = mtg_netherlands.11 hours = 6 }
 		}
 	}
@@ -5463,7 +5463,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_ideas = HOL_assume_the_naval_burden
 			custom_effect_tooltip = generic_skip_one_line_tt
 			7 = {
@@ -5526,11 +5526,11 @@ create_equipment_variant = {
 		}
 	}
 
-#  # ### ### #  # ### ###  #    ##  #  # ###   ##     ### ### ###   ## ### 
-## # #    #  #  # #   #  # #   #  # ## # #  # #       #    #  #  # #    #  
-# ## ##   #  #### ##  ###  #   #### # ## #  #  #      ##   #  ###   #   #  
-#  # #    #  #  # #   #  # #   #  # #  # #  #   #     #    #  #  #   #  #  
-#  # ###  #  #  # ### #  # ### #  # #  # ###  ##      #   ### #  # ##   #  
+#  # ### ### #  # ### ###  #    ##  #  # ###   ##     ### ### ###   ## ###
+## # #    #  #  # #   #  # #   #  # ## # #  # #       #    #  #  # #    #
+# ## ##   #  #### ##  ###  #   #### # ## #  #  #      ##   #  ###   #   #
+#  # #    #  #  # #   #  # #   #  # #  # #  #   #     #    #  #  #   #  #
+#  # ###  #  #  # ### #  # ### #  # #  # ###  ##      #   ### #  # ##   #
 
 	focus = {
 		id = HOL_the_netherlands_first
@@ -5561,7 +5561,7 @@ create_equipment_variant = {
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
-			
+
 			set_rule = { can_create_factions = yes }
 			add_war_support = 0.1
 		}
@@ -5579,7 +5579,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			
+
 			add_ideas = HOL_implement_the_program
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.05
@@ -5655,7 +5655,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			random_other_country = {
 				limit = {
 					owns_state = 29
@@ -5722,7 +5722,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 
 			create_wargoal = {
 			    type = annex_everything
@@ -5778,7 +5778,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 
 			add_state_claim = 694
 			add_state_claim = 308
@@ -5840,7 +5840,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			
+
 
 			add_ideas = HOL_imperial_ambitions
 
@@ -5867,13 +5867,13 @@ create_equipment_variant = {
 		}
 	}
 
- ##   ##  #   # #   # #  # #  # ###  ## #   # 
-#  # #  # ## ## ## ## #  # ## #  #  #   ## ## 
-#    #  # # # # # # # #  # # ##  #   #  # # # 
-#  # #  # #   # #   # #  # #  #  #    # #   # 
- ##   ##  #   # #   #  ##  #  # ### ##  #   # 
+ ##   ##  #   # #   # #  # #  # ###  ## #   #
+#  # #  # ## ## ## ## #  # ## #  #  #   ## ##
+#    #  # # # # # # # #  # # ##  #   #  # # #
+#  # #  # #   # #   # #  # #  #  #    # #   #
+ ##   ##  #   # #   #  ##  #  # ### ##  #   #
 
- 	focus = {
+	focus = {
 		id = HOL_legacy_of_the_de_zeven_provincien_mutiny
 		prerequisite = { focus = HOL_maintain_trade_neutrality }
 		mutually_exclusive = { focus = HOL_oranje_boven }
@@ -5895,7 +5895,7 @@ create_equipment_variant = {
 		}
 
 		completion_reward = {
-			
+
 			add_timed_idea = { idea = HOL_legacy_of_the_de_zeven_provincien_mutiny days = 1095 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
@@ -6068,7 +6068,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			if = {
 				limit = {
 					672 = { is_fully_controlled_by = HOL }
@@ -6177,35 +6177,35 @@ create_equipment_variant = {
 				}
 				7 = {
 					create_unit = {
-						division = "name = \"1. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"1. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"2. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"2. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"3. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"3. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"4. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"4. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"5. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"5. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"6. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"6. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"7. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"7. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"8. KNIL Divisie 'Celebes'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"8. KNIL Divisie 'Celebes'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 				}
@@ -6233,7 +6233,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			remove_ideas = HOL_wilhelmina
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_war_support = 0.1
@@ -6249,11 +6249,11 @@ create_equipment_variant = {
 		}
 	}
 
- ##  ### ### ### ###  #   #     #    ##  #   #  ##  #   ### #   #     ###  ##      #   #  ##   ##  ##   ##  #   # 
-#  # #   #    #  #  # ## ##     #   #  #  # #  #  # #    #   # #       #  #  #     ## ## #  # #   #  # #  # #   # 
-#### ##  ##   #  ###  # # #     #   #  #   #   #### #    #    #        #  #  #     # # # #  #  #  #    #  # # # # 
-#  # #   #    #  #  # #   #     #   #  #   #   #  # #    #    #        #  #  #     #   # #  #   # #  # #  # # # # 
-#  # #   #   ### #  # #   #     ###  ##    #   #  # ###  #    #        #   ##      #   #  ##  ##   ##   ##   # #  
+ ##  ### ### ### ###  #   #     #    ##  #   #  ##  #   ### #   #     ###  ##      #   #  ##   ##  ##   ##  #   #
+#  # #   #    #  #  # ## ##     #   #  #  # #  #  # #    #   # #       #  #  #     ## ## #  # #   #  # #  # #   #
+#### ##  ##   #  ###  # # #     #   #  #   #   #### #    #    #        #  #  #     # # # #  #  #  #    #  # # # #
+#  # #   #    #  #  # #   #     #   #  #   #   #  # #    #    #        #  #  #     #   # #  #   # #  # #  # # # #
+#  # #   #   ### #  # #   #     ###  ##    #   #  # ###  #    #        #   ##      #   #  ##  ##   ##   ##   # #
 
 	focus = {
 		id = HOL_affirm_loyalty_to_moscow
@@ -6293,7 +6293,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			SOU = { country_event = { id = generic.2 hours = 6 } }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = HOL_aloof_neutrality
@@ -6316,7 +6316,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_ideas = HOL_soviet_technical_teams
 		}
 	}
@@ -6344,7 +6344,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			create_wargoal = {
 			    type = puppet_wargoal_focus
 			    target = GER
@@ -6353,13 +6353,13 @@ create_equipment_variant = {
 		}
 	}
 
- ###  ##  ### #  #     ### #  # ###     ### ###  ### #  #  ##  #  # 
-   # #  #  #  ## #      #  #  # #       #   #  # #   ## # #  # #  # 
-   # #  #  #  # ##      #  #### ##      ##  ###  ##  # ## #    #### 
-#  # #  #  #  #  #      #  #  # #       #   #  # #   #  # #  # #  # 
- ##   ##  ### #  #      #  #  # ###     #   #  # ### #  #  ##  #  # 
+ ###  ##  ### #  #     ### #  # ###     ### ###  ### #  #  ##  #  #
+   # #  #  #  ## #      #  #  # #       #   #  # #   ## # #  # #  #
+   # #  #  #  # ##      #  #### ##      ##  ###  ##  # ## #    ####
+#  # #  #  #  #  #      #  #  # #       #   #  # #   #  # #  # #  #
+ ##   ##  ### #  #      #  #  # ###     #   #  # ### #  #  ##  #  #
 
- 	focus = {
+	focus = {
 		id = HOL_join_the_french
 		available = {
 			NOT = { has_war_with = FRA }
@@ -6404,7 +6404,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			FRA = { country_event = { id = generic.2 hours = 6 } }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = HOL_aloof_neutrality
@@ -6456,7 +6456,7 @@ create_equipment_variant = {
 			base = 5 #if HOL completes the prerequisites it should keep going down all of these
 		}
 		completion_reward = {
-			
+
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = HOL_french_military_mission
@@ -6485,7 +6485,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_offsite_building = { type = arms_factory level = 4 }
 		}
 	}
@@ -6506,7 +6506,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			if = {
 				limit = {
 					NOT = { is_in_faction_with = SOV }
@@ -6558,16 +6558,16 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			
+
 			add_ideas = HOL_mobilize_the_masses
 		}
 	}
 
-###   ##   ## ### ###  ##  #  #      ##  ###     ### ###  #  # ###      ##   ##  #   # #   # #  # #  # ###  ## #   # 
-#  # #  # #    #   #  #  # ## #     #  # #        #  #  # #  # #       #  # #  # ## ## ## ## #  # ## #  #  #   ## ## 
-###  ####  #   #   #  #  # # ##     #  # ##       #  ###  #  # ##      #    #  # # # # # # # #  # # ##  #   #  # # # 
-#  # #  #   #  #   #  #  # #  #     #  # #        #  #  # #  # #       #  # #  # #   # #   # #  # #  #  #    # #   # 
-###  #  # ##   #  ###  ##  #  #      ##  #        #  #  #  ##  ###      ##   ##  #   # #   #  ##  #  # ### ##  #   # 
+###   ##   ## ### ###  ##  #  #      ##  ###     ### ###  #  # ###      ##   ##  #   # #   # #  # #  # ###  ## #   #
+#  # #  # #    #   #  #  # ## #     #  # #        #  #  # #  # #       #  # #  # ## ## ## ## #  # ## #  #  #   ## ##
+###  ####  #   #   #  #  # # ##     #  # ##       #  ###  #  # ##      #    #  # # # # # # # #  # # ##  #   #  # # #
+#  # #  #   #  #   #  #  # #  #     #  # #        #  #  # #  # #       #  # #  # #   # #   # #  # #  #  #    # #   #
+###  #  # ##   #  ###  ##  #  #      ##  #        #  #  #  ##  ###      ##   ##  #   # #   #  ##  #  # ### ##  #   #
 
 	focus = {
 		id = HOL_bastion_of_true_communism
@@ -6590,9 +6590,9 @@ create_equipment_variant = {
 		ai_will_do = {
 			base = 5 #if HOL completes the prerequisites it should keep going down all of these
 		}
-		
+
 		completion_reward = {
-			
+
 			set_rule = { can_create_factions = yes }
 			add_war_support = 0.1
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -6696,7 +6696,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			
+
 
 			add_war_support = 0.1
 
@@ -6733,7 +6733,7 @@ create_equipment_variant = {
 			base = 5 #if HOL completes the prerequisites it should keep going down all of these
 		}
 		completion_reward = {
-			
+
 			add_ideas = HOL_enemies_on_all_fronts
 		}
 	}
@@ -6754,7 +6754,7 @@ create_equipment_variant = {
 			base = 5 #if HOL completes the prerequisites it should keep going down all of these
 		}
 		completion_reward = {
-			
+
 			add_stability = 0.1
 			add_war_support = 0.05
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -6821,7 +6821,7 @@ create_equipment_variant = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 			if = {
 				limit = {
 					ENG = {
@@ -6864,11 +6864,11 @@ create_equipment_variant = {
 		}
 	}
 
-#   #  ##  #  #  ##  ###   ##  #  # ###  ## #   #    #  # ### #  # ### ###   ##  #   ### ### #   # 
-## ## #  # ## # #  # #  # #  # #  #  #  #   ## ##    ## # #   #  #  #  #  # #  # #    #   #   # #  
-# # # #  # # ## #### ###  #    ####  #   #  # # # ## # ## ##  #  #  #  ###  #### #    #   #    #   
-#   # #  # #  # #  # #  # #  # #  #  #    # #   #    #  # #   #  #  #  #  # #  # #    #   #    #   
-#   #  ##  #  # #  # #  #  ##  #  # ### ##  #   #    #  # ###  ##   #  #  # #  # ### ###  #    #   
+#   #  ##  #  #  ##  ###   ##  #  # ###  ## #   #    #  # ### #  # ### ###   ##  #   ### ### #   #
+## ## #  # ## # #  # #  # #  # #  #  #  #   ## ##    ## # #   #  #  #  #  # #  # #    #   #   # #
+# # # #  # # ## #### ###  #    ####  #   #  # # # ## # ## ##  #  #  #  ###  #### #    #   #    #
+#   # #  # #  # #  # #  # #  # #  #  #    # #   #    #  # #   #  #  #  #  # #  # #    #   #    #
+#   #  ##  #  # #  # #  #  ##  #  # ### ##  #   #    #  # ###  ##   #  #  # #  # ### ###  #    #
 
 	focus = {
 		id = HOL_oranje_boven
@@ -6895,7 +6895,7 @@ create_equipment_variant = {
 		}
 
 		completion_reward = {
-			
+
 			add_ideas = HOL_oranje_boven_1
 		}
 	}
@@ -6916,7 +6916,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			
+
 			swap_ideas = {
 				remove_idea = HOL_oranje_boven_1
 				add_idea = HOL_oranje_boven_2
@@ -6947,7 +6947,7 @@ create_equipment_variant = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
-			
+
 			country_event = { id = mtg_netherlands.14 }
 			effect_tooltip = {
 				add_popularity = {
@@ -6991,7 +6991,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			
+
 			promote_character = {
 				character = HOL_wilhelmina
 				ideology = centrism
@@ -7013,7 +7013,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			
+
 			add_political_power = 200
 			set_temp_variable = {
 				var = ban_communism_var
@@ -7068,7 +7068,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			
+
 			add_stability = 0.1
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = HOL_depillarization
@@ -7088,7 +7088,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			
+
 			add_war_support = 0.15
 			add_stability = 0.05
 		}
@@ -7139,7 +7139,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			ENG = { country_event = { id = mtg_netherlands.15 hours = 6 } }
 		}
 	}
@@ -7147,7 +7147,7 @@ create_equipment_variant = {
 	focus = {
 		id = HOL_royal_arms_purchases
 		available = {
-			
+
 		}
 		prerequisite = { focus = HOL_de_vernieuwing }
 		icon = GFX_goal_generic_construct_mil_factory
@@ -7159,7 +7159,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_offsite_building = { type = arms_factory level = 3 }
 		}
 	}
@@ -7184,7 +7184,7 @@ create_equipment_variant = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			977 = {
 				if = {
 					limit = {
@@ -7272,7 +7272,7 @@ create_equipment_variant = {
 						}
 					}
 					GER = {
-						has_completed_focus = GER_revive_the_kaiserreich 
+						has_completed_focus = GER_revive_the_kaiserreich
 						is_faction_leader = yes
 					}
 				}
@@ -7282,7 +7282,7 @@ create_equipment_variant = {
 			AND = {
 				is_in_faction_with = GER
 				HOL = { has_government = neutrality }
-				GER = { has_government = neutrality } 
+				GER = { has_government = neutrality }
 			}
 		}
 		prerequisite = { focus = HOL_a_new_dutch_unity }
@@ -7299,7 +7299,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			if = {
 				limit = {
 					is_in_faction = yes
@@ -7367,16 +7367,16 @@ create_equipment_variant = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-			
-	    			   	infantry = { x = 1 y = 0 }
+
+						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
-			
-	    			   	infantry = { x = 2 y = 0 }
+
+						infantry = { x = 2 y = 0 }
 						artillery_brigade = { x = 2 y = 1 }
 						artillery_brigade = { x = 2 y = 2 }
 					}
-		
+
 					support = {
 						engineer = { x = 0 y = 0 }
 						recon = { x = 0 y = 1 }
@@ -7416,11 +7416,11 @@ create_equipment_variant = {
 		}
 	}
 
-###  ### #   #  ##   ##  ###   ##  ### ###  ##  
-#  # #   ## ## #  # #  # #  # #  #  #   #  #  # 
-#  # ##  # # # #  # #    ###  ####  #   #  #    
-#  # #   #   # #  # #  # #  # #  #  #   #  #  # 
-###  ### #   #  ##   ##  #  # #  #  #  ###  ##  
+###  ### #   #  ##   ##  ###   ##  ### ###  ##
+#  # #   ## ## #  # #  # #  # #  #  #   #  #  #
+#  # ##  # # # #  # #    ###  ####  #   #  #
+#  # #   #   # #  # #  # #  # #  #  #   #  #  #
+###  ### #   #  ##   ##  #  # #  #  #  ###  ##
 
 	focus = {
 		id = HOL_unity_through_democracy
@@ -7439,7 +7439,7 @@ create_equipment_variant = {
 		}
 
 		completion_reward = {
-			
+
 			add_stability = 0.05
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = { idea = HOL_unity_through_democracy days = 1095 }
@@ -7475,11 +7475,11 @@ create_equipment_variant = {
 		}
 	}
 
- ##   ##      #   # ### ### #  #     ###  ###  ### ###  ##  ### #  # 
-#    #  #     #   #  #   #  #  #     #  # #  #  #   #  #  #  #  ## # 
-# ## #  #     # # #  #   #  ####     ###  ###   #   #  ####  #  # ## 
-#  # #  #     # # #  #   #  #  #     #  # #  #  #   #  #  #  #  #  # 
- ##   ##       # #  ###  #  #  #     ###  #  # ###  #  #  # ### #  # 
+ ##   ##      #   # ### ### #  #     ###  ###  ### ###  ##  ### #  #
+#    #  #     #   #  #   #  #  #     #  # #  #  #   #  #  #  #  ## #
+# ## #  #     # # #  #   #  ####     ###  ###   #   #  ####  #  # ##
+#  # #  #     # # #  #   #  #  #     #  # #  #  #   #  #  #  #  #  #
+ ##   ##       # #  ###  #  #  #     ###  #  # ###  #  #  # ### #  #
 
 
 	focus = {
@@ -7519,7 +7519,7 @@ create_equipment_variant = {
 		}
 
 		completion_reward = {
-			
+
 			remove_ideas = HOL_aloof_neutrality
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ENG = { country_event = { id = generic.2 hours = 6 } }
@@ -7539,7 +7539,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			
+
 			add_ideas = HOL_de_vaarplicht
 		}
 	}
@@ -7564,7 +7564,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			
+
 			add_political_power = 60
 			unlock_decision_category_tooltip = HOL_request_allied_favors
 			custom_effect_tooltip = HOL_request_allied_favors_tt
@@ -7599,7 +7599,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_doctrine_cost_reduction = {
 				name = HOL_the_singapore_conferences
 				cost_reduction = 0.5
@@ -7624,7 +7624,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = HOL_ship_a_day_sinking_quotas
 				bonus = 1.0
@@ -7660,7 +7660,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+
 			add_ideas = HOL_allied_technological_developments
 		}
 	}
@@ -7678,7 +7678,7 @@ create_equipment_variant = {
 		y = 1
 		relative_position_id = HOL_ship_a_day_sinking_quotas
 		cost = 10
-		
+
 		ai_will_do = {
 			base = 1
 
@@ -7687,7 +7687,7 @@ create_equipment_variant = {
 				date > 1942.9.1
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -7698,7 +7698,7 @@ create_equipment_variant = {
 				date < 1942.9.1
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -7709,7 +7709,7 @@ create_equipment_variant = {
 				date < 1941.1.1
 				has_dlc = "Thunder at Our Gates"
 				has_game_rule = {
-					rule = HOL_ai_behavior 
+					rule = HOL_ai_behavior
 					option = DEFAULT
 				}
 				is_historical_focus_on = yes
@@ -7719,7 +7719,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			
+
 			if = {
 				limit = {
 					is_in_faction_with = USA
@@ -7778,13 +7778,13 @@ create_equipment_variant = {
 				}
 				695 = {
 					create_unit = {
-						division = "name = \"1. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5" 
+						division = "name = \"1. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 				}
 				309 = {
 					create_unit = {
-						division = "name = \"2. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5" 
+						division = "name = \"2. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 				}
@@ -7827,7 +7827,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			add_ideas = HOL_combined_chiefs_of_staff_representation
 		}
 	}
@@ -7852,7 +7852,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			335 = {
 				if = {
 					limit = {
@@ -7914,8 +7914,8 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
-			309 = {	
+
+			309 = {
 				add_building_construction = {
 					type = air_base
 					level = 8
@@ -7927,7 +7927,7 @@ create_equipment_variant = {
 					instant_build = yes
 				}
 			}
-			695 = {	
+			695 = {
 				add_building_construction = {
 					type = radar_station
 					level = 3
@@ -7937,11 +7937,11 @@ create_equipment_variant = {
 		}
 	}
 
-#   ###  ##  ###      ### #  # ###     #   # ### #  #  ##  ###      ###  ### #   #  ##   ##  ###   ##   ##  ### ###  ## 
-#   #   #  # #  #      #  #  # #       ## ##  #  ## # #  # #  #     #  # #   ## ## #  # #  # #  # #  # #  #  #  #   #   
-#   ##  #### #  #      #  #### ##      # # #  #  # ## #  # ###      #  # ##  # # # #  # #    ###  #### #     #  ##   #  
-#   #   #  # #  #      #  #  # #       #   #  #  #  # #  # #  #     #  # #   #   # #  # #  # #  # #  # #  #  #  #     # 
-### ### #  # ###       #  #  # ###     #   # ### #  #  ##  #  #     ###  ### #   #  ##   ##  #  # #  #  ##  ### ### ##  
+#   ###  ##  ###      ### #  # ###     #   # ### #  #  ##  ###      ###  ### #   #  ##   ##  ###   ##   ##  ### ###  ##
+#   #   #  # #  #      #  #  # #       ## ##  #  ## # #  # #  #     #  # #   ## ## #  # #  # #  # #  # #  #  #  #   #
+#   ##  #### #  #      #  #### ##      # # #  #  # ## #  # ###      #  # ##  # # # #  # #    ###  #### #     #  ##   #
+#   #   #  # #  #      #  #  # #       #   #  #  #  # #  # #  #     #  # #   #   # #  # #  # #  # #  # #  #  #  #     #
+### ### #  # ###       #  #  # ###     #   # ### #  #  ##  #  #     ###  ### #   #  ##   ##  #  # #  #  ##  ### ### ##
 
 	focus = {
 		id = HOL_lead_the_minor_democracies
@@ -7970,7 +7970,7 @@ create_equipment_variant = {
 		}
 
 		completion_reward = {
-			
+
 			add_political_power = 120
 			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = HOL_aloof_neutrality
@@ -8011,7 +8011,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 
 			set_rule = { can_create_factions = yes }
 			create_faction_from_template = {
@@ -8056,7 +8056,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			
+
 			add_war_support = 0.05
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = HOL_responsibility_for_our_own_defense
@@ -8076,7 +8076,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			add_ideas = HOL_lessons_from_the_low_countries
 		}
 	}
@@ -8096,7 +8096,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			IF = {
 				limit = {
 					is_faction_leader = yes
@@ -8134,7 +8134,7 @@ create_equipment_variant = {
 			custom_effect_tooltip = BEL_the_council_of_europe_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = BEL_european_community_tt
-			
+
 			hidden_effect = { news_event = { id = mtg_news.54 days = 1 } }
 		}
 	}
@@ -8151,7 +8151,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			add_to_tech_sharing_group = HOL_europe_research
 			every_country = {
 				limit = {
@@ -8180,7 +8180,7 @@ create_equipment_variant = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			create_wargoal = {
 			    type = puppet_wargoal_focus
 			    target = GER

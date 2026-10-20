@@ -53,7 +53,7 @@ vnr_cv_fighter = {
             factor = 20
             modifier = {
                 factor = 10
-                has_tech = improved_small_airframe 
+                has_tech = improved_small_airframe
             }
             modifier = {
                 factor = 0.1
@@ -87,7 +87,7 @@ vnr_cv_fighter = {
             factor = 20
             modifier = {
                 factor = 10
-                has_tech = improved_small_airframe 
+                has_tech = improved_small_airframe
             }
             modifier = {
                 factor = 0.1
@@ -226,7 +226,7 @@ vnr_cv_naval_bomber = {
             factor = 20
             modifier = {
                 factor = 10
-                has_tech = improved_small_airframe 
+                has_tech = improved_small_airframe
             }
             modifier = {
                 factor = 0.1
@@ -258,7 +258,7 @@ vnr_cv_naval_bomber = {
             factor = 20
             modifier = {
                 factor = 10
-                has_tech = improved_small_airframe 
+                has_tech = improved_small_airframe
             }
             modifier = {
                 factor = 0.1
@@ -392,7 +392,7 @@ vnr_cv_cas = {
             factor = 20
             modifier = {
                 factor = 10
-                has_tech = improved_small_airframe 
+                has_tech = improved_small_airframe
             }
             modifier = {
                 factor = 0.1
@@ -425,7 +425,7 @@ vnr_cv_cas = {
             factor = 20
             modifier = {
                 factor = 10
-                has_tech = improved_small_airframe 
+                has_tech = improved_small_airframe
             }
             modifier = {
                 factor = 0.1

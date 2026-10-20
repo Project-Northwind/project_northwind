@@ -3,7 +3,7 @@ units= {
 
 	##### Naval OOB #####
 	fleet = {
-		name = "Armada Argentina"			
+		name = "Armada Argentina"
 		naval_base = 12364 # Buenos Aires
 		task_force = {
 			name = "Armada Argentina"
@@ -26,14 +26,13 @@ units= {
 			ship = { name = "ARA Mendoza" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Cervantes/Mendoza Class" } } }
 			ship = { name = "ARA La Rioja" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Cervantes/Mendoza Class" } } }
 			ship = { name = "ARA Tucumán" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Cervantes/Mendoza Class" } } }
-		}				
-		task_force = {				
-			name = "Flotilla de Submarinos"			
+		}
+		task_force = {
+			name = "Flotilla de Submarinos"
 			location = 12364 # Buenos Aires
 			ship = { name = "ARA Santa Fe" definition = submarine start_experience_factor = 0.075 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = ARG version_name = "Santa Fe Class" } } }
 			ship = { name = "ARA Santiago del Estero" definition = submarine start_experience_factor = 0.075 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = ARG version_name = "Santa Fe Class" } } }
 			ship = { name = "ARA Salta" definition = submarine start_experience_factor = 0.075 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = ARG version_name = "Santa Fe Class" } } }
-		}				
+		}
 	}
-} 
-
+}

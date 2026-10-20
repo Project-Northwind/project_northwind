@@ -3,7 +3,7 @@ guiTypes = {
 		name = "special_project_tech_icon_offset"
 		position = { x = -10 y = -10 }
 	}
-	
+
 	containerWindowType = {
 		name = "subunit_icon_entry"
 		position = { x=0 y=0 }
@@ -1511,7 +1511,7 @@ guiTypes = {
 				format = "UP"
 			}
 		}
-		
+
 		containerWindowType = {
 			name = "naval_folder"
 			position = { x=0 y=47 }
@@ -1743,7 +1743,7 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-			
+
 
 			#gridboxtype = {
 				#name = "sp_multi_product_supply_ships_tree"
@@ -1751,7 +1751,7 @@ guiTypes = {
 				#size = { width = 100 height = 140 }
 				#slotsize = { width = 70 height = 70 }
 				#format = "LEFT"
-			#}			
+			#}
 
 			#gridboxtype = {
 				#name = "sp_shock_hardening_techniques_tree"
@@ -1817,7 +1817,7 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-			
+
 			# containerWindowType = {
 			# 	name = "size_filler"
 			# 	position = { x=0 y=0 }
@@ -2020,7 +2020,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_tiled_window_transparent_transparent"
 				}
 			}
-			
+
 			containerWindowType = {
 				name = "tiled_research_bg"
 				position = { x=95 y=75 }
@@ -2043,7 +2043,7 @@ guiTypes = {
 					quadTextureSprite ="GFX_tiled_research_bg"
 				}
 			}
-			
+
 			containerWindowType = {
 				name = "tiled_research_bg_4"
 				position = { x=95 y=1225 }
@@ -2071,7 +2071,7 @@ guiTypes = {
 				slotsize = { width = 60 height = 50 }
 				format = "UP"
 			}
-			
+
 			gridboxtype = {
 				name = "harvey_steel_tree"
 				position = { x = 985 y = 40 }
@@ -2177,7 +2177,7 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-			
+
 			instantTextBoxType = {
 				name = "naval_year5"
 				position = { x = 1480 y = 20 }
@@ -2348,7 +2348,7 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-			
+
 			instantTextBoxType = {
 				name = "naval_year5_a"
 				position = { x = 1480 y = 1230 }
@@ -2361,7 +2361,7 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-			
+
 			instantTextBoxType = {
 				name = "naval_year6a"
 				position = { x = 1760 y = 1230 }
@@ -3076,7 +3076,7 @@ guiTypes = {
 				position = { x = 1340 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
-				borderSize = {x = 0 y = 4} 
+				borderSize = {x = 0 y = 4}
 				text = "AIR_TITLE_WEAPONS"
 				maxWidth = 300
 				maxHeight = 62
@@ -3926,7 +3926,7 @@ guiTypes = {
 			}
 
 			#gridboxtype = {
-			#	name = "sp_rockets_improved_guidance_tree" 
+			#	name = "sp_rockets_improved_guidance_tree"
 			#	position = { x=980 y=172 }
 			#	size = { width = 480 height = 650 }
 			#	slotsize = { width=60 height= 60 }
@@ -3934,20 +3934,20 @@ guiTypes = {
 			#}
 
 			#gridboxtype = {
-			#	name = "sp_rockets_rocket_bomber_tree" 
+			#	name = "sp_rockets_rocket_bomber_tree"
 			#	position = { x=980 y=172 }
 			#	size = { width = 480 height = 650 }
 			#	slotsize = { width=60 height= 60 }
 			#	format = "UP"
-			#} 
+			#}
 
 			#gridboxtype = {
-			#	name = "sp_rockets_glide_bombs_tree" 
+			#	name = "sp_rockets_glide_bombs_tree"
 			#	position = { x=980 y=172 }
 			#	size = { width = 480 height = 650 }
 			#	slotsize = { width=60 height= 60 }
 			#	format = "UP"
-			#}  
+			#}
 
 			gridboxtype = {
 				name = "atomic_research_tree"
@@ -4011,7 +4011,7 @@ guiTypes = {
 				frame = 1
 				clicksound = ui_research_tab_artillery
 			}
-			
+
 			buttonType = {
 				name = "naval_folder_tab"
 				position = { x = 378 y = 0 }
@@ -4287,7 +4287,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "research_MIO"
 			position = { x=365 y=55 }
-		
+
 			buttonType = {
 				name = "research_has_MIO"
 				position = { x = 0 y = 0 }
@@ -4298,7 +4298,7 @@ guiTypes = {
 				Orientation = "UPPER_RIGHT"
 				shortcut = "RETURN"
 			}
-		
+
 			iconType = {
 				name = "MIO_icon"
 				spriteType = "GFX_design_team_icon"
@@ -4306,7 +4306,7 @@ guiTypes = {
 				alwaystransparent = yes
 				Orientation = "CENTER"
 			}
-		}		
+		}
 
 		buttonType = {
 			name = "research_with_xp"
@@ -4380,7 +4380,7 @@ guiTypes = {
 			name = "bg"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -4428,7 +4428,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -4530,7 +4530,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -4611,7 +4611,7 @@ guiTypes = {
 			name = "bg"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -4659,7 +4659,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -4779,7 +4779,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -4825,7 +4825,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -4944,7 +4944,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -4990,7 +4990,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5036,7 +5036,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5098,7 +5098,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5145,7 +5145,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5216,7 +5216,7 @@ guiTypes = {
 			spriteType = "GFX_design_team_icon"
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "techtree_air_techs_folder_small_item"
 		position = { x=0 y=0 }
@@ -5227,7 +5227,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5268,7 +5268,7 @@ guiTypes = {
 		position = { x = 0 y = 0 }
 		size = { width = 20 height = 32 }
 		clipping = no
-		
+
 		positionType = {
 			name = "adjustment"
 			position = { x = -2 y = -2 }
@@ -5281,7 +5281,7 @@ guiTypes = {
 			centerposition = yes
 			alwaystransparent = yes
 		}
-		
+
 		iconType = {
 			name = "technology_specialization_tag_secondary"
 			position = { x=0 y=0 }
@@ -5301,7 +5301,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5347,7 +5347,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5489,7 +5489,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5615,7 +5615,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5662,7 +5662,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5723,7 +5723,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-		
+
 		iconType = {
 			name = "can_assign_design_team_icon"
 			position = { x=0 y=42 }
@@ -5741,7 +5741,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5789,7 +5789,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains special_project_specialization
 			name = "special_project_specialization_list"
@@ -5814,7 +5814,7 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
-		
+
 		gridboxtype = {
 			# contains detailed_output_item
 			name = "special_project_specialization_list"

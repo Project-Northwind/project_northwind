@@ -17,20 +17,20 @@ add_namespace = GOE_RAJ_news
 ##DESC
 #country_event = {
 #	id = GOE_RAJ.X
-#	title = GOE_RAJ.X.t	
-#	desc = GOE_RAJ.X.desc	
+#	title = GOE_RAJ.X.t
+#	desc = GOE_RAJ.X.desc
 #	picture = GFX_report_event_generic_sign_treaty2
-#	
+#
 #	is_triggered_only = yes
 #
 #
-#	option = { 
+#	option = {
 #		name = GOE_RAJ.X.a
 #		ai_chance = {
 #			base = Y
 #		}
 #	}
-#	option = { 
+#	option = {
 #		name = GOE_RAJ.X.b
 #		ai_chance = {
 #			base = Y
@@ -41,15 +41,15 @@ add_namespace = GOE_RAJ_news
 #RAJ asks the overlord to invade Bhutan
 country_event = {
 	id = GOE_RAJ.1
-	title = GOE_RAJ.1.t	
-	desc = GOE_RAJ.1.desc	
+	title = GOE_RAJ.1.t
+	desc = GOE_RAJ.1.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 
 	#yes
-	option = { 
+	option = {
 		name = GOE_RAJ.1.a
 		ai_chance = {
 			base = 1
@@ -67,7 +67,7 @@ country_event = {
 	}
 
 	#No
-	option = { 
+	option = {
 		name = GOE_RAJ.1.b
 		ai_chance = {
 			base = 0
@@ -87,14 +87,14 @@ country_event = {
 #UK Accepts that RAJ invades Bhutan
 country_event = {
 	id = GOE_RAJ.2
-	title = GOE_RAJ.2.t	
-	desc = GOE_RAJ.2.desc	
+	title = GOE_RAJ.2.t
+	desc = GOE_RAJ.2.desc
 	picture = GFX_report_event_japan_army_mountainside
-	
+
 	is_triggered_only = yes
 
 
-	option = { 
+	option = {
 		name = GOE_RAJ.2.a
 		ai_chance = {
 			base = 1
@@ -110,14 +110,14 @@ country_event = {
 #UK Rejects that RAJ invades Bhutan
 country_event = {
 	id = GOE_RAJ.3
-	title = GOE_RAJ.3.t	
-	desc = GOE_RAJ.3.desc	
+	title = GOE_RAJ.3.t
+	desc = GOE_RAJ.3.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 
-	option = { 
+	option = {
 		name = GOE_RAJ.3.a
 		ai_chance = {
 			base = 1
@@ -129,14 +129,14 @@ country_event = {
 #RAJ demands Bhutan become a subject
 country_event = {
 	id = GOE_RAJ.4
-	title = GOE_RAJ.4.t	
-	desc = GOE_RAJ.4.desc	
+	title = GOE_RAJ.4.t
+	desc = GOE_RAJ.4.desc
 	picture = GFX_report_event_indian_soldiers
-	
+
 	is_triggered_only = yes
 
 	#Refuse
-	option = { 
+	option = {
 		name = GOE_RAJ.4.a
 		ai_chance = {
 			base = 1
@@ -159,7 +159,7 @@ country_event = {
 	}
 
 	#Accept
-	option = { 
+	option = {
 		name = GOE_RAJ.4.b
 		ai_chance = {
 			base = 1
@@ -192,14 +192,14 @@ country_event = {
 #BHU Rejects being puppeted
 country_event = {
 	id = GOE_RAJ.5
-	title = GOE_RAJ.5.t	
-	desc = GOE_RAJ.5.desc	
+	title = GOE_RAJ.5.t
+	desc = GOE_RAJ.5.desc
 	picture = GFX_report_event_chinese_soldiers_running
-	
+
 	is_triggered_only = yes
 
 
-	option = { 
+	option = {
 		name = GOE_RAJ.5.a
 		ai_chance = {
 			base = 1
@@ -214,14 +214,14 @@ country_event = {
 #BHU Accepts being puppeted
 country_event = {
 	id = GOE_RAJ.6
-	title = GOE_RAJ.6.t	
-	desc = GOE_RAJ.6.desc	
+	title = GOE_RAJ.6.t
+	desc = GOE_RAJ.6.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 
-	option = { 
+	option = {
 		name = GOE_RAJ.6.a
 		ai_chance = {
 			base = 1
@@ -230,8 +230,8 @@ country_event = {
 		set_autonomy = {
 			target = FROM
 			autonomy_state = autonomy_dominion
-			freedom_level = 1 
-			end_wars  = yes 
+			freedom_level = 1
+			end_wars  = yes
 			end_civil_wars = yes #
 		}
 	}
@@ -242,10 +242,10 @@ country_event = {
 #RAJ asks for aid in war to Jap
 country_event = {
 	id = GOE_RAJ.7
-	title = GOE_RAJ.7.t	
-	desc = GOE_RAJ.7.desc	
+	title = GOE_RAJ.7.t
+	desc = GOE_RAJ.7.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 
@@ -281,7 +281,7 @@ country_event = {
 	}
 
 	#Niet
-	option = { 
+	option = {
 		name = GOE_RAJ.7.b
 		ai_chance = {
 			base = 1
@@ -294,10 +294,10 @@ country_event = {
 #JAP agrees to help
 country_event = {
 	id = GOE_RAJ.8
-	title = GOE_RAJ.8.t	
-	desc = GOE_RAJ.8.desc	
+	title = GOE_RAJ.8.t
+	desc = GOE_RAJ.8.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 
 
 	is_triggered_only = yes
@@ -310,10 +310,10 @@ country_event = {
 #Jap no help
 country_event = {
 	id = GOE_RAJ.9
-	title = GOE_RAJ.9.t	
-	desc = GOE_RAJ.9.desc	
+	title = GOE_RAJ.9.t
+	desc = GOE_RAJ.9.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 
 	is_triggered_only = yes
 
@@ -325,10 +325,10 @@ country_event = {
 #Bose launches civil war. Japan is called to honor its pledge
 country_event = {
 	id = GOE_RAJ.10
-	title = GOE_RAJ.10.t	
-	desc = GOE_RAJ.10.desc	
+	title = GOE_RAJ.10.t
+	desc = GOE_RAJ.10.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	#Honor pledge
@@ -433,10 +433,10 @@ country_event = {
 # Japan Honor pledge
 country_event = {
 	id = GOE_RAJ.11
-	title = GOE_RAJ.11.t	
-	desc = GOE_RAJ.11.desc	
+	title = GOE_RAJ.11.t
+	desc = GOE_RAJ.11.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -451,7 +451,7 @@ country_event = {
 			base = 2.5
 		}
 
-		
+
 	}
 }
 
@@ -459,10 +459,10 @@ country_event = {
 # Japan breaks pledge for RAJ
 country_event = {
 	id = GOE_RAJ.12
-	title = GOE_RAJ.12.t	
-	desc = GOE_RAJ.12.desc	
+	title = GOE_RAJ.12.t
+	desc = GOE_RAJ.12.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	#Honor pledge
@@ -471,22 +471,22 @@ country_event = {
 		ai_chance = {
 			base = 2.5
 		}
-		
+
 	}
 }
 
 # Japan hands over  the Andamans FOR RAJ
 country_event = {
 	id = GOE_RAJ.13
-	title = GOE_RAJ.13.t	
-	desc = GOE_RAJ.13.desc	
+	title = GOE_RAJ.13.t
+	desc = GOE_RAJ.13.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	trigger = {
 		RAJ = { has_country_flag = JAP_honors_pledge_azad_hind }
 		has_war_with = 733.controller
 		original_tag = JAP
-		733 = { is_fully_controlled_by = JAP } 
+		733 = { is_fully_controlled_by = JAP }
 
 	}
 	fire_only_once = yes
@@ -497,12 +497,12 @@ country_event = {
 			base = 1
 		}
 
-		RAJ = { 
-			country_event = { id = GOE_RAJ.14 hours = 4 } 
+		RAJ = {
+			country_event = { id = GOE_RAJ.14 hours = 4 }
 			transfer_state = 733
 		}
 		add_political_power = 25
-		
+
 	}
 
 	#give RAJ ANdaman
@@ -517,8 +517,8 @@ country_event = {
 # Japan hands over  the Andamans FOR RAJ
 country_event = {
 	id = GOE_RAJ.14
-	title = GOE_RAJ.14.t	
-	desc = GOE_RAJ.14.desc	
+	title = GOE_RAJ.14.t
+	desc = GOE_RAJ.14.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	#give RAJ ANdaman
@@ -538,8 +538,8 @@ country_event = {
 
 country_event = {
 	id = GOE_RAJ.15
-	title = GOE_RAJ.15.t	
-	desc = GOE_RAJ.15.desc	
+	title = GOE_RAJ.15.t
+	desc = GOE_RAJ.15.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	#give RAJ ANdaman
@@ -555,8 +555,8 @@ country_event = {
 
 country_event = {
 	id = GOE_RAJ.16
-	title = GOE_RAJ.16.t	
-	desc = GOE_RAJ.16.desc	
+	title = GOE_RAJ.16.t
+	desc = GOE_RAJ.16.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	#give RAJ ANdaman
@@ -573,7 +573,7 @@ country_event = {
 				}
 			}
 			FROM = {
-				add_autonomy_score = { 
+				add_autonomy_score = {
 					value = 80
 				}
 			}
@@ -593,8 +593,8 @@ country_event = {
 
 country_event = {
 	id = GOE_RAJ.17
-	title = GOE_RAJ.17.t	
-	desc = GOE_RAJ.17.desc	
+	title = GOE_RAJ.17.t
+	desc = GOE_RAJ.17.desc
 	picture = GFX_report_event_polish_army
 	is_triggered_only = yes
 
@@ -602,8 +602,8 @@ country_event = {
 		name = GOE_RAJ.17.a
 		ai_chance = {
 			base = 1
-			modifier = { 
-				surrender_progress > 0.05 
+			modifier = {
+				surrender_progress > 0.05
 				factor = 0.1
 			}
 
@@ -621,21 +621,21 @@ country_event = {
 				factor = 5
 
 			}
-			
+
 		}
 
-		give_guarantee = TIB 
+		give_guarantee = TIB
 	}
 
 	option = {
 		name = GOE_RAJ.17.b
 		ai_chance = {
 			base = 1
-			modifier = { 
-				surrender_progress > 0.05 
+			modifier = {
+				surrender_progress > 0.05
 				factor = 2
 			}
-			
+
 		}
 	}
 }
@@ -643,8 +643,8 @@ country_event = {
 #Bose demands return of colonies
 country_event = {
 	id = GOE_RAJ.18
-	title = GOE_RAJ.18.t	
-	desc = GOE_RAJ.18.desc	
+	title = GOE_RAJ.18.t
+	desc = GOE_RAJ.18.desc
 	picture = GFX_report_event_german_troops_paris
 	is_triggered_only = yes
 
@@ -675,7 +675,7 @@ country_event = {
 				}
 				factor = 1.25
 			}
-			modifier = { 
+			modifier = {
 				has_opinion = {
 					target = FROM
 					value > 65 # Use < or >
@@ -698,7 +698,7 @@ country_event = {
 				is_major = yes
 				factor = 0.75
 			}
-			
+
 		}
 		FROM = {
 			country_event = { id = GOE_RAJ.20 hours = 2 }
@@ -709,8 +709,8 @@ country_event = {
 #yes/no events
 country_event = {
 	id = GOE_RAJ.19
-	title = GOE_RAJ.19.t	
-	desc = GOE_RAJ.19.desc	
+	title = GOE_RAJ.19.t
+	desc = GOE_RAJ.19.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
@@ -724,8 +724,8 @@ country_event = {
 #accept
 country_event = {
 	id = GOE_RAJ.20
-	title = GOE_RAJ.20.t	
-	desc = GOE_RAJ.20.desc	
+	title = GOE_RAJ.20.t
+	desc = GOE_RAJ.20.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
@@ -739,8 +739,8 @@ country_event = {
 #Bose kicks out the British, continue war or not?
 country_event = {
 	id = GOE_RAJ.21
-	title = GOE_RAJ.21.t	
-	desc = GOE_RAJ.21.desc	
+	title = GOE_RAJ.21.t
+	desc = GOE_RAJ.21.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 
@@ -775,8 +775,8 @@ country_event = {
 #Bose offers peace to UK
 country_event = {
 	id = GOE_RAJ.22
-	title = GOE_RAJ.22.t	
-	desc = GOE_RAJ.22.desc	
+	title = GOE_RAJ.22.t
+	desc = GOE_RAJ.22.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 
@@ -801,8 +801,8 @@ country_event = {
 			base = 1
 		}
 
-		FROM = { 
-			country_event = { id = GOE_RAJ.24  hours = 2 } 
+		FROM = {
+			country_event = { id = GOE_RAJ.24  hours = 2 }
 		 }
 
 	}
@@ -811,8 +811,8 @@ country_event = {
 #UK rejects  peace
 country_event = {
 	id = GOE_RAJ.23
-	title = GOE_RAJ.23.t	
-	desc = GOE_RAJ.23.desc	
+	title = GOE_RAJ.23.t
+	desc = GOE_RAJ.23.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 
@@ -826,8 +826,8 @@ country_event = {
 #UK accepts  peace, to RAJ
 country_event = {
 	id = GOE_RAJ.24
-	title = GOE_RAJ.24.t	
-	desc = GOE_RAJ.24.desc	
+	title = GOE_RAJ.24.t
+	desc = GOE_RAJ.24.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 
@@ -974,7 +974,7 @@ country_event = {
 				var:revolter_tag = {
 
 					PREV = {
-						annex_country = {	
+						annex_country = {
 							target = PREV
 							transfer_troops = yes
 						}
@@ -999,8 +999,8 @@ country_event = {
 
 		if = {
 			limit = {
-				JAP = { 
-					has_war_with = ENG 
+				JAP = {
+					has_war_with = ENG
 				}
 				has_country_flag =	JAP_honors_pledge_azad_hind
 			}
@@ -1015,8 +1015,8 @@ country_event = {
 #RAJ white peaces ENG, Jap can also white peace
 country_event = {
 	id = GOE_RAJ.25
-	title = GOE_RAJ.25.t	
-	desc = GOE_RAJ.25.desc	
+	title = GOE_RAJ.25.t
+	desc = GOE_RAJ.25.desc
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
 	option = {
@@ -1025,25 +1025,25 @@ country_event = {
 		}
 		name = GOE_RAJ.25.a
 		add_timed_idea = {
-		 	idea = idea_RAJ_japanese_supremacy
-		 	days = 120
-		 } 
+			idea = idea_RAJ_japanese_supremacy
+			days = 120
+		 }
 		 white_peace = {
-		 	tag = ENG
+			tag = ENG
 		 }
 		 every_enemy_country = {
-		 	limit = {
-		 		is_in_faction_with = ENG
-		 		NOT = { original_tag = USA }
-		 	}
+			limit = {
+				is_in_faction_with = ENG
+				NOT = { original_tag = USA }
+			}
 
 			 white_peace = {
-			 	tag = THIS
+				tag = THIS
 			 }
 		 }
 	 }
 	 option = {
-	 	name = GOE_RAJ.25.b
+		name = GOE_RAJ.25.b
 		ai_chance = {
 			base = 0
 		}
@@ -1053,8 +1053,8 @@ country_event = {
 #Bose Freed from prison
 country_event = {
 	id = GOE_RAJ.26
-	title = GOE_RAJ.26.t	
-	desc = GOE_RAJ.26.desc	
+	title = GOE_RAJ.26.t
+	desc = GOE_RAJ.26.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
@@ -1063,7 +1063,7 @@ country_event = {
 			limit = { has_dlc = "Graveyard of Empires" }
 			RAJ_subhas_chanda_bose = {
 				swap_country_leader_traits = {
-					remove = in_prison 
+					remove = in_prison
 					add = nationalistic_freedom_fighter
 				}
 			}
@@ -1075,34 +1075,34 @@ country_event = {
 #RAJ wants to white peace
 country_event = {
 	id = GOE_RAJ.27
-	title = GOE_RAJ.27.t	
-	desc = GOE_RAJ.27.desc	
+	title = GOE_RAJ.27.t
+	desc = GOE_RAJ.27.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
 		ai_chance = {
 			base = 0
-	 		modifier = {
-	 			any_state = {
-	 				is_core_of = RAJ
-	 				is_fully_controlled_by = ROOT	
-	 			}
+			modifier = {
+				any_state = {
+					is_core_of = RAJ
+					is_fully_controlled_by = ROOT
+				}
 
-	 			add = 1
-	 		}
+				add = 1
+			}
 		}
 		name = GOE_RAJ.27.a #no
 		FROM = { country_event = { id = GOE_RAJ.28 hours = 2 } }
 	 }
 
 	 option = {
-	 	ai_chance = {
-	 		base = 1
-	 	}
-	 	name = GOE_RAJ.27.b #yes
-	 	white_peace = {
-	 		tag = RAJ
-	 	}
+		ai_chance = {
+			base = 1
+		}
+		name = GOE_RAJ.27.b #yes
+		white_peace = {
+			tag = RAJ
+		}
 	 }
 }
 
@@ -1110,8 +1110,8 @@ country_event = {
 #RAJ wants to white peace
 country_event = {
 	id = GOE_RAJ.28
-	title = GOE_RAJ.28.t	
-	desc = GOE_RAJ.28.desc	
+	title = GOE_RAJ.28.t
+	desc = GOE_RAJ.28.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
@@ -1124,8 +1124,8 @@ country_event = {
 #Retire Freeman-Freeman
 country_event = {
 	id = GOE_RAJ.29
-	title = GOE_RAJ.29.t	
-	desc = GOE_RAJ.29.desc	
+	title = GOE_RAJ.29.t
+	desc = GOE_RAJ.29.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
@@ -1189,19 +1189,19 @@ country_event = {
 					ideology = centrism
 				}
 			}
-		}		
+		}
 	}
 }
 
 #UK independence
 country_event = {
 	id = GOE_RAJ.30
-	title = GOE_RAJ.30.t	
-	desc = GOE_RAJ.30.desc	
+	title = GOE_RAJ.30.t
+	desc = GOE_RAJ.30.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
-		name = GOE_RAJ.30.a 
+		name = GOE_RAJ.30.a
 		ai_chance = {
 			base = 1
 		}
@@ -1221,7 +1221,7 @@ country_event = {
 				set_autonomy = {
 					target=RAJ
 					autonomy_state = autonomy_satellite
-					freedom_level = 0 # 0-1 
+					freedom_level = 0 # 0-1
 					end_wars  = no # default yes. will not cancel non civil wars if set to no
 					end_civil_wars = no # default yes. will not cancel civil wars if set to no
 				}
@@ -1242,7 +1242,7 @@ country_event = {
 				set_autonomy = {
 					target=RAJ
 					autonomy_state = autonomy_dominion
-					freedom_level = 0 # 0-1 
+					freedom_level = 0 # 0-1
 					end_wars  = no # default yes. will not cancel non civil wars if set to no
 					end_civil_wars = no # default yes. will not cancel civil wars if set to no
 				}
@@ -1266,8 +1266,8 @@ country_event = {
 #UK independence
 country_event = {
 	id = GOE_RAJ.31
-	title = GOE_RAJ.31.t	
-	desc = GOE_RAJ.31.desc	
+	title = GOE_RAJ.31.t
+	desc = GOE_RAJ.31.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
@@ -1302,7 +1302,7 @@ country_event = {
 			limit = {
 				FROM = { has_completed_focus = RAJ_great_depression_price_controls }
 			}
-			FROM = {	
+			FROM = {
 				uncomplete_national_focus = {
 					focus = RAJ_great_depression_price_controls
 					uncomplete_children = yes
@@ -1321,7 +1321,7 @@ country_event = {
 			remove_ideas = {
 				idea_RAJ_price_controls
 			}
-		} 
+		}
 
 		if = {
 			limit = {
@@ -1330,7 +1330,7 @@ country_event = {
 			remove_ideas = {
 				idea_RAJ_price_controls_2
 			}
-		} 
+		}
 
 
 	}
@@ -1339,8 +1339,8 @@ country_event = {
 #UK hand over Aden
 country_event = {
 	id = GOE_RAJ.32
-	title = GOE_RAJ.32.t	
-	desc = GOE_RAJ.32.desc	
+	title = GOE_RAJ.32.t
+	desc = GOE_RAJ.32.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
@@ -1350,61 +1350,61 @@ country_event = {
 		}
 
 
-        ENG = { 
-            country_event = { id = GOE_RAJ.16 hours = 2 } 
+        ENG = {
+            country_event = { id = GOE_RAJ.16 hours = 2 }
             #event_option_tooltip = GOE_RAJ.16.a
         }
         if = {
-        	limit = {
-        		has_completed_focus = RAJ_look_to_the_future 
-        	}
+			limit = {
+				has_completed_focus = RAJ_look_to_the_future
+			}
 
-        	429 = {
-        		add_extra_state_shared_building_slots = 1
-	        	add_building_construction = {
-	        		type = industrial_complex
-	        		level = 1
-	        		instant_build = yes
-	        	}
-        	}
+			429 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 
         }
         else_if = {
-        	limit = {
-        		has_completed_focus = RAJ_look_to_the_past
-        	}
-        	988 = {
-        		add_extra_state_shared_building_slots = 1
-	        	add_building_construction = {
-	        		type = industrial_complex
-	        		level = 1
-	        		instant_build = yes
-	        	}
-        	}
+			limit = {
+				has_completed_focus = RAJ_look_to_the_past
+			}
+			988 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
         }
         else = {
 	        random_core_state = {
-	        	limit = {
-	        		is_controlled_by = ROOT
-	        	}
-	        	prioritize = { 439 } 
-	        	add_extra_state_shared_building_slots = 1
-	        	add_building_construction = {
-	        		type = industrial_complex
-	        		level = 1
-	        		instant_build = yes
-	        	}
-	        	
+				limit = {
+					is_controlled_by = ROOT
+				}
+				prioritize = { 439 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+
 	        }
         }
 
         effect_tooltip = {
             RAJ = {
-                add_autonomy_score = { 
+                add_autonomy_score = {
                     value = 80
                 }
             }
-            
+
             ENG = {
                 transfer_state = 992
                 659 = { # Now all of Aden encompasses the Federation of South Arabia
@@ -1427,8 +1427,8 @@ country_event = {
 #UK - Mughal uprising
 country_event = {
 	id = GOE_RAJ.33
-	title = GOE_RAJ.33.t	
-	desc = GOE_RAJ.33.desc	
+	title = GOE_RAJ.33.t
+	desc = GOE_RAJ.33.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 	option = {
@@ -1455,11 +1455,11 @@ country_event = {
 	}
 }
 
-#UK 
+#UK
 country_event = {
 	id = GOE_RAJ.34
-	title = GOE_RAJ.34.t	
-	desc = GOE_RAJ.34.desc	
+	title = GOE_RAJ.34.t
+	desc = GOE_RAJ.34.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
@@ -1521,8 +1521,8 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
-		set_rule = { 
-			 can_join_factions = yes 
+		set_rule = {
+			 can_join_factions = yes
 		}
 	}
 }
@@ -1538,12 +1538,12 @@ country_event = {  #Warn about garrison not being set, hidden event
 			}
 			clr_country_flag = RAJ_only_send_one_event
 		}
-		
+
 		every_owned_state = {
 			limit = { has_resistance = yes }
 			if = {
-				limit = { 
-					RAJ = { NOT = { has_country_flag = RAJ_only_send_one_event } } 
+				limit = {
+					RAJ = { NOT = { has_country_flag = RAJ_only_send_one_event } }
 				}
 
 				if = {
@@ -1553,21 +1553,21 @@ country_event = {  #Warn about garrison not being set, hidden event
 						limit = {
 							RAJ = { NOT = { has_country_flag = RAJ_has_been_warned_about_garrison } }
 						}
-						RAJ = { 
-							set_country_flag = RAJ_has_been_warned_about_garrison 
+						RAJ = {
+							set_country_flag = RAJ_has_been_warned_about_garrison
 							country_event = {
 								id = GOE_RAJ.37
 								hours = 2
 							}
-						} 
+						}
 					}
 					else = {
-						RAJ = { 
+						RAJ = {
 							country_event = {
 								id = GOE_RAJ.38
 								hours = 2
 							}
-						} 
+						}
 					}
 				}
 			}
@@ -1581,7 +1581,7 @@ country_event = {  #Warn about garrison not being set, hidden event
 			country_event = {
 				id = GOE_RAJ.36
 				days = 22
-				random_days = 15 
+				random_days = 15
 			}
 		}
 
@@ -1594,7 +1594,7 @@ country_event = {  #Warn about garrison not being set, hidden event
 	}
 }
 
-country_event = { #Warn once about garrison not being set 
+country_event = { #Warn once about garrison not being set
 	id = GOE_RAJ.37
 	is_triggered_only = yes
 	title =  GOE_RAJ.37.t
@@ -1602,18 +1602,18 @@ country_event = { #Warn once about garrison not being set
 	option = {
 		name = GOE_RAJ.37.a
         every_owned_state = {
-            limit = { 
-            	has_resistance = yes
-            	occupation_law = no_garrison 
-            	
+            limit = {
+				has_resistance = yes
+				occupation_law = no_garrison
+
             }
-        	set_occupation_law = local_police_force_garrison
+			set_occupation_law = local_police_force_garrison
 
         }
 	}
 }
 
-country_event = { #No more warning 
+country_event = { #No more warning
 	id = GOE_RAJ.38
 	is_triggered_only = yes
 	title =  GOE_RAJ.38.t
@@ -1622,10 +1622,10 @@ country_event = { #No more warning
 		name = GOE_RAJ.38.a
 
         every_owned_state = {
-        	limit = {
-        		has_resistance = yes
-        		occupation_law = no_garrison 
-        	}
+			limit = {
+				has_resistance = yes
+				occupation_law = no_garrison
+			}
             set_occupation_law = local_police_force_garrison
             set_resistance = 0
 
@@ -1635,7 +1635,7 @@ country_event = { #No more warning
 }
 
 #communist seek help from the unions
-country_event = { 
+country_event = {
 	id = GOE_RAJ.39
 	is_triggered_only = yes
 	title = GOE_RAJ.39.t
@@ -1643,7 +1643,7 @@ country_event = {
 	picture = GFX_report_event_partition_of_india
 	option = {
 		name = GOE_RAJ.39.a
-		set_country_flag = RAJ_communist_unions_promised_worker_safety 
+		set_country_flag = RAJ_communist_unions_promised_worker_safety
 		add_to_variable = { RAJ_royal_indian_navy_mutiny_threshold = -0.1 tooltip = RAJ_royal_indian_navy_mutiny_threshold_tt }
 		custom_effect_tooltip = GOE_RAJ.39.a_tt
 		show_ideas_tooltip = idea_RAJ_increased_worker_safety
@@ -1671,13 +1671,13 @@ country_event = {
 
 
 #India starts border clahs with Pakistan punjab
-country_event = { 
+country_event = {
 	id = GOE_RAJ.40
 	is_triggered_only = yes
 	title = GOE_RAJ.40.t
 	desc = GOE_RAJ.40.desc
 	picture = GFX_report_event_generic_destroyed_vehicles
-	
+
 	option = {
 		name = GOE_RAJ.40.a
 
@@ -1687,13 +1687,13 @@ country_event = {
 
 
 #India wins  Pakistan
-country_event = { 
+country_event = {
 	id = GOE_RAJ.41
 	is_triggered_only = yes
 	title = GOE_RAJ.41.t
 	desc = GOE_RAJ.41.desc
 	picture = GFX_report_event_indian_parade #GFX_report_event_gre_city_siege
-	
+
 	option = {
 		name = GOE_RAJ.41.a
 		trigger = {
@@ -1725,13 +1725,13 @@ country_event = {
 
 #
 #India starts border clash with Pakistan West Bengal
-country_event = { 
+country_event = {
 	id = GOE_RAJ.42
 	is_triggered_only = yes
 	title = GOE_RAJ.42.t
 	desc = GOE_RAJ.42.desc
 	picture = GFX_report_event_indian_soldiers #GFX_report_event_bul_ff_troops_yugoslavia
-	
+
 	option = {
 		name = GOE_RAJ.42.a
 
@@ -1741,13 +1741,13 @@ country_event = {
 
 
 #India wins  Pakistan West Bengal
-country_event = { 
+country_event = {
 	id = GOE_RAJ.43
 	is_triggered_only = yes
 	title = GOE_RAJ.43.t
 	desc = GOE_RAJ.43.desc
 	picture = GFX_report_event_indian_parade
-	
+
 	option = {
 		name = GOE_RAJ.43.a
 		trigger = {
@@ -1778,13 +1778,13 @@ country_event = {
 }
 
 #India starts border clash with Pakistan Rajahstan
-country_event = { 
+country_event = {
 	id = GOE_RAJ.44
 	is_triggered_only = yes
 	title = GOE_RAJ.44.t
 	desc = GOE_RAJ.42.desc
 	picture = GFX_report_event_bul_ff_troops_panzer
-	
+
 	option = {
 		name = GOE_RAJ.44.a
 
@@ -1794,13 +1794,13 @@ country_event = {
 
 
 #India wins  Pakistan West Bengal
-country_event = { 
+country_event = {
 	id = GOE_RAJ.45
 	is_triggered_only = yes
 	title = GOE_RAJ.45.t
 	desc = GOE_RAJ.45.desc
 	picture = GFX_report_event_france_tank_production
-	
+
 	option = {
 		name = GOE_RAJ.45.a
 		trigger = {
@@ -1835,9 +1835,9 @@ country_event = {
 	title = GOE_RAJ.46.t
 	desc = GOE_RAJ.46.desc
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_variable = {
 			var = raj_total_com_size
@@ -1850,7 +1850,7 @@ country_event = {
 		trigger = {
 			num_of_controlled_states > 1
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 		set_country_flag = had_raj_civil_war_flag
@@ -1882,7 +1882,7 @@ country_event = {
 
 	option = {
 		name = GOE_RAJ.46.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 0
 		}
 		set_politics = {
@@ -1907,7 +1907,7 @@ country_event = {
 		name = GOE_RAJ.46.c
 		trigger = {
 			is_ironman = no
-			difficulty < 3 
+			difficulty < 3
 		}
 		add_popularity = {
 			ideology = communism
@@ -1927,7 +1927,7 @@ country_event = {
 	title = GOE_RAJ.47.t
 	desc = GOE_RAJ.47.desc
 	picture = GFX_report_event_china_infiltration
-	
+
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -1954,7 +1954,7 @@ country_event = {
 	title = GOE_RAJ.48.t
 	desc = GOE_RAJ.48.desc
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
 	option = {
 		name = GOE_RAJ.48.a
@@ -1970,13 +1970,13 @@ country_event = {
 
 
 #India loses Pakistan West Bengal
-country_event = { 
+country_event = {
 	id = GOE_RAJ.49
 	is_triggered_only = yes
 	title = GOE_RAJ.49.t
 	desc = GOE_RAJ.49.desc
 	picture = GFX_report_event_france_tank_production
-	
+
 	option = {
 		name = GOE_RAJ.49.a
 		trigger = {
@@ -1993,13 +1993,13 @@ country_event = {
 }
 
 #India loses Pakistan West Bengal
-country_event = { 
+country_event = {
 	id = GOE_RAJ.50
 	is_triggered_only = yes
 	title = GOE_RAJ.50.t
 	desc = GOE_RAJ.50.desc
 	picture = GFX_report_event_france_tank_production
-	
+
 	option = {
 		name = GOE_RAJ.50.a
 		trigger = {
@@ -2016,13 +2016,13 @@ country_event = {
 }
 
 #India loses  Pakistan
-country_event = { 
+country_event = {
 	id = GOE_RAJ.51
 	is_triggered_only = yes
 	title = GOE_RAJ.51.t
 	desc = GOE_RAJ.51.desc
 	picture = GFX_report_event_gre_city_siege
-	
+
 	option = {
 		name = GOE_RAJ.51.a
 		trigger = {
@@ -2045,10 +2045,10 @@ country_event = {
 
 country_event = {
 	id = GOE_RAJ_partition.1
-	title = GOE_RAJ_partition.1.t	
-	desc = GOE_RAJ_partition.1.desc	
+	title = GOE_RAJ_partition.1.t
+	desc = GOE_RAJ_partition.1.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	hidden = yes
 
 	is_triggered_only = yes
@@ -2063,15 +2063,15 @@ country_event = {
 			}
 
 			random_scope_in_array = {
-				array = RAJ.owned_states_at_game_start 
-				limit = { 
-					is_controlled_by = ROOT 
+				array = RAJ.owned_states_at_game_start
+				limit = {
+					is_controlled_by = ROOT
 					has_resistance = yes
 				}
 
 				set_variable = { RAJ.unrest_target_state = THIS }
 				random_list = {
-					log = yes 
+					log = yes
 					seed = random
 					10 = {
 						ROOT = { country_event = { id = GOE_RAJ_partition.2 hours = 2  } } #Add resistance
@@ -2088,7 +2088,7 @@ country_event = {
 								industrial_complex < 1
 								arms_factory < 1
 								dockyard < 1
-								infrastructure < 2 
+								infrastructure < 2
 
 							}
 							factor = 0.5
@@ -2126,10 +2126,10 @@ country_event = {
 
 country_event = {
 	id = GOE_RAJ_partition.2
-	title = GOE_RAJ_partition.2.t	
-	desc = GOE_RAJ_partition.2.desc	
+	title = GOE_RAJ_partition.2.t
+	desc = GOE_RAJ_partition.2.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 
 
 	is_triggered_only = yes
@@ -2138,25 +2138,25 @@ country_event = {
 		name =  GOE_RAJ_partition.2.a
 		if = {
 			limit = {
-				is_ai = yes	
+				is_ai = yes
 			}
-			var:RAJ.unrest_target_state = { 
-				add_resistance = 15 
+			var:RAJ.unrest_target_state = {
+				add_resistance = 15
 				custom_effect_tooltip = currentStateResistance
 			}
 
 		}
 		else = {
-			var:RAJ.unrest_target_state = { 
-				add_resistance = 65 
+			var:RAJ.unrest_target_state = {
+				add_resistance = 65
 				custom_effect_tooltip = currentStateResistance
 			}
 		}
 		ai_chance = {
 			base = 0
 			modifier = {
-				var:RAJ.unrest_target_state = { 
-					resistance < 25 
+				var:RAJ.unrest_target_state = {
+					resistance < 25
 				}
 				add = 1
 			}
@@ -2184,30 +2184,30 @@ country_event = {
 		ai_chance = {
 			base = 1
 			modifier = {
-				var:RAJ.unrest_target_state = { 
-					resistance > 39 
+				var:RAJ.unrest_target_state = {
+					resistance > 39
 				}
 				factor = 100
 			}
 		}
-		trigger = { 
+		trigger = {
 			OR = {
-				var:RAJ.unrest_target_state = { 
-					compliance > 24 
+				var:RAJ.unrest_target_state = {
+					compliance > 24
 				}
 
-				var:RAJ.unrest_target_state = { 
-					resistance > 24 
+				var:RAJ.unrest_target_state = {
+					resistance > 24
 				}
 			}
 		}
 
 		if = {
 			limit = {
-				is_ai = yes	
+				is_ai = yes
 			}
-			var:RAJ.unrest_target_state = { 
-				add_resistance = 5 
+			var:RAJ.unrest_target_state = {
+				add_resistance = 5
 				custom_effect_tooltip = currentStateResistance
 				custom_effect_tooltip = newline_tt
 				add_compliance = -10
@@ -2216,8 +2216,8 @@ country_event = {
 
 		}
 		else = {
-			var:RAJ.unrest_target_state = { 
-				add_resistance = 20 
+			var:RAJ.unrest_target_state = {
+				add_resistance = 20
 				custom_effect_tooltip = currentStateResistance
 				custom_effect_tooltip = newline_tt
 				add_compliance = -35
@@ -2237,18 +2237,18 @@ country_event = {
 			custom_effect_tooltip = RAJ_league_against_gandhism_tt_event
 		}
 		custom_effect_tooltip = GOE_RAJ_partition_become_free_to_stop_the_chaos_tt
-		
+
 	}
 }
 
 
-#riots 
+#riots
 country_event = {
 	id = GOE_RAJ_partition.3
-	title = GOE_RAJ_partition.3.t	
-	desc = GOE_RAJ_partition.3.desc	
+	title = GOE_RAJ_partition.3.t
+	desc = GOE_RAJ_partition.3.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -2259,8 +2259,8 @@ country_event = {
 					industrial_complex > 0
 				}
 				damage_building = {
-					type = industrial_complex 
-					damage = 3 # levels of damage 
+					type = industrial_complex
+					damage = 3 # levels of damage
 				}
 			}
 
@@ -2269,8 +2269,8 @@ country_event = {
 					arms_factory > 0
 				}
 				damage_building = {
-					type = arms_factory 
-					damage = 3 # levels of damage 
+					type = arms_factory
+					damage = 3 # levels of damage
 				}
 			}
 
@@ -2279,8 +2279,8 @@ country_event = {
 					dockyard > 0
 				}
 				damage_building = {
-					type = dockyard 
-					damage = 3 # levels of damage 
+					type = dockyard
+					damage = 3 # levels of damage
 				}
 			}
 
@@ -2290,8 +2290,8 @@ country_event = {
 					infrastructure > 0
 				}
 				damage_building = {
-					type = infrastructure 
-					damage = 3 # levels of damage 
+					type = infrastructure
+					damage = 3 # levels of damage
 				}
 			}
 		}
@@ -2313,10 +2313,10 @@ country_event = {
 
 country_event = {
 	id = GOE_RAJ_partition.4
-	title = GOE_RAJ_partition.4.t	
-	desc = GOE_RAJ_partition.4.desc	
+	title = GOE_RAJ_partition.4.t
+	desc = GOE_RAJ_partition.4.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 
 
 
@@ -2405,8 +2405,8 @@ country_event = {
 #Clashes between Muslims and Hindus
 country_event = {
 	id = GOE_RAJ_partition.5
-	title = GOE_RAJ_partition.5.t	
-	desc = GOE_RAJ_partition.5.desc	
+	title = GOE_RAJ_partition.5.t
+	desc = GOE_RAJ_partition.5.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 
@@ -2424,7 +2424,7 @@ country_event = {
 
 			add_compliance = -5
 			add_resistance = 5
-			
+
 		}
 
 		if = {
@@ -2448,7 +2448,7 @@ country_event = {
 			custom_effect_tooltip = RAJ_league_against_gandhism_tt_event
 		}
 	}
-	
+
 }
 
 
@@ -2456,10 +2456,10 @@ country_event = {
 
 country_event = {
 	id = GOE_RAJ_partition.6
-	title = GOE_RAJ_partition.6.t	
-	desc = GOE_RAJ_partition.6.desc	
+	title = GOE_RAJ_partition.6.t
+	desc = GOE_RAJ_partition.6.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 
 	immediate = {
 
@@ -2500,13 +2500,13 @@ country_event = {
 		}
 
 		#setup pressure
-		PAK = { 
-			set_variable = { pressure_left = 6 } 
+		PAK = {
+			set_variable = { pressure_left = 6 }
 			set_variable = { default_pressure = pressure_left }
 		}
 
-		RAJ = {  
-			set_variable = { pressure_left = 8 } 
+		RAJ = {
+			set_variable = { pressure_left = 8 }
 			set_variable = { default_pressure = pressure_left }
 		}
 		if = {
@@ -2517,7 +2517,7 @@ country_event = {
 			set_variable = { default_pressure = pressure_left }
 
 		}
-		
+
 		set_global_flag = RAJ_GOE_partition_has_happened
 		#The chance for Pricely states to declare independence. Only for alt hist
 		if = {
@@ -2537,7 +2537,7 @@ country_event = {
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 787.industrial_complex_level }
 				add_to_variable = { civs = 441.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2565,8 +2565,8 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 2 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
-			
+
+
 			}
 
 			HYD = { #hyderabad
@@ -2579,7 +2579,7 @@ country_event = {
 
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 427.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2606,7 +2606,7 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 2 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
+
 			}
 
 			MPU = { #Manipir
@@ -2619,7 +2619,7 @@ country_event = {
 
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 990.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2646,7 +2646,7 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 0.75 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
+
 			}
 
 
@@ -2660,7 +2660,7 @@ country_event = {
 
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 425.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2686,7 +2686,7 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 0.75 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
+
 			}
 
 			NWF = { #North Western Frontier States
@@ -2702,7 +2702,7 @@ country_event = {
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 442.industrial_complex_level }
 				add_to_variable = { civs = 987.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2730,7 +2730,7 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 0.35 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
+
 			}
 
 			RJP = { #Rajputana
@@ -2746,7 +2746,7 @@ country_event = {
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 433.industrial_complex_level }
 				add_to_variable = { civs = 989.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2775,7 +2775,7 @@ country_event = {
 				multiply_variable = { liberty_desire = historical_precedence  }
 			}
 
-			
+
 			KOL = { #Deccan states and Koliphur
 				set_variable = { liberty_desire = 0 }
 
@@ -2786,7 +2786,7 @@ country_event = {
 
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 311.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2813,11 +2813,11 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 0.3 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
+
 			}
 
 			#Western Indian States (Gujarat)
-			WIS = { 
+			WIS = {
 				set_variable = { liberty_desire = 0 }
 
 				#Industry
@@ -2827,7 +2827,7 @@ country_event = {
 
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 428.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2854,7 +2854,7 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 1 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
+
 			}
 
 			CIP = { #Central Indian states
@@ -2867,7 +2867,7 @@ country_event = {
 
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 437.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2894,7 +2894,7 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 0.6 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
+
 			}
 
 			RAS = { #Madras states
@@ -2907,7 +2907,7 @@ country_event = {
 
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 982.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2934,7 +2934,7 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 0.4 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
+
 			}
 
 			SKK = { #Sikkim states
@@ -2947,7 +2947,7 @@ country_event = {
 
 				set_variable = { civs = 0 }
 				add_to_variable = { civs = 985.industrial_complex_level }
-				
+
 				multiply_variable = { civs = 1.75 }
 				add_to_variable = { industry = civs }
 
@@ -2974,7 +2974,7 @@ country_event = {
 				add_to_variable = { liberty_desire = base_value }
 				set_variable = { historical_precedence = 2 }
 				multiply_variable = { liberty_desire = historical_precedence  }
-				
+
 			}
 		}
 
@@ -3046,7 +3046,7 @@ country_event = {
 							set_variable = { RAJ_pressure = 0 }
 							set_variable  = { PAK_pressure = 0 }
 							set_variable = { BAN_pressure = 0 }
-							
+
 							if = {
 								limit = {
 									state = 441
@@ -3163,18 +3163,18 @@ country_event = {
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = KAS.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:KAS.liberty_desire = { 
+					seed = random
+					var:no_independence = {   }
+					var:KAS.liberty_desire = {
 						release = KAS
 								#setup pressure
-						PAK = { 
-							add_to_variable = { pressure_left = 0.5 } 
+						PAK = {
+							add_to_variable = { pressure_left = 0.5 }
 							set_variable = { default_pressure = pressure_left }
 						}
 
-						RAJ = {  
-							add_to_variable = { pressure_left = 0.8 } 
+						RAJ = {
+							add_to_variable = { pressure_left = 0.8 }
 							set_variable = { default_pressure = pressure_left }
 						}
 						if = {
@@ -3207,17 +3207,17 @@ country_event = {
 								}
 							}
 						}
-					} 
+					}
 				}
 
 				#Hyderabad
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = HYD.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:HYD.liberty_desire = { 
-						release = HYD 
+					seed = random
+					var:no_independence = {   }
+					var:HYD.liberty_desire = {
+						release = HYD
 						HYD = {
 							every_core_state = {
 								limit = { is_controlled_by = PREV }
@@ -3240,24 +3240,24 @@ country_event = {
 								}
 							}
 						}
-					} 
+					}
 				}
 
 				#MPU
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = MPU.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:MPU.liberty_desire = { 
-						release = MPU 
-						PAK = { 
-							add_to_variable = { pressure_left = 0.5 } 
+					seed = random
+					var:no_independence = {   }
+					var:MPU.liberty_desire = {
+						release = MPU
+						PAK = {
+							add_to_variable = { pressure_left = 0.5 }
 							set_variable = { default_pressure = pressure_left }
 						}
 
-						RAJ = {  
-							add_to_variable = { pressure_left = 0.8 } 
+						RAJ = {
+							add_to_variable = { pressure_left = 0.8 }
 							set_variable = { default_pressure = pressure_left }
 						}
 						if = {
@@ -3275,24 +3275,24 @@ country_event = {
 								add_to_array = { array = RAJ.states_in_play_partition }
 							}
 						}
-					} 
+					}
 				}
 
 				#Mysore
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = MYS.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:MYS.liberty_desire = { 
-						release = MYS 
-						PAK = { 
-							add_to_variable = { pressure_left = 0.5 } 
+					seed = random
+					var:no_independence = {   }
+					var:MYS.liberty_desire = {
+						release = MYS
+						PAK = {
+							add_to_variable = { pressure_left = 0.5 }
 							set_variable = { default_pressure = pressure_left }
 						}
 
-						RAJ = {  
-							add_to_variable = { pressure_left = 0.8 } 
+						RAJ = {
+							add_to_variable = { pressure_left = 0.8 }
 							set_variable = { default_pressure = pressure_left }
 						}
 						if = {
@@ -3312,24 +3312,24 @@ country_event = {
 								set_variable = { preference = 1.5 }
 							}
 						}
-					} 
+					}
 				}
 
 
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = NWF.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:NWF.liberty_desire = { 
-						release = NWF 
-						PAK = { 
-							add_to_variable = { pressure_left = 0.5 } 
+					seed = random
+					var:no_independence = {   }
+					var:NWF.liberty_desire = {
+						release = NWF
+						PAK = {
+							add_to_variable = { pressure_left = 0.5 }
 							set_variable = { default_pressure = pressure_left }
 						}
 
-						RAJ = {  
-							add_to_variable = { pressure_left = 0.8 } 
+						RAJ = {
+							add_to_variable = { pressure_left = 0.8 }
 							set_variable = { default_pressure = pressure_left }
 						}
 						if = {
@@ -3349,22 +3349,22 @@ country_event = {
 								set_variable = { preference = 1.25 }
 							}
 						}
-					} 
+					}
 				}
 
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = RJP.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:RJP.liberty_desire = { 
-						PAK = { 
-							add_to_variable = { pressure_left = 1.5 } 
+					seed = random
+					var:no_independence = {   }
+					var:RJP.liberty_desire = {
+						PAK = {
+							add_to_variable = { pressure_left = 1.5 }
 							set_variable = { default_pressure = pressure_left }
 						}
 
-						RAJ = {  
-							add_to_variable = { pressure_left = 2 } 
+						RAJ = {
+							add_to_variable = { pressure_left = 2 }
 							set_variable = { default_pressure = pressure_left }
 						}
 						if = {
@@ -3375,7 +3375,7 @@ country_event = {
 							set_variable = { default_pressure = pressure_left }
 
 						}
-						release = RJP 
+						release = RJP
 						RJP = {
 							every_core_state = {
 								limit = { is_controlled_by = PREV }
@@ -3383,22 +3383,22 @@ country_event = {
 								add_to_array = { array = RAJ.states_in_play_partition }
 							}
 						}
-					} 
+					}
 				}
 
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = KOL.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:KOL.liberty_desire = { 
-						PAK = { 
-							add_to_variable = { pressure_left = 0.5 } 
+					seed = random
+					var:no_independence = {   }
+					var:KOL.liberty_desire = {
+						PAK = {
+							add_to_variable = { pressure_left = 0.5 }
 							set_variable = { default_pressure = pressure_left }
 						}
 
-						RAJ = {  
-							add_to_variable = { pressure_left = 0.8 } 
+						RAJ = {
+							add_to_variable = { pressure_left = 0.8 }
 							set_variable = { default_pressure = pressure_left }
 						}
 						if = {
@@ -3409,7 +3409,7 @@ country_event = {
 							set_variable = { default_pressure = pressure_left }
 
 						}
-						release = KOL 
+						release = KOL
 						KOL = {
 							every_core_state = {
 								limit = { is_controlled_by = PREV }
@@ -3425,17 +3425,17 @@ country_event = {
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = WIS.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:WIS.liberty_desire = { 
-						release = WIS 
-						PAK = { 
-							add_to_variable = { pressure_left = 0.5 } 
+					seed = random
+					var:no_independence = {   }
+					var:WIS.liberty_desire = {
+						release = WIS
+						PAK = {
+							add_to_variable = { pressure_left = 0.5 }
 							set_variable = { default_pressure = pressure_left }
 						}
 
-						RAJ = {  
-							add_to_variable = { pressure_left = 0.8 } 
+						RAJ = {
+							add_to_variable = { pressure_left = 0.8 }
 							set_variable = { default_pressure = pressure_left }
 						}
 						if = {
@@ -3453,24 +3453,24 @@ country_event = {
 								add_to_array = { array = RAJ.states_in_play_partition }
 							}
 						}
-					} 
+					}
 
 				}
 
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = CIP.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:CIP.liberty_desire = { 
+					seed = random
+					var:no_independence = {   }
+					var:CIP.liberty_desire = {
 						release = CIP
-						PAK = { 
-							add_to_variable = { pressure_left = 0.5 } 
+						PAK = {
+							add_to_variable = { pressure_left = 0.5 }
 							set_variable = { default_pressure = pressure_left }
 						}
 
-						RAJ = {  
-							add_to_variable = { pressure_left = 0.8 } 
+						RAJ = {
+							add_to_variable = { pressure_left = 0.8 }
 							set_variable = { default_pressure = pressure_left }
 						}
 						if = {
@@ -3488,23 +3488,23 @@ country_event = {
 								add_to_array = { array = RAJ.states_in_play_partition }
 							}
 						}
-					} 
+					}
 				}
 
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = RAS.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:RAS.liberty_desire = { 
+					seed = random
+					var:no_independence = {   }
+					var:RAS.liberty_desire = {
 						release = RAS
-						PAK = { 
-							add_to_variable = { pressure_left = 0.5 } 
+						PAK = {
+							add_to_variable = { pressure_left = 0.5 }
 							set_variable = { default_pressure = pressure_left }
 						}
 
-						RAJ = {  
-							add_to_variable = { pressure_left = 0.8 } 
+						RAJ = {
+							add_to_variable = { pressure_left = 0.8 }
 							set_variable = { default_pressure = pressure_left }
 						}
 						if = {
@@ -3514,7 +3514,7 @@ country_event = {
 							add_to_variable = { pressure_left = 0.25 }
 							set_variable = { default_pressure = pressure_left }
 
-						} 
+						}
 						RAS = {
 							every_core_state = {
 								limit = { is_controlled_by = PREV }
@@ -3522,16 +3522,16 @@ country_event = {
 								add_to_array = { array = RAJ.states_in_play_partition }
 							}
 						}
-					} 
+					}
 				}
 
 				set_variable = { no_independence = 100 }
 				subtract_from_variable = { no_independence = SKK.liberty_desire }
 				random_list = {
-					seed = random 
-					var:no_independence = {   } 
-					var:SKK.liberty_desire = { 
-						release = SKK 
+					seed = random
+					var:no_independence = {   }
+					var:SKK.liberty_desire = {
+						release = SKK
 						SKK = {
 							every_core_state = {
 								limit = { is_controlled_by = PREV }
@@ -3539,7 +3539,7 @@ country_event = {
 								add_to_array = { array = RAJ.states_in_play_partition }
 							}
 						}
-					} 
+					}
 				}
 
 			}
@@ -3550,7 +3550,7 @@ country_event = {
 				min = 0
 				max = 13
 			}
-			PAK = { 
+			PAK = {
 				clamp_variable = {
 					var = pressure_left
 					min = 0
@@ -3558,7 +3558,7 @@ country_event = {
 				}
 			}
 
-			RAJ = {  
+			RAJ = {
 				set_variable = { default_pressure = pressure_left }
 			}
 			if = {
@@ -3607,7 +3607,7 @@ country_event = {
 				}
 			}
 
-			PAK = { overlord = { set_autonomy = { target = PAK autonomy_state = autonomy_free } } } 
+			PAK = { overlord = { set_autonomy = { target = PAK autonomy_state = autonomy_free } } }
 			log = "Error: Somehow Pak is a subject after partition. Please Check"
 		}
 
@@ -3619,7 +3619,7 @@ country_event = {
 				}
 			}
 
-			BAN = { overlord = { set_autonomy = { target = BAN autonomy_state = autonomy_free } } } 
+			BAN = { overlord = { set_autonomy = { target = BAN autonomy_state = autonomy_free } } }
 			log = "Error: Somehow BAN is a subject after partition. Please Check"
 		}
 		hidden_effect = {
@@ -3647,7 +3647,7 @@ country_event = {
 		}
 		for_each_scope_loop = {
 			array = RAJ.raj_releasables
-		
+
 			if = {
 				limit = {
 					THIS = { exists = yes }
@@ -3701,7 +3701,7 @@ country_event = {
 				#	release_puppet = PAK
 				#}
 				#else = {
-				#	release_puppet = PAK 
+				#	release_puppet = PAK
 				#}
 
 
@@ -3758,7 +3758,7 @@ country_event = {
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
 							artillery_brigade = { x = 2 y = 0 }
-						
+
 						}
 						support = {
 							artillery = { x = 0 y = 0 }
@@ -3781,18 +3781,18 @@ country_event = {
 						}
 						support = {
 							engineer = { x = 0 y = 0 }
-							artillery = { x = 0 y = 1 } 
+							artillery = { x = 0 y = 1 }
 							anti_air = { x = 0 y = 2 }
 						}
 					}
 
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = artillery_equipment_1
 						amount = 530
 						producer = ENG
 					}
 
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = anti_air_equipment_1
 						amount = 340
 						producer = ENG
@@ -3867,7 +3867,7 @@ country_event = {
 						improved_medium_tank = 1
 						popup = no
 					}
-					
+
 
 					add_equipment_to_stockpile = {
 						type = medium_tank_equipment_2
@@ -3913,8 +3913,8 @@ country_event = {
 #Leadership event
 	country_event = {
 	id = GOE_RAJ_partition.7
-	title = GOE_RAJ_partition.7.t	
-	desc = GOE_RAJ_partition.7.desc	
+	title = GOE_RAJ_partition.7.t
+	desc = GOE_RAJ_partition.7.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = { #Nehru
@@ -3924,21 +3924,21 @@ country_event = {
 				NOT = {
 					has_country_leader = {
 						ruling_only = yes
-						character = RAJ_GOE_jawaharlal_nehru 
+						character = RAJ_GOE_jawaharlal_nehru
 					}
 				}
 			}
 
 			retire_country_leader = yes
 			add_country_leader_role = {
-				character =  RAJ_GOE_jawaharlal_nehru 
+				character =  RAJ_GOE_jawaharlal_nehru
 				promote_leader = yes
 				country_leader={
 					ideology=liberalism
 					expire="1965.1.1.1"
 					traits = { socialist_modernizer top_down_heavy_policies }
 				}
-			
+
 			}
 		}
 		else = {
@@ -3989,7 +3989,7 @@ country_event = {
 					expire="1965.1.1.1"
 					traits = { spiritual_leader skeptical_towards_industrialization }
 				}
-			
+
 			}
 		}
 		else = {
@@ -4008,10 +4008,10 @@ country_event = {
 	}
 
 	#Jinnah
-	option = { 
+	option = {
 		name = GOE_RAJ_partition.7.c
 		trigger = {
-			has_completed_focus = RAJ_a_secular_state	
+			has_completed_focus = RAJ_a_secular_state
 			PAK = { exists = no }
 		}
 
@@ -4021,21 +4021,21 @@ country_event = {
 				NOT = {
 					has_country_leader = {
 						ruling_only = yes
-						character = RAJ_GOE_muhammad_ali_jinnah 
+						character = RAJ_GOE_muhammad_ali_jinnah
 					}
 				}
 			}
 
 			retire_country_leader = yes
 			add_country_leader_role = {
-				character =  RAJ_GOE_muhammad_ali_jinnah 
+				character =  RAJ_GOE_muhammad_ali_jinnah
 				promote_leader = yes
 				country_leader={
 					ideology=liberalism
 					expire="1965.1.1.1"
 					traits = { all_india_muslim_league_leader minority_leader }
 				}
-			
+
 			}
 		}
 		else = {
@@ -4066,21 +4066,21 @@ country_event = {
 				NOT = {
 					has_country_leader = {
 						ruling_only = yes
-						character = RAJ_louis_mountbatten 
+						character = RAJ_louis_mountbatten
 					}
 				}
 			}
 
 			retire_country_leader = yes
 			add_country_leader_role = {
-				character =  RAJ_louis_mountbatten 
+				character =  RAJ_louis_mountbatten
 				promote_leader = yes
 				country_leader={
 					ideology=liberalism
 					expire="1965.1.1.1"
 					traits = { the_last_viceroy }
 				}
-			
+
 			}
 		}
 		else = {
@@ -4100,8 +4100,8 @@ country_event = {
 #Gandhi survives assasination attempt
 country_event = {
 	id = GOE_RAJ_partition.8
-	title = GOE_RAJ_partition.8.t	
-	desc = GOE_RAJ_partition.8.desc	
+	title = GOE_RAJ_partition.8.t
+	desc = GOE_RAJ_partition.8.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	immediate = {
@@ -4119,10 +4119,10 @@ country_event = {
 #Gandthi dies
 country_event = {
 	id = GOE_RAJ_partition.9
-	title = GOE_RAJ_partition.9.t	
-	desc = GOE_RAJ_partition.9.desc	
+	title = GOE_RAJ_partition.9.t
+	desc = GOE_RAJ_partition.9.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	fire_only_once = yes
 	trigger = {
 		date > 1948.1.29
@@ -4149,7 +4149,7 @@ country_event = {
 					expire="1965.1.1.1"
 					id=-1
 					traits = {}
-				} 
+				}
 			}
 		}
 	}
@@ -4158,10 +4158,10 @@ country_event = {
 #War on the Indian subcontinent
 country_event = {
 	id = GOE_RAJ_partition.10
-	title = GOE_RAJ_partition.10.t	
-	desc = GOE_RAJ_partition.10.desc	
+	title = GOE_RAJ_partition.10.t
+	desc = GOE_RAJ_partition.10.desc
 	picture = GFX_report_event_generic_sign_treaty1
-	
+
 	is_triggered_only = yes
 	option = {
 		name = GOE_RAJ_partition.10.a
@@ -4174,7 +4174,7 @@ country_event = {
 		name = GOE_RAJ_partition.10.b
 		declare_war_on = {
 			target = RAJ
-			type = independence_wargoal 
+			type = independence_wargoal
 		}
 
 		ai_chance = {
@@ -4214,12 +4214,12 @@ country_event = {
 				NOT = {
 					has_country_leader = {
 						ruling_only = yes
-						character = RAJ_GOE_jawaharlal_nehru 
+						character = RAJ_GOE_jawaharlal_nehru
 					}
 				}
 			}
 			add_country_leader_role = {
-				character =  RAJ_GOE_jawaharlal_nehru 
+				character =  RAJ_GOE_jawaharlal_nehru
 				promote_leader = yes
 				country_leader={
 					ideology=liberalism
@@ -4303,7 +4303,7 @@ country_event = {
 							}
 						}
 					}
-					promote_character = RAJ_mahatma_mohandas_gandhi 
+					promote_character = RAJ_mahatma_mohandas_gandhi
 				}
 
 				# Add Traits
@@ -4332,7 +4332,7 @@ country_event = {
 	desc = GOE_RAJ_loyalist.01.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
-	
+
 	option = { #Ok cool tack
 		name = GOE_RAJ_loyalist.01.a
 
@@ -4366,7 +4366,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #Ok cool tack
 		name = GOE_RAJ_loyalist.02.a
 
@@ -4477,7 +4477,7 @@ country_event = {
 	option = { #Yes go ahead
 		name = GOE_RAJ_loyalist.05.a
 
-		
+
 	}
 }
 
@@ -4505,7 +4505,7 @@ country_event = {
 		add_to_variable = { RAJ_south_east_asia_command_dm_recon_factor_while_entrenched = 0.2 tooltip = recon_factor_while_entrenched_tt }
 		add_to_variable = { RAJ_south_east_asia_command_dm_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
 		add_to_variable = { RAJ_south_east_asia_command_dm_army_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tt }
-		
+
 		custom_effect_tooltip = generic_skip_one_line_tt
 		army_experience = 50
 
@@ -4531,7 +4531,7 @@ country_event = {
 		add_to_variable = { RAJ_south_east_asia_command_dm_breakthrough_factor = 0.05 tooltip = breakthrough_factor_tt }
 		add_to_variable = { RAJ_south_east_asia_command_dm_coordination_bonus = 0.02 tooltip = coordination_bonus_tt }
 		add_to_variable = { RAJ_south_east_asia_command_dm_max_planning_factor = 0.1 tooltip = max_planning_factor_tt }
-		
+
 		custom_effect_tooltip = generic_skip_one_line_tt
 		army_experience = 50
 
@@ -4591,7 +4591,7 @@ country_event = {
 		add_to_variable = { RAJ_south_east_asia_command_dm_navy_org_factor = 0.1 tooltip = navy_org_factor_tt }
 		add_to_variable = { RAJ_south_east_asia_command_dm_naval_coordination = 0.1 tooltip = naval_coordination_tt }
 		add_to_variable = { RAJ_south_east_asia_command_dm_naval_morale_factor = 0.15 tooltip = naval_morale_factor_tt }
-		
+
 		custom_effect_tooltip = generic_skip_one_line_tt
 		navy_experience = 50
 
@@ -4829,7 +4829,7 @@ country_event = {
 	option = { #Buuuuu lame
 		name = GOE_RAJ_loyalist.09.a
 
-		
+
 	}
 }
 
@@ -5175,10 +5175,10 @@ country_event = {
 #Brown spot disease
 country_event = {
 	id = GOE_RAJ_famine.1
-	title = GOE_RAJ_famine.1.t	
-	desc = GOE_RAJ_famine.1.desc	
+	title = GOE_RAJ_famine.1.t
+	desc = GOE_RAJ_famine.1.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	immediate = {
 		hidden_effect = {
 			country_event = { id =  GOE_RAJ_famine.2 days = 20 random_days = 55 }
@@ -5190,7 +5190,7 @@ country_event = {
 		has_idea = RAJ_risk_of_famine
 		original_tag = RAJ
 		any_of_scopes = {
-			array =  RAJ.owned_states_at_game_start 
+			array =  RAJ.owned_states_at_game_start
 			controller = {
 				has_war_with = RAJ
 				NOT = { original_tag = RAJ }
@@ -5198,7 +5198,7 @@ country_event = {
 					is_in_array = {
 						array = RAJ.raj_releasables
 						value = THIS
-					}	
+					}
 				}
 				NOT = { is_subject_of = RAJ }
 			}
@@ -5217,17 +5217,17 @@ country_event = {
 	option = {
 		name = GOE_RAJ_famine.1.a
 		add_stability = -0.01
-		
+
 	}
 }
 
 #Cyclone strikes
 country_event = {
 	id = GOE_RAJ_famine.2
-	title = GOE_RAJ_famine.2.t	
-	desc = GOE_RAJ_famine.2.desc	
+	title = GOE_RAJ_famine.2.t
+	desc = GOE_RAJ_famine.2.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
@@ -5240,13 +5240,13 @@ country_event = {
 		name = GOE_RAJ_famine.2.a
 		var:global.famine_state = {
 			damage_building = {
-				type = industrial_complex 
-				damage = 2 # levels of damage 
+				type = industrial_complex
+				damage = 2 # levels of damage
 			}
 
 			damage_building = {
-				type = infrastructure 
-				damage = 2 # levels of damage 
+				type = infrastructure
+				damage = 2 # levels of damage
 			}
 		}
 	}
@@ -5255,8 +5255,8 @@ country_event = {
 #Unreliable forecasts
 country_event = {
 	id = GOE_RAJ_famine.3
-	title = GOE_RAJ_famine.3.t	
-	desc = GOE_RAJ_famine.3.desc	
+	title = GOE_RAJ_famine.3.t
+	desc = GOE_RAJ_famine.3.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -5271,15 +5271,15 @@ country_event = {
 	option = {
 		name = GOE_RAJ_famine.3.a
 		add_stability = -0.02
-		
+
 	}
 }
 
 #Provincial Trade Barriers
 country_event = {
 	id = GOE_RAJ_famine.4
-	title = GOE_RAJ_famine.4.t	
-	desc = GOE_RAJ_famine.4.desc	
+	title = GOE_RAJ_famine.4.t
+	desc = GOE_RAJ_famine.4.desc
 	picture = GFX_report_event_generic_sign_treaty2
     fire_only_once = yes
 	immediate = {
@@ -5287,22 +5287,22 @@ country_event = {
 			country_event = { id =  GOE_RAJ_famine.5 days = 1 random_days = 55 }
 		}
 	}
-	
+
 	is_triggered_only = yes
 
 
 	option = {
 		name = GOE_RAJ_famine.4.a
 		add_stability = -0.02
-		
+
 	}
 }
 
 # Price Chaos in [?global.famine_state.GetName]
 country_event = {
 	id = GOE_RAJ_famine.5
-	title = GOE_RAJ_famine.5.t	
-	desc = GOE_RAJ_famine.5.desc	
+	title = GOE_RAJ_famine.5.t
+	desc = GOE_RAJ_famine.5.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -5315,7 +5315,7 @@ country_event = {
 	option = {
 		name = GOE_RAJ_famine.5.a
 		add_war_support = -0.02
-		
+
 	}
 }
 
@@ -5323,8 +5323,8 @@ country_event = {
 #"Prioritized Distribution in [?global.famine_state.GetName]"
 country_event = {
 	id = GOE_RAJ_famine.6
-	title = GOE_RAJ_famine.6.t	
-	desc = GOE_RAJ_famine.6.desc	
+	title = GOE_RAJ_famine.6.t
+	desc = GOE_RAJ_famine.6.desc
 	picture = GFX_report_event_generic_sign_treaty2
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -5353,44 +5353,44 @@ country_event = {
 			else = {
 				var:global.famine_state = { add_resistance = 30 }
 			}
-			
+
 		}
-		
+
 	}
 }
 
 
-#Famine starts 
+#Famine starts
 country_event = {
 	id = GOE_RAJ_famine.7
-	title = GOE_RAJ_famine.7.t	
-	desc = GOE_RAJ_famine.7.desc	
+	title = GOE_RAJ_famine.7.t
+	desc = GOE_RAJ_famine.7.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 	#fire_only_once = yes
 	immediate = {
 		set_country_flag = RAJ_famine_has_started
 		set_variable = { RAJ_famine_political_power_factor = -0.15 }
 		set_variable = { RAJ_famine_stability_factor = -0.15 }
-		if = { 
+		if = {
 			limit = { NOT = { has_country_flag  = RAJ_famine_has_started } }
 			set_country_flag = RAJ_famine_has_started #for easier debugging
 		}
 
 		#Amount of times famine can spread
-		set_variable_to_random = { 
-			var = RAJ_famine_spread_times 
-			min = RAJ_famine_spread_times_min # optional 
-			max = RAJ_famine_spread_times_max # optional 
+		set_variable_to_random = {
+			var = RAJ_famine_spread_times
+			min = RAJ_famine_spread_times_min # optional
+			max = RAJ_famine_spread_times_max # optional
 			integer = yes
-		} 
+		}
 	}
 	option = {
 
 		name = GOE_RAJ_famine.7.a
 		unlock_decision_category_tooltip = RAJ_GOE_famine_cat
-		if = { #If by some chance the state is lost pre famine or cheesed away, take another one 
+		if = { #If by some chance the state is lost pre famine or cheesed away, take another one
 			limit = {
 				var:global.famine_state = {
 					NOT = { is_controlled_by = ROOT }
@@ -5399,13 +5399,13 @@ country_event = {
 
 			random_scope_in_array = {
 				array = RAJ.owned_states_at_game_start
-				limit = { 
-					is_controlled_by = ROOT 
+				limit = {
+					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
 				set_variable = { global.famine_state = THIS }
 			}
-			
+
 		}
 
 
@@ -5419,17 +5419,17 @@ country_event = {
 
 				set_state_flag = pre_famine_core
 				remove_core_of = ROOT
-				
+
 				if = {
 					limit = { has_resistance = no }
 					start_resistance = yes
-					force_enable_resistance = { 
+					force_enable_resistance = {
 						clear = no
 						occupier = ROOT
 						occupied = DIP
 					}
 				}
-				
+
 			}
 			add_core_of = DIP
 		}
@@ -5442,33 +5442,33 @@ country_event = {
 		ROOT= { add_dynamic_modifier = { modifier = idea_RAJ_famine_country } }
 		hidden_effect =  { country_event = { id =  GOE_RAJ_famine.8 days = 30 random_days = 2 } }
 		custom_effect_tooltip = GOE_RAJ_famine.7.tt
-		
+
 	}
 }
 
-#Famine selector 
+#Famine selector
 country_event = {
 	id = GOE_RAJ_famine.8
-	title = GOE_RAJ_famine.8.t	
-	desc = GOE_RAJ_famine.8.desc	
+	title = GOE_RAJ_famine.8.t
+	desc = GOE_RAJ_famine.8.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	hidden = yes
 	is_triggered_only = yes
 	#fire_only_once = yes
 
 	immediate = {
 		if = {
-			limit = { 
+			limit = {
 				has_dynamic_modifier = {
-				 	modifier = idea_RAJ_famine_country
+					modifier = idea_RAJ_famine_country
 				 }
 				 NOT = { has_country_flag = famine_is_over }
 			}
 			calculate_famine_shield_and_risk = yes
 			random_list = {
-				log = no 
-				seed = random 
+				log = no
+				seed = random
 
 				var:RAJ_famine_shield = {
 					#othing happens, preventative measures stopped famine from spreading, reduces the time famine is active
@@ -5478,10 +5478,10 @@ country_event = {
 
 					subtract_from_variable = { RAJ_famine_spread_times_max = 3 }
 					subtract_from_variable = { RAJ_famine_spread_times_min = 3 }
-					
+
 
 				}
-				
+
 				var:RAJ_famine_spreads = {
 
 
@@ -5494,20 +5494,20 @@ country_event = {
 						limit = {
 							has_dynamic_modifier = { modifier = idea_RAJ_famine_state }
 							 any_neighbor_state = {
-							 	NOT = {  has_dynamic_modifier = { modifier = idea_RAJ_famine_state } }
+								NOT = {  has_dynamic_modifier = { modifier = idea_RAJ_famine_state } }
 							 }
 						}
 						random_neighbor_state = {
 							limit = {
-							 	NOT = {  
-			 						has_dynamic_modifier = { modifier = idea_RAJ_famine_state }
-							 	}
+								NOT = {
+									has_dynamic_modifier = { modifier = idea_RAJ_famine_state }
+								}
 							}
 							if = {
 								limit = { is_in_array = { RAJ.owned_states_at_game_start = THIS } }
 								add_dynamic_modifier = { modifier = idea_RAJ_famine_state }
 
-								ROOT = {  
+								ROOT = {
 									add_to_variable = { RAJ_famine_political_power_factor = -0.1 }
 									add_to_variable = { RAJ_famine_stability_factor = -0.1 }
 								}
@@ -5548,7 +5548,7 @@ country_event = {
 			}
 			else = { #end of famine
 				every_state = {
-					
+
 					if = {
 						limit = { has_dynamic_modifier = { modifier = idea_RAJ_famine_state } }
 						remove_dynamic_modifier = { modifier = idea_RAJ_famine_state }
@@ -5559,7 +5559,7 @@ country_event = {
 				remove_dynamic_modifier = { modifier = idea_RAJ_famine_country }
 				country_event = { id = GOE_RAJ_famine.13 hours = 1 }
 			}
-			
+
 		}
 	}
 }
@@ -5567,10 +5567,10 @@ country_event = {
 #RAJ Asks for Aid
 country_event = {
 	id = GOE_RAJ_famine.9
-	title = GOE_RAJ_famine.9.t	
-	desc = GOE_RAJ_famine.9.desc	
+	title = GOE_RAJ_famine.9.t
+	desc = GOE_RAJ_famine.9.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 	#fire_only_once = yes
 
@@ -5585,18 +5585,18 @@ country_event = {
 				modifier = RAJ_did_not_help_famine
 			}
 			if = {
-				limit = { 
-					FROM = { 
+				limit = {
+					FROM = {
 						is_subject = yes
-						is_subject_of = ROOT 
-					} 
+						is_subject_of = ROOT
+					}
 				}
-				effect_tooltip = { 
-					FROM = { 
+				effect_tooltip = {
+					FROM = {
 						add_autonomy_ratio = {  #UPDATE GOE_RAJ_famine.10 if changing
-						 	value = 0.1 
-						 } 
-					} 
+							value = 0.1
+						 }
+					}
 				}
 			}
 		}
@@ -5605,7 +5605,7 @@ country_event = {
 			base = 1
 			modifier = {
 				has_country_leader = {
-					character = ENG_winston_churchill 
+					character = ENG_winston_churchill
 				}
 
 				factor = 6
@@ -5617,7 +5617,7 @@ country_event = {
 	option = {
 		name = GOE_RAJ_famine.9.b
 		add_political_power = 150
-		add_equipment_to_stockpile = { 
+		add_equipment_to_stockpile = {
 			type = convoy_1
 			amount = -75
 			producer = ROOT
@@ -5657,7 +5657,7 @@ country_event = {
 	option = {
 		name = GOE_RAJ_famine.9.c
 		add_political_power = 50
-		add_equipment_to_stockpile = { 
+		add_equipment_to_stockpile = {
 			type = convoy_1
 			amount = -25
 			producer = ROOT
@@ -5693,10 +5693,10 @@ country_event = {
 #FROM refuses
 country_event = {
 	id = GOE_RAJ_famine.10
-	title = GOE_RAJ_famine.10.t	
-	desc = GOE_RAJ_famine.10.desc	
+	title = GOE_RAJ_famine.10.t
+	desc = GOE_RAJ_famine.10.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 	option = {
 		name = GOE_RAJ_famine.10.a
@@ -5706,10 +5706,10 @@ country_event = {
 				is_subject_of = FROM
 			}
 			FROM = {  #update GOE_RAJ_famine.9 if changing
-				add_autonomy_ratio = { 
-				 	value = 0.1 
-				 } 
-			} 
+				add_autonomy_ratio = {
+					value = 0.1
+				 }
+			}
 		}
 
 	}
@@ -5718,10 +5718,10 @@ country_event = {
 #FROM delivers big aid
 country_event = {
 	id = GOE_RAJ_famine.11
-	title = GOE_RAJ_famine.11.t	
-	desc = GOE_RAJ_famine.11.desc	
+	title = GOE_RAJ_famine.11.t
+	desc = GOE_RAJ_famine.11.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 	option = {
 		name = GOE_RAJ_famine.11.a
@@ -5734,10 +5734,10 @@ country_event = {
 #FROM delivers small aid
 country_event = {
 	id = GOE_RAJ_famine.12
-	title = GOE_RAJ_famine.12.t	
-	desc = GOE_RAJ_famine.12.desc	
+	title = GOE_RAJ_famine.12.t
+	desc = GOE_RAJ_famine.12.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 	option = {
 		name = GOE_RAJ_famine.12.a
@@ -5750,10 +5750,10 @@ country_event = {
 ##End of Famine
 country_event = {
 	id = GOE_RAJ_famine.13
-	title = GOE_RAJ_famine.13.t	
-	desc = GOE_RAJ_famine.13.desc	
+	title = GOE_RAJ_famine.13.t
+	desc = GOE_RAJ_famine.13.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	immediate = {
 		set_country_flag = famine_is_over
 	}
@@ -5767,14 +5767,14 @@ country_event = {
 				has_state_flag = pre_famine_core
 			}
 			add_core_of = ROOT
-			
+
 			if = {
 				limit = {
 					is_core_of = DIP
 				}
 				remove_core_of = DIP
 			}
-			
+
 		}
 	}
 }
@@ -5797,8 +5797,8 @@ country_event = {
 #pick leader trait
 country_event = {
 	id = GOE_RAJ_eic.2
-	title = GOE_RAJ_eic.2.t	
-	desc = GOE_RAJ_eic.2.desc	
+	title = GOE_RAJ_eic.2.t
+	desc = GOE_RAJ_eic.2.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 
@@ -5826,8 +5826,8 @@ country_event = {
 #opium trade
 country_event = {
 	id = GOE_RAJ_eic.3
-	title = GOE_RAJ_eic.3.t	
-	desc = GOE_RAJ_eic.3.desc	
+	title = GOE_RAJ_eic.3.t
+	desc = GOE_RAJ_eic.3.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 
@@ -5860,8 +5860,8 @@ country_event = {
 			limit = {
 				original_tag = CHI
 			}
-			FROM = { 
-				transfer_state = 743 
+			FROM = {
+				transfer_state = 743
 				country_event = { id = GOE_RAJ_eic.5 days = 3 random_days = 2 }
 			}
 
@@ -5871,10 +5871,10 @@ country_event = {
 				original_tag = GXC
 			}
 
-			FROM = { 
-				transfer_state = 591 
+			FROM = {
+				transfer_state = 591
 				country_event = { id = GOE_RAJ_eic.5 days = 3 random_days = 2 }
-			} 
+			}
 		}
 		else = {
 			if = {
@@ -5883,8 +5883,8 @@ country_event = {
 					owns_state = 743
 				}
 
-				FROM = { 
-					transfer_state = 743 
+				FROM = {
+					transfer_state = 743
 					country_event = { id = GOE_RAJ_eic.5 days = 3 random_days = 2 }
 				}
 			}
@@ -5917,8 +5917,8 @@ country_event = {
 #pick leader trait
 country_event = {
 	id = GOE_RAJ_eic.4
-	title = GOE_RAJ_eic.4.t	
-	desc = GOE_RAJ_eic.4.desc	
+	title = GOE_RAJ_eic.4.t
+	desc = GOE_RAJ_eic.4.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 
@@ -5934,8 +5934,8 @@ country_event = {
 
 country_event = {
 	id = GOE_RAJ_eic.5
-	title = GOE_RAJ_eic.5.t	
-	desc = GOE_RAJ_eic.5.desc	
+	title = GOE_RAJ_eic.5.t
+	desc = GOE_RAJ_eic.5.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 
@@ -5950,15 +5950,15 @@ country_event = {
 #RAJ wants to buy some land
 country_event = {
 	id = GOE_RAJ_eic.6
-	title = GOE_RAJ_eic.6.t	
-	desc = GOE_RAJ_eic.6.desc	
+	title = GOE_RAJ_eic.6.t
+	desc = GOE_RAJ_eic.6.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 
 	option = { #not this state
 		name = GOE_RAJ_eic.6.a
 		hidden_effect = {
-			FROM = { clr_country_flag = is_trying_to_buy_land } 
+			FROM = { clr_country_flag = is_trying_to_buy_land }
 		}
 
 		event_target:RAJ_i_want_to_buy_this_land = {
@@ -6038,9 +6038,9 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = rejected_ever_selling_land_to_eic
-			FROM = { 
-				clr_country_flag = is_trying_to_buy_land 
-			} 
+			FROM = {
+				clr_country_flag = is_trying_to_buy_land
+			}
 			clear_global_event_target = RAJ_i_want_to_buy_this_land
 
 		}
@@ -6085,7 +6085,7 @@ country_event = {
 						}
 					}
 				}
-				ROOT = { 
+				ROOT = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 1
@@ -6099,7 +6099,7 @@ country_event = {
 						event_target:RAJ_i_want_to_buy_this_land = { has_state_category = small_island }
 					}
 				}
-				ROOT = { 
+				ROOT = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 3
@@ -6110,7 +6110,7 @@ country_event = {
 				limit = {
 					event_target:RAJ_i_want_to_buy_this_land = { has_state_category = rural }
 				}
-				ROOT = { 
+				ROOT = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 4
@@ -6124,7 +6124,7 @@ country_event = {
 						event_target:RAJ_i_want_to_buy_this_land = { has_state_category = large_town }
 					}
 				}
-				ROOT = { 
+				ROOT = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 6
@@ -6138,7 +6138,7 @@ country_event = {
 						event_target:RAJ_i_want_to_buy_this_land = { has_state_category = large_city }
 					}
 				}
-				ROOT = { 
+				ROOT = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 8
@@ -6149,7 +6149,7 @@ country_event = {
 				limit = {
 					event_target:RAJ_i_want_to_buy_this_land = { has_state_category = metropolis }
 				}
-				ROOT = { 
+				ROOT = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 10
@@ -6160,7 +6160,7 @@ country_event = {
 				limit = {
 					event_target:RAJ_i_want_to_buy_this_land = { has_state_category = megalopolis }
 				}
-				ROOT = { 
+				ROOT = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 15
@@ -6174,7 +6174,7 @@ country_event = {
 						event_target:RAJ_i_want_to_buy_this_land = { state = 685 }
 					}
 				}
-				ROOT = { 
+				ROOT = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 8
@@ -6182,7 +6182,7 @@ country_event = {
 				}
 			}
 			else = {
-				ROOT = { 
+				ROOT = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 5
@@ -6191,8 +6191,8 @@ country_event = {
 			}
 		}
 
-		RAJ = {  
-			transfer_state = event_target:RAJ_i_want_to_buy_this_land 
+		RAJ = {
+			transfer_state = event_target:RAJ_i_want_to_buy_this_land
 			country_event = { id = GOE_RAJ_eic.9 hours = 2 }
 
 		}
@@ -6202,7 +6202,7 @@ country_event = {
 
 		ai_chance = {
 			base = 2.25
-			
+
 		}
 	}
 }
@@ -6210,15 +6210,15 @@ country_event = {
 #Reject buying this state
 country_event = {
 	id = GOE_RAJ_eic.7
-	title = GOE_RAJ_eic.7.t	
-	desc = GOE_RAJ_eic.7.desc	
+	title = GOE_RAJ_eic.7.t
+	desc = GOE_RAJ_eic.7.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 
 	option = {
 		name = GOE_RAJ_eic.7.a
 		hidden_effect = {
-			clr_country_flag = is_trying_to_buy_land 
+			clr_country_flag = is_trying_to_buy_land
 		}
 	}
 }
@@ -6226,14 +6226,14 @@ country_event = {
 #RAJ wants to buy some land
 country_event = {
 	id = GOE_RAJ_eic.8
-	title = GOE_RAJ_eic.8.t	
-	desc = GOE_RAJ_eic.8.desc	
+	title = GOE_RAJ_eic.8.t
+	desc = GOE_RAJ_eic.8.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 	option = {
 		name = GOE_RAJ_eic.8.a
 		hidden_effect = {
-			clr_country_flag = is_trying_to_buy_land 
+			clr_country_flag = is_trying_to_buy_land
 		}
 	}
 }
@@ -6241,21 +6241,21 @@ country_event = {
 #RAJ wants to buy some land
 country_event = {
 	id = GOE_RAJ_eic.9
-	title = GOE_RAJ_eic.9.t	
-	desc = GOE_RAJ_eic.9.desc	
+	title = GOE_RAJ_eic.9.t
+	desc = GOE_RAJ_eic.9.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 
 	option = {
 		name = GOE_RAJ_eic.9.a
 		hidden_effect = {
-			clr_country_flag = is_trying_to_buy_land 
+			clr_country_flag = is_trying_to_buy_land
 		}
 		if = {
 			limit = {
 				RAJ = { has_country_flag = use_rebate }
 			}
-			
+
 
 			RAJ = {
 				for_loop_effect = {
@@ -6267,7 +6267,7 @@ country_event = {
 							NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 						}
 						remove_building = {
-							type = industrial_complex 
+							type = industrial_complex
 							level = 1
 						}
 					}
@@ -6301,7 +6301,7 @@ country_event = {
 								NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 							}
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -6325,7 +6325,7 @@ country_event = {
 								NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 							}
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -6346,7 +6346,7 @@ country_event = {
 								NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 							}
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -6370,7 +6370,7 @@ country_event = {
 								NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 							}
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -6394,7 +6394,7 @@ country_event = {
 								NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 							}
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -6415,7 +6415,7 @@ country_event = {
 								NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 							}
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -6438,7 +6438,7 @@ country_event = {
 								NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 							}
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -6462,7 +6462,7 @@ country_event = {
 								NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 							}
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -6480,7 +6480,7 @@ country_event = {
 								NOT = { state = event_target:RAJ_i_want_to_buy_this_land  }
 							}
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -6490,9 +6490,9 @@ country_event = {
 		}
 		hidden_effect = { RAJ = { clr_country_flag = use_rebate } }
 		clear_global_event_target = RAJ_i_want_to_buy_this_land
-		
+
 		hidden_effect = {
-				clr_country_flag = is_trying_to_buy_land 	
+				clr_country_flag = is_trying_to_buy_land
 		}
 		hidden_effect = { controlled_civilian_factories_excluding_trade = yes }
 	}
@@ -6501,8 +6501,8 @@ country_event = {
 #RAJ wants to buy some people
 country_event = {
 	id = GOE_RAJ_eic.10
-	title = GOE_RAJ_eic.10.t	
-	desc = GOE_RAJ_eic.10.desc	
+	title = GOE_RAJ_eic.10.t
+	desc = GOE_RAJ_eic.10.desc
 	picture = GFX_report_event_generic_sign_treaty1
 	is_triggered_only = yes
 
@@ -6542,8 +6542,8 @@ country_event = {
 				is_major = no
 			}
 		}
-		FROM = { 
-			country_event = { id = GOE_RAJ_eic.11 hours = 2 } 
+		FROM = {
+			country_event = { id = GOE_RAJ_eic.11 hours = 2 }
 		}
 
 		var:RAJ_wants_to_buy_army_chief = {
@@ -6598,15 +6598,15 @@ country_event = {
 			}
 		}
 		add_offsite_building = {
-			type = industrial_complex 
+			type = industrial_complex
 			level = 4
 		}
 
 		var:RAJ_wants_to_buy_army_chief = {
 			set_nationality = FROM
 		}
-		FROM = { 
-			country_event = { id = GOE_RAJ_eic.13 hours = 2 } 
+		FROM = {
+			country_event = { id = GOE_RAJ_eic.13 hours = 2 }
 		}
 
 		clear_variable = RAJ_wants_to_buy_army_chief
@@ -6616,13 +6616,13 @@ country_event = {
 #not this one
 country_event = {
 	id = GOE_RAJ_eic.11
-	title = GOE_RAJ_eic.11.t	
-	desc = GOE_RAJ_eic.11.desc	
+	title = GOE_RAJ_eic.11.t
+	desc = GOE_RAJ_eic.11.desc
 	is_triggered_only = yes
 	option = {
 		name = GOE_RAJ_eic.11.a
 		add_political_power = 5
-		clr_country_flag = is_haggling_for_army_leader	
+		clr_country_flag = is_haggling_for_army_leader
 		hidden_effect = { controlled_civilian_factories_excluding_trade = yes }
 	}
 }
@@ -6631,13 +6631,13 @@ country_event = {
 #stop bothering me
 country_event = {
 	id = GOE_RAJ_eic.12
-	title = GOE_RAJ_eic.12.t	
-	desc = GOE_RAJ_eic.12.desc	
+	title = GOE_RAJ_eic.12.t
+	desc = GOE_RAJ_eic.12.desc
 	is_triggered_only = yes
 	option = {
 		name = GOE_RAJ_eic.13.a
 		add_political_power = 5
-		clr_country_flag = is_haggling_for_army_leader	
+		clr_country_flag = is_haggling_for_army_leader
 		hidden_effect = { controlled_civilian_factories_excluding_trade = yes }
 	}
 }
@@ -6645,18 +6645,18 @@ country_event = {
 
 country_event = {
 	id = GOE_RAJ_eic.13
-	title = GOE_RAJ_eic.13.t	
-	desc = GOE_RAJ_eic.13.desc	
+	title = GOE_RAJ_eic.13.t
+	desc = GOE_RAJ_eic.13.desc
 	is_triggered_only = yes
 	option = {
 		name = GOE_RAJ_eic.12.a
 		add_political_power = 5
-		clr_country_flag = is_haggling_for_army_leader	
+		clr_country_flag = is_haggling_for_army_leader
 		every_controlled_state = {
 			random_select_amount = 4
 			limit = { industrial_complex > 0 }
 			remove_building = {
-				type = industrial_complex 
+				type = industrial_complex
 				level = 1
 			}
 		}
@@ -6679,7 +6679,7 @@ country_event = {
 				set_character_flag = is_mughal_emperor
 			}
 			promote_character = RAJ_mir_osman_ali_khan
-		}	
+		}
 	}
 	option = {
 		name = GOE_RAJ_princely.1.b
@@ -6705,7 +6705,7 @@ country_event = {
 				set_character_flag = is_mughal_emperor
 			}
 			promote_character = RAJ_ahmad_yar_khan
-		}	
+		}
 	}
 	option = {
 		name = GOE_RAJ_princely.1.d
@@ -6715,7 +6715,7 @@ country_event = {
 				set_character_flag = is_mughal_emperor
 			}
 			promote_character = RAJ_huseyn_shaheed_suhrawardy
-		}	
+		}
 	}
 }
 
@@ -6733,7 +6733,7 @@ country_event = {
 				set_character_flag = is_mughal_emperor
 			}
 			promote_character = RAJ_huseyn_shaheed_suhrawardy
-		}	
+		}
 	}
 	#option = {
 	#	name = GOE_RAJ_princely.2.b
@@ -6743,7 +6743,7 @@ country_event = {
 	#			set_character_flag = is_mughal_emperor
 	#		}
 	#		promote_character = RAJ_maharaja_hari_singh
-	#	}	
+	#	}
 	#}
 	#option = {
 	#	name = GOE_RAJ_princely.2.c
@@ -6753,7 +6753,7 @@ country_event = {
 	#			set_character_flag = is_mughal_emperor
 	#		}
 	#		promote_character = RAJ_bodh_chandra_singh
-	#	}	
+	#	}
 	#}
 	option = {
 		name = GOE_RAJ_princely.2.d
@@ -6777,7 +6777,7 @@ country_event = {
 	#			set_character_flag = is_mughal_emperor
 	#		}
 	#		promote_character = RAJ_umed_singh
-	#	}	
+	#	}
 	#}
 	#option = {
 	#	name = GOE_RAJ_princely.3.b
@@ -6787,7 +6787,7 @@ country_event = {
 	#			set_character_flag = is_mughal_emperor
 	#		}
 	#		promote_character = RAJ_pratap_singh_rao_gaekwad
-	#	}	
+	#	}
 	#}
 	#option = {
 	#	name = GOE_RAJ_princely.3.c
@@ -6797,7 +6797,7 @@ country_event = {
 	#			set_character_flag = is_mughal_emperor
 	#		}
 	#		promote_character = RAJ_maharaja_jayachamarajendra_wadiyar
-	#	}	
+	#	}
 	#}
 #	option = {
 #		name = GOE_RAJ_princely.3.d
@@ -7616,8 +7616,8 @@ country_event = {
 			country_event = { id = GOE_RAJ_generals.2 days = 1 }
 			add_manpower = -100000
 			add_timed_idea = {
-			 	idea = idea_RAJ_soldiers_training_in_britain
-			 	days = 365
+				idea = idea_RAJ_soldiers_training_in_britain
+				days = 365
 			 }
             custom_effect_tooltip = RAJ_colonial_cadet_exchange_tt
 			effect_tooltip = {
@@ -7647,7 +7647,7 @@ country_event = {
                         create_unit = {
                             division = "name = \"Royal Indian Infantry\" division_template = \"Royal Indian Infantry\" start_experience_factor = 0.7 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
                             owner = RAJ
-                            allow_spawning_on_enemy_provs = no 
+                            allow_spawning_on_enemy_provs = no
                             count = 10
                         }
                     }
@@ -7679,8 +7679,8 @@ country_event = {
 		name = GOE_RAJ_generals.2.a
 		effect_tooltip = {
 			add_timed_idea = {
-			 	idea = idea_RAJ_soldiers_training_in_britain
-			 	days = 365
+				idea = idea_RAJ_soldiers_training_in_britain
+				days = 365
 			 }
 		}
 	}
@@ -7774,17 +7774,17 @@ country_event = {
 
 		RAJ = {
 			country_event = { id = GOE_RAJ_generals.8 days = 1 }
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 600
 				producer = ENG
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = 10
 				producer = ENG
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 500
 				producer = ENG
@@ -7817,17 +7817,17 @@ country_event = {
 
 		effect_tooltip = {
 			RAJ = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = motorized_equipment_1
 					amount = 600
 					producer = ENG
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = train_equipment
 					amount = 10
 					producer = ENG
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = support_equipment
 					amount = 500
 					producer = ENG
@@ -7859,7 +7859,7 @@ country_event = {
 	option = { #ok
 		name = GOE_RAJ_mughals_peace_deal.1.a
 		every_enemy_country = {
-			limit = { 
+			limit = {
 				OR = {
 					original_tag = ENG
 					is_in_faction_with = ENG
@@ -7890,7 +7890,7 @@ country_event = {
 			}
 		}
 
-		every_state = {	
+		every_state = {
 			limit = {
 				has_state_flag = RAJ_mughal_captured_states
 			}
@@ -7951,11 +7951,11 @@ news_event = {
 	title = GOE_RAJ_news.4.t
 	desc = GOE_RAJ_news.4.desc
 	picture = GFX_news_event_generic_parliament
-	
+
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = GOE_RAJ_news.4.a
 		trigger = {
@@ -7964,8 +7964,8 @@ news_event = {
 	}
 	option = {
 		name = GOE_RAJ_news.4.b
-		trigger = { 
+		trigger = {
 			NOT = { TAG = FROM }
-		} 
+		}
 	}
 }

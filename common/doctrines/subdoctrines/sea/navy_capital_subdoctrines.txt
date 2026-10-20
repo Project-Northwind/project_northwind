@@ -18,7 +18,7 @@ fast_battleship_primacy = {
         }
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 75
@@ -134,7 +134,7 @@ battlecruiser_supremacy = {
         }
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 75
@@ -244,7 +244,7 @@ battleship_antiair_screen = {
     track = capital_ships
     name = SUBDOCTRINE_BATTLESHIP_ANTIAIR_SCREEN
     description = SUBDOCTRINE_BATTLESHIP_ANTIAIR_SCREEN_DESC
-    icon = GFX_doctrine_battleship_antiair_screen_medium 
+    icon = GFX_doctrine_battleship_antiair_screen_medium
 
     xp_cost = 100
     xp_type = navy
@@ -279,8 +279,8 @@ battleship_antiair_screen = {
 
     rewards = {
 
-    	guardian_squad = {
-    		battleship = {
+		guardian_squad = {
+			battleship = {
                 max_organisation = 5
                 anti_air_attack = 0.05
             }
@@ -292,51 +292,51 @@ battleship_antiair_screen = {
                 max_organisation = 5
                 anti_air_attack = 0.05
             }
-    	}
+		}
 
-    	flexible_dispatch = {
-    		modifier = {
+		flexible_dispatch = {
+			modifier = {
                 ships_at_battle_start = 0.05
                 naval_retreat_speed = 0.05
                 strike_force_movement_org_loss = -0.1
                 positioning = 0.1
             }
-    	}
+		}
 
-    	broad_air_cover = {
-    		battleship = {
-    			max_organisation = 5
-    			surface_detection = 0.05
-    		}
-    		heavy_cruiser = {
-    			max_organisation = 5
-    			surface_detection = 0.05
-    		}
+		broad_air_cover = {
+			battleship = {
+				max_organisation = 5
+				surface_detection = 0.05
+			}
+			heavy_cruiser = {
+				max_organisation = 5
+				surface_detection = 0.05
+			}
             medium_cruiser = {
-    			max_organisation = 5
-    			surface_detection = 0.05
-    		}
+				max_organisation = 5
+				surface_detection = 0.05
+			}
 
             modifier = {
                 navy_anti_air_attack_factor = 0.1
             }
-    	}
+		}
         task_force_protector = {
             battleship = {
-    			max_organisation = 5
-    		}
-    		heavy_cruiser = {
-    			max_organisation = 5
-    		}
+				max_organisation = 5
+			}
+			heavy_cruiser = {
+				max_organisation = 5
+			}
             medium_cruiser = {
-    			max_organisation = 5
-    		}
-    		modifier = {
+				max_organisation = 5
+			}
+			modifier = {
                 positioning = 0.1
                 naval_torpedo_enemy_critical_chance_factor = -0.15
             }
-    	}
-    	circle_formation = {
+		}
+		circle_formation = {
             battleship = {
                 max_organisation = 10
                 anti_air_attack = 0.1
@@ -380,7 +380,7 @@ armored_raiders = {
         }
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 50
@@ -575,7 +575,7 @@ naval_gunfire_support = {
     track = capital_ships
     name = SUBDOCTRINE_NAVAL_GUNFIRE_SUPPORT
     description = SUBDOCTRINE_NAVAL_GUNFIRE_SUPPORT_DESC
-    icon = GFX_doctrine_naval_gunfire_support_medium 
+    icon = GFX_doctrine_naval_gunfire_support_medium
 
     xp_cost = 75
     xp_type = navy
@@ -600,7 +600,7 @@ naval_gunfire_support = {
 
     rewards = {
         landing_lane_clearance = {
-            modifier = { 
+            modifier = {
                 naval_mine_hit_chance = -0.10
                 mines_sweeping_by_fleets_factor = 0.10
             }
@@ -617,8 +617,8 @@ naval_gunfire_support = {
 
         joint_operations = {
             modifier = {
-        	    naval_invasion_planning_bonus_speed = 0.20
-    		    naval_general_support_value_factor = 0.10
+				naval_invasion_planning_bonus_speed = 0.20
+				naval_general_support_value_factor = 0.10
             }
         }
 
@@ -636,21 +636,21 @@ naval_gunfire_support = {
                 max_organisation = 5
             }
             modifier = {
-    			shore_bombardment_collateral_damage_factor = 0.15
-        	}
+				shore_bombardment_collateral_damage_factor = 0.15
+			}
         }
 
         green_water_operations = {
-    		battleship = {
-    			surface_visibility = -0.10
+			battleship = {
+				surface_visibility = -0.10
 			}
 			battle_cruiser = {
-    			surface_visibility = -0.10
+				surface_visibility = -0.10
 			}
 			heavy_cruiser = {
-    			surface_visibility = -0.10
+				surface_visibility = -0.10
 			}
             navy_capital_ship_defence_factor = -0.15
-   		}
-   	}
+		}
+	}
 }

@@ -1,0 +1,662 @@
+capital = 361
+
+oob = "USA_1936"
+
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0
+set_variable = { var = senators_support value = 48 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 218 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	tech_trucks = 1
+
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	basic_train = 1
+}
+
+set_grand_doctrine = superior_firepower
+set_grand_doctrine = new_base_strike
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+		cv_early_fighter = 1
+		cv_naval_bomber1 = 1
+		cv_CAS1 = 1
+		naval_bomber1 = 1
+		CAS1 = 1
+		early_bomber = 1
+
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+
+		has_dlc = "No Step Back"
+
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+
+recruit_character = CSA_georges_vereecken
+recruit_character = CSA_raoul_overstraeten
+recruit_character = CSA_rene_lagrou
+recruit_character = CSA_paul_van_zeeland
+recruit_character = CSA_victor_van_strydonck_de_burkel
+recruit_character = CSA_fritz_conrad
+recruit_character = CSA_fritz_lob
+recruit_character = CSA_georges_deffontaine
+recruit_character = CSA_victor_strydonck_burkel
+recruit_character = CSA_charles_bastin
+recruit_character = CSA_paul-henri_spaak
+recruit_character = CSA_gaston_eyskens
+recruit_character = CSA_leon_degrelle
+recruit_character = CSA_jules_iserentant
+recruit_character = CSA_jules_pire
+recruit_character = CSA_oscar_michiels
+recruit_character = CSA_yvan_gerard
+
+
+1939.1.1 = {
+
+	add_political_power = 1199
+	add_command_power = 100
+
+	#adding ministers
+	add_ideas = {
+		army_ordnance_department
+		general_electric
+		USA_prepare_intervention
+
+		#laws
+		isolation
+		volunteer_only
+
+		new_deal
+	}
+
+	#focuses
+
+	oob = "USA_1939"
+	set_technology = {
+		basic_light_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		marines = 1
+		improved_submarine = 1
+		basic_destroyer = 1
+		basic_heavy_cruiser = 1
+		basic_battlecruiser = 1
+
+		#doctrines
+		#Air
+		#air_superiority = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		fuel_silos = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+
+set_grand_doctrine = superior_firepower
+set_grand_doctrine = new_base_strike
+set_grand_doctrine = new_strategic_destruction
+
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
+	if = {
+		limit = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+		set_technology = {
+			fighter1 = 1
+			cv_fighter1 = 1
+			heavy_fighter1 = 1
+			tactical_bomber1 = 1
+			CAS2 = 1
+			strategic_bomber1 = 1
+		}
+		create_equipment_variant = {
+			name = "Martin M166"
+			type = tac_bomber_equipment_0
+			upgrades = {
+				plane_tac_bomb_upgrade = 2
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 3
+			}
+		}
+	}
+}
+
+
+
+
+set_convoys = 100
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 80
+	fascism = 10
+	communism = 10
+}
+
+add_ideas = {
+	civilian_economy
+	volunteer_only
+	free_trade
+	home_of_the_free
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.11.3"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 99
+		communism = 1
+	}
+}
+
+create_country_leader = {
+	name = "William Dudley Pelley"
+	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = GFX_portrait_William_Dudley_Pelley
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+
+	}
+}
+
+
+
+### Ship Variants ###
+
+set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_4ac1c4a19ae0
+		}
+	}
+	create_equipment_variant = {
+		name = "Barracuda Class"
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+		obsolete = yes
+		type = vnr_ship_hull_submarine_1
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
+			rear_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_4ac1c4a19ae0
+}
+
+set_technology = {
+	basic_battery = 1
+	basic_depth_charges = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_306d055dce2b
+		}
+	}
+	create_equipment_variant = {
+		name = "Farragut Class"
+		upgrades = {
+			ship_torpedo_upgrade = 3
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_306d055dce2b
+}
+
+set_technology = {
+	antiair2 = 1
+	basic_battery = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_2e5bca31065e
+		}
+	}
+	create_equipment_variant = {
+		name = "Portland Class"
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 2
+			ship_gun_upgrade = 2
+		}
+		type = vnr_ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			mid_1_custom_slot = ship_secondaries_1_light
+			mid_2_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_2e5bca31065e
+}
+
+set_technology = {
+	basic_battery = 1
+	basic_light_battery = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_05399bb4848c
+		}
+	}
+	create_equipment_variant = {
+		name = "Pennsylvania Class"
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 1
+			ship_gun_upgrade = 1
+		}
+		obsolete = yes
+		type = vnr_ship_hull_heavy_1
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_05399bb4848c
+}
+
+set_technology = {
+	basic_battery = 1
+	basic_light_battery = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_f6692f6b0188
+		}
+	}
+	create_equipment_variant = {
+		name = "New Mexico Class"
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 2
+			ship_gun_upgrade = 2
+		}
+		type = vnr_ship_hull_heavy_1
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_f6692f6b0188
+}
+
+set_technology = {
+	basic_battery = 1
+	basic_light_battery = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_d4ddfcc9b9c7
+		}
+	}
+	create_equipment_variant = {
+		name = "Colorado Class"
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 3
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 4
+		}
+		type = vnr_ship_hull_heavy_1
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_d4ddfcc9b9c7
+}
+
+set_technology = {
+	advanced_light_battery = 1
+	basic_battery = 1
+	basic_ship_hull_carrier = 1
+	early_carrier_study = 1
+	early_ship_hull_carrier = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_34521013454d
+		}
+	}
+	create_equipment_variant = {
+		name = "Yorktown Class"
+		upgrades = {
+			ship_deckspace_upgrade = 1
+			carrier_armor_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_reliability_upgrade = 1
+		}
+		type = vnr_ship_hull_carrier_1
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space_open
+			fixed_ship_deck_slot_2 = ship_deck_space_open
+			fixed_ship_anti_air_slot = ship_anti_air_4_h
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = empty
+			fixed_ship_flight_deck_slot = carrier_wooden_deck
+			fixed_ship_role_slot = ship_hull_carrier_role_cv
+			mid_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_34521013454d
+}
+
+1939.1.1 = {
+
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	improved_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_3ec27052b45d
+		}
+	}
+	create_equipment_variant = {
+		name = "Salmon Class"
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+		type = vnr_ship_hull_submarine_3
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_3
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_3
+			rear_1_custom_slot = ship_torpedo_sub_1
+			front_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_3ec27052b45d
+}
+
+	set_technology = {
+	basic_light_battery = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	improved_depth_charges = 1
+	improved_ship_torpedo_launcher = 1
+	interwar_antiair = 1
+	interwar_ship_hull_light = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_135a4000eac4
+		}
+	}
+	create_equipment_variant = {
+		name = "Benson & Gleaves Class"
+		upgrades = {
+			ship_torpedo_upgrade = 3
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+		type = vnr_ship_hull_light_3
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_2
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_135a4000eac4
+}
+
+	set_technology = {
+	advanced_light_battery = 1
+	basic_battery = 1
+	basic_ship_hull_carrier = 1
+	early_carrier_study = 1
+	early_ship_hull_carrier = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_CSA_d9b14f9bdcc9
+		}
+	}
+	create_equipment_variant = {
+		name = "Wasp Class"
+		upgrades = {
+			ship_deckspace_upgrade = 2
+			carrier_armor_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_reliability_upgrade = 2
+		}
+		type = vnr_ship_hull_carrier_1
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space_open
+			fixed_ship_deck_slot_2 = ship_deck_space_open
+			fixed_ship_anti_air_slot = ship_anti_air_4_h
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = empty
+			fixed_ship_flight_deck_slot = carrier_wooden_deck
+			fixed_ship_role_slot = ship_hull_carrier_role_cv
+			mid_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_CSA_d9b14f9bdcc9
+}
+
+	create_equipment_variant = {
+		name = "F2A Buffalo"
+		type = cv_fighter_equipment_1
+		upgrades = {
+			cv_plane_gun_upgrade = 5
+			cv_plane_range_upgrade = 0
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 5
+		}
+	}
+
+
+	# 1941
+	#create_equipment_variant = {
+	#	name = "South Dakota Class"
+	#	type = battleship_2
+	#	upgrades = {
+	#		ship_reliability_upgrade = 3
+	#		ship_engine_upgrade = 3
+	#		ship_armor_upgrade = 3
+	#		ship_gun_upgrade = 3
+	#	}
+	#}
+}

@@ -318,10 +318,10 @@ naval_develop_category = {
 		visible = {
 			num_of_naval_factories > 0
 		}
-		
+
 		cost = 10
 		days_re_enable = 365
-		
+
 		complete_effect = {
 			add_timed_idea = {
 				idea = vnr_research_budget
@@ -343,7 +343,7 @@ naval_develop_category = {
 			any_allied_country = {
 				has_tech = tactical_data_link
 			}
-			NOT = { 
+			NOT = {
 				has_tech = tactical_data_link
 				has_tech = tactical_data_link_for_member
 			}
@@ -400,17 +400,17 @@ naval_develop_category = {
 						popup = no
 					}
 					create_equipment_variant = {
-    				    name = "Converted Merchant Carrier"
+						name = "Converted Merchant Carrier"
 						role_icon_index = 67
-    				    type = vnr_ship_hull_merchant_carrier
-    				    modules = {
-    				        fixed_ship_deck_slot_1 = ship_deck_space_small
-    				        fixed_ship_anti_air_slot = ship_anti_air_1
+						type = vnr_ship_hull_merchant_carrier
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space_small
+							fixed_ship_anti_air_slot = ship_anti_air_1
 							fixed_ship_engine_slot = civilian_ship_engine_1
 							fixed_ship_carrier_miscellaneous_slot_2 = carrier_civilian_material
 							fixed_ship_role_slot = ship_hull_carrier_role_cve
-    				    }
-    				}
+						}
+					}
 				}
 			}
 		}
@@ -463,17 +463,17 @@ naval_develop_category = {
 						popup = no
 					}
 					create_equipment_variant = {
-    				    name = "Converted Escort Carrier"
+						name = "Converted Escort Carrier"
 						role_icon_index = 67
-    				    type = vnr_ship_hull_escort_carrier
-    				    modules = {
-    				        fixed_ship_deck_slot_1 = ship_deck_space_small
-    				        fixed_ship_deck_slot_2 = ship_deck_space_small
-    				        fixed_ship_anti_air_slot = ship_anti_air_1
+						type = vnr_ship_hull_escort_carrier
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space_small
+							fixed_ship_deck_slot_2 = ship_deck_space_small
+							fixed_ship_anti_air_slot = ship_anti_air_1
 							fixed_ship_engine_slot = civilian_ship_engine_1
 							fixed_ship_role_slot = ship_hull_carrier_role_cve
-    				    }
-    				}
+						}
+					}
 				}
 			}
 		}

@@ -119,6 +119,28 @@ class NavalValidationTests(unittest.TestCase):
         self.assertIsNotNone(checker, 'Starting shipyard orders are not validated')
         self.assertEqual(checker(), [])
 
+    def test_custom_startup_prepares_designs_without_dlc_gate(self):
+        import json
+        init = self.n.first(self.n.first(self.n.parse(self.n.read(ROOT/'common/scripted_effects/PN_naval_initialization.txt')), 'PN_initialize_navy'), 'if')
+        data=json.loads(self.n.read(ROOT/'docs/naval/PN_naval_conversion.json'))
+        for tag in ('GRE','LAT','SOV','SWE','TUR','UKR'):
+            country=self.n.first(init,tag)
+            self.assertTrue(any(str(k).startswith(f'PN_{tag}_naval_design_') for k,v in country),tag)
+        effects=self.n.parse(self.n.read(ROOT/'common/scripted_effects/PN_naval_starting_variants.txt'))
+        for effect,body in effects:
+            self.assertTrue(list(self.n.walk(body,'has_country_flag')), effect)
+
+    def test_designer_layouts_cover_every_hull_module_slot(self):
+        self.assertEqual(self.n.validate_designer_layouts(), [])
+
+    def test_carrier_wings_keep_engine_supported_ai_deployment(self):
+        units=self.n.first(self.n.parse(self.n.read(ROOT/'common/units/air.txt')),'sub_units')
+        for key in ('cv_fighter','cv_cas','cv_nav_bomber'):
+            unit=self.n.first(units,key)
+            self.assertGreater(int(self.n.first(unit,'land_air_wing_size')),0,key)
+            self.assertGreater(int(self.n.first(unit,'carrier_air_wing_size')),0,key)
+            self.assertGreater(int(self.n.first(unit,'submarine_carrier_air_wing_size')),0,key)
+
 
 if __name__ == '__main__':
     unittest.main()

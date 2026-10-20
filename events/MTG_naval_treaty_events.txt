@@ -10,7 +10,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { #accept
-		name = MTG_naval_treaty.1.a 
+		name = MTG_naval_treaty.1.a
 		ai_chance = {
 			factor = 70
 			modifier = {
@@ -46,7 +46,7 @@ country_event = {
 		}
 	}
 	option = { #refuse
-		name = MTG_naval_treaty.1.b 
+		name = MTG_naval_treaty.1.b
 		ai_chance = {
 			factor = 30
 		}
@@ -78,7 +78,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { #great
-		name = MTG_naval_treaty.2.a 
+		name = MTG_naval_treaty.2.a
 		effect_tooltip = {
 			FROM = {
 				if = {
@@ -127,7 +127,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { #disarmament
-		name = MTG_naval_treaty.4.a 
+		name = MTG_naval_treaty.4.a
 		ai_chance = {
 			factor = 70
 		}
@@ -148,7 +148,7 @@ country_event = {
 		}
 	}
 	option = {# no deals
-		name = MTG_naval_treaty.4.b 
+		name = MTG_naval_treaty.4.b
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -230,7 +230,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { #great
-		name = MTG_naval_treaty.5.a 
+		name = MTG_naval_treaty.5.a
 		effect_tooltip = {
 			FROM = {
 				activate_mission = MTG_treaty_reduction_mission
@@ -249,7 +249,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { #emabrgo them!
-		name = MTG_naval_treaty.6.a 
+		name = MTG_naval_treaty.6.a
 		ai_chance = {
 			factor = 70
 			modifier = {
@@ -275,12 +275,12 @@ country_event = {
 		}
 
 		add_opinion_modifier = {
-			target = FROM 
+			target = FROM
 			modifier = broken_naval_treaty_opinion_mod
 		}
 	}
 	option = {# fine
-		name = MTG_naval_treaty.6.b 
+		name = MTG_naval_treaty.6.b
 		ai_chance = {
 			factor = 0
 		}
@@ -296,7 +296,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { #great
-		name = MTG_naval_treaty.7.a 
+		name = MTG_naval_treaty.7.a
 		effect_tooltip = {
 			FROM = {
 				remove_naval_treaty_effect = yes
@@ -308,8 +308,8 @@ country_event = {
 #hidden event to remove treaty if two majors are at war
 country_event = {
 	id = MTG_naval_treaty.10
-	
-	
+
+
 	hidden = yes
 	mean_time_to_happen = { days = 2 }
 	fire_only_once = yes
@@ -348,11 +348,11 @@ country_event = {
 	title = MTG_naval_treaty.11.t
 	desc = MTG_naval_treaty.11.desc
 	picture = GFX_report_event_ast_navy
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #great
-		name = MTG_naval_treaty.11.a 
+		name = MTG_naval_treaty.11.a
 	}
 }
 
@@ -361,11 +361,11 @@ country_event = { #notification about 2nd London Naval Conference
 	title = MTG_naval_treaty.12.t
 	desc = MTG_naval_treaty.12.d
 	picture = GFX_report_event_second_london_treaty
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #yes
-		name = MTG_naval_treaty.12.a 
+		name = MTG_naval_treaty.12.a
 		if = {
 			limit = { has_idea = MTG_naval_treaty_adherent }
 			swap_ideas = {
@@ -373,11 +373,11 @@ country_event = { #notification about 2nd London Naval Conference
 				add_idea = MTG_naval_treaty_adherent_1936
 			}
 		}
-        
+
         if = {
 			limit = {
 				OR = {
-					has_government = fascism 
+					has_government = fascism
 					has_government = communism
 					tag = JAP
 				}
@@ -390,12 +390,12 @@ country_event = { #notification about 2nd London Naval Conference
 			add_political_power = 10
 		}
 		set_country_flag = MTG_second_london_treaty_signed
-		
+
 		ai_chance = {
 			factor = 100
 			modifier = {
 				OR = {
-					has_government = fascism 
+					has_government = fascism
 					has_government = communism
 					tag = JAP
 				}
@@ -406,12 +406,12 @@ country_event = { #notification about 2nd London Naval Conference
 	option = { #no
 		name = MTG_naval_treaty.12.b
 		modify_global_flag = { flag = MTG_naval_treaty_violator value = 1 }
-		
+
 		ai_chance = {
 			factor = 10
 			modifier = {
 				NOT = {
-					has_government = fascism 
+					has_government = fascism
 					has_government = communism
 				}
 				factor = 0

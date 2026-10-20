@@ -40,9 +40,10 @@
     },
     {
       "source": "interface/naval_pictures.gfx",
-      "destination": "interface/PN_naval_pictures.gfx",
+      "destination": "interface/PN_naval_graphics.gfx",
       "sha256": "f55ae11192a60d5ed4b4e1a77151f0191934020cd1b815e50fafd759d436f1bf",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated sprite definitions in original source order to preserve override precedence"
     },
     {
       "source": "interface/naviesview.gui",
@@ -70,153 +71,178 @@
     },
     {
       "source": "interface/vnr_user_interface_assets.gfx",
-      "destination": "interface/PN_vnr_user_interface_assets.gfx",
+      "destination": "interface/PN_naval_graphics.gfx",
       "sha256": "1e1ead2d293a221ea9605725f1f5e15d992165f259e92207fd3839d80633bc9c",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated sprite definitions in original source order to preserve override precedence"
     },
     {
       "source": "interface/z_generic_icons.gfx",
-      "destination": "interface/PN_z_generic_icons.gfx",
+      "destination": "interface/PN_naval_graphics.gfx",
       "sha256": "43b0b2d01b438478625e274d34ba9107277a90944c4e55186982e698f3798777",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated sprite definitions in original source order to preserve override precedence"
     },
     {
       "source": "interface/z_navy_icons_hull.gfx",
-      "destination": "interface/PN_z_navy_icons_hull.gfx",
+      "destination": "interface/PN_naval_graphics.gfx",
       "sha256": "cb73f675a40f35d38bd94fa366a8818bc1e94524d6014f199519d1b787177f14",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated sprite definitions in original source order to preserve override precedence"
     },
     {
       "source": "interface/z_navy_icons_tech.gfx",
-      "destination": "interface/PN_z_navy_icons_tech.gfx",
+      "destination": "interface/PN_naval_graphics.gfx",
       "sha256": "4dd872b74ebdbe382d7a9c8784f3e8e4df07186f91719b2d5e45629659243a34",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated sprite definitions in original source order to preserve override precedence"
     },
     {
       "source": "interface/z_navy_techtree.gfx",
-      "destination": "interface/PN_z_navy_techtree.gfx",
+      "destination": "interface/PN_naval_graphics.gfx",
       "sha256": "b53a086eddea4ad09640452f460414f2c5df2a9720caeb9ed5e1cbdb2026fa4a",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated sprite definitions in original source order to preserve override precedence"
     },
     {
       "source": "interface/z_ship_modules.gfx",
-      "destination": "interface/PN_z_ship_modules.gfx",
+      "destination": "interface/PN_naval_graphics.gfx",
       "sha256": "e27f5abebb3077cbcd991746c716ee6879f231b0b296836120a5aad68e566414",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated sprite definitions in original source order to preserve override precedence"
     },
     {
       "source": "localisation/english/replace/achievements_l_english.yml",
-      "destination": "localisation/english/replace/PN_achievements_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "54b9cc667cadf538030b689951d9a5dd4a5f7d7e8b0fa8dafe52d9dbfe4a9181",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/doctrines_l_english.yml",
-      "destination": "localisation/english/replace/PN_doctrines_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "948ed4b8ff95c385649d43f2a917ea5f7a3a3b7812243fe20ba10a4f5421d641",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/equip_naval_l_english.yml",
-      "destination": "localisation/english/replace/PN_equip_naval_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "82e5edd20b4de8538a1b351eccc91188a46bbf79380ad8ec78554d99ac18e1e8",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/name_group_l_english.yml",
-      "destination": "localisation/english/replace/PN_name_group_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "124a5693b253f456a4976fce845d141a69c3d736d516fc4c435782a6073bd881",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/naval_lore_l_english.yml",
-      "destination": "localisation/english/replace/PN_naval_lore_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "7005d8582729f857dd1908f47bafd65712bef880c31153500af6bf9e5ecba295",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/naval_treaty_l_english.yml",
-      "destination": "localisation/english/replace/PN_naval_treaty_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "bed957014404405056f28f037b96be6aedc86cad1d36da22297462eaca5268ff",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/naval_units_l_english.yml",
-      "destination": "localisation/english/replace/PN_naval_units_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "6589abbc9e5bb0bdb914d391968f3ed9185b13530c15eba91b24388fdbef9984",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/navy_rework_welcome_l_english.yml",
-      "destination": "localisation/english/replace/PN_navy_rework_welcome_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "30e8783b4351dce0a24a595495671dc6d4370919f8c137aecdb19fa0c9ca0eb5",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/preset_names_l_english.yml",
-      "destination": "localisation/english/replace/PN_preset_names_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "40a5b5d01a9b67dd2e7cd95248801790a70ddcab2935741d569fbd0dc41d0945",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/rename_class_l_english.yml",
-      "destination": "localisation/english/replace/PN_rename_class_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "7676ca27a2968504e5ccbae288f6f0205ea1a14d7d9faa0abaf4072f6d92b623",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/research_l_english.yml",
-      "destination": "localisation/english/replace/PN_research_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "2f1adebf8c411fd1a6a59cbff3e8aa65911d7795e39abf4d332465274155a96b",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/ship_designer_title_l_english.yml",
-      "destination": "localisation/english/replace/PN_ship_designer_title_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "a8cc9717788834274a5f0e3e19a9efa787b2a10192c1c87bb02758ccc6655c98",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/ship_modules_country_specific_l_english.yml",
-      "destination": "localisation/english/replace/PN_ship_modules_country_specific_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "7bbb42c21496a2dbb9f1161eba683f18666e05cea266477a7e71d630aafe4de8",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/ship_modules_l_english.yml",
-      "destination": "localisation/english/replace/PN_ship_modules_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "a1d65184b2a00c8fc795bcba4dd9cd8f7d3654c951c90feeb8c27df9bf006575",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/vnr_ai_l_english.yml",
-      "destination": "localisation/english/replace/PN_vnr_ai_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "856256559169743a55bdcadca9465c86d2bb8542d3ae7e41e90a948925154c3e",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/vnr_behemoth_l_english.yml",
-      "destination": "localisation/english/replace/PN_vnr_behemoth_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "bf3ae0c17d42c4dabfc95e348c643d3a69ed523de14d6aea9b844adb08b49448",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/vnr_naval_develop_l_english.yml",
-      "destination": "localisation/english/replace/PN_vnr_naval_develop_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "ea10b35f5785bc6a22374784a86b278d50cc53a5dd6f0acce46ccbe7984f2403",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "localisation/english/replace/vnr_rules_generic_l_english.yml",
-      "destination": "localisation/english/replace/PN_vnr_rules_generic_l_english.yml",
+      "destination": "localisation/english/PN_naval_l_english.yml",
       "sha256": "795b6c2ba7c16013fc021d3101b885473a0344c06118e150df1f1ad27c3cea65",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated imported English keys; remove shadowed vanilla entries through exact-path overrides"
     },
     {
       "source": "interface/doctrines/vnr_doctrines.gfx",
-      "destination": "interface/doctrines/PN_vnr_doctrines.gfx",
+      "destination": "interface/PN_naval_graphics.gfx",
       "sha256": "b36ed5d5f600b419d7276cd67ced2833e2a24692c9a46207e0d804bb0b69a833",
-      "exception": null
+      "exception": null,
+      "adaptation": "Consolidated sprite definitions in original source order to preserve override precedence"
     },
     {
       "source": "interface/equipmentdesigner/ships/ship_hull_behemoth.gui",
@@ -784,9 +810,10 @@
     },
     {
       "source": "gfx/army_icons/00_navy_icons.txt",
-      "destination": "gfx/army_icons/PN_00_navy_icons.txt",
+      "destination": "gfx/army_icons/army_icons.txt",
       "sha256": "ed4c0aa27db239f3c0765f10214ff0bd7a52ffcd46286d7440f7b4c7034f9840",
-      "exception": null
+      "exception": "Required original role-icon override: replace the singleton naval role list",
+      "adaptation": "Preserve army and air icons while replacing naval role definitions"
     },
     {
       "source": "gfx/army_icons/naval_equipment_role_icons.dds",
@@ -9005,15 +9032,17 @@
     },
     {
       "source": "common/ideas/_naval_treaty.txt",
-      "destination": "common/ideas/PN_naval_treaty.txt",
+      "destination": "common/ideas/zzz_generic.txt",
       "sha256": "be66fc7a613f30eaa0daa6940f50597f4d68b5096f51482386dd4026aab7ea3c",
-      "exception": null
+      "exception": "Required original idea override: duplicate idea IDs are rejected",
+      "adaptation": "Merge VNR idea changes with installed base-game definitions"
     },
     {
       "source": "common/ideas/_overwrite.txt",
-      "destination": "common/ideas/PN_overwrite.txt",
+      "destination": "common/ideas/air_spirits.txt",
       "sha256": "14fd20de5eefb09215af73b34639937bf378e4b14011a992e94876e28ba8769c",
-      "exception": null
+      "exception": "Required original idea override: duplicate idea IDs are rejected",
+      "adaptation": "Merge VNR idea changes with installed base-game definitions"
     },
     {
       "source": "common/modifiers/z_vnr_combat_modifiers.txt",
@@ -9212,15 +9241,17 @@
     },
     {
       "source": "common/unit_leader/000_vnr_unit_traits.txt",
-      "destination": "common/unit_leader/PN_000_vnr_unit_traits.txt",
+      "destination": "common/unit_leader/00_traits.txt",
       "sha256": "5d79a0ec14c820de8ba87a1cef79e37b821e35fc5fa3ef2f50febbc1678a0cd6",
-      "exception": null
+      "exception": "Required original trait override: repeated subunit/modifier properties are rejected",
+      "adaptation": "Merge original trait metadata with VNR replacement properties"
     },
     {
       "source": "common/unit_leader/01_vnr_naval_traits.txt",
-      "destination": "common/unit_leader/PN_01_vnr_naval_traits.txt",
+      "destination": "common/unit_leader/00_traits.txt",
       "sha256": "c38663f6b7efd1041826f9c7881a578933c952e895eeed5dd618c8809b3391a7",
-      "exception": null
+      "exception": "Required original trait override: repeated subunit/modifier properties are rejected",
+      "adaptation": "Merge original trait metadata with VNR replacement properties"
     },
     {
       "source": "common/unit_leader/_vnr_naval_skills.txt",
@@ -10516,7 +10547,10 @@
     "Restored 27 hidden legacy technology IDs referenced by base-game and VNR content.",
     "Suppressed initial vanilla naval blocks in 139 exact-path OOB overrides, preserving other units.",
     "Restored inherited naval projects omitted by VNR so existing event modifiers and project rewards remain valid: sp_naval_cruiser_submarine, sp_naval_fleet_submarine, sp_naval_nuclear_submarine, sp_naval_nuclear_torpedo, sp_naval_midget_submarine, sp_naval_aip_engine, sp_naval_anechoic_tiles, sp_naval_submarine_carrier, sp_naval_torpedo_cruiser, sp_naval_modern_battleship, sp_naval_modern_carrier, sp_naval_ice_carrier, sp_naval_support_ships, sp_naval_escort_carrier",
-    "Preserved 12 original Northwind shipyard orders and restored 46 nonbuildable vanilla legacy equipment IDs required by inherited history."
+    "Preserved 12 original Northwind shipyard orders and restored 46 nonbuildable vanilla legacy equipment IDs required by inherited history.",
+    "Merge base and VNR leader traits to eliminate repeated modifier/subunit properties.",
+    "Starting variant identity flags prevent duplicate owner/class/hull variants and guarantee custom designs before fleet loading for every DLC branch.",
+    "Remove invalid pride flags from three screen-only source navies and move Dutch submarine task force to its fleet home port 7381."
   ],
   "reward_overrides": [
     {
@@ -10748,7 +10782,7 @@
     "broad_naval_support": "subsidiary_carrier_support",
     "escort_carrier_support": "subsidiary_carrier_support",
     "light_task_forces": "mosquito_fleet",
-    "patrol_boats": "littoral_defense",
+    "patrol_boats": "mosquito_fleet",
     "screen_support_focus": "convoy_escort"
   },
   "missing_source_asset_replacements": {
@@ -10830,5 +10864,118 @@
     "nuclear_submarine",
     "rocket_submarine",
     "nuclear_missile_submarine"
-  ]
+  ],
+  "carrier_air_overrides": [],
+  "script_enum_override": "common/script_enums.txt",
+  "inherited_history_overrides": [
+    "history/countries/CSA - CSA.txt",
+    "history/countries/DDR - East Germany.txt",
+    "history/countries/DEN - Denmark.txt",
+    "history/countries/ENG - Britain.txt",
+    "history/countries/EST - Estonia.txt",
+    "history/countries/FIN - Finland.txt",
+    "history/countries/FRA - France.txt",
+    "history/countries/GAR - Guarani.txt",
+    "history/countries/GER - Germany.txt",
+    "history/countries/GRE - Greece.txt",
+    "history/countries/HOL - Holland.txt",
+    "history/countries/IAS - Isthmo Amerindia.txt",
+    "history/countries/INC - Inca.txt",
+    "history/countries/INU - Inuit.txt",
+    "history/countries/ITA - Italy.txt",
+    "history/countries/ITZ - Itza.txt",
+    "history/countries/JAP - Japan.txt",
+    "history/countries/LBV - Lombardy Venetia.txt",
+    "history/countries/MAY - Maya.txt",
+    "history/countries/MEX - Mexico.txt",
+    "history/countries/MIS - Miskito.txt",
+    "history/countries/NAH - Nahua.txt",
+    "history/countries/NOR - Norway.txt",
+    "history/countries/NZL - New Zealand.txt",
+    "history/countries/PAP - Papal States.txt",
+    "history/countries/PHI - Philippines.txt",
+    "history/countries/POL - Poland.txt",
+    "history/countries/POR - Portugal.txt",
+    "history/countries/PRU - Peru.txt",
+    "history/countries/QUE - Quebec.txt",
+    "history/countries/RAP - Rapa Nui.txt",
+    "history/countries/RIG - Rio Grande.txt",
+    "history/countries/ROM - Romania.txt",
+    "history/countries/SIA - Siam.txt",
+    "history/countries/SOV - Soviet union.txt",
+    "history/countries/SPM - Sardinia Piedmont.txt",
+    "history/countries/SPR - Spain.txt",
+    "history/countries/TOS - Tuscany.txt",
+    "history/countries/TTS - The Two Sicilies.txt",
+    "history/countries/TUR - Turkey.txt",
+    "history/countries/URG - Uruguay.txt",
+    "history/countries/USA - USA.txt",
+    "history/countries/YUC - Yucatan.txt",
+    "history/countries/YUG - Yugoslavia.txt",
+    "common/special_projects/projects/naval_projects.txt"
+  ],
+  "runtime_compatibility_finalized": true,
+  "graphics_precedence_overrides": [
+    "interface/countrytechnologyview.gfx",
+    "interface/equipment.gfx",
+    "interface/equipmentdesignermoduleicons.gfx",
+    "interface/famous_battleships_2d.gfx",
+    "interface/frontendmainview.gfx",
+    "interface/frontendmainviewbg.gfx",
+    "interface/heavy_cruisers_2d.gfx",
+    "interface/navalcombat.gfx",
+    "interface/subuniticons.gfx",
+    "interface/Technologies.gfx",
+    "interface/doctrines/doctrines.gfx"
+  ],
+  "graphics_suppressions": [],
+  "consolidated_sprite_count": 2035,
+  "localisation_precedence_overrides": [
+    "localisation/english/core_l_english.yml",
+    "localisation/english/designer_l_english.yml",
+    "localisation/english/doctrines_l_english.yml",
+    "localisation/english/equipment_l_english.yml",
+    "localisation/english/equip_air_l_english.yml",
+    "localisation/english/equip_naval_l_english.yml",
+    "localisation/english/game_rules_l_english.yml",
+    "localisation/english/ideas_l_english.yml",
+    "localisation/english/mtg_decisions_l_english.yml",
+    "localisation/english/research_l_english.yml",
+    "localisation/english/ship_modules_l_english.yml",
+    "localisation/english/unit_l_english.yml"
+  ],
+  "consolidated_english_keys": 5261,
+  "designer_slot_layout_repairs": {
+    "interface\\equipmentdesigner\\ships\\PN_ship_hull_civilian.gui": [
+      "fixed_ship_secondaries_slot",
+      "fixed_ship_anti_air_slot",
+      "fixed_ship_engine_slot",
+      "fixed_ship_airplane_launcher_slot",
+      "fixed_ship_role_slot",
+      "front_1_custom_slot",
+      "mid_1_custom_slot",
+      "mid_2_custom_slot",
+      "rear_1_custom_slot"
+    ],
+    "interface\\equipmentdesigner\\ships\\ship_hull_heavy.gui": [
+      "fixed_ship_armor_scheme_slot",
+      "fixed_ship_torpedo_defense_system_slot"
+    ],
+    "interface\\equipmentdesigner\\ships\\ship_hull_submarine.gui": [
+      "fixed_ship_secondaries_slot",
+      "fixed_ship_conning_tower_slot",
+      "fixed_sub_periscope_slot"
+    ],
+    "interface\\equipmentdesigner\\ships\\ship_hull_super_heavy.gui": [
+      "fixed_ship_armor_scheme_slot",
+      "fixed_ship_torpedo_defense_system_slot"
+    ],
+    "interface/equipmentdesigner/ships/PN_ship_hull_behemoth.gui": [
+      "vnr_ship_hull_constitution/fixed_ship_battery_slot"
+    ]
+  },
+  "runtime_token_synchronization": "common/synchronized_dynamic_tokens/PN_naval_tokens.txt",
+  "runtime_icon_fallback": "GFX_unit_battleship_2_icon_medium uses PN_battleship_0.dds because vanilla battleship_I.dds reports truncated mipmaps",
+  "carrier_air_compatibility": "Current engine air.txt retains carrier categories, submarine-carrier wings, and land_air_wing_size=100; obsolete VNR land_air_wing_size=-1 caused recurring AI deploy_air_wing_command errors.",
+  "designer_stat_icon_repair": "Restored five commented engine-required stat_icon_* children in interface/equipmentdesignerview.gui."
 }

@@ -175,7 +175,7 @@ ideas = {
 		ship_to_shore_navy_spirit = {
 			ledger = navy
 			visible = { has_dlc = "No Compromise, No Surrender" }
-			available = { 
+			available = {
 				has_doctrine = naval_gunfire_support
 			}
 
@@ -199,7 +199,7 @@ ideas = {
 		stay_at_your_posts_navy_spirit = {
 			ledger = navy
 			visible = { has_dlc = "No Compromise, No Surrender" }
-			available = { 
+			available = {
 
 			}
 
@@ -309,7 +309,7 @@ ideas = {
             ledger = navy
             visible = {
                 OR = {
-					AND = {  
+					AND = {
 						original_tag = SOV
 						has_global_flag = vnr_enabled
 						NOT = { has_government = communism }
@@ -351,7 +351,7 @@ ideas = {
 					NOT = { has_dlc = "No Step Back" }
 				}
             }
-        } 
+        }
 	}
 
 	navy_spirit = {
@@ -432,7 +432,7 @@ ideas = {
 				}
 			}
 		}
-		
+
         panama_standard = {
             ledger = navy
             visible = { original_tag = USA }
@@ -572,9 +572,9 @@ ideas = {
 				}
 			}
 		}
-		surprise_attacks_spirit = { 
+		surprise_attacks_spirit = {
 			ledger = navy
-			available = { 
+			available = {
 
 			}
 			modifier = {
@@ -591,7 +591,7 @@ ideas = {
 		}
 		efficient_communications_spirit = {
 			ledger = navy
-			available = { 
+			available = {
 
 			}
 			modifier = {
@@ -605,7 +605,7 @@ ideas = {
 				}
 			}
 		}
-		
+
 		surface_raiders_spirit = {
 			ledger = navy
 			available = {
@@ -669,7 +669,7 @@ ideas = {
 					NOT = { has_dlc = "No Step Back" }
 				}
 			}
-		} 
+		}
 		bureau_of_ordnance_spirit = {
 			ledger = navy
 			visible = { tag = USA }
@@ -683,7 +683,7 @@ ideas = {
 
 		naval_tripwire_navy_spirit = {
 			ledger = navy
-			available = { 
+			available = {
 				OR = {
 					has_doctrine = new_convoy_raiding
 					has_doctrine = coastal_defence_fleet
@@ -701,7 +701,7 @@ ideas = {
 				}
 			}
 		}
-		
+
         underwater_death = {
             ledger = navy
             modifier = {
@@ -783,7 +783,7 @@ ideas = {
             available = {
 				custom_trigger_tooltip = {
 					tooltip = recovering_from_naval_race_tt
-					NOT = { 
+					NOT = {
 						has_global_flag = vnr_enabled
 						has_country_flag = recovered_from_naval_race
 					}

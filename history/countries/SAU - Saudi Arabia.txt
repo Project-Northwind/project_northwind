@@ -1,4 +1,4 @@
-﻿capital = 292
+capital = 292
 
 oob = "SAU_1936"
 
@@ -52,7 +52,7 @@ recruit_character = SAU_gholam_wali
 
 	add_political_power = 1198
 	add_command_power = 100
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -63,7 +63,7 @@ recruit_character = SAU_gholam_wali
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "SAU_1939"
 	set_technology = {
 		tech_support = 1

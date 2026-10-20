@@ -8,7 +8,7 @@ equipment_modules = {
 		abbreviation = "sde"
 		category = ship_heavy_armor
 		gfx = ship_armor_thick_1
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.1
 			naval_speed = -0.2
@@ -33,7 +33,7 @@ equipment_modules = {
 		abbreviation = "sdf"
 		category = ship_heavy_armor
 		gfx = ship_armor_1
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.08
 			naval_speed = -0.1
@@ -260,7 +260,7 @@ equipment_modules = {
 		abbreviation = "sk"
 		category = ship_super_heavy_armor
 		gfx = ship_armor_thick_3
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.2
 			naval_speed = -0.25
@@ -296,7 +296,7 @@ equipment_modules = {
 		category = ship_super_heavy_armor
 		parent = ship_armor_shbb
 		gfx = ship_armor_bb_4
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.28
 			naval_speed = -0.35
@@ -344,7 +344,7 @@ equipment_modules = {
 		abbreviation = "sdl"
 		category = ship_cruiser_armor
 		gfx = ship_armor_thin_1
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.05
 			naval_speed = -0.05
@@ -370,7 +370,7 @@ equipment_modules = {
 			max_strength = 0.05
 		}
 		dismantle_cost_ic = 1750
-		
+
 		add_stats = {
 			armor_value = 10
 		}
@@ -395,7 +395,7 @@ equipment_modules = {
 			max_strength = 0.1
 		}
 		dismantle_cost_ic = 2000
-		
+
 		add_stats = {
 			armor_value = 12
 		}
@@ -422,7 +422,7 @@ equipment_modules = {
 			max_strength = 0.15
 		}
 		dismantle_cost_ic = 2250
-		
+
 		add_stats = {
 			armor_value = 14
 		}
@@ -442,7 +442,7 @@ equipment_modules = {
 		category = ship_cruiser_heavy_armor
 		gfx = ship_armor_1
 		add_equipment_type = capital_ship
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.08
 			naval_speed = -0.08
@@ -558,7 +558,7 @@ equipment_modules = {
 	ship_armor_carrier_1 = {
 		category = ship_carrier_armor
 		gfx = ship_armor_thin_1
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.05
 			max_strength = 0.025
@@ -581,7 +581,7 @@ equipment_modules = {
 			convert_cost_ic = 800
 		}
 		can_convert_from = {
-			module_category = ship_heavy_armor 
+			module_category = ship_heavy_armor
 			convert_cost_ic = 2500
 		}
 		can_convert_from = {
@@ -607,7 +607,7 @@ equipment_modules = {
 			max_strength = 0.05
 		}
 		dismantle_cost_ic = 1750
-		
+
 		add_stats = {
 			armor_value = 10
 		}
@@ -654,7 +654,7 @@ equipment_modules = {
 			max_strength = 0.075
 		}
 		dismantle_cost_ic = 2000
-		
+
 		add_stats = {
 			armor_value = 12
 		}
@@ -700,7 +700,7 @@ equipment_modules = {
 			max_strength = 0.1
 		}
 		dismantle_cost_ic = 2250
-		
+
 		add_stats = {
 			armor_value = 14
 		}
@@ -740,7 +740,7 @@ equipment_modules = {
 		category = ship_carrier_armor_heavy
 		gfx = ship_armor_1
 		add_equipment_type = capital_ship
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.1
 			naval_speed = -0.07
@@ -765,7 +765,7 @@ equipment_modules = {
 			convert_cost_ic = 1500
 		}
 		can_convert_from = {
-			module_category = ship_heavy_armor 
+			module_category = ship_heavy_armor
 			convert_cost_ic = 1000
 		}
 		can_convert_from = {
@@ -810,7 +810,7 @@ equipment_modules = {
 			convert_cost_ic = 2000
 		}
 		can_convert_from = {
-			module_category = ship_heavy_armor 
+			module_category = ship_heavy_armor
 			convert_cost_ic = 2000
 		}
 		can_convert_from = {
@@ -859,7 +859,7 @@ equipment_modules = {
 			convert_cost_ic = 2500
 		}
 		can_convert_from = {
-			module_category = ship_heavy_armor 
+			module_category = ship_heavy_armor
 			convert_cost_ic = 2500
 		}
 		can_convert_from = {
@@ -908,7 +908,7 @@ equipment_modules = {
 			convert_cost_ic = 3000
 		}
 		can_convert_from = {
-			module_category = ship_heavy_armor 
+			module_category = ship_heavy_armor
 			convert_cost_ic = 3000
 		}
 		can_convert_from = {
@@ -933,7 +933,7 @@ equipment_modules = {
 		gfx = ship_heavy_armor
 		add_equipment_type = capital_ship
 		parent = ship_armor_carrier_heavy_4
-		
+
 		build_cost_resources = {
 			steel = 1
 			chromium = 1
@@ -959,7 +959,7 @@ equipment_modules = {
 			convert_cost_ic = 4000
 		}
 		can_convert_from = {
-			module_category = ship_heavy_armor 
+			module_category = ship_heavy_armor
 			convert_cost_ic = 4000
 		}
 		can_convert_from = {
@@ -983,7 +983,7 @@ equipment_modules = {
 		category = ship_carrier_armor_shbb
 		gui_category = ship_carrier_armor_heavy
 		gfx = ship_heavy_armor
-		
+
 		multiply_stats = {
 			build_cost_ic = 0.2
 			naval_speed = -0.2
@@ -1000,7 +1000,7 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 5500
 		can_convert_from = {
-			module_category = ship_heavy_armor 
+			module_category = ship_heavy_armor
 			convert_cost_ic = 5000
 		}
 		can_convert_from = {
@@ -1015,7 +1015,7 @@ equipment_modules = {
 ####################
     ship_scheme_incremental = {
 		category = armor_scheme
-		
+
 		multiply_stats = {
 			naval_speed = -0.05
 			max_strength = 0.05
@@ -1030,7 +1030,7 @@ equipment_modules = {
 	ship_scheme_incremental_post_jutland = {
 		category = armor_scheme
 		parent = ship_scheme_incremental
-		
+
 		multiply_stats = {
 			naval_speed = -0.05
 			max_strength = 0.075
@@ -1054,7 +1054,7 @@ equipment_modules = {
 	ship_scheme_mixed = {
 		category = armor_scheme
 		parent = ship_scheme_incremental_post_jutland
-		
+
 		multiply_stats = {
 			naval_speed = -0.025
 			armor_value = 0.05
@@ -1079,7 +1079,7 @@ equipment_modules = {
 	ship_scheme_all_or_nothing = {
 		category = armor_scheme
 		parent = ship_scheme_mixed
-		
+
 		multiply_stats = {
 			naval_speed = -0.025
 			armor_value = 0.1
@@ -1100,7 +1100,7 @@ equipment_modules = {
 	ship_scheme_all_or_nothing_armor_box = {
 		category = armor_scheme
 		parent = ship_scheme_all_or_nothing
-		
+
 		multiply_stats = {
 			naval_speed = -0.03
 			armor_value = 0.1
@@ -1130,7 +1130,7 @@ equipment_modules = {
 ##############################
     torpedo_bulge = {
 		category = torpedo_defense_system
-		
+
 		add_stats = {
 			naval_torpedo_enemy_critical_chance_factor = -0.1
 			naval_torpedo_damage_reduction_factor = 0.15
@@ -1148,7 +1148,7 @@ equipment_modules = {
 	}
 	pugliese_system = {
 		category = torpedo_defense_system
-		
+
 		add_stats = {
 			naval_torpedo_enemy_critical_chance_factor = -0.1
 			naval_torpedo_damage_reduction_factor = 0.1
@@ -1162,7 +1162,7 @@ equipment_modules = {
 	torpedo_belt = {
 		category = torpedo_defense_system
 		parent = torpedo_bulge
-		
+
 		add_stats = {
 			naval_torpedo_enemy_critical_chance_factor = -0.15
 			naval_torpedo_damage_reduction_factor = 0.2
@@ -1179,9 +1179,9 @@ equipment_modules = {
 		dismantle_cost_ic = 4500
 	}
 	torpedo_belt_enhanced = {
-    	category = torpedo_defense_system
+		category = torpedo_defense_system
 		parent = torpedo_belt
-		
+
 		add_stats = {
 			naval_torpedo_enemy_critical_chance_factor = -0.2
 			naval_torpedo_damage_reduction_factor = 0.25
@@ -1293,7 +1293,7 @@ equipment_modules = {
 ##################
     ship_cruiser_camo_1 = {
 		category = raider_kit
-		
+
 		add_stats = {
 			convoy_raiding_coordination = 0.05
 		}
@@ -1314,7 +1314,7 @@ equipment_modules = {
 	}
 	ship_cruiser_camo_2 = {
 		category = raider_kit
-		
+
 		add_stats = {
 			convoy_raiding_coordination = 0.1
 		}
@@ -1328,7 +1328,7 @@ equipment_modules = {
 			surface_visibility = -0.2
 			build_cost_ic = 0.05
 		}
-		
+
 		forbid_module_categories = {
 			ship_light_medium_battery
 			ship_light_medium_battery_double

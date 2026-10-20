@@ -1,21 +1,29 @@
 
 
 units = {
-	
-	
+
+
 
 	##### IJN Naval Forces (CO: Nagano) #####
 	### Rengo Kantai (Combined Fleet) (CO: Yamamoto) ###
-	# Navy supplied by PN_initialize_navy.
-	
+
+# Navy supplied by PN_initialize_navy.
+
+
 	# Naval District Forces #
-	# Navy supplied by PN_initialize_navy.
-	
+
+# Navy supplied by PN_initialize_navy.
+
+
 	### China Area Fleet ###
-	# Navy supplied by PN_initialize_navy.
-	
+
+# Navy supplied by PN_initialize_navy.
+
+
 	### Pacific Forces ###
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 }
 
 
@@ -26,16 +34,18 @@ units = {
 ## STARTING PRODUCTION ##
 #########################
 instant_effect = {
-	
+
 #####################
 ### Ongoing Naval Production Sep 1 1939 ###
 		# BB (x1): "Hiei"
-		# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 		# SHBB (x1): "Yamato"
 		add_equipment_production = {
 			equipment = {
 				type = SH_battleship_1
-				creator = "JAP" 
+				creator = "JAP"
 			}
 			requested_factories = 1
 			progress = 0.1
@@ -43,23 +53,53 @@ instant_effect = {
 			industrial_manufacturer = mio:JAP_kure_naval_arsenal_organization
 		}
 		# CV (x1): "Shokaku"
-		# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 		# CL (x1): "Katori"
-		# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 		# DD (x5): "Kagero" "Kuroshio" "Oyashio" "Hatsukaze" "Natsushio"
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 		# DD (x4): "Yukikaze" "Hayashio" "Isokaze" "Shiranui"
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 		# SS (x7): "I-9" "I-15" "I-16" "I-17" "I-18" "I-20" "I-22"
-		# Navy supplied by PN_initialize_navy.
-		# Navy supplied by PN_initialize_navy.
-		# Navy supplied by PN_initialize_navy.
-		# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 }

@@ -79,7 +79,7 @@ equipment_modules = {
 			anti_air_attack = 30
 			build_cost_ic = 600
 		}
-		
+
 		multiply_stats = {
 			naval_speed = -0.05
 		}
@@ -97,7 +97,7 @@ equipment_modules = {
         add_average_stats = {
             lg_armor_piercing = 20
         }
-		
+
 		multiply_stats = {
 			naval_speed = -0.05
 		}

@@ -271,7 +271,7 @@ leader_defense_skills = {
 			screening_efficiency = 0.09
 		}
 	}
-	
+
 	10 = {
 		cost = 102400
 		type = navy
@@ -386,7 +386,7 @@ leader_coordination_skills = {
 			navy_fuel_consumption_factor = -0.18
 		}
 	}
-	
+
 	10 = {
 		cost = 102400
 		type = navy

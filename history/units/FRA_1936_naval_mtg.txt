@@ -3,15 +3,28 @@ units= {
 
 	##### NAVAL UNITS #####
 	### METRPOLITAN FRANCE ###
-	# Navy supplied by PN_initialize_navy.
-		
-	# Navy supplied by PN_initialize_navy.
 
-	# Navy supplied by PN_initialize_navy.
+# Navy supplied by PN_initialize_navy.
 
-	### NORTH AFRICA ###				
-	# Navy supplied by PN_initialize_navy.navy.
-} 
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+	### NORTH AFRICA ###
+
+# Navy supplied by PN_initialize_navy.
+
+
+	### FAR EAST ###
+
+# Navy supplied by PN_initialize_navy.
+
+}
 
 
 
@@ -22,28 +35,62 @@ instant_effect = {
 
 	# Ship Production
 	# DD: Le Fantasque class (x4) ("Le Malin" "L'Indomptable" "Le Fantasque" "Le Triomphant")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# BC: Dunkerque (Comm. 16-Apr, 1937)	
-	# Navy supplied by PN_initialize_navy.
-	# BB: Richelieu	
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+	# BC: Dunkerque (Comm. 16-Apr, 1937)
+
+# Navy supplied by PN_initialize_navy.
+
+	# BB: Richelieu
+
+# Navy supplied by PN_initialize_navy.
+
 	 # CL: La Galissonnière class (x4) ("Jean de Vienne" "Marseillaise" "Gloire" "Montcalm") ("Georges Leygues" launched 24-Mar 1936)
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 	# SS: Redoutable variant (x7) ("Le Héros" "Le Conquérant" "Le Tonnant" "Agosta" "Sfax" "Casabianca" "Bévéziers")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 	# SS: Minerve class (x4) ("Iris" "Minerve" "Vénus" "Junon")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 }
 
 #####################

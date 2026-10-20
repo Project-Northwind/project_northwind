@@ -309,7 +309,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = dd_tech_7_tt
 		}
-		
+
 		enable_equipments = {
 			vnr_ship_hull_light_6
 		}
@@ -1196,7 +1196,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 		}
@@ -1251,7 +1251,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 		}
@@ -1311,7 +1311,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 		}
@@ -1364,7 +1364,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 		}
@@ -1419,7 +1419,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 		}
@@ -1479,7 +1479,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 		}
@@ -1514,7 +1514,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			radar_tech
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 			electronics
@@ -1565,7 +1565,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 		}
@@ -1595,7 +1595,7 @@ technologies = {
 		special_project_specialization = { specialization_naval specialization_air }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 		}
@@ -1623,7 +1623,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 		}
@@ -1650,7 +1650,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 			electronics
@@ -1677,7 +1677,7 @@ technologies = {
 		special_project_specialization = { specialization_naval specialization_air }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			mio_cat_tech_all_cruiser_and_modules
 			electronics
@@ -1791,7 +1791,7 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			ship_modules_tech
 			mio_cat_tech_all_cruiser_and_modules
@@ -1837,7 +1837,7 @@ technologies = {
 		special_project_specialization = { specialization_naval specialization_air }
 		categories = {
 			naval_equipment
-			
+
 			ca_tech
 			ship_modules_tech
 			mio_cat_tech_all_cruiser_and_modules
@@ -2777,7 +2777,7 @@ technologies = {
 			super_heavy_ship_engine_1
 		}
 
-		
+
 		folder = {
 			name = mtgnavalfolder
 			position = { x = -3 y = @1924_module }

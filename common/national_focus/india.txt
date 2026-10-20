@@ -8,10 +8,10 @@
 
 focus_tree = {
 	id = indian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = RAJ
@@ -21,7 +21,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	default = no
 
 
@@ -33,7 +33,7 @@ focus_tree = {
 	#	#mutually_exclusive = { focus =  }
 	#	x = 0
 	#	y = 0
-	#	#relative_position_id = 
+	#	#relative_position_id =
 #
 	#	cost = 10
 #
@@ -44,7 +44,7 @@ focus_tree = {
 	#	available = {
 #
 	#	}
-	#	
+	#
 	#	bypass = {
 #
 	#	}
@@ -63,7 +63,7 @@ focus_tree = {
 	#}
 
 
- 
+
 
 
 
@@ -104,7 +104,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = 100			
+			add_political_power = 100
 			add_autonomy_ratio = {
 				value = 0.1
 				localization = RAJ_provincial_elections
@@ -178,7 +178,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -290,7 +290,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_seek_help_from_soviet
 		icon = GFX_focus_RAJ_seek_help_from_soviet
-		prerequisite = { focus = RAJ_all_india_forward_bloc }		
+		prerequisite = { focus = RAJ_all_india_forward_bloc }
 		x = -1
 		y = 1
 		relative_position_id = RAJ_all_india_forward_bloc
@@ -464,7 +464,7 @@ focus_tree = {
 					set_variable = { RAJ_agrarian_society_value = RAJ.RAJ_agrarian_society_value }
 					add_dynamic_modifier = { modifier = RAJ_agrarian_society_dynamic }
 					ENG = { add_to_faction = PREV }
-				}						
+				}
 			}
 		}
 	}
@@ -610,12 +610,12 @@ focus_tree = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
 					infantry = { x = 0 y = 2 }
-		
-		        	infantry = { x = 1 y = 0 }
+
+					infantry = { x = 1 y = 0 }
 					infantry = { x = 1 y = 1 }
 					infantry = { x = 1 y = 2 }
-		
-		        	infantry = { x = 2 y = 0 }
+
+					infantry = { x = 2 y = 0 }
 					infantry = { x = 2 y = 1 }
 					infantry = { x = 2 y = 2 }
 				}
@@ -623,8 +623,8 @@ focus_tree = {
 
 		random_owned_controlled_state = {
 			prioritize = { 439 }
-			create_unit = { 
-				division = "name = \"1. Rani of Jhansi Division\" division_template = \"Rani of Jhansi Division\" start_experience_factor = 0.5" 
+			create_unit = {
+				division = "name = \"1. Rani of Jhansi Division\" division_template = \"Rani of Jhansi Division\" start_experience_factor = 0.5"
 				owner = RAJ
 				}
 
@@ -760,7 +760,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_seek_help_from_germany
 		icon = GFX_focus_RAJ_seek_help_from_germany
-		prerequisite = { focus = RAJ_all_india_forward_bloc }		
+		prerequisite = { focus = RAJ_all_india_forward_bloc }
 		x = 1
 		y = 1
 		relative_position_id = RAJ_all_india_forward_bloc
@@ -793,7 +793,7 @@ focus_tree = {
 					}
 					has_civil_war = no
 					NOT = { has_global_flag = RAJ_seek_help_from_soviet_promised }
-					GER = {				
+					GER = {
 						exists = yes
 						has_government = fascism
 					}
@@ -933,7 +933,7 @@ focus_tree = {
 					set_variable = { RAJ_agrarian_society_value = RAJ.RAJ_agrarian_society_value }
 					add_dynamic_modifier = { modifier = RAJ_agrarian_society_dynamic }
 					ENG = { add_to_faction = PREV }
-				}					
+				}
 			}
 		}
 	}
@@ -975,7 +975,7 @@ focus_tree = {
 			if = {
 				limit = { NOT = { has_tech = paratroopers } }
 				set_technology = { paratroopers = 1 }
-				
+
 				else = {
 					add_tech_bonus = {
 						name = RAJ_battaglione_azad_hindoustan
@@ -986,17 +986,17 @@ focus_tree = {
 					}
 				}
 			}
-			
-		
+
+
 			ITA = {
 				country_event = { id = tfv_raj.201 }
 			}
-			
+
 			if = {
 				limit = {
 					is_ai = no
 				}
-				
+
 				division_template = {
 					name = "Battaglione Azad Hindoustan" #Hindu paratrooper division created for Italy
 					division_names_group = RAJ_PAR_01
@@ -1010,15 +1010,15 @@ focus_tree = {
 						paratrooper = { x = 1 y = 2 }
 					}
 				}
-					
+
 				ITA = {
 					random_owned_controlled_state = {
 						prioritize = { 2 }
-						
+
 						custom_effect_tooltip = tfv_raj_focus_paratrooper_tt
 						hidden_effect = {
-							create_unit = { 
-								division = "name = \"Battaglione Azad Hindoustan\" division_template = \"Battaglione Azad Hindoustan\" start_experience_factor = 1.0" 
+							create_unit = {
+								division = "name = \"Battaglione Azad Hindoustan\" division_template = \"Battaglione Azad Hindoustan\" start_experience_factor = 1.0"
 								owner = RAJ
 							}
 						}
@@ -1098,7 +1098,7 @@ focus_tree = {
 
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {	
+		completion_reward = {
 			air_experience = 25
 			add_breakthrough_progress = {
 				specialization = specialization_air
@@ -1172,7 +1172,7 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value =	0.05
 				localization = RAJ_cripps_mission
-		 	}		 	
+			}
 		}
 	}
 
@@ -1191,7 +1191,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -1393,8 +1393,8 @@ focus_tree = {
 					not = { has_dlc = "Man the Guns" }
 				}
 				if = {
-					limit = { 
-						has_tech = basic_light_cruiser 
+					limit = {
+						has_tech = basic_light_cruiser
 					}
 					add_equipment_production = {
 						equipment = {
@@ -1481,8 +1481,8 @@ create_equipment_variant = {
 						}
 					}
 					else = {
-						set_technology = { 
-							basic_ship_hull_cruiser = 1 
+						set_technology = {
+							basic_ship_hull_cruiser = 1
 							basic_torpedo = 1
 							basic_heavy_battery = 1
 						}
@@ -1577,8 +1577,8 @@ create_equipment_variant = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-			
-	    	   		 	infantry = { x = 1 y = 0 }
+
+						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
 
@@ -1588,17 +1588,17 @@ create_equipment_variant = {
 					}
 
 					support = {
-        				artillery = { x = 0 y = 0 }
-        				engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
 					}
 				}
-	
+
 				random_owned_controlled_state = {
 					prioritize = { 439 }
 					create_unit = {
-						division = "name = \"Red Eagles Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75" 
+						division = "name = \"Red Eagles Division\" division_template = \"Red Eagles Division\" start_experience_factor = 0.75"
 						owner = RAJ
-					}	
+					}
 				}
 			}
 		}
@@ -1633,7 +1633,7 @@ create_equipment_variant = {
 						NOT = { is_controlled_by = ROOT }
 					}
 					date > 1942.1.1
-				}			
+				}
 			}
 		}
 
@@ -1826,9 +1826,9 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			add_ideas = RAJ_indian_gurkhas			
+			add_ideas = RAJ_indian_gurkhas
 			custom_effect_tooltip = RAJ_create_unit_gurkas_tt
-			hidden_effect = {	
+			hidden_effect = {
 				division_template = {
 					name = "Gorkha Rifles"
 					priority = 2
@@ -1837,8 +1837,8 @@ create_equipment_variant = {
 						mountaineers = { x = 0 y = 0 }
 						mountaineers = { x = 0 y = 1 }
 						mountaineers = { x = 0 y = 2 }
-			
-	    	   		 	mountaineers = { x = 1 y = 0 }
+
+						mountaineers = { x = 1 y = 0 }
 						mountaineers = { x = 1 y = 1 }
 						mountaineers = { x = 1 y = 2 }
 
@@ -1847,13 +1847,13 @@ create_equipment_variant = {
 						mountaineers = { x = 2 y = 2 }
 					}
 				}
-	
+
 				random_owned_controlled_state = {
 					prioritize = { 439 }
 					create_unit = {
-						division = "name = \"1. Gorkha Rifles\" division_template = \"Gorkha Rifles\" start_experience_factor = 1.0" 
+						division = "name = \"1. Gorkha Rifles\" division_template = \"Gorkha Rifles\" start_experience_factor = 1.0"
 						owner = RAJ
-					}	
+					}
 				}
 			}
 
@@ -1887,7 +1887,7 @@ create_equipment_variant = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = RAJ_indian_sandhurst_tt 
+			custom_effect_tooltip = RAJ_indian_sandhurst_tt
 			hidden_effect = {
 				add_corps_commander_role = {
 					character = RAJ_kodandera_madappa_cariappa
@@ -1960,8 +1960,8 @@ create_equipment_variant = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-		
-		        		infantry = { x = 1 y = 0 }
+
+						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
 
@@ -1970,14 +1970,14 @@ create_equipment_variant = {
 						infantry = { x = 2 y = 2 }
 							}
 						}
-		
+
 					random_owned_controlled_state = {
 							prioritize = { 439 }
-							create_unit = { 
-								division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5" 
+							create_unit = {
+								division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5"
 								owner = RAJ
 								}
-		
+
 					}
 				}
 
@@ -2488,7 +2488,7 @@ create_equipment_variant = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {			
+		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_air_support_effort
 				bonus = 1.0
@@ -2623,7 +2623,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+
 			if = {
 				limit = {
 					NOT = {
@@ -2684,7 +2684,7 @@ create_equipment_variant = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
+
 
 		completion_reward = {
 			build_railway = { #Delhi - Karachi
@@ -2843,10 +2843,10 @@ create_equipment_variant = {
 			}
 
             add_tech_bonus = {
-            	name = RAJ_assam_oil
+				name = RAJ_assam_oil
                 bonus = 1
                 uses = 1
-                category = synth_resources # optional 
+                category = synth_resources # optional
                 # technology  = technology_id # optional
             }
 		}
@@ -3448,7 +3448,7 @@ create_equipment_variant = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
+
 
 		completion_reward = {
 			if = {
@@ -3630,7 +3630,7 @@ create_equipment_variant = {
 			remove_ideas = RAJ_risk_of_famine
 		}
 	}
-	
+
 	focus = {
 		id = RAJ_administrative_oversight
 		icon = GFX_goal_generic_forceful_treaty
@@ -3661,7 +3661,7 @@ create_equipment_variant = {
 			custom_effect_tooltip = RAJ_enable_local_industrialization
 		}
 	}
-	
+
 	focus = {
 		id = RAJ_land_clearance
 		icon = GFX_goal_generic_construct_civilian
@@ -3699,7 +3699,7 @@ create_equipment_variant = {
 			custom_effect_tooltip = RAJ_land_clearance_effect_tt
 		}
 	}
-	
+
 	focus = {
 		id = RAJ_workforce_integration
 		icon = GFX_goal_generic_army_doctrines
@@ -4055,4 +4055,4 @@ create_equipment_variant = {
 	}
 
 
-}		
+}

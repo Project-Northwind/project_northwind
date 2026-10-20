@@ -95,7 +95,7 @@ add_ideology_drift_based_on_partner = {
 
 AFG_create_puppet_army = {
 	division_template = {
-		name = "Tribal Militia"		
+		name = "Tribal Militia"
 		#division_names_group = AFG_INF_01
 		is_locked = yes
 		force_allow_recruiting = yes
@@ -295,5 +295,3 @@ AFG_create_turkestan_free_legion_div = {
 		count = 1
 	}
 }
-
-

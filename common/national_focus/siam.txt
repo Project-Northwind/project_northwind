@@ -1,16 +1,16 @@
 focus_tree = {
 	id = siam_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = SIA
 			has_dlc = "Thunder at Our Gates"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 2500 }
@@ -52,7 +52,7 @@ focus_tree = {
 	}
 
 	############################
-	#####    Civilian Wing     #	
+	#####    Civilian Wing     #
 	############################
 
 		focus = {
@@ -165,7 +165,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = industrial_complex 
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -202,7 +202,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = electronics # optional 
+				category = electronics # optional
 				name = SIA_the_true_heirs_of_1932
 			}
 		}
@@ -299,7 +299,7 @@ focus_tree = {
 			add_ideas = idea_SIA_civil_service_heroism_1
 
 			custom_effect_tooltip = newline_tt
-			
+
 		}
 	}
 
@@ -393,11 +393,11 @@ focus_tree = {
 				every_army_leader = {
 					random_select_amount = 2
 					limit = {
-						NOT = { 
-							is_character = SIA_rangsit_prayurasakdi 
-						 	is_character = SIA_adul_aduldejajaras 
-						 	is_character = SIA_plaek_phibunsongkhram 
-						 	is_character = SIA_phraya_songsuradet 
+						NOT = {
+							is_character = SIA_rangsit_prayurasakdi
+							is_character = SIA_adul_aduldejajaras
+							is_character = SIA_plaek_phibunsongkhram
+							is_character = SIA_phraya_songsuradet
 						 }
 					}
 					add_timed_unit_leader_trait = {
@@ -475,8 +475,8 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 10
-			modifier = { 
-				has_completed_focus = SIA_and_spring_the_trap 
+			modifier = {
+				has_completed_focus = SIA_and_spring_the_trap
 				NOT = { has_completed_focus = SIA_secure_the_state }
 
 				factor = 100
@@ -517,8 +517,8 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 10
-			modifier = { 
-				has_completed_focus = SIA_and_spring_the_trap 
+			modifier = {
+				has_completed_focus = SIA_and_spring_the_trap
 				NOT = { has_completed_focus = SIA_secure_the_state }
 
 				factor = 100
@@ -570,7 +570,7 @@ focus_tree = {
 						infantry = { x = 1 y = 2 }
 					}
 					support = {
-						
+
 					}
 				}
 
@@ -579,7 +579,7 @@ focus_tree = {
 						division = "name = \"Senior Officer Loyalists\" division_template = \"Senior Officer Loyalists\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
 						owner = SIA
 						allow_spawning_on_enemy_provs = yes
-						count = 3  
+						count = 3
 					}
 				}
 			}
@@ -588,11 +588,11 @@ focus_tree = {
 
 
 	############################
-	#####    Military Wing     #	
+	#####    Military Wing     #
 	############################
 
-	focus = { 
-		id = SIA_for_the_preservation_of_siamese_independence 
+	focus = {
+		id = SIA_for_the_preservation_of_siamese_independence
 		icon = GFX_focus_SIA_for_the_preservation_of_siamese_independence
 		prerequisite = { focus = SIA_the_khana_ratsadon }
 		x = 22
@@ -613,7 +613,7 @@ focus_tree = {
 			SIA_increase_military_approval = yes
 
 			SIA_decrease_civilian_approval = yes
-			
+
 			random_core_state = {
 				limit = {
 					is_owned_and_controlled_by = ROOT
@@ -860,7 +860,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				set_rule = { can_send_volunteers = yes } 
+				set_rule = { can_send_volunteers = yes }
 			}
 			add_ideas = idea_SIA_thai_irredentism
 
@@ -901,10 +901,10 @@ focus_tree = {
 
 			if = {
 				limit = {
-					
+
 						NOT = { has_completed_focus = SIA_the_midnight_meeting }
 						NOT = { has_completed_focus = SIA_to_lay_the_bait }
-					
+
 				}
 
 				custom_effect_tooltip = newline_tt
@@ -957,11 +957,11 @@ focus_tree = {
 
 
 	############################
-	#####    Monarchist    	   #	
+	#####    Monarchist    	   #
 	############################
 
 		focus = {
-		id = SIA_the_midnight_meeting 
+		id = SIA_the_midnight_meeting
 		icon = GFX_focus_SIA_the_midnight_meeting
 		x = 0
 		y = 3
@@ -1006,34 +1006,34 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = idea_SIA_an_unceasy_alliance
 
-	  		set_party_name = {
-	  			ideology = fascism
-	  			long_name = SIA_neutrality_party_long #This is the military branch being swapped over
-	  			name = SIA_neutrality_party
-	  		}
+			set_party_name = {
+				ideology = fascism
+				long_name = SIA_neutrality_party_long #This is the military branch being swapped over
+				name = SIA_neutrality_party
+			}
 
 
-	  		
-	  		set_party_name = {
-	  			ideology = neutrality
-	  			long_name = SIA_neutrality_party_royalist_long
-	  			name = SIA_neutrality_party_royalist
-	  		}
 
-	  		custom_effect_tooltip = newline_tt
-	  		custom_effect_tooltip = SIA_the_midnight_meeting_tt
-	  		add_popularity = {
-	  			ideology = fascism 
-	  			popularity = 0.75
-	  		}
+			set_party_name = {
+				ideology = neutrality
+				long_name = SIA_neutrality_party_royalist_long
+				name = SIA_neutrality_party_royalist
+			}
 
-	  		set_politics = {
-	  			ruling_party = fascism
-	  			elections_allowed = yes
-	  		}
+			custom_effect_tooltip = newline_tt
+			custom_effect_tooltip = SIA_the_midnight_meeting_tt
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.75
+			}
 
-	  		set_variable = { additional_support_monarchist_cw = 0 }
-	  		unlock_decision_category_tooltip = SIA_appeal_for_support_cat
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+			}
+
+			set_variable = { additional_support_monarchist_cw = 0 }
+			unlock_decision_category_tooltip = SIA_appeal_for_support_cat
 
 			if = {
 				limit = {
@@ -1070,7 +1070,7 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.1
 			}
-			custom_effect_tooltip = available_political_advisor 
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SIA_chao_phraya_sri_dharmathibhet
 			#country_event = { id =  }
 		}
@@ -1098,13 +1098,13 @@ focus_tree = {
 			custom_effect_tooltip = SIA_prajadhipok_audience_with_churchill_tt
 
 			effect_tooltip = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
 					amount = 1500
 					producer = ENG
 				}
 
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = artillery_equipment
 					amount = 250
 					producer = ENG
@@ -1114,14 +1114,14 @@ focus_tree = {
 					limit = {
 						has_dlc = "By Blood Alone"
 					}
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = small_plane_airframe_1
 						amount = 100
 						producer = ENG
 					}
 				}
 				else = {
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = fighter_equipment_1
 						amount = 100
 						producer = ENG
@@ -1208,7 +1208,7 @@ focus_tree = {
 				promote_leader = yes
 				country_leader = {
 					ideology = despotism
-					traits = { SIA_ailing } 
+					traits = { SIA_ailing }
 				}
 			}
 
@@ -1216,13 +1216,13 @@ focus_tree = {
 				limit = {
 					has_completed_focus = SIA_prajadhipok_audience_with_churchill
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
 					amount = 1500
 					producer = ENG
 				}
 
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = artillery_equipment
 					amount = 250
 					producer = ENG
@@ -1232,14 +1232,14 @@ focus_tree = {
 					limit = {
 						has_dlc = "By Blood Alone"
 					}
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = small_plane_airframe_1
 						amount = 100
 						producer = ENG
 					}
 				}
 				else = {
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = fighter_equipment_1
 						amount = 100
 						producer = ENG
@@ -1263,10 +1263,10 @@ focus_tree = {
 
 						ranger_battalion = { x = 1 y = 0 }
 						ranger_battalion = { x = 1 y = 1 }
-						
+
 					}
 					support = {
-						
+
 					}
 				}
 				random_controlled_state = {
@@ -1279,7 +1279,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = SIA_the_kings_gambit_tt
-			hidden_effect = { 
+			hidden_effect = {
 				spawn_pret_in_cw_if_cheating = yes
 
 				every_other_country = {
@@ -1287,7 +1287,7 @@ focus_tree = {
 
 					division_template = {
 						name = "Government Loyalists"
-						is_locked = no 
+						is_locked = no
 						regiments = {
 
 							infantry = { x = 0 y = 0 }
@@ -1325,16 +1325,16 @@ focus_tree = {
 
 						retire_country_leader = yes
 					}
-					
+
 					every_controlled_state = {
 						limit = { NOT = { state =  1076 } }
 						random_select_amount = 2
 						create_unit = {
 							division = "name = \"Government Loyalists\" division_template = \"Government Loyalists\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1"
 							owner = PREV
-								 
-							allow_spawning_on_enemy_provs = yes 
-							count = 3 
+
+							allow_spawning_on_enemy_provs = yes
+							count = 3
 						}
 					}
 
@@ -1342,9 +1342,9 @@ focus_tree = {
 						create_unit = {
 							division = "name = \"Government Loyalists\" division_template = \"Government Loyalists\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1"
 							owner = PREV
-								 
-							allow_spawning_on_enemy_provs = yes 
-							count = 3 
+
+							allow_spawning_on_enemy_provs = yes
+							count = 3
 						}
 					}
 				}
@@ -1357,7 +1357,7 @@ focus_tree = {
 					division_template = {
 						name = "Constitutional Monarchist Loyalists"
 						is_locked = no
-	 
+
 						regiments = {
 							cavalry = { x = 0 y = 0 }
 							cavalry = { x = 0 y = 1 }
@@ -1366,7 +1366,7 @@ focus_tree = {
 							cavalry = { x = 1 y = 0 }
 							cavalry = { x = 1 y = 1 }
 							cavalry = { x = 1 y = 2 }
-							
+
 						}
 						support = {
 							artillery = { x = 0 y = 0 }
@@ -1391,7 +1391,7 @@ focus_tree = {
 					division_template = {
 						name = "Absolute Monarchist Loyalists"
 						is_locked = no
-	 
+
 						regiments = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
@@ -1400,7 +1400,7 @@ focus_tree = {
 							infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
-							
+
 							artillery_brigade = { x = 2 y = 0 }
 						}
 						support = {
@@ -1430,7 +1430,7 @@ focus_tree = {
 					division_template = {
 						name = "Peasant Divisions"
 						is_locked = no
-	 
+
 						regiments = {
 							militia = { x = 0 y = 0 }
 							militia = { x = 0 y = 1 }
@@ -1458,13 +1458,13 @@ focus_tree = {
 						has_country_flag = SIA_appeal_to_industrialists_flag
 					}
 
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = artillery_equipment_1
 						amount = 150
 						producer = SIA
 					}
 
-					add_equipment_to_stockpile = { 
+					add_equipment_to_stockpile = {
 						type = infantry_equipment_0
 						amount = 1700
 						producer = SIA
@@ -1475,7 +1475,7 @@ focus_tree = {
 							has_tech = tech_support
 						}
 
-						add_equipment_to_stockpile = { 
+						add_equipment_to_stockpile = {
 							type = support_equipment
 							amount = 150
 							producer = SIA
@@ -1493,7 +1493,7 @@ focus_tree = {
 						limit = { original_tag = SIA }
 						transfer_navy = {
 							target = ROOT
-							is_government_in_exile = no 
+							is_government_in_exile = no
 						}
 					}
 
@@ -1521,7 +1521,7 @@ focus_tree = {
 							marine = { x = 1 y = 1 }
 						}
 						support = {
-							
+
 						}
 					}
 
@@ -1529,7 +1529,7 @@ focus_tree = {
 						create_unit = {
 							division = "name = \"Royal Thai Marine Corps\" division_template = \"Royal Thai Marine Corps\" start_experience_factor = 0.5 start_equipment_factor = 0.5 start_manpower_factor = 1"
 							owner = ROOT
-							allow_spawning_on_enemy_provs = yes 
+							allow_spawning_on_enemy_provs = yes
 							count = 1
 						}
 					}
@@ -1537,7 +1537,7 @@ focus_tree = {
 				}
 
 			}
-			
+
 		}
 	}
 
@@ -1655,7 +1655,7 @@ focus_tree = {
 				add_trait = {
 					character = SIA_ananda_mahidol # optional if inside character scope
 					trait = SIA_ananda_scholar_1
-					ideology = despotism 
+					ideology = despotism
 				}
 			}
 			else_if = {
@@ -1663,7 +1663,7 @@ focus_tree = {
 				add_trait = {
 					character = SIA_ananda_mahidol # optional if inside character scope
 					trait = SIA_ananda_scholar_2
-					ideology = despotism 
+					ideology = despotism
 				}
 
 			}
@@ -1673,7 +1673,7 @@ focus_tree = {
 				add_trait = {
 					character = SIA_ananda_mahidol # optional if inside character scope
 					trait = SIA_ananda_scholar_2
-					ideology = despotism 
+					ideology = despotism
 				}
 			}
 
@@ -1761,7 +1761,7 @@ focus_tree = {
 				}
 			}
 
-			
+
 		}
 	}
 
@@ -1795,18 +1795,18 @@ focus_tree = {
 			custom_effect_tooltip =  available_political_advisor
 			show_ideas_tooltip = SIA_wan_waithayakon
 
-			custom_effect_tooltip = newline_tt 
+			custom_effect_tooltip = newline_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SIA_dhani_nivat
 
-			custom_effect_tooltip = newline_tt 
+			custom_effect_tooltip = newline_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SIA_rambai_barni
 
-			custom_effect_tooltip = newline_tt 
+			custom_effect_tooltip = newline_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SIA_bowardej
-		
+
 		}
 	}
 
@@ -1842,7 +1842,7 @@ focus_tree = {
 				promote_leader = yes
 				country_leader = {
 					ideology = despotism
-					traits = { SIA_the_absolutist_regent } 
+					traits = { SIA_the_absolutist_regent }
 				}
 			}
 		}
@@ -1902,7 +1902,7 @@ focus_tree = {
 				promote_leader = yes
 				country_leader = {
 					ideology = despotism
-					traits = { SIA_the_soldier_regent } 
+					traits = { SIA_the_soldier_regent }
 				}
 			}
 		}
@@ -1958,7 +1958,7 @@ focus_tree = {
 				promote_leader = yes
 				country_leader = {
 					ideology = despotism
-					traits = { SIA_the_constitutionalist_regent } 
+					traits = { SIA_the_constitutionalist_regent }
 				}
 			}
 		}
@@ -2061,7 +2061,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_to_lay_the_bait
-		icon = GFX_focus_SIA_to_lay_the_bait 
+		icon = GFX_focus_SIA_to_lay_the_bait
 		x = -7
 		y = 1
 		relative_position_id = SIA_defenders_of_constitutional_liberty
@@ -2169,9 +2169,9 @@ focus_tree = {
 				}
 
 				set_politics = {
-	  				ruling_party = democratic
-	  				elections_allowed = yes
-	  			}
+					ruling_party = democratic
+					elections_allowed = yes
+				}
 
 				set_country_flag = SIA_turn_off_the_khana_ratsadon
 				if = {
@@ -2247,14 +2247,14 @@ focus_tree = {
 			retire_character = SIA_phichit_kriangsakphichit
 			custom_effect_tooltip =  newline_tt
 			add_timed_idea = {
-			 	idea = idea_SIA_purged_military
-			 	days = 365
+				idea = idea_SIA_purged_military
+				days = 365
 			 }
 
 			 custom_effect_tooltip = SIA_the_songsuradet_rebellion_historical_tt2
 
 			 effect_tooltip = {
-			 	 add_ideas = idea_SIA_rehabilitated_military
+				 add_ideas = idea_SIA_rehabilitated_military
 			 }
 			 custom_effect_tooltip =  newline_tt
 
@@ -2279,15 +2279,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
-			
+
 			add_ideas = idea_SIA_the_military_oversight_bureau
 
-			set_variable_to_random = { 
-				var = SIA_time_for_mob_to_investigate_someone 
+			set_variable_to_random = {
+				var = SIA_time_for_mob_to_investigate_someone
 				min =  5
 				max =  9
 				integer = yes
-			} 
+			}
 			set_variable = { SIA_mob_investigation_counter = 0 }
 			random_army_leader = {
 				add_timed_unit_leader_trait = {
@@ -2298,9 +2298,9 @@ focus_tree = {
 
 			custom_effect_tooltip = newline_tt
 			custom_effect_tooltip = SIA_military_oversight_bureau_tt
-		 	add_offsite_building = {
-			 	type = arms_factory
-			 	level = 1
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			 }
 		}
 	}
@@ -2354,10 +2354,10 @@ focus_tree = {
 					infrastructure > 0
 				}
 				damage_building = {
-					type = infrastructure 
-					damage = 0.2# levels of damage 
+					type = infrastructure
+					damage = 0.2# levels of damage
 				}
-				
+
 			}
 
 		}
@@ -2593,7 +2593,7 @@ focus_tree = {
 
 				if = {
 					limit = { check_variable = { SIA_countries_that_like_me > 5 } }
-					
+
 					random_core_state = {
 						limit = {
 							is_controlled_by = ROOT
@@ -2622,7 +2622,7 @@ focus_tree = {
 							uses = 1
 							category = land_doctrine
 						}
-					} 
+					}
 				}
 			}
 		}
@@ -2673,9 +2673,9 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-			 	remove_idea = idea_SIA_the_yellow_dossier
-			 	add_idea = idea_SIA_the_yellow_dossier_2
-			 } 
+				remove_idea = idea_SIA_the_yellow_dossier
+				add_idea = idea_SIA_the_yellow_dossier_2
+			 }
 		}
 	}
 
@@ -2757,7 +2757,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {  
+	focus = {
 		id = SIA_mobilize_the_defenders_of_siam
 		icon = GFX_focus_generic_home_defense
 		x = 0
@@ -2838,7 +2838,7 @@ focus_tree = {
 						NOT = { has_war_with = ROOT }
 					}
 				}
-				USA = { 
+				USA = {
 					is_faction_leader = yes
 					has_government = democratic
 					NOT = { has_war_with = ROOT }
@@ -2858,7 +2858,7 @@ focus_tree = {
 						is_faction_leader = yes
 						has_government = democratic
 						NOT = { has_war_with = ROOT }
-						NOT = { 
+						NOT = {
 							any_allied_country = {
 								has_war_with = ROOT
 							}
@@ -2893,7 +2893,7 @@ focus_tree = {
 						is_faction_leader = yes
 						has_government = democratic
 						NOT = { has_war_with = ROOT }
-						NOT = { 
+						NOT = {
 							any_allied_country = {
 								has_war_with = ROOT
 							}
@@ -2988,8 +2988,8 @@ focus_tree = {
 				add_to_tech_sharing_group = commonwealth_research
 			}
 			else_if = {
-				limit = { 
-					is_in_faction_with = USA 
+				limit = {
+					is_in_faction_with = USA
 					USA = { is_faction_leader = yes }
 				}
 				add_to_tech_sharing_group = us_research
@@ -3076,9 +3076,9 @@ focus_tree = {
 							level = 2
 							instant_build = yes
 							province= {
-		  			  			all_provinces = yes
-			 		  			limit_to_victory_point > 0
-		   			  			limit_to_coastal = yes
+								all_provinces = yes
+								limit_to_victory_point > 0
+								limit_to_coastal = yes
 
 							}
 						}
@@ -3088,9 +3088,9 @@ focus_tree = {
 							level = 2
 							instant_build = yes
 							province= {
-		  			  			all_provinces = yes
-			 		  			limit_to_victory_point = yes
-		   			  			limit_to_coastal = yes
+								all_provinces = yes
+								limit_to_victory_point = yes
+								limit_to_coastal = yes
 
 							}
 						}
@@ -3131,9 +3131,9 @@ focus_tree = {
 			random_core_state = {
 				limit = {
 					free_building_slots = {
-					 	building = dockyard 
-					 	size > 2 
-						include_locked = yes 	
+						building = dockyard
+						size > 2
+						include_locked = yes
 					}
 					is_coastal = yes
 				}
@@ -3163,7 +3163,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = SIA_prepare_for_a_pacific_war
 		icon = GFX_focus_jap_pacific_guardian
@@ -3194,9 +3194,9 @@ focus_tree = {
 			random_core_state = {
 				limit = {
 					free_building_slots = {
-					 	building = dockyard 
-					 	size > 1 
-						include_locked = yes 	
+						building = dockyard
+						size > 1
+						include_locked = yes
 					}
 					is_coastal = yes
 				}
@@ -3372,7 +3372,7 @@ create_equipment_variant = {
 					version_name = "Chakri Class"
 				}
 				requested_factories = 5
-				progress = 0.6 
+				progress = 0.6
 			}
 
 			add_equipment_production = {
@@ -3450,7 +3450,7 @@ create_equipment_variant = {
 		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = idea_SIA_specialist_marine_forces
 			if = {
 				limit = { NOT = { has_tech = marines } }
@@ -3626,14 +3626,14 @@ create_equipment_variant = {
 				name = SIA_a_land_war_in_asia
 				bonus = 0.25
 				uses = 2
-				category = support_tech 
+				category = support_tech
 			}
 
 			add_tech_bonus = {
 				name = SIA_a_land_war_in_asia
 				uses = 1
 				ahead_reduction = 1
-				category = artillery 
+				category = artillery
 			}
 
 			random_unit_leader = {
@@ -3683,7 +3683,7 @@ create_equipment_variant = {
 				CHI = {
 					random_core_state = {
 
-						
+
 						limit = {
 							is_fully_controlled_by = CHI
 							free_building_slots = {
@@ -3889,7 +3889,7 @@ create_equipment_variant = {
 			OR = {
 				AND = {
 					has_completed_focus = SIA_death_to_the_communists
-					
+
 					NOT = { country_exists = event_target:WTT_communist_china }
 					event_target:WTT_communist_china = { is_subject = yes }
 				}
@@ -3957,11 +3957,11 @@ create_equipment_variant = {
 		id = SIA_phibuns_premiership
 		icon = GFX_focus_SIA_phibuns_premiership
 		x = -1
-		y = 3 
-		relative_position_id = SIA_drum_up_irredentism	 
+		y = 3
+		relative_position_id = SIA_drum_up_irredentism
 		prerequisite = { focus =  SIA_drum_up_irredentism focus = SIA_sell_privy_purse_lands }
 		mutually_exclusive = { focus = SIA_to_lay_the_bait focus = SIA_the_midnight_meeting }
-		cost = 10 
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -3992,27 +3992,27 @@ create_equipment_variant = {
 
 		completion_reward = {
 
-	  		set_politics = {
-	  			ruling_party = fascism
-	  			elections_allowed = yes
-	  		}
-	  		set_party_name = {
-	  			ideology = fascism
-	  			long_name = SIA_neutrality_party_long #This is the military branch being swapped over
-	  			name = SIA_neutrality_party
-	  		}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = SIA_neutrality_party_long #This is the military branch being swapped over
+				name = SIA_neutrality_party
+			}
 
-	  		set_party_name = {
-	  			ideology = neutrality
-	  			long_name = SIA_neutrality_party_royalist_long
-	  			name = SIA_neutrality_party_royalist
-	  		}
+			set_party_name = {
+				ideology = neutrality
+				long_name = SIA_neutrality_party_royalist_long
+				name = SIA_neutrality_party_royalist
+			}
 
-	  		promote_character = SIA_plaek_phibunsongkhram
+			promote_character = SIA_plaek_phibunsongkhram
 
-	  		custom_effect_tooltip = newline_tt
-	  		SIA_increase_military_approval = yes
-	  		SIA_decrease_civilian_approval = yes
+			custom_effect_tooltip = newline_tt
+			SIA_increase_military_approval = yes
+			SIA_decrease_civilian_approval = yes
 
 			if = {
 				limit = {
@@ -4054,7 +4054,7 @@ create_equipment_variant = {
 	}
 
 	focus = {
-		id = SIA_pan_asian_weapon_standardization 
+		id = SIA_pan_asian_weapon_standardization
 		icon = GFX_focus_JAP_army_weapons_administration_hq
 		x = 2
 		y = 0
@@ -4132,7 +4132,7 @@ create_equipment_variant = {
 	}
 
 	focus = {
-		id = SIA_stronger_together 
+		id = SIA_stronger_together
 		icon = GFX_goal_generic_major_alliance
 		x = 3
 		y = 1
@@ -4185,10 +4185,10 @@ create_equipment_variant = {
 
 	focus = {
 		id = SIA_siamese_youth_movement
-		icon = GFX_focus_RAJ_military_into_the_workforce 
+		icon = GFX_focus_RAJ_military_into_the_workforce
 		x = 6
 		y = 1
-		relative_position_id = SIA_phibuns_premiership	
+		relative_position_id = SIA_phibuns_premiership
 		prerequisite = { focus =  SIA_phibuns_premiership }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4211,7 +4211,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_territorial_defense_student
 		x = 0
 		y = 1
-		relative_position_id = SIA_siamese_youth_movement	
+		relative_position_id = SIA_siamese_youth_movement
 		prerequisite = { focus =  SIA_siamese_youth_movement }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4229,9 +4229,9 @@ create_equipment_variant = {
 				limit = {
 					has_template = "Yuwachon Thahan"
 				}
-				delete_unit_template_and_units = { 
+				delete_unit_template_and_units = {
 					division_template = "Yuwachon Thahan"
-					disband = yes 
+					disband = yes
 				}
 			}
 
@@ -4247,7 +4247,7 @@ create_equipment_variant = {
 						has_tech = tech_support
 					}
 				}
-				
+
 				set_technology = {
 					tech_support = 1
 					popup = no
@@ -4278,7 +4278,7 @@ create_equipment_variant = {
 					militia = { x = 1 y = 0 }
 					militia = { x = 1 y = 1 }
 					militia = { x = 1 y = 2 }
-					
+
 				}
 				support = {
 					 field_hospital = { x = 0 y = 0 }
@@ -4286,21 +4286,21 @@ create_equipment_variant = {
 			}
 
 			random_owned_controlled_state = {
-				prioritize = { 1076 289 1078 } 
+				prioritize = { 1076 289 1078 }
 
 				create_unit = {
 					division = "name = \"52nd Yuwachon Thahan Training Unit\" division_template = \"Yuwachon Thahan\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
 					owner = SIA
-					prioritize_location = 7408 
-					allow_spawning_on_enemy_provs = no 
+					prioritize_location = 7408
+					allow_spawning_on_enemy_provs = no
 					count = 1
 				}
 
 				create_unit = {
 					division = "name = \"Provincial Police of Chumphon\" division_template = \"Yuwachon Thahan\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
 					owner = SIA
-					prioritize_location = 7408 
-					allow_spawning_on_enemy_provs = no 
+					prioritize_location = 7408
+					allow_spawning_on_enemy_provs = no
 					count = 1
 				}
 			}
@@ -4318,7 +4318,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_construct_mil_factory
 		x = -2
 		y = 1
-		relative_position_id = SIA_phibuns_premiership	
+		relative_position_id = SIA_phibuns_premiership
 		prerequisite = { focus = SIA_phibuns_premiership }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -4357,7 +4357,7 @@ create_equipment_variant = {
 		icon = GFX_goal_support_fascism
 		x = 0
 		y = 1
-		relative_position_id = SIA_phibuns_premiership	
+		relative_position_id = SIA_phibuns_premiership
 		prerequisite = { focus = SIA_phibuns_premiership }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4384,7 +4384,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_the_songsuradet_rebellion
 		x = -1
 		y = 1
-		relative_position_id = SIA_look_to_european_fascism	
+		relative_position_id = SIA_look_to_european_fascism
 		prerequisite = { focus = SIA_look_to_european_fascism }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -4406,7 +4406,7 @@ create_equipment_variant = {
 
 				country_event = {
 					id = siam.6
-					hours = 2 
+					hours = 2
 				}
 
 				custom_effect_tooltip = SIA_the_songsuradet_rebellion_alt_tt
@@ -4414,7 +4414,7 @@ create_equipment_variant = {
 			else = {
 				country_event = {
 					id = siam.3
-					hours = 2 
+					hours = 2
 				}
 
 				custom_effect_tooltip = SIA_the_songsuradet_rebellion_historical_tt
@@ -4432,7 +4432,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_court
 		x = -2
 		y = 1
-		relative_position_id = SIA_the_songsuradet_rebellion	
+		relative_position_id = SIA_the_songsuradet_rebellion
 		prerequisite = { focus = SIA_the_songsuradet_rebellion }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4486,7 +4486,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_fascist_propaganda
 		x = 2
 		y = 0
-		relative_position_id = SIA_sue_the_king_in_exile	
+		relative_position_id = SIA_sue_the_king_in_exile
 		prerequisite = { focus = SIA_the_songsuradet_rebellion }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4524,7 +4524,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_the_duty_of_the_thai_people_during_the_war_act
 		x = -1
 		y = 1
-		relative_position_id = SIA_suspend_ordinary_legal_procedures	
+		relative_position_id = SIA_suspend_ordinary_legal_procedures
 		prerequisite = { focus = SIA_suspend_ordinary_legal_procedures }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4552,7 +4552,7 @@ create_equipment_variant = {
 #		icon = GFX_focus_PLACEHOLDER
 #		x = 2
 #		y = 0
-#		relative_position_id = SIA_the_duty_of_the_thai_people_during_the_war_act	
+#		relative_position_id = SIA_the_duty_of_the_thai_people_during_the_war_act
 #		prerequisite = { focus = SIA_suspend_ordinary_legal_procedures }
 #		#mutually_exclusive = { focus =  }
 #		cost = 5
@@ -4604,7 +4604,7 @@ create_equipment_variant = {
 		icon = GFX_focus_ARG_keep_it_in_the_party
 		x = 3
 		y = 1
-		relative_position_id = SIA_look_to_european_fascism	
+		relative_position_id = SIA_look_to_european_fascism
 		prerequisite = { focus = SIA_look_to_european_fascism }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4632,7 +4632,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_thai_cultural_mandates
 		x = -1
 		y = 1
-		relative_position_id = SIA_department_of_publicity	
+		relative_position_id = SIA_department_of_publicity
 		prerequisite = { focus = SIA_department_of_publicity }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4663,7 +4663,7 @@ create_equipment_variant = {
 		icon = GFX_focus_prc_infiltration
 		x = 0
 		y = 1
-		relative_position_id = SIA_thai_cultural_mandates	
+		relative_position_id = SIA_thai_cultural_mandates
 		prerequisite = { focus = SIA_thai_cultural_mandates }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4697,8 +4697,8 @@ create_equipment_variant = {
 
 					if = {
 						limit = {
-							1076 = { 
-								check_variable = { building_level@arms_factory > 0 } 
+							1076 = {
+								check_variable = { building_level@arms_factory > 0 }
 							}
 
 							1077 = {
@@ -4707,12 +4707,12 @@ create_equipment_variant = {
 									size > 0
 									include_locked = yes
 								}
-							}	
+							}
 						}
 
 						1076 = {
 							remove_building = {
-								type = arms_factory 
+								type = arms_factory
 								level = 1
 							}
 						}
@@ -4721,7 +4721,7 @@ create_equipment_variant = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 								type = arms_factory
-								level = 1 
+								level = 1
 								instant_build = yes
 							}
 						}
@@ -4739,8 +4739,8 @@ create_equipment_variant = {
 
 					if = {
 						limit = {
-							1076 = { 
-								check_variable = { building_level@industrial_complex > 0 } 
+							1076 = {
+								check_variable = { building_level@industrial_complex > 0 }
 							}
 
 							1077 = {
@@ -4749,12 +4749,12 @@ create_equipment_variant = {
 									size > 0
 									include_locked = yes
 								}
-							}	
+							}
 						}
 
 						1076 = {
 							remove_building = {
-								type = industrial_complex 
+								type = industrial_complex
 								level = 1
 							}
 						}
@@ -4763,7 +4763,7 @@ create_equipment_variant = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 								type = industrial_complex
-								level = 1 
+								level = 1
 								instant_build = yes
 							}
 						}
@@ -4810,7 +4810,7 @@ create_equipment_variant = {
 						}
 					}
 
-					1077 = { 
+					1077 = {
 						add_building_construction = {
 							type = bunker
 							level = 3
@@ -4846,12 +4846,12 @@ create_equipment_variant = {
 			custom_effect_tooltip = newline_tt
 
 			add_timed_idea = {
-			 	idea = idea_SIA_desperate_gambit
-			 	days = 90
+				idea = idea_SIA_desperate_gambit
+				days = 90
 			 }
 
 			 custom_effect_tooltip = SIA_relocate_the_capital_to_phetchabun_tt2
-			
+
 		}
 	}
 
@@ -4860,7 +4860,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_radiotjanst # A thousand radios
 		x = 1
 		y = 1
-		relative_position_id = SIA_department_of_publicity	
+		relative_position_id = SIA_department_of_publicity
 		prerequisite = { focus = SIA_department_of_publicity }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4904,7 +4904,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_sala_chaloem_thai_movie_theater
 		x = 0
 		y = 1
-		relative_position_id = SIA_radio_propaganda	
+		relative_position_id = SIA_radio_propaganda
 		prerequisite = { focus = SIA_radio_propaganda }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4936,7 +4936,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_pan_thaiism
 		x = 7
 		y = 1
-		relative_position_id = SIA_the_midnight_meeting	
+		relative_position_id = SIA_the_midnight_meeting
 		prerequisite = { focus = SIA_the_midnight_meeting focus = SIA_phibuns_premiership }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -4950,7 +4950,7 @@ create_equipment_variant = {
 			OR = {
 				threat > 0.25
 				has_war_support > 0.2
-				
+
 				FRA = {
 					OR = {
 						has_war = yes
@@ -4962,7 +4962,7 @@ create_equipment_variant = {
 					tooltip = vichy_exist_trigger
 					country_exists = VIC
 				}
-				
+
 			}
 		}
 		#allow_branch = {
@@ -4979,7 +4979,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_retake_lost_british_states
 		x = -4
 		y = 1
-		relative_position_id = SIA_pan_thaiism	
+		relative_position_id = SIA_pan_thaiism
 		prerequisite = { focus = SIA_pan_thaiism }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -5016,7 +5016,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_recover_indochina
 		x = 2
 		y = 0
-		relative_position_id = SIA_retake_lost_british_states	
+		relative_position_id = SIA_retake_lost_british_states
 		prerequisite = { focus = SIA_pan_thaiism }
 		cost = 5
 		ai_will_do = {
@@ -5055,7 +5055,7 @@ create_equipment_variant = {
 		icon = GFX_goal_demand_sudetenland
 		x = 2
 		y = 0
-		relative_position_id = SIA_recover_indochina	
+		relative_position_id = SIA_recover_indochina
 		prerequisite = { focus = SIA_pan_thaiism }
 
 		cost = 10
@@ -5064,11 +5064,11 @@ create_equipment_variant = {
 		}
 		available = {
 		}
-		#allow_branch = { 
+		#allow_branch = {
 		#}
 
 		bypass = {
-			controls_state = 1069  
+			controls_state = 1069
 			controls_state = 1067
 			controls_state = 741
 			controls_state = 1068
@@ -5089,7 +5089,7 @@ create_equipment_variant = {
 						clear_array = SIA_demand_the_return_of_lost_territory_countries
 						clear_variable = SIA_demand_the_return_of_lost_territory_subject
 					}
-					
+
 					every_state = {
 						limit = {
 							controller = { NOT = { original_tag = SIA } }
@@ -5109,16 +5109,16 @@ create_equipment_variant = {
 						if = {
 							limit = {
 								NOT = { is_in_array = { array = ROOT.SIA_demand_the_return_of_lost_territory_countries value = owner } }
-								
+
 							}
-							add_to_array = { array = ROOT.SIA_demand_the_return_of_lost_territory_countries value = owner } 
+							add_to_array = { array = ROOT.SIA_demand_the_return_of_lost_territory_countries value = owner }
 						}
 
-				
-						owner = { add_to_array = { array = SIA_demand_the_return_of_lost_territory_states value = PREV } } 
+
+						owner = { add_to_array = { array = SIA_demand_the_return_of_lost_territory_states value = PREV } }
 					}
 
-				
+
 				for_each_scope_loop = {
 					array = SIA_demand_the_return_of_lost_territory_countries
 					if = {
@@ -5159,7 +5159,7 @@ create_equipment_variant = {
 					compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
 				}
 			}
-			
+
 			993 = {
 				is_controlled_by = ROOT
 				compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
@@ -5234,7 +5234,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_crack_down_of_foreign_merchants
 		x = 4
 		y = 0
-		relative_position_id = SIA_demand_the_return_of_lost_territory	
+		relative_position_id = SIA_demand_the_return_of_lost_territory
 		prerequisite = { focus = SIA_pan_thaiism }
 		#mutually_exclusive = { focus = }
 		cost = 5
@@ -5261,7 +5261,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_money_for_equipment
 		x = 0
 		y = 1
-		relative_position_id = SIA_crack_down_of_foreign_merchants	
+		relative_position_id = SIA_crack_down_of_foreign_merchants
 		prerequisite = { focus = SIA_crack_down_of_foreign_merchants }
 		#mutually_exclusive = { focus = }
 		cost = 5
@@ -5384,7 +5384,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 1
 		y = 1
-		relative_position_id = SIA_retake_lost_british_states	
+		relative_position_id = SIA_retake_lost_british_states
 		prerequisite = { focus = SIA_retake_lost_british_states focus = SIA_recover_indochina focus = SIA_demand_the_return_of_lost_territory }
 		#mutually_exclusive = { focus = }
 		cost = 5
@@ -5392,7 +5392,7 @@ create_equipment_variant = {
 			factor = 10
 		}
 		available = {
-			
+
 			custom_trigger_tooltip = {
 				tooltip = SIA_new_territories_administration_available_trigger
 				any_of_scopes = {
@@ -5400,7 +5400,7 @@ create_equipment_variant = {
 					is_controlled_by = ROOT
 				}
 			}
-			
+
 		}
 		#allow_branch = {
 		#}
@@ -5420,7 +5420,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_industry_1
 		x = 29
 		y = 0
-		relative_position_id = SIA_the_khana_ratsadon	
+		relative_position_id = SIA_the_khana_ratsadon
 		#prerequisite = { focus = SIA_for_the_preservation_of_siamese_independence }
 		#mutually_exclusive = { focus = SIA_for_the_preservation_of_siamese_independence }
 		cost = 5
@@ -5512,7 +5512,7 @@ create_equipment_variant = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-				}	
+				}
 			}
 
 			random_core_state = {
@@ -5529,7 +5529,7 @@ create_equipment_variant = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
-				}	
+				}
 			}
 
 			add_tech_bonus = {
@@ -5623,7 +5623,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 2
 		y = 1
-		relative_position_id = SIA_asian_financial_compact	
+		relative_position_id = SIA_asian_financial_compact
 		prerequisite = { focus = SIA_asian_financial_compact focus = SIA_revision_of_unequal_treaties }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -5654,7 +5654,7 @@ create_equipment_variant = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-				}	
+				}
 			}
 
 			random_core_state = {
@@ -5672,7 +5672,7 @@ create_equipment_variant = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-				}	
+				}
 			}
 
 
@@ -5684,7 +5684,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 2
 		y = 0
-		relative_position_id = SIA_renegotiate_teak_control	
+		relative_position_id = SIA_renegotiate_teak_control
 		prerequisite = { focus = SIA_asian_financial_compact focus = SIA_revision_of_unequal_treaties }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -5698,7 +5698,7 @@ create_equipment_variant = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			
+
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SIA_sanguan_tularaksa
 			custom_effect_tooltip = newline_tt
@@ -5725,7 +5725,7 @@ create_equipment_variant = {
 						type = industrial_complex
 						level = 1
 						instant_build = yes
-					}	
+					}
 				}
 			}
 			else = {
@@ -5747,7 +5747,7 @@ create_equipment_variant = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-				}	
+				}
 			}
 		}
 	}
@@ -5757,7 +5757,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 2
 		y = 0
-		relative_position_id = SIA_a_fledgling_tobacco_industry	
+		relative_position_id = SIA_a_fledgling_tobacco_industry
 		prerequisite = { focus = SIA_asian_financial_compact focus = SIA_revision_of_unequal_treaties }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -5920,7 +5920,7 @@ create_equipment_variant = {
 			set_variable = { SIA_aep_weekly_convoys_war_support = 0 }
 			set_variable = { SIA_aep_resource_trade_cost_bonus_per_factory = 0 }
 			set_variable = { SIA_aep_production_speed_arms_factory_factor = 0.05 }
-			
+
 			#Flame
 			set_variable = { SIA_aep_recruitable_population_factor = 0 }
 			set_variable = { SIA_aep_static_anti_air_hit_chance_factor = 0 }
@@ -5974,7 +5974,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = -2
 		y = 1
-		relative_position_id = SIA_the_bank_of_siam	
+		relative_position_id = SIA_the_bank_of_siam
 		prerequisite = { focus = SIA_the_bank_of_siam }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -5990,7 +5990,7 @@ create_equipment_variant = {
 		completion_reward = {
 			country_event = { id = siam.22 }
 			custom_effect_tooltip = SIA_uk_japan_focus_tt
-			event_option_tooltip = siam.22.a 
+			event_option_tooltip = siam.22.a
 			custom_effect_tooltip = SIA_japan_option_tt
 			event_option_tooltip = siam.22.b
 
@@ -5998,11 +5998,11 @@ create_equipment_variant = {
 	}
 
 	focus = {
-		id = SIA_baht_stabilization_act 
+		id = SIA_baht_stabilization_act
 		icon = GFX_focus_generic_currency_reforms
 		x = 2
 		y = 0
-		relative_position_id = SIA_send_bureaucrats_abroad	
+		relative_position_id = SIA_send_bureaucrats_abroad
 		prerequisite = { focus = SIA_the_bank_of_siam }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -6025,11 +6025,11 @@ create_equipment_variant = {
 	}
 
 	focus = {
-		id = SIA_siamese_development_cooperative 
+		id = SIA_siamese_development_cooperative
 		icon = GFX_focus_generic_low_cost_housing
 		x = 2
 		y = 0
-		relative_position_id = SIA_baht_stabilization_act	
+		relative_position_id = SIA_baht_stabilization_act
 		prerequisite = { focus = SIA_the_bank_of_siam }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -6056,7 +6056,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_boon_rawd_brewery
 		x = 2
 		y = 1
-		relative_position_id = SIA_siamese_development_cooperative	
+		relative_position_id = SIA_siamese_development_cooperative
 		prerequisite = { focus = SIA_siamese_development_cooperative focus = SIA_reduction_of_agricultural_yield_taxes}
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -6098,7 +6098,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_construct_civilian
 		x = 2
 		y = 0
-		relative_position_id = SIA_boon_rawd_brewery	
+		relative_position_id = SIA_boon_rawd_brewery
 		prerequisite = { focus = SIA_siamese_development_cooperative focus = SIA_reduction_of_agricultural_yield_taxes }
 
 		#mutually_exclusive = { focus =  }
@@ -6125,7 +6125,7 @@ create_equipment_variant = {
 						include_locked = yes
 					}
 				}
-				prioritize = { 1076 } 
+				prioritize = { 1076 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -6141,7 +6141,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SWI_issue_war_bonds
 		x = 0
 		y = 1
-		relative_position_id = SIA_baht_stabilization_act	
+		relative_position_id = SIA_baht_stabilization_act
 		prerequisite = { focus = SIA_baht_stabilization_act focus = SIA_siamese_development_cooperative focus = SIA_send_bureaucrats_abroad }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -6183,7 +6183,7 @@ create_equipment_variant = {
 			custom_effect_tooltip = SIA_national_savings_bond_all_adult_serve
 			show_ideas_tooltip = idea_SIA_nsb_all_adults_serve
 			custom_effect_tooltip = newline_tt
-			
+
 			custom_effect_tooltip = SIA_national_savings_bond_scraping_the_barrel
 			show_ideas_tooltip = idea_SIA_nsb_scraping_the_barrel
 			custom_effect_tooltip = newline_tt
@@ -6226,7 +6226,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_economic_recovery
 		x = 0
 		y = 1
-		relative_position_id = SIA_national_savings_bond	
+		relative_position_id = SIA_national_savings_bond
 		prerequisite = { focus = SIA_national_savings_bond }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -6260,7 +6260,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_production2
 		x = -2
 		y = 1
-		relative_position_id = SIA_deficit_spending	
+		relative_position_id = SIA_deficit_spending
 		prerequisite = { focus = SIA_deficit_spending }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -6278,7 +6278,7 @@ create_equipment_variant = {
 				name = SIA_acquire_light_tools
 				ahead_reduction = 1
 				uses = 1
-				category = industry # optional 
+				category = industry # optional
 				# technology  = technology_id # optional
 			}
 
@@ -6307,7 +6307,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_italian_destroyers
 		x = 4
 		y = 0
-		relative_position_id = SIA_acquire_light_tools	
+		relative_position_id = SIA_acquire_light_tools
 		prerequisite = { focus = SIA_deficit_spending }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -6332,7 +6332,7 @@ create_equipment_variant = {
 					level = 2
 					instant_build = yes
 					province = 7408
-				}				
+				}
 			}
 
 			random_core_state = {
@@ -6346,7 +6346,7 @@ create_equipment_variant = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
-					
+
 				}
 
 				add_extra_state_shared_building_slots = 2
@@ -6358,7 +6358,7 @@ create_equipment_variant = {
 					level = 2
 					instant_build = yes
 					province = 12230
-				}				
+				}
 				add_extra_state_shared_building_slots = 2
 			}
 
@@ -6373,18 +6373,18 @@ create_equipment_variant = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
-					
+
 				}
 			}
 		}
 	}
 
 	focus = {
-		id = SIA_mechanization_of_agriculture 
+		id = SIA_mechanization_of_agriculture
 		icon = GFX_focus_generic_modernizing_agriculture
 		x = -1
 		y = 1
-		relative_position_id = SIA_acquire_light_tools	
+		relative_position_id = SIA_acquire_light_tools
 		prerequisite = { focus = SIA_acquire_light_tools }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -6424,18 +6424,18 @@ create_equipment_variant = {
 				name = SIA_mechanization_of_agriculture
 				bonus = 1
 				uses = 1
-				category = motorized_equipment # optional 
+				category = motorized_equipment # optional
 				# technology  = technology_id # optional
 			}
 		}
 	}
 
 	focus = {
-		id = SIA_irrigation 
+		id = SIA_irrigation
 		icon = GFX_focus_SIA_irrigation
 		x = 2
 		y = 0
-		relative_position_id = SIA_mechanization_of_agriculture	
+		relative_position_id = SIA_mechanization_of_agriculture
 		prerequisite = { focus = SIA_acquire_light_tools }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -6471,7 +6471,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_chemical_imports
 		x = 3
 		y = 0
-		relative_position_id = SIA_irrigation	
+		relative_position_id = SIA_irrigation
 		prerequisite = { focus = SIA_railway_and_port_extensions }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -6488,12 +6488,12 @@ create_equipment_variant = {
 
 				#Change #SIA_chemical_imports_opinion_threshold for tooltip if changing this. Seems like value does take variables directly
 
-				if = { 
-					limit = { 
+				if = {
+					limit = {
 						country_exists = MAL
-						MAL = { has_opinion = { target = ROOT value > 75 } } 
-						NOT = { 
-							has_war_with = MAL 
+						MAL = { has_opinion = { target = ROOT value > 75 } }
+						NOT = {
+							has_war_with = MAL
 							is_embargoed_by = MAL
 						}
 					}
@@ -6508,12 +6508,12 @@ create_equipment_variant = {
 					}
 				}
 
-				if = { 
-					limit = { 
+				if = {
+					limit = {
 						country_exists = JAP
-						JAP = { has_opinion = { target = ROOT value > 75 } } 
-						NOT = { 
-							has_war_with = JAP 
+						JAP = { has_opinion = { target = ROOT value > 75 } }
+						NOT = {
+							has_war_with = JAP
 							is_embargoed_by = JAP
 						}
 					}
@@ -6530,13 +6530,13 @@ create_equipment_variant = {
 				}
 
 
-				if = { 
-					limit = { 
+				if = {
+					limit = {
 						country_exists = INS
-						INS = { has_opinion = { target = ROOT value > 75 } } 
-						
-						NOT = { 
-							has_war_with = INS 
+						INS = { has_opinion = { target = ROOT value > 75 } }
+
+						NOT = {
+							has_war_with = INS
 							is_embargoed_by = INS
 						}
 					}
@@ -6553,12 +6553,12 @@ create_equipment_variant = {
 				}
 
 
-				if = { 
-					limit = { 
+				if = {
+					limit = {
 						country_exists = ENG
-						ENG = { has_opinion = { target = ROOT value > 75 } } 
-						NOT = { 
-							has_war_with = ENG 
+						ENG = { has_opinion = { target = ROOT value > 75 } }
+						NOT = {
+							has_war_with = ENG
 							is_embargoed_by = ENG
 						}
 					}
@@ -6580,7 +6580,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_self_management
 		x = 0
 		y = 1
-		relative_position_id = SIA_mechanization_of_agriculture	
+		relative_position_id = SIA_mechanization_of_agriculture
 		prerequisite = { focus = SIA_mechanization_of_agriculture }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -6691,7 +6691,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 3
 		y = 1
-		relative_position_id = SIA_farmers_into_the_city	
+		relative_position_id = SIA_farmers_into_the_city
 		prerequisite = { focus = SIA_farmers_into_the_city }
 		prerequisite = { focus = SIA_chemical_imports }
 		#mutually_exclusive = { focus =  }
@@ -6749,7 +6749,7 @@ create_equipment_variant = {
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = 0
 		y = 1
-		relative_position_id = SIA_foreign_currency_exchange	
+		relative_position_id = SIA_foreign_currency_exchange
 		prerequisite = { focus = SIA_foreign_currency_exchange }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -6772,7 +6772,7 @@ create_equipment_variant = {
 					}
 					is_controlled_by = ROOT
 				}
-				prioritize = { 1076 } 
+				prioritize = { 1076 }
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -6788,7 +6788,7 @@ create_equipment_variant = {
 			unlock_decision_tooltip = {
 				decision = SIA_public_credit_repayment
 				show_effect_tooltip = yes
-				show_modifiers = yes 
+				show_modifiers = yes
 			}
 
 		}
@@ -6799,7 +6799,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_a_modern_economy
 		x = 3
 		y = 1
-		relative_position_id = SIA_public_credit	
+		relative_position_id = SIA_public_credit
 		prerequisite = { focus = SIA_public_credit }
 		prerequisite = { focus = SIA_textile_mills }
 		#mutually_exclusive = { focus =  }
@@ -6827,7 +6827,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_agricultural_subsidies
 		x = -2
 		y = 1
-		relative_position_id = SIA_thai_rice_company	
+		relative_position_id = SIA_thai_rice_company
 		prerequisite = { focus = SIA_thai_rice_company }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -6851,10 +6851,10 @@ create_equipment_variant = {
 			effect_tooltip = {
 				add_tech_bonus = {
 					name = SIA_agricultural_tax_reduction
-					bonus = 0.25 
+					bonus = 0.25
 					ahead_reduction = 2
 					uses = 1
-					category = industry 
+					category = industry
 				}
 			}
 		}
@@ -6865,7 +6865,7 @@ create_equipment_variant = {
 		icon = GFX_focus_ARG_anti_corruption_policies
 		x = 2
 		y = 1
-		relative_position_id = SIA_thai_rice_company	
+		relative_position_id = SIA_thai_rice_company
 		prerequisite = { focus = SIA_thai_rice_company }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -6900,7 +6900,7 @@ create_equipment_variant = {
 		icon = GFX_focus_mex_privatisation
 		x = 0
 		y = 2
-		relative_position_id = SIA_diversity_foreign_reserves	
+		relative_position_id = SIA_diversity_foreign_reserves
 		prerequisite = { focus = SIA_diversity_foreign_reserves }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -6951,7 +6951,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_resource_extraction
 		x = 2
 		y = 1
-		relative_position_id = SIA_contingency_funds	
+		relative_position_id = SIA_contingency_funds
 		prerequisite = { focus = SIA_contingency_funds }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -6973,7 +6973,7 @@ create_equipment_variant = {
 				}
 
 				set_technology = { fuel_silos = 1 popup = no }
-				
+
 				effect_tooltip = { #Tooltip doesn't appear if fuel silos isn't unlocked with free_building_slots...
 					random_core_state = {
 						limit = {
@@ -7011,7 +7011,7 @@ create_equipment_variant = {
 				name = SIA_fuel_oil_act
 				bonus = 0.5
 				uses = 1
-				category = synth_resources 
+				category = synth_resources
 			}
 
 
@@ -7023,7 +7023,7 @@ create_equipment_variant = {
 					name = SIA_fuel_oil_act
 					bonus = 0.5
 					uses = 1
-					category = cat_air_engine 
+					category = cat_air_engine
 				}
 			}
 
@@ -7035,7 +7035,7 @@ create_equipment_variant = {
 					name = SIA_fuel_oil_act
 					bonus = 0.5
 					uses = 1
-					category = cat_air_engine 
+					category = cat_air_engine
 				}
 			}
 		}
@@ -7046,7 +7046,7 @@ create_equipment_variant = {
 		icon = GFX_focus_ARG_develop_the_electricity_sector
 		x = 2
 		y = 0
-		relative_position_id = SIA_fuel_oil_act	
+		relative_position_id = SIA_fuel_oil_act
 		prerequisite = { focus = SIA_contingency_funds }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -7064,7 +7064,7 @@ create_equipment_variant = {
 				name = SIA_siam_electricity_company
 				ahead_reduction = 1
 				uses = 1
-				category = electronics # optional 
+				category = electronics # optional
 				# technology  = technology_id # optional
 			}
 
@@ -7080,7 +7080,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_price_controls
 		x = 0
 		y = 1
-		relative_position_id = SIA_reduction_of_agricultural_yield_taxes	
+		relative_position_id = SIA_reduction_of_agricultural_yield_taxes
 		prerequisite = { focus = SIA_reduction_of_agricultural_yield_taxes }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -7104,12 +7104,12 @@ create_equipment_variant = {
 		}
 	}
 
- 	focus = {
+	focus = {
 		id = SIA_census_the_hill_tribes
 		icon = GFX_focus_ETH_freedom_at_gunpoint
 		x = 0
 		y = 1
-		relative_position_id = SIA_revise_the_taxation_system	
+		relative_position_id = SIA_revise_the_taxation_system
 		prerequisite = { focus = SIA_revise_the_taxation_system }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -7141,7 +7141,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_farmland
 		x = 2
 		y = 0
-		relative_position_id = SIA_revise_the_taxation_system	
+		relative_position_id = SIA_revise_the_taxation_system
 		prerequisite = { focus = SIA_reduction_of_agricultural_yield_taxes }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -7156,7 +7156,7 @@ create_equipment_variant = {
 
 		completion_reward = {
 
-			custom_effect_tooltip = idea_SIA_agrarian_economical_policy_modify 
+			custom_effect_tooltip = idea_SIA_agrarian_economical_policy_modify
 			add_to_variable = { SIA_aep_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 			add_to_variable = { SIA_aep_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 			add_to_variable = { SIA_aep_min_export = 0.15 tooltip = min_export_tt }
@@ -7170,7 +7170,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_pad_thai
 		x = 0
 		y = 1
-		relative_position_id = SIA_thai_rice_company	
+		relative_position_id = SIA_thai_rice_company
 		prerequisite = { focus = SIA_thai_rice_company }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -7195,7 +7195,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_rice_husk_steam_turbines
 		x = 0
 		y = 1
-		relative_position_id = SIA_fuel_oil_act	
+		relative_position_id = SIA_fuel_oil_act
 		prerequisite = { focus = SIA_fuel_oil_act }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -7282,8 +7282,8 @@ create_equipment_variant = {
 
 			unlock_decision_tooltip = {
 				decision = open_mae_moh_lignite_mine
-				show_effect_tooltip = yes 
-				show_modifiers = yes 
+				show_effect_tooltip = yes
+				show_modifiers = yes
 			}
 		}
 	}
@@ -7293,7 +7293,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_use_ships_as_generators
 		x = 1
 		y = 1
-		relative_position_id = SIA_rice_husk_steam_turbines	
+		relative_position_id = SIA_rice_husk_steam_turbines
 		prerequisite = { focus = SIA_domestic_tin_smelters focus = SIA_rice_husk_steam_turbines }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -7316,7 +7316,7 @@ create_equipment_variant = {
 		icon = GFX_focus_research
 		x = 4
 		y = 1
-		relative_position_id = SIA_railway_and_port_extensions	
+		relative_position_id = SIA_railway_and_port_extensions
 		prerequisite = { focus = SIA_railway_and_port_extensions focus = SIA_prepare_for_the_next_blockade }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -7339,7 +7339,7 @@ create_equipment_variant = {
 		icon = GFX_focus_research
 		x = 0
 		y = 1
-		relative_position_id = SIA_kasetsart_university	
+		relative_position_id = SIA_kasetsart_university
 		prerequisite = { focus = SIA_kasetsart_university }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -7383,13 +7383,13 @@ create_equipment_variant = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-				
+
 			custom_effect_tooltip = idea_SIA_agrarian_economical_policy_modify
 			add_to_variable = { SIA_aep_convoy_retreat_speed = 0.2 tooltip = convoy_retreat_speed_tt }
 			add_to_variable = { SIA_aep_weekly_convoys_war_support = 0.003 tooltip = weekly_convoys_war_support_tt }
 			add_to_variable = { SIA_aep_resource_trade_cost_bonus_per_factory = 1 tooltip = resource_trade_cost_bonus_per_factory_tt }
 
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = convoy_1
 				amount = 35
 				producer = SIA
@@ -7411,7 +7411,7 @@ create_equipment_variant = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
 		}
 	}
@@ -7421,7 +7421,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 2
 		y = 0
-		relative_position_id = SIA_prepare_for_the_next_blockade	
+		relative_position_id = SIA_prepare_for_the_next_blockade
 		prerequisite = { focus = SIA_contingency_funds }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -7435,7 +7435,7 @@ create_equipment_variant = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			custom_effect_tooltip = idea_SIA_agrarian_economical_policy_modify 
+			custom_effect_tooltip = idea_SIA_agrarian_economical_policy_modify
 			add_to_variable = { SIA_aep_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
 
 
@@ -7446,11 +7446,11 @@ create_equipment_variant = {
 	}
 
 	focus = {
-		id = SIA_war_material_substitutions 
+		id = SIA_war_material_substitutions
 		icon = GFX_focus_GER_factories_for_resources
 		x = 0
 		y = 1
-		relative_position_id = SIA_prepare_for_the_next_blockade	
+		relative_position_id = SIA_prepare_for_the_next_blockade
 		prerequisite = { focus = SIA_prepare_for_the_next_blockade focus = SIA_domestic_arms_industry }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -7476,7 +7476,7 @@ create_equipment_variant = {
 		icon = GFX_focus_CONGO_copper_cartridges
 		x = 2
 		y = 0
-		relative_position_id = SIA_war_material_substitutions	
+		relative_position_id = SIA_war_material_substitutions
 		prerequisite = { focus = SIA_domestic_arms_industry focus = SIA_prepare_for_the_next_blockade }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -7527,7 +7527,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_built_to_withstand_every_flame
 		x = 1
 		y = 1
-		relative_position_id = SIA_war_material_substitutions	
+		relative_position_id = SIA_war_material_substitutions
 		prerequisite = { focus = SIA_war_material_substitutions }
 		prerequisite = { focus = SIA_royal_thai_ordnance_factory  }
 		#mutually_exclusive = { focus =  }
@@ -7544,7 +7544,7 @@ create_equipment_variant = {
 		completion_reward = {
 			custom_effect_tooltip = idea_SIA_agrarian_economical_policy_modify
 			add_to_variable = { SIA_aep_surrender_limit = 0.15 tooltip = surrender_limit_tt }
-		
+
 			add_to_variable = { SIA_aep_recruitable_population_factor = 0.10 tooltip = conscription_factor_tt }
 			add_to_variable = { SIA_aep_static_anti_air_hit_chance_factor = 0.2 tooltip = static_anti_air_hit_chance_factor_tt }
 			add_to_variable = { SIA_aep_supply_consumption_factor = -0.10 tooltip = supply_consumption_factor_tt }
@@ -7563,7 +7563,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_army_of_siam
 		x = 18
 		y = 0
-		relative_position_id = SIA_industrialization_drive	
+		relative_position_id = SIA_industrialization_drive
 		#prerequisite = { focus = }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -7589,7 +7589,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_prepare_for_a_short_war
 		x = -2
 		y = 1
-		relative_position_id = SIA_the_army_of_siam	
+		relative_position_id = SIA_the_army_of_siam
 		prerequisite = { focus = SIA_the_army_of_siam }
 		mutually_exclusive = { focus = SIA_intermediate_war_preparation focus = SIA_prepare_for_a_long_war }
 		cost = 5
@@ -7640,7 +7640,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_intermediate_war_preparation
 		x = 2
 		y = 0
-		relative_position_id = SIA_plan_for_a_short_war	
+		relative_position_id = SIA_plan_for_a_short_war
 		prerequisite = { focus = SIA_the_army_of_siam }
 		mutually_exclusive = { focus = SIA_plan_for_a_short_war focus = SIA_prepare_for_a_long_war }
 		cost = 5
@@ -7657,7 +7657,7 @@ create_equipment_variant = {
 			custom_effect_tooltip = idea_SIA_the_army_of_siam_tt
 			add_to_variable = { SIA_army_of_siam_production_speed_industrial_complex_factor = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
 			add_to_variable = { SIA_army_of_siam_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
-			
+
 		}
 	}
 
@@ -7666,7 +7666,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_prepare_for_a_long_war
 		x = 2
 		y = 0
-		relative_position_id = SIA_intermediate_war_preparation	
+		relative_position_id = SIA_intermediate_war_preparation
 		prerequisite = { focus = SIA_the_army_of_siam }
 		mutually_exclusive = { focus = SIA_plan_for_a_short_war focus = SIA_intermediate_war_preparation }
 		cost = 5
@@ -7719,7 +7719,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SWE_let_fly_all_guns
 		x = -2
 		y = 0
-		relative_position_id = SIA_specialized_warfare	
+		relative_position_id = SIA_specialized_warfare
 		prerequisite = { focus = SIA_the_army_of_siam }
 		mutually_exclusive = { focus = SIA_specialized_warfare }
 		cost = 5
@@ -7738,7 +7738,7 @@ create_equipment_variant = {
 				uses = 2
 				category = artillery
 				name = SIA_artillery_reigns_supreme
-			}	
+			}
 			add_mastery = {
 				amount = 50
 				track = combat_support
@@ -7750,7 +7750,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
 		y = 1
-		relative_position_id = SIA_intermediate_war_preparation	
+		relative_position_id = SIA_intermediate_war_preparation
 		prerequisite = { focus = SIA_plan_for_a_short_war focus = SIA_intermediate_war_preparation focus = SIA_prepare_for_a_long_war }
 		#mutually_exclusive = { }
 		cost = 5
@@ -7810,7 +7810,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_radar
 		x = -2
 		y = 2
-		relative_position_id = SIA_prepare_northern_infrastructure_for_war	
+		relative_position_id = SIA_prepare_northern_infrastructure_for_war
 		prerequisite = { focus = SIA_prepare_northern_infrastructure_for_war }
 		mutually_exclusive = { focus = SIA_directorate_of_aeronautical_engineering }
 		cost = 5
@@ -7855,7 +7855,7 @@ create_equipment_variant = {
 		icon = GFX_focus_generic_air_research_boost
 		x = 4
 		y = 0
-		relative_position_id = SIA_yield_the_air_war	
+		relative_position_id = SIA_yield_the_air_war
 		prerequisite = { focus = SIA_prepare_northern_infrastructure_for_war }
 		mutually_exclusive = { focus = SIA_yield_the_air_war }
 		cost = 5
@@ -7883,7 +7883,7 @@ create_equipment_variant = {
 					name = SIA_directorate_of_aeronautical_engineering #Usually the name of the focus decision or event that grants the bonus
 					bonus = 1
 					uses = 1
-					category = light_air 
+					category = light_air
 				}
 			}
 
@@ -8009,8 +8009,8 @@ create_equipment_variant = {
 		completion_reward = {
 			capital_scope = {
 				if = {
-					limit = { 
-						air_base < 8 
+					limit = {
+						air_base < 8
 						is_controlled_by = ROOT
 					}
 					add_building_construction = {
@@ -8043,7 +8043,7 @@ create_equipment_variant = {
 		}
 	}
 
-	
+
 	focus = {
 		id = SIA_air_defense_of_the_kra
 		icon = GFX_focus_generic_air_defense
@@ -8303,7 +8303,7 @@ create_equipment_variant = {
 			event_option_tooltip = siam_air.2.a
 			custom_effect_tooltip = generic_or_tt
 			event_option_tooltip = siam_air.2.b
-			
+
 		}
 	}
 	focus = {
@@ -8742,7 +8742,7 @@ create_equipment_variant = {
 				uses = 3
 				category = plane_modules_tech
 			}
-			
+
 			custom_effect_tooltip = newline_tt
 			if = {
 				limit = { has_dlc = "Arms Against Tyranny" }
@@ -8805,7 +8805,7 @@ create_equipment_variant = {
 					level = 1
 					instant_build = yes
 				}
-								
+
 			}
 			custom_effect_tooltip = SIA_hawk_iii_max_efficiency_tt
 			if = {
@@ -8894,7 +8894,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_the_thunder_at_the_gates
 		x = 0
 		y = 1
-		relative_position_id = SIA_artillery_reigns_supreme	
+		relative_position_id = SIA_artillery_reigns_supreme
 		prerequisite = { focus = SIA_artillery_reigns_supreme }
 		#mutually_exclusive = {  }
 		cost = 5
@@ -8944,7 +8944,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_night_time_training
 		x = 0
 		y = 1
-		relative_position_id = SIA_specialized_warfare	
+		relative_position_id = SIA_specialized_warfare
 		prerequisite = { focus = SIA_specialized_warfare }
 		#mutually_exclusive = {  }
 		cost = 10
@@ -8970,7 +8970,7 @@ create_equipment_variant = {
 		icon = GFX_focus_SIA_steel_arteries
 		x = 1
 		y = 1
-		relative_position_id = SIA_the_thunder_at_the_gates	
+		relative_position_id = SIA_the_thunder_at_the_gates
 		prerequisite = { focus = SIA_the_thunder_at_the_gates focus = SIA_night_time_training }
 		#mutually_exclusive = {  }
 		cost = 5
@@ -9061,10 +9061,10 @@ create_equipment_variant = {
 					controls_state = 286
 					controls_state = 741
 					controls_state = 1017
-					controls_state = 1066 
-					controls_state = 1067 
-					controls_state = 1068 
-					controls_state = 1069 
+					controls_state = 1066
+					controls_state = 1067
+					controls_state = 1068
+					controls_state = 1069
 				}
 			}
 		}
@@ -9078,7 +9078,7 @@ create_equipment_variant = {
 				uses = 3
 				category = armor
 				name = SIA_reverse_engineer_allied_tanks
-			}	
+			}
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
@@ -9093,9 +9093,9 @@ create_equipment_variant = {
 					 name = "V-76"
                     type = light_tank_chassis_2
 
-                   upgrades = {       
+                   upgrades = {
                        tank_nsb_engine_upgrade = 10
-                       tank_nsb_armor_upgrade = 2 
+                       tank_nsb_armor_upgrade = 2
                    }
                     modules={
                         main_armament_slot=tank_small_cannon_2
@@ -9104,9 +9104,9 @@ create_equipment_variant = {
                         suspension_type_slot=tank_christie_suspension
                         armor_type_slot=tank_welded_armor
                     }
-                    
+
                     model = "FRA_light_armor_entity"
-                    icon = "GFX_ENG_improved_light_tank_medium" 
+                    icon = "GFX_ENG_improved_light_tank_medium"
 					allow_without_tech = yes
 				}
 			}
@@ -9215,7 +9215,7 @@ create_equipment_variant = {
 
 	#########################
 	###   Submit or Die   ###
-	######################### 
+	#########################
 
 	focus = {
 		id = SIA_reluctant_submission
@@ -9279,7 +9279,7 @@ create_equipment_variant = {
 		icon = GFX_focus_ARG_defense_and_democracy
 		x = -3
 		y = 1
-		relative_position_id = SIA_reluctant_submission	
+		relative_position_id = SIA_reluctant_submission
 		prerequisite = { focus = SIA_reluctant_submission }
 		mutually_exclusive = { focus = SIA_the_phayap_army }
 		cost = 5
@@ -9303,7 +9303,7 @@ create_equipment_variant = {
 			set_Variable = { SIA_seri_thai_cw_scale = 0 }
 			SIA_increase_civilian_approval = yes
 			SIA_decrease_military_approval = yes
-			
+
 		}
 	}
 
@@ -9312,7 +9312,7 @@ create_equipment_variant = {
 		icon = GFX_focus_RAJ_circuvment_demobilization_restrictions
 		x = -1
 		y = 1
-		relative_position_id = SIA_seri_thai	
+		relative_position_id = SIA_seri_thai
 		prerequisite = { focus = SIA_seri_thai }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -9340,7 +9340,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
 		y = 1
-		relative_position_id = SIA_contact_the_south_east_asia_command	
+		relative_position_id = SIA_contact_the_south_east_asia_command
 		prerequisite = { focus = SIA_contact_the_south_east_asia_command }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -9493,25 +9493,25 @@ create_equipment_variant = {
 				}
 
 				random_owned_controlled_state = {
-					create_unit = { 
-						division = "name = \"Expeditionary Paratrooper Division\" division_template = \"Expeditionary Paratrooper Division\" start_experience_factor = 1.0" 
+					create_unit = {
+						division = "name = \"Expeditionary Paratrooper Division\" division_template = \"Expeditionary Paratrooper Division\" start_experience_factor = 1.0"
 						owner = PREV
 					}
 				}
 				random_owned_controlled_state = {
-					create_unit = { 
-						division = "name = \"Expeditionary Paratrooper Division\" division_template = \"Expeditionary Paratrooper Division\" start_experience_factor = 1.0" 
+					create_unit = {
+						division = "name = \"Expeditionary Paratrooper Division\" division_template = \"Expeditionary Paratrooper Division\" start_experience_factor = 1.0"
 						owner = PREV
 					}
 				}
 				random_owned_controlled_state = {
-					create_unit = { 
-						division = "name = \"Expeditionary Paratrooper Division\" division_template = \"Expeditionary Paratrooper Division\" start_experience_factor = 1.0" 
+					create_unit = {
+						division = "name = \"Expeditionary Paratrooper Division\" division_template = \"Expeditionary Paratrooper Division\" start_experience_factor = 1.0"
 						owner = PREV
 					}
 				}
 			}
-		} 
+		}
 	}
 
 	focus = {
@@ -9545,7 +9545,7 @@ create_equipment_variant = {
 				if = { limit = { has_character = SIA_adul_aduldejajaras } SIA_adul_aduldejajaras = { set_character_flag = SIA_seri_thai_swayed } }
 				if = { limit = { has_character = SIA_phraya_songsuradet } SIA_phraya_songsuradet = { set_character_flag = SIA_seri_thai_swayed } }
 				if = { limit = { has_character = SIA_prince_subhasvasti } SIA_prince_subhasvasti = { set_character_flag = SIA_seri_thai_swayed } }
-				
+
 				add_to_variable = { SIA_seri_thai_cw_scale = party_popularity@democratic }
 
 				if = {
@@ -9625,16 +9625,16 @@ create_equipment_variant = {
 				name = SIA_the_phayap_army
 			}
 			random_owned_controlled_state = {
-				create_unit = { 
-					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0" 
+				create_unit = {
+					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0"
 					owner = PREV
 				}
-				create_unit = { 
-					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0" 
+				create_unit = {
+					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0"
 					owner = PREV
 				}
-				create_unit = { 
-					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0" 
+				create_unit = {
+					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0"
 					owner = PREV
 				}
 			}
@@ -9829,8 +9829,8 @@ create_equipment_variant = {
 
 		completion_reward = {
 			add_timed_idea = {
-			 	idea = idea_SIA_standing_our_ground_mission_temp_buff
-			 	days = 90
+				idea = idea_SIA_standing_our_ground_mission_temp_buff
+				days = 90
 			 }
 			#activate_mission = SIA_standing_our_ground_mission
 
@@ -9854,7 +9854,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_trade
 		x = -1
 		y = 1
-		relative_position_id = SIA_standing_our_ground	
+		relative_position_id = SIA_standing_our_ground
 		prerequisite = { focus = SIA_standing_our_ground }
 		mutually_exclusive = { focus = SIA_japanese_fighters }
 		cost = 5
@@ -9879,7 +9879,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_air_fighter
 		x = 2
 		y = 0
-		relative_position_id = SIA_ask_for_the_release_of_american_commodities	
+		relative_position_id = SIA_ask_for_the_release_of_american_commodities
 		prerequisite = { focus = SIA_standing_our_ground }
 		mutually_exclusive = { focus = SIA_ask_for_the_release_of_american_commodities }
 		cost = 5
@@ -9907,7 +9907,7 @@ create_equipment_variant = {
 		icon = GFX_focus_ARG_establish_the_free_association
 		x = 2
 		y = 0
-		relative_position_id = SIA_japanese_fighters	
+		relative_position_id = SIA_japanese_fighters
 		prerequisite = { focus = SIA_standing_our_ground }
 		#mutually_exclusive = { focus = }
 		cost = 1
@@ -9942,20 +9942,20 @@ create_equipment_variant = {
 			}
 			custom_effect_tooltip = newline_tt
 			random_owned_controlled_state = {
-				create_unit = { 
-					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0" 
+				create_unit = {
+					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0"
 					owner = PREV
 				}
-				create_unit = { 
-					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0" 
+				create_unit = {
+					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0"
 					owner = PREV
 				}
-				create_unit = { 
-					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0" 
+				create_unit = {
+					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0"
 					owner = PREV
 				}
-				create_unit = { 
-					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0" 
+				create_unit = {
+					division = "name = \"Royal Thai Division\" division_template = \"Royal Thai Division\" start_experience_factor = 1.0"
 					owner = PREV
 				}
 			}
@@ -9967,7 +9967,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
 		y = 1
-		relative_position_id = SIA_ask_for_the_release_of_american_commodities	
+		relative_position_id = SIA_ask_for_the_release_of_american_commodities
 		prerequisite = { focus = SIA_ask_for_the_release_of_american_commodities }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -9996,7 +9996,7 @@ create_equipment_variant = {
 		icon = GFX_focus_GER_factories_for_resources
 		x = 2
 		y = 0
-		relative_position_id = SIA_singaporean_reinforcements	
+		relative_position_id = SIA_singaporean_reinforcements
 		prerequisite = { focus = SIA_japanese_fighters }
 		#mutually_exclusive = { focus =  }
 		cost = 5
@@ -10022,7 +10022,7 @@ create_equipment_variant = {
 			JAP = {
 				country_event = {
 					id = siam.48
-					hours = 2 
+					hours = 2
 
 				}
 			}
@@ -10036,7 +10036,7 @@ create_equipment_variant = {
 		icon = GFX_goal_generic_political_pressure
 		x = 1
 		y = 1
-		relative_position_id = SIA_singaporean_reinforcements	
+		relative_position_id = SIA_singaporean_reinforcements
 		prerequisite = { focus = SIA_singaporean_reinforcements focus = SIA_aid_for_resources }
 		#mutually_exclusive = { focus =  }
 		cost = 10
@@ -10139,9 +10139,9 @@ create_equipment_variant = {
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
-					 	building = dockyard
-					 	size > 0
-					 	include_locked = yes
+						building = dockyard
+						size > 0
+						include_locked = yes
 					 }
 				}
 
@@ -10197,7 +10197,7 @@ create_equipment_variant = {
 		cost = 5
 		ai_will_do = {
 			factor = 10
-		} 
+		}
 		available = {
 		}
 		#allow_branch = {
@@ -10266,15 +10266,15 @@ create_equipment_variant = {
 				name = SIA_submarine_day
 			}
 			add_stability = 0.03
-   			add_war_support = 0.05
-			
+			add_war_support = 0.05
+
 			SIA_increase_military_approval = yes
 		}
 	}
 
 	focus = {
 		id = SIA_the_thonburi_dockyard_project
-		icon = GFX_focus_generic_navy_research_bonus  # 
+		icon = GFX_focus_generic_navy_research_bonus  #
 		x = -3
 		y = 2
 		relative_position_id = SIA_royal_thai_navy
@@ -10586,7 +10586,7 @@ create_equipment_variant = {
 						type = naval_facility
 						level = 1
 						instant_build = yes
-						province = 7408 
+						province = 7408
 					}
 				}
 			}
@@ -10747,8 +10747,3 @@ create_equipment_variant = {
 		}
 	}
 }
-
-	
-	
-
-

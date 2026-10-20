@@ -125,7 +125,7 @@ joint_focus = {
 			has_completed_focus = uk_empire_focus
 		}
 	}
-	
+
 	### UK OFFSET END ###
 
 	### USA OFFSET START ###
@@ -416,7 +416,7 @@ joint_focus = {
 		}
 
 		custom_effect_tooltip = ABDA_faction_membership_requirement_tt
-		
+
 		every_country = {
 			limit = {
 				OR = {

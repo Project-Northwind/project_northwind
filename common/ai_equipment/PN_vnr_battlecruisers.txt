@@ -13,7 +13,7 @@ naval_capital_battlecruiser = {
 			base = 0
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 10.0
@@ -48,7 +48,7 @@ naval_capital_battlecruiser = {
 			base = 0
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 10.0
@@ -84,7 +84,7 @@ naval_capital_battlecruiser = {
 			base = 0
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 10.0
@@ -112,4 +112,3 @@ naval_capital_battlecruiser = {
 		}
 	}
 }
-

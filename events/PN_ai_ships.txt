@@ -3,7 +3,7 @@ add_namespace = ai_ships
 # GER AI template 1940
 country_event = {
 	id = ai_ships.0
-	
+
 	hidden = yes
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
@@ -25,7 +25,7 @@ country_event = {
 # GER AI template 1943
 country_event = {
 	id = ai_ships.1
-	
+
 	hidden = yes
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
@@ -47,7 +47,7 @@ country_event = {
 # ENG AI template 1940
 country_event = {
 	id = ai_ships.2
-	
+
 	hidden = yes
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
@@ -69,7 +69,7 @@ country_event = {
 # ENG AI template 1943
 country_event = {
 	id = ai_ships.3
-	
+
 	hidden = yes
 	fire_only_once = yes
 	mean_time_to_happen = { days = 100 }
@@ -91,7 +91,7 @@ country_event = {
 # JAP AI template 1940
 country_event = {
 	id = ai_ships.4
-	
+
 	hidden = yes
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
@@ -111,7 +111,7 @@ country_event = {
 # JAP AI template 1943
 country_event = {
 	id = ai_ships.5
-	
+
 	hidden = yes
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
@@ -331,21 +331,21 @@ country_event = {
 				}
 				complete_special_project = sp:sp_air_radar
 				set_technology = {
-					improved_ship_hull_heavy = 1 
-					improved_ship_hull_light = 1 
-					improved_ship_hull_cruiser = 1 
+					improved_ship_hull_heavy = 1
+					improved_ship_hull_light = 1
+					improved_ship_hull_cruiser = 1
 					improved_ship_hull_submarine = 1
-					antiair2 = 1 
-					antiair3 = 1 
-					improved_fire_control_system = 1 
-					cavity_magnatron = 1 
-					basic_dp_light_battery = 1 
+					antiair2 = 1
+					antiair3 = 1
+					improved_fire_control_system = 1
+					cavity_magnatron = 1
+					basic_dp_light_battery = 1
 					improved_heavy_battery = 1
 					improved_super_heavy_battery = 1
-					improved_light_battery = 1 
-					advanced_ship_torpedo_launcher = 1 
+					improved_light_battery = 1
+					advanced_ship_torpedo_launcher = 1
 					improved_ship_hull_carrier = 1
-					improved_cruiser_armor = 1 
+					improved_cruiser_armor = 1
 					improved_heavy_armor = 1
 					sonar = 1
 					improved_sonar = 1
@@ -418,7 +418,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		NOT = { has_global_flag = naval_tech_1943 }
 		has_game_rule = { rule = allow_ai_tech_auto_unlock option = FREE }
 	}
@@ -430,17 +430,17 @@ country_event = {
 					is_ai = yes
 				}
 				set_technology = {
-					advanced_ship_hull_carrier = 1 
-					advanced_ship_hull_heavy = 1 
-					advanced_ship_hull_cruiser = 1 
-					advanced_ship_hull_light = 1 
+					advanced_ship_hull_carrier = 1
+					advanced_ship_hull_heavy = 1
+					advanced_ship_hull_cruiser = 1
+					advanced_ship_hull_light = 1
 					advanced_ship_hull_submarine = 1
-					antiair4 = 1 
-					antiair5 = 1 
-					advanced_fire_control_system = 1 
-					monopulse_radar = 1 
-					advanced_dp_light_battery = 1 
-					advanced_heavy_battery = 1 
+					antiair4 = 1
+					antiair5 = 1
+					advanced_fire_control_system = 1
+					monopulse_radar = 1
+					advanced_dp_light_battery = 1
+					advanced_heavy_battery = 1
 					advanced_light_battery = 1
 					advanced_heavy_armor = 1
 					advanced_cruiser_armor = 1
@@ -455,7 +455,7 @@ country_event = {
 
 					modern_ship_torpedo_launcher = 1
 					proximity_detonator = 1
-					
+
 				}
 				ai_get_navy_experience = yes
 				ai_get_mio_upgrade = yes
@@ -768,7 +768,7 @@ country_event = {
 			}
 			has_global_flag = naval_tech_1943
 		}
-		
+
 		NOT = { has_global_flag = naval_tech_1941 }
 		has_game_rule = { rule = allow_ai_tech_auto_unlock option = FREE }
 	}

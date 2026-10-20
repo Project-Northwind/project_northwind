@@ -8,7 +8,7 @@
 
 focus_tree = {
 	id = iceland_tree
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -20,19 +20,19 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1000 }  
+	continuous_focus_position = { x = 20 y = 1000 }
 	shared_focus = NORDIC_form_joint_alliance
-	
+
 	initial_show_position = {
 		x = 20
 		y = 0
 	}
 
-	#   # ### #   ### ###  ##  ###  #   #      ##  #  # ###      ### ###  ##  #  # 
-	## ##  #  #    #   #  #  # #  #  # #      #  # ## # #  #      #  #   #  # #  # 
-	# # #  #  #    #   #  #### ###    #       #### # ## #  #      #  ##  #    #### 
-	#   #  #  #    #   #  #  # #  #   #       #  # #  # #  #      #  #   #  # #  # 
-	#   # ### ### ###  #  #  # #  #   #       #  # #  # ###       #  ###  ##  #  # 
+	#   # ### #   ### ###  ##  ###  #   #      ##  #  # ###      ### ###  ##  #  #
+	## ##  #  #    #   #  #  # #  #  # #      #  # ## # #  #      #  #   #  # #  #
+	# # #  #  #    #   #  #### ###    #       #### # ## #  #      #  ##  #    ####
+	#   #  #  #    #   #  #  # #  #   #       #  # #  # #  #      #  #   #  # #  #
+	#   # ### ### ###  #  #  # #  #   #       #  # #  # ###       #  ###  ##  #  #
 
 	focus = {
 		id = ICE_expand_the_fishing_industry
@@ -90,7 +90,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			} 
+			}
 			100 = {
 				add_resource = {
 					type = steel
@@ -159,7 +159,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			custom_effect_tooltip = off_shore_drilling_tt 
+			custom_effect_tooltip = off_shore_drilling_tt
 		}
 	}
 
@@ -191,7 +191,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			IF = {
-				limit = { 
+				limit = {
 					has_idea = isolation
 				}
 				swap_ideas = {
@@ -253,9 +253,9 @@ focus_tree = {
 				tooltip = industrial_capacity_factory_tt
 			}
 
-			
-			
-			
+
+
+
 		}
 	}
 	focus = {
@@ -288,10 +288,10 @@ focus_tree = {
 			}
 			every_other_country = {
 				limit = {
-					is_major = yes 
+					is_major = yes
 					OR = {
 						has_government = ROOT
-						has_government = neutrality 
+						has_government = neutrality
 					}
 				}
 				add_opinion_modifier = {
@@ -366,7 +366,7 @@ focus_tree = {
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = ICE_eimskip
 		}
-	} 
+	}
 	focus = {
 		id = ICE_heavy_industry
 		icon = GFX_goal_generic_construct_civ_factory
@@ -463,7 +463,7 @@ focus_tree = {
 					}
 				}
 			}
-			
+
 		}
 	}
 	focus = {
@@ -605,7 +605,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 			}
-			
+
 		}
 	}
 	focus = {
@@ -641,7 +641,7 @@ focus_tree = {
 			add_equipment_subsidy = {
 				cic = 500
 				equipment_type = medium_plane_airframe
-				seller_trigger = ICE_allied_weapons_seller_trigger 
+				seller_trigger = ICE_allied_weapons_seller_trigger
 			}
 			IF = {
 				limit = {
@@ -657,7 +657,7 @@ focus_tree = {
 					}
 				}
 			}
-			
+
 		}
 	}
 	focus = {
@@ -676,12 +676,12 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = convoy
 				amount = 50
 				producer = ICE
 			}
- 
+
 			add_ideas = ICE_civilian_fleet
 
 		}
@@ -724,7 +724,7 @@ focus_tree = {
 				bonus = 0.25
 				uses = 2
 				category = air_equipment
-			} 
+			}
 			add_doctrine_cost_reduction = {
 				name = ICE_hrafninn_flygur
 				cost_reduction = 0.5
@@ -752,11 +752,11 @@ focus_tree = {
 		}
 	}
 
-	#  # ###  ## ###  ##  ###  ###  ##   ##  #   
-	#  #  #  #    #  #  # #  #  #  #  # #  # #   
-	####  #   #   #  #  # ###   #  #    #### #   
-	#  #  #    #  #  #  # #  #  #  #  # #  # #   
-	#  # ### ##   #   ##  #  # ###  ##  #  # ### 
+	#  # ###  ## ###  ##  ###  ###  ##   ##  #
+	#  #  #  #    #  #  # #  #  #  #  # #  # #
+	####  #   #   #  #  # ###   #  #    #### #
+	#  #  #    #  #  #  # #  #  #  #  # #  # #
+	#  # ### ##   #   ##  #  # ###  ##  #  # ###
 
 	focus = {
 		id = ICE_the_kingdom_of_iceland
@@ -781,7 +781,7 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ICE_bjorn_thordharson
 			show_ideas_tooltip = ICE_hermann_jonasson
-			
+
 		}
 	}
 	focus = {
@@ -795,9 +795,9 @@ focus_tree = {
 		cost = 10
 		available = {
 			threat > 0.05
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 			is_subject_of = DEN
 			OR = {
@@ -805,7 +805,7 @@ focus_tree = {
 				DEN = { has_completed_focus = DEN_unify_the_right }
 			}
 		}
-		cancel_if_invalid = no 
+		cancel_if_invalid = no
 		search_filters = {}
 
 		completion_reward = {
@@ -827,13 +827,13 @@ focus_tree = {
 		prerequisite = { focus = ICE_the_kingdom_of_iceland }
 		mutually_exclusive = { focus = ICE_united_we_stand }
 		x = 2
-		y = 1 
+		y = 1
 		relative_position_id = ICE_the_kingdom_of_iceland
 		cost = 10
 		available = {
 			threat > 0.05
 		}
-		cancel_if_invalid = no 
+		cancel_if_invalid = no
 		bypass = {
 			is_subject = no
 		}
@@ -858,12 +858,12 @@ focus_tree = {
 						has_dlc = "Together for Victory"
 					}
 				}
-				add_autonomy_score = { 
-					value = 100 
+				add_autonomy_score = {
+					value = 100
 					localization = ICE_declare_absolute_neutrality
 				}
 			}
-			add_ideas = neutrality_idea	
+			add_ideas = neutrality_idea
 		}
 	}
 	focus = {
@@ -876,9 +876,9 @@ focus_tree = {
 		relative_position_id = ICE_united_we_stand
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -888,7 +888,7 @@ focus_tree = {
 			navy_experience = 25
 			random_owned_state = {
 				limit = {
-					is_coastal = yes 
+					is_coastal = yes
 					is_controlled_by = ROOT
 					free_building_slots = {
 							building = dockyard
@@ -909,7 +909,7 @@ focus_tree = {
 				}
 				set_technology = {
 					coastal_defense_ships = 1
-					popup = yes 
+					popup = yes
 				}
 				set_technology = {
 	basic_battery = 1
@@ -957,7 +957,7 @@ create_equipment_variant = {
 			DEN = {
 				random_owned_state = {
 					limit = {
-						is_coastal = yes 
+						is_coastal = yes
 						is_controlled_by = PREV
 						free_building_slots = {
 							building = dockyard
@@ -977,7 +977,7 @@ create_equipment_variant = {
 
 		}
 
-		
+
 	}
 	focus = {
 		id = ICE_royal_marines
@@ -989,9 +989,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_united_we_stand
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1021,7 +1021,7 @@ create_equipment_variant = {
 	}
 
 	focus = {
-		id = ICE_the_icelandic_police_force 
+		id = ICE_the_icelandic_police_force
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = ICE_united_we_stand focus = ICE_declare_absolute_neutrality }
 
@@ -1030,9 +1030,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_united_we_stand
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1059,9 +1059,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_declare_absolute_neutrality
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1070,7 +1070,7 @@ create_equipment_variant = {
 		completion_reward = {
 			random_owned_state = {
 				limit = {
-					is_controlled_by_ROOT_or_ally = yes 
+					is_controlled_by_ROOT_or_ally = yes
 					infrastructure < 5
 				}
 				add_extra_state_shared_building_slots = 1
@@ -1082,7 +1082,7 @@ create_equipment_variant = {
 			}
 			random_owned_state = {
 				limit = {
-					is_controlled_by_ROOT_or_ally = yes 
+					is_controlled_by_ROOT_or_ally = yes
 					naval_base < 10
 				}
 				add_extra_state_shared_building_slots = 1
@@ -1105,9 +1105,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_declare_absolute_neutrality
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 		bypass = {
@@ -1119,7 +1119,7 @@ create_equipment_variant = {
 		completion_reward = {
 			random_owned_state = {
 				limit = {
-					is_coastal = yes 
+					is_coastal = yes
 					is_controlled_by = ROOT
 					free_building_slots = {
 							building = industrial_complex
@@ -1139,10 +1139,10 @@ create_equipment_variant = {
 				uses = 2
 				category = industry
 				name = ICE_research_cooperation_tt
-			}	
+			}
 			IF = {
 				limit = {
-					is_subject = yes 
+					is_subject = yes
 				}
 				overlord = {
 					add_tech_bonus = {
@@ -1150,7 +1150,7 @@ create_equipment_variant = {
 						uses = 1
 						category = industry
 						name = ICE_overlord_research_cooperation_tt
-					}	
+					}
 				}
 			}
 		}
@@ -1165,9 +1165,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_joint_shipbuilding_programme
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1178,20 +1178,20 @@ create_equipment_variant = {
 			add_tech_bonus = {
 				bonus = 0.25
 				uses = 2
-				category = dd_tech 
+				category = dd_tech
 				name = ICE_research_cooperation_tt
-			}	
+			}
 			IF = {
 				limit = {
-					is_subject = yes 
+					is_subject = yes
 				}
 				overlord = {
 					add_tech_bonus = {
 						bonus = 0.25
 						uses = 1
-						category = dd_tech 
+						category = dd_tech
 						name = ICE_overlord_research_cooperation_tt
-					}	
+					}
 				}
 			}
 		}
@@ -1206,9 +1206,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_patrolling_the_atlantic
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 			OR = {
 				is_subject_of = DEN
@@ -1223,7 +1223,7 @@ create_equipment_variant = {
 				name = ICE_industrial_cooperation
 				bonus = 0.2
 				uses = 1
-				category = industry # optional 
+				category = industry # optional
 				# technology  = technology_id # optional
 			}
 			random_owned_state = {
@@ -1232,7 +1232,7 @@ create_equipment_variant = {
 						building = industrial_complex
 						size > 0
 						include_locked = yes
-						
+
 					}
 				}
 				prioritize = { 100 } #optional: to pick those states first if they fulfill the limit
@@ -1243,7 +1243,7 @@ create_equipment_variant = {
 		}
 	}
 	focus = {
-		id = ICE_joint_military_training 
+		id = ICE_joint_military_training
 		icon = GFX_focus_chi_army_reform
 		prerequisite = { focus = ICE_royal_marines }
 
@@ -1252,9 +1252,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_royal_marines
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1288,9 +1288,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_infrastructure_projects
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1299,7 +1299,7 @@ create_equipment_variant = {
 		completion_reward = {
 			air_experience = 25
 			IF = {
-				limit = { 
+				limit = {
 					100 = { air_base < 10}
 				}
 				100 = {
@@ -1315,13 +1315,13 @@ create_equipment_variant = {
 				uses = 2
 				category = air_equipment
 				name = ICE_gardhur_airfield
-			}	
+			}
 
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = transport_plane_equipment
 				amount = 25
 				producer = ROOT
-			}	
+			}
 
 		}
 	}
@@ -1335,18 +1335,18 @@ create_equipment_variant = {
 		relative_position_id = ICE_engineering_projects
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
 		search_filters = {}
 
 		completion_reward = {
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 50 
+				amount = 50
 				producer = ICE
 			}
 			custom_effect_tooltip = ICE_the_icelandic_economy_modifier_tt
@@ -1367,9 +1367,9 @@ create_equipment_variant = {
 		cost = 10
 		available = {
 			threat > 0.15
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1398,7 +1398,7 @@ create_equipment_variant = {
 		}
 	}
 	focus = {
-		id = ICE_expand_industrial_complexes 
+		id = ICE_expand_industrial_complexes
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = ICE_gardhur_airfield focus = ICE_the_merchant_fleet  focus = ICE_joint_military_training focus = ICE_patrolling_the_atlantic}
 
@@ -1407,9 +1407,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_gardhur_airfield
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1437,9 +1437,9 @@ create_equipment_variant = {
 		cost = 10
 		available = {
 			threat > 0.15
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1464,9 +1464,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_the_merchant_fleet
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1480,14 +1480,14 @@ create_equipment_variant = {
 				swap_ideas = {
 					remove_idea = ICE_fishing_industry
 					add_idea = ICE_fishing_industry_2
-				} 
+				}
 			}
 
 			ENG = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = huge_increase
-				}	
+				}
 			}
 
 			add_equipment_subsidy = {
@@ -1505,9 +1505,9 @@ create_equipment_variant = {
 						remove_idea = ICE_fishing_industry
 						add_idea = ICE_fishing_industry_2
 					}
-				}		
+				}
 			}
-			
+
 		}
 	}
 
@@ -1516,7 +1516,7 @@ create_equipment_variant = {
 		id = ICE_american_protection
 		icon = GFX_focus_generic_befriend_usa
 		prerequisite = { focus = ICE_political_unity }
-		dynamic = yes 
+		dynamic = yes
 		x = 1
 		y = 1
 		relative_position_id = ICE_political_unity
@@ -1524,38 +1524,38 @@ create_equipment_variant = {
 		ai_will_do = {
 			base = 1
 			modifier = {
-				factor = 0 
+				factor = 0
 				date < 1941.1.1
 			}
 			modifier = {
-				factor = 10 
+				factor = 10
 				date > 1941.4.1
 				threat > 0.8
-			}				
+			}
 		}
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 			OR = {
 				is_subject = no
 				is_subject_of = ENG
 			}
 			USA = {
-				has_government = democratic 
+				has_government = democratic
 			}
 			all_owned_state = {
 				is_fully_controlled_by = ROOT
 			}
 			IF = {
 				limit = {
-					is_subject = yes 
+					is_subject = yes
 				}
 				OVERLORD = { has_war = yes }
 			}
 			ELSE = {
-				has_war = yes 
+				has_war = yes
 			}
 		}
 
@@ -1586,12 +1586,12 @@ create_equipment_variant = {
 		}
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 			is_subject_of = DEN
-			has_war = yes 
+			has_war = yes
 		}
 
 		search_filters = {}
@@ -1616,9 +1616,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_not_standing_idly_by
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1643,9 +1643,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_political_unity
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1673,7 +1673,7 @@ create_equipment_variant = {
 			#	seller_trigger = ICE_allied_weapons_seller_trigger
 			#}
 
-			
+
 		}
 	}
 	focus = {
@@ -1686,13 +1686,13 @@ create_equipment_variant = {
 		relative_position_id = ICE_american_protection
 		cost = 10
 		available = {
-			OR = { 
+			OR = {
 				is_subject_of = USA
-				is_in_faction_with = USA 
+				is_in_faction_with = USA
 			}
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 			USA = { has_government = democratic }
 			has_tech = interwar_antiair
@@ -1708,7 +1708,7 @@ create_equipment_variant = {
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = anti_air_building 
+					type = anti_air_building
 					level = 3
 					instant_build = yes
 				}
@@ -1730,9 +1730,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_expanding_the_university_of_reykjavik
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1768,9 +1768,9 @@ create_equipment_variant = {
 		relative_position_id = ICE_modernizing_the_island
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1783,7 +1783,7 @@ create_equipment_variant = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
-						include_locked = yes 
+						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 4
@@ -1791,7 +1791,7 @@ create_equipment_variant = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
-				}	
+				}
 			}
 			custom_effect_tooltip = ICE_the_icelandic_economy_modifier_tt
 			add_to_variable = {
@@ -1822,7 +1822,7 @@ create_equipment_variant = {
 			DEN = {
 				country_event = {
 					id = iceland_events.12
-					hours = 1 
+					hours = 1
 				}
 			}
 		}
@@ -1830,16 +1830,16 @@ create_equipment_variant = {
 	focus = {
 		id = ICE_republicanism
 		icon = GFX_focus_ICE_republicanism
-		prerequisite = { focus = ICE_trade_relations } 
+		prerequisite = { focus = ICE_trade_relations }
 
 		x = 0
 		y = 1
 		relative_position_id = ICE_trade_relations
 		cost = 10
 		available = {
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 		}
 
@@ -1853,12 +1853,12 @@ create_equipment_variant = {
 			hidden_effect = {
 				IF = {
 					limit = {
-						is_subject = no 
+						is_subject = no
 					}
 					country_event = {
 						id = iceland_events.45
 						hours = 16
-						random_hours = 32 
+						random_hours = 32
 					}
 				}
 			}
@@ -1874,13 +1874,13 @@ create_equipment_variant = {
 		relative_position_id = ICE_keflavik_airbase
 		cost = 10
 		available = {
-			OR = { 
+			OR = {
 				is_subject_of = USA
-				is_in_faction_with = USA 
+				is_in_faction_with = USA
 			}
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 			USA = { has_government = democratic }
 		}
@@ -1921,15 +1921,15 @@ create_equipment_variant = {
 		relative_position_id = ICE_american_investments
 		cost = 10
 		available = {
-			OR = { 
+			OR = {
 				is_subject_of = USA
-				is_in_faction_with = USA 
+				is_in_faction_with = USA
 			}
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
-			USA = { has_government = democratic } 
+			USA = { has_government = democratic }
 		}
 
 		search_filters = {}
@@ -1948,13 +1948,13 @@ create_equipment_variant = {
 		relative_position_id = ICE_american_soldiers
 		cost = 10
 		available = {
-			OR = { 
+			OR = {
 				is_subject_of = USA
-				is_in_faction_with = USA 
+				is_in_faction_with = USA
 			}
-			OR = { 
-				has_government = democratic 
-				has_government = neutrality  
+			OR = {
+				has_government = democratic
+				has_government = neutrality
 			}
 			USA = { has_government = democratic }
 		}
@@ -1966,28 +1966,28 @@ create_equipment_variant = {
 				name = ICE_iceland_defense_force
 				bonus = 0.25
 				uses = 1
-				category = artillery # optional 
+				category = artillery # optional
 				# technology  = technology_id # optional
 			}
 			add_tech_bonus = {
 				name = ICE_iceland_defense_force
 				bonus = 0.25
 				uses = 3
-				category = infantry_weapons # optional 
+				category = infantry_weapons # optional
 				# technology  = technology_id # optional
 			}
 			add_tech_bonus = {
 				name = ICE_iceland_defense_force
 				bonus = 0.25
 				uses = 3
-				category = support_tech # optional 
+				category = support_tech # optional
 				# technology  = technology_id # optional
 			}
 			add_tech_bonus = {
 				name = ICE_iceland_defense_force
 				bonus = 0.25
 				uses = 1
-				category = electronics # optional 
+				category = electronics # optional
 				# technology  = technology_id # optional
 			}
 			army_experience = 50
@@ -1995,15 +1995,15 @@ create_equipment_variant = {
 	}
 
 
-	 ##  #   ### ### ###  #  #  ##  ### ### #   # ###     ###   ##  #   ### ### ###  ##   ##  #   
-	#  # #    #  #   #  # ## # #  #  #   #  #   # #       #  # #  # #    #   #   #  #  # #  # #   
-	#### #    #  ##  ###  # ## ####  #   #   # #  ##      ###  #  # #    #   #   #  #    #### #   
-	#  # #    #  #   #  # #  # #  #  #   #   # #  #       #    #  # #    #   #   #  #  # #  # #   
-	#  # ###  #  ### #  # #  # #  #  #  ###   #   ###     #     ##  ### ###  #  ###  ##  #  # ### 
+	 ##  #   ### ### ###  #  #  ##  ### ### #   # ###     ###   ##  #   ### ### ###  ##   ##  #
+	#  # #    #  #   #  # ## # #  #  #   #  #   # #       #  # #  # #    #   #   #  #  # #  # #
+	#### #    #  ##  ###  # ## ####  #   #   # #  ##      ###  #  # #    #   #   #  #    #### #
+	#  # #    #  #   #  # #  # #  #  #   #   # #  #       #    #  # #    #   #   #  #  # #  # #
+	#  # ###  #  ### #  # #  # #  #  #  ###   #   ###     #     ##  ### ###  #  ###  ##  #  # ###
 
-	focus = { 
-		id = ICE_not_our_king  
-		icon = GFX_focus_ICE_not_our_king  
+	focus = {
+		id = ICE_not_our_king
+		icon = GFX_focus_ICE_not_our_king
 		#prerequisite = { focus = }
 		mutually_exclusive = { focus = ICE_the_kingdom_of_iceland }
 		x = 28
@@ -2025,7 +2025,7 @@ create_equipment_variant = {
 				ideology = communism
 				popularity = 0.05
 			}
-			
+
 			swap_ideas = {
 				remove_idea = ICE_christian_x
 				add_idea = ICE_christian_x_worse
@@ -2052,11 +2052,11 @@ create_equipment_variant = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
-						include_locked = yes 
+						include_locked = yes
 					}
 				}
 
-				prioritize = { 100 } 
+				prioritize = { 100 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -2286,7 +2286,7 @@ create_equipment_variant = {
 		search_filters = {}
 
 		completion_reward = {
-			
+
 			add_timed_idea = {
 				idea = ICE_general_strike
 				days = 30
@@ -2331,7 +2331,7 @@ create_equipment_variant = {
 		}
 	}
 	focus = {
-		id = ICE_break_with_the_crown 
+		id = ICE_break_with_the_crown
 		icon = GFX_focus_ICE_break_with_the_crown
 		prerequisite = { focus = ICE_general_strike focus = ICE_organize_a_march }
 
@@ -2362,7 +2362,7 @@ create_equipment_variant = {
 			custom_effect_tooltip = ICE_break_with_the_crown_tt
 
 			IF = {
-				limit = { 
+				limit = {
 					has_completed_focus = ICE_rally_the_workers_of_reykjavik
 				}
 				custom_effect_tooltip = ICE_the_icelandic_economy_modifier_tt
@@ -2388,8 +2388,8 @@ create_equipment_variant = {
 						tooltip = industrial_capacity_factory_tt
 					}
 				}
-			}	
-			
+			}
+
 
 			IF = {
 				limit = {
@@ -2411,7 +2411,7 @@ create_equipment_variant = {
 			hidden_effect = {
 				IF = {
 					limit = {
-						is_subject = yes 
+						is_subject = yes
 					}
 					ROOT = {
 						country_event = {
@@ -2459,7 +2459,7 @@ create_equipment_variant = {
 				popularity = 0.15
 			}
 			set_politics = {
-				ruling_party = communism 
+				ruling_party = communism
 				elections_allowed = no
 			}
 			set_rule = { can_create_factions = yes }
@@ -2500,7 +2500,7 @@ create_equipment_variant = {
 				popularity = 0.05
 			}
 			set_politics = {
-				ruling_party = fascism 
+				ruling_party = fascism
 				elections_allowed = no
 			}
 			random_owned_state = {
@@ -2508,7 +2508,7 @@ create_equipment_variant = {
 					free_building_slots = {
 						building = arms_factory
 						size > 1
-						include_locked = yes 
+						include_locked = yes
 					}
 
 				}
@@ -2559,9 +2559,9 @@ create_equipment_variant = {
 			}
 
 			hidden_effect = {
-				delete_unit_template_and_units = { 
+				delete_unit_template_and_units = {
 					division_template = "Icelandic Expeditionary Force"
-					disband = yes #if yes, will refund equipment/manpower. 
+					disband = yes #if yes, will refund equipment/manpower.
 				}
 				division_template = {
 					name = "Icelandic Expeditionary Force"
@@ -2578,11 +2578,11 @@ create_equipment_variant = {
 				create_unit = {
 					division = "name = \"Icelandic Expeditionary Force\" division_template = \"Icelandic Expeditionary Force\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
 					owner = ROOT
-					
-					allow_spawning_on_enemy_provs = no 
-				
+
+					allow_spawning_on_enemy_provs = no
+
 					count = 1
-					
+
 				}
 			}
 		}
@@ -2594,7 +2594,7 @@ create_equipment_variant = {
 
 		x = 0
 		y = 1
-		relative_position_id = ICE_embrace_the_workers_revolution 
+		relative_position_id = ICE_embrace_the_workers_revolution
 		cost = 10
 		available = {
 		}
@@ -2607,7 +2607,7 @@ create_equipment_variant = {
 					free_building_slots = {
 						building = arms_factory
 						size > 1
-						include_locked = yes 
+						include_locked = yes
 					}
 
 				}
@@ -2637,7 +2637,7 @@ create_equipment_variant = {
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ICE_greyshirts
 		}
 	}
@@ -2655,7 +2655,7 @@ create_equipment_variant = {
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
- 
+
 		completion_reward = {
 			every_country = {
 				limit = {
@@ -2675,7 +2675,7 @@ create_equipment_variant = {
 			}
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = ICE_siemens
-		
+
 		}
 	}
 	focus = {
@@ -2748,13 +2748,13 @@ create_equipment_variant = {
 		y = 1
 		relative_position_id = ICE_organize_the_greyshirts
 		cost = 10
-		available = {  
+		available = {
 		}
 
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
-			add_ideas = ICE_viking_spirit 
+			add_ideas = ICE_viking_spirit
 			custom_effect_tooltip = ICE_viking_spirit_tt
 		}
 	}
@@ -2775,10 +2775,10 @@ create_equipment_variant = {
 		completion_reward = {
 			add_manpower = 15000
 			100 = { add_manpower = 10000 }
-			every_owned_state = { 
-				limit = { 
+			every_owned_state = {
+				limit = {
 					NOT = { state = 100 }
-					is_controlled_by_ROOT_or_ally = yes 
+					is_controlled_by_ROOT_or_ally = yes
 				}
 				add_manpower = 5000
 			}
@@ -2805,7 +2805,7 @@ create_equipment_variant = {
 				ICE_economy_research_speed_factor = 0.05
 				tooltip = research_speed_factor_tt
 			}
-			custom_effect_tooltip = ICE_international_research_community_tt 
+			custom_effect_tooltip = ICE_international_research_community_tt
 			every_country = {
 				limit = {
 					has_government = communism
@@ -2813,7 +2813,7 @@ create_equipment_variant = {
 					OR = {
 						tag = ICE
 						is_in_faction_with = ROOT
-						is_in_faction = no 
+						is_in_faction = no
 					}
 				}
 				add_to_tech_sharing_group = ICE_communist_tech_sharing_group
@@ -2908,8 +2908,8 @@ create_equipment_variant = {
 				}
 				country_event = {
 					id = iceland_events.23
-					hours = 1 
-					random_hours = 2 
+					hours = 1
+					random_hours = 2
 				}
 			}
 		}
@@ -2945,11 +2945,11 @@ create_equipment_variant = {
 		}
 	}
 
-	#   # ### #   ### ###  ##  ###  #   # 
-	## ##  #  #    #   #  #  # #  #  # #  
-	# # #  #  #    #   #  #### ###    #   
-	#   #  #  #    #   #  #  # #  #   #   
-	#   # ### ### ###  #  #  # #  #   #   
+	#   # ### #   ### ###  ##  ###  #   #
+	## ##  #  #    #   #  #  # #  #  # #
+	# # #  #  #    #   #  #### ###    #
+	#   #  #  #    #   #  #  # #  #   #
+	#   # ### ### ###  #  #  # #  #   #
 
 	focus = {
 		id = ICE_the_armed_forces_of_iceland
@@ -2963,7 +2963,7 @@ create_equipment_variant = {
 		available = {
 			threat > 0.1
 		}
-		cancel_if_invalid = no 
+		cancel_if_invalid = no
 		bypass = {
 			NOT = { has_idea = disarmed_nation }
 		}
@@ -3043,7 +3043,7 @@ create_equipment_variant = {
 					category = ship_modules_tech
 				}
 			}
-			
+
 			navy_experience = 20
 		}
 	}
@@ -3077,7 +3077,7 @@ create_equipment_variant = {
 			ELSE = {
 				navy_experience = 50
 			}
-			
+
 		}
 	}
 	focus = {
@@ -3116,7 +3116,7 @@ create_equipment_variant = {
 				}
 				air_experience = 25
 			}
-			
+
 		}
 	}
 	focus = {
@@ -3205,11 +3205,11 @@ create_equipment_variant = {
 					free_building_slots = {
 						building = arms_factory
 						size > 0
-						include_locked = yes 
+						include_locked = yes
 					}
 				}
 
-				prioritize = { 100 } 
+				prioritize = { 100 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -3217,7 +3217,7 @@ create_equipment_variant = {
 					instant_build = yes
 				}
 			}
-			
+
 		}
 	}
 	focus = {
@@ -3256,9 +3256,9 @@ create_equipment_variant = {
 		search_filters = {}
 
 		completion_reward = {
-			
-			add_ideas = ICE_professional_army_idea 
-			
+
+			add_ideas = ICE_professional_army_idea
+
 		}
 	}
 	focus = {
@@ -3277,8 +3277,8 @@ create_equipment_variant = {
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
-		completion_reward = { 
-			
+		completion_reward = {
+
 			add_ideas = ICE_conscription_idea
 
 		}
@@ -3297,7 +3297,7 @@ create_equipment_variant = {
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_ideas = ICE_civil_defence_organization
 
@@ -3312,12 +3312,12 @@ create_equipment_variant = {
 		y = 1
 		relative_position_id = ICE_a_profesional_army
 		cost = 10
-		available = { 
+		available = {
 		}
 
-		search_filters = {} 
+		search_filters = {}
 
-		completion_reward = { 
+		completion_reward = {
 
 			army_experience = 25
 
@@ -3345,7 +3345,7 @@ create_equipment_variant = {
 		search_filters = {}
 
 		completion_reward = {
-			
+
 			add_doctrine_cost_reduction = {
 				name = ICE_thungur_hnifur
 				cost_reduction = 0.25
@@ -3383,7 +3383,7 @@ create_equipment_variant = {
 		id = ICE_we_shall_defend_our_island
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = ICE_thungur_hnifur }
-		mutually_exclusive = { focus = ICE_death_from_above focus = ICE_taking_the_fight_to_our_enemies } 
+		mutually_exclusive = { focus = ICE_death_from_above focus = ICE_taking_the_fight_to_our_enemies }
 		x = 0
 		y = 1
 		relative_position_id = ICE_thungur_hnifur

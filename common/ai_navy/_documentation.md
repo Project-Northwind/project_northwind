@@ -62,7 +62,7 @@ goal_name = {
     blocked_for = {
         GER # If present, the goal will be disabled for the countries within this block
     }
-    
+
     min_priority = 5 # The minimum priority for this goal, see *Goal/Objective Scoring* above
     max_priority = 10 # The maximum priority for this goal, see *Goal/Objective Scoring* above
 }

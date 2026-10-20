@@ -18,13 +18,13 @@ guiTypes = {
 			name = "navy_box_background"
 			size={width=586 height=76}
 			position = { x = 78 y = 67 }
-		
+
 			background = {
 				name = "Background"
 				spriteType = "GFX_tiled_window_thin_border2"
 			}
 		}
-		
+
 		buttonType = {
 			name = "btn_target_submarine"
 			position = {x=86 y=75}
@@ -36,13 +36,13 @@ guiTypes = {
 			spriteType = "GFX_navalcombat_ship_icon_submarine"
 			position = { x=116 y=80 }
 			alwaysTransparent = yes
-		}				
+		}
 		buttonType = {
 			name = "btn_target_destroyer"
 			position = {x=200 y=75}
 			spriteType = "GFX_naval_target_btn"
 			clicksound = click_default
-		}						
+		}
 		iconType = {
 			name = "button_2_bg"
 			spriteType = "GFX_navalcombat_ship_icon_destroyer"
@@ -60,7 +60,7 @@ guiTypes = {
 			spriteType = "GFX_navalcombat_ship_icon_light_cruiser"
 			position = { x=344 y=80 }
 			alwaysTransparent = yes
-		}		
+		}
 		buttonType = {
 			name = "btn_target_heavy_cruiser"
 			position = {x=428 y=75}
@@ -72,7 +72,7 @@ guiTypes = {
 			spriteType = "GFX_navalcombat_ship_icon_heavy_cruiser"
 			position = { x=448 y=80 }
 			alwaysTransparent = yes
-		}		
+		}
 		buttonType = {
 			name = "btn_target_convoy"
 			position = {x=542 y=75 }
@@ -84,7 +84,7 @@ guiTypes = {
 			spriteType = "GFX_navalcombat_ship_icon_convoy"
 			position = { x=572 y=80 }
 			alwaysTransparent = yes
-		}		
+		}
 		buttonType = {
 			name = "btn_target_battle_cruiser"
 			position = {x=86 y=104}
@@ -96,7 +96,7 @@ guiTypes = {
 			spriteType = "GFX_navalcombat_ship_icon_battle_cruiser"
 			position = { x=96 y=107 }
 			alwaysTransparent = yes
-		}		
+		}
 		buttonType = {
 			name = "btn_target_battleship"
 			position = {x=200 y=104}
@@ -108,7 +108,7 @@ guiTypes = {
 			spriteType = "GFX_navalcombat_ship_icon_battleship"
 			position = { x=210 y=109 }
 			alwaysTransparent = yes
-		}		
+		}
 		buttonType = {
 			name = "btn_target_SH_battleship"
 			position = {x=314 y=104}
@@ -120,7 +120,7 @@ guiTypes = {
 			spriteType = "GFX_navalcombat_ship_icon_sh_battleship"
 			position = { x=324 y=109 }
 			alwaysTransparent = yes
-		}		
+		}
 		buttonType = {
 			name = "btn_target_carrier"
 			position = {x=428 y=104}
@@ -132,7 +132,7 @@ guiTypes = {
 			spriteType = "GFX_navalcombat_ship_icon_carrier"
 			position = { x=448 y=109 }
 			alwaysTransparent = yes
-		}		
+		}
 
 	}
 
@@ -576,12 +576,12 @@ guiTypes = {
 				clicksound = click_default
 				pdx_tooltip = "NAVY_REPAIR_NOW"
 			}
-			
+
 			dropDownBoxType = {
 				name = "defensive_stance_dropdown"
 				position = { x = 334 y = @nv_tb_btn_y }
 				size = { width = 37 height = 37 }
-				
+
 				expandButton = {
 					name = "defensive_stance_expand_button"
 					position = { x = 0 y = 0 }
@@ -625,7 +625,7 @@ guiTypes = {
 			dropDownBoxType = {
 				name = "repair_priority_dropdown"
 				position = { x = 424 y = @nv_tb_btn_y }
-				
+
 				expandButton = {
 					name = "repair_priority_expand_button"
 					position = { x = 0 y = 0 }
@@ -651,7 +651,7 @@ guiTypes = {
 						name = "Background"
 						quadTextureSprite ="GFX_tiled_window_1b_border"
 						position = { x = 0 y = 0 }
-					}						
+					}
 
 					gridBoxType = {
 						name = "button_grid"
@@ -667,7 +667,7 @@ guiTypes = {
 			dropDownBoxType = {
 				name = "aggressiveness_dropdown"
 				position = { x = 454 y = @nv_tb_btn_y }
-				
+
 				expandButton = {
 					name = "aggressiveness_expand_button"
 					position = { x = 0 y = 0 }
@@ -693,7 +693,7 @@ guiTypes = {
 						name = "Background"
 						quadTextureSprite ="GFX_tiled_window_1b_border"
 						position = { x = 0 y = 0 }
-					}					
+					}
 
 					gridBoxType = {
 						name = "button_grid"
@@ -748,7 +748,7 @@ guiTypes = {
 				spriteType = "GFX_NV_btn_aggressiveness_small"
 				alwaystransparent = yes
 			}
-			
+
 			iconType = {
 				name = "icon_defensive_stance"
 				position = {x = 334 y = @nv_tb_btn_y}
@@ -793,7 +793,7 @@ guiTypes = {
 			}
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "defensive_stand_item"
 		position = {x=0 y=0}
@@ -1019,7 +1019,7 @@ guiTypes = {
 		containerWindowType = {
 		    name = "home_base_view"
 		    position = { x=200 y=140 }
-			
+
 			buttonType = {
 				position = { x=0 y=-5 }
 				name = "automate_home_base_button"
@@ -1027,7 +1027,7 @@ guiTypes = {
 				clicksound = click_default
 				shortcut = "shift+s"
 			}
-			
+
             buttonType = {
                 name = "home_base_button"
                 position = { x=30 y=-5	 }
@@ -2435,7 +2435,7 @@ guiTypes = {
 			name = "sunk_ships_entry_divider_2"
 			spriteType = "GFX_sunk_ships_entry_divider_2"
 			position = { x = 148 y = 0 }
-			
+
 		}
 
 		instantTextboxType = {
@@ -2462,7 +2462,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = "sunk_ships_entry_divider"
-			spriteType = "GFX_sunk_ships_entry_divider"	 
+			spriteType = "GFX_sunk_ships_entry_divider"
 		}
 		iconType = {
 			name = "sunk_ships_entry_divider_2"
@@ -2495,7 +2495,7 @@ guiTypes = {
 			spriteType = "GFX_small_flag_frame_thin_2"
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
-	
+
 		}
 
 		iconType = {

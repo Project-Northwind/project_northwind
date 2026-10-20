@@ -1,4 +1,4 @@
-﻿capital = 291 # Baghdad
+capital = 291 # Baghdad
 
 oob = "IRQ_1936"
 
@@ -68,7 +68,7 @@ recruit_character = IRQ_faisal_ii
 
 ##### GoE Setup #####
 
-IF = { 
+IF = {
 	limit = {
 		has_dlc = "Graveyard of Empires"
 	}
@@ -158,7 +158,7 @@ IF = {
 		modifier = IRQ_royal_army_modifier_IRQ
 	}
 
-	#Variables for Air Force Modifier 
+	#Variables for Air Force Modifier
 	set_variable = { IRQ_air_accidents_factor = -0.1 }
 	set_variable = { IRQ_air_ace_generation_chance_factor = 0 }
 	set_variable = { IRQ_air_weather_penalty = -0.05 }
@@ -201,7 +201,7 @@ IF = {
 		add_opinion_modifier = {
 			target = IRQ
 			modifier = IRQ_anglo_iraqi_treaty_in_place_opm
-		}	
+		}
 	}
 	add_opinion_modifier = {
 		target = ENG
@@ -213,7 +213,7 @@ IF = {
 		add_dynamic_modifier = { modifier = KUR_resistance_modifier }
 	}
 
-	# Unhappy and Autonomous Shia Tribes 
+	# Unhappy and Autonomous Shia Tribes
 	1010 = {
 		add_dynamic_modifier = { modifier = IRQ_shia_resistance_modifier }
 	}
@@ -243,7 +243,7 @@ IF = {
 
 	add_political_power = 1198
 	add_command_power = 100
-	
+
 	IF = {
 		limit = {
 			has_dlc = "Graveyard of Empires"
@@ -317,9 +317,9 @@ IF = {
 		complete_national_focus = infrastructure_effort
 		complete_national_focus = industrial_effort
 		complete_national_focus = construction_effort
-		complete_national_focus = production_effort		
+		complete_national_focus = production_effort
 	}
-	
+
 	oob = "IRQ_1939"
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
@@ -387,11 +387,11 @@ set_popularities = {
 		neutrality = 70
 	}
 	IF = {
-		limit = { 
-			NOT = { 
-				has_dlc = "Graveyard of Empires" 
-			} 
-		}		
+		limit = {
+			NOT = {
+				has_dlc = "Graveyard of Empires"
+			}
+		}
 		recruit_character = IRQ_faisal_ii
 		promote_character = IRQ_faisal_ii
 		retire_character = IRQ_ghazi_i

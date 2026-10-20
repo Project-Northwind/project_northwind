@@ -10,7 +10,7 @@ update_ai_combat_bonus = {
 			}
 		}
         every_country = {
-			limit = { 
+			limit = {
                 is_ai = yes
                 is_major = yes
                 NOT = { is_ally_with = ROOT }
@@ -29,7 +29,7 @@ update_ai_combat_bonus = {
 			}
 		}
         every_country = {
-			limit = { 
+			limit = {
                 is_ai = yes
                 is_major = yes
                 NOT = { is_ally_with = ROOT }
@@ -48,7 +48,7 @@ update_ai_combat_bonus = {
 			}
 		}
         every_country = {
-			limit = { 
+			limit = {
                 is_ai = yes
                 is_major = yes
                 NOT = { is_ally_with = ROOT }
@@ -81,7 +81,7 @@ update_ai_production_bonus = {
 			}
 		}
         every_country = {
-			limit = { 
+			limit = {
                 is_ai = yes
                 is_major = yes
                 NOT = { is_ally_with = ROOT }
@@ -100,7 +100,7 @@ update_ai_production_bonus = {
 			}
 		}
         every_country = {
-			limit = { 
+			limit = {
                 is_ai = yes
                 is_major = yes
                 NOT = { is_ally_with = ROOT }
@@ -119,7 +119,7 @@ update_ai_production_bonus = {
 			}
 		}
         every_country = {
-			limit = { 
+			limit = {
                 is_ai = yes
                 is_major = yes
                 NOT = { is_ally_with = ROOT }
@@ -191,7 +191,7 @@ set_shipyard_output_boost = {
 			add_ideas = vnr_shipyard_output_boost_half
 		}
 	}
-	
+
 	if = {
 		limit = {
 			has_game_rule = { rule = shipyard_output_boost_ai option = BUFF_60 }

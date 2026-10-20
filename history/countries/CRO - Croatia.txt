@@ -1,11 +1,11 @@
-﻿capital = 109
+capital = 109
 
 set_research_slots = 3
 
 oob = "CRO_1936"
 
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	infantry_weapons = 1
@@ -49,7 +49,7 @@ set_convoys = 5
 
 	add_political_power = 1198
 	add_command_power = 100
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -60,12 +60,12 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	set_technology = {
-	
+
 		#doctrines
 		#air_superiority = 1
-		
+
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -115,6 +115,3 @@ recruit_character = CRO_joseph_francis
 recruit_character = CRO_duro_jakcin
 recruit_character = CRO_slavko_kvaternik
 recruit_character = CRO_miroslav_navratil
-
-
-

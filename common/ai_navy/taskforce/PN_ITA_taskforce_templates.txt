@@ -1,10 +1,10 @@
 ITA_StrikeForce_1 = {
 	allowed = {
-		original_tag = ITA 
+		original_tag = ITA
 	}
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -15,7 +15,7 @@ ITA_StrikeForce_1 = {
 			amount = 3
 		}
 	}
-	
+
 	optimal_composition = {
 		battleship = {
 			amount = 4
@@ -33,7 +33,7 @@ ITA_StrikeForce_1 = {
 }
 ITA_StrikeForceCarrier_1 = {
 	allowed = {
-		original_tag = ITA 
+		original_tag = ITA
 	}
 	ai_will_do = {
 		factor = 0
@@ -44,7 +44,7 @@ ITA_StrikeForceCarrier_1 = {
 				size > 0
 			}
 		}
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -55,7 +55,7 @@ ITA_StrikeForceCarrier_1 = {
 			amount = 3
 		}
 	}
-	
+
 	optimal_composition = {
 		carrier = {
 			amount = 2
@@ -87,7 +87,7 @@ ITA_PatrolReconForce_1 = {
 		destroyer = {
 			amount = 5
 		}
-	}	
+	}
 	optimal_composition = {
 		destroyer = {
 			amount = 5
@@ -101,7 +101,7 @@ ITA_PatrolDominanceForce_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { naval_patrol }
 	keep_updated = yes
 	min_composition = {
@@ -135,7 +135,7 @@ ITA_ConvoyRaiding_1 = {
 	}
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	mission = { convoy_raiding }
 	keep_updated = yes
 	min_composition = {
@@ -156,14 +156,14 @@ ITA_ConvoyEscort_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_escort }
 	min_composition = {
 		destroyer = {
 			amount = 5
 		}
 	}
-	
+
 	optimal_composition = {
 		destroyer = {
 			amount = 5

@@ -7,7 +7,7 @@ units = {
 		task_force = {
 			name = "1st Fleet"
 			location = 7191 #Shanghai
-			ship = { name = "Ning Hai" pride_of_the_fleet = yes definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "Ning Hai Class" } } }
+			ship = { name = "Ning Hai"  definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "Ning Hai Class" } } }
 			ship = { name = "Hai Rong" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHI version_name = "Hai Rong Class" } } }
 			ship = { name = "Hai Chou" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHI version_name = "Hai Rong Class" } } }
 			ship = { name = "Yat Sen" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_1 = { amount = 1 owner = CHI version_name = "Yat Sen Class" } } }
@@ -56,14 +56,14 @@ units = {
 ##### SHIP CONSTRUCTION #####
 instant_effect = {
 #Under Construction in Shanghai
-	# Light Cruiser 
+	# Light Cruiser
 	add_equipment_production = { 		# "Pinghai"
 		equipment = {
 			type = vnr_ship_hull_cruiser_2
-			creator = "CHI" 
+			creator = "CHI"
 			version_name = "Ning Hai Class"
 		}
-		name = "Ping Hai" 
+		name = "Ping Hai"
 		requested_factories = 1
 		progress = 0.6
 		 amount = 1

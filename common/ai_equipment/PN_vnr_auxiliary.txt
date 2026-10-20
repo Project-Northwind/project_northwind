@@ -13,7 +13,7 @@ naval_auxiliary = {
 			base = 0
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 10.0
@@ -38,7 +38,7 @@ naval_auxiliary = {
 			base = 0
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 10.0
@@ -63,7 +63,7 @@ naval_auxiliary = {
 			base = 0
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 10.0
@@ -81,4 +81,3 @@ naval_auxiliary = {
 		}
 	}
 }
-

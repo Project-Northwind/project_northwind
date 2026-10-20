@@ -5,7 +5,7 @@ equipment_modules = {
 ##  DESTROYER ROLE  ##
 ######################
     ship_hull_light_role_dd = {
-    	category = dd_role
+		category = dd_role
 		forbid_module_categories = {
 			ship_light_medium_battery
 			ship_light_medium_battery_double
@@ -15,16 +15,16 @@ equipment_modules = {
 		}
 	}
 	ship_hull_light_role_dl = {
-    	category = dd_role
+		category = dd_role
 		add_stats = {
 			patrol_coordination = 0.1
 		}
-    	multiply_stats = {
-        	max_strength = 0.15
+		multiply_stats = {
+			max_strength = 0.15
 			naval_range = 0.2
 			surface_visibility = 0.25
-        	build_cost_ic = 0.15
-    	}
+			build_cost_ic = 0.15
+		}
 		forbid_module_categories = {
 			ship_light_medium_battery
 			ship_light_medium_battery_double
@@ -35,19 +35,19 @@ equipment_modules = {
 		manpower = 20
 	}
 	ship_hull_light_role_de = {
-    	category = dd_role
+		category = dd_role
 		add_stats = {
 			patrol_coordination = -0.1
 		}
-    	multiply_stats = {
+		multiply_stats = {
 	        lg_attack = -0.1
-    	    max_strength = -0.15
+			max_strength = -0.15
 			naval_speed = -0.3
 			torpedo_attack = -0.6
 			surface_visibility = -0.05
 			naval_range = -0.15
-        	build_cost_ic = -0.2
-    	}
+			build_cost_ic = -0.2
+		}
 		dismantle_cost_ic = 3000
 		forbid_module_categories = {
 			ship_light_medium_battery
@@ -59,21 +59,21 @@ equipment_modules = {
 		manpower = -30
 	}
 	ship_hull_light_role_ff = {
-    	category = dd_role
+		category = dd_role
 		add_stats = {
 			patrol_coordination = -0.2
 		}
-    	multiply_stats = {
+		multiply_stats = {
 	        lg_attack = -0.2
 			lg_armor_piercing = -0.25
 			anti_air_attack = -0.15
-    	    max_strength = -0.3
+			max_strength = -0.3
 			naval_speed = -0.4
-        	surface_visibility = -0.1
+			surface_visibility = -0.1
 			torpedo_attack = -0.8
 			naval_range = -0.3
-        	build_cost_ic = -0.3
-    	}
+			build_cost_ic = -0.3
+		}
 		dismantle_cost_ic = 2500
 		forbid_module_categories = {
 			ship_light_medium_battery
@@ -85,18 +85,18 @@ equipment_modules = {
 		manpower = -50
 	}
 	ship_hull_light_role_cl = {
-    	category = dd_role
+		category = dd_role
 		add_stats = {
 			armor_value = 6
 			patrol_coordination = 0.15
 		}
-    	multiply_stats = {
-        	max_strength = 0.2
-        	naval_speed = -0.2
+		multiply_stats = {
+			max_strength = 0.2
+			naval_speed = -0.2
 			naval_range = 0.4
 			surface_visibility = 0.5
-        	build_cost_ic = 0.35
-    	}
+			build_cost_ic = 0.35
+		}
 		dismantle_cost_ic = 4500
 		forbid_module_categories = {
 			ship_missile_aa
@@ -105,14 +105,14 @@ equipment_modules = {
 		manpower = 80
 	}
 	ship_hull_light_role_dda = {
-    	category = dd_role_missile
+		category = dd_role_missile
 		gui_category = dd_role
 		add_stats = {
 			reliability = 0.1
 		}
-    	multiply_stats = {
-        	build_cost_ic = 0.1
-    	}
+		multiply_stats = {
+			build_cost_ic = 0.1
+		}
 		forbid_module_categories = {
 			ship_missile
 			ship_light_medium_battery

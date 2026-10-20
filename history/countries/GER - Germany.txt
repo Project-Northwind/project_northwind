@@ -87,7 +87,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	tech_trucks = 1
@@ -183,7 +183,7 @@ if = {
 }
 
 #CONSUMER GOODS INCREASE AND PENALTIES VARIABLES
-set_variable = { GER_monthly_consumer_goods_start = 0.03 } #Starting amount of monthly increasing CG for MEFO Bills 
+set_variable = { GER_monthly_consumer_goods_start = 0.03 } #Starting amount of monthly increasing CG for MEFO Bills
 set_variable = { GER_change_monthly_CG_vichy_france = 0.005 } #Changing monthly CG when capitulating FRance
 set_variable = { GER_change_monthly_CG_price_controls = 0.005 } #Changing monthly CG when taking Price Controls focus
 set_variable = { GER_change_monthly_CG_occupied_states = 0.005 } #Changing monthly CG based on none-core states
@@ -440,9 +440,9 @@ set_war_support = 0.3
 1939.1.1 = {
 
 	# Setting up the required world tension
-	add_named_threat = { 
-		threat = 40 
-		name = 1939_bookmark_threat 
+	add_named_threat = {
+		threat = 40
+		name = 1939_bookmark_threat
 	}
 
 	# Starting Stats of various kinds for the 39 scenario
@@ -452,7 +452,7 @@ set_war_support = 0.3
 
 	# This represents the completion of the focus Develop Heraeus Research Facilities
 	set_research_slots = 5
-	
+
 	# Adding Ministers and Ideas
 	add_ideas = {
 
@@ -461,7 +461,7 @@ set_war_support = 0.3
 
 		# Concern
 		ig_faben
-		
+
 		# Political Advisors
 		walther_funk
 		GER_reinhard_heydrich
@@ -477,8 +477,8 @@ set_war_support = 0.3
 		extensive_conscription
 
 	}
-	
-	
+
+
 	# Slovakia is set up as a subject manually
 	set_autonomy = {
 		target = SLO
@@ -486,7 +486,7 @@ set_war_support = 0.3
 	}
 	give_military_access = SLO
 
-	# So that the war can fire immediately 
+	# So that the war can fire immediately
 	create_wargoal = {
 		type = take_state_focus
 		target = POL
@@ -503,7 +503,7 @@ set_war_support = 0.3
 	# This has already been done at this point
 	set_country_flag = GER_constructed_the_westwall
 
-	# The Abwehr has already been established at this point 
+	# The Abwehr has already been established at this point
 	if = {
 		limit = {
 			has_dlc = "La Resistance"
@@ -512,17 +512,17 @@ set_war_support = 0.3
 	}
 
 	# Molotov-Ribbentrop pact effect, also has a part scripted in soviet history file, since it cannot be completed in a normal way
-	unlock_national_focus = GER_molotov_ribbentrop_pact 
+	unlock_national_focus = GER_molotov_ribbentrop_pact
 	every_other_country = {
 		limit = {
-			has_government = fascism 
+			has_government = fascism
 		}
 		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
 	}
 	diplomatic_relation = { country = SOV relation = non_aggression_pact }
 	add_opinion_modifier = { target = SOV modifier = MR_pact }
-	# Molotov-Ribbentrop pact end :0 
-	
+	# Molotov-Ribbentrop pact end :0
+
 	# COMPLETING FOCUSES
 
 	# ONES THAT CAN JUST BE COMPLETED NORMALLY
@@ -562,17 +562,17 @@ set_war_support = 0.3
 	unlock_national_focus = GER_develop_heraeus_facilities
 	unlock_national_focus = GER_legion_condor
 
-	# Autarkic economy 
+	# Autarkic economy
 	unlock_national_focus = GER_autarky_efforts
 
 	add_ideas = autarkic_economy
 
-	add_dynamic_modifier = { modifier = GER_wehrwirtschaft_modifier } 
+	add_dynamic_modifier = { modifier = GER_wehrwirtschaft_modifier }
 
 	every_other_country = {
 		limit = {
 			is_in_faction_with = PREV
-		}	
+		}
 		add_opinion_modifier = {
 			target = GER
 			modifier = GER_autarky_trade_opinion
@@ -586,7 +586,7 @@ set_war_support = 0.3
 	}
 	# END OF AUTARKIC ECONOMY
 
-	# Establish the Reichswerke 
+	# Establish the Reichswerke
 
 	unlock_national_focus = GER_establish_the_reichswerke
 
@@ -594,8 +594,8 @@ set_war_support = 0.3
 	set_variable = { GER_industrial_consumer_goods_factor = 0.71 }
 
 	set_country_flag = GER_inactivate_price_control_measures_flag
-	
-	add_to_variable = { 
+
+	add_to_variable = {
 		GER_wehrwirtschaft_local_resources_factor = 0.05
 		tooltip = local_resources_factor_tt
 	}
@@ -607,9 +607,9 @@ set_war_support = 0.3
 	set_global_flag = end_of_czechoslovakia
 	set_global_flag = olympics_1936
 
-	set_variable = { 
-		var = GER_mefo_bill_counter 
-		value = 90 
+	set_variable = {
+		var = GER_mefo_bill_counter
+		value = 90
 	}
 
 	# DEAL WITH INNER CIRCLE STUFF
@@ -631,7 +631,7 @@ set_war_support = 0.3
 	clr_country_flag = GER_goebbels_was_ascended_flag #Remove flag set by the focus to start over and set a new Days value below
 	set_country_flag = { #Flag to prevent AI from taking the focus again after advisor has been replaced
 		flag = GER_goebbels_was_ascended_flag
-		days = 900 # Clear after ~2.5 years 
+		days = 900 # Clear after ~2.5 years
 		value = 1
 	}
 	complete_national_focus = GER_ministry_of_public_enlightenment
@@ -663,9 +663,9 @@ set_war_support = 0.3
 				country_leader = {
 					ideology = nazism
 					expire = 1960.1.1
-					traits = { GER_reichsprotektor_trait } 
+					traits = { GER_reichsprotektor_trait }
 				}
-			}	
+			}
 		}
 		set_research_slots = 3	#otherwise inherits Germany's 5
 	}
@@ -704,7 +704,7 @@ set_war_support = 0.3
 		}
 	}
 
-	
+
 
 	# Setup proper 1939 technologies
 	set_technology = {
@@ -720,7 +720,7 @@ set_war_support = 0.3
 
 		# Doctrines
 		# Air
-		#formation_flying = 1		
+		#formation_flying = 1
 		#dive_bombing = 1
 		#direct_ground_support = 1
 
@@ -779,7 +779,7 @@ set_war_support = 0.3
 		sub_doctrine = air_subdoctrine_dive_bombers
 	}
 
-	
+
 	complete_special_project = {
 		project = sp:sp_air_radar
 		scientist = GER_konrad_zuse
@@ -793,7 +793,7 @@ set_war_support = 0.3
 			}
 		}
 		set_technology = {
-			basic_medium_tank = 1 
+			basic_medium_tank = 1
 		}
 		set_oob = "GER_1939"
 	}
@@ -802,7 +802,7 @@ set_war_support = 0.3
 			has_dlc = "No Step Back"
 		}
 		set_technology = {
-			basic_medium_tank_chassis = 1 
+			basic_medium_tank_chassis = 1
 		}
 		set_oob = "GER_1939_nsb"
 	}
@@ -990,7 +990,7 @@ recruit_character = GER_wilhelm_iv
 recruit_character = GER_peter_adolf_thiessen
 recruit_character = GER_gustav_ludwig_hertz
 recruit_character = GER_eduard_grote
-recruit_character = GER_ferdinand_porsche 
+recruit_character = GER_ferdinand_porsche
 recruit_character = GER_erwin_aders
 recruit_character = GER_hermann_burkhardt
 recruit_character = GER_ulrich_gabler
@@ -1066,9 +1066,22 @@ if = {
 	### Ship Variants ###
 	## 1936 Start ##
 	# Light Cruisers #
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_GER_ea48b9d138ee
+		}
+	}
 	create_equipment_variant = {
-		name = "Königsberg"
-		type = light_cruiser_1
+		name = Königsberg
 		parent_version = 0
 		show_position = no
 		upgrades = {
@@ -1078,10 +1091,39 @@ if = {
 			ship_anti_air_upgrade = 2
 		}
 		obsolete = yes
+		type = vnr_ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_c
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_GER_ea48b9d138ee
+}
+	set_technology = {
+	antiair2 = 1
+	basic_battery = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_GER_11602255873b
+		}
 	}
 	create_equipment_variant = {
-		name = "Deutschland"
-		type = heavy_cruiser_1
+		name = Deutschland
 		parent_version = 0
 		show_position = no
 		upgrades = {
@@ -1090,7 +1132,23 @@ if = {
 			ship_armor_upgrade = 1
 			ship_gun_upgrade = 2
 		}
+		type = vnr_ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			mid_1_custom_slot = ship_secondaries_1_light
+			mid_2_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+		}
 	}
+	set_country_flag = PN_naval_variant_GER_11602255873b
+}
 }
 if = {
 	limit = {
@@ -1253,7 +1311,7 @@ if = {
 		obsolete = yes
 		icon = GFX_GER_early_bomber_medium
 	}
-	
+
 	create_equipment_variant = {
 		name = "Do 17"
 		type = tac_bomber_equipment_0
@@ -1326,7 +1384,7 @@ if = {
 		}
 		icon = "GFX_GER_tactical_bomber1_medium"
 	}
-	
+
 	create_equipment_variant = {
 		name = "Do 17"
 		type = medium_plane_airframe_1
@@ -1404,31 +1462,85 @@ if = {
 			NOT = { has_dlc = "Man the Guns" }
 		}
 		# Submarines #
-		create_equipment_variant = {
-			name = "Type VIIA"
-			type = submarine_2
-			parent_version = 0
-			show_position = no
-			upgrades = {
-				ship_reliability_upgrade = 1
-				sub_engine_upgrade = 1
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 1
-			}
+		set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	improved_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_GER_0ba1bd660281
 		}
+	}
+	create_equipment_variant = {
+		name = "Type VIIA"
+		parent_version = 0
+		show_position = no
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+		type = vnr_ship_hull_submarine_3
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_3
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_3
+			rear_1_custom_slot = ship_torpedo_sub_1
+			front_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_GER_0ba1bd660281
+}
 		# Destroyer #
-		create_equipment_variant = {
-			name = "Zerstörer 1936"
-			type = destroyer_2
-			parent_version = 0
-			show_position = no
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 2
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
+		set_technology = {
+	basic_light_battery = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	improved_depth_charges = 1
+	improved_ship_torpedo_launcher = 1
+	interwar_antiair = 1
+	interwar_ship_hull_light = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_GER_12a0a5309323
 		}
+	}
+	create_equipment_variant = {
+		name = "Zerstörer 1936"
+		parent_version = 0
+		show_position = no
+		upgrades = {
+			ship_torpedo_upgrade = 2
+			destroyer_engine_upgrade = 2
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+		type = vnr_ship_hull_light_3
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_2
+		}
+	}
+	set_country_flag = PN_naval_variant_GER_12a0a5309323
+}
 	}
 	if = {
 		limit = {
@@ -1526,7 +1638,7 @@ if = {
 				tank_nsb_engine_upgrade = 3
 				tank_nsb_armor_upgrade = 3
 			}
-			
+
 			icon = "GFX_CZE_improved_light_tank_medium"
 		}
 	}
@@ -1538,7 +1650,7 @@ if = {
 			type = fighter_equipment_1
 			upgrades = {
 				plane_gun_upgrade = 1
-				plane_range_upgrade = 1  
+				plane_range_upgrade = 1
 				plane_engine_upgrade = 0
 				plane_reliability_upgrade = 2
 			}
@@ -1548,7 +1660,7 @@ if = {
 			type = fighter_equipment_1
 			upgrades = {
 				plane_gun_upgrade = 2
-				plane_range_upgrade = 1  
+				plane_range_upgrade = 1
 				plane_engine_upgrade = 2
 				plane_reliability_upgrade = 4
 			}

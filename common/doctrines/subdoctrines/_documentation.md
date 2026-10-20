@@ -39,7 +39,7 @@ bicycle_heroes = {
             # ACTIVATION EFFECTS - SEE GRAND DOCTRINES DOCUMENTATION
         }
     }
-    
+
     mastery = { # This will override the default mastery conditions for the track
         multiplier = 5.0 # Multiplies manpower contribution to mastery gain (in this case, 5 times less manpower is needed to gain the same amount of mastery)
         sub_units = { # Which subunits contribute to mastery gain?

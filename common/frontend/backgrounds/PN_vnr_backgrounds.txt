@@ -1,7 +1,7 @@
 # Database for all the backgrounds in the game example:
 # name_of_dds_file = { (The dds file needs to be stored in the gfx/loadingscreens folder)
 # dlc_allowed = (optional) which Dlc enables this background
-# locale = (optional) The default background will be decided by latest dlc, if there is a locale set then it will try to best match the default background to 
+# locale = (optional) The default background will be decided by latest dlc, if there is a locale set then it will try to best match the default background to
 #the language
 # gfx = (optional) on default we override the GFX_frontend_bg_basic, so only set if you want a different resolution or effects
 # }

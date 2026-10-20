@@ -515,7 +515,7 @@ USA = {
                 GFX_USA_vnr_ship_hull_carrier_1_medium
                 "gfx/interface/technologies/extra/PN_USA_carrier_Princeton.png"
 				GFX_USA_vnr_ship_hull_carrier_2_medium
-				GFX_USA_vnr_ship_hull_carrier_3_medium	
+				GFX_USA_vnr_ship_hull_carrier_3_medium
                 "gfx/interface/technologies/extra/PN_USA_carrier_Oriskany.png"
 				"gfx/interface/technologies/extra/PN_USA_carrier_Midway.png"
                 "gfx/interface/technologies/extra/PN_USA_carrier_Enterprise.png"

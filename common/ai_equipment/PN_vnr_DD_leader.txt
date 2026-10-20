@@ -28,7 +28,7 @@ naval_screen_leader = {
 			not = { has_tech = interwar_ship_hull_light }		# WK-era DD has very low HP, they are not worth producing or refitting
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 500.0
@@ -62,7 +62,7 @@ naval_screen_leader = {
 			modifier = { factor = 0.1 has_tech = improved_ship_hull_light }
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 600.0
@@ -96,7 +96,7 @@ naval_screen_leader = {
 			modifier = { factor = 0.1 has_tech = advanced_ship_hull_light }
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 800.0
@@ -129,7 +129,7 @@ naval_screen_leader = {
 			modifier = { add = 25 tag = FRA }
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 1000.0

@@ -7,7 +7,7 @@ carrier_battlegroups = {
     xp_cost = 125
     xp_type = navy
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 50
@@ -99,7 +99,7 @@ floating_airfields = {
         }
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 25
@@ -110,11 +110,11 @@ floating_airfields = {
         }
         modifier = {
             factor = 2
-            is_major = yes 
+            is_major = yes
         }
         modifier = {
             factor = 0
-            is_major = no 
+            is_major = no
         }
     }
 
@@ -124,7 +124,7 @@ floating_airfields = {
     }
     port_strike = 0.35
 	navy_carrier_air_attack_factor = 0.05
-	
+
     rewards = {
        enclosed_hangar = {
 			carrier = {
@@ -200,7 +200,7 @@ subsidiary_carrier_support = {
             factor = 100
         }
     }
-    
+
     carrier = {
         surface_detection = 0.1
         fuel_consumption = -0.15
@@ -213,17 +213,17 @@ subsidiary_carrier_support = {
     }
 
     rewards = {
-    	evasive_maneuvers = {
-    		carrier = {
+		evasive_maneuvers = {
+			carrier = {
                 surface_visibility = -0.1
             }
-    	}
-    	anti_submarine_escorts = {
-    		carrier = {
-    		    sub_detection = 0.15
-    		}
-    	}
-    	fleet_antiair = {
+		}
+		anti_submarine_escorts = {
+			carrier = {
+				sub_detection = 0.15
+			}
+		}
+		fleet_antiair = {
             carrier = {
 				max_organisation = 5
                 anti_air_attack = 0.15
@@ -232,15 +232,15 @@ subsidiary_carrier_support = {
                 fighter_sortie_efficiency = 0.15
             }
         }
-    	integrated_convoy_escorts = {
+		integrated_convoy_escorts = {
             carrier = {
                 sub_detection = 0.1
             }
 			modifier = {
                 convoy_escort_efficiency = 0.15
             }
-    	}
-    	carrier_support_groups = {
+		}
+		carrier_support_groups = {
             carrier = {
                 patrol_coordination = 0.1
                 max_organisation = 10
@@ -249,8 +249,8 @@ subsidiary_carrier_support = {
                 sortie_efficiency = 0.05
                 fighter_sortie_efficiency = 0.05
             }
-    	}
-   	}
+		}
+	}
 }
 
 carrier_concentration = {
@@ -262,7 +262,7 @@ carrier_concentration = {
     xp_cost = 125
     xp_type = navy
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 50
@@ -281,10 +281,10 @@ carrier_concentration = {
     naval_strike_attack_factor = 0.05
 
     rewards = {
-    	deep_operative_support = {
-    		carrier = {
+		deep_operative_support = {
+			carrier = {
                 fuel_consumption = -0.1
-    		}
+			}
             equipment_bonus = {
                 carrier = {
                     naval_range = 0.2
@@ -292,40 +292,40 @@ carrier_concentration = {
                     instant = yes
                 }
             }
-    	}
-    	mobile_force = {
-    		carrier = {
+		}
+		mobile_force = {
+			carrier = {
                 max_organisation = 10
             }
             modifier = {
                 naval_strike_targetting_factor = 0.1
                 port_strike = 0.5
             }
-    	}
-    	improved_mission_oriented = {
-    		carrier = {
+		}
+		improved_mission_oriented = {
+			carrier = {
                 max_organisation = 10
                 anti_air_attack = 0.15
             }
             fighter_sortie_efficiency = 0.1
-    	}
-    	efficient_rearming = {
-    		carrier = {
+		}
+		efficient_rearming = {
+			carrier = {
                 max_organisation = 10
-    		}
+			}
             modifier = {
                 sortie_efficiency = 0.1
                 fighter_sortie_efficiency = 0.05
             }
-    	}
-    	massed_air_raid = {
-    		modifier = {
+		}
+		massed_air_raid = {
+			modifier = {
                 carrier_capacity_penalty_reduction = -0.1
                 naval_strike_attack_factor = 0.1
                 naval_strike_agility_factor = 0.1
                 fighter_sortie_efficiency = 0.05
             }
-    	}
+		}
     }
 }
 
@@ -339,7 +339,7 @@ naval_airfoce = {
     xp_cost = 100
     xp_type = navy
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 0
     }
     available = {
@@ -357,37 +357,37 @@ naval_airfoce = {
     port_strike = 0.3
 
     rewards = {
-    	direct_fire_avoidance = {
-    		carrier = {
-    			surface_visibility = -0.15
-    		}
-    	}
-    	land_based_support = {
-    		category_nav_bomber = {
+		direct_fire_avoidance = {
+			carrier = {
+				surface_visibility = -0.15
+			}
+		}
+		land_based_support = {
+			category_nav_bomber = {
                 air_range = 0.25
                 naval_strike_attack = 0.1
             }
-    	}
-    	air_raiders = {
-    		category_nav_bomber = {
+		}
+		air_raiders = {
+			category_nav_bomber = {
                 air_defence = 0.1
                 naval_strike_targetting = 0.1
             }
             modifier = {
                 air_weather_penalty = -0.1
             }
-    	}
-    	evasive_engagements_focus = {
-    		carrier = {
-    			max_organisation = 10
+		}
+		evasive_engagements_focus = {
+			carrier = {
+				max_organisation = 10
                 surface_visibility = -0.1
-    		}
+			}
             modifier = {
                 naval_retreat_speed_after_initial_combat = 0.1
             }
-    	}
-    	airpower = {
-    		category_nav_bomber = {
+		}
+		airpower = {
+			category_nav_bomber = {
                 naval_strike_targetting = 0.1
                 air_agility = 0.1
             }
@@ -395,7 +395,7 @@ naval_airfoce = {
                 port_strike = 0.25
                 air_nav_efficiency = 0.15
             }
-    	}
+		}
     }
 }
 
@@ -408,7 +408,7 @@ airspace_denial = {
     xp_cost = 100
     xp_type = navy
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 0
     }
     available = {
@@ -456,13 +456,13 @@ airspace_denial = {
                 naval_morale_factor = 0.1
 				sortie_efficiency = 0.1
             }
-        } 
+        }
         land_based_support = {
-    		category_nav_bomber = {
+			category_nav_bomber = {
                 air_range = 0.25
                 naval_strike_attack = 0.1
             }
-    	}
+		}
         land_sea_coordination = {
             modifier = {
                 port_strike = 0.2

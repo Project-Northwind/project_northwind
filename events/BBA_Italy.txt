@@ -31,9 +31,9 @@ country_event = {
 	title = BBA_italy_second_italo_ethiopian_war.1.t
 	desc = BBA_italy_second_italo_ethiopian_war.1.desc
 	picture = GFX_report_event_african_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	#ACCEPT
 	option = {
 		name = BBA_italy_second_italo_ethiopian_war.1.a
@@ -76,7 +76,7 @@ country_event = {
 					}
 				}
 				#AFAR always goes to ETH if owned by ITA
-				transfer_state = 908 
+				transfer_state = 908
 				908 = { add_compliance = 50 }
 			}
 			white_peace = FROM
@@ -94,7 +94,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = BBA_italy_second_italo_ethiopian_war.1.b
 		ai_chance = {
@@ -119,7 +119,7 @@ country_event = {
 	title = BBA_italy_second_italo_ethiopian_war.2.t
 	desc = BBA_italy_second_italo_ethiopian_war.2.desc
 	picture = GFX_report_event_african_soldiers
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -127,7 +127,7 @@ country_event = {
 			ITA_end_the_italo_ethiopian_war = yes
 		}
 	}
-	
+
 	#Ok - Already completed initial missiolini focus
 	option = {
 		name = BBA_italy_second_italo_ethiopian_war.2.a
@@ -172,7 +172,7 @@ country_event = {
 				owns_state = 908
 			}
 			FROM = {
-				transfer_state = 908 
+				transfer_state = 908
 				908 = { add_compliance = 50 }
 			}
 		}
@@ -206,7 +206,7 @@ country_event = {
 	}
 
 	# Ok - Abyssinian Fiasco
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.02_north.b
 
 		trigger = {
@@ -261,7 +261,7 @@ country_event = {
 				owns_state = 908
 			}
 			FROM = {
-				transfer_state = 908 
+				transfer_state = 908
 				908 = { add_compliance = 50 }
 			}
 		}
@@ -286,7 +286,7 @@ country_event = {
 	}
 
 	# Ok - Struggle in Ethiopia
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.02_north.c
 
 		trigger = {
@@ -333,7 +333,7 @@ country_event = {
 				owns_state = 908
 			}
 			FROM = {
-				transfer_state = 908 
+				transfer_state = 908
 				908 = { add_compliance = 50 }
 			}
 		}
@@ -365,9 +365,9 @@ country_event = {
 	title = BBA_italy_second_italo_ethiopian_war.3.t
 	desc = BBA_italy_second_italo_ethiopian_war.3.desc
 	picture = GFX_report_event_african_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	#Ok
 	option = {
 		name = BBA_italy_second_italo_ethiopian_war.3.a
@@ -910,7 +910,7 @@ country_event = {
 	title = BBA_italy_missiolinis.02_north.t
 	desc = BBA_italy_missiolinis.02_north.desc
 	picture = GFX_report_event_generic_soldiers_surrendering
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -927,9 +927,9 @@ country_event = {
 	}
 
 	# Oops (No focus to complete)
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.02_north.a
-		
+
 		trigger = {
 			OR = {
 				has_completed_focus = ITA_the_abyssinian_fiasco
@@ -946,7 +946,7 @@ country_event = {
 	}
 
 	# Oops (Complete The Abyssinian Fiasco)
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.02_north.b
 
 		trigger = {
@@ -981,7 +981,7 @@ country_event = {
 	}
 
 	# Oops (Complete Struggle in Ethiopia)
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.02_north.c
 
 		trigger = {
@@ -1004,7 +1004,7 @@ country_event = {
 		}
 
 		ITA_missiolini_progress_in_ethiopia_failure_effect = yes
-		
+
 		if = {
 			limit = {
 				NOT = { has_completed_focus = ITA_the_abyssinian_fiasco }
@@ -1021,7 +1021,7 @@ country_event = {
 	title = BBA_italy_missiolinis.04_south.t
 	desc = BBA_italy_missiolinis.04_south.desc
 	picture = GFX_report_event_generic_soldiers_surrendering
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1038,9 +1038,9 @@ country_event = {
 	}
 
 	# Oops (No focus to complete)
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.04_south.a
-		
+
 		trigger = {
 			OR = {
 				has_completed_focus = ITA_the_abyssinian_fiasco
@@ -1057,7 +1057,7 @@ country_event = {
 	}
 
 	# Oops (Complete The Abyssinian Fiasco)
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.04_south.b
 
 		trigger = {
@@ -1081,7 +1081,7 @@ country_event = {
 		}
 
 		ITA_missiolini_progress_in_ethiopia_failure_effect = yes
-		
+
 		if = {
 			limit = {
 				NOT = { has_completed_focus = ITA_struggle_in_ethiopia }
@@ -1092,7 +1092,7 @@ country_event = {
 	}
 
 	# Oops (Complete Struggle in Ethiopia)
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.04_south.c
 
 		trigger = {
@@ -1115,7 +1115,7 @@ country_event = {
 		}
 
 		ITA_missiolini_progress_in_ethiopia_failure_effect = yes
-		
+
 		if = {
 			limit = {
 				NOT = { has_completed_focus = ITA_the_abyssinian_fiasco }
@@ -1132,7 +1132,7 @@ country_event = {
 	title = BBA_italy_missiolinis.03_north.t
 	desc = BBA_italy_missiolinis.03_north.desc
 	picture = GFX_report_event_generic_military_parade
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1149,7 +1149,7 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.03_north.a
 		ai_chance = {
 			base = 10
@@ -1165,7 +1165,7 @@ country_event = {
 	title = BBA_italy_missiolinis.05_south.t
 	desc = BBA_italy_missiolinis.05_south.desc
 	picture = GFX_report_event_generic_military_parade
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1182,12 +1182,12 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.05_south.a
 		ai_chance = {
 			base = 10
 		}
-		
+
 		ITA_missiolini_progress_in_ethiopia_success_effect = yes
 	}
 }
@@ -1200,7 +1200,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.11.t
 	desc = BBA_italy_missiolinis.11.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1221,7 +1221,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.11.a
 		ai_chance = {
 			base = 10
@@ -1231,13 +1231,13 @@ unit_leader_event = {
 	}
 }
 
-# Conquer Ethiopia - FAILURE 
+# Conquer Ethiopia - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.12
 	title = BBA_italy_missiolinis.12.t
 	desc = BBA_italy_missiolinis.12.desc
 	picture = GFX_report_event_generic_destroyed_vehicles
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1254,7 +1254,7 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.12.a
 		ai_chance = {
 			base = 10
@@ -1264,13 +1264,13 @@ country_event = {
 	}
 }
 
-# Conquer Ethiopia - SUCCESS 
+# Conquer Ethiopia - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.13
 	title = BBA_italy_missiolinis.13.t
 	desc = BBA_italy_missiolinis.13.desc
 	picture = GFX_report_event_generic_italian_celebration
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1287,7 +1287,7 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.13.a
 		ai_chance = {
 			base = 10
@@ -1355,7 +1355,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.21.t
 	desc = BBA_italy_missiolinis.21.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -1372,7 +1372,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.21.a
 		ai_chance = {
 			base = 10
@@ -1391,13 +1391,13 @@ unit_leader_event = {
 	}
 }
 
-# Pacify Ethiopia - FAILURE 
+# Pacify Ethiopia - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.22
 	title = BBA_italy_missiolinis.22.t
 	desc = BBA_italy_missiolinis.22.desc
 	picture = GFX_report_event_ETH_ethiopian_warriors
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -1410,20 +1410,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.22.a
 
 		ITA_missiolini_pacify_ethiopia_failure_effect = yes
 	}
 }
 
-# Pacify Ethiopia - SUCCESS 
+# Pacify Ethiopia - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.23
 	title = BBA_italy_missiolinis.23.t
 	desc = BBA_italy_missiolinis.23.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -1436,7 +1436,7 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.23.a
 
 		ITA_missiolini_pacify_ethiopia_success_effect = yes
@@ -1451,7 +1451,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.31.t
 	desc = BBA_italy_missiolinis.31.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1471,7 +1471,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.31.a
 		ai_chance = {
 			base = 10
@@ -1481,13 +1481,13 @@ unit_leader_event = {
 	}
 }
 
-# Industrialization - FAILURE 
+# Industrialization - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.32
 	title = BBA_italy_missiolinis.32.t
 	desc = BBA_italy_missiolinis.32.desc
 	picture = GFX_report_event_generic_factory
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1502,20 +1502,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.32.a
 
 		ITA_missiolini_strengthen_heavy_industry_failure_effect = yes
 	}
 }
 
-# Industrialization - SUCCESS 
+# Industrialization - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.33
 	title = BBA_italy_missiolinis.33.t
 	desc = BBA_italy_missiolinis.33.desc
 	picture = GFX_report_event_generic_factory
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1530,7 +1530,7 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.33.a
 
 		ITA_missiolini_strengthen_heavy_industry_success_effect = yes
@@ -1545,7 +1545,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.41.t
 	desc = BBA_italy_missiolinis.41.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1560,7 +1560,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.41.a
 		ai_chance = {
 			base = 10
@@ -1570,13 +1570,13 @@ unit_leader_event = {
 	}
 }
 
-# Strengthen the army - FAILURE 
+# Strengthen the army - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.42
 	title = BBA_italy_missiolinis.42.t
 	desc = BBA_italy_missiolinis.42.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 	trigger = {
 		ITA_missiolinis_system_available = yes
@@ -1590,20 +1590,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.42.a
-		
-		ITA_missiolini_strengthen_the_army_failure_effect = yes		
+
+		ITA_missiolini_strengthen_the_army_failure_effect = yes
 	}
 }
 
-# Strengthen the army - SUCCESS 
+# Strengthen the army - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.43
 	title = BBA_italy_missiolinis.43.t
 	desc = BBA_italy_missiolinis.43.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 	trigger = {
 		ITA_missiolinis_system_available = yes
@@ -1617,9 +1617,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.43.a
-		
+
 		ITA_missiolini_strengthen_the_army_success_effect = yes
 	}
 }
@@ -1631,7 +1631,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.51.t
 	desc = BBA_italy_missiolinis.51.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1651,7 +1651,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.51.a
 		ai_chance = {
 			base = 10
@@ -1664,7 +1664,7 @@ unit_leader_event = {
 
 
 	# Re-roll
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.council
 
 		ai_chance = {
@@ -1693,13 +1693,13 @@ unit_leader_event = {
 	}
 }
 
-# Stockpile Trucks - FAILURE 
+# Stockpile Trucks - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.52
 	title = BBA_italy_missiolinis.52.t
 	desc = BBA_italy_missiolinis.52.desc
 	picture = GFX_report_event_generic_truck
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1714,20 +1714,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.52.a
-		
-		ITA_missiolini_stockpile_trucks_failure_effect = yes		
+
+		ITA_missiolini_stockpile_trucks_failure_effect = yes
 	}
 }
 
-# Stockpile Trucks - SUCCESS 
+# Stockpile Trucks - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.53
 	title = BBA_italy_missiolinis.53.t
 	desc = BBA_italy_missiolinis.53.desc
 	picture = GFX_report_event_generic_truck
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1742,9 +1742,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.53.a
-		
+
 		ITA_missiolini_stockpile_trucks_success_effect = yes
 	}
 }
@@ -1757,7 +1757,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.61.t
 	desc = BBA_italy_missiolinis.61.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1773,7 +1773,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.61.a
 		ai_chance = {
 			base = 10
@@ -1785,7 +1785,7 @@ unit_leader_event = {
 	}
 
 	# Re-roll
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.council
 
 		ai_chance = {
@@ -1813,13 +1813,13 @@ unit_leader_event = {
 	}
 }
 
-# Stockpile Fuel - FAILURE 
+# Stockpile Fuel - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.62
 	title = BBA_italy_missiolinis.62.t
 	desc = BBA_italy_missiolinis.62.desc
 	picture = GFX_report_event_tank_factory
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1834,20 +1834,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.62.a
-		
-		ITA_missiolini_stockpile_fuel_failure_effect = yes		
+
+		ITA_missiolini_stockpile_fuel_failure_effect = yes
 	}
 }
 
-# Stockpile Fuel - SUCCESS 
+# Stockpile Fuel - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.63
 	title = BBA_italy_missiolinis.63.t
 	desc = BBA_italy_missiolinis.63.desc
 	picture = GFX_report_event_tank_factory
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1862,9 +1862,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.63.a
-		
+
 		ITA_missiolini_stockpile_fuel_success_effect = yes
 	}
 }
@@ -1877,7 +1877,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.71.t
 	desc = BBA_italy_missiolinis.71.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -1895,13 +1895,13 @@ unit_leader_event = {
 			#log = "Fighters deployed = [?ROOT.num_deployed_planes_with_type@small_plane_airframe]"
 			add_to_variable = { ITA_missiolinis_fighters_goal = num_deployed_planes_with_type@small_plane_airframe }
 			#log = "Total fighters in country = [?ROOT.ITA_missiolinis_fighters_goal]"
-			
+
 			#Add to goal - CV Figthers
 			#log = "CV Fighters in stockpile = [?ROOT.num_equipment@cv_small_plane_airframe]"
 			#add_to_variable = { ITA_missiolinis_fighters_goal = num_equipment@cv_small_plane_airframe }
 			#log = "CV Fighters deployed = [?ROOT.num_deployed_planes_with_type@cv_small_plane_airframe]"
 			#add_to_variable = { ITA_missiolinis_fighters_goal = num_deployed_planes_with_type@cv_small_plane_airframe }
-			
+
 			add_to_variable = { ITA_missiolinis_fighters_goal = ITA_missiolinis_fighters_to_produce }
 			#log = "Total fighters to produce = [?ROOT.ITA_missiolinis_fighters_goal]"
 
@@ -1947,7 +1947,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.71.a
 		ai_chance = {
 			base = 10
@@ -1959,7 +1959,7 @@ unit_leader_event = {
 	}
 
 	# Re-roll
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.council
 
 		ai_chance = {
@@ -1992,13 +1992,13 @@ unit_leader_event = {
 	}
 }
 
-# Strengthen the Airforce - FAILURE 
+# Strengthen the Airforce - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.72
 	title = BBA_italy_missiolinis.72.t
 	desc = BBA_italy_missiolinis.72.desc
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2013,20 +2013,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.72.a
-		
-		ITA_missiolini_strengthen_the_airforce_failure_effect = yes		
+
+		ITA_missiolini_strengthen_the_airforce_failure_effect = yes
 	}
 }
 
-# Strengthen the Airforce - SUCCESS 
+# Strengthen the Airforce - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.73
 	title = BBA_italy_missiolinis.73.t
 	desc = BBA_italy_missiolinis.73.desc
 	picture = GFX_report_event_fighters
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2041,9 +2041,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.73.a
-		
+
 		ITA_missiolini_strengthen_the_airforce_success_effect = yes
 	}
 }
@@ -2056,7 +2056,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.81.t
 	desc = BBA_italy_missiolinis.81.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2237,7 +2237,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.81.a
 		ai_chance = {
 			base = 10
@@ -2249,7 +2249,7 @@ unit_leader_event = {
 	}
 
 	# Re-roll
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.council
 
 		ai_chance = {
@@ -2294,13 +2294,13 @@ unit_leader_event = {
 	}
 }
 
-# Industrial Research - FAILURE 
+# Industrial Research - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.82
 	title = BBA_italy_missiolinis.82.t
 	desc = BBA_italy_missiolinis.82.desc
 	picture = GFX_report_event_generic_research_lab
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2315,20 +2315,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.82.a
-		
-		ITA_missiolini_industrial_research_failure_effect = yes		
+
+		ITA_missiolini_industrial_research_failure_effect = yes
 	}
 }
 
-# Industrial Research - SUCCESS 
+# Industrial Research - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.83
 	title = BBA_italy_missiolinis.83.t
 	desc = BBA_italy_missiolinis.83.desc
 	picture = GFX_report_event_generic_research_lab
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2343,9 +2343,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.83.a
-		
+
 		ITA_missiolini_industrial_research_success_effect = yes
 	}
 }
@@ -2359,7 +2359,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.91.t
 	desc = BBA_italy_missiolinis.91.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2374,7 +2374,7 @@ unit_leader_event = {
 
 			if = { #Create Intelligence Agency
 				limit = {
-					has_intelligence_agency = no 
+					has_intelligence_agency = no
 				}
 				set_country_flag = { flag = ITA_missiolini_upgrade_agency_goal_flag value = 1 }
 			}
@@ -2444,7 +2444,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.91.a
 		ai_chance = {
 			base = 10
@@ -2456,7 +2456,7 @@ unit_leader_event = {
 	}
 
 	# Re-roll
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.council
 
 		ai_chance = {
@@ -2485,13 +2485,13 @@ unit_leader_event = {
 	}
 }
 
-# Expand Intelligence Service - FAILURE 
+# Expand Intelligence Service - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.92
 	title = BBA_italy_missiolinis.92.t
 	desc = BBA_italy_missiolinis.92.desc
 	picture = GFX_report_event_generic_handshake
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2506,20 +2506,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.92.a
-		
-		ITA_missiolini_expand_intelligence_service_failure_effect = yes		
+
+		ITA_missiolini_expand_intelligence_service_failure_effect = yes
 	}
 }
 
-# Expand Intelligence Service - SUCCESS 
+# Expand Intelligence Service - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.93
 	title = BBA_italy_missiolinis.93.t
 	desc = BBA_italy_missiolinis.93.desc
 	picture = GFX_report_event_generic_handshake
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2534,9 +2534,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.93.a
-		
+
 		ITA_missiolini_expand_intelligence_service_success_effect = yes
 	}
 }
@@ -2550,7 +2550,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.101.t
 	desc = BBA_italy_missiolinis.101.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2566,7 +2566,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.101.a
 		ai_chance = {
 			base = 10
@@ -2578,13 +2578,13 @@ unit_leader_event = {
 	}
 }
 
-# Occupy Albania - FAILURE 
+# Occupy Albania - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.102
 	title = BBA_italy_missiolinis.102.t
 	desc = BBA_italy_missiolinis.102.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2599,20 +2599,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.102.a
-		
-		ITA_missiolini_occupy_albania_failure_effect = yes		
+
+		ITA_missiolini_occupy_albania_failure_effect = yes
 	}
 }
 
-# Occupy Albania - SUCCESS 
+# Occupy Albania - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.103
 	title = BBA_italy_missiolinis.103.t
 	desc = BBA_italy_missiolinis.103.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2627,9 +2627,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.103.a
-		
+
 		ITA_missiolini_occupy_albania_success_effect = yes
 	}
 }
@@ -2642,7 +2642,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.111.t
 	desc = BBA_italy_missiolinis.111.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2658,7 +2658,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.111.a
 		ai_chance = {
 			base = 10
@@ -2670,13 +2670,13 @@ unit_leader_event = {
 	}
 }
 
-# Occupy Dalmatia - FAILURE 
+# Occupy Dalmatia - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.112
 	title = BBA_italy_missiolinis.112.t
 	desc = BBA_italy_missiolinis.112.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2691,20 +2691,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.112.a
-		
-		ITA_missiolini_occupy_dalmatia_failure_effect = yes		
+
+		ITA_missiolini_occupy_dalmatia_failure_effect = yes
 	}
 }
 
-# Occupy Dalmatia - SUCCESS 
+# Occupy Dalmatia - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.113
 	title = BBA_italy_missiolinis.113.t
 	desc = BBA_italy_missiolinis.113.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2719,9 +2719,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.113.a
-		
+
 		ITA_missiolini_occupy_dalmatia_success_effect = yes
 	}
 }
@@ -2734,7 +2734,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.121.t
 	desc = BBA_italy_missiolinis.121.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2750,7 +2750,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.121.a
 		ai_chance = {
 			base = 10
@@ -2762,13 +2762,13 @@ unit_leader_event = {
 	}
 }
 
-# Occupy Greece - FAILURE 
+# Occupy Greece - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.122
 	title = BBA_italy_missiolinis.122.t
 	desc = BBA_italy_missiolinis.122.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2783,20 +2783,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.122.a
-		
-		ITA_missiolini_occupy_greece_failure_effect = yes		
+
+		ITA_missiolini_occupy_greece_failure_effect = yes
 	}
 }
 
-# Occupy Greece - SUCCESS 
+# Occupy Greece - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.123
 	title = BBA_italy_missiolinis.123.t
 	desc = BBA_italy_missiolinis.123.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2811,9 +2811,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.123.a
-		
+
 		ITA_missiolini_occupy_greece_success_effect = yes
 	}
 }
@@ -2826,7 +2826,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.131.t
 	desc = BBA_italy_missiolinis.131.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2842,7 +2842,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.131.a
 		ai_chance = {
 			base = 10
@@ -2854,13 +2854,13 @@ unit_leader_event = {
 	}
 }
 
-# Occupy Ticino - FAILURE 
+# Occupy Ticino - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.132
 	title = BBA_italy_missiolinis.132.t
 	desc = BBA_italy_missiolinis.132.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2875,20 +2875,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.132.a
-		
-		ITA_missiolini_occupy_ticino_failure_effect = yes		
+
+		ITA_missiolini_occupy_ticino_failure_effect = yes
 	}
 }
 
-# Occupy Ticino - SUCCESS 
+# Occupy Ticino - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.133
 	title = BBA_italy_missiolinis.133.t
 	desc = BBA_italy_missiolinis.133.desc
 	picture = GFX_report_event_soldiers_marching
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2903,9 +2903,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.133.a
-		
+
 		ITA_missiolini_occupy_ticino_success_effect = yes
 	}
 }
@@ -2917,7 +2917,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.201.t
 	desc = BBA_italy_missiolinis.201.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2933,7 +2933,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.201.a
 		ai_chance = {
 			base = 10
@@ -2945,7 +2945,7 @@ unit_leader_event = {
 	}
 
 	# Re-roll
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.council
 
 		ai_chance = {
@@ -2973,13 +2973,13 @@ unit_leader_event = {
 	}
 }
 
-# Bolster Political Cabinet - FAILURE 
+# Bolster Political Cabinet - FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.202
 	title = BBA_italy_missiolinis.202.t
 	desc = BBA_italy_missiolinis.202.desc
 	picture = GFX_report_event_ITA_grand_council
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -2994,20 +2994,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.202.a
-		
-		ITA_missiolini_bolster_political_cabinet_failure_effect = yes		
+
+		ITA_missiolini_bolster_political_cabinet_failure_effect = yes
 	}
 }
 
-# Bolster Political Cabinet - SUCCESS 
+# Bolster Political Cabinet - SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.203
 	title = BBA_italy_missiolinis.203.t
 	desc = BBA_italy_missiolinis.203.desc
 	picture = GFX_report_event_ITA_grand_council
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -3022,9 +3022,9 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.203.a
-		
+
 		ITA_missiolini_bolster_political_cabinet_success_effect = yes
 	}
 }
@@ -3037,7 +3037,7 @@ unit_leader_event = {
 	title = BBA_italy_missiolinis.211.t
 	desc = BBA_italy_missiolinis.211.desc
 	picture = GFX_report_event_generic_mussolini
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -3053,7 +3053,7 @@ unit_leader_event = {
 	}
 
 	# OK dude
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.211.a
 		ai_chance = {
 			base = 10
@@ -3065,7 +3065,7 @@ unit_leader_event = {
 	}
 
 	# Re-roll
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.council
 
 		ai_chance = {
@@ -3093,13 +3093,13 @@ unit_leader_event = {
 	}
 }
 
-# Bolster Military High Command- FAILURE 
+# Bolster Military High Command- FAILURE
 country_event = {
 	id = BBA_italy_missiolinis.212
 	title = BBA_italy_missiolinis.212.t
 	desc = BBA_italy_missiolinis.212.desc
 	picture = GFX_report_event_military_planning
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -3114,20 +3114,20 @@ country_event = {
 	}
 
 	# Ooops
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.212.a
 
-		ITA_missiolini_bolster_military_high_command_failure_effect = yes		
+		ITA_missiolini_bolster_military_high_command_failure_effect = yes
 	}
 }
 
-# Bolster Military High Command- SUCCESS 
+# Bolster Military High Command- SUCCESS
 country_event = {
 	id = BBA_italy_missiolinis.213
 	title = BBA_italy_missiolinis.213.t
 	desc = BBA_italy_missiolinis.213.desc
 	picture = GFX_report_event_military_planning
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -3142,22 +3142,22 @@ country_event = {
 	}
 
 	# Nice
-	option = { 
+	option = {
 		name = BBA_italy_missiolinis.213.a
-		
+
 		ITA_missiolini_bolster_military_high_command_success_effect = yes
 	}
 }
 
 
 
-##        #######   ######     ###    ##          ########  ##     ## ##       ######## ########   ######  
-##       ##     ## ##    ##   ## ##   ##          ##     ## ##     ## ##       ##       ##     ## ##    ## 
-##       ##     ## ##        ##   ##  ##          ##     ## ##     ## ##       ##       ##     ## ##       
-##       ##     ## ##       ##     ## ##          ########  ##     ## ##       ######   ########   ######  
-##       ##     ## ##       ######### ##          ##   ##   ##     ## ##       ##       ##   ##         ## 
-##       ##     ## ##    ## ##     ## ##          ##    ##  ##     ## ##       ##       ##    ##  ##    ## 
-########  #######   ######  ##     ## ########    ##     ##  #######  ######## ######## ##     ##  ######  
+##        #######   ######     ###    ##          ########  ##     ## ##       ######## ########   ######
+##       ##     ## ##    ##   ## ##   ##          ##     ## ##     ## ##       ##       ##     ## ##    ##
+##       ##     ## ##        ##   ##  ##          ##     ## ##     ## ##       ##       ##     ## ##
+##       ##     ## ##       ##     ## ##          ########  ##     ## ##       ######   ########   ######
+##       ##     ## ##       ######### ##          ##   ##   ##     ## ##       ##       ##   ##         ##
+##       ##     ## ##    ## ##     ## ##          ##    ##  ##     ## ##       ##       ##    ##  ##    ##
+########  #######   ######  ##     ## ########    ##     ##  #######  ######## ######## ##     ##  ######
 
 
 # Local Rulers Approach Italian Officials - Haile Selassie Gugsa (Addis Ababa) - event for ITA
@@ -3166,11 +3166,11 @@ unit_leader_event = {
 	title = BBA_italy_local_rulers.1.t
 	desc = BBA_italy_local_rulers.1.desc
 	picture = GFX_report_event_mussolini_hotel
-	
+
 	is_triggered_only = yes
 
 	# Concessions
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.1.a
 		ai_chance = {
 			base = 10
@@ -3182,7 +3182,7 @@ unit_leader_event = {
 				}
 			}
 		}
-		
+
 		add_political_power = -15
 		if = {
 			limit = {
@@ -3304,7 +3304,7 @@ unit_leader_event = {
 	}
 
 	# Puppet
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.1.b
 		ai_chance = {
 			base = 0
@@ -3347,7 +3347,7 @@ unit_leader_event = {
 					}
 					add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
 						country_leader = {
-							ideology = despotism 
+							ideology = despotism
 							expire = "1965.1.1.1"
 							traits = { crowned_adder }
 							id = -1
@@ -3375,7 +3375,7 @@ unit_leader_event = {
 						}
 						add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
 							country_leader = {
-								ideology = despotism 
+								ideology = despotism
 								expire = "1965.1.1.1"
 								traits = { crowned_adder }
 								id = -1
@@ -3439,12 +3439,12 @@ unit_leader_event = {
 	}
 
 	# Nej tack
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.1.c
 		ai_chance = {
 			base = 10
 		}
-		
+
 		if = {
 			limit = {
 				271 = {
@@ -3516,12 +3516,12 @@ unit_leader_event = {
 	}
 
 	# NO TO ALL
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.1.d
 		ai_chance = {
 			base = 0
 		}
-		
+
 		every_controlled_state = { #Reduce resistance in all future states affected by the event chain (Somali cores in ETH are excluded)
 			limit = {
 				is_core_of = ETH
@@ -3542,11 +3542,11 @@ unit_leader_event = {
 	title = BBA_italy_local_rulers.2.t
 	desc = BBA_italy_local_rulers.2.desc
 	picture = GFX_report_event_mussolini_hotel
-	
+
 	is_triggered_only = yes
 
 	# Concessions
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.2.a
 		ai_chance = {
 			base = 10
@@ -3558,7 +3558,7 @@ unit_leader_event = {
 				}
 			}
 		}
-		
+
 		add_political_power = -15
 		if = {
 			limit = {
@@ -3669,7 +3669,7 @@ unit_leader_event = {
 	}
 
 	# Puppet
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.2.b
 		ai_chance = {
 			base = 0
@@ -3708,7 +3708,7 @@ unit_leader_event = {
 				ETH_abba_jofir = {
 					add_country_leader_role = {
 						country_leader = {
-							ideology = fascism_ideology 
+							ideology = fascism_ideology
 							expire = "1965.1.1.1"
 							traits = { inexperienced_sultan }
 							id = -1
@@ -3716,7 +3716,7 @@ unit_leader_event = {
 					}
 					add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
 						country_leader = {
-							ideology = despotism 
+							ideology = despotism
 							expire = "1965.1.1.1"
 							traits = { inexperienced_sultan }
 							id = -1
@@ -3744,7 +3744,7 @@ unit_leader_event = {
 					ETH_abba_jofir = {
 						add_country_leader_role = {
 							country_leader = {
-								ideology = fascism_ideology 
+								ideology = fascism_ideology
 								expire = "1965.1.1.1"
 								traits = { inexperienced_sultan }
 								id = -1
@@ -3752,7 +3752,7 @@ unit_leader_event = {
 						}
 						add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
 							country_leader = {
-								ideology = despotism 
+								ideology = despotism
 								expire = "1965.1.1.1"
 								traits = { inexperienced_sultan }
 								id = -1
@@ -3809,12 +3809,12 @@ unit_leader_event = {
 	}
 
 	# Nej tack
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.2.c
 		ai_chance = {
 			base = 10
 		}
-		
+
 		if = {
 			limit = {
 				838 = {
@@ -3873,12 +3873,12 @@ unit_leader_event = {
 	}
 
 	# NO TO ALL
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.2.d
 		ai_chance = {
 			base = 0
 		}
-		
+
 		every_controlled_state = { #Reduce resistance in all future states affected by the event chain (Somali cores in ETH are excluded)
 			limit = {
 				is_core_of = ETH
@@ -3901,11 +3901,11 @@ unit_leader_event = {
 	title = BBA_italy_local_rulers.3.t
 	desc = BBA_italy_local_rulers.3.desc
 	picture = GFX_report_event_mussolini_hotel
-	
+
 	is_triggered_only = yes
 
 	# Concessions
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.3.a
 		ai_chance = {
 			base = 10
@@ -3917,7 +3917,7 @@ unit_leader_event = {
 				}
 			}
 		}
-		
+
 		add_political_power = -15
 		if = {
 			limit = {
@@ -4014,7 +4014,7 @@ unit_leader_event = {
 	}
 
 	# Puppet
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.3.b
 		ai_chance = {
 			base = 0
@@ -4053,7 +4053,7 @@ unit_leader_event = {
 				ETH_hailu_tekle_haymanot = {
 					add_country_leader_role = {
 						country_leader = {
-							ideology = fascism_ideology 
+							ideology = fascism_ideology
 							expire = "1965.1.1.1"
 							traits = { tainted_ras }
 							id = -1
@@ -4061,7 +4061,7 @@ unit_leader_event = {
 					}
 					add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
 						country_leader = {
-							ideology = despotism 
+							ideology = despotism
 							expire = "1965.1.1.1"
 							traits = { tainted_ras }
 							id = -1
@@ -4089,7 +4089,7 @@ unit_leader_event = {
 					ETH_hailu_tekle_haymanot = {
 						add_country_leader_role = {
 							country_leader = {
-								ideology = fascism_ideology 
+								ideology = fascism_ideology
 								expire = "1965.1.1.1"
 								traits = { tainted_ras }
 								id = -1
@@ -4097,7 +4097,7 @@ unit_leader_event = {
 						}
 						add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
 							country_leader = {
-								ideology = despotism 
+								ideology = despotism
 								expire = "1965.1.1.1"
 								traits = { tainted_ras }
 								id = -1
@@ -4141,12 +4141,12 @@ unit_leader_event = {
 	}
 
 	# Nej tack
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.3.c
 		ai_chance = {
 			base = 10
 		}
-		
+
 		if = {
 			limit = {
 				840 = {
@@ -4192,12 +4192,12 @@ unit_leader_event = {
 	}
 
 	# NO TO ALL
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.3.d
 		ai_chance = {
 			base = 0
 		}
-		
+
 		every_controlled_state = { #Reduce resistance in all future states affected by the event chain (Somali cores in ETH are excluded)
 			limit = {
 				is_core_of = ETH
@@ -4222,11 +4222,11 @@ unit_leader_event = {
 	title = BBA_italy_local_rulers.4.t
 	desc = BBA_italy_local_rulers.4.desc
 	picture = GFX_report_event_mussolini_hotel
-	
+
 	is_triggered_only = yes
 
 	# Concessions
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.4.a
 		ai_chance = {
 			base = 10
@@ -4238,7 +4238,7 @@ unit_leader_event = {
 				}
 			}
 		}
-		
+
 		add_political_power = -15
 		if = {
 			limit = {
@@ -4317,7 +4317,7 @@ unit_leader_event = {
 	}
 
 	# Puppet
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.4.b
 		ai_chance = {
 			base = 0
@@ -4368,7 +4368,7 @@ unit_leader_event = {
 				ETH_seyoum_mengesha = {
 					add_country_leader_role = {
 						country_leader = {
-							ideology = fascism_ideology 
+							ideology = fascism_ideology
 							expire = "1965.1.1.1"
 							traits = { eager_collaborator }
 							id = -1
@@ -4376,7 +4376,7 @@ unit_leader_event = {
 					}
 					add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
 						country_leader = {
-							ideology = despotism 
+							ideology = despotism
 							expire = "1965.1.1.1"
 							traits = { eager_collaborator }
 							id = -1
@@ -4404,7 +4404,7 @@ unit_leader_event = {
 					ETH_seyoum_mengesha = {
 						add_country_leader_role = {
 							country_leader = {
-								ideology = fascism_ideology 
+								ideology = fascism_ideology
 								expire = "1965.1.1.1"
 								traits = { eager_collaborator }
 								id = -1
@@ -4412,7 +4412,7 @@ unit_leader_event = {
 						}
 						add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
 							country_leader = {
-								ideology = despotism 
+								ideology = despotism
 								expire = "1965.1.1.1"
 								traits = { eager_collaborator }
 								id = -1
@@ -4438,12 +4438,12 @@ unit_leader_event = {
 	}
 
 	# Nej tack
-	option = { 
+	option = {
 		name = BBA_italy_local_rulers.4.c
 		ai_chance = {
 			base = 10
 		}
-		
+
 		if = {
 			limit = {
 				842 = {
@@ -4474,13 +4474,13 @@ unit_leader_event = {
 
 
 
-   ###    #### ########        ###     ######   ######  #### ########  ######## ##    ## ########  ######  
-  ## ##    ##  ##     ##      ## ##   ##    ## ##    ##  ##  ##     ## ##       ###   ##    ##    ##    ## 
- ##   ##   ##  ##     ##     ##   ##  ##       ##        ##  ##     ## ##       ####  ##    ##    ##       
-##     ##  ##  ########     ##     ## ##       ##        ##  ##     ## ######   ## ## ##    ##     ######  
-#########  ##  ##   ##      ######### ##       ##        ##  ##     ## ##       ##  ####    ##          ## 
-##     ##  ##  ##    ##     ##     ## ##    ## ##    ##  ##  ##     ## ##       ##   ###    ##    ##    ## 
-##     ## #### ##     ##    ##     ##  ######   ######  #### ########  ######## ##    ##    ##     ######  
+   ###    #### ########        ###     ######   ######  #### ########  ######## ##    ## ########  ######
+  ## ##    ##  ##     ##      ## ##   ##    ## ##    ##  ##  ##     ## ##       ###   ##    ##    ##    ##
+ ##   ##   ##  ##     ##     ##   ##  ##       ##        ##  ##     ## ##       ####  ##    ##    ##
+##     ##  ##  ########     ##     ## ##       ##        ##  ##     ## ######   ## ## ##    ##     ######
+#########  ##  ##   ##      ######### ##       ##        ##  ##     ## ##       ##  ####    ##          ##
+##     ##  ##  ##    ##     ##     ## ##    ## ##    ##  ##  ##     ## ##       ##   ###    ##    ##    ##
+##     ## #### ##     ##    ##     ##  ######   ######  #### ########  ######## ##    ##    ##     ######
 
 
 
@@ -4581,7 +4581,7 @@ country_event = {
 	title = BBA_italy_air_accident.01.t
 	desc = BBA_italy_air_accident.01.desc
 	picture = GFX_report_event_ITA_air_crash
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -4598,11 +4598,11 @@ country_event = {
 	}
 
 	# Sayonara Balbo
-	option = { 
+	option = {
 		name = BBA_italy_air_accident.01.a
 
 		retire_character = ITA_italo_balbo
-		
+
 		if = {
 			limit = {
 				has_character = ITA_giuseppe_tellera
@@ -4620,7 +4620,7 @@ country_event = {
 	title = BBA_italy_air_accident.02.t
 	desc = BBA_italy_air_accident.02.desc
 	picture = GFX_report_event_ITA_air_crash
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -4637,7 +4637,7 @@ country_event = {
 	}
 
 	# Sayonara Tellera
-	option = { 
+	option = {
 		name = BBA_italy_air_accident.02.a
 
 		retire_character = ITA_giuseppe_tellera
@@ -4654,7 +4654,7 @@ country_event = {
 	title = BBA_italy_air_accident.03.t
 	desc = BBA_italy_air_accident.03.desc
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -4670,7 +4670,7 @@ country_event = {
 	}
 
 	# Lucky bois
-	option = { 
+	option = {
 		name = BBA_italy_air_accident.03.a
 
 		ITA_italo_balbo = {
@@ -4742,7 +4742,7 @@ country_event = {
 	title = BBA_italy_air_accident.11.t
 	desc = BBA_italy_air_accident.11.desc
 	picture = GFX_report_event_ITA_air_crash
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -4761,7 +4761,7 @@ country_event = {
 	}
 
 	# Sayonara
-	option = { 
+	option = {
 		name = BBA_italy_air_accident.11.a
 
 		if = {
@@ -4775,7 +4775,7 @@ country_event = {
 				has_Character = ITA_aldo_pellegrini
 			}
 			retire_character = ITA_aldo_pellegrini
-		}		
+		}
 	}
 }
 
@@ -4785,7 +4785,7 @@ country_event = {
 	title = BBA_italy_air_accident.12.t
 	desc = BBA_italy_air_accident.12.desc
 	picture = GFX_report_event_generic_bombers
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
@@ -4804,11 +4804,11 @@ country_event = {
 	}
 
 	# Lucky bois
-	option = { 
+	option = {
 		name = BBA_italy_air_accident.12.a
 
 		if = { #Upgrade trait
-			limit = {	
+			limit = {
 				has_character = ITA_aldo_pellegrini
 			}
 			ITA_aldo_pellegrini = {
@@ -4833,13 +4833,13 @@ country_event = {
 
 
 
-	 ######   #######   #######  ########  ######## ########     ###    ######## ####  #######  ##    ##    ########  ########   #######   ######   ########     ###    ##     ##  ######  
-	##    ## ##     ## ##     ## ##     ## ##       ##     ##   ## ##      ##     ##  ##     ## ###   ##    ##     ## ##     ## ##     ## ##    ##  ##     ##   ## ##   ###   ### ##    ## 
-	##       ##     ## ##     ## ##     ## ##       ##     ##  ##   ##     ##     ##  ##     ## ####  ##    ##     ## ##     ## ##     ## ##        ##     ##  ##   ##  #### #### ##       
-	##       ##     ## ##     ## ########  ######   ########  ##     ##    ##     ##  ##     ## ## ## ##    ########  ########  ##     ## ##   #### ########  ##     ## ## ### ##  ######  
-	##       ##     ## ##     ## ##        ##       ##   ##   #########    ##     ##  ##     ## ##  ####    ##        ##   ##   ##     ## ##    ##  ##   ##   ######### ##     ##       ## 
-	##    ## ##     ## ##     ## ##        ##       ##    ##  ##     ##    ##     ##  ##     ## ##   ###    ##        ##    ##  ##     ## ##    ##  ##    ##  ##     ## ##     ## ##    ## 
-	 ######   #######   #######  ##        ######## ##     ## ##     ##    ##    ####  #######  ##    ##    ##        ##     ##  #######   ######   ##     ## ##     ## ##     ##  ######  
+	 ######   #######   #######  ########  ######## ########     ###    ######## ####  #######  ##    ##    ########  ########   #######   ######   ########     ###    ##     ##  ######
+	##    ## ##     ## ##     ## ##     ## ##       ##     ##   ## ##      ##     ##  ##     ## ###   ##    ##     ## ##     ## ##     ## ##    ##  ##     ##   ## ##   ###   ### ##    ##
+	##       ##     ## ##     ## ##     ## ##       ##     ##  ##   ##     ##     ##  ##     ## ####  ##    ##     ## ##     ## ##     ## ##        ##     ##  ##   ##  #### #### ##
+	##       ##     ## ##     ## ########  ######   ########  ##     ##    ##     ##  ##     ## ## ## ##    ########  ########  ##     ## ##   #### ########  ##     ## ## ### ##  ######
+	##       ##     ## ##     ## ##        ##       ##   ##   #########    ##     ##  ##     ## ##  ####    ##        ##   ##   ##     ## ##    ##  ##   ##   ######### ##     ##       ##
+	##    ## ##     ## ##     ## ##        ##       ##    ##  ##     ##    ##     ##  ##     ## ##   ###    ##        ##    ##  ##     ## ##    ##  ##    ##  ##     ## ##     ## ##    ##
+	 ######   #######   #######  ##        ######## ##     ## ##     ##    ##    ####  #######  ##    ##    ##        ##     ##  #######   ######   ##     ## ##     ## ##     ##  ######
 
 
 # Offer to join the Naval Cooperation Program - Event for allies
@@ -4848,11 +4848,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.01.t
 	desc = BBA_italy_naval_cooperation_programs.01.desc
 	picture = GFX_report_event_ast_navy
-	
+
 	is_triggered_only = yes
 
 	# Accept
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.01.a
 		ai_chance = {
 			base = 10
@@ -4890,11 +4890,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.02.t
 	desc = BBA_italy_naval_cooperation_programs.02.desc
 	picture = GFX_report_event_ast_navy
-	
+
 	is_triggered_only = yes
 
 	# Coolio
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.02.a
 
 		effect_tooltip = {
@@ -4910,11 +4910,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.03.t
 	desc = BBA_italy_naval_cooperation_programs.03.desc
 	picture = GFX_report_event_ast_navy
-	
+
 	is_triggered_only = yes
 
 	# wtf
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.03.a
 
 		effect_tooltip = {
@@ -4932,11 +4932,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.04.t
 	desc = BBA_italy_naval_cooperation_programs.04.desc
 	picture = GFX_report_event_usa_destroyers
-	
+
 	is_triggered_only = yes
 
 	# Accept
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.04.a
 		ai_chance = {
 			base = 10
@@ -4992,11 +4992,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.05.t
 	desc = BBA_italy_naval_cooperation_programs.05.desc
 	picture = GFX_report_event_usa_destroyers
-	
+
 	is_triggered_only = yes
 
 	# Coolio
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.05.a
 
 		effect_tooltip = {
@@ -5027,11 +5027,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.06.t
 	desc = BBA_italy_naval_cooperation_programs.06.desc
 	picture = GFX_report_event_usa_destroyers
-	
+
 	is_triggered_only = yes
 
 	# wtf
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.06.a
 
 		effect_tooltip = {
@@ -5049,11 +5049,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.07.t
 	desc = BBA_italy_naval_cooperation_programs.07.desc
 	picture = GFX_report_event_usa_destroyers
-	
+
 	is_triggered_only = yes
 
 	# Awesome
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.07.a
 
 		navy_experience = 50
@@ -5083,11 +5083,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.08.t
 	desc = BBA_italy_naval_cooperation_programs.08.desc
 	picture = GFX_report_event_sailors_in_working_rig
-	
+
 	is_triggered_only = yes
 
 	# Accept
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.08.a
 		ai_chance = {
 			base = 10
@@ -5137,7 +5137,7 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.09.t
 	desc = BBA_italy_naval_cooperation_programs.09.desc
 	picture = GFX_report_event_sailors_in_working_rig
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -5147,7 +5147,7 @@ country_event = {
 	}
 
 	# Coolio
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.09.a
 
 		hidden_effect = { #transfer_ship does not generate any tt
@@ -5189,8 +5189,8 @@ country_event = {
 	id = BBA_italy_naval_cooperation_programs.10
 	title = BBA_italy_naval_cooperation_programs.10.t
 	desc = BBA_italy_naval_cooperation_programs.10.desc
-	picture = GFX_report_event_sailors_in_working_rig 
-	
+	picture = GFX_report_event_sailors_in_working_rig
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -5200,7 +5200,7 @@ country_event = {
 	}
 
 	# Disappointing
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.10.a
 
 	}
@@ -5212,11 +5212,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.11.t
 	desc = BBA_italy_naval_cooperation_programs.11.desc
 	picture = GFX_report_event_destroyers
-	
+
 	is_triggered_only = yes
 
 	# Accept
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.11.a
 		ai_chance = {
 			base = 10
@@ -5257,7 +5257,7 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.12.t
 	desc = BBA_italy_naval_cooperation_programs.12.desc
 	picture = GFX_report_event_destroyers
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -5267,7 +5267,7 @@ country_event = {
 	}
 
 	# Coolio
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.12.a
 
 		navy_experience = 50
@@ -5300,11 +5300,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.13.t
 	desc = BBA_italy_naval_cooperation_programs.13.desc
 	picture = GFX_report_event_destroyers
-	
+
 	is_triggered_only = yes
 
 	# you mad bro?
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.03.a #Intentional
 
 	}
@@ -5316,11 +5316,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.14.t
 	desc = BBA_italy_naval_cooperation_programs.14.desc
 	picture = GFX_report_event_generic_naval_treaty
-	
+
 	is_triggered_only = yes
 
 	# Accept
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.14.a
 		ai_chance = {
 			base = 100
@@ -5368,11 +5368,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.15.t
 	desc = BBA_italy_naval_cooperation_programs.15.desc
 	picture = GFX_report_event_generic_naval_treaty
-	
+
 	is_triggered_only = yes
 
 	# Coolio
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.15.a
 
 		custom_effect_tooltip = ITA_export_midget_submarines_tt
@@ -5391,11 +5391,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.16.t
 	desc = BBA_italy_naval_cooperation_programs.16.desc
 	picture = GFX_report_event_generic_naval_treaty
-	
+
 	is_triggered_only = yes
 
 	# Pfff ok
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.10.a #Intentional
 
 		clr_country_flag = ITA_producing_midget_submarines_for_export_flag
@@ -5408,11 +5408,11 @@ country_event = {
 	title = BBA_italy_naval_cooperation_programs.17.t
 	desc = BBA_italy_naval_cooperation_programs.17.desc
 	picture = GFX_report_event_generic_naval_treaty
-	
+
 	is_triggered_only = yes
 
 	# Accept
-	option = { 
+	option = {
 		name = BBA_italy_naval_cooperation_programs.17.a
 
 		if = {
@@ -5473,27 +5473,27 @@ country_event = {
 	title = BBA_italy_human_torpedo_raid.1.t
 	desc = BBA_italy_human_torpedo_raid.1.desc
 	picture = GFX_report_event_ast_navy
-	
+
 	is_triggered_only = yes
 
-	
-	option = { 
-		name = BBA_italy_human_torpedo_raid.1.a 
+
+	option = {
+		name = BBA_italy_human_torpedo_raid.1.a
 
 		custom_effect_tooltip = ITA_human_torpedo_raid_tt
-		
+
 		custom_effect_tooltip = ITA_human_torpedo_target_effect_tt
 	}
 }
 
 
- ######   #######  ##        #######  ##    ## ####    ###    ##          ##     ##    ###    ##    ##    ###     ######   ######## ##     ## ######## ##    ## ######## 
-##    ## ##     ## ##       ##     ## ###   ##  ##    ## ##   ##          ###   ###   ## ##   ###   ##   ## ##   ##    ##  ##       ###   ### ##       ###   ##    ##    
-##       ##     ## ##       ##     ## ####  ##  ##   ##   ##  ##          #### ####  ##   ##  ####  ##  ##   ##  ##        ##       #### #### ##       ####  ##    ##    
-##       ##     ## ##       ##     ## ## ## ##  ##  ##     ## ##          ## ### ## ##     ## ## ## ## ##     ## ##   #### ######   ## ### ## ######   ## ## ##    ##    
-##       ##     ## ##       ##     ## ##  ####  ##  ######### ##          ##     ## ######### ##  #### ######### ##    ##  ##       ##     ## ##       ##  ####    ##    
-##    ## ##     ## ##       ##     ## ##   ###  ##  ##     ## ##          ##     ## ##     ## ##   ### ##     ## ##    ##  ##       ##     ## ##       ##   ###    ##    
- ######   #######  ########  #######  ##    ## #### ##     ## ########    ##     ## ##     ## ##    ## ##     ##  ######   ######## ##     ## ######## ##    ##    ##    
+ ######   #######  ##        #######  ##    ## ####    ###    ##          ##     ##    ###    ##    ##    ###     ######   ######## ##     ## ######## ##    ## ########
+##    ## ##     ## ##       ##     ## ###   ##  ##    ## ##   ##          ###   ###   ## ##   ###   ##   ## ##   ##    ##  ##       ###   ### ##       ###   ##    ##
+##       ##     ## ##       ##     ## ####  ##  ##   ##   ##  ##          #### ####  ##   ##  ####  ##  ##   ##  ##        ##       #### #### ##       ####  ##    ##
+##       ##     ## ##       ##     ## ## ## ##  ##  ##     ## ##          ## ### ## ##     ## ## ## ## ##     ## ##   #### ######   ## ### ## ######   ## ## ##    ##
+##       ##     ## ##       ##     ## ##  ####  ##  ######### ##          ##     ## ######### ##  #### ######### ##    ##  ##       ##     ## ##       ##  ####    ##
+##    ## ##     ## ##       ##     ## ##   ###  ##  ##     ## ##          ##     ## ##     ## ##   ### ##     ## ##    ##  ##       ##     ## ##       ##   ###    ##
+ ######   #######  ########  #######  ##    ## #### ##     ## ########    ##     ## ##     ## ##    ## ##     ##  ######   ######## ##     ## ######## ##    ##    ##
 
 
 # Colonial Police occupation law available, Wanna apply it everywhere possible? - Event for ITA
@@ -5502,11 +5502,11 @@ country_event = {
 	title = BBA_italy_colonial_management.1.t
 	desc = BBA_italy_colonial_management.1.desc
 	picture = GFX_report_event_spr_italian_volunteers
-	
+
 	is_triggered_only = yes
 
 	# APPLY IT EVERYWHERE TACK!
-	option = { 
+	option = {
 		name = BBA_italy_colonial_management.1.a
 
 		ai_chance = {
@@ -5516,7 +5516,7 @@ country_event = {
 	}
 
 	# NOT INTERESTED
-	option = { 
+	option = {
 		name = BBA_italy_colonial_management.1.b
 
 		ai_chance = {
@@ -5529,13 +5529,13 @@ country_event = {
 
 
 
-########   #######  ########  
-##     ## ##     ## ##     ## 
-##     ## ##     ## ##     ## 
-########  ##     ## ########  
-##     ## ##     ## ##        
-##     ## ##     ## ##        
-########   #######  ##        
+########   #######  ########
+##     ## ##     ## ##     ##
+##     ## ##     ## ##     ##
+########  ##     ## ########
+##     ## ##     ## ##
+##     ## ##     ## ##
+########   #######  ##
 
 # Lost core - BoP affected - Event for ITA
 country_event = {
@@ -5543,11 +5543,11 @@ country_event = {
 	title = BBA_italy_bop.1.t
 	desc = BBA_italy_bop.1.desc
 	picture = GFX_report_event_generic_soldiers_surrendering
-	
+
 	is_triggered_only = yes
 
 	# ok
-	option = { 
+	option = {
 		name = BBA_italy_bop.1.a
 
 		ITA_bop_medium_decrease_effect = yes
@@ -5562,11 +5562,11 @@ country_event = {
 	title = BBA_italy_bop.2.t
 	desc = BBA_italy_bop.2.desc
 	picture = GFX_report_event_generic_soldiers_surrendering
-	
+
 	is_triggered_only = yes
 
 	# ok
-	option = { 
+	option = {
 		name = BBA_italy_bop.2.a
 
 		effect_tooltip = {
@@ -5581,29 +5581,29 @@ country_event = {
 	title = BBA_italy_bop.3.t
 	desc = BBA_italy_bop.3.desc
 	picture = GFX_report_event_generic_italian_celebration
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	# ok
-	option = { 
+	option = {
 		name = BBA_italy_bop.3.a
 
-		ITA_bop_medium_increase_effect = yes	
+		ITA_bop_medium_increase_effect = yes
 		ITA_bop_decrease_lost_core_modifier = yes
-		custom_effect_tooltip = ITA_reclaiming_cores_tt	
+		custom_effect_tooltip = ITA_reclaiming_cores_tt
 	}
 }
 
 
- ######  #### ##     ## #### ##          ##      ##    ###    ########  
-##    ##  ##  ##     ##  ##  ##          ##  ##  ##   ## ##   ##     ## 
-##        ##  ##     ##  ##  ##          ##  ##  ##  ##   ##  ##     ## 
-##        ##  ##     ##  ##  ##          ##  ##  ## ##     ## ########  
-##        ##   ##   ##   ##  ##          ##  ##  ## ######### ##   ##   
-##    ##  ##    ## ##    ##  ##          ##  ##  ## ##     ## ##    ##  
- ######  ####    ###    #### ########     ###  ###  ##     ## ##     ## 
+ ######  #### ##     ## #### ##          ##      ##    ###    ########
+##    ##  ##  ##     ##  ##  ##          ##  ##  ##   ## ##   ##     ##
+##        ##  ##     ##  ##  ##          ##  ##  ##  ##   ##  ##     ##
+##        ##  ##     ##  ##  ##          ##  ##  ## ##     ## ########
+##        ##   ##   ##   ##  ##          ##  ##  ## ######### ##   ##
+##    ##  ##    ## ##    ##  ##          ##  ##  ## ##     ## ##    ##
+ ######  ####    ###    #### ########     ###  ###  ##     ## ##     ##
 
 
 # Event to complete first focus in RSI branch without the RDS getting the popup
@@ -5636,7 +5636,7 @@ country_event = {
 	title = BBA_italy_civil_war.1.t
 	desc = BBA_italy_civil_war.1.desc
 	picture = GFX_report_event_ITA_italian_civil_war
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -5649,7 +5649,7 @@ country_event = {
 	}
 
 	# Fascist
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.1.a
 
 		ai_chance = {
@@ -5675,7 +5675,7 @@ country_event = {
 	}
 
 	# Monarchist
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.1.b
 
 		ai_chance = {
@@ -5708,13 +5708,13 @@ country_event = {
 	}
 
 	# Communist
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.1.c
 
 		ai_chance = {
 			base = 0
 		}
-		
+
 		set_global_flag = ITA_communist_cw_flag
 
 		effect_tooltip = {
@@ -5743,13 +5743,13 @@ country_event = {
 	}
 
 	# Democratic
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.1.d
 
 		ai_chance = {
 			base = 0
 		}
-		
+
 		set_global_flag = ITA_democratic_cw_flag
 
 		effect_tooltip = {
@@ -5784,11 +5784,11 @@ country_event = {
 	title = BBA_italy_civil_war.2.t
 	desc = BBA_italy_civil_war.2.desc
 	picture = GFX_report_event_ITA_partisans
-	
+
 	is_triggered_only = yes
 
 	# Ok
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.2.a
 
 		effect_tooltip = {
@@ -5805,11 +5805,11 @@ country_event = {
 	title = BBA_italy_civil_war.3.t
 	desc = BBA_italy_civil_war.3.desc
 	picture = GFX_report_event_ITA_partisans
-	
+
 	is_triggered_only = yes
 
 	# Ok
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.3.a
 
 		add_stability = -0.05
@@ -5823,11 +5823,11 @@ country_event = {
 	title = BBA_italy_civil_war.4.t
 	desc = BBA_italy_civil_war.4.desc
 	picture = GFX_report_event_ger_civil_war
-	
+
 	is_triggered_only = yes
 
 	# Ok
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.4.a
 
 		add_stability = -0.05
@@ -5841,11 +5841,11 @@ country_event = {
 	title = BBA_italy_civil_war.5.t
 	desc = BBA_italy_civil_war.5.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	# Ok
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.5.a
 
 		ai_chance = {
@@ -5867,7 +5867,7 @@ country_event = {
 	}
 
 	# Nej tack
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.5.b
 
 		ai_chance = {
@@ -5887,13 +5887,13 @@ country_event = {
 	title = BBA_italy_civil_war.6.t
 	desc = BBA_italy_civil_war.6.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	# Ok
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.6.a
-		
+
 		FROM = { end_puppet = ROOT }
 
 		add_opinion_modifier = {
@@ -5909,11 +5909,11 @@ country_event = {
 	title = BBA_italy_civil_war.7.t
 	desc = BBA_italy_civil_war.7.desc
 	picture = GFX_report_event_generic_sign_treaty2
-	
+
 	is_triggered_only = yes
 
 	# We comply
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.7.b
 
 		add_opinion_modifier = {
@@ -5925,9 +5925,9 @@ country_event = {
 	}
 
 	# JA ME MATEN TE RAJO PRIMO
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.7.a
-		
+
 		FROM = { end_puppet = ROOT }
 
 		if = {
@@ -5936,17 +5936,17 @@ country_event = {
 			}
 			leave_faction = yes
 		}
-		
+
 		declare_war_on = {
-			target = FROM 
-			type = independence_wargoal 
+			target = FROM
+			type = independence_wargoal
 		}
 
 		add_opinion_modifier = {
 			target = FROM
 			modifier = ITA_refused_to_grant_us_independence
 		}
-		
+
 		add_timed_idea = {
 			idea = ITA_independence_war
 			days = 365
@@ -5962,13 +5962,13 @@ country_event = {
 	title = BBA_italy_civil_war.100.t
 	desc = BBA_italy_civil_war.100.desc
 	picture = GFX_report_event_ITA_italian_civil_war
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	# Give them states
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.100.a
 
 		ai_chance = {
@@ -5992,7 +5992,7 @@ country_event = {
 	}
 
 	# My stuff go away
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.100.b
 
 		ai_chance = {
@@ -6013,11 +6013,11 @@ country_event = {
 	title = BBA_italy_civil_war.101.t
 	desc = BBA_italy_civil_war.101.desc
 	picture = GFX_report_event_generic_sign_treaty1
-	
+
 	is_triggered_only = yes
 
 	# Good
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.101.a
 
 		effect_tooltip = {
@@ -6061,7 +6061,7 @@ country_event = {
 	title = BBA_italy_civil_war.1.t #intentional
 	desc = BBA_italy_civil_war.300.desc
 	picture = GFX_report_event_ITA_italian_civil_war
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -6072,7 +6072,7 @@ country_event = {
 	}
 
 	# Communist always!
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.1.c #intentional
 
 		ai_chance = {
@@ -6091,9 +6091,9 @@ country_event = {
 
 		ITA_anti_fascist_civil_war_deal_with_fascist_side = yes
 	}
-	
+
 	#Mimimimi democratic
-	option = { 
+	option = {
 		name = BBA_italy_civil_war.1.d #intentional
 
 		ai_chance = {
@@ -6147,7 +6147,7 @@ country_event = {
 		}
 	}
 
-	option = { 
+	option = {
 		name = BBA_italy_council_deposes_duce.1.a
 
 		if = { #DEMOCRATIC Monarchy
@@ -6169,7 +6169,7 @@ country_event = {
 						country_leader = {
 							ideology = conservatism
 							expire = 1965.1.1.1
-							traits = { the_grand_council } 
+							traits = { the_grand_council }
 						}
 					}
 				}
@@ -6177,7 +6177,7 @@ country_event = {
 					promote_character = yes
 				}
 			}
-			
+
 		}
 		else_if = { #MONARCHIST
 			limit = {
@@ -6195,7 +6195,7 @@ country_event = {
 						country_leader = {
 							ideology = oligarchism
 							expire = 1965.1.1.1
-							traits = { the_grand_council } 
+							traits = { the_grand_council }
 						}
 					}
 				}
@@ -6225,7 +6225,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 		name = BBA_italy_council_deposes_duce.2.a
 
 		custom_effect_tooltip = ITA_grand_council_considers_intervention_tt
@@ -6271,9 +6271,9 @@ country_event = {
 				limit = {
 					NOT = { has_country_flag = ITA_some_fascists_purged }
 				}
-				set_country_flag = ITA_some_fascists_purged 
-			}			
-			if= { 
+				set_country_flag = ITA_some_fascists_purged
+			}
+			if= {
 				limit = {
 					NOT = { has_country_flag = ITA_first_purge_happened_flag }
 				}
@@ -6281,7 +6281,7 @@ country_event = {
 				country_event = { id = BBA_italy_purge_the_party.1 days = 7 random_days = 3 }
 			}
 			else = {
-				country_event = { id = bba_news.100 hours = 12 random_hours = 8 } 				
+				country_event = { id = bba_news.100 hours = 12 random_hours = 8 }
 			}
 		}
 	}
@@ -6307,20 +6307,20 @@ country_event = {
 				limit = {
 					NOT = { has_country_flag = ITA_no_fascists_purged }
 				}
-				set_country_flag = ITA_some_fascists_purged 
+				set_country_flag = ITA_some_fascists_purged
 			}
 			if= {
 				limit = {
 					NOT = { has_country_flag = ITA_first_purge_happened_flag }
 				}
-				set_country_flag = ITA_first_purge_happened_flag 
+				set_country_flag = ITA_first_purge_happened_flag
 				country_event = { id = BBA_italy_purge_the_party.1 days = 7 random_days = 3 }
 			}
 			else = {
-				country_event = { id = bba_news.100 hours = 12 random_hours = 8 } 				
+				country_event = { id = bba_news.100 hours = 12 random_hours = 8 }
 			}
 		}
-	}		
+	}
 
 	option = { #NO KILLING
 		name = BBA_italy_purge_the_party.1.c
@@ -6353,11 +6353,11 @@ country_event = {
 				limit = {
 					NOT = { has_country_flag = ITA_first_purge_happened_flag }
 				}
-				set_country_flag = ITA_first_purge_happened_flag 
+				set_country_flag = ITA_first_purge_happened_flag
 				country_event = { id = BBA_italy_purge_the_party.1 days = 7 random_days = 3 }
 			}
 			else = {
-				country_event = { id = bba_news.100 hours = 12 random_hours = 8 } 			
+				country_event = { id = bba_news.100 hours = 12 random_hours = 8 }
 			}
 		}
 	}
@@ -6371,7 +6371,7 @@ country_event = {
 		character_list_tooltip = {
 			limit = {
 				has_character_flag = ITA_purge_advisor
-				
+
 			}
 		}
 		character_list_tooltip = {
@@ -6379,7 +6379,7 @@ country_event = {
 				has_character_flag = ITA_purge_general
 			}
 		}
-		add_political_power = 75 
+		add_political_power = 75
 		ITA_bop_medium_increase_effect = yes
 
 		hidden_effect = {
@@ -6392,7 +6392,7 @@ country_event = {
 				}
 				set_country_flag = ITA_many_fascists_purged
 			}
-			if = { 
+			if = {
 				limit = {
 					NOT = { has_country_flag = ITA_first_purge_happened_flag }
 				}
@@ -6400,7 +6400,7 @@ country_event = {
 				country_event = { id = BBA_italy_purge_the_party.1 days = 7 random_days = 3 }
 			}
 			else = {
-				country_event = { id = bba_news.100 hours = 12 random_hours = 8 } 				
+				country_event = { id = bba_news.100 hours = 12 random_hours = 8 }
 			}
 		}
 	}
@@ -6417,7 +6417,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { #Trial 
+	option = { #Trial
 		name = BBA_italy_decide_the_fate_of_mussolini.1.a
 		ai_chance = {
 			base = 5
@@ -6436,7 +6436,7 @@ country_event = {
 			base = 10
 		}
 		add_political_power = 75
-		add_stability = -0.05 
+		add_stability = -0.05
 		add_popularity = {
 		    ideology = fascism
 		    popularity = -0.05
@@ -6447,7 +6447,7 @@ country_event = {
 
 		hidden_effect = {
 			retire_character = ITA_benito_mussolini
-			news_event = { id = bba_news.101 hours = 12 random_hours = 6 } 
+			news_event = { id = bba_news.101 hours = 12 random_hours = 6 }
 		}
 	}
 
@@ -6462,9 +6462,9 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-		}	
+		}
 		custom_effect_tooltip = ITA_mussolini_is_assassinated_tt
-		country_event = { id = BBA_italy_decide_the_fate_of_mussolini.3 days = 5 } 
+		country_event = { id = BBA_italy_decide_the_fate_of_mussolini.3 days = 5 }
 	}
 }
 
@@ -6486,7 +6486,7 @@ country_event = {
 		custom_effect_tooltip = ITA_mussolini_walks_free_tt
 		hidden_effect = {
 			set_country_flag = ITA_mussolini_is_innocent
-			news_event = { id = bba_news.102 hours = 16 random_hours = 4 } 
+			news_event = { id = bba_news.102 hours = 16 random_hours = 4 }
 		}
 	}
 
@@ -6499,8 +6499,8 @@ country_event = {
 		add_popularity = {
 		    ideology = fascism
 		    popularity = 0.05
-		} 
-		
+		}
+
 		remove_ideas = ITA_shadow_of_mussolini
 
 		ITA_bop_low_increase_effect = yes
@@ -6539,12 +6539,12 @@ country_event = {
 		add_popularity = {
 		    ideology = communism
 		    popularity = -0.05
-		} 
+		}
 		remove_ideas = ITA_shadow_of_mussolini
 		hidden_effect = {
 			set_country_flag = ITA_mussolini_blame_communists
 			retire_character = ITA_benito_mussolini
-			news_event = { id = bba_news.103 hours = 8 random_hours = 2 } 
+			news_event = { id = bba_news.103 hours = 8 random_hours = 2 }
 		}
 	}
 
@@ -6567,7 +6567,7 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = ITA_mussolini_cover_story
 			retire_character = ITA_benito_mussolini
-			news_event = { id = bba_news.103 hours = 8 random_hours  = 2 } 
+			news_event = { id = bba_news.103 hours = 8 random_hours  = 2 }
 		}
 	}
 }
@@ -6579,7 +6579,7 @@ country_event = {
 	id = BBA_italy_research_agreement.1
 	title = BBA_italy_research_agreement.1.t
 	desc = BBA_italy_research_agreement.1.desc
-	picture = GFX_report_event_generic_lend_lease 
+	picture = GFX_report_event_generic_lend_lease
 
 	is_triggered_only = yes
 
@@ -6628,10 +6628,10 @@ country_event = {
 				}
 			}
 		}
-		
+
 		if = {
 			limit = { #For France
-				original_tag = FRA 
+				original_tag = FRA
 			}
 			ITA_franco_italian_cooperation_effect = yes
 		}
@@ -6652,30 +6652,30 @@ country_event = {
 		}
 		effect_tooltip = {
 			FROM = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = ITA_military_cooperation_rejection
 				}
 			}
 		}
 		hidden_effect = {
-			FROM = { country_event = { id = BBA_italy_research_agreement.2 hours = 8 random_hours = 4 } } 
+			FROM = { country_event = { id = BBA_italy_research_agreement.2 hours = 8 random_hours = 4 } }
 		}
 	}
 }
 
 #ITALY RECEIVES THE REJECTION EVENT FROM ASKING UK/FRANCE TO TECH SHARE
-country_event = { 
+country_event = {
 	id = BBA_italy_research_agreement.2
 	title = BBA_italy_research_agreement.2.t
 	desc = BBA_italy_research_agreement.2.desc
-	picture = GFX_report_event_generic_read_write 
+	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	option = { #Ouch
 		name = BBA_italy_research_agreement.2.a
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = FROM
 			modifier = ITA_military_cooperation_rejection
 		}
@@ -6685,11 +6685,11 @@ country_event = {
 #########################################################
 ###ITALY ASKS ENGLAND/FRANCE FOR A NON AGGRESSION PACT###
 #########################################################
-country_event = { 
+country_event = {
 	id = BBA_italy_pact.1
 	title = BBA_italy_pact.1.t
 	desc = BBA_italy_pact.1.desc
-	picture = GFX_report_event_generic_panzer_attack 
+	picture = GFX_report_event_generic_panzer_attack
 
 	is_triggered_only = yes
 
@@ -6754,7 +6754,7 @@ country_event = {
 		}
 		effect_tooltip = {
 			FROM = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = ITA_military_cooperation_rejection
 				}
@@ -6771,13 +6771,13 @@ country_event = {
 	id = BBA_italy_pact.2
 	title = BBA_italy_pact.2.t
 	desc = BBA_italy_pact.2.desc
-	picture = GFX_report_event_generic_rally_3 
+	picture = GFX_report_event_generic_rally_3
 
 	is_triggered_only = yes
 
 	option = { #Ouch
 		name = BBA_italy_pact.2.a
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = FROM
 			modifier = ITA_military_cooperation_rejection
 		}
@@ -6791,7 +6791,7 @@ country_event = {
 	id = BBA_italy_recognize_the_empire.1
 	title = BBA_italy_recognize_the_empire.1.t
 	desc = BBA_italy_recognize_the_empire.1.desc
-	picture = GFX_report_event_ITA_grand_council 
+	picture = GFX_report_event_ITA_grand_council
 
 	is_triggered_only = yes
 
@@ -6846,7 +6846,7 @@ country_event = {
 
 		effect_tooltip = {
 			FROM = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = ITA_recognized_the_empire
 				}
@@ -6877,10 +6877,10 @@ country_event = {
 				has_government = communism
 			}
 		}
-		
+
 		effect_tooltip = {
 			FROM = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = ROOT
 					modifier = ITA_dismissed_the_empire
 				}
@@ -6905,7 +6905,7 @@ country_event = {
 	option = { #Yay
 		name = BBA_italy_recognize_the_empire.2.a
 
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = FROM
 			modifier = ITA_recognized_the_empire
 		}
@@ -6919,14 +6919,14 @@ country_event = {
 	id = BBA_italy_recognize_the_empire.3
 	title = BBA_italy_recognize_the_empire.3.t
 	desc = BBA_italy_recognize_the_empire.3.desc
-	picture = GFX_report_event_generic_rally2 
+	picture = GFX_report_event_generic_rally2
 
 	is_triggered_only = yes
 
 	option = { #Ouch
 		name = BBA_italy_recognize_the_empire.3.a
 
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = FROM
 			modifier = ITA_dismissed_the_empire
 		}
@@ -6940,7 +6940,7 @@ country_event = {
 	id = BBA_italy_sends_military_support.1
 	title = BBA_italy_sends_military_support.1.t
 	desc = BBA_italy_sends_military_support.1.desc
-	picture = GFX_report_event_generic_truck 
+	picture = GFX_report_event_generic_truck
 
 	is_triggered_only = yes
 
@@ -6968,13 +6968,13 @@ country_event = {
 
 
 
- ######   #######  ##     ## ##     ## ##     ## ##    ## ####  ######  ######## 
-##    ## ##     ## ###   ### ###   ### ##     ## ###   ##  ##  ##    ##    ##    
-##       ##     ## #### #### #### #### ##     ## ####  ##  ##  ##          ##    
-##       ##     ## ## ### ## ## ### ## ##     ## ## ## ##  ##   ######     ##    
-##       ##     ## ##     ## ##     ## ##     ## ##  ####  ##        ##    ##    
-##    ## ##     ## ##     ## ##     ## ##     ## ##   ###  ##  ##    ##    ##    
- ######   #######  ##     ## ##     ##  #######  ##    ## ####  ######     ##    
+ ######   #######  ##     ## ##     ## ##     ## ##    ## ####  ######  ########
+##    ## ##     ## ###   ### ###   ### ##     ## ###   ##  ##  ##    ##    ##
+##       ##     ## #### #### #### #### ##     ## ####  ##  ##  ##          ##
+##       ##     ## ## ### ## ## ### ## ##     ## ## ## ##  ##   ######     ##
+##       ##     ## ##     ## ##     ## ##     ## ##  ####  ##        ##    ##
+##    ## ##     ## ##     ## ##     ## ##     ## ##   ###  ##  ##    ##    ##
+ ######   #######  ##     ## ##     ##  #######  ##    ## ####  ######     ##
 
 
 #Communist Leadership - Event for ITA
@@ -7022,7 +7022,7 @@ country_event = {
 				}
 			}
 		}
-		ITA_add_country_leader_role_to_gramsci = yes		
+		ITA_add_country_leader_role_to_gramsci = yes
 	}
 
 	#TOGLIATTI (COMMUNIST)
@@ -7037,7 +7037,7 @@ country_event = {
 			remove_country_leader_role = {
 				character = ITA_comitato_di_liberazione_nazionale
 				ideology = marxism
-			} 
+			}
 		}
 		promote_character = ITA_palmiro_togliatti
 	}
@@ -7054,7 +7054,7 @@ country_event = {
 			remove_country_leader_role = {
 				character = ITA_comitato_di_liberazione_nazionale
 				ideology = marxism
-			} 
+			}
 		}
 		promote_character = ITA_sandro_pertini
 		set_party_name = {
@@ -7166,17 +7166,17 @@ country_event = {
 		name = BBA_italy_communist_events.03.a
 
 		custom_effect_tooltip = ITA_international_support_arrives_tt
-		add_equipment_to_stockpile = { 
+		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = ROOT.ITA_infantry_equipment_from_leftist_aid
 			producer = ROOT
 		}
-		add_equipment_to_stockpile = { 
+		add_equipment_to_stockpile = {
 			type = support_equipment
 			amount = ROOT.ITA_support_equipment_from_leftist_aid
 			producer = ROOT
 		}
-		add_equipment_to_stockpile = { 
+		add_equipment_to_stockpile = {
 			type = motorized_equipment
 			amount = ROOT.ITA_trucks_from_leftist_aid
 			producer = ROOT
@@ -7353,7 +7353,7 @@ country_event = {
 	option = {
 		name = BBA_italy_communist_events.08.a
 
-		
+
 	}
 }
 
@@ -7375,9 +7375,9 @@ country_event = {
 	#Ok
 	option = {
 		name = BBA_italy_communist_events.09.a
-		if = {	
+		if = {
 			limit = {
-				ITA_antonio_gramsci = { 
+				ITA_antonio_gramsci = {
 					is_country_leader = yes
 				}
 			}
@@ -7411,13 +7411,13 @@ country_event = {
 }
 
 
-########  ######## ##     ##  #######   ######  ########     ###    ######## ####  ######  
-##     ## ##       ###   ### ##     ## ##    ## ##     ##   ## ##      ##     ##  ##    ## 
-##     ## ##       #### #### ##     ## ##       ##     ##  ##   ##     ##     ##  ##       
-##     ## ######   ## ### ## ##     ## ##       ########  ##     ##    ##     ##  ##       
-##     ## ##       ##     ## ##     ## ##       ##   ##   #########    ##     ##  ##       
-##     ## ##       ##     ## ##     ## ##    ## ##    ##  ##     ##    ##     ##  ##    ## 
-########  ######## ##     ##  #######   ######  ##     ## ##     ##    ##    ####  ######  
+########  ######## ##     ##  #######   ######  ########     ###    ######## ####  ######
+##     ## ##       ###   ### ##     ## ##    ## ##     ##   ## ##      ##     ##  ##    ##
+##     ## ##       #### #### ##     ## ##       ##     ##  ##   ##     ##     ##  ##
+##     ## ######   ## ### ## ##     ## ##       ########  ##     ##    ##     ##  ##
+##     ## ##       ##     ## ##     ## ##       ##   ##   #########    ##     ##  ##
+##     ## ##       ##     ## ##     ## ##    ## ##    ##  ##     ##    ##     ##  ##    ##
+########  ######## ##     ##  #######   ######  ##     ## ##     ##    ##    ####  ######
 
 
 #Democratic Leadership - Event for ITA
@@ -7476,7 +7476,7 @@ country_event = {
 			remove_country_leader_role = {
 				character = ITA_comitato_di_liberazione_nazionale
 				ideology = marxism
-			} 
+			}
 		}
 		promote_character = ITA_ivanoe_bonomi
 		set_party_name = {
@@ -7640,7 +7640,7 @@ country_event = {
 			}
 
 			#REPEAT EVENT
-			if = {	
+			if = {
 				limit = {
 					any_state = {
 						is_core_of = ITA
@@ -7685,13 +7685,13 @@ country_event = {
 }
 
 
-   ###    ##    ## ######## ####          ######   #######  ##        #######  ##    ## ####    ###    ##       ####  ######  ##     ## 
-  ## ##   ###   ##    ##     ##          ##    ## ##     ## ##       ##     ## ###   ##  ##    ## ##   ##        ##  ##    ## ###   ### 
- ##   ##  ####  ##    ##     ##          ##       ##     ## ##       ##     ## ####  ##  ##   ##   ##  ##        ##  ##       #### #### 
-##     ## ## ## ##    ##     ##  ####### ##       ##     ## ##       ##     ## ## ## ##  ##  ##     ## ##        ##   ######  ## ### ## 
-######### ##  ####    ##     ##          ##       ##     ## ##       ##     ## ##  ####  ##  ######### ##        ##        ## ##     ## 
-##     ## ##   ###    ##     ##          ##    ## ##     ## ##       ##     ## ##   ###  ##  ##     ## ##        ##  ##    ## ##     ## 
-##     ## ##    ##    ##    ####          ######   #######  ########  #######  ##    ## #### ##     ## ######## ####  ######  ##     ## 
+   ###    ##    ## ######## ####          ######   #######  ##        #######  ##    ## ####    ###    ##       ####  ######  ##     ##
+  ## ##   ###   ##    ##     ##          ##    ## ##     ## ##       ##     ## ###   ##  ##    ## ##   ##        ##  ##    ## ###   ###
+ ##   ##  ####  ##    ##     ##          ##       ##     ## ##       ##     ## ####  ##  ##   ##   ##  ##        ##  ##       #### ####
+##     ## ## ## ##    ##     ##  ####### ##       ##     ## ##       ##     ## ## ## ##  ##  ##     ## ##        ##   ######  ## ### ##
+######### ##  ####    ##     ##          ##       ##     ## ##       ##     ## ##  ####  ##  ######### ##        ##        ## ##     ##
+##     ## ##   ###    ##     ##          ##    ## ##     ## ##       ##     ## ##   ###  ##  ##     ## ##        ##  ##    ## ##     ##
+##     ## ##    ##    ##    ####          ######   #######  ########  #######  ##    ## #### ##     ## ######## ####  ######  ##     ##
 
 
 #The Ethiopian Question - Event for ITA
@@ -7767,7 +7767,7 @@ country_event = {
 		trigger = {
 			ETH = { is_subject_of = ROOT }
 		}
-		
+
 		ETH = { country_event = { id = BBA_italy_anti_colonialism_events.05 hours = 4 random_hours = 2 } }
 
 		custom_effect_tooltip = if_they_accept_tt
@@ -7794,7 +7794,7 @@ country_event = {
 		trigger = {
 			ETH = { is_subject_of = ROOT }
 		}
-		
+
 		ETH = { country_event = { id = BBA_italy_anti_colonialism_events.08 hours = 4 random_hours = 2 } }
 
 		effect_tooltip = {
@@ -7849,7 +7849,7 @@ country_event = {
 			NOT = { has_war_with = ETH }
 			NOT = { ETH = { is_subject_of = ROOT } }
 		}
-		
+
 		ETH = { country_event = { id = BBA_italy_anti_colonialism_events.09 hours = 4 random_hours = 2 } }
 
 		custom_effect_tooltip = if_they_accept_tt
@@ -7873,17 +7873,17 @@ country_event = {
 		ai_chance = {
 			base = 3
 		}
-		
+
 		trigger = {
 			NOT = { has_war_with = ETH }
 			NOT = { ETH = { is_subject_of = ROOT } }
 		}
-		
+
 		ETH = { country_event = { id = BBA_italy_anti_colonialism_events.13 hours = 4 random_hours = 2 } }
 
 		custom_effect_tooltip = if_they_accept_tt
 		effect_tooltip = {
-			diplomatic_relation = { 
+			diplomatic_relation = {
 				country = ETH #target country
 				relation = non_aggression_pact
 				active = yes #yes to add relation, no to cancel existing one
@@ -7901,12 +7901,12 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		
+
 		trigger = {
 			NOT = { has_war_with = ETH }
 			NOT = { ETH = { is_subject_of = ROOT } }
 		}
-		
+
 	}
 }
 
@@ -7946,7 +7946,7 @@ country_event = {
 	#Accept - Puppet (only AI)
 	option = {
 		name = BBA_italy_anti_colonialism_events.02.b
-		
+
 		ai_chance = {
 			base = 5
 		}
@@ -8209,21 +8209,21 @@ country_event = {
 
 		effect_tooltip = {
 			set_politics = { ruling_party = FROM }
-			diplomatic_relation = { 
+			diplomatic_relation = {
 				country = FROM #target country
-				relation = non_aggression_pact 
+				relation = non_aggression_pact
 				active = yes #yes to add relation, no to cancel existing one
 			}
 		}
 
 		hidden_effect = {
-			add_ai_strategy = { 
+			add_ai_strategy = {
 				type = alliance
 				id = FROM
 				value = 100
 			}
 		}
-		
+
 		hidden_effect = {
 			FROM = { country_event = { id = BBA_italy_anti_colonialism_events.11 hours = 6 random_hours = 2 } }
 		}
@@ -8240,17 +8240,17 @@ country_event = {
 				has_opinion = {
 					target = FROM
 					value < 10
-				} 
+				}
 			}
 			modifier = {
 				add = 10
 				has_opinion = {
 					target = FROM
 					value < 0
-				} 
+				}
 			}
 		}
-		
+
 		hidden_effect = {
 			FROM = { country_event = { id = BBA_italy_anti_colonialism_events.12 hours = 6 random_hours = 2 } }
 		}
@@ -8296,14 +8296,14 @@ country_event = {
 		name = BBA_italy_anti_colonialism_events.11.a
 
 		FROM = { set_politics = { ruling_party = ROOT } }
-		diplomatic_relation = { 
+		diplomatic_relation = {
 			country = FROM #target country
-			relation = non_aggression_pact 
+			relation = non_aggression_pact
 			active = yes #yes to add relation, no to cancel existing one
 		}
 
 		hidden_effect = {
-			add_ai_strategy = { 
+			add_ai_strategy = {
 				type = alliance
 				id = FROM
 				value = 75
@@ -8346,7 +8346,7 @@ country_event = {
 
 		create_wargoal = {
 			type = puppet_wargoal_focus
-			target = FROM 
+			target = FROM
 		}
 	}
 }
@@ -8373,7 +8373,7 @@ country_event = {
 		}
 
 		effect_tooltip = {
-			diplomatic_relation = { 
+			diplomatic_relation = {
 				country = FROM #target country
 				relation = non_aggression_pact
 				active = yes #yes to add relation, no to cancel existing one
@@ -8384,7 +8384,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			add_ai_strategy = { 
+			add_ai_strategy = {
 				type = alliance
 				id = FROM
 				value = 75
@@ -8423,7 +8423,7 @@ country_event = {
 	option = {
 		name = BBA_italy_anti_colonialism_events.06.a #intentional
 
-		diplomatic_relation = { 
+		diplomatic_relation = {
 			country = FROM #target country
 			relation = non_aggression_pact
 			active = yes #yes to add relation, no to cancel existing one
@@ -8433,7 +8433,7 @@ country_event = {
 		FROM = { give_guarantee = ROOT }
 
 		hidden_effect = {
-			add_ai_strategy = { 
+			add_ai_strategy = {
 				type = alliance
 				id = FROM
 				value = 75
@@ -8472,7 +8472,7 @@ country_event = {
 
 		create_wargoal = {
 			type = puppet_wargoal_focus
-			target = FROM 
+			target = FROM
 		}
 	}
 }
@@ -8750,7 +8750,7 @@ country_event = {
 						has_completed_focus = ITA_improve_overseas_naval_bases
 					}
 					country_event = { id = BBA_italy_anti_colonialism_events.52 days = ITA_abolish_colonies_event_delay } #accepts
-				} 
+				}
 				60 = {
 					country_event = { id = BBA_italy_anti_colonialism_events.53 days = ITA_abolish_colonies_event_delay } #refuses
 				}
@@ -8835,7 +8835,7 @@ country_event = {
 						has_completed_focus = ITA_improve_overseas_naval_bases
 					}
 					country_event = { id = BBA_italy_anti_colonialism_events.54 days = ITA_abolish_colonies_event_delay } #accepts
-				} 
+				}
 				60 = {
 					country_event = { id = BBA_italy_anti_colonialism_events.55 days = ITA_abolish_colonies_event_delay } #refuses
 				}
@@ -8899,7 +8899,7 @@ country_event = {
 						}
 					}
 					country_event = { id = BBA_italy_anti_colonialism_events.56 days = ITA_abolish_colonies_event_delay } #accepts
-				} 
+				}
 				60 = {
 					country_event = { id = BBA_italy_anti_colonialism_events.57 days = ITA_abolish_colonies_event_delay } #refuses
 				}
@@ -8963,7 +8963,7 @@ country_event = {
 						}
 					}
 					country_event = { id = BBA_italy_anti_colonialism_events.58 days = ITA_abolish_colonies_event_delay } #accepts
-				} 
+				}
 				60 = {
 					country_event = { id = BBA_italy_anti_colonialism_events.59 days = ITA_abolish_colonies_event_delay } #refuses
 				}
@@ -9027,7 +9027,7 @@ country_event = {
 						}
 					}
 					country_event = { id = BBA_italy_anti_colonialism_events.60 days = ITA_abolish_colonies_event_delay } #accepts
-				} 
+				}
 				60 = {
 					country_event = { id = BBA_italy_anti_colonialism_events.61 days = ITA_abolish_colonies_event_delay } #refuses
 				}
@@ -9091,7 +9091,7 @@ country_event = {
 						}
 					}
 					country_event = { id = BBA_italy_anti_colonialism_events.62 days = ITA_abolish_colonies_event_delay } #accepts
-				} 
+				}
 				60 = {
 					country_event = { id = BBA_italy_anti_colonialism_events.63 days = ITA_abolish_colonies_event_delay } #refuses
 				}
@@ -9157,7 +9157,7 @@ country_event = {
 #						}
 #					}
 #					country_event = { id = BBA_italy_anti_colonialism_events.64 days = ITA_abolish_colonies_event_delay } #accepts
-#				} 
+#				}
 #				60 = {
 #					country_event = { id = BBA_italy_anti_colonialism_events.65 days = ITA_abolish_colonies_event_delay } #refuses
 #				}
@@ -9221,7 +9221,7 @@ country_event = {
 #						}
 #					}
 #					country_event = { id = BBA_italy_anti_colonialism_events.66 days = ITA_abolish_colonies_event_delay } #accepts
-#				} 
+#				}
 #				60 = {
 #					country_event = { id = BBA_italy_anti_colonialism_events.67 days = ITA_abolish_colonies_event_delay } #refuses
 #				}
@@ -9285,7 +9285,7 @@ country_event = {
 #						}
 #					}
 #					country_event = { id = BBA_italy_anti_colonialism_events.68 days = ITA_abolish_colonies_event_delay } #accepts
-#				} 
+#				}
 #				60 = {
 #					country_event = { id = BBA_italy_anti_colonialism_events.69 days = ITA_abolish_colonies_event_delay } #refuses
 #				}
@@ -9662,9 +9662,9 @@ country_event = {
 	title = BBA_italy_anti_colonialism_events.100.t
 	desc = BBA_italy_anti_colonialism_events.100.desc
 	picture = GFX_report_event_albanian_king_zog
-	
+
 	is_triggered_only = yes
-	
+
 	#Accept - Get annexed
 	option = {
 		name = BBA_italy_anti_colonialism_events.100.a
@@ -9736,7 +9736,7 @@ country_event = {
 	option = {
 		name = BBA_italy_anti_colonialism_events.100.c
 		ai_chance = {
-			factor = 20 
+			factor = 20
 			modifier = {
 				factor = 0
 				OR = {
@@ -9748,12 +9748,12 @@ country_event = {
 						}
 					}
 					AND = {
-						is_in_faction = no 
+						is_in_faction = no
 						NOT = {
 							any_other_country = {
 								NOT = { tag = FROM }
 								has_guaranteed = ROOT
-							} 
+							}
 						}
 					}
 				}
@@ -9864,26 +9864,26 @@ country_event = {
 
 
 
-#### ##    ## ######## ######## ########  ########    ###     ######  ######## ####  #######  ##    ##    ######## ##     ## ######## ##    ## ########  ######  
- ##  ###   ##    ##    ##       ##     ## ##         ## ##   ##    ##    ##     ##  ##     ## ###   ##    ##       ##     ## ##       ###   ##    ##    ##    ## 
- ##  ####  ##    ##    ##       ##     ## ##        ##   ##  ##          ##     ##  ##     ## ####  ##    ##       ##     ## ##       ####  ##    ##    ##       
- ##  ## ## ##    ##    ######   ########  ######   ##     ## ##          ##     ##  ##     ## ## ## ##    ######   ##     ## ######   ## ## ##    ##     ######  
- ##  ##  ####    ##    ##       ##   ##   ##       ######### ##          ##     ##  ##     ## ##  ####    ##        ##   ##  ##       ##  ####    ##          ## 
- ##  ##   ###    ##    ##       ##    ##  ##       ##     ## ##    ##    ##     ##  ##     ## ##   ###    ##         ## ##   ##       ##   ###    ##    ##    ## 
-#### ##    ##    ##    ######## ##     ## ######## ##     ##  ######     ##    ####  #######  ##    ##    ########    ###    ######## ##    ##    ##     ######  
+#### ##    ## ######## ######## ########  ########    ###     ######  ######## ####  #######  ##    ##    ######## ##     ## ######## ##    ## ########  ######
+ ##  ###   ##    ##    ##       ##     ## ##         ## ##   ##    ##    ##     ##  ##     ## ###   ##    ##       ##     ## ##       ###   ##    ##    ##    ##
+ ##  ####  ##    ##    ##       ##     ## ##        ##   ##  ##          ##     ##  ##     ## ####  ##    ##       ##     ## ##       ####  ##    ##    ##
+ ##  ## ## ##    ##    ######   ########  ######   ##     ## ##          ##     ##  ##     ## ## ## ##    ######   ##     ## ######   ## ## ##    ##     ######
+ ##  ##  ####    ##    ##       ##   ##   ##       ######### ##          ##     ##  ##     ## ##  ####    ##        ##   ##  ##       ##  ####    ##          ##
+ ##  ##   ###    ##    ##       ##    ##  ##       ##     ## ##    ##    ##     ##  ##     ## ##   ###    ##         ## ##   ##       ##   ###    ##    ##    ##
+#### ##    ##    ##    ######## ##     ## ######## ##     ##  ######     ##    ####  #######  ##    ##    ########    ###    ######## ##    ##    ##     ######
 
 
 # the Italians are demanding Ticino!
 country_event = {
 	id = BBA_italy_interaction_events.1
-	title = BBA_italy_interaction_events.1.t 
+	title = BBA_italy_interaction_events.1.t
 	desc = BBA_italy_interaction_events.1.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# It is hard to defend it anyway - One less weakpoint for us
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.1.a
 
 		ai_chance = {
@@ -9920,7 +9920,7 @@ country_event = {
 	}
 
 	# How about no?
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.1.b
 
 		ai_chance = {
@@ -9940,14 +9940,14 @@ country_event = {
 # The Swiss fold
 country_event = {
 	id = BBA_italy_interaction_events.2
-	title = BBA_italy_interaction_events.2.t 
+	title = BBA_italy_interaction_events.2.t
 	desc = BBA_italy_interaction_events.2.desc
-	picture = GFX_report_event_generic_sign_treaty2 
-	
+	picture = GFX_report_event_generic_sign_treaty2
+
 	is_triggered_only = yes
 
 	# Perfetto!
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.2.a
 
 		ITA = {
@@ -9963,14 +9963,14 @@ country_event = {
 # The Swiss stand fast
 country_event = {
 	id = BBA_italy_interaction_events.3
-	title = BBA_italy_interaction_events.3.t 
+	title = BBA_italy_interaction_events.3.t
 	desc = BBA_italy_interaction_events.3.desc
-	picture = GFX_report_event_generic_sign_treaty2 
-	
+	picture = GFX_report_event_generic_sign_treaty2
+
 	is_triggered_only = yes
 
 	# How DARE you?
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.3.a
 
 		846 = {
@@ -9982,38 +9982,38 @@ country_event = {
 				target = SWI
 				generator = { 846 }
 			}
-		}	
+		}
 	}
 }
 
 # Italy demands the coronation of an Italian prince!
 country_event = {
 	id = BBA_italy_interaction_events.4
-	title = BBA_italy_interaction_events.4.t 
+	title = BBA_italy_interaction_events.4.t
 	desc = BBA_italy_interaction_events.4.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 
 	# why not?
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.4.a
 
 		ai_chance = {
 			base = 100
 		}
 
-		ITA = { 
+		ITA = {
 			country_event = {
 			    id = BBA_italy_interaction_events.5
 			    days = 1
 			    random = 2
 			}
-		}	
+		}
 	}
 
 	# iie
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.4.b
 
 		ai_chance = {
@@ -10033,16 +10033,16 @@ country_event = {
 # The Croats accept
 country_event = {
 	id = BBA_italy_interaction_events.5
-	title = BBA_italy_interaction_events.5.t 
+	title = BBA_italy_interaction_events.5.t
 	desc = BBA_italy_interaction_events.5.desc
-	picture = GFX_report_event_generic_croatia_handshake 
-	
+	picture = GFX_report_event_generic_croatia_handshake
+
 	is_triggered_only = yes
 
 	# bellissimo!
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.5.a
-		
+
 		IF = {
 			limit = {
 				has_dlc = "Together for Victory"
@@ -10072,14 +10072,14 @@ country_event = {
 # The Croats reject
 country_event = {
 	id = BBA_italy_interaction_events.6
-	title = BBA_italy_interaction_events.6.t 
+	title = BBA_italy_interaction_events.6.t
 	desc = BBA_italy_interaction_events.6.desc
 	picture = GFX_report_event_bulgarian_soldiers
-	
+
 	is_triggered_only = yes
 
 	# ah hell nah
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.6.a
 
 		ITA = {
@@ -10094,31 +10094,31 @@ country_event = {
 # The new head of the national defence committee
 country_event = {
 	id = BBA_italy_interaction_events.7
-	title = BBA_italy_interaction_events.7.t 
+	title = BBA_italy_interaction_events.7.t
 	desc = BBA_italy_interaction_events.7.desc
 	picture = GFX_report_event_military_planning
-	
+
 	is_triggered_only = yes
 
 	# nice
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.7.a
 
-		add_country_leader_trait = ITA_head_of_the_national_committee	
+		add_country_leader_trait = ITA_head_of_the_national_committee
 	}
 }
 
 # Italy demands occupation of Dalmatia!
 country_event = {
 	id = BBA_italy_interaction_events.8
-	title = BBA_italy_interaction_events.8.t 
+	title = BBA_italy_interaction_events.8.t
 	desc = BBA_italy_interaction_events.8.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 
 	# We see no reason to oppose this
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.8.a
 
 		ai_chance = {
@@ -10128,8 +10128,8 @@ country_event = {
 		effect_tooltip = {
 			if = {
 				limit = {
-					ROOT = {	
-						OR = {		
+					ROOT = {
+						OR = {
 							owns_state = 103
 							any_subject_country = {
 								is_ai= yes
@@ -10142,11 +10142,11 @@ country_event = {
 					transfer_state = 103
 				}
 			}
-			
+
 			if = {
 				limit = {
-					ROOT = {	
-						OR = {		
+					ROOT = {
+						OR = {
 							owns_state = 163
 							any_subject_country = {
 								is_ai= yes
@@ -10161,8 +10161,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					ROOT = {	
-						OR = {		
+					ROOT = {
+						OR = {
 							owns_state = 852
 							any_subject_country = {
 								is_ai= yes
@@ -10177,7 +10177,7 @@ country_event = {
 			}
 		}
 
-		ITA = { 
+		ITA = {
 			country_event = {
 			    id = BBA_italy_interaction_events.9
 			    days = 1
@@ -10187,7 +10187,7 @@ country_event = {
 	}
 
 	# Hey stop that!
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.8.b
 		trigger = {
 			NOT = {
@@ -10215,14 +10215,14 @@ country_event = {
 # X country accepts our demands
 country_event = {
 	id = BBA_italy_interaction_events.9
-	title = BBA_italy_interaction_events.9.t 
+	title = BBA_italy_interaction_events.9.t
 	desc = BBA_italy_interaction_events.9.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# All according to Keikaku (TN: Keikaku means plan)
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.9.a
 
 		if = {
@@ -10278,21 +10278,21 @@ country_event = {
 			ROOT = {
 				transfer_state = 852
 			}
-		}	
+		}
 	}
 }
 
 # X country rejects our demands
 country_event = {
 	id = BBA_italy_interaction_events.10
-	title = BBA_italy_interaction_events.10.t 
+	title = BBA_italy_interaction_events.10.t
 	desc = BBA_italy_interaction_events.10.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Everything is not in fact Daijoubu
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.10.a
 
 		if = {
@@ -10302,7 +10302,7 @@ country_event = {
 						is_in_faction_with = FROM
 					}
 				}
-			} 
+			}
 			if = {
 				limit = {
 					controls_state = 103
@@ -10359,21 +10359,21 @@ country_event = {
 # Italy claims the montenegrin throne
 country_event = {
 	id = BBA_italy_interaction_events.11
-	title = BBA_italy_interaction_events.11.t 
+	title = BBA_italy_interaction_events.11.t
 	desc = BBA_italy_interaction_events.11.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 
 	# They can have it
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.11.a
 
 		ai_chance = {
 			base = 60
 		}
 
-		ITA = { 
+		ITA = {
 			country_event = {
 			    id = BBA_italy_interaction_events.12
 			    days = 1
@@ -10383,7 +10383,7 @@ country_event = {
 	}
 
 	# N THK U
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.11.b
 
 		ai_chance = {
@@ -10403,14 +10403,14 @@ country_event = {
 # X country accepts our demands (2)
 country_event = {
 	id = BBA_italy_interaction_events.12
-	title = BBA_italy_interaction_events.12.t 
+	title = BBA_italy_interaction_events.12.t
 	desc = BBA_italy_interaction_events.12.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Perfetto!
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.12.a
 
 		ITA = {
@@ -10426,14 +10426,14 @@ country_event = {
 # X country rejects our demands (2)
 country_event = {
 	id = BBA_italy_interaction_events.13
-	title = BBA_italy_interaction_events.13.t 
+	title = BBA_italy_interaction_events.13.t
 	desc = BBA_italy_interaction_events.13.desc
 	picture = GFX_report_event_generic_read_write
-	 
+
 	is_triggered_only = yes
 
 	# Deplorable!
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.13.a
 
 		if = {
@@ -10457,21 +10457,21 @@ country_event = {
 # Italy demands west-anatolian demiltarization
 country_event = {
 	id = BBA_italy_interaction_events.14
-	title = BBA_italy_interaction_events.14.t 
+	title = BBA_italy_interaction_events.14.t
 	desc = BBA_italy_interaction_events.14.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 
 	# We have no use for troops there
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.14.a
 
 		ai_chance = {
 			base = 90
 		}
 
-		ITA = { 
+		ITA = {
 			country_event = {
 			    id = BBA_italy_interaction_events.15
 			    days = 1
@@ -10481,7 +10481,7 @@ country_event = {
 	}
 
 	# But then we can't defend ourselves!?
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.14.b
 
 		ai_chance = {
@@ -10501,14 +10501,14 @@ country_event = {
 # X country accepts our demands (3)
 country_event = {
 	id = BBA_italy_interaction_events.15
-	title = BBA_italy_interaction_events.15.t 
+	title = BBA_italy_interaction_events.15.t
 	desc = BBA_italy_interaction_events.15.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Perfetto!
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.15.a
 
 		342 = {
@@ -10523,19 +10523,19 @@ country_event = {
 # X country rejects our demands (3)
 country_event = {
 	id = BBA_italy_interaction_events.16
-	title = BBA_italy_interaction_events.16.t 
+	title = BBA_italy_interaction_events.16.t
 	desc = BBA_italy_interaction_events.16.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Perfetto!
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.16.a
 
 		342 = {
 			add_claim_by = ITA
-		} 
+		}
 		339 = {
 			add_claim_by = ITA
 		}
@@ -10545,15 +10545,15 @@ country_event = {
 # Our territory is handed over to hungary
 country_event = {
 	id = BBA_italy_interaction_events.17
-	title = BBA_italy_interaction_events.17.t 
+	title = BBA_italy_interaction_events.17.t
 	desc = BBA_italy_interaction_events.17.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# oh, okay...
-	option = { 
-		name = BBA_italy_interaction_events.17.a 
+	option = {
+		name = BBA_italy_interaction_events.17.a
 
 	}
 }
@@ -10561,14 +10561,14 @@ country_event = {
 # Italy approaches us with an offer
 country_event = {
 	id = BBA_italy_interaction_events.18
-	title = BBA_italy_interaction_events.18.t 
+	title = BBA_italy_interaction_events.18.t
 	desc = BBA_italy_interaction_events.18.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Hai
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.18.a
 
 		ai_chance = {
@@ -10585,8 +10585,8 @@ country_event = {
 	}
 
 	# Iie
-	option = { 
-		name = BBA_italy_interaction_events.18.b 
+	option = {
+		name = BBA_italy_interaction_events.18.b
 
 		ai_chance = {
 			base = 30
@@ -10605,15 +10605,15 @@ country_event = {
 # Greece accepts
 country_event = {
 	id = BBA_italy_interaction_events.19
-	title = BBA_italy_interaction_events.19.t 
+	title = BBA_italy_interaction_events.19.t
 	desc = BBA_italy_interaction_events.19.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# that works for us
-	option = { 
-		name = BBA_italy_interaction_events.19.a 
+	option = {
+		name = BBA_italy_interaction_events.19.a
 
 		FROM = {
 			transfer_state = 164
@@ -10626,30 +10626,30 @@ country_event = {
 			}
 			add_ideas = ITA_dodecanese_treaty_idea
 		}
-		
+
 		add_to_faction = FROM
-		
+
 	}
 }
 
 # Greece rejects
 country_event = {
 	id = BBA_italy_interaction_events.20
-	title = BBA_italy_interaction_events.20.t 
+	title = BBA_italy_interaction_events.20.t
 	desc = BBA_italy_interaction_events.20.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# alright.. on to the next one I guess
-	option = { 
-		name = BBA_italy_interaction_events.20.a 
+	option = {
+		name = BBA_italy_interaction_events.20.a
 
 		add_opinion_modifier = {
 		    target = FROM
 		    modifier = faction_traitor
 		}
-		
+
 	}
 }
 
@@ -10658,14 +10658,14 @@ country_event = {
 # Italy approaches us with an offer (2)
 country_event = {
 	id = BBA_italy_interaction_events.21
-	title = BBA_italy_interaction_events.21.t 
+	title = BBA_italy_interaction_events.21.t
 	desc = BBA_italy_interaction_events.21.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Aye
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.21.a
 
 		ai_chance = {
@@ -10682,8 +10682,8 @@ country_event = {
 	}
 
 	# Naye
-	option = { 
-		name = BBA_italy_interaction_events.21.b 
+	option = {
+		name = BBA_italy_interaction_events.21.b
 
 		ai_chance = {
 			base = 30
@@ -10702,15 +10702,15 @@ country_event = {
 # Turkey accepts
 country_event = {
 	id = BBA_italy_interaction_events.22
-	title = BBA_italy_interaction_events.22.t 
+	title = BBA_italy_interaction_events.22.t
 	desc = BBA_italy_interaction_events.22.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# that works for us
-	option = { 
-		name = BBA_italy_interaction_events.22.a 
+	option = {
+		name = BBA_italy_interaction_events.22.a
 
 		FROM = {
 			transfer_state = 164
@@ -10723,50 +10723,50 @@ country_event = {
 			}
 			add_ideas = ITA_dodecanese_treaty_idea
 		}
-		
+
 		add_to_faction = FROM
-		
+
 	}
 }
 
-# Turkey rejects 
+# Turkey rejects
 country_event = {
 	id = BBA_italy_interaction_events.23
-	title = BBA_italy_interaction_events.23.t 
+	title = BBA_italy_interaction_events.23.t
 	desc = BBA_italy_interaction_events.23.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# alright.. on to the next one I guess
-	option = { 
-		name = BBA_italy_interaction_events.23.a 
+	option = {
+		name = BBA_italy_interaction_events.23.a
 
-		
+
 		add_opinion_modifier = {
 		    target = FROM
 		    modifier = faction_traitor
 		}
-		
+
 	}
 }
 
 # Germany Tries to Anchluss Austria
 country_event = {
 	id = BBA_italy_interaction_events.24
-	title = BBA_italy_interaction_events.24.t 
+	title = BBA_italy_interaction_events.24.t
 	desc = BBA_italy_interaction_events.24.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
 	# Fight alone
-	option = { 
-		name = BBA_italy_interaction_events.24.a 
+	option = {
+		name = BBA_italy_interaction_events.24.a
 
-		ai_chance = { 
+		ai_chance = {
 			base = 60
 		}
 
@@ -10788,10 +10788,10 @@ country_event = {
 	}
 
 	# Request Assistance
-	option = { 
-		name = BBA_italy_interaction_events.24.b 
+	option = {
+		name = BBA_italy_interaction_events.24.b
 
-		ai_chance = { 
+		ai_chance = {
 			base = 30
 			modifier = {
 				add = 60
@@ -10822,7 +10822,7 @@ country_event = {
 			}
 		}
 
-		
+
 		IF = {
 			limit = {
 				FRA = {
@@ -10863,10 +10863,10 @@ country_event = {
 	}
 
 	# Back down, cower in fear and wait for your demise
-	option = { 
-		name = BBA_italy_interaction_events.24.c 
+	option = {
+		name = BBA_italy_interaction_events.24.c
 
-		ai_chance = { 
+		ai_chance = {
 			base = 10
 		}
 
@@ -10886,7 +10886,7 @@ country_event = {
 			}
 
 			add_ai_strategy = { #cancel and then some
-				type = protect 
+				type = protect
 				id = FROM
 				value = -100
 			}
@@ -10904,25 +10904,25 @@ country_event = {
 # Italy stands up to us!
 country_event = {
 	id = BBA_italy_interaction_events.25
-	title = BBA_italy_interaction_events.25.t 
+	title = BBA_italy_interaction_events.25.t
 	desc = BBA_italy_interaction_events.25.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# They are getting ahead of themselves
-	option = { 
-		name = BBA_italy_interaction_events.25.a 
+	option = {
+		name = BBA_italy_interaction_events.25.a
 
-		ai_chance = { 
+		ai_chance = {
 			base = 90
 		}
 	}
 
 	# Sadly we must back down...
-	option = { 
-		name = BBA_italy_interaction_events.25.b 
-		ai_chance = { 
+	option = {
+		name = BBA_italy_interaction_events.25.b
+		ai_chance = {
 			base = 10
 		}
 
@@ -10941,9 +10941,9 @@ news_event = {
 	title = BBA_italy_interaction_events_news.1.t
 	desc = BBA_italy_interaction_events_news.1.desc
 	picture = GFX_news_event_generic_parliament
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #Us
 		name = BBA_italy_interaction_events_news.1.a
 		trigger = {
@@ -10959,42 +10959,42 @@ news_event = {
 	}
 }
 
-# Italy Backs Down 
+# Italy Backs Down
 country_event = {
 	id = BBA_italy_interaction_events.26
-	title = BBA_italy_interaction_events.26.t 
+	title = BBA_italy_interaction_events.26.t
 	desc = BBA_italy_interaction_events.26.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# alright.. on to the next one I guess
-	option = { 
-		name = BBA_italy_interaction_events.26.a 
-		
-		
+	option = {
+		name = BBA_italy_interaction_events.26.a
+
+
 	}
 }
 
 # (ENG) Italy wants our help against Germany
 country_event = {
 	id = BBA_italy_interaction_events.27
-	title = BBA_italy_interaction_events.27.t 
+	title = BBA_italy_interaction_events.27.t
 	desc = BBA_italy_interaction_events.27.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Alright chaps, we're going in again
-	option = { 
-		name = BBA_italy_interaction_events.27.a 
+	option = {
+		name = BBA_italy_interaction_events.27.a
 		trigger = {
 			NOT= {
 				has_country_flag = ITA_italy_asks_ethiopian_host_for_help
 			}
 		}
 
-		ai_chance = { 
+		ai_chance = {
 			base = 50
 			modifier = {
 				add = 15
@@ -11019,13 +11019,13 @@ country_event = {
 	}
 
 	#Make Italy sign peace with Ethiopia
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.27.b
 		trigger = {
 			has_country_flag = ITA_italy_asks_ethiopian_host_for_help
 		}
 
-		ai_chance = { 
+		ai_chance = {
 			base = 50
 			modifier = {
 				add = 15
@@ -11050,10 +11050,10 @@ country_event = {
 	}
 
 	# Blimey no, why should we care about the continent?
-	option = { 
-		name = BBA_italy_interaction_events.27.c 
+	option = {
+		name = BBA_italy_interaction_events.27.c
 
-		ai_chance = { 
+		ai_chance = {
 			base = 50
 		}
 
@@ -11067,29 +11067,29 @@ news_event = {
 	title = BBA_italy_interaction_events_news.2.t
 	desc = BBA_italy_interaction_events_news.2.desc
 	picture = GFX_news_event_generic_parliament
-		
+
 	is_triggered_only = yes
 
 	option = { #Wow
-		name = BBA_italy_interaction_events_news.2.a 
-		
+		name = BBA_italy_interaction_events_news.2.a
+
 	}
 }
 
 # (FRA) Italy wants our help against Germany
 country_event = {
 	id = BBA_italy_interaction_events.28
-	title = BBA_italy_interaction_events.28.t 
+	title = BBA_italy_interaction_events.28.t
 	desc = BBA_italy_interaction_events.28.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Oui, pour la liberté!
-	option = { 
-		name = BBA_italy_interaction_events.28.a 
+	option = {
+		name = BBA_italy_interaction_events.28.a
 
-		ai_chance = { 
+		ai_chance = {
 			base = 50
 			modifier = {
 				add = 15
@@ -11114,14 +11114,14 @@ country_event = {
 	}
 
 	# This whole ordeal seems quite phony...
-	option = { 
-		name = BBA_italy_interaction_events.28.b 
+	option = {
+		name = BBA_italy_interaction_events.28.b
 
-		ai_chance = { 
+		ai_chance = {
 			base = 50
 		}
 
-		add_stability = 0.1	
+		add_stability = 0.1
 	}
 }
 
@@ -11131,29 +11131,29 @@ news_event = {
 	title = BBA_italy_interaction_events_news.3.t
 	desc = BBA_italy_interaction_events_news.3.desc
 	picture = GFX_news_event_generic_parliament
-	
+
 	is_triggered_only = yes
 
 	option = { #Stunning
-		name = BBA_italy_interaction_events_news.3.a 
-		
+		name = BBA_italy_interaction_events_news.3.a
+
 	}
-} 
+}
 
 # (YUG) Italy is mean and we can't do anything about it
 country_event = {
 	id = BBA_italy_interaction_events.29
-	title = BBA_italy_interaction_events.29.t 
+	title = BBA_italy_interaction_events.29.t
 	desc = BBA_italy_interaction_events.29.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# We have no option but to accept
-	option = { 
-		name = BBA_italy_interaction_events.29.a 
+	option = {
+		name = BBA_italy_interaction_events.29.a
 
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 
@@ -11187,10 +11187,10 @@ country_event = {
 	}
 
 	# I don't like italy
-	option = { 
-		name = BBA_italy_interaction_events.29.b 
-		
-		ai_chance = { 
+	option = {
+		name = BBA_italy_interaction_events.29.b
+
+		ai_chance = {
 			base = 0
 		}
 
@@ -11207,17 +11207,17 @@ country_event = {
 # (HUN) Italy is nice :)
 country_event = {
 	id = BBA_italy_interaction_events.30
-	title = BBA_italy_interaction_events.30.t 
+	title = BBA_italy_interaction_events.30.t
 	desc = BBA_italy_interaction_events.30.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Sounds good to me
-	option = { 
-		name = BBA_italy_interaction_events.30.a 
+	option = {
+		name = BBA_italy_interaction_events.30.a
 
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 
@@ -11289,9 +11289,9 @@ country_event = {
 	}
 
 	# blasphemy that is
-	option = { 
-		name = BBA_italy_interaction_events.30.b 
-		ai_chance = { 
+	option = {
+		name = BBA_italy_interaction_events.30.b
+		ai_chance = {
 			base = 0
 		}
 	}
@@ -11300,15 +11300,15 @@ country_event = {
 # Italy wants to negotiate their claims to British Somalia
 country_event = {
 	id = BBA_italy_interaction_events.31
-	title = BBA_italy_interaction_events.31.t 
+	title = BBA_italy_interaction_events.31.t
 	desc = BBA_italy_interaction_events.31.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# We can give it to them
-	option = { 
-		name = BBA_italy_interaction_events.31.a 
+	option = {
+		name = BBA_italy_interaction_events.31.a
 
 		ai_chance = {
 			base = 50
@@ -11391,7 +11391,7 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = ITA_will_get_british_somalia
 			if = {
-				limit = {	
+				limit = {
 					has_country_flag = ITA_italy_suing_for_peace_flag
 				}
 				clr_country_flag = ITA_italy_suing_for_peace_flag
@@ -11465,7 +11465,7 @@ country_event = {
 	}
 
 	# They will not get it
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.31.b
 
 		ai_chance = {
@@ -11563,7 +11563,7 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = ITA_italy_has_started_negotiations_flag
 			if = {
-				limit = {	
+				limit = {
 					has_country_flag = ITA_italy_suing_for_peace_flag
 				}
 				clr_country_flag = ITA_italy_suing_for_peace_flag
@@ -11587,15 +11587,15 @@ country_event = {
 # Italy wants to negotiate their claims to djibouti
 country_event = {
 	id = BBA_italy_interaction_events.32
-	title = BBA_italy_interaction_events.32.t 
+	title = BBA_italy_interaction_events.32.t
 	desc = BBA_italy_interaction_events.32.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Pour la Paix
-	option = { 
-		name = BBA_italy_interaction_events.32.a 
+	option = {
+		name = BBA_italy_interaction_events.32.a
 
 		ai_chance = {
 			base = 50
@@ -11701,7 +11701,7 @@ country_event = {
 	}
 
 	# Non!
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.32.b
 
 		ai_chance = {
@@ -11770,15 +11770,15 @@ country_event = {
 # Italy wants to negotiate their claims to Socotra
 country_event = {
 	id = BBA_italy_interaction_events.33
-	title = BBA_italy_interaction_events.33.t 
+	title = BBA_italy_interaction_events.33.t
 	desc = BBA_italy_interaction_events.33.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# We can give it to them
-	option = { 
-		name = BBA_italy_interaction_events.33.a 
+	option = {
+		name = BBA_italy_interaction_events.33.a
 
 		ai_chance = {
 			base = 50
@@ -11877,7 +11877,7 @@ country_event = {
 	}
 
 	# They will not get it
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.33.b
 
 		ai_chance = {
@@ -11939,15 +11939,15 @@ country_event = {
 # Italy wants to negotiate their claims to Tunisia
 country_event = {
 	id = BBA_italy_interaction_events.34
-	title = BBA_italy_interaction_events.34.t 
+	title = BBA_italy_interaction_events.34.t
 	desc = BBA_italy_interaction_events.34.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# Pour la Paix
-	option = { 
-		name = BBA_italy_interaction_events.34.a 
+	option = {
+		name = BBA_italy_interaction_events.34.a
 
 		ai_chance = {
 			base = 50
@@ -11994,7 +11994,7 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = ITA_will_get_tunisia
 		}
-		
+
 		if = { #Send this event if Britain controls the necessary state(s)
 			limit = {
 				ENG = {
@@ -12032,7 +12032,7 @@ country_event = {
 	}
 
 	# Non!
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.34.b
 
 		ai_chance = {
@@ -12079,15 +12079,15 @@ country_event = {
 # Italy wants to negotiate their claims to malta
 country_event = {
 	id = BBA_italy_interaction_events.35
-	title = BBA_italy_interaction_events.35.t 
+	title = BBA_italy_interaction_events.35.t
 	desc = BBA_italy_interaction_events.35.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	# We can give it to them
-	option = { 
-		name = BBA_italy_interaction_events.35.a 
+	option = {
+		name = BBA_italy_interaction_events.35.a
 
 		ai_chance = {
 			base = 50
@@ -12155,7 +12155,7 @@ country_event = {
 	}
 
 	# They will not get it
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.35.b
 
 		ai_chance = {
@@ -12186,10 +12186,10 @@ country_event = {
 # Italy wants to negotiate their claims to the balkans
 country_event = {
 	id = BBA_italy_interaction_events.36
-	title = BBA_italy_interaction_events.36.t 
+	title = BBA_italy_interaction_events.36.t
 	desc = BBA_italy_interaction_events.36.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	immediate = { #For Loc purposes
@@ -12209,8 +12209,8 @@ country_event = {
 	}
 
 	#No use arguing
-	option = { 
-		name = BBA_italy_interaction_events.36.a 
+	option = {
+		name = BBA_italy_interaction_events.36.a
 
 		hidden_effect = {
 			set_global_flag = ITA_will_get_balkans
@@ -12275,13 +12275,13 @@ country_event = {
 }
 
 
-# (ITA) Treaty-terms concluded 
+# (ITA) Treaty-terms concluded
 country_event = {
 	id = BBA_italy_interaction_events.37
-	title = BBA_italy_interaction_events.37.t 
+	title = BBA_italy_interaction_events.37.t
 	desc = BBA_italy_interaction_events.37.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -12296,13 +12296,13 @@ country_event = {
 	}
 
 	# Not all we wanted, but we can't complain
-	option = { 
-		name = BBA_italy_interaction_events.37.a 
-		
+	option = {
+		name = BBA_italy_interaction_events.37.a
+
 		ai_chance = {
 			base = 100
 		}
-		
+
 		trigger = {
 			NOT = {
 				AND = {
@@ -12398,7 +12398,7 @@ country_event = {
 			limit = {
 				has_global_flag = ITA_will_get_balkans
 			}
-			
+
 			103 = {
 				add_claim_by = ITA
 			}
@@ -12457,13 +12457,13 @@ country_event = {
 	}
 
 	# Splendido!
-	option = { 
-		name = BBA_italy_interaction_events.37.b 
-		
+	option = {
+		name = BBA_italy_interaction_events.37.b
+
 		ai_chance = {
 			base = 100
 		}
-		
+
 		trigger = {
 			AND = {
 				has_global_flag = ITA_will_get_british_somalia
@@ -12541,7 +12541,7 @@ country_event = {
 			limit = {
 				has_global_flag = ITA_will_get_balkans
 			}
-			
+
 			103 = {
 				add_claim_by = ITA
 			}
@@ -12603,10 +12603,10 @@ country_event = {
 # The Papacy Reborn
 country_event = {
 	id = BBA_italy_interaction_events.38
-	title = BBA_italy_interaction_events.38.t 
+	title = BBA_italy_interaction_events.38.t
 	desc = BBA_italy_interaction_events.38.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -12636,15 +12636,15 @@ country_event = {
 	}
 
 	# Deus Vult!
-	option = { 
-		name = BBA_italy_interaction_events.38.a 
+	option = {
+		name = BBA_italy_interaction_events.38.a
 
 		add_war_support = 0.1
 
 		ITA_pope_takes_over = yes
 
-		hidden_effect = { 
-			news_event = { id = bba_news.666 hours = 2 } 
+		hidden_effect = {
+			news_event = { id = bba_news.666 hours = 2 }
 			set_country_flag = ITA_deposed_the_king
 		}
 	}
@@ -12654,16 +12654,16 @@ country_event = {
 # Payments are done
 country_event = {
 	id = BBA_italy_interaction_events.39
-	title = BBA_italy_interaction_events.39.t 
+	title = BBA_italy_interaction_events.39.t
 	desc = BBA_italy_interaction_events.39.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 	hidden = yes
 
 	#Ok
-	option = { 
-		name = BBA_italy_interaction_events.39.a 
+	option = {
+		name = BBA_italy_interaction_events.39.a
 
 		IF = {
 			limit = {
@@ -12708,17 +12708,17 @@ country_event = {
 			ENG = {
 				add_offsite_building = { type = industrial_complex level = -1 }
 			}
-		}		
+		}
 	}
 }
 
 # (FRA) Ratification of the Stresa Front
 country_event = {
 	id = BBA_italy_interaction_events.40
-	title = BBA_italy_interaction_events.40.t 
+	title = BBA_italy_interaction_events.40.t
 	desc = BBA_italy_interaction_events.40.desc
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -12740,8 +12740,8 @@ country_event = {
 	}
 
 	# The conditions are acceptable
-	option = { 
-		name = BBA_italy_interaction_events.40.a 
+	option = {
+		name = BBA_italy_interaction_events.40.a
 
 		ai_chance = {
 			base = 100
@@ -12806,8 +12806,8 @@ country_event = {
 	}
 
 	# No thank you
-	option = { 
-		name = BBA_italy_interaction_events.40.b 
+	option = {
+		name = BBA_italy_interaction_events.40.b
 
 		ai_chance = {
 			base = 0
@@ -12821,14 +12821,14 @@ country_event = {
 
 country_event = { #Hidden event
 	id = BBA_italy_interaction_events.411
-	
+
 	hidden = yes
 	is_triggered_only = yes
 	fire_only_once = no
 
 	#Italy joins the faction
-	option = { 
-		name = BBA_italy_interaction_events.41.a 
+	option = {
+		name = BBA_italy_interaction_events.41.a
 		ai_chance = {
 			base = 100
 		}
@@ -12868,18 +12868,18 @@ country_event = { #Hidden event
 # [ITA.GetName] offers to bring us under their wings
 country_event = {
 	id = BBA_italy_interaction_events.41
-	title = BBA_italy_interaction_events.41.t 
+	title = BBA_italy_interaction_events.41.t
 	desc = BBA_italy_interaction_events.41.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 	fire_only_once = no
 
 	# I don't see why not
-	option = { 
-		name = BBA_italy_interaction_events.41.a 
+	option = {
+		name = BBA_italy_interaction_events.41.a
 
-		ai_chance = { 
+		ai_chance = {
 			base = 70
 			modifier = {
 				factor = 0
@@ -12923,11 +12923,11 @@ country_event = {
 		}
 	}
 
-	# Shut up Romaboos! 
-	option = { 
+	# Shut up Romaboos!
+	option = {
 		name = BBA_italy_interaction_events.41.b
 
-		ai_chance = { 
+		ai_chance = {
 			base = 30
 		}
 
@@ -12944,16 +12944,16 @@ country_event = {
 # [FROM.GetName] accepts our offer
 country_event = {
 	id = BBA_italy_interaction_events.42
-	title = BBA_italy_interaction_events.42.t 
+	title = BBA_italy_interaction_events.42.t
 	desc = BBA_italy_interaction_events.42.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 	fire_only_once = no
 
 	# Niceu
-	option = { 
-		name = BBA_italy_interaction_events.42.a 
+	option = {
+		name = BBA_italy_interaction_events.42.a
 
 		puppet = FROM
 	}
@@ -12962,16 +12962,16 @@ country_event = {
 # [FROM.GetName] rejects our offer
 country_event = {
 	id = BBA_italy_interaction_events.43
-	title = BBA_italy_interaction_events.43.t 
+	title = BBA_italy_interaction_events.43.t
 	desc = BBA_italy_interaction_events.43.desc
-	picture = GFX_report_event_fascist_speech 
-	
+	picture = GFX_report_event_fascist_speech
+
 	is_triggered_only = yes
 	fire_only_once = no
 
 	# They will regret this day!
-	option = { 
-		name = BBA_italy_interaction_events.43.a 
+	option = {
+		name = BBA_italy_interaction_events.43.a
 
 		create_wargoal = {
 			type = puppet_wargoal_focus
@@ -12983,18 +12983,18 @@ country_event = {
 # [ITA.GetName] offers to bring us under their wings
 country_event = {
 	id = BBA_italy_interaction_events.44
-	title = BBA_italy_interaction_events.44.t 
+	title = BBA_italy_interaction_events.44.t
 	desc = BBA_italy_interaction_events.44.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 	fire_only_once = no
 
 	# For the future of Latin America!
-	option = { 
-		name = BBA_italy_interaction_events.44.a 
+	option = {
+		name = BBA_italy_interaction_events.44.a
 
-		ai_chance = { 
+		ai_chance = {
 			base = 80
 		}
 
@@ -13031,11 +13031,11 @@ country_event = {
 		}
 	}
 
-	# Why should we speak to Europeans? 
-	option = { 
+	# Why should we speak to Europeans?
+	option = {
 		name = BBA_italy_interaction_events.44.b
 
-		ai_chance = { 
+		ai_chance = {
 			base = 20
 		}
 
@@ -13052,16 +13052,16 @@ country_event = {
 # [FROM.GetName] accepts our offer (2)
 country_event = {
 	id = BBA_italy_interaction_events.45
-	title = BBA_italy_interaction_events.45.t 
+	title = BBA_italy_interaction_events.45.t
 	desc = BBA_italy_interaction_events.45.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
 	fire_only_once = no
 
 	# Niceu
-	option = { 
-		name = BBA_italy_interaction_events.45.a 
+	option = {
+		name = BBA_italy_interaction_events.45.a
 
 		ROOT = { add_to_faction = FROM }
 	}
@@ -13070,16 +13070,16 @@ country_event = {
 # [FROM.GetName] rejects our offer (2)
 country_event = {
 	id = BBA_italy_interaction_events.46
-	title = BBA_italy_interaction_events.46.t 
+	title = BBA_italy_interaction_events.46.t
 	desc = BBA_italy_interaction_events.46.desc
-	picture = GFX_report_event_fascist_speech 
-	
+	picture = GFX_report_event_fascist_speech
+
 	is_triggered_only = yes
 	fire_only_once = no
- 
+
 	# We can do little to change their minds...
-	option = { 
-		name = BBA_italy_interaction_events.46.a 
+	option = {
+		name = BBA_italy_interaction_events.46.a
 
 		add_political_power = 25
 	}
@@ -13088,17 +13088,17 @@ country_event = {
 # Jerusalem or War - Event for Jerusalem controller (from Pope)
 country_event = {
 	id = BBA_italy_interaction_events.666
-	title = BBA_italy_interaction_events.666.t 
+	title = BBA_italy_interaction_events.666.t
 	desc = BBA_italy_interaction_events.666.desc
 	picture = GFX_report_event_fascist_speech
-	
-	is_triggered_only = yes
- 
-	# Accept
-	option = { 
-		name = BBA_italy_interaction_events.666.a 
 
-		ai_chance = { 
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = BBA_italy_interaction_events.666.a
+
+		ai_chance = {
 			base = 10
 		}
 
@@ -13116,14 +13116,14 @@ country_event = {
 		}
 	}
 	# Reject
-	option = { 
+	option = {
 		name = BBA_italy_interaction_events.666.b
 
 		trigger = {
 			NOT = { is_subject_of = FROM }
 		}
 
-		ai_chance = { 
+		ai_chance = {
 			base = 0
 		}
 
@@ -13132,7 +13132,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state
 					target = ROOT
-					generator = { 454 } 
+					generator = { 454 }
 				}
 			}
 		}
@@ -13144,16 +13144,16 @@ country_event = {
 }
 
 #ITA asking to negotiate with ENG
-country_event = {  
+country_event = {
 	id = BBA_italy_interaction_events.50
-	title = BBA_italy_interaction_events.50.t 
+	title = BBA_italy_interaction_events.50.t
 	desc = BBA_italy_interaction_events.50.desc
-	picture = GFX_report_event_fascist_speech 
-	
+	picture = GFX_report_event_fascist_speech
+
 	is_triggered_only = yes
- 
+
 	option = { #We want Italy to make peace with Ethiopia at first
-		name = BBA_italy_interaction_events.50.a 
+		name = BBA_italy_interaction_events.50.a
 		ai_chance = {
 			base = 10
 			modifier = {
@@ -13186,17 +13186,17 @@ country_event = {
 			}
 		}
 
-		FROM = { 
+		FROM = {
 			country_event = { id = BBA_italo_ethiopian_war_events.500 hours = 4 random_hours = 2 }
 		}
 
 		hidden_effect = { #For scripted loc  purposes
 			set_country_flag = ITA_italy_suing_for_peace_flag
-		}		
+		}
 	}
 
 	option = { #Bugger off!
-		name = BBA_italy_interaction_events.50.b 
+		name = BBA_italy_interaction_events.50.b
 		ai_chance = {
 			base = 1
 		}
@@ -13205,31 +13205,31 @@ country_event = {
 
 country_event = { #Italy receiving the cold hand from England
 	id = BBA_italy_interaction_events.51
-	title = BBA_italy_interaction_events.51.t 
+	title = BBA_italy_interaction_events.51.t
 	desc = BBA_italy_interaction_events.51.desc
-	picture = GFX_report_event_fascist_speech 
-	
+	picture = GFX_report_event_fascist_speech
+
 	is_triggered_only = yes
- 
+
 	option = { #Stupid English!
-		name = BBA_italy_interaction_events.51.a 
+		name = BBA_italy_interaction_events.51.a
 	}
 }
 
 country_event = { #England receives the news that Italy signed a peace treaty with Ethiopia
 	id = BBA_italy_interaction_events.60
-	title = BBA_italy_interaction_events.60.t 
+	title = BBA_italy_interaction_events.60.t
 	desc = BBA_italy_interaction_events.60.desc
-	picture = GFX_report_event_fascist_speech 
-	
+	picture = GFX_report_event_fascist_speech
+
 	is_triggered_only = yes
- 
+
 	option = { #English response
 		name = BBA_italy_interaction_events.27.a #Intentional
 		trigger = {
 			original_tag = ENG
-		} 
-		
+		}
+
 		add_war_support = 0.05
 		add_stability = -0.15
 
@@ -13260,12 +13260,12 @@ country_event = { #England receives the news that Italy signed a peace treaty wi
 
 country_event = { #Italy is notified that a specific country might take longer to decide whether to be puppeted or not
 	id = BBA_italy_interaction_events.70
-	title = BBA_italy_interaction_events.70.t 
+	title = BBA_italy_interaction_events.70.t
 	desc = BBA_italy_interaction_events.70.desc
-	picture = GFX_report_event_generic_parliament 
-	
+	picture = GFX_report_event_generic_parliament
+
 	is_triggered_only = yes
- 
+
 	option = { #we'll wait
 		name = BBA_italy_interaction_events.70.a
 	}
@@ -13273,12 +13273,12 @@ country_event = { #Italy is notified that a specific country might take longer t
 
 country_event = { #Exiled country receives offer to become Italian puppet
 	id = BBA_italy_interaction_events.71
-	title = BBA_italy_interaction_events.71.t 
+	title = BBA_italy_interaction_events.71.t
 	desc = BBA_italy_interaction_events.71.desc
-	picture = GFX_report_event_generic_sign_treaty2 
-	
+	picture = GFX_report_event_generic_sign_treaty2
+
 	is_triggered_only = yes
- 
+
 	option = { #Accept to become a puppet to Italy
 		name = BBA_italy_interaction_events.71.a
 		FROM = {
@@ -13308,7 +13308,7 @@ country_event = { #Exiled country receives offer to become Italian puppet
 		name = BBA_italy_interaction_events.71.b
 		trigger = {
 			is_ai = no
-		} 
+		}
 		custom_effect_tooltip = GAME_OVER_TT
 		hidden_effect = {
 			FROM = { #Annex the player so the game is over for them
@@ -13327,12 +13327,12 @@ country_event = { #Exiled country receives offer to become Italian puppet
 
 country_event = { #Ethiopia's host is notified that Ethiopia is leaving
 	id = BBA_italy_interaction_events.72
-	title = BBA_italy_interaction_events.72.t 
+	title = BBA_italy_interaction_events.72.t
 	desc = BBA_italy_interaction_events.72.desc
-	picture = GFX_report_event_generic_parliament 
-	
+	picture = GFX_report_event_generic_parliament
+
 	is_triggered_only = yes
- 
+
 	option = { #ok
 		name = BBA_italy_interaction_events.72.a
 	}
@@ -13340,11 +13340,11 @@ country_event = { #Ethiopia's host is notified that Ethiopia is leaving
 
 country_event = { #Italy releases country as puppets
 	id = BBA_italy_interaction_events.73
-	picture = GFX_report_event_fascist_speech 
-	
+	picture = GFX_report_event_fascist_speech
+
 	hidden = yes
 	is_triggered_only = yes
- 
+
 	immediate = {
 		ROOT = {
 			release_puppet_on_controlled = FROM
@@ -13358,15 +13358,15 @@ country_event = { #Italy releases country as puppets
 # Jerusalem or War - Country accepts - Event for ITA (Pope)
 country_event = {
 	id = BBA_italy_interaction_events.667
-	title = BBA_italy_interaction_events.667.t 
+	title = BBA_italy_interaction_events.667.t
 	desc = BBA_italy_interaction_events.667.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
- 
+
 	# Ok
-	option = { 
-		name = BBA_italy_interaction_events.667.a 
+	option = {
+		name = BBA_italy_interaction_events.667.a
 
 		transfer_state = 454 #PALESTINE
 		add_opinion_modifier = {
@@ -13405,20 +13405,20 @@ country_event = {
 # Jerusalem or War - Country Rejects - Event for ITA (Pope)
 country_event = {
 	id = BBA_italy_interaction_events.668
-	title = BBA_italy_interaction_events.668.t 
+	title = BBA_italy_interaction_events.668.t
 	desc = BBA_italy_interaction_events.668.desc
 	picture = GFX_report_event_fascist_speech
-	
+
 	is_triggered_only = yes
- 
+
 	# Accept
-	option = { 
-		name = BBA_italy_interaction_events.668.a 
+	option = {
+		name = BBA_italy_interaction_events.668.a
 
 		create_wargoal = {
 			type = take_state
 			target = FROM
-			generator = { 454 } 
+			generator = { 454 }
 		}
 	}
 }

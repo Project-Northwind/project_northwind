@@ -85,7 +85,7 @@ no_old_navy_production = {
 		id = naval_capital_bb
 		value = -10000
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_shbb
@@ -163,7 +163,7 @@ naval_unit_role_ratios_minors_coastal = {
 			}
 		}
 	}
-	enable = { 
+	enable = {
 		has_navy_size = { size < 50 }
 	}
 
@@ -216,13 +216,13 @@ naval_unit_role_ratios_minors_defensive = {
 		id = vnr_naval_cruiser_light
 		value = 50
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_heavy
 		value = 20
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -264,7 +264,7 @@ naval_unit_role_ratios_minors_offensive = {
 		id = vnr_naval_cruiser_light
 		value = 50
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_heavy
@@ -318,7 +318,7 @@ naval_unit_role_ratios_minors_global = {
 		id = vnr_naval_cruiser_light
 		value = 50
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_heavy
@@ -355,7 +355,7 @@ naval_unit_role_ratios_GER_prewar_early = {
 		has_war_with_major = no
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_screen
@@ -367,19 +367,19 @@ naval_unit_role_ratios_GER_prewar_early = {
 		id = vnr_naval_cruiser_light
 		value = 50
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_heavy
 		value = 20
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_capital_bb
 		value = 100
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -397,7 +397,7 @@ naval_unit_role_ratios_GER_prewar_late = {
 		has_war_with_major = no
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_screen
@@ -409,19 +409,19 @@ naval_unit_role_ratios_GER_prewar_late = {
 		id = vnr_naval_cruiser_light
 		value = 40
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_heavy
 		value = 20
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_capital_bb
 		value = 40
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -438,7 +438,7 @@ naval_unit_role_ratios_GER_atwar = {
 		num_of_naval_factories < 35
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -462,7 +462,7 @@ naval_unit_role_ratios_GER_atwar = {
 		id = vnr_naval_cruiser_heavy
 		value = 10
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_capital_bb
@@ -479,7 +479,7 @@ naval_unit_role_ratios_GER_atwar_many_shipyard = {
 		num_of_naval_factories > 34
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -497,19 +497,19 @@ naval_unit_role_ratios_GER_atwar_many_shipyard = {
 		id = vnr_naval_cruiser_light
 		value = 50
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_heavy
 		value = 30
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_capital_bb
 		value = 20
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_carrier
@@ -523,12 +523,12 @@ naval_unit_role_ratios_GER_atwar_knock_USA = {
 	}
 	enable = {
 		has_war_with = USA
-		NOT = { 
+		NOT = {
 			has_war_with = ENG
 		}
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -546,19 +546,19 @@ naval_unit_role_ratios_GER_atwar_knock_USA = {
 		id = vnr_naval_cruiser_light
 		value = 50
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_heavy
 		value = 30
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_capital_bb
 		value = 20
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_carrier
@@ -583,7 +583,7 @@ naval_unit_role_ratios_GER_atwar_No_Naval_Competitor = {
 		}
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -601,19 +601,19 @@ naval_unit_role_ratios_GER_atwar_No_Naval_Competitor = {
 		id = vnr_naval_cruiser_light
 		value = 50
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_heavy
 		value = 30
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_capital_bb
 		value = 30
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_carrier
@@ -630,7 +630,7 @@ naval_unit_role_ratios_GER_late_peace = {
 		has_war_with_major = no
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_carrier
@@ -654,13 +654,13 @@ naval_unit_role_ratios_GER_late_peace = {
 		id = vnr_naval_cruiser_light
 		value = 40
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_heavy
 		value = 30
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_capital_bb
@@ -1150,7 +1150,7 @@ naval_unit_role_ratios_SOV_no_need_to_watch_germany_peace = {
 		has_war_with_major = no
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1195,7 +1195,7 @@ naval_unit_role_ratios_SOV_atwar_with_Germany = {
 		has_war_with = GER
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1237,7 +1237,7 @@ naval_unit_role_ratios_SOV_atwar_with_major = {
 		has_war_with_major = yes
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1291,7 +1291,7 @@ naval_unit_role_ratios_JAP_prewar_naval_treaty = {
 		has_naval_treaty_trigger = yes
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1339,7 +1339,7 @@ naval_unit_role_ratios_JAP_prewar_break_treaty = {
 		has_naval_treaty_trigger = no
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1527,7 +1527,7 @@ naval_unit_role_ratios_USA_go_to_war = {
 		has_war_with_major = no
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1538,7 +1538,7 @@ naval_unit_role_ratios_USA_go_to_war = {
 		id = vnr_naval_screen
 		value = 500
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_cruiser_light
@@ -1578,7 +1578,7 @@ naval_unit_role_ratios_USA_atwar = {
 		has_war_with_major = yes
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1616,7 +1616,7 @@ naval_unit_role_ratios_USA_atwar = {
 		id = vnr_naval_carrier
 		value = 120
 	}
-	
+
 	ai_strategy = {
 		type = build_ship
 		id = capital_ship
@@ -1655,7 +1655,7 @@ naval_unit_role_ratios_ITA_prewar_build_battleships = {
 		has_navy_size = { size < 8 archetype = ship_hull_heavy }
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1699,7 +1699,7 @@ naval_unit_role_ratios_ITA_prewar_enough_battleships = {
 		has_navy_size = { size > 7 archetype = ship_hull_heavy }
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1746,7 +1746,7 @@ naval_unit_role_ratios_ITA_atwar_with_England = {
 		has_war_with = ENG
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1797,7 +1797,7 @@ naval_unit_role_ratios_ITA_atwar_with_major = {
 		has_war_with_major = yes
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -1853,7 +1853,7 @@ naval_unit_role_ratios_ITA_late_peace = {
 		has_war_with_major = no
 	}
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = vnr_naval_submarine
@@ -3514,7 +3514,7 @@ dockyard_building_target_generic_big_4 = {
 	}
 }
 
-# Commandwealth 
+# Commandwealth
 dockyard_building_target_commonwealth_1 = {
 	allowed = {
 		NOT = {

@@ -2,10 +2,14 @@ units = {
 
 	##### NAVAL UNITS #####
 	### ROYAL NAVY ###
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 
 	### EAST INDIES SQUADRON ###
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 }
 
 

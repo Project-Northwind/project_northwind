@@ -1,11 +1,11 @@
 
 #ELECTION DECISION
-GRE_1936_election_category = { 
+GRE_1936_election_category = {
 	GRE_the_election_of_1936  = { # Election crisis
 
 		icon = eng_support_imperialist_coup
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -32,11 +32,11 @@ GRE_1936_election_category = {
 		is_good = no
 
 		complete_effect = {
-			hidden_effect = { 
+			hidden_effect = {
 				if = {
-					limit = { 
+					limit = {
 						has_country_flag = GRE_king_arrested
-					}	
+					}
 					country_event = { id = bftb_greece.2 days = 1 }
 				}
 				else = {
@@ -48,11 +48,11 @@ GRE_1936_election_category = {
 
 		timeout_effect = {
 			custom_effect_tooltip = GRE_1936_election_tt
-			hidden_effect = { 
+			hidden_effect = {
 				if = {
-					limit = { 
+					limit = {
 						has_country_flag = GRE_king_arrested
-					}	
+					}
 					country_event = { id = bftb_greece.2 days = 1 }
 				}
 				else = {
@@ -62,26 +62,26 @@ GRE_1936_election_category = {
 			}
 		}
 	}
-	
+
 	GRE_put_the_king_under_house_arrest = {
-	
+
 		icon = generic_arrest
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
-		
+
 		fire_only_once = yes
-		
+
 		visible = {
-			NOT = { 
+			NOT = {
 				OR = {
-					has_country_flag = GRE_1936_election 
+					has_country_flag = GRE_1936_election
 					has_country_flag = GRE_kings_government
 				}
 			}
 		}
-		
+
 		available = {
 			date < 1936.01.26
 		}
@@ -97,7 +97,7 @@ GRE_1936_election_category = {
 						has_game_rule = {
 							rule = GRE_ai_behavior
 							option = DEFAULT
-						}	
+						}
 					}
 					has_game_rule = {
 						rule = GRE_ai_behavior
@@ -105,15 +105,15 @@ GRE_1936_election_category = {
 					}
 					has_country_flag = GRE_AI_NEUTRALITY_HISTORICAL
 					has_game_rule = {
-						rule = GRE_ai_behavior 
+						rule = GRE_ai_behavior
 						option = MONARCHIST
 					}
 					has_game_rule = {
-						rule = GRE_ai_behavior 
+						rule = GRE_ai_behavior
 						option = MONARCHIST_ALTERNATE
 					}
 					has_game_rule = {
-						rule = GRE_ai_behavior 
+						rule = GRE_ai_behavior
 						option = FASCISM
 					}
 				}
@@ -122,19 +122,19 @@ GRE_1936_election_category = {
 			modifier = {
 				OR = {
 					has_game_rule = {
-						rule = GRE_ai_behavior 
+						rule = GRE_ai_behavior
 						option = COMMUNIST
 					}
 					has_game_rule = {
-						rule = GRE_ai_behavior 
+						rule = GRE_ai_behavior
 						option = COMMUNIST_ALTERNATE
 					}
 					has_game_rule = {
-						rule = GRE_ai_behavior 
+						rule = GRE_ai_behavior
 						option = DEMOCRATIC
 					}
 					has_game_rule = {
-						rule = GRE_ai_behavior 
+						rule = GRE_ai_behavior
 						option = FASCISM_ALTERNATE
 					}
 				}
@@ -146,7 +146,7 @@ GRE_1936_election_category = {
 			custom_effect_tooltip = GRE_1936_arrest_the_king_tt
 			set_country_flag = GRE_king_arrested
 			add_stability = -0.05
-		}		
+		}
 	}
 }
 #CRISIS
@@ -155,7 +155,7 @@ crisis = {
 
 		icon = eng_support_imperialist_coup
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -172,7 +172,7 @@ crisis = {
 		}
 
 		visible = {
-			has_country_leader = { 
+			has_country_leader = {
 				character = GRE_king_george_ii
 				ruling_only = yes
 			}
@@ -195,7 +195,7 @@ crisis = {
 
 		icon = eng_support_imperialist_coup
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -204,7 +204,7 @@ crisis = {
 		}
 
 		highlight_states = {
-			highlight_states_trigger = { 
+			highlight_states_trigger = {
 				state = 184
 			}
 		}
@@ -220,7 +220,7 @@ crisis = {
 		}
 
 		visible = {
-			has_country_leader = { 
+			has_country_leader = {
 				character = GRE_king_george_ii
 				ruling_only = yes
 			}
@@ -240,7 +240,7 @@ crisis = {
 
 		icon = eng_support_imperialist_coup
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -249,7 +249,7 @@ crisis = {
 		}
 
 		highlight_states = {
-			highlight_states_trigger = { 
+			highlight_states_trigger = {
 				state = 187
 			}
 		}
@@ -265,7 +265,7 @@ crisis = {
 		}
 
 		visible = {
-			has_country_leader = { 
+			has_country_leader = {
 				character = GRE_king_george_ii
 				ruling_only = yes
 			}
@@ -285,7 +285,7 @@ crisis = {
 
 		icon = eng_support_imperialist_coup
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -294,7 +294,7 @@ crisis = {
 		}
 
 		highlight_states = {
-			highlight_states_trigger = { 
+			highlight_states_trigger = {
 				state = 731
 			}
 		}
@@ -310,7 +310,7 @@ crisis = {
 		}
 
 		visible = {
-			has_country_leader = { 
+			has_country_leader = {
 				character = GRE_king_george_ii
 				ruling_only = yes
 			}
@@ -330,7 +330,7 @@ crisis = {
 
 		icon = eng_support_imperialist_coup
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -339,11 +339,11 @@ crisis = {
 		}
 
 		highlight_states = {
-			highlight_states_trigger = { 
+			highlight_states_trigger = {
 					state = 186
 				}
 		}
-		
+
 
 		on_map_mode = map_only
 
@@ -356,7 +356,7 @@ crisis = {
 		}
 
 		visible = {
-			has_country_leader = { 
+			has_country_leader = {
 				character = GRE_king_george_ii
 				ruling_only = yes
 			}
@@ -373,12 +373,12 @@ crisis = {
 	}
 }
 #GREECE INVESTMENT DECISIONS
-GRE_investment_decisions_category = { 
+GRE_investment_decisions_category = {
 	GRE_invite_politicians_for_investment_talks_in_capital = { #GERMANY
 
 		icon = generic_factory
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -426,13 +426,13 @@ GRE_investment_decisions_category = {
 
 		visible = {
 			has_completed_focus = GRE_open_up_the_country
-			GRE = { 
-				OR = { 
+			GRE = {
+				OR = {
 					has_idea = GRE_schachtplan
 					has_idea = GRE_schachtplan_modified
 					has_idea = GRE_schachtplan_fascistised
 				}
-			}	
+			}
 			NOT = {
 				has_country_flag = GRE_germany_rebuffed
 			}
@@ -452,7 +452,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_factory
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -500,8 +500,8 @@ GRE_investment_decisions_category = {
 
 		visible = {
 			has_completed_focus = GRE_bolster_the_schachtplan
-			GRE = { 
-				OR = { 
+			GRE = {
+				OR = {
 					has_idea = GRE_schachtplan
 					has_idea = GRE_schachtplan_modified
 					has_idea = GRE_schachtplan_fascistised
@@ -526,7 +526,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_construction
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -574,8 +574,8 @@ GRE_investment_decisions_category = {
 
 		visible = {
 			has_completed_focus = GRE_bolster_the_schachtplan
-			GRE = { 
-				OR = { 
+			GRE = {
+				OR = {
 					has_idea = GRE_schachtplan
 					has_idea = GRE_schachtplan_modified
 					has_idea = GRE_schachtplan_fascistised
@@ -600,12 +600,12 @@ GRE_investment_decisions_category = {
 
 		icon = generic_break_treaty
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
 		available = {
-			NOT = { 
+			NOT = {
 				is_puppet_of = GER
 				is_in_faction_with = GER
 				has_completed_focus = GRE_bolster_the_schachtplan
@@ -648,13 +648,13 @@ GRE_investment_decisions_category = {
 
 		visible = {
 			has_completed_focus = GRE_open_up_the_country
-			GRE = { 
-				OR = { 
+			GRE = {
+				OR = {
 					has_idea = GRE_schachtplan
 					has_idea = GRE_schachtplan_modified
 					has_idea = GRE_schachtplan_fascistised
 				}
-			}	
+			}
 			NOT = {
 				has_country_flag = GRE_germany_rebuffed
 			}
@@ -663,7 +663,7 @@ GRE_investment_decisions_category = {
 		complete_effect = {
 			set_country_flag = GRE_germany_rebuffed
 			GER = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = GRE
 					modifier = GRE_greek_turncoats
 				}
@@ -674,7 +674,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_factory
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -686,7 +686,7 @@ GRE_investment_decisions_category = {
 				ENG = {
 					has_capitulated = yes
 					is_puppet = yes
-					NOT = { 
+					NOT = {
 						has_government = democratic
 						has_government = neutrality
 					}
@@ -734,12 +734,12 @@ GRE_investment_decisions_category = {
 				country_event = { id = bftb_greece.173 days = 1 }
 			}
 		}
-	}	
+	}
 	GRE_hold_national_showcase_for_investors_eng = { #BRITAIN
 
 		icon = generic_factory
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -751,7 +751,7 @@ GRE_investment_decisions_category = {
 				ENG = {
 					has_capitulated = yes
 					is_puppet = yes
-					NOT = { 
+					NOT = {
 						has_government = democratic
 						has_government = neutrality
 					}
@@ -791,7 +791,7 @@ GRE_investment_decisions_category = {
 		}
 
 		complete_effect = {
-			
+
 		}
 
 		remove_effect = {
@@ -804,7 +804,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_construction
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -816,7 +816,7 @@ GRE_investment_decisions_category = {
 				ENG = {
 					has_capitulated = yes
 					is_puppet = yes
-					NOT = { 
+					NOT = {
 						has_government = democratic
 						has_government = neutrality
 					}
@@ -865,12 +865,12 @@ GRE_investment_decisions_category = {
 			}
 			add_to_variable = { GRE_ship_parts_for_investment = 1 }
 		}
-	}	
+	}
 	GRE_rebuke_british_investment = { #BRITAIN
 
 		icon = generic_break_treaty
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -880,8 +880,8 @@ GRE_investment_decisions_category = {
 				is_in_faction_with = ENG
 				has_completed_focus = GRE_british_docking_rights
 				has_country_leader = {
-    				character = GRE_eleftherios_venizelos
-    				ruling_only = yes
+					character = GRE_eleftherios_venizelos
+					ruling_only = yes
 				}
 			}
 		}
@@ -932,27 +932,27 @@ GRE_investment_decisions_category = {
 		}
 
 		visible = {
-			has_completed_focus = GRE_open_up_the_country	
+			has_completed_focus = GRE_open_up_the_country
 			NOT = {
 				has_country_flag = GRE_britain_rebuffed
 			}
 		}
 
 		complete_effect = {
-			if = { 
-				limit = { 
-					check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 2.5 compare = greater_than_or_equals } 
+			if = {
+				limit = {
+					check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 2.5 compare = greater_than_or_equals }
 				}
 				custom_effect_tooltip = GRE_force_debt_clearance_tt
 			}
 			set_country_flag = GRE_britain_rebuffed
 			ENG = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = GRE
 					modifier = GRE_greek_turncoats
 				}
 			}
-			hidden_effect = { 
+			hidden_effect = {
 				GRE_default_on_british_debt_effect = yes
 			}
 		}
@@ -961,7 +961,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_factory
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -973,9 +973,9 @@ GRE_investment_decisions_category = {
 			}
 			FRA = {
 				NOT = { has_capitulated = yes }
-				owns_state = 16 
+				owns_state = 16
 				is_puppet = no
-				OR = { 
+				OR = {
 					NOT = { has_government = fascism }
 					NOT = { has_government = neutrality }
 				}
@@ -1036,7 +1036,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_factory
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1046,7 +1046,7 @@ GRE_investment_decisions_category = {
 				has_war_with = FRA
 				has_country_flag = GRE_france_rebuffed
 				FRA = {
-					has_capitulated = yes 
+					has_capitulated = yes
 					is_puppet = yes
 					has_government = fascism
 					has_government = neutrality
@@ -1086,7 +1086,7 @@ GRE_investment_decisions_category = {
 		}
 
 		complete_effect = {
-			
+
 		}
 
 		remove_effect = {
@@ -1097,9 +1097,9 @@ GRE_investment_decisions_category = {
 	}
 	GRE_bribe_french_trade_unions_to_pressure_government_into_investment = { #FRANCE
 
-		icon = generic_construction 
+		icon = generic_construction
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1109,13 +1109,13 @@ GRE_investment_decisions_category = {
 				has_war_with = FRA
 				has_country_flag = GRE_france_rebuffed
 				FRA = {
-					has_capitulated = yes 
+					has_capitulated = yes
 					is_puppet = yes
 					has_government = fascism
 					has_government = neutrality
 				}
 			}
-			FRA = { 
+			FRA = {
 				communism > 0.3
 			}
 		}
@@ -1128,7 +1128,7 @@ GRE_investment_decisions_category = {
 
 		days_remove = 20
 
-		cost = 100 
+		cost = 100
 
 		fire_only_once = no
 
@@ -1167,7 +1167,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_break_treaty
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1176,8 +1176,8 @@ GRE_investment_decisions_category = {
 				is_puppet_of = FRA
 				is_in_faction_with = FRA
 				has_country_leader = {
-    				character = GRE_eleftherios_venizelos
-    				ruling_only = yes
+					character = GRE_eleftherios_venizelos
+					ruling_only = yes
 				}
 			}
 		}
@@ -1226,20 +1226,20 @@ GRE_investment_decisions_category = {
 		}
 
 		complete_effect = {
-			if = { 
-				limit = { 
-					check_variable = { var = GRE_debt_to_the_ifc_france_var value = 2.5 compare = greater_than_or_equals } 
+			if = {
+				limit = {
+					check_variable = { var = GRE_debt_to_the_ifc_france_var value = 2.5 compare = greater_than_or_equals }
 				}
 				custom_effect_tooltip = GRE_force_debt_clearance_tt
 			}
 			set_country_flag = GRE_france_rebuffed
 			FRA = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = GRE
 					modifier = GRE_greek_turncoats
 				}
 			}
-			hidden_effect = { 
+			hidden_effect = {
 				GRE_default_on_french_debt_effect = yes
 			}
 		}
@@ -1248,7 +1248,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_factory
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1258,7 +1258,7 @@ GRE_investment_decisions_category = {
 				has_war_with = ITA
 				has_country_flag = GRE_italy_rebuffed
 				ITA = {
-					has_capitulated = yes 
+					has_capitulated = yes
 					is_puppet = yes
 					has_completed_focus = ITA_war_with_greece
 				}
@@ -1315,7 +1315,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_political_discourse
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1325,7 +1325,7 @@ GRE_investment_decisions_category = {
 				has_country_flag = GRE_italy_rebuffed
 				has_war_with = ITA
 				ITA = {
-					has_capitulated = yes 
+					has_capitulated = yes
 					is_puppet = yes
 					has_completed_focus = ITA_war_with_greece
 				}
@@ -1357,7 +1357,7 @@ GRE_investment_decisions_category = {
 			modifier = {
 				factor = 80
 				check_variable = {
-    				GRE_italian_influence_over_greek_government > 12
+					GRE_italian_influence_over_greek_government > 12
 				}
 			}
 		}
@@ -1371,7 +1371,7 @@ GRE_investment_decisions_category = {
 		}
 
 		complete_effect = {
-			
+
 		}
 
 		remove_effect = {
@@ -1384,7 +1384,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_break_treaty
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1419,12 +1419,12 @@ GRE_investment_decisions_category = {
 			modifier = {
 				factor = 0
 				check_variable = {
-   					GRE_italian_influence_over_greek_government > 6
+					GRE_italian_influence_over_greek_government > 6
 				}
 			}
 			modifier = {
 				factor = 10
-				OR = { 
+				OR = {
 					has_completed_focus = GRE_the_right_to_rule
 					has_completed_focus = GRE_use_the_military
 					has_completed_focus = GRE_bring_home_the_exiled_republicans
@@ -1437,50 +1437,50 @@ GRE_investment_decisions_category = {
 		}
 
 		visible = {
-			has_completed_focus = GRE_rapprochement_with_the_italians	
+			has_completed_focus = GRE_rapprochement_with_the_italians
 			NOT = {
 				has_country_flag = GRE_italy_rebuffed
 			}
 		}
 
 		complete_effect = {
-			if = { 
-				limit = { 
-					check_variable = { var = GRE_debt_to_the_ifc_italy_var value = 2.5 compare = greater_than_or_equals } 
+			if = {
+				limit = {
+					check_variable = { var = GRE_debt_to_the_ifc_italy_var value = 2.5 compare = greater_than_or_equals }
 				}
 				custom_effect_tooltip = GRE_force_debt_clearance_tt
 			}
 			set_country_flag = GRE_italy_rebuffed
 			custom_effect_tooltip = GRE_italian_influence_shunned_tt
-			if = { 
-				limit = { 
+			if = {
+				limit = {
 					check_variable = {
-   						GRE_italian_influence_over_greek_government = 6 compare = greater_than_or_equals
+						GRE_italian_influence_over_greek_government = 6 compare = greater_than_or_equals
 					}
-				}	
+				}
 				ITA = {
 					create_wargoal = {
-						type = puppet_wargoal_focus 
+						type = puppet_wargoal_focus
 						target = GRE
 					}
 				}
 			}
 			ITA = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = GRE
 					modifier = GRE_greek_turncoats
 				}
 			}
-			hidden_effect = { 
+			hidden_effect = {
 				GRE_default_on_italian_debt_effect = yes
 			}
 		}
-	}	
+	}
 	GRE_attend_talks_with_the_presidium = { #SOVIETS
 
 		icon = generic_factory
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1523,7 +1523,7 @@ GRE_investment_decisions_category = {
 			}
 		}
 
-		visible = { 
+		visible = {
 			has_completed_focus = GRE_appeal_to_the_soviet_union
 			NOT = {
 				has_country_flag = GRE_soviets_rebuffed
@@ -1544,7 +1544,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_political_discourse
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1588,7 +1588,7 @@ GRE_investment_decisions_category = {
 		}
 
 		visible = {
-			OR = { 
+			OR = {
 				has_completed_focus = GRE_appeal_to_the_soviet_union
 				has_completed_focus = GRE_soviet_subsidised_railways
 			}
@@ -1612,7 +1612,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_construction
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1678,7 +1678,7 @@ GRE_investment_decisions_category = {
 
 		icon = generic_break_treaty
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1712,7 +1712,7 @@ GRE_investment_decisions_category = {
 			}
 			modifier = {
 				factor = 50
-				OR = { 
+				OR = {
 					has_completed_focus = GRE_prepare_for_the_great_anti_fascist_war
 					has_completed_focus = GRE_the_kings_government
 					has_completed_focus = GRE_compromise_with_the_monarchists
@@ -1725,7 +1725,7 @@ GRE_investment_decisions_category = {
 		}
 
 		visible = {
-			has_completed_focus = GRE_appeal_to_the_soviet_union	
+			has_completed_focus = GRE_appeal_to_the_soviet_union
 			NOT = {
 				has_country_flag = GRE_soviets_rebuffed
 				check_variable = { var = GRE_soviet_influence_over_greek_government value = 12 compare = greater_than_or_equals }
@@ -1735,37 +1735,37 @@ GRE_investment_decisions_category = {
 		complete_effect = {
 			set_country_flag = GRE_soviets_rebuffed
 			custom_effect_tooltip = GRE_soviet_influence_shunned_tt
-			if = { 
-				limit = { 
+			if = {
+				limit = {
 					check_variable = {
-   						GRE_soviet_influence_over_greek_government = 8 compare = greater_than_or_equals
+						GRE_soviet_influence_over_greek_government = 8 compare = greater_than_or_equals
 					}
-				}	
+				}
 				SOV = {
 					create_wargoal = {
 						type = puppet_wargoal_focus
 						target = GRE
 					}
 				}
-			}	
+			}
 			SOV = {
-				add_opinion_modifier = { 
+				add_opinion_modifier = {
 					target = GRE
 					modifier = GRE_greek_turncoats
 				}
 			}
 		}
-	}					
+	}
 }
 
 #GREECE DEBT DECISIONS
-GRE_pay_back_debt_to_the_ifc_category = { 
+GRE_pay_back_debt_to_the_ifc_category = {
 
 	GRE_small_installment_payment_ENG = {
 
-		icon = hol_attract_foreign_investors 
+		icon = hol_attract_foreign_investors
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1807,7 +1807,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 			modifier = {
 				factor = 15
 				date > 1938.01.01
-				NOT = { 
+				NOT = {
 					ENG = { has_government = communism }
 				}
 			}
@@ -1819,7 +1819,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		visible = {
 			has_completed_focus = GRE_reevaluating_the_drachma
-			OR = { 
+			OR = {
 				has_idea = GRE_debt_to_the_ifc
 				has_idea = GRE_debt_to_the_ifc_2
 				has_idea = GRE_debt_to_the_ifc_3
@@ -1839,7 +1839,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		complete_effect = {
 			add_ideas = GRE_paying_off_debt_small
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
 			}
 		}
@@ -1852,9 +1852,9 @@ GRE_pay_back_debt_to_the_ifc_category = {
 	}
 	GRE_small_installment_payment_FRA = {
 
-		icon = hol_attract_foreign_investors 
+		icon = hol_attract_foreign_investors
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1906,7 +1906,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		visible = {
 			has_completed_focus = GRE_reevaluating_the_drachma
-			OR = { 
+			OR = {
 				has_idea = GRE_debt_to_the_ifc
 				has_idea = GRE_debt_to_the_ifc_2
 				has_idea = GRE_debt_to_the_ifc_3
@@ -1926,7 +1926,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		complete_effect = {
 			add_ideas = GRE_paying_off_debt_small
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
 			}
 		}
@@ -1939,9 +1939,9 @@ GRE_pay_back_debt_to_the_ifc_category = {
 	}
 	GRE_small_installment_payment_ITA = {
 
-		icon = hol_attract_foreign_investors 
+		icon = hol_attract_foreign_investors
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -1987,8 +1987,8 @@ GRE_pay_back_debt_to_the_ifc_category = {
 			}
 			modifier = {
 				factor = 0
-				ITA = { 
-					OR = { 
+				ITA = {
+					OR = {
 						has_completed_focus = ITA_war_with_greece
 						has_completed_focus = ITA_befriend_turkey
 					}
@@ -1998,7 +1998,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		visible = {
 			has_completed_focus = GRE_reevaluating_the_drachma
-			OR = { 
+			OR = {
 				has_idea = GRE_debt_to_the_ifc
 				has_idea = GRE_debt_to_the_ifc_2
 				has_idea = GRE_debt_to_the_ifc_3
@@ -2019,7 +2019,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		complete_effect = {
 			add_ideas = GRE_paying_off_debt_small
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_small_installment_payment_flag value = 1 days = 60 }
 			}
 		}
@@ -2034,7 +2034,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		icon = gre_investment_decisions
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2072,7 +2072,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 			modifier = {
 				factor = 10
 				date > 1938.01.01
-				NOT = { 
+				NOT = {
 					ENG = { has_government = communism }
 				}
 			}
@@ -2088,7 +2088,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		visible = {
 			has_completed_focus = GRE_paying_back_our_debts_in_bulk
-			OR = { 
+			OR = {
 				has_idea = GRE_debt_to_the_ifc
 				has_idea = GRE_debt_to_the_ifc_2
 				has_idea = GRE_debt_to_the_ifc_3
@@ -2108,7 +2108,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		complete_effect = {
 			add_ideas = GRE_paying_off_debt_large
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
 			}
 		}
@@ -2119,12 +2119,12 @@ GRE_pay_back_debt_to_the_ifc_category = {
 			GRE_large_payment_to_british_debt_effect = yes
 		}
 	}
-	
+
 	GRE_large_installment_payment_FRA = {
 
 		icon = gre_investment_decisions
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2176,7 +2176,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		visible = {
 			has_completed_focus = GRE_paying_back_our_debts_in_bulk
-			OR = { 
+			OR = {
 				has_idea = GRE_debt_to_the_ifc
 				has_idea = GRE_debt_to_the_ifc_2
 				has_idea = GRE_debt_to_the_ifc_3
@@ -2196,7 +2196,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		complete_effect = {
 			add_ideas = GRE_paying_off_debt_large
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
 			}
 		}
@@ -2212,7 +2212,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		icon = gre_investment_decisions
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2258,8 +2258,8 @@ GRE_pay_back_debt_to_the_ifc_category = {
 			}
 			modifier = {
 				factor = 0
-				ITA = { 
-					OR = { 
+				ITA = {
+					OR = {
 						has_completed_focus = ITA_war_with_greece
 						has_completed_focus = ITA_befriend_turkey
 					}
@@ -2269,7 +2269,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		visible = {
 			has_completed_focus = GRE_paying_back_our_debts_in_bulk
-			OR = { 
+			OR = {
 				has_idea = GRE_debt_to_the_ifc
 				has_idea = GRE_debt_to_the_ifc_2
 				has_idea = GRE_debt_to_the_ifc_3
@@ -2290,7 +2290,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		complete_effect = {
 			add_ideas = GRE_paying_off_debt_large
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = { flag = GRE_large_installment_payment_flag value = 1 days = 30 }
 			}
 		}
@@ -2306,7 +2306,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		icon = gre_paying_ifc_debt
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2342,7 +2342,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 		visible = {
 			date > 1939.01.01
 			AND = {
-				check_variable = { 
+				check_variable = {
 					var = GRE_debt_to_the_ifc_paid_var
 					value = 15
 					compare = less_than
@@ -2367,7 +2367,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 
 		icon = generic_break_treaty
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2392,8 +2392,8 @@ GRE_pay_back_debt_to_the_ifc_category = {
 			}
 			modifier = {
 				factor = 10
-				GRE = { 
-					OR = { 
+				GRE = {
+					OR = {
 						has_completed_focus = GRE_the_modern_movement
 						has_completed_focus = GRE_realign_ourselves_with_the_central_powers
 					}
@@ -2401,8 +2401,8 @@ GRE_pay_back_debt_to_the_ifc_category = {
 			}
 			modifier = {
 				factor = 30
-				GRE = { 
-					OR = { 
+				GRE = {
+					OR = {
 						has_completed_focus = GRE_depose_the_reactionaries
 						has_completed_focus = GRE_horror_and_fear
 					}
@@ -2411,7 +2411,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 		}
 
 		visible = {
-			OR = { 
+			OR = {
 				AND = {
 					date > 1941.01.01
 					OR = {
@@ -2439,7 +2439,7 @@ GRE_pay_back_debt_to_the_ifc_category = {
 		complete_effect = {
 			GRE_default_on_debt_effect = yes
 		}
-	}			
+	}
 }
 
 #Greece Hellenic Academy decisions
@@ -2447,7 +2447,7 @@ GRE_hellenic_academy_category = {
 	GRE_anti_german_stratagems = {
 		icon = generic_operation
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2485,7 +2485,7 @@ GRE_hellenic_academy_category = {
 	GRE_anti_italian_stratagems = {
 		icon = generic_operation
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2522,7 +2522,7 @@ GRE_hellenic_academy_category = {
 	GRE_anti_french_stratagems = {
 		icon = generic_operation
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2560,7 +2560,7 @@ GRE_hellenic_academy_category = {
 	GRE_anti_british_stratagems = {
 		icon = generic_operation
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2598,7 +2598,7 @@ GRE_hellenic_academy_category = {
 	GRE_anti_soviet_stratagems = {
 		icon = generic_operation
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2636,13 +2636,13 @@ GRE_hellenic_academy_category = {
 	GRE_anti_austro_hungarian_stratagems = {
 		icon = generic_operation
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
 		available = {
 			AND = {
-				has_war_with = FROM 
+				has_war_with = FROM
 				has_completed_focus = GRE_the_hellenic_air_force
 				has_completed_focus = GRE_the_hellenic_army
 				has_completed_focus = GRE_the_hellenic_navy
@@ -2676,7 +2676,7 @@ GRE_hellenic_academy_category = {
 	GRE_anti_romanian_stratagems = {
 		icon = generic_operation
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2689,7 +2689,7 @@ GRE_hellenic_academy_category = {
 
 		visible = {
 			has_completed_focus = GRE_hellenic_armed_forces
-			ROM = { 
+			ROM = {
 				has_completed_focus = ROM_balkans_dominance
 			}
 		}
@@ -2716,7 +2716,7 @@ GRE_hellenic_academy_category = {
 	GRE_anti_bulgarian_stratagems = {
 		icon = generic_operation
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2729,7 +2729,7 @@ GRE_hellenic_academy_category = {
 
 		visible = {
 			has_completed_focus = GRE_hellenic_armed_forces
-			BUL = { 
+			BUL = {
 				OR = {
 					has_completed_focus = BUL_power_to_the_tsar
 					has_completed_focus = BUL_appoint_communist_ministers
@@ -2759,7 +2759,7 @@ GRE_hellenic_academy_category = {
 	GRE_anti_turkish_stratagems = {
 		icon = generic_operation
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2772,7 +2772,7 @@ GRE_hellenic_academy_category = {
 
 		visible = {
 			has_completed_focus = GRE_hellenic_armed_forces
-			TUR = { 
+			TUR = {
 				has_completed_focus = TUR_pivot_to_the_past
 				has_completed_focus = TUR_reconfigure_our_foreign_policy
 			}
@@ -2805,7 +2805,7 @@ GRE_faction_management_category = {
 
 		icon = generic_political_rally
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2834,7 +2834,7 @@ GRE_faction_management_category = {
 		}
 
 		visible = {
-			NOT = { 
+			NOT = {
 				OR = {
 					has_government = neutrality
 					check_variable = { GRE_monarchist_loyalty = -2 compare = equals }
@@ -2894,7 +2894,7 @@ GRE_faction_management_category = {
 
 		icon = generic_police_action
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -2925,7 +2925,7 @@ GRE_faction_management_category = {
 		}
 
 		visible = {
-			NOT = { 
+			NOT = {
 				OR = {
 					has_government = neutrality
 					check_variable = { GRE_monarchist_loyalty = 1 compare = greater_than_or_equals }
@@ -2976,7 +2976,7 @@ GRE_faction_management_category = {
 
 		icon = generic_political_rally
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -3019,7 +3019,7 @@ GRE_faction_management_category = {
 		}
 
 		visible = {
-			NOT = { 
+			NOT = {
 				OR = {
 					has_government = democratic
 					check_variable = { GRE_republican_loyalty = -2 compare = equals }
@@ -3078,7 +3078,7 @@ GRE_faction_management_category = {
 
 		icon = generic_police_action
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -3086,7 +3086,7 @@ GRE_faction_management_category = {
 			has_country_flag = GRE_factions_unlocked
 			check_variable = { var = GRE_republican_loyalty value = -2 compare = greater_than }
 			check_variable = { var = GRE_republican_loyalty value = 1 compare = less_than }
-			OR = { 
+			OR = {
 				has_government = fascism
 				AND = {
 					has_government = neutrality
@@ -3120,7 +3120,7 @@ GRE_faction_management_category = {
 		}
 
 		visible = {
-			NOT = { 
+			NOT = {
 				OR = {
 					has_government = democratic
 					check_variable = { GRE_republican_loyalty = 1 compare = greater_than_or_equals }
@@ -3171,7 +3171,7 @@ GRE_faction_management_category = {
 
 		icon = generic_political_rally
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -3179,7 +3179,7 @@ GRE_faction_management_category = {
 			has_country_flag = GRE_factions_unlocked
 			check_variable = { var = GRE_communist_loyalty value = -2 compare = greater_than }
 			check_variable = { var = GRE_communist_loyalty value = 1 compare = less_than }
-			OR = { 
+			OR = {
 				has_government = fascism
 				AND = {
 					has_government = neutrality
@@ -3211,7 +3211,7 @@ GRE_faction_management_category = {
 		}
 
 		visible = {
-			NOT = { 
+			NOT = {
 				OR = {
 					has_government = communism
 					check_variable = { GRE_communist_loyalty = -2 compare = equals }
@@ -3270,7 +3270,7 @@ GRE_faction_management_category = {
 
 		icon = generic_police_action
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -3278,7 +3278,7 @@ GRE_faction_management_category = {
 			has_country_flag = GRE_factions_unlocked
 			check_variable = { var = GRE_communist_loyalty value = -2 compare = greater_than }
 			check_variable = { var = GRE_communist_loyalty value = 1 compare = less_than }
-			OR = { 
+			OR = {
 				has_government = fascism
 				AND = {
 					has_government = neutrality
@@ -3312,7 +3312,7 @@ GRE_faction_management_category = {
 		}
 
 		visible = {
-			NOT = { 
+			NOT = {
 				OR = {
 					has_government = communism
 					has_completed_focus = GRE_request_communist_support
@@ -3364,7 +3364,7 @@ GRE_faction_management_category = {
 
 		icon = generic_political_rally
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -3372,7 +3372,7 @@ GRE_faction_management_category = {
 			has_country_flag = GRE_factions_unlocked
 			check_variable = { var = GRE_fascist_loyalty value = -2 compare = greater_than }
 			check_variable = { var = GRE_fascist_loyalty value = 1 compare = less_than }
-			OR = { 
+			OR = {
 				AND = {
 					has_government = democratic
 					has_idea = GRE_eee_in_government
@@ -3407,7 +3407,7 @@ GRE_faction_management_category = {
 		}
 
 		visible = {
-			NOT = { 
+			NOT = {
 				OR = {
 					has_government = fascism
 					check_variable = { GRE_fascist_loyalty = -2 compare = equals }
@@ -3466,7 +3466,7 @@ GRE_faction_management_category = {
 
 		icon = generic_police_action
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 		}
 
@@ -3474,7 +3474,7 @@ GRE_faction_management_category = {
 			has_country_flag = GRE_factions_unlocked
 			check_variable = { var = GRE_fascist_loyalty value = -2 compare = greater_than }
 			check_variable = { var = GRE_fascist_loyalty value = 1 compare = less_than }
-			OR = { 
+			OR = {
 				AND = {
 					has_government = democratic
 					has_country_flag = onassis_proposition_accepted
@@ -3508,7 +3508,7 @@ GRE_faction_management_category = {
 		}
 
 		visible = {
-			NOT = { 
+			NOT = {
 				OR = {
 					has_government = fascism
 					check_variable = { var = GRE_fascist_loyalty value = 1 compare = greater_than_or_equals }
@@ -3558,10 +3558,10 @@ GRE_faction_management_category = {
 
 political_actions = {
 	GRE_recommission_the_american_battleships = {
-		
+
 		icon = generic_naval
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 			has_dlc = "Battle for the Bosporus"
 		}
@@ -3582,8 +3582,8 @@ political_actions = {
 		cancel_if_not_visible = yes
 
 		complete_effect = {
-			if = { 
-				limit = { 
+			if = {
+				limit = {
 					NOT = { has_dlc = "Man the Guns" }
 				}
 				add_equipment_production = {
@@ -3604,10 +3604,10 @@ political_actions = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_dlc = "Man the Guns"
 				}
-				hidden_effect = { 
+				hidden_effect = {
 					set_technology = {
 	basic_battery = 1
 	early_ship_hull_heavy = 1
@@ -3635,15 +3635,15 @@ create_equipment_variant = {
 		mid_2_custom_slot = empty
 		rear_1_custom_slot = empty
 	}
-}	
+}
 				}
 				add_equipment_production = {
 					equipment = {
 						type = vnr_ship_hull_heavy_1
-						creator = "GRE" 
+						creator = "GRE"
 						version_name = "Mississippi Class"
 					}
-					name = "Kilkis" 
+					name = "Kilkis"
 					requested_factories = 1
 					progress = 0.8
 					amount = 1
@@ -3651,10 +3651,10 @@ create_equipment_variant = {
 				add_equipment_production = {
 					equipment = {
 						type = vnr_ship_hull_heavy_1
-						creator = "GRE" 
+						creator = "GRE"
 						version_name = "Mississippi Class"
 					}
-					name = "Lemnos" 
+					name = "Lemnos"
 					requested_factories = 1
 					progress = 0.6
 					amount = 1
@@ -3675,10 +3675,10 @@ create_equipment_variant = {
 		}
 	}
 	GRE_build_the_salamis = {
-		
+
 		icon = generic_naval
 
-		allowed = { 
+		allowed = {
 			original_tag = GRE
 			has_dlc = "Battle for the Bosporus"
 		}
@@ -3698,8 +3698,8 @@ create_equipment_variant = {
 		cancel_if_not_visible = yes
 
 		complete_effect = {
-			if = { 
-				limit = { 
+			if = {
+				limit = {
 					NOT = { has_dlc = "Man the Guns" }
 				}
 				add_equipment_production = {
@@ -3712,10 +3712,10 @@ create_equipment_variant = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_dlc = "Man the Guns"
 				}
-				hidden_effect = { 
+				hidden_effect = {
 					set_technology = {
 	basic_heavy_armor = 1
 	basic_heavy_battery = 1
@@ -3746,15 +3746,15 @@ create_equipment_variant = {
 		mid_2_custom_slot = empty
 		rear_1_custom_slot = ship_heavy_battery_2
 	}
-}	
+}
 				}
 				add_equipment_production = {
 					equipment = {
 						type = vnr_ship_hull_heavy_1
-						creator = "GRE" 
+						creator = "GRE"
 						version_name = "Salamis Class"
 					}
-					name = "Salamis" 
+					name = "Salamis"
 					requested_factories = 1
 					progress = 0.2
 					amount = 1

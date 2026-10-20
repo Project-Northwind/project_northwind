@@ -7,17 +7,17 @@ Doctrine tracks are made available to the player after they have selected a *Gra
 
 The track script itself is very small; it is the subdoctrine that defines which track it can be assigned to,
 and the grand doctrine that defines which tracks it contains.
- 
+
 ## Script Example
 ```
-infantry = { 
+infantry = {
     name = DOCTRINE_TRACK_INFANTRY   # Bindable loc
     background = GFX_NAME             # Background image for the track
-    background_offset = 10            # Horizontal offset applied to the background image  
+    background_offset = 10            # Horizontal offset applied to the background image
     frame = GFX_NAME                  # Frame image around the track
     icon = GFX_NAME                   # Milestone icon for the track
     icon_frame = GFX_NAME             # Frame around the milestone icon
-    
+
     mastery = {
         multiplier = 2.0 # Multiplies manpower contribution to mastery gain (in this case, 2 times less manpower is needed to gain the same amount of mastery)
         sub_units = { # Which subunits contribute to mastery gain?

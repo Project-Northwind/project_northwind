@@ -209,10 +209,10 @@ DEN_available_candidates = {
 	if = {
 		limit = {
 			check_variable = { DEN_democratic_popularity > 29 }
-			NOT = { 
+			NOT = {
 				has_character = DEN_thorvald_stauning
 				has_country_leader =  {
-					ruling_only = yes 
+					ruling_only = yes
 					character = DEN_vilhelm_buhl
 				}
 			}
@@ -223,9 +223,9 @@ DEN_available_candidates = {
 		limit = {
 			check_variable = { DEN_democratic_popularity > 29 }
 			has_character = DEN_thorvald_stauning
-			NOT = { 
+			NOT = {
 				has_country_leader =  {
-					ruling_only = yes 
+					ruling_only = yes
 					character = DEN_thorvald_stauning
 				}
 			}
@@ -235,9 +235,9 @@ DEN_available_candidates = {
 	if = {
 		limit = {
 			check_variable = { DEN_democratic_popularity > 29 }
-			NOT = { 
+			NOT = {
 				has_country_leader =  {
-					ruling_only = yes 
+					ruling_only = yes
 					character = DEN_knud_kristensen
 				}
 			}
@@ -247,9 +247,9 @@ DEN_available_candidates = {
 	if = {
 		limit = {
 			check_variable = { DEN_democratic_popularity > 29 }
-			NOT = { 
+			NOT = {
 				has_country_leader =  {
-					ruling_only = yes 
+					ruling_only = yes
 					character = DEN_christmas_moller
 				}
 			}
@@ -259,9 +259,9 @@ DEN_available_candidates = {
 	if = {
 		limit = {
 			check_variable = { DEN_communism_popularity > 19 }
-			NOT = { 
+			NOT = {
 				has_country_leader =  {
-					ruling_only = yes 
+					ruling_only = yes
 					character = DEN_aksel_larsen
 				}
 			}
@@ -271,9 +271,9 @@ DEN_available_candidates = {
 	if = {
 		limit = {
 			check_variable = { DEN_neutrality_popularity > 19 }
-			NOT = { 
+			NOT = {
 				has_country_leader =  {
-					ruling_only = yes 
+					ruling_only = yes
 					character = DEN_knud_bach
 				}
 			}
@@ -373,7 +373,7 @@ DEN_socialdemokratiet_takes_over = {
 	}
 }
 
-DEN_venstre_takes_over = {	
+DEN_venstre_takes_over = {
 	if = {
 		limit = {
 			NOT = { has_government = democratic }
@@ -486,8 +486,8 @@ DEN_bondepartiet_takes_over = {
 			ruling_party = neutrality
 			elections_allowed = yes
 			long_name = DEN_neutrality_party_long
- 			name =	DEN_neutrality_party
- 		}	
+			name =	DEN_neutrality_party
+		}
 	}
 }
 
@@ -500,11 +500,11 @@ DEN_fascists_takes_over = {
 		set_politics = { #Fritz Clausen already has a country leader role
 			ruling_party = fascism
 			elections_allowed = yes
-		}	
+		}
 	}
 }
 
-DEN_erik_scavenius_takes_over = {	
+DEN_erik_scavenius_takes_over = {
 	if = {
 		limit = {
 			NOT = { has_government = democratic }
@@ -549,7 +549,7 @@ DEN_erik_scavenius_takes_over = {
 	}
 }
 
-DEN_the_king_takes_over = {	
+DEN_the_king_takes_over = {
 	if = {
 		limit = {
 			NOT = { has_government = neutrality }
@@ -636,7 +636,7 @@ DEN_the_king_takes_over = {
 	}
 }
 
-DEN_freedom_council_takes_over = {	
+DEN_freedom_council_takes_over = {
 	set_politics = {
 		ruling_party = neutrality
 		elections_allowed = yes
@@ -651,9 +651,9 @@ DEN_freedom_council_takes_over = {
 
 DEN_ruling_party_loses_popularity = {
 	add_popularity = {
-  		ideology = ROOT
-   		popularity = -0.05
- 	}
+		ideology = ROOT
+		popularity = -0.05
+	}
 }
 
 DEN_remove_democratic_leader = {
@@ -825,43 +825,43 @@ DEN_advisor_medium_BOP_increase_effect = {
 }
 
 
-DEN_limited_manpower = { 
+DEN_limited_manpower = {
 	if = {
-		limit = { 
+		limit = {
 			has_idea = volunteer_only
 		}
 		set_country_flag = DEN_had_volunteer_only_flag #used when restoring consription law
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			has_idea = limited_conscription
 		}
 		add_ideas = volunteer_only
 		set_country_flag = DEN_had_limited_conscription_flag #used when restoring consription law
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			has_idea = extensive_conscription
 		}
 		add_ideas = volunteer_only
 		set_country_flag = DEN_had_extensive_conscription_flag #used when restoring consription law
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			has_idea = service_by_requirement
 		}
 		add_ideas = volunteer_only
 		set_country_flag = DEN_had_service_by_requirement_flag #used when restoring consription law
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			has_idea = all_adults_serve
 		}
 		add_ideas = volunteer_only
 		set_country_flag = DEN_had_all_adults_serve_flag #used when restoring consription law
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			has_idea = scraping_the_barrel
 		}
 		add_ideas = volunteer_only
@@ -870,44 +870,44 @@ DEN_limited_manpower = {
 	set_country_flag = DEN_cannot_increase_conscription_law
 }
 
-DEN_restore_manpower = { 
+DEN_restore_manpower = {
 	if = {
-		limit = { 
+		limit = {
 			has_country_flag = DEN_had_volunteer_only_flag
 		}
 		add_ideas = volunteer_only
 		clr_country_flag = DEN_had_volunteer_only_flag
 	}
 	if = {
-		limit = { 
+		limit = {
 			has_country_flag = DEN_had_limited_conscription_flag
 		}
 		add_ideas = limited_conscription
 		clr_country_flag = DEN_had_limited_conscription_flag
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			has_country_flag = DEN_had_extensive_conscription_flag
 		}
 		add_ideas = extensive_conscription
 		clr_country_flag = DEN_had_extensive_conscription_flag
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			has_country_flag = DEN_had_service_by_requirement_flag
 		}
 		add_ideas = service_by_requirement
 		clr_country_flag = DEN_had_service_by_requirement_flag
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			has_country_flag = DEN_had_all_adults_serve_flag
 		}
 		add_ideas = all_adults_serve
 		clr_country_flag = DEN_had_all_adults_serve_flag
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			has_country_flag = DEN_had_scraping_the_barrel_flag
 		}
 		add_ideas = scraping_the_barrel
@@ -987,9 +987,9 @@ DEN_modify_overlord_relations_small = {
 					add_opinion_modifier = {
 						modifier = DEN_unruly_subject_low
 						target = DEN
-	
+
 					}
-		
+
 				}
 			}
 		}
@@ -1025,9 +1025,9 @@ DEN_modify_overlord_relations_small = {
 					add_opinion_modifier = {
 						modifier = DEN_unruly_subject_low
 						target = DEN
-	
+
 					}
-		
+
 				}
 			}
 		#}
@@ -1216,7 +1216,7 @@ DEN_modify_overlord_relations_small = {
 				custom_effect_tooltip = DEN_deteriorating_overlord_relations
 			}
 		#}
-	}	
+	}
 }
 
 DEN_modify_overlord_relations_big = {
@@ -1290,9 +1290,9 @@ DEN_modify_overlord_relations_big = {
 					add_opinion_modifier = {
 						modifier = DEN_unruly_subject_low
 						target = DEN
-	
+
 					}
-		
+
 				}
 			}
 		}
@@ -1328,9 +1328,9 @@ DEN_modify_overlord_relations_big = {
 					add_opinion_modifier = {
 						modifier = DEN_unruly_subject_low
 						target = DEN
-	
+
 					}
-		
+
 				}
 			}
 			else = {
@@ -1519,7 +1519,7 @@ DEN_modify_overlord_relations_big = {
 				custom_effect_tooltip = DEN_deteriorating_overlord_relations
 			}
 		#}
-	}	
+	}
 }
 
 DEN_activate_bought_ships = {
@@ -1561,7 +1561,7 @@ DEN_activate_bought_ships = {
 		custom_effect_tooltip = DEN_launches_destroyers_tt
 	}
 	hidden_effect = {
-		if = { 
+		if = {
 			limit = {
 				SWE = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -1593,9 +1593,9 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "SWE"
 				}
-			}	
+			}
 		}
-		if = { 
+		if = {
 			limit = {
 				NOR = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -1627,9 +1627,9 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "NOR"
 				}
-			}	
+			}
 		}
-		if = { 
+		if = {
 			limit = {
 				HOL = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -1661,9 +1661,9 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "HOL"
 				}
-			}	
+			}
 		}
-		if = { 
+		if = {
 			limit = {
 				ENG = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -1715,9 +1715,9 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "ENG"
 				}
-			}	
+			}
 		}
-		if = { 
+		if = {
 			limit = {
 				USA = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -1769,9 +1769,9 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "USA"
 				}
-			}	
+			}
 		}
-		if = { 
+		if = {
 			limit = {
 				FRA = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -1823,9 +1823,9 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "FRA"
 				}
-			}	
+			}
 		}
-		if = { 
+		if = {
 			limit = {
 				SOV = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -1877,9 +1877,9 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "SOV"
 				}
-			}	
+			}
 		}
-		if = { 
+		if = {
 			limit = {
 				GER = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -1931,9 +1931,9 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "GER"
 				}
-			}	
+			}
 		}
-		if = { 
+		if = {
 			limit = {
 				ITA = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -1985,9 +1985,9 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "ITA"
 				}
-			}	
+			}
 		}
-		if = { 
+		if = {
 			limit = {
 				JAP = {
 					has_country_flag = DEN_sold_ships_to_denmark_flag
@@ -2039,12 +2039,12 @@ DEN_activate_bought_ships = {
 					type = destroyer_1
 					creator = "JAP"
 				}
-			}	
+			}
 		}
 	}
 }
 
-DEN_upgrade_resistance_militia = { #this is meant to upgrade the militia division linearly, create thedivision if it hasn't been created already. 
+DEN_upgrade_resistance_militia = { #this is meant to upgrade the militia division linearly, create thedivision if it hasn't been created already.
 	if = {
 		limit = {
 			NOT = { has_variable = DEN_militia_template_level }
@@ -2062,7 +2062,7 @@ DEN_upgrade_resistance_militia = { #this is meant to upgrade the militia divisio
 				militia = 0
 				militia = 0
 				militia = 1
-				militia = 1 
+				militia = 1
 			}
 		}
 	}
@@ -2075,13 +2075,13 @@ DEN_upgrade_resistance_militia = { #this is meant to upgrade the militia divisio
 			template_name = "Modstandsbevægelsen Militia"
 			regiments = {
 				militia = 2
-				militia = 2 
+				militia = 2
 				militia = 2
 				militia = 2
 			}
 		}
 	}
-	if = { #Increasing the Militia Level variable 
+	if = { #Increasing the Militia Level variable
 		limit = {
 			has_variable = DEN_militia_template_level
 		}
@@ -2089,7 +2089,7 @@ DEN_upgrade_resistance_militia = { #this is meant to upgrade the militia divisio
 	}
 	if = {
 		limit = {
-			NOT = { has_variable = DEN_militia_template_level }  
+			NOT = { has_variable = DEN_militia_template_level }
 		}
 		division_template = {
 			name = "Modstandsbevægelsen Militia"
@@ -2155,7 +2155,7 @@ DEN_improve_industrial_capabilities_NS = {
 					has_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier }
 					has_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier_light_regulation }
 				}
-				NOT = { 
+				NOT = {
 					has_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier_improved }
 					has_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier_max_improved }
 					has_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier_light_regulation_improved }
@@ -2251,7 +2251,7 @@ DEN_improve_haeren_NS = {
 		if = {
 			limit = { #Only add the modifier if there is no one
 				check_variable = { DEN.DEN_haeren_improvement_tracker_var < 2 }
-				NOT = { 
+				NOT = {
 					has_dynamic_modifier = { modifier = DEN_haeren_dynamic_modifier }
 					has_dynamic_modifier = { modifier = DEN_haeren_dynamic_modifier_improved }
 					has_dynamic_modifier = { modifier = DEN_haeren_dynamic_modifier_max_improved }
@@ -2332,7 +2332,7 @@ DEN_improve_sovaernet_NS = {
 	}
 }
 
-DEN_improve_flyvevabnet_NS = { 
+DEN_improve_flyvevabnet_NS = {
 	add_to_variable = { DEN_flyvevabnet_improvement_tracker_var = 1 }
 	if = {
 		limit = {
@@ -2379,7 +2379,7 @@ DEN_improve_flyvevabnet_NS = {
 }
 
 DEN_get_converted_air_carriers = {
-	if = { 
+	if = {
 		limit = {
 			has_dlc = "Man the Guns"
 		}
@@ -2413,7 +2413,7 @@ create_equipment_variant = {
 		fixed_ship_flight_deck_slot = carrier_wooden_deck
 	}
 }
-	
+
 		#Line Production
 		add_equipment_production = {
 			equipment = {
@@ -2497,7 +2497,7 @@ DEN_get_proper_air_carriers = {
 	###########
 	### MTG ###
 	###########
-	if = { 
+	if = {
 		limit = {
 			has_dlc = "Man the Guns"
 		}
@@ -3034,12 +3034,12 @@ DEN_joint_military_cooperation = {
 			}
 		}
 		DEN_improve_sovaernet_NS = yes
-		add_to_variable = { 
+		add_to_variable = {
 			DEN_sovaernet_navy_org = 0.05
 			tooltip = navy_org_factor_tt
 		}
 		DEN_improve_flyvevabnet_NS = yes
-		add_to_variable = { 
+		add_to_variable = {
 			DEN_flyvevabnet_air_agility = 0.05
 			tooltip = air_agility_factor_tt
 		}
@@ -3054,11 +3054,11 @@ DEN_joint_military_cooperation = {
 			}
 		}
 		DEN_improve_haeren_NS = yes
-		add_to_variable = { 
+		add_to_variable = {
 			DEN_haeren_army_org = 0.05
 			tooltip = army_org_factor_tt
 		}
-		add_to_variable = { 
+		add_to_variable = {
 			DEN_haeren_army_armor_defence = 0.05
 			tooltip = army_armor_defence_factor_tt
 		}
@@ -3073,7 +3073,7 @@ DEN_joint_military_cooperation = {
 			}
 		}
 		DEN_improve_haeren_NS = yes
-		add_to_variable = { 
+		add_to_variable = {
 			DEN_haeren_army_armor_attack = 0.1
 			tooltip = army_armor_attack_factor_tt
 		}
@@ -3088,13 +3088,13 @@ DEN_joint_military_cooperation = {
 			}
 		}
 		DEN_improve_haeren_NS = yes
-		add_to_variable = { 
+		add_to_variable = {
 			DEN_haeren_army_artillery_attack = 0.05
-			tooltip = army_artillery_attack_factor_tt 
+			tooltip = army_artillery_attack_factor_tt
 		}
-		add_to_variable = { 
+		add_to_variable = {
 			DEN_haeren_army_artillery_defence = 0.05
-			tooltip = army_artillery_defence_factor_tt 
+			tooltip = army_artillery_defence_factor_tt
 		}
 	}
 	else_if = {
@@ -3115,12 +3115,12 @@ DEN_joint_military_cooperation = {
 			}
 		}
 		DEN_improve_haeren_NS = yes
-		add_to_variable = { 
-			DEN_haeren_army_core_attack = 0.05 
+		add_to_variable = {
+			DEN_haeren_army_core_attack = 0.05
 			tooltip = army_core_attack_factor_tt
 		}
-		add_to_variable = { 
-			DEN_haeren_army_core_defence = 0.05 
+		add_to_variable = {
+			DEN_haeren_army_core_defence = 0.05
 			tooltip = army_core_defence_factor_tt
 		}
 	}
@@ -3990,7 +3990,7 @@ DEN_norwegian_territory_wargoals = { #Set in an event
 	}
 }
 
-DEN_create_the_plenipotentiary = { #This is set up in an event and will create a new country leader in the Overlord country, but retires that character immediately so that character doesn't assume power 
+DEN_create_the_plenipotentiary = { #This is set up in an event and will create a new country leader in the Overlord country, but retires that character immediately so that character doesn't assume power
 	if = {
 		limit = {
 			FROM = { #Overlord Scope
@@ -4025,7 +4025,7 @@ DEN_create_the_plenipotentiary = { #This is set up in an event and will create a
 				ideology = fascism_ideology
 				traits = {
 					DEN_plenipotentiary
-				}	
+				}
 			}
 			retire_country_leader = yes #Necessary to not install this character as the Overlord's new country leader
 		}
@@ -4043,7 +4043,7 @@ DEN_create_the_plenipotentiary = { #This is set up in an event and will create a
 				ideology = stalinism
 				traits = {
 					DEN_plenipotentiary
-				}	
+				}
 			}
 			retire_country_leader = yes #Necessary to not install this character as the Overlord's new country leader
 		}
@@ -4061,7 +4061,7 @@ DEN_create_the_plenipotentiary = { #This is set up in an event and will create a
 				ideology = despotism
 				traits = {
 					DEN_plenipotentiary
-				}	
+				}
 			}
 			retire_country_leader = yes #Necessary to not install this character as the Overlord's new country leader
 		}
@@ -4079,7 +4079,7 @@ DEN_create_the_plenipotentiary = { #This is set up in an event and will create a
 				ideology = conservatism
 				traits = {
 					DEN_plenipotentiary
-				}	
+				}
 			}
 			retire_country_leader = yes #Necessary to not install this character as the Overlord's new country leader
 		}
@@ -4172,7 +4172,7 @@ DEN_independence_war_effects = {
 	}
 
 	if = {
-		limit = {	
+		limit = {
 			has_country_flag = DEN_cannot_join_factions_flag
 		}
 		set_rule = { can_join_factions = yes }
@@ -4186,7 +4186,7 @@ DEN_independence_war_effects = {
 		}
 		clr_country_flag = DEN_is_protectorate_flag
 	}
-	
+
 	if = {
 		limit = {
 			NOT = { #Necessary in case Overlord already declared war
@@ -4195,26 +4195,26 @@ DEN_independence_war_effects = {
 		}
 		declare_war_on = {
 			target = DEN.DEN_overlord_nation
-			type = independence_wargoal 
+			type = independence_wargoal
 		}
 	}
-	
+
 	DEN_restore_manpower = yes
 
 	if = {
 		limit = {
 			OR = {
 				has_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier }
-				has_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier_improved } 
+				has_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier_improved }
 			}
 		}
 		custom_effect_tooltip = DEN_modify_danish_resistance_dynamic_modifier
-		add_to_variable = { 
+		add_to_variable = {
 			DEN_resistance_weekly_manpower = 1000
 			tooltip = weekly_manpower_tt
 		}
-		add_to_variable = { 
-			DEN_resistance_mobilization_speed = 0.25 
+		add_to_variable = {
+			DEN_resistance_mobilization_speed = 0.25
 			tooltip = mobilization_speed_tt
 		}
 		add_to_variable = {
@@ -4232,31 +4232,31 @@ DEN_independence_war_effects = {
 	hidden_effect = {
 		if = {
 			limit = {
-				has_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier_improved } 
+				has_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier_improved }
 			}
 			remove_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier_improved }
 			add_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier_improved days = 365 }
 		}
 		else_if = {
 			limit = {
-				has_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier } 
+				has_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier }
 			}
 			remove_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier }
 			add_dynamic_modifier = { modifier = DEN_resistance_dynamic_modifier days = 365 }
 		}
 	}
-	
+
 
 	if = {
 		limit = {
-			has_dynamic_modifier = { modifier = DEN_neglected_military_dynamic_modifier } 
+			has_dynamic_modifier = { modifier = DEN_neglected_military_dynamic_modifier }
 		}
 		remove_dynamic_modifier = { modifier = DEN_neglected_military_dynamic_modifier }
-	}		
+	}
 
 	if = {
 		limit = {
-			has_dynamic_modifier = { modifier = DEN_occupation_laws_dynamic_modifier } 
+			has_dynamic_modifier = { modifier = DEN_occupation_laws_dynamic_modifier }
 		}
 		remove_dynamic_modifier = { modifier = DEN_occupation_laws_dynamic_modifier }
 	}
@@ -4273,20 +4273,20 @@ DEN_independence_war_effects = {
 			has_completed_focus = DEN_form_the_danish_freedom_council
 		}
 		37 = {
-			create_unit = { 
-				division = "name = \"1. Modstandsbevægelse Militia\" division_template = \"Modstandsbevægelsen Militia\" start_experience_factor = 0.5" 
+			create_unit = {
+				division = "name = \"1. Modstandsbevægelse Militia\" division_template = \"Modstandsbevægelsen Militia\" start_experience_factor = 0.5"
 				owner = ROOT
 			}
-			create_unit = { 
-				division = "name = \"2. Modstandsbevægelse Militia\" division_template = \"Modstandsbevægelsen Militia\" start_experience_factor = 0.5" 
+			create_unit = {
+				division = "name = \"2. Modstandsbevægelse Militia\" division_template = \"Modstandsbevægelsen Militia\" start_experience_factor = 0.5"
 				owner = ROOT
 			}
-			create_unit = { 
-				division = "name = \"3. Modstandsbevægelse Militia\" division_template = \"Modstandsbevægelsen Militia\" start_experience_factor = 0.5" 
+			create_unit = {
+				division = "name = \"3. Modstandsbevægelse Militia\" division_template = \"Modstandsbevægelsen Militia\" start_experience_factor = 0.5"
 				owner = ROOT
 			}
-			create_unit = { 
-				division = "name = \"4. Modstandsbevægelse Militia\" division_template = \"Modstandsbevægelsen Militia\" start_experience_factor = 0.5" 
+			create_unit = {
+				division = "name = \"4. Modstandsbevægelse Militia\" division_template = \"Modstandsbevægelsen Militia\" start_experience_factor = 0.5"
 				owner = ROOT
 			}
 		}
@@ -4300,7 +4300,7 @@ DEN_independence_war_effects = {
 			can_access_market = yes
 		}
 	}
-	
+
 	set_power_balance = {
 		id = DEN_balance_of_power
 		left_side = DEN_welfare_side
@@ -4318,7 +4318,7 @@ DEN_puppet_on_action_effects = { #This is triggered when Denmark is set free or 
 				has_cosmetic_tag = DEN_occupied_denmark
 			}
 		}
-		DEN  = {	
+		DEN  = {
 			drop_cosmetic_tag = yes
 		}
 	}
@@ -4331,7 +4331,7 @@ DEN_puppet_on_action_effects = { #This is triggered when Denmark is set free or 
 		DEN = { clr_country_flag = DEN_is_protectorate_flag }
 	}
 	if = {
-		limit = {	
+		limit = {
 			DEN = {
 				has_country_flag = DEN_cannot_join_factions_flag
 			}
@@ -4343,7 +4343,7 @@ DEN_puppet_on_action_effects = { #This is triggered when Denmark is set free or 
 		}
 	}
 	if = { #If the Overlord installed a country leader of their own, that dude needs to go for ever
-		limit = {	
+		limit = {
 			DEN = {
 				has_country_leader_with_trait = DEN_plenipotentiary
 			}

@@ -19,7 +19,7 @@ convoy_escort = {
 		}
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 95
@@ -115,7 +115,7 @@ support_integrated_operations = {
 		}
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 95
@@ -135,7 +135,7 @@ support_integrated_operations = {
 			instant = yes
 		}
 	}
-	
+
     rewards = {
         first_line_of_defense = {
 			destroyer = {
@@ -209,13 +209,13 @@ hunter_killers = {
 		has_tech = sonar
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 95
             OR = {
-            	original_tag = FRA
-            	original_tag = SOV
+				original_tag = FRA
+				original_tag = SOV
             }
         }
     }
@@ -223,7 +223,7 @@ hunter_killers = {
     # EFFECTS
 	convoy_escort_efficiency = 0.1
 	naval_torpedo_enemy_critical_chance_factor = -0.1
-	
+
     rewards = {
 		search_and_destroy = {
 			destroyer = {
@@ -280,7 +280,7 @@ torpedo_primacy = {
     xp_cost = 100
     xp_type = navy
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 95
@@ -293,7 +293,7 @@ torpedo_primacy = {
 			has_doctrine = new_base_strike
 			has_doctrine = new_littoral_defense
 		}
-   		has_navy_size = {
+		has_navy_size = {
 			type = screen_ship
 			size > 9
 		}
@@ -304,36 +304,36 @@ torpedo_primacy = {
 
     rewards = {
 
-    	efficient_torpedo_fuze = {
-    		destroyer = {
+		efficient_torpedo_fuze = {
+			destroyer = {
 				max_organisation = 5
-    			torpedo_attack = 0.1
-    		}
-    	}
-    	coordinated_fire_patterns = {
-    		destroyer = {
-    			max_organisation = 10
-				naval_torpedo_hit_chance_factor = 0.05
-    		}
-    	}	
-    	dedicated_torpedo_task_forces = {
-    		light_cruiser = {
-    			max_organisation = 10
-    			torpedo_attack = 0.1
+				torpedo_attack = 0.1
 			}
-    	}
-    	torpedo_rearming = {
+		}
+		coordinated_fire_patterns = {
+			destroyer = {
+				max_organisation = 10
+				naval_torpedo_hit_chance_factor = 0.05
+			}
+		}
+		dedicated_torpedo_task_forces = {
+			light_cruiser = {
+				max_organisation = 10
+				torpedo_attack = 0.1
+			}
+		}
+		torpedo_rearming = {
 			light_cruiser = {
 				max_organisation = 5
 			}
 			destroyer = {
 				max_organisation = 5
 			}
-    		modifier = {
+			modifier = {
 				naval_torpedo_cooldown_factor = -0.125
 			}
-    	}
-    	night_combat_training = {
+		}
+		night_combat_training = {
 			heavy_cruiser = {
 				torpedo_attack = 0.1
 				naval_torpedo_hit_chance_factor = 0.05
@@ -344,9 +344,9 @@ torpedo_primacy = {
 			}
 			modifier = {
 				naval_night_attack = 0.1
-    			night_spotting_chance = 0.1
+				night_spotting_chance = 0.1
 			}
-    	}
+		}
     }
 }
 
@@ -363,7 +363,7 @@ jeune_ecole = {
 			has_doctrine = new_convoy_raiding
 			has_doctrine = new_littoral_defense
 		}
-    	has_navy_size = {
+		has_navy_size = {
 			type = screen_ship
 			size > 9
 		}
@@ -384,40 +384,40 @@ jeune_ecole = {
 
     rewards = {
 		coastal_patrol = {
-    		modifier = {
+			modifier = {
 				mines_planting_by_fleets_factor = 0.2
 				naval_mines_damage_factor = 0.1
 				naval_enemy_fleet_size_ratio_penalty_factor = 0.1
 			}
-    	}
+		}
 		convoy_escort = {
-    		modifier = {
+			modifier = {
 				convoy_escort_efficiency = 0.1
 				convoy_retreat_speed = 0.1
 			}
-    	}
-    	commerce_raiding_priority = {
-    		light_cruiser = {
-    			convoy_raiding_coordination = 0.05
-    			max_organisation = 10
-    		}
+		}
+		commerce_raiding_priority = {
+			light_cruiser = {
+				convoy_raiding_coordination = 0.05
+				max_organisation = 10
+			}
 			destroyer = {
 				convoy_raiding_coordination = 0.05
 				max_organisation = 10
 			}
-    	}
-    	long_range_torpedo = {
-    		modifier = {
+		}
+		long_range_torpedo = {
+			modifier = {
 				naval_torpedo_screen_penetration_factor = 0.15
 			}
-    	}
-    	total_economic_warfare = {
-    		destroyer = {
-    			max_organisation = 10
+		}
+		total_economic_warfare = {
+			destroyer = {
+				max_organisation = 10
 				naval_torpedo_hit_chance_factor = 0.1
 				convoy_raiding_coordination = 0.05
-    		}
-    	}
+			}
+		}
     }
 }
 
@@ -445,7 +445,7 @@ mosquito_fleet = {
 			instant = yes
 		}
 	}
-	
+
 	rewards = {
 		concealment_measure = {
 			destroyer = {

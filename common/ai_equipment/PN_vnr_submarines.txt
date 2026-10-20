@@ -10,7 +10,7 @@ naval_sub = {
 		role_icon_index = 37
 
 		priority = { base = 1 }
-		
+
 		history = yes
 		target_variant = {
 			type = vnr_ship_hull_cruiser_submarine
@@ -44,7 +44,7 @@ naval_sub = {
 		}
 
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 2000.0
@@ -77,7 +77,7 @@ naval_sub = {
 			modifier = { factor = 0 expert_ai_style = yes }
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 3000.0
@@ -112,7 +112,7 @@ naval_sub = {
 			modifier = { factor = 0 expert_ai_style = yes }
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 4000.0
@@ -150,7 +150,7 @@ naval_sub = {
 			modifier = { factor = 0 expert_ai_style = yes }
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			type = vnr_ship_hull_submarine_4
@@ -189,7 +189,7 @@ naval_sub = {
 			modifier = { factor = 0 expert_ai_style = yes }
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			type = vnr_ship_hull_submarine_5
@@ -243,7 +243,7 @@ naval_sub_expert = {
 			}
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 4000.0
@@ -284,7 +284,7 @@ naval_sub_expert = {
 			}
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			match_value = 4500.0
@@ -326,7 +326,7 @@ naval_sub_expert = {
 			}
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			type = vnr_ship_hull_submarine_4
@@ -370,7 +370,7 @@ naval_sub_expert = {
 			}
 		}
 
-		
+
 		history = yes
 		target_variant = {
 			type = vnr_ship_hull_submarine_5

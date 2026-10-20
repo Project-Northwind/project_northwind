@@ -359,7 +359,7 @@ war_support_bad_modifier = {
 	#army_noncore_attack_factor = -0.50  # Attacking or defending on non-core takes a huge penalty.
 	#army_noncore_defence_factor = -0.50
 	command_power_gain_mult = -0.95
-	surrender_limit = -0.3	
+	surrender_limit = -0.3
 }
 
 war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.
@@ -380,7 +380,7 @@ diff_very_easy_player = {
 	production_lack_of_resource_penalty_factor = -0.8
 	army_fuel_consumption_factor = -0.5
 	air_fuel_consumption_factor = -0.5
- 	navy_fuel_consumption_factor = -0.5
+	navy_fuel_consumption_factor = -0.5
 	supply_consumption_factor = -0.1
 	no_supply_grace = 72
 }
@@ -392,7 +392,7 @@ diff_easy_player = {
 	production_lack_of_resource_penalty_factor = -0.3
 	army_fuel_consumption_factor = -0.25
 	air_fuel_consumption_factor = -0.25
- 	navy_fuel_consumption_factor = -0.25
+	navy_fuel_consumption_factor = -0.25
 	supply_consumption_factor = -0.05
 	no_supply_grace = 48
 }
@@ -433,14 +433,14 @@ diff_normal_ai = {
 diff_hard_ai = {
 	army_fuel_consumption_factor = -0.25
 	air_fuel_consumption_factor = -0.25
- 	navy_fuel_consumption_factor = -0.25
+	navy_fuel_consumption_factor = -0.25
 	no_supply_grace = 48
 }
 
 diff_very_hard_ai = {
 	army_fuel_consumption_factor = -0.5
 	air_fuel_consumption_factor = -0.5
- 	navy_fuel_consumption_factor = -0.5
+	navy_fuel_consumption_factor = -0.5
 	no_supply_grace = 72
 }
 
@@ -470,7 +470,7 @@ diff_strong_ai_generic = {
 	# fuel
 	army_fuel_consumption_factor = -0.40
 	air_fuel_consumption_factor = -0.40
- 	navy_fuel_consumption_factor = -0.40
+	navy_fuel_consumption_factor = -0.40
 
 	# xp gain
 	experience_gain_air_factor = 0.25
@@ -699,7 +699,7 @@ SOV_for_the_common_good_relation = { #For Right Oppo allies
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 }
 
-### BBA 
+### BBA
 
 ETH_league_of_nations_volunteer_resolution = {
 	send_volunteers_tension = -0.5
@@ -713,7 +713,7 @@ ETH_support_spain_static_modifier = {
 	send_volunteer_factor = 0.5
 }
 
-### AAT 
+### AAT
 
 NORDIC_allow_lendlease = {
 	lend_lease_tension = -0.5
@@ -725,7 +725,7 @@ NORDIC_allow_volunteers = {
 }
 
 NORDIC_allow_more_volunteers = {
-	send_volunteer_factor = 0.5 
+	send_volunteer_factor = 0.5
 }
 
 NORDIC_allow_more_planes = {
@@ -757,7 +757,7 @@ naval_repair_support = {
 	naval_attrition = -0.075
 }
 
-### SEA 
+### SEA
 
 JAP_support_ethiopia_static_modifier = {
 	send_volunteers_tension = -0.5
@@ -781,7 +781,7 @@ CZE_license_equipment_agreement = {
 	}
 
 	license_purchase_cost = 0 #base cost reduction
-	ai_license_acceptance = 50 #more to AI acceptance value. 
+	ai_license_acceptance = 50 #more to AI acceptance value.
 	license_production_speed = 0.25 #speed increase for being a license
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 }

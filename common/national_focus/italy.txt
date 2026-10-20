@@ -21,7 +21,7 @@ focus_tree = {
 
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			OR = {
@@ -31,7 +31,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 1500 y = 1500 }
@@ -42,23 +42,23 @@ focus_tree = {
 	}
 
 
-########  ##    ##    ########  ##        #######   #######  ########        ###    ##        #######  ##    ## ######## 
-##     ##  ##  ##     ##     ## ##       ##     ## ##     ## ##     ##      ## ##   ##       ##     ## ###   ## ##       
-##     ##   ####      ##     ## ##       ##     ## ##     ## ##     ##     ##   ##  ##       ##     ## ####  ## ##       
-########     ##       ########  ##       ##     ## ##     ## ##     ##    ##     ## ##       ##     ## ## ## ## ######   
-##     ##    ##       ##     ## ##       ##     ## ##     ## ##     ##    ######### ##       ##     ## ##  #### ##       
-##     ##    ##       ##     ## ##       ##     ## ##     ## ##     ##    ##     ## ##       ##     ## ##   ### ##       
-########     ##       ########  ########  #######   #######  ########     ##     ## ########  #######  ##    ## ######## 
+########  ##    ##    ########  ##        #######   #######  ########        ###    ##        #######  ##    ## ########
+##     ##  ##  ##     ##     ## ##       ##     ## ##     ## ##     ##      ## ##   ##       ##     ## ###   ## ##
+##     ##   ####      ##     ## ##       ##     ## ##     ## ##     ##     ##   ##  ##       ##     ## ####  ## ##
+########     ##       ########  ##       ##     ## ##     ## ##     ##    ##     ## ##       ##     ## ## ## ## ######
+##     ##    ##       ##     ## ##       ##     ## ##     ## ##     ##    ######### ##       ##     ## ##  #### ##
+##     ##    ##       ##     ## ##       ##     ## ##     ## ##     ##    ##     ## ##       ##     ## ##   ### ##
+########     ##       ########  ########  #######   #######  ########     ##     ## ########  #######  ##    ## ########
 
 
 
- ######   #######  ##        #######  ##    ## ####    ###    ##                ##    #### ##    ## ########  ##     ##  ######  ######## ########  ####    ###    ##       
-##    ## ##     ## ##       ##     ## ###   ##  ##    ## ##   ##               ##      ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##    ## ##   ##       
-##       ##     ## ##       ##     ## ####  ##  ##   ##   ##  ##              ##       ##  ####  ## ##     ## ##     ## ##          ##    ##     ##  ##   ##   ##  ##       
-##       ##     ## ##       ##     ## ## ## ##  ##  ##     ## ##             ##        ##  ## ## ## ##     ## ##     ##  ######     ##    ########   ##  ##     ## ##       
-##       ##     ## ##       ##     ## ##  ####  ##  ######### ##            ##         ##  ##  #### ##     ## ##     ##       ##    ##    ##   ##    ##  ######### ##       
-##    ## ##     ## ##       ##     ## ##   ###  ##  ##     ## ##           ##          ##  ##   ### ##     ## ##     ## ##    ##    ##    ##    ##   ##  ##     ## ##       
- ######   #######  ########  #######  ##    ## #### ##     ## ########    ##          #### ##    ## ########   #######   ######     ##    ##     ## #### ##     ## ######## 
+ ######   #######  ##        #######  ##    ## ####    ###    ##                ##    #### ##    ## ########  ##     ##  ######  ######## ########  ####    ###    ##
+##    ## ##     ## ##       ##     ## ###   ##  ##    ## ##   ##               ##      ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##    ## ##   ##
+##       ##     ## ##       ##     ## ####  ##  ##   ##   ##  ##              ##       ##  ####  ## ##     ## ##     ## ##          ##    ##     ##  ##   ##   ##  ##
+##       ##     ## ##       ##     ## ## ## ##  ##  ##     ## ##             ##        ##  ## ## ## ##     ## ##     ##  ######     ##    ########   ##  ##     ## ##
+##       ##     ## ##       ##     ## ##  ####  ##  ######### ##            ##         ##  ##  #### ##     ## ##     ##       ##    ##    ##   ##    ##  ######### ##
+##    ## ##     ## ##       ##     ## ##   ###  ##  ##     ## ##           ##          ##  ##   ### ##     ## ##     ## ##    ##    ##    ##    ##   ##  ##     ## ##
+ ######   #######  ########  #######  ##    ## #### ##     ## ########    ##          #### ##    ## ########   #######   ######     ##    ##     ## #### ##     ## ########
 
 
 	focus = {
@@ -219,7 +219,7 @@ focus_tree = {
 					scope = ITA
 					days = 365
 				}
-			}		
+			}
 		}
 	}
 
@@ -1122,7 +1122,7 @@ focus_tree = {
 					clr_state_flag = ITA_improved_infrastructure_in_state_flag
 				}
 			}
-		
+
 			#ERITREA
 			if = {
 				limit = {
@@ -1144,7 +1144,7 @@ focus_tree = {
 					clr_state_flag = ITA_improved_infrastructure_in_state_flag
 				}
 			}
-			
+
 			#JUBALAND
 			if = {
 				limit = {
@@ -1337,7 +1337,7 @@ focus_tree = {
 				}
 			}
 
-			# EXTRA STATES 
+			# EXTRA STATES
 
 			custom_effect_tooltip = ITA_via_della_vittoria_extra_states_tt
 
@@ -1680,10 +1680,10 @@ focus_tree = {
 				type = oil
 				amount = 8
 				state = 662
-			}	
+			}
 
 			662 = {
-				ITA_check_for_cooperatives_and_add_dm = yes #If appropriate, apply dm from Cooperatives for Intensive Exploitation 
+				ITA_check_for_cooperatives_and_add_dm = yes #If appropriate, apply dm from Cooperatives for Intensive Exploitation
 				set_state_flag = sirte_oil_developed
 			}
 			if = {
@@ -1733,7 +1733,7 @@ focus_tree = {
 				state = 450
 			}
 			450 = {
-				ITA_check_for_cooperatives_and_add_dm = yes #If appropriate, apply dm from Cooperatives for Intensive Exploitation 
+				ITA_check_for_cooperatives_and_add_dm = yes #If appropriate, apply dm from Cooperatives for Intensive Exploitation
 				set_state_flag = benghazi_oil_developed
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1741,8 +1741,8 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}	
-		
+			}
+
 		}
 	}
 
@@ -1803,20 +1803,20 @@ focus_tree = {
 						NOT = { has_template = "Cavalleria Coloniale" }
 					}
 					division_template = {
-						name = "Cavalleria Coloniale" 
+						name = "Cavalleria Coloniale"
 						division_names_group = ITA_CAV_03
 						override_model = ITA_cavalry_alt_1_entity
 						is_locked = yes
 
 						# Represents lesser-equipped colonial units
-						regiments = { 
-							cavalry = { x = 0 y = 0 } 
-							cavalry = { x = 0 y = 1 } 
-							cavalry = { x = 1 y = 0 } 
+						regiments = {
+							cavalry = { x = 0 y = 0 }
+							cavalry = { x = 0 y = 1 }
+							cavalry = { x = 1 y = 0 }
 							cavalry = { x = 1 y = 1 }
-						} 
+						}
 
-						priority = 0 
+						priority = 0
 					}
 				}
 
@@ -1825,15 +1825,15 @@ focus_tree = {
 						NOT = { has_template = "Reggimento Meharista" }
 					}
 					division_template = {
-						name = "Reggimento Meharista" 
-						division_names_group = ITA_CAM_01 
+						name = "Reggimento Meharista"
+						division_names_group = ITA_CAM_01
 						override_model = ITA_camelry_alt_2_entity
-						regiments = { 
-							camelry = { x = 0 y = 0 } 
-							camelry = { x = 0 y = 1 } 
-							camelry = { x = 1 y = 0 } 
-							camelry = { x = 1 y = 1 } 
-						} 
+						regiments = {
+							camelry = { x = 0 y = 0 }
+							camelry = { x = 0 y = 1 }
+							camelry = { x = 1 y = 0 }
+							camelry = { x = 1 y = 1 }
+						}
 					}
 				}
 			}
@@ -1843,21 +1843,21 @@ focus_tree = {
 				limit = {
 					NOT = { has_template = "Divisione Coloniale" }
 				}
-				division_template = { 
-					name = "Divisione Coloniale" 
+				division_template = {
+					name = "Divisione Coloniale"
 					division_names_group = ITA_COL_01
 					template_counter = 67
 					#is_locked = yes
 
 					# Represents lesser-equipped colonial units
-					regiments = { 
+					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
 						infantry = { x = 1 y = 0 }
 					}
 
-					priority = 0 
+					priority = 0
 				}
 			}
 
@@ -1865,8 +1865,8 @@ focus_tree = {
 				limit = {
 					NOT = { has_template = "Divisione Ascari Libica" }
 				}
-				division_template = { 
-					name = "Divisione Ascari Libica" 
+				division_template = {
+					name = "Divisione Ascari Libica"
 					division_names_group = ITA_COL_01
 					override_model = ITA_infantry_alt_0_entity
 					template_counter = 67
@@ -1874,14 +1874,14 @@ focus_tree = {
 					obsolete = yes
 
 					# Represents lesser-equipped colonial units
-					regiments = { 
+					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
 						infantry = { x = 1 y = 0 }
 					}
 
-					priority = 0 
+					priority = 0
 				}
 			}
 
@@ -1889,22 +1889,22 @@ focus_tree = {
 				limit = {
 					NOT = { has_template = "Divisione Ascari Eritrea" }
 				}
-				division_template = { 
-					name = "Divisione Ascari Eritrea" 
+				division_template = {
+					name = "Divisione Ascari Eritrea"
 					division_names_group = ITA_COL_01
 					template_counter = 67
 					#is_locked = yes
 					obsolete = yes
 
 					# Represents lesser-equipped colonial units
-					regiments = { 
+					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
 						infantry = { x = 1 y = 0 }
 					}
 
-					priority = 0 
+					priority = 0
 				}
 			}
 
@@ -1912,8 +1912,8 @@ focus_tree = {
 				limit = {
 					NOT = { has_template = "Divisione Ascari Somala" }
 				}
-				division_template = { 
-					name = "Divisione Ascari Somala" 
+				division_template = {
+					name = "Divisione Ascari Somala"
 					division_names_group = ITA_COL_01
 					override_model = ITA_infantry_alt_1_entity
 					template_counter = 67
@@ -1921,19 +1921,19 @@ focus_tree = {
 					obsolete = yes
 
 					# Represents lesser-equipped colonial units
-					regiments = { 
+					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
 						infantry = { x = 1 y = 0 }
 					}
 
-					priority = 0 
+					priority = 0
 				}
 			}
 
 
-			custom_effect_tooltip = ITA_strengthen_ascari_corps_create_units_tt 
+			custom_effect_tooltip = ITA_strengthen_ascari_corps_create_units_tt
 
 			## CAVALRY + INFANTRY ##
 
@@ -2203,7 +2203,7 @@ focus_tree = {
 					}
 				}
 			}
-		
+
 			## CAMELRY ## Separated so that Libyan Meharisti go before Eritrean ones (cavalry is the other way around)
 			hidden_effect = {
 				#LIBYA
@@ -2365,7 +2365,7 @@ focus_tree = {
 							NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
 						}
 						division_template = { #Improve Irregular template
-							name = "Truppe Irregolari a Cavallo"		
+							name = "Truppe Irregolari a Cavallo"
 							division_names_group = ITA_CAV_05
 							is_locked = yes
 							regiments = {
@@ -2379,7 +2379,7 @@ focus_tree = {
 					}
 					else = {
 						division_template = { #Basic irregular template
-							name = "Truppe Irregolari a Cavallo"		
+							name = "Truppe Irregolari a Cavallo"
 							division_names_group = ITA_CAV_05
 							is_locked = yes
 							regiments = {
@@ -2390,9 +2390,9 @@ focus_tree = {
 								cavalry = { x = 1 y = 1 }
 								cavalry = { x = 1 y = 2 }
 							}
-							support = { 
-								recon = { x = 0 y = 0 } 
-							} 
+							support = {
+								recon = { x = 0 y = 0 }
+							}
 							priority = 0
 						}
 					}
@@ -2407,7 +2407,7 @@ focus_tree = {
 							NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
 						}
 						division_template = { #Improve Irregular template
-							name = "Truppe Irregolari di Cammelli"		
+							name = "Truppe Irregolari di Cammelli"
 							division_names_group = ITA_CAM_02
 							is_locked = yes
 							regiments = {
@@ -2421,7 +2421,7 @@ focus_tree = {
 					}
 					else = {
 						division_template = { #Basic irregular template
-							name = "Truppe Irregolari di Cammelli"		
+							name = "Truppe Irregolari di Cammelli"
 							division_names_group = ITA_CAM_02
 							is_locked = yes
 							regiments = {
@@ -2432,9 +2432,9 @@ focus_tree = {
 								camelry = { x = 1 y = 1 }
 								camelry = { x = 1 y = 2 }
 							}
-							support = { 
-								recon = { x = 0 y = 0 } 
-							} 
+							support = {
+								recon = { x = 0 y = 0 }
+							}
 							priority = 0
 						}
 					}
@@ -3071,7 +3071,7 @@ focus_tree = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
-							instant_build = yes						
+							instant_build = yes
 						}
 					}
 					add_extra_state_shared_building_slots = 2
@@ -3089,7 +3089,7 @@ focus_tree = {
 						type = naval_base
 						level = 2
 						instant_build = yes
-						province = 819					
+						province = 819
 					}
 				}
 			}
@@ -3111,7 +3111,7 @@ focus_tree = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
-							instant_build = yes						
+							instant_build = yes
 						}
 					}
 					add_extra_state_shared_building_slots = 2
@@ -3140,7 +3140,7 @@ focus_tree = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
-							instant_build = yes						
+							instant_build = yes
 						}
 					}
 					add_extra_state_shared_building_slots = 1
@@ -3153,7 +3153,7 @@ focus_tree = {
 						type = naval_base
 						level = 2
 						instant_build = yes
-						province = 9784					
+						province = 9784
 					}
 				}
 			}
@@ -3171,20 +3171,20 @@ focus_tree = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
-							instant_build = yes						
+							instant_build = yes
 						}
 					}
 					add_building_construction = {
 						type = naval_base
 						level = 1
 						instant_build = yes
-						province = 4159					
+						province = 4159
 					}
 					add_building_construction = {
 						type = naval_base
 						level = 1
 						instant_build = yes
-						province = 7059					
+						province = 7059
 					}
 				}
 			}
@@ -3201,13 +3201,13 @@ focus_tree = {
 						add_building_construction = {
 							type = infrastructure
 							level = 1
-							instant_build = yes						
+							instant_build = yes
 						}
 						add_building_construction = {
 							type = naval_base
 							level = 2
 							instant_build = yes
-							province = 11773					
+							province = 11773
 						}
 					}
 				}
@@ -3255,7 +3255,7 @@ focus_tree = {
 					has_completed_focus = ITA_strengthen_northern_industry
 				}
 				custom_effect_tooltip = ITA_new_industrialization_program_north_tt
-				ITA_replace_designers_by_improved_version_north = yes 
+				ITA_replace_designers_by_improved_version_north = yes
 			}
 			else_if = {
 				limit = {
@@ -3755,13 +3755,13 @@ focus_tree = {
 	}
 
 
-########  ########  ######   ####  #######     ########  ######  ######## ########   ######  #### ########  #######  
-##     ## ##       ##    ##   ##  ##     ##    ##       ##    ## ##       ##     ## ##    ##  ##     ##    ##     ## 
-##     ## ##       ##         ##  ##     ##    ##       ##       ##       ##     ## ##        ##     ##    ##     ## 
-########  ######   ##   ####  ##  ##     ##    ######    ######  ######   ########  ##        ##     ##    ##     ## 
-##   ##   ##       ##    ##   ##  ##     ##    ##             ## ##       ##   ##   ##        ##     ##    ##     ## 
-##    ##  ##       ##    ##   ##  ##     ##    ##       ##    ## ##       ##    ##  ##    ##  ##     ##    ##     ## 
-##     ## ########  ######   ####  #######     ########  ######  ######## ##     ##  ######  ####    ##     #######  
+########  ########  ######   ####  #######     ########  ######  ######## ########   ######  #### ########  #######
+##     ## ##       ##    ##   ##  ##     ##    ##       ##    ## ##       ##     ## ##    ##  ##     ##    ##     ##
+##     ## ##       ##         ##  ##     ##    ##       ##       ##       ##     ## ##        ##     ##    ##     ##
+########  ######   ##   ####  ##  ##     ##    ######    ######  ######   ########  ##        ##     ##    ##     ##
+##   ##   ##       ##    ##   ##  ##     ##    ##             ## ##       ##   ##   ##        ##     ##    ##     ##
+##    ##  ##       ##    ##   ##  ##     ##    ##       ##    ## ##       ##    ##  ##    ##  ##     ##    ##     ##
+##     ## ########  ######   ####  #######     ########  ######  ######## ##     ##  ######  ####    ##     #######
 
 
 	focus = {
@@ -3860,7 +3860,7 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-				}				
+				}
 			}
 
 			add_doctrine_cost_reduction = {
@@ -3966,7 +3966,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_milan_comms_industry
 		cost = 5
-		
+
 		available = {
 			OR = {
 				has_full_control_of_state = 158 #PIEDMONT
@@ -4279,7 +4279,7 @@ focus_tree = {
 				}
 				show_unit_leaders_tooltip = ITA_annibale_bergonzoli
 				custom_effect_tooltip = available_military_high_command
-				show_ideas_tooltip = ITA_achille_starace	
+				show_ideas_tooltip = ITA_achille_starace
 			}
 			if = {
 				limit = {
@@ -4296,7 +4296,7 @@ focus_tree = {
 				}
 				show_unit_leaders_tooltip = ITA_ada_gobetti
 			}
-			
+
 			#NTH_Manu: Medals to Divsion Commanders
 		}
 	}
@@ -4392,7 +4392,7 @@ focus_tree = {
 						ITA_add_improved_light_tank_templates = yes
 					}
 				}
-				
+
 				ITA_add_basic_light_tank_destroyer_template = yes
 
 				if = {
@@ -4448,16 +4448,16 @@ focus_tree = {
 
 			set_technology = { bicycle_infantry = 1 popup = no }
 
-			division_template = { 
-				name = "Reggimento Bersaglieri" 
+			division_template = {
+				name = "Reggimento Bersaglieri"
 				division_names_group = ITA_INF_01
-				regiments = { 
+				regiments = {
 					bicycle_battalion = { x = 0 y = 0 }
 					bicycle_battalion = { x = 0 y = 1 }
 					bicycle_battalion = { x = 1 y = 0 }
 					bicycle_battalion = { x = 1 y = 1 }
 				}
-				support = { 
+				support = {
 					engineer = { x = 0 y = 0 }
 					artillery = { x = 0 y = 1 }
 					#anti_tank = { x = 0 y = 2 }
@@ -4501,7 +4501,7 @@ focus_tree = {
 				uses = 1
 				category = mountaineers_tech
 			}
-			
+
 		}
 	}
 
@@ -4668,7 +4668,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			
+
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
@@ -4730,7 +4730,7 @@ focus_tree = {
 					effect_tooltip = {
 						ITA_add_improved_heavy_tank_templates = yes
 					}
-				}	
+				}
 			}
 
 			#Update NS icon
@@ -4829,7 +4829,7 @@ focus_tree = {
 					effect_tooltip = {
 						ITA_add_improved_heavy_tank_templates = yes
 					}
-				}	
+				}
 			}
 
 			#Update NS icon
@@ -4916,13 +4916,13 @@ focus_tree = {
 	}
 
 
-########  ########  ######   ####    ###          ###    ######## ########   #######  ##    ##    ###    ##     ## ######## ####  ######     ###    
-##     ## ##       ##    ##   ##    ## ##        ## ##   ##       ##     ## ##     ## ###   ##   ## ##   ##     ##    ##     ##  ##    ##   ## ##   
-##     ## ##       ##         ##   ##   ##      ##   ##  ##       ##     ## ##     ## ####  ##  ##   ##  ##     ##    ##     ##  ##        ##   ##  
-########  ######   ##   ####  ##  ##     ##    ##     ## ######   ########  ##     ## ## ## ## ##     ## ##     ##    ##     ##  ##       ##     ## 
-##   ##   ##       ##    ##   ##  #########    ######### ##       ##   ##   ##     ## ##  #### ######### ##     ##    ##     ##  ##       ######### 
-##    ##  ##       ##    ##   ##  ##     ##    ##     ## ##       ##    ##  ##     ## ##   ### ##     ## ##     ##    ##     ##  ##    ## ##     ## 
-##     ## ########  ######   #### ##     ##    ##     ## ######## ##     ##  #######  ##    ## ##     ##  #######     ##    ####  ######  ##     ## 
+########  ########  ######   ####    ###          ###    ######## ########   #######  ##    ##    ###    ##     ## ######## ####  ######     ###
+##     ## ##       ##    ##   ##    ## ##        ## ##   ##       ##     ## ##     ## ###   ##   ## ##   ##     ##    ##     ##  ##    ##   ## ##
+##     ## ##       ##         ##   ##   ##      ##   ##  ##       ##     ## ##     ## ####  ##  ##   ##  ##     ##    ##     ##  ##        ##   ##
+########  ######   ##   ####  ##  ##     ##    ##     ## ######   ########  ##     ## ## ## ## ##     ## ##     ##    ##     ##  ##       ##     ##
+##   ##   ##       ##    ##   ##  #########    ######### ##       ##   ##   ##     ## ##  #### ######### ##     ##    ##     ##  ##       #########
+##    ##  ##       ##    ##   ##  ##     ##    ##     ## ##       ##    ##  ##     ## ##   ### ##     ## ##     ##    ##     ##  ##    ## ##     ##
+##     ## ########  ######   #### ##     ##    ##     ## ######## ##     ##  #######  ##    ## ##     ##  #######     ##    ####  ######  ##     ##
 
 
 	focus = {
@@ -5026,7 +5026,7 @@ focus_tree = {
 			custom_effect_tooltip = ITA_citta_dell_aria_tt
 			hidden_effect = {
 				IF = {
-					limit = { 
+					limit = {
 						2 = {
 							is_fully_controlled_by = ROOT
 							air_facility < 1
@@ -5180,7 +5180,7 @@ focus_tree = {
 					country_exists = GER
 					NOT = { has_war_with = GER }
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = small_plane_cas_airframe_1
 					amount = 100
 					producer = GER
@@ -5194,7 +5194,7 @@ focus_tree = {
 					uses = 1
 					category = cas_bomber
 					category = naval_bomber
-				}	
+				}
 			}
 			#NTH_Manu: Sends a request to Germany to purchase CAS and/or licensing design templates (historically 100 Ju87)
 		}
@@ -5306,7 +5306,7 @@ focus_tree = {
 
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
-		
+
 			add_tech_bonus = {
 				name = ITA_standardization
 				bonus = 0.75
@@ -5365,7 +5365,7 @@ focus_tree = {
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
 			air_experience = 15
-	
+
 			add_tech_bonus = {
 				name = ITA_specialization
 				bonus = 0.5
@@ -5624,13 +5624,13 @@ focus_tree = {
 	}
 
 
-########  ########  ######   ####    ###       ##     ##    ###    ########  #### ##    ##    ###    
-##     ## ##       ##    ##   ##    ## ##      ###   ###   ## ##   ##     ##  ##  ###   ##   ## ##   
-##     ## ##       ##         ##   ##   ##     #### ####  ##   ##  ##     ##  ##  ####  ##  ##   ##  
-########  ######   ##   ####  ##  ##     ##    ## ### ## ##     ## ########   ##  ## ## ## ##     ## 
-##   ##   ##       ##    ##   ##  #########    ##     ## ######### ##   ##    ##  ##  #### ######### 
-##    ##  ##       ##    ##   ##  ##     ##    ##     ## ##     ## ##    ##   ##  ##   ### ##     ## 
-##     ## ########  ######   #### ##     ##    ##     ## ##     ## ##     ## #### ##    ## ##     ## 
+########  ########  ######   ####    ###       ##     ##    ###    ########  #### ##    ##    ###
+##     ## ##       ##    ##   ##    ## ##      ###   ###   ## ##   ##     ##  ##  ###   ##   ## ##
+##     ## ##       ##         ##   ##   ##     #### ####  ##   ##  ##     ##  ##  ####  ##  ##   ##
+########  ######   ##   ####  ##  ##     ##    ## ### ## ##     ## ########   ##  ## ## ## ##     ##
+##   ##   ##       ##    ##   ##  #########    ##     ## ######### ##   ##    ##  ##  #### #########
+##    ##  ##       ##    ##   ##  ##     ##    ##     ## ##     ## ##    ##   ##  ##   ### ##     ##
+##     ## ########  ######   #### ##     ##    ##     ## ##     ## ##     ## #### ##    ## ##     ##
 
 
 	focus = {
@@ -5723,7 +5723,7 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-				}				
+				}
 			}
 
 			add_doctrine_cost_reduction = {
@@ -6492,7 +6492,7 @@ focus_tree = {
 							}
 						}
 					}
-					else = {		
+					else = {
 						division_template = {
 							name = "Ascari di Marina"
 							override_model = ITA_marine_alt_0_entity
@@ -6547,7 +6547,7 @@ focus_tree = {
 							}
 						}
 					}
-					else = {		
+					else = {
 						division_template = {
 							name = "Ascari di Marina"
 							override_model = ITA_marine_alt_0_entity
@@ -6755,7 +6755,7 @@ focus_tree = {
 			custom_effect_tooltip = ITA_incrociatori_pesanti_rm_tt
 			hidden_effect = {
 				add_ideas = ITA_hidden_heavy_cruisers_production_ns
-			}			
+			}
 
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
@@ -6872,7 +6872,7 @@ focus_tree = {
 				days = 180
 				track = submarines
 			}
-			
+
 
 			add_tech_bonus = {
 				name = ITA_cruiser_submarines
@@ -6880,7 +6880,7 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-			
+
 			if = {
 				limit = {
 					NOT = { is_special_project_completed = sp:sp_naval_cruiser_submarine }
@@ -6930,7 +6930,7 @@ focus_tree = {
 				days = 180
 				track = submarines
 			}
-			
+
 
 			add_tech_bonus = {
 				name = ITA_midget_submarines
@@ -7029,7 +7029,7 @@ focus_tree = {
 			###########
 			### MTG ###
 			###########
-			if = { #MTG 
+			if = { #MTG
 				limit = {
 					has_dlc = "Man the Guns"
 				}
@@ -7202,7 +7202,7 @@ create_equipment_variant = {
 			###########
 			### MTG ###
 			###########
-			if = { #MTG 
+			if = { #MTG
 				limit = {
 					has_dlc = "Man the Guns"
 				}
@@ -7384,7 +7384,7 @@ create_equipment_variant = {
 			###########
 			### MTG ###
 			###########
-			if = { #MTG 
+			if = { #MTG
 				limit = {
 					has_dlc = "Man the Guns"
 				}
@@ -7492,7 +7492,7 @@ create_equipment_variant = {
 			###########
 			### MTG ###
 			###########
-			if = { #MTG 
+			if = { #MTG
 				limit = {
 					has_dlc = "Man the Guns"
 				}
@@ -7576,7 +7576,7 @@ create_equipment_variant = {
 					amount = 1
 				}
 			}
-			
+
 			random_owned_controlled_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -7720,7 +7720,7 @@ create_equipment_variant = {
 					amount = 1
 				}
 			}
-			
+
 			random_owned_controlled_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -7840,7 +7840,7 @@ create_equipment_variant = {
 					}
 				}
 			}
-			
+
 			navy_experience = 50
 
 			###########
@@ -8348,13 +8348,13 @@ create_equipment_variant = {
 
 
 
-##     ## ####  ######  ########  #######  ########  ####  ######     ###    ##       
-##     ##  ##  ##    ##    ##    ##     ## ##     ##  ##  ##    ##   ## ##   ##       
-##     ##  ##  ##          ##    ##     ## ##     ##  ##  ##        ##   ##  ##       
-#########  ##   ######     ##    ##     ## ########   ##  ##       ##     ## ##       
-##     ##  ##        ##    ##    ##     ## ##   ##    ##  ##       ######### ##       
-##     ##  ##  ##    ##    ##    ##     ## ##    ##   ##  ##    ## ##     ## ##       
-##     ## ####  ######     ##     #######  ##     ## ####  ######  ##     ## ######## 
+##     ## ####  ######  ########  #######  ########  ####  ######     ###    ##
+##     ##  ##  ##    ##    ##    ##     ## ##     ##  ##  ##    ##   ## ##   ##
+##     ##  ##  ##          ##    ##     ## ##     ##  ##  ##        ##   ##  ##
+#########  ##   ######     ##    ##     ## ########   ##  ##       ##     ## ##
+##     ##  ##        ##    ##    ##     ## ##   ##    ##  ##       ######### ##
+##     ##  ##  ##    ##    ##    ##     ## ##    ##   ##  ##    ## ##     ## ##
+##     ## ####  ######     ##     #######  ##     ## ####  ######  ##     ## ########
 
 
 	focus = {
@@ -8403,7 +8403,7 @@ create_equipment_variant = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = fascism 
+				ideology = fascism
 				popularity = -0.15
 			}
 			add_war_support = -0.03
@@ -8454,7 +8454,7 @@ create_equipment_variant = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = fascism 
+				ideology = fascism
 				popularity = 0.05
 			}
 			add_war_support = 0.03
@@ -8482,7 +8482,7 @@ create_equipment_variant = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = fascism 
+				ideology = fascism
 				popularity = -0.05
 			}
 			add_stability = -0.03
@@ -8599,7 +8599,7 @@ create_equipment_variant = {
 				}
 				ETH_deescalate_the_war_effect = yes
 			}
-			
+
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -8797,9 +8797,9 @@ create_equipment_variant = {
 			add_political_power = 25
 
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ITA_pietro_d_acquarone	
+			show_ideas_tooltip = ITA_pietro_d_acquarone
 
-			ITA_bop_low_decrease_effect = yes	
+			ITA_bop_low_decrease_effect = yes
 
 			if = {
 				limit = {
@@ -8850,7 +8850,7 @@ create_equipment_variant = {
 				NOT = { country_exists = ETH }
 				has_subject = ETH
 			}
-		} 
+		}
 
 		available = {
 			custom_trigger_tooltip = {
@@ -8922,7 +8922,7 @@ create_equipment_variant = {
 			}
 			if = {
 				limit = {
-					835 = { has_resistance = yes } 
+					835 = { has_resistance = yes }
 				}
 				835 = { #HARARGHE
 					add_compliance = 10
@@ -8941,7 +8941,7 @@ create_equipment_variant = {
 
 			if = {
 				limit = {
-					836 = { has_resistance = yes } 
+					836 = { has_resistance = yes }
 				}
 				836 = { #BALE
 					add_compliance = 10
@@ -8960,7 +8960,7 @@ create_equipment_variant = {
 
 			if = {
 				limit = {
-					837 = { has_resistance = yes } 
+					837 = { has_resistance = yes }
 				}
 				837 = { #SIDAMO
 					add_compliance = 10
@@ -8979,7 +8979,7 @@ create_equipment_variant = {
 
 			if = {
 				limit = {
-					838 = { has_resistance = yes } 
+					838 = { has_resistance = yes }
 				}
 				838 = { #ILLUBABOR
 					add_compliance = 10
@@ -9033,7 +9033,7 @@ create_equipment_variant = {
 					}
 				}
 			}
-			
+
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = ITA_the_new_emperor_of_ethiopia_has_idea_vittorio_emanuele_tt
@@ -9076,7 +9076,7 @@ create_equipment_variant = {
 			}
 
 			custom_effect_tooltip = ITA_the_new_emperor_of_ethiopia_king_trait_tt
-			ITA_vittorio_emanuele_iii = { 
+			ITA_vittorio_emanuele_iii = {
 				add_country_leader_trait = emperor_of_ethiopia
 			}
 
@@ -9156,7 +9156,7 @@ create_equipment_variant = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ITA_the_man_of_providence
 		icon = GFX_goal_demand_sudetenland
@@ -9339,7 +9339,7 @@ create_equipment_variant = {
 							building = arms_factory
 							size > 1
 							include_locked = yes
-						} 
+						}
 					}
 				}
 				2 = {
@@ -9353,7 +9353,7 @@ create_equipment_variant = {
 							building = arms_factory
 							size > 1
 							include_locked = yes
-						} 
+						}
 					}
 				}
 				117 = {
@@ -9368,7 +9368,7 @@ create_equipment_variant = {
 							building = arms_factory
 							size > 1
 							include_locked = yes
-						} 
+						}
 					}
 				}
 				162 = {
@@ -9469,7 +9469,7 @@ create_equipment_variant = {
 
 			swap_ruler_traits = {
 				remove = il_duce_providence_strengthen
-				add = il_duce_devotion 
+				add = il_duce_devotion
 			}
 
 			ITA_bop_very_low_increase_effect = yes
@@ -9537,9 +9537,9 @@ create_equipment_variant = {
 
 			if = {
 				limit = {
-					NOT = { 
+					NOT = {
 							has_country_leader =  {
-								ruling_only = yes 
+								ruling_only = yes
 								character = ITA_dino_grandi
 							}
 						}
@@ -9596,7 +9596,7 @@ create_equipment_variant = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = { has_dlc = "La Resistance" }
 				swap_ideas = {
@@ -9613,13 +9613,13 @@ create_equipment_variant = {
 				}
 				add_ideas = ITA_banda_carita_non_la_resistance
 			}
-			 
+
 
 			custom_effect_tooltip = banda_carita_tt
-			
+
 		}
 	}
-	
+
 
 	focus = {
 		id = ITA_banda_koch
@@ -9778,7 +9778,7 @@ create_equipment_variant = {
 
 				add_units_to_division_template = {
 					template_name = "Camicie Nere"
-					support = { 
+					support = {
 						artillery = 0
 					}
 				}
@@ -9986,7 +9986,7 @@ create_equipment_variant = {
 							generator = { 103 }
 						}
 					}
-					
+
 				}
 			}
 			if = {
@@ -10052,7 +10052,7 @@ create_equipment_variant = {
 							generator = { 44 }
 						}
 					}
-					
+
 				}
 			}
 			if = {
@@ -10172,7 +10172,7 @@ create_equipment_variant = {
 							NOT = { has_trait = war_hero }
 						}
 						add_unit_leader_trait = war_hero
-					}	
+					}
 				}
 
 				if = {
@@ -10198,7 +10198,7 @@ create_equipment_variant = {
 							NOT = { has_trait = war_hero }
 						}
 						add_unit_leader_trait = war_hero
-					}	
+					}
 				}
 
 				if = {
@@ -10224,7 +10224,7 @@ create_equipment_variant = {
 							NOT = { has_trait = war_hero }
 						}
 						add_unit_leader_trait = war_hero
-					}	
+					}
 				}
 			}
 		}
@@ -10585,7 +10585,7 @@ create_equipment_variant = {
 							generator = { 118 }
 						}
 					}
-					
+
 				}
 			}
 			if = {
@@ -10786,14 +10786,14 @@ create_equipment_variant = {
 
 		x = 0
 		y = 1
-		
+
 		cost = 5
 		available = {
 			has_government = fascism
 			power_balance_value = {
 				id = ITA_power_balance
 				value < -0.09
-			}		
+			}
 		}
 
 		bypass = {
@@ -10814,7 +10814,7 @@ create_equipment_variant = {
 				promote_character = ITA_grand_council
 			}
 			add_ideas = ITA_shadow_of_mussolini
-			ITA_bop_low_decrease_effect = yes 
+			ITA_bop_low_decrease_effect = yes
 		}
 	}
 
@@ -10843,7 +10843,7 @@ create_equipment_variant = {
 		completion_reward = {
 			set_power_balance = {
 				id = ITA_power_balance
-				right_side = ITA_balbo_side 
+				right_side = ITA_balbo_side
 			}
 			hidden_effect = {
 				if = {
@@ -10895,7 +10895,7 @@ create_equipment_variant = {
 				}
 			}
 		}
-		
+
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
@@ -10964,12 +10964,12 @@ create_equipment_variant = {
 
 		cost = 10
 		available = {}
-		
+
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 } 
+			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			custom_effect_tooltip = ITA_stop_the_squandering_ricostruzione_industriale_tt
 			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
 			custom_effect_tooltip = ITA_stop_the_squandering_military_industry_tt
@@ -11008,13 +11008,13 @@ create_equipment_variant = {
 
 		cost = 10
 		available = {}
-		
+
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
 			add_popularity = {
-				ideology = fascism 
+				ideology = fascism
 				popularity = 0.05
 			}
 			add_war_support = 0.05
@@ -11057,14 +11057,14 @@ create_equipment_variant = {
 		available = {
 			has_government = fascism
 		}
-		
+
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			ROOT = { 
-				country_event = { id = BBA_italy_purge_the_party.1 hours = 8 random_hours = 6 } 
-			} 
+			ROOT = {
+				country_event = { id = BBA_italy_purge_the_party.1 hours = 8 random_hours = 6 }
+			}
 		}
 	}
 
@@ -11079,12 +11079,12 @@ create_equipment_variant = {
 		cost = 5
 		available = {
 		}
-		
+
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			ROOT = { 
-				country_event = { id = BBA_italy_decide_the_fate_of_mussolini.1 hours = 6 random_hours = 2 } 
+			ROOT = {
+				country_event = { id = BBA_italy_decide_the_fate_of_mussolini.1 hours = 6 random_hours = 2 }
 			}
 		}
 	}
@@ -11102,13 +11102,13 @@ create_equipment_variant = {
 		available = {
 			has_government = fascism
 		}
-		
+
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
 			add_political_power = 100
 			add_popularity = {
-				ideology = fascism 
+				ideology = fascism
 				popularity = 0.05
 			}
 			add_war_support = 0.1
@@ -11147,7 +11147,7 @@ create_equipment_variant = {
 
 		cost = 10
 		available = {}
-		
+
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
@@ -11171,13 +11171,13 @@ create_equipment_variant = {
 		available = {
 			has_government = fascism
 		}
-		
+
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
 			add_political_power = 100
 			add_popularity = {
-				ideology = fascism 
+				ideology = fascism
 				popularity = 0.05
 			}
 			add_stability = 0.05
@@ -11217,7 +11217,7 @@ create_equipment_variant = {
 
 		cost = 10
 		available = {}
-		
+
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
@@ -11244,7 +11244,7 @@ create_equipment_variant = {
 					is_neighbor_of = ROOT
 					NOT = { is_in_faction_with = ROOT }
 					NOT = { is_guaranteed_by = ROOT }
-					NOT = { has_non_aggression_pact_with = ROOT }	
+					NOT = { has_non_aggression_pact_with = ROOT }
 					capital_scope = { is_on_continent = europe }
 				}
 			}
@@ -11267,7 +11267,7 @@ create_equipment_variant = {
 		available = {
 			num_subjects > 0
 		}
-		
+
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
@@ -11289,7 +11289,7 @@ create_equipment_variant = {
 					add_to_tech_sharing_group = ITA_italian_hegemony_program
 				}
 			}
-			else = { 
+			else = {
 				effect_tooltip = {
 					add_ideas = ITA_italian_hegemony_subjects
 					add_to_tech_sharing_group = ITA_italian_hegemony_program
@@ -11318,14 +11318,14 @@ create_equipment_variant = {
 		available = {
 			has_completed_focus = ITA_stop_the_squandering
 		}
-		
+
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
 			army_experience = 25
-			add_timed_idea = { 
-				idea = ITA_prioritizing_the_military 
-				days = 365 
+			add_timed_idea = {
+				idea = ITA_prioritizing_the_military
+				days = 365
 			}
 			add_to_variable = { ITA_re_infantry_attack = 0.05 }
 			add_to_variable = { ITA_re_motorized_attack = 0.05 }
@@ -11343,19 +11343,19 @@ create_equipment_variant = {
 		mutually_exclusive = { focus = ITA_reorganize_regio_esercito }
 		relative_position_id = ITA_italo_balbo_focus
 		x = 1
-		y = 2		
+		y = 2
 		relative_position_id = ITA_italo_balbo_focus
 
 		cost = 10
-		available = {}		
+		available = {}
 
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
 			air_experience = 25
-			add_timed_idea = { 
-				idea = ITA_prioritizing_the_military 
-				days = 365 
+			add_timed_idea = {
+				idea = ITA_prioritizing_the_military
+				days = 365
 			}
 			add_to_variable = { ITA_ra_air_accidents_factor = -0.1 }
 			add_to_variable = { ITA_ra_air_agility_factor = 0.05 }
@@ -11366,7 +11366,7 @@ create_equipment_variant = {
 		}
 	}
 
-	focus = { 
+	focus = {
 		id = ITA_compagnie_auto_avio_sahariane
 		icon = GFX_focus_generic_armored_air_support
 		prerequisite = { focus = ITA_reorganize_regio_esercito focus = ITA_reinforce_regia_aeronautica }
@@ -11376,7 +11376,7 @@ create_equipment_variant = {
 
 		cost = 10
 		available = {}
-		
+
 		search_filters = {}
 
 		completion_reward = {
@@ -11399,7 +11399,7 @@ create_equipment_variant = {
 
 		cost = 10
 		available = {}
-		
+
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
@@ -11437,7 +11437,7 @@ create_equipment_variant = {
 				}
 			}
 		}
-		
+
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
@@ -11447,7 +11447,7 @@ create_equipment_variant = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				448 = { 
+				448 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
@@ -11467,7 +11467,7 @@ create_equipment_variant = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				449 = { 
+				449 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
@@ -11482,7 +11482,7 @@ create_equipment_variant = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				450 = { 
+				450 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
@@ -11529,7 +11529,7 @@ create_equipment_variant = {
 		y = 1
 
 		cost = 5
-		available = {}		
+		available = {}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		available = {
@@ -11542,14 +11542,14 @@ create_equipment_variant = {
 		completion_reward = {
 			if = {
 				limit = {
-					448 = { 
+					448 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
 				add_resource = {
-			    	type = oil
-			    	amount = 8
-			    	state = 448   
+					type = oil
+					amount = 8
+					state = 448
 				}
 				448 = { #TRIPOLI
 					add_extra_state_shared_building_slots = 1
@@ -11577,9 +11577,9 @@ create_equipment_variant = {
 				}
 				add_tech_bonus = {
 					name = ITA_oil_in_tripoli
-    				bonus = 1
-   					uses = 1
-    				category = synth_resources
+					bonus = 1
+					uses = 1
+					category = synth_resources
 				}
 				unlock_decision_tooltip = develop_tripoli_oil_fields
 			}
@@ -11597,7 +11597,7 @@ create_equipment_variant = {
 
 		cost = 5
 		available = {}
-		
+
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		available = {
 			has_tech = excavation3
@@ -11609,14 +11609,14 @@ create_equipment_variant = {
 		completion_reward = {
 			if = {
 				limit = {
-					448 = { 
+					448 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-				}	
+				}
 				add_resource = {
 				    type = steel
 				    amount = 16
-				    state = 448  
+				    state = 448
 				}
 				448 = { #TRIPOLI
 					add_extra_state_shared_building_slots = 2
@@ -11633,9 +11633,9 @@ create_equipment_variant = {
 				}
 				add_tech_bonus = {
 					name = ITA_steel_in_tripoli
-    				bonus = 1
-   					uses = 1
-    				category = excavation_tech
+					bonus = 1
+					uses = 1
+					category = excavation_tech
 				}
 				unlock_decision_tooltip = develop_tripoli_steel_deposits
 			}
@@ -11676,14 +11676,14 @@ create_equipment_variant = {
 			custom_effect_tooltip = ITA_novus_ordo_military_industry_tt
 			add_to_variable = { ITA_re_irregular_org = 0.05 }
 			custom_effect_tooltip = ITA_novus_ordo_irregulars_tt
-			
+
 			if = {
 				limit = {
 					448 = { #TRIPOLI
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				448 = { 
+				448 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -11698,7 +11698,7 @@ create_equipment_variant = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				449 = { 
+				449 = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
@@ -11708,7 +11708,7 @@ create_equipment_variant = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				450 = { 
+				450 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -11728,7 +11728,7 @@ create_equipment_variant = {
 				}
 			}
 
-			every_state = { 
+			every_state = {
 				limit = {
 					OR = {
 						state = 448
@@ -11747,7 +11747,7 @@ create_equipment_variant = {
 			hidden_effect = {
 				if = {
 					limit = {
-						448 = { 
+						448 = {
 							state_is_fully_controlled_by_ROOT_or_subject = yes
 						}
 					}
@@ -11762,7 +11762,7 @@ create_equipment_variant = {
 				}
 				if = {
 					limit = {
-						451 = { 
+						451 = {
 							state_is_fully_controlled_by_ROOT_or_subject = yes
 						}
 					}
@@ -11777,7 +11777,7 @@ create_equipment_variant = {
 				}
 				if = {
 					limit = {
-						661 = { 
+						661 = {
 							state_is_fully_controlled_by_ROOT_or_subject = yes
 						}
 					}
@@ -11798,7 +11798,7 @@ create_equipment_variant = {
 				}
 				if = {
 					limit = {
-						663 = { 
+						663 = {
 							state_is_fully_controlled_by_ROOT_or_subject = yes
 						}
 					}
@@ -11823,8 +11823,8 @@ create_equipment_variant = {
 						limit = {
 							NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
 						}
-						division_template = { 
-							name = "Divisione Ascari Libica" 
+						division_template = {
+							name = "Divisione Ascari Libica"
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_0_entity
 							template_counter = 67
@@ -11832,19 +11832,19 @@ create_equipment_variant = {
 							obsolete = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
 								infantry = { x = 1 y = 0 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 					else = {
-						division_template = { 
-							name = "Divisione Ascari Libica" 
+						division_template = {
+							name = "Divisione Ascari Libica"
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_0_entity
 							template_counter = 67
@@ -11852,7 +11852,7 @@ create_equipment_variant = {
 							obsolete = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
@@ -11864,7 +11864,7 @@ create_equipment_variant = {
 								artillery = { x = 0 y = 1 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 				}
@@ -11945,7 +11945,7 @@ create_equipment_variant = {
 		cost = 10
 		available = {
 			is_subject = no
-			ENG = { 
+			ENG = {
 				is_subject = no
 				NOT = { has_war_with = ROOT }
 				NOT = { is_justifying_wargoal_against = ROOT }
@@ -11955,7 +11955,7 @@ create_equipment_variant = {
 				}
 			}
 		}
-		
+
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
@@ -11969,11 +11969,11 @@ create_equipment_variant = {
 					seller_tags = { ENG }
 				}
 			}
-			ENG = { 
-				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 } 
+			ENG = {
+				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 }
 			}
 			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = { 
+			effect_tooltip = {
 				ITA_anglo_italian_cooperation_effect = yes
 			}
 		}
@@ -11990,7 +11990,7 @@ create_equipment_variant = {
 		cost = 5
 		available = {
 			is_subject = no
-			ENG = { 
+			ENG = {
 				is_subject = no
 				NOT = { has_war_with = ROOT }
 				NOT = { is_justifying_wargoal_against = ROOT }
@@ -12001,20 +12001,20 @@ create_equipment_variant = {
 				}
 			}
 		}
-		Bypass = { is_in_faction_with = ENG }	
+		Bypass = { is_in_faction_with = ENG }
 
 		search_filters = {}
 
 		completion_reward = {
-			ENG = { 
-				country_event = { id = BBA_italy_pact.1 hours = 12 random_hours = 6 } 
+			ENG = {
+				country_event = { id = BBA_italy_pact.1 hours = 12 random_hours = 6 }
 			}
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
 				ITA_non_aggression_pact_effect = yes
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = ITA_invite_france_to_military_partnership
@@ -12028,7 +12028,7 @@ create_equipment_variant = {
 		cost = 10
 		available = {
 			is_subject = no
-			FRA = { 
+			FRA = {
 				is_subject = no
 				NOT = { has_war_with = ROOT }
 				NOT = { is_justifying_wargoal_against = ROOT }
@@ -12057,11 +12057,11 @@ create_equipment_variant = {
 					seller_tags = { FRA }
 				}
 			}
-			FRA = { 
-				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 } 
+			FRA = {
+				country_event = { id = BBA_italy_research_agreement.1 hours = 6 random_hours = 2 }
 			}
 			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = { 
+			effect_tooltip = {
 				ITA_franco_italian_cooperation_effect = yes
 			}
 		}
@@ -12078,7 +12078,7 @@ create_equipment_variant = {
 		cost = 5
 		available = {
 			is_subject = no
-			FRA = { 
+			FRA = {
 				is_subject = no
 				NOT = { has_war_with = ROOT }
 				NOT = { is_justifying_wargoal_against = ROOT }
@@ -12090,19 +12090,19 @@ create_equipment_variant = {
 			}
 		}
 		Bypass = { is_in_faction_with = FRA }
-		
+
 		search_filters = {}
 
 		completion_reward = {
-			FRA = { 
-				country_event = { id = BBA_italy_pact.1 hours = 12 random_hours = 6 } 
+			FRA = {
+				country_event = { id = BBA_italy_pact.1 hours = 12 random_hours = 6 }
 			}
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
 				ITA_non_aggression_pact_effect = yes
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = ITA_proclaim_the_italian_empire
@@ -12163,20 +12163,20 @@ create_equipment_variant = {
 			}
 			has_army_manpower = { size > 999999 }
 		}
-		
+
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
 
 			every_other_country = {
 				limit = { is_major = yes }
-				country_event = { id = BBA_italy_recognize_the_empire.1 hours = 12 random_hours = 6 } 
+				country_event = { id = BBA_italy_recognize_the_empire.1 hours = 12 random_hours = 6 }
 			}
 
 			custom_effect_tooltip = ITA_italy_will_guarantee_tt
-			effect_tooltip = {			
+			effect_tooltip = {
 				every_other_country = {
-					limit = { 
+					limit = {
 						AND  = {
 							is_major = yes
 							has_non_aggression_pact_with = ROOT
@@ -12184,16 +12184,16 @@ create_equipment_variant = {
 					}
 					give_guarantee = ROOT
 					ROOT = { give_guarantee = PREV }
-				}				
+				}
 			}
-			
+
 			add_political_power = 75
 			add_war_support = 0.05
 
 			custom_effect_tooltip = ITA_african_conquests_tt #Annex cost reduction TT
 
 			add_ideas = ITA_impero_italiano
-			if = { 
+			if = {
 				limit = {
 					has_country_leader = {
 						character = ITA_dino_grandi
@@ -12215,11 +12215,11 @@ create_equipment_variant = {
 			else = {
 				custom_effect_tooltip = ITA_bop_will_shift
 			}
-			
-			
+
+
 			set_cosmetic_tag = ITA_italian_empire
 		}
-	}	
+	}
 
 	focus = {
 		id = ITA_reorganize_the_party
@@ -12233,7 +12233,7 @@ create_equipment_variant = {
 		cost = 10
 		available = {
 		}
-		
+
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
@@ -12255,13 +12255,13 @@ create_equipment_variant = {
 		cost = 10
 		available = {
 		}
-		
+
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
 			if = {
 				limit = {
-					has_dlc = "La Resistance"					
+					has_dlc = "La Resistance"
 				}
 				swap_ruler_traits = {
 					remove = political_reformer_1
@@ -12286,14 +12286,14 @@ create_equipment_variant = {
 				localization_key = available_scientist_one_line_tt
 				CHARACTER = ITA_enrico_fermi
 			}
-			
+
 			if = {
 				limit = {
-					has_dlc = "La Resistance"					
+					has_dlc = "La Resistance"
 				}
 				ITA_create_edgardo_sogno_operative = yes
 			}
-			
+
 			IF = {
 				limit = {
 					NOT = {
@@ -12326,14 +12326,14 @@ create_equipment_variant = {
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = { focus = ITA_reorganize_the_party }
 
-		#icon = 
+		#icon =
 		relative_position_id = ITA_reorganize_the_party
 		x = 2
 		y = 1
 
 		cost = 10
 		available = {}
-		
+
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
@@ -12355,7 +12355,7 @@ create_equipment_variant = {
 
 		cost = 10
 		available = {}
-		
+
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
@@ -12379,7 +12379,7 @@ create_equipment_variant = {
 
 		cost = 10
 		available = {}
-		
+
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
@@ -12402,7 +12402,7 @@ create_equipment_variant = {
 			}
 			if = {
 				limit = {
-					2 = { 
+					2 = {
 						is_fully_controlled_by = ROOT
 						free_building_slots = { #Preventing Lazio state from getting overcrowded
 							building = arms_factory
@@ -12442,7 +12442,7 @@ create_equipment_variant = {
 
 			if = {
 				limit = {
-					117 = { 
+					117 = {
 						is_fully_controlled_by = ROOT
 					}
 				}
@@ -12457,7 +12457,7 @@ create_equipment_variant = {
 			}
 			if = {
 				limit = {
-					161 = { 
+					161 = {
 						is_fully_controlled_by = ROOT
 					}
 				}
@@ -12472,7 +12472,7 @@ create_equipment_variant = {
 			}
 			if = {
 				limit = {
-					162 = { 
+					162 = {
 						is_fully_controlled_by = ROOT
 					}
 				}
@@ -12490,13 +12490,13 @@ create_equipment_variant = {
 
 
 
-##     ##  #######  ##    ##    ###    ########   ######  ##     ## ####  ######  ######## 
-###   ### ##     ## ###   ##   ## ##   ##     ## ##    ## ##     ##  ##  ##    ##    ##    
-#### #### ##     ## ####  ##  ##   ##  ##     ## ##       ##     ##  ##  ##          ##    
-## ### ## ##     ## ## ## ## ##     ## ########  ##       #########  ##   ######     ##    
-##     ## ##     ## ##  #### ######### ##   ##   ##       ##     ##  ##        ##    ##    
-##     ## ##     ## ##   ### ##     ## ##    ##  ##    ## ##     ##  ##  ##    ##    ##    
-##     ##  #######  ##    ## ##     ## ##     ##  ######  ##     ## ####  ######     ##    
+##     ##  #######  ##    ##    ###    ########   ######  ##     ## ####  ######  ########
+###   ### ##     ## ###   ##   ## ##   ##     ## ##    ## ##     ##  ##  ##    ##    ##
+#### #### ##     ## ####  ##  ##   ##  ##     ## ##       ##     ##  ##  ##          ##
+## ### ## ##     ## ## ## ## ##     ## ########  ##       #########  ##   ######     ##
+##     ## ##     ## ##  #### ######### ##   ##   ##       ##     ##  ##        ##    ##
+##     ## ##     ## ##   ### ##     ## ##    ##  ##    ## ##     ##  ##  ##    ##    ##
+##     ##  #######  ##    ## ##     ## ##     ##  ######  ##     ## ####  ######     ##
 
 
 
@@ -12541,7 +12541,7 @@ create_equipment_variant = {
 
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_vittorio_emanuele_orlando
-			
+
 			show_unit_leaders_tooltip = ITA_giuseppe_de_stefanis
 
 			#BoP
@@ -12575,7 +12575,7 @@ create_equipment_variant = {
 			#MILITARY INDUSTRY
 			add_to_variable = { ITA_military_industry_dm_production_lack_of_resource_penalty_factor = -0.15 }
 			custom_effect_tooltip = ITA_extraction_industry_military_industry_tt
-			
+
 			117 = {
 				if = {
 					limit = {
@@ -12886,7 +12886,7 @@ create_equipment_variant = {
 					progress = 0.6
 					amount = 1
 				}
-				
+
 				#ALESSANDRO POERIO Class - Destroyers
 				set_technology = {
 	basic_battery = 1
@@ -12937,7 +12937,7 @@ create_equipment_variant = {
 					progress = 0.7
 					amount = 1
 				}
-				
+
 				#ERITREA - Coastal Defense Ship
 				set_technology = {
 	basic_battery = 1
@@ -13110,7 +13110,7 @@ create_equipment_variant = {
 				idea = ITA_nuclear_research
 				days = 1095
 			}
-			
+
 			add_breakthrough_progress = {
 				specialization = specialization_nuclear
 				value = 1
@@ -13122,7 +13122,7 @@ create_equipment_variant = {
 				localization_key = available_scientist_one_line_tt
 				CHARACTER = ITA_enrico_fermi
 			}
-			
+
 		}
 	}
 
@@ -13243,7 +13243,7 @@ create_equipment_variant = {
 				}
 				add_compliance = 10
 			}
-			
+
 			add_political_power = 50
 			add_popularity = {
 				ideology = democratic
@@ -13512,7 +13512,7 @@ create_equipment_variant = {
 				popularity = 0.1
 			}
 			army_experience = 15
-			
+
 			custom_effect_tooltip = ITA_blackshirts_div_cap_8_tt
 			hidden_effect = {
 				add_to_variable = { ITA_militias_cap = 8 }
@@ -13555,11 +13555,11 @@ create_equipment_variant = {
 
 			show_unit_leaders_tooltip = ITA_giuseppe_pieche
 
-			division_template = { 
-				name = "Reggimento Corazzieri" 
+			division_template = {
+				name = "Reggimento Corazzieri"
 				division_names_group = ITA_INF_01
 
-				regiments = { 
+				regiments = {
 					cavalry = { x = 0 y = 0 }
 					cavalry = { x = 0 y = 1 }
 					cavalry = { x = 0 y = 2 }
@@ -13789,7 +13789,7 @@ create_equipment_variant = {
 			limit = {
 				has_dlc = "La Resistance"
 			}
-			swap_ideas = { 
+			swap_ideas = {
 				remove_idea = ITA_papal_support
 				add_idea = ITA_papal_support_agents
 			}
@@ -13837,7 +13837,7 @@ create_equipment_variant = {
 					add_idea = ITA_papal_support_strengthened_no_lar
 				}
 			}
-			
+
 			ITA_bop_medium_increase_pope_side_effect = yes
 
 			unlock_decision_tooltip = ITA_bop_liturgical_reforms
@@ -13867,7 +13867,7 @@ create_equipment_variant = {
 				idea = ITA_setting_course_ns
 				days = 365
 			}
-			
+
 		}
 	}
 
@@ -13931,7 +13931,7 @@ create_equipment_variant = {
 				limit = {
 					is_faction_leader = yes
 				}
-				set_faction_name = italy_empire_faction 
+				set_faction_name = italy_empire_faction
 				IF = {
 					limit = {
 						has_dlc = "No Compromise, No Surrender"
@@ -14235,7 +14235,7 @@ create_equipment_variant = {
 					limit = {
 						NOT = { is_special_project_completed = sp:sp_air_intercontinental_bomber }
 					}
-					add_to_variable = { 
+					add_to_variable = {
 						ITA_ra_sp_air_intercontinental_bomber_speed_factor = 0.2
 						tooltip = sp_air_intercontinental_bomber_speed_factor_tt
 					}
@@ -14244,7 +14244,7 @@ create_equipment_variant = {
 					limit = {
 						NOT = { is_special_project_completed = sp:sp_air_mothership_aircraft }
 					}
-					add_to_variable = { 
+					add_to_variable = {
 						ITA_ra_sp_air_mothership_aircraft_speed_factor = 0.2
 						tooltip = sp_air_mothership_aircraft_speed_factor_tt
 					}
@@ -14299,7 +14299,7 @@ create_equipment_variant = {
 				hidden_effect = {
 					add_ideas = ITA_hidden_super_heavy_tank_ns
 				}
-				
+
 				ITA_add_modern_musculus_sh_tank_template_and_production = yes
 			}
 			else = {
@@ -14330,7 +14330,7 @@ create_equipment_variant = {
 						NOT = { is_special_project_completed = sp:sp_land_land_cruiser }
 					}
 					custom_effect_tooltip = ITA_modify_regio_esercito_dynamic_modifier_ns_intro
-					add_to_variable = { 
+					add_to_variable = {
 						ITA_re_sp_land_land_cruiser_speed_factor = 0.2
 						tooltip = sp_land_land_cruiser_speed_factor_tt
 					}
@@ -14488,7 +14488,7 @@ create_equipment_variant = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
+
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.5
@@ -14503,7 +14503,7 @@ create_equipment_variant = {
 						NOT = { is_special_project_completed = sp:sp_naval_ice_carrier }
 					}
 					custom_effect_tooltip = ITA_modify_regia_marina_dynamic_modifier_ns_intro
-					add_to_variable = { 
+					add_to_variable = {
 						ITA_rm_sp_naval_ice_carrier_speed_factor = 0.2
 						tooltip = sp_naval_ice_carrier_speed_factor_tt
 					}
@@ -14539,12 +14539,12 @@ create_equipment_variant = {
 
 		search_filters = {}
 
-		completion_reward = { 
+		completion_reward = {
 			every_country = {
 				limit = {
 					OR = {
 						original_tag = POR
-						original_tag = SPR 
+						original_tag = SPR
 					}
 					has_civil_war = no
 					is_in_faction = no
@@ -14630,7 +14630,7 @@ create_equipment_variant = {
 				    target = ITA
 				    modifier = ITA_latin_initiatives
 				}
-				country_event = { 
+				country_event = {
 				    id = BBA_italy_interaction_events.44
 				    days = 2
 				    random = 6
@@ -14708,7 +14708,7 @@ create_equipment_variant = {
 					add_idea = ITA_papal_state_no_lar
 				}
 			}
-			
+
 			ITA_bop_low_increase_pope_side_effect = yes
 		}
 	}
@@ -14764,7 +14764,7 @@ create_equipment_variant = {
 			air_experience = 15
 
 			add_ideas = ITA_vento_aureo
-			
+
 			if = {
 				limit = {
 					has_rule = can_only_justify_war_on_threat_country
@@ -14843,7 +14843,7 @@ create_equipment_variant = {
 					ROOT = {
 						create_wargoal = {
 							type = puppet_wargoal_focus
-							target = PREV 
+							target = PREV
 						}
 					}
 				}
@@ -14852,7 +14852,7 @@ create_equipment_variant = {
 				limit = {
 					has_dlc = "No Step Back"
 				}
-				
+
 				custom_effect_tooltip = ITA_modern_musculus_military_industry_dm_tt
 				hidden_effect = {
 					add_ideas = ITA_hidden_super_heavy_tank_ns
@@ -15020,7 +15020,7 @@ create_equipment_variant = {
 			unlock_decision_tooltip = form_roman_empire
 			if = {
 				limit = {
-					has_dlc = "La Resistance"					
+					has_dlc = "La Resistance"
 				}
 				swap_ideas = {
 					remove_idea = ITA_papal_state_deus_vult
@@ -15044,13 +15044,13 @@ create_equipment_variant = {
 
 
 
-########  #######  ########  ######## ####  ######   ##    ##    ########   #######  ##       #### ######## ####  ######   ######     ########  ####  ######   ##     ## ######## 
-##       ##     ## ##     ## ##        ##  ##    ##  ###   ##    ##     ## ##     ## ##        ##     ##     ##  ##    ## ##    ##    ##     ##  ##  ##    ##  ##     ##    ##    
-##       ##     ## ##     ## ##        ##  ##        ####  ##    ##     ## ##     ## ##        ##     ##     ##  ##       ##          ##     ##  ##  ##        ##     ##    ##    
-######   ##     ## ########  ######    ##  ##   #### ## ## ##    ########  ##     ## ##        ##     ##     ##  ##        ######     ########   ##  ##   #### #########    ##    
-##       ##     ## ##   ##   ##        ##  ##    ##  ##  ####    ##        ##     ## ##        ##     ##     ##  ##             ##    ##   ##    ##  ##    ##  ##     ##    ##    
-##       ##     ## ##    ##  ##        ##  ##    ##  ##   ###    ##        ##     ## ##        ##     ##     ##  ##    ## ##    ##    ##    ##   ##  ##    ##  ##     ##    ##    
-##        #######  ##     ## ######## ####  ######   ##    ##    ##         #######  ######## ####    ##    ####  ######   ######     ##     ## ####  ######   ##     ##    ##    
+########  #######  ########  ######## ####  ######   ##    ##    ########   #######  ##       #### ######## ####  ######   ######     ########  ####  ######   ##     ## ########
+##       ##     ## ##     ## ##        ##  ##    ##  ###   ##    ##     ## ##     ## ##        ##     ##     ##  ##    ## ##    ##    ##     ##  ##  ##    ##  ##     ##    ##
+##       ##     ## ##     ## ##        ##  ##        ####  ##    ##     ## ##     ## ##        ##     ##     ##  ##       ##          ##     ##  ##  ##        ##     ##    ##
+######   ##     ## ########  ######    ##  ##   #### ## ## ##    ########  ##     ## ##        ##     ##     ##  ##        ######     ########   ##  ##   #### #########    ##
+##       ##     ## ##   ##   ##        ##  ##    ##  ##  ####    ##        ##     ## ##        ##     ##     ##  ##             ##    ##   ##    ##  ##    ##  ##     ##    ##
+##       ##     ## ##    ##  ##        ##  ##    ##  ##   ###    ##        ##     ## ##        ##     ##     ##  ##    ## ##    ##    ##    ##   ##  ##    ##  ##     ##    ##
+##        #######  ##     ## ######## ####  ######   ##    ##    ##         #######  ######## ####    ##    ####  ######   ######     ##     ## ####  ######   ##     ##    ##
 
 
 	focus = {
@@ -15175,7 +15175,7 @@ create_equipment_variant = {
 					}
 				}
 				activate_targeted_decision = { target = YUG decision = ITA_send_ultimatum_to_country_balkan }
-			}	
+			}
 		}
 	}
 
@@ -15324,7 +15324,7 @@ create_equipment_variant = {
 				}
 				if = {
 					limit = {
-				 		has_character = ITA_vittorio_emanuele_iii
+						has_character = ITA_vittorio_emanuele_iii
 					}
 					ITA_vittorio_emanuele_iii = { add_country_leader_trait = king_of_albania }
 				}
@@ -15539,9 +15539,9 @@ create_equipment_variant = {
 
 		bypass = {
 			has_guaranteed = AUS
-		}		 
+		}
 
-		search_filters = {} 
+		search_filters = {}
 
 		completion_reward = {
 			give_guarantee = AUS
@@ -15559,7 +15559,7 @@ create_equipment_variant = {
 		y = 1
 		relative_position_id = ITA_guarantee_austrian_independence
 		cost = 10
-		available = { 
+		available = {
 			NOT = {
 				has_war_with = ENG
 				has_war_with = FRA
@@ -15585,10 +15585,10 @@ create_equipment_variant = {
 						tooltip = ITA_ENG_must_control_necessary_states_tt
 						ENG = {
 							NOT = {
-								controls_state = 269 
+								controls_state = 269
 								controls_state = 903
 								controls_state = 906
-								controls_state = 116 
+								controls_state = 116
 							}
 						}
 					}
@@ -15624,7 +15624,7 @@ create_equipment_variant = {
 				limit = {
 					ENG = {
 						controls_state = 269
-						controls_state = 903	
+						controls_state = 903
 					}
 				}
 				ENG = {
@@ -15710,7 +15710,7 @@ create_equipment_variant = {
 		relative_position_id = ITA_negotiate_italian_claims
 		cost = 10
 		available = {
-			is_subject = no 
+			is_subject = no
 			OR = {
 				AND = {
 					NOT = {
@@ -15719,7 +15719,7 @@ create_equipment_variant = {
 					}
 					FRA = {
 						is_in_faction_with = ENG
-					} 
+					}
 				}
 				AND = {
 					NOT = {
@@ -15757,7 +15757,7 @@ create_equipment_variant = {
 						OR = {
 							is_in_faction_with = FRA
 							tag = FRA
-						} 
+						}
 						ROOT = {
 							has_wargoal_against = PREV
 						}
@@ -15766,7 +15766,7 @@ create_equipment_variant = {
 					ROOT = {
 						remove_wargoal = {
 							type = all
-							target = PREV 
+							target = PREV
 						}
 					}
 				}
@@ -15879,7 +15879,7 @@ create_equipment_variant = {
 				}
 			}
 
-			add_ideas = ITA_italys_destiny_idea 
+			add_ideas = ITA_italys_destiny_idea
 		}
 	}
 
@@ -16005,7 +16005,7 @@ create_equipment_variant = {
 		available = {
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
-		
+
 		search_filters = {FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
@@ -16054,7 +16054,7 @@ create_equipment_variant = {
 			#}
 
 			add_ideas = generic_secret_weapons_ns
-			
+
 		}
 	}
 
@@ -16070,7 +16070,7 @@ create_equipment_variant = {
 		available = {
 			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
-		
+
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
@@ -16126,8 +16126,8 @@ create_equipment_variant = {
 		available = {
 			is_puppet = no
 			is_in_faction_with = GER
-			GER = { 
-				controls_state = 16 				
+			GER = {
+				controls_state = 16
 				GER = { is_faction_leader = yes }
 			}
 			custom_trigger_tooltip = {
@@ -16147,7 +16147,7 @@ create_equipment_variant = {
 
 		completion_reward = {
 			if = {
-				limit = { 
+				limit = {
 					any_other_country = {
 						original_tag = FRA
 						has_government = fascism
@@ -16157,7 +16157,7 @@ create_equipment_variant = {
 				set_global_flag = ITA_claims_on_france_735
 			}
 			if = {
-				limit = { 
+				limit = {
 					any_other_country = {
 						original_tag = FRA
 						has_government = fascism
@@ -16232,13 +16232,13 @@ create_equipment_variant = {
 
 			if = {
 				limit = {
-					BUL = { 
+					BUL = {
 						exists = yes
 						is_ai = yes
 						is_subject = no
 						is_in_faction = no
 					}
-					NOT = { has_war_with = BUL }				
+					NOT = { has_war_with = BUL }
 				}
 				add_to_faction = BUL
 				BUL = {
@@ -16251,7 +16251,7 @@ create_equipment_variant = {
 			}
 			else_if = {
 				limit = {
-					BUL = { 
+					BUL = {
 						exists = yes
 						is_ai = no
 						is_subject = no
@@ -16284,7 +16284,7 @@ create_equipment_variant = {
 
 		available = {
 			country_exists = JAP
-			JAP = { 
+			JAP = {
 				is_in_faction = no
 				has_government = ROOT
 			}
@@ -16325,11 +16325,11 @@ create_equipment_variant = {
 
 		completion_reward = {
 
-			
+
 			IF = {
 				limit = {
 					has_dlc = "No Compromise, No Surrender"
-					is_in_faction = no  
+					is_in_faction = no
 				}
 				custom_effect_tooltip = add_faction_goal_secure_north_africa_tt
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -16337,13 +16337,13 @@ create_equipment_variant = {
 			ELSE_IF = {
 				limit = {
 					has_dlc = "No Compromise, No Surrender"
-					is_in_faction = yes 
+					is_in_faction = yes
 				}
 				add_faction_goal_slot = {
-					category  = medium_term # options: short_term, medium_term, long_term 
-					value = 1 
+					category  = medium_term # options: short_term, medium_term, long_term
+					value = 1
 				}
-				add_faction_goal = faction_goal_secure_north_africa 
+				add_faction_goal = faction_goal_secure_north_africa
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
@@ -16484,9 +16484,9 @@ create_equipment_variant = {
 	focus = {
 		id = ITA_demand_ticino
 		icon = GFX_focus_attack_switzerland
-		prerequisite = { 
+		prerequisite = {
 			focus = ITA_war_with_france
-			focus = ITA_request_control_of_french_territories 
+			focus = ITA_request_control_of_french_territories
 		}
 
 		x = -1
@@ -16499,7 +16499,7 @@ create_equipment_variant = {
 				is_owned_and_controlled_by = SWI
 			}
 			is_subject = no
-			159 = { 
+			159 = {
 				is_controlled_by = ITA
 			}
 			158 = {
@@ -16514,7 +16514,7 @@ create_equipment_variant = {
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
-		completion_reward = { 
+		completion_reward = {
 
 			SWI = {
 				country_event = {
@@ -16696,7 +16696,7 @@ create_equipment_variant = {
 			activate_targeted_decision = { target = GRE decision = ITA_promote_ideology_rallies_balkan }
 
 			hidden_effect = {
-				news_event = { hours = 6 id = news.187 } 
+				news_event = { hours = 6 id = news.187 }
 			}
 		}
 	}
@@ -16715,7 +16715,7 @@ create_equipment_variant = {
 				owns_state = 342
 			}
 		}
-		
+
 		will_lead_to_war_with = TUR
 
 		search_filters = {}
@@ -16993,8 +16993,8 @@ create_equipment_variant = {
 					has_capitulated = yes
 					has_government = fascism
 				}
-			}			
-		}		
+			}
+		}
 
 		search_filters = {}
 
@@ -17005,8 +17005,8 @@ create_equipment_variant = {
 					has_government = fascism
 				}
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
-				add_ideas = fascist_influence 
-				country_event = { id = generic.5 }           
+				add_ideas = fascist_influence
+				country_event = { id = generic.5 }
 			}
 		}
 	}
@@ -17117,13 +17117,13 @@ create_equipment_variant = {
 
 
 
- ######  #### ##     ## #### ##          ##      ##    ###    ########         ######   #######          ########  ######## ##       ##       ####  ######   ######## ########  ######## ##    ## ######## 
-##    ##  ##  ##     ##  ##  ##          ##  ##  ##   ## ##   ##     ##       ##    ## ##     ##         ##     ## ##       ##       ##        ##  ##    ##  ##       ##     ## ##       ###   ##    ##    
-##        ##  ##     ##  ##  ##          ##  ##  ##  ##   ##  ##     ##       ##       ##     ##         ##     ## ##       ##       ##        ##  ##        ##       ##     ## ##       ####  ##    ##    
-##        ##  ##     ##  ##  ##          ##  ##  ## ##     ## ########        ##       ##     ## ####### ########  ######   ##       ##        ##  ##   #### ######   ########  ######   ## ## ##    ##    
-##        ##   ##   ##   ##  ##          ##  ##  ## ######### ##   ##         ##       ##     ##         ##     ## ##       ##       ##        ##  ##    ##  ##       ##   ##   ##       ##  ####    ##    
-##    ##  ##    ## ##    ##  ##          ##  ##  ## ##     ## ##    ##        ##    ## ##     ##         ##     ## ##       ##       ##        ##  ##    ##  ##       ##    ##  ##       ##   ###    ##    
- ######  ####    ###    #### ########     ###  ###  ##     ## ##     ##        ######   #######          ########  ######## ######## ######## ####  ######   ######## ##     ## ######## ##    ##    ##    
+ ######  #### ##     ## #### ##          ##      ##    ###    ########         ######   #######          ########  ######## ##       ##       ####  ######   ######## ########  ######## ##    ## ########
+##    ##  ##  ##     ##  ##  ##          ##  ##  ##   ## ##   ##     ##       ##    ## ##     ##         ##     ## ##       ##       ##        ##  ##    ##  ##       ##     ## ##       ###   ##    ##
+##        ##  ##     ##  ##  ##          ##  ##  ##  ##   ##  ##     ##       ##       ##     ##         ##     ## ##       ##       ##        ##  ##        ##       ##     ## ##       ####  ##    ##
+##        ##  ##     ##  ##  ##          ##  ##  ## ##     ## ########        ##       ##     ## ####### ########  ######   ##       ##        ##  ##   #### ######   ########  ######   ## ## ##    ##
+##        ##   ##   ##   ##  ##          ##  ##  ## ######### ##   ##         ##       ##     ##         ##     ## ##       ##       ##        ##  ##    ##  ##       ##   ##   ##       ##  ####    ##
+##    ##  ##    ## ##    ##  ##          ##  ##  ## ##     ## ##    ##        ##    ## ##     ##         ##     ## ##       ##       ##        ##  ##    ##  ##       ##    ##  ##       ##   ###    ##
+ ######  ####    ###    #### ########     ###  ###  ##     ## ##     ##        ######   #######          ########  ######## ######## ######## ####  ######   ######## ##     ## ######## ##    ##    ##
 
 
 	focus = {
@@ -17133,12 +17133,12 @@ create_equipment_variant = {
 		y = 0
 		relative_position_id = ITA_ethiopian_war_logistics_bba
 		cost = 5
-		
+
 		allow_branch = {
 			has_global_flag = ITA_antifascist_civil_war_triggered_flag
 			tag = RDS
 		}
-		
+
 		available = {
 			tag = RDS
 		}
@@ -17277,11 +17277,11 @@ create_equipment_variant = {
 				limit = {
 					NOT = { has_template = "Divisione di Fanteria" }
 				}
-				division_template = { 
-					name = "Divisione di Fanteria" 
+				division_template = {
+					name = "Divisione di Fanteria"
 					division_names_group = ITA_INF_01
 
-					regiments = { 
+					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
@@ -17289,7 +17289,7 @@ create_equipment_variant = {
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
 					}
-					support = { 
+					support = {
 						engineer = { x = 0 y = 0 }
 						artillery = { x = 0 y = 1 }
 					}
@@ -17300,14 +17300,14 @@ create_equipment_variant = {
 				limit = {
 					NOT = { has_template = "Divisione Partigiana" }
 				}
-				division_template = { 
-					name = "Divisione Partigiana" 
+				division_template = {
+					name = "Divisione Partigiana"
 					division_names_group = ITA_INF_01
 					template_counter = 65
 					is_locked = yes
 					override_model = ITA_militia_alt_0_entity
 
-					regiments = { 
+					regiments = {
 						militia = { x = 0 y = 0 }
 						militia = { x = 0 y = 1 }
 						militia = { x = 1 y = 0 }
@@ -17470,18 +17470,18 @@ create_equipment_variant = {
 				limit = {
 					NOT = { has_tech = tech_military_police }
 				}
-				set_technology = { 
+				set_technology = {
 					tech_military_police = 1
 					popup = no
 				}
 			}
 
-			division_template = { 
-				name = "Divisione di Carabinieri" 
+			division_template = {
+				name = "Divisione di Carabinieri"
 				division_names_group = ITA_INF_01
 				template_counter = 3
 
-				regiments = { 
+				regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
 					infantry = { x = 0 y = 2 }
@@ -17489,7 +17489,7 @@ create_equipment_variant = {
 					infantry = { x = 1 y = 1 }
 					infantry = { x = 1 y = 2 }
 				}
-				support = { 
+				support = {
 					military_police = { x = 0 y = 0 }
 					engineer = { x = 0 y = 1 }
 				}
@@ -17665,16 +17665,16 @@ create_equipment_variant = {
 				ideology = neutrality
 				popularity = 0.1
 			}
-			
+
 			if = {
 				limit = {
 					NOT = { has_template = "Divisione di Fanteria" }
 				}
-				division_template = { 
-					name = "Divisione di Fanteria" 
+				division_template = {
+					name = "Divisione di Fanteria"
 					division_names_group = ITA_INF_01
 
-					regiments = { 
+					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
@@ -17682,7 +17682,7 @@ create_equipment_variant = {
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
 					}
-					support = { 
+					support = {
 						engineer = { x = 0 y = 0 }
 						artillery = { x = 0 y = 1 }
 					}
@@ -17784,7 +17784,7 @@ create_equipment_variant = {
 			}
 			#Hidden tech for terrain bonuses for militias (communicated as part of the NS above)
 			hidden_effect = {
-				set_technology = { 
+				set_technology = {
 					mountain_warfare_militias_tech = 1
 					popup = no
 				}
@@ -17868,23 +17868,23 @@ create_equipment_variant = {
 
 
 
- ######  #### ##     ## #### ##          ##      ##    ###    ########        ########    ###     ######   ######  ####  ######  ######## 
-##    ##  ##  ##     ##  ##  ##          ##  ##  ##   ## ##   ##     ##       ##         ## ##   ##    ## ##    ##  ##  ##    ##    ##    
-##        ##  ##     ##  ##  ##          ##  ##  ##  ##   ##  ##     ##       ##        ##   ##  ##       ##        ##  ##          ##    
-##        ##  ##     ##  ##  ##          ##  ##  ## ##     ## ########        ######   ##     ##  ######  ##        ##   ######     ##    
-##        ##   ##   ##   ##  ##          ##  ##  ## ######### ##   ##         ##       #########       ## ##        ##        ##    ##    
-##    ##  ##    ## ##    ##  ##          ##  ##  ## ##     ## ##    ##        ##       ##     ## ##    ## ##    ##  ##  ##    ##    ##    
- ######  ####    ###    #### ########     ###  ###  ##     ## ##     ##       ##       ##     ##  ######   ######  ####  ######     ##    
+ ######  #### ##     ## #### ##          ##      ##    ###    ########        ########    ###     ######   ######  ####  ######  ########
+##    ##  ##  ##     ##  ##  ##          ##  ##  ##   ## ##   ##     ##       ##         ## ##   ##    ## ##    ##  ##  ##    ##    ##
+##        ##  ##     ##  ##  ##          ##  ##  ##  ##   ##  ##     ##       ##        ##   ##  ##       ##        ##  ##          ##
+##        ##  ##     ##  ##  ##          ##  ##  ## ##     ## ########        ######   ##     ##  ######  ##        ##   ######     ##
+##        ##   ##   ##   ##  ##          ##  ##  ## ######### ##   ##         ##       #########       ## ##        ##        ##    ##
+##    ##  ##    ## ##    ##  ##          ##  ##  ## ##     ## ##    ##        ##       ##     ## ##    ## ##    ##  ##  ##    ##    ##
+ ######  ####    ###    #### ########     ###  ###  ##     ## ##     ##       ##       ##     ##  ######   ######  ####  ######     ##
 
 
- 	focus = {
+	focus = {
 		id = ITA_the_italian_social_republic
 		icon = GFX_goal_support_fascism
 		x = -6
 		y = 0
 		relative_position_id = ITA_ethiopian_war_logistics_bba
 		cost = 5
-		
+
 		allow_branch = {
 			has_global_flag = ITA_antifascist_civil_war_triggered_flag
 			tag = RSI
@@ -17897,7 +17897,7 @@ create_equipment_variant = {
 		search_filters = {}
 
 		completion_reward = {
-			effect_tooltip = { 
+			effect_tooltip = {
 				set_country_flag = ITA_rsi_cw_flag
 				#Leader back
 				if = {
@@ -18081,20 +18081,20 @@ create_equipment_variant = {
 						NOT = { has_template = "Cavalleria Coloniale" }
 					}
 					division_template = {
-						name = "Cavalleria Coloniale" 
+						name = "Cavalleria Coloniale"
 						division_names_group = ITA_CAV_03
 						override_model = ITA_cavalry_alt_1_entity
 						is_locked = yes
 
 						# Represents lesser-equipped colonial units
-						regiments = { 
-							cavalry = { x = 0 y = 0 } 
-							cavalry = { x = 0 y = 1 } 
-							cavalry = { x = 1 y = 0 } 
+						regiments = {
+							cavalry = { x = 0 y = 0 }
+							cavalry = { x = 0 y = 1 }
+							cavalry = { x = 1 y = 0 }
 							cavalry = { x = 1 y = 1 }
-						} 
+						}
 
-						priority = 0 
+						priority = 0
 					}
 				}
 
@@ -18103,15 +18103,15 @@ create_equipment_variant = {
 						NOT = { has_template = "Reggimento Meharista" }
 					}
 					division_template = {
-						name = "Reggimento Meharista" 
-						division_names_group = ITA_CAM_01 
+						name = "Reggimento Meharista"
+						division_names_group = ITA_CAM_01
 						override_model = ITA_camelry_alt_2_entity
-						regiments = { 
-							camelry = { x = 0 y = 0 } 
-							camelry = { x = 0 y = 1 } 
-							camelry = { x = 1 y = 0 } 
-							camelry = { x = 1 y = 1 } 
-						} 
+						regiments = {
+							camelry = { x = 0 y = 0 }
+							camelry = { x = 0 y = 1 }
+							camelry = { x = 1 y = 0 }
+							camelry = { x = 1 y = 1 }
+						}
 					}
 				}
 			}
@@ -18515,7 +18515,7 @@ create_equipment_variant = {
 		y = 1
 		relative_position_id = ITA_integrate_polizia_dell_africa_italiana
 		cost = 5
-		
+
 		bypass = {
 			ITA_is_antifascist_civil_war_over = yes
 		}
@@ -18536,7 +18536,7 @@ create_equipment_variant = {
 			add_to_variable = { 2.ITA_fronte_militare_clandestino_resistance_damage_to_garrison_on_our_occupied_states = 0.1 }
 			add_to_variable = { 2.ITA_fronte_militare_clandestino_resistance_target_on_our_occupied_states = 0.1 }
 			custom_effect_tooltip = ITA_anti_partisan_measures_state_modifier_rsi_tt
-			
+
 			hidden_effect = {
 				RDS = { country_event = { id = BBA_italy_civil_war.4 hours = 1 } }
 			}
@@ -18756,13 +18756,13 @@ create_equipment_variant = {
 	}
 
 
-   ###    ##    ## ######## ####         ########    ###     ######   ######  ####  ######  ######## 
-  ## ##   ###   ##    ##     ##          ##         ## ##   ##    ## ##    ##  ##  ##    ##    ##    
- ##   ##  ####  ##    ##     ##          ##        ##   ##  ##       ##        ##  ##          ##    
-##     ## ## ## ##    ##     ##  ####### ######   ##     ##  ######  ##        ##   ######     ##    
-######### ##  ####    ##     ##          ##       #########       ## ##        ##        ##    ##    
-##     ## ##   ###    ##     ##          ##       ##     ## ##    ## ##    ##  ##  ##    ##    ##    
-##     ## ##    ##    ##    ####         ##       ##     ##  ######   ######  ####  ######     ##    
+   ###    ##    ## ######## ####         ########    ###     ######   ######  ####  ######  ########
+  ## ##   ###   ##    ##     ##          ##         ## ##   ##    ## ##    ##  ##  ##    ##    ##
+ ##   ##  ####  ##    ##     ##          ##        ##   ##  ##       ##        ##  ##          ##
+##     ## ## ## ##    ##     ##  ####### ######   ##     ##  ######  ##        ##   ######     ##
+######### ##  ####    ##     ##          ##       #########       ## ##        ##        ##    ##
+##     ## ##   ###    ##     ##          ##       ##     ## ##    ## ##    ##  ##  ##    ##    ##
+##     ## ##    ##    ##    ####         ##       ##     ##  ######   ######  ####  ######     ##
 
 
 	focus = {
@@ -18821,7 +18821,7 @@ create_equipment_variant = {
 		completion_reward = {
 			add_stability = -0.1
 			add_popularity = {
-				ideology = fascism 
+				ideology = fascism
 				popularity = -0.1
 			}
 
@@ -18869,7 +18869,7 @@ create_equipment_variant = {
 
 		completion_reward = {
 			add_popularity = {
-				ideology = communism 
+				ideology = communism
 				popularity = 0.1
 			}
 			add_political_power = 50
@@ -18975,7 +18975,7 @@ create_equipment_variant = {
 				NOT = { has_completed_focus = ITA_convene_the_grand_council }
 			}
 		}
-		
+
 		available = {
 			NOT = { has_completed_focus = ITA_foreign_affairs }
 		}
@@ -19036,7 +19036,7 @@ create_equipment_variant = {
 
 		completion_reward = {
 			add_war_support = 0.1
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = motorized_equipment
 				amount = 500
 				producer = ROOT
@@ -19088,17 +19088,17 @@ create_equipment_variant = {
 				ITA_mobilize_railway_guns = yes
 			}
 
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 4000
 				producer = ROOT
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 500
 				producer = ROOT
 			}
-			add_equipment_to_stockpile = { 
+			add_equipment_to_stockpile = {
 				type = armored_car_equipment
 				amount = 100
 				producer = ROOT
@@ -19172,13 +19172,13 @@ create_equipment_variant = {
 
 
 
- ######   #######  ##     ## ##     ## ##     ## ##    ## ####  ######  ######## 
-##    ## ##     ## ###   ### ###   ### ##     ## ###   ##  ##  ##    ##    ##    
-##       ##     ## #### #### #### #### ##     ## ####  ##  ##  ##          ##    
-##       ##     ## ## ### ## ## ### ## ##     ## ## ## ##  ##   ######     ##    
-##       ##     ## ##     ## ##     ## ##     ## ##  ####  ##        ##    ##    
-##    ## ##     ## ##     ## ##     ## ##     ## ##   ###  ##  ##    ##    ##    
- ######   #######  ##     ## ##     ##  #######  ##    ## ####  ######     ##    
+ ######   #######  ##     ## ##     ## ##     ## ##    ## ####  ######  ########
+##    ## ##     ## ###   ### ###   ### ##     ## ###   ##  ##  ##    ##    ##
+##       ##     ## #### #### #### #### ##     ## ####  ##  ##  ##          ##
+##       ##     ## ## ### ## ## ### ## ##     ## ## ## ##  ##   ######     ##
+##       ##     ## ##     ## ##     ## ##     ## ##  ####  ##        ##    ##
+##    ## ##     ## ##     ## ##     ## ##     ## ##   ###  ##  ##    ##    ##
+ ######   #######  ##     ## ##     ##  #######  ##    ## ####  ######     ##
 
 
 
@@ -19271,7 +19271,7 @@ create_equipment_variant = {
 		bypass = {
 			OR = {
 				has_global_flag = scw_over
-				if = { 
+				if = {
 					limit = { NOT = { has_global_flag = spanish_civil_war } }
 					NOT = { country_exists = SPR }
 				}
@@ -19779,7 +19779,7 @@ create_equipment_variant = {
 					add_ideas = ITA_political_commissars
 				}
 			}
-			
+
 			ITA_norma_barbolini = {
 				promote_leader = yes
 			}
@@ -19889,7 +19889,7 @@ create_equipment_variant = {
 			}
 			else = {
 				effect_tooltip = {
-				 	remove_ideas = ITA_disgruntled_military
+					remove_ideas = ITA_disgruntled_military
 				}
 			}
 
@@ -19922,7 +19922,7 @@ create_equipment_variant = {
 							NOT = { has_trait = war_hero }
 						}
 						add_unit_leader_trait = war_hero
-					}	
+					}
 				}
 
 				if = {
@@ -19951,7 +19951,7 @@ create_equipment_variant = {
 							NOT = { has_trait = war_hero }
 						}
 						add_unit_leader_trait = war_hero
-					}	
+					}
 				}
 
 				if = {
@@ -19980,7 +19980,7 @@ create_equipment_variant = {
 							NOT = { has_trait = war_hero }
 						}
 						add_unit_leader_trait = war_hero
-					}	
+					}
 				}
 			}
 
@@ -20213,9 +20213,9 @@ create_equipment_variant = {
 				}
 			}
 		}
-		
+
 		search_filters = {}
-		completion_reward = {			
+		completion_reward = {
 			SOU = {
 				country_event = { id = generic.2 hours = 4 random_hours = 4 }
 			}
@@ -20634,13 +20634,13 @@ create_equipment_variant = {
 	}
 
 
-########  ######## ##     ##  #######   ######  ########     ###    ######## ####  ######  
-##     ## ##       ###   ### ##     ## ##    ## ##     ##   ## ##      ##     ##  ##    ## 
-##     ## ##       #### #### ##     ## ##       ##     ##  ##   ##     ##     ##  ##       
-##     ## ######   ## ### ## ##     ## ##       ########  ##     ##    ##     ##  ##       
-##     ## ##       ##     ## ##     ## ##       ##   ##   #########    ##     ##  ##       
-##     ## ##       ##     ## ##     ## ##    ## ##    ##  ##     ##    ##     ##  ##    ## 
-########  ######## ##     ##  #######   ######  ##     ## ##     ##    ##    ####  ######  
+########  ######## ##     ##  #######   ######  ########     ###    ######## ####  ######
+##     ## ##       ###   ### ##     ## ##    ## ##     ##   ## ##      ##     ##  ##    ##
+##     ## ##       #### #### ##     ## ##       ##     ##  ##   ##     ##     ##  ##
+##     ## ######   ## ### ## ##     ## ##       ########  ##     ##    ##     ##  ##
+##     ## ##       ##     ## ##     ## ##       ##   ##   #########    ##     ##  ##
+##     ## ##       ##     ## ##     ## ##    ## ##    ##  ##     ##    ##     ##  ##    ##
+########  ######## ##     ##  #######   ######  ##     ## ##     ##    ##    ####  ######
 
 
 	focus = {
@@ -20753,7 +20753,7 @@ create_equipment_variant = {
 			}
 
 			unlock_decision_tooltip = ITA_bop_utilize_the_mafia
-			
+
 			custom_effect_tooltip = ITA_cooperate_with_the_mafia_dm_tt
 			if = {
 				limit = {
@@ -21159,9 +21159,9 @@ create_equipment_variant = {
 					add_manpower = 10000
 					add_opinion_modifier = {
 						target = ROOT
-						modifier = ita_supported_spain_civil_war 
+						modifier = ita_supported_spain_civil_war
 					}
-				}				
+				}
 				hidden_effect = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
@@ -21188,7 +21188,7 @@ create_equipment_variant = {
 			custom_effect_tooltip = ITA_aid_for_the_spanish_republic_tt
 			if = {
 				limit = {
-					NOT = { has_rule = can_send_volunteers } 
+					NOT = { has_rule = can_send_volunteers }
 				}
 				set_rule = { can_send_volunteers = yes }
 			}
@@ -21327,7 +21327,7 @@ create_equipment_variant = {
 		y = 1
 		relative_position_id = ITA_european_democracies
 		cost = 10
-		
+
 		available = {
 			is_subject = no
 			OR = {
@@ -21449,7 +21449,7 @@ create_equipment_variant = {
 			}
 
 			custom_effect_tooltip = ITA_scientific_cooperation_allies_ns_tt
-			if = {	
+			if = {
 				limit = {
 					any_other_country = {
 						is_in_faction_with = ROOT
@@ -21610,7 +21610,7 @@ create_equipment_variant = {
 				has_civil_war = no
 				NOT = { is_justifying_wargoal_against = ROOT }
 				NOT = { has_war_with = ROOT }
-				NOT = { 
+				NOT = {
 					any_allied_country = {
 						has_war_with = ROOT
 					}
@@ -21743,7 +21743,7 @@ create_equipment_variant = {
 				name = ITA_military_agreements
 				bonus = 0.5
 				uses = 2
-				category = armor 
+				category = armor
 				category = artillery
 				category = naval_equipment
 				category = air_equipment
@@ -22007,17 +22007,17 @@ create_equipment_variant = {
 						}
 					}
 					if = { #Give a potential player the option to get puppeted
-						limit = { 
+						limit = {
 							is_ai = no
 							is_government_in_exile = yes
-							exists = yes 
+							exists = yes
 						}
 						country_event = { id = BBA_italy_interaction_events.71 hours = 1 }
 						if = {
 							limit = {
 								is_ai = no
 							}
-							ROOT = { 
+							ROOT = {
 								country_event = { id = BBA_italy_interaction_events.70 hours = 1 }
 							}
 						}
@@ -22097,7 +22097,7 @@ create_equipment_variant = {
 
 		completion_reward = {
 			ALB = { country_event = { id = BBA_italy_anti_colonialism_events.100 hours = 4 random_hours = 2 } }
-			
+
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
 				annex_country = { target = ALB }
@@ -22170,7 +22170,7 @@ create_equipment_variant = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			
+
 			IF = {
 				limit = {
 					is_in_faction = no
@@ -22181,7 +22181,7 @@ create_equipment_variant = {
 					icon = GFX_faction_logo_generic_12
 				}
 			}
-			
+
 			add_ideas = ITA_italian_confederation_leader
 
 			if = {
@@ -22285,7 +22285,7 @@ create_equipment_variant = {
 			add_to_variable = { ITA_rm_naval_invasion_prep_speed = 0.1 }
 			add_to_variable = { ITA_rm_naval_invasion_capacity = 10 }
 			custom_effect_tooltip = ITA_the_fight_overseas_rm_tt
-			
+
 			custom_effect_tooltip = ITA_the_fight_overseas_bunkers_tt
 			if = {
 				limit = {
@@ -22377,7 +22377,7 @@ create_equipment_variant = {
 							NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
 						}
 						division_template = { #Improve Irregular template
-							name = "Truppe Irregolari a Cavallo"		
+							name = "Truppe Irregolari a Cavallo"
 							division_names_group = ITA_CAV_05
 							is_locked = yes
 							regiments = {
@@ -22391,7 +22391,7 @@ create_equipment_variant = {
 					}
 					else = {
 						division_template = { #Basic irregular template
-							name = "Truppe Irregolari a Cavallo"		
+							name = "Truppe Irregolari a Cavallo"
 							division_names_group = ITA_CAV_05
 							is_locked = yes
 							regiments = {
@@ -22402,9 +22402,9 @@ create_equipment_variant = {
 								cavalry = { x = 1 y = 1 }
 								cavalry = { x = 1 y = 2 }
 							}
-							support = { 
-								recon = { x = 0 y = 0 } 
-							} 
+							support = {
+								recon = { x = 0 y = 0 }
+							}
 							priority = 0
 						}
 					}
@@ -22419,7 +22419,7 @@ create_equipment_variant = {
 							NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
 						}
 						division_template = { #Improve Irregular template
-							name = "Truppe Irregolari di Cammelli"		
+							name = "Truppe Irregolari di Cammelli"
 							division_names_group = ITA_CAM_02
 							is_locked = yes
 							regiments = {
@@ -22433,7 +22433,7 @@ create_equipment_variant = {
 					}
 					else = {
 						division_template = { #Basic irregular template
-							name = "Truppe Irregolari di Cammelli"		
+							name = "Truppe Irregolari di Cammelli"
 							division_names_group = ITA_CAM_02
 							is_locked = yes
 							regiments = {
@@ -22444,9 +22444,9 @@ create_equipment_variant = {
 								camelry = { x = 1 y = 1 }
 								camelry = { x = 1 y = 2 }
 							}
-							support = { 
-								recon = { x = 0 y = 0 } 
-							} 
+							support = {
+								recon = { x = 0 y = 0 }
+							}
 							priority = 0
 						}
 					}
@@ -22782,25 +22782,25 @@ create_equipment_variant = {
 							NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
 						}
 						division_template = {
-							name = "Cavalleria Coloniale" 
+							name = "Cavalleria Coloniale"
 							division_names_group = ITA_CAV_03
 							override_model = ITA_cavalry_alt_1_entity
 							is_locked = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
-								cavalry = { x = 0 y = 0 } 
-								cavalry = { x = 0 y = 1 } 
-								cavalry = { x = 1 y = 0 } 
+							regiments = {
+								cavalry = { x = 0 y = 0 }
+								cavalry = { x = 0 y = 1 }
+								cavalry = { x = 1 y = 0 }
 								cavalry = { x = 1 y = 1 }
-							} 
+							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 					else = {
 						division_template = {
-							name = "Cavalleria Coloniale" 
+							name = "Cavalleria Coloniale"
 							division_names_group = ITA_CAV_03
 							override_model = ITA_cavalry_alt_1_entity
 							is_locked = yes
@@ -22816,10 +22816,10 @@ create_equipment_variant = {
 							}
 
 							support = {
-								recon = { x = 0 y = 0 } 
+								recon = { x = 0 y = 0 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 				}
@@ -22833,21 +22833,21 @@ create_equipment_variant = {
 							NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
 						}
 						division_template = {
-							name = "Reggimento Meharista" 
-							division_names_group = ITA_CAM_01 
+							name = "Reggimento Meharista"
+							division_names_group = ITA_CAM_01
 							override_model = ITA_camelry_alt_1_entity
-							regiments = { 
-								camelry = { x = 0 y = 0 } 
-								camelry = { x = 0 y = 1 } 
-								camelry = { x = 1 y = 0 } 
-								camelry = { x = 1 y = 1 } 
-							} 
+							regiments = {
+								camelry = { x = 0 y = 0 }
+								camelry = { x = 0 y = 1 }
+								camelry = { x = 1 y = 0 }
+								camelry = { x = 1 y = 1 }
+							}
 						}
 					}
 					else = {
 						division_template = {
-							name = "Reggimento Meharista" 
-							division_names_group = ITA_CAM_01 
+							name = "Reggimento Meharista"
+							division_names_group = ITA_CAM_01
 							override_model = ITA_camelry_alt_1_entity
 							regiments = {
 								camelry = { x = 0 y = 0 }
@@ -22859,7 +22859,7 @@ create_equipment_variant = {
 							}
 
 							support = {
-								recon = { x = 0 y = 0 } 
+								recon = { x = 0 y = 0 }
 							}
 						}
 					}
@@ -22874,14 +22874,14 @@ create_equipment_variant = {
 						limit = {
 							NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
 						}
-						division_template = { 
-							name = "Divisione Coloniale" 
+						division_template = {
+							name = "Divisione Coloniale"
 							division_names_group = ITA_COL_01
 							template_counter = 67
 							#is_locked = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
@@ -22893,25 +22893,25 @@ create_equipment_variant = {
 								artillery = { x = 0 y = 1 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 					else = {
-						division_template = { 
-							name = "Divisione Coloniale" 
+						division_template = {
+							name = "Divisione Coloniale"
 							division_names_group = ITA_COL_01
 							template_counter = 67
 							#is_locked = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
 								infantry = { x = 1 y = 0 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 				}
@@ -22924,8 +22924,8 @@ create_equipment_variant = {
 						limit = {
 							NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
 						}
-						division_template = { 
-							name = "Divisione Ascari Libica" 
+						division_template = {
+							name = "Divisione Ascari Libica"
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_0_entity
 							template_counter = 67
@@ -22933,19 +22933,19 @@ create_equipment_variant = {
 							obsolete = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
 								infantry = { x = 1 y = 0 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 					else = {
-						division_template = { 
-							name = "Divisione Ascari Libica" 
+						division_template = {
+							name = "Divisione Ascari Libica"
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_0_entity
 							template_counter = 67
@@ -22953,7 +22953,7 @@ create_equipment_variant = {
 							obsolete = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
@@ -22965,7 +22965,7 @@ create_equipment_variant = {
 								artillery = { x = 0 y = 1 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 				}
@@ -22978,34 +22978,34 @@ create_equipment_variant = {
 						limit = {
 							NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
 						}
-						division_template = { 
-							name = "Divisione Ascari Eritrea" 
+						division_template = {
+							name = "Divisione Ascari Eritrea"
 							division_names_group = ITA_COL_01
 							template_counter = 67
 							#is_locked = yes
 							obsolete = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
 								infantry = { x = 1 y = 0 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 					else = {
-						division_template = { 
-							name = "Divisione Ascari Eritrea" 
+						division_template = {
+							name = "Divisione Ascari Eritrea"
 							division_names_group = ITA_COL_01
 							template_counter = 67
 							#is_locked = yes
 							obsolete = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
@@ -23017,7 +23017,7 @@ create_equipment_variant = {
 								artillery = { x = 0 y = 1 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 				}
@@ -23030,8 +23030,8 @@ create_equipment_variant = {
 						limit = {
 							NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
 						}
-						division_template = { 
-							name = "Divisione Ascari Somala" 
+						division_template = {
+							name = "Divisione Ascari Somala"
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_1_entity
 							template_counter = 67
@@ -23039,19 +23039,19 @@ create_equipment_variant = {
 							obsolete = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
 								infantry = { x = 1 y = 0 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 					else = {
-						division_template = { 
-							name = "Divisione Ascari Somala" 
+						division_template = {
+							name = "Divisione Ascari Somala"
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_1_entity
 							template_counter = 67
@@ -23059,7 +23059,7 @@ create_equipment_variant = {
 							obsolete = yes
 
 							# Represents lesser-equipped colonial units
-							regiments = { 
+							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
@@ -23071,13 +23071,13 @@ create_equipment_variant = {
 								artillery = { x = 0 y = 1 }
 							}
 
-							priority = 0 
+							priority = 0
 						}
 					}
 				}
 			}
 
-			custom_effect_tooltip = ITA_ascari_create_units_tt 
+			custom_effect_tooltip = ITA_ascari_create_units_tt
 
 			hidden_effect = {
 				set_variable = { ITA_camelry_raised = 0 }

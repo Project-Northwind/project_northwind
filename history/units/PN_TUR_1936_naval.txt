@@ -4,10 +4,10 @@ units= {
 	##### NAVAL UNITS #####
 	### Türk Donanmasi ###
 	fleet = {
-		name = "Türk Donanmasi"			
+		name = "Türk Donanmasi"
 		naval_base = 1005 # Anatalya
-		task_force = {				
-			name = "Türk Donanmasi"			
+		task_force = {
+			name = "Türk Donanmasi"
 			location = 1005 # Anatalya
 			ship = {
 	name = "TCG Yavuz"
@@ -20,7 +20,7 @@ units= {
 			version_name = "Yavuz Class"
 		}
 	}
-}			
+}
 			ship = {
 	name = "TCG Mecidiye"
 	definition = light_cruiser
@@ -64,7 +64,7 @@ units= {
 			version_name = "Peyk Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "TCG Kilikya"
 	definition = destroyer
@@ -87,9 +87,9 @@ units= {
 		}
 	}
 }
-		}				
-		task_force = {				
-			name = "Filotilla Denizalti Kücük"			
+		}
+		task_force = {
+			name = "Filotilla Denizalti Kücük"
 			location = 11746 # Adana
 			ship = {
 	name = "TCG Kâzim Karabekir"
@@ -101,7 +101,7 @@ units= {
 			version_name = "Kâzım Karabekir Class"
 		}
 	}
-}		
+}
 			ship = {
 	name = "TCG Gümrü"
 	definition = submarine
@@ -112,8 +112,7 @@ units= {
 			version_name = "Kâzım Karabekir Class"
 		}
 	}
-}		
-		}				
+}
+		}
 	}
-} 
-
+}

@@ -2,7 +2,7 @@ units = {
 
 	##### Naval OOB #####
 	fleet = {
-		name = "Royal Australian Navy"			
+		name = "Royal Australian Navy"
 		naval_base = 12406 # Sydney
 		task_force = {
 			name = "Australian Squadron"
@@ -17,8 +17,6 @@ units = {
 			ship = { name = "HMAS Voyager" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
 			ship = { name = "HMAS Waterhen" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
 			ship = { name = "HMAS Stuart" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = AST version_name = "Shakespeare/Scott Class" } } }
-		}				
+		}
 	}
 }
-
-

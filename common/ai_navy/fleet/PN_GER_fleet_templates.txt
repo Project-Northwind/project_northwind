@@ -22,7 +22,7 @@ GER_dominance_fleet_1 = {
 GER_raiding_fleet_1 = {
 	required_taskforces = {
 		GER_ConvoyRaiding_1 = 4
-	}	
+	}
 	optional_taskforces = {
 		GER_ConvoyRaiding_1 = 4
 		GER_ConvoySurfaceRaiding_1 = 1
@@ -53,7 +53,7 @@ GER_dominance_fleet_2 = {
 GER_raiding_fleet_2 = {
 	required_taskforces = {
 		GER_ConvoyRaiding_1 = 4
-	}	
+	}
 	optional_taskforces = {
 		GER_ConvoyRaiding_1 = 8
 	}
@@ -103,7 +103,7 @@ GER_carrier_fleet_3 = {
 GER_raiding_fleet_3 = {
 	required_taskforces = {
 		GER_ConvoyRaiding_1 = 4
-	}	
+	}
 	optional_taskforces = {
 		GER_ConvoyRaiding_1 = 8
 	}

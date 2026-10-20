@@ -1,0 +1,77 @@
+# Debug-only runtime assertions. No fleets, research or bonuses are changed.
+PN_verify_starting_fleets = {
+	PN_initialize_navy = yes
+	PN_initialize_navy = yes
+	GRE = {
+		if = {
+			limit = {
+				has_navy_size = { size > 19 }
+				has_navy_size = { size < 21 }
+			}
+			log = "PN_NAVAL_VERIFY PASS GRE ships=20 after repeated initialization"
+		}
+		else = {
+			log = "PN_NAVAL_VERIFY FAIL GRE expected ships=20"
+		}
+	}
+	LAT = {
+		if = {
+			limit = {
+				has_navy_size = { size > 6 }
+				has_navy_size = { size < 8 }
+			}
+			log = "PN_NAVAL_VERIFY PASS LAT ships=7 after repeated initialization"
+		}
+		else = {
+			log = "PN_NAVAL_VERIFY FAIL LAT expected ships=7"
+		}
+	}
+	SOV = {
+		if = {
+			limit = {
+				has_navy_size = { size > 80 }
+				has_navy_size = { size < 82 }
+			}
+			log = "PN_NAVAL_VERIFY PASS SOV ships=81 after repeated initialization"
+		}
+		else = {
+			log = "PN_NAVAL_VERIFY FAIL SOV expected ships=81"
+		}
+	}
+	SWE = {
+		if = {
+			limit = {
+				has_navy_size = { size > 11 }
+				has_navy_size = { size < 13 }
+			}
+			log = "PN_NAVAL_VERIFY PASS SWE ships=12 after repeated initialization"
+		}
+		else = {
+			log = "PN_NAVAL_VERIFY FAIL SWE expected ships=12"
+		}
+	}
+	TUR = {
+		if = {
+			limit = {
+				has_navy_size = { size > 8 }
+				has_navy_size = { size < 10 }
+			}
+			log = "PN_NAVAL_VERIFY PASS TUR ships=9 after repeated initialization"
+		}
+		else = {
+			log = "PN_NAVAL_VERIFY FAIL TUR expected ships=9"
+		}
+	}
+	UKR = {
+		if = {
+			limit = {
+				has_navy_size = { size > 9 }
+				has_navy_size = { size < 11 }
+			}
+			log = "PN_NAVAL_VERIFY PASS UKR ships=10 after repeated initialization"
+		}
+		else = {
+			log = "PN_NAVAL_VERIFY FAIL UKR expected ships=10"
+		}
+	}
+}

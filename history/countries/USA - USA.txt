@@ -74,7 +74,7 @@ set_technology = {
 	infantry_weapons1 = 1
 	tech_trucks = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -204,7 +204,7 @@ if = {
 
 	add_political_power = 1199
 	add_command_power = 100
-	
+
 	#adding ministers
 	add_ideas = {
 		USA_robert_taft
@@ -249,12 +249,12 @@ if = {
 			add_ideas = USA_neutrality_act
 		}
 	}
-	complete_national_focus = USA_intervention_in_asia	
+	complete_national_focus = USA_intervention_in_asia
 	complete_national_focus = USA_war_plan_orange
-	complete_national_focus = USA_intervention_in_europe		
+	complete_national_focus = USA_intervention_in_europe
 	complete_national_focus = USA_war_plan_black
 	complete_national_focus = USA_strategic_bombing
- 	complete_national_focus = USA_fair_labour_standards_act
+	complete_national_focus = USA_fair_labour_standards_act
 
 	set_global_flag = earhart_disappeared
 	oob = "USA_1939"
@@ -291,7 +291,7 @@ if = {
 	complete_special_project = {
 		project = sp:sp_naval_cruiser_submarine
 		scientist = USA_william_francis_gibbs
-		state = 361 
+		state = 361
 	}
 
 	complete_special_project = {
@@ -391,7 +391,7 @@ add_mastery = {
 set_sub_doctrine = fast_battleship_primacy
 add_mastery = {
     amount = 25
-    sub_doctrine = line_of_battle
+    sub_doctrine = fast_battleship_primacy
 }
 set_sub_doctrine = air_subdoctrine_escort_fighter
 add_mastery = {
@@ -544,9 +544,19 @@ if = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_4ac1c4a19ae0
+		}
+	}
 	create_equipment_variant = {
 		name = "Barracuda Class"
-		type = submarine_1
 		upgrades = {
 			ship_reliability_upgrade = 1
 			sub_engine_upgrade = 1
@@ -554,33 +564,115 @@ if = {
 			sub_torpedo_upgrade = 1
 		}
 		obsolete = yes
+		type = vnr_ship_hull_submarine_1
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
+			rear_1_custom_slot = empty
+		}
 	}
+	set_country_flag = PN_naval_variant_USA_4ac1c4a19ae0
+}
 
+	set_technology = {
+	basic_battery = 1
+	basic_depth_charges = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_306d055dce2b
+		}
+	}
 	create_equipment_variant = {
 		name = "Farragut Class"
-		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 3
 			destroyer_engine_upgrade = 3
 			ship_ASW_upgrade = 3
 			ship_anti_air_upgrade = 3
 		}
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
 	}
+	set_country_flag = PN_naval_variant_USA_306d055dce2b
+}
 
+	set_technology = {
+	antiair2 = 1
+	basic_battery = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_2e5bca31065e
+		}
+	}
 	create_equipment_variant = {
 		name = "Portland Class"
-		type = heavy_cruiser_1
 		upgrades = {
 			ship_reliability_upgrade = 2
 			ship_engine_upgrade = 2
 			ship_armor_upgrade = 2
 			ship_gun_upgrade = 2
 		}
+		type = vnr_ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			mid_1_custom_slot = ship_secondaries_1_light
+			mid_2_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+		}
 	}
+	set_country_flag = PN_naval_variant_USA_2e5bca31065e
+}
 
+	set_technology = {
+	basic_battery = 1
+	basic_light_battery = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_05399bb4848c
+		}
+	}
 	create_equipment_variant = {
 		name = "Pennsylvania Class"
-		type = battleship_1
 		upgrades = {
 			ship_reliability_upgrade = 1
 			ship_engine_upgrade = 1
@@ -588,40 +680,145 @@ if = {
 			ship_gun_upgrade = 1
 		}
 		obsolete = yes
+		type = vnr_ship_hull_heavy_1
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
 	}
+	set_country_flag = PN_naval_variant_USA_05399bb4848c
+}
 
+	set_technology = {
+	basic_battery = 1
+	basic_light_battery = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_f6692f6b0188
+		}
+	}
 	create_equipment_variant = {
 		name = "New Mexico Class"
-		type = battleship_1
 		upgrades = {
 			ship_reliability_upgrade = 2
 			ship_engine_upgrade = 2
 			ship_armor_upgrade = 2
 			ship_gun_upgrade = 2
 		}
+		type = vnr_ship_hull_heavy_1
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
 	}
+	set_country_flag = PN_naval_variant_USA_f6692f6b0188
+}
 
+	set_technology = {
+	basic_battery = 1
+	basic_light_battery = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_d4ddfcc9b9c7
+		}
+	}
 	create_equipment_variant = {
 		name = "Colorado Class"
-		type = battleship_1
 		upgrades = {
 			ship_reliability_upgrade = 3
 			ship_engine_upgrade = 3
 			ship_armor_upgrade = 3
 			ship_gun_upgrade = 4
 		}
+		type = vnr_ship_hull_heavy_1
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
 	}
+	set_country_flag = PN_naval_variant_USA_d4ddfcc9b9c7
+}
 
+	set_technology = {
+	advanced_light_battery = 1
+	basic_battery = 1
+	basic_ship_hull_carrier = 1
+	early_carrier_study = 1
+	early_ship_hull_carrier = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_34521013454d
+		}
+	}
 	create_equipment_variant = {
 		name = "Yorktown Class"
-		type = carrier_2
 		upgrades = {
 			ship_deckspace_upgrade = 1
 			carrier_armor_upgrade = 1
 			ship_engine_upgrade = 1
 			ship_reliability_upgrade = 1
 		}
+		type = vnr_ship_hull_carrier_1
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space_open
+			fixed_ship_deck_slot_2 = ship_deck_space_open
+			fixed_ship_anti_air_slot = ship_anti_air_4_h
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = empty
+			fixed_ship_flight_deck_slot = carrier_wooden_deck
+			fixed_ship_role_slot = ship_hull_carrier_role_cv
+			mid_1_custom_slot = empty
+		}
 	}
+	set_country_flag = PN_naval_variant_USA_34521013454d
+}
 }
 if = {
 	limit = {
@@ -876,218 +1073,468 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	create_equipment_variant = {			# represents O/R class, S class
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_fba1968d80ec
+		}
+	}
+	create_equipment_variant = {
 		name = "S Class"
-		type = ship_hull_submarine_1
 		name_group = USA_SS_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_submarine_1
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
 			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = yes
 	}
-	create_equipment_variant = {
-		name = "Barracuda Class"			# represents Barracuda, Dolphin, Cachalot classes
-		type = ship_hull_submarine_2
-		name_group = USA_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
+	set_country_flag = PN_naval_variant_USA_fba1968d80ec
+}
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	improved_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_aa436761f6df
 		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Porpoise Class"				# represents Porpoise, Shark, and Perch classes
-		type = ship_hull_submarine_2
+		name = "Barracuda Class"
 		name_group = USA_SS_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_submarine_3
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_3
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_3
+			rear_1_custom_slot = empty
+			front_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_aa436761f6df
+}
+	set_technology = {
+	basic_ship_hull_submarine = 1
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	improved_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_928b7a650e3b
+		}
+	}
+	create_equipment_variant = {
+		name = "Porpoise Class"
+		name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_submarine_3
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
 			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_armor_slot = pressure_hull_3
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_3
 			rear_1_custom_slot = empty
+			front_1_custom_slot = empty
 		}
 	}
+	set_country_flag = PN_naval_variant_USA_928b7a650e3b
+}
 	# Destroyers #
+	set_technology = {
+	basic_battery = 1
+	basic_depth_charges = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_61bba40ffbf3
+		}
+	}
 	create_equipment_variant = {
-		name = "Clemson Class"				# represents Sampson, Caldwell, Clemson, and Wickes classes
-		type = ship_hull_light_1
+		name = "Clemson Class"
 		name_group = USA_DD_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
-		obsolete = yes
+	}
+	set_country_flag = PN_naval_variant_USA_61bba40ffbf3
+}
+	set_technology = {
+	basic_depth_charges = 1
+	basic_light_battery = 1
+	basic_ship_hull_light = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	sonar = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_306d055dce2b
+		}
 	}
 	create_equipment_variant = {
-		name = "Farragut Class"				# represents Farragut, Porter, Mahan classes
-		type = ship_hull_light_1
+		name = "Farragut Class"
 		name_group = USA_DD_HISTORICAL
 		parent_version = 0
+		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = dp_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = ship_sonar_1
 			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
+	set_country_flag = PN_naval_variant_USA_306d055dce2b
+}
 	# Light Cruisers #
+	set_technology = {
+	basic_ship_hull_cruiser = 1
+	early_cruiser_armor = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	interwar_ship_hull_cruiser = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_603d25ab995b
+		}
+	}
 	create_equipment_variant = {
 		name = "Omaha Class"
-		type = ship_hull_cruiser_2
 		name_group = USA_CL_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_cruiser_3
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_c
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_light_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
-		obsolete = yes
+	}
+	set_country_flag = PN_naval_variant_USA_603d25ab995b
+}
+	set_technology = {
+	basic_light_battery = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	improved_cruiser_armor = 1
+	interwar_ship_hull_cruiser = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_3f041d8130ca
+		}
 	}
 	create_equipment_variant = {
 		name = "Brooklyn Class"
-		type = ship_hull_cruiser_2
 		name_group = USA_CL_HISTORICAL
 		parent_version = 0
+		type = vnr_ship_hull_cruiser_3
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_3
-			fixed_ship_secondaries_slot = dp_ship_secondaries_1
-			front_1_custom_slot = ship_light_medium_battery_2
+			fixed_ship_role_slot = ship_hull_cruiser_role_c
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = ship_light_medium_battery_2
+			front_1_custom_slot = ship_light_medium_battery_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_3
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_3f041d8130ca
+}
+	set_technology = {
+	basic_light_battery = 1
+	basic_naval_mines = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_14cc73783140
 		}
 	}
 	create_equipment_variant = {
-		name = "Oglala Class"				#cruiser minelayers
-		type = ship_hull_cruiser_1
+		name = "Oglala Class"
 		name_group = USA_MINELAYERS_HISTORICAL
 		parent_version = 0
+		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = dp_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = empty
+			fixed_ship_role_slot = ship_hull_cruiser_role_c
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_mine_layer_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = empty
 		}
 	}
+	set_country_flag = PN_naval_variant_USA_14cc73783140
+}
 	# Heavy Cruisers #
+	set_technology = {
+	basic_battery = 1
+	basic_ship_hull_cruiser = 1
+	early_cruiser_armor = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_a290efd2e312
+		}
+	}
 	create_equipment_variant = {
-		name = "Pensacola Class"			# Pensacola and Northampton classes
-		type = ship_hull_cruiser_1
+		name = "Pensacola Class"
 		name_group = USA_CA_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
 			mid_1_custom_slot = ship_medium_battery_1
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_airplane_launcher_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
-		obsolete = yes
+	}
+	set_country_flag = PN_naval_variant_USA_a290efd2e312
+}
+	set_technology = {
+	basic_battery = 1
+	basic_cruiser_armor = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	interwar_ship_hull_cruiser = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_fb5816e867bc
+		}
 	}
 	create_equipment_variant = {
-		name = "Portland Class"				# Portland and New Orleans classes
-		type = ship_hull_cruiser_2
+		name = "Portland Class"
 		name_group = USA_CA_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_cruiser_3
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_armor_slot = ship_armor_cruiser_2
 		}
-		obsolete = yes
+	}
+	set_country_flag = PN_naval_variant_USA_fb5816e867bc
+}
+	set_technology = {
+	basic_battery = 1
+	basic_cruiser_armor = 1
+	basic_heavy_battery = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	interwar_ship_hull_cruiser = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_b3d6a857b252
+		}
 	}
 	create_equipment_variant = {
 		name = "New Orleans Class"
-		type = ship_hull_cruiser_2
 		name_group = USA_CA_HISTORICAL
 		parent_version = 0
+		type = vnr_ship_hull_cruiser_3
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = ship_medium_battery_2
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_armor_slot = ship_armor_cruiser_2
 		}
 	}
+	set_country_flag = PN_naval_variant_USA_b3d6a857b252
+}
 	# Heavy Cruisers #
-		create_equipment_variant = {
-			name = "Wichita Class"
-			type = ship_hull_cruiser_2
-			name_group = USA_CA_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_3
-				fixed_ship_secondaries_slot = dp_ship_secondaries_1
-				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = ship_anti_air_1
-				rear_1_custom_slot = ship_medium_battery_2
-			}
-			optional_assets = {
-				{
-					icon = "GFX_USA_heavy_cruiser_wichita"
-					model = "USA_heavy_cruiser_4_entity"
-				}
+		set_technology = {
+	basic_heavy_battery = 1
+	basic_light_battery = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	improved_cruiser_armor = 1
+	interwar_ship_hull_cruiser = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_ba396dcf825c
+		}
+	}
+	create_equipment_variant = {
+		name = "Wichita Class"
+		name_group = USA_CA_HISTORICAL
+		parent_version = 0
+		optional_assets = {
+			{
+				icon = GFX_USA_heavy_cruiser_wichita
+				model = USA_heavy_cruiser_4_entity
 			}
 		}
+		type = vnr_ship_hull_cruiser_3
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_2
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_3
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_ba396dcf825c
+}
 	# Battleships #
+	set_technology = {
+	basic_battery = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_fc056333623a
+		}
+	}
 	create_equipment_variant = {
-		name = "New York Class"					# represents Wyoming (Arkansas) and New York classes
-		type = ship_hull_heavy_1
+		name = "New York Class"
 		name_group = USA_BB_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_heavy_1
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
@@ -1096,18 +1543,36 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
 			front_1_custom_slot = empty
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
-		obsolete = yes
+	}
+	set_country_flag = PN_naval_variant_USA_fc056333623a
+}
+	set_technology = {
+	basic_battery = 1
+	basic_heavy_armor = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_05399bb4848c
+		}
 	}
 	create_equipment_variant = {
-		name = "Pennsylvania Class"				# represents Pennsylvania, and New Mexico classes
-		type = ship_hull_heavy_1
+		name = "Pennsylvania Class"
 		name_group = USA_BB_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_heavy_1
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
@@ -1116,18 +1581,41 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
-		obsolete = yes
+	}
+	set_country_flag = PN_naval_variant_USA_05399bb4848c
+}
+	set_technology = {
+	basic_battery = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_ce7452d51c9e
+		}
 	}
 	create_equipment_variant = {
-		name = "Nevada Class"				
-		type = ship_hull_heavy_1
+		name = "Nevada Class"
 		name_group = USA_BB_HISTORICAL
 		parent_version = 0
+		optional_assets = {
+			{
+				icon = GFX_USA_battleship_nevada
+				model = USA_battleship_4_entity
+			}
+		}
+		obsolete = yes
+		type = vnr_ship_hull_heavy_1
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
@@ -1136,50 +1624,43 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
-		optional_assets = {
-			{
-				icon = "GFX_USA_battleship_nevada"
-				model = "USA_battleship_4_entity"
-			}
-		}
-		obsolete = yes
 	}
-		create_equipment_variant = {
-		name = "Tennessee Class"				
-		type = ship_hull_heavy_1
-		name_group = USA_BB_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_bb_2
-			front_1_custom_slot = ship_anti_air_1
-			mid_1_custom_slot = ship_airplane_launcher_1
-			mid_2_custom_slot = ship_secondaries_1
-			rear_1_custom_slot = ship_heavy_battery_1
+	set_country_flag = PN_naval_variant_USA_ce7452d51c9e
+}
+		set_technology = {
+	basic_battery = 1
+	basic_heavy_armor = 1
+	basic_heavy_battery = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_6ee6273931e2
 		}
-		optional_assets = {
-			{
-				icon = "GFX_USA_battleship_tennessee"
-				model = "USA_battleship_5_entity"
-			}
-		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Colorado Class"				
-		type = ship_hull_heavy_1
+		name = "Tennessee Class"
 		name_group = USA_BB_HISTORICAL
 		parent_version = 0
+		optional_assets = {
+			{
+				icon = GFX_USA_battleship_tennessee
+				model = USA_battleship_5_entity
+			}
+		}
+		obsolete = yes
+		type = vnr_ship_hull_heavy_1
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
@@ -1188,92 +1669,204 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_6ee6273931e2
+}
+	set_technology = {
+	basic_battery = 1
+	basic_heavy_armor = 1
+	basic_heavy_battery = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_d4ddfcc9b9c7
+		}
+	}
+	create_equipment_variant = {
+		name = "Colorado Class"
+		name_group = USA_BB_HISTORICAL
+		parent_version = 0
+		obsolete = yes
+		optional_assets = {
+			{
+				icon = GFX_USA_battleship_colorado
+				model = USA_battleship_3_entity
+			}
+		}
+		type = vnr_ship_hull_heavy_1
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = ship_airplane_launcher_1
 			rear_1_custom_slot = ship_heavy_battery_2
 		}
-		obsolete = yes
-		optional_assets = {
-			{
-				icon = "GFX_USA_battleship_colorado"
-				model = "USA_battleship_3_entity"
-			}
-		}
 	}
+	set_country_flag = PN_naval_variant_USA_d4ddfcc9b9c7
+}
 	# Carriers #
 
+	set_technology = {
+	basic_battery = 1
+	converted_super_heavy_carrier = 1
+	early_carrier_study = 1
+	early_ship_hull_heavy = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_a75e47e383f3
+		}
+	}
 	create_equipment_variant = {
 		name = "Langley Class"
-		type = ship_hull_carrier_conversion_bb
 		name_group = USA_CV_HISTORICAL
 		parent_version = 0
+		optional_assets = {
+			{
+				icon = GFX_USA_carrier_langley
+				model = USA_carrier_0_entity
+			}
+		}
+		obsolete = yes
+		type = vnr_ship_hull_carrier_conversion_bb
 		modules = {
-			fixed_ship_deck_slot_1 = ship_deck_space
-			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_deck_slot_1 = ship_deck_space_open
+			fixed_ship_deck_slot_2 = ship_deck_space_open
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = ship_deck_space
+			fixed_ship_flight_deck_slot = carrier_wooden_deck
+			fixed_ship_role_slot = carrier_bb_conversion
+			mid_1_custom_slot = ship_deck_space_open
 		}
-		optional_assets = {
-			{
-				icon = "GFX_USA_carrier_langley"
-				model = "USA_carrier_0_entity"
-			}
-		}
-		obsolete = yes
 	}
+	set_country_flag = PN_naval_variant_USA_a75e47e383f3
+}
 
+	set_technology = {
+	basic_battery = 1
+	basic_ship_hull_heavy = 1
+	converted_super_heavy_carrier = 1
+	early_carrier_study = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_b1382b3282c2
+		}
+	}
 	create_equipment_variant = {
 		name = "Lexington Class"
-		type = ship_hull_carrier_conversion_bb
 		name_group = USA_CV_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_carrier_conversion_bb
 		modules = {
-			fixed_ship_deck_slot_1 = ship_deck_space
-			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_deck_slot_1 = ship_deck_space_open
+			fixed_ship_deck_slot_2 = ship_deck_space_open
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = ship_deck_space
+			fixed_ship_flight_deck_slot = carrier_wooden_deck
+			fixed_ship_role_slot = carrier_bb_conversion
+			mid_1_custom_slot = ship_deck_space_open
 		}
-		obsolete = yes
+	}
+	set_country_flag = PN_naval_variant_USA_b1382b3282c2
+}
+	set_technology = {
+	basic_ship_hull_carrier = 1
+	early_carrier_study = 1
+	early_ship_hull_carrier = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_611f2b061411
+		}
 	}
 	create_equipment_variant = {
 		name = "Ranger Class"
-		type = ship_hull_carrier_1
 		name_group = USA_CV_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_carrier_1
 		modules = {
-			fixed_ship_deck_slot_1 = ship_deck_space
-			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_deck_slot_1 = ship_deck_space_open
+			fixed_ship_deck_slot_2 = ship_deck_space_open
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = carrier_ship_engine_1
 			fixed_ship_secondaries_slot = empty
-			front_1_custom_slot = ship_deck_space
-			
+			front_1_custom_slot = ship_deck_space_open
+			fixed_ship_flight_deck_slot = carrier_wooden_deck
+			fixed_ship_role_slot = ship_hull_carrier_role_cv
+			mid_1_custom_slot = empty
 		}
-		obsolete = yes
+	}
+	set_country_flag = PN_naval_variant_USA_611f2b061411
+}
+	set_technology = {
+	basic_light_battery = 1
+	basic_ship_hull_carrier = 1
+	early_carrier_study = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_34521013454d
+		}
 	}
 	create_equipment_variant = {
 		name = "Yorktown Class"
-		type = ship_hull_carrier_1
 		name_group = USA_CV_HISTORICAL
 		parent_version = 0
+		type = vnr_ship_hull_carrier_1
 		modules = {
-			fixed_ship_deck_slot_1 = ship_deck_space
-			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_deck_slot_1 = ship_deck_space_open
+			fixed_ship_deck_slot_2 = ship_deck_space_open
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = carrier_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_2
-			front_1_custom_slot = ship_deck_space
+			front_1_custom_slot = ship_deck_space_open
+			fixed_ship_flight_deck_slot = carrier_wooden_deck
+			fixed_ship_role_slot = ship_hull_carrier_role_cv
+			mid_1_custom_slot = empty
 		}
 	}
+	set_country_flag = PN_naval_variant_USA_34521013454d
+}
 }
 
 
@@ -1282,36 +1875,118 @@ if = {
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		# Ship variants #
-		create_equipment_variant = {
-			name = "Salmon Class"
-			type = submarine_2
-			upgrades = {
-				ship_reliability_upgrade = 1
-				sub_engine_upgrade = 1
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 1
-			}
+		set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	improved_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_3ec27052b45d
 		}
-		create_equipment_variant = {
-			name = "Benson & Gleaves Class"
-			type = destroyer_2
-			upgrades = {
-				ship_torpedo_upgrade = 3
-				destroyer_engine_upgrade = 3
-				ship_ASW_upgrade = 3
-				ship_anti_air_upgrade = 3
-			}
+	}
+	create_equipment_variant = {
+		name = "Salmon Class"
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
 		}
-		create_equipment_variant = {
-			name = "Wasp Class"
-			type = carrier_2
-			upgrades = {
-				ship_deckspace_upgrade = 2
-				carrier_armor_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_reliability_upgrade = 2
-			}
+		type = vnr_ship_hull_submarine_3
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_3
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_3
+			rear_1_custom_slot = ship_torpedo_sub_1
+			front_1_custom_slot = empty
 		}
+	}
+	set_country_flag = PN_naval_variant_USA_3ec27052b45d
+}
+		set_technology = {
+	basic_light_battery = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	improved_depth_charges = 1
+	improved_ship_torpedo_launcher = 1
+	interwar_antiair = 1
+	interwar_ship_hull_light = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_135a4000eac4
+		}
+	}
+	create_equipment_variant = {
+		name = "Benson & Gleaves Class"
+		upgrades = {
+			ship_torpedo_upgrade = 3
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+		type = vnr_ship_hull_light_3
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_2
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_135a4000eac4
+}
+		set_technology = {
+	advanced_light_battery = 1
+	basic_battery = 1
+	basic_ship_hull_carrier = 1
+	early_carrier_study = 1
+	early_ship_hull_carrier = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_d9b14f9bdcc9
+		}
+	}
+	create_equipment_variant = {
+		name = "Wasp Class"
+		upgrades = {
+			ship_deckspace_upgrade = 2
+			carrier_armor_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_reliability_upgrade = 2
+		}
+		type = vnr_ship_hull_carrier_1
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space_open
+			fixed_ship_deck_slot_2 = ship_deck_space_open
+			fixed_ship_anti_air_slot = ship_anti_air_4_h
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = empty
+			fixed_ship_flight_deck_slot = carrier_wooden_deck
+			fixed_ship_role_slot = ship_hull_carrier_role_cv
+			mid_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_d9b14f9bdcc9
+}
 		# 1941
 		#create_equipment_variant = {
 		#	name = "South Dakota Class"
@@ -1404,88 +2079,190 @@ if = {
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #
-		create_equipment_variant = {
-			name = "Salmon Class"				# represents Salmon and Sargo classes
-			type = ship_hull_submarine_2
-			name_group = USA_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = ship_torpedo_sub_2
-			}
+		set_technology = {
+	basic_ship_hull_submarine = 1
+	early_ship_hull_submarine = 1
+	improved_ship_hull_submarine = 1
+	improved_ship_torpedo_launcher = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_3ec27052b45d
 		}
+	}
+	create_equipment_variant = {
+		name = "Salmon Class"
+		name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_submarine_3
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_armor_slot = pressure_hull_3
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_3
+			rear_1_custom_slot = ship_torpedo_sub_2
+			front_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_3ec27052b45d
+}
 		# Destroyers #
-		create_equipment_variant = {
-			name = "Sims Class"					# represents Gridley, Bagley, Benham, Sims classes
-			type = ship_hull_light_2
-			name_group = USA_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = dp_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = ship_sonar_1
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_torpedo_1
-				rear_1_custom_slot = ship_depth_charge_1
-			}
+		set_technology = {
+	basic_depth_charges = 1
+	basic_dp_light_battery = 1
+	basic_ship_hull_light = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	interwar_ship_hull_light = 1
+	sonar = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_120a328a595a
 		}
-		create_equipment_variant = {
-			name = "Benson & Gleaves Class"
-			type = ship_hull_light_3
-			name_group = USA_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = dp_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = ship_sonar_2
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_2
-				mid_1_custom_slot = ship_torpedo_2
-				rear_1_custom_slot = ship_depth_charge_1
-			}
+	}
+	create_equipment_variant = {
+		name = "Sims Class"
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_light_3
+		modules = {
+			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
-		
+	}
+	set_country_flag = PN_naval_variant_USA_120a328a595a
+}
+		set_technology = {
+	basic_depth_charges = 1
+	basic_dp_light_battery = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	improved_ship_hull_light = 1
+	improved_ship_torpedo_launcher = 1
+	improved_sonar = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_9be21c6fce2c
+		}
+	}
+	create_equipment_variant = {
+		name = "Benson & Gleaves Class"
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_light_4
+		modules = {
+			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_2
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_torpedo_2
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_9be21c6fce2c
+}
+
 		# Battleships #
-		create_equipment_variant = {
-			name = "North Carolina Class"
-			type = ship_hull_heavy_3
-			name_group = USA_BB_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_3
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries_2
-				fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = ship_heavy_battery_3
-				mid_1_custom_slot = empty
-				mid_2_custom_slot = dp_ship_secondaries_2
-				mid_3_custom_slot = empty
-				rear_1_custom_slot = ship_airplane_launcher_1
-			}
+		set_technology = {
+	basic_dp_light_battery = 1
+	basic_heavy_armor = 1
+	basic_ship_hull_heavy = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	improved_heavy_battery = 1
+	improved_ship_hull_heavy = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_7a0665838c6b
 		}
+	}
+	create_equipment_variant = {
+		name = "North Carolina Class"
+		name_group = USA_BB_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_heavy_4
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_3
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2_bb
+			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_heavy_battery_3
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = dp_ship_secondaries_2_bb
+			rear_1_custom_slot = ship_airplane_launcher_1
+			mid_3_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_7a0665838c6b
+}
 		# Carriers #
-		create_equipment_variant = {
-			name = "Wasp Class"
-			type = ship_hull_carrier_1
-			name_group = USA_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				front_1_custom_slot = ship_deck_space
-			}
+		set_technology = {
+	basic_light_battery = 1
+	basic_ship_hull_carrier = 1
+	early_carrier_study = 1
+	early_ship_hull_carrier = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_USA_d9b14f9bdcc9
 		}
+	}
+	create_equipment_variant = {
+		name = "Wasp Class"
+		name_group = USA_CV_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_carrier_1
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space_open
+			fixed_ship_deck_slot_2 = ship_deck_space_open
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_deck_space_open
+			fixed_ship_flight_deck_slot = carrier_wooden_deck
+			fixed_ship_role_slot = ship_hull_carrier_role_cv
+			mid_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_USA_d9b14f9bdcc9
+}
 	}
 	if = {
 		limit = {

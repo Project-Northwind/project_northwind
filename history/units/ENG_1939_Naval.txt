@@ -2,50 +2,113 @@
 units = {
 	##### NAVAL UNITS #####
 	### HOME COMMAND ###
-	# Navy supplied by PN_initialize_navy..
 
-	### MEDITERRANIAN FLEET ###			
-	# Navy supplied by PN_initialize_navy.
-				
-	### NORTH AND SOUTH AMERICAS ###			
-	# Navy supplied by PN_initialize_navy.
+# Navy supplied by PN_initialize_navy.
 
-	### FAR EAST ###			
-	# Navy supplied by PN_initialize_navy.
+
+	##### FOREIGN STATIONS #####
+
+# Navy supplied by PN_initialize_navy.
+
+
+	### MEDITERRANIAN FLEET ###
+
+# Navy supplied by PN_initialize_navy.
+
+
+	### NORTH AND SOUTH AMERICAS ###
+
+# Navy supplied by PN_initialize_navy.
+
+
+	### FAR EAST ###
+
+# Navy supplied by PN_initialize_navy.
+
 }
 instant_effect = {
 ### Under Construction Notes ###
 	# BB: King George V-class (x2) ("HMS King George V" "HMS Prince of Wales")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 	# CV: Illustrious-class (x2) ("HMS Illustrious" "HMS Formidable")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 	# CL: Dido-class variant (x6) ("HMS Bonaventure" "HMS Dido" "HMS Euryalus" "HMS Hermoine" "HMS Naiad" "HMS Phoebe")
 	# REVISIT, OBSOLETE
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 	# CL: Crown Colony-class (x4) ("HMS Fiji" "HMS Kenya" "HMS Nigeria" "HMS Mauritius")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 	# DD: G/H/I class (x2) ("HMS Havant" "HMS Hesperus")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 	# SS: T-class (x5) ("HMS Thetis" "HMS Tribune" "HMS Taku" "HMS Tarpon" "HMS Tigris")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 	# DD: J/K/N class (x8) ("HMS Jaguar" "HMS Kandahar" "HMS Kashmir" "HMS Kelvin" "HMS Khartoum" "HMS Kimberley" "HMS Kingston" "HMS Kipling")
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 }

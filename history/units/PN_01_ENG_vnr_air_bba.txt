@@ -27,4 +27,3 @@ air_wings = {
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Blackburn Shark" }
 	}
 }
-

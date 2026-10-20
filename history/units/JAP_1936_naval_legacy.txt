@@ -3,22 +3,34 @@
 units = {
 ### IJN ###
 	#Yokosuka (Tokyo)
-	# Navy supplied by PN_initialize_navy.
-	
+
+# Navy supplied by PN_initialize_navy.
+
+
 	#Sasebo (Nagasaki)
-	# Navy supplied by PN_initialize_navy.
-	
+
+# Navy supplied by PN_initialize_navy.
+
+
 	#Taiwan (Goaxing)
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 
 	#Hiroshima (Kure)
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 
 	# Naval District Forces #
-	# Navy supplied by PN_initialize_navy.
-	
+
+# Navy supplied by PN_initialize_navy.
+
+
 	### Pacific Forces ###
-	# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 }
 
 
@@ -28,28 +40,54 @@ units = {
 #########################
 ## STARTING PRODUCTION ##
 #########################
-instant_effect = 
+instant_effect =
 {
-	
+
 ### Ongoing Naval Production Jan 1 1936 ###
 		# BB (x1): "Hiei"
-		# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 		# CV (x1): "Soryu"
-		# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 		# CA (x1): "Suzuya"
-		# Navy supplied by PN_initialize_navy.		
+
+# Navy supplied by PN_initialize_navy.
+
 		# DD (x5): "Shiratsuyu" "Shigure" "Murasame" "Harusame" "Samidare"
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
-		# Navy supplied by PN_initialize_navy.		
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 		# SS (x4): "I-172" "I-73" "I-174" "I-175"
-		# Navy supplied by PN_initialize_navy.
-		# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 		# SS (x2): "I-7" "I-8"
-		# Navy supplied by PN_initialize_navy.
-		# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
+
+# Navy supplied by PN_initialize_navy.
+
 		# SS (x1): "Ro-34"
-		# Navy supplied by PN_initialize_navy.
+
+# Navy supplied by PN_initialize_navy.
+
 }

@@ -1,4 +1,4 @@
-# Once-only migration: technologies/designs already called from country history; replace initial vanilla fleets, then load PN fleets.
+# Technologies, guarded designs, fleets, naval setup, then completion flags.
 PN_initialize_navy = {
 	if = {
 		limit = {
@@ -199,30 +199,69 @@ PN_initialize_navy = {
 			VEN_start_naval_variants = yes
 			load_oob = PN_00_VEN_vnr_naval
 		}
+		GRE = {
+			PN_GRE_naval_design_3 = yes
+			PN_GRE_naval_design_6 = yes
+			PN_GRE_naval_design_7 = yes
+			PN_GRE_naval_design_1 = yes
+			PN_GRE_naval_design_8 = yes
+			PN_GRE_naval_design_4 = yes
+			PN_GRE_naval_design_9 = yes
+			PN_GRE_naval_design_2 = yes
+			PN_GRE_naval_design_5 = yes
+			load_oob = PN_GRE_1936_naval
+		}
+		LAT = {
+			PN_LAT_naval_design_3 = yes
+			PN_LAT_naval_design_1 = yes
+			PN_LAT_naval_design_2 = yes
+			load_oob = PN_LAT_1936_naval
+		}
+		SOV = {
+			PN_SOV_naval_design_1 = yes
+			PN_SOV_naval_design_8 = yes
+			PN_SOV_naval_design_13 = yes
+			PN_SOV_naval_design_9 = yes
+			PN_SOV_naval_design_14 = yes
+			PN_SOV_naval_design_12 = yes
+			PN_SOV_naval_design_7 = yes
+			PN_SOV_naval_design_2 = yes
+			PN_SOV_naval_design_3 = yes
+			PN_SOV_naval_design_5 = yes
+			PN_SOV_naval_design_4 = yes
+			PN_SOV_naval_design_6 = yes
+			load_oob = PN_SOV_1936_naval
+		}
+		SWE = {
+			PN_SWE_naval_design_4 = yes
+			PN_SWE_naval_design_5 = yes
+			PN_SWE_naval_design_3 = yes
+			load_oob = PN_SWE_1936_naval
+		}
+		TUR = {
+			PN_TUR_naval_design_5 = yes
+			PN_TUR_naval_design_1 = yes
+			PN_TUR_naval_design_6 = yes
+			PN_TUR_naval_design_4 = yes
+			PN_TUR_naval_design_7 = yes
+			load_oob = PN_TUR_1936_naval
+		}
+		UKR = {
+			PN_UKR_naval_design_7 = yes
+			PN_UKR_naval_design_3 = yes
+			PN_UKR_naval_design_4 = yes
+			PN_UKR_naval_design_6 = yes
+			PN_UKR_naval_design_5 = yes
+			PN_UKR_naval_design_1 = yes
+			PN_UKR_naval_design_2 = yes
+			load_oob = PN_UKR_1936_naval
+		}
 		add_article_xix = yes
 		add_starting_navy_spirits = yes
 		trigger_MTG_naval_treaty_event = yes
 		ai_doctrine_workaround = yes
 		add_naval_headquarters = yes
 		extra_research_slots_workaround = yes
-		GRE = {
-			load_oob = PN_GRE_1936_naval
-		}
-		LAT = {
-			load_oob = PN_LAT_1936_naval
-		}
-		SOV = {
-			load_oob = PN_SOV_1936_naval
-		}
-		SWE = {
-			load_oob = PN_SWE_1936_naval
-		}
-		TUR = {
-			load_oob = PN_TUR_1936_naval
-		}
-		UKR = {
-			load_oob = PN_UKR_1936_naval
-		}
 		set_global_flag = vnr_oob_loaded
 		set_global_flag = PN_naval_initialized
 	}

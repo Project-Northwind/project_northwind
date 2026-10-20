@@ -33,7 +33,7 @@ JUNO_set_shared_military_branch_defaults = {
 	set_variable = { ROOT.JUNO_army_modifier_command_power_gain_mult = 0 }
 	set_variable = { ROOT.JUNO_army_modifier_acclimatization_cold_climate_gain_factor = 0 }
 	set_variable = { ROOT.JUNO_army_modifier_acclimatization_hot_climate_gain_factor = 0 }
-	
+
 	# Navy Modifiers
 	set_variable = { ROOT.JUNO_navy_experience_gain_navy_factor = 0.02 }
 	set_variable = { ROOT.JUNO_navy_mines_planting_by_fleets_factor = 0.0 }
@@ -96,22 +96,22 @@ JUNO_pick_navy_modifier_tt = {
 		limit = {
 			original_tag = ARG
 		}
-		custom_effect_tooltip = ARG_modify_argentine_navy_ns_intro			
+		custom_effect_tooltip = ARG_modify_argentine_navy_ns_intro
 	}
 	ELSE_IF = {
 		limit = {
 			original_tag = PAR
 		}
-		custom_effect_tooltip = PAR_modify_paraguayan_navy_ns_intro			
+		custom_effect_tooltip = PAR_modify_paraguayan_navy_ns_intro
 	}
 	ELSE_IF = {
 		limit = {
 			original_tag = URG
 		}
-		custom_effect_tooltip = URG_modify_uruguayan_navy_ns_intro			
+		custom_effect_tooltip = URG_modify_uruguayan_navy_ns_intro
 	}
 	ELSE = {
-		custom_effect_tooltip = JUNO_modify_south_american_navy_ns_intro			
+		custom_effect_tooltip = JUNO_modify_south_american_navy_ns_intro
 	}
 }
 
@@ -119,7 +119,7 @@ SMB_get_dreadnoughts_from_country = {
 	IF = {
 		limit = {
 			 FROM = {
-			 	tag = USA
+				tag = USA
 			 }
 		}
 		IF = {
@@ -161,7 +161,7 @@ create_equipment_variant = {
 				creator = USA
 				name = "New York Class I"
 			}
-	
+
 			set_technology = {
 	basic_battery = 1
 	basic_ship_hull_cruiser = 1
@@ -224,8 +224,8 @@ create_equipment_variant = {
 				name = "Portland Class II"
 			}
 		}
-		USA = { 
-			set_country_flag = sold_dreadnoughts_to_us@ROOT 
+		USA = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
 			add_timed_idea = {
 				idea = SMB_dreadnought_payments
 				days = 365
@@ -241,7 +241,7 @@ create_equipment_variant = {
 	ELSE_IF = {
 		limit = {
 			 FROM = {
-			 	tag = ENG
+				tag = ENG
 			 }
 		}
 		IF = {
@@ -320,7 +320,7 @@ create_equipment_variant = {
 				equipment_variant = "Nelson Class"
 				creator = ENG
 				name = "Nelson Class I"
-			}	
+			}
 		}
 		ELSE = {
 			create_equipment_variant = {
@@ -339,16 +339,16 @@ create_equipment_variant = {
 				equipment_variant = "Nelson Class"
 				creator = ENG
 				name = "Nelson Class I"
-			}	
+			}
 			create_ship = {
 				type = battleship_1
 				equipment_variant = "Nelson Class"
 				creator = ENG
 				name = "Nelson Class II"
-			}	
+			}
 		}
-		ENG = { 
-			set_country_flag = sold_dreadnoughts_to_us@ROOT 
+		ENG = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
 			add_timed_idea = {
 				idea = SMB_dreadnought_payments
 				days = 365
@@ -364,7 +364,7 @@ create_equipment_variant = {
 	ELSE_IF = {
 		limit = {
 			 FROM = {
-			 	tag = FRA
+				tag = FRA
 			 }
 		}
 		IF = {
@@ -410,7 +410,7 @@ create_equipment_variant = {
 				equipment_variant = "Courbet Class"
 				creator = FRA
 				name = "Courbet Class II"
-			}	
+			}
 		}
 		ELSE = {
 			create_equipment_variant = {
@@ -427,7 +427,7 @@ create_equipment_variant = {
 				equipment_variant = "Bretagne Class"
 				creator = FRA
 				name = "Bretagne Class I"
-			}	
+			}
 			create_ship = {
 				type = battleship_1
 				equipment_variant = "Bretagne Class"
@@ -435,12 +435,12 @@ create_equipment_variant = {
 				name = "Bretagne Class II"
 			}
 		}
-		FRA = { 
-			set_country_flag = sold_dreadnoughts_to_us@ROOT 
+		FRA = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
 			add_timed_idea = {
 				idea = SMB_dreadnought_payments
 				days = 365
-			}	
+			}
 		}
 		ROOT = {
 			add_timed_idea = {
@@ -452,9 +452,9 @@ create_equipment_variant = {
 	ELSE_IF = {
 		limit = {
 			 FROM = {
-			 	tag = ITA
+				tag = ITA
 			 }
-		}	
+		}
 		IF = {
 			limit = {
 				has_dlc =  "Man the Guns"
@@ -527,8 +527,8 @@ create_equipment_variant = {
 				name = "Giussano Class II"
 			}
 		}
-		ITA = { 
-			set_country_flag = sold_dreadnoughts_to_us@ROOT 
+		ITA = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
 			add_timed_idea = {
 				idea = SMB_dreadnought_payments
 				days = 365
@@ -544,7 +544,7 @@ create_equipment_variant = {
 	ELSE_IF = {
 		limit = {
 			 FROM = {
-			 	tag = JAP
+				tag = JAP
 			 }
 		}
 		IF = {
@@ -620,7 +620,7 @@ create_equipment_variant = {
 				name = "Ise Class II"
 			}
 		}
-		JAP = { 
+		JAP = {
 			set_country_flag = sold_dreadnoughts_to_us@ROOT
 			add_timed_idea = {
 				idea = SMB_dreadnought_payments
@@ -637,9 +637,9 @@ create_equipment_variant = {
 	ELSE_IF = {
 		limit = {
 			 FROM = {
-			 	tag = GER
+				tag = GER
 			 }
-		}	
+		}
 		IF = {
 			limit = {
 				has_dlc =  "Man the Guns"
@@ -689,7 +689,7 @@ create_equipment_variant = {
 		fixed_ship_secondaries_slot = ship_secondaries_1_light
 		fixed_ship_armor_slot = ship_armor_cruiser_1
 	}
-}	
+}
 			}
 
 			set_technology = {
@@ -725,7 +725,7 @@ create_equipment_variant = {
 		fixed_ship_secondaries_slot = ship_secondaries_1_light
 		fixed_ship_armor_slot = ship_armor_cruiser_1
 	}
-}	
+}
 			create_ship = {
 				type = vnr_ship_hull_cruiser_2
 				equipment_variant = "Deutschland Class"
@@ -764,8 +764,8 @@ create_equipment_variant = {
 				name = "Deutschland Class II"
 			}
 		}
-		GER = { 
-			set_country_flag = sold_dreadnoughts_to_us@ROOT 
+		GER = {
+			set_country_flag = sold_dreadnoughts_to_us@ROOT
 			add_timed_idea = {
 				idea = SMB_dreadnought_payments
 				days = 365
@@ -829,8 +829,8 @@ CHL_mapuche_conflict_level_up = {
 	# level 5 not relevant. Cannot go above.
 	custom_effect_tooltip = CHL_mapuche_conflict_up_tt
 	IF = {
-		limit = { 
-			has_idea = CHL_the_mapuche_conflict_much_worse 
+		limit = {
+			has_idea = CHL_the_mapuche_conflict_much_worse
 			NOT = {
 				has_country_flag = CHL_no_more_mapuche_conflict
 			}
@@ -841,8 +841,8 @@ CHL_mapuche_conflict_level_up = {
 		}
 	}
 	ELSE_IF = {
-		limit = { 
-			has_idea = CHL_the_mapuche_conflict_worse 
+		limit = {
+			has_idea = CHL_the_mapuche_conflict_worse
 			NOT = {
 				has_country_flag = CHL_no_more_mapuche_conflict
 			}
@@ -853,8 +853,8 @@ CHL_mapuche_conflict_level_up = {
 		}
 	}
 	ELSE_IF = {
-		limit = { 
-			has_idea = CHL_the_mapuche_conflict 
+		limit = {
+			has_idea = CHL_the_mapuche_conflict
 			NOT = {
 				has_country_flag = CHL_no_more_mapuche_conflict
 			}
@@ -865,8 +865,8 @@ CHL_mapuche_conflict_level_up = {
 		}
 	}
 	ELSE_IF = {
-		limit = { 
-			has_idea = CHL_the_mapuche_conflict_calmed 
+		limit = {
+			has_idea = CHL_the_mapuche_conflict_calmed
 			NOT = {
 				has_country_flag = CHL_no_more_mapuche_conflict
 			}
@@ -877,8 +877,8 @@ CHL_mapuche_conflict_level_up = {
 		}
 	}
 	ELSE_IF = {
-		limit = { 
-			has_idea = CHL_the_mapuche_conflict_near_gone 
+		limit = {
+			has_idea = CHL_the_mapuche_conflict_near_gone
 			NOT = {
 				has_country_flag = CHL_no_more_mapuche_conflict
 			}
@@ -886,14 +886,14 @@ CHL_mapuche_conflict_level_up = {
 		swap_ideas = {
 			remove_idea = CHL_the_mapuche_conflict_near_gone
 			add_idea = CHL_the_mapuche_conflict_calmed
-		}		
+		}
 	}
 	ELSE_IF = {
-		limit = { 
-			NOT = { 
-				has_idea = CHL_the_mapuche_conflict_near_gone 
-				has_idea = CHL_the_mapuche_conflict_rebellion 
-			} 
+		limit = {
+			NOT = {
+				has_idea = CHL_the_mapuche_conflict_near_gone
+				has_idea = CHL_the_mapuche_conflict_rebellion
+			}
 			NOT = {
 				has_country_flag = CHL_no_more_mapuche_conflict
 			}
@@ -966,7 +966,7 @@ CHL_anarchic_society_level_down = {
 		}
 		custom_effect_tooltip = CHL_anarchic_society_level_down_tt
 	}
-	
+
 	IF = {
 		limit = {
 			has_idea = idea_CHL_near_anarchic_society
@@ -977,7 +977,7 @@ CHL_anarchic_society_level_down = {
 		swap_ideas = {
 			remove_idea = idea_CHL_near_anarchic_society
 			add_idea = idea_CHL_near_anarchic_society_2
-		}	
+		}
 	}
 	ELSE_IF = {
 		limit = {
@@ -1024,7 +1024,7 @@ CHL_anarchic_society_level_up = {
 		}
 		custom_effect_tooltip = CHL_anarchic_society_up_tt
 	}
-	
+
 	IF = {
 		limit = {
 			has_idea = idea_CHL_near_anarchic_society
@@ -1037,8 +1037,8 @@ CHL_anarchic_society_level_up = {
 		add_political_power = -50
 	}
 	ELSE_IF = {
-		limit = { 
-			has_idea = idea_CHL_near_anarchic_society_2 
+		limit = {
+			has_idea = idea_CHL_near_anarchic_society_2
 			NOT = {
 				has_country_flag = CHL_no_more_anarchy_flag
 			}
@@ -1049,8 +1049,8 @@ CHL_anarchic_society_level_up = {
 		}
 	}
 	ELSE_IF = {
-		limit = { 
-			has_idea = idea_CHL_near_anarchic_society_3 
+		limit = {
+			has_idea = idea_CHL_near_anarchic_society_3
 			NOT = {
 				has_country_flag = CHL_no_more_anarchy_flag
 			}
@@ -1061,8 +1061,8 @@ CHL_anarchic_society_level_up = {
 		}
 	}
 	ELSE_IF = {
-		limit = { 
-			has_idea = idea_CHL_near_anarchic_society_4 
+		limit = {
+			has_idea = idea_CHL_near_anarchic_society_4
 			NOT = {
 				has_country_flag = CHL_no_more_anarchy_flag
 			}
@@ -1073,13 +1073,13 @@ CHL_anarchic_society_level_up = {
 		}
 	}
 	ELSE_IF = {
-		limit = { 
-			NOT = { 
+		limit = {
+			NOT = {
 				OR = {
-					has_idea = idea_CHL_near_anarchic_society_4 
+					has_idea = idea_CHL_near_anarchic_society_4
 					has_idea = idea_CHL_near_anarchic_society
 				}
-			} 
+			}
 			NOT = {
 				has_country_flag = CHL_no_more_anarchy_flag
 			}
@@ -1154,42 +1154,42 @@ CHL_one_more_fascist_focus_done = {
 CHL_set_up_american_resistance_states = {
 	#hidden_effect = {
 		for_each_scope_loop = {
-			array = global.countries 
+			array = global.countries
 			IF = {
 				limit = {
 					# Find countries with cores in america that do not already exist as free or puppeted nations
-					exists = no 
-					any_core_state = { 
+					exists = no
+					any_core_state = {
 						OR = {
-							is_on_continent = south_america 
+							is_on_continent = south_america
 							is_on_continent = north_america
-						} 
+						}
 						OWNER = {
 							NOT = { is_in_faction_with = ROOT }
 							NOT = { tag = ROOT }
 						}
 					}
 				}
-			
+
 				# add American state of theirs to the array
 				every_core_state = {
-					limit = {  
+					limit = {
 						OR = {
-							is_on_continent = south_america 
+							is_on_continent = south_america
 							is_on_continent = north_america
-						}	
+						}
 						has_resistance = yes
 						NOT = { # no point adding if already in there
 							is_in_array = {
 								array = CHL.american_colonial_states_array
-								value = THIS 
+								value = THIS
 							}
 						}
 					}
 					add_to_array = { CHL.american_colonial_states_array = THIS }
 				}
 			}
-			
+
 		}
 	#}
 }
@@ -1272,7 +1272,7 @@ BRA_setup_colonized_countries_to_liberate_array = {
 				add_to_array = { BRA.anti_colonialist_countries_to_liberate = THIS }
 			}
 		}
-		
+
 	}
 }
 
@@ -1306,7 +1306,7 @@ BRA_mio_military_factory = {
 			NOT = {
 				has_dynamic_modifier = {
 					modifier = BRA_neglected_state_dynamic_modifier
-				} 
+				}
 				OR = {
 					state = 961
 					state = 962
@@ -1337,9 +1337,9 @@ USA_add_monroe_doctrine_to_target = {
 			}
 			#has_dlc = "Trial of Allegiance"
 			ROOT = {
-				NOT = { 
+				NOT = {
 					OR = {
-						tag = USA 
+						tag = USA
 						has_idea = USA_monroe_doctrine_idea
 					}
 				}
@@ -1368,9 +1368,9 @@ VEN_blockade_countries = {
 				NOT = { has_guaranteed = ROOT }
 				ROOT = { NOT = { has_guaranteed = PREV } }
 				NOT = { is_embargoed_by = VEN }
-				
+
 			}
-			
+
 		}
 		event_target:blockade_target = {
 			VEN = {
@@ -1403,7 +1403,7 @@ VEN_blockade_countries = {
 					value = PREV
 				}
 			}
-		} 
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -1429,7 +1429,7 @@ VEN_blockade_countries = {
 						id = TOA_ven_blockade.2
 						hours = 1
 					}
-					VEN = { 
+					VEN = {
 						if = {
 							limit = { has_dlc = "By Blood Alone"}
 							send_embargo = PREV

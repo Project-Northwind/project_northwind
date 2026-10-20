@@ -16,7 +16,7 @@ coverted_oceanic_replenishment = {
         has_tech = naval_combat_support
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 75
@@ -35,16 +35,16 @@ coverted_oceanic_replenishment = {
 	rewards = {
 		merchant_converted_tender = {
 			equipment_bonus = {
-				convoy_1 = {
-					instant = yes
-					surface_visibility = -0.25
-				}
-				auxiliary_ship = {
-					instant = yes
-					surface_visibility = -0.25
-					max_strength = -0.25
-				}
-			}
+	convoy_1 = {
+		instant = yes
+		surface_visibility = -0.25
+	}
+	ship_hull_civilian = {
+		instant = yes
+		surface_visibility = -0.25
+		max_strength = -0.25
+	}
+}
 		}
 		fuel_rationing = {
 			modifier = {
@@ -105,7 +105,7 @@ industrialized_naval_logistics = {
 		}
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 75
@@ -146,11 +146,11 @@ industrialized_naval_logistics = {
 				supply_consumption = -0.02
 			}
 			equipment_bonus = {
-				convoy_1 = {
-					instant = yes
-					build_cost_ic = -0.15
-				}
-			}
+	convoy_1 = {
+		instant = yes
+		build_cost_ic = -0.15
+	}
+}
 		}
 		damage_control_protocals = {
 			modifier = {
@@ -172,16 +172,16 @@ industrialized_naval_logistics = {
 				industrial_capacity_dockyard = 0.1
 			}
 			equipment_bonus = {
-				convoy_1 = {
-					instant = yes
-					build_cost_ic = -0.15
-					anti_air_attack = 1
-				}
-				auxiliary_ship = {
-					instant = yes
-					build_cost_ic = -0.15
-				}
-			}
+	convoy_1 = {
+		instant = yes
+		build_cost_ic = -0.15
+		anti_air_attack = 1
+	}
+	ship_hull_civilian = {
+		instant = yes
+		build_cost_ic = -0.15
+	}
+}
 		}
 	}
 }
@@ -204,7 +204,7 @@ trade_supply_network = {
         has_tech = naval_combat_support
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
         modifier = {
             factor = 75
@@ -217,11 +217,11 @@ trade_supply_network = {
 
 	supply_node_range = 0.075
     equipment_bonus = {
-        convoy_1 = {
-			build_cost_ic = -0.1
-            instant = yes
-        }
-    }
+	convoy_1 = {
+		build_cost_ic = -0.1
+		instant = yes
+	}
+}
 	navy_max_range_factor = 0.05
 
 	rewards = {
@@ -238,11 +238,11 @@ trade_supply_network = {
 				license_production_speed = 0.1
 			}
 			equipment_bonus = {
-				convoy_1 = {
-					instant = yes
-					build_cost_ic = -0.15
-				}
-			}
+	convoy_1 = {
+		instant = yes
+		build_cost_ic = -0.15
+	}
+}
 		}
 		logisitics_opertional_research = {
 			carrier = {
@@ -273,12 +273,12 @@ trade_supply_network = {
 		}
 		convoy_pack = {
 			equipment_bonus = {
-				convoy_1 = {
-					max_strength = 0.25
-					lg_attack = 1
-					instant = yes
-				}
-			}
+	convoy_1 = {
+		max_strength = 0.25
+		lg_attack = 1
+		instant = yes
+	}
+}
 			modifier = {
 				convoy_escort_efficiency = 0.1
 				convoy_retreat_speed = 0.1
@@ -309,7 +309,7 @@ centralized_logistics_planning = {
         has_tech = naval_combat_support
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
 		modifier = {
 			factor = 75
@@ -379,11 +379,11 @@ centralized_logistics_planning = {
 		}
 		convoy_separation = {
 			equipment_bonus = {
-    		    convoy_1 = {
-    		        surface_visibility = -0.15
-    		        instant = yes
-    		    }
-    		}
+	convoy_1 = {
+		surface_visibility = -0.15
+		instant = yes
+	}
+}
 			modifier = {
 				convoy_retreat_speed = 0.1
 				convoy_escort_efficiency = -0.1
@@ -411,7 +411,7 @@ defensive_combat_support = {
         has_tech = naval_combat_support
     }
 
-    ai_will_do = { 
+    ai_will_do = {
         base = 1
     }
 

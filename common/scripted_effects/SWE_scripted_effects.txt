@@ -1,5 +1,5 @@
 #	Example:
-# 
+#
 #	example_effect = {
 #		add_political_power = 66
 #		add_popularity = {
@@ -22,11 +22,11 @@ SWE_update_iron_ore_calc = {
 	set_variable = { fraction_of_steel_needed = base_iron_output }
 	multiply_variable = { fraction_of_steel_needed = 0.8 } #This for tweak
 
-	#How much of the fracton of steel import is currently being satisfied  
+	#How much of the fracton of steel import is currently being satisfied
 	set_variable = { satisfied_by_import_factor = var:GER.resource_imported@steel  }
 	divide_variable = { satisfied_by_import_factor = fraction_of_steel_needed }
 
-	
+
 
 
 	if = {
@@ -56,11 +56,11 @@ SWE_update_iron_ore_calc = {
 }
 
 lerp = {
-	
+
 	# Linearly interpolates between a and b by x.
 	# x is clamped between 0 - 1.
 	# a + (b -a ) * x
-	# The arguments below needs to be set before running the effect. The result is stored in lerp_result, and is in the same scope as the lerp was called from 
+	# The arguments below needs to be set before running the effect. The result is stored in lerp_result, and is in the same scope as the lerp was called from
 	# lerp_x:  The interpolation value between the two numbers
 	# lerp_b: start value
 	# lerp_a: end value
@@ -256,7 +256,7 @@ calculate_folkhemmet_high_army_tooltip = {
 calculate_folkhemmet_no_navy_tooltip = {
 	set_temp_variable = { tooltip_folkhemmet_intactness = folkhemmet_air_part }
 	add_to_temp_variable = { tooltip_folkhemmet_intactness = folkhemmet_army_part }
-	add_to_temp_variable = { tooltip_folkhemmet_intactness = 0 } 
+	add_to_temp_variable = { tooltip_folkhemmet_intactness = 0 }
 	calculate_folkhemmet_none_option = yes
 }
 
@@ -443,7 +443,7 @@ SWE_remove_rationing_modifier = {
 
 SWE_psilander_fleet_creation = {
 	IF = {
-		limit = { 
+		limit = {
 			has_dlc = "Man the Guns"
 		}
 		set_technology = {
@@ -471,31 +471,31 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
-		
+
 		create_ship = {
 			type = vnr_ship_hull_light_1
 			equipment_variant = "Curtatone Class"
 			creator = ITA
 			name = "Psilander"
-		}		
+		}
 		create_ship = {
 			type = vnr_ship_hull_light_1
 			equipment_variant = "Curtatone Class"
 			creator = ITA
 			name = "Puke"
-		}	
+		}
 		create_ship = {
 			type = vnr_ship_hull_light_1
 			equipment_variant = "Curtatone Class"
 			creator = ITA
 			name = "Romulus"
-		}	
+		}
 		create_ship = {
 			type = vnr_ship_hull_light_1
 			equipment_variant = "Curtatone Class"
 			creator = ITA
 			name = "Remus"
-		}	
+		}
 	}
 	ELSE = {
 		create_equipment_variant = {
@@ -556,16 +556,16 @@ SWE_scandinavian_defense_union_invite = {
 
 SWE_reduce_or_remove_ball_bearing_food_trade_modifier = {
 	SWE = {
-		add_to_variable = { 
-			SWE_ball_bearing_food_exchange_stab_factor = -0.02 
+		add_to_variable = {
+			SWE_ball_bearing_food_exchange_stab_factor = -0.02
 			tooltip  = stability_factor_negative_tt
 		}
 
-		add_to_variable = { 
-			SWE_ball_bearing_food_exchange_weekly_manpower = -4 
-			tooltip = weekly_manpower_tt 
+		add_to_variable = {
+			SWE_ball_bearing_food_exchange_weekly_manpower = -4
+			tooltip = weekly_manpower_tt
 		}
-		
+
 		if = {
 			limit = {
 				check_variable = { SWE_ball_bearing_food_exchange_stab_factor = 0 }
@@ -587,17 +587,17 @@ SWE_folkhemmet_70d_swap = {
 		folkhemmet_stability = -0.03
 		tooltip = stability_factor_tt
 	}
-	add_to_variable = { 
+	add_to_variable = {
 		folkhemmet_mil = 0.03
-		tooltip = production_speed_arms_factory_factor_tt 
+		tooltip = production_speed_arms_factory_factor_tt
 	}
-	add_to_variable = { 
+	add_to_variable = {
 		folkhemmet_civ = -0.03
-		tooltip = production_speed_industrial_complex_factor_tt 
+		tooltip = production_speed_industrial_complex_factor_tt
 	}
-	add_to_variable = { 
+	add_to_variable = {
 		folkhemmet_dockyard = 0.03
-		tooltip = production_speed_dockyard_factor_tt 
+		tooltip = production_speed_dockyard_factor_tt
 	}
 }
 
@@ -626,19 +626,19 @@ SWE_folkhemmet_big_swap = {
 			tooltip = stability_factor_whitespace_tt
 		}
 
-		add_to_variable = { 
+		add_to_variable = {
 			folkhemmet_mil = 0.1
-			tooltip = production_speed_arms_factory_factor_whitespace_tt 
+			tooltip = production_speed_arms_factory_factor_whitespace_tt
 		}
 
-		add_to_variable = { 
+		add_to_variable = {
 			folkhemmet_dockyard = 0.1
-			tooltip = production_speed_dockyard_factor_whitespace_tt 
+			tooltip = production_speed_dockyard_factor_whitespace_tt
 		}
 
-		add_to_variable = { 
+		add_to_variable = {
 			folkhemmet_civ = -0.1
-			tooltip = production_speed_industrial_complex_factor_whitespace_tt 
+			tooltip = production_speed_industrial_complex_factor_whitespace_tt
 		}
 
 		add_to_variable = {
@@ -673,19 +673,19 @@ SWE_folkhemmet_low_swap = {
 			tooltip = stability_factor_whitespace_tt
 		}
 
-		add_to_variable = { 
+		add_to_variable = {
 			folkhemmet_mil = 0.05
-			tooltip = production_speed_arms_factory_factor_whitespace_tt 
+			tooltip = production_speed_arms_factory_factor_whitespace_tt
 		}
 
-		add_to_variable = { 
+		add_to_variable = {
 			folkhemmet_dockyard = 0.05
-			tooltip = production_speed_dockyard_factor_whitespace_tt 
+			tooltip = production_speed_dockyard_factor_whitespace_tt
 		}
 
-		add_to_variable = { 
+		add_to_variable = {
 			folkhemmet_civ = -0.05
-			tooltip = production_speed_industrial_complex_factor_whitespace_tt 
+			tooltip = production_speed_industrial_complex_factor_whitespace_tt
 		}
 
 		add_to_variable = {
@@ -701,10 +701,10 @@ SWE_increase_the_cross_we_bear = {
 			NOT = { has_country_flag = SWE_already_capped_once }
 		}
 
-		set_country_flag = SWE_already_capped_once 
+		set_country_flag = SWE_already_capped_once
 		SWE = {
 			subtract_from_variable = { SWE_cross_we_bear_org_loss_at_low_org_factor = SWE_cross_we_bear_org_loss_at_low_org_factor_increase tooltip = org_loss_at_low_org_factor_tt }
-			subtract_from_variable = { SWE_cross_we_bear_org_loss_when_moving = SWE_cross_we_bear_org_loss_when_moving_increase tooltip = org_loss_when_moving_tt }	
+			subtract_from_variable = { SWE_cross_we_bear_org_loss_when_moving = SWE_cross_we_bear_org_loss_when_moving_increase tooltip = org_loss_when_moving_tt }
 			add_to_variable = { SWE_cross_we_bear_org_special_forces_cap = SWE_cross_we_bear_org_special_forces_cap_increase tooltip = special_forces_cap_tt }
 			add_to_variable = { SWE_cross_we_bear_coordination_bonus = SWE_cross_we_bear_coordination_bonus_increase tooltip = coordination_bonus_tt }
 		}
@@ -796,21 +796,21 @@ SWE_calc_refugee_from_war = {
 
 		add_to_variable = { ROOT.SWE_refugee_from_war_total_manpower_gained = SWE_manpower_to_communist_support }
 
-		if = { 
-			limit = { 
-				check_variable = { SWE_manpower_to_communist_support > ROOT.SWE_refugee_max_manpower_gained } 
-				NOT = { original_tag = SWE } 
-			} 
+		if = {
+			limit = {
+				check_variable = { SWE_manpower_to_communist_support > ROOT.SWE_refugee_max_manpower_gained }
+				NOT = { original_tag = SWE }
+			}
 			set_variable = { ROOT.SWE_refugee_max_manpower_gained = var:SWE_manpower_to_communist_support }
 			set_variable = { ROOT.SWE_refugee_max_manpower_country = THIS }
 		}
-		
-		if = {
-			limit = { 
 
-				check_variable = { SWE_manpower_to_communist_support < ROOT.SWE_refugee_min_manpower_gained } 
+		if = {
+			limit = {
+
+				check_variable = { SWE_manpower_to_communist_support < ROOT.SWE_refugee_min_manpower_gained }
 				NOT = { original_tag = SWE }
-			} 
+			}
 			set_variable = { ROOT.SWE_refugee_min_manpower_gained = var:SWE_manpower_to_communist_support }
 			set_variable = { ROOT.SWE_refugee_min_manpower_country = THIS }
 		}
@@ -835,7 +835,7 @@ SWE_calc_communist_folkhemmet = {
 	multiply_temp_variable = { SWE_cg = 0.5 }
 	set_variable = { folkhemmet_max_cap = var:SWE_cg }
 	multiply_temp_variable = { SWE_cg = 0.5 }
- 	set_variable = { folkhemmet_research_speed = var:SWE_cg }
+	set_variable = { folkhemmet_research_speed = var:SWE_cg }
 }
 
 SWE_is_norway_mostly_occupied = {
@@ -864,7 +864,7 @@ SWE_is_norway_mostly_occupied = {
 			add_to_temp_variable = { occupation_counter = 1 }
 		}
 
-		
+
 		if = {
 			limit = {
 				922 = {    #Agder
@@ -967,7 +967,7 @@ SWE_is_norway_mostly_occupied = {
 	}
 }
 
-						
+
 
 SWE_is_finland_mostly_occupied = {
 	if = {
@@ -995,7 +995,7 @@ SWE_is_finland_mostly_occupied = {
 			add_to_temp_variable = { occupation_counter = 1 }
 		}
 
-		
+
 		if = {
 			limit = {
 				929 = {    #Wololo Oulolo
@@ -1139,7 +1139,7 @@ SWE_is_denmark_mostly_occupied = {
 			add_to_temp_variable = { occupation_counter = 1 }
 		}
 
-		
+
 
 		if = {
 			limit = {
@@ -1163,10 +1163,10 @@ SWE_is_ice_mostly_occupied = {
 			limit = {
 				100 = {    #Iceland
 					controller = {
-								
+
 						OR = {
 							AND = {
-								is_subject_of = DEN 
+								is_subject_of = DEN
 								DEN = {
 									OR = {
 										has_government = communism
@@ -1194,7 +1194,7 @@ SWE_is_ice_mostly_occupied = {
 			}
 
 			add_to_temp_variable = { occupation_counter = 1 }
-		}		
+		}
 
 		if = {
 			limit = {
@@ -1444,9 +1444,9 @@ SWE_increase_stormtrupper_cap = {
 	effect_tooltip = {
 		set_temp_variable = { SWE_new_militia_cap_for_tooltip = SWE_stormtrupper_division_cap }
 		add_to_temp_variable = { SWE_new_militia_cap_for_tooltip = 4 }
-		set_division_template_cap = { 
-			division_template = "Stormtrupper" 
-			division_cap = SWE_new_militia_cap_for_tooltip   
+		set_division_template_cap = {
+			division_template = "Stormtrupper"
+			division_cap = SWE_new_militia_cap_for_tooltip
 		}
 	}
 
@@ -1454,12 +1454,12 @@ SWE_increase_stormtrupper_cap = {
 		add_to_variable = { SWE_stormtrupper_division_cap = 4 }
 		clamp_variable = {
 			var = SWE_stormtrupper_division_cap
-			min = 0 
+			min = 0
 			max = SWE_max_stormtrupper_division_cap
-		}  
-		set_division_template_cap = { 
-			division_template = "Stormtrupper" 
-			division_cap = SWE_stormtrupper_division_cap  
+		}
+		set_division_template_cap = {
+			division_template = "Stormtrupper"
+			division_cap = SWE_stormtrupper_division_cap
 		}
 	}
 }

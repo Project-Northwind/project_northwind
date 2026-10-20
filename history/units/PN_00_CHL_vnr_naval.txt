@@ -3,7 +3,7 @@ units= {
 
 	##### Naval OOB #####
 	fleet = {
-		name = "Armada de Chile"			
+		name = "Armada de Chile"
 		naval_base = 8222 # Valparaiso
 		task_force = {
 			name = "Armada de Chile"
@@ -21,9 +21,9 @@ units= {
 			ship = { name = "BACH Aldea" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = CHL version_name = "Serrano Class" } } }
 			ship = { name = "BACH Requelme" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = CHL version_name = "Serrano Class" } } }
 			ship = { name = "BACH Videla" definition = destroyer start_experience_factor = 0.075 equipment = { vnr_ship_hull_light_2 = { amount = 1 owner = CHL version_name = "Serrano Class" } } }
-		}				
-		task_force = {				
-			name = "Flotilla de Submarinos nro. 1"			
+		}
+		task_force = {
+			name = "Flotilla de Submarinos nro. 1"
 			location = 8222 # Valparaiso
 			ship = { name = "BACH Gualcolda" definition = submarine start_experience_factor = 0.04 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = CHL version_name = "H1 Class" } } }
 			ship = { name = "BACH Tegualda" definition = submarine start_experience_factor = 0.04 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = CHL version_name = "H1 Class" } } }
@@ -31,14 +31,13 @@ units= {
 			ship = { name = "BACH Quidora" definition = submarine start_experience_factor = 0.04 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = CHL version_name = "H1 Class" } } }
 			ship = { name = "BACH Fresia" definition = submarine start_experience_factor = 0.04 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = CHL version_name = "H1 Class" } } }
 			ship = { name = "BACH Guale" definition = submarine start_experience_factor = 0.04 equipment = { vnr_ship_hull_submarine_1 = { amount = 1 owner = CHL version_name = "H1 Class" } } }
-		}				
-		task_force = {				
-			name = "Flotilla de Submarinos nro. 2"			
+		}
+		task_force = {
+			name = "Flotilla de Submarinos nro. 2"
 			location = 5228 # Coquimbo
 			ship = { name = "BACH Capitán O`Brien" definition = submarine start_experience_factor = 0.04 equipment = { vnr_ship_hull_submarine_2 = { amount = 1 owner = CHL version_name = "Capitán O'Brien Class" } } }
 			ship = { name = "BACH Almirante Simpson" definition = submarine start_experience_factor = 0.04 equipment = { vnr_ship_hull_submarine_2 = { amount = 1 owner = CHL version_name = "Capitán O'Brien Class" } } }
 			ship = { name = "BACH Capitán Thomson" definition = submarine start_experience_factor = 0.04 equipment = { vnr_ship_hull_submarine_2 = { amount = 1 owner = CHL version_name = "Capitán O'Brien Class" } } }
-		}				
+		}
 	}
-} 
-
+}

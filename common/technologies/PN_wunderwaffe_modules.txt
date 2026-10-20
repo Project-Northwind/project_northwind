@@ -31,7 +31,7 @@ technologies = {
 			always = no
 		}
 	}
-	
+
 	wunderwaffe_modules = {
 		enable_equipment_modules = {
 			ship_em_battery_1

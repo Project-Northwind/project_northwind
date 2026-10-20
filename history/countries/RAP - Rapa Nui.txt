@@ -1,0 +1,470 @@
+capital = 948 # Easter Island
+# Based on the Chilean history file
+
+oob = "CHL_1936"
+
+### Starting technologies ###
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	basic_train = 1
+}
+
+IF = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			iw_small_airframe = 1
+			early_bombs = 1
+			air_torpedoe_1 = 1
+			aa_lmg = 1
+			engines_1 = 1
+		}
+	ELSE = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
+
+IF = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+}
+IF = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+}
+
+### Recruiting Characters ###
+IF = {
+	limit = {
+		NOT = {
+			has_dlc = "Trial of Allegiance"
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_dlc = "Trial of Allegiance"
+		}
+		recruit_character = RAP_valentino_riroroko_tuki
+		recruit_character = RAP_juan_tepano
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.10.30"
+	election_frequency = 72  #but 4 years after this one in 1938.
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	communism = 10
+	fascism = 0
+	neutrality = 70
+}
+
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+
+	IF = {
+		limit = {
+			has_dlc = "Trial of Allegiance"
+		}
+
+		ELSE = {
+			#generic focuses
+			complete_national_focus = army_effort
+			complete_national_focus = equipment_effort
+			complete_national_focus = motorization_effort
+			complete_national_focus = aviation_effort
+			complete_national_focus = naval_effort
+			complete_national_focus = flexible_navy
+			complete_national_focus = industrial_effort
+			complete_national_focus = construction_effort
+			complete_national_focus = production_effort
+		}
+	}
+
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		#air_superiority = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		fuel_silos = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_strategic_destruction
+
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
+}
+
+### VARIANTS ###
+# 1936 Start #
+IF = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_RAP_c821a8cbf354
+		}
+	}
+	create_equipment_variant = {
+		name = "Capitán O'Brien Class"
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+		type = vnr_ship_hull_submarine_1
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
+			rear_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_RAP_c821a8cbf354
+}
+	set_technology = {
+	basic_battery = 1
+	basic_depth_charges = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_RAP_26bf40d9f9c4
+		}
+	}
+	create_equipment_variant = {
+		name = "Serrano Class"
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	set_country_flag = PN_naval_variant_RAP_26bf40d9f9c4
+}
+}
+IF = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_RAP_9ba136cc3dbf
+		}
+	}
+	create_equipment_variant = {
+		name = "H1 Class"
+		name_group = CHL_SS_HISTORICAL
+		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_submarine_1
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
+			rear_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_RAP_9ba136cc3dbf
+}
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_submarine = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_RAP_c821a8cbf354
+		}
+	}
+	create_equipment_variant = {
+		name = "Capitán O'Brien Class"
+		name_group = CHL_SS_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_submarine_1
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	set_country_flag = PN_naval_variant_RAP_c821a8cbf354
+}
+	# Destroyers #
+	set_technology = {
+	basic_battery = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_RAP_6b006d8e54b1
+		}
+	}
+	create_equipment_variant = {
+		name = "Almirante Lynch Class"
+		name_group = CHL_DD_HISTORICAL
+		parent_version = 0
+		obsolete = yes
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_RAP_6b006d8e54b1
+}
+	set_technology = {
+	basic_battery = 1
+	basic_depth_charges = 1
+	basic_naval_mines = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1
+	electronic_mechanical_engineering = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_RAP_26bf40d9f9c4
+		}
+	}
+	create_equipment_variant = {
+		name = "Serrano Class"
+		name_group = CHL_DD_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	set_country_flag = PN_naval_variant_RAP_26bf40d9f9c4
+}
+	# Cruisers #
+	set_technology = {
+	basic_battery = 1
+	early_cruiser_armor = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_RAP_ac2cf6d05357
+		}
+	}
+	create_equipment_variant = {
+		name = "O'Higgins Class"
+		name_group = CHL_CA_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_cd
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+		}
+	}
+	set_country_flag = PN_naval_variant_RAP_ac2cf6d05357
+}
+	set_technology = {
+	basic_torpedo = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_RAP_e6417a4597a9
+		}
+	}
+	create_equipment_variant = {
+		name = "Chacabuco Class"
+		name_group = CHL_CL_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_cd
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_RAP_e6417a4597a9
+}
+	# Battleships #
+	set_technology = {
+	basic_battery = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	popup = no
+}
+if = {
+	limit = {
+		NOT = {
+			has_country_flag = PN_naval_variant_RAP_ad774e839c4e
+		}
+	}
+	create_equipment_variant = {
+		name = "Almirante Latorre Class"
+		name_group = CHL_BB_HISTORICAL
+		parent_version = 0
+		type = vnr_ship_hull_heavy_1
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = empty
+		}
+	}
+	set_country_flag = PN_naval_variant_RAP_ad774e839c4e
+}
+}

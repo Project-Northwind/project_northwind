@@ -49,7 +49,7 @@ navy_rework_category = {
 		allowed = { tag = AST }
 		complete_effect = { set_country_flag = naval_lore_gui_show }
 	}
-	
+
 	show_intro_panel = {
 		visible = {
 			NOT = { has_country_flag = navy_rework_splash_show }

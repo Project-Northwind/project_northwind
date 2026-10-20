@@ -7,7 +7,7 @@ commonwealth_StrikeForce_1 = {
 	}
 	ai_will_do = {
 		factor = 10
-	}	
+	}
 	mission = { naval_strike }
 	keep_updated = yes
 	min_composition = {
@@ -21,7 +21,7 @@ commonwealth_StrikeForce_1 = {
 			amount = 4
 		}
 	}
-	
+
 	optimal_composition = {
 		carrier = {
 			amount = 2
@@ -74,7 +74,7 @@ commonwealth_PatrolDominanceForce_CA_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { naval_patrol }
 	keep_updated = yes
 
@@ -109,7 +109,7 @@ commonwealth_ConvoyRaiding_1 = {
 	}
 	ai_will_do = {
 		factor = 1
-	}	
+	}
 	mission = { convoy_raiding }
 
 	min_composition = {
@@ -134,7 +134,7 @@ commonwealth_ConvoyEscort_1 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_escort }
 	min_composition = {
 		destroyer = {
@@ -158,7 +158,7 @@ commonwealth_ConvoyEscort_2 = {
 	}
 	ai_will_do = {
 		factor = 5
-	}	
+	}
 	mission = { convoy_escort }
 	min_composition = {
 		destroyer = {

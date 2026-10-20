@@ -1,4 +1,4 @@
-﻿capital = 554
+capital = 554
 
 set_oob = "FML_1936"
 add_manpower = 18000 # To help offset the Manpower drain slightly from not having any cores

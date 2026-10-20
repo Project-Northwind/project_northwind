@@ -10,14 +10,14 @@
 
 focus_tree = {
 	id = argentine_focus_tree
-	
+
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = ARG
 			has_dlc = "Trial of Allegiance"
-		} 
+		}
 	}
 
 	default = no
@@ -72,16 +72,16 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 120
 			swap_ideas = {
-  				remove_idea = ARG_infamous_decade_idea
-  				add_idea = ARG_infamous_decade_2_idea 				
-  			}
+				remove_idea = ARG_infamous_decade_idea
+				add_idea = ARG_infamous_decade_2_idea
+			}
 				custom_effect_tooltip = ARG_roberto_maria_ortiz_tt
 
-				ARG_roberto_maria_ortiz = { 
-					promote_leader = yes 
+				ARG_roberto_maria_ortiz = {
+					promote_leader = yes
 				}
 				hidden_effect = {
 					retire_country_leader = yes
@@ -144,9 +144,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_popularity = {
-				ideology = neutrality 
+				ideology = neutrality
 				popularity = 0.05
 			}
 			add_popularity = {
@@ -190,17 +190,17 @@ focus_tree = {
 				NOT = {
 					has_government = fascism
 				}
-				factor = 0 
+				factor = 0
 			}
 			factor = 15 #don't do unless fascist, also please don't do if historical.
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_dynamic_modifier = { modifier = ARG_growing_nationalism_modifier }
-			
+
 			hidden_effect = {
 				every_owned_state = {
 					limit = {
@@ -233,7 +233,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL}
 
-		completion_reward = { 
+		completion_reward = {
 			remove_dynamic_modifier = {
 				modifier = ARG_political_corruption_modifier
 			}
@@ -258,7 +258,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_british_cooperation_idea
 
 			ROOT = {
@@ -283,7 +283,7 @@ focus_tree = {
 		prerequisite = { focus = ARG_work_with_the_nationalists }
 		x = 0
 		y = 2
-		relative_position_id = ARG_work_with_the_nationalists 
+		relative_position_id = ARG_work_with_the_nationalists
 		cost = 10
 		available = {
 		}
@@ -294,7 +294,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			ENG = {
 				add_opinion_modifier = {
 				target = ROOT
@@ -303,9 +303,9 @@ focus_tree = {
 			}
 
 			swap_ideas = {
-  				remove_idea = ARG_roca_runciman_treaty_idea
-  				add_idea = ARG_anti_british_sentiment_idea 				
-  			}
+				remove_idea = ARG_roca_runciman_treaty_idea
+				add_idea = ARG_anti_british_sentiment_idea
+			}
 		}
 	}
 
@@ -324,13 +324,13 @@ focus_tree = {
 			factor = 5 #this was late in the strategy plan, so do other stuff first
 		}
 
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER } 
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 
-		completion_reward = { 
-			
+		completion_reward = {
+
 			custom_effect_tooltip = ARG_the_castillo_cabinet_tt
-			ARG_ramon_castillo = { 
-					promote_leader = yes 
+			ARG_ramon_castillo = {
+					promote_leader = yes
 				}
 				hidden_effect = {
 					retire_country_leader = yes
@@ -341,7 +341,7 @@ focus_tree = {
 						remove_ideas = ARG_ramon_castillo
 					}
 				}
-			custom_effect_tooltip = CHL_skip_one_line_tt 
+			custom_effect_tooltip = CHL_skip_one_line_tt
 			custom_effect_tooltip = ARG_coup_imminent_tt
 			set_country_flag = military_coup_attempt_started
 			}
@@ -364,7 +364,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			random_core_state = {
 			limit = {
 				free_building_slots = {
@@ -401,10 +401,10 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_STABILITY}
 
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
-    			idea = ARG_public_works_investment_idea
-    			days = 365
+				idea = ARG_public_works_investment_idea
+				days = 365
 			}
 		}
 	}
@@ -426,7 +426,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
 				idea = ARG_towards_a_greater_argentina_idea
 				days = 730
@@ -451,7 +451,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH }
 
-		completion_reward = { 
+		completion_reward = {
 			add_research_slot = 1
 		}
 	}
@@ -478,7 +478,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 
 		custom_effect_tooltip = ARG_consolidating_power_tt
 		custom_effect_tooltip = CHL_skip_one_line_tt
@@ -490,12 +490,12 @@ focus_tree = {
 
 			add_popularity = {
 					popularity = 0.15
-					ideology = fascism  
+					ideology = fascism
 				}
 
 			add_popularity = {
 					popularity = -0.1
-					ideology = democratic  
+					ideology = democratic
 				}
 
 			add_political_power = 100
@@ -521,7 +521,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.1
 		}
@@ -554,7 +554,7 @@ focus_tree = {
 			custom_effect_tooltip = CHL_skip_one_line_tt
 
 			country_event = {
-				id = ARG_political_events.1  
+				id = ARG_political_events.1
 				hours = 1
 		}
 
@@ -594,7 +594,7 @@ focus_tree = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_political_power = 50
 			add_stability = 0.1
@@ -622,7 +622,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -657,7 +657,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 
 		hidden_effect = {
 			random_owned_state = {
@@ -711,9 +711,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			country_event = {
-				id = ARG_political_events.2  
+				id = ARG_political_events.2
 				hours = 1
 			}
 		}
@@ -737,8 +737,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
-		
+		completion_reward = {
+
 			ARG_juan_peron = {
 				add_country_leader_role = {
 					country_leader = {
@@ -746,13 +746,13 @@ focus_tree = {
 						expire = "1965.1.1.1"
 						traits = { ARG_peronism_trait }
 					}
-				} 
+				}
 				promote_leader = yes
 			}
 			hidden_effect = {
 				retire_country_leader = yes
 				set_party_name = {
-			    ideology = neutrality 
+			    ideology = neutrality
 			    long_name = ARG_peronist_party_long
 			    name = ARG_peronist_party
 			}
@@ -783,7 +783,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ARG_eva_peron
 
@@ -810,7 +810,7 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 
 	focus = { #ALT HISTORICAL
 		id = ARG_maintain_neutrality
@@ -822,7 +822,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ARG_join_the_allies }
 		cost = 10
 		available = {
-		
+
 		}
 
 		ai_will_do = {
@@ -833,9 +833,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
 
-		completion_reward = { 
+		completion_reward = {
 			country_event = {
-				id = ARG_political_events.4  
+				id = ARG_political_events.4
 				hours = 1
 			}
 
@@ -865,7 +865,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 
-		completion_reward = { 
+		completion_reward = {
 			custom_effect_tooltip = ARG_modify_growing_nationalism_ns_intro
 			add_to_variable = { ARG_growing_nationalism_fascism_drift = 0.1 tooltip = fascism_drift_factor_tt }
 			add_to_variable = { ARG_growing_nationalism_recruitable_population_factor = 0.1 tooltip = recruitable_population_factor_tt}
@@ -891,10 +891,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
 
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 50
 			add_popularity = {
-				ideology = fascism 
+				ideology = fascism
 				popularity = 0.1
 			}
 			278 = {
@@ -925,7 +925,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_stability = 0.05
 
 			custom_effect_tooltip = ARG_ligas_patrioticas_tt
@@ -938,7 +938,7 @@ focus_tree = {
 				}
 
 			division_template = {
-					name = "Ligas Patrióticas"		
+					name = "Ligas Patrióticas"
 					#division_names_group = SWE_BS_01
 					is_locked = no
 					#force_allow_recruiting = yes
@@ -954,7 +954,7 @@ focus_tree = {
 					override_model = ARG_motorized_alt_0_entity
 				}
 
-				278 = { 
+				278 = {
 				create_unit = {
 				    division = "name = \"Primera Liga Patriótica\" division_template = \"Ligas Patrióticas\" start_experience_factor = 0.8 start_equipment_factor = 1"
 				    owner = ROOT
@@ -997,7 +997,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		completion_reward = { 
+		completion_reward = {
 			add_research_slot = 1
 		}
 	}
@@ -1023,13 +1023,13 @@ focus_tree = {
 
 		search_filters = {  }
 
-		completion_reward = { 
+		completion_reward = {
 			set_cosmetic_tag = ARG_fourth_reich_fascism
-			
+
 			hidden_effect = {
 				remove_dynamic_modifier = {
-  				modifier = ARG_growing_nationalism_modifier
-  				}
+				modifier = ARG_growing_nationalism_modifier
+				}
 			}
 		}
 	}
@@ -1051,11 +1051,11 @@ focus_tree = {
 
 		search_filters = {  }
 
-		completion_reward = { 
+		completion_reward = {
 
 			custom_effect_tooltip = ARG_hitler_2_tt
 			custom_effect_tooltip = ARG_hitler_2_core_tt
-			
+
 			hidden_effect = {
 			every_country = {
 				limit = {
@@ -1070,7 +1070,7 @@ focus_tree = {
 					create_wargoal = {
 						type = annex_everything
 						target = PREV
-					} 
+					}
 				}
 			}
 			every_state = {
@@ -1101,25 +1101,25 @@ focus_tree = {
 
 		search_filters = {  }
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = {
-					has_tech = atomic_research 
+					has_tech = atomic_research
 					has_tech = experimental_rockets
 				}
 
 				add_breakthrough_points = {
 					specialization = specialization_nuclear
-			    	value = 1
+					value = 1
 				}
 				add_breakthrough_points = {
 					specialization = specialization_air
-			    	value = 1
+					value = 1
 				}
 			}
 			else_if = {
 				limit = {
-					has_tech = atomic_research 
+					has_tech = atomic_research
 					NOT = { has_tech = experimental_rockets }
 				}
 				add_tech_bonus = {
@@ -1130,7 +1130,7 @@ focus_tree = {
 				}
 				add_breakthrough_progress = {
 					specialization = specialization_nuclear
-			    	value = 0.5
+					value = 0.5
 				}
 			}
 			else_if = {
@@ -1146,7 +1146,7 @@ focus_tree = {
 				}
 				add_breakthrough_progress = {
 					specialization = specialization_air
-			    	value = 0.5
+					value = 0.5
 				}
 			}
 			ELSE = {
@@ -1178,7 +1178,7 @@ focus_tree = {
 
 		search_filters = {  }
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = { has_dlc = "Man the Guns" }
 				hidden_effect = {
@@ -1232,7 +1232,7 @@ create_equipment_variant = {
 				}
 			}
 			ELSE = {
-			      	create_equipment_variant = {
+					create_equipment_variant = {
 					name = "Deutschland Class"
 					type = heavy_cruiser_1
 					parent_version = 0
@@ -1280,7 +1280,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 50
 			add_stability = -0.05
 			add_relation_modifier = {
@@ -1289,7 +1289,7 @@ create_equipment_variant = {
 			}
 			add_relation_rule_override = {
 				target = SPA
-				can_send_volunteers = yes 
+				can_send_volunteers = yes
 			}
 		}
 	}
@@ -1308,10 +1308,10 @@ create_equipment_variant = {
 				has_capitulated = no
 				owns_state = 297
 			}
-			
+
 			custom_trigger_tooltip = {
 					tooltip = ARG_argentinian_volunteers_in_spain_flag
-					has_country_flag = ARG_argentinian_volunteers_in_spain 
+					has_country_flag = ARG_argentinian_volunteers_in_spain
 			}
 		}
 
@@ -1375,7 +1375,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_ARMY_XP  FOCUS_FILTER_MANPOWER }
 
-		completion_reward = { 
+		completion_reward = {
 			add_manpower = 25000
 
 			army_experience = 75
@@ -1416,7 +1416,7 @@ create_equipment_variant = {
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 
 		278 = {
 				add_extra_state_shared_building_slots = 1
@@ -1520,12 +1520,12 @@ create_equipment_variant = {
 
 		search_filters = {  FOCUS_FILTER_MANPOWER  FOCUS_FILTER_STABILITY  FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 
-		completion_reward = { 
+		completion_reward = {
 
-  			add_ideas = ARG_military_government_idea
-  			remove_dynamic_modifier = {
-  				modifier = ARG_growing_nationalism_modifier
-  			}
+			add_ideas = ARG_military_government_idea
+			remove_dynamic_modifier = {
+				modifier = ARG_growing_nationalism_modifier
+			}
 
 			set_party_name = {
 				ideology = fascism
@@ -1541,12 +1541,12 @@ create_equipment_variant = {
 
 			set_politics = {
 				ruling_party = fascism
-				last_election = "1934.3.26" 
+				last_election = "1934.3.26"
 				election_frequency = 48
 				elections_allowed = no
 			}
-				
-				ARG_pedro_pablo_ramirez = { 
+
+				ARG_pedro_pablo_ramirez = {
 					add_country_leader_role = {
 						country_leader = {
 							ideology = gen_nazism
@@ -1556,7 +1556,7 @@ create_equipment_variant = {
 							}
 						}
 					}
-					promote_leader = yes 
+					promote_leader = yes
 						set_portraits = {
 						army = { large ="GFX_portrait_ARG_pedro_pablo_ramirez_fascist"}
 						civilian = { large ="GFX_portrait_ARG_pedro_pablo_ramirez_fascist" 	}
@@ -1597,11 +1597,11 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_STABILITY  FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_spirit_of_the_conquistadors_idea
 			remove_dynamic_modifier = {
-  				modifier = ARG_growing_nationalism_modifier
-  			}
+				modifier = ARG_growing_nationalism_modifier
+			}
 
 			custom_effect_tooltip = CHL_skip_one_line_tt
 
@@ -1636,11 +1636,11 @@ create_equipment_variant = {
 		ai_will_do = {
 			factor = 20
 		}
-		
+
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1674,7 +1674,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 
-		completion_reward = { 
+		completion_reward = {
 			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1705,11 +1705,11 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
 				idea = ARG_war_division_idea
 				days = 365
-			}	 
+			}
 		}
 	}
 
@@ -1737,13 +1737,13 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 
-		completion_reward = { 
+		completion_reward = {
 
 			IF = {
 				limit = {
 					is_in_faction = yes
 				}
-				leave_faction = yes 
+				leave_faction = yes
 			}
 
 			add_political_power = 50
@@ -1752,10 +1752,10 @@ create_equipment_variant = {
 			add_ideas = ARG_argentina_first_idea
 
 			create_faction_from_template = {
-				template = faction_template_generic_dominance 
+				template = faction_template_generic_dominance
 				name = ARG_nationalist_faction
 				icon = GFX_faction_logo_generic_fascist
-			}	
+			}
 
 			hidden_effect = {
 				set_rule = { can_send_volunteers = yes }
@@ -1828,7 +1828,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 100
 			add_ideas = ARG_our_own_path_idea
 		}
@@ -1856,12 +1856,12 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
-		completion_reward = { 
+		completion_reward = {
 
 		hidden_effect = {
 			every_other_country = {
 				limit = {
-					any_controlled_state = { 
+					any_controlled_state = {
 						OR = {
 							is_on_continent = north_america
 							is_on_continent = south_america
@@ -1890,11 +1890,11 @@ create_equipment_variant = {
 		relative_position_id = ARG_dominate_the_south
 		cost = 5
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		ai_will_do = {
@@ -1905,12 +1905,12 @@ create_equipment_variant = {
 
 		completion_reward = {
 
-			build_railway = { #Formosa to Tucumán 
+			build_railway = { #Formosa to Tucumán
 				path = { 12943 10986 10965 8216 }
 			}
 			build_railway = { # Santa Cruz to Rawson
 				path = { 12946 12952 13305 10953 }
-			} 
+			}
 
 			 954 = {
 				add_building_construction = {
@@ -1929,7 +1929,7 @@ create_equipment_variant = {
 					instant_build = yes
 				}
 			}
-			
+
 		}
 	}
 
@@ -1967,7 +1967,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		completion_reward = { 
+		completion_reward = {
 				create_wargoal = {
 					type = annex_everything
 					target = PAR
@@ -2007,7 +2007,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 		hidden_effect = {
 			PAR = {
@@ -2041,7 +2041,7 @@ create_equipment_variant = {
 					has_war_with = ROOT
 					is_subject_of = ROOT
 					is_in_faction_with = ROOT
-				} 
+				}
 			}
 		}
 
@@ -2062,7 +2062,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 		hidden_effect = {
 			URG = {
@@ -2108,7 +2108,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		completion_reward = { 
+		completion_reward = {
 			create_wargoal = {
 					type = annex_everything
 					target = URG
@@ -2134,7 +2134,7 @@ create_equipment_variant = {
 					has_war_with = ROOT
 					is_subject_of = ROOT
 					is_in_faction_with = ROOT
-				} 
+				}
 			}
 			954 = {
 				is_owned_and_controlled_by = ARG
@@ -2161,7 +2161,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 			CHL = {
 				country_event = {
@@ -2190,7 +2190,7 @@ create_equipment_variant = {
 					has_war_with = ROOT
 					is_subject_of = ROOT
 					is_in_faction_with = ROOT
-				} 
+				}
 			}
 		}
 
@@ -2211,7 +2211,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 			hidden_effect = {
 				CHL = {
@@ -2242,7 +2242,7 @@ create_equipment_variant = {
 				NOT = {
 					is_subject_of = ROOT
 					is_in_faction_with = ROOT
-				} 
+				}
 			}
 		}
 
@@ -2262,7 +2262,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		completion_reward = { 
+		completion_reward = {
 			create_wargoal = {
 					type = annex_everything
 					target = BRA
@@ -2292,10 +2292,10 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 			custom_effect_tooltip = ARG_south_american_unity_decisions_tt
-		
+
 			IF = {
 				limit = {
 					has_completed_focus = ARG_union_nacional_fascista
@@ -2331,17 +2331,17 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
 					has_intelligence_agency = no
 				}
-				create_intelligence_agency = { 
+				create_intelligence_agency = {
 					name = "S.I."
 					icon = GFX_intelligence_agency_logo_ARG_intelligence
 				}
-				upgrade_intelligence_agency = upgrade_economy_civilian 
+				upgrade_intelligence_agency = upgrade_economy_civilian
 				add_ideas = ARG_integrate_operation_bolivar_idea_lar
 			}
 			ELSE = {
@@ -2374,8 +2374,8 @@ create_equipment_variant = {
 					id = ARG_political_events.31
 					hours = 1
 				}
-			} 
-		
+			}
+
 			custom_effect_tooltip = ARG_osmar_hellmuth_event_tt
 
 			}
@@ -2403,7 +2403,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
-		completion_reward = { 
+		completion_reward = {
 			USA = {
 				add_opinion_modifier = {
 				target = ROOT
@@ -2442,7 +2442,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			512 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -2489,9 +2489,9 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
-			random_army_leader = {		
+			random_army_leader = {
 				limit = {
 					NOT = {
 						has_trait = ranger
@@ -2501,22 +2501,22 @@ create_equipment_variant = {
 					trait = ranger
 				}
 			}
-			random_army_leader = {	
+			random_army_leader = {
 				limit = {
 					NOT = {
 						has_trait = ranger
 					}
-				}	
+				}
 				add_trait = {
 					trait = ranger
 				}
 			}
-			random_army_leader = {	
+			random_army_leader = {
 				limit = {
 					NOT = {
 						has_trait = ranger
 					}
-				}	
+				}
 				add_trait = {
 					trait = ranger
 				}
@@ -2651,10 +2651,10 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		completion_reward = { 
+		completion_reward = {
 
 		custom_effect_tooltip = ARG_island_negotiations_decisions_tt
-		
+
 			299 = {
 				add_core_of = ROOT
 			}
@@ -2677,7 +2677,7 @@ create_equipment_variant = {
 							}
 						}
 					}
-	
+
 					ROOT = {
 					create_wargoal = {
 						type = take_state_focus
@@ -2687,7 +2687,7 @@ create_equipment_variant = {
 					}
 				}
 			}
-		}		
+		}
 	}
 }
 
@@ -2726,11 +2726,11 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 120
 			swap_ideas = {
 				remove_idea = ARG_infamous_decade_idea
-  				add_idea = ARG_infamous_decade_3_idea 	
+				add_idea = ARG_infamous_decade_3_idea
 			}
 			if = {
 				limit = {
@@ -2763,7 +2763,7 @@ create_equipment_variant = {
 
 		completion_reward = {
 
-		custom_effect_tooltip = ARG_in_memory_of_yrigoyen_tt 
+		custom_effect_tooltip = ARG_in_memory_of_yrigoyen_tt
 
 		hidden_effect = {
 			set_politics = {
@@ -2802,7 +2802,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			remove_dynamic_modifier = {
 				modifier = ARG_political_corruption_modifier
 			}
@@ -2827,7 +2827,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 
 			278 = { #Buenos Aires
 				add_extra_state_shared_building_slots = 1
@@ -2866,7 +2866,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_stability = 0.02
 			random_core_state = {
 				limit = {
@@ -2903,7 +2903,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_popularity = {
 				ideology = communism
 				popularity = -0.05
@@ -2938,7 +2938,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_argentina_for_all_idea
 		}
 	}
@@ -2960,7 +2960,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_tech_bonus = {
 				name = ARG_education_electronics_bonus
 				bonus = 0.5
@@ -3001,7 +3001,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		completion_reward = { 
+		completion_reward = {
 			add_research_slot = 1
 		}
 	}
@@ -3023,7 +3023,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_regulated_salaries
 		}
 	}
@@ -3045,7 +3045,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_social_welfare_fund_ns
 
 			278 = {
@@ -3064,7 +3064,7 @@ create_equipment_variant = {
 		mutually_exclusive = { focus = ARG_seek_american_support focus = ARG_british_gaurantee }
 		cost = 5
 		available = {
-			
+
 		}
 
 		ai_will_do = {
@@ -3073,7 +3073,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 100
 			add_ideas = limited_exports
 			random_owned_controlled_state = {
@@ -3085,7 +3085,7 @@ create_equipment_variant = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-				}	
+				}
 			}
 		}
 	}
@@ -3099,7 +3099,7 @@ create_equipment_variant = {
 		relative_position_id = ARG_internal_focus
 		cost = 5
 		available = {
-			
+
 		}
 
 		ai_will_do = {
@@ -3108,9 +3108,9 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 
-		completion_reward = { 
-			add_country_leader_trait = { 
-				trait = ARG_father_of_argentine_democracy 
+		completion_reward = {
+			add_country_leader_trait = {
+				trait = ARG_father_of_argentine_democracy
 			}
 			remove_country_leader_trait = {
 				trait = ARG_harsh_democrat
@@ -3144,7 +3144,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_ideas = ARG_british_argentine_agreement
 
@@ -3184,7 +3184,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_political_power = 100
 
@@ -3230,18 +3230,18 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP }
 
-		completion_reward = { 
+		completion_reward = {
 			air_experience = 25
 			add_breakthrough_progress = {
 				specialization = specialization_air
 				value = 0.25
 			}
 			add_tech_bonus = {
-			 	name = ARG_royal_airforce_influence_bonus
-			 	bonus = 0.4 # was 0.5
-			 	uses = 3
-			 	category = air_equipment 
-			 } 
+				name = ARG_royal_airforce_influence_bonus
+				bonus = 0.4 # was 0.5
+				uses = 3
+				category = air_equipment
+			 }
 
 			 IF = {
 				limit = {
@@ -3251,18 +3251,18 @@ create_equipment_variant = {
 				add_equipment_subsidy = {
 					cic = 500
 					equipment_type = small_plane_airframe
-					seller_tags = { ENG } 
+					seller_tags = { ENG }
 				}
 				add_equipment_subsidy = {
 					cic = 500
 					equipment_type = small_plane_cas_airframe
-					seller_tags = { ENG } 
+					seller_tags = { ENG }
 				}
 
 				add_equipment_subsidy = {
 					cic = 200
 					equipment_type = medium_plane_airframe
-					seller_tags = { ENG } 
+					seller_tags = { ENG }
 				}
 			}
 
@@ -3273,12 +3273,12 @@ create_equipment_variant = {
 						has_dlc = "Arms Against Tyranny"
 					}
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = small_plane_airframe
 					amount = 200
 					producer = ENG
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = small_plane_cas_airframe
 					amount = 100
 					producer = ENG
@@ -3286,12 +3286,12 @@ create_equipment_variant = {
 			}
 
 			ELSE = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = fighter_equipment_1
 					amount = 200
 					producer = ENG
 				}
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = CAS_equipment_1
 					amount = 100
 					producer = ENG
@@ -3326,18 +3326,18 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
 
-		completion_reward = { 
+		completion_reward = {
 			navy_experience = 25
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.25
 			}
 			add_tech_bonus = {
-			 	name = ARG_royal_navy_influence_bonus
-			 	bonus = 0.4 # was 0.5
-			 	uses = 3
-			 	category = naval_equipment 
-			 } 
+				name = ARG_royal_navy_influence_bonus
+				bonus = 0.4 # was 0.5
+				uses = 3
+				category = naval_equipment
+			 }
 
 			 IF = {
 				limit = {
@@ -3346,11 +3346,11 @@ create_equipment_variant = {
 				add_equipment_subsidy = {
 					cic = 500
 					equipment_type = convoy #you know why I like ships? no subsidies for ships! No ship, only convoy!
-					seller_tags = { ENG } 
+					seller_tags = { ENG }
 				}
 			}
 			ELSE = {
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = convoy #you know why I like ships? no subsidies for ships! No ship, only convoy!
 					amount = 200
 					producer = ENG
@@ -3385,7 +3385,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_popularity = {
 				ideology = democratic
@@ -3425,7 +3425,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_us_army_training_idea
 			add_tech_bonus = {
 				name = ARG_us_army_training_bonus
@@ -3454,7 +3454,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			278 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -3509,7 +3509,7 @@ create_equipment_variant = {
 				country_event = {
 				id = ARG_political_events.90
 				hours = 1
-				} 
+				}
 			}
 		}
 	}
@@ -3527,8 +3527,8 @@ create_equipment_variant = {
 		available = {
 			any_country = {
 				is_major = yes
-				has_government = democratic 
-				is_faction_leader = yes 
+				has_government = democratic
+				is_faction_leader = yes
 			}
 			is_in_faction = no
 			is_subject = no
@@ -3546,13 +3546,13 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
-			
+		completion_reward = {
+
 			random_country = {
 				LIMIT = {
 					is_major = yes
-					has_government = democratic 
-					is_faction_leader = yes 
+					has_government = democratic
+					is_faction_leader = yes
 					OR ={
 						original_tag = ENG
 						original_tag = USA
@@ -3587,7 +3587,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_political_power = 50
 			add_war_support = 0.05
@@ -3627,7 +3627,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
 				idea = ARG_monroe_doctrine_idea
 				days = 730
@@ -3662,7 +3662,7 @@ create_equipment_variant = {
 				capital_scope = {
 					is_on_continent = south_america
 				}
-				
+
 				has_government = democratic
 				is_in_faction = no
 			}
@@ -3676,7 +3676,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			every_country = {
 				limit = {
 					NOT = {
@@ -3709,10 +3709,10 @@ create_equipment_variant = {
 						}
 					}
 				}
-				country_event = { 
+				country_event = {
 					id = ARG_political_events.100
 					days = 2
-				}	
+				}
 			}
 		}
 	}
@@ -3726,7 +3726,7 @@ create_equipment_variant = {
 		relative_position_id = ARG_south_american_alliance
 		cost = 5
 		available = {
-			
+
 		}
 
 		ai_will_do = {
@@ -3735,7 +3735,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			army_experience = 50
 			add_manpower = 20000
 		}
@@ -3750,7 +3750,7 @@ create_equipment_variant = {
 		relative_position_id = ARG_bolstering_the_army
 		cost = 5
 		available = {
-			
+
 		}
 
 		ai_will_do = {
@@ -3759,7 +3759,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			set_cosmetic_tag = ARG_independent_democracy_democratic
 
 			custom_effect_tooltip = ARG_the_second_argentine_republic_tt
@@ -3805,7 +3805,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
 			idea = ARG_envoy_to_london_idea
 			days = 730
@@ -3830,7 +3830,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
 				uses = 1
@@ -3877,7 +3877,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			every_other_country = {
 				limit = {
 					OR = {
@@ -3917,27 +3917,27 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
-			
+		completion_reward = {
+
 			299 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
 					level = 2
 					instant_build = yes
-				}	
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 4
 					instant_build = yes
 					province = 12960
-				}	
+				}
 				add_building_construction = {
 					type = naval_base
 					level = 2
 					instant_build = yes
 					province = 12960
-				}	
+				}
 			}
 
 			720 = {
@@ -3946,19 +3946,19 @@ create_equipment_variant = {
 					type = dockyard
 					level = 2
 					instant_build = yes
-				}	
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 4
 					instant_build = yes
 					province = 10995
-				}	
+				}
 				add_building_construction = {
 					type = naval_base
 					level = 2
 					instant_build = yes
 					province = 10995
-				}	
+				}
 			}
 		}
 	}
@@ -3980,7 +3980,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_raf_cooperation_idea
 		}
 	}
@@ -4070,8 +4070,8 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
-			
+		completion_reward = {
+
 			add_timed_idea = {
 			idea = ARG_american_allyship_idea
 			days = 730
@@ -4096,7 +4096,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_doctrine_cost_reduction = {
 			name = ARG_us_marine_program_doctrine
 			cost_reduction = 0.5
@@ -4123,18 +4123,18 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
 					has_intelligence_agency = no
 				}
-				create_intelligence_agency = { 
+				create_intelligence_agency = {
 					name = "S.I."
 					icon = GFX_intelligence_agency_logo_ARG_intelligence
 				}
-				upgrade_intelligence_agency = upgrade_passive_defense 
+				upgrade_intelligence_agency = upgrade_passive_defense
 			}
 			ELSE = {
 				add_ideas = ARG_counter_interlligence_program_idea
@@ -4165,7 +4165,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -4200,7 +4200,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			SOV = {
 				add_opinion_modifier = {
 				target = ROOT
@@ -4268,7 +4268,7 @@ create_equipment_variant = {
 					create_wargoal = {
 						type = puppet_wargoal_focus
 						target = PREV
-					} 
+					}
 				}
 			}
 		}
@@ -4310,10 +4310,10 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL}
 
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 120
 			add_popularity = {
-				ideology = communism 
+				ideology = communism
 				popularity = 0.05
 			}
 			add_stability = -0.05
@@ -4323,7 +4323,7 @@ create_equipment_variant = {
 			}
 			swap_ideas = {
 				remove_idea = ARG_infamous_decade_idea
-  				add_idea = ARG_infamous_decade_4_idea 	
+				add_idea = ARG_infamous_decade_4_idea
 			}
 			if = {
 				limit = {
@@ -4333,7 +4333,7 @@ create_equipment_variant = {
 					}
 				}
 				mark_focus_tree_layout_dirty = yes
-			} 
+			}
 		}
 	}
 
@@ -4354,14 +4354,14 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 
-		completion_reward = { 
+		completion_reward = {
 
 		custom_effect_tooltip = ARG_invite_ghioldi_back_tt
-			
+
 			add_popularity = {
-				ideology = communism 
+				ideology = communism
 				popularity = 0.05
-			}	
+			}
 
 		hidden_effect = {
 			set_country_flag = ARG_ghioldi_returns
@@ -4397,7 +4397,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 50
 			add_stability = -0.05
 			add_relation_modifier = {
@@ -4406,7 +4406,7 @@ create_equipment_variant = {
 			}
 			add_relation_rule_override = {
 				target = SPD
-				can_send_volunteers = yes 
+				can_send_volunteers = yes
 			}
 		}
 	}
@@ -4428,9 +4428,9 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_popularity = {
-				ideology = communism 
+				ideology = communism
 				popularity = 0.1
 			}
 
@@ -4471,7 +4471,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			custom_effect_tooltip = ARG_reach_out_to_the_soviet_union_tt
 		}
 	}
@@ -4493,7 +4493,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
 				idea = ARG_united_workers_idea
 				days = 365
@@ -4519,7 +4519,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 
 			custom_effect_tooltip = ARG_communist_civil_war_tt
 
@@ -4528,39 +4528,39 @@ create_equipment_variant = {
 					ideology = neutrality
 					size = 0.1
 					army_ratio = 0.4
-		    		navy_ratio = 0.4
-		    		air_ratio = 0.4
-		    		states = all
-		    		states_filter = {
-		    			is_controlled_by = ARG
-		    			NOT = {
-		    				state = 960
-		    				state = 956
-		    				state = 958
-		    				state = 511
-		    				state = 512
-		    				state = 955
-		    				state = 954
-		    				state = 953
-		    			}
-		    		}
-		
-		    		keep_all_characters = yes
-		    		PREV = {  # Original country
-	            		ARG_agustin_pedro_justo = { # Character
-	            		    set_nationality = PREV.PREV
+					navy_ratio = 0.4
+					air_ratio = 0.4
+					states = all
+					states_filter = {
+						is_controlled_by = ARG
+						NOT = {
+							state = 960
+							state = 956
+							state = 958
+							state = 511
+							state = 512
+							state = 955
+							state = 954
+							state = 953
+						}
+					}
+
+					keep_all_characters = yes
+					PREV = {  # Original country
+						ARG_agustin_pedro_justo = { # Character
+							set_nationality = PREV.PREV
 							promote_leader = yes
-	            		    # Transfers to breakaway
-	            		}
-		
-	            		PREV = {
-	            			retire_country_leader = yes
-	            		}
-	            	}
-		    	}
-	
-				ARG_rodolfo_ghioldi = { 
-					promote_character = yes 
+							# Transfers to breakaway
+						}
+
+						PREV = {
+							retire_country_leader = yes
+						}
+					}
+				}
+
+				ARG_rodolfo_ghioldi = {
+					promote_character = yes
 				}
 
 				set_cosmetic_tag = ARG_marxism
@@ -4571,7 +4571,7 @@ create_equipment_variant = {
 					}
 
 					division_template = {
-						name = "Vanguardia Socialista"		
+						name = "Vanguardia Socialista"
 						#division_names_group = SWE_BS_01
 						is_locked = no
 						template_counter = 69
@@ -4584,7 +4584,7 @@ create_equipment_variant = {
 						#division_cap = 0
 					}
 				hidden_effect = {
-					955 = { 
+					955 = {
 				create_unit = {
 				    division = "name = \"Primera Vanguardia Socialista\" division_template = \"Vanguardia Socialista\" start_experience_factor = 0.8 start_equipment_factor = 1"
 				    owner = ROOT
@@ -4608,7 +4608,7 @@ create_equipment_variant = {
 			}
 		}
 	}
-				
+
 		news_event = { id = ARG_news_events.3 hours = 1 }
 	}
 }
@@ -4634,10 +4634,10 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 
-		completion_reward = { 
+		completion_reward = {
 
-			ARG_fanny_edelman = { 
-				promote_character = yes 
+			ARG_fanny_edelman = {
+				promote_character = yes
 			}
 
 			create_faction_from_template = {
@@ -4674,7 +4674,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_women_in_industry_idea
 		}
 	}
@@ -4696,7 +4696,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_agrarian_reforms_idea
 		}
 	}
@@ -4718,7 +4718,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_socialist_volunteers_idea
 
 			set_rule = { can_send_volunteers = yes }
@@ -4742,7 +4742,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 		custom_effect_tooltip = ARG_the_buenos_aires_conference_1_tt
 		custom_effect_tooltip = CHL_skip_one_line_tt
@@ -4776,7 +4776,7 @@ create_equipment_variant = {
 			NOT = {
 				any_other_country = {
 					is_in_faction_with = SOU
-					has_war_with = ARG	
+					has_war_with = ARG
 				}
 			}
 			SOU = {
@@ -4791,13 +4791,13 @@ create_equipment_variant = {
 		}
 
 		bypass = {
-			AND = { 
+			AND = {
 				is_in_faction_with = SOU
 				SOU = {
 					is_faction_leader = yes
 					has_government = communism
 				}
-			} 
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -4806,7 +4806,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			SOU = {
 				add_opinion_modifier = {
 				target = ROOT
@@ -4844,7 +4844,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			278 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -4882,13 +4882,13 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
 					has_intelligence_agency = no
 				}
-				create_intelligence_agency = { 
+				create_intelligence_agency = {
 					name = "S.I."
 					icon = GFX_intelligence_agency_logo_ARG_intelligence
 				}
@@ -4918,11 +4918,11 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = {
 						has_dlc = "Arms Against Tyranny"
-				}	
+				}
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = SOV_rubin_design_bureau_organization
 				show_mio_tooltip = SOV_mig_design_bureau_organization
@@ -4964,11 +4964,11 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 
-		completion_reward = { 
-			
+		completion_reward = {
+
 			add_popularity = {
 				popularity = 0.2
-				ideology = communism 
+				ideology = communism
 			}
 
 			add_manpower = 50000
@@ -4976,8 +4976,8 @@ create_equipment_variant = {
 			add_political_power = 100
 
 			hidden_effect = {
-				
-				ARG_rodolfo_ghioldi = {  
+
+				ARG_rodolfo_ghioldi = {
 						set_portraits = {
 						army = { large ="GFX_portrait_ARG_rodolfo_ghioldi_soviet"}
 						civilian = { large ="GFX_portrait_ARG_rodolfo_ghioldi_soviet" 	}
@@ -5004,7 +5004,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_stability = 0.1
 			add_ideas = ARG_state_unions_idea
 		}
@@ -5027,7 +5027,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -5037,7 +5037,7 @@ create_equipment_variant = {
 					type = industrial_complex
 					level = 3
 					instant_build = yes
-				}	
+				}
 			}
 		}
 	}
@@ -5059,7 +5059,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_FJC_empowered_idea
 		}
 	}
@@ -5082,7 +5082,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_state_atheism_idea
 		}
 	}
@@ -5105,7 +5105,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_liberation_theology_idea
 		}
 	}
@@ -5127,7 +5127,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH}
 
-		completion_reward = { 
+		completion_reward = {
 			add_research_slot = 1
 		}
 	}
@@ -5174,7 +5174,7 @@ create_equipment_variant = {
 
 		custom_effect_tooltip = ARG_more_communism_in_south_america_tt
 
-		hidden_effect = { 
+		hidden_effect = {
 			every_country = {
 				limit = {
 					capital_scope = {
@@ -5193,7 +5193,7 @@ create_equipment_variant = {
 					create_wargoal = {
 						type = annex_everything
 						target = PREV
-					} 
+					}
 				}
 			}
 		}
@@ -5217,7 +5217,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
 
-		completion_reward = { 
+		completion_reward = {
 			custom_effect_tooltip = ARG_south_american_unity_decisions_tt
 			add_ideas = ARG_socialist_unification_idea
 		}
@@ -5252,7 +5252,7 @@ create_equipment_variant = {
 				capital_scope = {
 					is_on_continent = south_america
 				}
-				
+
 				has_government = communism
 				is_in_faction = no
 			}
@@ -5267,7 +5267,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 		custom_effect_tooltip = ARG_unify_the_continent_tt
 
@@ -5304,12 +5304,12 @@ create_equipment_variant = {
 						}
 					}
 				}
-				country_event = { 
+				country_event = {
 					id = ARG_political_events.60
 					days = 2
-				}	
+				}
 			}
-		}	
+		}
 	}
 }
 
@@ -5317,7 +5317,7 @@ create_equipment_variant = {
 		id = ARG_a_red_south_america
 		icon = GFX_focus_BRA_create_faction
 		prerequisite = { focus = ARG_unify_south_america focus = ARG_conquer_south_america }
-		x = 2	
+		x = 2
 		y = 1
 		relative_position_id = ARG_conquer_south_america
 		cost = 10
@@ -5330,7 +5330,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 
-		completion_reward = { 
+		completion_reward = {
 
 			set_cosmetic_tag = ARG_independent_socialist_communism
 			add_ideas = ARG_eliminate_american_imperialism_idea
@@ -5363,19 +5363,19 @@ create_equipment_variant = {
 #		bypass = {
 #			USA = {
 #				has_government = communism
-#			} 
+#			}
 #		}
 #
 #		search_filters = { FOCUS_FILTER_ANNEXATION #FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT #FOCUS_FILTER_POLITICAL}
 #
-#		completion_reward = { 
+#		completion_reward = {
 #			create_wargoal = {
 #			type = annex_everything
 #			target = USA
 #		}
 #
 #		add_ideas = ARG_eliminate_american_imperialism_idea
-#		
+#
 #	}
 #}
 
@@ -5413,7 +5413,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			512 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -5466,7 +5466,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_free_association_idea
 		}
 	}
@@ -5488,16 +5488,16 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
 
-		completion_reward = { 
+		completion_reward = {
 			every_state = {
 				limit = {
 					is_on_continent = south_america
-					
+
 					OR = {
 						has_resistance = yes
 						owner = { is_subject = yes }
 					}
-					
+
 					controller = { NOT = { original_tag = ROOT } }
 				}
 				controller = {
@@ -5536,7 +5536,7 @@ create_equipment_variant = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
 				}
-				has_completed_focus = ARG_the_clean_election 
+				has_completed_focus = ARG_the_clean_election
 			}
 		}
 
@@ -5548,7 +5548,7 @@ create_equipment_variant = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
 				}
-				has_completed_focus = ARG_a_call_to_reform 
+				has_completed_focus = ARG_a_call_to_reform
 			}
 		}
 
@@ -5558,7 +5558,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			custom_effect_tooltip = available_industrial_concern
 				show_ideas_tooltip = ARG_banco_central_de_la_republica_argentina_idea
 		}
@@ -5581,7 +5581,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			custom_effect_tooltip = ARG_international_loan_decisions_tt
 		}
 	}
@@ -5603,7 +5603,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 
 			random_owned_controlled_state = {
 				limit = {
@@ -5614,7 +5614,7 @@ create_equipment_variant = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-				}	
+				}
 			}
 
 			add_tech_bonus = {
@@ -5643,7 +5643,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		completion_reward = { 
+		completion_reward = {
 			add_tech_bonus = {
 			name = ARG_tech_initiative_bonus
 			bonus = 0.5
@@ -5670,7 +5670,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			random_core_state = {
 			limit = {
 				free_building_slots = {
@@ -5706,10 +5706,10 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
-    			idea = ARG_economic_reactivation_idea
-    			days = 365
+				idea = ARG_economic_reactivation_idea
+				days = 365
 			}
 		}
 	}
@@ -5729,9 +5729,9 @@ create_equipment_variant = {
 			factor = 10
 		}
 
-		search_filters = { } 
+		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 			set_country_flag = JUNO_promote_immigration_flag
 			custom_effect_tooltip = BRA_promote_immigration_to_brazil_tt
 		}
@@ -5754,7 +5754,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			random_core_state = {
 			limit = {
 				free_building_slots = {
@@ -5773,8 +5773,8 @@ create_equipment_variant = {
 			}
 
 			add_timed_idea = {
-    			idea = ARG_civilian_economy_boost_idea
-    			days = 365
+				idea = ARG_civilian_economy_boost_idea
+				days = 365
 			}
 		}
 	}
@@ -5799,7 +5799,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_argentine_metropole_idea
 		}
 	}
@@ -5821,10 +5821,10 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
-    			idea = ARG_invest_in_roads_idea
-    			days = 365
+				idea = ARG_invest_in_roads_idea
+				days = 365
 			}
 		}
 	}
@@ -5846,10 +5846,10 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
-    			idea = ARG_invest_in_railways_idea
-    			days = 365
+				idea = ARG_invest_in_railways_idea
+				days = 365
 			}
 
 			custom_effect_tooltip = CHL_skip_one_line_tt
@@ -5879,13 +5879,13 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 			958 = {
 				add_resource = {
 					type = steel
 					amount = 8
-				}	
+				}
 			}
 
 			IF = {
@@ -5897,9 +5897,9 @@ create_equipment_variant = {
 				add_timed_idea = {
 					idea = ARG_resource_extration_focus
 					days = 365
-				}	
+				}
 			}
-			
+
 		}
 	}
 
@@ -5923,13 +5923,13 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 			959 = {
 				add_resource = {
 					type = aluminium
 					amount = 8
-				}	
+				}
 			}
 
 			IF = {
@@ -5941,7 +5941,7 @@ create_equipment_variant = {
 				add_timed_idea = {
 					idea = ARG_resource_extration_focus
 					days = 365
-				}	
+				}
 			}
 
 		}
@@ -5964,7 +5964,7 @@ create_equipment_variant = {
 
 		search_filters = { }
 
-		completion_reward = { 
+		completion_reward = {
 
 			custom_effect_tooltip = ARG_yacimientos_petroliferos_fiscales_tt
 
@@ -6002,7 +6002,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 
 			278 = {
 				add_extra_state_shared_building_slots = 1
@@ -6056,7 +6056,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			IF = {
 				limit = {
 					512 = {
@@ -6128,7 +6128,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			278 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -6166,7 +6166,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = ARG_argentine_beef_idea
 		}
 	}
@@ -6191,15 +6191,15 @@ create_equipment_variant = {
 
 		mutually_exclusive = {
 			focus = ARG_a_new_trading_partner
-		} 
+		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 			swap_ideas = {
-  				remove_idea = ARG_roca_runciman_treaty_idea
-  				add_idea = ARG_eden_malbran_treaty_idea 				
-  			}
+				remove_idea = ARG_roca_runciman_treaty_idea
+				add_idea = ARG_eden_malbran_treaty_idea
+			}
 		}
 	}
 
@@ -6226,18 +6226,18 @@ create_equipment_variant = {
 
 		mutually_exclusive = {
 			focus = ARG_revisit_the_roca_runciman_treaty
-		} 
+		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = { 
+		completion_reward = {
 
 			swap_ideas = {
-  				remove_idea = ARG_roca_runciman_treaty_idea
-  				add_idea = ARG_roca_runciman_new_partner_idea 				
-  			}
+				remove_idea = ARG_roca_runciman_treaty_idea
+				add_idea = ARG_roca_runciman_new_partner_idea
+			}
 
-  			custom_effect_tooltip = CHL_skip_one_line_tt 
+			custom_effect_tooltip = CHL_skip_one_line_tt
 
 			random_country = {
 				limit = {
@@ -6245,8 +6245,8 @@ create_equipment_variant = {
 					is_in_faction_with = ROOT
 				}
 				add_ideas = ARG_argentine_beef_trade_idea
-			}				
-  			
+			}
+
 		}
 	}
 
@@ -6267,7 +6267,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		completion_reward = { 
+		completion_reward = {
 			add_tech_bonus = {
 			name = ARG_tech_initiative_bonus
 			bonus = 0.5
@@ -6294,7 +6294,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_ideas = ARG_construction_guilds_idea
 
@@ -6326,7 +6326,7 @@ create_equipment_variant = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_RESEARCH}
 
-		completion_reward = { 
+		completion_reward = {
 
 			add_research_slot = 1
 
