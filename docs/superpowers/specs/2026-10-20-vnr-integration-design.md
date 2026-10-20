@@ -14,6 +14,16 @@ Import VNR naval equipment, modules, technology, AI, decisions, events, graphics
 
 Keep unrelated Northwind systems intact. Record source version and intentional deviations so later Workshop updates cannot silently replace the embedded implementation.
 
+## Northwind naming and coding structure
+
+The user requires the integration to follow Project Northwind's file naming and coding structure so the embedded naval system is maintained as part of one project. Use `PN_` prefixes for new and imported integration-owned filenames, with descriptive names grouped by responsibility in the existing HOI4 directory structure. Examples include `common/scripted_effects/PN_naval_starting_variants.txt`, `common/on_actions/PN_naval_startup.txt`, `events/PN_naval_rework.txt`, and `localisation/english/PN_naval_l_english.yml`. Follow the neighbouring Northwind files for indentation, comments, organisation, encoding and localisation conventions; retain required language suffixes and engine formats.
+
+Use Northwind-style identifiers for newly authored effects, triggers, flags, event namespaces and other integration code, following existing conventions in the relevant directory. Do not maintain an independent VNR-branded code organisation inside Northwind. Preserve source attribution and document provenance in the integration record.
+
+Renaming must be reference-aware: update affected `load_oob`/`set_naval_oob` names, event references, script calls, GUI bindings, graphics paths and any other filename or identifier references together. Existing VNR equipment, technology, module and graphics identifiers may remain where preserving them avoids breaking engine or inherited-content references; their preservation must be intentional and recorded, rather than an incomplete rename.
+
+Exact-name base-game overrides and suppression files are exceptions to the `PN_` filename rule when HOI4 requires the original path to replace a vanilla file. Keep those paths and record each exception with its reason; do not rename them into additional independently loaded definitions. Preserve engine-required filenames and existing Northwind files whose identity is required for loading. Do not rename unrelated Northwind files as part of this migration.
+
 ## Fleet and design conversion
 
 Northwind owns custom naval OOBs for GRE, LAT, SOV, SWE, TUR and UKR. Preserve every ship's name, country owner, class name, fleet and task-force membership, port/location, and pride designation. Preserve ship counts and existing production progress where specified. Audit other country histories and embedded naval sections in mixed OOBs as well; the six filenames are an initial inventory, not a scope limit.
@@ -39,6 +49,8 @@ VNR advertises 1936 support. Inspect the starts Northwind actually exposes. Ever
 Establish a baseline before modifications, including available game logs and source inventories. Add a repeatable validator for the migration's meaningful invariants: balanced script structure, resolvable hull/module/technology and OOB references, compatible module slots, matching OOB class names and owners, preserved Northwind ship inventory, and absence of duplicate startup loading. Distinguish intentional legacy definitions from active vanilla references.
 
 Check imported graphics paths and localisation keys, descriptor conflicts, and unresolved external-mod references. Compare detected issues against the baseline and report inherited VNR problems separately from newly introduced problems; fix inherited problems that prevent the integration functioning.
+
+Validate the naming convention against an import manifest: integration-owned files must use `PN_` filenames unless listed as required-path exceptions. Verify references after renames and check that relocated overrides do not leave duplicate definitions or restore suppressed vanilla content.
 
 Run an actual fresh game with Northwind enabled where the local runtime permits. Inspect new error logs, verify custom fleets and the designer, advance time to exercise startup/AI behavior, and check save/reload initialization. Static validation is necessary but cannot establish runtime correctness. If runtime validation is unavailable, report the exact unverified checks and do not claim an error-free or perfect port.
 
