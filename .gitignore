@@ -6,3 +6,8 @@ descriptor.mod
 descriptor.mod
 
 .codegpt
+
+# Local naval validation scratch and Python bytecode.
+/.superpowers/
+__pycache__/
+*.pyc

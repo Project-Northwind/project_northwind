@@ -1,0 +1,2967 @@
+## Main and secondary guns/missiles used on all types of ships
+
+equipment_modules = {
+#####################
+##  LIGHT BATTERY  ##
+#####################
+    ship_light_battery_1 = {
+		abbreviation = "saa"
+		category = ship_light_battery
+		gui_category = ship_light_battery_all
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 0.5
+			build_cost_ic = 30	
+		}
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+		add_average_stats = {
+			lg_armor_piercing = 1
+		}
+		dismantle_cost_ic = 2
+
+		critical_parts = { damaged_secondaries }
+		manpower = 7
+	}
+
+	ship_light_battery_2 = {
+		abbreviation = "sab"
+		category = ship_light_battery
+		gui_category = ship_light_battery_all
+		parent = ship_light_battery_1
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 1
+			build_cost_ic = 40
+			
+		}
+		multiply_stats = {
+			naval_speed = -0.013
+		}
+		add_average_stats = {
+			lg_armor_piercing = 3
+		}
+		dismantle_cost_ic = 4
+		
+		critical_parts = { damaged_secondaries }
+		manpower = 7
+	}
+
+	ship_light_battery_3 = {
+		abbreviation = "sac"
+		category = ship_light_battery
+		gui_category = ship_light_battery_all
+		parent = ship_light_battery_2
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 1.5
+			build_cost_ic = 50	
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 5
+		}
+		multiply_stats = {
+			naval_speed = -0.015
+		}
+		dismantle_cost_ic = 6
+		
+		critical_parts = { damaged_secondaries }
+		manpower = 8
+	}
+
+	ship_light_battery_4 = {
+		abbreviation = "sad"
+		category = ship_light_battery
+		gui_category = ship_light_battery_all
+		parent = ship_light_battery_3
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 2
+			build_cost_ic = 60
+		}
+		multiply_stats = {
+			naval_speed = -0.018
+		}
+		add_average_stats = {
+			lg_armor_piercing = 7
+		}
+		dismantle_cost_ic = 8
+		
+		critical_parts = { damaged_secondaries }
+		manpower = 8
+	}
+	
+	ship_light_battery_1_double = {
+		abbreviation = "saad"
+		category = ship_light_battery_double
+		gui_category = ship_light_battery_all
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 1
+			build_cost_ic = 45	
+		}
+		multiply_stats = {
+			naval_speed = -0.013
+		}
+		add_average_stats = {
+			lg_armor_piercing = 1
+		}
+		dismantle_cost_ic = 4
+
+		critical_parts = { damaged_secondaries }
+		manpower = 9
+	}
+
+	ship_light_battery_2_double = {
+		abbreviation = "sabd"
+		category = ship_light_battery_double
+		gui_category = ship_light_battery_all
+		parent = ship_light_battery_1_double
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 1.5
+			build_cost_ic = 60
+			
+		}
+		multiply_stats = {
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			lg_armor_piercing = 3
+		}
+		dismantle_cost_ic = 8
+		
+		critical_parts = { damaged_secondaries }
+		manpower = 9
+	}
+
+	ship_light_battery_3_double = {
+		abbreviation = "sacd"
+		category = ship_light_battery_double
+		gui_category = ship_light_battery_all
+		parent = ship_light_battery_2_double
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 2.5
+			build_cost_ic = 80
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 5
+		}
+		multiply_stats = {
+			naval_speed = -0.018
+		}
+		dismantle_cost_ic = 12
+		critical_parts = { damaged_secondaries }
+		manpower = 11
+	}
+
+	ship_light_battery_4_double = {
+		abbreviation = "sadd"
+		category = ship_light_battery_double
+		gui_category = ship_light_battery_all
+		parent = ship_light_battery_3_double
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 3.5
+			build_cost_ic = 100
+		}
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			lg_armor_piercing = 7
+		}
+		dismantle_cost_ic = 16
+
+		critical_parts = { damaged_secondaries }
+		manpower = 11
+	}
+
+	dp_light_battery_1 = {
+		abbreviation = "sae"
+		category = dp_light_battery
+		gui_category = dp_light_battery_all
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 0.8
+			anti_air_attack = 0.5
+			build_cost_ic = 50
+		}
+		multiply_stats = {
+			naval_speed = -0.013
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 2.5
+		}
+		dismantle_cost_ic = 10
+		
+		critical_parts = { damaged_secondaries }
+		manpower = 9
+	}
+
+	dp_light_battery_2 = {
+		abbreviation = "saf"
+		category = dp_light_battery
+		gui_category = dp_light_battery_all
+		parent = dp_light_battery_1
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 1.3
+			anti_air_attack = 0.75
+			build_cost_ic = 85
+		}
+		multiply_stats = {
+			naval_speed = -0.015
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 3.5
+		}
+		dismantle_cost_ic = 20
+
+		critical_parts = { damaged_secondaries }
+		manpower = 9
+	}
+
+	dp_light_battery_3 = {
+		abbreviation = "sag"
+		category = dp_light_battery
+		gui_category = dp_light_battery_all
+		parent = dp_light_battery_2
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 2.2
+			anti_air_attack = 1
+			build_cost_ic = 100
+		}
+		multiply_stats = {
+			naval_speed = -0.018
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 4.5
+		}
+		dismantle_cost_ic = 30
+
+		critical_parts = { damaged_secondaries }
+		manpower = 11
+	}
+
+	dp_light_battery_4 = {
+		abbreviation = "sah"
+		category = dp_light_battery
+		gui_category = dp_light_battery_all
+		parent = dp_light_battery_3
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 3.2
+			anti_air_attack = 1.25
+			build_cost_ic = 130
+		}
+		multiply_stats = {
+			naval_speed = -0.022
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 6
+		}
+		dismantle_cost_ic = 40
+
+		critical_parts = { damaged_secondaries }
+		manpower = 11
+	}
+
+	dp_light_battery_5 = {
+		category = dp_light_battery
+		gui_category = dp_light_battery_all
+		parent = dp_light_battery_4
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 4
+			anti_air_attack = 1.75
+			naval_light_gun_hit_chance_factor = 0.02
+			build_cost_ic = 200
+		}
+		multiply_stats = {
+			naval_speed = -0.025
+		}
+		add_average_stats = {
+			lg_armor_piercing = 7.5
+		}
+		dismantle_cost_ic = 28
+		
+		critical_parts = { damaged_secondaries }
+		manpower = 5
+	}
+	
+	dp_light_battery_1_single = {
+		category = dp_light_battery_single
+		gui_category = dp_light_battery_all
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 0.4
+			anti_air_attack = 0.25
+			build_cost_ic = 40
+		}
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 2.5
+		}
+		dismantle_cost_ic = 5
+
+		critical_parts = { damaged_secondaries }
+		manpower = 7
+	}
+
+	dp_light_battery_2_single = {
+		category = dp_light_battery_single
+		gui_category = dp_light_battery_all
+		parent = dp_light_battery_1_single
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 0.8
+			anti_air_attack = 0.5
+			build_cost_ic = 65
+		}
+		multiply_stats = {
+			naval_speed = -0.013
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 3.5
+		}
+		dismantle_cost_ic = 10
+
+		critical_parts = { damaged_secondaries }
+		manpower = 7
+	}
+
+	dp_light_battery_3_single = {
+		category = dp_light_battery_single
+		gui_category = dp_light_battery_all
+		parent = dp_light_battery_2_single
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 1.3
+			anti_air_attack = 0.75
+			build_cost_ic = 80
+		}
+		multiply_stats = {
+			naval_speed = -0.015
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 4.5
+		}
+		dismantle_cost_ic = 15
+
+		critical_parts = { damaged_secondaries }
+		manpower = 9
+	}
+
+	dp_light_battery_4_single = {
+		category = dp_light_battery_single
+		gui_category = dp_light_battery_all
+		parent = dp_light_battery_3_single
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 1.8
+			anti_air_attack = 1
+			build_cost_ic = 110
+		}
+		multiply_stats = {
+			naval_speed = -0.018
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 6
+		}
+		dismantle_cost_ic = 20
+
+		critical_parts = { damaged_secondaries }
+		manpower = 9
+	}
+
+	dp_light_battery_5_single = {
+		category = dp_light_battery_single
+		gui_category = dp_light_battery_all
+		parent = dp_light_battery_4_single
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 2.8
+			anti_air_attack = 1.5
+			naval_light_gun_hit_chance_factor = 0.01
+			build_cost_ic = 160
+		}
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			lg_armor_piercing = 7.5
+		}
+		dismantle_cost_ic = 20
+		
+		critical_parts = { damaged_secondaries }
+		manpower = 4
+	}
+
+
+######################
+##  MEDIUM BATTERY  ##
+######################
+    ship_medium_battery_1 = {
+		abbreviation = "san"
+		category = ship_medium_battery
+		gui_category = ship_medium_battery_multi
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			hg_attack = 1
+			lg_attack = 3
+			build_cost_ic = 225
+			surface_visibility = 0.4
+			max_strength = 19.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.03
+			naval_range = 0.05
+		}
+		add_average_stats = {
+			hg_armor_piercing = 10
+			lg_armor_piercing = 9
+		}
+
+		dismantle_cost_ic = 180
+		critical_parts = { damaged_light_guns }
+		manpower = 30
+	}
+	ship_medium_battery_2 = {
+		abbreviation = "sao"
+		category = ship_medium_battery
+		gui_category = ship_medium_battery_multi
+		parent = ship_medium_battery_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 1.3
+			lg_attack = 4.5
+			build_cost_ic = 315
+			surface_visibility = 0.5
+			max_strength = 23.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.055
+			naval_speed = -0.04
+			naval_range = 0.06
+		}
+		add_average_stats = {
+			hg_armor_piercing = 15
+			lg_armor_piercing = 11
+		}
+		
+		dismantle_cost_ic = 210
+		critical_parts = { damaged_light_guns }
+		manpower = 30
+	}
+	ship_medium_battery_3 = {
+		abbreviation = "sap"
+		category = ship_medium_battery
+		gui_category = ship_medium_battery_multi
+		parent = ship_medium_battery_2
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 1.8
+			lg_attack = 6.5
+			build_cost_ic = 405
+			surface_visibility = 0.6
+			max_strength = 27.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.06
+			naval_speed = -0.05
+			naval_range = 0.07
+		}
+		add_average_stats = {
+			hg_armor_piercing = 20
+			lg_armor_piercing = 13
+		}
+		
+		dismantle_cost_ic = 240
+		critical_parts = { damaged_light_guns }
+		manpower = 32
+	}
+	ship_medium_battery_4 = {
+		abbreviation = "saq"
+		category = ship_medium_battery
+		gui_category = ship_medium_battery_multi
+		parent = ship_medium_battery_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 2.3
+			lg_attack = 8.5
+			build_cost_ic = 495
+			surface_visibility = 0.7
+			max_strength = 31
+		}
+		multiply_stats = {
+			build_cost_ic = 0.065
+			naval_speed = -0.06
+			naval_range = 0.08
+		}
+		add_average_stats = {
+			hg_armor_piercing = 25
+			lg_armor_piercing = 15
+		}
+
+		dismantle_cost_ic = 270
+		critical_parts = { damaged_light_guns }
+		manpower = 34
+	}
+	
+	ship_medium_battery_1_double = {
+		abbreviation = "sand"
+		category = ship_medium_battery_double
+		gui_category = ship_medium_battery_multi
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			hg_attack = 0.7
+			lg_attack = 2
+			build_cost_ic = 180
+			surface_visibility = 0.3
+			max_strength = 15.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.03
+			naval_speed = -0.025
+			naval_range = 0.05
+		}
+		add_average_stats = {
+			hg_armor_piercing = 10
+			lg_armor_piercing = 9
+		}
+
+		dismantle_cost_ic = 135
+		critical_parts = { damaged_light_guns }
+		manpower = 18
+	}
+	ship_medium_battery_2_double = {
+		abbreviation = "saod"
+		category = ship_medium_battery_double
+		gui_category = ship_medium_battery_multi
+		parent = ship_medium_battery_1_double
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 1
+			lg_attack = 3.5
+			build_cost_ic = 225
+			surface_visibility = 0.4
+			max_strength = 19
+		}
+		multiply_stats = {
+			build_cost_ic = 0.04
+			naval_speed = -0.035
+			naval_range = 0.06
+		}
+		add_average_stats = {
+			hg_armor_piercing = 15
+			lg_armor_piercing = 11
+		}
+
+		dismantle_cost_ic = 165
+		critical_parts = { damaged_light_guns }
+		manpower = 18
+	}
+	ship_medium_battery_3_double = {
+		abbreviation = "sapd"
+		category = ship_medium_battery_double
+		gui_category = ship_medium_battery_multi
+		parent = ship_medium_battery_2_double
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 1.3
+			lg_attack = 4
+			build_cost_ic = 315
+			surface_visibility = 0.5
+			max_strength = 22
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.045
+			naval_range = 0.07
+		}
+		add_average_stats = {
+			hg_armor_piercing = 20
+			lg_armor_piercing = 13
+		}
+
+		dismantle_cost_ic = 195
+		critical_parts = { damaged_light_guns }
+		manpower = 22
+	}
+	ship_medium_battery_4_double = {
+		abbreviation = "saqd"
+		category = ship_medium_battery_double
+		gui_category = ship_medium_battery_multi
+		parent = ship_medium_battery_3_double
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 1.8
+			lg_attack = 5.5
+			build_cost_ic = 405
+			surface_visibility = 0.6
+			max_strength = 25
+		}
+		multiply_stats = {
+			build_cost_ic = 0.06
+			naval_speed = -0.055
+			naval_range = 0.08
+		}
+		add_average_stats = {
+			hg_armor_piercing = 25
+			lg_armor_piercing = 15
+		}
+
+		dismantle_cost_ic = 225
+		critical_parts = { damaged_light_guns }
+		manpower = 22
+	}
+
+	# single medium battery
+	ship_medium_battery_1_single = {
+		category = ship_medium_battery_single
+		gui_category = ship_light_medium_battery_single
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			hg_attack = 0.5
+			lg_attack = 1.5
+			build_cost_ic = 180
+			surface_visibility = 0.3
+			max_strength = 12
+		}
+		multiply_stats = {
+			build_cost_ic = 0.03
+			naval_speed = -0.025
+			naval_range = 0.04
+		}
+		add_average_stats = {
+			hg_armor_piercing = 10
+			lg_armor_piercing = 9
+		}
+
+		dismantle_cost_ic = 90
+		critical_parts = { damaged_light_guns }
+		manpower = 20
+	}
+	ship_medium_battery_2_single = {
+		category = ship_medium_battery_single
+		gui_category = ship_light_medium_battery_single
+		parent = ship_medium_battery_1_single
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 0.8
+			lg_attack = 2.5
+			build_cost_ic = 270
+			surface_visibility = 0.4
+			max_strength = 14
+		}
+		multiply_stats = {
+			build_cost_ic = 0.04
+			naval_speed = -0.035
+			naval_range = 0.05
+		}
+		add_average_stats = {
+			hg_armor_piercing = 15
+			lg_armor_piercing = 11
+		}
+
+		dismantle_cost_ic = 120
+		critical_parts = { damaged_light_guns }
+		manpower = 20
+	}
+	ship_medium_battery_3_single = {
+		category = ship_medium_battery_single
+		gui_category = ship_light_medium_battery_single
+		parent = ship_medium_battery_2_single
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 1.1
+			lg_attack = 3.5
+			build_cost_ic = 360
+			surface_visibility = 0.5
+			max_strength = 16.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.045
+			naval_range = 0.06
+		}
+		add_average_stats = {
+			hg_armor_piercing = 20
+			lg_armor_piercing = 13
+		}
+
+		dismantle_cost_ic = 150
+		critical_parts = { damaged_light_guns }
+		manpower = 24
+	}
+	ship_medium_battery_4_single = {
+		category = ship_medium_battery_single
+		gui_category = ship_light_medium_battery_single
+		parent = ship_medium_battery_3_single
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 1.5
+			lg_attack = 4.5
+			build_cost_ic = 450
+			surface_visibility = 0.6
+			max_strength = 18.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.06
+			naval_speed = -0.055
+			naval_range = 0.07
+		}
+		add_average_stats = {
+			hg_armor_piercing = 25
+			lg_armor_piercing = 15
+		}
+
+		dismantle_cost_ic = 180
+		critical_parts = { damaged_light_guns }
+		manpower = 24
+	}
+
+	# double medium heavy battery
+	ship_medium_heavy_battery_1_double = {
+		category = ship_medium_heavy_battery_double
+		gui_category = ship_medium_heavy_battery
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 4
+			lg_attack = 2
+			build_cost_ic = 400
+			surface_visibility = 0.8
+			max_strength = 18
+			armor_value = 0.2
+		}
+		multiply_stats = {
+			build_cost_ic = 0.08
+			naval_speed = -0.015
+			naval_range = 0.06
+		}
+		add_average_stats = {
+			hg_armor_piercing = 30
+			lg_armor_piercing = 12
+		}
+		
+
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+
+		dismantle_cost_ic = 225
+		critical_parts = { damaged_heavy_guns }
+		manpower = 32
+	}
+	ship_medium_heavy_battery_2_double = {
+		category = ship_medium_heavy_battery_double
+		gui_category = ship_medium_heavy_battery
+		parent = ship_medium_heavy_battery_1_double
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 5
+			lg_attack = 3.5
+			build_cost_ic = 500
+			surface_visibility = 0.9
+			max_strength = 22
+			armor_value = 0.2
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1
+			naval_speed = -0.02
+			naval_range = 0.07
+		}
+		add_average_stats = {
+			hg_armor_piercing = 32
+			lg_armor_piercing = 15
+		}
+		
+
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+
+		dismantle_cost_ic = 260
+		critical_parts = { damaged_heavy_guns }
+		manpower = 34
+	}
+
+	# triple medium heavy battery
+	ship_medium_heavy_battery_1 = {
+		category = ship_medium_heavy_battery_triple
+		gui_category = ship_medium_heavy_battery
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 5.5
+			lg_attack = 3
+			build_cost_ic = 500
+			surface_visibility = 0.9
+			max_strength = 20
+			armor_value = 0.3
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1
+			naval_speed = -0.02
+			naval_range = 0.07
+		}
+		add_average_stats = {
+			hg_armor_piercing = 30
+			lg_armor_piercing = 12
+		}
+		
+
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+
+		dismantle_cost_ic = 270
+		critical_parts = { damaged_heavy_guns }
+		manpower = 40
+	}
+	ship_medium_heavy_battery_2 = {
+		category = ship_medium_heavy_battery_triple
+		gui_category = ship_medium_heavy_battery
+		parent = ship_medium_heavy_battery_1
+		add_equipment_type = capital_ship
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			hg_attack = 7
+			lg_attack = 4.5
+			build_cost_ic = 600
+			surface_visibility = 1
+			max_strength = 26
+			armor_value = 0.3
+		}
+		multiply_stats = {
+			build_cost_ic = 0.125
+			naval_speed = -0.025
+			naval_range = 0.08
+		}
+		add_average_stats = {
+			hg_armor_piercing = 32
+			lg_armor_piercing = 15
+		}
+		
+
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		dismantle_cost_ic = 300
+
+		critical_parts = { damaged_heavy_guns }
+		manpower = 42
+	}
+	
+	# triple light medium
+	ship_light_medium_battery_1 = {
+		abbreviation = "sar"
+		category = ship_light_medium_battery
+		gui_category = ship_light_medium_battery_multi
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {	
+			lg_attack = 4
+			build_cost_ic = 135
+			naval_light_gun_hit_chance_factor = 0.005
+			max_strength = 14
+			surface_visibility = 0.3
+		}
+		multiply_stats = {
+			build_cost_ic = 0.03
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			lg_armor_piercing = 8
+		}
+
+		dismantle_cost_ic = 105
+		critical_parts = { damaged_light_guns }
+		manpower = 25
+	}
+	ship_light_medium_battery_2 = {
+		abbreviation = "sas"
+		category = ship_light_medium_battery
+		gui_category = ship_light_medium_battery_multi
+		parent = ship_light_medium_battery_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {	
+			lg_attack = 5.5
+			build_cost_ic = 202.5
+			naval_light_gun_hit_chance_factor = 0.006
+			max_strength = 19
+			reliability = -0.03
+			surface_visibility = 0.4
+		}
+		multiply_stats = {
+			build_cost_ic = 0.04
+			naval_speed = -0.04
+		}
+		add_average_stats = {
+			lg_armor_piercing = 10
+		}
+
+		dismantle_cost_ic = 120
+		critical_parts = { damaged_light_guns }
+		manpower = 25
+	}
+	ship_light_medium_battery_3 = {
+		abbreviation = "sat"
+		category = ship_light_medium_battery
+		gui_category = ship_light_medium_battery_multi
+		parent = ship_light_medium_battery_2
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 7
+			build_cost_ic = 270
+			naval_light_gun_hit_chance_factor = 0.007
+			max_strength = 24.5
+			reliability = -0.04
+			surface_visibility = 0.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.06
+		}
+		add_average_stats = {
+			lg_armor_piercing = 12
+		}
+
+		dismantle_cost_ic = 135
+		critical_parts = { damaged_light_guns }
+		manpower = 28
+	}
+	ship_light_medium_battery_4 = {
+		abbreviation = "sau"
+		category = ship_light_medium_battery
+		gui_category = ship_light_medium_battery_multi
+		sfx = sfx_ui_sd_module_turret
+		parent = ship_light_medium_battery_3
+		add_stats = {
+			lg_attack = 8.5
+			build_cost_ic = 337.5
+			naval_light_gun_hit_chance_factor = 0.008
+			max_strength = 30
+			reliability = -0.05
+			surface_visibility = 0.6
+		}
+		multiply_stats = {
+			build_cost_ic = 0.06
+			naval_speed = -0.08
+		}
+		add_average_stats = {
+			lg_armor_piercing = 14
+		}
+
+		dismantle_cost_ic = 150
+		critical_parts = { damaged_light_guns }
+		manpower = 30
+	}
+	
+	# double light medium
+	ship_light_medium_battery_1_double = {
+		abbreviation = "sard"
+		category = ship_light_medium_battery_double
+		gui_category = ship_light_medium_battery_multi
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {	
+			lg_attack = 2.5
+			build_cost_ic = 112.5
+			naval_light_gun_hit_chance_factor = 0.005
+			max_strength = 11
+			surface_visibility = 0.2
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			lg_armor_piercing = 8
+		}
+
+		dismantle_cost_ic = 75
+		critical_parts = { damaged_light_guns }
+		manpower = 16
+	}
+	ship_light_medium_battery_2_double = {
+		abbreviation = "sasd"
+		category = ship_light_medium_battery_double
+		gui_category = ship_light_medium_battery_multi
+		parent = ship_light_medium_battery_1_double
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {	
+			lg_attack = 4
+			build_cost_ic = 180
+			naval_light_gun_hit_chance_factor = 0.006
+			max_strength = 15
+			reliability = -0.02
+			surface_visibility = 0.3
+		}
+		multiply_stats = {
+			build_cost_ic = 0.03
+			naval_speed = -0.035
+		}
+		add_average_stats = {
+			lg_armor_piercing = 10
+		}
+
+		dismantle_cost_ic = 97.5
+		critical_parts = { damaged_light_guns }
+		manpower = 16
+	}
+	ship_light_medium_battery_3_double = {
+		abbreviation = "satd"
+		category = ship_light_medium_battery_double
+		gui_category = ship_light_medium_battery_multi
+		parent = ship_light_medium_battery_2_double
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 5.5
+			build_cost_ic = 247.5
+			naval_light_gun_hit_chance_factor = 0.007
+			max_strength = 20
+			reliability = -0.03
+			surface_visibility = 0.4
+		}
+		multiply_stats = {
+			build_cost_ic = 0.04
+			naval_speed = -0.05
+		}
+		add_average_stats = {
+			lg_armor_piercing = 12
+		}
+
+		dismantle_cost_ic = 112.5
+		critical_parts = { damaged_light_guns }
+		manpower = 19
+	}
+	ship_light_medium_battery_4_double = {
+		abbreviation = "saud"
+		category = ship_light_medium_battery_double
+		gui_category = ship_light_medium_battery_multi
+		sfx = sfx_ui_sd_module_turret
+		parent = ship_light_medium_battery_3_double
+		add_stats = {
+			lg_attack = 7
+			build_cost_ic = 315
+			naval_light_gun_hit_chance_factor = 0.008
+			max_strength = 24
+			reliability = -0.04
+			surface_visibility = 0.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.065
+		}
+		add_average_stats = {
+			lg_armor_piercing = 14
+		}
+
+		dismantle_cost_ic = 120
+		critical_parts = { damaged_light_guns }
+		manpower = 22
+	}
+	
+	# single light medium
+	ship_light_medium_battery_1_single = {
+		abbreviation = "sars"
+		category = ship_light_medium_battery_single
+		gui_category = ship_light_medium_battery_single
+
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {	
+			lg_attack = 2
+			build_cost_ic = 112.5
+			max_strength = 8.5
+			surface_visibility = 0.25
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			lg_armor_piercing = 6
+		}
+
+		dismantle_cost_ic = 67.5
+		critical_parts = { damaged_light_guns }
+		manpower = 18
+	}
+	ship_light_medium_battery_2_single = {
+		abbreviation = "sass"
+		category = ship_light_medium_battery_single
+		gui_category = ship_light_medium_battery_single
+		parent = ship_light_medium_battery_1_single
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {	
+			lg_attack = 3
+			build_cost_ic = 180
+			max_strength = 11.5
+			reliability = -0.01
+			surface_visibility = 0.35
+		}
+		multiply_stats = {
+			build_cost_ic = 0.03
+			naval_speed = -0.035
+		}
+		add_average_stats = {
+			lg_armor_piercing = 8
+		}
+
+		dismantle_cost_ic = 75
+		critical_parts = { damaged_light_guns }
+		manpower = 18
+	}
+	ship_light_medium_battery_3_single = {
+		abbreviation = "sats"
+		category = ship_light_medium_battery_single
+		gui_category = ship_light_medium_battery_single
+		parent = ship_light_medium_battery_2_single
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 4
+			build_cost_ic = 247.5
+			max_strength = 15
+			reliability = -0.02
+			surface_visibility = 0.45
+		}
+		multiply_stats = {
+			build_cost_ic = 0.04
+			naval_speed = -0.045
+		}
+		add_average_stats = {
+			lg_armor_piercing = 10
+		}
+
+		dismantle_cost_ic = 82.5
+		critical_parts = { damaged_light_guns }
+		manpower = 22
+	}
+	ship_light_medium_battery_4_single = {
+		abbreviation = "saus"
+		category = ship_light_medium_battery_single
+		gui_category = ship_light_medium_battery_single
+		sfx = sfx_ui_sd_module_turret
+		parent = ship_light_medium_battery_3_single
+		add_stats = {
+			lg_attack = 5
+			build_cost_ic = 315
+			max_strength = 18
+			reliability = -0.03
+			surface_visibility = 0.55
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.055
+		}
+		add_average_stats = {
+			lg_armor_piercing = 12
+		}
+
+		dismantle_cost_ic = 97.5
+		critical_parts = { damaged_light_guns }
+		manpower = 25
+	}
+
+	dp_ship_medium_1 = {
+		abbreviation = "sdq"
+		category = ship_light_medium_battery
+		gui_category = ship_light_medium_battery_multi
+		sfx = sfx_ui_sd_module_turret
+		parent = ship_light_medium_battery_4
+		add_stats = {
+			lg_attack = 8
+			anti_air_attack = 2
+			build_cost_ic = 315
+			naval_light_gun_hit_chance_factor = 0.007
+			max_strength = 28
+			reliability = -0.045
+			surface_visibility = 0.6
+		}
+
+		multiply_stats = {
+			build_cost_ic = 0.055
+			naval_speed = -0.065
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 12.5
+		}
+		
+		dismantle_cost_ic = 120
+		critical_parts = { damaged_light_guns }
+		manpower = 30
+	}
+
+
+#####################
+##  HEAVY BATTERY  ##
+#####################
+    # double mounted
+	ship_heavy_battery_small_1 = {
+		abbreviation = "sai2"
+		category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.4
+			hg_attack = 4
+			max_strength = 16
+			build_cost_ic = 350
+		}
+		multiply_stats = {
+			build_cost_ic = 0.01
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			hg_armor_piercing = 30
+		}
+		
+		dismantle_cost_ic = 140
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 50
+	}
+
+	ship_heavy_battery_1 = {
+		abbreviation = "sai"
+		parent = ship_heavy_battery_small_1
+		category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.5
+			hg_attack = 5
+			max_strength = 20
+			build_cost_ic = 415
+		}
+		multiply_stats = {
+			build_cost_ic = 0.015
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			hg_armor_piercing = 32
+		}
+		
+		dismantle_cost_ic = 166
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 60
+	}
+	
+	ship_heavy_battery_big_1 = {
+		abbreviation = "sai1"
+		parent = ship_heavy_battery_1
+		category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.6
+			hg_attack = 7
+			max_strength = 28
+			build_cost_ic = 650
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			hg_armor_piercing = 34
+		}
+
+		dismantle_cost_ic = 260
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 75
+	}
+
+	ship_heavy_battery_tiny_2 = {
+		category = ship_heavy_battery
+		parent = ship_heavy_battery_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.5
+			hg_attack = 6
+			max_strength = 28
+			build_cost_ic = 330
+		}
+		multiply_stats = {
+			build_cost_ic = 0.015
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			hg_armor_piercing = 33
+		}
+
+		dismantle_cost_ic = 250
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 70
+	}
+
+	ship_heavy_battery_small_2 = {
+		category = ship_heavy_battery
+		parent = ship_heavy_battery_big_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.5
+			hg_attack = 7.5
+			max_strength = 30
+			build_cost_ic = 500
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			hg_armor_piercing = 35
+		}
+
+		dismantle_cost_ic = 280
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 80
+	}
+
+	ship_heavy_battery_2 = {
+		abbreviation = "saj"
+		category = ship_heavy_battery
+		parent = ship_heavy_battery_big_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.7
+			hg_attack = 8
+			max_strength = 32
+			reliability = -0.01
+			build_cost_ic = 750
+		}
+		multiply_stats = {
+			build_cost_ic = 0.025
+			naval_speed = -0.03
+		}
+		add_average_stats = {
+			hg_armor_piercing = 37
+		}
+		
+		dismantle_cost_ic = 300
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 85
+	}
+
+	ship_heavy_battery_3 = {
+		abbreviation = "sak"
+		category = ship_heavy_battery
+		parent = ship_heavy_battery_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.8
+			hg_attack = 9
+			max_strength = 40
+			reliability = -0.03
+			build_cost_ic = 800
+		}
+		multiply_stats = {
+			build_cost_ic = 0.035
+			naval_speed = -0.04
+		}
+		add_average_stats = {
+			hg_armor_piercing = 41
+		}
+		
+		dismantle_cost_ic = 320
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 85
+	}
+
+	ship_heavy_battery_4 = {
+		abbreviation = "sal"
+		category = ship_heavy_battery
+		parent = ship_heavy_battery_3
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.9
+			hg_attack = 12
+			max_strength = 52
+			reliability = -0.05
+			build_cost_ic = 850
+		}
+		multiply_stats = {
+			build_cost_ic = 0.045
+			naval_speed = -0.05
+		}
+		add_average_stats = {
+			hg_armor_piercing = 45
+		}
+		
+		dismantle_cost_ic = 340
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 90
+	}
+
+	ship_super_heavy_battery_1 = {
+		abbreviation = "sam"
+		category = ship_super_heavy_battery
+		parent = ship_heavy_battery_4
+		gui_category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 5
+		
+		add_stats = {
+			surface_visibility = 1
+			hg_attack = 12
+			max_strength = 52
+			build_cost_ic = 1250
+			reliability = -0.06
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.08
+		}
+		add_average_stats = {
+			hg_armor_piercing = 48
+		}
+		dismantle_cost_ic = 500
+		critical_parts = { damaged_heavy_guns }
+		manpower = 90
+	}
+	
+	ship_super_heavy_battery_big_1 = {
+		abbreviation = "sam1"
+		parent = ship_super_heavy_battery_1
+		category = ship_super_heavy_battery
+		gui_category = ship_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 6
+		
+		add_stats = {
+			surface_visibility = 1.2
+			reliability = -0.1
+			hg_attack = 18
+			max_strength = 70
+			build_cost_ic = 1750
+		}
+		multiply_stats = {
+			build_cost_ic = 0.06
+			naval_speed = -0.1
+		}
+		add_average_stats = {
+			hg_armor_piercing = 52
+		}
+		dismantle_cost_ic = 700
+		critical_parts = { damaged_heavy_guns }
+		manpower = 110
+	}
+
+	# triple mounted
+	ship_heavy_battery_small_1_triple = {
+		abbreviation = "sait2"
+		category = ship_heavy_battery_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.5
+			hg_attack = 5.5
+			max_strength = 18
+			build_cost_ic = 400
+		}
+		multiply_stats = {
+			build_cost_ic = 0.015
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			hg_armor_piercing = 30
+		}
+		
+		dismantle_cost_ic = 160
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 60
+	}
+
+	ship_heavy_battery_1_triple = {
+		abbreviation = "sait"
+		parent = ship_heavy_battery_small_1_triple
+		category = ship_heavy_battery_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.6
+			hg_attack = 7
+			max_strength = 24
+			build_cost_ic = 475
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			hg_armor_piercing = 32
+		}
+		
+		dismantle_cost_ic = 190
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 70
+	}
+	
+	ship_heavy_battery_big_1_triple = {
+		abbreviation = "sait1"
+		parent = ship_heavy_battery_1_triple
+		category = ship_heavy_battery_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.7
+			hg_attack = 9
+			max_strength = 34
+			build_cost_ic = 700
+		}
+		multiply_stats = {
+			build_cost_ic = 0.025
+			naval_speed = -0.03
+		}
+		add_average_stats = {
+			hg_armor_piercing = 34
+		}
+		
+		dismantle_cost_ic = 280
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 80
+	}
+
+	ship_heavy_battery_tiny_2_triple = {
+		category = ship_heavy_battery_triple
+		parent = ship_heavy_battery_1_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.6
+			hg_attack = 8.5
+			max_strength = 30
+			build_cost_ic = 650
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			hg_armor_piercing = 33
+		}
+
+		dismantle_cost_ic = 250
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 75
+	}
+
+	ship_heavy_battery_small_2_triple = {
+		category = ship_heavy_battery_triple
+		parent = ship_heavy_battery_big_1_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.7
+			hg_attack = 10.5
+			max_strength = 30
+			build_cost_ic = 780
+		}
+		multiply_stats = {
+			build_cost_ic = 0.03
+			naval_speed = -0.035
+		}
+		add_average_stats = {
+			hg_armor_piercing = 35
+		}
+
+		dismantle_cost_ic = 300
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 85
+	}
+
+	ship_heavy_battery_2_triple = {
+		abbreviation = "sajt"
+		category = ship_heavy_battery_triple
+		parent = ship_heavy_battery_big_1_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.8
+			hg_attack = 12
+			max_strength = 40
+			reliability = -0.03
+			build_cost_ic = 875
+		}
+		multiply_stats = {
+			build_cost_ic = 0.035
+			naval_speed = -0.05
+		}
+		add_average_stats = {
+			hg_armor_piercing = 37
+		}
+
+		dismantle_cost_ic = 350
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 90
+	}
+
+	ship_heavy_battery_3_triple = {
+		abbreviation = "sakt"
+		category = ship_heavy_battery_triple
+		parent = ship_heavy_battery_2_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.9
+			hg_attack = 13
+			max_strength = 50
+			reliability = -0.05
+			build_cost_ic = 950
+		}
+		multiply_stats = {
+			build_cost_ic = 0.042
+			naval_speed = -0.055
+		}
+		add_average_stats = {
+			hg_armor_piercing = 41
+		}
+		
+		dismantle_cost_ic = 380
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 90
+	}
+
+	ship_heavy_battery_4_triple = {
+		abbreviation = "salt"
+		category = ship_heavy_battery_triple
+		parent = ship_heavy_battery_3_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 1
+			hg_attack = 16
+			max_strength = 64
+			reliability = -0.07
+			build_cost_ic = 1050	
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.06
+		}
+		add_average_stats = {
+			hg_armor_piercing = 45
+		}
+		
+		dismantle_cost_ic = 420
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 100
+	}
+
+	ship_super_heavy_battery_1_triple = {
+		abbreviation = "samt"
+		parent = ship_heavy_battery_4_triple
+		category = ship_super_heavy_battery_triple
+		gui_category = ship_heavy_battery_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 5
+		
+		add_stats = {
+			surface_visibility = 1.1
+			hg_attack = 16
+			max_strength = 64
+			build_cost_ic = 1450
+			reliability = -0.09
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.055
+			naval_speed = -0.09
+		}
+		add_average_stats = {
+			hg_armor_piercing = 48
+		}
+		
+		dismantle_cost_ic = 580
+		critical_parts = { damaged_heavy_guns }
+		manpower = 100
+	}
+	
+	ship_super_heavy_battery_big_1_triple = {
+		abbreviation = "sam1t"
+		parent = ship_super_heavy_battery_1_triple
+		category = ship_super_heavy_battery_triple
+		gui_category = ship_heavy_battery_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 6
+		
+		add_stats = {
+			surface_visibility = 1.3
+			reliability = -0.15
+			hg_attack = 22
+			max_strength = 90
+			build_cost_ic = 1950
+		}
+		multiply_stats = {
+			build_cost_ic = 0.065
+			naval_speed = -0.13
+		}
+		add_average_stats = {
+			hg_armor_piercing = 52
+		}
+		dismantle_cost_ic = 780
+		critical_parts = { damaged_heavy_guns }
+		manpower = 120
+	}
+
+	# quadruple mounted
+	ship_heavy_battery_small_1_quad = {
+		abbreviation = "sai2q"
+		category = ship_heavy_battery_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 3
+		
+		add_stats = {
+			surface_visibility = 0.6
+			hg_attack = 7.5
+			max_strength = 30
+			build_cost_ic = 750
+			reliability = -0.05
+			naval_heavy_gun_hit_chance_factor = -0.01
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			hg_armor_piercing = 30
+		}
+		
+		dismantle_cost_ic = 300
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 75
+	}
+
+	ship_heavy_battery_1_quad = {
+		abbreviation = "saiq"
+		parent = ship_heavy_battery_small_1_quad
+		category = ship_heavy_battery_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 3
+		
+		add_stats = {
+			surface_visibility = 0.7
+			hg_attack = 10
+			max_strength = 37
+			build_cost_ic = 900
+			reliability = -0.05
+			naval_heavy_gun_hit_chance_factor = -0.02
+		}
+		multiply_stats = {
+			build_cost_ic = 0.03
+			naval_speed = -0.03
+		}
+		add_average_stats = {
+			hg_armor_piercing = 32
+		}
+
+		dismantle_cost_ic = 360
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 85
+	}
+	
+	ship_heavy_battery_big_1_quad = {
+		abbreviation = "sai1q"
+		parent = ship_heavy_battery_1_quad
+		category = ship_heavy_battery_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 3
+		
+		add_stats = {
+			surface_visibility = 0.8
+			hg_attack = 13
+			max_strength = 52
+			build_cost_ic = 1000
+			reliability = -0.08
+			naval_heavy_gun_hit_chance_factor = -0.03
+		}
+		multiply_stats = {
+			build_cost_ic = 0.04
+			naval_speed = -0.04
+		}
+		add_average_stats = {
+			hg_armor_piercing = 34
+		}
+		
+		dismantle_cost_ic = 400
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 95
+	}
+
+	ship_heavy_battery_tiny_2_quad = {
+		category = ship_heavy_battery_quad
+		parent = ship_heavy_battery_1_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.7
+			hg_attack = 12
+			max_strength = 30
+			build_cost_ic = 650
+		}
+		multiply_stats = {
+			build_cost_ic = 0.035
+			naval_speed = -0.035
+		}
+		add_average_stats = {
+			hg_armor_piercing = 33
+		}
+
+		dismantle_cost_ic = 250
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 75
+	}
+
+	ship_heavy_battery_small_2_quad = {
+		category = ship_heavy_battery_quad
+		parent = ship_heavy_battery_big_1_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			surface_visibility = 0.8
+			hg_attack = 14
+			max_strength = 30
+			build_cost_ic = 780
+		}
+		multiply_stats = {
+			build_cost_ic = 0.04
+			naval_speed = -0.045
+		}
+		add_average_stats = {
+			hg_armor_piercing = 35
+		}
+
+		dismantle_cost_ic = 300
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 85
+	}
+
+	ship_heavy_battery_2_quad = {
+		abbreviation = "sajq"
+		category = ship_heavy_battery_quad
+		parent = ship_heavy_battery_big_1_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 4
+		
+		add_stats = {
+			surface_visibility = 0.9
+			hg_attack = 16
+			max_strength = 60
+			build_cost_ic = 1150
+			reliability = -0.12
+			naval_heavy_gun_hit_chance_factor = -0.04
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.055
+		}
+		add_average_stats = {
+			hg_armor_piercing = 37
+		}
+		
+		dismantle_cost_ic = 520
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 100
+	}
+
+	ship_heavy_battery_3_quad = {
+		abbreviation = "sakq"
+		category = ship_heavy_battery_quad
+		parent = ship_heavy_battery_2_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 5
+		
+		add_stats = {
+			surface_visibility = 1
+			hg_attack = 18
+			max_strength = 74
+			build_cost_ic = 1300
+			reliability = -0.14
+			naval_heavy_gun_hit_chance_factor = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = 0.06
+			naval_speed = -0.07
+		}
+		add_average_stats = {
+			hg_armor_piercing = 41
+		}
+	
+		dismantle_cost_ic = 560
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 100
+	}
+
+	ship_heavy_battery_4_quad = {
+		abbreviation = "salq"
+		category = ship_heavy_battery_quad
+		parent = ship_heavy_battery_3_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 6
+		
+		add_stats = {
+			surface_visibility = 1.1
+			hg_attack = 22
+			max_strength = 96
+			build_cost_ic = 1400
+			reliability = -0.16
+			naval_heavy_gun_hit_chance_factor = -0.06
+		}
+		multiply_stats = {
+			build_cost_ic = 0.07
+			naval_speed = -0.085
+		}
+		add_average_stats = {
+			hg_armor_piercing = 45
+		}
+
+		dismantle_cost_ic = 620
+		critical_parts = { damaged_heavy_guns }
+		forbid_module_categories = {
+		    ship_depth_charge
+			ship_mine_layer
+		}
+		manpower = 105
+	}
+
+	ship_super_heavy_battery_1_quad = {
+		abbreviation = "samq"
+		category = ship_super_heavy_battery_quad
+		parent = ship_heavy_battery_4_quad
+		gui_category = ship_heavy_battery_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 8
+		
+		add_stats = {
+			surface_visibility = 1.2
+			hg_attack = 22
+			max_strength = 96
+			build_cost_ic = 1600
+			reliability = -0.19
+			naval_heavy_gun_hit_chance_factor = -0.06
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.07
+			naval_speed = -0.13
+		}
+		add_average_stats = {
+			hg_armor_piercing = 48
+		}
+		
+		dismantle_cost_ic = 700
+		critical_parts = { damaged_heavy_guns }
+		manpower = 120
+	}
+	
+	ship_super_heavy_battery_big_1_quad = {
+		abbreviation = "sam1q"
+		parent = ship_super_heavy_battery_1_quad
+		category = ship_super_heavy_battery_quad
+		gui_category = ship_heavy_battery_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 10
+		
+		add_stats = {
+			surface_visibility = 1.5
+			hg_attack = 28
+			max_strength = 130
+			build_cost_ic = 2100
+			reliability = -0.25
+			naval_heavy_gun_hit_chance_factor = -0.08
+		}
+		multiply_stats = {
+			build_cost_ic = 0.08
+			naval_speed = -0.17
+		}
+		add_average_stats = {
+			hg_armor_piercing = 52
+		}
+		
+		dismantle_cost_ic = 900
+		critical_parts = { damaged_heavy_guns }
+		manpower = 150
+	}
+
+	ship_super_heavy_battery_2 = {
+		category = ship_super_heavy_battery
+		gui_category = ship_heavy_battery
+		parent = ship_super_heavy_battery_big_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 7
+		
+		add_stats = {
+			surface_visibility = 1
+			hg_attack = 16
+			max_strength = 70
+			build_cost_ic = 1550
+			reliability = -0.08
+		}
+		multiply_stats = {
+			build_cost_ic = 0.055
+			naval_speed = -0.075
+		}
+		add_average_stats = {
+			hg_armor_piercing = 51
+		}
+
+		dismantle_cost_ic = 720
+		critical_parts = { damaged_heavy_guns }
+		manpower = 95
+	}
+	ship_super_heavy_battery_2_triple = {
+		category = ship_super_heavy_battery_triple
+		gui_category = ship_heavy_battery_triple
+		parent = ship_super_heavy_battery_big_1_triple
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 9
+		
+		add_stats = {
+			surface_visibility = 1.1
+			hg_attack = 20
+			max_strength = 90
+			build_cost_ic = 1800
+			reliability = -0.12
+		}
+		multiply_stats = {
+			build_cost_ic = 0.06
+			naval_speed = -0.12
+		}
+		add_average_stats = {
+			hg_armor_piercing = 51
+		}
+	
+		dismantle_cost_ic = 840
+		critical_parts = { damaged_heavy_guns }
+		manpower = 100
+	}
+	ship_super_heavy_battery_2_quad = {
+		category = ship_super_heavy_battery_quad
+		gui_category = ship_heavy_battery_quad
+		parent = ship_super_heavy_battery_big_1_quad
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		xp_cost = 15
+		
+		add_stats = {
+			surface_visibility = 1.2
+			hg_attack = 26
+			max_strength = 130
+			build_cost_ic = 1900
+			reliability = -0.2
+			naval_heavy_gun_hit_chance_factor = -0.07
+		}
+		multiply_stats = {
+			build_cost_ic = 0.08
+			naval_speed = -0.16
+		}
+		add_average_stats = {
+			hg_armor_piercing = 51
+		}
+		
+		dismantle_cost_ic = 960
+		critical_parts = { damaged_heavy_guns }
+		manpower = 110
+	}
+
+
+###################
+##  SECONDARIES  ##
+###################
+    ship_secondaries_1 = {
+		abbreviation = "sav"
+		category = ship_secondaries
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			lg_attack = 4
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 6
+		}
+		
+		dismantle_cost_ic = 54
+		critical_parts = { damaged_secondaries }
+		manpower = 50
+	}
+
+	ship_secondaries_2 = {
+		abbreviation = "saw"
+		category = ship_secondaries
+		parent = ship_secondaries_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 5
+			build_cost_ic = 240
+		}
+		multiply_stats = {
+			naval_speed = -0.015
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 8.5
+		}
+		
+		dismantle_cost_ic = 72
+		critical_parts = { damaged_secondaries }
+		manpower = 65
+	}
+
+	ship_secondaries_3 = {
+		category = ship_secondaries
+		sfx = sfx_ui_sd_module_turret
+		parent = ship_secondaries_2
+		
+		add_stats = {
+			lg_attack = 6
+			build_cost_ic = 300
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.025
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 10
+		}
+		
+		dismantle_cost_ic = 90
+		critical_parts = { damaged_secondaries }
+		manpower = 70
+	}
+
+	ship_secondaries_4 = {
+		category = ship_secondaries
+		parent = ship_secondaries_3
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 7
+			build_cost_ic = 350
+		}
+		multiply_stats = {
+			naval_speed = -0.035
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 12.5
+		}
+		
+		dismantle_cost_ic = 105
+		critical_parts = { damaged_secondaries }
+		manpower = 80
+	}
+
+	ship_secondaries_1_big = {
+		category = ship_secondaries_special
+		gui_category = ship_secondaries
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			hg_attack = 5
+			lg_attack = 4.5
+			build_cost_ic = 600
+			surface_visibility = 0.5
+		}
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			hg_armor_piercing = 22
+			lg_armor_piercing = 9
+		}
+		dismantle_cost_ic = 180
+		critical_parts = { damaged_secondaries }
+		manpower = 80
+	}
+
+	ship_secondaries_1_light = {
+		category = ship_secondaries_light
+		gui_category = ship_secondaries
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			lg_attack = 1.5
+			build_cost_ic = 180
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 5
+		}
+		
+		dismantle_cost_ic = 54
+		critical_parts = { damaged_secondaries }
+		manpower = 20
+	}
+
+	ship_secondaries_2_light = {
+		category = ship_secondaries_light
+		gui_category = ship_secondaries
+		parent = ship_secondaries_1_light
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 2.5
+			build_cost_ic = 240
+		}
+		multiply_stats = {
+			naval_speed = -0.015
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 7
+		}
+		
+		dismantle_cost_ic = 72
+		critical_parts = { damaged_secondaries }
+		manpower = 28
+	}
+
+	dp_ship_secondaries_1 = {
+		abbreviation = "sax"
+		category = ship_dp_secondaries
+		gui_category = ship_secondaries
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 2
+			anti_air_attack = 1.5
+			build_cost_ic = 180
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+		
+		dismantle_cost_ic = 36
+		critical_parts = { damaged_secondaries }
+		manpower = 28
+	}
+
+	dp_ship_secondaries_2 = {
+		abbreviation = "say"
+		category = ship_dp_secondaries
+		gui_category = ship_secondaries
+		parent = dp_ship_secondaries_1
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 3
+			anti_air_attack = 2.5
+			build_cost_ic = 200
+		}
+
+		multiply_stats = {
+			naval_speed = -0.015
+		}
+		
+		dismantle_cost_ic = 40
+		critical_parts = { damaged_secondaries }
+		manpower = 32
+	}
+
+	dp_ship_secondaries_3 = {
+		abbreviation = "saz"
+		category = ship_dp_secondaries
+		gui_category = ship_secondaries
+		parent = dp_ship_secondaries_2
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 4
+			anti_air_attack = 3
+			build_cost_ic = 240
+		}
+
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		
+		dismantle_cost_ic = 48
+		critical_parts = { damaged_secondaries }
+		manpower = 36
+	}
+
+	dp_ship_secondaries_4 = {
+		abbreviation = "sba"
+		category = ship_dp_secondaries
+		gui_category = ship_secondaries
+		parent = dp_ship_secondaries_3
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 5
+			anti_air_attack = 3.5
+			build_cost_ic = 290
+		}
+
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		
+		dismantle_cost_ic = 58
+		critical_parts = { damaged_secondaries }
+		manpower = 40
+	}
+
+	dp_ship_secondaries_5 = {
+		category = ship_dp_secondaries
+		gui_category = ship_secondaries
+		parent = dp_ship_secondaries_4
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 5
+			anti_air_attack = 4
+			naval_light_gun_hit_chance_factor = 0.005
+			build_cost_ic = 330
+		}
+
+		multiply_stats = {
+			naval_speed = -0.04
+		}
+		
+		dismantle_cost_ic = 75
+		critical_parts = { damaged_secondaries }
+		manpower = 36
+	}
+
+	dp_ship_secondaries_1_bb = {
+		category = ship_dp_secondaries_bb
+		gui_category = ship_secondaries
+		gfx = dp_ship_secondaries_1
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 2
+			anti_air_attack = 1.5
+			build_cost_ic = 180
+		}
+		add_average_stats = {
+			lg_armor_piercing = 5
+		}
+
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+		
+		dismantle_cost_ic = 36
+		critical_parts = { damaged_secondaries }
+		manpower = 36
+	}
+
+	dp_ship_secondaries_2_bb = {
+		category = ship_dp_secondaries_bb
+		gui_category = ship_secondaries
+		parent = dp_ship_secondaries_1_bb
+		gfx = dp_ship_secondaries_2
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 3
+			anti_air_attack = 2.5
+			build_cost_ic = 200
+		}
+
+		multiply_stats = {
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			lg_armor_piercing = 7.5
+		}
+		
+		dismantle_cost_ic = 40
+		critical_parts = { damaged_secondaries }
+		manpower = 40
+	}
+
+	dp_ship_secondaries_3_bb = {
+		category = ship_dp_secondaries_bb
+		gui_category = ship_secondaries
+		parent = dp_ship_secondaries_2_bb
+		gfx = dp_ship_secondaries_3
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 4
+			anti_air_attack = 3
+			build_cost_ic = 240
+		}
+
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			lg_armor_piercing = 9
+		}
+		
+		dismantle_cost_ic = 48
+		critical_parts = { damaged_secondaries }
+		manpower = 44
+	}
+
+	dp_ship_secondaries_4_bb = {
+		category = ship_dp_secondaries_bb
+		gui_category = ship_secondaries
+		parent = dp_ship_secondaries_3_bb
+		gfx = dp_ship_secondaries_4
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 5
+			anti_air_attack = 3.5
+			build_cost_ic = 290
+		}
+
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		add_average_stats = {
+			lg_armor_piercing = 11
+		}
+		
+		dismantle_cost_ic = 58
+		critical_parts = { damaged_secondaries }
+		manpower = 48
+	}
+
+	dp_ship_secondaries_5_bb = {
+		category = ship_dp_secondaries_bb
+		gui_category = ship_secondaries
+		parent = dp_ship_secondaries_4_bb
+		gfx = dp_ship_secondaries_5
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 5
+			anti_air_attack = 4
+			naval_light_gun_hit_chance_factor = 0.005
+			build_cost_ic = 330
+		}
+
+		multiply_stats = {
+			naval_speed = -0.04
+		}
+		add_average_stats = {
+			lg_armor_piercing = 13
+		}
+		
+		dismantle_cost_ic = 75
+		critical_parts = { damaged_secondaries }
+		manpower = 45
+	}
+
+
+################
+##  MISSILES  ##
+################
+    ship_missile_1 = {
+		category = ship_missile
+
+		add_stats = {
+			build_cost_ic = 800
+			hg_attack = 18
+			lg_attack = 12
+			reliability = -0.1
+			max_strength = 25
+		}
+		add_average_stats = {
+			hg_armor_piercing = 48
+			lg_armor_piercing = 28
+		}
+		multiply_stats = {
+			build_cost_ic = 0.06
+			naval_speed = -0.08
+			surface_visibility = -0.05
+		}
+		xp_cost = 5
+		dismantle_cost_ic = 600
+		critical_parts = { damaged_missiles }
+		manpower = 15
+		allowed_module_categories = {
+		    fixed_ship_fire_control_system_slot = { ship_missile_control_system }
+		}
+	}
+	ship_missile_2 = {
+		category = ship_missile
+		parent = ship_missile_1
+
+		add_stats = {
+			build_cost_ic = 1300
+			hg_attack = 25
+			lg_attack = 21
+			reliability = -0.15
+			max_strength = 35
+		}
+		add_average_stats = {
+			hg_armor_piercing = 58
+			lg_armor_piercing = 34
+		}
+		multiply_stats = {
+			build_cost_ic = 0.08
+			naval_speed = -0.1
+			surface_visibility = -0.065
+		}
+		xp_cost = 8
+		dismantle_cost_ic = 950
+		critical_parts = { damaged_missiles }
+		manpower = 20
+		allowed_module_categories = {
+		    fixed_ship_fire_control_system_slot = { ship_missile_control_system }
+		}
+	}
+	ship_cruise_missile_1 = {
+		category = ship_missile
+
+		add_stats = {
+			build_cost_ic = 800
+			hg_attack = 25
+			naval_heavy_gun_hit_chance_factor = -0.8
+			reliability = -0.1
+			max_strength = 28
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+			naval_speed = -0.1
+		}
+		xp_cost = 3
+		dismantle_cost_ic = 600
+		critical_parts = { damaged_missiles }
+		manpower = 15
+		allowed_module_categories = {
+		    fixed_ship_fire_control_system_slot = { ship_missile_control_system }
+		}
+	}
+	ship_cruise_missile_sub_1 = {
+		category = ship_sub_missile
+		gui_category = ship_missile
+		gfx = ship_cruise_missile_1
+
+		add_stats = {
+			build_cost_ic = 1500
+			hg_attack = 25
+			naval_heavy_gun_hit_chance_factor = -0.9
+			reliability = -0.1
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			sub_visibility = 0.15
+		}
+		xp_cost = 3
+		dismantle_cost_ic = 1100
+		manpower = 10
+	}
+
+
+
+######################
+##  SUPPORT WEAPON  ##
+######################
+	ship_civilian_light_battery_1 = {
+		category = civilian_ship_weapons
+		add_stats = {
+			lg_attack = 0.4
+			build_cost_ic = 8
+		}
+		add_average_stats = {
+			lg_armor_piercing = 1
+		}
+		multiply_stats = {
+			naval_speed = -0.001
+		}
+		critical_parts = { damaged_light_guns }
+		manpower = 5
+	}
+	ship_rocket_launcher = {
+		category = civilian_ship_weapons
+		add_stats = {
+			hg_attack = 15
+			naval_heavy_gun_hit_chance_factor = -1.0
+			reliability = -0.15
+			build_cost_ic = 120
+		}
+		multiply_stats = {
+			max_strength = -0.1
+			naval_speed = -0.05
+		}
+		manpower = 12
+	}
+
+
+###################
+##  SUB BATTERY  ##
+###################
+    sub_battery_1 = {
+		category = sub_battery
+		sfx = sfx_ui_sd_module_turret
+		gui_category = sub_deck_gun
+
+		add_stats = {
+			hg_attack = 4
+			lg_attack = 2
+			naval_heavy_gun_hit_chance_factor = -0.02
+			naval_light_gun_hit_chance_factor = -0.02
+			reliability = -0.1
+			build_cost_ic = 300	
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+			sub_visibility = 0.1
+		}
+		add_average_stats = {
+			hg_armor_piercing = 20
+			lg_armor_piercing = 5
+		}
+		dismantle_cost_ic = 90
+
+		critical_parts = { damaged_heavy_guns }
+		manpower = 16
+	}
+	
+################
+##  LAUNCHER  ##
+################
+	sub_missile_launcher = {
+		abbreviation = "sml"
+		category = sub_rocket
+		add_equipment_type = missile_launcher
+		allow_equipment_type = { missile ballistic_missile }
+
+		add_stats = {
+			build_cost_ic = 1500
+			reliability = -0.1 
+		}
+		multiply_stats = {
+			sub_visibility = 0.15
+			naval_speed = -0.1
+		}
+		dismantle_cost_ic = 700 
+	}
+
+	slbm_launcher = {
+		abbreviation = "slb"
+		category = sub_rocket
+		add_equipment_type = missile_launcher
+		allow_equipment_type = { nuclear_missile }
+
+		add_stats = {
+			build_cost_ic = 2000
+			reliability = -0.15 
+		}
+		multiply_stats = {
+			sub_visibility = 0.2 
+			naval_speed = -0.15
+		}
+		dismantle_cost_ic = 1000 
+	}
+
+	ship_missile_launcher = {
+		gfx = sub_missile_launcher
+		category = ship_rocket
+		add_equipment_type = missile_launcher
+		allow_equipment_type = { missile ballistic_missile }
+
+		add_stats = {
+			build_cost_ic = 2000
+			reliability = -0.2
+		}
+		multiply_stats = {
+			surface_visibility = 0.15
+			naval_speed = -0.1
+		}
+		dismantle_cost_ic = 1000
+	}
+
+	ship_slbm_launcher = {
+		gfx = slbm_launcher
+		category = ship_rocket
+		add_equipment_type = missile_launcher
+		allow_equipment_type = { nuclear_missile }
+
+		add_stats = {
+			build_cost_ic = 3000
+			reliability = -0.3
+		}
+		multiply_stats = {
+			surface_visibility = 0.2 
+			naval_speed = -0.15
+		}
+		dismantle_cost_ic = 1800 
+	}
+
+###################
+##  ASW Battery  ##
+###################
+	ship_asw_battery_1 = {
+		category = ship_light_battery
+		gui_category = ship_light_battery_all
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 1.5
+			sub_attack = 6
+			build_cost_ic = 120
+		}
+		multiply_stats = {
+			naval_speed = -0.015
+		}
+		add_average_stats = {
+			lg_armor_piercing = 6
+		}
+		dismantle_cost_ic = 10
+		
+		critical_parts = { damaged_secondaries }
+		manpower = 12
+	}
+
+################
+##  Deck Gun  ##
+################
+	sub_deck_gun_1 = {
+		category = sub_deck_gun
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			lg_attack = 0.5
+			convoy_raiding_coordination = 0.01
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 2
+		critical_parts = { damaged_secondaries }
+	}
+	sub_deck_gun_2 = {
+		category = sub_deck_gun
+		sfx = sfx_ui_sd_module_turret
+		parent = sub_deck_gun_1
+
+		add_stats = {
+			lg_attack = 1
+			convoy_raiding_coordination = 0.02
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 2
+		critical_parts = { damaged_secondaries }
+	}
+	sub_deck_gun_3 = {
+		category = sub_deck_gun
+		sfx = sfx_ui_sd_module_turret
+		parent = sub_deck_gun_2
+
+		add_stats = {
+			lg_attack = 1.5
+			convoy_raiding_coordination = 0.03
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 2
+		critical_parts = { damaged_secondaries }
+	}
+	sub_deck_gun_4 = {
+		category = sub_deck_gun
+		sfx = sfx_ui_sd_module_turret
+		parent = sub_deck_gun_3
+
+		add_stats = {
+			lg_attack = 2
+			convoy_raiding_coordination = 0.04
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 2
+		critical_parts = { damaged_secondaries }
+	}
+}

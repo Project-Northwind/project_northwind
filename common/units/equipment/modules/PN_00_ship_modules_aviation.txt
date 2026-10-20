@@ -1,0 +1,552 @@
+## Carrier modules related to aviation
+
+equipment_modules = {
+##################
+##  DECK SPACE  ##
+##################
+    ship_deck_space_more = {
+		category = ship_deck_space
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			carrier_size = 3
+			build_cost_ic = 1800
+			anti_air_attack = 2
+			reliability = -0.1
+			max_organisation = -0.2
+			carrier_surface_detection = 3
+			carrier_sub_detection = 1.5
+			supply_consumption = 0.02
+		}
+		manpower = 300 #outside the add_stats section for code reasons
+		multiply_stats = {
+			naval_speed = -0.1
+			fuel_consumption = 0.1
+			surface_visibility = 0.05
+		}
+		dismantle_cost_ic = 900
+		can_convert_from = {
+			module_category = ship_deck_space
+			convert_cost_ic = 1600
+		}
+		critical_parts = { gas_leakage_heavy }
+	}
+	ship_deck_space_armored = {
+		category = ship_deck_space_reinforced
+		gui_category = ship_deck_space
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			carrier_size = 2
+			build_cost_ic = 1300
+			max_strength = 40
+			anti_air_attack = 2.5
+			carrier_surface_detection = 2
+			carrier_sub_detection = 1
+			supply_consumption = 0.015
+			max_organisation = -0.05
+		}
+		add_average_stats = {
+			naval_weather_penalty_factor = -0.1
+		}
+		manpower = 200 #outside the add_stats section for code reasons
+		multiply_stats = {
+			naval_speed = -0.065
+			armor_value = 0.025
+			fuel_consumption = 0.075
+			surface_visibility = 0.03
+		}
+		dismantle_cost_ic = 700
+		can_convert_from = {
+			module_category = ship_deck_space
+			convert_cost_ic = 1200
+		}
+		forbid_module_categories = {
+			ship_deck_space
+			ship_deck_space_small
+			ship_deck_space_converted
+		}
+		critical_parts = { gas_leakage_light }
+	}
+	ship_deck_space_open = {
+		category = ship_deck_space
+		gfx = ship_deck_space
+
+		add_equipment_type = capital_ship
+		add_stats = {
+			carrier_size = 2
+			build_cost_ic = 1000
+			carrier_surface_detection = 2
+			carrier_sub_detection = 1
+			max_strength = 30
+			anti_air_attack = 1.5
+			supply_consumption = 0.015
+			reliability = -0.025
+		}
+		manpower = 200 #outside the add_stats section for code reasons
+		multiply_stats = {
+			naval_speed = -0.05
+			fuel_consumption = 0.075
+			surface_visibility = 0.025
+		}
+		dismantle_cost_ic = 600
+		can_convert_from = {
+			module_category = ship_deck_space
+			convert_cost_ic = 1000
+		}
+		critical_parts = { gas_leakage_heavy }
+	}
+	ship_deck_space_small = {
+		category = ship_deck_space_small
+		add_equipment_type = capital_ship
+		gui_category = ship_deck_space_special
+		add_stats = {
+			carrier_size = 1
+			build_cost_ic = 700
+			carrier_surface_detection = 1
+			carrier_sub_detection = 0.5
+			max_strength = 20
+			anti_air_attack = 0.5
+			supply_consumption = 0.01
+		}
+		multiply_stats = {
+			naval_speed = -0.025
+			sub_detection = 0.05
+			fuel_consumption = 0.05
+			surface_visibility = 0.015
+		}
+		manpower = 100
+		dismantle_cost_ic = 400
+		critical_parts = { gas_leakage_heavy }
+	}
+	ship_deck_space_big = {
+		category = ship_deck_space_reinforced
+		gui_category = ship_deck_space
+		add_equipment_type = capital_ship
+		add_stats = {
+			carrier_size = 3
+			build_cost_ic = 2000
+			carrier_surface_detection = 3
+			carrier_sub_detection = 2
+			reliability = -0.075
+			max_strength = 55
+			anti_air_attack = 3
+			supply_consumption = 0.025
+		}
+		add_average_stats = {
+			naval_weather_penalty_factor = -0.2
+		}
+		manpower = 300
+		multiply_stats = {
+			naval_speed = -0.075
+			armor_value = 0.025
+			fuel_consumption = 0.1
+			surface_visibility = 0.05
+		}
+		dismantle_cost_ic = 1100
+		forbid_module_categories = {
+			ship_deck_space
+			ship_deck_space_small
+			ship_deck_space_converted
+		}
+		critical_parts = { gas_leakage_light }
+	}
+	ship_deck_space_bb = {
+		category = ship_deck_space_bb
+		gui_category = ship_deck_space_special
+		add_equipment_type = carrier
+		gfx = ship_deck_space
+		add_stats = {
+			carrier_size = 1
+			build_cost_ic = 1000
+			reliability = -0.1
+			max_organisation = -0.1
+			carrier_surface_detection = 1
+			carrier_sub_detection = 0.5
+			supply_consumption = 0.015
+		}
+		manpower = 125
+		multiply_stats = {
+			naval_speed = -0.05
+			max_strength = -0.25
+			fuel_consumption = 0.05
+			surface_visibility = 0.05
+		}
+		dismantle_cost_ic = 2000
+		critical_parts = { damaged_bb_flight_deck gas_leakage_heavy }
+	}
+	ship_deck_space_mega = {
+		category = ship_deck_space_mega
+		gui_category = ship_deck_space
+		gfx = big_ship_deck_space
+		add_equipment_type = capital_ship
+		mega_carrier = yes
+		add_stats = {
+			carrier_size = 2
+			build_cost_ic = 2000
+			carrier_surface_detection = 2.5
+			carrier_sub_detection = 2
+			max_strength = 80
+			reliability = -0.1
+			anti_air_attack = 3
+			supply_consumption = 0.03
+		}
+		manpower = 350 #outside the add_stats section for code reasons
+		multiply_stats = {
+			naval_speed = -0.075
+			fuel_consumption = 0.1
+			surface_visibility = 0.05
+		}
+		dismantle_cost_ic = 1600
+		critical_parts = { gas_leakage_light }
+	}
+
+##########################
+##  CARRIER HELICOPTER  ##
+##########################
+	carrier_helipad_asw = {
+		category = carrier_helipad
+		add_stats = {
+			surface_detection = 0.5
+			sub_detection = 6
+			sub_attack = 6
+			build_cost_ic = 350
+		}
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		dismantle_cost_ic = 100
+	}
+	carrier_helipad_aew = {
+		category = carrier_helipad
+		add_stats = {
+			surface_detection = 6
+			sub_detection = 1
+			sub_attack = 0.5
+			build_cost_ic = 350
+		}
+		multiply_stats = {
+			anti_air_attack = 0.05
+			naval_speed = -0.02
+		}
+		dismantle_cost_ic = 100
+	}
+
+
+###################
+##  FLIGHT DECK  ##
+###################
+    carrier_armor_deck = {
+		category = ship_flight_deck_armored
+		gui_category = ship_flight_deck
+		add_equipment_type = capital_ship
+		
+		add_stats = {
+			reliability = 0.1
+			max_strength = 35
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		multiply_stats = {
+			naval_speed = -0.1
+			anti_air_attack = 0.06
+			build_cost_ic = 0.15
+		}
+		dismantle_cost_ic = 2000
+
+		critical_parts = { damaged_armored_flight_deck }
+	}
+	carrier_wooden_deck = {
+		category = ship_flight_deck_unarmored
+		gui_category = ship_flight_deck
+		add_equipment_type = capital_ship
+
+		multiply_stats = {
+			naval_speed = 0.01
+			build_cost_ic = 0.04
+		}
+		dismantle_cost_ic = 1500
+
+		critical_parts = { damaged_wooden_flight_deck }
+	}
+	carrier_strength_deck = {
+		category = ship_flight_deck_armored
+		gui_category = ship_flight_deck
+		add_equipment_type = capital_ship
+		parent = carrier_armor_deck
+		add_stats = {
+			reliability = 0.15
+			max_strength = 80
+		}
+		build_cost_resources = {
+			steel = 1
+			chromium = 1
+		}
+		multiply_stats = {
+			naval_speed = -0.125
+			armor_value = 0.1
+			anti_air_attack = 0.1
+			build_cost_ic = 0.25
+		}
+		dismantle_cost_ic = 3500
+
+		critical_parts = { damaged_armored_flight_deck }
+	}
+
+
+############################
+##  MODERN CARRIER EQUIP  ##
+############################
+    ship_steam_catapult = {
+		category = steam_catapult
+		gui_category = modern_carrier_equipments
+		gfx = ship_steam_catapult
+
+		add_stats = {
+			build_cost_ic = 700
+			max_organisation = 0.1
+		}
+		multiply_stats = {
+			anti_air_attack = 0.15
+		}
+		dismantle_cost_ic = 500
+	}
+	ship_ski_jump_ramp = {
+		category = steam_catapult
+		gui_category = modern_carrier_equipments
+
+		add_stats = {
+			build_cost_ic = 400
+		}
+		multiply_stats = {
+			anti_air_attack = 0.1
+			surface_detection = 0.06
+		}
+		dismantle_cost_ic = 250
+	}
+
+	side_lift = {
+		category = carrier_side_lift
+		gui_category = modern_carrier_equipments
+		gfx = ship_side_lift
+
+		add_stats = {
+			build_cost_ic = 350
+			max_organisation = 0.05
+		}
+		multiply_stats = {
+			anti_air_attack = 0.05
+		}
+
+		dismantle_cost_ic = 300
+	}
+
+	angled_deck = {
+		category = carrier_angled_deck
+		gui_category = modern_carrier_equipments
+		gfx = ship_angled_deck
+
+		add_stats = {
+			carrier_size = 1
+			max_organisation = 0.2
+			build_cost_ic = 1200
+		}
+
+		dismantle_cost_ic = 1000
+	}
+
+
+
+#############################
+##  CARRIER MISCELLANEOUS  ##
+#############################
+	carrier_aviation_control_unit = {
+		category = carrier_unit
+		add_stats = {
+			max_organisation = 0.1
+		}
+		multiply_stats = {
+			anti_air_attack = 0.05
+			build_cost_ic = 0.05
+		}
+		forbid_module_categories = {
+			landing_assault_command
+		}
+	}
+	carrier_damage_control_unit = {
+		category = carrier_unit
+		add_stats = {
+			reliability = 0.1
+			max_organisation = 0.1
+		}
+		multiply_stats = {
+			max_strength = 0.05
+			build_cost_ic = 0.075
+		}
+	}
+	carrier_scouting_unit = {
+		category = carrier_unit
+		add_stats = {
+			surface_detection = 5
+			sub_detection = 4
+			build_cost_ic = 350
+		}
+		manpower = 50
+	}
+	carrier_spared_squad = {
+		category = carrier_unit
+		add_stats = {
+			carrier_size = 1
+		}
+		manpower = 100
+		multiply_stats = {
+			anti_air_attack = 0.03
+			build_cost_ic = 0.075
+		}
+		add_stats = {
+			reliability = -0.05
+		}
+		forbid_module_categories = {
+			landing_assault_command
+		}
+	}
+	carrier_fuel_storage = {
+		category = carrier_miscellaneous
+		add_stats = {
+			reliability = -0.05
+			supply_consumption = -0.05
+		}
+		multiply_stats = {
+			fuel_consumption = -0.1
+			build_cost_ic = 0.08
+		}
+	}
+	carrier_civilian_material = {
+		category = carrier_civilian_material
+		gui_category = carrier_miscellaneous
+		add_stats = {
+			reliability = -0.3
+			max_organisation = -0.2
+		}
+		multiply_stats = {
+			armor_value = -0.25
+			max_strength = -0.25
+			anti_air_attack = -0.8
+			naval_speed = -0.25
+			naval_range = -0.2
+			build_cost_ic = -0.2
+		}
+		dismantle_cost_ic = 100000
+		forbid_module_categories = {
+			ship_carrier_armor
+			ship_carrier_armor_heavy
+			ship_carrier_armor_shbb
+		}
+	}
+	carrier_secondary_island = {
+		category = carrier_island
+		gui_category = carrier_miscellaneous
+		add_stats = {
+			max_organisation = 0.05
+			reliability = -0.05
+			build_cost_ic = 200
+		}
+		multiply_stats = {
+			surface_detection = 0.01
+			naval_speed = -0.05
+			naval_torpedo_damage_reduction_factor = 0.01
+		}
+		dismantle_cost_ic = 150
+	}
+	carrier_no_island = {
+		category = carrier_island
+		gui_category = carrier_miscellaneous
+
+		add_stats = {
+			build_cost_ic = -150
+			max_organisation = -0.1
+		}
+		multiply_stats = {
+			surface_detection = -0.1
+			surface_visibility = -0.01
+			naval_speed = 0.03
+		}
+		dismantle_cost_ic = 150
+		forbid_module_categories = {
+			ship_radar
+		}
+	}
+	carrier_tracing_unit = {
+		category = carrier_unit
+		add_stats = {
+			build_cost_ic = 800
+			surface_detection = 10
+			sub_detection = 8
+		}
+		multiply_stats = {
+			surface_detection = 0.1
+			sub_detection = 0.1
+		}
+		manpower = 30
+	}
+	coldwar_upgrade_cv = {
+		category = coldwar_upgrade_cv
+		gui_category = carrier_miscellaneous
+
+		multiply_stats = {
+			build_cost_ic = 0.1
+			surface_detection = 0.1
+			sub_detection = 0.1
+			max_strength = 0.05
+			anti_air_attack = 0.15
+		}
+		add_stats = {
+			reliability = 0.05
+		}
+		allowed_module_categories = {
+		    front_2_custom_slot = { carrier_angled_deck steam_catapult }
+			mid_1_custom_slot = { carrier_angled_deck steam_catapult }
+			mid_2_custom_slot = { carrier_angled_deck steam_catapult }
+		}
+		dismantle_cost_ic = 50000
+	}
+
+##########################
+##  CARRIER AMPHIBIOUS  ##
+##########################
+	landing_helipad = {
+		category = landing_kit
+
+		add_stats = {
+			build_cost_ic = 600
+		}
+		multiply_stats = {
+			hg_attack = 0.15
+			naval_speed = -0.05
+			anti_air_attack = 0.025
+		}
+		manpower = 200
+	}
+	hovercraft = {
+		category = landing_kit
+
+		add_stats = {
+			hg_attack = 3
+			build_cost_ic = 200
+		}
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		manpower = 100
+	}
+	landing_assault_command = {
+		category = landing_assault_command
+		add_stats = {
+			hg_attack = 30
+			naval_heavy_gun_hit_chance_factor = -1
+			naval_light_gun_hit_chance_factor = -1
+			build_cost_ic = 100
+		}
+	}
+}

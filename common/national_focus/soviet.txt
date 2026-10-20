@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -3537,31 +3537,43 @@ focus_tree = {
 				}
 			}
 			else = {
-				create_equipment_variant = {
-					name = "Kronshtadt Class"		
-					type = ship_hull_heavy_2
-					name_group = SOV_BC_HISTORICAL
-					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
-					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = heavy_ship_engine_2
-						fixed_ship_secondaries_slot = ship_secondaries_1
-						fixed_ship_armor_slot = ship_armor_bc_2
-						front_1_custom_slot = ship_heavy_battery_1
-						mid_1_custom_slot = ship_secondaries_1
-						mid_2_custom_slot = ship_anti_air_1
-						rear_1_custom_slot = ship_airplane_launcher_1
-					}
-				}
+				set_technology = {
+	basic_battery = 1
+	basic_heavy_armor = 1
+	basic_ship_hull_heavy = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	interwar_ship_hull_heavy = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Kronshtadt Class"
+	name_group = SOV_BC_HISTORICAL
+	parent_version = 0
+	allow_without_tech = yes
+	type = vnr_ship_hull_heavy_3
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bc_2
+		fixed_ship_armor_scheme_slot = ship_scheme_incremental
+		front_1_custom_slot = ship_heavy_battery_1
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_anti_air_1
+		rear_1_custom_slot = ship_airplane_launcher_1
+	}
+}
 
 				#Line Production
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_heavy_2
+						type = vnr_ship_hull_heavy_3
 						creator = "SOV"
 						version_name = "Kronshtadt Class"
 					}
@@ -3573,7 +3585,7 @@ focus_tree = {
 				#Line Production
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_heavy_2
+						type = vnr_ship_hull_heavy_3
 						creator = "SOV"
 						version_name = "Kronshtadt Class"
 					}
@@ -3657,33 +3669,44 @@ focus_tree = {
 						#}
 					#}
 					#custom_effect_tooltip = SOV_an_oceangoing_navy_shbb_tt
-				create_equipment_variant = { #MM: Engine should be 3 (but also should Yamato's)
-					name = "Sovetsky Soyuz Class"
-					type = ship_hull_super_heavy_1
-					name_group = SOV_STATES
-					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
-					modules = {
-						fixed_ship_battery_slot = ship_super_heavy_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_2
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = heavy_ship_engine_2
-						fixed_ship_secondaries_slot = ship_secondaries_2
-						fixed_ship_armor_slot = ship_armor_shbb
-						front_1_custom_slot = ship_anti_air_2
-						front_2_custom_slot = empty
-						mid_1_custom_slot = empty
-						mid_2_custom_slot = ship_secondaries_2
-						mid_3_custom_slot = ship_secondaries_2
-						rear_1_custom_slot = ship_super_heavy_battery_1
-						rear_2_custom_slot = ship_airplane_launcher_1
-					}
-				}
+				set_technology = {
+	basic_fire_control_system = 1
+	basic_light_battery = 1
+	basic_super_heavy_battery = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	interwar_antiair = 1
+	ship_hull_super_heavy = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Sovetsky Soyuz Class"
+	name_group = SOV_STATES
+	parent_version = 0
+	allow_without_tech = yes
+	type = vnr_ship_hull_super_heavy_1
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = super_heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_2
+		fixed_ship_armor_slot = ship_armor_shbb
+		fixed_ship_armor_scheme_slot = ship_scheme_incremental
+		front_1_custom_slot = ship_anti_air_2
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = ship_secondaries_2
+		rear_1_custom_slot = ship_super_heavy_battery_1
+		front_2_custom_slot = empty
+		mid_3_custom_slot = ship_secondaries_2
+		rear_2_custom_slot = ship_airplane_launcher_1
+	}
+}
 				#Line Production
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_super_heavy_1
+						type = vnr_ship_hull_super_heavy_1
 						creator = "SOV"
 						version_name = "Sovetsky Soyuz Class"
 					}
@@ -3693,7 +3716,7 @@ focus_tree = {
 				}
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_super_heavy_1
+						type = vnr_ship_hull_super_heavy_1
 						creator = "SOV"
 						version_name = "Sovetsky Soyuz Class"
 					}
@@ -3703,7 +3726,7 @@ focus_tree = {
 				}
 				add_equipment_production = {
 					equipment = {
-						type = ship_hull_super_heavy_1
+						type = vnr_ship_hull_super_heavy_1
 						creator = "SOV"
 						version_name = "Sovetsky Soyuz Class"
 					}
@@ -3898,26 +3921,36 @@ focus_tree = {
 						has_tech = advanced_ship_hull_carrier
 					}
 					#Equipment Variant
-					create_equipment_variant = {
-						name = "Project 71 Class"
-						type = ship_hull_carrier_3
-						name_group = SOV_CV_HISTORICAL
-						parent_version = 0
-						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
-						modules = {
-							fixed_ship_deck_slot_1 = ship_deck_space
-							fixed_ship_deck_slot_2 = ship_deck_space
-							fixed_ship_anti_air_slot = ship_anti_air_2
-							fixed_ship_radar_slot = empty
-							fixed_ship_engine_slot = carrier_ship_engine_4
-							fixed_ship_secondaries_slot = ship_secondaries_1
-							front_1_custom_slot = ship_deck_space
-						}
-					}
+					set_technology = {
+	advanced_ship_hull_carrier = 1
+	basic_battery = 1
+	early_carrier_study = 1
+	interwar_antiair = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Project 71 Class"
+	name_group = SOV_CV_HISTORICAL
+	parent_version = 0
+	allow_without_tech = yes
+	type = vnr_ship_hull_carrier_3
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space_open
+		fixed_ship_deck_slot_2 = ship_deck_space_open
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = carrier_ship_engine_4
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		front_1_custom_slot = ship_deck_space_open
+		fixed_ship_flight_deck_slot = carrier_wooden_deck
+		fixed_ship_role_slot = ship_hull_carrier_role_cv
+		mid_1_custom_slot = empty
+	}
+}
 					#Line Production
 					add_equipment_production = {
 						equipment = {
-							type = ship_hull_carrier_3
+							type = vnr_ship_hull_carrier_3
 							creator = "SOV"
 							version_name = "Project 71 Class"
 						}
@@ -3932,26 +3965,36 @@ focus_tree = {
 						has_tech = improved_ship_hull_carrier
 					}
 					#Equipment Variant
-					create_equipment_variant = {
-						name = "Project 71 Class"
-						type = ship_hull_carrier_2
-						name_group = SOV_CV_HISTORICAL
-						parent_version = 0
-						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
-						modules = {
-							fixed_ship_deck_slot_1 = ship_deck_space
-							fixed_ship_deck_slot_2 = ship_deck_space
-							fixed_ship_anti_air_slot = ship_anti_air_2
-							fixed_ship_radar_slot = empty
-							fixed_ship_engine_slot = carrier_ship_engine_3
-							fixed_ship_secondaries_slot = ship_secondaries_1
-							front_1_custom_slot = ship_deck_space
-						}
-					}
+					set_technology = {
+	basic_battery = 1
+	early_carrier_study = 1
+	improved_ship_hull_carrier = 1
+	interwar_antiair = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Project 71 Class"
+	name_group = SOV_CV_HISTORICAL
+	parent_version = 0
+	allow_without_tech = yes
+	type = vnr_ship_hull_carrier_2
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space_open
+		fixed_ship_deck_slot_2 = ship_deck_space_open
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = carrier_ship_engine_3
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		front_1_custom_slot = ship_deck_space_open
+		fixed_ship_flight_deck_slot = carrier_wooden_deck
+		fixed_ship_role_slot = ship_hull_carrier_role_cv
+		mid_1_custom_slot = empty
+	}
+}
 					#Line Production
 					add_equipment_production = {
 						equipment = {
-							type = ship_hull_carrier_2
+							type = vnr_ship_hull_carrier_2
 							creator = "SOV"
 							version_name = "Project 71 Class"
 						}
@@ -3966,26 +4009,36 @@ focus_tree = {
 						has_tech = basic_ship_hull_carrier
 					}
 					#Equipment Variant
-					create_equipment_variant = {
-						name = "Project 71 Class"
-						type = ship_hull_carrier_1
-						name_group = SOV_CV_HISTORICAL
-						parent_version = 0
-						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
-						modules = {
-							fixed_ship_deck_slot_1 = ship_deck_space
-							fixed_ship_deck_slot_2 = ship_deck_space
-							fixed_ship_anti_air_slot = ship_anti_air_2
-							fixed_ship_radar_slot = empty
-							fixed_ship_engine_slot = carrier_ship_engine_2
-							fixed_ship_secondaries_slot = ship_secondaries_1
-							front_1_custom_slot = ship_deck_space
-						}
-					}
+					set_technology = {
+	basic_battery = 1
+	basic_ship_hull_carrier = 1
+	early_carrier_study = 1
+	interwar_antiair = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Project 71 Class"
+	name_group = SOV_CV_HISTORICAL
+	parent_version = 0
+	allow_without_tech = yes
+	type = vnr_ship_hull_carrier_1
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space_open
+		fixed_ship_deck_slot_2 = ship_deck_space_open
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = carrier_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		front_1_custom_slot = ship_deck_space_open
+		fixed_ship_flight_deck_slot = carrier_wooden_deck
+		fixed_ship_role_slot = ship_hull_carrier_role_cv
+		mid_1_custom_slot = empty
+	}
+}
 					#Line Production
 					add_equipment_production = {
 						equipment = {
-							type = ship_hull_carrier_1
+							type = vnr_ship_hull_carrier_1
 							creator = "SOV"
 							version_name = "Project 71 Class"
 						}
@@ -4003,25 +4056,33 @@ focus_tree = {
 						set_technology = { early_ship_hull_carrier = 1 }
 					}
 					#Equipment Variant
-					create_equipment_variant = {
-						name = "Project 71 Class"
-						type = ship_hull_carrier_conversion_ca
-						name_group = SOV_CV_HISTORICAL
-						parent_version = 0
-						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
-						modules = {
-							fixed_ship_deck_slot_1 = ship_deck_space
-							fixed_ship_deck_slot_2 = ship_deck_space
-							fixed_ship_anti_air_slot = ship_anti_air_2
-							fixed_ship_radar_slot = empty
-							fixed_ship_engine_slot = carrier_ship_engine_1
-							fixed_ship_secondaries_slot = ship_secondaries_1
-						}
-					}
+					set_technology = {
+	basic_battery = 1
+	early_carrier_study = 1
+	early_ship_hull_carrier = 1
+	interwar_antiair = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Project 71 Class"
+	name_group = SOV_CV_HISTORICAL
+	parent_version = 0
+	allow_without_tech = yes
+	type = vnr_ship_hull_carrier_conversion_ca
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space_open
+		fixed_ship_deck_slot_2 = ship_deck_space_open
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = carrier_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_flight_deck_slot = carrier_wooden_deck
+	}
+}
 					#Line Production
 					add_equipment_production = {
 						equipment = {
-							type = ship_hull_carrier_conversion_ca
+							type = vnr_ship_hull_carrier_conversion_ca
 							creator = "SOV"
 							version_name = "Project 71 Class"
 						}
@@ -12888,52 +12949,74 @@ focus_tree = {
 						limit = {
 							has_tech = basic_heavy_battery
 						}
-						create_equipment_variant = {
-							name = "Hipper Class"
-							type = ship_hull_cruiser_2
-							name_group = SOV_CA_HISTORICAL
-							parent_version = 0
-							modules = {
-								fixed_ship_battery_slot = ship_medium_battery_2
-								fixed_ship_anti_air_slot = ship_anti_air_1
-								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-								fixed_ship_radar_slot = empty
-								fixed_ship_engine_slot = cruiser_ship_engine_1
-								fixed_ship_secondaries_slot = empty
-								fixed_ship_armor_slot = ship_armor_cruiser_2
-								front_1_custom_slot = ship_anti_air_1
-								mid_1_custom_slot = ship_torpedo_1
-								mid_2_custom_slot = ship_airplane_launcher_1
-								rear_1_custom_slot = ship_medium_battery_2
-							}
-						}
+						set_technology = {
+	basic_cruiser_armor = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	interwar_ship_hull_cruiser = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Hipper Class"
+	name_group = SOV_CA_HISTORICAL
+	parent_version = 0
+	type = vnr_ship_hull_cruiser_3
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_role_slot = ship_hull_cruiser_role_ca
+		mid_1_custom_slot = ship_torpedo_1
+		mid_2_custom_slot = ship_airplane_launcher_1
+		rear_1_custom_slot = ship_medium_battery_2
+		front_1_custom_slot = ship_anti_air_1
+		fixed_ship_secondaries_slot = empty
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+	}
+}
 					}
 					else = {
-						create_equipment_variant = {
-							name = "Hipper Class"
-							type = ship_hull_cruiser_2
-							name_group = SOV_CA_HISTORICAL
-							parent_version = 0
-							modules = {
-								fixed_ship_battery_slot = ship_medium_battery_1
-								fixed_ship_anti_air_slot = ship_anti_air_1
-								fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-								fixed_ship_radar_slot = empty
-								fixed_ship_engine_slot = cruiser_ship_engine_1
-								fixed_ship_secondaries_slot = empty
-								fixed_ship_armor_slot = ship_armor_cruiser_2
-								front_1_custom_slot = ship_anti_air_1
-								mid_1_custom_slot = ship_torpedo_1
-								mid_2_custom_slot = ship_airplane_launcher_1
-								rear_1_custom_slot = ship_medium_battery_1
-							}
-						}
+						set_technology = {
+	basic_cruiser_armor = 1
+	basic_torpedo = 1
+	early_ship_hull_cruiser = 1
+	electronic_mechanical_engineering = 1
+	gw_artillery = 1
+	interwar_ship_hull_cruiser = 1
+	multi_mounted_battery = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Hipper Class"
+	name_group = SOV_CA_HISTORICAL
+	parent_version = 0
+	type = vnr_ship_hull_cruiser_3
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_role_slot = ship_hull_cruiser_role_ca
+		mid_1_custom_slot = ship_torpedo_1
+		mid_2_custom_slot = ship_airplane_launcher_1
+		rear_1_custom_slot = ship_medium_battery_1
+		front_1_custom_slot = ship_anti_air_1
+		fixed_ship_secondaries_slot = empty
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+	}
+}
 					}
 					
 					# CA: Lützow -> Petropavlovsk
 					add_equipment_production = {
 						equipment = {
-							type = ship_hull_cruiser_2
+							type = vnr_ship_hull_cruiser_3
 							creator = SOV
 							version_name = "Hipper Class"
 						}

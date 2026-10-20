@@ -1,0 +1,71 @@
+units = {
+
+	##### ROCN #####
+	fleet = {
+		name = "Republic of China Navy"
+		naval_base = 7191 #Shanghai
+		task_force = {
+			name = "1st Fleet"
+			location = 7191 #Shanghai
+			ship = { name = "Ning Hai" pride_of_the_fleet = yes definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = CHI version_name = "Ning Hai Class" } } }
+			ship = { name = "Hai Rong" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHI version_name = "Hai Rong Class" } } }
+			ship = { name = "Hai Chou" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHI version_name = "Hai Rong Class" } } }
+			ship = { name = "Yat Sen" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_1 = { amount = 1 owner = CHI version_name = "Yat Sen Class" } } }
+			ship = { name = "Da Dong" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Jian Wei Class" } } }
+			ship = { name = "Ze Jiang" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI  version_name = "Jian Wei Class"} } }
+			ship = { name = "Yung Chi" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI  version_name = "Yung Feng/Yung Chi Class"} } }
+			ship = { name = "Yung Chien" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI  version_name = "Yung Feng/Yung Chi Class"} } }
+			ship = { name = "Zhongshan" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI  version_name = "Yung Feng/Yung Chi Class"} } }
+			ship = { name = "Chien Kang" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chang Feng Class" } } }
+		}
+		task_force = {
+			name = "2nd Fleet"
+			location = 7014
+			ship = { name = "Chu Tai" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chu Tai/Kiang Yuan Class" } } }
+			ship = { name = "Chu Yiu" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chu Tai/Kiang Yuan Class" } } }
+			ship = { name = "Chu Tung" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chu Tai/Kiang Yuan Class" } } }
+			ship = { name = "Chu Chien" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chu Tai/Kiang Yuan Class" } } }
+			ship = { name = "Chu Kuan" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chu Tai/Kiang Yuan Class" } } }
+			ship = { name = "Kiang Yuan" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chu Tai/Kiang Yuan Class" } } }
+			ship = { name = "Kiang Chen" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chu Tai/Kiang Yuan Class" } } }
+		}
+		task_force = {
+			name = "3rd Fleet"
+			location = 4205
+			ship = { name = "Chen Hai" definition = auxiliary_ship equipment = { vnr_ship_hull_civilian_1 = { amount = 1 owner = CHI version_name = "Chen Hai Class" } } }
+			ship = { name = "Hai Chi" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHI version_name = "Hai Chi Class" } } }
+			ship = { name = "Hai Chen" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHI version_name = "Hai Rong Class" } } }
+			ship = { name = "Tung An" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI  version_name = "Chang Feng Class"} } }
+			ship = { name = "Yung Hsiang" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI  version_name = "Yung Feng/Yung Chi Class"} } }
+			ship = { name = "Chu Yu" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chu Tai/Kiang Yuan Class" } } }
+			ship = { name = "Kiang Li" definition = destroyer start_experience_factor = 0.04 equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Chu Tai/Kiang Yuan Class" } } }
+		}
+		task_force = {
+			name = "4th Fleet"
+			location = 1047
+			ship = { name = "Zhao He" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHI version_name = "Zhao He Class" } } }
+		}
+		task_force = {
+			name = "Training Fleet"
+			location = 7191
+			ship = { name = "Ying Rui" definition = light_cruiser start_experience_factor = 0.04 equipment = { vnr_ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CHI version_name = "Zhao He Class" } } }
+		}
+	}
+}
+
+##### SHIP CONSTRUCTION #####
+instant_effect = {
+#Under Construction in Shanghai
+	# Light Cruiser 
+	add_equipment_production = { 		# "Pinghai"
+		equipment = {
+			type = vnr_ship_hull_cruiser_2
+			creator = "CHI" 
+			version_name = "Ning Hai Class"
+		}
+		name = "Ping Hai" 
+		requested_factories = 1
+		progress = 0.6
+		 amount = 1
+	}
+}

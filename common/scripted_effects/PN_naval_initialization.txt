@@ -1,0 +1,229 @@
+# Once-only migration: technologies/designs already called from country history; replace initial vanilla fleets, then load PN fleets.
+PN_initialize_navy = {
+	if = {
+		limit = {
+			NOT = {
+				has_global_flag = PN_naval_initialized
+			}
+		}
+		delete_starting_naval_oob = yes
+		add_starting_techs = yes
+		makeup_starting_techs = yes
+		special_project_workaround = yes
+		set_shipyard_output_boost = yes
+		ai_expert_navy_treaty_workaround = yes
+		ARG = {
+			ARG_start_naval_variants = yes
+			load_oob = PN_00_ARG_vnr_naval
+		}
+		AST = {
+			AST_start_naval_variants = yes
+			load_oob = PN_00_AST_vnr_naval
+		}
+		BRA = {
+			BRA_start_naval_variants = yes
+			load_oob = PN_00_BRA_vnr_naval
+		}
+		CAN = {
+			CAN_start_naval_variants = yes
+			load_oob = PN_00_CAN_vnr_naval
+		}
+		CHI = {
+			CHI_start_naval_variants = yes
+			load_oob = PN_00_CHI_vnr_naval
+		}
+		CHL = {
+			CHL_start_naval_variants = yes
+			load_oob = PN_00_CHL_vnr_naval
+		}
+		DEN = {
+			DEN_start_naval_variants = yes
+			load_oob = PN_00_DEN_vnr_naval
+		}
+		ENG = {
+			if = {
+				limit = {
+					allow_to_use_expert_navy = yes
+				}
+				ENG_expert_AI_variants = yes
+				load_oob = PN_03_ENG_vnr_expert
+			}
+			else = {
+				ENG_start_naval_variants = yes
+				load_oob = PN_00_ENG_vnr_naval
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				load_oob = PN_01_ENG_vnr_air_bba
+			}
+			else = {
+				load_oob = PN_01_ENG_vnr_air
+			}
+		}
+		FIN = {
+			FIN_start_naval_variants = yes
+			load_oob = PN_00_FIN_vnr_naval
+		}
+		FRA = {
+			FRA_start_naval_variants = yes
+			load_oob = PN_00_FRA_vnr_naval
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				load_oob = PN_01_FRA_vnr_air_bba
+			}
+			else = {
+				load_oob = PN_01_FRA_vnr_air
+			}
+		}
+		GER = {
+			GER_start_naval_variants = yes
+			load_oob = PN_00_GER_vnr_naval
+		}
+		HOL = {
+			HOL_start_naval_variants = yes
+			load_oob = PN_00_HOL_vnr_naval
+		}
+		ITA = {
+			ITA_start_naval_variants = yes
+			load_oob = PN_00_ITA_vnr_naval
+		}
+		JAP = {
+			if = {
+				limit = {
+					allow_to_use_expert_navy = yes
+				}
+				JAP_expert_AI_variants = yes
+				load_oob = PN_03_JAP_vnr_expert
+			}
+			else = {
+				JAP_start_naval_variants = yes
+				load_oob = PN_00_JAP_vnr_naval
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				load_oob = PN_01_JAP_vnr_air_bba
+			}
+			else = {
+				load_oob = PN_01_JAP_vnr_air
+			}
+		}
+		NOR = {
+			NOR_start_naval_variants = yes
+			load_oob = PN_00_NOR_vnr_naval
+		}
+		POL = {
+			POL_start_naval_variants = yes
+			load_oob = PN_00_POL_vnr_naval
+		}
+		POR = {
+			POR_start_naval_variants = yes
+			load_oob = PN_00_POR_vnr_naval
+		}
+		SPR = {
+			SPR_start_naval_variants = yes
+			load_oob = PN_00_SPR_vnr_naval
+		}
+		USA = {
+			if = {
+				limit = {
+					allow_to_use_expert_navy = yes
+				}
+				USA_expert_AI_variants = yes
+				load_oob = PN_03_USA_vnr_expert
+			}
+			else = {
+				USA_start_naval_variants = yes
+				load_oob = PN_00_USA_vnr_naval
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				load_oob = PN_01_USA_vnr_air_bba
+			}
+			else = {
+				load_oob = PN_01_USA_vnr_air
+			}
+		}
+		COL = {
+			COL_start_naval_variants = yes
+			load_oob = PN_00_COL_vnr_naval
+		}
+		MEX = {
+			MEX_start_naval_variants = yes
+			load_oob = PN_00_MEX_vnr_naval
+		}
+		ROM = {
+			ROM_start_naval_variants = yes
+			load_oob = PN_00_ROM_vnr_naval
+		}
+		URG = {
+			URG_start_naval_variants = yes
+			load_oob = PN_00_URG_vnr_naval
+		}
+		YUG = {
+			YUG_start_naval_variants = yes
+			load_oob = PN_00_YUG_vnr_naval
+		}
+		PRU = {
+			PRU_start_naval_variants = yes
+			load_oob = PN_00_PRU_vnr_naval
+		}
+		CUB = {
+			CUB_start_naval_variants = yes
+			load_oob = PN_00_CUB_vnr_naval
+		}
+		PER = {
+			PER_start_naval_variants = yes
+			load_oob = PN_00_PER_vnr_naval
+		}
+		SIA = {
+			SIA_start_naval_variants = yes
+			load_oob = PN_00_SIA_vnr_naval
+		}
+		RAJ = {
+			RAJ_start_naval_variants = yes
+			load_oob = PN_00_RAJ_vnr_naval
+		}
+		BEL = {
+			BEL_start_naval_variants = yes
+			load_oob = PN_00_BEL_vnr_naval
+		}
+		VEN = {
+			VEN_start_naval_variants = yes
+			load_oob = PN_00_VEN_vnr_naval
+		}
+		add_article_xix = yes
+		add_starting_navy_spirits = yes
+		trigger_MTG_naval_treaty_event = yes
+		ai_doctrine_workaround = yes
+		add_naval_headquarters = yes
+		extra_research_slots_workaround = yes
+		GRE = {
+			load_oob = PN_GRE_1936_naval
+		}
+		LAT = {
+			load_oob = PN_LAT_1936_naval
+		}
+		SOV = {
+			load_oob = PN_SOV_1936_naval
+		}
+		SWE = {
+			load_oob = PN_SWE_1936_naval
+		}
+		TUR = {
+			load_oob = PN_TUR_1936_naval
+		}
+		UKR = {
+			load_oob = PN_UKR_1936_naval
+		}
+		set_global_flag = vnr_oob_loaded
+		set_global_flag = PN_naval_initialized
+	}
+}

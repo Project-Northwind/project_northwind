@@ -1,0 +1,102 @@
+remove_naval_treaty_effect = {
+	if = {
+		limit = {
+			has_idea = MTG_naval_treaty_adherent
+		}
+		remove_ideas = MTG_naval_treaty_adherent
+	}
+    else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_adherent_1936
+		}
+		remove_ideas = MTG_naval_treaty_adherent_1936
+	}
+	else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_cheating
+		}
+		remove_ideas = MTG_naval_treaty_cheating
+	}
+	else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_adherent_reduced
+		}
+		remove_ideas = MTG_naval_treaty_adherent_reduced
+	}
+	else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_cheating_reduced
+		}
+		remove_ideas = MTG_naval_treaty_cheating_reduced
+	}
+	set_country_flag = MTG_naval_treaty_abandoned
+}
+
+add_article_xix = {
+	every_state = {
+		limit = {
+			owner = { has_naval_treaty_trigger = yes }
+			OR = {
+				is_on_continent = asia
+				is_on_continent = australia
+			}
+			OR = {
+				is_core_of = HAW
+                is_core_of = FIJ
+                is_core_of = TAH
+                is_core_of = GUM
+                is_core_of = FSM
+				is_owned_by = JAP
+				is_owned_by = USA
+			}
+			is_island_state = yes
+		}
+		add_dynamic_modifier = {
+			modifier = washington_treaty_article_xix
+		}
+	}
+}
+
+add_starting_navy_spirits = {
+	JAP = {
+		add_ideas = etajima_naval_academy
+		add_ideas = inflexible_headquarter
+	}
+	GER = {
+		add_ideas = kiel_standard
+		add_ideas = murwik_naval_academy
+	}
+	USA = {
+		add_ideas = annapolis_naval_academy
+		add_ideas = panama_standard
+	}
+	ENG = {
+		add_ideas = dartmouth_naval_academy
+	}
+	SOV = {
+		add_ideas = voroshilov_naval_academy
+	}
+}
+
+add_naval_headquarters = {
+	447 = {
+		if = {
+			limit = { is_owned_by = ENG }
+			add_building_construction = {
+				type = naval_headquarters
+				level = 1
+				instant_build = yes
+				province = 4076
+			}
+		}
+	}
+}
+
+trigger_MTG_naval_treaty_event = {
+	every_country = {
+		limit = {
+			has_naval_treaty_trigger = yes
+		}
+		country_event = { id = MTG_naval_treaty.12 days = 50 }
+	}
+}

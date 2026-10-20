@@ -1,0 +1,146 @@
+navy_rework_category = {
+    add_never_built_blueprints = {
+        icon = generic_naval
+        fire_only_once = yes
+        allowed = {
+            OR = {
+                tag = ENG
+                tag = FRA
+                tag = GER
+                tag = ITA
+                tag = JAP
+                tag = SOV
+                tag = USA
+            }
+        }
+        complete_effect = {
+            FROM = {
+                if = {
+                    limit = { original_tag = ENG }
+                    ENG_never_built_blueprints = yes
+                }
+                if = {
+                    limit = { original_tag = FRA }
+                    FRA_never_built_blueprints = yes
+                }
+                if = {
+                    limit = { original_tag = GER }
+                    GER_never_built_blueprints = yes
+                }
+                if = {
+                    limit = { original_tag = ITA }
+                    ITA_never_built_blueprints = yes
+                }
+                if = {
+                    limit = { original_tag = JAP }
+                    JAP_never_built_blueprints = yes
+                }
+                if = {
+                    limit = { original_tag = SOV }
+                    SOV_never_built_blueprints = yes
+                }
+                if = {
+                    limit = { original_tag = USA }
+                    USA_never_built_blueprints = yes
+                }
+            }
+        }
+    }
+
+    show_wunderwaffe = {
+        icon = GFX_decision_generic_confiscation
+        visible = {
+			NOT = { has_global_flag = wunderwaffe_shown }
+			has_game_rule = { rule = allow_never_built option = FREE }
+		}
+        available = {
+            num_of_naval_factories > 0
+        }
+        complete_effect = {
+            country_event = navy_rework.100
+        }
+    }
+
+    add_alicorn = {
+        icon = GFX_decision_generic_merge_plant_ship
+        visible = { has_global_flag = wunderwaffe_shown }
+        available = {
+            num_of_naval_factories > 0
+        }
+        fire_only_once = yes
+        complete_effect = {
+            country_event = navy_rework.1 
+        }
+    }
+    add_constitution = {
+        icon = GFX_decision_generic_merge_plant_ship
+        visible = { has_global_flag = wunderwaffe_shown }
+        available = {
+            num_of_naval_factories > 0
+        }
+        fire_only_once = yes
+        complete_effect = {
+            country_event = navy_rework.2
+        }
+    }
+    add_macross = {
+        icon = GFX_decision_generic_merge_plant_ship
+        visible = { has_global_flag = wunderwaffe_shown }
+        available = {
+            num_of_naval_factories > 0
+        }
+        fire_only_once = yes
+        complete_effect = {
+            country_event = navy_rework.3
+        }
+    }
+    add_space_yamato = {
+        icon = GFX_decision_generic_merge_plant_ship
+        visible = { has_global_flag = wunderwaffe_shown }
+        available = {
+            num_of_naval_factories > 0
+        }
+        fire_only_once = yes
+        complete_effect = {
+            country_event = navy_rework.4
+        }
+    }
+
+    add_kuk_never_built_blueprints = {
+        allowed = {
+            OR = {
+                tag = AUS
+                tag = HUN
+            }
+        }
+        # visible = { has_game_rule = { rule = allow_never_built option = FREE } }
+        available = {
+            num_of_naval_factories > 0
+        }
+        cost = 50
+        fire_only_once = yes
+        complete_effect = {
+            KuK_never_built_blueprints = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    add_km_never_built_blueprints = {
+        allowed = {
+            tag = GER
+        }
+        available = {
+            num_of_naval_factories > 0
+        }
+        cost = 50
+        fire_only_once = yes
+        complete_effect = {
+            km_never_built_blueprints = yes
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

@@ -1,0 +1,738 @@
+spriteTypes = {	
+	# new tech
+	spriteType = {
+		name = "GFX_ship_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_anti_air_rockets.png"
+	}
+	spriteType = {
+		name = "GFX_advanced_sonar_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_advanced_sonar.png"
+	}
+	spriteType = {
+		name = "GFX_ship_to_ship_missile_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_ship_to_ship_missile.png"
+	}
+	spriteType = {
+		name = "GFX_super_heavy_battery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_super_heavy_battery.png"
+	}
+	spriteType = {
+		name = "GFX_high_speed_light_engine_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_high_speed_engine.png"
+	}
+	spriteType = {
+		name = "GFX_destroyer_mass_production_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_destroyer_mass_production.png"
+	}
+	spriteType = {
+		name = "GFX_large_destroyer_trend_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_large_destroyer_trend.png"
+	}
+	spriteType = {
+		name = "GFX_cruiser_propulsion_revolution_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_propulsion_revolution.png"
+	}
+	spriteType = {
+		name = "GFX_escort_destroyer_trend_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_convoy_escorts.png"
+	}
+	spriteType = {
+		name = "GFX_destroyer_cruiser_trend_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_destroyer_cruiser_trend.png"
+	}
+	
+	spriteType = {
+		name = "GFX_early_cruiser_armor_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_armor_1.png"
+	}
+	spriteType = {
+		name = "GFX_basic_cruiser_armor_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_armor_2.png"
+	}
+	spriteType = {
+		name = "GFX_improved_cruiser_armor_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_armor_3.png"
+	}
+	spriteType = {
+		name = "GFX_advanced_cruiser_armor_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_armor_4.png"
+	}
+	spriteType = {
+		name = "GFX_cruiser_aa_upgrade_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_aa_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_searchlight_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_searchlight.png"
+	}
+	spriteType = {
+		name = "GFX_cruiser_gun_upgrade_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_gun_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_specialization_doctrine_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_specialization_doctrine.png"
+	}
+	spriteType = {
+		name = "GFX_cruiser_radar_sentry_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_radar_sentry.png"
+	}
+	spriteType = {
+		name = "GFX_cruiser_missile_upgrade_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_missile_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_fighter_directional_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_fighter_directional_system.png"
+	}
+	spriteType = {
+		name = "GFX_naval_radio_guiding_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_naval_radio_guiding_system.png"
+	}
+	
+	spriteType = {
+		name = "GFX_harvey_steel_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_harvey_steel.png"
+	}
+	spriteType = {
+		name = "GFX_krupp_steel_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_krupp_steel.png"
+	}
+	spriteType = {
+		name = "GFX_krupp_cemented_steel_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_krupp_cemented_steel.png"
+	}
+	spriteType = {
+		name = "GFX_ducol_steel_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_ducol_steel.png"
+	}
+	spriteType = {
+		name = "GFX_homogeneous_krupp_steel_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_homogeneous_krupp_steel.png"
+	}
+	
+	spriteType = {
+		name = "GFX_enhanced_horizontal_defense_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_enhanced_horizontal_defense.png"
+	}
+	
+	spriteType = {
+		name = "GFX_early_heavy_armor_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_heavy_armor_1.png"
+	}
+	spriteType = {
+		name = "GFX_basic_heavy_armor_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_heavy_armor_2.png"
+	}
+	spriteType = {
+		name = "GFX_improved_heavy_armor_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_heavy_armor_3.png"
+	}
+	spriteType = {
+		name = "GFX_advanced_heavy_armor_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_heavy_armor_4.png"
+	}
+	spriteType = {
+		name = "GFX_improved_conning_tower_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_improved_conning_tower.png"
+	}
+	spriteType = {
+		name = "GFX_heavy_ship_refit_reduction_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_heavy_ship_refit_reduction.png"
+	}
+	spriteType = {
+		name = "GFX_fuel_oil_boiler_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_fuel_oil_boiler.png"
+	}
+	spriteType = {
+		name = "GFX_ship_living_standard_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_ship_living_standard.png"
+	}
+	spriteType = {
+		name = "GFX_battleship_aa_upgrade_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_battleship_aa_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_rudder_upgrade_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_rudder_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_fuel_tank_upgrade_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_fuel_tank_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_radar_jammer_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_radar_jammer.png"
+	}
+	
+	spriteType = {
+		name = "GFX_prototype_airplane_launcher_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_prototype_airplane_launcher.png"
+	}
+	spriteType = {
+		name = "GFX_aviation_dawn_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_aviation_dawn.png"
+	}
+	spriteType = {
+		name = "GFX_carrier_mass_production_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_carrier_mass_production.png"
+	}
+	spriteType = {
+		name = "GFX_carrier_steam_catapult_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_carrier_steam_catapult.png"
+	}
+	spriteType = {
+		name = "GFX_full_armored_carrier_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_full_armored_carrier.png"
+	}
+	spriteType = {
+		name = "GFX_carrier_angled_deck_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_carrier_angled_deck.png"
+	}
+	spriteType = {
+		name = "GFX_dive_bomber_study_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_dive_bomber_study.png"
+	}
+	
+	spriteType = {
+		name = "GFX_landing_aid_system_medium"
+		#texturefile = "gfx/interface/technologies/naval_air_operations.dds
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_landing_aid_system.png"
+	}
+	spriteType = {
+		name = "GFX_arresting_gear_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_arresting_gear.png"
+	}
+	spriteType = {
+		name = "GFX_carrier_radio_range_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_carrier_radio_range.png"
+	}
+	spriteType = {
+		name = "GFX_folding_wing_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_folding_wing.png"
+	}
+	spriteType = {
+		name = "GFX_carrier_damage_control_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_carrier_damage_control.png"
+	}
+	spriteType = {
+		name = "GFX_air_fuel_storage_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_air_fuel_storage.png"
+	}
+	
+	spriteType = {
+		name = "GFX_basic_ballast_tank_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_ballast_tank.png"
+	}
+	spriteType = {
+		name = "GFX_improved_ballast_tank_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_ballast_tank.png"
+	}
+	spriteType = {
+		name = "GFX_basic_periscope_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_basic_periscope.png"
+	}
+	spriteType = {
+		name = "GFX_improved_periscope_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_improved_periscope.png"
+	}
+	spriteType = {
+		name = "GFX_advanced_periscope_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_advanced_periscope.png"
+	}
+	spriteType = {
+		name = "GFX_anechoic_tile_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_anechoic_tile.png"
+	}
+	spriteType = {
+		name = "GFX_sub_AIP_engine_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_sub_AIP_engine.png"
+	}
+	spriteType = {
+		name = "GFX_acoustic_signature_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_acoustic_signature.png"
+	}
+	spriteType = {
+		name = "GFX_teardrop_hull_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_teardrop_hull.png"
+	}
+	spriteType = {
+		name = "GFX_submarine_mass_production_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_submarine_mass_production.png"
+	}
+	
+	spriteType = {
+		name = "GFX_basic_super_heavy_battery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_super_heavy_battery.png"
+	}
+	spriteType = {
+		name = "GFX_improved_super_heavy_battery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_super_heavy_battery.png"
+	}
+	spriteType = {
+		name = "GFX_experimental_super_heavy_battery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_experimental_super_heavy_battery.png"
+	}
+	spriteType = {
+		name = "GFX_improved_medium_heavy_battery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_super_heavy_battery.png"
+	}
+	spriteType = {
+		name = "GFX_advanced_medium_heavy_battery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_experimental_super_heavy_battery.png"
+	}
+	
+	spriteType = {
+		name = "GFX_basic_battery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_basic_battery.png"
+	}
+	spriteType = {
+		name = "GFX_multi_mounted_battery_medium"
+		texturefile = "gfx/interface/technologies/basic_battery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sound_surveillance_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_sosus.png"
+	}
+	spriteType = {
+		name = "GFX_combat_information_center_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_combat_information_center.png"
+	}
+	spriteType = {
+		name = "GFX_advanced_torpedo_ballistics_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_advanced_torpedo_ballistics.png"
+	}
+	spriteType = {
+		name = "GFX_torpedo_loader_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_torpedo_loader.png"
+	}
+	spriteType = {
+		name = "GFX_diesel_electric_transmission_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_diesel_electric_transmission.png"
+	}
+
+	spriteType = {
+		name = "GFX_naval_combat_support_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_naval_combat_support.png"
+	}
+	spriteType = {
+		name = "GFX_basic_port_facility_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_basic_port_facility.png"
+	}
+	spriteType = {
+		name = "GFX_large_shipyard_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_large_shipyard.png"
+	}
+	spriteType = {
+		name = "GFX_heavy_crane_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_heavy_crane.png"
+	}
+	spriteType = {
+		name = "GFX_dry_dock_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_dry_dock.png"
+	}
+	spriteType = {
+		name = "GFX_port_construction_corps_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_port_construction_corps.png"
+	}
+	spriteType = {
+		name = "GFX_integrated_shipyard_complex_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_large_shipyard.png"
+	}
+	spriteType = {
+		name = "GFX_speed_over_range_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_speed_over_range.png"
+	}
+	spriteType = {
+		name = "GFX_range_over_speed_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_range_over_speed.png"
+	}
+	spriteType = {
+		name = "GFX_high_speed_civilian_engine_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_high_speed_civilian_engine.png"
+	}
+	spriteType = {
+		name = "GFX_armed_civilian_ship_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_armed_civilian_ship.png"
+	}
+	spriteType = {
+		name = "GFX_fast_combat_support_ship_medium"
+		texturefile = "gfx/interface/technologies/Generic/PN_generic_auxiliary_ship2.png"
+	}
+	spriteType = {
+		name = "GFX_integrated_supply_ship_medium"
+		texturefile = "gfx/interface/technologies/Generic/PN_generic_auxiliary_ship3.png"
+	}
+	spriteType = {
+		name = "GFX_support_fleet_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_repair_ship.png"
+	}
+	spriteType = {
+		name = "GFX_floating_dry_dock_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_floating_dry_dock.png"
+	}
+	spriteType = {
+		name = "GFX_logistic_system_redundancy_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_logistic_system_redundancy.png"
+	}
+	spriteType = {
+		name = "GFX_support_fleet_ncns_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_repair_ship.png"
+	}
+	spriteType = {
+		name = "GFX_floating_dry_dock_ncns_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_floating_dry_dock.png"
+	}
+	spriteType = {
+		name = "GFX_logistic_system_redundancy_ncns_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_logistic_system_redundancy.png"
+	}
+	spriteType = {
+		name = "GFX_hospital_ship_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_hospital_ship.png"
+	}
+	spriteType = {
+		name = "GFX_surgery_at_sea_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_surgery_at_sea.png"
+	}
+	spriteType = {
+		name = "GFX_medical_supply_at_sea_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_medical_supply_at_sea.png"
+	}
+	spriteType = {
+		name = "GFX_joint_sea_hospital_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_joint_sea_hospital.png"
+	}
+	spriteType = {
+		name = "GFX_naval_fuel_complex_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_naval_fuel_complex.png"
+	}
+	spriteType = {
+		name = "GFX_retardant_silo_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_retardant_silo.png"
+	}
+	spriteType = {
+		name = "GFX_integrated_fuel_base_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_integrated_fuel_base.png"
+	}
+	
+	spriteType = {
+		name = "GFX_destroyer_missile_upgrade_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_destroyer_missile_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_helipad_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_helipad.png"
+	}
+	spriteType = {
+		name = "GFX_early_carrier_study_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_early_carrier_study.png"
+	}
+
+	spriteType = {
+		name = "GFX_rocket_depth_charges_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_rocket_depth_charges.png"
+	}
+	spriteType = {
+		name = "GFX_destroyer_guided_missile_upgrade_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_missile_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_destroyer_hull_improvement_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_destroyer_hull_improvement.png"
+	}
+	spriteType = {
+		name = "GFX_modern_sonar_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_modern_sonar.png"
+	}
+	spriteType = {
+		name = "GFX_phased_array_radar_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_phased_array_radar.png"
+	}
+	spriteType = {
+		name = "GFX_decoy_launching_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_decoy_launching_system.png"
+	}
+	spriteType = {
+		name = "GFX_new_ship_materials_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_new_ship_materials.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_reactor_cost_reduction_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_nuclear_reactor_cost_reduction.png"
+	}
+	spriteType = {
+		name = "GFX_full_missile_ship_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_full_missile_ship.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_engine_research_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_nuclear_engine_research.png"
+	}
+	spriteType = {
+		name = "GFX_naval_tactical_data_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_naval_tactical_data_system.png"
+	}
+	spriteType = {
+		name = "GFX_integrated_combat_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_integrated_combat_system.png"
+	}
+	spriteType = {
+		name = "GFX_memory_expansion_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_memory_expansion.png"
+	}
+	spriteType = {
+		name = "GFX_comprehensive_display_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_comprehensive_display_system.png"
+	}
+	spriteType = {
+		name = "GFX_electromagnetic_signature_study_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_electromagnetic_signature_study.png"
+	}
+	spriteType = {
+		name = "GFX_recon_drones_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_recon_drones.png"
+	}
+	spriteType = {
+		name = "GFX_optical_landing_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_optical_landing_system.png"
+	}
+	spriteType = {
+		name = "GFX_airborne_early_warning_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_airborne_early_warning.png"
+	}
+	spriteType = {
+		name = "GFX_iff_device_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_iff_device.png"
+	}
+	spriteType = {
+		name = "GFX_tactical_air_navigation_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_tactical_air_navigation_system.png"
+	}
+	spriteType = {
+		name = "GFX_sub_nuclear_engine_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_sub_nuclear_engine.png"
+	}
+	spriteType = {
+		name = "GFX_wire_guided_torpedo_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_wire_guided_torpedo.png"
+	}
+	spriteType = {
+		name = "GFX_sonar_telephone_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_sonar_telephone.png"
+	}
+	spriteType = {
+		name = "GFX_hydrocooling_battery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_hydrocooling_battery.png"
+	}
+	spriteType = {
+		name = "GFX_rescue_submarine_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_rescue_submarine.png"
+	}
+	
+	
+	# doctrine
+	spriteType = {
+		name = "GFX_adjacent_projection_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_ambush_tactics_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_armed_merchantmen_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_circle_formation_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_coastal_operations_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_decisive_battle_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_fast_battleship_primacy_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_fast_battleship_primacy.png"
+	}
+	spriteType = {
+		name = "GFX_frequent_air_raid_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_guerrilla_tactics_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_mass_air_raid_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_naval_air_force_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_naval_airforce.png"
+	}
+	spriteType = {
+		name = "GFX_naval_concealment_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_scouting_fleet_primacy_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_submarine_picket_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_submarine_picket_bs_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_tonnage_war_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_torpedo_groups_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_torpedo_groups.png"
+	}
+	spriteType = {
+		name = "GFX_flight_deck_management_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_advanced_submarine_warfare_medium"
+		texturefile = "gfx/interface/officer_corp/naval_doctrine.dds"
+	}
+
+	# support tech extension
+	spriteType = {
+		name = "GFX_coldwar_ship_torpedo_launcher_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_coldwar_ship_torpedo_launcher.png"
+	}
+	spriteType = {
+		name = "GFX_modern_generic_battery_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_modern_generic_battery.png"
+	}
+	spriteType = {
+		name = "GFX_modern_periscope_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_modern_periscope.png"
+	}
+	spriteType = {
+		name = "GFX_wake_homing_torpedo_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_wake_homing_torpedo.png"
+	}
+	spriteType = {
+		name = "GFX_unmanned_gun_turret_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_unmanned_gun_turret.png"
+	}
+	spriteType = {
+		name = "GFX_proximity_detonator_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_proximity_detonator.png"
+	}
+	spriteType = {
+		name = "GFX_oxygen_torpedo_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_oxygen_torpedo.png"
+	}
+	
+	spriteType = {
+		name = "GFX_tactical_data_link_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_tactical_data_link.png"
+	}
+	spriteType = {
+		name = "GFX_tactical_data_link_for_member_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_tactical_data_link.png"
+	}
+	spriteType = {
+		name = "GFX_signal_control_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_signal_control.png"
+	}
+	spriteType = {
+		name = "GFX_advanced_radar_finder_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_advanced_radar_finder.png"
+	}
+	spriteType = {
+		name = "GFX_close_in_area_air_defense_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_close_in_area_air_defense.png"
+	}
+	spriteType = {
+		name = "GFX_wave_resistance_design_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_wave_resistance_design.png"
+	}
+	spriteType = {
+		name = "GFX_cryptography_revolution_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cryptography_revolution.png"
+	}
+	spriteType = {
+		name = "GFX_luneburg_lens_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_luneburg_lens.png"
+	}
+	spriteType = {
+		name = "GFX_advanced_missile_system_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_advanced_missile_system.png"
+	}
+	spriteType = {
+		name = "GFX_basic_submarine_snorkel_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_basic_submarine_snorkel.png"
+	}
+	spriteType = {
+		name = "GFX_improved_submarine_snorkel_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_improved_submarine_snorkel.png"
+	}
+	spriteType = {
+		name = "GFX_ship_hull_super_heavy_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_ship_hull_super_heavy.png"
+	}
+	spriteType = {
+		name = "GFX_cruiser_submarines_medium"
+		texturefile = "gfx/interface/technologies/navy_techtree/PN_cruiser_submarines.png"
+	}
+	
+	
+	### special projects
+	spriteType = {
+		name = "GFX_sp_battlecarrier"
+		texturefile = "gfx/interface/special_project/project_icons/PN_sp_battlecarrier.png"
+	}
+	spriteType = {
+		name = "GFX_sp_nuclear_torpedo"
+		texturefile = "gfx/interface/special_project/project_icons/sp_naval_nuclear_torpedo.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_super_heavy_guns"
+		texturefile = "gfx/interface/special_project/project_icons/PN_sp_super_heavy_guns.png"
+	}
+	spriteType = {
+		name = "GFX_sp_subcarrier"
+		texturefile = "gfx/interface/special_project/project_icons/PN_sp_subcarrier.png"
+	}
+	spriteType = {
+		name = "GFX_sp_mega_carrier"
+		texturefile = "gfx/interface/special_project/project_icons/PN_sp_mega_carrier.png"
+	}
+	spriteType = {
+		name = "GFX_sp_arsenal_ship"
+		texturefile = "gfx/interface/special_project/project_icons/PN_sp_arsenal_ship.png"
+	}
+	spriteType = {
+		name = "GFX_sp_early_informatization_system"
+		texturefile = "gfx/interface/special_project/project_icons/PN_sp_early_informatization_system.png"
+	}
+	spriteType = {
+		name = "GFX_sp_high_speed_light_engine"
+		texturefile = "gfx/interface/special_project/project_icons/PN_sp_high_speed_light_engine.png"
+	}
+	spriteType = {
+		name = "GFX_sp_submarine_snorkel"
+		texturefile = "gfx/interface/special_project/project_icons/sp_naval_anechoic_tiles.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_shipping_container"
+		texturefile = "gfx/interface/special_project/project_icons/PN_sp_shipping_container.png"
+	}
+}

@@ -1,0 +1,93 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_doctrine_base_strike_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_air_sea_operation.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_fast_battleship_primacy_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_fast_battleship_primacy.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_torpedo_groups_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_torpedo_groups.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_naval_airforce_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_naval_airforce.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_submarine_area_denial_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_submarine_area_denial.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_littoral_defense_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_littoral_defense.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_mosquito_fleet_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_mosquito_fleet.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_airspace_denial_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_airspace_denial.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_operation_autonomy_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_operation_autonomy.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_coverted_oceanic_replenishment_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_coverted_oceanic_replenishment.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_industrialized_naval_logistics_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_industrialized_naval_logistics.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_trade_supply_network_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_trade_supply_network.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_defensive_combat_support_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_defensive_combat_support.png"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_doctrine_centralized_logistics_planning_medium"
+		texturefile = "gfx/interface/doctrines/icons/PN_centralized_logistics_planning.png"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fleet_in_being_bg"
+		texturefile = "gfx/interface/doctrines/background/PN_battleship.png"
+	}
+	spriteType = {
+		name = "GFX_base_strike_bg"
+		texturefile = "gfx/interface/doctrines/background/PN_carrier.png"
+	}
+	spriteType = {
+		name = "GFX_screens_bg"
+		texturefile = "gfx/interface/doctrines/background/PN_screen.png"
+	}
+	spriteType = {
+		name = "GFX_trade_interdiction_bg"
+		texturefile = "gfx/interface/doctrines/background/PN_submarine.png"
+	}
+	spriteType = {
+		name = "GFX_naval_logistics_bg"
+		texturefile = "gfx/interface/doctrines/background/PN_logistics.png"
+	}
+}

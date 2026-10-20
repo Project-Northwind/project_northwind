@@ -1,0 +1,1 @@
+# Definitions consolidated in PN_naval_equipment.txt for deterministic archetype ordering.

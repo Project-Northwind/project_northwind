@@ -1,0 +1,58 @@
+
+units= {
+
+	##### NAVAL UNITS #####
+	### Northern Fleet -- Murmansk
+	# Navy supplied by PN_initialize_navy.
+	
+	### Baltic Fleet -- Leningrad
+	# Navy supplied by PN_initialize_navy.by PN_initialize_navy.
+
+	### Pacific Fleet -- Vladivostok
+	# Navy supplied by PN_initialize_navy.
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Under Construction Notes ###
+	# CA: Kirov Class (x1) ("Voroshilov") Maxim Gorkiy variant (x2) ("Maxim Gorkiy" "Molotov")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# DD: Tashkent variant (x1) ("Tashkent")
+	# Navy supplied by PN_initialize_navy.
+	# DD: Leningrad variant (x2) ("Sergo Ordzhonikize" "Tbilisi")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# DD: Gvevny variant (x1) ("Grozyashchiy" "Steregushchiy"  "Rastoropnyy" "Besposhchadnyy" "Rezvyy" "Bezuprechnyy" "Bditelnyy" "Razyashchiy" "Retivyy" "Revnostnyy" "Rekordnyy")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# SS: Stalinets class (x19) ("S-4" "S-5" "S-6" "S-7" "S-8" "S-9" "S-10" "S-11" "S-12" "S-13" "S-31" "S-32" "S-33" "S-54" "S-101" "S-102" "S-14" "S-103" "S-104")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# SS: K-class (x8) ("K-1" "K-2" "K-3" "K-21" "K-22" "K-23" "K-51" "K-52")	
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# DD: Soobrazitelnyi class (x10) (Storozhevoy" "Stoykiy" "Silnyy" "Serdityy" "Strashnyy" "Smelyy" "Skoryy" "Surovyy" "Sovershennyy" "Svobodnyy")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+}
+
+#####################

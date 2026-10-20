@@ -1,0 +1,41 @@
+
+units= {
+
+	### Marine Francaise (CO: Darlan) ###
+	# Admiralty North (CO: Castex) #
+	# Navy supplied by PN_initialize_navy.
+		
+	# Admiralty West (CO: de Laborde) #
+	# Navy supplied by PN_initialize_navy.
+
+	# Admiralty South (CO: Esteva) #
+	# Navy supplied by PN_initialize_navy.
+
+	### NORTH AFRICA ###				
+	# Navy supplied by PN_initialize_navy.
+
+	### FAR EAST ###				
+	# Navy supplied by PN_initialize_navy.
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Ships Under Contruction Notes ###
+	# SS: Aurore variant (x1) ("Aurore")
+	# Navy supplied by PN_initialize_navy.
+	# DD: Le Hardi variant (x6) ("Le Hardi" "Fleuret" "Epée" "Casque" "Lansquenet" "Mameluk")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	 # BB: Richelieu class (x1) ("Richelieu")
+	# Navy supplied by PN_initialize_navy.
+
+#####################

@@ -1,0 +1,30 @@
+units = {
+	##### NAVAL UNITS #####
+	### HOME COMMAND ###
+	# Navy supplied by PN_initialize_navy.
+
+	### MEDITERRANIAN FLEET ###			
+	# Navy supplied by PN_initialize_navy.
+				
+	### NORTH AND SOUTH AMERICAS ###			
+	# Navy supplied by PN_initialize_navy.
+
+	### FAR EAST ###			
+	# Navy supplied by PN_initialize_navy.
+}
+instant_effect = {
+	### Ongoing Ship Production Jan 1 1936 ###
+	# DD: G/H class (x9) ("HMS Gallant" "HMS Garland" "HMS Gipsy" "HMS Glowworm" "HMS Grafton" "HMS Grenade" "HMS Grenville" "HMS Greyhound" "HMS Griffin")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# SS: S-class variant (x2) ("HMS Seawolf" "HMS Narwhal")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+}

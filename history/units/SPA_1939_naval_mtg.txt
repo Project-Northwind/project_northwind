@@ -1,0 +1,21 @@
+
+units= {
+
+	##### NAVAL UNITS #####
+	# Navy supplied by PN_initialize_navy.
+		
+	# Navy supplied by PN_initialize_navy.
+
+	# Navy supplied by PN_initialize_navy.
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	# DD: Júpiter class (x1) (minelayers) ("ARE Neptuno")
+	# Navy supplied by PN_initialize_navy.
+}

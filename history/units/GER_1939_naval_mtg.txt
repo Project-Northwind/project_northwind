@@ -1,0 +1,41 @@
+
+
+units = {
+	##### NAVAL UNITS -- Kreigsmarine (CO: Raeder) #####
+	# Navy supplied by PN_initialize_navy.
+		
+	# Navy supplied by PN_initialize_navy.#
+#########################
+
+instant_effect = {
+
+	### Ships Under Contruction ###
+	# CA: Hipper  (x1) ("Blücher")
+	# Navy supplied by PN_initialize_navy.
+	# CA: Prinz Eugen (x1) ("Prinz Eugen") (also "Seydlitz" "Lützow" but not included)
+	# Navy supplied by PN_initialize_navy.
+	# BB: "Bismarck" (x1)
+	# Navy supplied by PN_initialize_navy.
+	# BB: "Tirpitz" (x1)
+	# Navy supplied by PN_initialize_navy.
+	# SS: Type VIIB (x3) ("U-50" "U-54" "U-55")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# DD: 1936 (x1) ("Z-22")
+	# Navy supplied by PN_initialize_navy.
+	# DD: Type 1935 TBs (x12 launched, x5 built within game time) ("T-1" "T-2" "T-3" "T-5" "T-7" "T-8")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# SS: Type IIC (x2) ("U-62" "UA")
+	# Navy supplied by PN_initialize_navy.
+	# Navy supplied by PN_initialize_navy.
+	# CV: Graf Zeppelin (x1)
+	# Navy supplied by PN_initialize_navy.
+}
+
+#####################

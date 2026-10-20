@@ -1,0 +1,18 @@
+units = {
+
+	##### NAVAL UNITS #####
+	# Navy supplied by PN_initialize_navy.
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Under Construction Notes ###
+	# DD: Göteborg class (x1) ("HMS Karlskrona")
+	# Navy supplied by PN_initialize_navy.
+	# SS: Sjölejonet class (x1) ("HMS Sjöhunden")
+	# Navy supplied by PN_initialize_navy.
+}
