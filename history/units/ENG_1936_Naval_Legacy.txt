@@ -1,20 +1,6 @@
 units = {
-	##### NAVAL UNITS #####
-	### HOME COMMAND ###
-
-	### MEDITERRANIAN FLEET ###
-
-	### NORTH AND SOUTH AMERICAS ###
-
-	### FAR EAST ###
 
 }
 instant_effect = {
-	### Ongoing Ship Production Jan 1 1936 ###
-	# DD: G/H class (x9) ("HMS Gallant" "HMS Garland" "HMS Gipsy" "HMS Glowworm" "HMS Grafton" "HMS Grenade" "HMS Grenville" "HMS Greyhound" "HMS Griffin")
-
-	# SS: S-class variant (x2) ("HMS Seawolf" "HMS Narwhal")
-
-	# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
 
 }

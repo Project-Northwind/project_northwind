@@ -1,5 +1,1 @@
-units = {
-
-	##### NAVAL UNITS #####
-
-}
+# This folder is for overriding, Finland does not start with a Navy
