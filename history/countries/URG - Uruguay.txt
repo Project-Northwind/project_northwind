@@ -8,7 +8,7 @@ every_core_state = {
 }
 IF = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PN_00_URG_vnr_naval"
+		set_naval_oob = "URG_1936_naval_mtg"
 	ELSE = {
 		set_naval_oob = "URG_1936_naval_legacy"
 	}

@@ -3,7 +3,7 @@ capital = 47
 oob = "GRE_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PN_GRE_1936_naval"
+		set_naval_oob = "GRE_1936_naval_mtg"
 	else = {
 		set_naval_oob = "GRE_1936_naval_legacy"
 	}
@@ -322,14 +322,14 @@ if = {
 		name_group = GRE_SS_HISTORICAL
 		parent_version = 0
 		show_position = no
-		type = vnr_ship_hull_submarine_3
+		type = vnr_ship_hull_submarine_1
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_conning_tower_slot = sub_conning_tower_0
 			fixed_ship_engine_slot = sub_ship_engine_1
-			fixed_ship_armor_slot = pressure_hull_3
+			fixed_ship_armor_slot = pressure_hull_1
 			fixed_sub_periscope_slot = sub_ship_periscope_0
-			fixed_ship_secondaries_slot = sub_deck_gun_3
+			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = ship_torpedo_sub_1
 			front_1_custom_slot = empty
 		}

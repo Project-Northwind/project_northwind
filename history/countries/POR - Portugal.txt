@@ -3,7 +3,7 @@ capital = 112
 oob = "POR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PN_00_POR_vnr_naval"
+		set_naval_oob = "POR_1936_naval_mtg"
 	else = {
 		set_naval_oob = "POR_1936_naval_legacy"
 	}

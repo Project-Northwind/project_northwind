@@ -1572,16 +1572,16 @@ DEN_activate_bought_ships = {
 					has_dlc = "Man the Guns"
 				}
 				create_ship = {
-					type = vnr_ship_hull_light_1
-					equipment_variant = "Örnen Class"
+					type = vnr_ship_hull_light_3
+					equipment_variant = "Göteborg Class (Export)"
 					creator = SWE
-					name = "Örnen Klasse I"
+					name = "Göteborg Klasse I"
 				}
 				create_ship = {
-					type = vnr_ship_hull_light_1
-					equipment_variant = "Örnen Class"
+					type = vnr_ship_hull_light_3
+					equipment_variant = "Göteborg Class (Export)"
 					creator = SWE
-					name = "Örnen Klasse II"
+					name = "Göteborg Klasse II"
 				}
 			}
 			else = {

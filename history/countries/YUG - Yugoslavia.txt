@@ -16,7 +16,7 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PN_00_YUG_vnr_naval"
+		set_naval_oob = "YUG_1936_naval_mtg"
 	else = {
 		set_naval_oob = "YUG_1936_naval_legacy"
 	}

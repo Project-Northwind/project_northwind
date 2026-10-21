@@ -490,7 +490,7 @@ if = {
 		magnetic_detonator = 1
 		naval_combat_support = 1
 	}
-	set_naval_oob = "PN_00_ITA_vnr_naval"
+	set_naval_oob = "ITA_1936_naval_mtg"
 }
 
 if = {

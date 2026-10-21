@@ -3,7 +3,7 @@ capital = 7
 oob = "HOL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PN_00_HOL_vnr_naval"
+		set_naval_oob = "HOL_1936_naval_mtg"
 	else = {
 		set_naval_oob = "HOL_1936_naval_legacy"
 	}

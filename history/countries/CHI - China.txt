@@ -64,7 +64,7 @@ IF = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PN_00_CHI_vnr_naval"
+		set_naval_oob = "CHI_1936_naval_mtg"
 	else = {
 		set_naval_oob = "CHI_1936_naval_legacy"
 	}

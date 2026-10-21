@@ -577,7 +577,7 @@ IF = {
 		oxygen_torpedo = 1
 		naval_combat_support = 1
 	}
-	set_naval_oob = "PN_00_JAP_vnr_naval"
+	set_naval_oob = "JAP_1936_naval"
 }
 IF = {
 	limit = {

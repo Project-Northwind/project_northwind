@@ -60,7 +60,7 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_naval_oob = "PN_00_BEL_vnr_naval"
+	set_naval_oob = "BEL_1936_naval"
 	set_technology = { bicycle_infantry = 1 }
 }
 

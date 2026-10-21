@@ -1,12 +1,17 @@
 units = {
-    fleet = {
-        name = "Armada Bolivariana de Venezuela"
-        naval_base = 8113
-        task_force = {
-            name = "Armada Bolivariana de Venezuela"
-            location = 8113
-            ship = { name = "General Soublette" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "General Soublette Class" } } }
-            ship = { name = "General Urdaneta" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "General Soublette Class" } } }
-        }
-    }
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Armada de la República de Venezuela"
+		naval_base = 8113
+		task_force = {
+			name = "Armada de la República de Venezuela"
+			location = 8113
+			ship = { name = "ARV Mariscal Sucre" pride_of_the_fleet = yes definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "Mariscal Sucre Class" } } }
+			ship = { name = "ARV General Salom" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "General Salom Class" } } }
+			ship = { name = "ARV Maracay" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "Maracay Class" } } }
+			ship = { name = "ARV Miranda" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "Maracay Class" } } }
+			ship = { name = "ARV Aragua" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "Maracay Class" } } }
+		}
+	}
 }

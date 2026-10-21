@@ -5,7 +5,7 @@ set_oob = "SWE_1936"
 add_manpower = 101300 # offsets the 1936 land OOB's manpower draw (13x Arméfördelning @ 7100 + 2x Kavalleribrigaden @ 4500) so the historical mobilization is manpower-neutral
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PN_SWE_1936_naval"
+		set_naval_oob = "SWE_1936_naval_mtg"
 	else = {
 		set_naval_oob = "SWE_1936_naval_legacy"
 	}
@@ -124,6 +124,7 @@ if = {
 		basic_ship_hull_cruiser = 1
 		panzerschiffe = 1
 		basic_battery = 1
+		basic_light_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
@@ -252,44 +253,7 @@ if = {
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Hajen Class"
-		name_group = SWE_SS_HISTORICAL
-		parent_version = 0
-		show_position = no
-		obsolete = yes
-		type = vnr_ship_hull_submarine_1
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_conning_tower_slot = sub_conning_tower_0
-			fixed_ship_engine_slot = sub_ship_engine_1
-			fixed_ship_armor_slot = pressure_hull_1
-			fixed_sub_periscope_slot = sub_ship_periscope_0
-			fixed_ship_secondaries_slot = sub_deck_gun_1
-			rear_1_custom_slot = empty
-		}
-	}
 	# Destroyers #
-	create_equipment_variant = {
-		name = "Örnen Class"
-		name_group = SWE_DD_HISTORICAL
-		parent_version = 0
-		show_position = no
-		obsolete = yes
-		type = vnr_ship_hull_light_1
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
 	create_equipment_variant = {
 		name = "Göteborg Class"
 		name_group = SWE_DD_HISTORICAL
@@ -297,7 +261,7 @@ if = {
 		show_position = no
 		type = vnr_ship_hull_light_3
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -305,7 +269,47 @@ if = {
 			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_2
+			rear_2_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Hälsingborg Class"
+		name_group = SWE_DD_HISTORICAL
+		parent_version = 0
+		show_position = no
+		type = vnr_ship_hull_light_3
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_light_battery_2
+			rear_2_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Göteborg Class (Export)"
+		name_group = SWE_DD_HISTORICAL
+		parent_version = 0
+		show_position = no
+		obsolete = yes
+		type = vnr_ship_hull_light_3
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
+			rear_2_custom_slot = ship_depth_charge_1
 		}
 	}
 	# Cruisers #
@@ -314,20 +318,22 @@ if = {
 		name_group = SWE_CL_HISTORICAL
 		parent_version = 0
 		show_position = no
-		type = vnr_ship_hull_cruiser_3
+		type = vnr_ship_hull_cruiser_2
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_2_double
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_radar_slot = ship_mast_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_role_slot = ship_hull_cruiser_role_c
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_light_medium_battery_1
-			rear_1_custom_slot = ship_airplane_launcher_1
-			front_1_custom_slot = ship_anti_air_1
-			fixed_ship_secondaries_slot = empty
 			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_mine_layer_1
+			mid_3_custom_slot = ship_light_medium_battery_2_single
+			rear_1_custom_slot = ship_light_medium_battery_2_double
+			rear_2_custom_slot = ship_torpedo_1
 		}
 	}
 
@@ -343,14 +349,15 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = ship_mast_1
-			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_engine_slot = cruiser_ship_engine_2_diesel
 			fixed_ship_role_slot = ship_hull_cruiser_role_pz
+			fixed_ship_armor_slot = ship_armor_cruiser_heavy_1
+			fixed_ship_secondaries_slot = ship_secondaries_2_light
 			mid_1_custom_slot = ship_airplane_launcher_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_torpedo_1
-			front_1_custom_slot = empty
-			fixed_ship_secondaries_slot = ship_secondaries_1_light
-			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_2_custom_slot = ship_secondaries_2_light
+			mid_3_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_heavy_battery_1
+			rear_2_custom_slot = ship_torpedo_1
 		}
 	}
 }

@@ -317,7 +317,7 @@ IF = {
 		improved_ship_torpedo_launcher = 1
 		acoustic_signature = 1
 	}
-	set_naval_oob = "PN_00_BRA_vnr_naval"
+	set_naval_oob = "BRA_1936_naval"
 }
 
 set_country_flag = monroe_doctrine

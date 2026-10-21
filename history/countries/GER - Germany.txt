@@ -214,7 +214,7 @@ if = {
 		electric_torpedo = 1
 		naval_combat_support = 1
 	}
-	set_naval_oob = "PN_00_GER_vnr_naval"
+	set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {

@@ -3,7 +3,7 @@
 oob = "VEN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_naval_oob = "PN_00_VEN_vnr_naval"
+	set_naval_oob = "VEN_1936_naval"
 }
 
 # Starting tech
@@ -27,6 +27,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
+		basic_battery = 1
 	}
 }
 
@@ -72,10 +73,41 @@ set_popularities = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
-		name = "General Soublette Class"
+		name = "Mariscal Sucre Class"
 		parent_version = 0
 		show_position = no
-		role_icon_index = 48
+		obsolete = yes
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1_single
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			front_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_light_medium_battery_1_single
+		}
+	}
+	create_equipment_variant = {
+		name = "General Salom Class"
+		parent_version = 0
+		show_position = no
+		obsolete = yes
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			rear_1_custom_slot = ship_light_battery_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Maracay Class"
+		parent_version = 0
+		show_position = no
+		obsolete = yes
 		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1

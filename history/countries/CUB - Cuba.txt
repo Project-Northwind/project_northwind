@@ -3,7 +3,7 @@
 oob = "CUB_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_naval_oob = "PN_00_CUB_vnr_naval"
+	set_naval_oob = "CUB_1936_naval"
 }
 
 # Starting tech
