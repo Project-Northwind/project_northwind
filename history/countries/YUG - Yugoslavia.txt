@@ -16,7 +16,7 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "YUG_1936_naval_mtg"
+		set_naval_oob = "PN_00_YUG_vnr_naval"
 	else = {
 		set_naval_oob = "YUG_1936_naval_legacy"
 	}
@@ -157,6 +157,14 @@ if = {
 		early_destroyer = 1
 		early_light_cruiser = 1
 		early_submarine = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		electronic_mechanical_engineering = 1
+		antiair2 = 1
+		multi_mounted_battery = 1
 	}
 }
 if = {
@@ -173,147 +181,16 @@ if = {
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		coastal_defense_ships = 1
-	}
-}
-
-1939.1.1 = {
-
-	add_ideas = {
-		limited_conscription
-	}
-
-	if = {
-		limit = {
-			has_dlc = "Death or Dishonor"
-		}
-		add_ideas = {
-			YUG_idea_foreign_capital
-			YUG_idea_expanded_mining_industry
-			YUG_license_production
-			YUG_idea_orthodox_church_support
-		}
-	}
-
-	add_political_power = 1198
-	add_command_power = 100
-
-	if = {
-		limit = {
-			has_dlc = "Death or Dishonor"
-		}
-		complete_national_focus = YUG_western_focus
-		complete_national_focus = YUG_industrialization_program
-		complete_national_focus = YUG_friendship_treaty_with_italy
-		complete_national_focus = YUG_attract_axis_capital
-		complete_national_focus = YUG_expand_the_mining_industry
-		complete_national_focus = YUG_develop_civilian_industry
-		complete_national_focus = YUG_evolution
-		complete_national_focus = YUG_army_modernization
-		complete_national_focus = YUG_mountain_brigades
-		complete_national_focus = YUG_modernize_the_air_force
-		complete_national_focus = YUG_purchase_foreign
-		complete_national_focus = YUG_license_production
-		complete_national_focus = YUG_fighter_license
-		complete_national_focus = YUG_establish_the_banovina_of_croatia
-		complete_national_focus = YUG_ban_slovene_nationalist_parties
-		complete_national_focus = YUG_concessions_for_macedonians
-		complete_national_focus = YUG_small_arms
-		complete_national_focus = YUG_domestic_artillery_production
-		complete_national_focus = YUG_expand_the_serbian_shipyards
-
-		unlock_national_focus = YUG_rare_minerals_exploitation
-	}
-
-	if = {
-		limit = {
-			NOT = { has_dlc = "Death or Dishonor" }
-		}
-		#generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = naval_effort
-		complete_national_focus = flexible_navy
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort
-	}
-	if = {
-		limit = { NOT = { has_dlc = "No Step Back" } }
-		set_oob = "YUG_1939"
-	}
-	if = {
-		limit = { has_dlc = "No Step Back" }
-		set_oob = "YUG_1939_nsb"
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "YUG_1939_naval_mtg"
-		else = {
-			set_naval_oob = "YUG_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "YUG_1939_air_bba"
-			set_technology = {
-				engines_2 = 1
-			}
-		else = {
-			set_air_oob = "YUG_1939_air_legacy"
-			set_technology = {
-				fighter1 = 1
-				early_bomber = 1
-				tactical_bomber1 = 1
-				CAS1 = 1
-				naval_bomber1 = 1
-			}
-		}
-	}
-
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		#air_superiority = 1
-
-		#electronics
+		improved_ship_hull_submarine = 1
 		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		construction1 = 1
-		concentrated_industry = 1
-	}
-
-set_grand_doctrine = superior_firepower
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_destroyer = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-		}
+		interwar_ship_hull_light = 1
+		multi_mounted_battery = 1
+		smoke_generator = 1
+		basic_periscope = 1
+		diesel_electric_transmission = 1
+		teardrop_hull = 1
+		improved_ship_torpedo_launcher = 1
+		acoustic_signature = 1
 	}
 }
 
@@ -330,21 +207,6 @@ set_popularities = {
 	fascism = 10
 	communism = 15
 	neutrality = 60
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1938.12.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_popularities = { # Will get +7 from Italian focus: Potential Allies in the Balkans
-		democratic = 10
-		fascism = 20
-		communism = 10
-		neutrality = 60
-	}
 }
 
 set_stability = 0.6
@@ -369,21 +231,6 @@ if = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_YUG_73342223831f
-		}
-	}
 	create_equipment_variant = {
 		name = "Dubrovnik Class"
 		upgrades = {
@@ -403,22 +250,6 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	set_country_flag = PN_naval_variant_YUG_73342223831f
-}
-	set_technology = {
-	antiair2 = 1
-	basic_battery = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_YUG_3c18fc6f006f
 		}
 	}
 	create_equipment_variant = {
@@ -444,25 +275,11 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1_light
 		}
 	}
-	set_country_flag = PN_naval_variant_YUG_3c18fc6f006f
-}
 
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	improved_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_YUG_504afa52f649
-		}
-	}
 	create_equipment_variant = {
 		name = "Hrabri Class"
 		name_group = YUG_SS_HISTORICAL
@@ -479,26 +296,7 @@ if = {
 			front_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_YUG_504afa52f649
-}
 	# Destroyers #
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_YUG_d7b7a83ecc6c
-		}
-	}
 	create_equipment_variant = {
 		name = "Dubrovnik Class"
 		name_group = YUG_DD_HISTORICAL
@@ -516,22 +314,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_YUG_d7b7a83ecc6c
-}
 	# Cruisers #
-	set_technology = {
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_YUG_23eaec974dca
-		}
-	}
 	create_equipment_variant = {
 		name = "Dalmacija Class"
 		name_group = YUG_CL_HISTORICAL
@@ -552,70 +335,40 @@ if = {
 			fixed_ship_armor_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_YUG_23eaec974dca
-}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		create_equipment_variant = {
-			name = "Ikarus IK-3" #
-			type = small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-			}
-		}
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Destroyers #
-		set_technology = {
-	basic_depth_charges = 1
-	basic_light_battery = 1
-	basic_naval_mines = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_YUG_047007b79917
-		}
+	complete_special_project = {
+		project = sp:sp_naval_fleet_submarine
 	}
 	create_equipment_variant = {
-		name = "Beograd Class"
-		name_group = YUG_DD_HISTORICAL
+		name = "Dubrovnik Class"
 		parent_version = 0
-		type = vnr_ship_hull_light_3
+		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_2
+		name_group = YUG_DD_HISTORICAL
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_depth_charge_1
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			front_1_custom_slot = ship_light_battery_2
+			mid_2_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_light_battery_2
+			rear_2_custom_slot = ship_light_battery_2
 		}
 	}
-	set_country_flag = PN_naval_variant_YUG_047007b79917
-}
+	create_equipment_variant = {
+		name = "Hrabri/Smeli Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_2
+		name_group = YUG_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_armor_slot = pressure_hull_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
 	}
 }

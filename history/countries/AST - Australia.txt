@@ -16,6 +16,7 @@ set_technology = {
 	interwar_antiair = 1
 	basic_train = 1
 	fuel_silos = 1
+	electronic_mechanical_engineering = 1
 }
 
 set_research_slots = 3
@@ -68,8 +69,19 @@ if = {
 		basic_depth_charges = 1
 		basic_cruiser_armor_scheme = 1
 		mtg_transport = 1
+		basic_light_battery = 1
+		early_cruiser_armor = 1
+		interwar_ship_hull_cruiser = 1
+		multi_mounted_battery = 1
+		basic_cruiser_armor = 1
+		basic_heavy_battery = 1
+		basic_ship_hull_light = 1
+		cruiser_propulsion_revolution = 1
+		coastal_defense_ships = 1
+		searchlight = 1
+		smoke_generator = 1
 	}
-	set_naval_oob = "AST_1936_naval"
+	set_naval_oob = "PN_00_AST_vnr_naval"
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -212,171 +224,6 @@ if = {
 add_to_tech_sharing_group = commonwealth_research
 add_ideas = AST_unratified_westminster_act_idea
 
-1939.1.1 = {
-	add_political_power = 1198
-	add_command_power = 100
-	oob = "AST_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "AST_1939_air_bba"
-		else = {
-			set_air_oob = "AST_1939_air_legacy"
-			set_technology = {
-				fighter1 = 1
-				tactical_bomber1 = 1
-			}
-		}
-	}
-	if = {
-		limit = { has_dlc = "Thunder at Our Gates" }
-		complete_national_focus = AST_war_is_coming
-		complete_national_focus = AST_a_democratic_bulwark
-		unlock_national_focus = AST_call_for_a_referendum
-		complete_national_focus = AST_domestic_industries
-		complete_national_focus = AST_populate_or_perish
-		complete_national_focus = AST_recruitment_drive
-		complete_national_focus = AST_new_deal
-		complete_national_focus = AST_department_of_aboriginal_affairs
-		complete_national_focus = AST_australian_military_forces
-		complete_national_focus = AST_public_works
-		complete_national_focus = AST_exports_for_economic_recovery
-		complete_national_focus = AST_reverse_industry_tariffs
-		complete_national_focus = AST_income_tax_assessment_act
-		complete_national_focus = AST_reverse_wage_cuts
-		complete_national_focus = AST_industrial_expansion
-		complete_national_focus = AST_bring_home_the_farmers
-		complete_national_focus = AST_recovery
-		complete_national_focus = AST_standard_gauge_line_to_darwin
-		complete_national_focus = AST_solidarity_by_the_empire
-		complete_national_focus = AST_australian_war_cabinet
-
-		else = {
-			complete_national_focus = AST_additional_militia_training
-			complete_national_focus = AST_royal_australian_artillery
-			complete_national_focus = AST_daimler_dingo
-			complete_national_focus = AST_expand_the_raaf
-			complete_national_focus = AST_cockatoo_island_shipyards
-			complete_national_focus = AST_expand_northern_presence
-			complete_national_focus = AST_standard_gauge_railway
-			complete_national_focus = AST_industries_assistance_corporation
-			complete_national_focus = AST_western_australian_government_railways
-			complete_national_focus = AST_south_australian_housing_trust
-		}
-	}
-	if = {
-		limit = { has_dlc = "Thunder at Our Gates" }
-		add_country_leader_role = {
-			character = AST_robert_menzies
-			promote_leader = yes
-			country_leader = {
-				ideology = socialism
-				expire = "1989.1.1.1"
-			}
-		}
-	}
-	if = {
-		limit = { has_dlc = "Thunder at Our Gates" }
-		set_variable = { AST_uap_votes_var = 53.5 }
-		set_variable = { AST_alp_votes_var = 46.5 }
-		set_variable = { AST_uap_election_win_count = 1 }
-		add_ideas = AST_referendum_aviation_idea
-		set_country_flag = AST_1939_start
-	}
-
-	add_ideas = {
-		#laws
-		volunteer_only
-		low_economic_mobilisation
-	}
-
-
-	set_technology = {
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-
-		#doctrines
-		#air_superiority = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_refining = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-
-	set_grand_doctrine = grand_battleplan
-	set_grand_doctrine = new_fleet_in_being
-	set_grand_doctrine = new_strategic_destruction
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		set_technology = {
-			basic_light_tank = 1
-			improved_light_tank = 1
-			basic_medium_tank = 1
-			basic_heavy_tank = 1
-		}
-	}
-	if = {
-		limit = {
-
-			has_dlc = "No Step Back"
-
-		}
-		set_technology = {
-			basic_light_tank_chassis = 1
-			improved_light_tank_chassis = 1
-			basic_medium_tank_chassis = 1
-			basic_heavy_tank_chassis = 1
-		}
-	}
-	if = {
-		limit = {
-			not = {
-				has_dlc = "Man the Guns"
-			}
-		}
-		set_technology = {
-			basic_destroyer = 1
-		}
-		set_naval_oob = "AST_1939_naval_legacy"
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			basic_ship_hull_light = 1
-			basic_light_battery = 1
-			sonar = 1
-			improved_sonar = 1
-			improved_depth_charges = 1
-		}
-		set_naval_oob = "AST_1939_naval"
-	}
-}
-
 IF = {
 	limit = {
 		has_dlc = "Thunder at Our Gates"
@@ -453,22 +300,6 @@ set_popularities = {
 
 set_convoys = 100
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1937.10.23"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-
-	set_popularities = {
-		democratic = 99
-		communism = 1
-	}
-
-	set_convoys = 100
-}
-
 IF = {
 	limit = {
 		has_dlc = "Thunder at Our Gates"
@@ -476,23 +307,6 @@ IF = {
 	}
 
 	#light cruisers
-	set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	interwar_antiair = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_9708cc2dc2fb
-		}
-	}
 	create_equipment_variant = {
 		name = "Sydney Class"
 		name_group = AST_CL_HISTORICAL
@@ -520,22 +334,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_9708cc2dc2fb
-}
 
-	set_technology = {
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_7f3555312613
-		}
-	}
 	create_equipment_variant = {
 		name = "Town Class"
 		name_group = AST_CL_HISTORICAL
@@ -558,26 +357,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_7f3555312613
-}
 
-	set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	interwar_antiair = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_6d49d5a805be
-		}
-	}
 	create_equipment_variant = {
 		name = "Leander Class"
 		name_group = AST_CL_HISTORICAL
@@ -599,26 +379,8 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_6d49d5a805be
-}
 
 	#heavy cruisers
-	set_technology = {
-	basic_battery = 1
-	basic_cruiser_armor = 1
-	basic_heavy_battery = 1
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_1678e2f1e06e
-		}
-	}
 	create_equipment_variant = {
 		name = "Canberra Class"
 		name_group = AST_CA_HISTORICAL
@@ -646,25 +408,6 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_1678e2f1e06e
-}
-	set_technology = {
-	basic_heavy_battery = 1
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_3b9e72409505
-		}
-	}
 	create_equipment_variant = {
 		name = "County Class"
 		name_group = AST_CA_HISTORICAL
@@ -686,25 +429,8 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_3b9e72409505
-}
 
 	# Destroyers #
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_f97758540398
-		}
-	}
 	create_equipment_variant = {
 		name = "V/W Class"
 		name_group = AST_DD_HISTORICAL
@@ -729,22 +455,6 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_f97758540398
-}
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_8e16ebffaa9f
-		}
-	}
 	create_equipment_variant = {
 		name = "S Class"
 		name_group = AST_DD_HISTORICAL
@@ -764,27 +474,8 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_8e16ebffaa9f
-}
 
 	ELSE = {
-		set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	interwar_antiair = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_9708cc2dc2fb
-		}
-	}
 	create_equipment_variant = {
 		name = "Sydney Class"
 		name_group = AST_CL_HISTORICAL
@@ -811,22 +502,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_9708cc2dc2fb
-}
 
-		set_technology = {
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_7f3555312613
-		}
-	}
 	create_equipment_variant = {
 		name = "Town Class"
 		name_group = AST_CL_HISTORICAL
@@ -848,26 +524,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_7f3555312613
-}
 
-		set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	interwar_antiair = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_6d49d5a805be
-		}
-	}
 	create_equipment_variant = {
 		name = "Leander Class"
 		name_group = AST_CL_HISTORICAL
@@ -888,26 +545,8 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_6d49d5a805be
-}
 
 		#heavy cruisers
-		set_technology = {
-	basic_battery = 1
-	basic_cruiser_armor = 1
-	basic_heavy_battery = 1
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_1678e2f1e06e
-		}
-	}
 	create_equipment_variant = {
 		name = "Canberra Class"
 		name_group = AST_CA_HISTORICAL
@@ -934,25 +573,6 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_1678e2f1e06e
-}
-		set_technology = {
-	basic_heavy_battery = 1
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_3b9e72409505
-		}
-	}
 	create_equipment_variant = {
 		name = "County Class"
 		name_group = AST_CA_HISTORICAL
@@ -973,25 +593,8 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_3b9e72409505
-}
 
 		# Destroyers #
-		set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_f97758540398
-		}
-	}
 	create_equipment_variant = {
 		name = "V/W Class"
 		name_group = AST_DD_HISTORICAL
@@ -1015,22 +618,6 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_f97758540398
-}
-		set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_8e16ebffaa9f
-		}
-	}
 	create_equipment_variant = {
 		name = "S Class"
 		name_group = AST_DD_HISTORICAL
@@ -1049,94 +636,57 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_AST_8e16ebffaa9f
+	}
 }
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	create_equipment_variant = {
+		name = "Kent Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 27
+		icon = gfx/interface/technologies/England/PN_ENG_heavy_cruiser2.png
+		type = vnr_ship_hull_cruiser_2
+		name_group = AST_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2_double
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			front_1_custom_slot = ship_medium_battery_2_double
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_torpedo_2
+			rear_1_custom_slot = ship_medium_battery_2_double
+			rear_2_custom_slot = ship_medium_battery_2_double
+		}
+	}
+	create_equipment_variant = {
+		name = "Shakespeare/Scott Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 33
+		type = vnr_ship_hull_light_2
+		name_group = AST_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			fixed_ship_role_slot = ship_hull_light_role_dl
+			front_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = ship_light_battery_2
+			rear_2_custom_slot = ship_light_battery_2
+		}
+		obsolete = yes
 	}
 }
 
-1939.1.1 = {
-    IF = {
-        limit = {
-            has_dlc = "Thunder at Our Gates"
-            has_dlc = "Arms Against Tyranny"
-        }
-        set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	improved_depth_charges = 1
-	improved_sonar = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_debc3f609dd3
-		}
-	}
-	create_equipment_variant = {
-		name = "Arunta Class"
-		name_group = AST_DD_HISTORICAL
-		design_team = mio:AST_de_havilland_australia_organization
-		type = vnr_ship_hull_light_3
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_sonar_2
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_light_battery_2
-			rear_1_custom_slot = ship_depth_charge_2
-		}
-	}
-	set_country_flag = PN_naval_variant_AST_debc3f609dd3
-}
-        ELSE = {
-            set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	improved_depth_charges = 1
-	improved_sonar = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_AST_debc3f609dd3
-		}
-	}
-	create_equipment_variant = {
-		name = "Arunta Class"
-		name_group = AST_DD_HISTORICAL
-		type = vnr_ship_hull_light_3
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_sonar_2
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_light_battery_2
-			rear_1_custom_slot = ship_depth_charge_2
-		}
-	}
-	set_country_flag = PN_naval_variant_AST_debc3f609dd3
-}
-        }
-    }
-}
 ########## Flags & Variables ##########
 
 ### Industrial

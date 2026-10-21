@@ -3,7 +3,7 @@ capital = 47
 oob = "GRE_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "GRE_1936_naval_mtg"
+		set_naval_oob = "PN_GRE_1936_naval"
 	else = {
 		set_naval_oob = "GRE_1936_naval_legacy"
 	}
@@ -64,6 +64,11 @@ if = {
 		early_heavy_cruiser = 1
 		early_battleship = 1
 		transport = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		early_ship_hull_light = 1
+		electronic_mechanical_engineering = 1
 	}
 }
 if = {
@@ -83,6 +88,14 @@ if = {
 		coastal_defense_ships = 1
 		pre_dreadnoughts = 1
 		mtg_transport = 1
+		improved_ship_hull_submarine = 1
+		electronic_mechanical_engineering = 1
+		basic_cruiser_armor = 1
+		multi_mounted_battery = 1
+		basic_ship_hull_heavy = 1
+		basic_dp_light_battery = 1
+		basic_fire_control_system = 1
+		basic_heavy_armor = 1
 	}
 }
 1936.1.1 = {
@@ -262,21 +275,6 @@ if = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_GRE_f261c3dc7571
-		}
-	}
 	create_equipment_variant = {
 		name = "Hydra Class"
 		upgrades = {
@@ -298,22 +296,186 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_GRE_f261c3dc7571
-}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	PN_GRE_naval_design_1 = yes
-	PN_GRE_naval_design_2 = yes
+	create_equipment_variant = {
+		name = "Katsonis Class"
+		name_group = GRE_SS_HISTORICAL
+		parent_version = 0
+		show_position = no
+		obsolete = yes
+		type = vnr_ship_hull_submarine_1
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Protefs Class"
+		name_group = GRE_SS_HISTORICAL
+		parent_version = 0
+		show_position = no
+		type = vnr_ship_hull_submarine_3
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_3
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_3
+			rear_1_custom_slot = ship_torpedo_sub_1
+			front_1_custom_slot = empty
+		}
+	}
 	# Destroyers #
-	PN_GRE_naval_design_3 = yes
-	PN_GRE_naval_design_4 = yes
-	PN_GRE_naval_design_5 = yes
+	create_equipment_variant = {
+		name = "Aetos Class"
+		name_group = GRE_DD_HISTORICAL
+		parent_version = 0
+		show_position = no
+		obsolete = yes
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Kountouriotis Class"
+		name_group = GRE_DD_HISTORICAL
+		parent_version = 0
+		show_position = no
+		obsolete = yes
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Vasilefs Georgios Class"
+		name_group = GRE_DD_HISTORICAL
+		parent_version = 0
+		show_position = no
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
 	# Cruisers #
-	PN_GRE_naval_design_6 = yes
-	PN_GRE_naval_design_7 = yes
+	create_equipment_variant = {
+		name = "Averof Class"
+		name_group = GRE_CA_HISTORICAL
+		parent_version = 0
+		show_position = no
+		obsolete = yes
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_cd
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+		}
+	}
+	create_equipment_variant = {
+		name = "Hydra Class"
+		name_group = GRE_CL_HISTORICAL
+		parent_version = 0
+		show_position = no
+		type = vnr_ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_c
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = empty
+		}
+	}
 	# Battleships #
-	PN_GRE_naval_design_8 = yes
-	PN_GRE_naval_design_9 = yes
+	create_equipment_variant = {
+		name = "Kilkis Class"
+		name_group = GRE_BB_HISTORICAL
+		parent_version = 0
+		show_position = no
+		obsolete = yes
+		type = vnr_ship_hull_pre_dreadnought
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Michail Palaiologos Class"
+		name_group = GRE_BB_HISTORICAL
+		parent_version = 0
+		show_position = no
+		type = vnr_ship_hull_heavy_1
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2_bb
+			fixed_ship_armor_slot = ship_armor_bc_2
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
 }

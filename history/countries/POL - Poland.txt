@@ -3,7 +3,7 @@ capital = 10
 oob = "POL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "POL_1936_naval_mtg"
+		set_naval_oob = "PN_00_POL_vnr_naval"
 	else = {
 		set_naval_oob = "POL_1936_naval_legacy"
 	}
@@ -83,6 +83,16 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
+		improved_ship_hull_submarine = 1
+		electronic_mechanical_engineering = 1
+		basic_ship_hull_light = 1
+		smoke_generator = 1
+		multi_mounted_battery = 1
+		basic_periscope = 1
+		diesel_electric_transmission = 1
+		teardrop_hull = 1
+		improved_ship_torpedo_launcher = 1
+		acoustic_signature = 1
 	}
 }
 if = {
@@ -115,230 +125,6 @@ if = {
 	add_dynamic_modifier = { modifier = international_city }
 }
 
-1939.1.1 = {
-
-	if = {
-		limit = {
-			has_dlc = "Poland: United and Ready"
-		}
-
-		complete_national_focus = POL_central_region_strategy
-		complete_national_focus = POL_expansion_of_new_towns
-		complete_national_focus = POL_start_central_industrial_region
-		complete_national_focus = POL_fill_the_railways_gaps
-		complete_national_focus = POL_plan_west
-		complete_national_focus = POL_new_military_academy
-		unlock_national_focus = POL_the_four_year_plan
-		complete_national_focus = POL_national_defence_fund
-		complete_national_focus = POL_warsaw_main_railway_station
-		complete_national_focus = POL_invest_in_the_old_polish_region
-		complete_national_focus = POL_additional_research_slot1
-		complete_national_focus = POL_army_modernisation
-		complete_national_focus = POL_modernize_congressional_factories
-		unlock_national_focus = POL_prepare_for_the_next_war
-		unlock_national_focus = POL_standardisation_of_equipment
-		unlock_national_focus = POL_modernising_the_cavalry
-
-		complete_national_focus = POL_hel_fortified_area
-		complete_national_focus = POL_silesia_fortified_area
-
-		complete_national_focus = POL_air_base_expansion
-		complete_national_focus = POL_develop_polish_ship_building
-
-		complete_national_focus = POL_complete_april_constitution
-		complete_national_focus = POL_polish_militarism
-		complete_national_focus = POL_consolidate_sanation_government
-
-		remove_ideas = POL_looming_peasants_strike
-	}
-
-	add_political_power = 1198
-	add_command_power = 100
-
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-
-
-	add_ideas = {
-		#laws
-		limited_conscription
-		partial_economic_mobilisation
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "Poland: United and Ready" }
-		}
-		add_ideas = {
-			#laws
-			limited_exports
-		}
-	}
-
-
-
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "POL_1939_naval_mtg"
-		else = {
-			set_naval_oob = "POL_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "POL_1939_air_bba"
-			set_technology = {
-				iw_medium_airframe = 1
-				basic_medium_airframe = 1
-				engines_2 = 1
-				improved_small_airframe = 1
-				bba_early_transport_plane = 1
-			}
-		else = {
-			set_air_oob = "POL_1939_air_legacy"
-			set_technology = {
-				tactical_bomber1 = 1
-				early_transport_plane = 1
-			}
-		}
-	}
-
-	set_technology = {
-		motorised_infantry = 1
-		support_weapons = 1
-		interwar_artillery = 1
-
-		#doctrines
-		#air_superiority = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-		concentrated_industry4 = 1
-	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		set_technology = {
-			basic_light_tank = 1
-		}
-		set_oob = "POL_1939"
-	}
-	if = {
-		limit = {
-
-			has_dlc = "No Step Back"
-
-		}
-		set_technology = {
-			basic_light_tank_chassis = 1
-		}
-		set_oob = "POL_1939_nsb"
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-			basic_destroyer = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_ship_hull_light = 1
-			basic_light_battery = 1
-		}
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "By Blood Alone" }
-		}
-		create_equipment_variant = {
-			name = "PZL P.43"
-			type = CAS_equipment_1
-			upgrades = {
-					plane_cas_upgrade = 0
-					plane_range_upgrade = 1
-					plane_engine_upgrade = 2
-					plane_reliability_upgrade = 1
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		create_equipment_variant = {
-			name = "PZL P.43"
-			type = small_plane_cas_airframe_1
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				fixed_auxiliary_weapon_slot_1 = light_mg_2x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "PZL P.37"
-			type = medium_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = lmg_defense_turret
-			}
-		}
-		create_equipment_variant = {
-			name = "PZL P.46"
-			type = small_plane_cas_airframe_2
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				fixed_auxiliary_weapon_slot_1 = light_mg_4x
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = lmg_defense_turret
-			}
-		}
-	}
-}
-
-
 set_convoys = 10
 
 set_politics = {
@@ -352,15 +138,6 @@ set_popularities = {
 	fascism = 11
 	communism = 19
 	neutrality = 38
-}
-
-1939.1.1 = {
-	set_popularities = {
-		democratic = 13
-		fascism = 7
-		communism = 2
-		neutrality = 78
-	}
 }
 
 recruit_character = POL_ignacy_moscicki
@@ -675,19 +452,6 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	set_technology = {
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	improved_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_POL_e32e2f96c349
-		}
-	}
 	create_equipment_variant = {
 		name = "Wilk Class"
 		name_group = POL_SS_HISTORICAL
@@ -704,25 +468,7 @@ if = {
 			front_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_POL_e32e2f96c349
-}
 	# Destroyers #
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_POL_2d069f85b3a5
-		}
-	}
 	create_equipment_variant = {
 		name = "Wicher Class"
 		name_group = POL_DD_HISTORICAL
@@ -740,121 +486,61 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_POL_2d069f85b3a5
-}
-}
-
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		set_technology = {
-	basic_ship_hull_submarine = 1
-	early_ship_hull_submarine = 1
-	improved_ship_hull_submarine = 1
-	improved_ship_torpedo_launcher = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_POL_a0c674d58748
-		}
-	}
-	create_equipment_variant = {
-		name = "Orzel Class"
-		name_group = POL_SS_HISTORICAL
-		parent_version = 0
-		type = vnr_ship_hull_submarine_3
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_conning_tower_slot = sub_conning_tower_0
-			fixed_ship_engine_slot = sub_ship_engine_2
-			fixed_ship_armor_slot = pressure_hull_3
-			fixed_sub_periscope_slot = sub_ship_periscope_0
-			fixed_ship_secondaries_slot = sub_deck_gun_3
-			rear_1_custom_slot = ship_torpedo_sub_2
-			front_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_POL_a0c674d58748
-}
-		# Destroyers #
-		set_technology = {
-	basic_depth_charges = 1
-	basic_light_battery = 1
-	basic_naval_mines = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_POL_50bf6ea81e9c
-		}
+	complete_special_project = {
+		project = sp:sp_naval_fleet_submarine
 	}
 	create_equipment_variant = {
 		name = "Grom Class"
-		name_group = POL_DD_HISTORICAL
 		parent_version = 0
-		type = vnr_ship_hull_light_3
+		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_2
+		name_group = POL_DD_HISTORICAL
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_battery_slot = ship_light_battery_2_double
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	set_country_flag = PN_naval_variant_POL_50bf6ea81e9c
-}
-		set_technology = {
-	basic_light_battery = 1
-	basic_naval_mines = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_POL_2d585999982d
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			front_1_custom_slot = ship_light_battery_2_double
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = ship_light_battery_2_double
+			rear_2_custom_slot = ship_depth_charge_1
 		}
 	}
 	create_equipment_variant = {
-		name = "Gryf Class"
+		name = "Wicher Class"
 		parent_version = 0
-		type = vnr_ship_hull_light_3
+		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_2
+		name_group = POL_DD_HISTORICAL
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			front_1_custom_slot = ship_light_battery_2
 			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_mine_layer_1
+			mid_2_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = ship_light_battery_2
+			rear_2_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_POL_2d585999982d
-}
+	create_equipment_variant = {
+		name = "Wilk Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_2
+		name_group = POL_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_armor_slot = pressure_hull_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
 	}
 }

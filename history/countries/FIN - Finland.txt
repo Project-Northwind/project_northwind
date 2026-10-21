@@ -159,7 +159,7 @@ if = {
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FIN_1936_naval_mtg"
+		set_naval_oob = "PN_00_FIN_vnr_naval"
 	else = {
 		set_naval_oob = "FIN_1936_naval_legacy"
 	}
@@ -446,168 +446,15 @@ if = {
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
 		coastal_defense_ships = 1
+		basic_torpedo = 1
+		early_cruiser_armor = 1
+		electronic_mechanical_engineering = 1
+		searchlight = 1
+		multi_mounted_battery = 1
 	}
 }
 
 set_convoys = 5
-
-1939.1.1 = {
-	add_political_power = 1198
-	add_command_power = 100
-
-	### TECH ###
-	set_technology = {
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-		#Air
-		iw_small_airframe = 1
-		basic_small_airframe = 1
-		aa_lmg = 1
-		engines_1 = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-
-		#doctrines
-		#force_rotation = 1
-		#fighter_baiting = 1
-
-	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_operational_integrity
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-
-	# TECH ADJUSTMENTS
-	set_technology = {
-		motorised_infantry = 1
-	}
-
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-			gwtank_chassis = 1
-			basic_light_tank_chassis = 1
-			improved_light_tank_chassis = 1
-			armor_tech_1 = 1
-			engine_tech_1 = 1
-		}
-	}
-
-	# These templates would otherwise not be unlocked
-	load_oob = "unlock_motorized"
-	load_oob = "unlock_tanks_mot"
-
-	### FOCUS TREE ###
-	#1936
-	complete_national_focus = FIN_finnish_neutrality
-	complete_national_focus = FIN_enhance_southern_infrastructure
-	unlock_national_focus = FIN_industrial_development #Timed idea should be gone
-	unlock_national_focus = FIN_vaisala_radiosonde_tests #35 #tech bonus should be consumed
-	complete_national_focus = FIN_increase_military_budget #35
-	complete_national_focus = FIN_suomen_maavoimat
-
-	#1937
-	complete_national_focus = FIN_reach_out_to_scandinavia #35
-	complete_national_focus = FIN_moderate_politics #35
-	complete_national_focus = FIN_mannerheim_line
-	complete_national_focus = FIN_national_unity
-	complete_national_focus = FIN_outokumpu_for_defence_industry
-	complete_national_focus = FIN_industrial_upgrade_in_harjavalta #35
-	complete_national_focus = FIN_janiskoski_power_plant #35 (1938 historically)
-
-	#1938
-	complete_national_focus = FIN_political_unity
-	complete_national_focus = FIN_railways_and_infrastructure
-	complete_national_focus = FIN_repurpose_small_industries
-	complete_national_focus = FIN_extra_refresher_exercises # (ASAP - gated behind WT)
-	complete_national_focus = FIN_weapon_caches #35 (ASAP - gated behind WT)
-	complete_national_focus = FIN_the_cold_front #35
-
-	#1939 (Nov -> Winter War)
-	complete_national_focus = FIN_defense_in_depth
-	complete_national_focus = FIN_jaeger_movement
-	complete_national_focus = FIN_salvaged_and_retooled
-	complete_national_focus = FIN_motti_tactics #35
-
-	# FOCUS ADJUSTMENTS
-
-	#FIN_industrial_development
-	remove_ideas = FIN_infrastructure_effort #Timed idea should be gone by 1939
-
-	#FIN_vaisala_radiosonde_tests
-	111 = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-			type = industrial_complex
-			level = 1
-			instant_build = yes
-		}
-	}
-
-	# BOP & COUNTRY LEADER ADJUSTMENTS
-	set_power_balance = {
-		id = FIN_power_balance
-		left_side = FIN_bad_side
-		right_side = FIN_good_side
-		set_value = 0 #Adding FIN_sisu_2 idea below
-	}
-	add_ideas = FIN_sisu_3
-
-	retire_country_leader = yes
-	#Set Maalaisliitto (Agrarian League) as Non-Aligned party
-	set_party_name = {
-		ideology = neutrality
-		name = FIN_neutrality_party
-		long_name = FIN_neutrality_party_long
-	}
-
-	oob = "FIN_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "FIN_1939_air_bba"
-			set_technology = {
-				bba_early_transport_plane = 1
-			}
-		else = {
-			set_air_oob = "FIN_1939_air_legacy"
-			set_technology = {
-				early_fighter = 1
-				early_bomber = 1
-				CAS1 = 1
-				early_transport_plane = 1
-			}
-		}
-	}
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -627,21 +474,6 @@ add_stability = -0.1
 country_event = { id = AAT_finland_political.02 days = 426 }
 
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1937.3.1" #Represents Presidential elections (Country leader is President of the Republic, not Prime Minister)
-		election_frequency = 72
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 4
-		fascism = 15
-		communism = 1
-		neutrality = 80
-	}
-}
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -651,18 +483,6 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	set_technology = {
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_FIN_c2562edc90e1
-		}
-	}
 	create_equipment_variant = {
 		name = "Vetehinen Class"
 		name_group = FIN_SS_HISTORICAL
@@ -677,19 +497,6 @@ if = {
 			fixed_sub_periscope_slot = sub_ship_periscope_0
 			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = ship_mine_layer_sub
-		}
-	}
-	set_country_flag = PN_naval_variant_FIN_c2562edc90e1
-}
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_FIN_f4432ab2b25e
 		}
 	}
 	create_equipment_variant = {
@@ -708,23 +515,7 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_FIN_f4432ab2b25e
-}
 	# Heavy Cruisers #
-	set_technology = {
-	basic_battery = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_FIN_5ba171036708
-		}
-	}
 	create_equipment_variant = {
 		name = "Väinämöinen Class"
 		name_group = FIN_CA_HISTORICAL
@@ -746,8 +537,23 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_FIN_5ba171036708
-}
+	create_equipment_variant = {
+		name = "Golub/Filin Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 47
+		type = vnr_ship_hull_light_1
+		name_group = FIN_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			fixed_ship_role_slot = ship_hull_light_role_ff
+			rear_1_custom_slot = ship_light_battery_1
+		}
+	}
 }
 
 ### TANKS
@@ -780,43 +586,5 @@ if = {
 		variant_name = "FT mod. 31"
 		amount = 34
 		producer = FRA
-	}
-}
-
-
-
-1939.1.1 = {
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_country_flag = FIN_vickers_template_created_flag
-		create_equipment_variant = {
-			name = "Vickers Mark E Tpye B"
-			type = light_tank_chassis_0
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_high_velocity_cannon
-				turret_type_slot = tank_light_one_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = secondary_turret_hmg
-			}
-			upgrades = {
-				tank_nsb_armor_upgrade = 3
-				tank_nsb_engine_upgrade = 2
-			}
-			obsolete = yes
-			icon = "GFX_FIN_gw_tank_destroyer_vickers_medium"
-			model = "commonwealth_gfx_light_armor_entity"
-		}
-
-		add_equipment_to_stockpile = {
-			type = light_tank_chassis_0
-			variant_name = "Vickers 6 ton A"
-			amount = 26
-			producer = ENG
-		}
 	}
 }

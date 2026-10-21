@@ -536,8 +536,48 @@ IF = {
 		basic_cruiser_armor_scheme = 1
 		#cruiser_submarines = 1
 		basic_dp_light_battery = 1
+		cruiser_submarines = 1
+		improved_ship_hull_submarine = 1
+		converted_super_heavy_carrier = 1
+		bb_conversion_carrier = 1
+		early_carrier_study = 1
+		prototype_airplane_launcher = 1
+		improved_airplane_launcher = 1
+		landing_aid_system = 1
+		arresting_gear = 1
+		aviation_dawn = 1
+		electronic_mechanical_engineering = 1
+		interwar_ship_hull_light = 1
+		interwar_ship_hull_cruiser = 1
+		interwar_ship_hull_heavy = 1
+		ship_hull_super_heavy = 1
+		basic_super_heavy_battery = 1
+		large_destroyer_trend = 1
+		multi_mounted_battery = 1
+		searchlight = 1
+		sonar = 1
+		cruiser_propulsion_revolution = 1
+		early_cruiser_armor = 1
+		basic_cruiser_armor = 1
+		pre_dreadnoughts = 1
+		harvey_steel = 1
+		basic_heavy_armor = 1
+		krupp_steel = 1
+		fuel_oil_boiler = 1
+		enhanced_horizontal_defense = 1
+		improved_conning_tower = 1
+		smoke_generator = 1
+		basic_periscope = 1
+		improved_periscope = 1
+		basic_ballast_tank = 1
+		diesel_electric_transmission = 1
+		teardrop_hull = 1
+		acoustic_signature = 1
+		magnetic_detonator = 1
+		oxygen_torpedo = 1
+		naval_combat_support = 1
 	}
-	set_naval_oob = "JAP_1936_naval"
+	set_naval_oob = "PN_00_JAP_vnr_naval"
 }
 IF = {
 	limit = {
@@ -863,299 +903,6 @@ JAP_isoroku_yamamoto = {
 }
 
 
-# Setup 1939 Start Date
-1939.1.1 = {
-
-	set_country_flag = JAP_1939_start_date_initiated
-
-	IF = {
-		limit = {
-			has_dlc = "No Compromise, No Surrender"
-		}
-		add_country_leader_role = {
-			character = JAP_machida_chuuji
-			promote_leader = yes
-			country_leader = {
-				ideology = liberalism
-				expire = "1989.1.1.1"
-				traits = { HUN_popular_liberal }
-			}
-		}
-	}
-
-	set_party_name = {
-		ideology = democratic
-		long_name = JAP_minseito_party_long
-		name = JAP_minseito_party
-	}
-
-	# Setup Politics
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1938.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		fascism = 45
-		neutrality = 45
-		democratic = 10
-		communism = 0
-	}
-
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
-
-	# Kodoha coup has historical outcomes
-	retire_character = JAP_takahashi_korekiyo
-	retire_character = JAP_jotaro_watanabe
-
-	add_political_power = 1198
-	add_command_power = 100
-
-	add_breakthrough_progress = {
-		specialization = specialization_naval
-		value = 2.0
-	}
-
-	add_breakthrough_progress = {
-		specialization = specialization_air
-		value = 1.0
-	}
-
-	add_breakthrough_progress = {
-		specialization = specialization_land
-		value = 0.5
-	}
-
-	complete_special_project = {
-		project = sp:sp_naval_torpedo_cruiser
-		scientist = JAP_keiji_fukuda
-		state = 528
-	}
-
-	# Adding Ideas
-	add_ideas = {
-
-		# Adding Ministers
-
-		# Civilian Advisors
-		takuo_godo
-		JAP_chikuhei_nakajima
-		JAP_heisuke_yanagawa
-
-		# Military Advisors
-		minoru_genda
-		korechika_anami
-		hajime_sugiyama
-		soemu_toyoda
-		fushimi_hiroyasu
-		yasuji_okamura
-		hitoshi_imamura
-
-		# Companies
-		tetsudou_shou
-
-		# Laws
-		tot_economic_mobilisation
-		service_by_requirement
-		closed_economy
-	}
-
-	IF = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		remove_ideas = MTG_naval_treaty_adherent
-	}
-
-	complete_national_focus = JAP_sea_purge_the_kodoha_faction
-	complete_national_focus = JAP_ministry_of_commerce_and_industry
-	complete_national_focus = JAP_the_imperial_defense_plan
-	complete_national_focus = JAP_revisit_the_thirteen_demands
-	complete_national_focus = JAP_promulgate_the_military_ministers_system
-	unlock_national_focus = JAP_establish_mongol_military_government
-	complete_national_focus = JAP_expand_kawagoe_army_arsenal
-	complete_national_focus = JAP_increase_armament_spending
-	complete_national_focus = JAP_rely_on_supremacy_of_the_will
-	complete_national_focus = JAP_imperial_headquarters_liasion_conference
-	complete_national_focus = JAP_the_harakiri_debate
-	complete_national_focus = JAP_expand_hiratsuka_navy_arsenal
-	complete_national_focus = JAP_konoes_first_cabinet
-	complete_national_focus = JAP_reinforce_the_beijing_garrison
-	complete_national_focus = JAP_sea_national_spiritual_mobliization_movement
-	complete_national_focus = JAP_enact_the_national_conscription_law
-	complete_national_focus = JAP_ministry_of_colonial_affairs
-	complete_national_focus = JAP_establish_showa_aircraft_idnsutry
-	unlock_national_focus = JAP_reorganize_the_united_autonomous_government
-	complete_national_focus = JAP_form_the_central_economic_council
-	complete_national_focus = JAP_expand_the_showa_research_association
-	complete_national_focus = JAP_sea_state_general_mobilization_law
-	complete_national_focus = JAP_approach_mitsubishi
-	complete_national_focus = JAP_enact_religious_organizations_law
-	complete_national_focus = JAP_new_order_in_east_asia
-	complete_national_focus = JAP_form_cabinet_intelligence_bureau
-	complete_national_focus = JAP_mengjiang_united_autonomous_government
-	complete_national_focus = JAP_nanshin_ron
-	complete_national_focus = JAP_modern_bombers
-	complete_national_focus = JAP_expand_navy_technical_department
-	complete_national_focus = JAP_develop_new_fighters
-	complete_national_focus = JAP_prepare_the_southern_front
-	complete_national_focus = JAP_crackdown_on_foreign_agents
-	complete_national_focus = JAP_strategic_offensives
-
-	declare_war_on = {
-		target = CHI
-		type = puppet_wargoal_focus
-	}
-
-	set_technology = {
-
-		#PLACEHOLDERS for vehicles
-
-		### Doctrines ###
-
-		#air
-		#force_rotation = 1
-		#fighter_baiting = 1
-		#low_echelon_support = 1
-		#dispersed_fighting = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_base_strike
-set_sub_doctrine = carrier_concentration
-add_mastery = {
-    amount = 200
-    sub_doctrine = carrier_concentration
-}
-set_grand_doctrine = new_operational_integrity
-
-set_sub_doctrine = defensive_postures
-add_mastery = {
-    amount = 200
-    sub_doctrine = defensive_postures
-}
-set_sub_doctrine = infiltration_tactics
-add_mastery = {
-    amount = 200
-    sub_doctrine = infiltration_tactics
-}
-set_sub_doctrine = field_engineering
-add_mastery = {
-    amount = 150
-    sub_doctrine = field_engineering
-}
-
-
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-		scientist = JAP_yoji_ito
-		state = 532
-	}
-
-	IF = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			improved_ship_hull_submarine = 1
-			basic_ship_hull_light = 1
-			improved_ship_hull_light = 1
-			improved_ship_hull_cruiser = 1
-			improved_ship_hull_carrier = 1
-			#ship_hull_super_heavy = 1
-		}
-
-		complete_special_project = {
-			project = sp:sp_naval_super_heavy_battleship
-			scientist = JAP_keiji_fukuda
-			state = 529
-		}
-		set_naval_oob = "JAP_1939_naval"
-
-	}
-	IF = {
-		limit = {
-			not = { has_dlc = "Man the Guns" }
-		}
-		set_technology = {
-			improved_submarine = 1
-			basic_destroyer = 1
-			improved_destroyer = 1
-			improved_heavy_cruiser = 1
-			improved_carrier = 1
-			#heavy_battleship = 1
-		}
-		complete_special_project = {
-			project = sp:sp_naval_super_heavy_battleship
-			scientist = JAP_keiji_fukuda
-			state = 529
-		}
-		set_naval_oob = "JAP_1939_naval_legacy"
-	}
-	IF = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-			basic_medium_tank_chassis = 1
-		}
-		set_oob = "JAP_1939_nsb"
-		ELSE = {
-			set_technology = {
-				basic_medium_tank = 1
-			}
-			set_oob = "JAP_1939"
-		}
-	}
-	IF = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "JAP_1939_air_bba"
-			set_technology = {
-				basic_medium_airframe = 1
-				range_improvements = 1
-			}
-		ELSE = {
-			set_air_oob = "JAP_1939_air_legacy"
-			set_technology = {
-				cv_fighter1 = 1
-				fighter1 = 1
-				tactical_bomber1 = 1
-			}
-		}
-	}
-
-}
-
-
-
-
-
 IF = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -1401,21 +1148,6 @@ IF = {
 # 1936 Start #
 
 ### Carrier Variants
-set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_heavy = 1
-	converted_super_heavy_carrier = 1
-	early_carrier_study = 1
-	early_ship_hull_carrier = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_8980c29f1862
-		}
-	}
 	create_equipment_variant = {
 		name = "Akagi Class"
 		name_group = JAP_CV_HISTORICAL
@@ -1434,23 +1166,6 @@ if = {
 			fixed_ship_role_slot = carrier_bb_conversion
 			mid_1_custom_slot = ship_deck_space_open
 			fixed_ship_armor_slot = ship_armor_carrier_1
-		}
-	}
-	set_country_flag = PN_naval_variant_JAP_8980c29f1862
-}
-set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_heavy = 1
-	converted_super_heavy_carrier = 1
-	early_carrier_study = 1
-	early_ship_hull_carrier = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_25482430d6bc
 		}
 	}
 	create_equipment_variant = {
@@ -1473,21 +1188,6 @@ if = {
 			fixed_ship_armor_slot = ship_armor_carrier_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_25482430d6bc
-}
-set_technology = {
-	basic_battery = 1
-	basic_ship_hull_carrier = 1
-	early_carrier_study = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_747b17f94ca5
-		}
-	}
 	create_equipment_variant = {
 		name = "Soryu Class"
 		name_group = JAP_CV_HISTORICAL
@@ -1507,22 +1207,6 @@ if = {
 			mid_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_747b17f94ca5
-}
-set_technology = {
-	basic_battery = 1
-	basic_ship_hull_carrier = 1
-	early_carrier_study = 1
-	early_ship_hull_carrier = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_aa602c29766d
-		}
-	}
 	create_equipment_variant = {
 		name = "Zuiho Class"
 		name_group = JAP_CVL_HISTORICAL
@@ -1537,20 +1221,6 @@ if = {
 			fixed_ship_engine_slot = carrier_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_flight_deck_slot = carrier_wooden_deck
-		}
-	}
-	set_country_flag = PN_naval_variant_JAP_aa602c29766d
-}
-set_technology = {
-	basic_battery = 1
-	early_carrier_study = 1
-	early_ship_hull_carrier = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_46c8dcee157d
 		}
 	}
 	create_equipment_variant = {
@@ -1577,22 +1247,6 @@ if = {
 			fixed_ship_armor_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_46c8dcee157d
-}
-set_technology = {
-	basic_battery = 1
-	basic_ship_hull_carrier = 1
-	early_carrier_study = 1
-	early_ship_hull_carrier = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_ae09297926ce
-		}
-	}
 	create_equipment_variant = {
 		name = "Ryujo Class"
 		name_group = JAP_CVL_HISTORICAL
@@ -1613,26 +1267,8 @@ if = {
 			mid_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_ae09297926ce
-}
 
 ### Battleship Variants
-set_technology = {
-	basic_battery = 1
-	basic_heavy_battery = 1
-	basic_ship_hull_heavy = 1
-	early_ship_hull_cruiser = 1
-	early_ship_hull_heavy = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_2995161ad420
-		}
-	}
 	create_equipment_variant = {
 		name = "Nagato Class"
 		name_group = JAP_BB_HISTORICAL
@@ -1660,24 +1296,6 @@ if = {
 			rear_1_custom_slot = ship_heavy_battery_2
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_2995161ad420
-}
-set_technology = {
-	basic_battery = 1
-	basic_heavy_armor = 1
-	basic_ship_hull_heavy = 1
-	early_ship_hull_cruiser = 1
-	early_ship_hull_heavy = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_1ed23ca59542
-		}
-	}
 	create_equipment_variant = {
 		name = "Kongo Class"
 		name_group = JAP_BB_HISTORICAL
@@ -1703,23 +1321,6 @@ if = {
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = ship_airplane_launcher_1
 			rear_1_custom_slot = ship_heavy_battery_1
-		}
-	}
-	set_country_flag = PN_naval_variant_JAP_1ed23ca59542
-}
-set_technology = {
-	basic_battery = 1
-	basic_ship_hull_heavy = 1
-	early_ship_hull_cruiser = 1
-	early_ship_hull_heavy = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_3a11df9599f2
 		}
 	}
 	create_equipment_variant = {
@@ -1750,23 +1351,6 @@ if = {
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_3a11df9599f2
-}
-set_technology = {
-	basic_battery = 1
-	basic_ship_hull_heavy = 1
-	early_ship_hull_cruiser = 1
-	early_ship_hull_heavy = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_f176757b3dae
-		}
-	}
 	create_equipment_variant = {
 		name = "Ise Class"
 		design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -1795,27 +1379,8 @@ if = {
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_f176757b3dae
-}
 
 ### Cruiser Variants
-set_technology = {
-	basic_battery = 1
-	basic_cruiser_armor = 1
-	basic_heavy_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_c73f95937f8c
-		}
-	}
 	create_equipment_variant = {
 		name = "Takao Class"
 		name_group = JAP_CA_HISTORICAL
@@ -1836,25 +1401,6 @@ if = {
 			front_1_custom_slot = ship_medium_battery_2
 			fixed_ship_secondaries_slot = ship_secondaries_1_light
 			fixed_ship_armor_slot = ship_armor_cruiser_2
-		}
-	}
-	set_country_flag = PN_naval_variant_JAP_c73f95937f8c
-}
-set_technology = {
-	basic_battery = 1
-	basic_cruiser_armor = 1
-	basic_heavy_battery = 1
-	basic_ship_hull_cruiser = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_39463b44e5a6
 		}
 	}
 	create_equipment_variant = {
@@ -1879,25 +1425,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_39463b44e5a6
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_heavy_battery = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_b4fa13843ce2
-		}
-	}
 	create_equipment_variant = {
 		name = "Furutaka/Aoba Class"
 		name_group = JAP_CA_HISTORICAL
@@ -1920,24 +1448,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_b4fa13843ce2
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_a40c5dbadf2b
-		}
-	}
 	create_equipment_variant = {
 		name = "Chikuma Class"
 		name_group = JAP_CA_HISTORICAL
@@ -1958,23 +1469,6 @@ if = {
 			front_1_custom_slot = empty
 			fixed_ship_secondaries_slot = ship_secondaries_1_light
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-		}
-	}
-	set_country_flag = PN_naval_variant_JAP_a40c5dbadf2b
-}
-set_technology = {
-	basic_battery = 1
-	basic_cruiser_armor = 1
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_d6b0b373880c
 		}
 	}
 	create_equipment_variant = {
@@ -1999,28 +1493,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_d6b0b373880c
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_cruiser_armor = 1
-	basic_heavy_battery = 1
-	basic_ship_hull_cruiser = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_ship_hull_cruiser = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_91fbf5b5dd9e
-		}
-	}
 	create_equipment_variant = {
 		name = "Tone Class"
 		name_group = JAP_CA_HISTORICAL
@@ -2048,24 +1521,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_91fbf5b5dd9e
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_cruiser_armor = 1
-	basic_naval_mines = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_2433c2e7498b
-		}
-	}
 	create_equipment_variant = {
 		name = "Tokiwa Class"
 		name_group = JAP_CA_HISTORICAL
@@ -2088,27 +1544,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_2433c2e7498b
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_cruiser_armor = 1
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_6caa7a06e388
-		}
-	}
 	create_equipment_variant = {
 		name = "Mogami Class"
 		name_group = JAP_CL_HISTORICAL
@@ -2130,25 +1566,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_6caa7a06e388
-}
 
-set_technology = {
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	interwar_ship_hull_cruiser = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_cc829a04e6ba
-		}
-	}
 	create_equipment_variant = {
 		name = "Yubari Class"
 		name_group = JAP_CL_HISTORICAL
@@ -2171,26 +1589,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_cc829a04e6ba
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_naval_mines = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_52bd1761f2f8
-		}
-	}
 	create_equipment_variant = {
 		name = "Sendai Class"
 		name_group = JAP_CL_HISTORICAL
@@ -2219,24 +1618,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_52bd1761f2f8
-}
 
-set_technology = {
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_fa33cfe9e018
-		}
-	}
 	create_equipment_variant = {
 		name = "Tenryu Class"
 		name_group = JAP_CL_HISTORICAL
@@ -2259,25 +1641,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_fa33cfe9e018
-}
 
-set_technology = {
-	basic_naval_mines = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_ca9c5ac47643
-		}
-	}
 	create_equipment_variant = {
 		name = "Kuma/Nagara Class"
 		name_group = JAP_CL_HISTORICAL
@@ -2300,23 +1664,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_ca9c5ac47643
-}
 
-set_technology = {
-	basic_naval_mines = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_cced53c767b2
-		}
-	}
 	create_equipment_variant = {
 		name = "Okinoshima Class"
 		name_group = JAP_MINELAYERS_HISTORICAL
@@ -2338,23 +1686,7 @@ if = {
 			fixed_ship_armor_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_cced53c767b2
-}
 
-set_technology = {
-	basic_battery = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_467d643975c0
-		}
-	}
 	create_equipment_variant = {
 		name = "Chitose/Mizuho Class"
 		name_group = JAP_CL_HISTORICAL
@@ -2376,25 +1708,8 @@ if = {
 			fixed_ship_armor_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_467d643975c0
-}
 
 ### Destroyer Variants
-set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_9dc982683f3c
-		}
-	}
 	create_equipment_variant = {
 		name = "Mutsuki Class"
 		name_group = JAP_DD_HISTORICAL
@@ -2414,23 +1729,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_9dc982683f3c
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_7a8de3056c32
-		}
-	}
 	create_equipment_variant = {
 		name = "Minekaze Class"
 		name_group = JAP_DD_HISTORICAL
@@ -2450,22 +1749,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_7a8de3056c32
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_7f333a130707
-		}
-	}
 	create_equipment_variant = {
 		name = "Momi Class"
 		name_group = JAP_DD_HISTORICAL
@@ -2485,23 +1769,7 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_7f333a130707
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_1b836234c5be
-		}
-	}
 	create_equipment_variant = {
 		name = "Chidori/Otori Class"
 		name_group = JAP_DD_HISTORICAL
@@ -2520,25 +1788,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_1b836234c5be
-}
 
-set_technology = {
-	basic_depth_charges = 1
-	basic_light_battery = 1
-	basic_ship_hull_light = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_9efdae989684
-		}
-	}
 	create_equipment_variant = {
 		name = "Fubuki Class"
 		name_group = JAP_DD_HISTORICAL
@@ -2557,21 +1807,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_9efdae989684
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_naval_mines = 1
-	early_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_87b3310f2b10
-		}
-	}
 	create_equipment_variant = {
 		name = "Sokuten Class"
 		name_group = JAP_MINELAYERS_HISTORICAL
@@ -2590,22 +1826,7 @@ if = {
 			rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_87b3310f2b10
-}
 
-set_technology = {
-	basic_battery = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_dc52065331c4
-		}
-	}
 	create_equipment_variant = {
 		name = "Momo Class"
 		name_group = JAP_DD_HISTORICAL
@@ -2625,26 +1846,7 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_dc52065331c4
-}
 
-set_technology = {
-	basic_depth_charges = 1
-	basic_light_battery = 1
-	basic_ship_hull_light = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_8d11472e8df3
-		}
-	}
 	create_equipment_variant = {
 		name = "Asashio Class"
 		name_group = JAP_DD_HISTORICAL
@@ -2663,25 +1865,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_8d11472e8df3
-}
 
-set_technology = {
-	basic_depth_charges = 1
-	basic_light_battery = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_9af985f2a5a7
-		}
-	}
 	create_equipment_variant = {
 		name = "Hatsuharu Class"
 		name_group = JAP_DD_HISTORICAL
@@ -2701,26 +1885,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_9af985f2a5a7
-}
 
-set_technology = {
-	basic_depth_charges = 1
-	basic_light_battery = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_74bdaa76b7c2
-		}
-	}
 	create_equipment_variant = {
 		name = "Shiratsuyu Class"
 		name_group = JAP_DD_HISTORICAL
@@ -2740,22 +1905,8 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_74bdaa76b7c2
-}
 
 ### Submarine Variants
-set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	improved_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_0641bd846c10
-		}
-	}
 	create_equipment_variant = {
 		name = "Kaidai III Class"
 		name_group = JAP_SS_HISTORICAL
@@ -2773,20 +1924,7 @@ if = {
 			front_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_0641bd846c10
-}
 
-set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_fa9191a172b8
-		}
-	}
 	create_equipment_variant = {
 		name = "Kaichū IV Class"
 		design_team = mio:JAP_sasebo_naval_arsenal_organization
@@ -2802,22 +1940,7 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_fa9191a172b8
-}
 
-set_technology = {
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	improved_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_e320bb1a38f9
-		}
-	}
 	create_equipment_variant = {
 		name = "Kiraisen Class"
 		name_group = JAP_SS_HISTORICAL
@@ -2835,21 +1958,7 @@ if = {
 			front_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_e320bb1a38f9
-}
 
-set_technology = {
-	basic_torpedo = 1
-	cruiser_submarines = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_7387017c403d
-		}
-	}
 	create_equipment_variant = {
 		name = "I-1 Class"
 		name_group = JAP_SS_HISTORICAL
@@ -2868,458 +1977,619 @@ if = {
 			mid_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_7387017c403d
-}
-
-
-
-# 1939 Start #
-1939.1.1 = {
-
-	IF = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		create_equipment_variant = {
-			name = "Ki-27"
-			type = small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-			}
-		}
-		create_equipment_variant = {
-			name = "A5M"
-			type = cv_small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-			}
-			icon = "GFX_JAP_cv_fighter1_medium"
-		}
-		create_equipment_variant = {
-			name = "B5N"
-			type = cv_small_plane_naval_bomber_airframe_1
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = fuel_tanks_small
-				special_type_slot_2 = lmg_defense_turret
-			}
-			icon = "GFX_JAP_cv_naval_bomber1_medium"
-		}
-		create_equipment_variant = {
-			name = "Ki-30/32"
-			type = small_plane_cas_airframe_1
-			modules = {
-				fixed_main_weapon_slot = small_bomb_bay
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = lmg_defense_turret
-			}
-		}
-		create_equipment_variant = {
-			name = "Ki-21"
-			type = medium_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = lmg_defense_turret_2x
-			}
-		}
-		create_equipment_variant = {
-			name = "G3M2"
-			type = medium_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-				engine_type_slot = engine_3_2x #Increased tier due to thrust/weight issues
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = fuel_tanks_medium
-			}
-			icon = "GFX_JAP_early_bomber_medium"
-		}
-	}
-	IF = {
-		limit = {
-			NOT = { has_dlc = "Man the Guns" }
-		}
-		### Carrier Variants
-		set_technology = {
-	advanced_light_battery = 1
-	basic_battery = 1
-	basic_ship_hull_carrier = 1
-	early_carrier_study = 1
-	early_ship_hull_carrier = 1
-	popup = no
-}
 if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_7769c1cd6185
-		}
+	limit = { has_dlc = "Man the Guns" }
+	complete_special_project = {
+		project = sp:sp_naval_fleet_submarine
+	}
+	complete_special_project = {
+		project = sp:sp_naval_cruiser_submarine
+	}
+	complete_special_project = {
+		project = sp:sp_super_heavy_guns
+	}
+	complete_special_project = {
+		project = sp:sp_naval_super_heavy_battleship
 	}
 	create_equipment_variant = {
 		name = "Hiryu Class"
 		parent_version = 0
-		upgrades = {
-			ship_deckspace_upgrade = 1
-			carrier_armor_upgrade = 0
-			ship_engine_upgrade = 0
-			ship_reliability_upgrade = 1
-		}
+		show_position = no
+		role_icon_index = 9
+		icon = gfx/interface/technologies/Japan/PN_JAP_carrier_Hiryu.png
 		type = vnr_ship_hull_carrier_1
-		modules = {
-			fixed_ship_deck_slot_1 = ship_deck_space_open
-			fixed_ship_deck_slot_2 = ship_deck_space_open
-			fixed_ship_anti_air_slot = ship_anti_air_4_h
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = carrier_ship_engine_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			front_1_custom_slot = empty
-			fixed_ship_flight_deck_slot = carrier_wooden_deck
-			fixed_ship_role_slot = ship_hull_carrier_role_cv
-			mid_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_JAP_7769c1cd6185
-}
-
-		set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_light = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	improved_depth_charges = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_antiair = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_b36691fc327e
-		}
-	}
-	create_equipment_variant = {
-		name = "Kagero Class"
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 3
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-		type = vnr_ship_hull_light_3
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_2
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_2
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_depth_charge_2
-		}
-	}
-	set_country_flag = PN_naval_variant_JAP_b36691fc327e
-}
-	}
-	IF = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_carrier = 1
-	early_carrier_study = 1
-	improved_ship_hull_carrier = 1
-	interwar_antiair = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_a819a8f85e54
-		}
-	}
-	create_equipment_variant = {
-		name = "Shokaku Class"
 		name_group = JAP_CV_HISTORICAL
-		parent_version = 0
-		optional_assets = {
-			{
-				icon = GFX_JAP_carrier_shokaku
-				model = JAP_carrier_0_entity
-			}
-		}
-		type = vnr_ship_hull_carrier_2
 		modules = {
 			fixed_ship_deck_slot_1 = ship_deck_space_open
 			fixed_ship_deck_slot_2 = ship_deck_space_open
-			fixed_ship_anti_air_slot = ship_anti_air_2
-			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1_bb
+			fixed_ship_armor_slot = ship_armor_carrier_1
 			front_1_custom_slot = ship_deck_space_open
-			fixed_ship_flight_deck_slot = carrier_wooden_deck
-			fixed_ship_role_slot = ship_hull_carrier_role_cv
-			mid_1_custom_slot = ship_deck_space_open
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_a819a8f85e54
-}
-		set_technology = {
-	basic_dp_light_battery = 1
-	basic_fire_control_system = 1
-	basic_light_battery = 1
-	basic_super_heavy_battery = 1
-	early_ship_hull_cruiser = 1
-	early_ship_hull_heavy = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	ship_hull_super_heavy = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_6901691ffb58
+	create_equipment_variant = {
+		name = "Zuiho Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 11
+		icon = gfx/interface/technologies/extra/PN_JAP_carrier_Zuiho.png
+		type = vnr_ship_hull_carrier_1
+		name_group = JAP_CVL_HISTORICAL
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space_small
+			fixed_ship_deck_slot_2 = ship_deck_space_small
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_carrier_miscellaneous_slot_2 = carrier_no_island
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1_bb
+			fixed_ship_role_slot = ship_hull_carrier_role_cvl
+			front_1_custom_slot = ship_deck_space_small
 		}
 	}
 	create_equipment_variant = {
 		name = "Yamato Class"
-		name_group = JAP_BB_HISTORICAL
 		parent_version = 0
+		show_position = no
+		role_icon_index = 7
 		type = vnr_ship_hull_super_heavy_1
+		name_group = JAP_BB_HISTORICAL
 		modules = {
-			fixed_ship_battery_slot = ship_super_heavy_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_battery_slot = ship_super_heavy_battery_1_triple
+			fixed_ship_anti_air_slot = ship_anti_air_2_h
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = super_heavy_ship_engine_1
+			fixed_ship_engine_slot = super_heavy_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_2
 			fixed_ship_armor_slot = ship_armor_shbb
-			fixed_ship_armor_scheme_slot = ship_scheme_incremental
-			front_1_custom_slot = ship_anti_air_1
-			mid_1_custom_slot = empty
-			mid_2_custom_slot = ship_secondaries_2
-			rear_1_custom_slot = ship_super_heavy_battery_1
-			front_2_custom_slot = empty
-			mid_3_custom_slot = dp_ship_secondaries_2_bb
+			fixed_ship_armor_scheme_slot = ship_scheme_all_or_nothing
+			fixed_ship_torpedo_defense_system_slot = torpedo_belt
+			front_1_custom_slot = ship_anti_air_2
+			front_2_custom_slot = ship_super_heavy_battery_1_triple
+			mid_1_custom_slot = dp_ship_secondaries_1_bb
+			mid_2_custom_slot = dp_ship_secondaries_1_bb
+			rear_1_custom_slot = ship_super_heavy_battery_1_triple
 			rear_2_custom_slot = ship_airplane_launcher_1
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_6901691ffb58
-}
-		set_technology = {
-	basic_depth_charges = 1
-	basic_dp_light_battery = 1
-	basic_ship_hull_light = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_antiair = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_8d11472e8df3
+	create_equipment_variant = {
+		name = "Nagato Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 3
+		type = vnr_ship_hull_heavy_2
+		name_group = JAP_BB_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2_h
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_scheme_slot = ship_scheme_mixed
+			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_torpedo_defense_system_slot = torpedo_bulge
+			front_1_custom_slot = ship_anti_air_1
+			front_2_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_3_custom_slot = empty
+			rear_1_custom_slot = ship_heavy_battery_2
+			rear_2_custom_slot = ship_heavy_battery_2
 		}
 	}
 	create_equipment_variant = {
-		name = "Asashio Class"
-		name_group = JAP_DD_HISTORICAL
+		name = "Takao Class"
 		parent_version = 0
-		type = vnr_ship_hull_light_3
+		show_position = no
+		role_icon_index = 27
+		icon = gfx/interface/technologies/Japan/PN_JAP_heavy_cruiser3.png
+		type = vnr_ship_hull_cruiser_2
+		name_group = JAP_CA_HISTORICAL
 		modules = {
-			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_battery_slot = ship_medium_battery_2_double
 			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_2
-			mid_1_custom_slot = ship_torpedo_2
-			rear_1_custom_slot = ship_depth_charge_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			front_1_custom_slot = ship_medium_battery_2_double
+			front_2_custom_slot = ship_medium_battery_2_double
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_2
+			mid_3_custom_slot = ship_torpedo_2
+			rear_1_custom_slot = ship_medium_battery_2_double
+			rear_2_custom_slot = ship_medium_battery_2_double
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_8d11472e8df3
-}
-		set_technology = {
-	basic_battery = 1
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_cruiser = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_d29692884d4f
+	create_equipment_variant = {
+		name = "Myoko Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 27
+		icon = gfx/interface/technologies/Japan/PN_JAP_heavy_cruiser3.png
+		type = vnr_ship_hull_cruiser_2
+		name_group = JAP_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2_double
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			front_1_custom_slot = ship_medium_battery_2_double
+			front_2_custom_slot = ship_medium_battery_2_double
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			mid_3_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2_double
+			rear_2_custom_slot = ship_medium_battery_2_double
 		}
+	}
+	create_equipment_variant = {
+		name = "Aoba Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 27
+		icon = gfx/interface/technologies/Japan/PN_JAP_heavy_cruiser2.png
+		type = vnr_ship_hull_cruiser_2
+		name_group = JAP_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2_double
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			front_1_custom_slot = ship_medium_battery_2_double
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			mid_3_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2_double
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Furutaka Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 27
+		icon = gfx/interface/technologies/Japan/PN_JAP_heavy_cruiser2.png
+		type = vnr_ship_hull_cruiser_2
+		name_group = JAP_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2_double
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			front_1_custom_slot = ship_medium_battery_2_double
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			mid_3_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2_double
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Asama/Izumo Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 17
+		icon = gfx/interface/technologies/Japan/PN_JAP_heavy_cruiser1.png
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
+		name_group = JAP_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1_double
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_ac
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_torpedo_1
+			mid_3_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_medium_battery_1_double
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+		}
+		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Katori Class"
-		name_group = JAP_CL_HISTORICAL
 		parent_version = 0
-		obsolete = yes
+		show_position = no
+		role_icon_index = 25
+		icon = gfx/interface/technologies/Japan/PN_JAP_light_cruiser_Katori.png
 		type = vnr_ship_hull_cruiser_3
+		name_group = JAP_CL_HISTORICAL
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1_double
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_role_slot = ship_hull_cruiser_role_c
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_airplane_launcher_1
+			fixed_ship_engine_slot = civilian_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_role_slot = ship_hull_cruiser_role_pc
 			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1_double
+		}
+	}
+	create_equipment_variant = {
+		name = "Sendai Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 25
+		type = vnr_ship_hull_cruiser_2
+		name_group = JAP_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1_single
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_airplane_launcher_slot = ship_airplane_launcher_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_light_medium_battery_1_single
+			mid_2_custom_slot = ship_torpedo_1
+			mid_3_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1_single
+			rear_2_custom_slot = ship_mine_layer_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Yubari Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 25
+		icon = gfx/interface/technologies/Japan/PN_JAP_light_cruiser_Yubari.png
+		type = vnr_ship_hull_cruiser_2
+		name_group = JAP_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1_double
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_airplane_launcher_slot = ship_airplane_launcher_1
+			front_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_torpedo_1
+			mid_3_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_light_medium_battery_1_double
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Chikuma Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 23
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
+		name_group = JAP_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1_single
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_ac
+			front_1_custom_slot = ship_light_medium_battery_1_single
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1_single
+			rear_2_custom_slot = ship_light_medium_battery_1_single
 			fixed_ship_secondaries_slot = ship_secondaries_1_light
 		}
-	}
-	set_country_flag = PN_naval_variant_JAP_d29692884d4f
-}
-		set_technology = {
-	basic_depth_charges = 1
-	basic_dp_light_battery = 1
-	basic_ship_hull_light = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_b36691fc327e
-		}
+		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Kagero Class"
-		name_group = JAP_DD_HISTORICAL
+		name = "Yodo Class"
 		parent_version = 0
-		optional_assets = {
-			{
-				icon = GFX_JAP_destroyer_yukikaze
-				model = JAP_destroyer_1_entity
-			}
-		}
-		type = vnr_ship_hull_light_3
+		show_position = no
+		role_icon_index = 23
+		icon = gfx/interface/technologies/Japan/PN_JAP_light_cruiser_Yodo.png
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
+		name_group = JAP_CL_HISTORICAL
 		modules = {
-			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_battery_slot = ship_light_medium_battery_1_single
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_torpedo_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Itsukushima/Okinoshima Class"
+		icon = gfx/interface/technologies/Japan/PN_JAP_cruiser_Itsukushima.png
+		parent_version = 0
+		show_position = no
+		role_icon_index = 51
+		type = vnr_ship_hull_cruiser_1
+		name_group = JAP_MINELAYERS_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1_single
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_2
-			mid_1_custom_slot = ship_torpedo_2
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	set_country_flag = PN_naval_variant_JAP_b36691fc327e
-}
-		set_technology = {
-	basic_battery = 1
-	basic_naval_mines = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_86516e64e9f0
+			fixed_ship_engine_slot = civilian_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_role_slot = ship_hull_cruiser_role_pc
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_mine_layer_1
+			mid_3_custom_slot = ship_light_medium_battery_1_single
+			rear_1_custom_slot = ship_mine_layer_1
+			rear_2_custom_slot = ship_depth_charge_1
 		}
 	}
 	create_equipment_variant = {
-		name = "Hatsutaka Class"
-		name_group = JAP_MINELAYERS_HISTORICAL
+		name = "Hatsuharu/Shiratsuyu Class"
 		parent_version = 0
+		show_position = no
+		role_icon_index = 31
 		type = vnr_ship_hull_light_3
+		name_group = JAP_WEATHER
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2_double
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_2
+			mid_2_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = ship_depth_charge_1
+			rear_2_custom_slot = ship_light_battery_2_double
+		}
+	}
+	create_equipment_variant = {
+		name = "Fubuki/Akatsuki Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_2
+		name_group = JAP_WEATHER
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2_double
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			fixed_ship_role_slot = ship_hull_light_role_dl
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_2
+			mid_2_custom_slot = ship_light_battery_2_double
+			rear_1_custom_slot = ship_depth_charge_1
+			rear_2_custom_slot = ship_light_battery_2_double
+		}
+	}
+	create_equipment_variant = {
+		name = "Minekaze/Mutsuki Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_1
+		name_group = JAP_WEATHER
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_mine_layer_1
+			rear_2_custom_slot = ship_light_battery_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Wakatake Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 35
+		icon = gfx/interface/technologies/Japan/PN_JAP_destroyer_Momo.png
+		type = vnr_ship_hull_light_1
+		name_group = JAP_NATURE
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_mine_layer_1
+			rear_2_custom_slot = ship_light_battery_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Momo/Momi Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 35
+		icon = gfx/interface/technologies/Japan/PN_JAP_destroyer_Momo.png
+		type = vnr_ship_hull_light_1
+		name_group = JAP_NATURE
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
+			rear_2_custom_slot = ship_light_battery_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Otori Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 29
+		icon = gfx/interface/technologies/Japan/PN_JAP_destroyer_Otori.png
+		type = vnr_ship_hull_light_3
+		name_group = JAP_NATURE
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_light_battery_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Chidori Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 29
+		icon = gfx/interface/technologies/Japan/PN_JAP_destroyer_Chidori.png
+		type = vnr_ship_hull_light_3
+		name_group = JAP_NATURE
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_mine_layer_1
-		}
-	}
-	set_country_flag = PN_naval_variant_JAP_86516e64e9f0
-}
-		set_technology = {
-	basic_torpedo = 1
-	cruiser_submarines = 1
-	early_ship_hull_submarine = 1
-	prototype_airplane_launcher = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_JAP_e0375a1fd302
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_depth_charge_1
+			rear_2_custom_slot = ship_light_battery_1
 		}
 	}
 	create_equipment_variant = {
-		name = "A1/B1 Class"
-		name_group = JAP_SS_HISTORICAL
+		name = "Junsen III Class"
 		parent_version = 0
+		show_position = no
+		role_icon_index = 39
 		type = vnr_ship_hull_cruiser_submarine
+		name_group = JAP_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_battery_slot = sub_deck_gun_2
+			front_1_custom_slot = sub_airplane_launcher_1
+			mid_1_custom_slot = ship_extra_fuel_tank
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Junsen II Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 39
+		type = vnr_ship_hull_cruiser_submarine
+		name_group = JAP_SS_HISTORICAL
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_conning_tower_slot = sub_conning_tower_0
 			fixed_ship_engine_slot = sub_ship_engine_1
-			fixed_ship_armor_slot = pressure_hull_1
-			fixed_sub_periscope_slot = sub_ship_periscope_0
-			rear_1_custom_slot = empty
 			front_1_custom_slot = sub_airplane_launcher_1
-			fixed_ship_battery_slot = sub_deck_gun_1
-			mid_1_custom_slot = empty
+			mid_1_custom_slot = ship_extra_fuel_tank
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Junsen I Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 39
+		icon = gfx/interface/technologies/extra/PN_JAP_submarine_Junsen_I.png
+		type = vnr_ship_hull_cruiser_submarine
+		name_group = JAP_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_extra_fuel_tank
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kaidai IV Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_2
+		name_group = JAP_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_JAP_e0375a1fd302
-}
+	create_equipment_variant = {
+		name = "Kaidai Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
+		name_group = JAP_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+		obsolete = yes
 	}
-	IF = {
-		limit = {
-			has_dlc = "No Step Back"
+	create_equipment_variant = {
+		name = "Kaichū Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
+		name_group = JAP_SSC_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
 		}
-		create_equipment_variant = {
-			name = "Type 97 Chi-Ha"
-			type = medium_tank_chassis_1
-			design_team = mio:JAP_sagami_army_arsenal_organization
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_close_support_gun
-				turret_type_slot = tank_medium_two_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_diesel_engine
-				special_type_slot_1 = tank_radio_1
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 4
-				tank_nsb_armor_upgrade = 2
-			}
-			icon = "GFX_JAP_basic_medium_tank_medium"
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kiraisen Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 41
+		icon = gfx/interface/technologies/extra/PN_JAP_submarine_Kiraisen.png
+		type = vnr_ship_hull_submarine_1
+		name_group = JAP_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
 		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "L Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
+		name_group = JAP_SSC_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
 	}
 }

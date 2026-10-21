@@ -81,6 +81,12 @@ if = {
 		early_battleship = 1
 		early_battlecruiser = 1
 		transport = 1
+		basic_torpedo = 1
+		early_ship_hull_cruiser = 1
+		electronic_mechanical_engineering = 1
+		multi_mounted_battery = 1
+		antiair2 = 1
+		basic_battery = 1
 	}
 }
 if = {
@@ -99,6 +105,13 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		panzerschiffe = 1
+		basic_heavy_battery = 1
+		early_cruiser_armor = 1
+		electronic_mechanical_engineering = 1
+		specialization_doctrine = 1
+		basic_naval_mines = 1
+		interwar_ship_hull_cruiser = 1
+		multi_mounted_battery = 1
 	}
 }
 
@@ -108,65 +121,6 @@ if = {
 set_research_slots = 4
 set_convoys = 50
 set_stability = 0.75
-
-1939.1.1 = {
-
-	add_political_power = 1197
-	add_command_power = 100
-
-
-	#BUILDINGS
-
-
-	set_technology = {
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-
-		#doctrines
-		#air
-		#formation_flying = 1
-		#dive_bombing = 1
-		#direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		cavity_magnatron = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
-	}
-
-set_grand_doctrine = new_mobile_warfare
-set_grand_doctrine = new_convoy_raiding
-set_grand_doctrine = new_battlefield_support
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-}
 
 set_politics = {
 	ruling_party = communism
@@ -244,25 +198,6 @@ create_country_leader = {
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-	basic_battery = 1
-	basic_heavy_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	specialization_doctrine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_DDR_38cd000d89fd
-		}
-	}
 	create_equipment_variant = {
 		name = "Deutschland Class"
 		name_group = GER_CA_HISTORICAL
@@ -283,27 +218,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_DDR_38cd000d89fd
-}
 
-	set_technology = {
-	basic_naval_mines = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_cruiser = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_DDR_3bddba212f09
-		}
-	}
 	create_equipment_variant = {
 		name = "Königsberg Class"
 		name_group = GER_CL_HISTORICAL
@@ -325,8 +240,6 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_DDR_3bddba212f09
-}
 }
 
 
@@ -335,22 +248,8 @@ if = {
 # Light Cruisers #
 
 if = {
-		limit = {
-			not = { has_dlc = "Man the Guns" }
-		}
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
 	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_DDR_068abe18d98e
-		}
+		not = { has_dlc = "Man the Guns" }
 	}
 	create_equipment_variant = {
 		name = "Königsberg Class"
@@ -377,23 +276,7 @@ if = {
 			fixed_ship_secondaries_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_DDR_068abe18d98e
-}
 	# Heavy Cruisers #
-	set_technology = {
-	antiair2 = 1
-	basic_battery = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_DDR_34ab55458dfd
-		}
-	}
 	create_equipment_variant = {
 		name = "Deutschland Class"
 		parent_version = 0
@@ -418,149 +301,4 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1_light
 		}
 	}
-	set_country_flag = PN_naval_variant_DDR_34ab55458dfd
-}
-}
-## 1939 Start ##
-1939.1.1 = {
-
-		if = {
-			limit = {
-				not = { has_dlc = "Man the Guns" }
-			}
-			# Submarines #
-			set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	improved_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_DDR_0ba1bd660281
-		}
-	}
-	create_equipment_variant = {
-		name = "Type VIIA"
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-		type = vnr_ship_hull_submarine_3
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_conning_tower_slot = sub_conning_tower_0
-			fixed_ship_engine_slot = sub_ship_engine_1
-			fixed_ship_armor_slot = pressure_hull_3
-			fixed_sub_periscope_slot = sub_ship_periscope_0
-			fixed_ship_secondaries_slot = sub_deck_gun_3
-			rear_1_custom_slot = ship_torpedo_sub_1
-			front_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_DDR_0ba1bd660281
-}
-			# Destroyer #
-			set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_light = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	improved_depth_charges = 1
-	improved_ship_torpedo_launcher = 1
-	interwar_antiair = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_DDR_12a0a5309323
-		}
-	}
-	create_equipment_variant = {
-		name = "Zerstörer 1936"
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-		type = vnr_ship_hull_light_3
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_2
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_2
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_depth_charge_2
-		}
-	}
-	set_country_flag = PN_naval_variant_DDR_12a0a5309323
-}
-			# Heavy Cruisers #
-			#create_equipment_variant = {
-			#	name = "Deutschland Class"
-			#	type = heavy_cruiser_1
-			#	parent_version = 0
-			#	upgrades = {
-			#		ship_reliability_upgrade = 1
-			#		ship_engine_upgrade = 1
-			#		ship_armor_upgrade = 1
-			#		ship_gun_upgrade = 2
-			#	}
-			#	obsolete = yes
-			#}
-
-		}
-
-		if = {
-			limit = {
-				has_dlc = "Man the Guns"
-			}
-			set_technology = {
-	basic_depth_charges = 1
-	basic_light_battery = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_DDR_1893054ac5ba
-		}
-	}
-	create_equipment_variant = {
-		name = "Zerstörer 1936 Class"
-		name_group = GER_DD_HISTORICAL
-		parent_version = 0
-		type = vnr_ship_hull_light_3
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	set_country_flag = PN_naval_variant_DDR_1893054ac5ba
-}
-		}
 }

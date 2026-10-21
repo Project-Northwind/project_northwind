@@ -1,15 +1,6 @@
 add_namespace = navy_rework
 add_namespace = vnr_ai
 
-# load starting naval designs and fleet and techs
-country_event = {
-    id = navy_rework.0
-
-    hidden = yes
-    is_triggered_only = yes
-    immediate = { PN_initialize_navy = yes }
-}
-
 # add Alicorn
 country_event = {
 	id = navy_rework.1

@@ -45,6 +45,8 @@ set_technology = {
 	early_ship_hull_light = 1
 	basic_battery = 1
 	basic_depth_charges = 1
+	basic_torpedo = 1
+	electronic_mechanical_engineering = 1
 }
 
 if = {
@@ -52,30 +54,15 @@ if = {
 		has_dlc = "No Compromise, No Surrender"
 		has_dlc = "Arms Against Tyranny"
 	}
-		create_equipment_variant = {
-			name = "Casco Convoy"
-			type = convoy_1
-			parent_version = 0
-			design_team = mio:PHI_compania_maritima_de_cebu_organization
-			show_position = no
-			mark_older_equipment_obsolete = yes
-		}
-
-		set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PHI_61bba40ffbf3
-		}
+	create_equipment_variant = {
+		name = "Casco Convoy"
+		type = convoy_1
+		parent_version = 0
+		design_team = mio:PHI_compania_maritima_de_cebu_organization
+		show_position = no
+		mark_older_equipment_obsolete = yes
 	}
+
 	create_equipment_variant = {
 		name = "Clemson Class"
 		name_group = PHI_DD_HISTORICAL
@@ -94,8 +81,6 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_PHI_61bba40ffbf3
-}
 	else = {
 		create_equipment_variant = {
 			name = "Casco Convoy"
@@ -105,42 +90,25 @@ if = {
 			mark_older_equipment_obsolete = yes
 		}
 
-		set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PHI_61bba40ffbf3
+		create_equipment_variant = {
+			name = "Clemson Class"
+			name_group = PHI_DD_HISTORICAL
+			parent_version = 0
+			show_position = no
+			mark_older_equipment_obsolete = yes
+			type = vnr_ship_hull_light_1
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_role_slot = ship_hull_light_role_dd
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
 		}
-	}
-	create_equipment_variant = {
-		name = "Clemson Class"
-		name_group = PHI_DD_HISTORICAL
-		parent_version = 0
-		show_position = no
-		mark_older_equipment_obsolete = yes
-		type = vnr_ship_hull_light_1
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	set_country_flag = PN_naval_variant_PHI_61bba40ffbf3
-}
 	}
 }
 
@@ -351,157 +319,6 @@ IF = {
 		recruit_character = PHI_juan_samulong
 		recruit_character = PHI_sergio_osmena
 	}
-}
-
-
-
-
-
-
-1939.1.1 = {
-
-	add_political_power = 1056
-	add_command_power = 100
-	set_stability = 0.50
-	set_war_support = 0.25
-	set_convoys = 100
-	set_grand_doctrine = superior_firepower
-	set_grand_doctrine = new_convoy_raiding
-
-	#generic focuses
-	IF = {
-		limit = {
-			has_dlc = "No Compromise, No Surrender"
-		}
-		complete_national_focus = PHI_align_with_the_usa
-		complete_national_focus = PHI_peg_the_peso_to_the_dollar
-		complete_national_focus = PHI_quezon_city
-		complete_national_focus = PHI_agricultural_migrants_to_hawaii
-		complete_national_focus = PHI_united_states_army_forces_in_the_far_east
-		complete_national_focus = PHI_usaffe_headquarters
-		complete_national_focus = PHI_reduce_unneccessary_expenditure
-		complete_national_focus = PHI_quezon_city_campus
-		complete_national_focus = PHI_pro_hacendados
-		complete_national_focus = PHI_national_defense_act
-		complete_national_focus = PHI_offshore_patrol
-		complete_national_focus = PHI_cavite_naval_base
-		complete_national_focus = PHI_sugar_barons
-		complete_national_focus = PHI_mindanao_transport
-		complete_national_focus = PHI_luzon_transport
-		complete_national_focus = PHI_textile_mills
-		complete_national_focus = PHI_philippine_scouts
-
-		unlock_national_focus = PHI_commonwealth_of_the_philippines
-		add_to_variable = {
-			PHI_the_great_depression_political_power_gain = 0.05
-			tooltip = political_power_gain_tt
-		}
-
-		unlock_national_focus = PHI_national_fiscal_policy
-		add_to_variable = {
-			PHI_the_great_depression_political_power_gain = 0.15
-			tooltip = political_power_gain_tt
-		}
-		add_to_variable = {
-			PHI_the_great_depression_production_speed_buildings_factor = 0.10
-			tooltip = production_speed_buildings_factor_tt
-		}
-
-		unlock_national_focus = PHI_appoint_macarthur
-		unlock_national_focus = PHI_bring_in_eisenhower
-
-		USA = {
-			USA_douglas_macarthur = { set_nationality = PHI }
-			USA_dwight_d_eisenhower = {
-				add_skill_level = 2
-			}
-		}
-
-		else = {
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = flexible_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-
-	set_technology = {
-		basic_ship_hull_light = 1
-		basic_torpedo = 1
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		infantry_weapons1 = 1
-	}
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-
-	oob = "PHI_1939"
-
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "PHI_1936_air_bba" #no difference between 36 and 39 airforces
-		else = {
-			set_air_oob = "PHI_1936_air_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_technology = {
-	basic_battery = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PHI_4e62d249e594
-		}
-	}
-	create_equipment_variant = {
-		name = "Patrol Boat"
-		parent_version = 0
-		type = vnr_ship_hull_light_3
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_PHI_4e62d249e594
-}
-			set_naval_oob = "PHI_1939_naval_mtg"
-		else = {
-			set_naval_oob = "PHI_1939_naval_legacy"
-		}
-	}
-
 }
 
 

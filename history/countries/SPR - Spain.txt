@@ -4,7 +4,7 @@ oob = "SPR_1936"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SPR_1936_naval_mtg"
+		set_naval_oob = "PN_00_SPR_vnr_naval"
 	else = {
 		set_naval_oob = "SPR_1936_naval_legacy"
 	}
@@ -304,6 +304,11 @@ if = {
 		basic_heavy_cruiser = 1
 		early_battleship = 1
 		transport = 1
+		basic_torpedo = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		electronic_mechanical_engineering = 1
+		multi_mounted_battery = 1
 	}
 }
 if = {
@@ -323,6 +328,25 @@ if = {
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		mtg_transport = 1
+		improved_ship_hull_submarine = 1
+		electronic_mechanical_engineering = 1
+		interwar_ship_hull_light = 1
+		multi_mounted_battery = 1
+		early_cruiser_armor = 1
+		interwar_ship_hull_cruiser = 1
+		basic_heavy_battery = 1
+		cruiser_propulsion_revolution = 1
+		basic_cruiser_armor = 1
+		coastal_defense_ships = 1
+		searchlight = 1
+		pre_dreadnoughts = 1
+		harvey_steel = 1
+		smoke_generator = 1
+		basic_periscope = 1
+		diesel_electric_transmission = 1
+		teardrop_hull = 1
+		improved_ship_torpedo_launcher = 1
+		acoustic_signature = 1
 	}
 }
 
@@ -335,195 +359,6 @@ set_politics = {
 
 set_convoys = 150
 set_stability = 0.5
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-
-	if = {
-		limit = {
-			NOT = { has_dlc = "La Resistance" }
-		}
-		#generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = naval_effort
-		complete_national_focus = large_navy
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort
-
-		set_politics = {
-			ruling_party = fascism
-			last_election = "1934.3.26"
-			election_frequency = 60
-			elections_allowed = no
-		}
-		set_popularities = {
-			democratic = 22
-			fascism = 76
-			communism = 2
-		}
-	}
-
-	if = {
-		limit = {
-			has_dlc = "La Resistance"
-		}
-		add_manpower = -250000
-		remove_ideas = {
-			SPR_military_disloyalty
-			SPR_political_violence
-			SPR_national_strikes_3
-		}
-		set_country_flag = SPR_nationalist_spain_flag
-		set_cosmetic_tag = SPR_nationalist_spain
-		unlock_national_focus = SPA_a_great_spain
-		unlock_national_focus = SPA_hand_over_the_ceda_campaign_chest
-		unlock_national_focus = SPA_negotiate_carlist_support
-		unlock_national_focus = SPA_the_army_of_africa
-		unlock_national_focus = SPA_secure_the_northern_garrisons
-		complete_national_focus = SPA_con_paquito
-		unlock_national_focus = SPA_unify_the_nationalist_front
-		unlock_national_focus = SPA_save_the_alcazar
-		unlock_national_focus = SPA_martyrdom_for_primo_de_rivera
-		complete_national_focus = SPA_caudillo_of_spain
-		unlock_national_focus = SPA_consolidate_the_north
-		complete_national_focus = SPA_foment_a_carlist_split
-		unlock_national_focus = SPA_a_methodical_approach
-		unlock_national_focus = SPA_tackle_the_vulnerable_fronts
-		unlock_national_focus = SPA_portuguese_aid
-		complete_national_focus = SPA_extol_the_martyrs_of_the_war
-		complete_national_focus = SPA_banish_the_party_leaders
-		complete_national_focus = SPA_expand_conscription
-		complete_national_focus = SPA_safeguard_the_freedom_of_worship
-		complete_national_focus = SPA_fuse_the_parties
-		complete_national_focus = SPA_integrate_the_requetes
-		complete_national_focus = SPA_utilize_the_intellectuals
-		every_unit_leader = {
-			limit = {
-				NOT = { has_trait = trait_SPA_nationalist_sympathies }
-			}
-			retire = yes
-		}
-		every_unit_leader = {
-			limit = {
-				has_trait = trait_SPA_nationalist_sympathies
-			}
-			remove_unit_leader_trait = trait_SPA_nationalist_sympathies
-		}
-		set_politics = {
-			ruling_party = neutrality
-			last_election = "1934.3.26"
-			election_frequency = 60
-			elections_allowed = no
-		}
-		set_popularities = {
-			democratic = 17
-			neutrality = 38
-			fascism = 45
-		}
-	}
-
-	oob = "SPA_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SPA_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SPA_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "SPA_1939_air_bba"
-		else = {
-			set_air_oob = "SPA_1939_air_legacy"
-			set_technology = {
-				fighter1 = 1
-				CAS1 = 1
-				tactical_bomber1 = 1
-			}
-		}
-	}
-	load_oob = "unlock_tanks"
-
-	set_technology = {
-		interwar_artillery = 1
-		interwar_antitank = 1
-		motorised_infantry = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-		#doctrines
-		#air_superiority = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-		}
-	}
-
-	set_global_flag = spanish_civil_war
-	set_global_flag = scw_over
-	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
-}
 
 if = {
 	limit = {
@@ -542,17 +377,6 @@ if = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_2a04daf0d21c
-		}
-	}
 	create_equipment_variant = {
 		name = "C Class"
 		upgrades = {
@@ -570,22 +394,6 @@ if = {
 			fixed_sub_periscope_slot = sub_ship_periscope_0
 			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_SPR_2a04daf0d21c
-}
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_d9108f0982c7
 		}
 	}
 	create_equipment_variant = {
@@ -611,23 +419,10 @@ if = {
 			fixed_ship_secondaries_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_SPR_d9108f0982c7
-}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_34755c8eb9e1
-		}
-	}
 	create_equipment_variant = {
 		name = "B Class"
 		parent_version = 0
@@ -642,21 +437,6 @@ if = {
 			fixed_sub_periscope_slot = sub_ship_periscope_0
 			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_SPR_34755c8eb9e1
-}
-	set_technology = {
-	basic_ship_hull_submarine = 1
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	improved_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_b93f267e0d58
 		}
 	}
 	create_equipment_variant = {
@@ -675,25 +455,7 @@ if = {
 			front_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_SPR_b93f267e0d58
-}
 	# Destroyers #
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_556255401b8d
-		}
-	}
 	create_equipment_variant = {
 		name = "Alsedo Class"
 		name_group = SPR_DD_HISTORICAL
@@ -710,25 +472,6 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_mine_layer_1
 			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	set_country_flag = PN_naval_variant_SPR_556255401b8d
-}
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_8ff90337b3e9
 		}
 	}
 	create_equipment_variant = {
@@ -748,24 +491,6 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_SPR_8ff90337b3e9
-}
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_naval_mines = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_5ab738c6abe5
-		}
-	}
 	create_equipment_variant = {
 		name = "Júpiter Class"
 		name_group = SPR_DD_HISTORICAL
@@ -783,23 +508,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_SPR_5ab738c6abe5
-}
 	# Light Cruisers #
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_fea4a5da19b0
-		}
-	}
 	create_equipment_variant = {
 		name = "República Class"
 		name_group = SPR_CL_HISTORICAL
@@ -818,23 +527,6 @@ if = {
 			rear_1_custom_slot = empty
 			front_1_custom_slot = empty
 			fixed_ship_secondaries_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_SPR_fea4a5da19b0
-}
-	set_technology = {
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_1bf2dbfd7893
 		}
 	}
 	create_equipment_variant = {
@@ -858,25 +550,6 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_SPR_1bf2dbfd7893
-}
-	set_technology = {
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_cruiser = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_7eb9d06c992b
-		}
-	}
 	create_equipment_variant = {
 		name = "Príncipe Alfonso Class"
 		name_group = SPR_CL_HISTORICAL
@@ -897,25 +570,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_SPR_7eb9d06c992b
-}
 	# Heavy Cruisers #
-	set_technology = {
-	basic_depth_charges = 1
-	basic_heavy_battery = 1
-	basic_ship_hull_cruiser = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_5bedc66c9cb7
-		}
-	}
 	create_equipment_variant = {
 		name = "Canarias Class"
 		name_group = SPR_CA_HISTORICAL
@@ -936,22 +591,7 @@ if = {
 			fixed_ship_armor_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_SPR_5bedc66c9cb7
-}
 	# Battleships #
-	set_technology = {
-	basic_battery = 1
-	early_ship_hull_heavy = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_91b3be32e32c
-		}
-	}
 	create_equipment_variant = {
 		name = "España Class"
 		name_group = SPR_BB_HISTORICAL
@@ -972,155 +612,105 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_SPR_91b3be32e32c
-}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		set_technology = {
-	basic_ship_hull_submarine = 1
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	improved_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_f6ef57a65750
-		}
+	complete_special_project = {
+		project = sp:sp_naval_fleet_submarine
 	}
 	create_equipment_variant = {
-		name = "General Mola Class"
-		name_group = SPR_SS_HISTORICAL
+		name = "Canarias Class"
 		parent_version = 0
-		obsolete = yes
-		type = vnr_ship_hull_submarine_3
+		show_position = no
+		role_icon_index = 27
+		icon = gfx/interface/technologies/Spain/PN_SPR_heavy_cruiser2.png
+		type = vnr_ship_hull_cruiser_2
+		name_group = SPR_CA_HISTORICAL
 		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_conning_tower_slot = sub_conning_tower_0
-			fixed_ship_engine_slot = sub_ship_engine_2
-			fixed_ship_armor_slot = pressure_hull_3
-			fixed_sub_periscope_slot = sub_ship_periscope_0
-			fixed_ship_secondaries_slot = sub_deck_gun_3
-			rear_1_custom_slot = ship_torpedo_sub_1
-			front_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_SPR_f6ef57a65750
-}
-		# Destroyers #
-		set_technology = {
-	basic_battery = 1
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_6754b722f3af
-		}
-	}
-	create_equipment_variant = {
-		name = "Melilla Class"
-		name_group = SPR_DD_HISTORICAL
-		parent_version = 0
-		obsolete = yes
-		type = vnr_ship_hull_light_1
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_medium_battery_1_double
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_SPR_6754b722f3af
-}
-		set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_6754b722f3af
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			fixed_ship_role_slot = ship_hull_cruiser_role_ca
+			front_1_custom_slot = ship_medium_battery_1_double
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_1_double
+			rear_2_custom_slot = ship_medium_battery_1_double
 		}
 	}
 	create_equipment_variant = {
-		name = "Melilla Class"
-		name_group = SPR_DD_HISTORICAL
+		name = "Almirante Cervera Class"
 		parent_version = 0
-		obsolete = yes
-		type = vnr_ship_hull_light_1
+		show_position = no
+		role_icon_index = 25
+		type = vnr_ship_hull_cruiser_2
+		name_group = SPR_CL_HISTORICAL
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = empty
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	set_country_flag = PN_naval_variant_SPR_6754b722f3af
-}
-		set_technology = {
-	basic_depth_charges = 1
-	basic_light_battery = 1
-	basic_naval_mines = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_SPR_9c2649e77339
+			fixed_ship_battery_slot = ship_light_medium_battery_2_double
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+			front_1_custom_slot = ship_light_medium_battery_2_single
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_medium_battery_2_double
+			mid_3_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_2_double
 		}
 	}
 	create_equipment_variant = {
-		name = "Eolo Class"
-		name_group = SPR_DD_HISTORICAL
+		name = "Churucca Class"
 		parent_version = 0
-		type = vnr_ship_hull_light_3
+		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_2
+		name_group = SPR_DD_HISTORICAL
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_role_slot = ship_hull_light_role_dd
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_mine_layer_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			front_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_light_battery_2
+			mid_2_custom_slot = ship_light_battery_2
 			rear_1_custom_slot = ship_depth_charge_1
+			rear_2_custom_slot = ship_light_battery_2
 		}
 	}
-	set_country_flag = PN_naval_variant_SPR_9c2649e77339
-}
+	create_equipment_variant = {
+		name = "Júpiter Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_2
+		name_group = SPR_DD_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_light_battery_1
+			rear_2_custom_slot = ship_mine_layer_1
+		}
+	}
+	create_equipment_variant = {
+		name = "C Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
+		name_group = SPR_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
 	}
 }

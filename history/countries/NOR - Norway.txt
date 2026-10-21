@@ -4,7 +4,7 @@ oob = "NOR_1936"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "NOR_1936_naval_mtg"
+		set_naval_oob = "PN_00_NOR_vnr_naval"
 	else = {
 		set_naval_oob = "NOR_1936_naval_legacy"
 	}
@@ -139,6 +139,12 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		coastal_defense_ships = 1
+		electronic_mechanical_engineering = 1
+		interwar_ship_hull_light = 1
+		early_cruiser_armor = 1
+		multi_mounted_battery = 1
+		searchlight = 1
+		smoke_generator = 1
 	}
 }
 
@@ -176,127 +182,6 @@ if = {
 }
 
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-
-	if = {
-		limit = {
-			has_aat = yes
-		}
-		complete_national_focus = NOR_continue_nygaardsvold_government
-		complete_national_focus = NOR_broken_gun_policies
-		complete_national_focus = NOR_leaving_the_hard_thirties_behind
-		complete_national_focus = NOR_cut_military_budget
-		complete_national_focus = NOR_bail_out_towns
-		complete_national_focus = NOR_print_more_money
-		complete_national_focus = NOR_social_incrementalism
-		complete_national_focus = NOR_restart_public_investment
-		complete_national_focus = NOR_restore_public_trust_in_the_storting
-		complete_national_focus = NOR_building_an_independent_norway
-		complete_national_focus = NOR_hurtigruten
-		complete_national_focus = NOR_norwegian_school_of_economics
-		complete_national_focus = NOR_weathering_the_storm_to_come
-		complete_national_focus = NOR_the_neutrality_guard
-		complete_national_focus = NOR_rearm_for_defense
-		complete_national_focus = NOR_patrol_our_coast
-		complete_national_focus = NOR_fortify_norway
-		complete_national_focus = NOR_coastal_defense
-		complete_national_focus = NOR_start_rearmament
-		complete_national_focus = NOR_drobak_coastal_fort
-		complete_national_focus = NOR_kickstart_military_industry
-
-		add_ideas = {
-			NOR_aat_norsk_hydro
-		}
-	}
-	if = {
-		limit = {
-			has_aat = no
-		}
-		#generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = naval_effort
-		complete_national_focus = large_navy
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort
-		complete_national_focus = NOR_norges_tekniske_hogskole
-	}
-
-	set_oob = "NOR_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "NOR_1939_naval_mtg"
-		else = {
-			set_naval_oob = "NOR_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "NOR_1939_air_bba"
-		else = {
-			set_air_oob = "NOR_1939_air_legacy"
-		}
-	}
-
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-		#doctrines
-		#air_superiority = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_depth_charges = 1
-		}
-	}
-	set_convoys = 400		# 4th biggest merchant marine in the world
-	set_stability = 0.8
-}
-
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.10.16"
@@ -309,21 +194,6 @@ set_popularities = {
 	communism = 2
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.10.19"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 84
-		fascism = 2
-		communism = 2
-		neutrality = 12
-	}
-}
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -333,18 +203,6 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	set_technology = {
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_NOR_7b2348de4e26
-		}
-	}
 	create_equipment_variant = {
 		name = "A & B Class"
 		parent_version = 0
@@ -359,22 +217,7 @@ if = {
 			rear_1_custom_slot = ship_mine_layer_sub
 		}
 	}
-	set_country_flag = PN_naval_variant_NOR_7b2348de4e26
-}
 	# Destroyers #
-	set_technology = {
-	basic_battery = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_NOR_ff86e428ac62
-		}
-	}
 	create_equipment_variant = {
 		name = "Draug Class"
 		name_group = NOR_DD_HISTORICAL
@@ -390,21 +233,6 @@ if = {
 			fixed_ship_torpedo_slot = empty
 			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_NOR_ff86e428ac62
-}
-	set_technology = {
-	basic_battery = 1
-	basic_naval_mines = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_NOR_ea9bc8a6d2fd
 		}
 	}
 	create_equipment_variant = {
@@ -424,24 +252,6 @@ if = {
 			rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
-	set_country_flag = PN_naval_variant_NOR_ea9bc8a6d2fd
-}
-	set_technology = {
-	basic_battery = 1
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_NOR_a1ea8cd334bc
-		}
-	}
 	create_equipment_variant = {
 		name = "Olaf Tryggvason Class"
 		parent_version = 0
@@ -458,24 +268,7 @@ if = {
 			rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
-	set_country_flag = PN_naval_variant_NOR_a1ea8cd334bc
-}
 	# Heavy Cruisers #
-	set_technology = {
-	basic_battery = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_NOR_406f4e875440
-		}
-	}
 	create_equipment_variant = {
 		name = "Norge Class"
 		name_group = NOR_CA_HISTORICAL
@@ -496,53 +289,110 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_NOR_406f4e875440
-}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Destroyers #
-		set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_NOR_6e85a4e7c7c7
+	create_equipment_variant = {
+		name = "Eidsvold Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 19
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
+		name_group = NOR_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1_single
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_torpedo_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
 		}
 	}
 	create_equipment_variant = {
-		name = "Sleipner & Odin Class"
-		name_group = NOR_DD_HISTORICAL
+		name = "Tordenskjold Class"
 		parent_version = 0
-		type = vnr_ship_hull_light_1
+		show_position = no
+		role_icon_index = 19
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
+		name_group = NOR_CA_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1_single
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_secondaries_1_light
+			mid_2_custom_slot = ship_torpedo_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
+		}
+	}
+	create_equipment_variant = {
+		name = "Sleipner Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_2
+		name_group = NOR_DD_HISTORICAL
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_depth_charge_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_light_battery_1
+			rear_2_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_NOR_6e85a4e7c7c7
+	create_equipment_variant = {
+		name = "Olaf Tryggvason Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 23
+		type = vnr_ship_hull_cruiser_1
+		name_group = NOR_CL_HISTORICAL
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_pc
+			front_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = ship_mine_layer_1
+			rear_2_custom_slot = ship_light_battery_2
+		}
+	}
+	create_equipment_variant = {
+		name = "B Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
+		name_group = NOR_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	create_equipment_variant = {
+		name = "A Class"
+		parent_version = 0
+		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
+		name_group = NOR_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			rear_1_custom_slot = empty
+		}
+	}
 }
-}
-} # Close the inherited 1939 history block.

@@ -1,7 +1,7 @@
 capital = 808
 
 oob = "LAT_1936"
-set_naval_oob = "LAT_1936_naval_mtg"
+set_naval_oob = "PN_LAT_1936_naval"
 
 set_cosmetic_tag = LAT_united_baltic_federation
 
@@ -76,6 +76,8 @@ set_technology = {
 	early_ship_hull_light = 1
 	early_ship_hull_cruiser = 1
 	basic_battery = 1
+	electronic_mechanical_engineering = 1
+	multi_mounted_battery = 1
 }
 
 
@@ -98,6 +100,57 @@ set_popularities = {
 
 ### VARIANTS ###
 # 1936 Start #
-PN_LAT_naval_design_1 = yes
-PN_LAT_naval_design_2 = yes
-PN_LAT_naval_design_3 = yes
+create_equipment_variant = {
+	name = "Ronis Class"
+	name_group = LAT_SS_HISTORICAL
+	parent_version = 0
+	show_position = no
+	type = vnr_ship_hull_submarine_1
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_conning_tower_slot = sub_conning_tower_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		fixed_ship_armor_slot = pressure_hull_1
+		fixed_sub_periscope_slot = sub_ship_periscope_0
+		fixed_ship_secondaries_slot = sub_deck_gun_1
+		rear_1_custom_slot = empty
+	}
+}
+create_equipment_variant = {
+	name = "Vambola Class"
+	name_group = LAT_DD_HISTORICAL
+	parent_version = 0
+	show_position = no
+	type = vnr_ship_hull_light_1
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_role_slot = ship_hull_light_role_dd
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+}
+create_equipment_variant = {
+	name = "Diana Class"
+	name_group = LAT_CL_HISTORICAL
+	parent_version = 0
+	show_position = no
+	type = vnr_ship_hull_cruiser_1
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_role_slot = ship_hull_cruiser_role_c
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = empty
+		front_1_custom_slot = empty
+		fixed_ship_secondaries_slot = empty
+	}
+}

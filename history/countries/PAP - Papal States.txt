@@ -76,6 +76,15 @@ if = {
 		basic_battleship = 1
 		early_battlecruiser = 1
 		transport = 1
+		basic_torpedo = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		early_ship_hull_light = 1
+		electronic_mechanical_engineering = 1
+		early_ship_hull_cruiser = 1
+		multi_mounted_battery = 1
+		antiair2 = 1
 	}
 }
 if = {
@@ -102,6 +111,15 @@ if = {
 		mtg_transport = 1
 		coastal_defense_ships = 1
 		#improved_airplane_launcher = 1
+		electronic_mechanical_engineering = 1
+		basic_cruiser_armor = 1
+		multi_mounted_battery = 1
+		early_cruiser_armor = 1
+		interwar_ship_hull_cruiser = 1
+		improved_airplane_launcher = 1
+		basic_heavy_armor = 1
+		interwar_ship_hull_heavy = 1
+		improved_ship_hull_submarine = 1
 	}
 }
 
@@ -163,17 +181,6 @@ if = {
 		NOT = { has_dlc = "Man the Guns" }
 	}
 	### Ship Variants ###
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_4aceaa780f0a
-		}
-	}
 	create_equipment_variant = {
 		name = "Bandiera Class"
 		upgrades = {
@@ -194,20 +201,7 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_4aceaa780f0a
-}
 
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_cfdcee6f6f4f
-		}
-	}
 	create_equipment_variant = {
 		name = "Sirena Class"
 		upgrades = {
@@ -227,24 +221,7 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_cfdcee6f6f4f
-}
 
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_477249ffc63e
-		}
-	}
 	create_equipment_variant = {
 		name = "Navigatori Class"
 		upgrades = {
@@ -267,24 +244,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_477249ffc63e
-}
 
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_473eb1e430b5
-		}
-	}
 	create_equipment_variant = {
 		name = "Maestrale Class"
 		upgrades = {
@@ -306,23 +266,7 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_473eb1e430b5
-}
 
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_7cb6dabf6800
-		}
-	}
 	create_equipment_variant = {
 		name = "Giussano Class"
 		upgrades = {
@@ -347,23 +291,7 @@ if = {
 			fixed_ship_secondaries_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_7cb6dabf6800
-}
 
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_2efd8c9d27c0
-		}
-	}
 	create_equipment_variant = {
 		name = "Montecuccoli Class"
 		upgrades = {
@@ -387,23 +315,7 @@ if = {
 			fixed_ship_secondaries_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_2efd8c9d27c0
-}
 
-	set_technology = {
-	antiair2 = 1
-	basic_battery = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_efa14cecc1d7
-		}
-	}
 	create_equipment_variant = {
 		name = "Zara Class"
 		upgrades = {
@@ -427,25 +339,10 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1_light
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_efa14cecc1d7
-}
 }
 if = {
 	limit = { has_dlc = "Man the Guns"}
 	### Battleship Variants
-	set_technology = {
-	basic_battery = 1
-	early_ship_hull_heavy = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_66f8d8df0c7b
-		}
-	}
 	create_equipment_variant = {
 		name = "Andrea Doria Class"
 		name_group = ITA_BB_HISTORICAL
@@ -465,23 +362,6 @@ if = {
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_heavy_battery_1
-		}
-	}
-	set_country_flag = PN_naval_variant_PAP_66f8d8df0c7b
-}
-	set_technology = {
-	basic_battery = 1
-	basic_ship_hull_heavy = 1
-	early_ship_hull_cruiser = 1
-	early_ship_hull_heavy = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_d1298520e80d
 		}
 	}
 	create_equipment_variant = {
@@ -504,25 +384,7 @@ if = {
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_d1298520e80d
-}
 	### Heavy Cruiser Variants
-	set_technology = {
-	basic_battery = 1
-	basic_cruiser_armor = 1
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_01e8298a0f63
-		}
-	}
 	create_equipment_variant = {
 		name = "San Giorgio Class"
 		name_group = ITA_CA_HISTORICAL
@@ -542,23 +404,6 @@ if = {
 			front_1_custom_slot = ship_anti_air_1
 			fixed_ship_secondaries_slot = ship_secondaries_1_light
 			fixed_ship_armor_slot = ship_armor_cruiser_2
-		}
-	}
-	set_country_flag = PN_naval_variant_PAP_01e8298a0f63
-}
-	set_technology = {
-	basic_ship_hull_cruiser = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_bb27ee6b2895
 		}
 	}
 	create_equipment_variant = {
@@ -582,23 +427,6 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_bb27ee6b2895
-}
-	set_technology = {
-	basic_cruiser_armor = 1
-	basic_ship_hull_cruiser = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_efa14cecc1d7
-		}
-	}
 	create_equipment_variant = {
 		name = "Zara Class"
 		name_group = ITA_CA_HISTORICAL
@@ -618,24 +446,6 @@ if = {
 			front_1_custom_slot = empty
 			fixed_ship_secondaries_slot = empty
 			fixed_ship_armor_slot = ship_armor_cruiser_2
-		}
-	}
-	set_country_flag = PN_naval_variant_PAP_efa14cecc1d7
-}
-	set_technology = {
-	basic_ship_hull_cruiser = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_ship_hull_cruiser = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_c3abfca18ca3
 		}
 	}
 	create_equipment_variant = {
@@ -658,24 +468,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_c3abfca18ca3
-}
 	### Light Cruiser Variants
-	set_technology = {
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	multi_mounted_battery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_f5b6f2e74b5c
-		}
-	}
 	create_equipment_variant = {
 		name = "Taranto Class"
 		name_group = ITA_CL_HISTORICAL
@@ -695,23 +488,6 @@ if = {
 			front_1_custom_slot = empty
 			fixed_ship_secondaries_slot = empty
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-		}
-	}
-	set_country_flag = PN_naval_variant_PAP_f5b6f2e74b5c
-}
-	set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	interwar_antiair = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_7cb6dabf6800
 		}
 	}
 	create_equipment_variant = {
@@ -735,25 +511,6 @@ if = {
 			fixed_ship_armor_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_7cb6dabf6800
-}
-	set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_db5a71971f7c
-		}
-	}
 	create_equipment_variant = {
 		name = "Montecuccoli Class"
 		name_group = ITA_CL_HISTORICAL
@@ -774,28 +531,8 @@ if = {
 			fixed_ship_armor_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_db5a71971f7c
-}
 
 	### Light Cruiser Variants
-	set_technology = {
-	basic_light_battery = 1
-	basic_ship_hull_cruiser = 1
-	basic_torpedo = 1
-	early_cruiser_armor = 1
-	early_ship_hull_cruiser = 1
-	electronic_mechanical_engineering = 1
-	improved_airplane_launcher = 1
-	interwar_antiair = 1
-	interwar_ship_hull_cruiser = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_089b09a9a190
-		}
-	}
 	create_equipment_variant = {
 		name = "Duca degli Abruzzi Class"
 		name_group = ITA_CL_HISTORICAL
@@ -816,23 +553,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_089b09a9a190
-}
 	### Destroyer Variants
-	set_technology = {
-	basic_battery = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_8477a161aed4
-		}
-	}
 	create_equipment_variant = {
 		name = "Curtatone Class"
 		name_group = ITA_DD_HISTORICAL
@@ -849,24 +570,6 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_PAP_8477a161aed4
-}
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_477249ffc63e
 		}
 	}
 	create_equipment_variant = {
@@ -887,24 +590,6 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_477249ffc63e
-}
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_ship_hull_light = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_473eb1e430b5
-		}
-	}
 	create_equipment_variant = {
 		name = "Maestrale Class"
 		name_group = ITA_DD_HISTORICAL
@@ -920,22 +605,6 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	set_country_flag = PN_naval_variant_PAP_473eb1e430b5
-}
-	set_technology = {
-	basic_battery = 1
-	basic_depth_charges = 1
-	basic_naval_mines = 1
-	basic_torpedo = 1
-	early_ship_hull_light = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_6f174c0e778f
 		}
 	}
 	create_equipment_variant = {
@@ -954,25 +623,6 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_mine_layer_1
 			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	set_country_flag = PN_naval_variant_PAP_6f174c0e778f
-}
-	set_technology = {
-	basic_heavy_armor = 1
-	basic_heavy_battery = 1
-	basic_light_battery = 1
-	early_ship_hull_heavy = 1
-	electronic_mechanical_engineering = 1
-	gw_artillery = 1
-	improved_airplane_launcher = 1
-	interwar_ship_hull_heavy = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_019f31c81945
 		}
 	}
 	create_equipment_variant = {
@@ -995,20 +645,7 @@ if = {
 			rear_1_custom_slot = ship_heavy_battery_2
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_019f31c81945
-}
 	### Submarine Variants
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_b527127d005d
-		}
-	}
 	create_equipment_variant = {
 		name = "Mameli Class"
 		name_group = ITA_SS_HISTORICAL
@@ -1023,19 +660,6 @@ if = {
 			fixed_sub_periscope_slot = sub_ship_periscope_0
 			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_PAP_b527127d005d
-}
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_4aceaa780f0a
 		}
 	}
 	create_equipment_variant = {
@@ -1054,19 +678,6 @@ if = {
 			rear_1_custom_slot = ship_torpedo_sub_1
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_4aceaa780f0a
-}
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_cfdcee6f6f4f
-		}
-	}
 	create_equipment_variant = {
 		name = "Sirena Class"
 		name_group = ITA_SS_HISTORICAL
@@ -1081,20 +692,6 @@ if = {
 			fixed_sub_periscope_slot = sub_ship_periscope_0
 			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = empty
-		}
-	}
-	set_country_flag = PN_naval_variant_PAP_cfdcee6f6f4f
-}
-	set_technology = {
-	basic_torpedo = 1
-	early_ship_hull_submarine = 1
-	improved_ship_hull_submarine = 1
-	popup = no
-}
-if = {
-	limit = {
-		NOT = {
-			has_country_flag = PN_naval_variant_PAP_ae78c13e0f0c
 		}
 	}
 	create_equipment_variant = {
@@ -1113,6 +710,4 @@ if = {
 			front_1_custom_slot = empty
 		}
 	}
-	set_country_flag = PN_naval_variant_PAP_ae78c13e0f0c
-}
 }
