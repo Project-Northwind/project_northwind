@@ -754,7 +754,7 @@ units = {
 				requested_factories = 1
 				progress = 0.53
 				amount = 1
-				industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+				industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 			}
 			add_equipment_production = {
 				equipment = {
@@ -765,7 +765,7 @@ units = {
 				requested_factories = 1
 				progress = 0.3
 				amount = 1
-				industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
+				industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 			}
 			# SS (x1): "Ro-34"
 			add_equipment_production = {

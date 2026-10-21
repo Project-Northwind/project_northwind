@@ -70,6 +70,7 @@ IF = {
 		name = "Antioquia Class"
 		name_group = COL_DD_HISTORICAL
 		parent_version = 0
+		role_icon_index = 31
 		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2

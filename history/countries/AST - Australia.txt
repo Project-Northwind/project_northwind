@@ -318,6 +318,7 @@ IF = {
 				model = commonwealth_gfx_light_cruiser_entity
 			}
 		}
+		role_icon_index = 25
 		type = vnr_ship_hull_cruiser_3
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
@@ -341,6 +342,7 @@ IF = {
 		parent_version = 0
 		design_team = mio:AST_cockatoo_docks_organization
 		obsolete = yes
+		role_icon_index = 25
 		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -363,6 +365,7 @@ IF = {
 		name_group = AST_CL_HISTORICAL
 		parent_version = 0
 		design_team = mio:AST_cockatoo_docks_organization
+		role_icon_index = 25
 		type = vnr_ship_hull_cruiser_3
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
@@ -392,6 +395,7 @@ IF = {
 				model = commonwealth_gfx_heavy_cruiser_entity
 			}
 		}
+		role_icon_index = 27
 		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_2
@@ -413,6 +417,7 @@ IF = {
 		name_group = AST_CA_HISTORICAL
 		parent_version = 0
 		design_team = mio:AST_cockatoo_docks_organization
+		role_icon_index = 27
 		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_2
@@ -442,6 +447,7 @@ IF = {
 				model = commonwealth_gfx_destroyer_1_entity
 			}
 		}
+		role_icon_index = 31
 		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -461,6 +467,7 @@ IF = {
 		parent_version = 0
 		design_team = mio:AST_morts_dock_organization
 		obsolete = yes
+		role_icon_index = 31
 		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -486,6 +493,7 @@ IF = {
 				model = commonwealth_gfx_light_cruiser_entity
 			}
 		}
+		role_icon_index = 25
 		type = vnr_ship_hull_cruiser_3
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
@@ -508,6 +516,7 @@ IF = {
 		name_group = AST_CL_HISTORICAL
 		parent_version = 0
 		obsolete = yes
+		role_icon_index = 25
 		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -529,6 +538,7 @@ IF = {
 		name = "Leander Class"
 		name_group = AST_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 25
 		type = vnr_ship_hull_cruiser_3
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_2
@@ -557,6 +567,7 @@ IF = {
 				model = commonwealth_gfx_heavy_cruiser_entity
 			}
 		}
+		role_icon_index = 27
 		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_2
@@ -577,6 +588,7 @@ IF = {
 		name = "County Class"
 		name_group = AST_CA_HISTORICAL
 		parent_version = 0
+		role_icon_index = 27
 		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_2
@@ -605,6 +617,7 @@ IF = {
 				model = commonwealth_gfx_destroyer_1_entity
 			}
 		}
+		role_icon_index = 31
 		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -623,6 +636,7 @@ IF = {
 		name_group = AST_DD_HISTORICAL
 		parent_version = 0
 		obsolete = yes
+		role_icon_index = 31
 		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1

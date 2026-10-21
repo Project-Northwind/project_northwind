@@ -7,7 +7,7 @@ units = {
 		task_force = {
 			name = "Armada de la República de Venezuela"
 			location = 8113
-			ship = { name = "ARV Mariscal Sucre" pride_of_the_fleet = yes definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "Mariscal Sucre Class" } } }
+			ship = { name = "ARV Mariscal Sucre" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "Mariscal Sucre Class" } } }
 			ship = { name = "ARV General Salom" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "General Salom Class" } } }
 			ship = { name = "ARV Maracay" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "Maracay Class" } } }
 			ship = { name = "ARV Miranda" definition = destroyer equipment = { vnr_ship_hull_light_1 = { amount = 1 owner = VEN version_name = "Maracay Class" } } }

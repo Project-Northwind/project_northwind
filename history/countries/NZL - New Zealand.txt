@@ -164,6 +164,7 @@ if = {
 			ship_gun_upgrade = 2
 			ship_anti_air_upgrade = 2
 		}
+		role_icon_index = 25
 		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -187,6 +188,7 @@ if = {
 		name = "Danae Class"
 		name_group = NZL_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 25
 		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
