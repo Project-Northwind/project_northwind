@@ -1,7 +1,0 @@
-units = {
-
-	##### Royal New Zealand Navy (CO: Rivett-Carnac) #####
-
-# Navy supplied by PN_initialize_navy.
-
-}

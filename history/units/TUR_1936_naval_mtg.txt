@@ -1,1 +1,1 @@
-# Northwind navy is loaded once by PN_initialize_navy after VNR technology setup.
+# This file is left blank intentionally to overwrite vanilla TUR_1936_naval_mtg

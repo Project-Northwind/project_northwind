@@ -6,41 +6,19 @@ units= {
 	### BATTLE FLEET ###
 	### Split between San Pedro (Los Angeles) and San Diego ###
 
-# Navy supplied by PN_initialize_navy.
-
-
 	### SCOUTING FLEET ###
-
-# Navy supplied by PN_initialize_navy.
-
 
 	### SUBMARINE FORCE ###
 
-# Navy supplied by PN_initialize_navy.
-
-
 	### PACIFIC RESERVES ###
-
-# Navy supplied by PN_initialize_navy.
-
 
 	##### ATLANTIC FLEET #####
 
-# Navy supplied by PN_initialize_navy.
-
-
 	### CARIBBEAN AND FOREIGN DEPLOYMENTS ###
-
-# Navy supplied by PN_initialize_navy.
-
 
 	##### ASIATIC FLEET #####
 
-# Navy supplied by PN_initialize_navy.
-
 }
-
-
 
 #########################
 ## STARTING PRODUCTION ##
@@ -50,67 +28,15 @@ instant_effect = {
 	### Under Construction Notes ###
 	# CA: Quincy (New Orleans class, Comm. 9-Jun, 1936)
 
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
 	# CA: Wichita (Wichita class
-
-# Navy supplied by PN_initialize_navy.
 
 	##2 Yorktowns (Yorktown, Enterprise)
 
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
 	# DD: Porter (x14) ("USS Porter" "USS Phelps" "USS Clark" "USS Moffett")
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
 
 	# DD: Mahan class (x9) ("USS Mahan" "USS Cummings" "USS Flusser" "USS Case" "USS Conyngham" "USS Cassin" "USS Shaw" "USS Cushing" "USS Perkins")
 
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
 	# SS: Shark class (x1) ("USS Tarpon")
-
-# Navy supplied by PN_initialize_navy.
 
 }
 

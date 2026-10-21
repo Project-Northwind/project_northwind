@@ -3,41 +3,11 @@ units= {
 	##### NAVAL UNITS #####
 	### ITALY ###
 
-# Navy supplied by PN_initialize_navy.
-
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-
-# Navy supplied by PN_initialize_navy.
-
-
 	### EAGEAN SEA ###
-
-# Navy supplied by PN_initialize_navy.
-
 
 	### AFRICA ###
 
-# Navy supplied by PN_initialize_navy.
-
-
-
-# Navy supplied by PN_initialize_navy.
-
 }
-
-
 
 #########################
 ## STARTING PRODUCTION ##
@@ -49,46 +19,21 @@ instant_effect = {
 		##### Ships #####
 		# BB: "RN Conte di Cavour" (Refitted & Recommissioned: 1-Jun, 1937)
 
-# Navy supplied by PN_initialize_navy.
-
-
 		# BB: "RN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
-
-# Navy supplied by PN_initialize_navy.
 
 		# BB: "Littorio"
 
-# Navy supplied by PN_initialize_navy.
-
 		# BB: Vittoria Veneto
-
-# Navy supplied by PN_initialize_navy.
-
 
 		# CL: "RI Eugenio di Savoia" (Commissioned: 16-Jan, 1936)
 
-# Navy supplied by PN_initialize_navy.
-
 		# CL: "Duca degli Abruzzi"
-
-# Navy supplied by PN_initialize_navy.
 
 		# CL: Giuseppe Garibaldi
 
-# Navy supplied by PN_initialize_navy.
-
-
 		# DD: "RCT Perseo", "RCT Sirio"
 
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
 		# SS: "RSmg Enrico Tazzoli"
-
-# Navy supplied by PN_initialize_navy.
 
 	}
 }

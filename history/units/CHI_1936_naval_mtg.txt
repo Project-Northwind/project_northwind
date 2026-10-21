@@ -2,15 +2,11 @@ units = {
 
 	##### ROCN #####
 
-# Navy supplied by PN_initialize_navy.
-
 }
 
 ##### SHIP CONSTRUCTION #####
 instant_effect = {
 #Under Construction in Shanghai
 	# Light Cruiser
-
-# Navy supplied by PN_initialize_navy.
 
 }

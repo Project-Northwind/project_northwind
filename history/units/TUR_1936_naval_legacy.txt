@@ -4,6 +4,4 @@ units= {
 	##### NAVAL UNITS #####
 	### Türk Donanmasi ###
 
-# Navy supplied by PN_initialize_navy.
-
 }

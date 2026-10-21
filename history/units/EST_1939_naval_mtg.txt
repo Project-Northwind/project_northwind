@@ -1,7 +1,0 @@
-units = {
-
-	##### NAVAL OOB #####
-
-# Navy supplied by PN_initialize_navy.
-
-}

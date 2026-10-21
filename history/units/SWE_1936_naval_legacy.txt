@@ -2,8 +2,6 @@ units = {
 
 	##### NAVAL UNITS #####
 
-# Navy supplied by PN_initialize_navy.
-
 }
 
 ### Starting Production ###
@@ -11,13 +9,6 @@ instant_effect = {
 	### Under Construction Notes ###
 	# DD: Göteborg class (x1) ("HMS Göteborg")
 
-# Navy supplied by PN_initialize_navy.
-
 	# SS: Draken variant (x3) ("HMS Delfinen" "HMS Nordkaparen" "HMS Springaren")
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
 
 }

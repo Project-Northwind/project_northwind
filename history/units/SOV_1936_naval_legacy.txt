@@ -4,26 +4,13 @@ units= {
 	##### NAVAL UNITS #####
 	### Northern Fleet -- Murmansk
 
-# Navy supplied by PN_initialize_navy.
-
-
 	### Baltic Fleet -- Leningrad
-
-# Navy supplied by PN_initialize_navy.
-
 
 	### Black Sea Fleet -- Sevastopol
 
-# Navy supplied by PN_initialize_navy.
-
-
 	### Pacific Fleet -- Vladivostok
 
-# Navy supplied by PN_initialize_navy.
-
 }
-
-
 
 #########################
 ## STARTING PRODUCTION ##
@@ -33,25 +20,9 @@ instant_effect = {
 	### Ships Under Construction Notes ###
 	# DD: Leningrad & Minsk variant (x4) ("Leningrad" "Moskva" "Kharkov" "Minsk")
 
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
 	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133"
 	#		"Shch-134" "Shch-208" "Shch-312" "Shch-313" "Shch-314" "Shch-315" "Shch-316" "Shch-317" "Shch-318" "Shch-319" "Shch-320" "Shch-321" "Shch-322" "Shch-323" "Shch-324")
 	# SS: Stalinets class (x2) ("S-1" "S-2")
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
 
 }
 

@@ -2,6 +2,4 @@ units = {
 
 	##### NAVAL UNITS #####
 
-# Navy supplied by PN_initialize_navy.
-
 }

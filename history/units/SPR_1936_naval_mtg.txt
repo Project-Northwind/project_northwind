@@ -3,19 +3,7 @@ units= {
 
 	##### NAVAL UNITS #####
 
-# Navy supplied by PN_initialize_navy.
-
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-
-# Navy supplied by PN_initialize_navy.
-
 }
-
-
 
 #########################
 ## STARTING PRODUCTION ##
@@ -25,32 +13,8 @@ instant_effect = {
 	### Under Construction Notes ###
 	# CA: ARE Canarias (Canarias class, comm. 1-Oct, 1936), ARE Baleares (Canarias class, comm. 28-Dec, 1936)
 
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
 	# DD: Júpiter class (x2) (minelayers) ("ARE Júpiter" "ARE Vulcano")
 
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
 	# DD: Churucca class (x6) ("ARE Gravina" "ARE Escaño" "ARE Císcar" "ARE Jorge Juan" "ARE Ulloa")
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
-
-
-# Navy supplied by PN_initialize_navy.
 
 }
