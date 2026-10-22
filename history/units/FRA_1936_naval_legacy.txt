@@ -1,0 +1,31 @@
+
+units= {
+
+	##### NAVAL UNITS #####
+	### METRPOLITAN FRANCE ###
+
+	### NORTH AFRICA ###
+
+	### FAR EAST ###
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	# Ship Production
+	# SS: Redoutable variant (x7) ("Le Héros" "Le Conquérant" "Le Tonnant" "Agosta" "Sfax" "Casabianca" "Bévéziers")
+
+	# SS: Minerve class (x4) ("Iris" "Minerve" "Vénus" "Junon")
+
+	# DD: Le Fantasque class (x4) ("Le Malin" "L'Indomptable" "Le Fantasque" "Le Triomphant")
+
+	# BC: Dunkerque (Comm. 16-Apr, 1937)	# REVISIT -- class vs. ship type vs. starting techs inconsistent
+
+	 # CL: La Galissonnière class (x4) ("Jean de Vienne" "Marseillaise" "Gloire" "Montcalm") ("Georges Leygues" launched 24-Mar 1936)
+
+}
+
+#####################

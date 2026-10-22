@@ -1,0 +1,12 @@
+units = {
+
+	##### ROCN #####
+
+}
+
+##### SHIP CONSTRUCTION #####
+instant_effect = {
+#Under Construction in Shanghai
+	# Light Cruiser
+
+}

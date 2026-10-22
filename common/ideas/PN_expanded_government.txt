@@ -303,9 +303,6 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.50
 				production_speed_industrial_complex_factor = -0.75
-				production_speed_steel_mill_factor = 0.5
-				production_speed_aluminum_mill_factor = 0.5
-				production_speed_rubber_refinery_factor = 0.5
 				production_speed_synthetic_refinery_factor = 0.5
 				production_lack_of_resource_penalty_factor = 0.85 
 				min_export = 0.5
@@ -544,13 +541,15 @@ ideas = {
 		
 	}
 
-	mass_media = { 
+	mass_media_law = { 
 	
 		law = yes
 		use_list_view = yes
 		
 		# Free Press
 		PN_mass_media_free = {
+
+			picture = mass_media_free
 		
 			available = {
 				NOT = {
@@ -582,6 +581,9 @@ ideas = {
 		
 		# Censorship
 		PN_mass_media_censorship = {
+
+			
+			picture = mass_media_censorship
 			
 			modifier = {
 				resistance_target = 0.12
@@ -610,6 +612,10 @@ ideas = {
 
 		# Government Propaganda
 		PN_mass_media_propaganda = {
+
+			
+			picture = mass_media_propaganda
+			
 			available = {
 				NOT = {
 					has_government = democratic

@@ -1,0 +1,7 @@
+# VNR naval unit categories used as variable tokens. Synchronize for multiplayer.
+battleship
+battle_cruiser
+SH_battleship
+heavy_cruiser
+destroyer
+light_cruiser

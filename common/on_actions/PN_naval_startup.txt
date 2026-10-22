@@ -1,0 +1,142 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			set_global_flag = vnr_enabled
+			set_global_flag = navy_rework_english
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = navy_rework_splash_show
+				set_variable = {
+					navy_rework_welcome_splash_variable = 1
+				}
+			}
+			set_variable = {
+				vnr_ai_difficulty = 0
+			}
+			set_variable = {
+				vnr_ai_production = 0
+			}
+			add_to_array = {
+				global.vnr_naval_powers = ENG
+			}
+			add_to_array = {
+				global.vnr_naval_powers = FRA
+			}
+			add_to_array = {
+				global.vnr_naval_powers = GER
+			}
+			add_to_array = {
+				global.vnr_naval_powers = ITA
+			}
+			add_to_array = {
+				global.vnr_naval_powers = JAP
+			}
+			add_to_array = {
+				global.vnr_naval_powers = SOV
+			}
+			add_to_array = {
+				global.vnr_naval_powers = USA
+			}
+			set_global_flag = {
+				flag = MTG_naval_treaty_violator
+				value = 0
+			}
+			random_country = {
+				add_starting_techs = yes
+				makeup_starting_techs = yes
+				special_project_workaround = yes
+				set_shipyard_output_boost = yes
+				ai_expert_navy_treaty_workaround = yes
+				ENG = {
+					if = {
+						limit = {
+							allow_to_use_expert_navy = yes
+						}
+						destroy_ships = { type = ship_hull_light count = all }
+						destroy_ships = { type = ship_hull_cruiser count = all }
+						destroy_ships = { type = ship_hull_heavy count = all }
+						destroy_ships = { type = ship_hull_carrier count = all }
+						destroy_ships = { type = ship_hull_submarine count = all }
+						ENG_expert_AI_variants = yes
+						load_oob = PN_03_ENG_vnr_expert
+					}
+					if = {
+						limit = {
+							has_dlc = "By Blood Alone"
+						}
+						load_oob = PN_01_ENG_vnr_air_bba
+					}
+					else = {
+						load_oob = PN_01_ENG_vnr_air
+					}
+				}
+				FRA = {
+					if = {
+						limit = {
+							has_dlc = "By Blood Alone"
+						}
+						load_oob = PN_01_FRA_vnr_air_bba
+					}
+					else = {
+						load_oob = PN_01_FRA_vnr_air
+					}
+				}
+				JAP = {
+					if = {
+						limit = {
+							allow_to_use_expert_navy = yes
+						}
+						destroy_ships = { type = ship_hull_light count = all }
+						destroy_ships = { type = ship_hull_cruiser count = all }
+						destroy_ships = { type = ship_hull_heavy count = all }
+						destroy_ships = { type = ship_hull_carrier count = all }
+						destroy_ships = { type = ship_hull_submarine count = all }
+						JAP_expert_AI_variants = yes
+						load_oob = PN_03_JAP_vnr_expert
+					}
+					if = {
+						limit = {
+							has_dlc = "By Blood Alone"
+						}
+						load_oob = PN_01_JAP_vnr_air_bba
+					}
+					else = {
+						load_oob = PN_01_JAP_vnr_air
+					}
+				}
+				USA = {
+					if = {
+						limit = {
+							allow_to_use_expert_navy = yes
+						}
+						destroy_ships = { type = ship_hull_light count = all }
+						destroy_ships = { type = ship_hull_cruiser count = all }
+						destroy_ships = { type = ship_hull_heavy count = all }
+						destroy_ships = { type = ship_hull_carrier count = all }
+						destroy_ships = { type = ship_hull_submarine count = all }
+						USA_expert_AI_variants = yes
+						load_oob = PN_03_USA_vnr_expert
+					}
+					if = {
+						limit = {
+							has_dlc = "By Blood Alone"
+						}
+						load_oob = PN_01_USA_vnr_air_bba
+					}
+					else = {
+						load_oob = PN_01_USA_vnr_air
+					}
+				}
+				add_article_xix = yes
+				add_starting_navy_spirits = yes
+				trigger_MTG_naval_treaty_event = yes
+				ai_doctrine_workaround = yes
+				add_naval_headquarters = yes
+				extra_research_slots_workaround = yes
+				set_global_flag = vnr_oob_loaded
+			}
+		}
+	}
+}

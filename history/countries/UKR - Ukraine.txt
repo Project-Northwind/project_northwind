@@ -1,4 +1,4 @@
-﻿capital = 202 #Kiev
+capital = 202 #Kiev
 
 oob = "UKR_1936"
 set_naval_oob = "UKR_1936_naval_mtg"
@@ -13,7 +13,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
@@ -30,6 +30,9 @@ set_technology = {
 	mtg_transport = 1
 	basic_battery = 1
 	basic_torpedo = 1
+	electronic_mechanical_engineering = 1
+	basic_depth_charges = 1
+	multi_mounted_battery = 1
 }
 
 set_grand_doctrine = mass_assault
@@ -85,8 +88,8 @@ recruit_character = UKR_mykhailo_omelianovych_pavlenko
 recruit_character = UKR_stepan_bandera
 recruit_character = UKR_nikita_krushchyov
 recruit_character = UKR_kost_levytsky
-recruit_character = IA_olga_taratuta 
-recruit_character = UKR_pavlo_shandruk 
+recruit_character = IA_olga_taratuta
+recruit_character = UKR_pavlo_shandruk
 
 # Former SOV Characters
 recruit_character = UKR_ivan_chernyakhovsky
@@ -102,120 +105,144 @@ recruit_character = UKR_sergey_korolyov
 # Submarines
 create_equipment_variant = {
 	name = "Ivan Sirko Class"
-	type = ship_hull_submarine_1
 	name_group = UKR_SS_HISTORICAL
 	parent_version = 0
 	show_position = no
+	role_icon_index = 37
+	obsolete = yes
+	type = vnr_ship_hull_submarine_1
 	modules = {
 		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_conning_tower_slot = sub_conning_tower_0
 		fixed_ship_engine_slot = sub_ship_engine_1
+		fixed_ship_armor_slot = pressure_hull_1
+		fixed_sub_periscope_slot = sub_ship_periscope_0
+		fixed_ship_secondaries_slot = sub_deck_gun_1
 		rear_1_custom_slot = empty
 	}
-	obsolete = yes
 }
 create_equipment_variant = {
 	name = "Maksym Zalizniak Class"
-	type = ship_hull_submarine_1
 	name_group = UKR_SS_HISTORICAL
 	parent_version = 0
 	show_position = no
+	role_icon_index = 37
+	obsolete = yes
+	type = vnr_ship_hull_submarine_1
 	modules = {
 		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_conning_tower_slot = sub_conning_tower_0
 		fixed_ship_engine_slot = sub_ship_engine_1
+		fixed_ship_armor_slot = pressure_hull_1
+		fixed_sub_periscope_slot = sub_ship_periscope_0
+		fixed_ship_secondaries_slot = sub_deck_gun_1
 		rear_1_custom_slot = empty
 	}
-	obsolete = yes
 }
 # Destroyers
 create_equipment_variant = {
 	name = "Bug Class"
-	type = ship_hull_light_1
 	name_group = UKR_DD_HISTORICAL
 	parent_version = 0
 	show_position = no
+	role_icon_index = 31
+	obsolete = yes
+	type = vnr_ship_hull_light_1
 	modules = {
 		fixed_ship_battery_slot = ship_light_battery_1
 		fixed_ship_anti_air_slot = empty
 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 		fixed_ship_radar_slot = empty
 		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_role_slot = ship_hull_light_role_dd
 		fixed_ship_torpedo_slot = empty
 		mid_1_custom_slot = empty
 		rear_1_custom_slot = empty
 	}
-	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Dnipro Class"	
-	type = ship_hull_light_1
+	name = "Dnipro Class"
 	name_group = UKR_DD_HISTORICAL
 	parent_version = 0
 	show_position = no
+	role_icon_index = 31
+	obsolete = yes
+	type = vnr_ship_hull_light_1
 	modules = {
 		fixed_ship_battery_slot = ship_light_battery_1
 		fixed_ship_anti_air_slot = empty
 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 		fixed_ship_radar_slot = empty
 		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_role_slot = ship_hull_light_role_dd
 		fixed_ship_torpedo_slot = ship_torpedo_1
 		mid_1_custom_slot = empty
 		rear_1_custom_slot = empty
 	}
-	obsolete = yes
 }
 # Cruisers
 create_equipment_variant = {
 	name = "Hetman Petro Sahaidachny Class"
-	type = ship_hull_cruiser_1
 	name_group = UKR_CL_HISTORICAL
 	parent_version = 0
 	show_position = no
+	role_icon_index = 25
+	type = vnr_ship_hull_cruiser_1
 	modules = {
 		fixed_ship_battery_slot = ship_light_medium_battery_1
 		fixed_ship_anti_air_slot = ship_anti_air_1
 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 		fixed_ship_radar_slot = empty
 		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_role_slot = ship_hull_cruiser_role_c
 		mid_1_custom_slot = ship_light_medium_battery_1
 		mid_2_custom_slot = ship_torpedo_1
 		rear_1_custom_slot = ship_depth_charge_1
+		front_1_custom_slot = empty
+		fixed_ship_secondaries_slot = empty
 	}
 }
 create_equipment_variant = {
 	name = "Hetman Ivan Mazepa Class"
-	type = ship_hull_cruiser_1
 	name_group = UKR_CL_HISTORICAL
 	parent_version = 0
 	show_position = no
+	role_icon_index = 25
+	type = vnr_ship_hull_cruiser_1
 	modules = {
 		fixed_ship_battery_slot = ship_light_medium_battery_1
 		fixed_ship_anti_air_slot = ship_anti_air_1
 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 		fixed_ship_radar_slot = empty
 		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_role_slot = ship_hull_cruiser_role_c
 		mid_1_custom_slot = ship_light_medium_battery_1
 		mid_2_custom_slot = ship_torpedo_1
 		rear_1_custom_slot = empty
+		front_1_custom_slot = empty
+		fixed_ship_secondaries_slot = empty
 	}
 }
 # Battleships
 create_equipment_variant = {
-	name = "Bohdan Khmelnytsky Class"					
-	type = ship_hull_heavy_1
+	name = "Bohdan Khmelnytsky Class"
 	name_group = UKR_BB_HISTORICAL
 	parent_version = 0
 	show_position = no
+	role_icon_index = 3
+	type = vnr_ship_hull_heavy_1
 	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_battery_slot = ship_heavy_battery_small_1_triple
 		fixed_ship_anti_air_slot = ship_anti_air_1
 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 		fixed_ship_radar_slot = empty
 		fixed_ship_engine_slot = heavy_ship_engine_1
 		fixed_ship_secondaries_slot = ship_secondaries_1
 		fixed_ship_armor_slot = ship_armor_bb_1
-		front_1_custom_slot = ship_heavy_battery_1
+		fixed_ship_armor_scheme_slot = ship_scheme_incremental
+		front_1_custom_slot = ship_heavy_battery_small_1_triple
 		mid_1_custom_slot = empty
 		mid_2_custom_slot = empty
-		rear_1_custom_slot = ship_heavy_battery_1
+		rear_1_custom_slot = ship_heavy_battery_small_1_triple
 	}
 }

@@ -1,0 +1,549 @@
+add_starting_techs = {
+    GER = {
+        set_technology = {
+            interwar_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            interwar_ship_hull_heavy = 1
+			early_ship_hull_carrier = 1
+            large_destroyer_trend = 1
+            searchlight = 1
+            cruiser_propulsion_revolution = 1
+            early_cruiser_armor = 1
+            basic_cruiser_armor = 1
+            enhanced_horizontal_defense = 1
+            basic_heavy_armor = 1
+            improved_conning_tower = 1
+            prototype_airplane_launcher = 1
+			early_carrier_study = 1
+            basic_periscope = 1
+            improved_periscope = 1
+            basic_ballast_tank = 1
+            cruiser_submarines = 1
+            midget_submarines = 1
+            improved_ship_torpedo_launcher = 1
+            ger_11in_c34 = 1
+            ita_extra_armor = 1
+            magnetic_detonator = 1
+            electric_torpedo = 1
+			popup = no
+        }
+    }
+    JAP = {
+        set_technology = {
+            basic_ship_hull_light = 1
+            interwar_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            interwar_ship_hull_heavy = 1
+			ship_hull_super_heavy = 1
+            searchlight = 1
+			large_destroyer_trend = 1
+            cruiser_propulsion_revolution = 1
+            early_cruiser_armor = 1
+            basic_cruiser_armor = 1
+            enhanced_horizontal_defense = 1
+            basic_heavy_armor = 1
+            improved_conning_tower = 1
+			early_carrier_study = 1
+            prototype_airplane_launcher = 1
+            landing_aid_system = 1
+            arresting_gear = 1
+            aviation_dawn = 1
+            basic_periscope = 1
+            improved_periscope = 1
+            basic_ballast_tank = 1
+            cruiser_submarines = 1
+            improved_ship_torpedo_launcher = 1
+            improved_airplane_launcher = 1
+            sonar = 1
+            magnetic_detonator = 1
+            oxygen_torpedo = 1
+
+            basic_super_heavy_battery = 1
+            bb_conversion_carrier = 1
+			popup = no
+        }
+    }
+    USA = {
+        set_technology = {
+            basic_ship_hull_heavy = 1
+            interwar_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            interwar_ship_hull_heavy = 1
+            large_destroyer_trend = 1
+            sonar = 1
+            searchlight = 1
+            cruiser_propulsion_revolution = 1
+            early_cruiser_armor = 1
+            basic_cruiser_armor = 1
+            cruiser_gun_upgrade = 1
+            enhanced_horizontal_defense = 1
+            basic_heavy_armor = 1
+            improved_conning_tower = 1
+			early_carrier_study = 1
+            prototype_airplane_launcher = 1
+            landing_aid_system = 1
+            arresting_gear = 1
+            aviation_dawn = 1
+            basic_periscope = 1
+            improved_periscope = 1
+            basic_ballast_tank = 1
+            cruiser_submarines = 1
+            improved_ship_torpedo_launcher = 1
+            magnetic_detonator = 1
+            escort_destroyer_trend = 1
+
+            basic_super_heavy_battery = 1
+            bb_conversion_carrier = 1
+			popup = no
+        }
+    }
+    ENG = {
+        set_technology = {
+			basic_ship_hull_submarine = 1
+            interwar_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            interwar_ship_hull_heavy = 1
+			ship_hull_super_heavy = 1
+            large_destroyer_trend = 1
+            sonar = 1
+            searchlight = 1
+            cruiser_propulsion_revolution = 1
+			specialization_doctrine = 1
+            early_cruiser_armor = 1
+            basic_cruiser_armor = 1
+            enhanced_horizontal_defense = 1
+            basic_heavy_armor = 1
+            improved_conning_tower = 1
+			early_carrier_study = 1
+            prototype_airplane_launcher = 1
+            landing_aid_system = 1
+            arresting_gear = 1
+            aviation_dawn = 1
+            basic_periscope = 1
+            improved_periscope = 1
+            basic_ballast_tank = 1
+            cruiser_submarines = 1
+            improved_ship_torpedo_launcher = 1
+            magnetic_detonator = 1
+            escort_destroyer_trend = 1
+
+            basic_super_heavy_battery = 1
+            bb_conversion_carrier = 1
+			popup = no
+        }
+    }
+    CAN = {
+        set_technology = {
+			early_ship_hull_heavy = 1
+			basic_ship_hull_submarine = 1
+			basic_ship_hull_heavy = 1
+            interwar_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            interwar_ship_hull_heavy = 1
+			large_destroyer_trend = 1
+			sonar = 1
+            searchlight = 1
+            cruiser_propulsion_revolution = 1
+            early_cruiser_armor = 1
+            basic_cruiser_armor = 1
+            enhanced_horizontal_defense = 1
+            basic_heavy_armor = 1
+            improved_conning_tower = 1
+            prototype_airplane_launcher = 1
+            basic_periscope = 1
+            magnetic_detonator = 1
+            escort_destroyer_trend = 1
+			popup = no
+        }
+    }
+	AST = {
+        set_technology = {
+			early_ship_hull_heavy = 1
+			basic_ship_hull_submarine = 1
+			basic_ship_hull_heavy = 1
+            interwar_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            interwar_ship_hull_heavy = 1
+			large_destroyer_trend = 1
+			sonar = 1
+            searchlight = 1
+            cruiser_propulsion_revolution = 1
+            early_cruiser_armor = 1
+            basic_cruiser_armor = 1
+            enhanced_horizontal_defense = 1
+            basic_heavy_armor = 1
+            improved_conning_tower = 1
+            prototype_airplane_launcher = 1
+            basic_periscope = 1
+            magnetic_detonator = 1
+            escort_destroyer_trend = 1
+			popup = no
+        }
+    }
+    FRA = {
+        set_technology = {
+			basic_ship_hull_cruiser = 1
+            interwar_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            interwar_ship_hull_heavy = 1
+            large_destroyer_trend = 1
+			high_speed_light_engine = 1
+            searchlight = 1
+            cruiser_propulsion_revolution = 1
+            early_cruiser_armor = 1
+            basic_cruiser_armor = 1
+			enhanced_horizontal_defense = 1
+            basic_heavy_armor = 1
+            improved_conning_tower = 1
+			early_carrier_study = 1
+            prototype_airplane_launcher = 1
+            landing_aid_system = 1
+            basic_periscope = 1
+            improved_periscope = 1
+            basic_ballast_tank = 1
+            cruiser_submarines = 1
+            midget_submarines = 1
+            bb_conversion_carrier = 1
+            magnetic_detonator = 1
+
+			popup = no
+        }
+    }
+    ITA = {
+        set_technology = {
+            interwar_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            interwar_ship_hull_heavy = 1
+            searchlight = 1
+			large_destroyer_trend = 1
+            cruiser_propulsion_revolution = 1
+            early_cruiser_armor = 1
+            basic_cruiser_armor = 1
+            enhanced_horizontal_defense = 1
+            basic_heavy_armor = 1
+            improved_conning_tower = 1
+			early_carrier_study = 1
+            prototype_airplane_launcher = 1
+            basic_periscope = 1
+            improved_periscope = 1
+            basic_ballast_tank = 1
+            cruiser_submarines = 1
+            improved_ship_torpedo_launcher = 1
+            ita_extra_armor = 1
+            bb_conversion_carrier = 1
+            magnetic_detonator = 1
+            ita_pugliese_system = 1
+
+			popup = no
+        }
+    }
+    SOV = {
+        set_technology = {
+            interwar_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            basic_ship_hull_heavy = 1
+			basic_ship_hull_cruiser = 1
+            searchlight = 1
+            enhanced_horizontal_defense = 1
+            krupp_steel = 1
+			high_speed_light_engine = 1
+            cruiser_propulsion_revolution = 1
+            early_cruiser_armor = 1
+            basic_cruiser_armor = 1
+            basic_heavy_armor = 1
+			early_carrier_study = 1
+            prototype_airplane_launcher = 1
+            basic_periscope = 1
+            improved_periscope = 1
+            basic_ballast_tank = 1
+            cruiser_submarines = 1
+			midget_submarines = 1
+			large_destroyer_trend = 1
+			popup = no
+        }
+    }
+    HOL = {
+        set_technology = {
+            basic_ship_hull_light = 1
+            interwar_ship_hull_cruiser = 1
+            searchlight = 1
+            cruiser_propulsion_revolution = 1
+            early_cruiser_armor = 1
+            prototype_airplane_launcher = 1
+            basic_periscope = 1
+            basic_ballast_tank = 1
+			popup = no
+        }
+    }
+    SWE = {
+        set_technology = {
+            basic_ship_hull_cruiser = 1
+            interwar_ship_hull_light = 1
+            magnetic_detonator = 1
+			popup = no
+        }
+    }
+    POL = {
+        set_technology = {
+            basic_ship_hull_light = 1
+			popup = no
+        }
+    }
+    GRE = {
+        set_technology = {
+            interwar_ship_hull_light = 1
+			popup = no
+        }
+    }
+    ARG = {
+        set_technology = {
+            basic_ship_hull_cruiser = 1
+			popup = no
+        }
+    }
+    CHI = {
+        set_technology = {
+            basic_ship_hull_cruiser = 1
+			popup = no
+        }
+    }
+    CHL = {
+        set_technology = {
+            basic_ship_hull_light = 1
+			popup = no
+        }
+    }
+	ROM = {
+		set_technology = {
+			basic_ship_hull_light = 1
+			basic_ship_hull_submarine = 1
+			popup = no
+		}
+	}
+	YUG = {
+		set_technology = {
+			basic_ship_hull_light = 1
+			basic_ship_hull_submarine = 1
+			popup = no
+		}
+	}
+    CUB = {
+        set_technology = {
+            early_ship_hull_light = 1
+            early_ship_hull_cruiser = 1
+            popup = no
+        }
+    }
+    SIA = {
+        set_technology = {
+            early_ship_hull_light = 1
+            early_ship_hull_cruiser = 1
+            early_ship_hull_submarine = 1
+            basic_ship_hull_light = 1
+            basic_ship_hull_submarine = 1
+            popup = no
+        }
+    }
+    PER = {
+        set_technology = {
+            early_ship_hull_light = 1
+            popup = no
+        }
+    }
+    RAJ = {
+        set_technology = {
+            early_ship_hull_cruiser = 1
+            popup = no
+        }
+    }
+    VEN = {
+        set_technology = {
+            early_ship_hull_light = 1
+            popup = no
+        }
+    }
+    BEL = {
+        set_technology = {
+            early_ship_hull_light = 1
+            popup = no
+        }
+    }
+}
+
+makeup_starting_techs = {
+	every_country = {
+        limit = { has_tech = early_ship_hull_carrier }
+        set_technology = {
+            prototype_airplane_launcher = 1
+            early_carrier_study = 1
+            popup = no
+        }
+    }
+    every_country = {
+        limit = { has_tech = early_ship_hull_cruiser }
+        set_technology = {
+			coastal_defense_ships = 1
+			early_cruiser_armor = 1
+            searchlight = 1
+			popup = no
+		}
+    }
+    every_country = {
+        limit = { has_tech = early_ship_hull_heavy }
+        set_technology = {
+			pre_dreadnoughts = 1
+			harvey_steel = 1
+			popup = no
+		}
+    }
+	every_country = {
+		limit = { has_tech = basic_ship_hull_heavy }
+		set_technology = {
+			basic_heavy_armor = 1
+			krupp_steel = 1
+            fuel_oil_boiler = 1
+            improved_conning_tower = 1
+            enhanced_horizontal_defense = 1
+			popup = no
+		}
+	}
+    every_country = {
+        limit = { has_tech = basic_ship_hull_cruiser }
+        set_technology = {
+			cruiser_propulsion_revolution = 1
+			basic_cruiser_armor = 1
+			popup = no
+		}
+    }
+	every_country = {
+        limit = { has_tech = basic_ship_hull_light }
+        set_technology = {
+			smoke_generator = 1
+			popup = no
+		}
+    }
+	every_country = {
+        limit = { has_tech = basic_battery }
+        set_technology = {
+			multi_mounted_battery = 1
+			popup = no
+		}
+    }
+    every_country = {
+        limit = { has_tech = basic_ship_hull_submarine }
+        set_technology = {
+            basic_periscope = 1
+			diesel_electric_transmission = 1
+			teardrop_hull = 1
+            improved_ship_torpedo_launcher = 1
+            acoustic_signature = 1
+			popup = no
+        }
+    }
+	every_country = {
+		limit = { has_tech = interwar_ship_hull_light }
+		set_technology = {
+			basic_ship_hull_light = 1
+			popup = no
+		}
+	}
+	every_country = {
+		limit = { has_tech = interwar_ship_hull_cruiser }
+		set_technology = {
+			basic_ship_hull_cruiser = 1
+			popup = no
+		}
+	}
+	every_country = {
+		limit = { has_tech = interwar_ship_hull_heavy }
+		set_technology = {
+			basic_ship_hull_heavy = 1
+			popup = no
+		}
+	}
+    every_country = {
+        limit = { has_tech = mtg_transport }
+        set_technology = {
+            naval_combat_support = 1
+            popup = no
+        }
+    }
+    every_country = {
+        limit = { num_of_naval_factories > 0 }
+        set_technology = {
+            basic_port_facility = 1
+            popup = no
+        }
+    }
+    # every_country = {
+        # limit = { is_ai = yes }
+        # set_technology = {
+            # vnr_reckless_attack = 1
+            # popup = no
+        # }
+    # }
+    for_each_scope_loop = {
+		array = global.vnr_naval_powers
+
+		set_technology = {
+			dry_dock = 1
+			heavy_crane = 1
+            hospital_ship = 1
+			popup = no
+		}
+		if = {
+			limit = { has_dlc = "No Compromise, No Surrender" }
+			set_technology = {
+				support_fleet_ncns = 1
+				popup = no
+			}
+		}
+		else = {
+			set_technology = {
+				support_fleet = 1
+				popup = no
+			}
+		}
+	}
+}
+
+special_project_workaround = {
+	USA = {
+		if = { limit = { NOT = { is_special_project_completed = sp:sp_super_heavy_guns } } complete_special_project = sp:sp_super_heavy_guns }
+        if = { limit = { NOT = { is_special_project_completed = sp:sp_naval_super_heavy_battleship } } complete_special_project = sp:sp_naval_super_heavy_battleship }
+	}
+	JAP = {
+		if = { limit = { NOT = { is_special_project_completed = sp:sp_super_heavy_guns } } complete_special_project = sp:sp_super_heavy_guns }
+        if = { limit = { NOT = { is_special_project_completed = sp:sp_naval_super_heavy_battleship } } complete_special_project = sp:sp_naval_super_heavy_battleship }
+	}
+	ENG = {
+		if = { limit = { NOT = { is_special_project_completed = sp:sp_super_heavy_guns } } complete_special_project = sp:sp_super_heavy_guns }
+        if = { limit = { NOT = { is_special_project_completed = sp:sp_naval_super_heavy_battleship } } complete_special_project = sp:sp_naval_super_heavy_battleship }
+	}
+	FRA = {
+		if = { limit = { NOT = { is_special_project_completed = sp:sp_high_speed_light_engine } } complete_special_project = sp:sp_high_speed_light_engine }
+	}
+	SOV = {
+		if = { limit = { NOT = { is_special_project_completed = sp:sp_high_speed_light_engine } } complete_special_project = sp:sp_high_speed_light_engine }
+	}
+    HOL = {
+        if = { limit = { NOT = { is_special_project_completed = sp:sp_submarine_snorkel } } complete_special_project = sp:sp_submarine_snorkel }
+    }
+
+	every_country = {
+		limit = { has_tech = basic_ship_hull_submarine }
+		if = { limit = { NOT = { is_special_project_completed = sp:sp_naval_fleet_submarine } } complete_special_project = sp:sp_naval_fleet_submarine }
+	}
+	every_country = {
+		limit = { has_tech = cruiser_submarines }
+		if = { limit = { NOT = { is_special_project_completed = sp:sp_naval_cruiser_submarine } } complete_special_project = sp:sp_naval_cruiser_submarine }
+	}
+	every_country = {
+		limit = { has_tech = midget_submarines }
+		if = { limit = { NOT = { is_special_project_completed = sp:sp_naval_midget_submarine } } complete_special_project = sp:sp_naval_midget_submarine }
+	}
+	every_country = {
+		limit = { has_tech = support_fleet_ncns }
+		if = { limit = { NOT = { is_special_project_completed = sp:sp_naval_support_ships } } complete_special_project = sp:sp_naval_support_ships }
+	}
+}

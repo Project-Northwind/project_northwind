@@ -1,4 +1,4 @@
-﻿capital = 141	
+capital = 141
 
 #add_opinion_modifier = { target = GER modifier = GER_SWE_historic_trade_Partners } CUT
 set_oob = "SWE_1936"
@@ -59,8 +59,8 @@ if = {
 	limit = {
 		NOT = { has_dlc = "Arms Against Tyranny" }
 	}
-	add_ideas = { 
-		en_svensk_tiger 
+	add_ideas = {
+		en_svensk_tiger
 		neutrality_idea
 	}
 	set_stability = 0.9
@@ -76,10 +76,10 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	basic_train = 1
-	interwar_antitank = 1 # 
+	interwar_antitank = 1 #
 }
 
 if = {
@@ -124,6 +124,7 @@ if = {
 		basic_ship_hull_cruiser = 1
 		panzerschiffe = 1
 		basic_battery = 1
+		basic_light_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
@@ -131,6 +132,13 @@ if = {
 		mtg_transport = 1
 		early_ship_hull_carrier = 1
 		early_ship_hull_heavy = 1
+		electronic_mechanical_engineering = 1
+		interwar_ship_hull_light = 1
+		early_cruiser_armor = 1
+		interwar_ship_hull_cruiser = 1
+		multi_mounted_battery = 1
+		basic_heavy_battery = 1
+		specialization_doctrine = 1
 	}
 }
 
@@ -138,150 +146,6 @@ if = {
 	limit = { has_dlc = "La Resistance" }
 	set_technology = {
 		armored_car1 = 1
-	}
-}
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = naval_effort
-		complete_national_focus = large_navy
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort
-	}
-	if = {
-		limit = {
-			has_dlc = "Arms Against Tyranny"
-		}
-		complete_national_focus = SWE_defense_act #35
-		complete_national_focus = SWE_urbanization #70
-		complete_national_focus = SWE_hygenic_housing #70
-		every_core_state = { #Apply effect from focus above
-			limit =  { is_fully_controlled_by = SWE }
-			add_dynamic_modifier = { modifier = SWE_hygenic_housing_output_bonus }
-		}
-
-		complete_national_focus = SWE_radiojanst #70
-		complete_national_focus = SWE_individual_liberty_and_prosperity_for_all #35
-		complete_national_focus = SWE_paid_holidays #35
-		complete_national_focus = SWE_saltsjobaden_agreement #70
-		complete_national_focus = SWE_research_slot_1 #70
-		complete_national_focus = SWE_education_reform #35
-		complete_national_focus = SWE_license_skf_ball_bearings #35
-		complete_national_focus = SWE_government_weapons_contract #35
-		complete_national_focus = SWE_husqvarna_vapenfabrik #70
-		complete_national_focus = SWE_norma_projektilfabrik #70
-		complete_national_focus = SWE_bofors_fly_swatter #35
-		complete_national_focus = SWE_form_saab #70
-		complete_national_focus = SWE_bofors_anti_tank_gun #70
-		complete_national_focus = SWE_gotaverken #70
-		complete_national_focus = SWE_refit_gotaverken_for_rapid_repairs #70
-		complete_national_focus = SWE_domestic_designs #70
-	}
-	
-	oob = "SWE_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SWE_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SWE_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "SWE_1939_air_bba"
-		else = {
-			set_air_oob = "SWE_1939_air_legacy"
-			set_technology = {
-				early_bomber = 1
-				tactical_bomber1 = 1
-			}
-		}
-	}
-
-	set_technology = {
-		gw_artillery = 1
-		interwar_artillery = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		#air_superiority = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		set_technology = {
-			improved_light_tank = 1
-			basic_medium_tank = 1
-		}
-	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-			
-			
-			improved_light_tank_chassis = 1
-			basic_medium_tank_chassis = 1
-		}
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-			early_carrier = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_ship_hull_cruiser = 1
-			early_ship_hull_carrier = 1
-		}
 	}
 }
 
@@ -298,27 +162,12 @@ set_popularities = {
 	fascism = 3
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.9.20"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 85
-		neutrality = 10
-		communism = 4
-		fascism = 1
-	}
-}
-
 set_convoys = 25
 
 
 recruit_character = SWE_per_albin_hansson
 recruit_character = SWE_sven_olov_lindholm
-recruit_character = SWE_sven_linderot 
+recruit_character = SWE_sven_linderot
 recruit_character = SWE_folke_hogberg #NOT U
 recruit_character = SWE_erik_af_edholm #NOT U
 recruit_character = SWE_claes_lindstrom
@@ -349,7 +198,7 @@ if = {
 		has_dlc = "By Blood Alone"
 	}
 	create_equipment_variant = {
-		name = "Svenska Jaktfalken" 
+		name = "Svenska Jaktfalken"
 		type = small_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
@@ -404,130 +253,116 @@ if = {
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Hajen Class"					# represents Hajen and Bävern classes	
-		type = ship_hull_submarine_1
-		name_group = SWE_SS_HISTORICAL
-		parent_version = 0
-		show_position = no
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Örnen Class"					# torpedo boats		
-		type = ship_hull_light_1
+		name = "Göteborg Class"
 		name_group = SWE_DD_HISTORICAL
 		parent_version = 0
 		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_3
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Göteborg Class"	
-		type = ship_hull_light_2
-		name_group = SWE_DD_HISTORICAL
-		parent_version = 0
-		show_position = no
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_2
+			rear_2_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Hälsingborg Class"
+		name_group = SWE_DD_HISTORICAL
+		parent_version = 0
+		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_3
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_light_battery_2
+			rear_2_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Göteborg Class (Export)"
+		name_group = SWE_DD_HISTORICAL
+		parent_version = 0
+		show_position = no
+		obsolete = yes
+		role_icon_index = 31
+		type = vnr_ship_hull_light_3
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
+			rear_2_custom_slot = ship_depth_charge_1
 		}
 	}
 	# Cruisers #
 	create_equipment_variant = {
 		name = "Gotland Class"
-		type = ship_hull_cruiser_2
 		name_group = SWE_CL_HISTORICAL
 		parent_version = 0
 		show_position = no
+		role_icon_index = 25
+		type = vnr_ship_hull_cruiser_2
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_2_double
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_radar_slot = ship_mast_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_role_slot = ship_hull_cruiser_role_c
 			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
 			front_1_custom_slot = ship_anti_air_1
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_light_medium_battery_1
-			rear_1_custom_slot = ship_airplane_launcher_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_mine_layer_1
+			mid_3_custom_slot = ship_light_medium_battery_2_single
+			rear_1_custom_slot = ship_light_medium_battery_2_double
+			rear_2_custom_slot = ship_torpedo_1
 		}
 	}
 
 	#Panzerschiff
 	create_equipment_variant = {
 		name = "Gustaf V Class"
-		type = ship_hull_cruiser_panzerschiff
 		name_group = SWE_PZ_HISTORICAL
 		parent_version = 0
 		show_position = no
+		role_icon_index = 21
+		type = vnr_ship_hull_cruiser_2
 		modules = {
-        	fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_battery_slot = ship_heavy_battery_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_battery_slot = ship_medium_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_engine_slot = cruiser_ship_engine_2
-			rear_1_custom_slot = ship_torpedo_1
+			fixed_ship_radar_slot = ship_mast_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2_diesel
+			fixed_ship_role_slot = ship_hull_cruiser_role_pz
+			fixed_ship_armor_slot = ship_armor_cruiser_heavy_1
+			fixed_ship_secondaries_slot = ship_secondaries_2_light
 			mid_1_custom_slot = ship_airplane_launcher_1
-    	}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Delfinen Class"				
-			type = ship_hull_submarine_2
-			name_group = SWE_SS_HISTORICAL
-			parent_version = 0
-			show_position = no
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_1
-				rear_1_custom_slot = ship_mine_layer_sub
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Sjölejonet Class"				
-			type = ship_hull_submarine_2
-			name_group = SWE_SS_HISTORICAL
-			parent_version = 0
-			show_position = no
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
+			mid_2_custom_slot = ship_secondaries_2_light
+			mid_3_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_heavy_battery_1
+			rear_2_custom_slot = ship_torpedo_1
 		}
 	}
 }
@@ -559,9 +394,9 @@ if = {
 	}
 
 	add_ideas = neutrality_idea
-	set_variable = { hungershield_stability_threshold_1 = 0.68 } 
+	set_variable = { hungershield_stability_threshold_1 = 0.68 }
 	set_variable = { hungershield_stability_risk_1 = 0.12 }  #monthly risk if under _1 stability threshold 0.12
-	set_variable = { hungershield_stability_threshold_2 = 0.3 } 
+	set_variable = { hungershield_stability_threshold_2 = 0.3 }
 	set_variable = { hungershield_stability_risk_2 = 0.18 }   #monthly risk if under _2 stability threshold #0.2
 
 
@@ -648,8 +483,8 @@ if = {
 		long_name = SWE_aat_hogern_long
 	}
 
-	# DLC Characters 
-	recruit_character = SWE_axel_pehrssonbramstorp 
+	# DLC Characters
+	recruit_character = SWE_axel_pehrssonbramstorp
 	recruit_character = SWE_herman_eriksson
 	recruit_character = SWE_ebba_palmstierna
 	recruit_character = SWE_christian_gunter

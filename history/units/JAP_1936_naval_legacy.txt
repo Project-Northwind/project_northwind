@@ -1,0 +1,40 @@
+
+##### OOB #####
+units = {
+### IJN ###
+	#Yokosuka (Tokyo)
+
+	#Sasebo (Nagasaki)
+
+	#Taiwan (Goaxing)
+
+	#Hiroshima (Kure)
+
+	# Naval District Forces #
+
+	### Pacific Forces ###
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect =
+{
+
+### Ongoing Naval Production Jan 1 1936 ###
+		# BB (x1): "Hiei"
+
+		# CV (x1): "Soryu"
+
+		# CA (x1): "Suzuya"
+
+		# DD (x5): "Shiratsuyu" "Shigure" "Murasame" "Harusame" "Samidare"
+
+		# SS (x4): "I-172" "I-73" "I-174" "I-175"
+
+		# SS (x2): "I-7" "I-8"
+
+		# SS (x1): "Ro-34"
+
+}

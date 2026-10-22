@@ -1,0 +1,16 @@
+
+units= {
+
+	##### NAVAL UNITS #####
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Under Contruction Notes ###
+	# SS: Delfinul class (x1) ("NMS Delfinul")
+
+}

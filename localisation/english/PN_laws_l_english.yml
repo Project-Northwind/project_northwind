@@ -47,3 +47,7 @@
     PN_age_50: "+50"
     PN_age_60: "+60"
     PN_all_must_serve_old: "All must serve"
+  # Mass Media
+    PN_mass_media_free: "Free Media"
+    PN_mass_media_censorship: "Media Censorship"
+    PN_mass_media_propaganda: "Media Propaganda"
