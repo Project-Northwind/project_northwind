@@ -1,0 +1,2268 @@
+sp_naval_super_heavy_battleship = {
+	specialization = specialization_naval
+
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0.3
+			AND = {
+				ROOT = { is_major = no } # Pointless unless we are big enough to do this
+			}
+		}
+	}
+
+	allowed = {
+		#FREE
+	}
+
+	available = {
+		FROM = {
+			has_tech = basic_ship_hull_heavy
+		}
+	}
+
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.medium
+
+
+	resource_cost = {
+		resources = {
+			steel = 12
+			chromium = 6
+			tungsten = 6
+		 }
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = ship_hull_super_heavy
+			}
+			custom_override_tooltip = {
+				tooltip = tech_effect|ship_hull_super_heavy
+				set_technology = {
+					ship_hull_super_heavy = 1
+					popup = no
+				}
+			}
+			unlock_decision_tooltip	= super_heavy_carrier_conversion
+		}
+	}
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+		sp_naval_generic_reward_armor_tech_1
+		sp_naval_generic_reward_armor_tech_2
+		sp_naval_generic_reward_armor_tech_3
+		sp_naval_generic_reward_artillery_tech_1
+		sp_naval_generic_reward_artillery_tech_2
+		sp_naval_generic_reward_artillery_tech_3
+	}
+}
+
+sp_battlecarrier = {
+    specialization = specialization_naval
+	project_tags = { sp_tag_surface_ship }
+    allowed = {
+        has_dlc = "Man the Guns"
+    }
+    available = {
+		FROM = {
+			has_tech = early_ship_hull_carrier
+			has_tech = early_ship_hull_heavy
+			has_navy_size = {
+				archetype = ship_hull_heavy
+				size > 0
+			}
+		}
+    }
+	ai_will_do = {
+		base = 0
+	}
+	resource_cost = {
+		resources = {
+			steel = 5
+		}
+	}
+    breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+    prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+
+    project_output = {
+        enable_equipment_modules = {
+            ship_deck_space_bb
+        }
+    }
+
+	unique_prototype_rewards = {
+		sp_battlecarrier_unique_reward_a = {
+			fire_only_once = yes
+			threshold = {
+				min = 25
+				max = 75
+			}
+			weight = { base = 100 }
+			option = {
+				token = sp_battlecarrier_perference_a
+				iteration_output = {
+					sub_unit_bonus = {
+						battlecarrier = {
+							anti_air_attack = 0.1
+							armor_value = 0.1
+							max_strength = 0.1
+						}
+					}
+				}
+			}
+			option = {
+				token = sp_battlecarrier_perference_b
+				iteration_output = {
+					sub_unit_bonus = {
+						battlecarrier = {
+							max_organisation = 15
+						}
+					}
+				}
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+}
+
+sp_subcarrier = {
+    specialization = specialization_naval
+	project_tags = { sp_tag_submarine }
+    allowed = {
+        has_dlc = "Man the Guns"
+    }
+	available = {
+		FROM = {
+			has_tech = cruiser_submarines
+			has_tech = prototype_airplane_launcher
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+    breakthrough_cost = {
+		specialization_naval = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 3
+		}
+	}
+    prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+
+    project_output = {
+        enable_equipment_modules = {
+            sub_airplane_launcher_2
+        }
+    }
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+
+	unique_prototype_rewards = {
+		sp_subcarrier_unique_reward_a = {
+			fire_only_once = yes
+			threshold = {
+				min = 25
+				max = 75
+			}
+			weight = { base = 100 }
+			option = {
+				token = sp_subcarrier_perference_a
+				iteration_output = {
+					equipment_bonus = {
+						vnr_ship_hull_cruiser_submarine = {
+							instant = yes
+							surface_detection = 0.15
+							sub_detection = 0.15
+						}
+					}
+				}
+			}
+			option = {
+				token = sp_subcarrier_perference_b
+				iteration_output = {
+					equipment_bonus = {
+						ship_hull_submarine = {
+							instant = yes
+							surface_detection = 0.05
+							sub_detection = 0.05
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_nuclear_torpedo = {
+    specialization = specialization_naval
+	project_tags = { sp_tag_submarine }
+	ai_will_do = {
+		base = 1
+	}
+    allowed = {
+        has_dlc = "Man the Guns"
+    }
+	special_project_parent = {
+		sp_nuclear_bomb
+	}
+    available = {
+		FROM = {
+			has_tech = modern_ship_hull_submarine
+		}
+    }
+	resource_cost = {
+		resources = { steel=6 tungsten=3 chromium=6 }
+	}
+    breakthrough_cost = {
+		specialization_naval = 2
+	}
+    prototype_time = sp_time.prototype.long
+
+	complexity = sp_complexity.medium
+
+    project_output = {
+        enable_equipment_modules = {
+            sub_nuclear_torpedo
+        }
+    }
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+
+	unique_prototype_rewards = {
+		sp_nuclear_torpedo_unique_reward_a = {
+			fire_only_once = yes
+			threshold = {
+				min = 50
+				max = 90
+			}
+			weight = { base = 100 }
+			option = {
+				token = sp_nuclear_torpedo_preference_a
+				iteration_output = {
+					equipment_bonus = {
+						vnr_ship_hull_submarine_5 = {
+							instant = yes
+							reliability = 0.05
+						}
+					}
+				}
+			}
+			option = {
+				token = sp_nuclear_torpedo_preference_b
+				iteration_output = {
+					equipment_bonus = {
+						vnr_ship_hull_submarine_5 = {
+							instant = yes
+							torpedo_attack = 0.05
+							reliability = -0.05
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_naval_proximity_fuze = {
+    specialization = specialization_naval
+	project_tags = { sp_tag_surface_ship }
+	ai_will_do = {
+		base = 5
+		modifier = {
+			factor = 3
+			ROOT = { tag = USA }
+		}
+	}
+    allowed = {
+        has_dlc = "Man the Guns"
+    }
+    available = {
+		FROM = {
+			has_tech = radio_detection
+			has_tech = naval_radio_guiding_system
+		}
+    }
+	resource_cost = {
+		resources = { steel=4 tungsten=2 }
+	}
+    breakthrough_cost = {
+		specialization_naval = 1
+	}
+    prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.medium
+
+    project_output = {
+        enable_equipment_modules = {
+            ship_vt_shell
+        }
+    }
+
+	unique_prototype_rewards = {
+		sp_naval_proximity_fuze_unique_reward_a = {
+			fire_only_once = yes
+			threshold = {
+				min = 50
+				max = 90
+			}
+			weight = { base = 100 }
+			option = {
+				token = sp_naval_proximity_fuze_preference_a
+				iteration_output = {
+					sub_unit_bonus = {
+						light_cruiser = {
+							anti_air_attack = 0.05
+						}
+						destroyer = {
+							anti_air_attack = 0.05
+						}
+					}
+				}
+			}
+			option = {
+				token = sp_naval_proximity_fuze_preference_b
+				iteration_output = {
+					sub_unit_bonus = {
+						light_cruiser = {
+							anti_air_attack = 0.1
+						}
+						destroyer = {
+							anti_air_attack = 0.1
+						}
+					}
+					equipment_bonus = {
+						screen_ship = {
+							build_cost_ic = 0.1
+							instant = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+}
+
+sp_super_heavy_guns = {
+    specialization = specialization_naval
+	project_tags = { sp_tag_surface_ship }
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 5
+			ROOT = { has_tech = ship_hull_super_heavy }
+		}
+	}
+    allowed = {
+        has_dlc = "Man the Guns"
+    }
+	visible = {
+		FROM = {
+			NOT = { has_tech = basic_super_heavy_battery }
+		}
+	}
+    available = {
+		FROM = {
+			has_tech = early_ship_hull_heavy
+			has_tech = basic_heavy_battery
+		}
+    }
+    breakthrough_cost = {
+		specialization_naval = 1
+	}
+	resource_cost = {
+		resources = { steel=6 tungsten=3 }
+	}
+    prototype_time = sp_time.prototype.medium
+
+	complexity = sp_complexity.medium
+
+    project_output = {
+        country_effects = {
+            custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = basic_super_heavy_battery
+			}
+			custom_override_tooltip = {
+				tooltip = tech_effect|basic_super_heavy_battery
+				set_technology = {
+					basic_super_heavy_battery = 1
+					popup = no
+				}
+			}
+        }
+    }
+
+	unique_prototype_rewards = {
+		sp_super_heavy_guns_unique_reward_a = {
+			fire_only_once = yes
+			threshold = {
+				min = 60
+				max = 90
+			}
+			weight = {
+				base = 100
+			}
+			option = {
+				token = sp_super_heavy_guns_preference_a
+				iteration_output = {
+					country_effects = {
+						add_tech_bonus = {
+							bonus = 0.75
+							uses = 1
+							technology = experimental_super_heavy_battery
+						}
+						sp:sp_super_heavy_guns = { add_project_progress_ratio = -0.25 }
+					}
+				}
+			}
+			option = {
+				token = sp_super_heavy_guns_preference_b
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+}
+
+sp_naval_underway_replenishment = {
+	specialization = specialization_naval
+
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		has_dlc = "Gotterdammerung"
+	}
+
+	available = {
+		FROM = {
+			has_navy_size = {
+				size > 199
+			}
+		}
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 8
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.short
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = sp_multi_product_supply_ships
+				}
+			set_rule = {
+				can_use_underway_replenishment = yes
+			}
+
+		}
+
+		enable_equipment_modules = {
+
+		}
+
+		enable_subunits = {
+
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+
+	unique_prototype_rewards = {
+		sp_naval_underway_replenishment_unique_reward_a = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 90
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = {
+				token = sp_naval_underway_replenishment_preference_a
+
+				iteration_output = {
+					country_effects = {
+						custom_effect_tooltip = tech_effect|sp_naval_underway_replenishment_pick_a
+						hidden_effect = {
+							set_technology = {
+								sp_naval_underway_replenishment_pick_a = 1
+								popup = no
+							}
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_naval_underway_replenishment_preference_c
+
+				iteration_output = {
+					country_effects = {
+						#BASE UNDERWAY REPLENISHMENT
+					}
+
+				}
+			}
+
+			option = {
+				token = sp_naval_underway_replenishment_preference_b
+
+				iteration_output = {
+					country_effects = {
+						custom_effect_tooltip = tech_effect|sp_naval_underway_replenishment_pick_b
+						hidden_effect = {
+							set_technology = {
+								sp_naval_underway_replenishment_pick_b = 1
+								popup = no
+							}
+						}
+					}
+
+				}
+			}
+
+
+		}
+	}
+}
+
+# Rocket Launching Submarine
+sp_naval_rocket_launching_submarine = {
+	specialization = specialization_naval
+
+	project_tags = {
+		sp_tag_rocket
+		sp_tag_submarine
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 12
+			chromium = 4
+			tungsten = 12
+		}
+	}
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.medium
+
+	special_project_parent = {
+		sp_rockets_ballistic_missile
+	}
+
+	available = {
+		FROM = {
+			has_tech = modern_ship_hull_submarine
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+
+
+	project_output = {
+		enable_equipment_modules = {
+			limit = {
+				has_dlc = "Gotterdammerung"
+			}
+			sub_missile_launcher
+		}
+		enable_equipment_modules = {
+			ship_cruise_missile_sub_1
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+
+}
+
+# Nuclear Missile Submarine
+sp_naval_nuclear_missile_submarine = {
+	specialization = specialization_naval
+
+	project_tags = {
+		sp_tag_nuclear_warfare
+		sp_tag_submarine
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 16
+			chromium = 16
+		}
+	}
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.short
+	allowed = {
+		has_dlc = "Gotterdammerung"
+	}
+	ai_will_do = {
+		base = 0
+	}
+
+	special_project_parent = {
+		sp_naval_rocket_launching_submarine
+		sp_nuclear_warheads
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+
+
+	project_output = {
+		enable_equipment_modules = {
+			slbm_launcher
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+		sp_naval_generic_failure_nuclear_accident
+	}
+}
+
+sp_mega_carrier = {
+	specialization = specialization_naval
+	project_tags = { sp_tag_surface_ship }
+	allowed = {
+        has_dlc = "Gotterdammerung"
+    }
+    available = {
+		FROM = {
+			has_tech = super_carriers
+		}
+    }
+	ai_will_do = {
+		base = 0
+	}
+	resource_cost = {
+		resources = {
+			steel = 16
+			chromium = 16
+		}
+	}
+    breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+    prototype_time = sp_time.prototype.medium
+
+	complexity = sp_complexity.large
+
+    project_output = {
+		enable_equipments = {
+			vnr_ship_hull_mega_carrier
+		}
+        enable_equipment_modules = {
+			limit = {
+				has_dlc = "Gotterdammerung"
+			}
+            ship_deck_space_mega
+        }
+    }
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+}
+
+sp_arsenal_ship = {
+	specialization = specialization_naval
+	project_tags = { sp_tag_surface_ship }
+	allowed = {
+        has_dlc = "Gotterdammerung"
+    }
+    available = {
+		FROM = {
+			has_tech = full_missile_ship
+		}
+    }
+	ai_will_do = {
+		base = 0
+	}
+	resource_cost = {
+		resources = {
+			steel = 12
+			tungsten = 10
+			chromium = 14
+		}
+	}
+    breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+    prototype_time = sp_time.prototype.medium
+
+	complexity = sp_complexity.large
+
+    project_output = {
+		enable_equipments = {
+			vnr_ship_hull_arsenal_ship
+		}
+        enable_equipment_modules = {
+            ship_missile_launcher
+			ship_slbm_launcher
+        }
+    }
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+}
+
+sp_early_informatization_system = {
+	specialization = specialization_naval
+	project_tags = { sp_tag_surface_ship }
+    available = {
+		FROM = {
+			has_tech = naval_tactical_data_system
+		}
+    }
+	ai_will_do = {
+		base = 20
+	}
+	resource_cost = {
+		resources = {
+			steel = 12
+			tungsten = 10
+			chromium = 14
+		}
+	}
+    breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+    prototype_time = sp_time.prototype.medium
+
+	complexity = sp_complexity.large
+
+	project_output = {
+		country_effects = {
+            custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = phased_array_radar
+			}
+			custom_override_tooltip = {
+				tooltip = tech_effect|phased_array_radar
+				set_technology = {
+					phased_array_radar = 1
+					popup = no
+				}
+			}
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = integrated_combat_system
+			}
+			custom_override_tooltip = {
+				tooltip = tech_effect|integrated_combat_system
+				set_technology = {
+					integrated_combat_system = 1
+					popup = no
+				}
+			}
+        }
+    }
+
+	unique_prototype_rewards = {
+		sp_early_informatization_system_unique_reward_a = {
+			fire_only_once = yes
+			threshold = {
+				min = 25
+				max = 75
+			}
+			weight = { base = 100 }
+			option = {
+				token = sp_early_informatization_system_perference_a
+				iteration_output = {
+					country_effects = {
+						add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							technology = tactical_data_link
+						}
+					}
+				}
+			}
+			option = {
+				token = sp_early_informatization_system_perference_b
+				iteration_output = {
+					country_effects = {
+						add_tech_bonus = {
+							bonus = 1
+							uses = 1
+							technology = tactical_data_link
+						}
+						sp:sp_early_informatization_system = { add_project_progress_ratio = -0.25 }
+					}
+				}
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+}
+
+sp_high_speed_light_engine = {
+	specialization = specialization_naval
+	project_tags = { sp_tag_surface_ship }
+	allowed = {
+        has_dlc = "Man the Guns"
+    }
+    available = {
+		FROM = {
+			has_tech = basic_ship_hull_light
+			has_tech = fuel_oil_boiler
+		}
+    }
+	ai_will_do = {
+		base = 0.1
+	}
+	resource_cost = {
+		resources = {
+			steel = 6
+			tungsten = 4
+			chromium = 4
+		}
+	}
+    breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+    prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+
+    project_output = {
+		enable_equipment_modules = {
+			ship_superheater
+		}
+		country_effects = {
+            custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = high_speed_light_engine
+			}
+			custom_override_tooltip = {
+				tooltip = tech_effect|high_speed_light_engine
+				set_technology = {
+					high_speed_light_engine = 1
+					popup = no
+				}
+			}
+        }
+    }
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+}
+
+sp_submarine_snorkel = {
+	specialization = specialization_naval
+	project_tags = { sp_tag_surface_ship }
+	allowed = {
+        has_dlc = "Man the Guns"
+    }
+    available = {
+		FROM = {
+			has_tech = basic_ship_hull_submarine
+		}
+    }
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 10
+			ROOT = { is_major = yes }
+		}
+	}
+	resource_cost = {
+		resources = {
+			steel = 6
+			chromium = 4
+		}
+	}
+    breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+    prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+
+    project_output = {
+		enable_equipment_modules = {
+			ship_sub_snorkel_0
+		}
+		country_effects = {
+            custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = basic_submarine_snorkel
+			}
+        }
+    }
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+}
+
+sp_shipping_container = {
+	specialization = specialization_naval
+	project_tags = { sp_tag_surface_ship }
+	allowed = {
+        has_dlc = "Man the Guns"
+    }
+    available = {
+		FROM = {
+			has_tech = mtg_tank_landing_craft
+		}
+    }
+	ai_will_do = {
+		base = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 4
+			chromium = 2
+		}
+	}
+    breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+    prototype_time = sp_time.prototype.medium
+
+	complexity = sp_complexity.small
+
+    project_output = {
+		enable_equipment_modules = {
+			shipping_container
+		}
+		equipment_bonus = {
+			convoy_1 = {
+				instant = yes
+				build_cost_ic = -0.3
+			}
+		}
+    }
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+}
+sp_naval_cruiser_submarine = {
+	specialization = specialization_naval
+
+	project_tags = sp_tag_submarine
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = cruiser_submarines
+			}
+		}
+	}
+
+}
+
+sp_naval_fleet_submarine = {
+	specialization = specialization_naval
+
+
+	project_tags = sp_tag_submarine
+
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.long
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = basic_ship_hull_submarine
+			}
+		}
+	}
+
+}
+
+sp_naval_nuclear_submarine = {
+	specialization = specialization_naval
+
+	project_tags = sp_tag_submarine
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = sub_nuclear_engine
+			}
+		}
+	}
+
+}
+
+sp_naval_nuclear_torpedo = {
+	specialization = specialization_naval
+
+
+	project_tags = {
+		sp_tag_submarine
+		sp_tag_nuclear_warfare
+	}
+
+	ai_will_do = {
+		base = 1
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 8
+			chromium = 12
+			tungsten = 12
+		}
+	}
+
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.long
+
+	allowed = {
+		AND = {
+			has_dlc= "Gotterdammerung"
+			has_dlc = "Man the Guns"
+		}
+	}
+
+	available = {
+		FROM = { has_tech = modern_ship_torpedo_launcher }
+	}
+
+	special_project_parent = {
+		sp_naval_nuclear_submarine
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+	project_output = {
+		country_effects = {
+
+		}
+		facility_state_effects = {
+
+		}
+		scientist_effects = {
+
+		}
+		enable_equipments = {
+
+		}
+		enable_equipment_modules = {
+			sub_nuclear_torpedo
+		}
+
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+		sp_naval_generic_failure_nuclear_accident
+	}
+
+	unique_prototype_rewards = {
+		sp_naval_nuclear_torpedo_unique_reward_a = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 90
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = {
+				token = sp_naval_nuclear_torpedo_preference_a
+
+				iteration_output = {
+					country_effects = {
+
+					}
+
+					equipment_bonus = {
+						ship_hull_submarine = {
+							naval_torpedo_hit_chance_factor = 0.02
+							torpedo_attack = 0.1
+							reliability = -0.1
+							instant = yes
+						}
+					}
+
+				}
+			}
+
+			option = {
+				token = sp_naval_nuclear_torpedo_preference_b
+
+				iteration_output = {
+					country_effects = {
+
+					}
+					equipment_bonus = {
+						ship_hull_submarine = {
+							reliability = 0.1
+							build_cost_ic = 0.1
+							instant = yes
+						}
+
+					}
+
+				}
+			}
+		}
+	}
+
+}
+
+sp_naval_midget_submarine = {
+	specialization = specialization_naval
+
+	project_tags = sp_tag_submarine
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = midget_submarines
+			}
+		}
+	}
+
+}
+
+sp_naval_aip_engine = {
+	specialization = specialization_naval
+
+	project_tags = sp_tag_submarine
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = sub_AIP_engine
+			}
+		}
+	}
+
+}
+
+sp_naval_anechoic_tiles = {
+	specialization = specialization_naval
+
+	project_tags = sp_tag_submarine
+
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+	allowed = {
+		#FREE PROJECT
+	}
+	visible = {
+		always = no
+	}
+
+	special_project_parent = {
+
+	}
+
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = anechoic_tile
+			}
+		}
+	}
+
+}
+
+sp_naval_submarine_carrier = {
+specialization = specialization_naval
+
+	project_tags = sp_tag_submarine
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 2
+			ROOT = {
+				original_tag = JAP
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+		}
+	}
+
+	allowed = {
+		has_dlc = "No Compromise, No Surrender"
+	}
+
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+			has_tech = basic_ship_hull_carrier
+			has_tech = improved_ship_hull_submarine
+			}
+			else = {
+				has_tech = basic_carrier
+				has_tech = improved_submarine
+			}
+		}
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 12
+			chromium = 6
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.medium
+	project_output = {
+		country_effects = {
+			if = {
+				limit = {
+					original_tag = JAP
+					is_special_project_completed = sp:sp_naval_anechoic_tiles
+				}
+				add_design_template_bonus = {
+					name = sp_naval_submarine_carrier_free_design
+					uses = 1
+					cost_factor = 0.25
+					equipment = ship_hull_carrier_submarine
+				}
+				set_technology = {
+	anechoic_tile = 1
+	basic_ship_hull_submarine = 1
+	cruiser_submarines = 1
+	early_ship_hull_submarine = 1
+	modern_ship_torpedo_launcher = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Sentoku Class"
+	name_group = JAP_SS_HISTORICAL
+	parent_version = 0
+	allow_without_tech = yes
+	design_team = mio:JAP_sasebo_naval_arsenal_organization
+	type = vnr_ship_hull_cruiser_submarine
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_4
+		fixed_ship_conning_tower_slot = sub_conning_tower_0
+		fixed_ship_engine_slot = sub_ship_engine_2
+		fixed_ship_armor_slot = pressure_hull_1
+		fixed_sub_periscope_slot = sub_ship_periscope_0
+		rear_1_custom_slot = sub_airplane_launcher_2
+		front_1_custom_slot = empty
+		fixed_ship_battery_slot = sub_deck_gun_1
+		mid_3_custom_slot = anechoic_tile_1
+	}
+}
+			}
+			else_if = {
+				limit = {
+					original_tag = JAP
+					NOT = { is_special_project_completed = sp:sp_naval_anechoic_tiles }
+				}
+				add_design_template_bonus = {
+					name = sp_naval_submarine_carrier_free_design
+					uses = 1
+					cost_factor = 0.25
+					equipment = ship_hull_carrier_submarine
+				}
+				set_technology = {
+	cruiser_submarines = 1
+	early_ship_hull_submarine = 1
+	modern_ship_torpedo_launcher = 1
+	popup = no
+}
+create_equipment_variant = {
+	name = "Sentoku Class"
+	name_group = JAP_SS_HISTORICAL
+	parent_version = 0
+	allow_without_tech = yes
+	design_team = mio:JAP_sasebo_naval_arsenal_organization
+	type = vnr_ship_hull_cruiser_submarine
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_4
+		fixed_ship_conning_tower_slot = sub_conning_tower_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		fixed_ship_armor_slot = pressure_hull_1
+		fixed_sub_periscope_slot = sub_ship_periscope_0
+		rear_1_custom_slot = sub_airplane_launcher_2
+		front_1_custom_slot = empty
+		fixed_ship_battery_slot = sub_deck_gun_1
+	}
+}
+			}
+			else = {
+				add_design_template_bonus = {
+					name = sp_naval_submarine_carrier_free_design
+					uses = 1
+					cost_factor = 1
+					equipment = ship_hull_carrier_submarine
+				}
+			}
+		}
+
+		enable_equipments = {
+			ship_hull_carrier_submarine
+		}
+
+		enable_equipment_modules = {
+			 sub_airplane_launcher_2
+		}
+
+		enable_subunits = {
+
+		}
+	}
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+
+	unique_prototype_rewards = {
+		sp_naval_submarine_carrier_unique_reward_a = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 90
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = {
+				token = sp_naval_submarine_carrier_preference_a
+
+				iteration_output = {
+					country_effects = {
+						add_equipment_bonus = {
+							name = sp_naval_submarine_carrier_eq_bonus_range
+							bonus = {
+								ship_hull_carrier_submarine = {
+									naval_range = 0.1
+									sub_visibility = 0.05
+								}
+							}
+						}
+					}
+				}
+			}
+			option = {
+				token = sp_naval_submarine_carrier_preference_b
+				default = yes
+				iteration_output = {
+					country_effects = {
+						add_equipment_bonus = {
+							name = sp_naval_submarine_carrier_eq_bonus_strength
+							bonus = {
+								ship_hull_carrier_submarine = {
+									max_strength = 0.05
+									naval_weather_penalty_factor = -0.1
+								}
+							}
+						}
+					}
+				}
+			}
+			option = {
+				token = sp_naval_submarine_carrier_preference_c
+				iteration_output = {
+					country_effects = {
+						add_equipment_bonus = {
+							name = sp_naval_submarine_carrier_eq_bonus_stealth
+							bonus = {
+								ship_hull_carrier_submarine = {
+									sub_visibility = -0.1
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+sp_naval_torpedo_cruiser = {
+	specialization = specialization_naval
+
+
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 2
+			ROOT = {
+				original_tag = JAP
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+		}
+	}
+
+	allowed = {
+		#FREE
+	}
+	available = {
+		FROM = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				has_tech = early_ship_hull_cruiser
+			}
+			else = {
+				has_tech = early_light_cruiser
+			}
+
+		}
+
+	}
+
+	complexity = sp_complexity.small
+	prototype_time = sp_time.prototype.medium
+
+	resource_cost = {
+		resources = {
+			steel = 8
+			tungsten = 2
+			chromium = 2
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_design_template_bonus = {
+					name = sp_naval_torpedo_cruiser_free_design
+					uses = 1
+					cost_factor = 1
+					equipment = ship_hull_torpedo_cruiser
+				}
+			}
+		}
+
+
+
+		enable_equipments = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			ship_hull_torpedo_cruiser
+		}
+
+
+		enable_equipments = {
+			limit = {
+				not = {has_dlc = "Man the Guns"}
+			}
+				torpedo_cruiser
+			}
+
+		enable_equipment_modules = {
+
+		}
+
+		enable_subunits = {
+
+		}
+
+	}
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+		sp_naval_generic_reward_armor_tech_1
+		sp_naval_generic_reward_armor_tech_2
+		sp_naval_generic_reward_armor_tech_3
+		sp_naval_generic_reward_artillery_tech_1
+		sp_naval_generic_reward_artillery_tech_2
+		sp_naval_generic_reward_artillery_tech_3
+		sp_naval_generic_failure_torpedo_accident
+	}
+
+	unique_prototype_rewards = {
+		sp_naval_torpedo_cruiser_unique_reward_a = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 90
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = {
+				token = sp_naval_torpedo_cruiser_preference_a
+
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}
+
+							add_equipment_bonus = {
+								name = sp_torpedo_cruiser_eq_bonus_torpedo
+								bonus = {
+									ship_hull_torpedo_cruiser = {
+										naval_torpedo_hit_chance_factor = 0.1
+										torpedo_attack = 0.15
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_torpedo_cruiser_eq_bonus_torpedo
+								bonus = {
+									torpedo_cruiser = {
+										naval_torpedo_hit_chance_factor = 0.1
+										torpedo_attack = 0.15
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_naval_torpedo_cruiser_preference_b
+
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}
+
+							add_equipment_bonus = {
+								name = sp_torpedo_cruiser_eq_bonus_light_attack
+								bonus = {
+									ship_hull_torpedo_cruiser = {
+										naval_light_gun_hit_chance_factor = 0.15
+										lg_attack = 0.1
+										lg_armor_piercing = 0.1
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_torpedo_cruiser_eq_bonus_light_attack
+								bonus = {
+									torpedo_cruiser = {
+										naval_light_gun_hit_chance_factor = 0.15
+										lg_attack = 0.1
+										lg_armor_piercing = 0.1
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+sp_naval_modern_battleship = {
+	specialization = specialization_naval
+
+
+	project_tags = sp_tag_surface_ship
+
+	allowed = {
+		#FREE
+	}
+
+	visible = {
+		always = no
+	}
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = advanced_ship_hull_heavy
+			}
+		}
+	}
+}
+
+sp_naval_modern_carrier = {
+	specialization = specialization_naval
+
+
+	project_tags = sp_tag_surface_ship
+
+	allowed = {
+		#FREE
+	}
+
+	visible = {
+		always = no
+	}
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = super_carriers
+			}
+		}
+	}
+}
+
+sp_naval_ice_carrier = {
+	specialization = specialization_naval
+
+
+	project_tags = sp_tag_surface_ship
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		has_dlc = "Gotterdammerung"
+	}
+
+	available = {
+				FROM = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				has_tech = improved_ship_hull_carrier
+			}
+			else = {
+				has_tech = improved_carrier
+			}
+
+		}
+
+	}
+
+	resource_cost = {
+		resources = {
+			steel = 32
+		}
+	}
+
+	complexity = sp_complexity.large
+	prototype_time = sp_time.prototype.very_long
+
+	breakthrough_cost = {
+		specialization_naval = 2
+	}
+
+	project_output = {
+		country_effects = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_design_template_bonus = {
+					name = sp_naval_ice_carrier_free_design
+					uses = 1
+					cost_factor = 0.5
+					equipment = ship_hull_mega_carrier
+				}
+				SP_create_variant_of_habakkuk_for_production_line = yes
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_TECH
+					TECH = sp_refined_pykrete
+				}
+				add_equipment_production =	{
+					equipment = {
+						type = ship_hull_mega_carrier
+						version_name = "Habakkuk"
+					}
+					requested_factories = 1
+					progress = 0.95
+					amount = 1
+				}
+			}
+			else = {
+				add_equipment_production =	{
+					equipment = {
+						type = mega_carrier
+					}
+					requested_factories = 1
+					progress = 0.95
+					amount = 1
+				}
+			}
+		}
+
+
+
+		enable_equipments = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			ship_hull_mega_carrier
+		}
+		enable_equipments = {
+			limit = {
+				not = {has_dlc = "Man the Guns"}
+			}
+			mega_carrier
+		}
+
+		enable_equipment_modules = {
+			limit = { has_dlc = "Man the Guns" }
+			ship_deck_space_mega
+			carrier_armor_deck
+		}
+
+
+	}
+
+	generic_prototype_rewards = {
+		sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3
+	}
+
+	unique_prototype_rewards = {
+		sp_naval_ice_carrier_unique_reward_a = {
+			fire_only_once = yes
+
+			threshold = {
+				min = 40
+				max = 90
+			}
+
+			weight = {
+				base = 100
+			}
+
+			option = {
+				token = sp_naval_ice_carrier_preference_a
+
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}
+
+							add_equipment_bonus = {
+								name = sp_mega_carrier_eq_bonus_weather
+								bonus = {
+									ship_hull_mega_carrier = {
+										naval_weather_penalty_factor = -0.15
+										instant = yes
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_mega_carrier_eq_bonus_weather
+								bonus = {
+									mega_carrier = {
+										naval_weather_penalty_factor = -0.2
+										instant = yes
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_naval_ice_carrier_preference_b
+
+				iteration_output = {
+					country_effects = {
+						if = {
+							limit = { has_dlc = "Man the Guns"}
+
+							add_equipment_bonus = {
+								name = sp_mega_carrier_eq_bonus_strength
+								bonus = {
+									ship_hull_mega_carrier = {
+										build_cost_ic = 0.05
+										max_strength = 0.1
+										instant = yes
+									}
+								}
+							}
+						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_mega_carrier_eq_bonus_strength
+								bonus = {
+									mega_carrier = {
+										build_cost_ic = 0.05
+										max_strength = 0.1
+										instant = yes
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+sp_naval_support_ships = {
+	specialization = specialization_naval
+
+
+	project_tags = sp_tag_surface_ship
+
+	allowed = {
+		#FREE
+	}
+
+	visible = {
+		always = no
+	}
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = support_fleet_ncns
+			}
+		}
+	}
+}
+
+sp_naval_escort_carrier = {
+	specialization = specialization_naval
+
+
+	project_tags = sp_tag_surface_ship
+
+	allowed = {
+		#FREE
+	}
+
+	visible = {
+		always = no
+	}
+	complexity = sp_complexity.medium
+	prototype_time = sp_time.prototype.medium
+
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = vnr_special_project_workaround_tt
+				TECH = improved_ship_hull_carrier
+			}
+		}
+	}
+}

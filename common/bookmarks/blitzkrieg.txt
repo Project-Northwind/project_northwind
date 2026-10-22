@@ -1,0 +1,2 @@
+# Project Northwind embedded naval overhaul supports fresh 1936 games.
+# Suppress the inherited unsupported 1939 bookmark.

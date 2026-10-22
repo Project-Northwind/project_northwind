@@ -1,4 +1,4 @@
-﻿capital = 291 # Baghdad
+capital = 291 # Baghdad
 
 oob = "IRQ_1936"
 
@@ -68,7 +68,7 @@ recruit_character = IRQ_faisal_ii
 
 ##### GoE Setup #####
 
-IF = { 
+IF = {
 	limit = {
 		has_dlc = "Graveyard of Empires"
 	}
@@ -158,7 +158,7 @@ IF = {
 		modifier = IRQ_royal_army_modifier_IRQ
 	}
 
-	#Variables for Air Force Modifier 
+	#Variables for Air Force Modifier
 	set_variable = { IRQ_air_accidents_factor = -0.1 }
 	set_variable = { IRQ_air_ace_generation_chance_factor = 0 }
 	set_variable = { IRQ_air_weather_penalty = -0.05 }
@@ -201,7 +201,7 @@ IF = {
 		add_opinion_modifier = {
 			target = IRQ
 			modifier = IRQ_anglo_iraqi_treaty_in_place_opm
-		}	
+		}
 	}
 	add_opinion_modifier = {
 		target = ENG
@@ -213,7 +213,7 @@ IF = {
 		add_dynamic_modifier = { modifier = KUR_resistance_modifier }
 	}
 
-	# Unhappy and Autonomous Shia Tribes 
+	# Unhappy and Autonomous Shia Tribes
 	1010 = {
 		add_dynamic_modifier = { modifier = IRQ_shia_resistance_modifier }
 	}
@@ -239,131 +239,6 @@ IF = {
 	recruit_character = IRQ_taha_al_ahmani
 }
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	IF = {
-		limit = {
-			has_dlc = "Graveyard of Empires"
-		}
-		#1936
-		complete_national_focus = IRQ_party_of_national_brotherhood
-		complete_national_focus = IRQ_royal_iraqi_army
-		complete_national_focus = IRQ_bakr_sidqi_coup
-		complete_national_focus = IRQ_raf_levies_focus
-		complete_national_focus = IRQ_assasination_of_sidqi
-		#1937
-		complete_national_focus = IRQ_expand_habbaniya_airbase
-		complete_national_focus = IRQ_decouple_from_the_pound
-		complete_national_focus = IRQ_found_the_iraqi_state_railways
-		complete_national_focus = IRQ_purchase_foreign_equipment
-		complete_national_focus = IRQ_independent_flight_schools
-
-		#1938
-		complete_national_focus = IRQ_infantry_focus
-		complete_national_focus = IRQ_purchase_british_aircraft
-		complete_national_focus = IRQ_strengthen_the_iraqi_dinar
-		complete_national_focus = IRQ_heavy_industry_investments
-		complete_national_focus = IRQ_local_arms_industry
-		complete_national_focus = IRQ_al_muthanna_club
-
-		#1939
-		complete_national_focus = IRQ_construct_the_kut_barrage
-		complete_national_focus = IRQ_baghdad_colleges_of_engineering_and_education
-		complete_national_focus = IRQ_found_southern_steel_plants
-		complete_national_focus = IRQ_modernization
-
-		diplomatic_relation = {
-			country = TUR
-			relation = non_aggression_pact
-			active = yes
-		}
-
-		diplomatic_relation = {
-			country = PER
-			relation = non_aggression_pact
-			active = yes
-		}
-
-		diplomatic_relation = {
-			country = AFG
-			relation = non_aggression_pact
-			active = yes
-		}
-
-		add_dynamic_modifier = { modifier = SSB_saadabad_pact }
-
-		remove_ideas = {
-			IRQ_bakr_sidqi
-			IRQ_ghazi_i
-		}
-		retire_character = IRQ_ghazi_i
-		retire_character = IRQ_bakr_sidqi
-		add_ideas = IRQ_regent_idea
-	}
-	IF = {
-		limit = {
-			NOT = { has_dlc = "Graveyard of Empires" }
-		}
-		# Generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = construction_effort_2
-		complete_national_focus = production_effort_2
-		complete_national_focus = infrastructure_effort
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort		
-	}
-	
-	oob = "IRQ_1939"
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "IRQ_1939_air_bba"
-		else = {
-			set_air_oob = "IRQ_1939_air_legacy"
-		}
-	}
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-		#air_superiority = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_refining = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-}
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -373,27 +248,4 @@ set_politics = {
 set_popularities = {
 	fascism = 20
 	neutrality = 80
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		fascism = 30
-		neutrality = 70
-	}
-	IF = {
-		limit = { 
-			NOT = { 
-				has_dlc = "Graveyard of Empires" 
-			} 
-		}		
-		recruit_character = IRQ_faisal_ii
-		promote_character = IRQ_faisal_ii
-		retire_character = IRQ_ghazi_i
-	}
 }

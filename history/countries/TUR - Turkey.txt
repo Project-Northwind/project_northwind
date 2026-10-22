@@ -1,4 +1,4 @@
-﻿capital = 49
+capital = 49
 
 if = {
 	limit = {
@@ -24,7 +24,7 @@ if = {
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "TUR_1936_air_bba"
-		set_technology = { 
+		set_technology = {
 			bba_early_transport_plane = 1
 		}
 	else = {
@@ -91,6 +91,12 @@ if = {
 		early_battleship = 1
 		early_battlecruiser = 1
 		transport = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		electronic_mechanical_engineering = 1
 	}
 }
 if = {
@@ -108,6 +114,10 @@ if = {
 		basic_torpedo = 1
 		coastal_defense_ships = 1
 		mtg_transport = 1
+		improved_ship_hull_submarine = 1
+		improved_ship_torpedo_launcher = 1
+		electronic_mechanical_engineering = 1
+		multi_mounted_battery = 1
 	}
 }
 
@@ -245,17 +255,28 @@ if = {
 	### Ship Variants ###
 	create_equipment_variant = {
 		name = "Kocatepe Class"
-		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 2
 			destroyer_engine_upgrade = 2
 			ship_ASW_upgrade = 1
 			ship_anti_air_upgrade = 1
 		}
+		role_icon_index = 31
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
 	}
 	create_equipment_variant = {
 		name = "Tinaztepe Class"
-		type = destroyer_1
 		obsolete = yes
 		upgrades = {
 			ship_torpedo_upgrade = 1
@@ -263,15 +284,38 @@ if = {
 			ship_ASW_upgrade = 1
 			ship_anti_air_upgrade = 1
 		}
+		role_icon_index = 31
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
 	}
 	create_equipment_variant = {
 		name = "Dumlupinar Class"
-		type = submarine_1
 		upgrades = {
 			ship_reliability_upgrade = 2
 			sub_engine_upgrade = 2
 			sub_stealth_upgrade = 2
 			sub_torpedo_upgrade = 2
+		}
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
+			rear_1_custom_slot = empty
 		}
 	}
 }
@@ -279,68 +323,88 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Kâzım Karabekir Class"				
-		type = ship_hull_submarine_1
+		name = "Kâzım Karabekir Class"
 		name_group = TUR_SS_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
 			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Kars Class"				
-		type = ship_hull_submarine_2
+		name = "Kars Class"
 		name_group = TUR_SS_HISTORICAL
 		parent_version = 0
+		role_icon_index = 41
+		type = vnr_ship_hull_submarine_3
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
 			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_armor_slot = pressure_hull_3
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_3
 			rear_1_custom_slot = ship_mine_layer_sub
+			front_1_custom_slot = empty
 		}
 	}
 	create_equipment_variant = {
-		name = "Halil Kut Class"								# represents Halil Kut and Gür
-		type = ship_hull_submarine_1
+		name = "Halil Kut Class"
 		name_group = TUR_SS_HISTORICAL
 		parent_version = 0
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
 			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = empty
 		}
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Peyk Class"									# large torpedo boats		
-		type = ship_hull_light_1
+		name = "Peyk Class"
 		name_group = TUR_DD_HISTORICAL
 		parent_version = 0
+		obsolete = yes
+		role_icon_index = 71
+		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Kilikya Class"								# represents Kilikya and Maraş
-		type = ship_hull_light_1
+		name = "Kilikya Class"
 		name_group = TUR_DD_HISTORICAL
 		parent_version = 0
+		role_icon_index = 31
+		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
@@ -348,29 +412,33 @@ if = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "Mecidiye Class"								# represents Mecidiye and Hamidiye protected cruisers		
-		type = ship_hull_cruiser_coastal_defense_ship
+		name = "Mecidiye Class"
 		name_group = TUR_CL_HISTORICAL
 		parent_version = 0
+		role_icon_index = 23
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = empty
-			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_cd
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_torpedo_1
+			front_1_custom_slot = empty
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
 		}
 	}
 	# Battlecruiser #
 	create_equipment_variant = {
-		name = "Yavuz Class"	
-		type = ship_hull_heavy_1
+		name = "Yavuz Class"
 		name_group = TUR_BC_HISTORICAL
 		parent_version = 0
+		role_icon_index = 15
+		type = vnr_ship_hull_heavy_1
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
@@ -379,33 +447,11 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bc_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
 			front_1_custom_slot = ship_heavy_battery_1
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Saldiray Class"				
-			type = ship_hull_submarine_2
-			name_group = TUR_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
 		}
 	}
 }

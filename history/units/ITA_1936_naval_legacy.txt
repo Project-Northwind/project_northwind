@@ -1,0 +1,31 @@
+##### NAVAL UNITS #####
+units = {
+	### ITALY ###
+
+	### EAGEAN SEA ###
+
+	### AFRICA ###
+
+}
+#######################
+
+##### STARTING PRODUCTION #####
+instant_effect = {
+	if = {
+		limit = { is_tutorial = no }
+
+		# BB: "RN Conte di Cavour" (Refitted & Recommissioned: 1-Jun, 1937)
+
+		# BB: "RN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
+
+		# CL: "RI Eugenio di Savoia" (Recommissioned: 16-Jan, 1936)
+
+		# DD: "RCT Perseo"
+
+		# DD: "RCT Sirio"
+
+		# SS: "RSmg Enrico Tazzoli"
+
+	}
+}
+###############################

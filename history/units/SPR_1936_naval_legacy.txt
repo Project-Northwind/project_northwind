@@ -1,0 +1,18 @@
+
+units= {
+
+	##### NAVAL UNITS #####
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Under Contruction Notes ###
+	# DD: Churucca class (x3) ("ARE Almirante Miranda" "ARE Gravina" "ARE Escaño" "ARE Císcar" "ARE Jorge Juan" "ARE Ulloa")
+
+	# CA: ARE Canarias (Canarias class, comm. 1-Oct, 1936), ARE Baleares (Canarias class, comm. 28-Dec, 1936)
+
+}
