@@ -1,0 +1,293 @@
+add_namespace = navy_rework
+add_namespace = vnr_ai
+
+# add Alicorn
+country_event = {
+	id = navy_rework.1
+	title = navy_rework.1.t
+	desc = navy_rework.1.d
+	picture = GFX_report_event_alicorn
+
+	is_triggered_only = yes
+
+	option = {
+		name = navy_rework.1.1
+		FROM = { create_alicorn = yes }
+	}
+}
+
+# add USS Constitution
+country_event = {
+	id = navy_rework.2
+	title = navy_rework.2.t
+	desc = navy_rework.2.d
+	picture = GFX_report_event_constitution
+
+	is_triggered_only = yes
+
+	# USA
+	option = {
+		trigger = {
+			original_tag = USA
+			NOT = { has_government = communism }
+		}
+		name = navy_rework.2.1
+		FROM = { country_event = {id = navy_rework.5 days = 1} }
+	}
+	# Commie fix
+	option = {
+		trigger = { has_government = communism }
+		name = navy_rework.2.2
+		FROM = { create_constitution = yes add_political_power = -50 }
+	}
+	# Commie abandon
+	option = {
+		trigger = { has_government = communism }
+		name = navy_rework.2.3
+		FROM = { navy_experience = 50 }
+	}
+	# Generic
+	option = {
+		trigger = {
+			NOT = {
+				has_government = communism
+				original_tag = USA
+			}
+		}
+		name = navy_rework.2.4
+		FROM = { create_constitution = yes }
+	}
+}
+
+# add SDF-1
+country_event = {
+	id = navy_rework.3
+	title = navy_rework.3.t
+	desc = navy_rework.3.d
+	picture = GFX_report_event_macross
+
+	is_triggered_only = yes
+
+	option = {
+		name = navy_rework.3.1
+		FROM = { create_macross = yes }
+	}
+}
+
+# add Space Battleship Yamato
+country_event = {
+	id = navy_rework.4
+	title = navy_rework.4.t
+	desc = navy_rework.4.d
+	picture = GFX_report_event_yamato
+
+	is_triggered_only = yes
+
+	# JAP
+	option = {
+		trigger = { original_tag = JAP }
+		name = navy_rework.4.1
+		FROM = { create_space_yamato = yes }
+	}
+	# Generic
+	option = {
+		trigger = { NOT = {original_tag = JAP} }
+		name = navy_rework.4.2
+		FROM = { create_space_yamato = yes }
+	}
+}
+
+# Consitution event: Omaha Chase
+country_event = {
+	id = navy_rework.5
+	title = navy_rework.5.t
+	desc = navy_rework.5.d
+	picture = GFX_report_event_omaha
+
+	is_triggered_only = yes
+
+	option = {
+		name = navy_rework.5.1
+		FROM = { country_event = {id = navy_rework.6 days = 1} }
+	}
+}
+
+# Consitution event: Talk with Ironsides
+country_event = {
+	id = navy_rework.6
+	title = navy_rework.6.t
+	desc = navy_rework.6.d
+	picture = GFX_report_event_ironsides
+
+	is_triggered_only = yes
+
+	# USA let stay
+	option = {
+		trigger = { original_tag = USA NOT = { has_government = communism } }
+		name = navy_rework.6.1
+		FROM = { create_constitution = yes navy_experience = 25 }
+	}
+	# USA let go
+	option = {
+		trigger = { original_tag = USA NOT = { has_government = communism } }
+		name = navy_rework.6.2
+		FROM = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = naval_equipment
+			}
+		}
+	}
+}
+
+# Confirm check for behemoths
+country_event = {
+	id = navy_rework.100
+	title = navy_rework.100.t
+	desc = navy_rework.100.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = navy_rework.100.0
+		set_global_flag = wunderwaffe_shown
+	}
+	option = {
+		name = navy_rework.100.1
+	}
+}
+
+# Buff AI
+country_event = {
+	id = vnr_ai.0
+	title = vnr_ai.0.t
+	desc = vnr_ai.0.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = vnr_ai.0.0
+		set_variable = { vnr_ai_difficulty = 3 }
+		update_ai_combat_bonus = yes
+		effect_tooltip = { add_ideas = vnr_mad }
+	}
+	option = {
+		name = vnr_ai.0.1
+		set_variable = { vnr_ai_difficulty = 2 }
+		update_ai_combat_bonus = yes
+		effect_tooltip = { add_ideas = vnr_hard }
+	}
+	option = {
+		name = vnr_ai.0.2
+		set_variable = { vnr_ai_difficulty = 1 }
+		update_ai_combat_bonus = yes
+		effect_tooltip = { add_ideas = vnr_normal }
+	}
+	option = {
+		name = vnr_ai.0.3
+		set_variable = { vnr_ai_difficulty = 0 }
+		update_ai_combat_bonus = yes
+	}
+}
+country_event = {
+	id = vnr_ai.1
+	title = vnr_ai.1.t
+	desc = vnr_ai.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = vnr_ai.1.0
+		set_variable = { vnr_ai_production = 3 }
+		update_ai_production_bonus = yes
+		effect_tooltip = { add_ideas = vnr_mad_production }
+	}
+	option = {
+		name = vnr_ai.1.1
+		set_variable = { vnr_ai_production = 2 }
+		update_ai_production_bonus = yes
+		effect_tooltip = { add_ideas = vnr_hard_production }
+	}
+	option = {
+		name = vnr_ai.1.2
+		set_variable = { vnr_ai_production = 1 }
+		update_ai_production_bonus = yes
+		effect_tooltip = { add_ideas = vnr_normal_production }
+	}
+	option = {
+		name = vnr_ai.1.3
+		set_variable = { vnr_ai_production = 0 }
+		update_ai_production_bonus = yes
+	}
+}
+country_event = {
+	id = vnr_ai.2
+	title = vnr_ai.2.t
+	desc = vnr_ai.2.d
+	is_triggered_only = yes
+
+	option = {
+		#exprt
+		trigger = {
+			NOT = { has_global_flag = manual_enable_expert_ship }
+		}
+		name = vnr_ai.2.1
+		set_global_flag = manual_enable_expert_ship
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai_naval_major = yes }
+				remove_ideas = vnr_ai_dd_output_boost_1
+				remove_ideas = vnr_ai_dd_output_boost_2
+				add_ideas = vnr_ai_dd_output_boost_2
+				navy_experience = 200
+			}
+		}
+	}
+	option = {
+		#historical
+		name = vnr_ai.2.2
+		clr_global_flag = manual_enable_expert_ship
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai_naval_major = yes }
+				remove_ideas = vnr_ai_dd_output_boost_1
+				remove_ideas = vnr_ai_dd_output_boost_2
+				add_ideas = vnr_ai_dd_output_boost_1
+			}
+		}
+	}
+}
+country_event = {
+	id = vnr_ai.3
+	title = vnr_ai.3.t
+	desc = vnr_ai.3.d
+	is_triggered_only = yes
+
+	option = {
+		#exprt
+		trigger = {
+			NOT = { has_global_flag = manual_enable_expert_plane }
+		}
+		name = vnr_ai.3.1
+		set_global_flag = manual_enable_expert_plane
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai_naval_major = yes }
+				add_ideas = vnr_cv_plane_output_boost
+				air_experience = 150
+			}
+		}
+	}
+	option = {
+		#historical
+		name = vnr_ai.3.2
+		clr_global_flag = manual_enable_expert_plane
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai_naval_major = yes }
+				remove_ideas = vnr_cv_plane_output_boost
+			}
+		}
+	}
+}

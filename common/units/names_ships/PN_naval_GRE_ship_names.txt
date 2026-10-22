@@ -1,0 +1,60 @@
+# VNR name groups absent from Northwind; Northwind groups take precedence.
+GRE_STATES = {
+	name = NAME_THEME_STATES
+	for_countries = {
+		GRE
+	}
+	type = ship
+	unique = {
+		Elládas
+		Attikis
+		Thessalia
+		Makedonia
+		Ipeiros
+		Pelopónnisos
+		Áthos
+		Thráki
+	}
+}
+GRE_CITIES = {
+	name = NAME_THEME_CITIES
+	for_countries = {
+		GRE
+	}
+	type = ship
+	unique = {
+		Athina
+		Thessaloniki
+		Pátra
+		Pireás
+		Lárissa
+		Irákleio
+		Peristeri
+		Kallithea
+		Acharnes
+		Kalamaria
+		Nikaia
+		Glyfada
+		Volos
+		"Nea Liosia"
+		Ilioupoli
+		Keratsini
+		Evosmos
+		Phlya
+		"Néa Smyrni"
+		Amarousio
+		"Agios Dimitrios"
+		Zografou
+		Aigaleo
+		"Nea Ionia"
+		Ioannina
+		"Palaio Faliro"
+		Korydallos
+		Trikala
+		Agrinio
+		Chalkis
+		Serres
+		Kateríni
+		Kalamáta
+	}
+}

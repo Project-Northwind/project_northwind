@@ -1,40 +1,40 @@
-﻿units = {
+units = {
 
 	##### NAVAL UNITS #####
 	fleet = {
-		name = "Kungliga Svenska Marinen"			
+		name = "Kungliga Svenska Marinen"
 		naval_base = 11215 # Karlskrona
-		task_force = {				
+		task_force = {
 			name = "Kustflottan"
 			location = 11215 # Karlskrona
-			ship = { name = "HMS Gustaf V" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SWE version_name = "Gustaf V Class" } } }	
-			ship = { name = "HMS Karl XIV Johan" definition = heavy_cruiser equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = SWE version_name = "Gustaf V Class" } } }				
-			ship = { name = "HMS Gotland" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }		
-			ship = { name = "HMS Skåne" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }		
-			ship = { name = "HMS Göteborg" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }		
-			ship = { name = "HMS Stockholm" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }		
-			ship = { name = "HMS Malmö" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }		
-			ship = { name = "HMS Gävle" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }		
-			ship = { name = "HMS Norrköping" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }		
-			ship = { name = "HMS Visby" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }		
-			ship = { name = "HMS Sundsvall" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }		
-			ship = { name = "HMS Hälsingborg" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }				
+			# Panzerskepp #
+			ship = { name = "HMS Gustaf V" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gustaf V Class" } } }			ship = { name = "HMS Karl XIV Johan" definition = heavy_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gustaf V Class" } } }
+			# Light Cruisers #
+			ship = { name = "HMS Gotland" definition = light_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }
+			ship = { name = "HMS Skåne" definition = light_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }
+			# Destroyers #
+			ship = { name = "HMS Göteborg" definition = destroyer equipment = { vnr_ship_hull_light_3 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }
+			ship = { name = "HMS Stockholm" definition = destroyer equipment = { vnr_ship_hull_light_3 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }
+			ship = { name = "HMS Malmö" definition = destroyer equipment = { vnr_ship_hull_light_3 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }
+			ship = { name = "HMS Gävle" definition = destroyer equipment = { vnr_ship_hull_light_3 = { amount = 1 owner = SWE version_name = "Göteborg Class" } } }
+			ship = { name = "HMS Hälsingborg" definition = destroyer equipment = { vnr_ship_hull_light_3 = { amount = 1 owner = SWE version_name = "Hälsingborg Class" } } }
+			ship = { name = "HMS Norrköping" definition = destroyer equipment = { vnr_ship_hull_light_3 = { amount = 1 owner = SWE version_name = "Hälsingborg Class" } } }
+			ship = { name = "HMS Visby" definition = destroyer equipment = { vnr_ship_hull_light_3 = { amount = 1 owner = SWE version_name = "Hälsingborg Class" } } }
+			ship = { name = "HMS Sundsvall" definition = destroyer equipment = { vnr_ship_hull_light_3 = { amount = 1 owner = SWE version_name = "Hälsingborg Class" } } }
 		}
 	}
 }
 
-
 ### Starting Production ###
 instant_effect = {
-	### Under Construction Notes ###
 	# Destroyers
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
-			creator = "SWE"
+			creator = SWE
 			version_name = "Göteborg Class"
+			type = vnr_ship_hull_light_3
 		}
-		name = "HMS Kalmar" 
+		name = "HMS Kalmar"
 		requested_factories = 1
 		progress = 0.75
 		amount = 1
@@ -42,11 +42,11 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
-			creator = "SWE"
+			creator = SWE
 			version_name = "Göteborg Class"
+			type = vnr_ship_hull_light_3
 		}
-		name = "HMS Karlstad" 
+		name = "HMS Karlstad"
 		requested_factories = 1
 		progress = 0.65
 		amount = 1
@@ -55,24 +55,24 @@ instant_effect = {
 	# Light Cruiser
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
-			creator = "SWE"
+			creator = SWE
 			version_name = "Gotland Class"
+			type = vnr_ship_hull_cruiser_2
 		}
-		name = "HMS Bohuslän" 
+		name = "HMS Bohuslän"
 		requested_factories = 1
 		progress = 0.35
 		amount = 1
 		industrial_manufacturer = mio:SWE_gotaverken_organization
 	}
-	# Panzerschiff
+	# Panzerskepp
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_panzerschiff
-			creator = "SWE"
+			creator = SWE
 			version_name = "Gustaf V Class"
+			type = vnr_ship_hull_cruiser_2
 		}
-		name = "HMS Erik XIV" 
+		name = "HMS Erik XIV"
 		requested_factories = 1
 		progress = 0.15
 		amount = 1

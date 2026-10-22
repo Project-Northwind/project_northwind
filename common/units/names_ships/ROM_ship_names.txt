@@ -1,0 +1,381 @@
+# VNR name groups absent from Northwind; Northwind groups take precedence.
+ROM_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+	for_countries = {
+		ROM
+	}
+	type = ship
+	ship_types = {
+		ship_hull_submarine
+		submarine
+	}
+	prefix = "NMS "
+	fallback_name = "Submarin %s"
+	unique = {
+		Delfinul
+		Rechinul
+		Marsuinul
+		Stiuca
+		Orca
+		Caracatita
+		"Leul de Mare"
+		Foca
+		Pastravul
+		Somonul
+	}
+}
+ROM_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+	for_countries = {
+		ROM
+	}
+	type = ship
+	ship_types = {
+		ship_hull_light
+		destroyer
+		ship_hull_civilian
+	}
+	prefix = "NMS "
+	fallback_name = "Distrugator %s"
+	unique = {
+		"Regele Ferdinand"
+		"Regina Maria"
+		Vifor
+		Viscol
+		Marasti
+		Marasesti
+		Oituz
+		Zefirul
+		Crivatul
+		Austrul
+		Prut
+		Ialomita
+	}
+}
+ROM_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+	for_countries = {
+		ROM
+	}
+	type = ship
+	ship_types = {
+		ship_hull_cruiser
+		light_cruiser
+	}
+	prefix = "NMS "
+	fallback_name = "Crucisator %s"
+	unique = {
+		"Amiral Emanoil Koslinski"
+		"General Dumitrescu-Maican"
+		"Amiral Murgescu"
+		Husi
+		"Ramnicu Sarat"
+		"Targu Jiu"
+		Tecuci
+		Slobozia
+		Calarasi
+	}
+}
+ROM_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+	for_countries = {
+		ROM
+	}
+	type = ship
+	ship_types = {
+		ship_hull_cruiser
+		heavy_cruiser
+	}
+	prefix = "NMS "
+	fallback_name = "Crucisator %s"
+	unique = {
+		Calugareni
+		Rovine
+		Nicopole
+		Razboieni
+		"Codrii Cosminului"
+		"Neagoe Basarab"
+		"Matei Basarab"
+		"Vasile Lupu"
+		"Vlad Calugarul"
+	}
+}
+ROM_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+	for_countries = {
+		ROM
+	}
+	type = ship
+	ship_types = {
+		ship_hull_heavy
+		battle_cruiser
+	}
+	prefix = "NMS "
+	fallback_name = "Crucisator de linie %s"
+	unique = {
+		Muntenia
+		Moldova
+		Oltenia
+		Basarabia
+		Dobrogea
+		Transilvania
+		Banat
+		Crisana
+		Maramures
+		Bucovina
+		"Constantin Brancoveanu"
+		"Dimitrie Cantemir"
+		"Ioan Voda cel Viteaz"
+		"Stefan cel Mare"
+		"Mircea cel Batran"
+	}
+}
+ROM_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+	for_countries = {
+		ROM
+	}
+	type = ship
+	ship_types = {
+		ship_hull_heavy
+		battleship
+	}
+	prefix = "NMS "
+	fallback_name = "Cuirasat %s"
+	unique = {
+		Romania
+		Tricolorul
+		Victoria
+		Decebal
+		Traian
+		Burebista
+		Hadrian
+		"Marcu Aureliu"
+		"Mihai Viteazul"
+		Domitian
+		"Septimiu Sever"
+		Dacia
+		Porolissensis
+		Malvensis
+		Apulensis
+	}
+}
+ROM_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+	for_countries = {
+		ROM
+	}
+	type = ship
+	ship_types = {
+		ship_hull_carrier
+		carrier
+	}
+	prefix = "NMS "
+	fallback_name = "Portavion %s"
+	unique = {
+		Bucuresti
+		Craiova
+		Iasi
+		Campulung
+		Targoviste
+		Constanta
+		"Curtea de Arges"
+	}
+}
+ROM_RIVERS_TRANSYLVANIA = {
+	name = NAME_THEME_RIVERS
+	for_countries = {
+		ROM
+	}
+	can_use = {
+		owns_state = 84
+	}
+	type = ship
+	prefix = "NMS "
+	unique = {
+		Olt
+		Siret
+		Dambovita
+		Bahlui
+		Jiu
+		Arges
+		Barlad
+		Trotus
+		Jijia
+		Teleorman
+		Dunarea
+		Moldova
+		Nistru
+		Mures
+		Bega
+		Somes
+		"Crisul Alb"
+		Crisurile
+		Tarnavele
+	}
+}
+ROM_COUNTIES = {
+	name = NAME_THEME_COUNTIES
+	for_countries = {
+		ROM
+	}
+	type = ship
+	prefix = "NMS "
+	unique = {
+		Mehedinti
+		Vlasca
+		Romanati
+		Gorj
+		Dolj
+		Muscel
+		Ilfov
+		Braila
+		Tulcea
+		Constanta
+		Prahova
+		Bacau
+		Neamt
+		Dorohoi
+		Botosani
+		Roman
+		Tutova
+		Falciu
+		Cahul
+		Ismail
+		Putna
+		Hotin
+		Soroca
+		Orhei
+		"Cetatea Alba"
+		Balti
+		Chisinau
+		Caliacra
+		Durostor
+	}
+}
+ROM_KINGS = {
+	name = NAME_THEME_KINGS
+	for_countries = {
+		ROM
+	}
+	type = ship
+	prefix = "NMS "
+	unique = {
+		Dromihete
+		Comosicus
+		Deceneu
+		Scorilo
+		Diurpaneus
+	}
+}
+ROM_LEADERS = {
+	name = NAME_THEME_LEADERS
+	for_countries = {
+		ROM
+	}
+	type = ship
+	prefix = "NMS "
+	unique = {
+		"Mihail Kogalniceanu"
+		"Gheorghe Asachi"
+		"Gheorghe Magheru"
+		"Lascar Catargiu"
+		"Alexandru Ioan Cuza"
+		"Ion Ghica"
+		"Constantin Alexandru Rosetti"
+		"Ion Heliade Radulescu"
+		"Nicolae Balcescu"
+		"Cezar Bolliac"
+	}
+}
+ROM_LITERARY_FIGURES = {
+	name = NAME_THEME_LITERARY_FIGURES
+	for_countries = {
+		ROM
+	}
+	type = ship
+	prefix = "NMS "
+	unique = {
+		"Alexandru Vlahuta"
+		"Vasile Alecsandri"
+		"Mihai Eminescu"
+		"Dimitrie Bolintineanu"
+		"Grigore Alexandrescu"
+		"Andrei Muresanu"
+		"Constantin Negruzzi"
+	}
+}
+ROM_BIRDS = {
+	name = NAME_THEME_BIRDS
+	for_countries = {
+		ROM
+	}
+	type = ship
+	prefix = "NMS "
+	unique = {
+		Acvila
+		Vulturul
+		Soimul
+		Eretele
+		Uliul
+		Pescarusul
+		Lebada
+		Pelicanul
+		Cocorul
+		Barza
+		Vrabia
+		Randunica
+	}
+}
+ROM_ANIMALS = {
+	name = NAME_THEME_ANIMALS
+	for_countries = {
+		ROM
+	}
+	type = ship
+	prefix = "NMS "
+	unique = {
+		Leul
+		Tigrul
+		Leopardul
+		Ghepardul
+		Rasul
+		Ursul
+		Vipera
+	}
+}
+ROM_MYTHOLOGY = {
+	name = NAME_THEME_MYTHOLOGY
+	for_countries = {
+		ROM
+	}
+	type = ship
+	prefix = "NMS "
+	unique = {
+		Zmeul
+		Zburatorul
+	}
+}
+ROM_MYTHOLOGY = {
+	name = NAME_THEME_SAINTS
+	for_countries = {
+		ROM
+	}
+	type = ship
+	prefix = "NMS "
+	unique = {
+		"Sfantul Gheorghe"
+		"Sfantul Ilie"
+		"Sfantul Pantelimon"
+		"Sfantul Arhanghel Mihail"
+		"Sfantul Arhanghel Gavriil"
+		"Sfantul Petru"
+		"Sfantul Pavel"
+		"Sfantul Imparat Constantin"
+		"Sfantul Stefan"
+		"Sfantul Dumitru"
+		"Sfantul Andrei"
+		"Sfantul Iacob cel Mare"
+		"Sfantul Ioan Botezatorul"
+	}
+}

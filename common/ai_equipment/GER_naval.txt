@@ -1,0 +1,1 @@
+# Naval AI designs supplied by the PN_vnr_* templates.

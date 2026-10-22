@@ -1,0 +1,14 @@
+units = {
+
+	##### NAVAL UNITS #####
+
+}
+
+### Starting Production ###
+instant_effect = {
+	### Under Construction Notes ###
+	# DD: Göteborg class (x1) ("HMS Göteborg")
+
+	# SS: Draken variant (x3) ("HMS Delfinen" "HMS Nordkaparen" "HMS Springaren")
+
+}

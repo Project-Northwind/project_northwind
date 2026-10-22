@@ -1,4 +1,4 @@
-﻿capital = 47
+capital = 47
 
 oob = "GRE_1936"
 if = {
@@ -42,7 +42,7 @@ starting_train_buffer = 2
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	tech_trucks = 1
@@ -64,6 +64,11 @@ if = {
 		early_heavy_cruiser = 1
 		early_battleship = 1
 		transport = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		early_ship_hull_light = 1
+		electronic_mechanical_engineering = 1
 	}
 }
 if = {
@@ -83,28 +88,36 @@ if = {
 		coastal_defense_ships = 1
 		pre_dreadnoughts = 1
 		mtg_transport = 1
+		improved_ship_hull_submarine = 1
+		electronic_mechanical_engineering = 1
+		basic_cruiser_armor = 1
+		multi_mounted_battery = 1
+		basic_ship_hull_heavy = 1
+		basic_dp_light_battery = 1
+		basic_fire_control_system = 1
+		basic_heavy_armor = 1
 	}
 }
 1936.1.1 = {
 	if = {
 		limit = { has_dlc = "Battle for the Bosporus" }
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = ROM
 			modifier = BFTB_balkan_pact_ally
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = TUR
 			modifier = BFTB_balkan_pact_ally
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = YUG
 			modifier = BFTB_balkan_pact_ally
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = BUL
 			modifier = BFTB_balkan_pact_enemy
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = HUN
 			modifier = BFTB_balkan_pact_enemy
 		}
@@ -126,12 +139,12 @@ if = {
 		set_variable = { var = GRE_debt_to_the_ifc_italy_var value = 10 }
 		set_variable = { var = GRE_debt_to_the_ifc_paid_var value = 0 }
 
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = GER
 			modifier = GRE_strong_trading_ties
 		}
-		GER = { 
-			add_opinion_modifier = { 
+		GER = {
+			add_opinion_modifier = {
 				target = GRE
 				modifier = GRE_strong_trading_ties
 			}
@@ -170,7 +183,7 @@ set_war_support = 0.23
 set_convoys = 80
 
 
-if = { 
+if = {
 	limit = { has_dlc = "Battle for the Bosporus" }
 	recruit_character = GRE_konstantinos_demertzis
 	recruit_character = GRE_nikos_zachariadis
@@ -264,12 +277,24 @@ if = {
 	### Ship Variants ###
 	create_equipment_variant = {
 		name = "Hydra Class"
-		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 2
 			destroyer_engine_upgrade = 2
 			ship_ASW_upgrade = 2
 			ship_anti_air_upgrade = 2
+		}
+		role_icon_index = 31
+		type = vnr_ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 }
@@ -277,79 +302,95 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Katsonis Class"				
-		type = ship_hull_submarine_1
+		name = "Katsonis Class"
 		name_group = GRE_SS_HISTORICAL
 		parent_version = 0
 		show_position = no
+		obsolete = yes
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
 			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Protefs Class"				
-		type = ship_hull_submarine_2
+		name = "Protefs Class"
 		name_group = GRE_SS_HISTORICAL
 		parent_version = 0
 		show_position = no
+		role_icon_index = 37
+		type = vnr_ship_hull_submarine_1
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_conning_tower_slot = sub_conning_tower_0
 			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_armor_slot = pressure_hull_1
+			fixed_sub_periscope_slot = sub_ship_periscope_0
+			fixed_ship_secondaries_slot = sub_deck_gun_1
 			rear_1_custom_slot = ship_torpedo_sub_1
 		}
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Aetos Class"					
-		type = ship_hull_light_1
+		name = "Aetos Class"
 		name_group = GRE_DD_HISTORICAL
 		parent_version = 0
 		show_position = no
+		obsolete = yes
+		role_icon_index = 31
+		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Kountouriotis Class"					
-		type = ship_hull_light_1
+		name = "Kountouriotis Class"
 		name_group = GRE_DD_HISTORICAL
 		parent_version = 0
 		show_position = no
+		obsolete = yes
+		role_icon_index = 31
+		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Vasilefs Georgios Class"					
-		type = ship_hull_light_1
+		name = "Vasilefs Georgios Class"
 		name_group = GRE_DD_HISTORICAL
 		parent_version = 0
 		show_position = no
+		role_icon_index = 31
+		type = vnr_ship_hull_light_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_role_slot = ship_hull_light_role_dd
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
@@ -357,51 +398,59 @@ if = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "Averof Class"				
-		type = ship_hull_cruiser_coastal_defense_ship
+		name = "Averof Class"
 		name_group = GRE_CA_HISTORICAL
 		parent_version = 0
 		show_position = no
+		obsolete = yes
+		role_icon_index = 17
+		type = vnr_ship_hull_cruiser_coastal_defense_ship
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_role_slot = ship_hull_cruiser_role_cd
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = empty
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1_light
 		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Hydra Class"				
-		type = ship_hull_cruiser_1
+		name = "Hydra Class"
 		name_group = GRE_CL_HISTORICAL
 		parent_version = 0
 		show_position = no
+		role_icon_index = 25
+		type = vnr_ship_hull_cruiser_1
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = empty
-			fixed_ship_secondaries_slot = empty
+			fixed_ship_role_slot = ship_hull_cruiser_role_c
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_mine_layer_1
+			front_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = empty
 		}
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Kilkis Class"	
-		type = ship_hull_pre_dreadnought
+		name = "Kilkis Class"
 		name_group = GRE_BB_HISTORICAL
 		parent_version = 0
 		show_position = no
+		obsolete = yes
+		role_icon_index = 5
+		type = vnr_ship_hull_pre_dreadnought
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
@@ -410,26 +459,28 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Michail Palaiologos Class"
-		type = ship_hull_heavy_1
 		name_group = GRE_BB_HISTORICAL
 		parent_version = 0
 		show_position = no
+		role_icon_index = 3
+		type = vnr_ship_hull_heavy_1
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2_bb
 			fixed_ship_armor_slot = ship_armor_bc_2
+			fixed_ship_armor_scheme_slot = ship_scheme_incremental
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = ship_secondaries_1
