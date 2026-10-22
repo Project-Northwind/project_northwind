@@ -8,7 +8,8 @@ units = {
 			name = "Kustflottan"
 			location = 11215 # Karlskrona
 			# Panzerskepp #
-			ship = { name = "HMS Gustaf V" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gustaf V Class" } } }			ship = { name = "HMS Karl XIV Johan" definition = heavy_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gustaf V Class" } } }
+			ship = { name = "HMS Gustaf V" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gustaf V Class" } } }			
+			ship = { name = "HMS Karl XIV Johan" definition = heavy_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gustaf V Class" } } }
 			# Light Cruisers #
 			ship = { name = "HMS Gotland" definition = light_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }
 			ship = { name = "HMS Skåne" definition = light_cruiser equipment = { vnr_ship_hull_cruiser_2 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }
