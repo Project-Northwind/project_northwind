@@ -1590,7 +1590,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = PN_the_national_peoples_republic_of_china
+		id = PN_the_national_peoples_republic_of_chinas
 		icon = GFX_goal_PN_XIC_the_national_peoples_republic_of_china
 		x = 44
 		y = 0
