@@ -369,6 +369,46 @@ focus_tree = {
 		cost = 10
 	}
 	focus = {
+		id = PN_SWE_the_norwegian_situation
+		icon = GFX_focus_generic_scandinavia_flags
+		prerequisite = { focus = PN_SWE_the_wayward_brethren }
+		relative_position_id = PN_SWE_the_wayward_brethren
+		x = -2
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_restore_norwegian_ties
+		icon = GFX_focus_generic_scandinavia_flags
+		prerequisite = { focus = PN_SWE_the_norwegian_situation }
+		relative_position_id = PN_SWE_the_norwegian_situation
+		x = -1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_undermine_the_storting
+		icon = GFX_focus_generic_scandinavia_flags
+		prerequisite = { focus = PN_SWE_the_norwegian_situation }
+		relative_position_id = PN_SWE_the_norwegian_situation
+		x = 1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_bring_norway_into_our_sphere
+		icon = GFX_focus_generic_scandinavia_flags
+		prerequisite = { focus = PN_SWE_undermine_the_storting focus = PN_SWE_restore_norwegian_ties }
+		relative_position_id = PN_SWE_undermine_the_storting
+		x = -1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
 		id = PN_SWE_restore_the_baltic_combination
 		icon = GFX_focus_ger_revive_kaiserreich
 		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
