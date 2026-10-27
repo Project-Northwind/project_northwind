@@ -449,18 +449,6 @@ if = {
 	#set_variable = { SWE_4_years = 1460 }
 	#activate_mission = SWE_BoP_election_countdown
 
-	set_party_name = {
-		ideology = communism
-		name = SWE_aat_communism_party
-		long_name = SWE_aat_communism_party_long
-	}
-
-	set_party_name = {
-		ideology = neutrality
-		name = SWE_aat_hogern
-		long_name = SWE_aat_hogern_long
-	}
-
 	# DLC Characters
 	recruit_character = SWE_axel_pehrssonbramstorp
 	recruit_character = SWE_herman_eriksson
