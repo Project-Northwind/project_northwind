@@ -37,7 +37,7 @@ guiTypes = {
 #			spriteType = "GFX_topbar_date_overlay"
 #			position = { x= -357 y = 0 }
 #			Orientation = "UPPER_RIGHT"
-#		}		
+#		}
 
 		containerWindowType = {
 			name = "toggle_music_commands_win"
@@ -95,6 +95,17 @@ guiTypes = {
 			clicksound = click_close
 			oversound = ui_menu_over
 			shortcut = "q"
+		}
+
+		# Off-screen shortcut carrier; the national focus view has no visible topbar button.
+		buttonType = {
+			name = "national_focus_shortcut"
+			position = { x = -9000 y = -9000 }
+			quadTextureSprite ="GFX_shield_medium"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "alt+q"
 		}
 		
 		iconType = {
@@ -209,12 +220,12 @@ guiTypes = {
 			name = "land"
 			position = { x= 796 y = 5}
 			clipping = no
-			size = { width=56 height=30 }
+			size = { width=56 height=28 }
 			Orientation = UPPER_LEFT
 
 			background = {
 				name = "land_xp_bg"
-				quadTextureSprite ="GFX_mini_tooltip"
+				quadTextureSprite ="GFX_tiled_generic_bg_1"
 			}
 
 			iconType = {
@@ -242,12 +253,12 @@ guiTypes = {
 			name = "navy"
 			position = { x= 854 y = 5}
 			clipping = no
-			size = { width=56 height=30 }
+			size = { width=56 height=28 }
 			Orientation = UPPER_LEFT
 				
 			background = {
 				name = "navy_xp_bg"
-				quadTextureSprite ="GFX_mini_tooltip"
+				quadTextureSprite ="GFX_tiled_generic_bg_1"
 			}
 
 			iconType = {
@@ -275,12 +286,12 @@ guiTypes = {
 			name = "air"
 			position = { x= 912 y = 5}
 			clipping = no
-			size = { width=56 height=30 }
+			size = { width=56 height=28 }
 			Orientation = UPPER_LEFT
 			
 			background = {
 				name = "air_xp_bg"
-				quadTextureSprite ="GFX_mini_tooltip"
+				quadTextureSprite ="GFX_tiled_generic_bg_1"
 			}
 
 			iconType = {
@@ -341,12 +352,12 @@ guiTypes = {
 			name = "cp"
 			position = { x= 732 y = 5}
 			clipping = no
-			size = { width=62 height=30 }
+			size = { width=62 height=28 }
 			Orientation = UPPER_LEFT
 
 				background = {
 					name = "cp_bg"
-					quadTextureSprite ="GFX_mini_tooltip"
+					quadTextureSprite ="GFX_tiled_generic_bg_1"
 				}
 		
 			iconType = {
@@ -382,7 +393,7 @@ guiTypes = {
 		iconType ={
 			name ="industrial_capacity_icon"
 			spriteType = "GFX_industrial_capacity_icon"
-			position = { x= 414 y = 3 } 
+			position = { x= 412 y = 3 } 
 			Orientation = "UPPER_LEFT"
 		}
         
@@ -400,7 +411,7 @@ guiTypes = {
 		iconType = {
 			name ="industrial_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar" 
-			position = { x= 438 y = 20 }
+			position = { x= 441 y = 20 }
 			frame = 50
 			alwaystransparent = yes
 		}
@@ -671,26 +682,13 @@ guiTypes = {
 
 		buttonType = {
 			name = "achievements_button"
-			# button moved off screen, dont remove or it shits out errors.
-			position = { x = -131 y = -200 }
+			position = { x = -131 y = 62 }
 			quadTextureSprite ="GFX_achievements_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
 			clicksound = click_ok
 			oversound = ui_menu_over
 			Orientation = "UPPER_RIGHT"
-		}
-
-		buttonType = {
-			name = "r56rp_rules_button"
-			position = { x = -136 y = 61 }
-			quadTextureSprite ="privacy"
-			pdx_tooltip = "RP_RULES"
-			web_link = "https://docs.google.com/document/d/1HniIQZGESrg1C-nOvsVbGoVRnscWJ6CcfmnBThp8c14/edit?usp=sharing"
-			clicksound = click_ok
-			oversound = ui_menu_over
-			Orientation = "UPPER_RIGHT"
-			scale = 0.95
 		}
 		
 		buttonType = {
@@ -861,7 +859,6 @@ guiTypes = {
 					font = "hoi_16mbs"
 					text = "9"
 					format = center
-					alwaystransparent = yes
 					maxWidth = 20
 					maxHeight = 24
 					fixedsize = yes
@@ -877,7 +874,38 @@ guiTypes = {
 						quadTextureSprite ="GFX_topbar_technology"
 						position = { x= -49 y = 0 }
 						Orientation = "UPPER_LEFT"
-						shortcut = "w"
+						clicksound = click_close
+						oversound = ui_menu_over
+					}
+
+					# Off-screen companion buttons that carry the keybinds, so the tooltip can render both
+					# shortcut lines manually instead of the engine auto-appending only one.
+					buttonType = {
+						name = "technology_button_shortcut"
+						position = { x = -9000 y = -9000 }
+						quadTextureSprite ="GFX_topbar_technology"
+						Orientation = "UPPER_LEFT"
+						keybind = "research_open"
+						clicksound = click_close
+						oversound = ui_menu_over
+					}
+
+					buttonType = {
+						name = "technology_button_ctrl_shortcut"
+						position = { x = -9000 y = -9000 }
+						quadTextureSprite ="GFX_topbar_technology"
+						Orientation = "UPPER_LEFT"
+						keybind = "research_open_facilities"
+						clicksound = click_close
+						oversound = ui_menu_over
+					}
+
+					buttonType = {
+						name = "technology_button_alt_shortcut"
+						position = { x = -9000 y = -9000 }
+						quadTextureSprite ="GFX_topbar_technology"
+						Orientation = "UPPER_LEFT"
+						shortcut = "alt+w"
 						clicksound = click_close
 						oversound = ui_menu_over
 					}
