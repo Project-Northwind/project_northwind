@@ -352,8 +352,16 @@ XIC_appoint_puyi_effect = {
 }
 
 XIC_reeducate_officer_effect = {
+	clr_character_flag = XIC_officer_reeducation_pending
 	XIC_clear_character_political_roles_effect = yes
 	set_nationality = XIC
 	add_unit_leader_trait = XIC_reconstructionist_officer
 	set_character_flag = XIC_officer_reeducated
+}
+
+XIC_execute_unreeducated_officer_effect = {
+	clr_character_flag = XIC_officer_reeducation_pending
+	set_character_flag = XIC_officer_executed
+	XIC_clear_character_political_roles_effect = yes
+	retire = yes
 }

@@ -1231,3 +1231,89 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = PN_XIC.40
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = XIC
+		has_event_target = XIC_reeducation_officer
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				event_target:XIC_reeducation_officer = {
+					is_unit_leader = yes
+					has_character_flag = XIC_officer_reeducation_pending
+				}
+			}
+			random_list = {
+				50 = {
+					event_target:XIC_reeducation_officer = { XIC_reeducate_officer_effect = yes }
+					country_event = { id = PN_XIC.41 }
+				}
+				50 = {
+					event_target:XIC_reeducation_officer = { XIC_execute_unreeducated_officer_effect = yes }
+					country_event = { id = PN_XIC.42 }
+				}
+			}
+		}
+		else = {
+			event_target:XIC_reeducation_officer = { clr_character_flag = XIC_officer_reeducation_pending }
+			country_event = { id = PN_XIC.43 }
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.41
+	title = PN_XIC.41.t
+	desc = PN_XIC.41.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.41.a
+		custom_effect_tooltip = XIC_officer_reeducated_tt
+	}
+}
+
+country_event = {
+	id = PN_XIC.42
+	title = PN_XIC.42.t
+	desc = PN_XIC.42.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.42.a
+		custom_effect_tooltip = XIC_officer_executed_tt
+	}
+}
+
+country_event = {
+	id = PN_XIC.43
+	title = PN_XIC.43.t
+	desc = PN_XIC.43.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.43.a
+	}
+}
