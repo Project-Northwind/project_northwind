@@ -22,4 +22,13 @@ leader_traits = {
 		army_attack_factor = 0.10
 		army_defence_factor = 0.10
 	}
+
+	XIC_secretary_of_state = {
+		random = no
+		sprite = 10
+
+		industrial_capacity_factory = 0.05
+		stability_factor = 0.05
+		political_power_gain = -0.10
+	}
 }

@@ -853,9 +853,15 @@ focus_tree = {
 			focus = PN_the_war_of_reclamation
 		}
 
+		available = {
+			owns_state = 1035
+			controls_state = 1035
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = PN_XIC.14 }
 		}
 	}
 
@@ -872,9 +878,20 @@ focus_tree = {
 			focus = PN_the_national_peoples_republic_of_china
 		}
 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XIC_national_state_chosen_tt
+				has_country_flag = XIC_national_state_chosen
+			}
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_country_flag = XIC_national_settlement_resolved
+			set_country_flag = XIC_national_state_formed
+			set_cosmetic_tag = XIC_national_state
+			XIC_add_chinese_cores_effect = yes
 		}
 	}
 
@@ -1601,13 +1618,937 @@ focus_tree = {
 			focus = PN_the_national_state_of_china
 		}
 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XIC_republic_accepted_tt
+				has_country_flag = XIC_communist_settlement_accepted
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = XIC_national_settlement_resolved
+			set_country_flag = XIC_national_peoples_republic_formed
+			clr_country_flag = XIC_envoy_to_wang_ming_sent
+			set_cosmetic_tag = XIC_national_peoples_republic
+			XIC_add_chinese_cores_effect = yes
+			custom_effect_tooltip = XIC_wang_ming_secretary_tt
+			hidden_effect = {
+				PRC = {
+					if = {
+						limit = {
+							has_country_leader = {
+								character = PRC_wang_ming
+								ruling_only = no
+							}
+						}
+						remove_country_leader_role = {
+							character = PRC_wang_ming
+							ideology = stalinism
+						}
+					}
+					PRC_wang_ming = {
+						if = {
+							limit = { has_advisor_role = political_advisor }
+							remove_advisor_role = { slot = political_advisor }
+						}
+						set_nationality = XIC
+					}
+				}
+			}
+			annex_country = {
+				target = PRC
+				transfer_troops = yes
+			}
+			hidden_effect = {
+				PRC_wang_ming = {
+					add_advisor_role = {
+						advisor = {
+							slot = political_advisor
+							idea_token = XIC_wang_ming_secretary
+							cost = 0
+							can_be_fired = no
+							allowed = { original_tag = XIC }
+							traits = { XIC_secretary_of_state }
+						}
+						activate = yes
+					}
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = PN_honour_the_national_revival_settlement
+		icon = GFX_goal_PN_XIC_honour_the_national_revival_settlement
+		x = 44
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = PN_the_national_peoples_republic_of_china
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
 		}
 	}
 
+		focus = {
+		id = PN_found_the_chinese_national_revival_league
+		icon = GFX_goal_PN_XIC_found_the_chinese_national_revival_league
+		x = 44
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = PN_honour_the_national_revival_settlement
+		}
 
+		available_if_capitulated = yes
 
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_embrace_national_chinese_solidarism
+		icon = GFX_goal_PN_XIC_embrace_national_chinese_solidarism
+		x = 44
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = PN_found_the_chinese_national_revival_league
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_grand_uniter_of_the_republic
+		icon = GFX_goal_generic_political_pressure
+		x = 40
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = PN_embrace_national_chinese_solidarism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_convene_the_national_congress
+		icon = GFX_goal_PN_XIC_convene_the_national_congress
+		x = 40
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PN_the_grand_uniter_of_the_republic
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_elect_the_central_committee
+		icon = GFX_goal_PN_XIC_elect_the_central_committee
+		x = 39
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_convene_the_national_congress
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_establish_the_council_of_national_revival
+		icon = GFX_goal_PN_XIC_establish_the_council_of_national_revival
+		x = 41
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_convene_the_national_congress
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_six_wings_one_league
+		icon = GFX_goal_generic_national_unity
+		x = 40
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = PN_elect_the_central_committee
+		}
+		prerequisite = {
+			focus = PN_establish_the_council_of_national_revival
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_preserve_the_reconstruction_wing
+		icon = GFX_goal_PN_XIC_preserve_the_reconstruction_wing
+		x = 39
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_six_wings_one_league
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_welcome_the_revolutionary_cadres
+		icon = GFX_goal_PN_XIC_welcome_the_revolutionary_cadres
+		x = 41
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_six_wings_one_league
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_unity_above_faction
+		icon = GFX_goal_generic_national_unity
+		x = 40
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_preserve_the_reconstruction_wing
+		}
+		prerequisite = {
+			focus = PN_welcome_the_revolutionary_cadres
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_secretary_of_state_wang_ming
+		icon = GFX_goal_PN_XIC_secretary_of_state_wang_ming
+		x = 48
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = PN_embrace_national_chinese_solidarism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_bridge_the_ministries_and_the_league
+		icon = GFX_goal_PN_XIC_bridge_the_ministries_and_the_league
+		x = 48
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PN_secretary_of_state_wang_ming
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_establish_territorial_league_branches
+		icon = GFX_goal_generic_political_pressure
+		x = 47
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_bridge_the_ministries_and_the_league
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_cadres_in_national_service
+		icon = GFX_goal_PN_XIC_cadres_in_national_service
+		x = 49
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_bridge_the_ministries_and_the_league
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_a_state_beyond_the_officer_corps
+		icon = GFX_goal_PN_XIC_a_state_beyond_the_officer_corps
+		x = 48
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = PN_establish_territorial_league_branches
+		}
+		prerequisite = {
+			focus = PN_cadres_in_national_service
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_a_workers_voice_in_congress
+		icon = GFX_goal_PN_XIC_a_workers_voice_in_congress
+		x = 47
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_a_state_beyond_the_officer_corps
+		}
+
+		available = {
+			has_completed_focus = PN_convene_the_national_congress
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_an_agrarian_voice_in_congress
+		icon = GFX_goal_PN_XIC_an_agrarian_voice_in_congress
+		x = 49
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_a_state_beyond_the_officer_corps
+		}
+
+		available = {
+			has_completed_focus = PN_convene_the_national_congress
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_national_social_bargain
+		icon = GFX_goal_PN_XIC_the_national_social_bargain
+		x = 48
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_a_workers_voice_in_congress
+		}
+		prerequisite = {
+			focus = PN_an_agrarian_voice_in_congress
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_national_revival_plan
+		icon = GFX_goal_PN_XIC_the_national_revival_plan
+		x = 58
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = PN_embrace_national_chinese_solidarism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_expand_strategic_public_ownership
+		icon = GFX_goal_generic_construct_civilian
+		x = 58
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PN_the_national_revival_plan
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_reorganise_the_national_banks
+		icon = GFX_goal_PN_XIC_reorganise_the_national_banks
+		x = 57
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_expand_strategic_public_ownership
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_create_national_industrial_corporations
+		icon = GFX_goal_generic_production
+		x = 59
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_expand_strategic_public_ownership
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_a_planned_mixed_economy
+		icon = GFX_goal_PN_XIC_a_planned_mixed_economy
+		x = 58
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = PN_reorganise_the_national_banks
+		}
+		prerequisite = {
+			focus = PN_create_national_industrial_corporations
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_land_to_those_who_work_it
+		icon = GFX_goal_PN_XIC_land_to_those_who_work_it
+		x = 55
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_a_planned_mixed_economy
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_recognise_the_labour_organisations
+		icon = GFX_goal_PN_XIC_recognise_the_labour_organisations
+		x = 61
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_a_planned_mixed_economy
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_break_the_cycle_of_rural_debt
+		icon = GFX_goal_PN_XIC_break_the_cycle_of_rural_debt
+		x = 54
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_land_to_those_who_work_it
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_cooperatives_not_collectivisation
+		icon = GFX_goal_PN_XIC_cooperatives_not_collectivisation
+		x = 56
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_land_to_those_who_work_it
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_national_labour_standards
+		icon = GFX_goal_PN_XIC_national_labour_standards
+		x = 60
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_recognise_the_labour_organisations
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_industrial_councils_and_arbitration
+		icon = GFX_goal_PN_XIC_industrial_councils_and_arbitration
+		x = 62
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = PN_recognise_the_labour_organisations
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_a_prosperous_countryside
+		icon = GFX_goal_PN_XIC_a_prosperous_countryside
+		x = 55
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = PN_break_the_cycle_of_rural_debt
+		}
+		prerequisite = {
+			focus = PN_cooperatives_not_collectivisation
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_social_insurance_for_the_nation
+		icon = GFX_goal_PN_XIC_social_insurance_for_the_nation
+		x = 61
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = PN_national_labour_standards
+		}
+		prerequisite = {
+			focus = PN_industrial_councils_and_arbitration
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_connect_the_national_grain_network
+		icon = GFX_goal_PN_XIC_connect_the_national_grain_network
+		x = 54
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = PN_a_prosperous_countryside
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_mechanise_the_family_farm
+		icon = GFX_goal_PN_XIC_mechanise_the_family_farm
+		x = 56
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = PN_a_prosperous_countryside
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_power_rail_and_steel
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 60
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = PN_social_insurance_for_the_nation
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_protect_the_small_producers
+		icon = GFX_goal_PN_XIC_protect_the_small_producers
+		x = 62
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = PN_social_insurance_for_the_nation
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_production_for_national_revival
+		icon = GFX_goal_generic_production
+		x = 58
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = PN_connect_the_national_grain_network
+		}
+		prerequisite = {
+			focus = PN_mechanise_the_family_farm
+		}
+		prerequisite = {
+			focus = PN_power_rail_and_steel
+		}
+		prerequisite = {
+			focus = PN_protect_the_small_producers
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_one_national_army
+		icon = GFX_goal_PN_XIC_one_national_army
+		x = 44
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = PN_embrace_national_chinese_solidarism
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_integrate_the_former_red_army
+		icon = GFX_goal_PN_XIC_integrate_the_former_red_army
+		x = 43
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PN_one_national_army
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_retain_the_northeastern_officers
+		icon = GFX_goal_PN_XIC_retain_the_northeastern_officers
+		x = 45
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PN_one_national_army
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_no_private_party_armies
+		icon = GFX_goal_PN_XIC_no_private_party_armies
+		x = 44
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PN_integrate_the_former_red_army
+		}
+		prerequisite = {
+			focus = PN_retain_the_northeastern_officers
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_a_common_staff_and_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		x = 44
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = PN_no_private_party_armies
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_army_of_national_revival
+		icon = GFX_goal_generic_army_doctrines
+		x = 44
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = PN_a_common_staff_and_doctrine
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_the_revival_council_convenes
+		icon = GFX_goal_PN_XIC_the_revival_council_convenes
+		x = 44
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = PN_unity_above_faction
+		}
+		prerequisite = {
+			focus = PN_the_national_social_bargain
+		}
+		prerequisite = {
+			focus = PN_the_army_of_national_revival
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_recover_the_foreign_concessions
+		icon = GFX_goal_PN_XIC_recover_the_foreign_concessions
+		x = 42
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = PN_the_revival_council_convenes
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_a_national_front_against_japan
+		icon = GFX_goal_generic_alliance
+		x = 46
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = PN_the_revival_council_convenes
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_return_to_the_northeast
+		icon = GFX_goal_PN_XIC_return_to_the_northeast
+		x = 45
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = PN_a_national_front_against_japan
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_support_korean_independence
+		icon = GFX_goal_PN_XIC_support_korean_independence
+		x = 47
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = PN_a_national_front_against_japan
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_china_answers_to_no_bloc
+		icon = GFX_goal_generic_neutrality_focus
+		x = 42
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = PN_recover_the_foreign_concessions
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_restore_the_nations_sovereignty
+		icon = GFX_goal_PN_XIC_restore_the_nations_sovereignty
+		x = 44
+		y = 13
+		cost = 10
+		prerequisite = {
+			focus = PN_return_to_the_northeast
+		}
+		prerequisite = {
+			focus = PN_support_korean_independence
+		}
+		prerequisite = {
+			focus = PN_china_answers_to_no_bloc
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = PN_hymn_of_united_china
+		icon = GFX_goal_generic_national_unity
+		x = 50
+		y = 15
+		cost = 10
+		prerequisite = {
+			focus = PN_restore_the_nations_sovereignty
+		}
+		prerequisite = {
+			focus = PN_production_for_national_revival
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
 
 }

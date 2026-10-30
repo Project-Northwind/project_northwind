@@ -1,0 +1,15 @@
+XIC_wang_ming_available = {
+	PRC = {
+		exists = yes
+		has_government = communism
+		has_character = PRC_wang_ming
+		PRC_wang_ming = {
+			NOT = {
+				has_character_flag = PRC_wang_ming_exiled
+			}
+			NOT = {
+				has_character_flag = PRC_dismissed_advisor
+			}
+		}
+	}
+}

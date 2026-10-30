@@ -403,4 +403,195 @@ spriteTypes = {
 		name = "GFX_goal_PN_XIC_the_national_peoples_republic_of_china"
 		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_national_peoples_republic_of_china.dds"
 	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_honour_the_national_revival_settlement"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_honour_the_national_revival_settlement.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_found_the_chinese_national_revival_league"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_found_the_chinese_national_revival_league.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_embrace_national_chinese_solidarism"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_embrace_national_chinese_solidarism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_convene_the_national_congress"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_convene_the_national_congress.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_elect_the_central_committee"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_elect_the_central_committee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_establish_the_council_of_national_revival"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_establish_the_council_of_national_revival.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_preserve_the_reconstruction_wing"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_preserve_the_reconstruction_wing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_welcome_the_revolutionary_cadres"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_welcome_the_revolutionary_cadres.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_secretary_of_state_wang_ming"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_secretary_of_state_wang_ming.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_bridge_the_ministries_and_the_league"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_bridge_the_ministries_and_the_league.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_cadres_in_national_service"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_cadres_in_national_service.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_a_state_beyond_the_officer_corps"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_a_state_beyond_the_officer_corps.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_a_workers_voice_in_congress"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_a_workers_voice_in_congress.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_an_agrarian_voice_in_congress"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_an_agrarian_voice_in_congress.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_national_social_bargain"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_national_social_bargain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_national_revival_plan"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_national_revival_plan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_reorganise_the_national_banks"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_reorganise_the_national_banks.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_a_planned_mixed_economy"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_a_planned_mixed_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_land_to_those_who_work_it"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_land_to_those_who_work_it.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_recognise_the_labour_organisations"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_recognise_the_labour_organisations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_break_the_cycle_of_rural_debt"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_break_the_cycle_of_rural_debt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_cooperatives_not_collectivisation"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_cooperatives_not_collectivisation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_national_labour_standards"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_national_labour_standards.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_industrial_councils_and_arbitration"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_industrial_councils_and_arbitration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_a_prosperous_countryside"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_a_prosperous_countryside.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_social_insurance_for_the_nation"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_social_insurance_for_the_nation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_connect_the_national_grain_network"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_connect_the_national_grain_network.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_mechanise_the_family_farm"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_mechanise_the_family_farm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_protect_the_small_producers"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_protect_the_small_producers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_one_national_army"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_one_national_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_integrate_the_former_red_army"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_integrate_the_former_red_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_retain_the_northeastern_officers"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_retain_the_northeastern_officers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_no_private_party_armies"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_no_private_party_armies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_the_revival_council_convenes"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_the_revival_council_convenes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_recover_the_foreign_concessions"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_recover_the_foreign_concessions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_return_to_the_northeast"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_return_to_the_northeast.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_support_korean_independence"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_support_korean_independence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PN_XIC_restore_the_nations_sovereignty"
+		texturefile = "gfx/interface/goals/XIC/PN_XIC_restore_the_nations_sovereignty.dds"
+	}
+
 }

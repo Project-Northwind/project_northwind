@@ -403,3 +403,230 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = PN_XIC.14
+	title = PN_XIC.14.t
+	desc = PN_XIC.14.desc
+	picture = GFX_report_event_chinese_soldiers_02
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		NOT = { has_country_flag = XIC_national_settlement_resolved }
+	}
+
+	option = {
+		name = PN_XIC.14.a
+		custom_effect_tooltip = XIC_communist_proposal_delay_tt
+		country_event = { id = PN_XIC.15 days = 14 }
+	}
+}
+
+country_event = {
+	id = PN_XIC.15
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		NOT = { has_country_flag = XIC_national_settlement_resolved }
+	}
+
+	immediate = {
+		if = {
+			limit = { XIC_wang_ming_available = yes }
+			country_event = { id = PN_XIC.16 }
+		}
+		else = {
+			XIC_choose_national_state_effect = yes
+			country_event = { id = PN_XIC.20 }
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.16
+	title = PN_XIC.16.t
+	desc = PN_XIC.16.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		NOT = { has_country_flag = XIC_national_settlement_resolved }
+		XIC_wang_ming_available = yes
+	}
+
+	option = {
+		name = PN_XIC.16.a
+		trigger = { XIC_wang_ming_available = yes }
+		ai_chance = { base = 70 }
+		custom_effect_tooltip = XIC_send_envoy_tt
+		set_country_flag = XIC_envoy_to_wang_ming_sent
+		PRC = { country_event = { id = PN_XIC.17 } }
+		country_event = { id = PN_XIC.21 days = 1 }
+	}
+	option = {
+		name = PN_XIC.16.b
+		ai_chance = { base = 30 }
+		custom_effect_tooltip = XIC_form_national_state_tt
+		XIC_choose_national_state_effect = yes
+	}
+}
+
+country_event = {
+	id = PN_XIC.17
+	title = PN_XIC.17.t
+	desc = PN_XIC.17.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = PRC
+		XIC = {
+			exists = yes
+			has_country_flag = XIC_envoy_to_wang_ming_sent
+			NOT = { has_country_flag = XIC_national_settlement_resolved }
+		}
+	}
+
+	option = {
+		name = PN_XIC.17.a
+		trigger = {
+			XIC_wang_ming_available = yes
+			XIC = {
+				has_country_flag = XIC_envoy_to_wang_ming_sent
+				NOT = { has_country_flag = XIC_national_settlement_resolved }
+			}
+		}
+		ai_chance = { base = 60 }
+		custom_effect_tooltip = XIC_accept_settlement_tt
+		if = {
+			limit = {
+				XIC_wang_ming_available = yes
+				XIC = {
+					has_country_flag = XIC_envoy_to_wang_ming_sent
+					NOT = { has_country_flag = XIC_national_settlement_resolved }
+				}
+			}
+			XIC = {
+				set_country_flag = XIC_communist_settlement_accepted
+				complete_national_focus = PN_the_national_peoples_republic_of_china
+				country_event = { id = PN_XIC.18 }
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					XIC = {
+						has_country_flag = XIC_envoy_to_wang_ming_sent
+						NOT = { has_country_flag = XIC_national_settlement_resolved }
+					}
+				}
+				XIC = {
+					XIC_choose_national_state_effect = yes
+					country_event = { id = PN_XIC.20 }
+				}
+			}
+		}
+	}
+	option = {
+		name = PN_XIC.17.b
+		ai_chance = { base = 40 }
+		custom_effect_tooltip = XIC_reject_settlement_tt
+		if = {
+			limit = {
+				XIC = {
+					has_country_flag = XIC_envoy_to_wang_ming_sent
+					NOT = { has_country_flag = XIC_national_settlement_resolved }
+				}
+			}
+			XIC = {
+				XIC_choose_national_state_effect = yes
+				country_event = { id = PN_XIC.19 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.18
+	title = PN_XIC.18.t
+	desc = PN_XIC.18.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_peoples_republic_formed
+	}
+
+	option = {
+		name = PN_XIC.18.a
+	}
+}
+
+country_event = {
+	id = PN_XIC.19
+	title = PN_XIC.19.t
+	desc = PN_XIC.19.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_state_formed
+	}
+
+	option = {
+		name = PN_XIC.19.a
+	}
+}
+
+country_event = {
+	id = PN_XIC.20
+	title = PN_XIC.20.t
+	desc = PN_XIC.20.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_state_formed
+	}
+
+	option = {
+		name = PN_XIC.20.a
+	}
+}
+
+country_event = {
+	id = PN_XIC.21
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = XIC
+		NOT = { has_country_flag = XIC_national_settlement_resolved }
+		has_country_flag = XIC_envoy_to_wang_ming_sent
+	}
+
+	immediate = {
+		if = {
+			limit = { XIC_wang_ming_available = no }
+			XIC_choose_national_state_effect = yes
+			country_event = { id = PN_XIC.20 }
+		}
+		else = {
+			country_event = { id = PN_XIC.21 days = 1 }
+		}
+	}
+}
