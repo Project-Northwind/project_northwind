@@ -348,6 +348,9 @@ XIC_appoint_puyi_effect = {
 				activate = yes
 			}
 		}
+		set_variable = { PN_secondary_leader_portrait = 1 }
+		set_variable = { PN_secondary_leader_role = 1 }
+		MAN_aisin_gioro_puyi = { PN_set_secondary_leader_effect = yes }
 	}
 }
 

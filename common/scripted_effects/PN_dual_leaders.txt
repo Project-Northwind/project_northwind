@@ -1,0 +1,31 @@
+PN_set_secondary_leader_effect = {
+	OWNER = {
+		set_variable = { PN_secondary_leader = PREV }
+		set_country_flag = PN_dual_leaders_enabled
+		clr_country_flag = PN_show_secondary_leader
+		clr_country_flag = PN_show_secondary_leader_diplomacy
+	}
+}
+
+PN_clear_secondary_leader_effect = {
+	clr_country_flag = PN_dual_leaders_enabled
+	clr_country_flag = PN_show_secondary_leader
+	clr_country_flag = PN_show_secondary_leader_diplomacy
+	clear_variable = PN_secondary_leader
+	clear_variable = PN_secondary_leader_portrait
+	clear_variable = PN_secondary_leader_role
+}
+
+PN_update_XIC_secondary_leader_effect = {
+	if = {
+		limit = {
+			has_completed_focus = PN_china_a_constitutional_monarchy
+			has_character = MAN_aisin_gioro_puyi
+			MAN_aisin_gioro_puyi = { has_advisor_role = political_advisor }
+			NOT = { has_country_flag = PN_dual_leaders_enabled }
+		}
+		set_variable = { PN_secondary_leader_portrait = 1 }
+		set_variable = { PN_secondary_leader_role = 1 }
+		MAN_aisin_gioro_puyi = { PN_set_secondary_leader_effect = yes }
+	}
+}

@@ -1,0 +1,7 @@
+PN_secondary_leader_available = {
+	has_country_flag = PN_dual_leaders_enabled
+	has_variable = PN_secondary_leader
+	any_character = {
+		is_character = var:PREV.PN_secondary_leader
+	}
+}

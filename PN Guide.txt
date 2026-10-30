@@ -1,0 +1,123 @@
+PN GUIDE - TWO LEADERS AND THE PORTRAIT BUTTON
+
+This adds a second portrait beside the normal country leader.
+The small button switches between them.
+It does not change who rules the country or give either person bonuses.
+
+All paths below start inside the projectnorthwind folder.
+
+
+1. CHOOSE THE SECOND CHARACTER
+
+Use the character's code ID, not their displayed name.
+For example, Puyi's ID is MAN_aisin_gioro_puyi.
+
+The character must already belong to the country using the button.
+A character who belongs to another country must be transferred first.
+The existing Puyi appointment in common/scripted_effects/PN_XIC.txt
+shows how this is done.
+
+The normal country leader remains the first portrait.
+The character you choose here becomes the second portrait.
+
+
+2. CHOOSE A PORTRAIT NUMBER AND A ROLE
+
+Portrait number 1 is already used by Puyi.
+For your next portrait, use 2. After that, use 3, 4 and so on.
+Use a different number for each different portrait.
+
+The role controls the title shown when you hover over the portrait:
+
+1 = Monarch
+2 = President
+3 = Head of Government, such as a Prime Minister
+
+For example, if the normal leader is a monarch, add the Prime Minister
+as the second character and use role 3.
+
+
+3. ADD THE PORTRAIT TO THE LIST
+
+Open:
+common/scripted_localisation/PN_dual_leaders.txt
+
+Find the section named PN_GetSecondaryLeaderPortrait.
+Add this block BEFORE the final "unknown" portrait block:
+
+	text = {
+		trigger = { check_variable = { PN_secondary_leader_portrait = 2 } }
+		localization_key = PN_secondary_leader_portrait_your_name
+	}
+
+Replace "your_name" with a short name for your character.
+If you chose a number other than 2, change that number too.
+Leave the existing Puyi and unknown portrait blocks in place.
+
+
+4. CONNECT THAT NAME TO THE PORTRAIT IMAGE
+
+Open:
+localisation/english/PN_dual_leaders_l_english.yml
+
+Add this line below the existing entries, using two spaces at the start:
+
+  PN_secondary_leader_portrait_your_name: "GFX_YOUR_PORTRAIT_ID"
+
+Use the same name you wrote in step 3.
+Replace GFX_YOUR_PORTRAIT_ID with the portrait's real GFX ID.
+
+You can find portrait GFX IDs in the interface folder.
+Base-game portraits can be used by their existing GFX ID.
+Do not copy a base-game image into PN just to use it.
+
+Keep this localisation file saved as UTF-8 with BOM.
+
+
+5. TURN IT ON THROUGH A FOCUS OR EVENT
+
+Put these lines inside the focus's completion_reward block,
+or inside an event option for the country receiving the second leader:
+
+	set_variable = { PN_secondary_leader_portrait = 2 }
+	set_variable = { PN_secondary_leader_role = 2 }
+	YOUR_CHARACTER_ID = { PN_set_secondary_leader_effect = yes }
+
+Replace YOUR_CHARACTER_ID with the actual character ID.
+Change the portrait number to match step 3.
+Change the role number to the title you want.
+
+This example uses role 2, so the second character is a President.
+Use role 1 for a Monarch or role 3 for a Prime Minister.
+
+Give the character any advisor role or bonuses separately.
+These lines only set up the portrait button.
+
+
+6. RESTART AND CHECK
+
+Restart HOI4 after adding the files or entries.
+Complete the focus or choose the event option.
+Open the politics screen and click the small portrait button.
+Check the portrait, name and hover text, then click again to switch back.
+
+The pairing is also shown in the diplomacy screen.
+
+If nothing appears, check that:
+- The character belongs to the correct country.
+- The focus or event actually ran the lines from step 5.
+- The portrait number matches in steps 3 and 5.
+- The localisation name matches in steps 3 and 4.
+- The GFX ID is spelled correctly.
+
+
+EXISTING EXAMPLE
+
+Puyi is already connected to Zhang through the constitutional monarchy
+focus. His portrait number is 1 and his role is 1.
+
+His automatic setup is in:
+common/scripted_effects/PN_dual_leaders.txt
+
+You do not need to edit the main politics or diplomacy interface files
+to add another pair.

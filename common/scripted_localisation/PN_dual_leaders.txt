@@ -1,0 +1,39 @@
+defined_text = {
+	name = PN_GetSecondaryLeaderPortrait
+
+	text = {
+		trigger = { check_variable = { PN_secondary_leader_portrait = 1 } }
+		localization_key = PN_secondary_leader_portrait_puyi
+	}
+	text = {
+		localization_key = PN_secondary_leader_portrait_unknown
+	}
+}
+
+defined_text = {
+	name = PN_GetSecondaryLeaderTitle
+
+	text = {
+		trigger = { check_variable = { PN_secondary_leader_role = 1 } }
+		localization_key = PN_secondary_leader_monarch
+	}
+	text = {
+		trigger = { check_variable = { PN_secondary_leader_role = 2 } }
+		localization_key = PN_secondary_leader_president
+	}
+	text = {
+		localization_key = PN_secondary_leader_head_of_government
+	}
+}
+
+defined_text = {
+	name = PN_GetSecondaryLeaderTooltip
+
+	text = {
+		trigger = { check_variable = { PN_secondary_leader_portrait = 1 } }
+		localization_key = PN_secondary_leader_puyi_tooltip
+	}
+	text = {
+		localization_key = PN_secondary_leader_tooltip
+	}
+}

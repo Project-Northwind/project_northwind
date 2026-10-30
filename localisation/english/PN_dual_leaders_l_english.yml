@@ -1,0 +1,11 @@
+﻿l_english:
+  PN_secondary_leader_name: "[?PN_secondary_leader.GetName]"
+  PN_secondary_leader_monarch: "Monarch"
+  PN_secondary_leader_president: "President"
+  PN_secondary_leader_head_of_government: "Head of Government"
+  PN_secondary_leader_portrait_puyi: "GFX_portrait_man_henry_pu_yi_emperor"
+  PN_secondary_leader_portrait_unknown: "GFX_leader_unknown"
+  PN_secondary_leader_tooltip: "§Y[?PN_secondary_leader.GetName]§!\n[PN_GetSecondaryLeaderTitle]"
+  PN_secondary_leader_puyi_tooltip: "§Y[?PN_secondary_leader.GetName]§!\n[PN_GetSecondaryLeaderTitle]\n\nStability: §R-5.00%§!\nFactory Output: §G+5.00%§!"
+  PN_secondary_leader_tooltip_display: "[PN_GetSecondaryLeaderTooltip]"
+  PN_switch_leader_tooltip: "Switch leader portrait"

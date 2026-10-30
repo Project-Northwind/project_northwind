@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_PN_leader_switch"
+		texturefile = "gfx/interface/PN_dual_leaders/PN_leader_switch.dds"
+	}
+}

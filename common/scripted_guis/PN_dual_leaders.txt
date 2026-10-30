@@ -1,0 +1,65 @@
+scripted_gui = {
+	PN_politics_dual_leaders = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "PN_politics_dual_leaders"
+
+		ai_enabled = { always = no }
+
+		visible = { PN_secondary_leader_available = yes }
+
+		properties = {
+			PN_secondary_portrait = { image = "[PN_GetSecondaryLeaderPortrait]" }
+		}
+
+		triggers = {
+			PN_secondary_portrait_visible = { has_country_flag = PN_show_secondary_leader }
+			PN_secondary_frame_visible = { has_country_flag = PN_show_secondary_leader }
+			PN_secondary_nameplate_visible = { has_country_flag = PN_show_secondary_leader }
+		}
+
+		effects = {
+			PN_switch_leader_click = {
+				if = {
+					limit = { has_country_flag = PN_show_secondary_leader }
+					clr_country_flag = PN_show_secondary_leader
+				}
+				else = {
+					set_country_flag = PN_show_secondary_leader
+				}
+			}
+		}
+	}
+
+	PN_diplomacy_dual_leaders = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "PN_diplomacy_dual_leaders"
+
+		ai_enabled = { always = no }
+
+		visible = { PN_secondary_leader_available = yes }
+
+		properties = {
+			PN_secondary_portrait = { image = "[PN_GetSecondaryLeaderPortrait]" }
+		}
+
+		triggers = {
+			PN_secondary_portrait_visible = { has_country_flag = PN_show_secondary_leader_diplomacy }
+			PN_secondary_frame_visible = { has_country_flag = PN_show_secondary_leader_diplomacy }
+			PN_secondary_nameplate_visible = { has_country_flag = PN_show_secondary_leader_diplomacy }
+		}
+
+		effects = {
+			PN_switch_leader_click = {
+				if = {
+					limit = { has_country_flag = PN_show_secondary_leader_diplomacy }
+					clr_country_flag = PN_show_secondary_leader_diplomacy
+				}
+				else = {
+					set_country_flag = PN_show_secondary_leader_diplomacy
+				}
+			}
+		}
+	}
+}
