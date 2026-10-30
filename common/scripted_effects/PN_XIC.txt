@@ -100,3 +100,260 @@ XIC_choose_national_state_effect = {
 		complete_national_focus = PN_the_national_state_of_china
 	}
 }
+
+XIC_postwar_settlement_effect = {
+	custom_effect_tooltip = XIC_replace_shangdong_spirits_tt
+	hidden_effect = {
+		remove_dynamic_modifier = { modifier = XIC_industrial_reconstruction }
+		if = {
+			limit = { has_idea = XIC_national_reconstructionism_3 }
+			remove_ideas = XIC_national_reconstructionism_3
+		}
+		else_if = {
+			limit = { has_idea = XIC_national_reconstructionism_2 }
+			remove_ideas = XIC_national_reconstructionism_2
+		}
+		else_if = {
+			limit = { has_idea = XIC_national_reconstructionism }
+			remove_ideas = XIC_national_reconstructionism
+		}
+		set_variable = { XIC_postwar_output = -0.25 }
+		set_variable = { XIC_postwar_construction = -0.35 }
+		set_variable = { XIC_postwar_consumer_goods = 0.25 }
+		set_variable = { XIC_postwar_efficiency_growth = -0.20 }
+		set_variable = { XIC_postwar_efficiency_cap = 0 }
+		set_variable = { XIC_postwar_resources = 0 }
+		add_dynamic_modifier = { modifier = XIC_fallout_from_the_war }
+		add_ideas = XIC_national_legitimacy
+	}
+	custom_effect_tooltip = generic_skip_one_line_tt
+	custom_effect_tooltip = XIC_postwar_economy_tt
+	custom_effect_tooltip = generic_skip_one_line_tt
+	custom_effect_tooltip = XIC_national_legitimacy_start_tt
+}
+
+XIC_prepare_legitimacy_reforms_effect = {
+	if = {
+		limit = {
+			NOT = { has_dynamic_modifier = { modifier = XIC_national_legitimacy_reforming } }
+			NOT = { has_dynamic_modifier = { modifier = XIC_national_authority } }
+		}
+		remove_ideas = XIC_national_legitimacy
+		set_variable = { XIC_legitimacy_stability = -0.20 }
+		set_variable = { XIC_legitimacy_political_power = -0.20 }
+		set_variable = { XIC_legitimacy_war_support = -0.10 }
+		set_variable = { XIC_legitimacy_organisation = -0.15 }
+		set_variable = { XIC_legitimacy_attack = -0.10 }
+		set_variable = { XIC_legitimacy_defence = -0.10 }
+		add_dynamic_modifier = { modifier = XIC_national_legitimacy_reforming }
+	}
+}
+
+
+XIC_warlord_wargoals_effect = {
+	every_country = {
+		limit = {
+			XIC_chinese_unification_target = yes
+			NOT = { has_war_with = XIC }
+			NOT = { is_in_faction_with = XIC }
+		}
+		XIC = {
+			create_wargoal = {
+				type = annex_everything
+				target = PREV
+			}
+		}
+	}
+}
+
+XIC_demand_concessions_effect = {
+	every_country = {
+		limit = {
+			XIC_foreign_chinese_territory_holder = yes
+			NOT = { has_war_with = XIC }
+			NOT = { is_in_faction_with = XIC }
+			OR = {
+				tag = ENG
+				tag = FRA
+				tag = POR
+				tag = GER
+				tag = ITA
+				tag = HOL
+				tag = BEL
+			}
+		}
+		country_event = { id = PN_XIC.27 }
+	}
+}
+
+XIC_demand_northern_provinces_effect = {
+	add_state_claim = 408
+	add_state_claim = 409
+	every_country = {
+		limit = {
+			NOT = { tag = XIC }
+			NOT = { has_war_with = XIC }
+			NOT = { is_in_faction_with = XIC }
+			OR = { owns_state = 408 owns_state = 409 }
+		}
+		country_event = { id = PN_XIC.29 }
+	}
+}
+
+XIC_korean_reconstruction_effect = {
+	add_state_claim = 525
+	add_state_claim = 527
+	set_country_flag = XIC_korean_reconstruction_pending
+	country_event = { id = PN_XIC.34 days = 1 }
+	if = {
+		limit = {
+			JAP = {
+				exists = yes
+				OR = { owns_state = 525 owns_state = 527 }
+			}
+			NOT = { has_war_with = JAP }
+			NOT = { is_in_faction_with = JAP }
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = JAP
+		}
+	}
+	if = {
+		limit = {
+			KOR = { exists = yes is_subject = yes }
+			NOT = { KOR = { is_subject_of = XIC } }
+			NOT = { has_war_with = KOR }
+			NOT = { is_in_faction_with = KOR }
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = KOR
+		}
+	}
+}
+
+XIC_puyi_uniter_settlement_effect = {
+	clr_country_flag = XIC_puyi_letter_pending
+	clr_country_flag = XIC_monarchist_settlement_chosen
+	set_country_flag = XIC_puyi_settlement_resolved
+	set_country_flag = XIC_republican_settlement_chosen
+}
+
+XIC_puyi_monarchy_settlement_effect = {
+	clr_country_flag = XIC_puyi_letter_pending
+	clr_country_flag = XIC_republican_settlement_chosen
+	set_country_flag = XIC_puyi_settlement_resolved
+	set_country_flag = XIC_monarchist_settlement_chosen
+}
+
+XIC_send_puyi_letter_effect = {
+	if = {
+		limit = { has_country_flag = XIC_puyi_no_offer }
+		XIC_puyi_uniter_settlement_effect = yes
+	}
+	else_if = {
+		limit = { XIC_puyi_available = yes }
+		if = {
+			limit = { has_country_flag = XIC_puyi_offer_citizenship }
+			set_country_flag = XIC_republican_settlement_chosen
+		}
+		set_country_flag = XIC_puyi_letter_pending
+		MAN = { country_event = { id = PN_XIC.35 } }
+		country_event = { id = PN_XIC.39 days = 1 }
+	}
+	else = {
+		XIC_puyi_uniter_settlement_effect = yes
+		country_event = { id = PN_XIC.38 }
+	}
+}
+
+
+XIC_clear_character_political_roles_effect = {
+	if = {
+		limit = { has_ideology = despotism }
+		remove_country_leader_role = { ideology = despotism }
+	}
+	if = {
+		limit = { has_ideology = emperor_fascism }
+		remove_country_leader_role = { ideology = emperor_fascism }
+	}
+	if = {
+		limit = { has_ideology = fascism_ideology }
+		remove_country_leader_role = { ideology = fascism_ideology }
+	}
+	if = {
+		limit = { has_ideology = marxism }
+		remove_country_leader_role = { ideology = marxism }
+	}
+	if = {
+		limit = { has_advisor_role = political_advisor }
+		remove_advisor_role = { slot = political_advisor }
+	}
+	if = {
+		limit = { has_advisor_role = theorist }
+		remove_advisor_role = { slot = theorist }
+	}
+	if = {
+		limit = { has_advisor_role = army_chief }
+		remove_advisor_role = { slot = army_chief }
+	}
+	if = {
+		limit = { has_advisor_role = navy_chief }
+		remove_advisor_role = { slot = navy_chief }
+	}
+	if = {
+		limit = { has_advisor_role = air_chief }
+		remove_advisor_role = { slot = air_chief }
+	}
+	if = {
+		limit = { has_advisor_role = high_command }
+		remove_advisor_role = { slot = high_command }
+	}
+}
+
+XIC_reserve_puyi_effect = {
+	if = {
+		limit = { MAN = { has_character = MAN_aisin_gioro_puyi } }
+		MAN = {
+			MAN_aisin_gioro_puyi = {
+				XIC_clear_character_political_roles_effect = yes
+				set_nationality = XIC
+			}
+		}
+	}
+}
+
+XIC_appoint_puyi_effect = {
+	XIC_reserve_puyi_effect = yes
+	if = {
+		limit = { has_character = MAN_aisin_gioro_puyi }
+		MAN_aisin_gioro_puyi = {
+			XIC_clear_character_political_roles_effect = yes
+			set_character_name = XIC_xuangtong_emperor_puyi
+			set_portraits = {
+				civilian = {
+					large = GFX_portrait_man_henry_pu_yi_emperor
+					small = GFX_portrait_man_henry_pu_yi_emperor_small
+				}
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = political_advisor
+					idea_token = XIC_xuangtong_emperor_puyi
+					cost = 0
+					can_be_fired = no
+					traits = { XIC_xuangtong_emperor }
+				}
+				activate = yes
+			}
+		}
+	}
+}
+
+XIC_reeducate_officer_effect = {
+	XIC_clear_character_political_roles_effect = yes
+	set_nationality = XIC
+	add_unit_leader_trait = XIC_reconstructionist_officer
+	set_character_flag = XIC_officer_reeducated
+}

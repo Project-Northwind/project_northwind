@@ -630,3 +630,604 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = PN_XIC.22
+	title = PN_XIC.22.t
+	desc = PN_XIC.22.desc
+	picture = GFX_report_event_chinese_soldiers_02
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.22.a
+		if = {
+			limit = {
+				PRC = { exists = yes }
+				NOT = { has_war_with = PRC }
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PRC
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.23
+	title = PN_XIC.23.t
+	desc = PN_XIC.23.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.23.a
+	}
+}
+
+country_event = {
+	id = PN_XIC.24
+	title = PN_XIC.24.t
+	desc = PN_XIC.24.desc
+	picture = GFX_report_event_chinese_soldiers_02
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.24.a
+	}
+}
+
+country_event = {
+	id = PN_XIC.25
+	title = PN_XIC.25.t
+	desc = PN_XIC.25.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		NOT = { has_country_flag = XIC_second_council_concluded }
+	}
+
+	option = {
+		name = PN_XIC.25.a
+		ai_chance = { base = 50 }
+		set_country_flag = XIC_second_council_concluded
+		set_country_flag = XIC_second_council_prioritise_unification
+		custom_effect_tooltip = XIC_second_council_unification_tt
+		hidden_effect = {
+			reduce_focus_completion_cost = {
+				focus = PN_china_must_be_one
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_hunt_down_the_warlords
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_spread_the_ideology_of_reconstructionism
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_recruit_the_old_officers
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_reeducate_the_warlords
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_demand_european_powers_to_leave_china
+				cost = 42
+			}
+		}
+	}
+
+	option = {
+		name = PN_XIC.25.b
+		ai_chance = { base = 50 }
+		set_country_flag = XIC_second_council_concluded
+		set_country_flag = XIC_second_council_prioritise_japan
+		custom_effect_tooltip = XIC_second_council_japan_tt
+		hidden_effect = {
+			reduce_focus_completion_cost = {
+				focus = PN_death_to_invaders
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_rally_the_fengtiang_officers
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_entrench_anti_japanese_thought
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_the_false_emperor_of_china
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_the_deal_of_the_century
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_china_only_needs_the_uniter
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_china_a_constitutional_monarchy
+				cost = 42
+			}
+			reduce_focus_completion_cost = {
+				focus = PN_the_great_war_of_unification
+				cost = 42
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.26
+	title = PN_XIC.26.t
+	desc = PN_XIC.26.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.26.a
+		ai_chance = { base = 30 }
+		custom_effect_tooltip = XIC_puyi_citizenship_offer_tt
+		hidden_effect = {
+			set_country_flag = XIC_puyi_offer_decided
+			set_country_flag = XIC_puyi_offer_citizenship
+		}
+	}
+	option = {
+		name = PN_XIC.26.b
+		ai_chance = { base = 40 }
+		custom_effect_tooltip = XIC_puyi_monarchy_offer_tt
+		hidden_effect = {
+			set_country_flag = XIC_puyi_offer_decided
+			set_country_flag = XIC_puyi_offer_monarchy
+		}
+	}
+	option = {
+		name = PN_XIC.26.c
+		ai_chance = { base = 30 }
+		custom_effect_tooltip = XIC_puyi_no_offer_tt
+		hidden_effect = {
+			set_country_flag = XIC_puyi_offer_decided
+			set_country_flag = XIC_puyi_no_offer
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.27
+	title = PN_XIC.27.t
+	desc = PN_XIC.27.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	XIC = { exists = yes }
+	XIC_foreign_chinese_territory_holder = yes
+	}
+
+	option = {
+		name = PN_XIC.27.a
+		ai_chance = { base = 20 }
+		custom_effect_tooltip = XIC_return_concessions_tt
+		hidden_effect = {
+			every_owned_state = {
+				limit = { is_core_of = XIC }
+				transfer_state_to = XIC
+			}
+		}
+	}
+	option = {
+		name = PN_XIC.27.b
+		ai_chance = { base = 80 }
+		XIC = { country_event = { id = PN_XIC.28 } }
+	}
+}
+
+country_event = {
+	id = PN_XIC.28
+	title = PN_XIC.28.t
+	desc = PN_XIC.28.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+
+	trigger = {
+	tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.28.a
+		if = {
+			limit = {
+				FROM = { exists = yes }
+				NOT = { has_war_with = FROM }
+				NOT = { is_in_faction_with = FROM }
+			}
+			create_wargoal = { type = annex_everything target = FROM }
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.29
+	title = PN_XIC.29.t
+	desc = PN_XIC.29.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	XIC = { exists = yes }
+	NOT = { tag = XIC }
+	OR = { owns_state = 408 owns_state = 409 }
+	}
+
+	option = {
+		name = PN_XIC.29.a
+		ai_chance = { base = 20 }
+		custom_effect_tooltip = XIC_return_northern_provinces_tt
+		hidden_effect = {
+			every_owned_state = {
+				limit = { OR = { state = 408 state = 409 } }
+				transfer_state_to = XIC
+			}
+		}
+	}
+	option = {
+		name = PN_XIC.29.b
+		ai_chance = { base = 80 }
+		XIC = { country_event = { id = PN_XIC.30 } }
+	}
+}
+
+country_event = {
+	id = PN_XIC.30
+	title = PN_XIC.30.t
+	desc = PN_XIC.30.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+
+	trigger = {
+	tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.30.a
+		if = {
+			limit = {
+				FROM = { exists = yes }
+				NOT = { has_war_with = FROM }
+				NOT = { is_in_faction_with = FROM }
+			}
+			create_wargoal = { type = annex_everything target = FROM }
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.31
+	title = PN_XIC.31.t
+	desc = PN_XIC.31.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	tag = KOR
+	is_subject = no
+	NOT = { has_war_with = XIC }
+	XIC = { exists = yes has_country_flag = XIC_korean_reconstruction_pending }
+	}
+
+	option = {
+		name = PN_XIC.31.a
+		ai_chance = { base = 40 }
+		custom_effect_tooltip = XIC_korean_acceptance_tt
+		hidden_effect = {
+			leave_faction = yes
+			XIC = {
+				puppet = KOR
+				clr_country_flag = XIC_korean_reconstruction_pending
+				set_country_flag = XIC_korean_reconstruction_settled
+			}
+			set_politics = { ruling_party = fascism elections_allowed = no }
+			set_country_leader_ideology = reconstructionism
+			add_popularity = { ideology = fascism popularity = 0.20 }
+			set_party_name = {
+				ideology = fascism
+				long_name = XIC_korean_reconstruction_party
+				name = XIC_korean_reconstruction_party_short
+			}
+		}
+	}
+	option = {
+		name = PN_XIC.31.b
+		ai_chance = { base = 60 }
+		XIC = {
+			country_event = { id = PN_XIC.32 }
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.32
+	title = PN_XIC.32.t
+	desc = PN_XIC.32.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.32.a
+		if = {
+			limit = {
+				KOR = { exists = yes }
+				NOT = { has_war_with = KOR }
+				NOT = { is_in_faction_with = KOR }
+			}
+			create_wargoal = { type = puppet_wargoal_focus target = KOR }
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.33
+	title = PN_XIC.33.t
+	desc = PN_XIC.33.desc
+	picture = GFX_report_event_chinese_soldiers_02
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.33.a
+	}
+}
+
+country_event = {
+	id = PN_XIC.34
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_korean_reconstruction_pending
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				KOR = { exists = no }
+				owns_state = 525
+				controls_state = 525
+				owns_state = 527
+				controls_state = 527
+			}
+			release_puppet = KOR
+		}
+		if = {
+			limit = {
+				KOR = { exists = yes is_subject_of = XIC }
+			}
+			KOR = {
+				set_politics = { ruling_party = fascism elections_allowed = no }
+				set_country_leader_ideology = reconstructionism
+				add_popularity = { ideology = fascism popularity = 0.20 }
+				set_party_name = {
+					ideology = fascism
+					long_name = XIC_korean_reconstruction_party
+					name = XIC_korean_reconstruction_party_short
+				}
+			}
+			clr_country_flag = XIC_korean_reconstruction_pending
+			set_country_flag = XIC_korean_reconstruction_settled
+		}
+		else_if = {
+			limit = {
+				KOR = {
+					exists = yes
+					is_subject = no
+					NOT = { has_war_with = XIC }
+				}
+				NOT = { has_country_flag = XIC_korean_envoy_sent }
+			}
+			set_country_flag = XIC_korean_envoy_sent
+			KOR = { country_event = { id = PN_XIC.31 } }
+		}
+		if = {
+			limit = { has_country_flag = XIC_korean_reconstruction_pending }
+			country_event = { id = PN_XIC.34 days = 30 }
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.35
+	title = PN_XIC.35.t
+	desc = {
+		trigger = { XIC = { has_country_flag = XIC_puyi_offer_monarchy } }
+		text = PN_XIC.35.monarchy_desc
+	}
+	desc = {
+		trigger = { XIC = { has_country_flag = XIC_puyi_offer_citizenship } }
+		text = PN_XIC.35.citizenship_desc
+	}
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAN
+		XIC_puyi_available = yes
+		XIC = { has_country_flag = XIC_puyi_letter_pending }
+	}
+
+	option = {
+		name = PN_XIC.35.a
+		ai_chance = { base = 40 }
+		custom_effect_tooltip = XIC_puyi_accept_offer_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					XIC_puyi_available = yes
+					XIC = { has_country_flag = XIC_puyi_letter_pending }
+				}
+				XIC = {
+					set_country_flag = XIC_puyi_support_received
+					if = {
+						limit = { has_country_flag = XIC_puyi_offer_monarchy }
+						XIC_reserve_puyi_effect = yes
+						XIC_puyi_monarchy_settlement_effect = yes
+					}
+					else = {
+						XIC_puyi_uniter_settlement_effect = yes
+					}
+					country_event = { id = PN_XIC.36 }
+				}
+			}
+		}
+	}
+	option = {
+		name = PN_XIC.35.b
+		ai_chance = { base = 60 }
+		custom_effect_tooltip = XIC_puyi_reject_offer_tt
+		hidden_effect = {
+			if = {
+				limit = { XIC = { has_country_flag = XIC_puyi_letter_pending } }
+				XIC = {
+					XIC_puyi_uniter_settlement_effect = yes
+					country_event = { id = PN_XIC.37 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.36
+	title = PN_XIC.36.t
+	desc = {
+		trigger = { has_country_flag = XIC_monarchist_settlement_chosen }
+		text = PN_XIC.36.monarchy_desc
+	}
+	desc = {
+		trigger = { has_country_flag = XIC_republican_settlement_chosen }
+		text = PN_XIC.36.citizenship_desc
+	}
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_puyi_settlement_resolved
+	}
+
+	option = {
+		name = PN_XIC.36.a
+		trigger = { has_country_flag = XIC_monarchist_settlement_chosen }
+		custom_effect_tooltip = XIC_puyi_monarchy_unlocked_tt
+	}
+	option = {
+		name = PN_XIC.36.b
+		trigger = { has_country_flag = XIC_republican_settlement_chosen }
+		custom_effect_tooltip = XIC_puyi_uniter_unlocked_tt
+	}
+}
+
+country_event = {
+	id = PN_XIC.37
+	title = PN_XIC.37.t
+	desc = PN_XIC.37.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_republican_settlement_chosen
+	}
+
+	option = {
+		name = PN_XIC.37.a
+		custom_effect_tooltip = XIC_puyi_uniter_unlocked_tt
+	}
+}
+
+country_event = {
+	id = PN_XIC.38
+	title = PN_XIC.38.t
+	desc = PN_XIC.38.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_republican_settlement_chosen
+	}
+
+	option = {
+		name = PN_XIC.38.a
+		custom_effect_tooltip = XIC_puyi_uniter_unlocked_tt
+	}
+}
+
+country_event = {
+	id = PN_XIC.39
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_puyi_letter_pending
+	}
+
+	immediate = {
+		if = {
+			limit = { XIC_puyi_available = no }
+			XIC_puyi_uniter_settlement_effect = yes
+			country_event = { id = PN_XIC.38 }
+		}
+		else = {
+			country_event = { id = PN_XIC.39 days = 1 }
+		}
+	}
+}

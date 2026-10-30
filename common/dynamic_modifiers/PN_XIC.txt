@@ -10,3 +10,55 @@ XIC_industrial_reconstruction = {
 	production_factory_efficiency_gain_factor = XIC_reconstruction_efficiency_growth
 	production_factory_max_efficiency_factor = XIC_reconstruction_efficiency_cap
 }
+
+XIC_fallout_from_the_war = {
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_industry
+
+	industrial_capacity_factory = XIC_postwar_output
+	production_speed_buildings_factor = XIC_postwar_construction
+	consumer_goods_factor = XIC_postwar_consumer_goods
+	production_factory_efficiency_gain_factor = XIC_postwar_efficiency_growth
+	production_factory_max_efficiency_factor = XIC_postwar_efficiency_cap
+	local_resources_factor = XIC_postwar_resources
+}
+
+XIC_national_reconstruction_economy = {
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_industry
+
+	industrial_capacity_factory = XIC_postwar_output
+	production_speed_buildings_factor = XIC_postwar_construction
+	consumer_goods_factor = XIC_postwar_consumer_goods
+	production_factory_efficiency_gain_factor = XIC_postwar_efficiency_growth
+	production_factory_max_efficiency_factor = XIC_postwar_efficiency_cap
+	local_resources_factor = XIC_postwar_resources
+}
+
+XIC_national_legitimacy_reforming = {
+	enable = { always = yes }
+
+	icon = GFX_idea_XIC_national_reconstructionism
+
+	stability_factor = XIC_legitimacy_stability
+	political_power_factor = XIC_legitimacy_political_power
+	war_support_factor = XIC_legitimacy_war_support
+	army_org_factor = XIC_legitimacy_organisation
+	army_attack_factor = XIC_legitimacy_attack
+	army_defence_factor = XIC_legitimacy_defence
+}
+
+XIC_national_authority = {
+	enable = { always = yes }
+
+	icon = GFX_idea_XIC_national_reconstructionism
+
+	stability_factor = XIC_legitimacy_stability
+	political_power_factor = XIC_legitimacy_political_power
+	war_support_factor = XIC_legitimacy_war_support
+	army_org_factor = XIC_legitimacy_organisation
+	army_attack_factor = XIC_legitimacy_attack
+	army_defence_factor = XIC_legitimacy_defence
+}

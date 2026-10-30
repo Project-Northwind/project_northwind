@@ -13,3 +13,270 @@ XIC_wang_ming_available = {
 		}
 	}
 }
+
+
+XIC_chinese_unification_target = {
+	exists = yes
+	NOT = { is_subject_of = XIC }
+	any_owned_state = { is_core_of = XIC }
+	OR = {
+		tag = CHI
+		tag = PRC
+		tag = SHX
+		tag = XSM
+		tag = GXC
+		tag = YUN
+		tag = SIK
+		tag = TIB
+		tag = HBC
+		tag = SIC
+		tag = SND
+		tag = KUM
+		tag = GSM
+		tag = GDC
+		tag = KHM
+		tag = NXM
+		tag = RNG
+		tag = MAN
+		tag = MEN
+	}
+}
+
+XIC_foreign_chinese_territory_holder = {
+	exists = yes
+	NOT = { tag = XIC }
+	NOT = { is_subject_of = XIC }
+	any_owned_state = { is_core_of = XIC }
+}
+
+XIC_puyi_available = {
+	MAN = {
+		exists = yes
+		has_character = MAN_aisin_gioro_puyi
+	}
+}
+
+
+XIC_chi_officers_defeated = {
+	OR = {
+		CHI = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				CHI = { exists = no }
+				CHI = { has_capitulated = yes }
+			}
+			1035 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_sic_officers_defeated = {
+	OR = {
+		SIC = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				SIC = { exists = no }
+				SIC = { has_capitulated = yes }
+			}
+			1037 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_shx_officers_defeated = {
+	OR = {
+		SHX = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				SHX = { exists = no }
+				SHX = { has_capitulated = yes }
+			}
+			615 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_hbc_officers_defeated = {
+	OR = {
+		HBC = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				HBC = { exists = no }
+				HBC = { has_capitulated = yes }
+			}
+			608 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_sik_officers_defeated = {
+	OR = {
+		SIK = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				SIK = { exists = no }
+				SIK = { has_capitulated = yes }
+			}
+			617 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_yun_officers_defeated = {
+	OR = {
+		YUN = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				YUN = { exists = no }
+				YUN = { has_capitulated = yes }
+			}
+			325 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_xsm_officers_defeated = {
+	OR = {
+		XSM = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				XSM = { exists = no }
+				XSM = { has_capitulated = yes }
+			}
+			754 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_khm_officers_defeated = {
+	OR = {
+		KHM = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				KHM = { exists = no }
+				KHM = { has_capitulated = yes }
+			}
+			1042 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_nxm_officers_defeated = {
+	OR = {
+		NXM = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				NXM = { exists = no }
+				NXM = { has_capitulated = yes }
+			}
+			616 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_gsm_officers_defeated = {
+	OR = {
+		GSM = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				GSM = { exists = no }
+				GSM = { has_capitulated = yes }
+			}
+			1044 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_gxc_officers_defeated = {
+	OR = {
+		GXC = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				GXC = { exists = no }
+				GXC = { has_capitulated = yes }
+			}
+			594 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_gdc_officers_defeated = {
+	OR = {
+		GDC = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				GDC = { exists = no }
+				GDC = { has_capitulated = yes }
+			}
+			592 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_snd_officers_defeated = {
+	OR = {
+		SND = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				SND = { exists = no }
+				SND = { has_capitulated = yes }
+			}
+			1038 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}
+
+XIC_kum_officers_defeated = {
+	OR = {
+		KUM = { is_subject_of = XIC }
+		AND = {
+			OR = {
+				KUM = { exists = no }
+				KUM = { has_capitulated = yes }
+			}
+			760 = {
+				is_owned_by = XIC
+				is_controlled_by = XIC
+			}
+		}
+	}
+}

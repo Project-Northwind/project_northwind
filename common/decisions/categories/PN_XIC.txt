@@ -1,0 +1,15 @@
+XIC_officer_reeducation = {
+	priority = 100
+	icon = generic_prepare_civil_war
+
+	allowed = {
+		original_tag = XIC
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = PN_recruit_the_old_officers
+			has_completed_focus = PN_reeducate_the_warlords
+		}
+	}
+}

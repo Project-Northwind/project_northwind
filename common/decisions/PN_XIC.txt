@@ -1,0 +1,1751 @@
+XIC_officer_reeducation = {
+	XIC_reeducate_CHI_hsueh_yueh = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_hsueh_yueh }
+			CHI_hsueh_yueh = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_hsueh_yueh }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_hsueh_yueh = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_wang_yaowu = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_wang_yaowu }
+			CHI_wang_yaowu = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_wang_yaowu }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_wang_yaowu = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_tu_yuming = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_tu_yuming }
+			CHI_tu_yuming = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_tu_yuming }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_tu_yuming = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_tai_anlan = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_tai_anlan }
+			CHI_tai_anlan = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_tai_anlan }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_tai_anlan = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_sun_li_jen = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_sun_li_jen }
+			CHI_sun_li_jen = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_sun_li_jen }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_sun_li_jen = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_hu_zongnan = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_hu_zongnan }
+			CHI_hu_zongnan = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_hu_zongnan }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_hu_zongnan = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_wei_lihuang = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_wei_lihuang }
+			CHI_wei_lihuang = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_wei_lihuang }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_wei_lihuang = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_gu_zhutong = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_gu_zhutong }
+			CHI_gu_zhutong = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_gu_zhutong }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_gu_zhutong = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SIC_CHI_gu_zhutong = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_sic_officers_defeated = yes
+			SIC = { has_character = CHI_gu_zhutong }
+			CHI_gu_zhutong = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_sic_officers_defeated = yes
+			SIC = { has_character = CHI_gu_zhutong }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SIC = {
+					CHI_gu_zhutong = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_fu_zuoyi = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_fu_zuoyi }
+			CHI_fu_zuoyi = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_fu_zuoyi }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_fu_zuoyi = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SHX_CHI_fu_zuoyi = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_shx_officers_defeated = yes
+			SHX = { has_character = CHI_fu_zuoyi }
+			CHI_fu_zuoyi = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_shx_officers_defeated = yes
+			SHX = { has_character = CHI_fu_zuoyi }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SHX = {
+					CHI_fu_zuoyi = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_zhang_fakui = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_zhang_fakui }
+			CHI_zhang_fakui = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_zhang_fakui }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_zhang_fakui = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_chen_cheng = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_chen_cheng }
+			CHI_chen_cheng = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_chen_cheng }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_chen_cheng = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_feng_yuxiang = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_feng_yuxiang }
+			CHI_feng_yuxiang = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_feng_yuxiang }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_feng_yuxiang = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_jiang_guangnai = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_jiang_guangnai }
+			CHI_jiang_guangnai = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_jiang_guangnai }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_jiang_guangnai = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_cai_tingkai = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_cai_tingkai }
+			CHI_cai_tingkai = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_cai_tingkai }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_cai_tingkai = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_chen_mingshu = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_chen_mingshu }
+			CHI_chen_mingshu = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_chen_mingshu }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_chen_mingshu = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_HBC_CHI_wan_fulin = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_hbc_officers_defeated = yes
+			HBC = { has_character = CHI_wan_fulin }
+			CHI_wan_fulin = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_hbc_officers_defeated = yes
+			HBC = { has_character = CHI_wan_fulin }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				HBC = {
+					CHI_wan_fulin = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_zhu_shaoliang = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_zhu_shaoliang }
+			CHI_zhu_shaoliang = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_zhu_shaoliang }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_zhu_shaoliang = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_jiang_dingwen = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_jiang_dingwen }
+			CHI_jiang_dingwen = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_jiang_dingwen }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_jiang_dingwen = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_CHI_he_yingqin = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_recruit_the_old_officers
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_he_yingqin }
+			CHI_he_yingqin = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_chi_officers_defeated = yes
+			CHI = { has_character = CHI_he_yingqin }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				CHI = {
+					CHI_he_yingqin = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SIK_chiang_yufen = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_sik_officers_defeated = yes
+			SIK = { has_character = SIK_chiang_yufen }
+			SIK_chiang_yufen = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_sik_officers_defeated = yes
+			SIK = { has_character = SIK_chiang_yufen }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SIK = {
+					SIK_chiang_yufen = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SIK_sheng_shiqi = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_sik_officers_defeated = yes
+			SIK = { has_character = SIK_sheng_shiqi }
+			SIK_sheng_shiqi = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_sik_officers_defeated = yes
+			SIK = { has_character = SIK_sheng_shiqi }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SIK = {
+					SIK_sheng_shiqi = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SIK_ishaq_musonov = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_sik_officers_defeated = yes
+			SIK = { has_character = SIK_ishaq_musonov }
+			SIK_ishaq_musonov = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_sik_officers_defeated = yes
+			SIK = { has_character = SIK_ishaq_musonov }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SIK = {
+					SIK_ishaq_musonov = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_YUN_lu_han = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_yun_officers_defeated = yes
+			YUN = { has_character = YUN_lu_han }
+			YUN_lu_han = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_yun_officers_defeated = yes
+			YUN = { has_character = YUN_lu_han }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				YUN = {
+					YUN_lu_han = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_YUN_hu_ruoyu = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_yun_officers_defeated = yes
+			YUN = { has_character = YUN_hu_ruoyu }
+			YUN_hu_ruoyu = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_yun_officers_defeated = yes
+			YUN = { has_character = YUN_hu_ruoyu }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				YUN = {
+					YUN_hu_ruoyu = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_XSM_ma_bufang = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_ma_bufang }
+			XSM_ma_bufang = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_ma_bufang }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				XSM = {
+					XSM_ma_bufang = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_XSM_han_youwen = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_han_youwen }
+			XSM_han_youwen = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_han_youwen }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				XSM = {
+					XSM_han_youwen = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_XSM_han_yimu = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_han_yimu }
+			XSM_han_yimu = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_han_yimu }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				XSM = {
+					XSM_han_yimu = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_XSM_ma_hongbin = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_ma_hongbin }
+			XSM_ma_hongbin = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_ma_hongbin }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				XSM = {
+					XSM_ma_hongbin = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_KHM_XSM_ma_hongbin = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_khm_officers_defeated = yes
+			KHM = { has_character = XSM_ma_hongbin }
+			XSM_ma_hongbin = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_khm_officers_defeated = yes
+			KHM = { has_character = XSM_ma_hongbin }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				KHM = {
+					XSM_ma_hongbin = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_XSM_ma_hongkui = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_ma_hongkui }
+			XSM_ma_hongkui = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_ma_hongkui }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				XSM = {
+					XSM_ma_hongkui = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_NXM_XSM_ma_hongkui = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_nxm_officers_defeated = yes
+			NXM = { has_character = XSM_ma_hongkui }
+			XSM_ma_hongkui = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_nxm_officers_defeated = yes
+			NXM = { has_character = XSM_ma_hongkui }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				NXM = {
+					XSM_ma_hongkui = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_XSM_ma_buqing = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_ma_buqing }
+			XSM_ma_buqing = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_xsm_officers_defeated = yes
+			XSM = { has_character = XSM_ma_buqing }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				XSM = {
+					XSM_ma_buqing = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_GSM_XSM_ma_buqing = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_gsm_officers_defeated = yes
+			GSM = { has_character = XSM_ma_buqing }
+			XSM_ma_buqing = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_gsm_officers_defeated = yes
+			GSM = { has_character = XSM_ma_buqing }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				GSM = {
+					XSM_ma_buqing = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SHX_wang_jingguo = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_shx_officers_defeated = yes
+			SHX = { has_character = SHX_wang_jingguo }
+			SHX_wang_jingguo = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_shx_officers_defeated = yes
+			SHX = { has_character = SHX_wang_jingguo }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SHX = {
+					SHX_wang_jingguo = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_GXC_li_zongren = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_gxc_officers_defeated = yes
+			GXC = { has_character = GXC_li_zongren }
+			GXC_li_zongren = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_gxc_officers_defeated = yes
+			GXC = { has_character = GXC_li_zongren }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				GXC = {
+					GXC_li_zongren = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_GXC_chen_jitang = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_gxc_officers_defeated = yes
+			GXC = { has_character = GXC_chen_jitang }
+			GXC_chen_jitang = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_gxc_officers_defeated = yes
+			GXC = { has_character = GXC_chen_jitang }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				GXC = {
+					GXC_chen_jitang = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_GDC_GXC_chen_jitang = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_gdc_officers_defeated = yes
+			GDC = { has_character = GXC_chen_jitang }
+			GXC_chen_jitang = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_gdc_officers_defeated = yes
+			GDC = { has_character = GXC_chen_jitang }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				GDC = {
+					GXC_chen_jitang = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SND_CHI_sun_tongxuan = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_snd_officers_defeated = yes
+			SND = { has_character = CHI_sun_tongxuan }
+			CHI_sun_tongxuan = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_snd_officers_defeated = yes
+			SND = { has_character = CHI_sun_tongxuan }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SND = {
+					CHI_sun_tongxuan = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_HBC_CHI_song_zheyuan = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_hbc_officers_defeated = yes
+			HBC = { has_character = CHI_song_zheyuan }
+			CHI_song_zheyuan = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_hbc_officers_defeated = yes
+			HBC = { has_character = CHI_song_zheyuan }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				HBC = {
+					CHI_song_zheyuan = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_GXC_bai_chongxi = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_gxc_officers_defeated = yes
+			GXC = { has_character = GXC_bai_chongxi }
+			GXC_bai_chongxi = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_gxc_officers_defeated = yes
+			GXC = { has_character = GXC_bai_chongxi }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				GXC = {
+					GXC_bai_chongxi = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SIC_liu_xiang = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_sic_officers_defeated = yes
+			SIC = { has_character = SIC_liu_xiang }
+			SIC_liu_xiang = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_sic_officers_defeated = yes
+			SIC = { has_character = SIC_liu_xiang }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SIC = {
+					SIC_liu_xiang = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SIC_yang_sen = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_sic_officers_defeated = yes
+			SIC = { has_character = SIC_yang_sen }
+			SIC_yang_sen = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_sic_officers_defeated = yes
+			SIC = { has_character = SIC_yang_sen }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SIC = {
+					SIC_yang_sen = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SIC_liu_wenhui = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_sic_officers_defeated = yes
+			SIC = { has_character = SIC_liu_wenhui }
+			SIC_liu_wenhui = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_sic_officers_defeated = yes
+			SIC = { has_character = SIC_liu_wenhui }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SIC = {
+					SIC_liu_wenhui = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_SND_han_fuju = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_snd_officers_defeated = yes
+			SND = { has_character = SND_han_fuju }
+			SND_han_fuju = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_snd_officers_defeated = yes
+			SND = { has_character = SND_han_fuju }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				SND = {
+					SND_han_fuju = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_KHM_ma_hushan = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_khm_officers_defeated = yes
+			KHM = { has_character = KHM_ma_hushan }
+			KHM_ma_hushan = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_khm_officers_defeated = yes
+			KHM = { has_character = KHM_ma_hushan }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				KHM = {
+					KHM_ma_hushan = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_KHM_mahmut_muhiti = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_khm_officers_defeated = yes
+			KHM = { has_character = KHM_mahmut_muhiti }
+			KHM_mahmut_muhiti = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_khm_officers_defeated = yes
+			KHM = { has_character = KHM_mahmut_muhiti }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				KHM = {
+					KHM_mahmut_muhiti = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_KHM_ma_zhancang = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_khm_officers_defeated = yes
+			KHM = { has_character = KHM_ma_zhancang }
+			KHM_ma_zhancang = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_khm_officers_defeated = yes
+			KHM = { has_character = KHM_ma_zhancang }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				KHM = {
+					KHM_ma_zhancang = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reeducate_KUM_yulbars_khan = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_reeducate_the_warlords
+			XIC_kum_officers_defeated = yes
+			KUM = { has_character = KUM_yulbars_khan }
+			KUM_yulbars_khan = {
+				is_unit_leader = yes
+				NOT = { has_character_flag = XIC_officer_reeducated }
+			}
+		}
+
+		available = {
+			XIC_kum_officers_defeated = yes
+			KUM = { has_character = KUM_yulbars_khan }
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_officer_reeducated_tt
+			hidden_effect = {
+				KUM = {
+					KUM_yulbars_khan = { XIC_reeducate_officer_effect = yes }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
