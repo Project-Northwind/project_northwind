@@ -28,6 +28,11 @@ if = {
 		}
 	}
 }
+set_autonomy = {
+	target = BLR
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.2
+}
 
 set_research_slots = 3
 

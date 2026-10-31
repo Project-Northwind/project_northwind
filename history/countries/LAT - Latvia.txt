@@ -3,7 +3,7 @@ capital = 808
 oob = "LAT_1936"
 set_naval_oob = "LAT_1936_naval_mtg"
 
-set_cosmetic_tag = LAT_united_baltic_federation
+set_cosmetic_tag = LAT_livonia
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -86,16 +86,16 @@ set_research_slots = 3
 set_convoys = 30
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1935.10.3"
-	election_frequency = 24
-	elections_allowed = yes
+	ruling_party = neutrality
+	last_election = "1933.4.9"
+	election_frequency = 36
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 60
+	democratic = 20
 	fascism = 15
 	communism = 5
-	neutrality = 20
+	neutrality = 60
 }
 
 ### VARIANTS ###

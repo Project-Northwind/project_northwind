@@ -1913,9 +1913,9 @@ AST_australasia = {
 
 # Project Northwind
 
-LAT_united_baltic_federation = {
-	color = rgb { 110 95 130 }
-	color_ui = rgb { 110 95 130 }
+LAT_livonia = {
+	color = rgb { 255 250 250 }
+	color_ui = rgb { 255 250 250 }
 }
 SAU_ENG = {
 	color = rgb { 171 190 153 }
