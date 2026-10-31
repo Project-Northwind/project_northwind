@@ -18,10 +18,10 @@ focus_tree = {
 	country = {
 		factor = 0
 
-		modifier = {
-			add = 10
-			tag = SOV
-		}
+		#modifier = { We are using the Generic tree now :^)
+		#	add = 10
+		#	tag = SOV
+		#}
 	}
 
 	default = no
