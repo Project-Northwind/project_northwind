@@ -9,8 +9,8 @@ ENG = {
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color = rgb { 72 143 68 }
+	color_ui = rgb { 72 143 68 }
 }
 SWE = {
 	color = rgb { 36 132 247 }
@@ -50,8 +50,8 @@ EST = {
 	color_ui = rgb { 99 204 254 }
 }
 LAT = {
-	color = rgb { 75 77 186 }
-	color_ui = rgb { 124 125 184 }
+	color = rgb { 255 250 250 }
+	color_ui = rgb { 255 250 250 }
 }
 SPR = {
 	color = rgb { 242 205 94 }
