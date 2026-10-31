@@ -15,7 +15,6 @@ scripted_gui = {
 		triggers = {
 			PN_secondary_portrait_visible = { has_country_flag = PN_show_secondary_leader }
 			PN_secondary_frame_visible = { has_country_flag = PN_show_secondary_leader }
-			PN_secondary_nameplate_visible = { has_country_flag = PN_show_secondary_leader }
 		}
 
 		effects = {
@@ -47,7 +46,6 @@ scripted_gui = {
 		triggers = {
 			PN_secondary_portrait_visible = { has_country_flag = PN_show_secondary_leader_diplomacy }
 			PN_secondary_frame_visible = { has_country_flag = PN_show_secondary_leader_diplomacy }
-			PN_secondary_nameplate_visible = { has_country_flag = PN_show_secondary_leader_diplomacy }
 		}
 
 		effects = {

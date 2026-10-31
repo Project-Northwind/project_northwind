@@ -11,6 +11,54 @@ defined_text = {
 }
 
 defined_text = {
+	name = PN_GetPoliticsLeaderName
+
+	text = {
+		trigger = { has_country_flag = PN_show_secondary_leader }
+		localization_key = PN_secondary_leader_name
+	}
+	text = {
+		localization_key = PN_primary_leader_name
+	}
+}
+
+defined_text = {
+	name = PN_GetDiplomacyLeaderName
+
+	text = {
+		trigger = { has_country_flag = PN_show_secondary_leader_diplomacy }
+		localization_key = PN_secondary_leader_name
+	}
+	text = {
+		localization_key = PN_primary_leader_name
+	}
+}
+
+defined_text = {
+	name = PN_GetPoliticsLeaderTooltip
+
+	text = {
+		trigger = { has_country_flag = PN_show_secondary_leader }
+		localization_key = PN_secondary_leader_tooltip_display
+	}
+	text = {
+		localization_key = PN_primary_leader_name
+	}
+}
+
+defined_text = {
+	name = PN_GetDiplomacyLeaderTooltip
+
+	text = {
+		trigger = { has_country_flag = PN_show_secondary_leader_diplomacy }
+		localization_key = PN_secondary_leader_tooltip_display
+	}
+	text = {
+		localization_key = PN_primary_leader_name
+	}
+}
+
+defined_text = {
 	name = PN_GetSecondaryLeaderTitle
 
 	text = {

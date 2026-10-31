@@ -17,25 +17,22 @@ guiTypes = {
 			spriteType = "GFX_pol_leader_frame"
 			alwaystransparent = yes
 		}
-		containerWindowType = {
+		iconType = {
 			name = "PN_secondary_nameplate"
 			position = { x = 8 y = 218 }
-			size = { width = 155 height = 36 }
-			background = {
-				name = "Background"
-				spriteType = "GFX_tiled_plain_bg"
-			}
-			instantTextboxType = {
-				name = "PN_secondary_name"
-				position = { x = 0 y = 0 }
-				font = "hoi_18mbs"
-				text = "PN_secondary_leader_name"
-				pdx_tooltip = "PN_secondary_leader_tooltip_display"
-				maxWidth = 155
-				maxHeight = 36
-				format = center
-				vertical_alignment = center
-			}
+			spriteType = "GFX_PN_politics_leader_nameplate"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "PN_displayed_leader_name"
+			position = { x = 8 y = 218 }
+			font = "hoi_18mbs"
+			text = "PN_politics_leader_name"
+			pdx_tooltip = "PN_politics_leader_tooltip"
+			maxWidth = 155
+			maxHeight = 36
+			format = center
+			vertical_alignment = center
 		}
 		buttonType = {
 			name = "PN_switch_leader"
@@ -65,25 +62,22 @@ guiTypes = {
 			spriteType = "GFX_diplo_leader_frame"
 			alwaystransparent = yes
 		}
-		containerWindowType = {
+		iconType = {
 			name = "PN_secondary_nameplate"
 			position = { x = 232 y = -67 }
-			size = { width = 173 height = 20 }
-			background = {
-				name = "Background"
-				spriteType = "GFX_tiled_plain_bg"
-			}
-			instantTextboxType = {
-				name = "PN_secondary_name"
-				position = { x = 0 y = 0 }
-				font = "hoi_16mbs"
-				text = "PN_secondary_leader_name"
-				pdx_tooltip = "PN_secondary_leader_tooltip_display"
-				maxWidth = 173
-				maxHeight = 20
-				fixedsize = yes
-				format = left
-			}
+			spriteType = "GFX_PN_diplomacy_leader_nameplate"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "PN_displayed_leader_name"
+			position = { x = 232 y = -67 }
+			font = "hoi_16mbs"
+			text = "PN_diplomacy_leader_name"
+			pdx_tooltip = "PN_diplomacy_leader_tooltip"
+			maxWidth = 173
+			maxHeight = 20
+			fixedsize = yes
+			format = left
 		}
 		buttonType = {
 			name = "PN_switch_leader"

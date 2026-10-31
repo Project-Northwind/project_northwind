@@ -1,4 +1,18 @@
 spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_PN_politics_leader_nameplate"
+		size = { x = 155 y = 36 }
+		texturefile = "gfx/interface/tiles/tiled_plain_bg.dds"
+		borderSize = { x = 0 y = 0 }
+		tilingCenter = yes
+	}
+	corneredTileSpriteType = {
+		name = "GFX_PN_diplomacy_leader_nameplate"
+		size = { x = 173 y = 20 }
+		texturefile = "gfx/interface/tiles/tiled_plain_bg.dds"
+		borderSize = { x = 0 y = 0 }
+		tilingCenter = yes
+	}
 	spriteType = {
 		name = "GFX_PN_leader_switch"
 		texturefile = "gfx/interface/PN_dual_leaders/PN_leader_switch.dds"

@@ -1,5 +1,10 @@
 ﻿l_english:
   PN_secondary_leader_name: "[?PN_secondary_leader.GetName]"
+  PN_primary_leader_name: "[ROOT.GetLeader]"
+  PN_politics_leader_name: "[PN_GetPoliticsLeaderName]"
+  PN_diplomacy_leader_name: "[PN_GetDiplomacyLeaderName]"
+  PN_politics_leader_tooltip: "[PN_GetPoliticsLeaderTooltip]"
+  PN_diplomacy_leader_tooltip: "[PN_GetDiplomacyLeaderTooltip]"
   PN_secondary_leader_monarch: "Monarch"
   PN_secondary_leader_president: "President"
   PN_secondary_leader_head_of_government: "Head of Government"
