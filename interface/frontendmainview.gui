@@ -334,7 +334,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 10000 y = 10000 }
+			position = { x = 409 y = 305 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonFont = "hoi_24header"
 			text = "Nudge!"
