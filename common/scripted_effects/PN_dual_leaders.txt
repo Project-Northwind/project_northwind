@@ -28,4 +28,15 @@ PN_update_XIC_secondary_leader_effect = {
 		set_variable = { PN_secondary_leader_role = 1 }
 		MAN_aisin_gioro_puyi = { PN_set_secondary_leader_effect = yes }
 	}
+	else_if = {
+		limit = {
+			has_completed_focus = PN_secretary_of_state_wang_ming
+			has_character = PRC_wang_ming
+			PRC_wang_ming = { has_advisor_role = political_advisor }
+			NOT = { has_country_flag = PN_dual_leaders_enabled }
+		}
+		set_variable = { PN_secondary_leader_portrait = 2 }
+		set_variable = { PN_secondary_leader_role = 4 }
+		PRC_wang_ming = { PN_set_secondary_leader_effect = yes }
+	}
 }

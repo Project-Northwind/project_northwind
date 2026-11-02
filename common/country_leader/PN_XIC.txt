@@ -1,4 +1,14 @@
 leader_traits = {
+	XIC_architect_of_national_revival = {
+		random = no
+		sprite = 10
+
+		industrial_capacity_factory = 0.05
+		stability_factor = 0.05
+		political_power_gain = -0.10
+		production_factory_efficiency_gain_factor = 0.05
+	}
+
 	XIC_the_grand_uniter = {
 		random = no
 		sprite = 13

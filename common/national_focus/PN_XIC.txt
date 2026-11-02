@@ -2056,6 +2056,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
 		}
 	}
 
@@ -2072,6 +2074,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 75
+			set_party_name = {
+				ideology = fascism
+				long_name = XIC_national_revival_league
+				name = XIC_national_revival_league_short
+			}
+			country_event = { id = PN_XIC.44 }
 		}
 	}
 
@@ -2088,6 +2097,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 75
 		}
 	}
 
@@ -2104,7 +2115,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			remove_ideas = XIC_national_legitimacy
+			custom_effect_tooltip = XIC_the_grand_uniter_of_the_republic_legitimacy_tt
+			hidden_effect = {
+				XIC_prepare_legitimacy_reforms_effect = yes
+				add_to_variable = { XIC_legitimacy_stability = 0.05 }
+				add_to_variable = { XIC_legitimacy_political_power = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 100
 		}
 	}
 
@@ -2121,6 +2140,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_convene_the_national_congress_legitimacy_tt
+			hidden_effect = {
+				XIC_prepare_legitimacy_reforms_effect = yes
+				add_to_variable = { XIC_legitimacy_stability = 0.05 }
+				add_to_variable = { XIC_legitimacy_war_support = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2137,6 +2163,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_elect_the_central_committee_legitimacy_tt
+			hidden_effect = {
+				XIC_prepare_legitimacy_reforms_effect = yes
+				add_to_variable = { XIC_legitimacy_political_power = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2153,6 +2185,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_establish_the_council_of_national_revival_legitimacy_tt
+			hidden_effect = {
+				XIC_prepare_legitimacy_reforms_effect = yes
+				add_to_variable = { XIC_legitimacy_stability = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2172,6 +2210,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_six_wings_one_league_legitimacy_tt
+			hidden_effect = {
+				XIC_prepare_legitimacy_reforms_effect = yes
+				add_to_variable = { XIC_legitimacy_war_support = 0.05 }
+				add_to_variable = { XIC_legitimacy_organisation = 0.05 }
+				add_to_variable = { XIC_legitimacy_attack = 0.05 }
+				add_to_variable = { XIC_legitimacy_defence = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2188,6 +2235,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_preserve_the_reconstruction_wing_legitimacy_tt
+			hidden_effect = {
+				XIC_prepare_legitimacy_reforms_effect = yes
+				add_to_variable = { XIC_legitimacy_political_power = 0.05 }
+				add_to_variable = { XIC_legitimacy_organisation = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2204,6 +2258,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_welcome_the_revolutionary_cadres_legitimacy_tt
+			hidden_effect = {
+				XIC_prepare_legitimacy_reforms_effect = yes
+				add_to_variable = { XIC_legitimacy_stability = 0.05 }
+				add_to_variable = { XIC_legitimacy_organisation = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2223,6 +2284,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_unity_above_faction_legitimacy_tt
+			hidden_effect = {
+				XIC_prepare_legitimacy_reforms_effect = yes
+				add_to_variable = { XIC_legitimacy_stability = 0.10 }
+				add_to_variable = { XIC_legitimacy_political_power = 0.15 }
+				add_to_variable = { XIC_legitimacy_war_support = 0.05 }
+				add_to_variable = { XIC_legitimacy_organisation = 0.05 }
+				add_to_variable = { XIC_legitimacy_attack = 0.10 }
+				add_to_variable = { XIC_legitimacy_defence = 0.10 }
+				remove_dynamic_modifier = { modifier = XIC_national_legitimacy_reforming }
+				add_dynamic_modifier = { modifier = XIC_national_revival_authority }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2239,6 +2313,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_wang_ming_party_secretary_tt
+			hidden_effect = { XIC_wang_ming_party_secretary_effect = yes }
 		}
 	}
 
@@ -2255,6 +2331,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 75
+			add_tech_bonus = {
+				name = XIC_civil_administration_research
+				bonus = 0.50
+				uses = 1
+				category = electronics
+			}
 		}
 	}
 
@@ -2271,6 +2354,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 
@@ -2287,6 +2371,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
 		}
 	}
 
@@ -2306,6 +2392,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
 		}
 	}
 
@@ -2326,6 +2414,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
 		}
 	}
 
@@ -2346,6 +2436,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 25000
 		}
 	}
 
@@ -2365,6 +2457,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = XIC_national_social_bargain
 		}
 	}
 
@@ -2381,7 +2474,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = XIC_implement_national_reconstructionism_economy_tt
+			custom_effect_tooltip = XIC_the_national_revival_plan_economy_tt
 			hidden_effect = {
 				add_to_variable = { XIC_postwar_output = 0.05 }
 				add_to_variable = { XIC_postwar_construction = 0.10 }
@@ -2405,7 +2498,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = XIC_the_death_of_capitalism_economy_tt
+			custom_effect_tooltip = XIC_expand_strategic_public_ownership_economy_tt
 			hidden_effect = {
 				add_to_variable = { XIC_postwar_output = 0.10 }
 				add_to_variable = { XIC_postwar_construction = 0.10 }
@@ -2429,7 +2522,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = XIC_the_death_of_communism_economy_tt
+			custom_effect_tooltip = XIC_reorganise_the_national_banks_economy_tt
 			hidden_effect = {
 				add_to_variable = { XIC_postwar_output = 0.05 }
 				add_to_variable = { XIC_postwar_construction = 0.05 }
@@ -2453,7 +2546,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = XIC_the_death_of_feudalism_economy_tt
+			custom_effect_tooltip = XIC_create_national_industrial_corporations_economy_tt
 			hidden_effect = {
 				add_to_variable = { XIC_postwar_output = 0.05 }
 				add_to_variable = { XIC_postwar_construction = 0.05 }
@@ -2480,7 +2573,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = XIC_the_birth_of_new_economics_economy_tt
+			custom_effect_tooltip = XIC_a_planned_mixed_economy_economy_tt
 			hidden_effect = {
 				add_to_variable = { XIC_postwar_output = 0.05 }
 				add_to_variable = { XIC_postwar_construction = 0.10 }
@@ -2506,6 +2599,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_land_to_those_who_work_it_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_resources = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_stability = 0.05
 		}
 	}
 
@@ -2522,6 +2622,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_recognise_the_labour_organisations_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_output = 0.025 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2538,6 +2643,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_break_the_cycle_of_rural_debt_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_consumer_goods = -0.025 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2554,6 +2664,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_cooperatives_not_collectivisation_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_resources = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2570,6 +2685,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_national_labour_standards_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_efficiency_growth = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2586,6 +2706,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_industrial_councils_and_arbitration_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_output = 0.025 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2605,6 +2730,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_a_prosperous_countryside_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_construction = 0.05 }
+				add_to_variable = { XIC_postwar_consumer_goods = -0.025 }
+				force_update_dynamic_modifier = yes
+			}
 		}
 	}
 
@@ -2624,6 +2755,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
 		}
 	}
 
@@ -2640,6 +2773,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_connect_the_national_grain_network_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_construction = 0.025 }
+				force_update_dynamic_modifier = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			capital_scope = {
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
 		}
 	}
 
@@ -2656,6 +2798,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_mechanise_the_family_farm_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_output = 0.025 }
+				force_update_dynamic_modifier = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = XIC_agricultural_research
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
 		}
 	}
 
@@ -2672,6 +2826,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_power_rail_and_steel_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_construction = 0.05 }
+				add_to_variable = { XIC_postwar_efficiency_cap = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			capital_scope = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
 		}
 	}
 
@@ -2688,6 +2854,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_protect_the_small_producers_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_consumer_goods = -0.025 }
+				force_update_dynamic_modifier = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 50
 		}
 	}
 
@@ -2713,6 +2886,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_production_for_national_revival_economy_tt
+			hidden_effect = {
+				add_to_variable = { XIC_postwar_output = 0.05 }
+				add_to_variable = { XIC_postwar_efficiency_growth = 0.05 }
+				add_to_variable = { XIC_postwar_efficiency_cap = 0.05 }
+				remove_dynamic_modifier = { modifier = XIC_national_reconstruction_economy }
+				add_dynamic_modifier = { modifier = XIC_national_revival_economy }
+				force_update_dynamic_modifier = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = XIC_national_industrial_research
+				bonus = 1.00
+				uses = 2
+				category = industry
+			}
 		}
 	}
 
@@ -2729,6 +2918,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_republic_army_formed_tt
+			hidden_effect = {
+				remove_ideas = XIC_shangdong_army
+				remove_ideas = XIC_shangdong_army_restructured
+				set_variable = { XIC_revival_army_organisation = 0 }
+				set_variable = { XIC_revival_army_recovery = 0 }
+				set_variable = { XIC_revival_army_planning = 0 }
+				add_dynamic_modifier = { modifier = XIC_army_of_national_revival }
+			}
+			army_experience = 20
 		}
 	}
 
@@ -2745,6 +2944,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_republic_red_army_integration_tt
+			hidden_effect = {
+				XIC_integrate_red_army_officers_effect = yes
+				add_to_variable = { XIC_revival_army_organisation = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
+			army_experience = 15
 		}
 	}
 
@@ -2761,6 +2967,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 30
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = XIC_republic_northeastern_officers_tt
+			hidden_effect = {
+				every_army_leader = {
+					limit = {
+						has_trait = XIC_reconstructionist_officer
+						NOT = { has_character_flag = XIC_former_red_army_officer }
+						NOT = { has_character_flag = XIC_republic_officer_training_received }
+					}
+					add_skill_level = 1
+					set_character_flag = XIC_republic_officer_training_received
+				}
+			}
 		}
 	}
 
@@ -2780,6 +3000,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_republic_no_private_armies_tt
+			hidden_effect = {
+				add_to_variable = { XIC_revival_army_recovery = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
+			add_stability = 0.05
 		}
 	}
 
@@ -2796,6 +3022,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_republic_common_staff_tt
+			hidden_effect = {
+				add_to_variable = { XIC_revival_army_planning = 0.10 }
+				force_update_dynamic_modifier = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				name = XIC_common_national_doctrine
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -2812,6 +3050,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_republic_army_completed_tt
+			hidden_effect = {
+				add_to_variable = { XIC_revival_army_organisation = 0.05 }
+				force_update_dynamic_modifier = yes
+			}
+			army_experience = 50
+			add_tech_bonus = {
+				name = XIC_national_army_equipment
+				bonus = 0.50
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -2834,6 +3084,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			country_event = { id = PN_XIC.45 }
 		}
 	}
 
@@ -2847,9 +3098,18 @@ focus_tree = {
 			focus = PN_the_revival_council_convenes
 		}
 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XIC_revival_council_concluded_tt
+				has_country_flag = XIC_revival_council_concluded
+			}
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_concessions_demand_tt
+			hidden_effect = { XIC_demand_concessions_effect = yes }
 		}
 	}
 
@@ -2863,9 +3123,25 @@ focus_tree = {
 			focus = PN_the_revival_council_convenes
 		}
 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XIC_revival_council_concluded_tt
+				has_country_flag = XIC_revival_council_concluded
+			}
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_entrench_anti_japanese_tt
+			hidden_effect = {
+				remove_ideas = XIC_anti_japanese_thought
+				add_ideas = XIC_anti_japanese_thought_entrenched
+			}
+			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = XIC_republic_warlord_settlement_tt
+			hidden_effect = { XIC_offer_warlord_integration_effect = yes }
 		}
 	}
 
@@ -2882,6 +3158,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_republic_northeast_wargoals_tt
+			hidden_effect = { XIC_republic_northeast_wargoals_effect = yes }
+			army_experience = 25
 		}
 	}
 
@@ -2898,6 +3177,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XIC_republic_korean_independence_tt
+			hidden_effect = {
+				set_country_flag = XIC_korean_independence_pending
+				country_event = { id = PN_XIC.49 days = 1 }
+				XIC_republic_northeast_wargoals_effect = yes
+			}
 		}
 	}
 
@@ -2914,6 +3199,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = no
+				}
+				leave_faction = yes
+			}
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = XIC_concessions_demand_tt
+			hidden_effect = { XIC_renew_concessions_demand_effect = yes }
 		}
 	}
 
@@ -2933,9 +3229,35 @@ focus_tree = {
 			focus = PN_china_answers_to_no_bloc
 		}
 
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XIC_republic_sovereignty_restored_tt
+				NOT = { any_country = { XIC_foreign_chinese_territory_holder = yes } }
+				NOT = {
+					any_state = {
+						is_core_of = XIC
+						NOT = { is_controlled_by = XIC }
+						controller = { NOT = { is_subject_of = XIC } }
+					}
+				}
+				KOR = {
+					exists = yes
+					is_subject = no
+					owns_state = 525
+					owns_state = 527
+					controls_state = 525
+					controls_state = 527
+				}
+				OR = { is_in_faction = no is_faction_leader = yes }
+				NOT = { has_war_with = JAP }
+			}
+		}
+
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = XIC_restored_national_sovereignty
+			add_political_power = 150
 		}
 	}
 
@@ -2955,6 +3277,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_political_power = 200
+			country_event = { id = PN_XIC.48 }
 		}
 	}
 

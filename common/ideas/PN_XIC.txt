@@ -1,5 +1,21 @@
 ideas = {
 	country = {
+		XIC_national_social_bargain = {
+			allowed = {
+				original_tag = XIC
+			}
+
+			removal_cost = -1
+
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.025
+				consumer_goods_factor = -0.025
+			}
+		}
 		XIC_integrated_provincial_commands = {
 			allowed = {
 				original_tag = XIC

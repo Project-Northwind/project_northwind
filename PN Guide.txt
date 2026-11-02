@@ -23,8 +23,8 @@ The character you choose here becomes the second portrait.
 
 2. CHOOSE A PORTRAIT NUMBER AND A ROLE
 
-Portrait number 1 is already used by Puyi.
-For your next portrait, use 2. After that, use 3, 4 and so on.
+Portrait number 1 is used by Puyi and number 2 by Wang Ming.
+For your next portrait, use 3. After that, use 4, 5 and so on.
 Use a different number for each different portrait.
 
 The role controls the title shown when you hover over the portrait:
@@ -32,6 +32,7 @@ The role controls the title shown when you hover over the portrait:
 1 = Monarch
 2 = President
 3 = Head of Government, such as a Prime Minister
+4 = Party Secretary
 
 For example, if the normal leader is a monarch, add the Prime Minister
 as the second character and use role 3.
@@ -46,12 +47,12 @@ Find the section named PN_GetSecondaryLeaderPortrait.
 Add this block BEFORE the final "unknown" portrait block:
 
 	text = {
-		trigger = { check_variable = { PN_secondary_leader_portrait = 2 } }
+		trigger = { check_variable = { PN_secondary_leader_portrait = 3 } }
 		localization_key = PN_secondary_leader_portrait_your_name
 	}
 
 Replace "your_name" with a short name for your character.
-If you chose a number other than 2, change that number too.
+If you chose a number other than 3, change that number too.
 Leave the existing Puyi and unknown portrait blocks in place.
 
 
@@ -79,7 +80,7 @@ Keep this localisation file saved as UTF-8 with BOM.
 Put these lines inside the focus's completion_reward block,
 or inside an event option for the country receiving the second leader:
 
-	set_variable = { PN_secondary_leader_portrait = 2 }
+	set_variable = { PN_secondary_leader_portrait = 3 }
 	set_variable = { PN_secondary_leader_role = 2 }
 	YOUR_CHARACTER_ID = { PN_set_secondary_leader_effect = yes }
 
@@ -115,6 +116,9 @@ EXISTING EXAMPLE
 
 Puyi is already connected to Zhang through the constitutional monarchy
 focus. His portrait number is 1 and his role is 1.
+
+Wang Ming is connected through the Secretary of State focus.
+His portrait number is 2 and his role is 4, Party Secretary.
 
 His automatic setup is in:
 common/scripted_effects/PN_dual_leaders.txt

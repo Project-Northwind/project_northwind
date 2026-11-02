@@ -14,3 +14,6 @@
   PN_secondary_leader_puyi_tooltip: "§Y[?PN_secondary_leader.GetName]§!\n[PN_GetSecondaryLeaderTitle]\n\nStability: §R-5.00%§!\nFactory Output: §G+5.00%§!"
   PN_secondary_leader_tooltip_display: "[PN_GetSecondaryLeaderTooltip]"
   PN_switch_leader_tooltip: "Switch leader portrait"
+  PN_secondary_leader_party_secretary: "§RParty Secretary§!"
+  PN_secondary_leader_portrait_wang_ming: "GFX_portrait_PRC_wang_ming"
+  PN_secondary_leader_wang_ming_tooltip: "§Y[?PN_secondary_leader.GetName]§!\n§RParty Secretary§!\n\n§Y$XIC_architect_of_national_revival$§!\nFactory Output: §G+5.00%§!\nStability: §G+5.00%§!\nProduction Efficiency Growth: §G+5.00%§!\nDaily Political Power Gain: §R-0.10§!"
