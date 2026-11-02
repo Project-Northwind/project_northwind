@@ -1,0 +1,18 @@
+state = {
+	id = 1091
+	name = "STATE_1091"
+	manpower = 6349962
+	state_category = town
+	provinces = { 1139 4058 4144 4606 7074 }
+	history = {
+		victory_points = {
+			1139 2
+		}
+		buildings = {
+			infrastructure = 2 #was: 5/ 3
+		}
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+	}
+}
