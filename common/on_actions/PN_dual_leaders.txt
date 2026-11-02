@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			XIC = { PN_update_XIC_secondary_leader_effect = yes }
+		}
+	}
+	on_daily = {
+		effect = {
+			XIC = { PN_update_XIC_secondary_leader_effect = yes }
+		}
+	}
+}

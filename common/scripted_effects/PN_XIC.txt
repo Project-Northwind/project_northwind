@@ -137,6 +137,7 @@ XIC_prepare_legitimacy_reforms_effect = {
 		limit = {
 			NOT = { has_dynamic_modifier = { modifier = XIC_national_legitimacy_reforming } }
 			NOT = { has_dynamic_modifier = { modifier = XIC_national_authority } }
+			NOT = { has_dynamic_modifier = { modifier = XIC_national_revival_authority } }
 		}
 		remove_ideas = XIC_national_legitimacy
 		set_variable = { XIC_legitimacy_stability = -0.20 }
@@ -163,6 +164,20 @@ XIC_warlord_wargoals_effect = {
 				target = PREV
 			}
 		}
+	}
+}
+
+XIC_offer_warlord_integration_effect = {
+	every_country = {
+		limit = {
+			XIC_chinese_unification_target = yes
+			is_subject = no
+			NOT = { tag = MAN }
+			NOT = { tag = MEN }
+			NOT = { tag = CHI }
+			NOT = { has_war_with = XIC }
+		}
+		country_event = { id = PN_XIC.50 }
 	}
 }
 
@@ -348,6 +363,9 @@ XIC_appoint_puyi_effect = {
 				activate = yes
 			}
 		}
+		set_variable = { PN_secondary_leader_portrait = 1 }
+		set_variable = { PN_secondary_leader_role = 1 }
+		MAN_aisin_gioro_puyi = { PN_set_secondary_leader_effect = yes }
 	}
 }
 
@@ -364,4 +382,81 @@ XIC_execute_unreeducated_officer_effect = {
 	set_character_flag = XIC_officer_executed
 	XIC_clear_character_political_roles_effect = yes
 	retire = yes
+}
+
+XIC_wang_ming_party_secretary_effect = {
+	if = {
+		limit = { has_character = PRC_wang_ming }
+		PRC_wang_ming = {
+			if = {
+				limit = { has_advisor_role = political_advisor }
+				remove_advisor_role = { slot = political_advisor }
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = political_advisor
+					idea_token = XIC_wang_ming_secretary
+					cost = 0
+					can_be_fired = no
+					traits = { XIC_architect_of_national_revival }
+				}
+				activate = yes
+			}
+		}
+		set_variable = { PN_secondary_leader_portrait = 2 }
+		set_variable = { PN_secondary_leader_role = 4 }
+		PRC_wang_ming = { PN_set_secondary_leader_effect = yes }
+	}
+}
+
+XIC_integrate_red_army_officers_effect = {
+	PRC = {
+		every_army_leader = {
+			XIC_clear_character_political_roles_effect = yes
+			if = {
+				limit = { has_ideology = stalinism }
+				remove_country_leader_role = { ideology = stalinism }
+			}
+			set_nationality = XIC
+			add_unit_leader_trait = XIC_reconstructionist_officer
+			set_character_flag = XIC_former_red_army_officer
+		}
+	}
+}
+
+XIC_republic_northeast_wargoals_effect = {
+	every_country = {
+		limit = {
+			OR = { tag = JAP tag = MAN tag = MEN }
+			NOT = { has_war_with = XIC }
+			NOT = { is_in_faction_with = XIC }
+			NOT = { is_subject_of = XIC }
+		}
+		XIC = {
+			create_wargoal = {
+				type = annex_everything
+				target = PREV
+			}
+		}
+	}
+}
+
+XIC_renew_concessions_demand_effect = {
+	every_country = {
+		limit = {
+			XIC_foreign_chinese_territory_holder = yes
+			NOT = { has_war_with = XIC }
+			NOT = { is_in_faction_with = XIC }
+			OR = {
+				tag = ENG
+				tag = FRA
+				tag = POR
+				tag = GER
+				tag = ITA
+				tag = HOL
+				tag = BEL
+			}
+		}
+		country_event = { id = PN_XIC.51 }
+	}
 }

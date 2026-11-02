@@ -62,3 +62,42 @@ XIC_national_authority = {
 	army_attack_factor = XIC_legitimacy_attack
 	army_defence_factor = XIC_legitimacy_defence
 }
+
+XIC_national_revival_authority = {
+	enable = { always = yes }
+
+	icon = GFX_idea_XIC_national_reconstructionism
+
+	stability_factor = XIC_legitimacy_stability
+	political_power_factor = XIC_legitimacy_political_power
+	war_support_factor = XIC_legitimacy_war_support
+	army_org_factor = XIC_legitimacy_organisation
+	army_attack_factor = XIC_legitimacy_attack
+	army_defence_factor = XIC_legitimacy_defence
+}
+
+XIC_national_revival_economy = {
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_industry
+
+	industrial_capacity_factory = XIC_postwar_output
+	production_speed_buildings_factor = XIC_postwar_construction
+	consumer_goods_factor = XIC_postwar_consumer_goods
+	production_factory_efficiency_gain_factor = XIC_postwar_efficiency_growth
+	production_factory_max_efficiency_factor = XIC_postwar_efficiency_cap
+	local_resources_factor = XIC_postwar_resources
+}
+
+XIC_army_of_national_revival = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_army_war_college
+
+	army_infantry_attack_factor = 0.10
+	army_infantry_defence_factor = 0.10
+	experience_gain_army = 0.20
+	army_org_factor = XIC_revival_army_organisation
+	army_org_regain = XIC_revival_army_recovery
+	planning_speed = XIC_revival_army_planning
+}

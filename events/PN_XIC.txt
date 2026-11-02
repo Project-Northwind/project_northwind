@@ -1317,3 +1317,241 @@ country_event = {
 		name = PN_XIC.43.a
 	}
 }
+
+country_event = {
+	id = PN_XIC.44
+	title = PN_XIC.44.t
+	desc = PN_XIC.44.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.44.a
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = PN_XIC.45
+	title = PN_XIC.45.t
+	desc = PN_XIC.45.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.45.a
+		country_event = { id = PN_XIC.46 days = 1 }
+	}
+}
+
+country_event = {
+	id = PN_XIC.46
+	title = PN_XIC.46.t
+	desc = PN_XIC.46.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.46.a
+		country_event = { id = PN_XIC.47 days = 1 }
+	}
+}
+
+country_event = {
+	id = PN_XIC.47
+	title = PN_XIC.47.t
+	desc = PN_XIC.47.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.47.a
+		set_country_flag = XIC_revival_council_concluded
+	}
+}
+
+country_event = {
+	id = PN_XIC.48
+	title = PN_XIC.48.t
+	desc = PN_XIC.48.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+	}
+
+	option = {
+		name = PN_XIC.48.a
+	}
+}
+
+country_event = {
+	id = PN_XIC.49
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_korean_independence_pending
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				KOR = { exists = no }
+				owns_state = 525
+				owns_state = 527
+				controls_state = 525
+				controls_state = 527
+			}
+			release_puppet = KOR
+		}
+		if = {
+			limit = { KOR = { exists = yes is_subject_of = XIC } }
+			set_autonomy = {
+				target = KOR
+				autonomy_state = autonomy_free
+			}
+		}
+		if = {
+			limit = { KOR = { exists = yes is_subject = no } }
+			every_owned_state = {
+				limit = {
+					OR = { state = 525 state = 527 }
+					is_controlled_by = XIC
+				}
+				transfer_state_to = KOR
+			}
+		}
+		if = {
+			limit = {
+				KOR = {
+					exists = yes
+					is_subject = no
+					owns_state = 525
+					owns_state = 527
+					controls_state = 525
+					controls_state = 527
+				}
+			}
+			set_country_flag = XIC_korean_independence_secured
+			clr_country_flag = XIC_korean_independence_pending
+		}
+		else = {
+			country_event = { id = PN_XIC.49 days = 30 }
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.50
+	title = PN_XIC.50.t
+	desc = PN_XIC.50.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		XIC = {
+			exists = yes
+			has_country_flag = XIC_national_peoples_republic_formed
+		}
+		XIC_chinese_unification_target = yes
+		is_subject = no
+		NOT = { tag = MAN }
+		NOT = { tag = MEN }
+		NOT = { tag = CHI }
+		NOT = { has_war_with = XIC }
+	}
+
+	option = {
+		name = PN_XIC.50.a
+		ai_chance = { base = 30 }
+		custom_effect_tooltip = XIC_republic_warlord_integration_accepted_tt
+		hidden_effect = {
+			every_army_leader = {
+				XIC_clear_character_political_roles_effect = yes
+				set_nationality = XIC
+				add_unit_leader_trait = XIC_reconstructionist_officer
+			}
+			XIC = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = PN_XIC.50.b
+		ai_chance = { base = 70 }
+		custom_effect_tooltip = XIC_republic_warlord_integration_rejected_tt
+		hidden_effect = {
+			XIC = {
+				if = {
+					limit = {
+						NOT = { has_war_with = ROOT }
+						NOT = { is_in_faction_with = ROOT }
+						NOT = { ROOT = { is_subject_of = XIC } }
+					}
+					create_wargoal = {
+						type = annex_everything
+						target = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = PN_XIC.51
+	title = PN_XIC.27.t
+	desc = PN_XIC.27.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+
+	trigger = {
+	XIC = { exists = yes has_country_flag = XIC_national_peoples_republic_formed }
+	XIC_foreign_chinese_territory_holder = yes
+	}
+
+	option = {
+		name = PN_XIC.27.a
+		ai_chance = { base = 20 }
+		custom_effect_tooltip = XIC_return_concessions_tt
+		hidden_effect = {
+			every_owned_state = {
+				limit = { is_core_of = XIC }
+				transfer_state_to = XIC
+			}
+		}
+	}
+	option = {
+		name = PN_XIC.27.b
+		ai_chance = { base = 80 }
+		XIC = { country_event = { id = PN_XIC.28 } }
+	}
+}

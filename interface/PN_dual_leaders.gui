@@ -1,0 +1,90 @@
+guiTypes = {
+	containerWindowType = {
+		name = "PN_politics_dual_leaders"
+		position = { x = 10 y = 44 }
+		size = { width = 180 height = 260 }
+		clipping = no
+
+		iconType = {
+			name = "PN_secondary_portrait"
+			position = { x = 8 y = 14 }
+			spriteType = "GFX_leader_unknown"
+			pdx_tooltip = "PN_secondary_leader_tooltip_display"
+		}
+		iconType = {
+			name = "PN_secondary_frame"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_pol_leader_frame"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "PN_secondary_nameplate"
+			position = { x = 8 y = 218 }
+			spriteType = "GFX_PN_politics_leader_nameplate"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "PN_displayed_leader_name"
+			position = { x = 8 y = 218 }
+			font = "hoi_18mbs"
+			text = "PN_politics_leader_name"
+			pdx_tooltip = "PN_politics_leader_tooltip"
+			maxWidth = 155
+			maxHeight = 36
+			format = center
+			vertical_alignment = center
+		}
+		buttonType = {
+			name = "PN_switch_leader"
+			position = { x = 135 y = 190 }
+			spriteType = "GFX_PN_leader_switch"
+			pdx_tooltip = "PN_switch_leader_tooltip"
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "PN_diplomacy_dual_leaders"
+		position = { x = 13 y = 110 }
+		size = { width = 420 height = 175 }
+		clipping = no
+
+		iconType = {
+			name = "PN_secondary_portrait"
+			position = { x = 7 y = 10 }
+			spriteType = "GFX_leader_unknown"
+			scale = 0.74
+			pdx_tooltip = "PN_secondary_leader_tooltip_display"
+		}
+		iconType = {
+			name = "PN_secondary_frame"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_diplo_leader_frame"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "PN_secondary_nameplate"
+			position = { x = 232 y = -67 }
+			spriteType = "GFX_PN_diplomacy_leader_nameplate"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "PN_displayed_leader_name"
+			position = { x = 232 y = -67 }
+			font = "hoi_16mbs"
+			text = "PN_diplomacy_leader_name"
+			pdx_tooltip = "PN_diplomacy_leader_tooltip"
+			maxWidth = 173
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+		buttonType = {
+			name = "PN_switch_leader"
+			position = { x = 95 y = 130 }
+			spriteType = "GFX_PN_leader_switch"
+			pdx_tooltip = "PN_switch_leader_tooltip"
+			clicksound = click_default
+		}
+	}
+}
