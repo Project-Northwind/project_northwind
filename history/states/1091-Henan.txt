@@ -11,7 +11,8 @@ state = {
 		buildings = {
 			infrastructure = 2 #was: 5/ 3
 		}
-		owner = CHI
+		owner = XIC
+		add_core_of = XIC
 		add_core_of = CHI
 		add_core_of = PRC
 	}
