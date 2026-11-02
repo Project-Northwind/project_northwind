@@ -1,0 +1,12 @@
+state = {
+	id = 1088
+	name = "STATE_1088"
+	manpower = 180300
+	state_category = town
+	provinces = { 6431 6460 6483 }
+	history = {
+		owner = POL
+		add_core_of = POL
+		add_core_of = UKR
+	}
+}

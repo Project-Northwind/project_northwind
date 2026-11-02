@@ -1,0 +1,16 @@
+state = {
+	id = 1087
+	name = "STATE_1087"
+	manpower = 2715569
+	state_category = city
+	provinces = { 438 491 3483 3562 9454 9558 11427 }
+	history = {
+		owner = UKR
+		add_core_of = UKR
+		victory_points = { 11427 3 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+		}
+	}
+}

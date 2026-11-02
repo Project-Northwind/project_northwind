@@ -1,0 +1,17 @@
+state = {
+	id = 1089
+	name = "STATE_1089"
+	manpower = 165000
+	state_category = pastoral
+	provinces = { 6340 11391 }
+	history = {
+		owner = POL
+		add_core_of = POL
+		add_core_of = BLR
+		victory_points = { 11391 1 }
+		buildings = {
+			infrastructure = 3 #was 5
+		}
+	}
+	local_supplies = 0.0 
+}
