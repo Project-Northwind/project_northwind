@@ -753,7 +753,7 @@
  STATE_604: "Qinghai"
  STATE_605: "Sichuan"
  STATE_606: "Anhui"
- STATE_607: "Henan"
+ STATE_607: "Zhengzhou"
  STATE_608: "Beiping" # renamed to Beijing later 
  #HBC_STATE_608: "Beiping" 
  JAP_STATE_608: "Peking" 
@@ -1328,3 +1328,4 @@
  STATE_1088: "Western Stanislav"
  STATE_1089: "Outer Wilno"
  STATE_1090: "Grodno"
+ STATE_1091: "Henan"
