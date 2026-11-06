@@ -363,7 +363,7 @@ focus_tree = {
 		icon = GFX_focus_generic_scandinavia_flags
 		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
 		relative_position_id = PN_SWE_dominium_maris_baltici
-		x = -4
+		x = -6
 		y = 2
 
 		cost = 10
@@ -425,7 +425,7 @@ focus_tree = {
 		prerequisite = { focus = PN_SWE_dominium_maris_baltici }
 		mutually_exclusive = { focus= PN_SWE_restore_the_baltic_combination }
 		relative_position_id = PN_SWE_dominium_maris_baltici
-		x = -1
+		x = -3
 		y = 2
 
 		cost = 10
@@ -436,6 +436,68 @@ focus_tree = {
 		prerequisite = { focus = PN_SWE_mend_british_ties }
 		relative_position_id = PN_SWE_mend_british_ties
 		x = -2
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_bring_over_british_naval_experts
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = PN_SWE_mend_british_ties }
+		relative_position_id = PN_SWE_mend_british_ties
+		x = 1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_the_north_sea_alliance
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = PN_SWE_bring_over_british_naval_experts }
+		relative_position_id = PN_SWE_bring_over_british_naval_experts
+		x = 0
+		y = 2
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_rebuild_french_ties
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = PN_SWE_the_north_sea_alliance }
+		mutually_exclusive = { focus = PN_SWE_establish_new_european_status_quo }
+		relative_position_id = PN_SWE_the_north_sea_alliance
+		x = -1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_establish_new_european_status_quo
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = PN_SWE_the_north_sea_alliance }
+		mutually_exclusive = { focus = PN_SWE_rebuild_french_ties }
+		relative_position_id = PN_SWE_the_north_sea_alliance
+		x = 1
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_study_british_tank_doctrine
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = PN_SWE_bring_over_british_naval_experts }
+		relative_position_id = PN_SWE_bring_over_british_naval_experts
+		x = -2
+		y = 1
+
+		cost = 10
+	}
+	focus = {
+		id = PN_SWE_anglo_swedish_war_games
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = PN_SWE_study_british_tank_doctrine }
+		relative_position_id = PN_SWE_study_british_tank_doctrine
+		x = 0
 		y = 1
 
 		cost = 10
@@ -569,9 +631,9 @@ focus_tree = {
 	focus = {
 		id = PN_SWE_north_european_trade_zone
 		icon = GFX_focus_GER_subduing_the_baltic_states
-		prerequisite = { focus = PN_SWE_restart_military_cooperation }
+		prerequisite = { focus = PN_SWE_restart_military_cooperation focus = PN_SWE_bring_over_british_naval_experts }
 		relative_position_id = PN_SWE_restart_military_cooperation
-		x = -1
+		x = -2
 		y = 1
 
 		cost = 10
