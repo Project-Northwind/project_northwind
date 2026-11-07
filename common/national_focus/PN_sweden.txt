@@ -370,7 +370,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_the_norwegian_situation
-		icon = GFX_focus_generic_scandinavia_flags
+		icon = GFX_focus_generic_develop_norway_silhouette
 		prerequisite = { focus = PN_SWE_the_wayward_brethren }
 		relative_position_id = PN_SWE_the_wayward_brethren
 		x = -5
@@ -380,7 +380,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_restore_norwegian_ties
-		icon = GFX_focus_generic_scandinavia_flags
+		icon = GFX_focus_generic_befriend_norway
 		prerequisite = { focus = PN_SWE_the_norwegian_situation }
 		relative_position_id = PN_SWE_the_norwegian_situation
 		x = -1
@@ -390,7 +390,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_undermine_the_storting
-		icon = GFX_focus_generic_scandinavia_flags
+		icon = GFX_focus_AFG_parliamentary_democracy
 		prerequisite = { focus = PN_SWE_the_norwegian_situation }
 		relative_position_id = PN_SWE_the_norwegian_situation
 		x = 1
@@ -400,7 +400,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_bring_norway_into_our_sphere
-		icon = GFX_focus_generic_scandinavia_flags
+		icon = GFX_focus_SWE_united_kingdoms_of_norway_and_sweden
 		prerequisite = { focus = PN_SWE_undermine_the_storting focus = PN_SWE_restore_norwegian_ties }
 		relative_position_id = PN_SWE_undermine_the_storting
 		x = -1
@@ -432,7 +432,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_prepare_for_another_german_blockade
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_focus_generic_navy_battleship2
 		prerequisite = { focus = PN_SWE_mend_british_ties }
 		relative_position_id = PN_SWE_mend_british_ties
 		x = -2
@@ -442,7 +442,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_bring_over_british_naval_experts
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_focus_generic_naval_discipline
 		prerequisite = { focus = PN_SWE_mend_british_ties }
 		relative_position_id = PN_SWE_mend_british_ties
 		x = 1
@@ -452,7 +452,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_the_north_sea_alliance
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = PN_SWE_bring_over_british_naval_experts }
 		relative_position_id = PN_SWE_bring_over_british_naval_experts
 		x = 0
@@ -462,7 +462,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_rebuild_french_ties
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = PN_SWE_the_north_sea_alliance }
 		mutually_exclusive = { focus = PN_SWE_establish_new_european_status_quo }
 		relative_position_id = PN_SWE_the_north_sea_alliance
@@ -473,7 +473,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_establish_new_european_status_quo
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_focus_usa_focus_on_europe
 		prerequisite = { focus = PN_SWE_the_north_sea_alliance }
 		mutually_exclusive = { focus = PN_SWE_rebuild_french_ties }
 		relative_position_id = PN_SWE_the_north_sea_alliance
@@ -484,7 +484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_study_british_tank_doctrine
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = PN_SWE_bring_over_british_naval_experts }
 		relative_position_id = PN_SWE_bring_over_british_naval_experts
 		x = -2
@@ -494,7 +494,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_anglo_swedish_war_games
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = PN_SWE_study_british_tank_doctrine }
 		relative_position_id = PN_SWE_study_british_tank_doctrine
 		x = 0
@@ -504,7 +504,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_the_danish_question
-		icon = GFX_focus_generic_scandinavia_flags
+		icon = GFX_focus_generic_develop_denmark_silhouette
 		prerequisite = { focus = PN_SWE_the_wayward_brethren }
 		relative_position_id = PN_SWE_the_wayward_brethren
 		x = -1
@@ -514,7 +514,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_the_kiel_kanal_demand
-		icon = GFX_focus_generic_scandinavia_flags
+		icon = GFX_focus_generic_invade_denmark
 		prerequisite = { focus = PN_SWE_the_danish_question }
 		prerequisite = { focus = PN_SWE_prepare_for_another_german_blockade }
 		mutually_exclusive = { focus = PN_SWE_pressure_folketinget }
@@ -526,7 +526,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_pressure_folketinget
-		icon = GFX_focus_generic_scandinavia_flags
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = PN_SWE_the_danish_question }
 		mutually_exclusive = { focus = PN_SWE_the_kiel_kanal_demand }
 		relative_position_id = PN_SWE_the_danish_question
@@ -537,7 +537,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_assert_dominance_over_the_danes
-		icon = GFX_focus_generic_scandinavia_flags
+		icon = GFX_focus_generic_attack_denmark
 		prerequisite = { focus = PN_SWE_pressure_folketinget focus = PN_SWE_the_kiel_kanal_demand }
 		relative_position_id = PN_SWE_pressure_folketinget
 		x = 1
@@ -620,7 +620,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_restart_military_cooperation
-		icon = GFX_focus_GER_subduing_the_baltic_states
+		icon = GFX_focus_ger_return_of_the_kaiser
 		prerequisite = { focus = PN_SWE_restore_the_baltic_combination }
 		relative_position_id = PN_SWE_restore_the_baltic_combination
 		x = -1
@@ -630,7 +630,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_north_european_trade_zone
-		icon = GFX_focus_GER_subduing_the_baltic_states
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = PN_SWE_restart_military_cooperation focus = PN_SWE_bring_over_british_naval_experts }
 		relative_position_id = PN_SWE_restart_military_cooperation
 		x = -2
@@ -640,7 +640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_joint_armored_development
-		icon = GFX_focus_GER_subduing_the_baltic_states
+		icon = GFX_focus_generic_tank_assembly
 		prerequisite = { focus = PN_SWE_restart_military_cooperation }
 		relative_position_id = PN_SWE_restart_military_cooperation
 		x = 2
@@ -650,7 +650,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_joint_spec_ops_command
-		icon = GFX_focus_GER_subduing_the_baltic_states
+		icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
 		prerequisite = { focus = PN_SWE_joint_armored_development }
 		relative_position_id = PN_SWE_joint_armored_development
 		x = 0
@@ -660,7 +660,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_the_central_powers
-		icon = GFX_focus_GER_subduing_the_baltic_states
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = PN_SWE_restart_military_cooperation }
 		relative_position_id = PN_SWE_restart_military_cooperation
 		x = 0
@@ -670,7 +670,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_undo_the_treaty_of_fountainebleau
-		icon = GFX_focus_GER_subduing_the_baltic_states
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = { focus = PN_SWE_the_central_powers }
 		mutually_exclusive = { focus = PN_SWE_invite_the_tsardom }
 		relative_position_id = PN_SWE_the_central_powers
@@ -681,7 +681,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_invite_the_tsardom
-		icon = GFX_focus_GER_subduing_the_baltic_states
+		icon = GFX_focus_SOV_the_true_tsars
 		prerequisite = { focus = PN_SWE_the_central_powers }
 		mutually_exclusive = { focus = PN_SWE_undo_the_treaty_of_fountainebleau }
 		relative_position_id = PN_SWE_the_central_powers
