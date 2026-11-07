@@ -753,7 +753,7 @@
  STATE_604: "Qinghai"
  STATE_605: "Sichuan"
  STATE_606: "Anhui"
- STATE_607: "Zhengzhou"
+ STATE_607: "Henan"
  STATE_608: "Beiping" # renamed to Beijing later 
  #HBC_STATE_608: "Beiping" 
  JAP_STATE_608: "Peking" 
@@ -1328,7 +1328,7 @@
  STATE_1088: "Western Stanislav"
  STATE_1089: "Outer Wilno"
  STATE_1090: "Grodno"
- STATE_1091: "Henan"
+ STATE_1091: "Xinxiang"
  STATE_1092: "Saarland"
  STATE_1093: "Frankfurt"
  STATE_1094: "Ostrhineland"
@@ -1347,3 +1347,4 @@
  FRA_STATE_1103: "Hollande-Méridionale"
  STATE_1104: "Mafraq"
  STATE_1105: "Ma'an"
+ STATE_1106: "Ismailia"
