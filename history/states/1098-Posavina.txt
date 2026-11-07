@@ -1,0 +1,13 @@
+state = {
+	id = 1098
+	name = "STATE_1098"
+	manpower = 515450
+	state_category = rural
+	provinces = { 6799 9588 9591 11572 11574 }
+	history = {
+		owner = CRO
+		add_core_of = BOS
+		add_claim_by = CRO
+		add_claim_by = SER
+	}
+}

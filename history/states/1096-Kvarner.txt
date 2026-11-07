@@ -1,0 +1,21 @@
+state = {
+	id = 1096
+	name = "STATE_1096"
+	manpower = 595693
+	state_category = rural
+	provinces = { 591 984 3601 6611 11901 13252 }
+	history = {
+		owner = ITA
+		add_core_of = CRO
+		add_claim_by = SER
+		add_claim_by = ITA
+		buildings = {
+			infrastructure = 2 #was 3
+			dockyard = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			11901 1 
+		}
+	}
+}

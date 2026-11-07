@@ -1,43 +1,23 @@
 
 state={
 	id=109
-	name="STATE_109" # Croatia
-	manpower = 2224400
-
-	resources = {
-		coal = 1 #initial distribution
-	}
+	name = "STATE_109" # Croatia
+	manpower = 1632798
 	
 	state_category = large_city
 
 	history={
 		owner = CRO
+		add_core_of = CRO
+		victory_points = { 11581 3 }
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
 			arms_factory = 2
-			11580 = {
-				bunker = 1
-			}
-			11577 = {
-				bunker = 1
-			}
-			6647 = {
-				bunker = 1
-			}
-			3627 = {
-				bunker = 1
-			}
 		}
-		victory_points = {
-			11581 3 
-		}
-		add_core_of = CRO
 	}
 
-	provinces={
-		624 3592 3596 3627 6647 9595 9611 11577 11580 11581 11594
-	}
+	provinces = { 624 3592 3596 9611 11581 11594 }
 
 	local_supplies=0.0 
 }

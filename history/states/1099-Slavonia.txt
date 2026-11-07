@@ -1,0 +1,27 @@
+state = {
+	id = 1099
+	name = "STATE_1099"
+	manpower = 634207
+	state_category = developed_rural
+	provinces = { 3627 6647 9595 }
+	resources = {
+		coal = 1
+	}
+	history = {
+		owner = CRO
+		add_core_of = CRO
+		add_claim_by = SER
+		buildings = {
+			infrastructure = 3
+			3627 = {
+				bunker = 1
+			}
+			6647 = {
+				bunker = 1
+			}
+		}
+		victory_points = {
+			6647 5
+		}
+	}
+}

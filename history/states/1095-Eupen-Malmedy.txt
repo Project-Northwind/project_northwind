@@ -1,0 +1,17 @@
+state = {
+	id = 1095
+	name = "STATE_1095"
+	manpower = 21000
+	state_category = pastoral
+	provinces = { 3488 }
+	history = {
+		owner = BEL
+		add_core_of = BEL
+
+		buildings = {
+			infrastructure = 1
+			# Gileppe Dam
+			3488 = { dam = 1 }
+		}
+	}
+}
