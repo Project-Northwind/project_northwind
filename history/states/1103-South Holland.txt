@@ -1,0 +1,21 @@
+state = {
+	id = 1103
+	name = "STATE_1103"
+	manpower = 669250
+	state_category = metropolis
+	provinces = { 9498 }
+	history = {
+		owner = HOL
+		add_core_of = HOL
+		victory_points = { 9498 20 }
+		buildings = {
+			infrastructure = 3
+			dockyard = 3
+			air_base = 5
+			9498 = {
+				naval_base = 10
+	
+			}
+		}
+	}
+}
