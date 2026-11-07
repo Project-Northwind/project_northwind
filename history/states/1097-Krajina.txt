@@ -1,0 +1,17 @@
+state = {
+	id = 1097
+	name = "STATE_1097"
+	manpower = 714350
+	state_category = rural
+	provinces = { 3985 6614 6619 6983 9586 }
+	history = {
+		owner = CRO
+		add_core_of = BOS
+		add_claim_by = CRO
+		add_claim_by = SER
+		victory_points = { 6983 3 }
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}
