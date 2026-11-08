@@ -1,0 +1,16 @@
+state = {
+	id = 1109
+	name = "STATE_1109"
+	manpower = 7941013
+	state_category = town
+	provinces = { 4125 4480 7665 10335 10377 12017 12053 12310 12378 }
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2 #was: 3 was: 5
+			arms_factory = 1 #was 2
+		}
+	}
+}

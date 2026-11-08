@@ -1,0 +1,15 @@
+state = {
+	id = 1094
+	name = "STATE_1094"
+	manpower = 1513869
+	state_category = city
+	provinces = { 529 3512 6469 6570 9482 }
+	history = {
+		owner = GER
+		add_core_of = GER
+		add_core_of = RHI
+		add_core_of = PRE
+		victory_points = { 6469 10 }
+		set_demilitarized_zone = yes
+	}
+}
