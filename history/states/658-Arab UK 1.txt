@@ -3,20 +3,19 @@ state = {
 	name = "STATE_658"
 	manpower = 170200
 	resources = {
-		oil = 5 # was: 6
+		oil = 5
 	}
 	
 	state_category = pastoral
 
 
 	history = {
-		
 		owner = SAU
 		add_core_of = UAE
+		victory_points = { 7960 1 }
+		victory_points = { 8108 1 }
+		
 
-		victory_points = {
-			7960 1 # Abu Dhabi
-		}
 
 		buildings = {
 			infrastructure = 1
@@ -27,9 +26,7 @@ state = {
 
 	}
 
-	provinces = {
-		2048 7960 8108 10904 
-	}
+	provinces = { 2048 4932 7960 8108 10904 }
 
 	local_supplies = 4.0 
 }
