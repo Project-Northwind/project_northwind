@@ -1,0 +1,27 @@
+state = {
+	id = 1092
+	name = "STATE_1092"
+	manpower = 909440
+	state_category = large_town
+	provinces = { 11531 9575 }
+	resources = {
+		steel = 38
+		aluminium = 10
+		coal = 14
+	}
+	history = {
+		owner = GER
+		add_core_of = GER
+		add_core_of = RHI
+		set_demilitarized_zone = yes
+
+		victory_points = {
+			11531 5 
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+}

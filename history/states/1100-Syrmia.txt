@@ -1,0 +1,27 @@
+state = {
+	id = 1100
+	name = "STATE_1100"
+	manpower = 467200
+	state_category = town
+	provinces = { 11577 11580 }
+	history = {
+		owner = CRO
+		add_core_of = CRO
+		add_claim_by = SER
+		victory_points = {
+			11580 3
+		}
+		buildings = {
+			infrastructure = 3 #was 6
+			air_base = 2
+			arms_factory = 1
+			industrial_complex = 1
+			11577 = {
+				bunker = 1
+			}
+			11580 = {
+				bunker = 1
+			}
+		}
+	}
+}

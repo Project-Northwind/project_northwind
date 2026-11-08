@@ -1,0 +1,20 @@
+state = {
+	id = 1105
+	name = "STATE_1105"
+	manpower = 52884
+	state_category = pastoral
+	provinces = { 4017 4115 4562 4591 4603 11976 }
+	history = {
+		owner = SAU
+		add_core_of = JOR
+		victory_points = { 11976 1 }
+		victory_points = { 4115 2 }
+		buildings = {
+			infrastructure = 1
+			4115 = {
+				naval_base = 1
+			}		
+		}
+
+	}
+}

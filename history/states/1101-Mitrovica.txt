@@ -1,0 +1,19 @@
+state = {
+	id = 1101
+	name = "STATE_1101"
+	manpower = 138016
+	state_category = pastoral
+	provinces = { 6953 9890 }
+	history = {
+		owner = SER
+		add_core_of = KOS
+		add_core_of = SER
+		add_claim_by = ALB
+		victory_points = {
+			6953 1
+		}
+		buildings = {
+			infrastructure = 1 #was 3
+		}
+	}
+}
