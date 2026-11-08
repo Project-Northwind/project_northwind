@@ -173,6 +173,7 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
+			unlock_decision_tooltip = XIC_german_staff_seminars
 		}
 	}
 
@@ -189,8 +190,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = XIC_jinan_academy_tt
 			country_event = { id = PN_XIC.8 }
+			unlock_decision_tooltip = XIC_jinan_command_course
 		}
 	}
 
@@ -302,6 +303,7 @@ focus_tree = {
 				add_to_variable = { XIC_reconstruction_factory_output = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_standardise_workshop_orders
 		}
 	}
 	
@@ -328,6 +330,7 @@ focus_tree = {
 				add_to_variable = { XIC_reconstruction_stability = -0.20 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_standardise_workshop_orders
 		}
 	}
 
@@ -869,9 +872,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_national_state_of_china
 		icon = GFX_goal_PN_XIC_the_national_state_of_china
-		x = 26
+		x = 28
 		y = 0
-		cost = 10
+		cost = 5
 		prerequisite = {
 		}
 		mutually_exclusive = {
@@ -892,16 +895,17 @@ focus_tree = {
 			set_country_flag = XIC_national_settlement_resolved
 			set_country_flag = XIC_national_state_formed
 			set_cosmetic_tag = XIC_national_state
-			XIC_add_chinese_cores_effect = yes
+			XIC_claim_chinese_states_effect = yes
+			XIC_unlock_chinese_integration_effect = yes
 		}
 	}
 
 		focus = {
 		id = PN_destruction_of_the_communists
 		icon = GFX_goal_PN_XIC_destruction_of_the_communists
-		x = 26
+		x = 20
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_national_state_of_china
 		}
@@ -916,9 +920,9 @@ focus_tree = {
 		focus = {
 		id = PN_one_ideology_one_china
 		icon = GFX_goal_PN_XIC_one_ideology_one_china
-		x = 26
+		x = 20
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_destruction_of_the_communists
 		}
@@ -945,7 +949,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_grand_uniter
 		x = 20
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_one_ideology_one_china
 		}
@@ -962,6 +966,8 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = { id = PN_XIC_government.5 }
 		}
 	}
 
@@ -970,7 +976,7 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_people_only_need_me
 		x = 20
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_grand_uniter
 		}
@@ -985,6 +991,9 @@ focus_tree = {
 				add_to_variable = { XIC_legitimacy_political_power = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_reconstruction_public_petition_circuit
+			unlock_decision_tooltip = XIC_reconstruction_prefectural_accounts_audit
+			custom_effect_tooltip = XIC_administration_integration_improvement_tt
 		}
 	}
 
@@ -993,11 +1002,10 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_a_army_that_serves_me
 		x = 19
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
-			focus = PN_the_grand_uniter
+			focus = PN_the_people_only_need_me
 		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1009,6 +1017,8 @@ focus_tree = {
 				add_to_variable = { XIC_legitimacy_defence = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_national_command_course
+			country_event = { id = PN_XIC_programmes.4 }
 		}
 	}
 
@@ -1017,11 +1027,10 @@ focus_tree = {
 		icon = GFX_goal_PN_XIC_the_second_sun_yat_sen
 		x = 21
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
-			focus = PN_the_grand_uniter
+			focus = PN_the_people_only_need_me
 		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1032,6 +1041,8 @@ focus_tree = {
 				add_to_variable = { XIC_legitimacy_war_support = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_reconstruction_civic_evening_schools
+			unlock_decision_tooltip = XIC_reconstruction_technical_scholarships
 		}
 	}
 
@@ -1042,15 +1053,11 @@ focus_tree = {
 		y = 6
 		cost = 10
 		prerequisite = {
-			focus = PN_the_people_only_need_me
-		}
-		prerequisite = {
 			focus = PN_a_army_that_serves_me
 		}
 		prerequisite = {
 			focus = PN_the_second_sun_yat_sen
 		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1073,13 +1080,12 @@ focus_tree = {
 		focus = {
 		id = PN_implement_national_reconstructionism
 		icon = GFX_goal_PN_XIC_implement_national_reconstructionism
-		x = 33
+		x = 37
 		y = 3
-		cost = 10
+		cost = 5
 		prerequisite = {
-			focus = PN_one_ideology_one_china
+			focus = PN_the_second_council
 		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1091,15 +1097,16 @@ focus_tree = {
 				add_to_variable = { XIC_postwar_efficiency_growth = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_reconstruction_jinan_qingdao_rail
 		}
 	}
 
 		focus = {
 		id = PN_the_death_of_capitalism
 		icon = GFX_goal_PN_XIC_the_death_of_capitalism
-		x = 33
+		x = 37
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_implement_national_reconstructionism
 		}
@@ -1115,15 +1122,16 @@ focus_tree = {
 				add_to_variable = { XIC_postwar_efficiency_growth = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_nanjing_arsenal_inventory
 		}
 	}
 
 		focus = {
 		id = PN_the_death_of_communism
 		icon = GFX_goal_PN_XIC_the_death_of_communism
-		x = 32
+		x = 36
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_death_of_capitalism
 		}
@@ -1145,9 +1153,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_death_of_feudalism
 		icon = GFX_goal_PN_XIC_the_death_of_feudalism
-		x = 34
+		x = 38
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_death_of_capitalism
 		}
@@ -1169,9 +1177,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_birth_of_new_economics
 		icon = GFX_goal_PN_XIC_the_birth_of_new_economics
-		x = 33
+		x = 37
 		y = 6
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_death_of_feudalism
 		}
@@ -1198,9 +1206,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_implement_reconstructionism_in_countryside
 		icon = GFX_goal_PN_XIC_the_implement_reconstructionism_in_countryside
-		x = 31
+		x = 35
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_birth_of_new_economics
 		}
@@ -1214,15 +1222,16 @@ focus_tree = {
 				add_to_variable = { XIC_postwar_consumer_goods = -0.025 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_reconstruction_shandong_county_registers
 		}
 	}
 
 		focus = {
 		id = PN_the_implement_government_crops
 		icon = GFX_goal_PN_XIC_the_implement_government_crops
-		x = 30
+		x = 34
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_implement_reconstructionism_in_countryside
 		}
@@ -1242,15 +1251,16 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			unlock_decision_tooltip = XIC_reconstruction_henan_government_crops
 		}
 	}
 
 		focus = {
 		id = PN_the_bring_the_people_out_of_peasantry
 		icon = GFX_goal_PN_XIC_the_bring_the_people_out_of_peasantry
-		x = 32
+		x = 36
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_implement_reconstructionism_in_countryside
 		}
@@ -1272,9 +1282,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_countryside_revitalization
 		icon = GFX_goal_PN_XIC_the_countryside_revitalization
-		x = 31
+		x = 35
 		y = 9
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_implement_government_crops
 		}
@@ -1295,14 +1305,12 @@ focus_tree = {
 		}
 	}
 
-
-
 		focus = {
 		id = PN_the_implement_reconstructionism_in_citys
 		icon = GFX_goal_PN_XIC_the_implement_reconstructionism_in_citys
-		x = 35
+		x = 39
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_birth_of_new_economics
 		}
@@ -1315,15 +1323,16 @@ focus_tree = {
 				add_to_variable = { XIC_postwar_output = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_reconstruction_qingdao_industrial_orders
 		}
 	}
 
 		focus = {
 		id = PN_the_new_factorys_new_china
 		icon = GFX_goal_PN_XIC_the_new_factorys_new_china
-		x = 34
+		x = 38
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_implement_reconstructionism_in_citys
 		}
@@ -1347,15 +1356,16 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			unlock_decision_tooltip = XIC_reconstruction_jinan_arsenal
 		}
 	}
 
 		focus = {
 		id = PN_the_corporatist_renassiance
 		icon = GFX_goal_PN_XIC_the_corporatist_renassiance
-		x = 36
+		x = 40
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_implement_reconstructionism_in_citys
 		}
@@ -1371,15 +1381,16 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.05
+			unlock_decision_tooltip = XIC_standardise_workshop_orders
 		}
 	}
 
 		focus = {
 		id = PN_the_city_revitalization
 		icon = GFX_goal_PN_XIC_the_city_revitalization
-		x = 35
+		x = 39
 		y = 9
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_new_factorys_new_china
 		}
@@ -1410,7 +1421,7 @@ focus_tree = {
 		focus = {
 		id = PN_the_great_leap_forward
 		icon = GFX_goal_PN_XIC_the_great_leap_forward
-		x = 33
+		x = 37
 		y = 10
 		cost = 10
 		prerequisite = {
@@ -1443,13 +1454,12 @@ focus_tree = {
 		focus = {
 		id = PN_the_enemy_beyond
 		icon = GFX_goal_PN_XIC_the_enemy_beyond
-		x = 24
-		y = 4
-		cost = 10
+		x = 27
+		y = 1
+		cost = 2
 		prerequisite = {
-			focus = PN_one_ideology_one_china
+			focus = PN_the_national_state_of_china
 		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1460,13 +1470,12 @@ focus_tree = {
 		focus = {
 		id = PN_the_enemy_within
 		icon = GFX_goal_PN_XIC_the_enemy_within
-		x = 28
-		y = 4
-		cost = 10
+		x = 29
+		y = 1
+		cost = 2
 		prerequisite = {
-			focus = PN_one_ideology_one_china
+			focus = PN_the_national_state_of_china
 		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1477,9 +1486,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_second_council
 		icon = GFX_goal_PN_XIC_the_second_council
-		x = 26
-		y = 6
-		cost = 10
+		x = 28
+		y = 2
+		cost = 5
 		prerequisite = {
 			focus = PN_the_enemy_beyond
 		}
@@ -1497,9 +1506,9 @@ focus_tree = {
 		focus = {
 		id = PN_china_must_be_one
 		icon = GFX_goal_PN_XIC_china_must_be_one
-		x = 21
-		y = 8
-		cost = 13
+		x = 25
+		y = 3
+		cost = 5
 		prerequisite = {
 			focus = PN_the_second_council
 		}
@@ -1514,17 +1523,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_war_support = 0.05
-			add_political_power = 100
+			unlock_decision_tooltip = XIC_prepare_provincial_expedition
 		}
 	}
 
 		focus = {
 		id = PN_hunt_down_the_warlords
 		icon = GFX_goal_PN_XIC_hunt_down_the_warlords
-		x = 20
-		y = 9
-		cost = 13
+		x = 24
+		y = 4
+		cost = 5
 		prerequisite = {
 			focus = PN_china_must_be_one
 		}
@@ -1532,19 +1540,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = XIC_warlord_wargoals_tt
-			hidden_effect = {
-				XIC_warlord_wargoals_effect = yes
-			}
+			unlock_decision_tooltip = XIC_demand_provincial_submission
+			unlock_decision_tooltip = XIC_contest_foreign_backed_command
 		}
 	}
 
 		focus = {
 		id = PN_spread_the_ideology_of_reconstructionism
 		icon = GFX_goal_PN_XIC_spread_the_ideology_of_reconstructionism
-		x = 22
-		y = 9
-		cost = 13
+		x = 26
+		y = 4
+		cost = 5
 		prerequisite = {
 			focus = PN_china_must_be_one
 		}
@@ -1554,15 +1560,18 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = { id = PN_XIC_government.6 }
+			custom_effect_tooltip = XIC_administration_integration_improvement_tt
 		}
 	}
 
 		focus = {
 		id = PN_recruit_the_old_officers
 		icon = GFX_goal_PN_XIC_recruit_the_old_officers
-		x = 22
-		y = 10
-		cost = 13
+		x = 26
+		y = 5
+		cost = 5
 		prerequisite = {
 			focus = PN_spread_the_ideology_of_reconstructionism
 		}
@@ -1581,15 +1590,16 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+			unlock_decision_tooltip = XIC_veterans_staff_conference
 		}
 	}
 
 		focus = {
 		id = PN_reeducate_the_warlords
 		icon = GFX_goal_PN_XIC_reeducate_the_warlords
-		x = 20
-		y = 10
-		cost = 13
+		x = 24
+		y = 5
+		cost = 5
 		prerequisite = {
 			focus = PN_hunt_down_the_warlords
 		}
@@ -1601,15 +1611,16 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = XIC_integrated_provincial_commands
 			add_stability = 0.05
+			unlock_decision_tooltip = XIC_integrate_autonomous_province
 		}
 	}
 
 		focus = {
 		id = PN_demand_european_powers_to_leave_china
 		icon = GFX_goal_PN_XIC_demand_european_powers_to_leave_china
-		x = 21
-		y = 11
-		cost = 13
+		x = 25
+		y = 6
+		cost = 5
 		prerequisite = {
 			focus = PN_reeducate_the_warlords
 		}
@@ -1624,17 +1635,16 @@ focus_tree = {
 			hidden_effect = {
 				XIC_demand_concessions_effect = yes
 			}
+			unlock_decision_tooltip = XIC_independent_technical_mission
 		}
 	}
-
-
 
 		focus = {
 		id = PN_death_to_invaders
 		icon = GFX_goal_PN_XIC_death_to_invaders
-		x = 26
-		y = 8
-		cost = 13
+		x = 31
+		y = 3
+		cost = 5
 		prerequisite = {
 			focus = PN_the_second_council
 		}
@@ -1657,9 +1667,9 @@ focus_tree = {
 		focus = {
 		id = PN_rally_the_fengtiang_officers
 		icon = GFX_goal_PN_XIC_rally_the_fengtiang_officers
-		x = 24
-		y = 9
-		cost = 13
+		x = 29
+		y = 4
+		cost = 5
 		prerequisite = {
 			focus = PN_death_to_invaders
 		}
@@ -1687,9 +1697,9 @@ focus_tree = {
 		focus = {
 		id = PN_entrench_anti_japanese_thought
 		icon = GFX_goal_PN_XIC_entrench_anti_japanese_thought
-		x = 26
-		y = 9
-		cost = 13
+		x = 31
+		y = 4
+		cost = 5
 		prerequisite = {
 			focus = PN_death_to_invaders
 		}
@@ -1710,9 +1720,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_false_emperor_of_china
 		icon = GFX_goal_PN_XIC_the_false_emperor_of_china
-		x = 28
-		y = 9
-		cost = 13
+		x = 33
+		y = 4
+		cost = 5
 		prerequisite = {
 			focus = PN_death_to_invaders
 		}
@@ -1727,9 +1737,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_deal_of_the_century
 		icon = GFX_goal_PN_XIC_the_deal_of_the_century
-		x = 26
-		y = 10
-		cost = 13
+		x = 31
+		y = 5
+		cost = 5
 		prerequisite = {
 			focus = PN_entrench_anti_japanese_thought
 		}
@@ -1759,9 +1769,9 @@ focus_tree = {
 		focus = {
 		id = PN_china_only_needs_the_uniter
 		icon = GFX_goal_PN_XIC_china_only_needs_the_uniter
-		x = 25
-		y = 11
-		cost = 13
+		x = 30
+		y = 6
+		cost = 5
 		prerequisite = {
 			focus = PN_the_deal_of_the_century
 		}
@@ -1797,9 +1807,9 @@ focus_tree = {
 		focus = {
 		id = PN_china_a_constitutional_monarchy
 		icon = GFX_goal_PN_XIC_china_a_constitutional_monarchy
-		x = 27
-		y = 11
-		cost = 13
+		x = 32
+		y = 6
+		cost = 5
 		prerequisite = {
 			focus = PN_the_deal_of_the_century
 		}
@@ -1829,9 +1839,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_great_war_of_unification
 		icon = GFX_goal_PN_XIC_the_great_war_of_unification
-		x = 26
-		y = 12
-		cost = 13
+		x = 31
+		y = 7
+		cost = 5
 		prerequisite = {
 			focus = PN_china_only_needs_the_uniter 	focus = PN_china_a_constitutional_monarchy
 		}
@@ -1839,36 +1849,29 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = XIC_final_unification_wargoals_tt
-			hidden_effect = {
-				XIC_warlord_wargoals_effect = yes
-				if = {
-					limit = {
-						JAP = { exists = yes }
-						NOT = { has_war_with = JAP }
-						NOT = { is_in_faction_with = JAP }
-					}
-					create_wargoal = { type = annex_everything target = JAP }
-				}
+			custom_effect_tooltip = XIC_northeast_war_goals_tt
+			hidden_effect = { XIC_republic_northeast_wargoals_effect = yes }
+			unlock_decision_tooltip = XIC_secure_campaign_munitions
+			unlock_decision_tooltip = XIC_prepare_northern_offensive
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XIC_campaign_readiness_tt
+				XIC_campaign_preparations_ready = yes
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			army_experience = 50
 		}
 	}
 
 		focus = {
 		id = PN_china_united_under_one_flag
 		icon = GFX_goal_PN_XIC_china_united_under_one_flag
-		x = 23
-		y = 13
-		cost = 10
-		prerequisite = {
-			focus = PN_the_great_war_of_unification
-		}
+		x = 25
+		y = 7
+		cost = 5
 		prerequisite = {
 			focus = PN_demand_european_powers_to_leave_china
 		}
-
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = XIC_chinese_commands_integrated_tt
@@ -1890,9 +1893,9 @@ focus_tree = {
 		focus = {
 		id = PN_demand_the_northern_provinces
 		icon = GFX_goal_PN_XIC_demand_the_northern_provinces
-		x = 22
-		y = 14
-		cost = 10
+		x = 24
+		y = 8
+		cost = 5
 		prerequisite = {
 			focus = PN_china_united_under_one_flag
 		}
@@ -1910,9 +1913,9 @@ focus_tree = {
 		focus = {
 		id = PN_demand_establish_reconstuctionism_in_korea
 		icon = GFX_goal_PN_XIC_demand_establish_reconstuctionism_in_korea
-		x = 24
-		y = 14
-		cost = 10
+		x = 26
+		y = 8
+		cost = 5
 		prerequisite = {
 			focus = PN_china_united_under_one_flag
 		}
@@ -1930,16 +1933,19 @@ focus_tree = {
 		focus = {
 		id = PN_avenged_the_century_of_humiliation
 		icon = GFX_goal_PN_XIC_avenged_the_century_of_humiliation
-		x = 23
-		y = 15
+		x = 27
+		y = 13
 		cost = 10
+
+		prerequisite = {
+			focus = PN_demand_the_northern_provinces
+		}
 		prerequisite = {
 			focus = PN_demand_establish_reconstuctionism_in_korea
 		}
 		prerequisite = {
-			focus = PN_demand_the_northern_provinces
+			focus = PN_restore_manchurian_industry
 		}
-
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = XIC_sovereignty_restored_tt
@@ -1973,9 +1979,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_national_peoples_republic_of_china
 		icon = GFX_goal_PN_XIC_the_national_peoples_republic_of_china
-		x = 44
+		x = 56
 		y = 0
-		cost = 10
+		cost = 5
 		prerequisite = {
 		}
 		mutually_exclusive = {
@@ -1997,7 +2003,8 @@ focus_tree = {
 			set_country_flag = XIC_national_peoples_republic_formed
 			clr_country_flag = XIC_envoy_to_wang_ming_sent
 			set_cosmetic_tag = XIC_national_peoples_republic
-			XIC_add_chinese_cores_effect = yes
+			XIC_claim_chinese_states_effect = yes
+			XIC_unlock_chinese_integration_effect = yes
 			custom_effect_tooltip = XIC_wang_ming_secretary_tt
 			hidden_effect = {
 				PRC = {
@@ -2022,6 +2029,7 @@ focus_tree = {
 					}
 				}
 			}
+			hidden_effect = { XIC_preserve_red_army_cadres_effect = yes }
 			annex_country = {
 				target = PRC
 				transfer_troops = yes
@@ -2046,9 +2054,9 @@ focus_tree = {
 		focus = {
 		id = PN_honour_the_national_revival_settlement
 		icon = GFX_goal_PN_XIC_honour_the_national_revival_settlement
-		x = 44
+		x = 56
 		y = 1
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_the_national_peoples_republic_of_china
 		}
@@ -2064,9 +2072,9 @@ focus_tree = {
 		focus = {
 		id = PN_found_the_chinese_national_revival_league
 		icon = GFX_goal_PN_XIC_found_the_chinese_national_revival_league
-		x = 44
+		x = 56
 		y = 2
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_honour_the_national_revival_settlement
 		}
@@ -2087,9 +2095,9 @@ focus_tree = {
 		focus = {
 		id = PN_embrace_national_chinese_solidarism
 		icon = GFX_goal_PN_XIC_embrace_national_chinese_solidarism
-		x = 44
+		x = 56
 		y = 3
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_found_the_chinese_national_revival_league
 		}
@@ -2105,9 +2113,9 @@ focus_tree = {
 		focus = {
 		id = PN_the_grand_uniter_of_the_republic
 		icon = GFX_goal_generic_political_pressure
-		x = 40
+		x = 44
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_embrace_national_chinese_solidarism
 		}
@@ -2130,9 +2138,9 @@ focus_tree = {
 		focus = {
 		id = PN_convene_the_national_congress
 		icon = GFX_goal_PN_XIC_convene_the_national_congress
-		x = 40
+		x = 44
 		y = 5
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_the_grand_uniter_of_the_republic
 		}
@@ -2147,15 +2155,17 @@ focus_tree = {
 				add_to_variable = { XIC_legitimacy_war_support = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = { id = PN_XIC_government.1 }
 		}
 	}
 
 		focus = {
 		id = PN_elect_the_central_committee
 		icon = GFX_goal_PN_XIC_elect_the_central_committee
-		x = 39
+		x = 43
 		y = 6
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_convene_the_national_congress
 		}
@@ -2175,9 +2185,9 @@ focus_tree = {
 		focus = {
 		id = PN_establish_the_council_of_national_revival
 		icon = GFX_goal_PN_XIC_establish_the_council_of_national_revival
-		x = 41
+		x = 45
 		y = 6
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_convene_the_national_congress
 		}
@@ -2197,9 +2207,9 @@ focus_tree = {
 		focus = {
 		id = PN_six_wings_one_league
 		icon = GFX_goal_generic_national_unity
-		x = 40
+		x = 44
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_elect_the_central_committee
 		}
@@ -2219,15 +2229,17 @@ focus_tree = {
 				add_to_variable = { XIC_legitimacy_defence = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = { id = PN_XIC_government.2 }
 		}
 	}
 
 		focus = {
 		id = PN_preserve_the_reconstruction_wing
 		icon = GFX_goal_PN_XIC_preserve_the_reconstruction_wing
-		x = 39
+		x = 43
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_six_wings_one_league
 		}
@@ -2248,9 +2260,9 @@ focus_tree = {
 		focus = {
 		id = PN_welcome_the_revolutionary_cadres
 		icon = GFX_goal_PN_XIC_welcome_the_revolutionary_cadres
-		x = 41
+		x = 45
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_six_wings_one_league
 		}
@@ -2271,7 +2283,7 @@ focus_tree = {
 		focus = {
 		id = PN_unity_above_faction
 		icon = GFX_goal_generic_national_unity
-		x = 40
+		x = 44
 		y = 9
 		cost = 10
 		prerequisite = {
@@ -2303,9 +2315,9 @@ focus_tree = {
 		focus = {
 		id = PN_secretary_of_state_wang_ming
 		icon = GFX_goal_PN_XIC_secretary_of_state_wang_ming
-		x = 48
+		x = 56
 		y = 4
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_embrace_national_chinese_solidarism
 		}
@@ -2321,9 +2333,9 @@ focus_tree = {
 		focus = {
 		id = PN_bridge_the_ministries_and_the_league
 		icon = GFX_goal_PN_XIC_bridge_the_ministries_and_the_league
-		x = 48
+		x = 56
 		y = 5
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_secretary_of_state_wang_ming
 		}
@@ -2344,9 +2356,9 @@ focus_tree = {
 		focus = {
 		id = PN_establish_territorial_league_branches
 		icon = GFX_goal_generic_political_pressure
-		x = 47
+		x = 55
 		y = 6
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_bridge_the_ministries_and_the_league
 		}
@@ -2355,15 +2367,18 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
+			unlock_decision_tooltip = XIC_reconstruction_county_civil_service
+			unlock_decision_tooltip = XIC_reconstruction_district_public_works
+			custom_effect_tooltip = XIC_administration_integration_improvement_tt
 		}
 	}
 
 		focus = {
 		id = PN_cadres_in_national_service
 		icon = GFX_goal_PN_XIC_cadres_in_national_service
-		x = 49
+		x = 57
 		y = 6
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = PN_bridge_the_ministries_and_the_league
 		}
@@ -2379,9 +2394,9 @@ focus_tree = {
 		focus = {
 		id = PN_a_state_beyond_the_officer_corps
 		icon = GFX_goal_PN_XIC_a_state_beyond_the_officer_corps
-		x = 48
+		x = 56
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_establish_territorial_league_branches
 		}
@@ -2394,15 +2409,18 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = { id = PN_XIC_government.4 }
+			custom_effect_tooltip = XIC_administration_integration_improvement_tt
 		}
 	}
 
 		focus = {
 		id = PN_a_workers_voice_in_congress
 		icon = GFX_goal_PN_XIC_a_workers_voice_in_congress
-		x = 47
+		x = 55
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_a_state_beyond_the_officer_corps
 		}
@@ -2416,15 +2434,17 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 75
+			unlock_decision_tooltip = XIC_reconstruction_workplace_inspections
+			unlock_decision_tooltip = XIC_reconstruction_wage_arbitration
 		}
 	}
 
 		focus = {
 		id = PN_an_agrarian_voice_in_congress
 		icon = GFX_goal_PN_XIC_an_agrarian_voice_in_congress
-		x = 49
+		x = 57
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_a_state_beyond_the_officer_corps
 		}
@@ -2438,15 +2458,17 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_manpower = 25000
+			unlock_decision_tooltip = XIC_reconstruction_rural_debt_settlement
+			unlock_decision_tooltip = XIC_reconstruction_rural_credit_cooperatives
 		}
 	}
 
 		focus = {
 		id = PN_the_national_social_bargain
 		icon = GFX_goal_PN_XIC_the_national_social_bargain
-		x = 48
+		x = 56
 		y = 9
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_a_workers_voice_in_congress
 		}
@@ -2458,15 +2480,17 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = XIC_national_social_bargain
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = { id = PN_XIC_government.7 }
 		}
 	}
 
 		focus = {
 		id = PN_the_national_revival_plan
 		icon = GFX_goal_PN_XIC_the_national_revival_plan
-		x = 58
+		x = 72
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_embrace_national_chinese_solidarism
 		}
@@ -2482,15 +2506,18 @@ focus_tree = {
 				add_to_variable = { XIC_postwar_efficiency_growth = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = { id = PN_XIC_government.8 }
+			unlock_decision_tooltip = XIC_reconstruction_jinan_qingdao_rail
 		}
 	}
 
 		focus = {
 		id = PN_expand_strategic_public_ownership
 		icon = GFX_goal_generic_construct_civilian
-		x = 58
+		x = 72
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_the_national_revival_plan
 		}
@@ -2506,15 +2533,16 @@ focus_tree = {
 				add_to_variable = { XIC_postwar_efficiency_growth = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_nanjing_arsenal_inventory
 		}
 	}
 
 		focus = {
 		id = PN_reorganise_the_national_banks
 		icon = GFX_goal_PN_XIC_reorganise_the_national_banks
-		x = 57
+		x = 71
 		y = 6
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_expand_strategic_public_ownership
 		}
@@ -2530,15 +2558,17 @@ focus_tree = {
 				add_to_variable = { XIC_postwar_efficiency_growth = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_reconstruction_industrial_rediscount
+			unlock_decision_tooltip = XIC_reconstruction_railway_clearing_credit
 		}
 	}
 
 		focus = {
 		id = PN_create_national_industrial_corporations
 		icon = GFX_goal_generic_production
-		x = 59
+		x = 73
 		y = 6
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_expand_strategic_public_ownership
 		}
@@ -2554,15 +2584,16 @@ focus_tree = {
 				add_to_variable = { XIC_postwar_efficiency_growth = 0.05 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_standardise_workshop_orders
 		}
 	}
 
 		focus = {
 		id = PN_a_planned_mixed_economy
 		icon = GFX_goal_PN_XIC_a_planned_mixed_economy
-		x = 58
+		x = 72
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_reorganise_the_national_banks
 		}
@@ -2589,9 +2620,9 @@ focus_tree = {
 		focus = {
 		id = PN_land_to_those_who_work_it
 		icon = GFX_goal_PN_XIC_land_to_those_who_work_it
-		x = 55
+		x = 69
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_a_planned_mixed_economy
 		}
@@ -2606,15 +2637,16 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_stability = 0.05
+			unlock_decision_tooltip = XIC_reconstruction_shandong_cooperatives
 		}
 	}
 
 		focus = {
 		id = PN_recognise_the_labour_organisations
 		icon = GFX_goal_PN_XIC_recognise_the_labour_organisations
-		x = 61
+		x = 75
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_a_planned_mixed_economy
 		}
@@ -2627,15 +2659,16 @@ focus_tree = {
 				add_to_variable = { XIC_postwar_output = 0.025 }
 				force_update_dynamic_modifier = yes
 			}
+			unlock_decision_tooltip = XIC_reconstruction_qingdao_arbitration
 		}
 	}
 
 		focus = {
 		id = PN_break_the_cycle_of_rural_debt
 		icon = GFX_goal_PN_XIC_break_the_cycle_of_rural_debt
-		x = 54
+		x = 68
 		y = 9
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_land_to_those_who_work_it
 		}
@@ -2654,9 +2687,9 @@ focus_tree = {
 		focus = {
 		id = PN_cooperatives_not_collectivisation
 		icon = GFX_goal_PN_XIC_cooperatives_not_collectivisation
-		x = 56
+		x = 70
 		y = 9
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_land_to_those_who_work_it
 		}
@@ -2675,9 +2708,9 @@ focus_tree = {
 		focus = {
 		id = PN_national_labour_standards
 		icon = GFX_goal_PN_XIC_national_labour_standards
-		x = 60
+		x = 74
 		y = 9
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_recognise_the_labour_organisations
 		}
@@ -2696,9 +2729,9 @@ focus_tree = {
 		focus = {
 		id = PN_industrial_councils_and_arbitration
 		icon = GFX_goal_PN_XIC_industrial_councils_and_arbitration
-		x = 62
+		x = 76
 		y = 9
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_recognise_the_labour_organisations
 		}
@@ -2717,9 +2750,9 @@ focus_tree = {
 		focus = {
 		id = PN_a_prosperous_countryside
 		icon = GFX_goal_PN_XIC_a_prosperous_countryside
-		x = 55
+		x = 69
 		y = 10
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_break_the_cycle_of_rural_debt
 		}
@@ -2742,9 +2775,9 @@ focus_tree = {
 		focus = {
 		id = PN_social_insurance_for_the_nation
 		icon = GFX_goal_PN_XIC_social_insurance_for_the_nation
-		x = 61
+		x = 75
 		y = 10
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_national_labour_standards
 		}
@@ -2763,9 +2796,9 @@ focus_tree = {
 		focus = {
 		id = PN_connect_the_national_grain_network
 		icon = GFX_goal_PN_XIC_connect_the_national_grain_network
-		x = 54
+		x = 68
 		y = 11
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_a_prosperous_countryside
 		}
@@ -2782,15 +2815,16 @@ focus_tree = {
 			capital_scope = {
 				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 			}
+			unlock_decision_tooltip = XIC_reconstruction_henan_grain_network
 		}
 	}
 
 		focus = {
 		id = PN_mechanise_the_family_farm
 		icon = GFX_goal_PN_XIC_mechanise_the_family_farm
-		x = 56
+		x = 70
 		y = 11
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_a_prosperous_countryside
 		}
@@ -2810,15 +2844,16 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			unlock_decision_tooltip = XIC_reconstruction_xian_farm_machinery
 		}
 	}
 
 		focus = {
 		id = PN_power_rail_and_steel
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 60
+		x = 74
 		y = 11
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_social_insurance_for_the_nation
 		}
@@ -2838,15 +2873,17 @@ focus_tree = {
 				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
 			}
+			unlock_decision_tooltip = XIC_reconstruction_hebei_power_works
+			unlock_decision_tooltip = XIC_reconstruction_jinan_arsenal
 		}
 	}
 
 		focus = {
 		id = PN_protect_the_small_producers
 		icon = GFX_goal_PN_XIC_protect_the_small_producers
-		x = 62
+		x = 76
 		y = 11
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_social_insurance_for_the_nation
 		}
@@ -2861,13 +2898,14 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 50
+			unlock_decision_tooltip = XIC_reconstruction_shandong_small_producers
 		}
 	}
 
 		focus = {
 		id = PN_production_for_national_revival
 		icon = GFX_goal_generic_production
-		x = 58
+		x = 72
 		y = 12
 		cost = 10
 		prerequisite = {
@@ -2908,9 +2946,9 @@ focus_tree = {
 		focus = {
 		id = PN_one_national_army
 		icon = GFX_goal_PN_XIC_one_national_army
-		x = 44
+		x = 50
 		y = 4
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_embrace_national_chinese_solidarism
 		}
@@ -2928,15 +2966,17 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = XIC_army_of_national_revival }
 			}
 			army_experience = 20
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = { id = PN_XIC_government.3 }
 		}
 	}
 
 		focus = {
 		id = PN_integrate_the_former_red_army
 		icon = GFX_goal_PN_XIC_integrate_the_former_red_army
-		x = 43
+		x = 49
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_one_national_army
 		}
@@ -2957,9 +2997,9 @@ focus_tree = {
 		focus = {
 		id = PN_retain_the_northeastern_officers
 		icon = GFX_goal_PN_XIC_retain_the_northeastern_officers
-		x = 45
+		x = 51
 		y = 5
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_one_national_army
 		}
@@ -2987,9 +3027,9 @@ focus_tree = {
 		focus = {
 		id = PN_no_private_party_armies
 		icon = GFX_goal_PN_XIC_no_private_party_armies
-		x = 44
+		x = 50
 		y = 6
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_integrate_the_former_red_army
 		}
@@ -3006,15 +3046,16 @@ focus_tree = {
 				force_update_dynamic_modifier = yes
 			}
 			add_stability = 0.05
+			country_event = { id = PN_XIC_programmes.4 }
 		}
 	}
 
 		focus = {
 		id = PN_a_common_staff_and_doctrine
 		icon = GFX_goal_generic_army_doctrines
-		x = 44
+		x = 50
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_no_private_party_armies
 		}
@@ -3034,15 +3075,16 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			unlock_decision_tooltip = XIC_national_command_course
 		}
 	}
 
 		focus = {
 		id = PN_the_army_of_national_revival
 		icon = GFX_goal_generic_army_doctrines
-		x = 44
+		x = 50
 		y = 8
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = PN_a_common_staff_and_doctrine
 		}
@@ -3068,19 +3110,12 @@ focus_tree = {
 		focus = {
 		id = PN_the_revival_council_convenes
 		icon = GFX_goal_PN_XIC_the_revival_council_convenes
-		x = 44
-		y = 10
-		cost = 10
+		x = 62
+		y = 4
+		cost = 2
 		prerequisite = {
-			focus = PN_unity_above_faction
+			focus = PN_embrace_national_chinese_solidarism
 		}
-		prerequisite = {
-			focus = PN_the_national_social_bargain
-		}
-		prerequisite = {
-			focus = PN_the_army_of_national_revival
-		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -3091,13 +3126,12 @@ focus_tree = {
 		focus = {
 		id = PN_recover_the_foreign_concessions
 		icon = GFX_goal_PN_XIC_recover_the_foreign_concessions
-		x = 42
-		y = 11
-		cost = 10
+		x = 60
+		y = 8
+		cost = 2
 		prerequisite = {
-			focus = PN_the_revival_council_convenes
+			focus = PN_republic_end_the_provincial_commands
 		}
-
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = XIC_revival_council_concluded_tt
@@ -3116,9 +3150,9 @@ focus_tree = {
 		focus = {
 		id = PN_a_national_front_against_japan
 		icon = GFX_goal_generic_alliance
-		x = 46
-		y = 11
-		cost = 10
+		x = 64
+		y = 5
+		cost = 5
 		prerequisite = {
 			focus = PN_the_revival_council_convenes
 		}
@@ -3138,19 +3172,18 @@ focus_tree = {
 				remove_ideas = XIC_anti_japanese_thought
 				add_ideas = XIC_anti_japanese_thought_entrenched
 			}
-			add_war_support = 0.05
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = XIC_republic_warlord_settlement_tt
-			hidden_effect = { XIC_offer_warlord_integration_effect = yes }
+			unlock_decision_tooltip = XIC_secure_campaign_munitions
+			unlock_decision_tooltip = XIC_prepare_northern_offensive
 		}
 	}
 
 		focus = {
 		id = PN_return_to_the_northeast
 		icon = GFX_goal_PN_XIC_return_to_the_northeast
-		x = 45
-		y = 12
-		cost = 10
+		x = 63
+		y = 6
+		cost = 2
 		prerequisite = {
 			focus = PN_a_national_front_against_japan
 		}
@@ -3158,18 +3191,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = XIC_republic_northeast_wargoals_tt
-			hidden_effect = { XIC_republic_northeast_wargoals_effect = yes }
-			army_experience = 25
+			army_experience = 15
+			unlock_decision_tooltip = XIC_manchurian_reconnaissance
 		}
 	}
 
 		focus = {
 		id = PN_support_korean_independence
 		icon = GFX_goal_PN_XIC_support_korean_independence
-		x = 47
-		y = 12
-		cost = 10
+		x = 65
+		y = 6
+		cost = 2
 		prerequisite = {
 			focus = PN_a_national_front_against_japan
 		}
@@ -3181,7 +3213,6 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = XIC_korean_independence_pending
 				country_event = { id = PN_XIC.49 days = 1 }
-				XIC_republic_northeast_wargoals_effect = yes
 			}
 		}
 	}
@@ -3189,13 +3220,12 @@ focus_tree = {
 		focus = {
 		id = PN_china_answers_to_no_bloc
 		icon = GFX_goal_generic_neutrality_focus
-		x = 42
-		y = 12
-		cost = 10
+		x = 60
+		y = 9
+		cost = 2
 		prerequisite = {
 			focus = PN_recover_the_foreign_concessions
 		}
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -3210,32 +3240,35 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = XIC_concessions_demand_tt
 			hidden_effect = { XIC_renew_concessions_demand_effect = yes }
+			unlock_decision_tooltip = XIC_independent_technical_mission
 		}
 	}
 
 		focus = {
 		id = PN_restore_the_nations_sovereignty
 		icon = GFX_goal_PN_XIC_restore_the_nations_sovereignty
-		x = 44
-		y = 13
-		cost = 10
+		x = 64
+		y = 12
+		cost = 5
 		prerequisite = {
-			focus = PN_return_to_the_northeast
+			focus = PN_republic_restore_manchurian_industry
 		}
 		prerequisite = {
-			focus = PN_support_korean_independence
+			focus = PN_republic_return_the_soldiers_home
+		}
+		prerequisite = {
+			focus = PN_republic_settle_the_taiwan_question
 		}
 		prerequisite = {
 			focus = PN_china_answers_to_no_bloc
 		}
-
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = XIC_republic_sovereignty_restored_tt
 				NOT = { any_country = { XIC_foreign_chinese_territory_holder = yes } }
 				NOT = {
 					any_state = {
-						is_core_of = XIC
+						XIC_is_chinese_state = yes
 						NOT = { is_controlled_by = XIC }
 						controller = { NOT = { is_subject_of = XIC } }
 					}
@@ -3264,9 +3297,531 @@ focus_tree = {
 		focus = {
 		id = PN_hymn_of_united_china
 		icon = GFX_goal_generic_national_unity
-		x = 50
+		x = 59
 		y = 15
 		cost = 10
+		prerequisite = {
+			focus = PN_republic_fulfil_the_founding_settlement
+		}
+		prerequisite = {
+			focus = PN_republic_reconstruction_and_victory
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_political_power = 200
+			country_event = { id = PN_XIC.48 }
+		}
+
+	}
+
+		focus = {
+		id = PN_republic_complete_national_unification
+		icon = GFX_goal_generic_national_unity
+		x = 60
+		y = 5
+		cost = 2
+		prerequisite = {
+			focus = PN_the_revival_council_convenes
+		}
+
+		available = {
+			has_country_flag = XIC_revival_council_concluded
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = PN_XIC_programmes.9 }
+		}
+	}
+
+		focus = {
+		id = PN_republic_open_provincial_negotiations
+		icon = GFX_goal_generic_alliance
+		x = 59
+		y = 6
+		cost = 2
+		prerequisite = {
+			focus = PN_republic_complete_national_unification
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_send_provincial_delegation
+		}
+	}
+
+		focus = {
+		id = PN_republic_prepare_regional_expeditions
+		icon = GFX_goal_generic_army_doctrines
+		x = 61
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = PN_republic_complete_national_unification
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_prepare_provincial_expedition
+		}
+	}
+
+		focus = {
+		id = PN_republic_end_the_provincial_commands
+		icon = GFX_goal_generic_national_unity
+		x = 60
+		y = 7
+		cost = 5
+		prerequisite = {
+			focus = PN_republic_open_provincial_negotiations
+		}
+		prerequisite = {
+			focus = PN_republic_prepare_regional_expeditions
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_integrate_autonomous_province
+		}
+	}
+
+		focus = {
+		id = PN_prepare_the_northern_campaign
+		icon = GFX_goal_generic_army_doctrines
+		x = 30
+		y = 8
+		cost = 2
+		prerequisite = {
+			focus = PN_the_great_war_of_unification
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_arm_manchurian_contacts
+			unlock_decision_tooltip = XIC_manchurian_reconnaissance
+		}
+	}
+
+		focus = {
+		id = PN_supply_the_reclamation_army
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 32
+		y = 8
+		cost = 2
+		prerequisite = {
+			focus = PN_the_great_war_of_unification
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_repair_the_northern_supply_line
+			add_equipment_to_stockpile = { type = train_equipment_1 amount = 5 producer = XIC }
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 60 producer = XIC }
+		}
+	}
+
+		focus = {
+		id = PN_reclaim_the_manchurian_ports
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 30
+		y = 9
+		cost = 2
+		prerequisite = {
+			focus = PN_prepare_the_northern_campaign
+		}
+		prerequisite = {
+			focus = PN_supply_the_reclamation_army
+		}
+
+		available = {
+			controls_state = 716
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_survey_the_captured_arsenals
+			army_experience = 20
+		}
+	}
+
+		focus = {
+		id = PN_force_the_yalu_crossing
+		icon = GFX_goal_generic_amphibious_assault
+		x = 32
+		y = 9
+		cost = 2
+		prerequisite = {
+			focus = PN_prepare_the_northern_campaign
+		}
+		prerequisite = {
+			focus = PN_supply_the_reclamation_army
+		}
+
+		available = {
+			controls_state = 716
+			controls_state = 328
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_prepare_the_yalu_crossings
+		}
+	}
+
+		focus = {
+		id = PN_dictate_terms_to_japan
+		icon = GFX_goal_generic_alliance
+		x = 31
+		y = 10
+		cost = 2
+		prerequisite = {
+			focus = PN_reclaim_the_manchurian_ports
+		}
+		prerequisite = {
+			focus = PN_force_the_yalu_crossing
+		}
+
+		available = {
+			XIC_japan_expelled_from_continent = yes
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_propose_japanese_withdrawal
+		}
+	}
+
+		focus = {
+		id = PN_restore_manchurian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 31
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = PN_dictate_terms_to_japan
+		}
+		prerequisite = {
+			focus = PN_return_the_soldiers_home
+		}
+		prerequisite = {
+			focus = PN_settle_the_taiwan_question
+		}
+
+		available = {
+			NOT = { has_war_with = JAP }
+			controls_state = 716
+			owns_state = 716
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_reconstruction_liaotung_industry
+		}
+	}
+
+		focus = {
+		id = PN_return_the_soldiers_home
+		icon = GFX_goal_generic_national_unity
+		x = 30
+		y = 11
+		cost = 2
+		prerequisite = {
+			focus = PN_dictate_terms_to_japan
+		}
+
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = PN_XIC_campaigns.8 }
+			unlock_decision_tooltip = XIC_reconstruction_liaoning_veteran_settlement
+			unlock_decision_tooltip = XIC_reconstruction_xian_demobilisation
+		}
+	}
+
+		focus = {
+		id = PN_settle_the_taiwan_question
+		icon = GFX_goal_generic_alliance
+		x = 32
+		y = 11
+		cost = 2
+		prerequisite = {
+			focus = PN_dictate_terms_to_japan
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { owns_state = 524 controls_state = 524 }
+				524 = {
+					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				}
+				add_political_power = 50
+			}
+			else = {
+				unlock_decision_tooltip = XIC_request_the_return_of_taiwan
+			}
+		}
+
+		available = {
+			OR = { NOT = { owns_state = 524 } controls_state = 524 }
+		}
+	}
+
+		focus = {
+		id = PN_republic_reopen_the_northern_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 63
+		y = 7
+		cost = 2
+		prerequisite = {
+			focus = PN_return_to_the_northeast
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_repair_the_northern_supply_line
+		}
+	}
+
+		focus = {
+		id = PN_republic_support_the_manchurian_resistance
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 65
+		y = 7
+		cost = 2
+		prerequisite = {
+			focus = PN_support_korean_independence
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_arm_manchurian_contacts
+		}
+	}
+
+		focus = {
+		id = PN_republic_begin_the_liberation_campaign
+		icon = GFX_goal_generic_major_war
+		x = 64
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = PN_republic_reopen_the_northern_railways
+		}
+		prerequisite = {
+			focus = PN_republic_support_the_manchurian_resistance
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = XIC_northeast_war_goals_tt
+			hidden_effect = { XIC_republic_northeast_wargoals_effect = yes }
+			unlock_decision_tooltip = XIC_secure_campaign_munitions
+			unlock_decision_tooltip = XIC_prepare_northern_offensive
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XIC_campaign_readiness_tt
+				XIC_campaign_preparations_ready = yes
+			}
+		}
+	}
+
+		focus = {
+		id = PN_republic_secure_the_manchurian_ports
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 63
+		y = 9
+		cost = 2
+		prerequisite = {
+			focus = PN_republic_begin_the_liberation_campaign
+		}
+
+		available = {
+			controls_state = 716
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_survey_the_captured_arsenals
+			army_experience = 20
+		}
+	}
+
+		focus = {
+		id = PN_republic_cross_the_yalu
+		icon = GFX_goal_generic_amphibious_assault
+		x = 65
+		y = 9
+		cost = 2
+		prerequisite = {
+			focus = PN_republic_begin_the_liberation_campaign
+		}
+
+		available = {
+			controls_state = 716
+			controls_state = 328
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_prepare_the_yalu_crossings
+		}
+	}
+
+		focus = {
+		id = PN_republic_offer_a_continental_settlement
+		icon = GFX_goal_generic_alliance
+		x = 64
+		y = 10
+		cost = 2
+		prerequisite = {
+			focus = PN_republic_secure_the_manchurian_ports
+		}
+		prerequisite = {
+			focus = PN_republic_cross_the_yalu
+		}
+
+		available = {
+			XIC_japan_expelled_from_continent = yes
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_propose_japanese_withdrawal
+		}
+	}
+
+		focus = {
+		id = PN_republic_restore_manchurian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 62
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = PN_republic_offer_a_continental_settlement
+		}
+
+		available = {
+			NOT = { has_war_with = JAP }
+			controls_state = 716
+			owns_state = 716
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_tooltip = XIC_reconstruction_liaotung_industry
+		}
+	}
+
+		focus = {
+		id = PN_republic_return_the_soldiers_home
+		icon = GFX_goal_generic_national_unity
+		x = 64
+		y = 11
+		cost = 2
+		prerequisite = {
+			focus = PN_republic_offer_a_continental_settlement
+		}
+
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = PN_XIC_campaigns.8 }
+			unlock_decision_tooltip = XIC_reconstruction_liaoning_veteran_settlement
+			unlock_decision_tooltip = XIC_reconstruction_xian_demobilisation
+		}
+	}
+
+		focus = {
+		id = PN_republic_settle_the_taiwan_question
+		icon = GFX_goal_generic_alliance
+		x = 66
+		y = 11
+		cost = 2
+		prerequisite = {
+			focus = PN_republic_offer_a_continental_settlement
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { owns_state = 524 controls_state = 524 }
+				524 = {
+					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				}
+				add_political_power = 50
+			}
+			else = {
+				unlock_decision_tooltip = XIC_request_the_return_of_taiwan
+			}
+		}
+
+		available = {
+			OR = { NOT = { owns_state = 524 } controls_state = 524 }
+		}
+	}
+
+		focus = {
+		id = PN_republic_fulfil_the_founding_settlement
+		icon = GFX_goal_generic_national_unity
+		x = 50
+		y = 11
+		cost = 2
+		prerequisite = {
+			focus = PN_unity_above_faction
+		}
+		prerequisite = {
+			focus = PN_the_national_social_bargain
+		}
+		prerequisite = {
+			focus = PN_the_army_of_national_revival
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = PN_XIC_campaigns.11 }
+		}
+	}
+
+		focus = {
+		id = PN_republic_reconstruction_and_victory
+		icon = GFX_goal_generic_national_unity
+		x = 68
+		y = 14
+		cost = 5
 		prerequisite = {
 			focus = PN_restore_the_nations_sovereignty
 		}
@@ -3277,10 +3832,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.10
-			add_war_support = 0.10
-			add_political_power = 200
-			country_event = { id = PN_XIC.48 }
+			add_tech_bonus = {
+				name = XIC_reconstruction_and_victory_research
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 		}
 	}
 

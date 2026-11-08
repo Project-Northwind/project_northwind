@@ -1,0 +1,185 @@
+ideas = {
+	country = {
+		XIC_gov_social_delegations = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				industrial_capacity_factory = 0.06
+				political_power_gain = -0.20
+			}
+		}
+
+		XIC_gov_territorial_delegations = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				political_power_gain = 0.20
+				mobilization_speed = -0.15
+			}
+		}
+
+		XIC_gov_league_social_programme = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_agrarian_reform
+			modifier = {
+				stability_factor = 0.04
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		XIC_gov_league_defence_programme = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_army_war_college
+			modifier = {
+				mobilization_speed = 0.20
+				production_speed_industrial_complex_factor = -0.12
+			}
+		}
+
+		XIC_gov_league_development_programme = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.12
+				political_power_gain = -0.15
+			}
+		}
+
+		XIC_gov_professional_staff_practice = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_army_war_college
+			modifier = {
+				planning_speed = 0.20
+				training_time_army_factor = 0.12
+			}
+		}
+
+		XIC_gov_mass_mobilisation_practice = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_reserve_divisions
+			modifier = {
+				mobilization_speed = 0.25
+				supply_consumption_factor = 0.10
+			}
+		}
+
+		XIC_gov_civilian_provincial_service = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				political_power_gain = -0.15
+			}
+		}
+
+		XIC_gov_officer_provincial_service = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_army_war_college
+			modifier = {
+				political_power_gain = 0.15
+				training_time_army_factor = 0.12
+			}
+		}
+
+		XIC_gov_council_administrative_warrant = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				production_speed_buildings_factor = 0.12
+				political_power_gain = -0.20
+			}
+		}
+
+		XIC_gov_personal_arbitration = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				political_power_gain = 0.25
+				production_speed_buildings_factor = -0.10
+			}
+		}
+
+		XIC_gov_centrally_commissioned_governors = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				supply_consumption_factor = -0.08
+				political_power_gain = -0.20
+			}
+		}
+
+		XIC_gov_provincial_governor_compacts = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = -0.06
+			}
+		}
+
+		XIC_gov_labour_budget_priority = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		XIC_gov_agrarian_budget_priority = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_agrarian_reform
+			modifier = {
+				consumer_goods_factor = -0.03
+				mobilization_speed = -0.20
+				industrial_capacity_factory = -0.04
+			}
+		}
+
+		XIC_gov_jinan_workshop_investment = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		XIC_gov_nanjing_arsenal_investment = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_army_war_college
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_industrial_complex_factor = -0.15
+			}
+		}
+
+		XIC_gov_inland_transport_priority = {
+			allowed = { original_tag = XIC }
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.30
+				production_speed_arms_factory_factor = -0.15
+			}
+		}
+
+	}
+}

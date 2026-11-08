@@ -1,0 +1,17 @@
+XIC_regional_reconstruction = {
+	priority = 90
+	icon = generic_construction
+
+	allowed = {
+		original_tag = XIC
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = PN_establish_territorial_league_branches
+			has_completed_focus = PN_the_people_only_need_me
+			has_completed_focus = PN_the_national_revival_plan
+			has_completed_focus = PN_implement_national_reconstructionism
+		}
+	}
+}

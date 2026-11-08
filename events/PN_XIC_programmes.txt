@@ -1,0 +1,377 @@
+add_namespace = PN_XIC_programmes
+
+country_event = {
+	id = PN_XIC_programmes.1
+	title = PN_XIC_programmes.1.t
+	desc = PN_XIC_programmes.1.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = XIC
+	}
+
+	option = {
+		name = PN_XIC_programmes.1.a
+		ai_chance = { base = 50 }
+		add_tech_bonus = { name = XIC_gunnery_syllabus bonus = 1 uses = 1 category = artillery }
+	}
+
+	option = {
+		name = PN_XIC_programmes.1.b
+		ai_chance = { base = 50 }
+		add_doctrine_cost_reduction = { name = XIC_german_staff_exercises cost_reduction = 0.35 uses = 2 category = land_doctrine }
+	}
+}
+
+country_event = {
+	id = PN_XIC_programmes.2
+	title = PN_XIC_programmes.2.t
+	desc = PN_XIC_programmes.2.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = XIC
+	}
+
+	option = {
+		name = PN_XIC_programmes.2.a
+		ai_chance = { base = 50 }
+		trigger = {
+			has_character = XIC_zhang_xueming
+			XIC_zhang_xueming = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+		}
+		if = {
+			limit = {
+				has_character = XIC_zhang_xueming
+				XIC_zhang_xueming = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+			}
+			XIC_zhang_xueming = {
+				add_logistics = 1
+				add_skill_level = 1
+				hidden_effect = { set_character_flag = XIC_jinan_staff_course_received }
+			}
+		}
+		else = {
+			add_political_power = 50
+			army_experience = 10
+		}
+	}
+
+	option = {
+		name = PN_XIC_programmes.2.b
+		ai_chance = { base = 50 }
+		trigger = {
+			has_character = XIC_he_zhuguo
+			XIC_he_zhuguo = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+		}
+		if = {
+			limit = {
+				has_character = XIC_he_zhuguo
+				XIC_he_zhuguo = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+			}
+			XIC_he_zhuguo = {
+				add_planning = 1
+				add_skill_level = 1
+				hidden_effect = { set_character_flag = XIC_jinan_staff_course_received }
+			}
+		}
+		else = {
+			add_political_power = 50
+			army_experience = 10
+		}
+	}
+
+	option = {
+		name = PN_XIC_programmes.2.c
+		ai_chance = { base = 50 }
+		trigger = {
+			has_character = XIC_wang_yizhe
+			XIC_wang_yizhe = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+		}
+		if = {
+			limit = {
+				has_character = XIC_wang_yizhe
+				XIC_wang_yizhe = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+			}
+			XIC_wang_yizhe = {
+				add_attack = 1
+				add_skill_level = 1
+				hidden_effect = { set_character_flag = XIC_jinan_staff_course_received }
+			}
+		}
+		else = {
+			add_political_power = 50
+			army_experience = 10
+		}
+	}
+
+	option = {
+		name = PN_XIC_programmes.2.d
+		ai_chance = { base = 50 }
+		trigger = {
+			NOT = {
+				OR = {
+					AND = { has_character = XIC_zhang_xueming XIC_zhang_xueming = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } } }
+					AND = { has_character = XIC_he_zhuguo XIC_he_zhuguo = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } } }
+					AND = { has_character = XIC_wang_yizhe XIC_wang_yizhe = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } } }
+				}
+			}
+		}
+		add_political_power = 50
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = PN_XIC_programmes.3
+	title = PN_XIC_programmes.3.t
+	desc = PN_XIC_programmes.3.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = XIC
+	}
+
+	option = {
+		name = PN_XIC_programmes.3.a
+		ai_chance = { base = 50 }
+		add_tech_bonus = { name = XIC_recovered_artillery_manuals bonus = 1 uses = 1 category = artillery }
+	}
+
+	option = {
+		name = PN_XIC_programmes.3.b
+		ai_chance = { base = 50 }
+		army_experience = 20
+		add_doctrine_cost_reduction = { name = XIC_battalion_staff_training cost_reduction = 0.25 uses = 1 category = land_doctrine }
+	}
+
+	option = {
+		name = PN_XIC_programmes.3.c
+		ai_chance = { base = 50 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 5 producer = XIC }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 40 producer = XIC }
+	}
+}
+
+country_event = {
+	id = PN_XIC_programmes.4
+	title = PN_XIC_programmes.4.t
+	desc = PN_XIC_programmes.4.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = XIC
+	}
+
+	option = {
+		name = PN_XIC_programmes.4.a
+		ai_chance = { base = 50 }
+		add_timed_idea = { idea = XIC_headquarters_liaison_officers days = 180 }
+		army_experience = 15
+	}
+
+	option = {
+		name = PN_XIC_programmes.4.b
+		ai_chance = { base = 50 }
+		add_timed_idea = { idea = XIC_civil_transport_sections days = 180 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 40 producer = XIC }
+	}
+}
+
+country_event = {
+	id = PN_XIC_programmes.5
+	title = PN_XIC_programmes.5.t
+	desc = PN_XIC_programmes.5.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = XIC
+	}
+
+	option = {
+		name = PN_XIC_programmes.5.a
+		ai_chance = { base = 50 }
+		trigger = {
+			owns_state = 1035
+			has_full_control_of_state = 1035
+		}
+		if = {
+			limit = { owns_state = 1035 has_full_control_of_state = 1035 }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 producer = CHI }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 40 producer = CHI }
+		}
+		else = { add_political_power = 25 }
+	}
+
+	option = {
+		name = PN_XIC_programmes.5.b
+		ai_chance = { base = 50 }
+		trigger = {
+			has_political_power > 74
+			owns_state = 1035
+			has_full_control_of_state = 1035
+			1035 = { free_building_slots = { building = arms_factory size > 0 include_locked = no } }
+		}
+		if = {
+			limit = {
+				has_political_power > 74
+				owns_state = 1035
+				has_full_control_of_state = 1035
+				1035 = { free_building_slots = { building = arms_factory size > 0 include_locked = no } }
+			}
+			add_political_power = -75
+			1035 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+		else = { add_political_power = 25 }
+	}
+
+	option = {
+		name = PN_XIC_programmes.5.c
+		ai_chance = { base = 50 }
+		trigger = {
+			OR = { NOT = { owns_state = 1035 } NOT = { has_full_control_of_state = 1035 } }
+		}
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = PN_XIC_programmes.6
+	title = PN_XIC_programmes.6.t
+	desc = PN_XIC_programmes.6.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = XIC
+	}
+
+	option = {
+		name = PN_XIC_programmes.6.a
+		ai_chance = { base = 50 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 400 producer = XIC }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 50 producer = XIC }
+	}
+
+	option = {
+		name = PN_XIC_programmes.6.b
+		ai_chance = { base = 50 }
+		add_tech_bonus = { name = XIC_standardised_artillery_designs bonus = 1 uses = 1 category = artillery }
+	}
+}
+
+country_event = {
+	id = PN_XIC_programmes.8
+	title = PN_XIC_programmes.8.t
+	desc = PN_XIC_programmes.8.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = XIC
+	}
+
+	option = {
+		name = PN_XIC_programmes.8.a
+		ai_chance = { base = 50 }
+		trigger = {
+			has_political_power > 74
+			GER = { exists = yes NOT = { has_war_with = XIC } }
+		}
+		if = {
+			limit = {
+				has_political_power > 74
+				GER = { exists = yes NOT = { has_war_with = XIC } }
+			}
+			add_political_power = -75
+			add_tech_bonus = { name = XIC_german_technical_mission bonus = 1 uses = 1 category = artillery }
+		}
+	}
+
+	option = {
+		name = PN_XIC_programmes.8.b
+		ai_chance = { base = 50 }
+		trigger = {
+			has_political_power > 74
+			ENG = { exists = yes NOT = { has_war_with = XIC } }
+		}
+		if = {
+			limit = {
+				has_political_power > 74
+				ENG = { exists = yes NOT = { has_war_with = XIC } }
+			}
+			add_political_power = -75
+			add_tech_bonus = { name = XIC_british_technical_mission bonus = 1 uses = 1 category = industry }
+		}
+	}
+
+	option = {
+		name = PN_XIC_programmes.8.c
+		ai_chance = { base = 50 }
+		add_tech_bonus = { name = XIC_domestic_technical_mission bonus = 0.5 uses = 1 category = electronics }
+	}
+}
+
+country_event = {
+	id = PN_XIC_programmes.9
+	title = PN_XIC_programmes.9.t
+	desc = PN_XIC_programmes.9.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = XIC
+		has_country_flag = XIC_national_peoples_republic_formed
+	}
+
+	option = {
+		name = PN_XIC_programmes.9.a
+		ai_chance = { base = 50 }
+		custom_effect_tooltip = XIC_direct_integration_terms_tt
+		hidden_effect = { set_country_flag = XIC_direct_integration_priority }
+	}
+
+	option = {
+		name = PN_XIC_programmes.9.b
+		ai_chance = { base = 50 }
+		custom_effect_tooltip = XIC_transitional_autonomy_terms_tt
+		hidden_effect = { set_country_flag = XIC_provincial_autonomy_priority }
+	}
+}
+
+country_event = {
+	id = PN_XIC_programmes.10
+	title = PN_XIC_programmes.10.t
+	desc = PN_XIC_programmes.10.desc
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = { original_tag = XIC }
+
+	option = {
+		name = PN_XIC_programmes.10.a
+		ai_chance = { base = 50 }
+		custom_effect_tooltip = XIC_manchurian_military_contacts_tt
+		hidden_effect = { set_country_flag = XIC_manchurian_military_contacts }
+	}
+
+	option = {
+		name = PN_XIC_programmes.10.b
+		ai_chance = { base = 50 }
+		custom_effect_tooltip = XIC_manchurian_railway_contacts_tt
+		hidden_effect = { set_country_flag = XIC_manchurian_railway_contacts }
+	}
+}

@@ -1,0 +1,63 @@
+XIC_transfer_provincial_officers_effect = {
+	every_army_leader = {
+		XIC_clear_character_political_roles_effect = yes
+		if = {
+			limit = { has_ideology = stalinism }
+			remove_country_leader_role = { ideology = stalinism }
+		}
+		set_nationality = XIC
+		add_unit_leader_trait = XIC_reconstructionist_officer
+		set_character_flag = XIC_provincial_command_integrated
+	}
+}
+
+XIC_settle_japanese_withdrawal_effect = {
+	every_country = {
+		limit = { OR = { tag = JAP is_subject_of = JAP } }
+		if = {
+			limit = { has_war_with = XIC }
+			XIC = { white_peace = PREV }
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					XIC_is_chinese_state = yes
+					state = 525
+					state = 527
+				}
+			}
+			if = {
+				limit = {
+					controller = {
+						NOT = {
+							OR = {
+								tag = XIC
+								tag = JAP
+								is_subject_of = XIC
+								is_subject_of = JAP
+							}
+						}
+					}
+				}
+				set_state_owner_to = XIC
+			}
+			else = {
+				transfer_state_to = XIC
+			}
+		}
+	}
+	if = {
+		limit = { KOR = { exists = yes is_subject_of = JAP } }
+		set_autonomy = {
+			target = KOR
+			autonomy_state = autonomy_free
+		}
+	}
+	set_country_flag = XIC_japanese_withdrawal_agreed
+	if = {
+		limit = { has_country_flag = XIC_national_peoples_republic_formed }
+		set_country_flag = XIC_korean_independence_pending
+		country_event = { id = PN_XIC.49 days = 1 }
+	}
+	country_event = { id = PN_XIC_campaigns.7 days = 1 }
+}

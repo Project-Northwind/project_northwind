@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		XIC_prepared_northern_offensive = {
+			picture = generic_army_war_college
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				supply_consumption_factor = -0.05
+			}
+		}
+		XIC_yalu_crossing_preparations = {
+			picture = generic_army_war_college
+			removal_cost = -1
+			modifier = {
+				river_crossing_factor = -0.1
+				amphibious_invasion = 0.05
+			}
+		}
+		XIC_disrupted_continental_supply = {
+			picture = generic_army_war_college
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = 0.05
+				army_org_regain = -0.05
+			}
+		}
+		XIC_veterans_return_to_work = {
+			picture = man_five_year_plan_industry
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		XIC_trained_national_reserve = {
+			picture = generic_army_war_college
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = -0.1
+				consumer_goods_factor = 0.025
+			}
+		}
+		XIC_prepared_provincial_expedition = {
+			picture = generic_army_war_college
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.10
+				supply_consumption_factor = -0.05
+			}
+		}
+	}
+}

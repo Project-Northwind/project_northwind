@@ -1929,3 +1929,8 @@ IRQ_ENG = {
 	color = rgb { 178 114 98 }
 	color_ui = rgb { 231 148 128 }
 }
+
+XIC_national_peoples_republic = {
+	color = rgb { 128 24 48 }
+	color_ui = rgb { 128 24 48 }
+}

@@ -16,7 +16,9 @@ country_event = {
 	option = {
 		name = PN_XIC.1.a
 		custom_effect_tooltip = XIC_young_officers_recruited_tt
-		set_country_flag = XIC_young_officers_promoted
+		hidden_effect = {
+			set_country_flag = XIC_young_officers_promoted
+		}
 	}
 }
 
@@ -35,8 +37,9 @@ country_event = {
 
 	option = {
 		name = PN_XIC.2.a
-		set_country_flag = XIC_letter_to_xueming_sent
-		custom_effect_tooltip = XIC_xueming_letter_sent_tt
+		hidden_effect = {
+			set_country_flag = XIC_letter_to_xueming_sent
+		}
 		country_event = {
 			id = PN_XIC.3
 			days = 14
@@ -61,7 +64,9 @@ country_event = {
 	option = {
 		name = PN_XIC.3.a
 		custom_effect_tooltip = XIC_xueming_returned_tt
-		set_country_flag = XIC_zhang_xueming_returned
+		hidden_effect = {
+			set_country_flag = XIC_zhang_xueming_returned
+		}
 		if = {
 			limit = { HBC = { exists = yes } }
 			custom_effect_tooltip = XIC_hebei_chahar_cores_tt
@@ -171,8 +176,8 @@ country_event = {
 		XIC_zhang_xueliang = { add_skill_level = 2 }
 		hidden_effect = {
 			set_country_flag = XIC_zhang_xueliang_academy_selected
-			country_event = { id = PN_XIC.9 }
 		}
+		country_event = { id = PN_XIC.9 }
 	}
 	option = {
 		name = XIC_alexander_von_falkenhausen
@@ -182,8 +187,8 @@ country_event = {
 		XIC_alexander_von_falkenhausen = { add_skill_level = 2 }
 		hidden_effect = {
 			set_country_flag = XIC_alexander_von_falkenhausen_academy_selected
-			country_event = { id = PN_XIC.9 }
 		}
+		country_event = { id = PN_XIC.9 }
 	}
 	option = {
 		name = XIC_he_zhuguo
@@ -194,8 +199,8 @@ country_event = {
 		XIC_he_zhuguo = { add_skill_level = 2 }
 		hidden_effect = {
 			set_country_flag = XIC_he_zhuguo_academy_selected
-			country_event = { id = PN_XIC.9 }
 		}
+		country_event = { id = PN_XIC.9 }
 	}
 	option = {
 		name = XIC_wang_yizhe
@@ -206,8 +211,8 @@ country_event = {
 		XIC_wang_yizhe = { add_skill_level = 2 }
 		hidden_effect = {
 			set_country_flag = XIC_wang_yizhe_academy_selected
-			country_event = { id = PN_XIC.9 }
 		}
+		country_event = { id = PN_XIC.9 }
 	}
 	option = {
 		name = XIC_zhang_xueming
@@ -218,8 +223,8 @@ country_event = {
 		XIC_zhang_xueming = { add_skill_level = 2 }
 		hidden_effect = {
 			set_country_flag = XIC_zhang_xueming_academy_selected
-			country_event = { id = PN_XIC.9 }
 		}
+		country_event = { id = PN_XIC.9 }
 	}
 }
 
@@ -369,7 +374,9 @@ country_event = {
 
 	option = {
 		name = PN_XIC.12.a
-		set_country_flag = XIC_first_council_concluded
+		hidden_effect = {
+			set_country_flag = XIC_first_council_concluded
+		}
 	}
 }
 
@@ -420,7 +427,9 @@ country_event = {
 	option = {
 		name = PN_XIC.14.a
 		custom_effect_tooltip = XIC_communist_proposal_delay_tt
-		country_event = { id = PN_XIC.15 days = 14 }
+		hidden_effect = {
+			country_event = { id = PN_XIC.15 days = 14 }
+		}
 	}
 }
 
@@ -465,16 +474,22 @@ country_event = {
 		name = PN_XIC.16.a
 		trigger = { XIC_wang_ming_available = yes }
 		ai_chance = { base = 70 }
-		custom_effect_tooltip = XIC_send_envoy_tt
-		set_country_flag = XIC_envoy_to_wang_ming_sent
+		hidden_effect = {
+			set_country_flag = XIC_envoy_to_wang_ming_sent
+		}
 		PRC = { country_event = { id = PN_XIC.17 } }
-		country_event = { id = PN_XIC.21 days = 1 }
+		hidden_effect = {
+			country_event = { id = PN_XIC.21 days = 1 }
+		}
 	}
 	option = {
 		name = PN_XIC.16.b
 		ai_chance = { base = 30 }
 		custom_effect_tooltip = XIC_form_national_state_tt
-		XIC_choose_national_state_effect = yes
+		effect_tooltip = { XIC_postwar_settlement_effect = yes }
+		hidden_effect = {
+			XIC_choose_national_state_effect = yes
+		}
 	}
 }
 
@@ -506,30 +521,47 @@ country_event = {
 		}
 		ai_chance = { base = 60 }
 		custom_effect_tooltip = XIC_accept_settlement_tt
+		effect_tooltip = {
+			XIC = {
+				complete_national_focus = PN_the_national_peoples_republic_of_china
+			}
+		}
 		if = {
 			limit = {
-				XIC_wang_ming_available = yes
-				XIC = {
-					has_country_flag = XIC_envoy_to_wang_ming_sent
-					NOT = { has_country_flag = XIC_national_settlement_resolved }
+				hidden_trigger = {
+					XIC_wang_ming_available = yes
+					XIC = {
+						has_country_flag = XIC_envoy_to_wang_ming_sent
+						NOT = {
+							has_country_flag = XIC_national_settlement_resolved
+						}
+					}
 				}
 			}
 			XIC = {
-				set_country_flag = XIC_communist_settlement_accepted
-				complete_national_focus = PN_the_national_peoples_republic_of_china
+				hidden_effect = {
+					set_country_flag = XIC_communist_settlement_accepted
+					complete_national_focus = PN_the_national_peoples_republic_of_china
+				}
 				country_event = { id = PN_XIC.18 }
 			}
 		}
 		else = {
 			if = {
 				limit = {
-					XIC = {
-						has_country_flag = XIC_envoy_to_wang_ming_sent
-						NOT = { has_country_flag = XIC_national_settlement_resolved }
+					hidden_trigger = {
+						XIC = {
+							has_country_flag = XIC_envoy_to_wang_ming_sent
+							NOT = {
+								has_country_flag = XIC_national_settlement_resolved
+							}
+						}
 					}
 				}
 				XIC = {
-					XIC_choose_national_state_effect = yes
+					hidden_effect = {
+						XIC_choose_national_state_effect = yes
+					}
 					country_event = { id = PN_XIC.20 }
 				}
 			}
@@ -539,15 +571,26 @@ country_event = {
 		name = PN_XIC.17.b
 		ai_chance = { base = 40 }
 		custom_effect_tooltip = XIC_reject_settlement_tt
+		effect_tooltip = {
+			XIC = {
+				custom_effect_tooltip = XIC_form_national_state_tt
+			}
+		}
 		if = {
 			limit = {
-				XIC = {
-					has_country_flag = XIC_envoy_to_wang_ming_sent
-					NOT = { has_country_flag = XIC_national_settlement_resolved }
+				hidden_trigger = {
+					XIC = {
+						has_country_flag = XIC_envoy_to_wang_ming_sent
+						NOT = {
+							has_country_flag = XIC_national_settlement_resolved
+						}
+					}
 				}
 			}
 			XIC = {
-				XIC_choose_national_state_effect = yes
+				hidden_effect = {
+					XIC_choose_national_state_effect = yes
+				}
 				country_event = { id = PN_XIC.19 }
 			}
 		}
@@ -708,33 +751,33 @@ country_event = {
 	option = {
 		name = PN_XIC.25.a
 		ai_chance = { base = 50 }
-		set_country_flag = XIC_second_council_concluded
-		set_country_flag = XIC_second_council_prioritise_unification
 		custom_effect_tooltip = XIC_second_council_unification_tt
 		hidden_effect = {
+			set_country_flag = XIC_second_council_concluded
+			set_country_flag = XIC_second_council_prioritise_unification
 			reduce_focus_completion_cost = {
 				focus = PN_china_must_be_one
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_hunt_down_the_warlords
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_spread_the_ideology_of_reconstructionism
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_recruit_the_old_officers
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_reeducate_the_warlords
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_demand_european_powers_to_leave_china
-				cost = 42
+				cost = 21
 			}
 		}
 	}
@@ -742,41 +785,41 @@ country_event = {
 	option = {
 		name = PN_XIC.25.b
 		ai_chance = { base = 50 }
-		set_country_flag = XIC_second_council_concluded
-		set_country_flag = XIC_second_council_prioritise_japan
 		custom_effect_tooltip = XIC_second_council_japan_tt
 		hidden_effect = {
+			set_country_flag = XIC_second_council_concluded
+			set_country_flag = XIC_second_council_prioritise_japan
 			reduce_focus_completion_cost = {
 				focus = PN_death_to_invaders
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_rally_the_fengtiang_officers
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_entrench_anti_japanese_thought
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_the_false_emperor_of_china
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_the_deal_of_the_century
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_china_only_needs_the_uniter
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_china_a_constitutional_monarchy
-				cost = 42
+				cost = 21
 			}
 			reduce_focus_completion_cost = {
 				focus = PN_the_great_war_of_unification
-				cost = 42
+				cost = 21
 			}
 		}
 	}
@@ -842,7 +885,7 @@ country_event = {
 		custom_effect_tooltip = XIC_return_concessions_tt
 		hidden_effect = {
 			every_owned_state = {
-				limit = { is_core_of = XIC }
+				limit = { XIC_is_chinese_state = yes }
 				transfer_state_to = XIC
 			}
 		}
@@ -1103,24 +1146,30 @@ country_event = {
 		name = PN_XIC.35.a
 		ai_chance = { base = 40 }
 		custom_effect_tooltip = XIC_puyi_accept_offer_tt
-		hidden_effect = {
-			if = {
-				limit = {
+		if = {
+			limit = {
+				hidden_trigger = {
 					XIC_puyi_available = yes
-					XIC = { has_country_flag = XIC_puyi_letter_pending }
+					XIC = {
+						has_country_flag = XIC_puyi_letter_pending
+					}
 				}
-				XIC = {
+			}
+			XIC = {
+				hidden_effect = {
 					set_country_flag = XIC_puyi_support_received
 					if = {
-						limit = { has_country_flag = XIC_puyi_offer_monarchy }
+						limit = {
+							has_country_flag = XIC_puyi_offer_monarchy
+						}
 						XIC_reserve_puyi_effect = yes
 						XIC_puyi_monarchy_settlement_effect = yes
 					}
 					else = {
 						XIC_puyi_uniter_settlement_effect = yes
 					}
-					country_event = { id = PN_XIC.36 }
 				}
+				country_event = { id = PN_XIC.36 }
 			}
 		}
 	}
@@ -1128,13 +1177,19 @@ country_event = {
 		name = PN_XIC.35.b
 		ai_chance = { base = 60 }
 		custom_effect_tooltip = XIC_puyi_reject_offer_tt
-		hidden_effect = {
-			if = {
-				limit = { XIC = { has_country_flag = XIC_puyi_letter_pending } }
-				XIC = {
-					XIC_puyi_uniter_settlement_effect = yes
-					country_event = { id = PN_XIC.37 }
+		if = {
+			limit = {
+				hidden_trigger = {
+					XIC = {
+						has_country_flag = XIC_puyi_letter_pending
+					}
 				}
+			}
+			XIC = {
+				hidden_effect = {
+					XIC_puyi_uniter_settlement_effect = yes
+				}
+				country_event = { id = PN_XIC.37 }
 			}
 		}
 	}
@@ -1386,7 +1441,9 @@ country_event = {
 
 	option = {
 		name = PN_XIC.47.a
-		set_country_flag = XIC_revival_council_concluded
+		hidden_effect = {
+			set_country_flag = XIC_revival_council_concluded
+		}
 	}
 }
 
@@ -1544,7 +1601,7 @@ country_event = {
 		custom_effect_tooltip = XIC_return_concessions_tt
 		hidden_effect = {
 			every_owned_state = {
-				limit = { is_core_of = XIC }
+				limit = { XIC_is_chinese_state = yes }
 				transfer_state_to = XIC
 			}
 		}

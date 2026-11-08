@@ -1,0 +1,784 @@
+# KX-inspired provincial integration, adapted to PN geography and native effects.
+# Four map groups, with one target state per decision and three focus-gated tiers.
+XIC_chinese_state_integration = {
+	XIC_integrate_north_basic = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 597 607 608 609 610 611 612 614 615 616 621 622 743 744 746 1032 1038 1039 1040 1043 1045 1046 }
+		target_trigger = {
+			FROM = { XIC_is_north_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_basic_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_basic_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_basic_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_basic_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 50
+		days_remove = 90
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_basic_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_north_local = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 597 607 608 609 610 611 612 614 615 616 621 622 743 744 746 1032 1038 1039 1040 1043 1045 1046 }
+		target_trigger = {
+			FROM = { XIC_is_north_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_local_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_local_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_local_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_local_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 40
+		days_remove = 75
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_local_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_north_professional = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 597 607 608 609 610 611 612 614 615 616 621 622 743 744 746 1032 1038 1039 1040 1043 1045 1046 }
+		target_trigger = {
+			FROM = { XIC_is_north_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_professional_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_professional_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_professional_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_professional_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 25
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_professional_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_south_basic = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 325 326 524 591 592 593 594 595 596 598 599 600 602 603 605 606 613 620 728 729 747 748 749 750 751 1033 1034 1035 1036 1037 1041 }
+		target_trigger = {
+			FROM = { XIC_is_south_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_basic_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_basic_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_basic_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_basic_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 50
+		days_remove = 90
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_basic_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_south_local = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 325 326 524 591 592 593 594 595 596 598 599 600 602 603 605 606 613 620 728 729 747 748 749 750 751 1033 1034 1035 1036 1037 1041 }
+		target_trigger = {
+			FROM = { XIC_is_south_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_local_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_local_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_local_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_local_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 40
+		days_remove = 75
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_local_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_south_professional = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 325 326 524 591 592 593 594 595 596 598 599 600 602 603 605 606 613 620 728 729 747 748 749 750 751 1033 1034 1035 1036 1037 1041 }
+		target_trigger = {
+			FROM = { XIC_is_south_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_professional_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_professional_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_professional_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_professional_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 25
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_professional_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_northeast_basic = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 328 714 715 716 717 745 761 }
+		target_trigger = {
+			FROM = { XIC_is_northeast_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_basic_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_basic_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_basic_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_basic_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 60
+		days_remove = 105
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_basic_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_northeast_local = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 328 714 715 716 717 745 761 }
+		target_trigger = {
+			FROM = { XIC_is_northeast_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_local_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_local_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_local_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_local_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 50
+		days_remove = 90
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_local_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_northeast_professional = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 328 714 715 716 717 745 761 }
+		target_trigger = {
+			FROM = { XIC_is_northeast_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_professional_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_professional_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_professional_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_professional_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 35
+		days_remove = 75
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_professional_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_west_basic = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 283 287 322 601 604 617 618 619 752 753 754 755 756 757 758 759 760 1042 1044 }
+		target_trigger = {
+			FROM = { XIC_is_west_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_basic_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_basic_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_basic_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_basic_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 75
+		days_remove = 120
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_basic_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_west_local = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 283 287 322 601 604 617 618 619 752 753 754 755 756 757 758 759 760 1042 1044 }
+		target_trigger = {
+			FROM = { XIC_is_west_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_local_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_local_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_local_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_local_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 60
+		days_remove = 105
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_local_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_west_professional = {
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = XIC }
+		state_target = yes
+		targets = { 283 287 322 601 604 617 618 619 752 753 754 755 756 757 758 759 760 1042 1044 }
+		target_trigger = {
+			FROM = { XIC_is_west_integration_state = yes }
+		}
+		on_map_mode = map_only
+		visible = {
+			OR = {
+				XIC_integration_professional_tier = yes
+				FROM = { has_state_flag = XIC_chinese_integration_professional_active }
+			}
+			FROM = {
+				OR = {
+					has_state_flag = XIC_chinese_integration_professional_active
+					AND = {
+						is_owned_by = ROOT
+						NOT = { is_core_of = ROOT }
+						NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+					}
+				}
+			}
+		}
+		available = {
+			XIC_can_administer_chinese_states = yes
+			XIC_integration_professional_tier = yes
+			FROM = {
+				XIC_chinese_state_ready_for_integration = yes
+				NOT = { has_state_flag = XIC_chinese_integration_in_progress }
+			}
+		}
+		cost = 45
+		days_remove = 90
+		fire_only_once = no
+		days_re_enable = 1
+		complete_effect = {
+			hidden_effect = {
+				FROM = {
+					set_state_flag = XIC_chinese_integration_in_progress
+					set_state_flag = XIC_chinese_integration_professional_active
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { XIC_can_administer_chinese_states = yes }
+				FROM = { NOT = { XIC_chinese_state_ready_for_integration = yes } }
+			}
+		}
+		cancel_effect = {
+			hidden_effect = { FROM = { XIC_clear_chinese_integration_flags_effect = yes } }
+		}
+		remove_effect = {
+			effect_tooltip = {
+				FROM = {
+					add_core_of = ROOT
+					remove_claim_by = ROOT
+				}
+			}
+			hidden_effect = { FROM = { XIC_complete_chinese_state_integration_effect = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

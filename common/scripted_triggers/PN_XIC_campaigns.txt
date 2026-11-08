@@ -1,0 +1,54 @@
+XIC_campaign_government_established = {
+	original_tag = XIC
+	OR = {
+		has_country_flag = XIC_national_state_formed
+		has_country_flag = XIC_national_peoples_republic_formed
+	}
+}
+
+XIC_japan_expelled_from_continent = {
+	NOT = {
+		any_state = {
+			OR = {
+				AND = {
+					XIC_is_chinese_state = yes
+					NOT = { state = 524 }
+				}
+				state = 525
+				state = 527
+			}
+			controller = {
+				OR = { tag = JAP is_subject_of = JAP }
+			}
+		}
+	}
+	525 = {
+		OR = {
+			is_controlled_by = XIC
+			controller = { is_subject_of = XIC }
+			AND = {
+				is_controlled_by = KOR
+				KOR = { is_subject = no }
+			}
+		}
+	}
+	527 = {
+		OR = {
+			is_controlled_by = XIC
+			controller = { is_subject_of = XIC }
+			AND = {
+				is_controlled_by = KOR
+				KOR = { is_subject = no }
+			}
+		}
+	}
+}
+
+XIC_campaign_preparations_ready = {
+	OR = {
+		has_country_flag = XIC_northern_railways_prepared
+		has_country_flag = XIC_campaign_munitions_acquired
+		has_country_flag = XIC_joint_staff_exercises_completed
+		has_country_flag = XIC_reserve_columns_formed
+	}
+}

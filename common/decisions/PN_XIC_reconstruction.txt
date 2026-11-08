@@ -1,0 +1,2132 @@
+XIC_regional_reconstruction = {
+	XIC_reconstruction_jinan_qingdao_rail = {
+		icon = generic_construction
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_the_national_revival_plan
+				has_completed_focus = PN_implement_national_reconstructionism
+			}
+			1038 = {
+				NOT = { has_state_flag = XIC_reconstruction_jinan_qingdao_rail_completed }
+			}
+		}
+
+		available = {
+			owns_state = 1038
+			has_full_control_of_state = 1038
+			owns_state = 597
+			has_full_control_of_state = 597
+			owns_state = 743
+			has_full_control_of_state = 743
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 1038 }
+				NOT = { has_full_control_of_state = 1038 }
+				NOT = { owns_state = 597 }
+				NOT = { has_full_control_of_state = 597 }
+				NOT = { owns_state = 743 }
+				NOT = { has_full_control_of_state = 743 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 1038
+					has_full_control_of_state = 1038
+					owns_state = 597
+					has_full_control_of_state = 597
+					owns_state = 743
+					has_full_control_of_state = 743
+					1038 = {
+						NOT = { has_state_flag = XIC_reconstruction_jinan_qingdao_rail_completed }
+					}
+				}
+				1038 = {
+					set_state_flag = XIC_reconstruction_jinan_qingdao_rail_completed
+				}
+				597 = {
+					set_state_flag = XIC_reconstruction_jinan_qingdao_rail_completed
+				}
+				743 = {
+					set_state_flag = XIC_reconstruction_jinan_qingdao_rail_completed
+				}
+				build_railway = {
+					level = 2
+					path = { 1069 12045 4071 7089 10000 }
+				}
+				add_equipment_to_stockpile = { type = train_equipment_1 amount = 5 producer = XIC }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_jinan_arsenal = {
+		icon = generic_construction
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_power_rail_and_steel
+				has_completed_focus = PN_the_new_factorys_new_china
+			}
+			1038 = {
+				NOT = { has_state_flag = XIC_reconstruction_jinan_arsenal_completed }
+			}
+		}
+
+		available = {
+			owns_state = 1038
+			has_full_control_of_state = 1038
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 60
+		days_remove = 75
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 1038 }
+				NOT = { has_full_control_of_state = 1038 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 1038
+					has_full_control_of_state = 1038
+					1038 = {
+						NOT = { has_state_flag = XIC_reconstruction_jinan_arsenal_completed }
+					}
+				}
+				1038 = {
+					set_state_flag = XIC_reconstruction_jinan_arsenal_completed
+				}
+				country_event = { id = PN_XIC_reconstruction.1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_shandong_cooperatives = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_land_to_those_who_work_it
+			597 = {
+				NOT = { has_state_flag = XIC_reconstruction_shandong_cooperatives_completed }
+			}
+		}
+
+		available = {
+			owns_state = 597
+			has_full_control_of_state = 597
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 35
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 597 }
+				NOT = { has_full_control_of_state = 597 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 597
+					has_full_control_of_state = 597
+					597 = {
+						NOT = { has_state_flag = XIC_reconstruction_shandong_cooperatives_completed }
+					}
+				}
+				597 = {
+					set_state_flag = XIC_reconstruction_shandong_cooperatives_completed
+				}
+				597 = {
+					if = {
+						limit = { infrastructure < 5 }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				add_stability = 0.01
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_qingdao_arbitration = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_recognise_the_labour_organisations
+			743 = {
+				NOT = { has_state_flag = XIC_reconstruction_qingdao_arbitration_completed }
+			}
+		}
+
+		available = {
+			owns_state = 743
+			has_full_control_of_state = 743
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 40
+		days_remove = 30
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 743 }
+				NOT = { has_full_control_of_state = 743 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 743
+					has_full_control_of_state = 743
+					743 = {
+						NOT = { has_state_flag = XIC_reconstruction_qingdao_arbitration_completed }
+					}
+				}
+				743 = {
+					set_state_flag = XIC_reconstruction_qingdao_arbitration_completed
+				}
+				add_stability = 0.01
+				add_timed_idea = { idea = XIC_reconstruction_labour_settlement days = 180 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_henan_grain_network = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_connect_the_national_grain_network
+			607 = {
+				NOT = { has_state_flag = XIC_reconstruction_henan_grain_network_completed }
+			}
+		}
+
+		available = {
+			owns_state = 607
+			has_full_control_of_state = 607
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 607 }
+				NOT = { has_full_control_of_state = 607 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 607
+					has_full_control_of_state = 607
+					607 = {
+						NOT = { has_state_flag = XIC_reconstruction_henan_grain_network_completed }
+					}
+				}
+				607 = {
+					set_state_flag = XIC_reconstruction_henan_grain_network_completed
+				}
+				607 = {
+					if = {
+						limit = { infrastructure < 5 }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 50 producer = XIC }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_xian_farm_machinery = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_mechanise_the_family_farm
+			744 = {
+				NOT = { has_state_flag = XIC_reconstruction_xian_farm_machinery_completed }
+			}
+		}
+
+		available = {
+			owns_state = 744
+			has_full_control_of_state = 744
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 60
+		days_remove = 75
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 744 }
+				NOT = { has_full_control_of_state = 744 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 744
+					has_full_control_of_state = 744
+					744 = {
+						NOT = { has_state_flag = XIC_reconstruction_xian_farm_machinery_completed }
+					}
+				}
+				744 = {
+					set_state_flag = XIC_reconstruction_xian_farm_machinery_completed
+				}
+				744 = {
+					if = {
+						limit = { infrastructure < 5 }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				add_timed_idea = { idea = XIC_reconstruction_machine_cooperatives days = 180 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_hebei_power_works = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_power_rail_and_steel
+			614 = {
+				NOT = { has_state_flag = XIC_reconstruction_hebei_power_works_completed }
+			}
+		}
+
+		available = {
+			owns_state = 614
+			has_full_control_of_state = 614
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 75
+		days_remove = 90
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 614 }
+				NOT = { has_full_control_of_state = 614 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 614
+					has_full_control_of_state = 614
+					614 = {
+						NOT = { has_state_flag = XIC_reconstruction_hebei_power_works_completed }
+					}
+				}
+				614 = {
+					set_state_flag = XIC_reconstruction_hebei_power_works_completed
+				}
+				614 = {
+					if = {
+						limit = { infrastructure < 5 }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				614 = { add_resource = { type = steel amount = 4 } }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_shandong_small_producers = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_protect_the_small_producers
+			597 = {
+				NOT = { has_state_flag = XIC_reconstruction_shandong_civilian_fund_completed }
+			}
+		}
+
+		available = {
+			owns_state = 597
+			has_full_control_of_state = 597
+			owns_state = 743
+			has_full_control_of_state = 743
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 40
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 597 }
+				NOT = { has_full_control_of_state = 597 }
+				NOT = { owns_state = 743 }
+				NOT = { has_full_control_of_state = 743 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 597
+					has_full_control_of_state = 597
+					owns_state = 743
+					has_full_control_of_state = 743
+					597 = {
+						NOT = { has_state_flag = XIC_reconstruction_shandong_civilian_fund_completed }
+					}
+				}
+				597 = {
+					set_state_flag = XIC_reconstruction_shandong_civilian_fund_completed
+				}
+				743 = {
+					set_state_flag = XIC_reconstruction_shandong_civilian_fund_completed
+				}
+				country_event = { id = PN_XIC_reconstruction.2 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_shandong_county_registers = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_the_implement_reconstructionism_in_countryside
+			597 = {
+				NOT = { has_state_flag = XIC_reconstruction_shandong_civilian_fund_completed }
+			}
+		}
+
+		available = {
+			owns_state = 597
+			has_full_control_of_state = 597
+			owns_state = 743
+			has_full_control_of_state = 743
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 35
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 597 }
+				NOT = { has_full_control_of_state = 597 }
+				NOT = { owns_state = 743 }
+				NOT = { has_full_control_of_state = 743 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 597
+					has_full_control_of_state = 597
+					owns_state = 743
+					has_full_control_of_state = 743
+					597 = {
+						NOT = { has_state_flag = XIC_reconstruction_shandong_civilian_fund_completed }
+					}
+				}
+				597 = {
+					set_state_flag = XIC_reconstruction_shandong_civilian_fund_completed
+				}
+				743 = {
+					set_state_flag = XIC_reconstruction_shandong_civilian_fund_completed
+				}
+				country_event = { id = PN_XIC_reconstruction.2 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_henan_government_crops = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_the_implement_government_crops
+			607 = {
+				NOT = { has_state_flag = XIC_reconstruction_henan_government_crops_completed }
+			}
+		}
+
+		available = {
+			owns_state = 607
+			has_full_control_of_state = 607
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 607 }
+				NOT = { has_full_control_of_state = 607 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 607
+					has_full_control_of_state = 607
+					607 = {
+						NOT = { has_state_flag = XIC_reconstruction_henan_government_crops_completed }
+					}
+				}
+				607 = {
+					set_state_flag = XIC_reconstruction_henan_government_crops_completed
+				}
+				607 = {
+					if = {
+						limit = { infrastructure < 5 }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				add_timed_idea = { idea = XIC_reconstruction_government_depots days = 180 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_qingdao_industrial_orders = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_the_implement_reconstructionism_in_citys
+			743 = {
+				NOT = { has_state_flag = XIC_reconstruction_qingdao_industrial_orders_completed }
+			}
+		}
+
+		available = {
+			owns_state = 743
+			has_full_control_of_state = 743
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 60
+		days_remove = 60
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 743 }
+				NOT = { has_full_control_of_state = 743 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 743
+					has_full_control_of_state = 743
+					743 = {
+						NOT = { has_state_flag = XIC_reconstruction_qingdao_industrial_orders_completed }
+					}
+				}
+				743 = {
+					set_state_flag = XIC_reconstruction_qingdao_industrial_orders_completed
+				}
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 75 producer = XIC }
+				add_timed_idea = { idea = XIC_reconstruction_industrial_orders days = 180 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_liaotung_industry = {
+		icon = generic_construction
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_restore_manchurian_industry
+				has_completed_focus = PN_republic_restore_manchurian_industry
+			}
+			716 = {
+				NOT = { has_state_flag = XIC_reconstruction_liaotung_industry_completed }
+			}
+		}
+
+		available = {
+			has_war = no
+			owns_state = 716
+			has_full_control_of_state = 716
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 75
+		days_remove = 90
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 716 }
+				NOT = { has_full_control_of_state = 716 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 716
+					has_full_control_of_state = 716
+					716 = {
+						NOT = { has_state_flag = XIC_reconstruction_liaotung_industry_completed }
+					}
+				}
+				716 = {
+					set_state_flag = XIC_reconstruction_liaotung_industry_completed
+				}
+				country_event = { id = PN_XIC_reconstruction.3 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_liaoning_veteran_settlement = {
+		icon = generic_construction
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_return_the_soldiers_home
+				has_completed_focus = PN_republic_return_the_soldiers_home
+			}
+			715 = {
+				NOT = { has_state_flag = XIC_reconstruction_liaoning_veteran_settlement_completed }
+			}
+		}
+
+		available = {
+			has_war = no
+			owns_state = 715
+			has_full_control_of_state = 715
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 715 }
+				NOT = { has_full_control_of_state = 715 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 715
+					has_full_control_of_state = 715
+					715 = {
+						NOT = { has_state_flag = XIC_reconstruction_liaoning_veteran_settlement_completed }
+					}
+				}
+				715 = {
+					set_state_flag = XIC_reconstruction_liaoning_veteran_settlement_completed
+				}
+				715 = {
+					if = {
+						limit = { infrastructure < 5 }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				add_stability = 0.01
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_xian_demobilisation = {
+		icon = generic_construction
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_return_the_soldiers_home
+				has_completed_focus = PN_republic_return_the_soldiers_home
+			}
+			744 = {
+				NOT = { has_state_flag = XIC_reconstruction_xian_demobilisation_completed }
+			}
+		}
+
+		available = {
+			has_war = no
+			owns_state = 744
+			has_full_control_of_state = 744
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 25
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = XIC_reconstruction_contract_active
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 744 }
+				NOT = { has_full_control_of_state = 744 }
+			}
+		}
+
+		cancel_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+		}
+
+		remove_effect = {
+			clr_country_flag = XIC_reconstruction_contract_active
+			if = {
+				limit = {
+					owns_state = 744
+					has_full_control_of_state = 744
+					744 = {
+						NOT = { has_state_flag = XIC_reconstruction_xian_demobilisation_completed }
+					}
+				}
+				744 = {
+					set_state_flag = XIC_reconstruction_xian_demobilisation_completed
+				}
+				add_stability = 0.02
+				add_war_support = -0.02
+				add_timed_idea = { idea = XIC_reconstruction_civilian_return days = 180 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_county_civil_service = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_establish_territorial_league_branches
+			NOT = { has_country_flag = XIC_reconstruction_territorial_programme_completed }
+		}
+
+		available = {
+			owns_state = 597
+			has_full_control_of_state = 597
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_territorial_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 50
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_county_civil_service_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_civil_service_rebate_tt
+						has_country_flag = XIC_civilian_provincial_service
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 597 }
+				NOT = { has_full_control_of_state = 597 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_county_civil_service_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_county_civil_service_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_county_civil_service_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 597
+						has_full_control_of_state = 597
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_territorial_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_territorial_programme_completed
+					}
+					add_timed_idea = { idea = XIC_reconstruction_county_service days = 180 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_district_public_works = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_establish_territorial_league_branches
+			NOT = { has_country_flag = XIC_reconstruction_territorial_programme_completed }
+		}
+
+		available = {
+			owns_state = 597
+			has_full_control_of_state = 597
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_territorial_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+			597 = { infrastructure < 5 }
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		cost = 65
+		days_remove = 75
+		fire_only_once = no
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_district_public_works_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_district_mandate_rebate_tt
+						OR = {
+							has_country_flag = XIC_congress_territorial_representation
+							has_country_flag = XIC_officer_provincial_service
+						}
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 597 }
+				NOT = { has_full_control_of_state = 597 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_district_public_works_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_district_public_works_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_district_public_works_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 597
+						has_full_control_of_state = 597
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_territorial_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_territorial_programme_completed
+					}
+					if = {
+						limit = { 597 = { infrastructure < 5 } }
+						597 = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					else = {
+						add_equipment_to_stockpile = { type = support_equipment_1 amount = 25 producer = XIC }
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_workplace_inspections = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_a_workers_voice_in_congress
+			NOT = { has_country_flag = XIC_reconstruction_workplace_programme_completed }
+		}
+
+		available = {
+			owns_state = 743
+			has_full_control_of_state = 743
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_workplace_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 50
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_workplace_inspections_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_labour_mandate_rebate_tt
+						OR = {
+							has_country_flag = XIC_congress_social_representation
+							has_country_flag = XIC_bargain_labour_first
+						}
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 743 }
+				NOT = { has_full_control_of_state = 743 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_workplace_inspections_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_workplace_inspections_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_workplace_inspections_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 743
+						has_full_control_of_state = 743
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_workplace_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_workplace_programme_completed
+					}
+					add_timed_idea = { idea = XIC_reconstruction_workplace_inspectorate days = 180 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_wage_arbitration = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_a_workers_voice_in_congress
+			NOT = { has_country_flag = XIC_reconstruction_workplace_programme_completed }
+		}
+
+		available = {
+			owns_state = 743
+			has_full_control_of_state = 743
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_workplace_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 40
+		days_remove = 30
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_wage_arbitration_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_labour_mandate_rebate_tt
+						OR = {
+							has_country_flag = XIC_congress_social_representation
+							has_country_flag = XIC_bargain_labour_first
+						}
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 743 }
+				NOT = { has_full_control_of_state = 743 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_wage_arbitration_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_wage_arbitration_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_wage_arbitration_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 743
+						has_full_control_of_state = 743
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_workplace_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_workplace_programme_completed
+					}
+					add_timed_idea = { idea = XIC_reconstruction_wage_agreements days = 180 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_rural_debt_settlement = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_an_agrarian_voice_in_congress
+			NOT = { has_country_flag = XIC_reconstruction_agrarian_programme_completed }
+		}
+
+		available = {
+			owns_state = 607
+			has_full_control_of_state = 607
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_agrarian_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 55
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_rural_debt_settlement_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_agrarian_mandate_rebate_tt
+						has_country_flag = XIC_bargain_agrarian_first
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 607 }
+				NOT = { has_full_control_of_state = 607 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_rural_debt_settlement_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_rural_debt_settlement_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_rural_debt_settlement_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 607
+						has_full_control_of_state = 607
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_agrarian_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_agrarian_programme_completed
+					}
+					add_timed_idea = { idea = XIC_reconstruction_rural_debt_boards days = 180 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_rural_credit_cooperatives = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_an_agrarian_voice_in_congress
+			NOT = { has_country_flag = XIC_reconstruction_agrarian_programme_completed }
+		}
+
+		available = {
+			owns_state = 607
+			has_full_control_of_state = 607
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_agrarian_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+			607 = { infrastructure < 5 }
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		cost = 65
+		days_remove = 75
+		fire_only_once = no
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_rural_credit_cooperatives_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_rural_mandate_rebate_tt
+						OR = {
+							has_country_flag = XIC_congress_territorial_representation
+							has_country_flag = XIC_bargain_agrarian_first
+						}
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 607 }
+				NOT = { has_full_control_of_state = 607 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_rural_credit_cooperatives_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_rural_credit_cooperatives_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_rural_credit_cooperatives_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 607
+						has_full_control_of_state = 607
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_agrarian_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_agrarian_programme_completed
+					}
+					if = {
+						limit = { 607 = { infrastructure < 5 } }
+						607 = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					else = {
+						add_equipment_to_stockpile = { type = support_equipment_1 amount = 25 producer = XIC }
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_public_petition_circuit = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_the_people_only_need_me
+			NOT = { has_country_flag = XIC_reconstruction_public_accountability_programme_completed }
+		}
+
+		available = {
+			owns_state = 1038
+			has_full_control_of_state = 1038
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_public_accountability_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 40
+		days_remove = 30
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_public_petition_circuit_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_local_compacts_rebate_tt
+						has_country_flag = XIC_governors_local_compacts
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 1038 }
+				NOT = { has_full_control_of_state = 1038 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_public_petition_circuit_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_public_petition_circuit_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_public_petition_circuit_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 1038
+						has_full_control_of_state = 1038
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_public_accountability_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_public_accountability_programme_completed
+					}
+					add_timed_idea = { idea = XIC_reconstruction_petition_circuit days = 180 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_prefectural_accounts_audit = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_the_people_only_need_me
+			NOT = { has_country_flag = XIC_reconstruction_public_accountability_programme_completed }
+		}
+
+		available = {
+			owns_state = 1038
+			has_full_control_of_state = 1038
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_public_accountability_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 55
+		days_remove = 60
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_prefectural_accounts_audit_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_central_commissions_rebate_tt
+						has_country_flag = XIC_governors_central_commissions
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 1038 }
+				NOT = { has_full_control_of_state = 1038 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_prefectural_accounts_audit_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_prefectural_accounts_audit_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_prefectural_accounts_audit_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 1038
+						has_full_control_of_state = 1038
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_public_accountability_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_public_accountability_programme_completed
+					}
+					add_timed_idea = { idea = XIC_reconstruction_prefectural_auditors days = 180 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_civic_evening_schools = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_the_second_sun_yat_sen
+			NOT = { has_country_flag = XIC_reconstruction_education_programme_completed }
+		}
+
+		available = {
+			owns_state = 1038
+			has_full_control_of_state = 1038
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_education_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+		}
+
+		cost = 45
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_civic_evening_schools_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 1038 }
+				NOT = { has_full_control_of_state = 1038 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_civic_evening_schools_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_civic_evening_schools_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_civic_evening_schools_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 1038
+						has_full_control_of_state = 1038
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_education_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_education_programme_completed
+					}
+					add_timed_idea = { idea = XIC_reconstruction_civic_schools days = 180 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_technical_scholarships = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_the_second_sun_yat_sen
+			NOT = { has_country_flag = XIC_reconstruction_education_programme_completed }
+		}
+
+		available = {
+			owns_state = 1038
+			has_full_control_of_state = 1038
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_education_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		cost = 60
+		days_remove = 75
+		fire_only_once = no
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_technical_scholarships_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 1038 }
+				NOT = { has_full_control_of_state = 1038 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_technical_scholarships_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_technical_scholarships_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_technical_scholarships_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 1038
+						has_full_control_of_state = 1038
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_education_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_education_programme_completed
+					}
+					add_tech_bonus = {
+						name = XIC_reconstruction_technical_scholarships_research
+						bonus = 0.50
+						uses = 1
+						category = industry
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_industrial_rediscount = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_reorganise_the_national_banks
+			NOT = { has_country_flag = XIC_reconstruction_national_credit_programme_completed }
+		}
+
+		available = {
+			owns_state = 1038
+			has_full_control_of_state = 1038
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_national_credit_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		cost = 75
+		days_remove = 90
+		fire_only_once = no
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_industrial_rediscount_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_industrial_mandate_rebate_tt
+						has_country_flag = XIC_bargain_labour_first
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 1038 }
+				NOT = { has_full_control_of_state = 1038 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_industrial_rediscount_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_industrial_rediscount_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_industrial_rediscount_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 1038
+						has_full_control_of_state = 1038
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_national_credit_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_national_credit_programme_completed
+					}
+					add_timed_idea = { idea = XIC_reconstruction_industrial_credit days = 180 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	XIC_reconstruction_railway_clearing_credit = {
+		icon = generic_construction
+
+		visible = {
+			has_completed_focus = PN_reorganise_the_national_banks
+			NOT = { has_country_flag = XIC_reconstruction_national_credit_programme_completed }
+		}
+
+		available = {
+			owns_state = 1038
+			has_full_control_of_state = 1038
+			owns_state = 597
+			has_full_control_of_state = 597
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_programme_open_tt
+				NOT = { has_country_flag = XIC_reconstruction_national_credit_programme_completed }
+			}
+			custom_trigger_tooltip = {
+				tooltip = XIC_reconstruction_free_contract_tt
+				NOT = { has_country_flag = XIC_reconstruction_contract_active }
+			}
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		cost = 65
+		days_remove = 60
+		fire_only_once = no
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = XIC_reconstruction_contract_active
+				set_country_flag = XIC_reconstruction_railway_clearing_credit_in_progress
+			}
+			custom_effect_tooltip = XIC_reconstruction_cancel_tt
+			custom_effect_tooltip = XIC_reconstruction_programme_choice_tt
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_agrarian_mandate_rebate_tt
+						has_country_flag = XIC_bargain_agrarian_first
+					}
+				}
+				add_political_power = 10
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { owns_state = 1038 }
+				NOT = { has_full_control_of_state = 1038 }
+				NOT = { owns_state = 597 }
+				NOT = { has_full_control_of_state = 597 }
+			}
+		}
+
+		cancel_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_reconstruction_railway_clearing_credit_in_progress
+				clr_country_flag = XIC_reconstruction_contract_active
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					custom_trigger_tooltip = {
+						tooltip = XIC_reconstruction_commission_live_tt
+						has_country_flag = XIC_reconstruction_railway_clearing_credit_in_progress
+					}
+				}
+				hidden_effect = {
+					clr_country_flag = XIC_reconstruction_railway_clearing_credit_in_progress
+					clr_country_flag = XIC_reconstruction_contract_active
+				}
+				if = {
+					limit = {
+						owns_state = 1038
+						has_full_control_of_state = 1038
+						owns_state = 597
+						has_full_control_of_state = 597
+						custom_trigger_tooltip = {
+							tooltip = XIC_reconstruction_programme_open_tt
+							NOT = { has_country_flag = XIC_reconstruction_national_credit_programme_completed }
+						}
+					}
+					hidden_effect = {
+						set_country_flag = XIC_reconstruction_national_credit_programme_completed
+					}
+					add_equipment_to_stockpile = { type = train_equipment_1 amount = 5 producer = XIC }
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 25 producer = XIC }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+

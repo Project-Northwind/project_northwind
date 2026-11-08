@@ -1,0 +1,324 @@
+XIC_national_programmes = {
+	XIC_german_staff_seminars = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			NOT = { has_country_flag = XIC_german_staff_seminars_completed }
+			has_completed_focus = PN_XIC_the_german_military_advisors
+		}
+
+		available = {
+			has_character = XIC_alexander_von_falkenhausen
+			has_capitulated = no
+		}
+
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = XIC_german_staff_seminars_active }
+		}
+
+		cancel_trigger = { has_capitulated = yes }
+		cancel_effect = {
+			hidden_effect = { clr_country_flag = XIC_german_staff_seminars_active }
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_german_staff_seminars_active
+				set_country_flag = XIC_german_staff_seminars_completed
+			}
+			country_event = { id = PN_XIC_programmes.1 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_jinan_command_course = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			NOT = { has_country_flag = XIC_jinan_command_course_completed }
+			has_completed_focus = PN_XIC_establish_the_jinan_military_academy
+		}
+
+		available = {
+			has_capitulated = no
+			OR = {
+				AND = {
+					has_character = XIC_zhang_xueming
+					XIC_zhang_xueming = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+				}
+				AND = {
+					has_character = XIC_he_zhuguo
+					XIC_he_zhuguo = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+				}
+				AND = {
+					has_character = XIC_wang_yizhe
+					XIC_wang_yizhe = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+				}
+			}
+			has_army_experience > 9
+		}
+
+		cost = 50
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = XIC_jinan_command_course_active }
+			army_experience = -10
+		}
+
+		cancel_trigger = { has_capitulated = yes }
+		cancel_effect = {
+			hidden_effect = { clr_country_flag = XIC_jinan_command_course_active }
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_jinan_command_course_active
+				set_country_flag = XIC_jinan_command_course_completed
+			}
+			country_event = { id = PN_XIC_programmes.2 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_national_command_course = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			NOT = { has_country_flag = XIC_national_command_course_completed }
+			OR = { has_completed_focus = PN_a_common_staff_and_doctrine has_completed_focus = PN_a_army_that_serves_me }
+		}
+
+		available = {
+			has_capitulated = no
+			OR = {
+				AND = {
+					has_character = XIC_zhang_xueming
+					XIC_zhang_xueming = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+				}
+				AND = {
+					has_character = XIC_he_zhuguo
+					XIC_he_zhuguo = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+				}
+				AND = {
+					has_character = XIC_wang_yizhe
+					XIC_wang_yizhe = { is_unit_leader = yes NOT = { has_character_flag = XIC_jinan_staff_course_received } }
+				}
+			}
+			has_army_experience > 9
+		}
+
+		cost = 50
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = XIC_national_command_course_active }
+			army_experience = -10
+		}
+
+		cancel_trigger = { has_capitulated = yes }
+		cancel_effect = {
+			hidden_effect = { clr_country_flag = XIC_national_command_course_active }
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_national_command_course_active
+				set_country_flag = XIC_national_command_course_completed
+			}
+			country_event = { id = PN_XIC_programmes.2 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_veterans_staff_conference = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			NOT = { has_country_flag = XIC_veterans_staff_conference_completed }
+			has_completed_focus = PN_recruit_the_old_officers
+		}
+
+		available = {
+			any_army_leader = { has_character_flag = XIC_officer_reeducated }
+			has_capitulated = no
+		}
+
+		cost = 35
+		days_remove = 21
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = XIC_veterans_staff_conference_active }
+		}
+
+		cancel_trigger = { has_capitulated = yes }
+		cancel_effect = {
+			hidden_effect = { clr_country_flag = XIC_veterans_staff_conference_active }
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_veterans_staff_conference_active
+				set_country_flag = XIC_veterans_staff_conference_completed
+			}
+			country_event = { id = PN_XIC_programmes.3 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_nanjing_arsenal_inventory = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			NOT = { has_country_flag = XIC_nanjing_arsenal_inventory_completed }
+			OR = { has_completed_focus = PN_the_death_of_capitalism has_completed_focus = PN_expand_strategic_public_ownership }
+		}
+
+		available = {
+			owns_state = 1035
+			has_full_control_of_state = 1035
+		}
+
+		cost = 25
+		days_remove = 30
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = XIC_nanjing_arsenal_inventory_active }
+		}
+
+		cancel_trigger = {
+			OR = { has_capitulated = yes NOT = { owns_state = 1035 } NOT = { has_full_control_of_state = 1035 } }
+		}
+		cancel_effect = {
+			hidden_effect = { clr_country_flag = XIC_nanjing_arsenal_inventory_active }
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_nanjing_arsenal_inventory_active
+				set_country_flag = XIC_nanjing_arsenal_inventory_completed
+			}
+			country_event = { id = PN_XIC_programmes.5 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_standardise_workshop_orders = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			NOT = { has_country_flag = XIC_standardise_workshop_orders_completed }
+			OR = {
+				has_completed_focus = PN_XIC_all_for_reconstruction
+				has_completed_focus = PN_XIC_spare_the_peasants
+				has_completed_focus = PN_create_national_industrial_corporations
+				has_completed_focus = PN_the_corporatist_renassiance
+			}
+		}
+
+		available = {
+			has_equipment = { infantry_equipment > 299 }
+			owns_state = 1038
+			has_full_control_of_state = 1038
+		}
+
+		cost = 50
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = XIC_standardise_workshop_orders_active }
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -300 }
+		}
+
+		cancel_trigger = {
+			OR = { has_capitulated = yes NOT = { owns_state = 1038 } NOT = { has_full_control_of_state = 1038 } }
+		}
+		cancel_effect = {
+			hidden_effect = { clr_country_flag = XIC_standardise_workshop_orders_active }
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_standardise_workshop_orders_active
+				set_country_flag = XIC_standardise_workshop_orders_completed
+			}
+			country_event = { id = PN_XIC_programmes.6 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_independent_technical_mission = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			NOT = { has_country_flag = XIC_independent_technical_mission_completed }
+			OR = { has_completed_focus = PN_china_answers_to_no_bloc has_completed_focus = PN_demand_european_powers_to_leave_china }
+		}
+
+		available = {
+			has_capitulated = no
+		}
+
+		cost = 25
+		days_remove = 45
+		fire_only_once = no
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = XIC_independent_technical_mission_active }
+		}
+
+		cancel_trigger = { has_capitulated = yes }
+		cancel_effect = {
+			hidden_effect = { clr_country_flag = XIC_independent_technical_mission_active }
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = XIC_independent_technical_mission_active
+				set_country_flag = XIC_independent_technical_mission_completed
+			}
+			country_event = { id = PN_XIC_programmes.8 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_manchurian_reconnaissance = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_return_to_the_northeast
+				has_completed_focus = PN_prepare_the_northern_campaign
+			}
+			NOT = { has_country_flag = XIC_manchurian_reconnaissance_completed }
+		}
+
+		available = {
+			has_capitulated = no
+			OR = {
+				JAP = { any_owned_state = { XIC_is_chinese_state = yes } }
+				MAN = { exists = yes NOT = { is_subject_of = XIC } }
+			}
+		}
+
+		cost = 25
+		days_remove = 21
+		fire_only_once = no
+
+		remove_effect = {
+			hidden_effect = { set_country_flag = XIC_manchurian_reconnaissance_completed }
+			country_event = { id = PN_XIC_programmes.10 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+}

@@ -1,0 +1,15 @@
+XIC_national_programmes = {
+	priority = 95
+	icon = generic_prepare_civil_war
+
+	allowed = { original_tag = XIC }
+	visible = {
+		OR = {
+			has_completed_focus = PN_XIC_all_for_reconstruction
+			has_completed_focus = PN_XIC_spare_the_peasants
+			has_completed_focus = PN_XIC_the_german_military_advisors
+			has_completed_focus = PN_XIC_establish_the_jinan_military_academy
+			XIC_campaign_government_established = yes
+		}
+	}
+}

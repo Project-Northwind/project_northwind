@@ -1,0 +1,166 @@
+ideas = {
+	country = {
+		XIC_reconstruction_labour_settlement = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		XIC_reconstruction_machine_cooperatives = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				production_speed_buildings_factor = 0.03
+			}
+		}
+
+		XIC_reconstruction_government_depots = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				supply_consumption_factor = -0.02
+			}
+		}
+
+		XIC_reconstruction_industrial_orders = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		XIC_reconstruction_manchurian_repair_brigades = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				repair_speed_factor = 0.20
+			}
+		}
+
+		XIC_reconstruction_civilian_return = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				consumer_goods_factor = -0.025
+				conscription_factor = -0.05
+			}
+		}
+
+		XIC_reconstruction_county_service = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				political_power_gain = -0.10
+			}
+		}
+
+		XIC_reconstruction_workplace_inspectorate = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.12
+				industrial_capacity_factory = -0.02
+			}
+		}
+
+		XIC_reconstruction_wage_agreements = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				industrial_capacity_factory = 0.04
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		XIC_reconstruction_rural_debt_boards = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				consumer_goods_factor = -0.025
+				political_power_gain = -0.15
+			}
+		}
+
+		XIC_reconstruction_petition_circuit = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = -0.10
+			}
+		}
+
+		XIC_reconstruction_prefectural_auditors = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				production_speed_buildings_factor = 0.06
+				political_power_gain = -0.10
+			}
+		}
+
+		XIC_reconstruction_civic_schools = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				research_speed_factor = 0.02
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		XIC_reconstruction_industrial_credit = {
+			allowed = { original_tag = XIC }
+
+			removal_cost = -1
+			picture = XIC_national_reconstructionism
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.12
+				consumer_goods_factor = 0.025
+			}
+		}
+	}
+}

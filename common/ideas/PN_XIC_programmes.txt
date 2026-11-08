@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		XIC_headquarters_liaison_officers = {
+			picture = generic_army_war_college
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.10
+				experience_gain_army = 0.05
+				consumer_goods_factor = 0.025
+			}
+		}
+		XIC_civil_transport_sections = {
+			picture = generic_army_war_college
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.05
+				army_org_regain = 0.05
+				consumer_goods_factor = 0.025
+			}
+		}
+	}
+}

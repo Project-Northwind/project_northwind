@@ -1,0 +1,532 @@
+add_namespace = PN_XIC_government
+
+country_event = {
+	id = PN_XIC_government.1
+	title = PN_XIC_government.1.t
+	desc = PN_XIC_government.1.desc
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_peoples_republic_formed
+		has_completed_focus = PN_convene_the_national_congress
+	}
+
+	option = {
+		name = PN_XIC_government.1.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 74
+		}
+		if = {
+			limit = {
+				has_political_power > 74
+			}
+			custom_effect_tooltip = PN_XIC_government.1.a.tt
+			hidden_effect = {
+				clr_country_flag = XIC_congress_social_representation
+				remove_ideas = XIC_gov_social_delegations
+				clr_country_flag = XIC_congress_territorial_representation
+				remove_ideas = XIC_gov_territorial_delegations
+				set_country_flag = XIC_congress_social_representation
+			}
+			add_political_power = -75
+			add_timed_idea = { idea = XIC_gov_social_delegations days = 270 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+	option = {
+		name = PN_XIC_government.1.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = PN_XIC_government.1.b.tt
+		hidden_effect = {
+			clr_country_flag = XIC_congress_social_representation
+			remove_ideas = XIC_gov_social_delegations
+			clr_country_flag = XIC_congress_territorial_representation
+			remove_ideas = XIC_gov_territorial_delegations
+			set_country_flag = XIC_congress_territorial_representation
+		}
+		add_timed_idea = { idea = XIC_gov_territorial_delegations days = 270 }
+	}
+
+}
+
+country_event = {
+	id = PN_XIC_government.2
+	title = PN_XIC_government.2.t
+	desc = PN_XIC_government.2.desc
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_peoples_republic_formed
+		has_completed_focus = PN_six_wings_one_league
+	}
+
+	option = {
+		name = PN_XIC_government.2.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 59
+		}
+		if = {
+			limit = {
+				has_political_power > 59
+			}
+			custom_effect_tooltip = PN_XIC_government.2.a.tt
+			hidden_effect = {
+				clr_country_flag = XIC_league_social_programme
+				remove_ideas = XIC_gov_league_social_programme
+				clr_country_flag = XIC_league_defence_programme
+				remove_ideas = XIC_gov_league_defence_programme
+				clr_country_flag = XIC_league_development_programme
+				remove_ideas = XIC_gov_league_development_programme
+				set_country_flag = XIC_league_social_programme
+			}
+			add_political_power = -60
+			add_timed_idea = { idea = XIC_gov_league_social_programme days = 365 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+	option = {
+		name = PN_XIC_government.2.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = PN_XIC_government.2.b.tt
+		hidden_effect = {
+			clr_country_flag = XIC_league_social_programme
+			remove_ideas = XIC_gov_league_social_programme
+			clr_country_flag = XIC_league_defence_programme
+			remove_ideas = XIC_gov_league_defence_programme
+			clr_country_flag = XIC_league_development_programme
+			remove_ideas = XIC_gov_league_development_programme
+			set_country_flag = XIC_league_defence_programme
+		}
+		add_manpower = 10000
+		add_timed_idea = { idea = XIC_gov_league_defence_programme days = 180 }
+	}
+
+	option = {
+		name = PN_XIC_government.2.c
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 44
+		}
+		if = {
+			limit = {
+				has_political_power > 44
+			}
+			custom_effect_tooltip = PN_XIC_government.2.c.tt
+			hidden_effect = {
+				clr_country_flag = XIC_league_social_programme
+				remove_ideas = XIC_gov_league_social_programme
+				clr_country_flag = XIC_league_defence_programme
+				remove_ideas = XIC_gov_league_defence_programme
+				clr_country_flag = XIC_league_development_programme
+				remove_ideas = XIC_gov_league_development_programme
+				set_country_flag = XIC_league_development_programme
+			}
+			add_political_power = -45
+			add_timed_idea = { idea = XIC_gov_league_development_programme days = 365 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+}
+
+country_event = {
+	id = PN_XIC_government.3
+	title = PN_XIC_government.3.t
+	desc = PN_XIC_government.3.desc
+	picture = GFX_report_event_chinese_soldiers_02
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_peoples_republic_formed
+		has_completed_focus = PN_one_national_army
+	}
+
+	option = {
+		name = PN_XIC_government.3.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 74
+		}
+		if = {
+			limit = {
+				has_political_power > 74
+			}
+			custom_effect_tooltip = PN_XIC_government.3.a.tt
+			unlock_decision_tooltip = XIC_joint_staff_exercises
+			hidden_effect = {
+				clr_country_flag = XIC_staff_professional_priority
+				remove_ideas = XIC_gov_professional_staff_practice
+				clr_country_flag = XIC_staff_mass_mobilisation
+				remove_ideas = XIC_gov_mass_mobilisation_practice
+				set_country_flag = XIC_staff_professional_priority
+			}
+			add_political_power = -75
+			add_timed_idea = { idea = XIC_gov_professional_staff_practice days = 270 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+	option = {
+		name = PN_XIC_government.3.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = PN_XIC_government.3.b.tt
+		unlock_decision_tooltip = XIC_form_reserve_columns
+		hidden_effect = {
+			clr_country_flag = XIC_staff_professional_priority
+			remove_ideas = XIC_gov_professional_staff_practice
+			clr_country_flag = XIC_staff_mass_mobilisation
+			remove_ideas = XIC_gov_mass_mobilisation_practice
+			set_country_flag = XIC_staff_mass_mobilisation
+		}
+		add_manpower = 12000
+		add_timed_idea = { idea = XIC_gov_mass_mobilisation_practice days = 180 }
+	}
+
+}
+
+country_event = {
+	id = PN_XIC_government.4
+	title = PN_XIC_government.4.t
+	desc = PN_XIC_government.4.desc
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_peoples_republic_formed
+		has_completed_focus = PN_a_state_beyond_the_officer_corps
+	}
+
+	option = {
+		name = PN_XIC_government.4.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 59
+		}
+		if = {
+			limit = {
+				has_political_power > 59
+			}
+			custom_effect_tooltip = PN_XIC_government.4.a.tt
+			hidden_effect = {
+				clr_country_flag = XIC_civilian_provincial_service
+				remove_ideas = XIC_gov_civilian_provincial_service
+				clr_country_flag = XIC_officer_provincial_service
+				remove_ideas = XIC_gov_officer_provincial_service
+				set_country_flag = XIC_civilian_provincial_service
+			}
+			add_political_power = -60
+			add_timed_idea = { idea = XIC_gov_civilian_provincial_service days = 365 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+	option = {
+		name = PN_XIC_government.4.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = PN_XIC_government.4.b.tt
+		hidden_effect = {
+			clr_country_flag = XIC_civilian_provincial_service
+			remove_ideas = XIC_gov_civilian_provincial_service
+			clr_country_flag = XIC_officer_provincial_service
+			remove_ideas = XIC_gov_officer_provincial_service
+			set_country_flag = XIC_officer_provincial_service
+		}
+		add_timed_idea = { idea = XIC_gov_officer_provincial_service days = 270 }
+	}
+
+}
+
+country_event = {
+	id = PN_XIC_government.5
+	title = PN_XIC_government.5.t
+	desc = PN_XIC_government.5.desc
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_state_formed
+		has_completed_focus = PN_the_grand_uniter
+	}
+
+	option = {
+		name = PN_XIC_government.5.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 59
+		}
+		if = {
+			limit = {
+				has_political_power > 59
+			}
+			custom_effect_tooltip = PN_XIC_government.5.a.tt
+			hidden_effect = {
+				clr_country_flag = XIC_uniter_council_warrant
+				remove_ideas = XIC_gov_council_administrative_warrant
+				clr_country_flag = XIC_uniter_personal_arbitration
+				remove_ideas = XIC_gov_personal_arbitration
+				set_country_flag = XIC_uniter_council_warrant
+			}
+			add_political_power = -60
+			add_timed_idea = { idea = XIC_gov_council_administrative_warrant days = 365 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+	option = {
+		name = PN_XIC_government.5.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = PN_XIC_government.5.b.tt
+		hidden_effect = {
+			clr_country_flag = XIC_uniter_council_warrant
+			remove_ideas = XIC_gov_council_administrative_warrant
+			clr_country_flag = XIC_uniter_personal_arbitration
+			remove_ideas = XIC_gov_personal_arbitration
+			set_country_flag = XIC_uniter_personal_arbitration
+		}
+		add_command_power = 20
+		add_timed_idea = { idea = XIC_gov_personal_arbitration days = 270 }
+	}
+
+}
+
+country_event = {
+	id = PN_XIC_government.6
+	title = PN_XIC_government.6.t
+	desc = PN_XIC_government.6.desc
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_state_formed
+		has_completed_focus = PN_spread_the_ideology_of_reconstructionism
+	}
+
+	option = {
+		name = PN_XIC_government.6.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 59
+		}
+		if = {
+			limit = {
+				has_political_power > 59
+			}
+			custom_effect_tooltip = PN_XIC_government.6.a.tt
+			hidden_effect = {
+				clr_country_flag = XIC_governors_central_commissions
+				remove_ideas = XIC_gov_centrally_commissioned_governors
+				clr_country_flag = XIC_governors_local_compacts
+				remove_ideas = XIC_gov_provincial_governor_compacts
+				set_country_flag = XIC_governors_central_commissions
+			}
+			add_political_power = -60
+			add_timed_idea = { idea = XIC_gov_centrally_commissioned_governors days = 365 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+	option = {
+		name = PN_XIC_government.6.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = PN_XIC_government.6.b.tt
+		hidden_effect = {
+			clr_country_flag = XIC_governors_central_commissions
+			remove_ideas = XIC_gov_centrally_commissioned_governors
+			clr_country_flag = XIC_governors_local_compacts
+			remove_ideas = XIC_gov_provincial_governor_compacts
+			set_country_flag = XIC_governors_local_compacts
+		}
+		add_timed_idea = { idea = XIC_gov_provincial_governor_compacts days = 270 }
+	}
+
+}
+
+country_event = {
+	id = PN_XIC_government.7
+	title = PN_XIC_government.7.t
+	desc = PN_XIC_government.7.desc
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_peoples_republic_formed
+		has_completed_focus = PN_the_national_social_bargain
+	}
+
+	option = {
+		name = PN_XIC_government.7.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 49
+		}
+		if = {
+			limit = {
+				has_political_power > 49
+			}
+			custom_effect_tooltip = PN_XIC_government.7.a.tt
+			hidden_effect = {
+				clr_country_flag = XIC_bargain_labour_first
+				remove_ideas = XIC_gov_labour_budget_priority
+				clr_country_flag = XIC_bargain_agrarian_first
+				remove_ideas = XIC_gov_agrarian_budget_priority
+				set_country_flag = XIC_bargain_labour_first
+			}
+			add_political_power = -50
+			add_timed_idea = { idea = XIC_gov_labour_budget_priority days = 365 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+	option = {
+		name = PN_XIC_government.7.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = PN_XIC_government.7.b.tt
+		hidden_effect = {
+			clr_country_flag = XIC_bargain_labour_first
+			remove_ideas = XIC_gov_labour_budget_priority
+			clr_country_flag = XIC_bargain_agrarian_first
+			remove_ideas = XIC_gov_agrarian_budget_priority
+			set_country_flag = XIC_bargain_agrarian_first
+		}
+		add_timed_idea = { idea = XIC_gov_agrarian_budget_priority days = 365 }
+	}
+
+}
+
+country_event = {
+	id = PN_XIC_government.8
+	title = PN_XIC_government.8.t
+	desc = PN_XIC_government.8.desc
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = XIC
+		has_country_flag = XIC_national_peoples_republic_formed
+		has_completed_focus = PN_the_national_revival_plan
+	}
+
+	option = {
+		name = PN_XIC_government.8.a
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 74
+			1038 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = no } }
+		}
+		if = {
+			limit = {
+				has_political_power > 74
+				1038 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = no } }
+			}
+			custom_effect_tooltip = PN_XIC_government.8.a.tt
+			hidden_effect = {
+				clr_country_flag = XIC_investment_jinan_workshops
+				remove_ideas = XIC_gov_jinan_workshop_investment
+				clr_country_flag = XIC_investment_nanjing_arsenals
+				remove_ideas = XIC_gov_nanjing_arsenal_investment
+				clr_country_flag = XIC_investment_inland_connections
+				remove_ideas = XIC_gov_inland_transport_priority
+				set_country_flag = XIC_investment_jinan_workshops
+			}
+			add_political_power = -75
+			1038 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_timed_idea = { idea = XIC_gov_jinan_workshop_investment days = 365 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+	option = {
+		name = PN_XIC_government.8.b
+		ai_chance = { factor = 50 }
+		trigger = {
+			has_political_power > 74
+			1035 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = arms_factory size > 0 include_locked = no } }
+		}
+		if = {
+			limit = {
+				has_political_power > 74
+				1035 = { is_owned_by = ROOT is_controlled_by = ROOT free_building_slots = { building = arms_factory size > 0 include_locked = no } }
+			}
+			custom_effect_tooltip = PN_XIC_government.8.b.tt
+			hidden_effect = {
+				clr_country_flag = XIC_investment_jinan_workshops
+				remove_ideas = XIC_gov_jinan_workshop_investment
+				clr_country_flag = XIC_investment_nanjing_arsenals
+				remove_ideas = XIC_gov_nanjing_arsenal_investment
+				clr_country_flag = XIC_investment_inland_connections
+				remove_ideas = XIC_gov_inland_transport_priority
+				set_country_flag = XIC_investment_nanjing_arsenals
+			}
+			add_political_power = -75
+			1035 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_timed_idea = { idea = XIC_gov_nanjing_arsenal_investment days = 365 }
+		}
+		else = {
+			custom_effect_tooltip = PN_XIC_government_allocation_lost_tt
+		}
+	}
+
+	option = {
+		name = PN_XIC_government.8.c
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = PN_XIC_government.8.c.tt
+		hidden_effect = {
+			clr_country_flag = XIC_investment_jinan_workshops
+			remove_ideas = XIC_gov_jinan_workshop_investment
+			clr_country_flag = XIC_investment_nanjing_arsenals
+			remove_ideas = XIC_gov_nanjing_arsenal_investment
+			clr_country_flag = XIC_investment_inland_connections
+			remove_ideas = XIC_gov_inland_transport_priority
+			set_country_flag = XIC_investment_inland_connections
+		}
+		add_timed_idea = { idea = XIC_gov_inland_transport_priority days = 365 }
+	}
+
+}

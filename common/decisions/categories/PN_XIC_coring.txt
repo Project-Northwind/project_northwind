@@ -1,0 +1,11 @@
+XIC_chinese_state_integration = {
+	priority = 109
+	icon = generic_prepare_civil_war
+	allowed = { original_tag = XIC }
+	visible = {
+		OR = {
+			has_country_flag = XIC_chinese_integration_unlocked
+			XIC_campaign_government_established = yes
+		}
+	}
+}

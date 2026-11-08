@@ -1,0 +1,648 @@
+XIC_national_integration = {
+	XIC_send_provincial_delegation = {
+		icon = generic_prepare_civil_war
+		targets = { CHI PRC SHX XSM GXC YUN SIK TIB HBC SIC SND KUM GSM GDC KHM NXM RNG }
+		target_trigger = {
+			FROM = { exists = yes }
+		}
+
+		visible = {
+			has_country_flag = XIC_national_peoples_republic_formed
+			has_completed_focus = PN_republic_open_provincial_negotiations
+			FROM = {
+				XIC_chinese_unification_target = yes
+				is_subject = no
+				is_in_faction = no
+				NOT = { has_war_with = XIC }
+				NOT = { is_in_faction_with = XIC }
+				NOT = { tag = MAN }
+				NOT = { tag = MEN }
+			}
+			FROM = { NOT = { has_country_flag = XIC_provincial_envoy_sent } }
+		}
+
+		available = {
+			FROM = {
+				XIC_chinese_unification_target = yes
+				is_subject = no
+				is_in_faction = no
+				NOT = { has_war_with = XIC }
+				NOT = { is_in_faction_with = XIC }
+				NOT = { tag = MAN }
+				NOT = { tag = MEN }
+			}
+		}
+
+		cost = 35
+		fire_only_once = yes
+		days_remove = 30
+		cancel_trigger = {
+			FROM = { OR = { exists = no is_subject = yes has_war_with = XIC is_in_faction = yes } }
+		}
+
+		complete_effect = {
+			FROM = { set_country_flag = XIC_provincial_envoy_sent }
+			custom_effect_tooltip = XIC_provincial_reply_pending_tt
+		}
+
+		cancel_effect = {
+			FROM = { set_country_flag = XIC_integration_refused }
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+						NOT = { has_war_with = XIC }
+						NOT = { is_in_faction_with = XIC }
+					}
+				}
+				hidden_effect = { FROM = { country_event = { id = PN_XIC_campaigns.1 } } }
+			}
+			else = {
+				FROM = { set_country_flag = XIC_integration_refused }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_demand_provincial_submission = {
+		icon = generic_prepare_civil_war
+		targets = { CHI PRC SHX XSM GXC YUN SIK TIB HBC SIC SND KUM GSM GDC KHM NXM RNG }
+		target_trigger = {
+			FROM = { exists = yes }
+		}
+
+		visible = {
+			OR = {
+				AND = {
+					has_country_flag = XIC_national_state_formed
+					has_completed_focus = PN_hunt_down_the_warlords
+				}
+				AND = {
+					has_country_flag = XIC_national_peoples_republic_formed
+					has_completed_focus = PN_republic_prepare_regional_expeditions
+					FROM = { has_country_flag = XIC_integration_refused }
+				}
+			}
+			FROM = {
+				XIC_chinese_unification_target = yes
+				is_subject = no
+				is_in_faction = no
+				NOT = { has_war_with = XIC }
+				NOT = { is_in_faction_with = XIC }
+				NOT = { tag = MAN }
+				NOT = { tag = MEN }
+			}
+		}
+
+		available = {
+			FROM = {
+				XIC_chinese_unification_target = yes
+				is_subject = no
+				is_in_faction = no
+				NOT = { has_war_with = XIC }
+				NOT = { is_in_faction_with = XIC }
+				NOT = { tag = MAN }
+				NOT = { tag = MEN }
+			}
+		}
+
+		cost = 35
+		fire_only_once = no
+		days_re_enable = 90
+		days_remove = 14
+		cancel_trigger = {
+			FROM = { OR = { exists = no is_subject = yes has_war_with = XIC is_in_faction = yes } }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_provincial_ultimatum_pending_tt
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						exists = yes
+						is_subject = no
+						is_in_faction = no
+						NOT = { has_war_with = XIC }
+						NOT = { is_in_faction_with = XIC }
+					}
+				}
+				hidden_effect = { FROM = { country_event = { id = PN_XIC_campaigns.2 } } }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_integrate_autonomous_province = {
+		icon = generic_prepare_civil_war
+		targets = { MAN MEN CHI PRC SHX XSM GXC YUN SIK TIB HBC SIC SND KUM GSM GDC KHM NXM RNG }
+		target_trigger = {
+			FROM = { exists = yes }
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_republic_end_the_provincial_commands
+				has_completed_focus = PN_reeducate_the_warlords
+			}
+			FROM = {
+				exists = yes
+				is_subject_of = XIC
+				any_owned_state = { XIC_is_chinese_state = yes }
+			}
+		}
+
+		available = {
+			FROM = {
+				exists = yes
+				is_subject_of = XIC
+				has_war = no
+				any_owned_state = { XIC_is_chinese_state = yes }
+			}
+		}
+
+		cost = 75
+		fire_only_once = no
+		days_re_enable = 7
+		days_remove = 60
+		cancel_trigger = {
+			FROM = { OR = { exists = no NOT = { is_subject_of = XIC } has_war = yes } }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_provincial_integration_pending_tt
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						exists = yes
+						is_subject_of = XIC
+						has_war = no
+					}
+				}
+				custom_effect_tooltip = XIC_provincial_integration_completed_tt
+				hidden_effect = {
+					FROM = { XIC_transfer_provincial_officers_effect = yes }
+					annex_country = { target = FROM transfer_troops = yes }
+				}
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_prepare_provincial_expedition = {
+		icon = generic_prepare_civil_war
+		targets = { CHI PRC SHX XSM GXC YUN SIK TIB HBC SIC SND KUM GSM GDC KHM NXM RNG }
+		target_trigger = {
+			FROM = { exists = yes }
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_china_must_be_one
+				has_completed_focus = PN_republic_prepare_regional_expeditions
+			}
+			FROM = {
+				XIC_chinese_unification_target = yes
+				NOT = { tag = MAN }
+				NOT = { tag = MEN }
+				NOT = { is_in_faction_with = XIC }
+			}
+		}
+
+		available = {
+			command_power > 14
+			FROM = {
+				exists = yes
+				is_neighbor_of = XIC
+				NOT = { is_subject_of = XIC }
+				OR = {
+					has_country_flag = XIC_provincial_ultimatum_rejected
+					has_war_with = XIC
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = 21
+		fire_only_once = yes
+
+		complete_effect = {
+			add_command_power = -15
+			custom_effect_tooltip = XIC_regional_expedition_preparation_tt
+		}
+
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					exists = no
+					is_subject_of = XIC
+					is_in_faction_with = XIC
+				}
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						exists = yes
+						NOT = { is_subject_of = XIC }
+						NOT = { is_in_faction_with = XIC }
+					}
+				}
+				add_timed_idea = { idea = XIC_prepared_provincial_expedition days = 90 }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_contest_foreign_backed_command = {
+		icon = generic_prepare_civil_war
+		targets = { CHI PRC SHX XSM GXC YUN SIK TIB HBC SIC SND KUM GSM GDC KHM NXM RNG }
+		target_trigger = {
+			FROM = { exists = yes }
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_hunt_down_the_warlords
+				has_completed_focus = PN_republic_prepare_regional_expeditions
+			}
+			FROM = {
+				XIC_chinese_unification_target = yes
+				NOT = { is_in_faction_with = XIC }
+				OR = { is_in_faction = yes is_subject = yes }
+			}
+		}
+
+		available = {
+			FROM = {
+				exists = yes
+				NOT = { is_subject_of = XIC }
+				NOT = { has_war_with = XIC }
+				NOT = { is_in_faction_with = XIC }
+				NOT = { XIC = { has_wargoal_against = PREV } }
+			}
+		}
+
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_foreign_backed_ultimatum_tt
+		}
+
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					exists = no
+					is_subject_of = XIC
+					is_in_faction_with = XIC
+					has_war_with = XIC
+				}
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						exists = yes
+						NOT = { is_subject_of = XIC }
+						NOT = { is_in_faction_with = XIC }
+						NOT = { has_war_with = XIC }
+					}
+				}
+				create_wargoal = { type = annex_everything target = FROM }
+			}
+		}
+
+		ai_will_do = { factor = 0.5 }
+	}
+}
+
+XIC_campaign_preparations = {
+	XIC_secure_campaign_munitions = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_death_to_invaders
+				has_completed_focus = PN_a_national_front_against_japan
+			}
+		}
+
+		available = {
+			has_capitulated = no
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = XIC_campaign_munitions_acquired
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 600 producer = XIC }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 60 producer = XIC }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_repair_the_northern_supply_line = {
+		icon = generic_construction
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_supply_the_reclamation_army
+				has_completed_focus = PN_republic_reopen_the_northern_railways
+				has_completed_focus = PN_death_to_invaders
+			}
+		}
+
+		available = {
+			owns_state = 1038
+			controls_state = 1038
+			owns_state = 608
+			controls_state = 608
+		}
+
+		cost = 35
+		fire_only_once = yes
+		days_remove = 30
+		cancel_trigger = {
+			OR = { NOT = { owns_state = 1038 } NOT = { controls_state = 1038 } NOT = { owns_state = 608 } NOT = { controls_state = 608 } }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_northern_rail_contract_tt
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					owns_state = 1038
+					controls_state = 1038
+					owns_state = 608
+					controls_state = 608
+				}
+				set_country_flag = XIC_northern_railways_prepared
+				build_railway = { level = 2 start_state = 1038 target_state = 608 build_only_on_allied = yes }
+				add_equipment_to_stockpile = { type = train_equipment_1 amount = 5 producer = XIC }
+				if = {
+					limit = { has_country_flag = XIC_manchurian_railway_contacts }
+					add_equipment_to_stockpile = { type = train_equipment_1 amount = 3 producer = XIC }
+				}
+				add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 40 producer = XIC }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_joint_staff_exercises = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_one_national_army
+			has_country_flag = XIC_staff_professional_priority
+		}
+
+		available = {
+			command_power > 19
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		complete_effect = {
+			add_command_power = -20
+			set_country_flag = XIC_joint_staff_exercises_completed
+			army_experience = 25
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_form_reserve_columns = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_completed_focus = PN_one_national_army
+			has_country_flag = XIC_staff_mass_mobilisation
+		}
+
+		available = {
+			has_war = no
+		}
+
+		cost = 40
+		fire_only_once = yes
+
+		complete_effect = {
+			add_stability = -0.025
+			add_manpower = 20000
+			set_country_flag = XIC_reserve_columns_formed
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_prepare_northern_offensive = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_death_to_invaders
+				has_completed_focus = PN_a_national_front_against_japan
+			}
+		}
+
+		available = {
+			OR = { has_war_with = JAP has_war_with = MAN has_war_with = MEN }
+			command_power > 19
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		complete_effect = {
+			add_command_power = -20
+			add_timed_idea = { idea = XIC_prepared_northern_offensive days = 90 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_arm_manchurian_contacts = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_prepare_the_northern_campaign
+				has_completed_focus = PN_republic_support_the_manchurian_resistance
+			}
+		}
+
+		available = {
+			has_war_with = JAP
+			OR = {
+				AND = {
+					has_country_flag = XIC_manchurian_military_contacts
+					has_equipment = { infantry_equipment > 299 }
+				}
+				has_equipment = { infantry_equipment > 499 }
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = XIC_manchurian_military_contacts }
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -300 }
+			}
+			else = {
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			}
+			JAP = { add_timed_idea = { idea = XIC_disrupted_continental_supply days = 60 } }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_survey_the_captured_arsenals = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_reclaim_the_manchurian_ports
+				has_completed_focus = PN_republic_secure_the_manchurian_ports
+			}
+		}
+
+		available = {
+			controls_state = 716
+		}
+
+		cost = 25
+		fire_only_once = yes
+		days_remove = 21
+		cancel_trigger = {
+			NOT = { controls_state = 716 }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_arsenal_commission_pending_tt
+		}
+
+		remove_effect = {
+			if = {
+				limit = { controls_state = 716 }
+				hidden_effect = { country_event = { id = PN_XIC_campaigns.3 } }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_prepare_the_yalu_crossings = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_force_the_yalu_crossing
+				has_completed_focus = PN_republic_cross_the_yalu
+			}
+		}
+
+		available = {
+			has_war_with = JAP
+			command_power > 19
+			controls_state = 716
+			controls_state = 328
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		complete_effect = {
+			add_command_power = -20
+			add_timed_idea = { idea = XIC_yalu_crossing_preparations days = 90 }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_propose_japanese_withdrawal = {
+		icon = generic_political_discourse
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_dictate_terms_to_japan
+				has_completed_focus = PN_republic_offer_a_continental_settlement
+			}
+		}
+
+		available = {
+			NOT = { has_country_flag = XIC_japanese_withdrawal_agreed }
+			has_war_with = JAP
+			XIC_japan_expelled_from_continent = yes
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 180
+		days_remove = 14
+		cancel_trigger = {
+			OR = { NOT = { has_war_with = JAP } XIC_japan_expelled_from_continent = no }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_japan_reply_pending_tt
+		}
+
+		remove_effect = {
+			if = {
+				limit = { has_war_with = JAP XIC_japan_expelled_from_continent = yes }
+				hidden_effect = { JAP = { country_event = { id = PN_XIC_campaigns.5 } } }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	XIC_request_the_return_of_taiwan = {
+		icon = generic_political_discourse
+
+		visible = {
+			OR = {
+				has_completed_focus = PN_settle_the_taiwan_question
+				has_completed_focus = PN_republic_settle_the_taiwan_question
+			}
+			524 = { NOT = { is_owned_by = XIC } }
+		}
+
+		available = {
+			524 = {
+				owner = {
+					exists = yes
+					NOT = { has_war_with = XIC }
+					NOT = { is_subject_of = XIC }
+				}
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = XIC_taiwan_reply_pending_tt
+			hidden_effect = { 524 = { owner = { country_event = { id = PN_XIC_campaigns.10 } } } }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+}

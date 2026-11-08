@@ -1,0 +1,13 @@
+XIC_national_integration = {
+	priority = 110
+	icon = generic_prepare_civil_war
+	allowed = { original_tag = XIC }
+	visible = { XIC_campaign_government_established = yes }
+}
+
+XIC_campaign_preparations = {
+	priority = 105
+	icon = generic_prepare_civil_war
+	allowed = { original_tag = XIC }
+	visible = { XIC_campaign_government_established = yes }
+}
