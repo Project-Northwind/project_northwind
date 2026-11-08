@@ -1348,3 +1348,8 @@
  STATE_1104: "Mafraq"
  STATE_1105: "Ma'an"
  STATE_1106: "Ismailia"
+ STATE_1107: "Minnan"
+ STATE_1108: "Ganzhou"
+ STATE_1109: "Xiangxi"
+ STATE_1110: "Hangzhou"
+ STATE_1111: "Jianghuai"

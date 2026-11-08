@@ -1,0 +1,48 @@
+state={
+	id=606
+	name = "STATE_606"
+	resources = {
+		steel = 11
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+
+
+		buildings = {
+			infrastructure = 2 #was 4
+			industrial_complex = 1
+		}
+
+
+
+		#victory_points = {
+		#	9937 1 # Jinjiazhai 
+		#} 
+
+		1938.10.25 = {
+			controller = JAP
+			buildings = {
+				industrial_complex = 3
+				infrastructure = 3 #was: 6
+				air_base = 1
+				arms_factory = 1
+
+			}
+			add_dynamic_modifier = {
+				modifier = yellow_river_blown
+				days = 300
+			}
+		}
+
+	}
+
+	provinces = { 4079 4158 7094 9937 10008 10040 10064 10079 11916 12036 }
+	manpower = 9613369
+	buildings_max_level_factor=1.000
+	state_category = town
+
+	local_supplies=1.0 
+}
