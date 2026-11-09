@@ -186,6 +186,32 @@ focus_tree = {
 		relative_position_id = PN_SWE_in_the_wake_of_fountainebleau
 		x = -7
 		y = 1
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = PN_SWE_whispers_of_a_revolution
+				}
+			}
+		}
+
+		offset = {
+			x = 7
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = PN_SWE_the_upcoming_election
+			}
+		}
 	}
 	focus = {
 		id = PN_SWE_propagate_the_red_scare
@@ -259,11 +285,26 @@ focus_tree = {
 		id = PN_SWE_the_conservatives_four_more_years
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PN_SWE_the_1936_election }
+		mutually_exclusive = { focus = PN_SWE_the_center_victorious focus = PN_SWE_the_left_ascendant }
 		relative_position_id = PN_SWE_the_1936_election
 		x = 3
 		y = 1
 
 		cost = 10
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = PN_SWE_the_left_ascendant
+				}
+			}
+		}
 	}
 	focus = {
 		id = PN_SWE_reinforce_anti_communist_measures
@@ -285,6 +326,10 @@ focus_tree = {
 		y = 1
 
 		cost = 10
+
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
 	}
 	focus = {
 		id = PN_SWE_weaken_the_instrument_of_government
@@ -700,11 +745,25 @@ focus_tree = {
 		y = 1
 
 		cost = 10
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = PN_SWE_strengthen_the_crown
+				}
+			}
+		}
 	}
 	focus = {
 		id = PN_SWE_rein_in_the_worker_unions
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
+		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years focus = PN_SWE_the_center_victorious }
 		relative_position_id = PN_SWE_the_conservatives_four_more_years
 		x = -1
 		y = 1
@@ -735,9 +794,9 @@ focus_tree = {
 	focus = {
 		id = PN_SWE_restore_the_landstorm_associations
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PN_SWE_rein_in_the_worker_unions }
-		relative_position_id = PN_SWE_rein_in_the_worker_unions
-		x = 3
+		prerequisite = { focus = PN_SWE_reinforce_anti_communist_measures }
+		relative_position_id = PN_SWE_reinforce_anti_communist_measures
+		x = 1
 		y = 1
 
 		cost = 10
@@ -746,6 +805,7 @@ focus_tree = {
 		id = PN_SWE_the_center_victorious
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PN_SWE_the_1936_election }
+		mutually_exclusive = { focus = PN_SWE_the_left_ascendant focus = PN_SWE_the_conservatives_four_more_years }
 		relative_position_id = PN_SWE_the_1936_election
 		x = 0
 		y = 1
@@ -756,11 +816,26 @@ focus_tree = {
 		id = PN_SWE_the_left_ascendant
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PN_SWE_the_1936_election }
+		mutually_exclusive = { focus = PN_SWE_the_center_victorious focus = PN_SWE_the_conservatives_four_more_years }
 		relative_position_id = PN_SWE_the_1936_election
 		x = -3
 		y = 1
 
 		cost = 10
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = PN_SWE_the_conservatives_four_more_years
+				}
+			}
+		}
 	}
 	focus = {
 		id = PN_SWE_whispers_of_a_revolution
@@ -768,8 +843,34 @@ focus_tree = {
 		prerequisite = { focus = PN_SWE_in_the_wake_of_fountainebleau }
 		mutually_exclusive = { focus = PN_SWE_the_upcoming_election }
 		relative_position_id = PN_SWE_in_the_wake_of_fountainebleau
-		x = 6
+		x = 7
 		y = 1
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = PN_SWE_the_upcoming_election
+				}
+			}
+		}
+
+		offset = {
+			x = -7
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = PN_SWE_whispers_of_a_revolution
+			}
+		}
 
 	}
 	focus = {
