@@ -21,7 +21,7 @@ focus_tree = {
 
 	focus = {
 		id = PN_SWE_the_looming_storm
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_invade_sweden
 		x = 0
 		y = 0
 
@@ -164,7 +164,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_in_the_wake_of_fountainebleau
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = PN_SWE_the_looming_storm }
 		relative_position_id = PN_SWE_the_looming_storm
 		x = 0
@@ -180,7 +180,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = PN_SWE_the_upcoming_election
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_usa_voter_registration_act
 		prerequisite = { focus = PN_SWE_in_the_wake_of_fountainebleau }
 		mutually_exclusive = { focus = PN_SWE_whispers_of_a_revolution }
 		relative_position_id = PN_SWE_in_the_wake_of_fountainebleau
@@ -215,7 +215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_propagate_the_red_scare
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_GER_end_european_communism
 		prerequisite = { focus = PN_SWE_the_upcoming_election }
 		mutually_exclusive = { focus = PN_SWE_mend_ties_with_the_left }
 		relative_position_id = PN_SWE_the_upcoming_election
@@ -224,7 +224,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_mend_ties_with_the_left
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_social_democracy
 		prerequisite = { focus = PN_SWE_the_upcoming_election }
 		mutually_exclusive = { focus = PN_SWE_propagate_the_red_scare }
 		relative_position_id = PN_SWE_the_upcoming_election
@@ -233,7 +233,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_reach_out_to_agrarian_communities
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_agricultural_subsidies
 		prerequisite = { focus = PN_SWE_propagate_the_red_scare focus = PN_SWE_mend_ties_with_the_left }
 		relative_position_id = PN_SWE_propagate_the_red_scare
 		x = -1
@@ -241,7 +241,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_the_idea_of_folkhemmet
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_ARG_defense_and_democracy
 		prerequisite = { focus = PN_SWE_mend_ties_with_the_left }
 		relative_position_id = PN_SWE_mend_ties_with_the_left
 		x = -1
@@ -249,7 +249,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_empower_the_working_people
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_public_works
 		prerequisite = { focus = PN_SWE_the_idea_of_folkhemmet }
 		relative_position_id = PN_SWE_the_idea_of_folkhemmet
 		x = 1
@@ -257,7 +257,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_strengthen_military_connections
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = PN_SWE_propagate_the_red_scare }
 		relative_position_id = PN_SWE_propagate_the_red_scare
 		x = 1
@@ -265,7 +265,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_rekindle_the_dream_of_an_empire
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SWE_the_nordic_centralized_nordic_army_command
 		prerequisite = { focus = PN_SWE_strengthen_military_connections }
 		relative_position_id = PN_SWE_strengthen_military_connections
 		x = -1
@@ -273,7 +273,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_the_1936_election
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_election
 		prerequisite = { focus = PN_SWE_rekindle_the_dream_of_an_empire focus = PN_SWE_empower_the_working_people }
 		relative_position_id = PN_SWE_rekindle_the_dream_of_an_empire
 		x = -1
@@ -283,7 +283,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_the_conservatives_four_more_years
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = PN_SWE_the_1936_election }
 		mutually_exclusive = { focus = PN_SWE_the_center_victorious focus = PN_SWE_the_left_ascendant }
 		relative_position_id = PN_SWE_the_1936_election
@@ -307,8 +307,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PN_SWE_reinforce_anti_communist_measures
-		icon = GFX_goal_generic_intelligence_exchange
+		id = PN_SWE_anti_communist_measures
+		icon = GFX_focus_spr_crush_the_revolution
 		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
 		relative_position_id = PN_SWE_the_conservatives_four_more_years
 		x = 1
@@ -382,16 +382,37 @@ focus_tree = {
 		y = 3
 
 		cost = 10
+
+		completion_reward = {
+			custom_effect_tooltip = GENERIC_this_focus_unlocks_new_branch_tt
+		}
 	}
 	focus = {
 		id = PN_SWE_dominium_maris_baltici
 		icon = GFX_focus_SWE_the_lion_of_the_north
-		prerequisite = { focus = PN_SWE_usurp_the_riksdag }
 		relative_position_id = PN_SWE_usurp_the_riksdag
 		x = 0
 		y = 1
-
 		cost = 10
+
+		#allow_branch = {
+		#	if = {
+		#		limit = {
+		#			has_game_rule = {
+		#				rule = obsolete_focus_branches_visibility
+		#				option = HIDE
+		#			}
+		#		}
+		#		has_completed_focus = PN_SWE_usurp_the_riksdag
+		#	}
+		#}
+
+		available = {
+			has_completed_focus = PN_SWE_usurp_the_riksdag
+			mark_focus_tree_layout_dirty = yes
+		}
+
+
 	}
 	focus = {
 		id = PN_SWE_the_baltic_game
@@ -762,7 +783,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_rein_in_the_worker_unions
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_CHL_union_of_hispanic_republics
 		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years focus = PN_SWE_the_center_victorious }
 		relative_position_id = PN_SWE_the_conservatives_four_more_years
 		x = -1
@@ -772,9 +793,9 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_outlaw_worker_strikes
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = { focus = PN_SWE_rein_in_the_worker_unions }
-		prerequisite = { focus = PN_SWE_reinforce_anti_communist_measures }
+		prerequisite = { focus = PN_SWE_anti_communist_measures }
 		relative_position_id = PN_SWE_rein_in_the_worker_unions
 		x = 1
 		y = 1
@@ -783,7 +804,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_work_with_corporations
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_generic_industrial_experts
 		prerequisite = { focus = PN_SWE_rein_in_the_worker_unions }
 		relative_position_id = PN_SWE_rein_in_the_worker_unions
 		x = -1
@@ -793,9 +814,9 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_restore_the_landstorm_associations
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PN_SWE_reinforce_anti_communist_measures }
-		relative_position_id = PN_SWE_reinforce_anti_communist_measures
+		icon = GFX_focus_generic_crush_the_military
+		prerequisite = { focus = PN_SWE_anti_communist_measures }
+		relative_position_id = PN_SWE_anti_communist_measures
 		x = 1
 		y = 1
 
@@ -875,7 +896,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_unify_the_red_underground
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_JAP_raise_the_red_flag_high
 		prerequisite = { focus = PN_SWE_whispers_of_a_revolution }
 		mutually_exclusive = { focus = PN_SWE_unite_the_right_under_one_banner }
 		relative_position_id = PN_SWE_whispers_of_a_revolution
@@ -884,7 +905,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_unite_the_right_under_one_banner
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_generic_fascist_propaganda
 		prerequisite = { focus = PN_SWE_whispers_of_a_revolution }
 		mutually_exclusive = { focus = PN_SWE_unify_the_red_underground }
 		relative_position_id = PN_SWE_whispers_of_a_revolution
@@ -893,7 +914,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_propagate_anti_monarchial_ideas
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_rom_abdicate
 		prerequisite = { focus = PN_SWE_unify_the_red_underground focus = PN_SWE_unite_the_right_under_one_banner }
 		relative_position_id = PN_SWE_unify_the_red_underground
 		x = 3
@@ -901,7 +922,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_denounce_the_elites
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_PRC_revolutionary_war_of_the_masses
 		prerequisite = { focus = PN_SWE_unify_the_red_underground }
 		prerequisite = { focus = PN_SWE_propagate_anti_monarchial_ideas }
 		relative_position_id = PN_SWE_unify_the_red_underground
@@ -910,15 +931,15 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_work_with_the_unions
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_PRC_hundred_regiments_offensive
 		prerequisite = { focus = PN_SWE_unify_the_red_underground }
 		relative_position_id = PN_SWE_unify_the_red_underground
 		x = 1
 		y = 1
 	}
 	focus = {
-		id = PN_SWE_bring_home_soviet_exiles
-		icon = GFX_focus_focus_fra_revolution_utmost
+		id = PN_SWE_bring_home_communist_exiles
+		icon = GFX_focus_RAJ_red_in_the_shadows
 		prerequisite = { focus = PN_SWE_unify_the_red_underground }
 		relative_position_id = PN_SWE_unify_the_red_underground
 		x = 0
@@ -926,8 +947,8 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_cast_down_the_bourgeouis
-		icon = GFX_focus_focus_fra_revolution_utmost
-		prerequisite = { focus = PN_SWE_bring_home_soviet_exiles }
+		icon = GFX_focus_generic_red_flags
+		prerequisite = { focus = PN_SWE_bring_home_communist_exiles }
 		prerequisite = { focus = PN_SWE_denounce_the_elites }
 		relative_position_id = PN_SWE_unify_the_red_underground
 		x = 1
@@ -935,7 +956,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_expand_paramilitary_groups
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_generic_fascist_troops
 		prerequisite = { focus = PN_SWE_unite_the_right_under_one_banner }
 		relative_position_id = PN_SWE_unite_the_right_under_one_banner
 		x = -1
@@ -943,15 +964,16 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_sway_corporatists
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_generic_expropriate_industrialist
 		prerequisite = { focus = PN_SWE_unite_the_right_under_one_banner }
+		prerequisite = { focus = PN_SWE_propagate_anti_monarchial_ideas }
 		relative_position_id = PN_SWE_unite_the_right_under_one_banner
 		x = -2
 		y = 2
 	}
 	focus = {
 		id = PN_SWE_infiltrate_military_garrisons
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_CHI_military_mission
 		prerequisite = { focus = PN_SWE_unite_the_right_under_one_banner }
 		relative_position_id = PN_SWE_unite_the_right_under_one_banner
 		x = 0
@@ -959,7 +981,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PN_SWE_dismantle_the_kingdom
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_NOR_send_the_king_back_to_denmark
 		prerequisite = { focus = PN_SWE_infiltrate_military_garrisons }
 		prerequisite = { focus = PN_SWE_sway_corporatists }
 		relative_position_id = PN_SWE_infiltrate_military_garrisons

@@ -40,5 +40,6 @@
   GENERIC_infantry_doctrine_tip_else_tt: "If we do not have an active §YInfantry Land Doctrine§! we will instead gain:"
   GENERIC_operations_doctrine_tip_tt: "If we have an active §YOperations Land Doctrine§! we will gain:"
   GENERIC_operations_doctrine_tip_else_tt: "If we do not have an active §YOperations Land Doctrine§! we will instead gain:"
+  GENERIC_this_focus_unlocks_new_branch_tt: "§YCompletion of this focus will reveal more focuses.§!"
  # Decision Checks
   PN_form_country_tt: "Controls all §YHighlighted States§!"
