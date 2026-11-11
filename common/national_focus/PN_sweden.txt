@@ -321,8 +321,8 @@ focus_tree = {
 		icon = GFX_focus_CZE_bohemia_crown
 		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
 		relative_position_id = PN_SWE_the_conservatives_four_more_years
-		mutually_exclusive = { focus = PN_SWE_conservative_outlook }
-		x = 7
+		mutually_exclusive = { focus = PN_SWE_swedens_place_in_europe }
+		x = 9
 		y = 1
 
 		cost = 10
@@ -757,12 +757,12 @@ focus_tree = {
 		cost = 10
 	}
 	focus = {
-		id = PN_SWE_conservative_outlook
+		id = PN_SWE_swedens_place_in_europe
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PN_SWE_the_conservatives_four_more_years }
 		relative_position_id = PN_SWE_the_conservatives_four_more_years
 		mutually_exclusive = { focus = PN_SWE_strengthen_the_crown }
-		x = 4
+		x = 5
 		y = 1
 
 		cost = 10
